@@ -4,7 +4,7 @@
 
 void Bots::OnSafeZoneUpdated(__int64 a1)
 {
-	*(int*)(a1 + 0x430) = 1;
+	*(int*)(a1 + 0x428) = 1;
 	return Originals::OnSafeZoneUpdated(a1);
 }
 
