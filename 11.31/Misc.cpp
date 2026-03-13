@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Misc.h"
 #include "Utils.h"
+#include "Configuration.h"
 
 void Misc::TickFlush(UNetDriver* NetDriver)
 {
@@ -131,6 +132,29 @@ void Misc::Patch()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589100, OverrideLootLevel);
+
+	if (UConfiguration::bUsePhoebe)
+	{
+		// NumReservations
+
+		Utils::Patch(InSDKUtils::GetImageBase() + 0x1641878, 0x90);
+		Utils::Patch(InSDKUtils::GetImageBase() + 0x1641878 + 1, 0xE9);
+
+		// MatchAssignmentCheck
+
+		Utils::Patch(InSDKUtils::GetImageBase() + 0x1654BD6 + 2, 0xB0);
+		Utils::Patch(InSDKUtils::GetImageBase() + 0x1654BD6 + 3, 0x01);
+
+		for (int i = 4; i < 7; i++)
+		{
+			Utils::Patch(InSDKUtils::GetImageBase() + 0x1654BD6 + i, 0x90);
+		}
+
+		if (UConfiguration::bBotMinimap)
+		{
+			*(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1;
+		}
+	}
 
 	std::vector<uint64_t> NullFuncs = { InSDKUtils::GetImageBase() + 0x32eaad0, InSDKUtils::GetImageBase() + 0x19b1660, InSDKUtils::GetImageBase() + 0x27c47a0 };
 	std::vector<uint64_t> RetTrueFuncs = { InSDKUtils::GetImageBase() + 0x372fb80, InSDKUtils::GetImageBase() + 0x3b76fe0 };

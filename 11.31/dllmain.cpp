@@ -3,9 +3,16 @@
 #include "GameMode.h"
 #include "Abilities.h"
 #include "Player.h"
+#include "Bots.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
+#ifdef CLIENT
+    UEngine::GetEngine()->GameViewport->ViewportConsole = (UConsole*)UGameplayStatics::SpawnObject(UEngine::GetEngine()->ConsoleClass, UEngine::GetEngine()->GameViewport);
+    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1;
+    return 0;
+#endif
+
     Sleep(5000);
     AllocConsole();
     SetConsoleTitleA("Winter | Loading");
@@ -21,6 +28,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     GameMode::Patch();
     Abilities::Patch();
     Player::Patch();
+    Bots::Patch();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false;
 
