@@ -9,6 +9,8 @@ public:
 	public:
 		static inline void(*TickFlush)(UNetDriver*);
 		static inline void (*SendRequestNow)(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
+		static inline void (*PlacePlayersInAircraft)(AFortGameStateAthena*, bool);
+
 	};
 
 	static int PatchRetOne()
@@ -21,6 +23,7 @@ public:
 	static float GetMaxTickRate();
 	static bool Listen(UWorld*, FURL*);
 	static void OverrideLootLevel(AFortGameStateAthena*, int*);
+	static void PlacePlayersInAircraft(AFortGameStateAthena*, bool);
 
 	static void Patch();
 };

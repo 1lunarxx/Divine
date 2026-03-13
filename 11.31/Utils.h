@@ -52,6 +52,16 @@ public:
 		MH_EnableHook((LPVOID)Address);
 	}
 
+    static float EvaluateScalableFloat(FScalableFloat& Float, float Level = 0.0f)
+    {
+        if (Float.Curve.CurveTable == NULL || Float.Curve.RowName.ComparisonIndex < 0)
+            return Float.Value;
+
+        float Out = 0.f;
+        UDataTableFunctionLibrary::EvaluateCurveTableRow(Float.Curve.CurveTable, Float.Curve.RowName, Level, nullptr, &Out, FString());
+        return Float.Value * Out;
+    }
+
 	template<typename C = void>
 	static void Virtual(uintptr_t Address, void* Detour, void** OG = nullptr)
 	{

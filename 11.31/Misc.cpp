@@ -2,6 +2,7 @@
 #include "Misc.h"
 #include "Utils.h"
 #include "Configuration.h"
+#include "Bots.h"
 
 void Misc::TickFlush(UNetDriver* NetDriver)
 {
@@ -100,7 +101,7 @@ void Misc::OverrideLootLevel(AFortGameStateAthena* GameState, int* OutLootLevel)
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
-			*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
+			*(bool*)(__int64(GameMode->ServerBotManager) + 0x4CE) = true;
 
 			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
 
@@ -123,6 +124,26 @@ void Misc::OverrideLootLevel(AFortGameStateAthena* GameState, int* OutLootLevel)
 	else
 	{
 		*OutLootLevel = 1;
+	}
+}
+
+void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
+{
+	Originals::PlacePlayersInAircraft(GameState, a2);
+
+	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
+	{
+		if (UFortServerBotManagerAthena* BotManager = GameMode->ServerBotManager)
+		{
+			for (FFortServerBotInfo& PlayerBot : BotManager->PlayerBots)
+			{
+				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
+				if (BotController == NULL)
+					continue;
+
+				Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
+			}
+		}
 	}
 }
 
