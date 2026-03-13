@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TVPostProcessBP_C">();
+		BP_STATIC_CLASS_IMPL("TVPostProcessBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TVPostProcessBP_C")
 	}
 	static class ATVPostProcessBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATVPostProcessBP_C>();
 	}
 };
-static_assert(alignof(ATVPostProcessBP_C) == 0x000008, "Wrong alignment on ATVPostProcessBP_C");
-static_assert(sizeof(ATVPostProcessBP_C) == 0x000238, "Wrong size on ATVPostProcessBP_C");
-static_assert(offsetof(ATVPostProcessBP_C, UberGraphFrame) == 0x000218, "Member 'ATVPostProcessBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, Billboard) == 0x000220, "Member 'ATVPostProcessBP_C::Billboard' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, root) == 0x000228, "Member 'ATVPostProcessBP_C::root' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBP_C, DisableOnStartup) == 0x000230, "Member 'ATVPostProcessBP_C::DisableOnStartup' has a wrong offset!");
 
 }
 

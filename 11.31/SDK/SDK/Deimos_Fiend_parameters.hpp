@@ -139,7 +139,7 @@ public:
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x04A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x04A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue_1;       // 0x04AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x04B0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1; // 0x04B0(0x0010)(ZeroConstructor, NoDestructor)
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x04C0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	EGameplayCueEvent                             K2Node_GameplayCueEvent_EventType;                 // 0x04C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C9[0x7];                                      // 0x04C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -155,119 +155,6 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x05B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue_1;     // 0x05C0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend) == 0x000010, "Wrong alignment on Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend");
-static_assert(sizeof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend) == 0x0005D0, "Wrong size on Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, EntryPoint) == 0x000000, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable) == 0x000008, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_1) == 0x000010, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_2) == 0x000018, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_3) == 0x000020, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_HasAuthority_ReturnValue) == 0x000028, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_HasAuthority_ReturnValue_1) == 0x00003C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_4) == 0x000040, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_HasAuthority_ReturnValue_2) == 0x000048, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_HasAuthority_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_StartPos) == 0x00004C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_StartPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_MidPos) == 0x000058, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_MidPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_EndPos) == 0x000064, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_EndPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_LowWall) == 0x000070, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_LowWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_MidWall) == 0x000071, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_MidWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_FullWall) == 0x000072, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_FullWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_WindowWall) == 0x000073, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_WindowWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_SpecialAttack) == 0x000074, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_SpecialAttack' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Swoop_1) == 0x000075, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Swoop_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Soul_Suck) == 0x000076, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Soul_Suck' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Portal_1) == 0x000077, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Portal_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Swoop) == 0x000078, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Swoop' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_SoulSuckMelee) == 0x000079, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_SoulSuckMelee' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Portal) == 0x00007A, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Portal' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BuildingPart) == 0x000080, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BuildingPart' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Task) == 0x000088, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Task' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_DesiredMoveLocation) == 0x000090, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_DesiredMoveLocation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Debug) == 0x00009C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Debug' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Portal_Available_) == 0x00009D, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Portal_Available_' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_SuccessfulHit) == 0x00009E, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_SuccessfulHit' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Success) == 0x00009F, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Success' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BuildingActor_1) == 0x0000A0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BuildingActor_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BuildingActorList_1) == 0x0000A8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BuildingActorList_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BuildingActor) == 0x0000B8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BuildingActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BuildingActorList) == 0x0000C0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BuildingActorList' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_BT) == 0x0000D0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_BT' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Event_Collide_) == 0x0000D8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Event_Collide_' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_GameplayCueEvent_EventType_1) == 0x0000D9, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_GameplayCueEvent_EventType_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_GameplayCueEvent_Parameters_1) == 0x0000E0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_GameplayCueEvent_Parameters_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetHitResult_ReturnValue) == 0x000198, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetHitResult_ReturnValue_1) == 0x000220, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetHitResult_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetFortPhysicalSurface_ReturnValue) == 0x0002A8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetFortPhysicalSurface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_bBlockingHit) == 0x0002A9, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_bInitialOverlap) == 0x0002AA, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Time) == 0x0002AC, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Distance) == 0x0002B0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Location) == 0x0002B4, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_ImpactPoint) == 0x0002C0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Normal) == 0x0002CC, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_ImpactNormal) == 0x0002D8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_PhysMat) == 0x0002E8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitActor) == 0x0002F0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitComponent) == 0x0002F8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitBoneName) == 0x000300, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitItem) == 0x000308, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_FaceIndex) == 0x00030C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_TraceStart) == 0x000310, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_TraceEnd) == 0x00031C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue) == 0x000328, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetImpactPhysicalSurfaceSound_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_bBlockingHit_1) == 0x000330, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x000331, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Time_1) == 0x000334, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Distance_1) == 0x000338, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Location_1) == 0x00033C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_ImpactPoint_1) == 0x000348, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_Normal_1) == 0x000354, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000360, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_PhysMat_1) == 0x000370, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitActor_1) == 0x000378, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitComponent_1) == 0x000380, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitBoneName_1) == 0x000388, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_HitItem_1) == 0x000390, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_FaceIndex_1) == 0x000394, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_TraceStart_1) == 0x000398, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakHitResult_TraceEnd_1) == 0x0003A4, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_MakeRotFromX_ReturnValue) == 0x0003B0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetSocketTransform_ReturnValue) == 0x0003C0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_5) == 0x0003F0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_5' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakTransform_Location) == 0x0003F8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakTransform_Rotation) == 0x000404, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BreakTransform_Scale) == 0x000410, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x00041C, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_DynamicCast_AsPrimitive_Component) == 0x000428, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_DynamicCast_AsPrimitive_Component' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_DynamicCast_bSuccess) == 0x000430, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_byte_Variable) == 0x000431, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_DamagedActor) == 0x000438, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_DamagedActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_Damage) == 0x000440, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_InstigatedBy) == 0x000448, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_DamageCauser) == 0x000450, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_DamageCauser' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_HitLocation) == 0x000458, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_FHitComponent) == 0x000468, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_FHitComponent' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_BoneName) == 0x000470, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_BoneName' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CustomEvent_Momentum) == 0x000478, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CustomEvent_Momentum' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000488, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_DynamicCast_bSuccess_1) == 0x000490, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetPlayerPawn_ReturnValue) == 0x000498, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0004A0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0004A8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetGameTimeInSeconds_ReturnValue_1) == 0x0004AC, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetGameTimeInSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_CreateDelegate_OutputDelegate_1) == 0x0004B0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue) == 0x0004C0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_GameplayCueEvent_EventType) == 0x0004C8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_GameplayCueEvent_Parameters) == 0x0004D0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_SwitchEnum_CmpSuccess) == 0x000588, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_6) == 0x000590, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_6' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_GetValue_ReturnValue) == 0x000598, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_GetValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0005A0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, Temp_object_Variable_7) == 0x0005A8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::Temp_object_Variable_7' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, K2Node_Select_Default) == 0x0005B0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0005B8, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend, CallFunc_SpawnEmitterAtLocation_ReturnValue_1) == 0x0005C0, "Member 'Deimos_Fiend_C_ExecuteUbergraph_Deimos_Fiend::CallFunc_SpawnEmitterAtLocation_ReturnValue_1' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.GameplayCue.Athena.IceDeimos
 // 0x00C0 (0x00C0 - 0x0000)
@@ -278,10 +165,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(Deimos_Fiend_C_GameplayCue_Athena_IceDeimos) == 0x000008, "Wrong alignment on Deimos_Fiend_C_GameplayCue_Athena_IceDeimos");
-static_assert(sizeof(Deimos_Fiend_C_GameplayCue_Athena_IceDeimos) == 0x0000C0, "Wrong size on Deimos_Fiend_C_GameplayCue_Athena_IceDeimos");
-static_assert(offsetof(Deimos_Fiend_C_GameplayCue_Athena_IceDeimos, EventType) == 0x000000, "Member 'Deimos_Fiend_C_GameplayCue_Athena_IceDeimos::EventType' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_GameplayCue_Athena_IceDeimos, Parameters) == 0x000008, "Member 'Deimos_Fiend_C_GameplayCue_Athena_IceDeimos::Parameters' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.CustomOnDied
 // 0x0050 (0x0050 - 0x0000)
@@ -299,16 +182,6 @@ public:
 	class FName                                   BoneName;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Momentum;                                          // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Deimos_Fiend_C_CustomOnDied) == 0x000008, "Wrong alignment on Deimos_Fiend_C_CustomOnDied");
-static_assert(sizeof(Deimos_Fiend_C_CustomOnDied) == 0x000050, "Wrong size on Deimos_Fiend_C_CustomOnDied");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, DamagedActor) == 0x000000, "Member 'Deimos_Fiend_C_CustomOnDied::DamagedActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, Damage) == 0x000008, "Member 'Deimos_Fiend_C_CustomOnDied::Damage' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, InstigatedBy) == 0x000010, "Member 'Deimos_Fiend_C_CustomOnDied::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, DamageCauser) == 0x000018, "Member 'Deimos_Fiend_C_CustomOnDied::DamageCauser' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, HitLocation) == 0x000020, "Member 'Deimos_Fiend_C_CustomOnDied::HitLocation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, FHitComponent) == 0x000030, "Member 'Deimos_Fiend_C_CustomOnDied::FHitComponent' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, BoneName) == 0x000038, "Member 'Deimos_Fiend_C_CustomOnDied::BoneName' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_CustomOnDied, Momentum) == 0x000040, "Member 'Deimos_Fiend_C_CustomOnDied::Momentum' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.GameplayCue.Impact.Physical.Creature
 // 0x00C0 (0x00C0 - 0x0000)
@@ -319,10 +192,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature) == 0x000008, "Wrong alignment on Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature");
-static_assert(sizeof(Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature) == 0x0000C0, "Wrong size on Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature");
-static_assert(offsetof(Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature, EventType) == 0x000000, "Member 'Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature::EventType' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature, Parameters) == 0x000008, "Member 'Deimos_Fiend_C_GameplayCue_Impact_Physical_Creature::Parameters' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.PortalCollision
 // 0x0001 (0x0001 - 0x0000)
@@ -331,9 +200,6 @@ struct Deimos_Fiend_C_PortalCollision final
 public:
 	bool                                          Collide_;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_PortalCollision) == 0x000001, "Wrong alignment on Deimos_Fiend_C_PortalCollision");
-static_assert(sizeof(Deimos_Fiend_C_PortalCollision) == 0x000001, "Wrong size on Deimos_Fiend_C_PortalCollision");
-static_assert(offsetof(Deimos_Fiend_C_PortalCollision, Collide_) == 0x000000, "Member 'Deimos_Fiend_C_PortalCollision::Collide_' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.PortalGet
 // 0x0020 (0x0020 - 0x0000)
@@ -344,11 +210,6 @@ public:
 	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	class AActor*                                 BT;                                                // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Deimos_Fiend_C_PortalGet) == 0x000008, "Wrong alignment on Deimos_Fiend_C_PortalGet");
-static_assert(sizeof(Deimos_Fiend_C_PortalGet) == 0x000020, "Wrong size on Deimos_Fiend_C_PortalGet");
-static_assert(offsetof(Deimos_Fiend_C_PortalGet, BuildingActor) == 0x000000, "Member 'Deimos_Fiend_C_PortalGet::BuildingActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_PortalGet, BuildingActorList) == 0x000008, "Member 'Deimos_Fiend_C_PortalGet::BuildingActorList' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_PortalGet, BT) == 0x000018, "Member 'Deimos_Fiend_C_PortalGet::BT' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.PortalAdd
 // 0x0018 (0x0018 - 0x0000)
@@ -358,10 +219,6 @@ public:
 	class ABuildingActor*                         BuildingActor;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class ABuildingActor*>                 BuildingActorList;                                 // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Deimos_Fiend_C_PortalAdd) == 0x000008, "Wrong alignment on Deimos_Fiend_C_PortalAdd");
-static_assert(sizeof(Deimos_Fiend_C_PortalAdd) == 0x000018, "Wrong size on Deimos_Fiend_C_PortalAdd");
-static_assert(offsetof(Deimos_Fiend_C_PortalAdd, BuildingActor) == 0x000000, "Member 'Deimos_Fiend_C_PortalAdd::BuildingActor' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_PortalAdd, BuildingActorList) == 0x000008, "Member 'Deimos_Fiend_C_PortalAdd::BuildingActorList' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.TakerSoulSuckSoundBegin
 // 0x0001 (0x0001 - 0x0000)
@@ -370,9 +227,6 @@ struct Deimos_Fiend_C_TakerSoulSuckSoundBegin final
 public:
 	bool                                          Success;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_TakerSoulSuckSoundBegin) == 0x000001, "Wrong alignment on Deimos_Fiend_C_TakerSoulSuckSoundBegin");
-static_assert(sizeof(Deimos_Fiend_C_TakerSoulSuckSoundBegin) == 0x000001, "Wrong size on Deimos_Fiend_C_TakerSoulSuckSoundBegin");
-static_assert(offsetof(Deimos_Fiend_C_TakerSoulSuckSoundBegin, Success) == 0x000000, "Member 'Deimos_Fiend_C_TakerSoulSuckSoundBegin::Success' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.TakerAttackFSM
 // 0x0001 (0x0001 - 0x0000)
@@ -381,9 +235,6 @@ struct Deimos_Fiend_C_TakerAttackFSM final
 public:
 	bool                                          SuccessfulHit;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_TakerAttackFSM) == 0x000001, "Wrong alignment on Deimos_Fiend_C_TakerAttackFSM");
-static_assert(sizeof(Deimos_Fiend_C_TakerAttackFSM) == 0x000001, "Wrong size on Deimos_Fiend_C_TakerAttackFSM");
-static_assert(offsetof(Deimos_Fiend_C_TakerAttackFSM, SuccessfulHit) == 0x000000, "Member 'Deimos_Fiend_C_TakerAttackFSM::SuccessfulHit' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.IsTakerWallPortalAvailable
 // 0x0001 (0x0001 - 0x0000)
@@ -392,9 +243,6 @@ struct Deimos_Fiend_C_IsTakerWallPortalAvailable final
 public:
 	bool                                          Portal_Available_;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_IsTakerWallPortalAvailable) == 0x000001, "Wrong alignment on Deimos_Fiend_C_IsTakerWallPortalAvailable");
-static_assert(sizeof(Deimos_Fiend_C_IsTakerWallPortalAvailable) == 0x000001, "Wrong size on Deimos_Fiend_C_IsTakerWallPortalAvailable");
-static_assert(offsetof(Deimos_Fiend_C_IsTakerWallPortalAvailable, Portal_Available_) == 0x000000, "Member 'Deimos_Fiend_C_IsTakerWallPortalAvailable::Portal_Available_' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.TakerWallPortalBehavior
 // 0x0020 (0x0020 - 0x0000)
@@ -406,12 +254,6 @@ public:
 	struct FVector                                DesiredMoveLocation;                               // 0x0010(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Debug;                                             // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_TakerWallPortalBehavior) == 0x000008, "Wrong alignment on Deimos_Fiend_C_TakerWallPortalBehavior");
-static_assert(sizeof(Deimos_Fiend_C_TakerWallPortalBehavior) == 0x000020, "Wrong size on Deimos_Fiend_C_TakerWallPortalBehavior");
-static_assert(offsetof(Deimos_Fiend_C_TakerWallPortalBehavior, BuildingPart) == 0x000000, "Member 'Deimos_Fiend_C_TakerWallPortalBehavior::BuildingPart' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_TakerWallPortalBehavior, Task) == 0x000008, "Member 'Deimos_Fiend_C_TakerWallPortalBehavior::Task' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_TakerWallPortalBehavior, DesiredMoveLocation) == 0x000010, "Member 'Deimos_Fiend_C_TakerWallPortalBehavior::DesiredMoveLocation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_TakerWallPortalBehavior, Debug) == 0x00001C, "Member 'Deimos_Fiend_C_TakerWallPortalBehavior::Debug' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.ResetTakerSpecialAttackTimer
 // 0x0003 (0x0003 - 0x0000)
@@ -422,11 +264,6 @@ public:
 	bool                                          SoulSuckMelee;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Portal;                                            // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_ResetTakerSpecialAttackTimer) == 0x000001, "Wrong alignment on Deimos_Fiend_C_ResetTakerSpecialAttackTimer");
-static_assert(sizeof(Deimos_Fiend_C_ResetTakerSpecialAttackTimer) == 0x000003, "Wrong size on Deimos_Fiend_C_ResetTakerSpecialAttackTimer");
-static_assert(offsetof(Deimos_Fiend_C_ResetTakerSpecialAttackTimer, Swoop) == 0x000000, "Member 'Deimos_Fiend_C_ResetTakerSpecialAttackTimer::Swoop' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ResetTakerSpecialAttackTimer, SoulSuckMelee) == 0x000001, "Member 'Deimos_Fiend_C_ResetTakerSpecialAttackTimer::SoulSuckMelee' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_ResetTakerSpecialAttackTimer, Portal) == 0x000002, "Member 'Deimos_Fiend_C_ResetTakerSpecialAttackTimer::Portal' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.VerifyTakerAttack
 // 0x0004 (0x0004 - 0x0000)
@@ -438,12 +275,6 @@ public:
 	bool                                          Soul_Suck;                                         // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Portal;                                            // 0x0003(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_VerifyTakerAttack) == 0x000001, "Wrong alignment on Deimos_Fiend_C_VerifyTakerAttack");
-static_assert(sizeof(Deimos_Fiend_C_VerifyTakerAttack) == 0x000004, "Wrong size on Deimos_Fiend_C_VerifyTakerAttack");
-static_assert(offsetof(Deimos_Fiend_C_VerifyTakerAttack, SpecialAttack) == 0x000000, "Member 'Deimos_Fiend_C_VerifyTakerAttack::SpecialAttack' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_VerifyTakerAttack, Swoop) == 0x000001, "Member 'Deimos_Fiend_C_VerifyTakerAttack::Swoop' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_VerifyTakerAttack, Soul_Suck) == 0x000002, "Member 'Deimos_Fiend_C_VerifyTakerAttack::Soul_Suck' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_VerifyTakerAttack, Portal) == 0x000003, "Member 'Deimos_Fiend_C_VerifyTakerAttack::Portal' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.MantleStart
 // 0x0028 (0x0028 - 0x0000)
@@ -458,15 +289,6 @@ public:
 	bool                                          FullWall;                                          // 0x0026(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          WindowWall;                                        // 0x0027(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_MantleStart) == 0x000004, "Wrong alignment on Deimos_Fiend_C_MantleStart");
-static_assert(sizeof(Deimos_Fiend_C_MantleStart) == 0x000028, "Wrong size on Deimos_Fiend_C_MantleStart");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, StartPos) == 0x000000, "Member 'Deimos_Fiend_C_MantleStart::StartPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, MidPos) == 0x00000C, "Member 'Deimos_Fiend_C_MantleStart::MidPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, EndPos) == 0x000018, "Member 'Deimos_Fiend_C_MantleStart::EndPos' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, LowWall) == 0x000024, "Member 'Deimos_Fiend_C_MantleStart::LowWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, MidWall) == 0x000025, "Member 'Deimos_Fiend_C_MantleStart::MidWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, FullWall) == 0x000026, "Member 'Deimos_Fiend_C_MantleStart::FullWall' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_MantleStart, WindowWall) == 0x000027, "Member 'Deimos_Fiend_C_MantleStart::WindowWall' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.SetupMIDs
 // 0x0018 (0x0018 - 0x0000)
@@ -477,11 +299,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Deimos_Fiend_C_SetupMIDs) == 0x000008, "Wrong alignment on Deimos_Fiend_C_SetupMIDs");
-static_assert(sizeof(Deimos_Fiend_C_SetupMIDs) == 0x000018, "Wrong size on Deimos_Fiend_C_SetupMIDs");
-static_assert(offsetof(Deimos_Fiend_C_SetupMIDs, CallFunc_GetMaterial_ReturnValue) == 0x000000, "Member 'Deimos_Fiend_C_SetupMIDs::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_SetupMIDs, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Deimos_Fiend_C_SetupMIDs::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_SetupMIDs, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000010, "Member 'Deimos_Fiend_C_SetupMIDs::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.Temp_FindClosestBone
 // 0x0088 (0x0088 - 0x0000)
@@ -513,28 +330,6 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_FloatFloat_ReturnValue;              // 0x0084(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Deimos_Fiend_C_Temp_FindClosestBone) == 0x000008, "Wrong alignment on Deimos_Fiend_C_Temp_FindClosestBone");
-static_assert(sizeof(Deimos_Fiend_C_Temp_FindClosestBone) == 0x000088, "Wrong size on Deimos_Fiend_C_Temp_FindClosestBone");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, HitLocation) == 0x000000, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::HitLocation' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, ClosestBone) == 0x00000C, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::ClosestBone' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, BoneDistance) == 0x000014, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::BoneDistance' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, LocalClosestBone) == 0x000018, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::LocalClosestBone' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, Temp_int_Array_Index_Variable) == 0x000028, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, Temp_bool_Has_Been_Initd_Variable) == 0x00002C, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, Temp_bool_IsClosed_Variable) == 0x00002D, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_GetAllSocketNames_ReturnValue) == 0x000030, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_GetAllSocketNames_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Array_Get_Item) == 0x000044, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Conv_NameToString_ReturnValue) == 0x000050, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_GetSocketLocation_ReturnValue) == 0x000060, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Contains_ReturnValue) == 0x00006C, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000070, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Not_PreBool_ReturnValue) == 0x00007C, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_VSize_ReturnValue) == 0x000080, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Deimos_Fiend_C_Temp_FindClosestBone, CallFunc_Less_FloatFloat_ReturnValue) == 0x000084, "Member 'Deimos_Fiend_C_Temp_FindClosestBone::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Deimos_Fiend.Deimos_Fiend_C.GetEnemyColor
 // 0x0010 (0x0010 - 0x0000)
@@ -543,9 +338,6 @@ struct Deimos_Fiend_C_GetEnemyColor final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Deimos_Fiend_C_GetEnemyColor) == 0x000004, "Wrong alignment on Deimos_Fiend_C_GetEnemyColor");
-static_assert(sizeof(Deimos_Fiend_C_GetEnemyColor) == 0x000010, "Wrong size on Deimos_Fiend_C_GetEnemyColor");
-static_assert(offsetof(Deimos_Fiend_C_GetEnemyColor, Color) == 0x000000, "Member 'Deimos_Fiend_C_GetEnemyColor::Color' has a wrong offset!");
 
 }
 

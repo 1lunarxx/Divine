@@ -35,7 +35,7 @@ public:
 	class UWidgetAnimation*                       Intro;                                             // 0x06C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBox*                         AffilateInfo;                                      // 0x06D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       AffiliateName;                                     // 0x06D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitionOffer_SalesTextBanner_C* AthenaDirectAcquisitionOffer_PercentageOffBanner;  // 0x06E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitionOffer_SalesTextBanner_C* AthenaDirectAcquisitionOffer_PercentageOffBanner; // 0x06E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C* AthenaDirectAcquisitonDetails_BattlePassStarDetails; // 0x06E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBuiltInEmotePopUP_C*                   BuiltInEmotePopUP;                                 // 0x06F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPanelButton_C*                         Button_Next;                                       // 0x06F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -59,7 +59,7 @@ public:
 	class UMTXButton_C*                           MTXButton;                                         // 0x0788(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               MTXButtonBox;                                      // 0x0790(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonBorder*                          MultipleItemCB;                                    // 0x0798(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* NonrefundableText;                                 // 0x07A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* NonrefundableText;                      // 0x07A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               O_Sale_PreviousPrice;                              // 0x07A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         OfferDetailsHB;                                    // 0x07B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               OverlayCloseButton;                                // 0x07B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -188,78 +188,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionOfferDetailsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionOfferDetailsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionOfferDetailsWidget_C")
 	}
 	static class UAthenaDirectAcquisitionOfferDetailsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionOfferDetailsWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionOfferDetailsWidget_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOfferDetailsWidget_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOfferDetailsWidget_C) == 0x000890, "Wrong size on UAthenaDirectAcquisitionOfferDetailsWidget_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, UberGraphFrame) == 0x0006A0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, ButtonsIntro) == 0x0006A8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::ButtonsIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, DetailsIntro) == 0x0006B0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::DetailsIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Idle) == 0x0006B8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Idle' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Outro) == 0x0006C0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Outro' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Intro) == 0x0006C8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, AffilateInfo) == 0x0006D0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::AffilateInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, AffiliateName) == 0x0006D8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::AffiliateName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, AthenaDirectAcquisitionOffer_PercentageOffBanner) == 0x0006E0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::AthenaDirectAcquisitionOffer_PercentageOffBanner' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, AthenaDirectAcquisitonDetails_BattlePassStarDetails) == 0x0006E8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::AthenaDirectAcquisitonDetails_BattlePassStarDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, BuiltInEmotePopUP) == 0x0006F0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::BuiltInEmotePopUP' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Button_Next) == 0x0006F8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Button_Next' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Button_Previous) == 0x000700, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Button_Previous' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CameraFramingWidget) == 0x000708, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CameraFramingWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CatalogOfferName) == 0x000710, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CatalogOfferName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CatalogOfferSB) == 0x000718, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CatalogOfferSB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Check) == 0x000720, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Check' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CloseIcon) == 0x000728, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CommonBorder_0) == 0x000730, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CommonTextBlockAlreadyOwnedItems) == 0x000738, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CommonTextBlockAlreadyOwnedItems' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CommonTextBlockRemainingItems) == 0x000740, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CommonTextBlockRemainingItems' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Currency1ItemImage2) == 0x000748, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Currency1ItemImage2' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Currency1VB) == 0x000750, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Currency1VB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, EventStoreHostPanels) == 0x000758, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::EventStoreHostPanels' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, GiftButton) == 0x000760, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::GiftButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, HorizontalBox_PurchasePrice) == 0x000768, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::HorizontalBox_PurchasePrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, ItemRewardsTIleView) == 0x000770, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::ItemRewardsTIleView' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, LeftPanelSB) == 0x000778, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::LeftPanelSB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, MobileCloseButton) == 0x000780, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, MTXButton) == 0x000788, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, MTXButtonBox) == 0x000790, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::MTXButtonBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, MultipleItemCB) == 0x000798, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::MultipleItemCB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, NonrefundableText) == 0x0007A0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::NonrefundableText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, O_Sale_PreviousPrice) == 0x0007A8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::O_Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, OfferDetailsHB) == 0x0007B0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::OfferDetailsHB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, OverlayCloseButton) == 0x0007B8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, OwnedSwitcher) == 0x0007C0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::OwnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, OwnedText) == 0x0007C8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::OwnedText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, PageLeftBtn) == 0x0007D0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::PageLeftBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, PageRightBtn) == 0x0007D8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::PageRightBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, PreviewStylesButton) == 0x0007E0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::PreviewStylesButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, PurchaseButton) == 0x0007E8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::PurchaseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, SB_MainContent) == 0x0007F0, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::SB_MainContent' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, SeasonVariantUnlockCondition) == 0x0007F8, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::SeasonVariantUnlockCondition' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, SwipePanel) == 0x000800, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::SwipePanel' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Text_2FA) == 0x000808, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Text_2FA' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, Text_NonGiftable) == 0x000810, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::Text_NonGiftable' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, TextOfferDisplayPrice1) == 0x000818, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::TextOfferDisplayPrice1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, TextOriginalPrice1) == 0x000820, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::TextOriginalPrice1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, VariantSetInfoBlock) == 0x000828, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::VariantSetInfoBlock' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, VariantUnlockPreviewSet) == 0x000830, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::VariantUnlockPreviewSet' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, VerticalBoxItemDetails) == 0x000838, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::VerticalBoxItemDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CanPurchase) == 0x000840, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CanPurchase' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, IsPurchasing) == 0x000841, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::IsPurchasing' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, NumberToPurchase) == 0x000844, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::NumberToPurchase' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CanPurchaseLeft) == 0x000848, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CanPurchaseLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CanPurchaseRight) == 0x000849, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CanPurchaseRight' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, CanChangeQuantity) == 0x00084A, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::CanChangeQuantity' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, DelayGiftingHandle) == 0x000850, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::DelayGiftingHandle' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, BackAction) == 0x000858, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::BackAction' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, UndoAction) == 0x000868, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::UndoAction' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, SelectedItemDefinition) == 0x000878, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::SelectedItemDefinition' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferDetailsWidget_C, SortedItemQuantities) == 0x000880, "Member 'UAthenaDirectAcquisitionOfferDetailsWidget_C::SortedItemQuantities' has a wrong offset!");
 
 }
 

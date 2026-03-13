@@ -346,270 +346,6 @@ public:
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0DE0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               CallFunc_FindLookAtRotation_ReturnValue;           // 0x0DEC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic) == 0x000010, "Wrong alignment on B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic");
-static_assert(sizeof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic) == 0x000E00, "Wrong size on B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, EntryPoint) == 0x000000, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetPI_ReturnValue) == 0x000004, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetPI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_MultiplyMultiply_FloatFloat_ReturnValue) == 0x000008, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_MultiplyMultiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsDedicatedServer_ReturnValue) == 0x00000C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000010, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue) == 0x000018, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_int_Variable) == 0x000020, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn) == 0x000028, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetLocalViewingPlayerController_ReturnValue) == 0x000038, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetLocalViewingPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_1) == 0x000041, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Loaded_3) == 0x000048, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_object_Variable) == 0x000050, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsParticle_System) == 0x000058, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsParticle_System' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_1) == 0x000068, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn_1) == 0x000070, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_2) == 0x000078, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_2) == 0x000079, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_bPersistentFire) == 0x00007A, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_bPersistentFire' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_bSecondaryFire) == 0x00007B, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_bSecondaryFire' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_ReloadStage) == 0x00007C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_ReloadStage' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000080, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_MathExpression_ReturnValue) == 0x000084, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_MathExpression_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_MathExpression_ReturnValue_1) == 0x000088, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_MathExpression_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Loaded_2) == 0x000090, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_2) == 0x000098, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn_2) == 0x0000A0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_3) == 0x0000A8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_3) == 0x0000A9, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_bNewIsTargeting) == 0x0000AA, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_bNewIsTargeting' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SetHiddenInGameOtherLocalControllersOnly_ReturnValue) == 0x0000AB, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SetHiddenInGameOtherLocalControllersOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SetHiddenInGameControllerOnly_ReturnValue) == 0x0000AC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SetHiddenInGameControllerOnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x0000AD, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetAllActorsOfClass_OutActors) == 0x0000B0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Enable_Or_Disable) == 0x0000C0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Enable_Or_Disable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_StencilBufferValue) == 0x0000C4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_StencilBufferValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_HasAuthority_ReturnValue) == 0x0000C8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate) == 0x0000CC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000DC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_NewAlteration) == 0x0000F0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_NewAlteration' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_CosmeticMod) == 0x0000F8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_CosmeticMod' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SelectAltSystemAsset_ReturnValue) == 0x0006B0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SelectAltSystemAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsAssetNull_ReturnValue) == 0x0006D8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsAssetNull_ReturnValue_1) == 0x0006D9, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsAssetNull_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Not_PreBool_ReturnValue) == 0x0006DA, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SelectAltSystemAsset_ReturnValue_1) == 0x0006E0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SelectAltSystemAsset_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsAssetNull_ReturnValue_2) == 0x000708, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsAssetNull_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsAssetNull_ReturnValue_3) == 0x000709, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsAssetNull_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_3) == 0x000710, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_UseScopeTargeting_ReturnValue) == 0x000718, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_UseScopeTargeting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn_3) == 0x000720, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_4) == 0x000728, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetLocalViewingPlayerController_ReturnValue_1) == 0x000730, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetLocalViewingPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_4) == 0x000738, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_5) == 0x000739, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_bool_IsClosed_Variable) == 0x00073A, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketLocation_ReturnValue) == 0x00073C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000748, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_int_Loop_Counter_Variable) == 0x000750, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Add_IntInt_ReturnValue_1) == 0x000754, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_object_Variable_1) == 0x000758, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_4) == 0x000760, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsNiagara_System) == 0x000768, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsNiagara_System' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_5) == 0x000770, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SetBeamNiagaraSystem_ReturnValue) == 0x000778, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SetBeamNiagaraSystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_6) == 0x000780, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsParticle_System_1) == 0x000788, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsParticle_System_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_6) == 0x000790, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SetBeamParticleSystem_ReturnValue) == 0x000798, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SetBeamParticleSystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Enable_1) == 0x0007A0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Enable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_TargetLimit_1) == 0x0007A4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_TargetLimit_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x0007A8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SelectInt_ReturnValue) == 0x0007B0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0007B8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Enable) == 0x0007C0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Enable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_TargetLimit) == 0x0007C4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_TargetLimit' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_5) == 0x0007C8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SelectInt_ReturnValue_1) == 0x0007D0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SelectInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0007D8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_7) == 0x0007E0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsInVehicle_ReturnValue) == 0x0007E1, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsInVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_7) == 0x0007E2, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsUsingFirstPersonCamera_ReturnValue) == 0x0007E3, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsUsingFirstPersonCamera_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsUsingScopeOrFirstPersonCamera_ReturnValue) == 0x0007E4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsUsingScopeOrFirstPersonCamera_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Not_PreBool_ReturnValue_1) == 0x0007E5, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigatorController_ReturnValue) == 0x0007E8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Player_Controller_Zone) == 0x0007F0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Player_Controller_Zone' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_8) == 0x0007F8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetWindManager_ReturnValue) == 0x000800, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetWindManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsDedicatedServer_ReturnValue_2) == 0x000808, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsDedicatedServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_UseScopeTargeting_ReturnValue_1) == 0x000809, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_UseScopeTargeting_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Array_Length_ReturnValue) == 0x00080C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Less_IntInt_ReturnValue) == 0x000810, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_8) == 0x000811, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketLocation_ReturnValue_1) == 0x000814, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketLocation_ReturnValue_2) == 0x000820, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x00082C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Conv_VectorToLinearColor_ReturnValue_1) == 0x00083C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Conv_VectorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_UseScopeTargeting_ReturnValue_2) == 0x00084C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_UseScopeTargeting_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_bVisible) == 0x00084D, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_bVisible' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_bSetForLocalControllerOnly) == 0x00084E, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_bSetForLocalControllerOnly' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetRenderingDetailMode_ReturnValue) == 0x000850, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetRenderingDetailMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000854, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Greater_IntInt_ReturnValue) == 0x000855, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BooleanAND_ReturnValue) == 0x000856, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetRenderingDetailMode_ReturnValue_1) == 0x000858, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetRenderingDetailMode_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00085C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BooleanAND_ReturnValue_1) == 0x00085D, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_9) == 0x00085E, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SetHiddenInGameControllerOnly_ReturnValue_1) == 0x00085F, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SetHiddenInGameControllerOnly_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Which_Call) == 0x000860, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Which_Call' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_NewRateOfFire) == 0x000864, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_NewRateOfFire' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetWeaponRateOfFireModifier_ReturnValue) == 0x000868, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetWeaponRateOfFireModifier_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetFloatValue_ReturnValue) == 0x00086C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsInAthena_ReturnValue) == 0x000870, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsInAthena_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetFortGameUserSettings_ReturnValue) == 0x000878, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetFortGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_6) == 0x000880, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Player_Pawn_1) == 0x000888, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_9) == 0x000890, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_10) == 0x000891, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsInVehicle_ReturnValue_1) == 0x000892, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsInVehicle_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Loaded_1) == 0x000898, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_7) == 0x0008A0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn_4) == 0x0008A8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_10) == 0x0008B0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_11) == 0x0008B1, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_HitResult) == 0x0008B4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_HitResult' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_ImpactPhysicalSurface) == 0x00093C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_ImpactPhysicalSurface' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_Event_SpawnedPSC) == 0x000940, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_Event_SpawnedPSC' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_int_Array_Index_Variable) == 0x000948, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Array_Get_Item) == 0x000950, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_12) == 0x000958, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_bBlockingHit) == 0x000959, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_bInitialOverlap) == 0x00095A, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_Time) == 0x00095C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_Distance) == 0x000960, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_Location) == 0x000964, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_ImpactPoint) == 0x000970, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_Normal) == 0x00097C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_ImpactNormal) == 0x000988, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_PhysMat) == 0x000998, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_HitActor) == 0x0009A0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_HitComponent) == 0x0009A8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_HitBoneName) == 0x0009B0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_HitItem) == 0x0009B8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_FaceIndex) == 0x0009BC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_TraceStart) == 0x0009C0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakHitResult_TraceEnd) == 0x0009CC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_8) == 0x0009D8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsBuilding_Actor) == 0x0009E0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_11) == 0x0009E8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetActorTeam_ReturnValue) == 0x0009E9, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_NegateVector_ReturnValue) == 0x0009EC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_NegateVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetTeamAffiliationToLocalPlayer_ReturnValue) == 0x0009F8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetTeamAffiliationToLocalPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0009FC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_SwitchEnum_CmpSuccess) == 0x000A08, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Add_VectorVector_ReturnValue) == 0x000A0C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetIsTargeting_ReturnValue) == 0x000A18, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetIsTargeting_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetIsTargeting_ReturnValue_1) == 0x000A19, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetIsTargeting_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetIsTargeting_ReturnValue_2) == 0x000A1A, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetIsTargeting_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetWeaponDataSmallPreviewImageBrush_ReturnValue) == 0x000A20, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetWeaponDataSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetWeaponDataTriggerType_ReturnValue) == 0x000AA8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetWeaponDataTriggerType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsTexture_2D) == 0x000AB0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_12) == 0x000AB8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_SwitchEnum_CmpSuccess_1) == 0x000AB9, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_ShouldPlayPersistentFireFX_ReturnValue) == 0x000ABA, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_ShouldPlayPersistentFireFX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetActiveMuzzleComponents_NewParam) == 0x000AC0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetActiveMuzzleComponents_NewParam' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Array_Get_Item_1) == 0x000AD0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Array_Length_ReturnValue_1) == 0x000AD8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Less_IntInt_ReturnValue_1) == 0x000ADC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetBeamPSC_ReturnValue) == 0x000AE0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetBeamPSC_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetUseBeamParticles_ReturnValue) == 0x000AE8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetUseBeamParticles_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BooleanAND_ReturnValue_2) == 0x000AE9, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_9) == 0x000AF0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsPlayer_Pawn_Generic_Parent) == 0x000AF8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsPlayer_Pawn_Generic_Parent' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_13) == 0x000B00, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_bool_Has_Been_Initd_Variable) == 0x000B01, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_OutValue) == 0x000B04, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_OutValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_ReturnValue) == 0x000B08, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FMax_ReturnValue) == 0x000B0C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate_2) == 0x000B10, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000B20, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_OutValue_1) == 0x000B24, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_OutValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_ReturnValue_1) == 0x000B28, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_OutValue_2) == 0x000B2C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_OutValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_ReturnValue_2) == 0x000B30, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FMax_ReturnValue_1) == 0x000B34, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FMax_ReturnValue_2) == 0x000B38, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FMax_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000B3C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x000B40, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_OutValue_3) == 0x000B44, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_OutValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_ReturnValue_3) == 0x000B48, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FMax_ReturnValue_3) == 0x000B4C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FMax_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate_3) == 0x000B50, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x000B60, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_OutValue_4) == 0x000B64, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_OutValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetNumericCVar_ReturnValue_4) == 0x000B68, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetNumericCVar_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FMax_ReturnValue_4) == 0x000B6C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FMax_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000B70, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_4) == 0x000B74, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetInstigator_ReturnValue_10) == 0x000B78, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetInstigator_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsFort_Pawn_5) == 0x000B80, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsFort_Pawn_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_14) == 0x000B88, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000B8C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetLocalViewingPlayerController_ReturnValue_2) == 0x000B90, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetLocalViewingPlayerController_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_13) == 0x000B98, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_14) == 0x000B99, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_object_Variable_2) == 0x000BA0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsNiagara_System_1) == 0x000BA8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsNiagara_System_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_15) == 0x000BB0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000BB4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsParticle_System_2) == 0x000BB8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsParticle_System_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_16) == 0x000BC0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000BC4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_5) == 0x000BC8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_IsValid_ReturnValue_15) == 0x000BCC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, Temp_object_Variable_3) == 0x000BD0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate_4) == 0x000BD8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_AsParticle_System_3) == 0x000BE8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_AsParticle_System_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_DynamicCast_bSuccess_17) == 0x000BF0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CustomEvent_Loaded) == 0x000BF8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, K2Node_CreateDelegate_OutputDelegate_5) == 0x000C00, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketTransform_ReturnValue) == 0x000C10, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketTransform_ReturnValue_1) == 0x000C40, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Location) == 0x000C70, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Rotation) == 0x000C7C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Scale) == 0x000C88, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Location_1) == 0x000C94, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Rotation_1) == 0x000CA0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakTransform_Scale_1) == 0x000CAC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_X) == 0x000CB8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_Y) == 0x000CBC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_Z) == 0x000CC0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_X_1) == 0x000CC4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_Y_1) == 0x000CC8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BreakVector_Z_1) == 0x000CCC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Add_FloatFloat_ReturnValue) == 0x000CD0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketLocation_ReturnValue_3) == 0x000CD4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_5) == 0x000CE0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_GetSocketLocation_ReturnValue_4) == 0x000CE4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_GetSocketLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_6) == 0x000CF0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000CF4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_SpawnEmitterAttached_ReturnValue_1) == 0x000D00, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_SpawnEmitterAttached_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000D08, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000D14, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_VSize_ReturnValue) == 0x000D9C, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_DoesSocketExist_ReturnValue) == 0x000DA0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Multiply_FloatFloat_ReturnValue_7) == 0x000DA4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Multiply_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_6) == 0x000DA8, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_7) == 0x000DAC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_MakeVector_ReturnValue) == 0x000DB0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_8) == 0x000DBC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_Divide_FloatFloat_ReturnValue_9) == 0x000DC0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_Divide_FloatFloat_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_MakeVector_ReturnValue_1) == 0x000DC4, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_MakeVector_ReturnValue_2) == 0x000DD0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_DoesSocketExist_ReturnValue_1) == 0x000DDC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_DoesSocketExist_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_BooleanAND_ReturnValue_3) == 0x000DDD, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000DE0, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic, CallFunc_FindLookAtRotation_ReturnValue) == 0x000DEC, "Member 'B_Ranged_Generic_C_ExecuteUbergraph_B_Ranged_Generic::CallFunc_FindLookAtRotation_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnPlayImpactFX
 // 0x0098 (0x0098 - 0x0000)
@@ -621,11 +357,6 @@ public:
 	uint8                                         Pad_89[0x7];                                       // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFXSystemComponent*                     SpawnedPSC;                                        // 0x0090(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnPlayImpactFX) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnPlayImpactFX");
-static_assert(sizeof(B_Ranged_Generic_C_OnPlayImpactFX) == 0x000098, "Wrong size on B_Ranged_Generic_C_OnPlayImpactFX");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayImpactFX, HitResult) == 0x000000, "Member 'B_Ranged_Generic_C_OnPlayImpactFX::HitResult' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayImpactFX, ImpactPhysicalSurface) == 0x000088, "Member 'B_Ranged_Generic_C_OnPlayImpactFX::ImpactPhysicalSurface' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayImpactFX, SpawnedPSC) == 0x000090, "Member 'B_Ranged_Generic_C_OnPlayImpactFX::SpawnedPSC' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.PitchUpOnRateOfFireChange
 // 0x0004 (0x0004 - 0x0000)
@@ -634,9 +365,6 @@ struct B_Ranged_Generic_C_PitchUpOnRateOfFireChange final
 public:
 	float                                         NewRateOfFire;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_PitchUpOnRateOfFireChange) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_PitchUpOnRateOfFireChange");
-static_assert(sizeof(B_Ranged_Generic_C_PitchUpOnRateOfFireChange) == 0x000004, "Wrong size on B_Ranged_Generic_C_PitchUpOnRateOfFireChange");
-static_assert(offsetof(B_Ranged_Generic_C_PitchUpOnRateOfFireChange, NewRateOfFire) == 0x000000, "Member 'B_Ranged_Generic_C_PitchUpOnRateOfFireChange::NewRateOfFire' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.UnhideFirstPersonStuffPart2
 // 0x0004 (0x0004 - 0x0000)
@@ -645,9 +373,6 @@ struct B_Ranged_Generic_C_UnhideFirstPersonStuffPart2 final
 public:
 	int32                                         Which_Call;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_UnhideFirstPersonStuffPart2) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_UnhideFirstPersonStuffPart2");
-static_assert(sizeof(B_Ranged_Generic_C_UnhideFirstPersonStuffPart2) == 0x000004, "Wrong size on B_Ranged_Generic_C_UnhideFirstPersonStuffPart2");
-static_assert(offsetof(B_Ranged_Generic_C_UnhideFirstPersonStuffPart2, Which_Call) == 0x000000, "Member 'B_Ranged_Generic_C_UnhideFirstPersonStuffPart2::Which_Call' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnWeaponVisibilityChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -657,10 +382,6 @@ public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bSetForLocalControllerOnly;                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnWeaponVisibilityChanged) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_OnWeaponVisibilityChanged");
-static_assert(sizeof(B_Ranged_Generic_C_OnWeaponVisibilityChanged) == 0x000002, "Wrong size on B_Ranged_Generic_C_OnWeaponVisibilityChanged");
-static_assert(offsetof(B_Ranged_Generic_C_OnWeaponVisibilityChanged, bVisible) == 0x000000, "Member 'B_Ranged_Generic_C_OnWeaponVisibilityChanged::bVisible' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_OnWeaponVisibilityChanged, bSetForLocalControllerOnly) == 0x000001, "Member 'B_Ranged_Generic_C_OnWeaponVisibilityChanged::bSetForLocalControllerOnly' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetWeaponPierceThrough_ClientRep
 // 0x0008 (0x0008 - 0x0000)
@@ -671,10 +392,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TargetLimit;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep");
-static_assert(sizeof(B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep) == 0x000008, "Wrong size on B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep");
-static_assert(offsetof(B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep, Enable) == 0x000000, "Member 'B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep::Enable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep, TargetLimit) == 0x000004, "Member 'B_Ranged_Generic_C_SetWeaponPierceThrough_ClientRep::TargetLimit' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetWeaponPierceThrough
 // 0x0008 (0x0008 - 0x0000)
@@ -685,10 +402,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TargetLimit;                                       // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetWeaponPierceThrough) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_SetWeaponPierceThrough");
-static_assert(sizeof(B_Ranged_Generic_C_SetWeaponPierceThrough) == 0x000008, "Wrong size on B_Ranged_Generic_C_SetWeaponPierceThrough");
-static_assert(offsetof(B_Ranged_Generic_C_SetWeaponPierceThrough, Enable) == 0x000000, "Member 'B_Ranged_Generic_C_SetWeaponPierceThrough::Enable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetWeaponPierceThrough, TargetLimit) == 0x000004, "Member 'B_Ranged_Generic_C_SetWeaponPierceThrough::TargetLimit' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnInitCosmeticAlterations
 // 0x05B8 (0x05B8 - 0x0000)
@@ -697,9 +410,6 @@ struct B_Ranged_Generic_C_OnInitCosmeticAlterations final
 public:
 	struct FFortCosmeticModification              CosmeticMod;                                       // 0x0000(0x05B8)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnInitCosmeticAlterations) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnInitCosmeticAlterations");
-static_assert(sizeof(B_Ranged_Generic_C_OnInitCosmeticAlterations) == 0x0005B8, "Wrong size on B_Ranged_Generic_C_OnInitCosmeticAlterations");
-static_assert(offsetof(B_Ranged_Generic_C_OnInitCosmeticAlterations, CosmeticMod) == 0x000000, "Member 'B_Ranged_Generic_C_OnInitCosmeticAlterations::CosmeticMod' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnInitAlteration
 // 0x0008 (0x0008 - 0x0000)
@@ -708,9 +418,6 @@ struct B_Ranged_Generic_C_OnInitAlteration final
 public:
 	class UFortAlterationItemDefinition*          NewAlteration;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnInitAlteration) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnInitAlteration");
-static_assert(sizeof(B_Ranged_Generic_C_OnInitAlteration) == 0x000008, "Wrong size on B_Ranged_Generic_C_OnInitAlteration");
-static_assert(offsetof(B_Ranged_Generic_C_OnInitAlteration, NewAlteration) == 0x000000, "Member 'B_Ranged_Generic_C_OnInitAlteration::NewAlteration' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Update Enemy Custom Depths
 // 0x0008 (0x0008 - 0x0000)
@@ -721,10 +428,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         StencilBufferValue_0;                              // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_Update_Enemy_Custom_Depths) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_Update_Enemy_Custom_Depths");
-static_assert(sizeof(B_Ranged_Generic_C_Update_Enemy_Custom_Depths) == 0x000008, "Wrong size on B_Ranged_Generic_C_Update_Enemy_Custom_Depths");
-static_assert(offsetof(B_Ranged_Generic_C_Update_Enemy_Custom_Depths, Enable_Or_Disable) == 0x000000, "Member 'B_Ranged_Generic_C_Update_Enemy_Custom_Depths::Enable_Or_Disable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Update_Enemy_Custom_Depths, StencilBufferValue_0) == 0x000004, "Member 'B_Ranged_Generic_C_Update_Enemy_Custom_Depths::StencilBufferValue_0' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnSetTargeting
 // 0x0001 (0x0001 - 0x0000)
@@ -733,9 +436,6 @@ struct B_Ranged_Generic_C_OnSetTargeting final
 public:
 	bool                                          bNewIsTargeting;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnSetTargeting) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_OnSetTargeting");
-static_assert(sizeof(B_Ranged_Generic_C_OnSetTargeting) == 0x000001, "Wrong size on B_Ranged_Generic_C_OnSetTargeting");
-static_assert(offsetof(B_Ranged_Generic_C_OnSetTargeting, bNewIsTargeting) == 0x000000, "Member 'B_Ranged_Generic_C_OnSetTargeting::bNewIsTargeting' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnPlayReloadFX
 // 0x0001 (0x0001 - 0x0000)
@@ -744,9 +444,6 @@ struct B_Ranged_Generic_C_OnPlayReloadFX final
 public:
 	EFortReloadFXState                            ReloadStage;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnPlayReloadFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_OnPlayReloadFX");
-static_assert(sizeof(B_Ranged_Generic_C_OnPlayReloadFX) == 0x000001, "Wrong size on B_Ranged_Generic_C_OnPlayReloadFX");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayReloadFX, ReloadStage) == 0x000000, "Member 'B_Ranged_Generic_C_OnPlayReloadFX::ReloadStage' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnPlayWeaponFireFX
 // 0x0002 (0x0002 - 0x0000)
@@ -756,10 +453,6 @@ public:
 	bool                                          bPersistentFire;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bSecondaryFire;                                    // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnPlayWeaponFireFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_OnPlayWeaponFireFX");
-static_assert(sizeof(B_Ranged_Generic_C_OnPlayWeaponFireFX) == 0x000002, "Wrong size on B_Ranged_Generic_C_OnPlayWeaponFireFX");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayWeaponFireFX, bPersistentFire) == 0x000000, "Member 'B_Ranged_Generic_C_OnPlayWeaponFireFX::bPersistentFire' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_OnPlayWeaponFireFX, bSecondaryFire) == 0x000001, "Member 'B_Ranged_Generic_C_OnPlayWeaponFireFX::bSecondaryFire' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnLoaded_5B08633343C4DA6FF40449A8A36357E4
 // 0x0008 (0x0008 - 0x0000)
@@ -768,9 +461,6 @@ struct B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4");
-static_assert(sizeof(B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4) == 0x000008, "Wrong size on B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4");
-static_assert(offsetof(B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4, Loaded) == 0x000000, "Member 'B_Ranged_Generic_C_OnLoaded_5B08633343C4DA6FF40449A8A36357E4::Loaded' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnLoaded_83457BA843174AC6288682A342EBEAD9
 // 0x0008 (0x0008 - 0x0000)
@@ -779,9 +469,6 @@ struct B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9");
-static_assert(sizeof(B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9) == 0x000008, "Wrong size on B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9");
-static_assert(offsetof(B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9, Loaded) == 0x000000, "Member 'B_Ranged_Generic_C_OnLoaded_83457BA843174AC6288682A342EBEAD9::Loaded' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnLoaded_3A9BBE884A5C5966375089938B7DC0CA
 // 0x0008 (0x0008 - 0x0000)
@@ -790,9 +477,6 @@ struct B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA");
-static_assert(sizeof(B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA) == 0x000008, "Wrong size on B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA");
-static_assert(offsetof(B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA, Loaded) == 0x000000, "Member 'B_Ranged_Generic_C_OnLoaded_3A9BBE884A5C5966375089938B7DC0CA::Loaded' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.OnLoaded_4DE6158742ED7EE528BC98A240A81632
 // 0x0008 (0x0008 - 0x0000)
@@ -801,9 +485,6 @@ struct B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632");
-static_assert(sizeof(B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632) == 0x000008, "Wrong size on B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632");
-static_assert(offsetof(B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632, Loaded) == 0x000000, "Member 'B_Ranged_Generic_C_OnLoaded_4DE6158742ED7EE528BC98A240A81632::Loaded' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.UserConstructionScript
 // 0x0100 (0x0100 - 0x0000)
@@ -848,38 +529,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_UserConstructionScript) == 0x000010, "Wrong alignment on B_Ranged_Generic_C_UserConstructionScript");
-static_assert(sizeof(B_Ranged_Generic_C_UserConstructionScript) == 0x000100, "Wrong size on B_Ranged_Generic_C_UserConstructionScript");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, ValidMuzzleSocketCount) == 0x000000, "Member 'B_Ranged_Generic_C_UserConstructionScript::ValidMuzzleSocketCount' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_struct_Variable) == 0x000010, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000048, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_int_Loop_Counter_Variable_1) == 0x000050, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Add_IntInt_ReturnValue_1) == 0x000054, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000058, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00005C, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_GetUniqueMuzzleSocketNames_Names) == 0x000060, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_GetUniqueMuzzleSocketNames_Names' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_GetUniqueMuzzleSocketNames_Names_1) == 0x000070, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_GetUniqueMuzzleSocketNames_Names_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_int_Array_Index_Variable) == 0x000080, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue) == 0x000084, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_1) == 0x000088, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue) == 0x00008C, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_int_Array_Index_Variable_1) == 0x000090, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000094, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Array_Get_Item) == 0x000098, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Array_Length_ReturnValue_2) == 0x0000A0, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000A4, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue) == 0x0000A5, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue) == 0x0000A6, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_GetMuzzleSocketName_ReturnValue) == 0x0000A8, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_GetMuzzleSocketName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x0000B0, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x0000B1, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, Temp_struct_Variable_1) == 0x0000C0, "Member 'B_Ranged_Generic_C_UserConstructionScript::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x0000F0, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_K2_AttachToComponent_ReturnValue_2) == 0x0000F8, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_K2_AttachToComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_BooleanOR_ReturnValue) == 0x0000F9, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UserConstructionScript, CallFunc_BooleanOR_ReturnValue_1) == 0x0000FA, "Member 'B_Ranged_Generic_C_UserConstructionScript::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.AddRandomScale
 // 0x0070 (0x0070 - 0x0000)
@@ -907,25 +556,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_AddRandomScale) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_AddRandomScale");
-static_assert(sizeof(B_Ranged_Generic_C_AddRandomScale) == 0x000070, "Wrong size on B_Ranged_Generic_C_AddRandomScale");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, Temp_int_Variable) == 0x000000, "Member 'B_Ranged_Generic_C_AddRandomScale::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, Temp_int_Variable_1) == 0x000004, "Member 'B_Ranged_Generic_C_AddRandomScale::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Add_IntInt_ReturnValue_1) == 0x00000C, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_RandomFloatInRange_ReturnValue) == 0x000010, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_MakeVector_ReturnValue) == 0x000014, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000020, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_MakeVector_ReturnValue_1) == 0x000024, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_GetActiveMuzzleComponents_NewParam) == 0x000030, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_GetActiveMuzzleComponents_NewParam' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000040, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Array_Get_Item) == 0x000048, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000050, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Array_Length_ReturnValue) == 0x000054, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Array_Get_Item_1) == 0x000058, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Array_Length_ReturnValue_1) == 0x000064, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_AddRandomScale, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'B_Ranged_Generic_C_AddRandomScale::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Muzzle Flash FX
 // 0x0038 (0x0038 - 0x0000)
@@ -946,18 +576,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_Muzzle_Flash_FX) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_Muzzle_Flash_FX");
-static_assert(sizeof(B_Ranged_Generic_C_Muzzle_Flash_FX) == 0x000038, "Wrong size on B_Ranged_Generic_C_Muzzle_Flash_FX");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, Persistent_Fire) == 0x000000, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::Persistent_Fire' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, Temp_int_Variable) == 0x000004, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_IsUsingScope_ReturnValue) == 0x00000C, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_IsUsingScope_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000010, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_Not_PreBool_ReturnValue) == 0x000014, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_GetActiveMuzzleComponents_NewParam) == 0x000018, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_GetActiveMuzzleComponents_NewParam' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_Array_Get_Item) == 0x000028, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Flash_FX, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'B_Ranged_Generic_C_Muzzle_Flash_FX::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.Muzzle Play Reload FX
 // 0x0002 (0x0002 - 0x0000)
@@ -967,10 +585,6 @@ public:
 	EFortReloadFXState                            Selection;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_Muzzle_Play_Reload_FX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_Muzzle_Play_Reload_FX");
-static_assert(sizeof(B_Ranged_Generic_C_Muzzle_Play_Reload_FX) == 0x000002, "Wrong size on B_Ranged_Generic_C_Muzzle_Play_Reload_FX");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Play_Reload_FX, Selection) == 0x000000, "Member 'B_Ranged_Generic_C_Muzzle_Play_Reload_FX::Selection' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_Muzzle_Play_Reload_FX, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'B_Ranged_Generic_C_Muzzle_Play_Reload_FX::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.UpdateShellEmittersFX
 // 0x0028 (0x0028 - 0x0000)
@@ -1005,34 +619,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_7;                 // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_8;                 // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_UpdateShellEmittersFX) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_UpdateShellEmittersFX");
-static_assert(sizeof(B_Ranged_Generic_C_UpdateShellEmittersFX) == 0x000028, "Wrong size on B_Ranged_Generic_C_UpdateShellEmittersFX");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_1) == 0x000001, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_2) == 0x000002, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_3) == 0x000004, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_4) == 0x000005, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_5) == 0x000006, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_6) == 0x000007, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Not_PreBool_ReturnValue_1) == 0x000008, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Not_PreBool_ReturnValue_2) == 0x000009, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue) == 0x00000A, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_1) == 0x00000B, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_2) == 0x00000C, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_7) == 0x00000D, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Not_PreBool_ReturnValue_3) == 0x00000E, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_3) == 0x00000F, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_4) == 0x000010, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_GetShellReloadCounter_ReturnValue) == 0x000014, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_GetShellReloadCounter_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Max_ReturnValue) == 0x000018, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00001C, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_5) == 0x000020, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_6) == 0x000021, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_ShouldPlayPersistentFireFX_ReturnValue_8) == 0x000022, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_ShouldPlayPersistentFireFX_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_Not_PreBool_ReturnValue_4) == 0x000023, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_Not_PreBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_7) == 0x000024, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_UpdateShellEmittersFX, CallFunc_BooleanAND_ReturnValue_8) == 0x000025, "Member 'B_Ranged_Generic_C_UpdateShellEmittersFX::CallFunc_BooleanAND_ReturnValue_8' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetupShellFX
 // 0x0014 (0x0014 - 0x0000)
@@ -1045,12 +631,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetupShellFX) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_SetupShellFX");
-static_assert(sizeof(B_Ranged_Generic_C_SetupShellFX) == 0x000014, "Wrong size on B_Ranged_Generic_C_SetupShellFX");
-static_assert(offsetof(B_Ranged_Generic_C_SetupShellFX, CallFunc_DoesSocketExist_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_SetupShellFX::CallFunc_DoesSocketExist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetupShellFX, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000004, "Member 'B_Ranged_Generic_C_SetupShellFX::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetupShellFX, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'B_Ranged_Generic_C_SetupShellFX::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetupShellFX, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000011, "Member 'B_Ranged_Generic_C_SetupShellFX::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.DeactivateShellsFX
 // 0x0001 (0x0001 - 0x0000)
@@ -1059,9 +639,6 @@ struct B_Ranged_Generic_C_DeactivateShellsFX final
 public:
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_DeactivateShellsFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_DeactivateShellsFX");
-static_assert(sizeof(B_Ranged_Generic_C_DeactivateShellsFX) == 0x000001, "Wrong size on B_Ranged_Generic_C_DeactivateShellsFX");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateShellsFX, CallFunc_IsActive_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_DeactivateShellsFX::CallFunc_IsActive_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ActivateShellsFX
 // 0x0001 (0x0001 - 0x0000)
@@ -1070,9 +647,6 @@ struct B_Ranged_Generic_C_ActivateShellsFX final
 public:
 	bool                                          Bool;                                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_ActivateShellsFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_ActivateShellsFX");
-static_assert(sizeof(B_Ranged_Generic_C_ActivateShellsFX) == 0x000001, "Wrong size on B_Ranged_Generic_C_ActivateShellsFX");
-static_assert(offsetof(B_Ranged_Generic_C_ActivateShellsFX, Bool) == 0x000000, "Member 'B_Ranged_Generic_C_ActivateShellsFX::Bool' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ActivateReloadSmokeFX
 // 0x0001 (0x0001 - 0x0000)
@@ -1081,9 +655,6 @@ struct B_Ranged_Generic_C_ActivateReloadSmokeFX final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_ActivateReloadSmokeFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_ActivateReloadSmokeFX");
-static_assert(sizeof(B_Ranged_Generic_C_ActivateReloadSmokeFX) == 0x000001, "Wrong size on B_Ranged_Generic_C_ActivateReloadSmokeFX");
-static_assert(offsetof(B_Ranged_Generic_C_ActivateReloadSmokeFX, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_ActivateReloadSmokeFX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.DeactivateReloadSmokeFX
 // 0x0001 (0x0001 - 0x0000)
@@ -1092,9 +663,6 @@ struct B_Ranged_Generic_C_DeactivateReloadSmokeFX final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_DeactivateReloadSmokeFX) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_DeactivateReloadSmokeFX");
-static_assert(sizeof(B_Ranged_Generic_C_DeactivateReloadSmokeFX) == 0x000001, "Wrong size on B_Ranged_Generic_C_DeactivateReloadSmokeFX");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateReloadSmokeFX, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_DeactivateReloadSmokeFX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.DeactivateMuzzleFX
 // 0x0030 (0x0030 - 0x0000)
@@ -1110,14 +678,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_DeactivateMuzzleFX) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_DeactivateMuzzleFX");
-static_assert(sizeof(B_Ranged_Generic_C_DeactivateMuzzleFX) == 0x000030, "Wrong size on B_Ranged_Generic_C_DeactivateMuzzleFX");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, Temp_int_Variable) == 0x000000, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, CallFunc_GetActiveMuzzleComponents_NewParam) == 0x000008, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::CallFunc_GetActiveMuzzleComponents_NewParam' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, CallFunc_Array_Get_Item) == 0x000020, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_DeactivateMuzzleFX, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'B_Ranged_Generic_C_DeactivateMuzzleFX::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ActivateOrDeactivateWindParticle
 // 0x0001 (0x0001 - 0x0000)
@@ -1126,9 +686,6 @@ struct B_Ranged_Generic_C_ActivateOrDeactivateWindParticle final
 public:
 	bool                                          bNewActive;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_ActivateOrDeactivateWindParticle) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_ActivateOrDeactivateWindParticle");
-static_assert(sizeof(B_Ranged_Generic_C_ActivateOrDeactivateWindParticle) == 0x000001, "Wrong size on B_Ranged_Generic_C_ActivateOrDeactivateWindParticle");
-static_assert(offsetof(B_Ranged_Generic_C_ActivateOrDeactivateWindParticle, bNewActive) == 0x000000, "Member 'B_Ranged_Generic_C_ActivateOrDeactivateWindParticle::bNewActive' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.HideReticle
 // 0x0018 (0x0018 - 0x0000)
@@ -1139,11 +696,6 @@ public:
 	class AFortPlayerControllerZone*              K2Node_DynamicCast_AsFort_Player_Controller_Zone;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_HideReticle) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_HideReticle");
-static_assert(sizeof(B_Ranged_Generic_C_HideReticle) == 0x000018, "Wrong size on B_Ranged_Generic_C_HideReticle");
-static_assert(offsetof(B_Ranged_Generic_C_HideReticle, CallFunc_GetInstigatorController_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_HideReticle::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_HideReticle, K2Node_DynamicCast_AsFort_Player_Controller_Zone) == 0x000008, "Member 'B_Ranged_Generic_C_HideReticle::K2Node_DynamicCast_AsFort_Player_Controller_Zone' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_HideReticle, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'B_Ranged_Generic_C_HideReticle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.ShowReticle
 // 0x0018 (0x0018 - 0x0000)
@@ -1154,11 +706,6 @@ public:
 	class AFortPlayerControllerZone*              K2Node_DynamicCast_AsFort_Player_Controller_Zone;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_ShowReticle) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_ShowReticle");
-static_assert(sizeof(B_Ranged_Generic_C_ShowReticle) == 0x000018, "Wrong size on B_Ranged_Generic_C_ShowReticle");
-static_assert(offsetof(B_Ranged_Generic_C_ShowReticle, CallFunc_GetInstigatorController_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_ShowReticle::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ShowReticle, K2Node_DynamicCast_AsFort_Player_Controller_Zone) == 0x000008, "Member 'B_Ranged_Generic_C_ShowReticle::K2Node_DynamicCast_AsFort_Player_Controller_Zone' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_ShowReticle, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'B_Ranged_Generic_C_ShowReticle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetActiveAlterationIdleParticles
 // 0x0003 (0x0003 - 0x0000)
@@ -1169,11 +716,6 @@ public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetActiveAlterationIdleParticles) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_SetActiveAlterationIdleParticles");
-static_assert(sizeof(B_Ranged_Generic_C_SetActiveAlterationIdleParticles) == 0x000003, "Wrong size on B_Ranged_Generic_C_SetActiveAlterationIdleParticles");
-static_assert(offsetof(B_Ranged_Generic_C_SetActiveAlterationIdleParticles, Active) == 0x000000, "Member 'B_Ranged_Generic_C_SetActiveAlterationIdleParticles::Active' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetActiveAlterationIdleParticles, CallFunc_IsDedicatedServer_ReturnValue) == 0x000001, "Member 'B_Ranged_Generic_C_SetActiveAlterationIdleParticles::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_SetActiveAlterationIdleParticles, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'B_Ranged_Generic_C_SetActiveAlterationIdleParticles::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetPostProcessParams
 // 0x0004 (0x0004 - 0x0000)
@@ -1182,9 +724,6 @@ struct B_Ranged_Generic_C_SetPostProcessParams final
 public:
 	float                                         InputPin;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetPostProcessParams) == 0x000004, "Wrong alignment on B_Ranged_Generic_C_SetPostProcessParams");
-static_assert(sizeof(B_Ranged_Generic_C_SetPostProcessParams) == 0x000004, "Wrong size on B_Ranged_Generic_C_SetPostProcessParams");
-static_assert(offsetof(B_Ranged_Generic_C_SetPostProcessParams, InputPin) == 0x000000, "Member 'B_Ranged_Generic_C_SetPostProcessParams::InputPin' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.StartScopedAudio
 // 0x0018 (0x0018 - 0x0000)
@@ -1198,13 +737,6 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue_1;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_StartScopedAudio) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_StartScopedAudio");
-static_assert(sizeof(B_Ranged_Generic_C_StartScopedAudio) == 0x000018, "Wrong size on B_Ranged_Generic_C_StartScopedAudio");
-static_assert(offsetof(B_Ranged_Generic_C_StartScopedAudio, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_StartScopedAudio::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StartScopedAudio, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'B_Ranged_Generic_C_StartScopedAudio::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StartScopedAudio, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'B_Ranged_Generic_C_StartScopedAudio::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StartScopedAudio, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000008, "Member 'B_Ranged_Generic_C_StartScopedAudio::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StartScopedAudio, CallFunc_SpawnSoundAttached_ReturnValue_1) == 0x000010, "Member 'B_Ranged_Generic_C_StartScopedAudio::CallFunc_SpawnSoundAttached_ReturnValue_1' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.StopScopedAudio
 // 0x0010 (0x0010 - 0x0000)
@@ -1217,12 +749,6 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_StopScopedAudio) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_StopScopedAudio");
-static_assert(sizeof(B_Ranged_Generic_C_StopScopedAudio) == 0x000010, "Wrong size on B_Ranged_Generic_C_StopScopedAudio");
-static_assert(offsetof(B_Ranged_Generic_C_StopScopedAudio, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'B_Ranged_Generic_C_StopScopedAudio::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StopScopedAudio, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'B_Ranged_Generic_C_StopScopedAudio::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StopScopedAudio, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'B_Ranged_Generic_C_StopScopedAudio::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_StopScopedAudio, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000008, "Member 'B_Ranged_Generic_C_StopScopedAudio::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.SetActiveMuzzleComponent
 // 0x0001 (0x0001 - 0x0000)
@@ -1231,9 +757,6 @@ struct B_Ranged_Generic_C_SetActiveMuzzleComponent final
 public:
 	bool                                          NiagaraEnabled;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_SetActiveMuzzleComponent) == 0x000001, "Wrong alignment on B_Ranged_Generic_C_SetActiveMuzzleComponent");
-static_assert(sizeof(B_Ranged_Generic_C_SetActiveMuzzleComponent) == 0x000001, "Wrong size on B_Ranged_Generic_C_SetActiveMuzzleComponent");
-static_assert(offsetof(B_Ranged_Generic_C_SetActiveMuzzleComponent, NiagaraEnabled) == 0x000000, "Member 'B_Ranged_Generic_C_SetActiveMuzzleComponent::NiagaraEnabled' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.GetActiveMuzzleComponents
 // 0x0060 (0x0060 - 0x0000)
@@ -1253,18 +776,6 @@ public:
 	TArray<class UFXSystemComponent*>             K2Node_MakeArray_Array_1;                          // 0x0048(0x0010)(ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Ranged_Generic_C_GetActiveMuzzleComponents) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_GetActiveMuzzleComponents");
-static_assert(sizeof(B_Ranged_Generic_C_GetActiveMuzzleComponents) == 0x000060, "Wrong size on B_Ranged_Generic_C_GetActiveMuzzleComponents");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, NewParam) == 0x000000, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::NewParam' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, K2Node_MakeArray_Array) == 0x000010, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, CallFunc_LoadAsset_Blocking_ReturnValue) == 0x000020, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::CallFunc_LoadAsset_Blocking_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, K2Node_DynamicCast_AsNiagara_System) == 0x000028, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::K2Node_DynamicCast_AsNiagara_System' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, CallFunc_GetMuzzleSocketName_ReturnValue) == 0x000034, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::CallFunc_GetMuzzleSocketName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, CallFunc_SpawnSystemAttached_ReturnValue) == 0x000040, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::CallFunc_SpawnSystemAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, K2Node_MakeArray_Array_1) == 0x000048, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetActiveMuzzleComponents, CallFunc_IsValid_ReturnValue_1) == 0x000058, "Member 'B_Ranged_Generic_C_GetActiveMuzzleComponents::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function B_Ranged_Generic.B_Ranged_Generic_C.GetScopeParameters
 // 0x0020 (0x0020 - 0x0000)
@@ -1276,12 +787,6 @@ public:
 	float                                         WeaponSightsCameraOffset;                          // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Ranged_Generic_C_GetScopeParameters) == 0x000008, "Wrong alignment on B_Ranged_Generic_C_GetScopeParameters");
-static_assert(sizeof(B_Ranged_Generic_C_GetScopeParameters) == 0x000020, "Wrong size on B_Ranged_Generic_C_GetScopeParameters");
-static_assert(offsetof(B_Ranged_Generic_C_GetScopeParameters, ScopeComponent) == 0x000000, "Member 'B_Ranged_Generic_C_GetScopeParameters::ScopeComponent' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetScopeParameters, DepthOfFieldVignetteRange) == 0x000008, "Member 'B_Ranged_Generic_C_GetScopeParameters::DepthOfFieldVignetteRange' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetScopeParameters, WeaponSightsCameraOffset) == 0x000010, "Member 'B_Ranged_Generic_C_GetScopeParameters::WeaponSightsCameraOffset' has a wrong offset!");
-static_assert(offsetof(B_Ranged_Generic_C_GetScopeParameters, CallFunc_MakeVector2D_ReturnValue) == 0x000014, "Member 'B_Ranged_Generic_C_GetScopeParameters::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 }
 

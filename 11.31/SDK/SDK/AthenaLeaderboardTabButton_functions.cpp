@@ -17,6 +17,40 @@
 namespace SDK
 {
 
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ShowText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaLeaderboardTabButton_C::ShowText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "ShowText");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Icon
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSlateBrush&               IconBrush_0                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UAthenaLeaderboardTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "Set Icon");
+
+	Params::AthenaLeaderboardTabButton_C_Set_Icon Parms{};
+
+	Parms.IconBrush_0 = std::move(IconBrush_0);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Text
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -176,40 +210,6 @@ void UAthenaLeaderboardTabButton_C::ExecuteUbergraph_AthenaLeaderboardTabButton(
 	Params::AthenaLeaderboardTabButton_C_ExecuteUbergraph_AthenaLeaderboardTabButton Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ShowText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaLeaderboardTabButton_C::ShowText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "ShowText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.Set Icon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSlateBrush&               IconBrush_0                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UAthenaLeaderboardTabButton_C::Set_Icon(const struct FSlateBrush& IconBrush_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "Set Icon");
-
-	Params::AthenaLeaderboardTabButton_C_Set_Icon Parms{};
-
-	Parms.IconBrush_0 = std::move(IconBrush_0);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

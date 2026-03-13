@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeTile_Style_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeTile_Style_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeTile_Style_C")
 	}
 	static class UChallengeTile_Style_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeTile_Style_C>();
 	}
 };
-static_assert(alignof(UChallengeTile_Style_C) == 0x000008, "Wrong alignment on UChallengeTile_Style_C");
-static_assert(sizeof(UChallengeTile_Style_C) == 0x000BF0, "Wrong size on UChallengeTile_Style_C");
-static_assert(offsetof(UChallengeTile_Style_C, UberGraphFrame) == 0x000BB8, "Member 'UChallengeTile_Style_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, Outro) == 0x000BC0, "Member 'UChallengeTile_Style_C::Outro' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, OnHover) == 0x000BC8, "Member 'UChallengeTile_Style_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, Image_Background) == 0x000BD0, "Member 'UChallengeTile_Style_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, Image_BoltBorder) == 0x000BD8, "Member 'UChallengeTile_Style_C::Image_BoltBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, UnavailableBox) == 0x000BE0, "Member 'UChallengeTile_Style_C::UnavailableBox' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Style_C, UnavailableOvr) == 0x000BE8, "Member 'UChallengeTile_Style_C::UnavailableOvr' has a wrong offset!");
 
 }
 

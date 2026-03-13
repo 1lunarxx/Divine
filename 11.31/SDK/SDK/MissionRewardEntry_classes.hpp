@@ -42,23 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionRewardEntry_C">();
+		BP_STATIC_CLASS_IMPL("MissionRewardEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionRewardEntry_C")
 	}
 	static class UMissionRewardEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionRewardEntry_C>();
 	}
 };
-static_assert(alignof(UMissionRewardEntry_C) == 0x000008, "Wrong alignment on UMissionRewardEntry_C");
-static_assert(sizeof(UMissionRewardEntry_C) == 0x000278, "Wrong size on UMissionRewardEntry_C");
-static_assert(offsetof(UMissionRewardEntry_C, UberGraphFrame) == 0x000240, "Member 'UMissionRewardEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, Hover) == 0x000248, "Member 'UMissionRewardEntry_C::Hover' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, CompletionCheck) == 0x000250, "Member 'UMissionRewardEntry_C::CompletionCheck' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, RenderOpacityOvr) == 0x000258, "Member 'UMissionRewardEntry_C::RenderOpacityOvr' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, SelectionBorder) == 0x000260, "Member 'UMissionRewardEntry_C::SelectionBorder' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, TextVisibilityOvr) == 0x000268, "Member 'UMissionRewardEntry_C::TextVisibilityOvr' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, HideCompletion) == 0x000270, "Member 'UMissionRewardEntry_C::HideCompletion' has a wrong offset!");
-static_assert(offsetof(UMissionRewardEntry_C, HideBorder) == 0x000271, "Member 'UMissionRewardEntry_C::HideBorder' has a wrong offset!");
 
 }
 

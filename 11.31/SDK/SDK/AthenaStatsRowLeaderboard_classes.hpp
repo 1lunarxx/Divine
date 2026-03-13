@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStatsRowLeaderboard_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStatsRowLeaderboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStatsRowLeaderboard_C")
 	}
 	static class UAthenaStatsRowLeaderboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStatsRowLeaderboard_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsRowLeaderboard_C) == 0x000008, "Wrong alignment on UAthenaStatsRowLeaderboard_C");
-static_assert(sizeof(UAthenaStatsRowLeaderboard_C) == 0x0002A0, "Wrong size on UAthenaStatsRowLeaderboard_C");
-static_assert(offsetof(UAthenaStatsRowLeaderboard_C, UberGraphFrame) == 0x000290, "Member 'UAthenaStatsRowLeaderboard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsRowLeaderboard_C, Image_120) == 0x000298, "Member 'UAthenaStatsRowLeaderboard_C::Image_120' has a wrong offset!");
 
 }
 

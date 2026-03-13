@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_Player_HandSplash_L_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_Player_HandSplash_L_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_Player_HandSplash_L_C")
 	}
 	static class UAnimNotify_Player_HandSplash_L_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_Player_HandSplash_L_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_Player_HandSplash_L_C) == 0x000008, "Wrong alignment on UAnimNotify_Player_HandSplash_L_C");
-static_assert(sizeof(UAnimNotify_Player_HandSplash_L_C) == 0x000038, "Wrong size on UAnimNotify_Player_HandSplash_L_C");
 
 }
 

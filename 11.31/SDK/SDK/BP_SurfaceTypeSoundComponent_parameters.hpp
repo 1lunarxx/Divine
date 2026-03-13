@@ -25,9 +25,6 @@ struct BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundCompon
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent) == 0x000004, "Wrong alignment on BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
-static_assert(sizeof(BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent) == 0x000004, "Wrong size on BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent, EntryPoint) == 0x000000, "Member 'BP_SurfaceTypeSoundComponent_C_ExecuteUbergraph_BP_SurfaceTypeSoundComponent::EntryPoint' has a wrong offset!");
 
 // Function BP_SurfaceTypeSoundComponent.BP_SurfaceTypeSoundComponent_C.PlaySound
 // 0x0020 (0x0020 - 0x0000)
@@ -40,12 +37,6 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SurfaceTypeSoundComponent_C_PlaySound) == 0x000008, "Wrong alignment on BP_SurfaceTypeSoundComponent_C_PlaySound");
-static_assert(sizeof(BP_SurfaceTypeSoundComponent_C_PlaySound) == 0x000020, "Wrong size on BP_SurfaceTypeSoundComponent_C_PlaySound");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_PlaySound, Location_0) == 0x000000, "Member 'BP_SurfaceTypeSoundComponent_C_PlaySound::Location_0' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_PlaySound, CallFunc_Map_Find_Value) == 0x000010, "Member 'BP_SurfaceTypeSoundComponent_C_PlaySound::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_PlaySound, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'BP_SurfaceTypeSoundComponent_C_PlaySound::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_PlaySound, CallFunc_BooleanAND_ReturnValue) == 0x000019, "Member 'BP_SurfaceTypeSoundComponent_C_PlaySound::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_SurfaceTypeSoundComponent.BP_SurfaceTypeSoundComponent_C.SetSurfaceType
 // 0x0028 (0x0028 - 0x0000)
@@ -68,21 +59,6 @@ public:
 	EPhysicalSurface                              Temp_byte_Variable_6;                              // 0x0026(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPhysicalSurface                              K2Node_Select_Default;                             // 0x0027(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType) == 0x000008, "Wrong alignment on BP_SurfaceTypeSoundComponent_C_SetSurfaceType");
-static_assert(sizeof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType) == 0x000028, "Wrong size on BP_SurfaceTypeSoundComponent_C_SetSurfaceType");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, SurfaceType_0) == 0x000000, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::SurfaceType_0' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Actor) == 0x000008, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Actor' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable) == 0x000010, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, K2Node_DynamicCast_AsBuilding_SMActor) == 0x000018, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_1) == 0x000021, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_2) == 0x000022, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_3) == 0x000023, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_4) == 0x000024, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_5) == 0x000025, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, Temp_byte_Variable_6) == 0x000026, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_SetSurfaceType, K2Node_Select_Default) == 0x000027, "Member 'BP_SurfaceTypeSoundComponent_C_SetSurfaceType::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_SurfaceTypeSoundComponent.BP_SurfaceTypeSoundComponent_C.ActuallyPlaySound
 // 0x0010 (0x0010 - 0x0000)
@@ -92,10 +68,6 @@ public:
 	class USoundBase*                             CallFunc_Map_Find_Value;                           // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound) == 0x000008, "Wrong alignment on BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound");
-static_assert(sizeof(BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound) == 0x000010, "Wrong size on BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound, CallFunc_Map_Find_Value) == 0x000000, "Member 'BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound, CallFunc_Map_Find_ReturnValue) == 0x000008, "Member 'BP_SurfaceTypeSoundComponent_C_ActuallyPlaySound::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
 
 }
 

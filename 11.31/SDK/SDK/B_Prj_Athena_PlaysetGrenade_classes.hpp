@@ -77,44 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Athena_PlaysetGrenade_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Athena_PlaysetGrenade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Athena_PlaysetGrenade_C")
 	}
 	static class AB_Prj_Athena_PlaysetGrenade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Athena_PlaysetGrenade_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Athena_PlaysetGrenade_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_PlaysetGrenade_C");
-static_assert(sizeof(AB_Prj_Athena_PlaysetGrenade_C) == 0x0009E8, "Wrong size on AB_Prj_Athena_PlaysetGrenade_C");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Athena_PlaysetGrenade_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, PopupGrenade_ThrowLoop_AudioComponent) == 0x000840, "Member 'AB_Prj_Athena_PlaysetGrenade_C::PopupGrenade_ThrowLoop_AudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, ParticleSystem) == 0x000848, "Member 'AB_Prj_Athena_PlaysetGrenade_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, Mesh) == 0x000850, "Member 'AB_Prj_Athena_PlaysetGrenade_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, RotatingMovement) == 0x000858, "Member 'AB_Prj_Athena_PlaysetGrenade_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, BaseDestination) == 0x000860, "Member 'AB_Prj_Athena_PlaysetGrenade_C::BaseDestination' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, P_BuildBuilding) == 0x000870, "Member 'AB_Prj_Athena_PlaysetGrenade_C::P_BuildBuilding' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, Cue_CloseSound) == 0x000878, "Member 'AB_Prj_Athena_PlaysetGrenade_C::Cue_CloseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, Cue_DistantSound) == 0x000880, "Member 'AB_Prj_Athena_PlaysetGrenade_C::Cue_DistantSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, GridExplosionOffset) == 0x000888, "Member 'AB_Prj_Athena_PlaysetGrenade_C::GridExplosionOffset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, GridSizeXY) == 0x000894, "Member 'AB_Prj_Athena_PlaysetGrenade_C::GridSizeXY' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, GridSizeZ) == 0x000898, "Member 'AB_Prj_Athena_PlaysetGrenade_C::GridSizeZ' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, GridYOffset) == 0x00089C, "Member 'AB_Prj_Athena_PlaysetGrenade_C::GridYOffset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, GridZOffset) == 0x0008A0, "Member 'AB_Prj_Athena_PlaysetGrenade_C::GridZOffset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, CardinalDirection) == 0x0008A4, "Member 'AB_Prj_Athena_PlaysetGrenade_C::CardinalDirection' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, OrientationYawOffsets) == 0x0008A8, "Member 'AB_Prj_Athena_PlaysetGrenade_C::OrientationYawOffsets' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, OrientationLocationOffsets) == 0x0008F8, "Member 'AB_Prj_Athena_PlaysetGrenade_C::OrientationLocationOffsets' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, LastBounceLocation) == 0x000948, "Member 'AB_Prj_Athena_PlaysetGrenade_C::LastBounceLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, MinBounceDistance) == 0x000954, "Member 'AB_Prj_Athena_PlaysetGrenade_C::MinBounceDistance' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, LastBounceTime) == 0x000958, "Member 'AB_Prj_Athena_PlaysetGrenade_C::LastBounceTime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, MinTimeBetweenBounces) == 0x00095C, "Member 'AB_Prj_Athena_PlaysetGrenade_C::MinTimeBetweenBounces' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, BounceSound) == 0x000960, "Member 'AB_Prj_Athena_PlaysetGrenade_C::BounceSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, BuildDelay) == 0x000968, "Member 'AB_Prj_Athena_PlaysetGrenade_C::BuildDelay' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, OrientationDoortraceOffsets) == 0x000970, "Member 'AB_Prj_Athena_PlaysetGrenade_C::OrientationDoortraceOffsets' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, InAirLoopSound) == 0x0009C0, "Member 'AB_Prj_Athena_PlaysetGrenade_C::InAirLoopSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, InAirLoopComponent) == 0x0009C8, "Member 'AB_Prj_Athena_PlaysetGrenade_C::InAirLoopComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, BounceTimeout) == 0x0009D0, "Member 'AB_Prj_Athena_PlaysetGrenade_C::BounceTimeout' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, CachedPlayset) == 0x0009D8, "Member 'AB_Prj_Athena_PlaysetGrenade_C::CachedPlayset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_PlaysetGrenade_C, PlayspaceActorToSpawn) == 0x0009E0, "Member 'AB_Prj_Athena_PlaysetGrenade_C::PlayspaceActorToSpawn' has a wrong offset!");
 
 }
 

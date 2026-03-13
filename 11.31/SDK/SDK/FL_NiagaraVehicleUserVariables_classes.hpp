@@ -29,15 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FL_NiagaraVehicleUserVariables_C">();
+		BP_STATIC_CLASS_IMPL("FL_NiagaraVehicleUserVariables_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FL_NiagaraVehicleUserVariables_C")
 	}
 	static class UFL_NiagaraVehicleUserVariables_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFL_NiagaraVehicleUserVariables_C>();
 	}
 };
-static_assert(alignof(UFL_NiagaraVehicleUserVariables_C) == 0x000008, "Wrong alignment on UFL_NiagaraVehicleUserVariables_C");
-static_assert(sizeof(UFL_NiagaraVehicleUserVariables_C) == 0x000028, "Wrong size on UFL_NiagaraVehicleUserVariables_C");
 
 }
 

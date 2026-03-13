@@ -38,6 +38,8 @@ public:
 	bool                                          bBangEnabled;                                      // 0x0C64(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
+	void ShowText();
+	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void Set_Text(const class FText& ButtonText_0);
 	void PreConstruct(bool IsDesignTime);
 	void OnCurrentTextStyleChanged();
@@ -48,32 +50,21 @@ public:
 	void BP_OnHovered();
 	void BP_OnUnhovered();
 	void ExecuteUbergraph_AthenaLeaderboardTabButton(int32 EntryPoint);
-	void ShowText();
-	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLeaderboardTabButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLeaderboardTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLeaderboardTabButton_C")
 	}
 	static class UAthenaLeaderboardTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLeaderboardTabButton_C>();
 	}
 };
-static_assert(alignof(UAthenaLeaderboardTabButton_C) == 0x000008, "Wrong alignment on UAthenaLeaderboardTabButton_C");
-static_assert(sizeof(UAthenaLeaderboardTabButton_C) == 0x000C68, "Wrong size on UAthenaLeaderboardTabButton_C");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, UberGraphFrame) == 0x000B70, "Member 'UAthenaLeaderboardTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, CenterButtonTextWidget) == 0x000B78, "Member 'UAthenaLeaderboardTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, ContentHB) == 0x000B80, "Member 'UAthenaLeaderboardTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, LeftSideImage) == 0x000B88, "Member 'UAthenaLeaderboardTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, ButtonText) == 0x000B90, "Member 'UAthenaLeaderboardTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, IconBrush) == 0x000BA8, "Member 'UAthenaLeaderboardTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, UseText) == 0x000C30, "Member 'UAthenaLeaderboardTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, SelectedIconTint) == 0x000C34, "Member 'UAthenaLeaderboardTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, DeselectedIconTint) == 0x000C44, "Member 'UAthenaLeaderboardTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, HoveredIconTint) == 0x000C54, "Member 'UAthenaLeaderboardTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UAthenaLeaderboardTabButton_C, bBangEnabled) == 0x000C64, "Member 'UAthenaLeaderboardTabButton_C::bBangEnabled' has a wrong offset!");
 
 }
 

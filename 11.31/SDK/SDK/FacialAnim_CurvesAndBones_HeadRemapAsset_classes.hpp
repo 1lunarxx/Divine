@@ -23,15 +23,17 @@ class UFacialAnim_CurvesAndBones_HeadRemapAsset_C final : public UFacialLiveLink
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FacialAnim_CurvesAndBones_HeadRemapAsset_C">();
+		BP_STATIC_CLASS_IMPL("FacialAnim_CurvesAndBones_HeadRemapAsset_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FacialAnim_CurvesAndBones_HeadRemapAsset_C")
 	}
 	static class UFacialAnim_CurvesAndBones_HeadRemapAsset_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFacialAnim_CurvesAndBones_HeadRemapAsset_C>();
 	}
 };
-static_assert(alignof(UFacialAnim_CurvesAndBones_HeadRemapAsset_C) == 0x000008, "Wrong alignment on UFacialAnim_CurvesAndBones_HeadRemapAsset_C");
-static_assert(sizeof(UFacialAnim_CurvesAndBones_HeadRemapAsset_C) == 0x000030, "Wrong size on UFacialAnim_CurvesAndBones_HeadRemapAsset_C");
 
 }
 

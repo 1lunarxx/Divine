@@ -35,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Proj_Athena_Bandage_C">();
+		BP_STATIC_CLASS_IMPL("B_Proj_Athena_Bandage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Proj_Athena_Bandage_C")
 	}
 	static class AB_Proj_Athena_Bandage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Proj_Athena_Bandage_C>();
 	}
 };
-static_assert(alignof(AB_Proj_Athena_Bandage_C) == 0x000008, "Wrong alignment on AB_Proj_Athena_Bandage_C");
-static_assert(sizeof(AB_Proj_Athena_Bandage_C) == 0x000848, "Wrong size on AB_Proj_Athena_Bandage_C");
-static_assert(offsetof(AB_Proj_Athena_Bandage_C, UberGraphFrame) == 0x000838, "Member 'AB_Proj_Athena_Bandage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Proj_Athena_Bandage_C, MedBandage) == 0x000840, "Member 'AB_Proj_Athena_Bandage_C::MedBandage' has a wrong offset!");
 
 }
 

@@ -40,15 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AbilityFunctions_C">();
+		BP_STATIC_CLASS_IMPL("AbilityFunctions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AbilityFunctions_C")
 	}
 	static class UAbilityFunctions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAbilityFunctions_C>();
 	}
 };
-static_assert(alignof(UAbilityFunctions_C) == 0x000008, "Wrong alignment on UAbilityFunctions_C");
-static_assert(sizeof(UAbilityFunctions_C) == 0x000028, "Wrong size on UAbilityFunctions_C");
 
 }
 

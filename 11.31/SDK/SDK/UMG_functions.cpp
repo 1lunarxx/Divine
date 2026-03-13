@@ -5135,9 +5135,9 @@ void IUserListEntry::BP_OnEntryReleased()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UserListEntry", "BP_OnEntryReleased");
+		Func = AsUObject()->Class->GetFunction("UserListEntry", "BP_OnEntryReleased");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -5151,13 +5151,13 @@ void IUserListEntry::BP_OnItemExpansionChanged(bool bIsExpanded)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UserListEntry", "BP_OnItemExpansionChanged");
+		Func = AsUObject()->Class->GetFunction("UserListEntry", "BP_OnItemExpansionChanged");
 
 	Params::UserListEntry_BP_OnItemExpansionChanged Parms{};
 
 	Parms.bIsExpanded = bIsExpanded;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -5171,13 +5171,13 @@ void IUserListEntry::BP_OnItemSelectionChanged(bool bIsSelected)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UserListEntry", "BP_OnItemSelectionChanged");
+		Func = AsUObject()->Class->GetFunction("UserListEntry", "BP_OnItemSelectionChanged");
 
 	Params::UserListEntry_BP_OnItemSelectionChanged Parms{};
 
 	Parms.bIsSelected = bIsSelected;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -5191,13 +5191,13 @@ void IUserObjectListEntry::OnListItemObjectSet(class UObject* ListItemObject)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("UserObjectListEntry", "OnListItemObjectSet");
+		Func = AsUObject()->Class->GetFunction("UserObjectListEntry", "OnListItemObjectSet");
 
 	Params::UserObjectListEntry_OnListItemObjectSet Parms{};
 
 	Parms.ListItemObject = ListItemObject;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 

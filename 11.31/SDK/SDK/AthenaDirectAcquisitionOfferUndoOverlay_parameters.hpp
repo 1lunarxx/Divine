@@ -23,10 +23,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay");
-static_assert(sizeof(AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay) == 0x000010, "Wrong size on AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay");
-static_assert(offsetof(AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay, EntryPoint) == 0x000000, "Member 'AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferUndoOverlay_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferUndoOverlay::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

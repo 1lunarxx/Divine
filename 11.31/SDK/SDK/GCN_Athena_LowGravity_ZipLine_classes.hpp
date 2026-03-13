@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_LowGravity_ZipLine_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_LowGravity_ZipLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_LowGravity_ZipLine_C")
 	}
 	static class AGCN_Athena_LowGravity_ZipLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Athena_LowGravity_ZipLine_C>();
 	}
 };
-static_assert(alignof(AGCN_Athena_LowGravity_ZipLine_C) == 0x000008, "Wrong alignment on AGCN_Athena_LowGravity_ZipLine_C");
-static_assert(sizeof(AGCN_Athena_LowGravity_ZipLine_C) == 0x000368, "Wrong size on AGCN_Athena_LowGravity_ZipLine_C");
-static_assert(offsetof(AGCN_Athena_LowGravity_ZipLine_C, UberGraphFrame_GCN_Athena_LowGravity_ZipLine_C) == 0x000360, "Member 'AGCN_Athena_LowGravity_ZipLine_C::UberGraphFrame_GCN_Athena_LowGravity_ZipLine_C' has a wrong offset!");
 
 }
 

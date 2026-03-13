@@ -85,42 +85,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Ranged_Ashton_Indigo_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Ranged_Ashton_Indigo_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Ranged_Ashton_Indigo_Athena_C")
 	}
 	static class AB_Ranged_Ashton_Indigo_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Ranged_Ashton_Indigo_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Ranged_Ashton_Indigo_Athena_C) == 0x000008, "Wrong alignment on AB_Ranged_Ashton_Indigo_Athena_C");
-static_assert(sizeof(AB_Ranged_Ashton_Indigo_Athena_C) == 0x000EB8, "Wrong size on AB_Ranged_Ashton_Indigo_Athena_C");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, UberGraphFrame) == 0x000DF0, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, Intensity_NewTrack_0_8BC0CF6945BEFDD97BD2A7A959C56E96) == 0x000DF8, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::Intensity_NewTrack_0_8BC0CF6945BEFDD97BD2A7A959C56E96' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, Intensity__Direction_8BC0CF6945BEFDD97BD2A7A959C56E96) == 0x000DFC, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::Intensity__Direction_8BC0CF6945BEFDD97BD2A7A959C56E96' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, Intensity) == 0x000E00, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::Intensity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterReset_NewTrack_0_F953CC864E082C84D8FFC3B340618330) == 0x000E08, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterReset_NewTrack_0_F953CC864E082C84D8FFC3B340618330' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterReset__Direction_F953CC864E082C84D8FFC3B340618330) == 0x000E0C, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterReset__Direction_F953CC864E082C84D8FFC3B340618330' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterReset) == 0x000E10, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterReset' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterSize_NewTrack_0_3467D5114DEABC0D5FCCE59D65171599) == 0x000E18, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterSize_NewTrack_0_3467D5114DEABC0D5FCCE59D65171599' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterSize__Direction_3467D5114DEABC0D5FCCE59D65171599) == 0x000E1C, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterSize__Direction_3467D5114DEABC0D5FCCE59D65171599' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, CenterSize) == 0x000E20, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::CenterSize' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, MuzzleParticleSystem) == 0x000E28, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::MuzzleParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, LastPlayFXTime) == 0x000E30, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::LastPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, MinPlayFXTime) == 0x000E34, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::MinPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, ReticleHUDElementTags) == 0x000E38, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::ReticleHUDElementTags' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, LastHandFired) == 0x000E58, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::LastHandFired' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, IsIndigo) == 0x000E59, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::IsIndigo' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, Post_Process_MIDs) == 0x000E60, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::Post_Process_MIDs' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, BlendableMIDs) == 0x000E70, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::BlendableMIDs' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, PostMID) == 0x000E80, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::PostMID' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, HUD_Start_Offset) == 0x000E88, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::HUD_Start_Offset' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, LockOnTarget) == 0x000E90, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::LockOnTarget' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, TurnSpeedMax) == 0x000E98, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::TurnSpeedMax' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, HomingDistanceThreshold) == 0x000E9C, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::HomingDistanceThreshold' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, TimeUntilMax) == 0x000EA0, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::TimeUntilMax' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, HUD_Scale) == 0x000EA4, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::HUD_Scale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, HUD_Playrate) == 0x000EA8, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::HUD_Playrate' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Ashton_Indigo_Athena_C, LockOnWidget) == 0x000EB0, "Member 'AB_Ranged_Ashton_Indigo_Athena_C::LockOnWidget' has a wrong offset!");
 
 }
 

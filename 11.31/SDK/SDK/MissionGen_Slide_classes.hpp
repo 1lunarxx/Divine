@@ -23,15 +23,17 @@ class UMissionGen_Slide_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Slide_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Slide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Slide_C")
 	}
 	static class UMissionGen_Slide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Slide_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Slide_C) == 0x000008, "Wrong alignment on UMissionGen_Slide_C");
-static_assert(sizeof(UMissionGen_Slide_C) == 0x0006C0, "Wrong size on UMissionGen_Slide_C");
 
 }
 

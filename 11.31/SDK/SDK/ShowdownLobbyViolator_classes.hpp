@@ -43,27 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownLobbyViolator_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownLobbyViolator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownLobbyViolator_C")
 	}
 	static class UShowdownLobbyViolator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownLobbyViolator_C>();
 	}
 };
-static_assert(alignof(UShowdownLobbyViolator_C) == 0x000008, "Wrong alignment on UShowdownLobbyViolator_C");
-static_assert(sizeof(UShowdownLobbyViolator_C) == 0x000670, "Wrong size on UShowdownLobbyViolator_C");
-static_assert(offsetof(UShowdownLobbyViolator_C, UberGraphFrame) == 0x000610, "Member 'UShowdownLobbyViolator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, Intro) == 0x000618, "Member 'UShowdownLobbyViolator_C::Intro' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, CommonBorder_DetailsBG) == 0x000620, "Member 'UShowdownLobbyViolator_C::CommonBorder_DetailsBG' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, CommonBorder_HighlightBorder) == 0x000628, "Member 'UShowdownLobbyViolator_C::CommonBorder_HighlightBorder' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, CommonBorder_TopContainer) == 0x000630, "Member 'UShowdownLobbyViolator_C::CommonBorder_TopContainer' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, CommonTextBlock_TimeRemainingDesc) == 0x000638, "Member 'UShowdownLobbyViolator_C::CommonTextBlock_TimeRemainingDesc' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, CommonWidgetSwitcher_Status) == 0x000640, "Member 'UShowdownLobbyViolator_C::CommonWidgetSwitcher_Status' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, Image_BGFillColor) == 0x000648, "Member 'UShowdownLobbyViolator_C::Image_BGFillColor' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, Image_InnerTriangle) == 0x000650, "Member 'UShowdownLobbyViolator_C::Image_InnerTriangle' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, Image_OuterTriangle) == 0x000658, "Member 'UShowdownLobbyViolator_C::Image_OuterTriangle' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, Text_ShowdownTitle) == 0x000660, "Member 'UShowdownLobbyViolator_C::Text_ShowdownTitle' has a wrong offset!");
-static_assert(offsetof(UShowdownLobbyViolator_C, RunOnce) == 0x000668, "Member 'UShowdownLobbyViolator_C::RunOnce' has a wrong offset!");
 
 }
 

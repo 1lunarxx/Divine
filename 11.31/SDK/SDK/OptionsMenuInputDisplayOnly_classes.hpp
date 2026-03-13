@@ -41,23 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuInputDisplayOnly_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuInputDisplayOnly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuInputDisplayOnly_C")
 	}
 	static class UOptionsMenuInputDisplayOnly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuInputDisplayOnly_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuInputDisplayOnly_C) == 0x000008, "Wrong alignment on UOptionsMenuInputDisplayOnly_C");
-static_assert(sizeof(UOptionsMenuInputDisplayOnly_C) == 0x000298, "Wrong size on UOptionsMenuInputDisplayOnly_C");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, UberGraphFrame) == 0x000258, "Member 'UOptionsMenuInputDisplayOnly_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, ActionText) == 0x000260, "Member 'UOptionsMenuInputDisplayOnly_C::ActionText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, BorderFrame) == 0x000268, "Member 'UOptionsMenuInputDisplayOnly_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, CommonBorder_0) == 0x000270, "Member 'UOptionsMenuInputDisplayOnly_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, PrimaryKeybindText) == 0x000278, "Member 'UOptionsMenuInputDisplayOnly_C::PrimaryKeybindText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, PrimaryKeybindTextSizeBox) == 0x000280, "Member 'UOptionsMenuInputDisplayOnly_C::PrimaryKeybindTextSizeBox' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, SecondaryKeybindText) == 0x000288, "Member 'UOptionsMenuInputDisplayOnly_C::SecondaryKeybindText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuInputDisplayOnly_C, SecondaryKeybindTextSizeBox) == 0x000290, "Member 'UOptionsMenuInputDisplayOnly_C::SecondaryKeybindTextSizeBox' has a wrong offset!");
 
 }
 

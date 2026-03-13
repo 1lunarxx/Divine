@@ -63,30 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAquisitionStyleScreen_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAquisitionStyleScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAquisitionStyleScreen_C")
 	}
 	static class UAthenaDirectAquisitionStyleScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAquisitionStyleScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAquisitionStyleScreen_C) == 0x000008, "Wrong alignment on UAthenaDirectAquisitionStyleScreen_C");
-static_assert(sizeof(UAthenaDirectAquisitionStyleScreen_C) == 0x0006A8, "Wrong size on UAthenaDirectAquisitionStyleScreen_C");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, UberGraphFrame) == 0x000630, "Member 'UAthenaDirectAquisitionStyleScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, Button_Next) == 0x000638, "Member 'UAthenaDirectAquisitionStyleScreen_C::Button_Next' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, Button_Previous) == 0x000640, "Member 'UAthenaDirectAquisitionStyleScreen_C::Button_Previous' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, CameraFramingWidget) == 0x000648, "Member 'UAthenaDirectAquisitionStyleScreen_C::CameraFramingWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, Image_1) == 0x000650, "Member 'UAthenaDirectAquisitionStyleScreen_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, ItemInfoHeader) == 0x000658, "Member 'UAthenaDirectAquisitionStyleScreen_C::ItemInfoHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, LockedNotification) == 0x000660, "Member 'UAthenaDirectAquisitionStyleScreen_C::LockedNotification' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, MobileCloseButton) == 0x000668, "Member 'UAthenaDirectAquisitionStyleScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, Overlay_CloseButton) == 0x000670, "Member 'UAthenaDirectAquisitionStyleScreen_C::Overlay_CloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, StyleDisclaimer) == 0x000678, "Member 'UAthenaDirectAquisitionStyleScreen_C::StyleDisclaimer' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, OfferSet) == 0x000680, "Member 'UAthenaDirectAquisitionStyleScreen_C::OfferSet' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, IndexIntoOffersWithVariantsList) == 0x000684, "Member 'UAthenaDirectAquisitionStyleScreen_C::IndexIntoOffersWithVariantsList' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, OfferSubIndicesWithVariants) == 0x000688, "Member 'UAthenaDirectAquisitionStyleScreen_C::OfferSubIndicesWithVariants' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, InitialTriggeringItemDef) == 0x000698, "Member 'UAthenaDirectAquisitionStyleScreen_C::InitialTriggeringItemDef' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAquisitionStyleScreen_C, CharacterItem) == 0x0006A0, "Member 'UAthenaDirectAquisitionStyleScreen_C::CharacterItem' has a wrong offset!");
 
 }
 

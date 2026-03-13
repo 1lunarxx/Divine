@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FluidSim_FN_C">();
+		BP_STATIC_CLASS_IMPL("BP_FluidSim_FN_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FluidSim_FN_C")
 	}
 	static class ABP_FluidSim_FN_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FluidSim_FN_C>();
 	}
 };
-static_assert(alignof(ABP_FluidSim_FN_C) == 0x000008, "Wrong alignment on ABP_FluidSim_FN_C");
-static_assert(sizeof(ABP_FluidSim_FN_C) == 0x000538, "Wrong size on ABP_FluidSim_FN_C");
-static_assert(offsetof(ABP_FluidSim_FN_C, UberGraphFrame_BP_FluidSim_FN_C) == 0x000438, "Member 'ABP_FluidSim_FN_C::UberGraphFrame_BP_FluidSim_FN_C' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_FN_C, BoatForceSettings) == 0x000440, "Member 'ABP_FluidSim_FN_C::BoatForceSettings' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_FN_C, PlayerForceSettings) == 0x0004B0, "Member 'ABP_FluidSim_FN_C::PlayerForceSettings' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_FN_C, NearPawns) == 0x000520, "Member 'ABP_FluidSim_FN_C::NearPawns' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_FN_C, RelevantFortPawns) == 0x000528, "Member 'ABP_FluidSim_FN_C::RelevantFortPawns' has a wrong offset!");
 
 }
 

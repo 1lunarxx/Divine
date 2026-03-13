@@ -36,21 +36,6 @@ public:
 	class UNiagaraComponent*                      NS;                                                // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          enableSpawn;                                       // 0x0030(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables) == 0x000008, "Wrong alignment on FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables");
-static_assert(sizeof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables) == 0x000038, "Wrong size on FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, NiagaraSystem) == 0x000000, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::NiagaraSystem' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, enableSpawning) == 0x000008, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::enableSpawning' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, InWater) == 0x000009, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::InWater' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, InAir) == 0x00000A, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::InAir' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, HasDriver) == 0x00000B, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::HasDriver' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, Boost) == 0x00000C, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::Boost' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, ForwardSpeed) == 0x000010, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::ForwardSpeed' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, TurnDirection) == 0x000014, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::TurnDirection' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, TurnSpeed) == 0x000018, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::TurnSpeed' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, TurningAngle) == 0x00001C, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::TurningAngle' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, __WorldContext) == 0x000020, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::__WorldContext' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, NS) == 0x000028, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::NS' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables, enableSpawn) == 0x000030, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraVehicleUserVariables::enableSpawn' has a wrong offset!");
 
 // Function FL_NiagaraVehicleUserVariables.FL_NiagaraVehicleUserVariables_C.setNiagaraPontoonUserVariables
 // 0x0150 (0x0150 - 0x0000)
@@ -63,12 +48,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0140(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UNiagaraComponent*                      NS;                                                // 0x0148(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables) == 0x000010, "Wrong alignment on FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables");
-static_assert(sizeof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables) == 0x000150, "Wrong size on FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables, Niagara) == 0x000000, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables::Niagara' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables, Pontoon) == 0x000010, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables::Pontoon' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables, __WorldContext) == 0x000140, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables::__WorldContext' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables, NS) == 0x000148, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraPontoonUserVariables::NS' has a wrong offset!");
 
 // Function FL_NiagaraVehicleUserVariables.FL_NiagaraVehicleUserVariables_C.niagaraPontoonModule
 // 0x0260 (0x0260 - 0x0000)
@@ -100,31 +79,6 @@ public:
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_9;              // 0x0248(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Conv_StringToName_ReturnValue_3;          // 0x0258(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule) == 0x000010, "Wrong alignment on FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule");
-static_assert(sizeof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule) == 0x000260, "Wrong size on FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, Niagara) == 0x000000, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::Niagara' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, Pontoon) == 0x000010, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::Pontoon' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, __WorldContext) == 0x000140, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::__WorldContext' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, NS) == 0x000148, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::NS' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_NameToString_ReturnValue) == 0x000150, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_NameToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_NameToString_ReturnValue_1) == 0x000160, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_NameToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue) == 0x000170, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000180, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000190, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0001A0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_StringToName_ReturnValue) == 0x0001B0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_StringToName_ReturnValue_1) == 0x0001B8, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_NameToString_ReturnValue_2) == 0x0001C0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_NameToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_NameToString_ReturnValue_3) == 0x0001D0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_NameToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_4) == 0x0001E0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_5) == 0x0001F0, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_6) == 0x000200, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_7) == 0x000210, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_NameToString_ReturnValue_4) == 0x000220, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_NameToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_StringToName_ReturnValue_2) == 0x000230, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_StringToName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000238, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000248, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule, CallFunc_Conv_StringToName_ReturnValue_3) == 0x000258, "Member 'FL_NiagaraVehicleUserVariables_C_niagaraPontoonModule::CallFunc_Conv_StringToName_ReturnValue_3' has a wrong offset!");
 
 // Function FL_NiagaraVehicleUserVariables.FL_NiagaraVehicleUserVariables_C.setNiagaraSkydiveUserVariables
 // 0x0030 (0x0030 - 0x0000)
@@ -139,14 +93,6 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MapRangeClamped_ReturnValue;              // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables) == 0x000008, "Wrong alignment on FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables");
-static_assert(sizeof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables) == 0x000030, "Wrong size on FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, Niagara) == 0x000000, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::Niagara' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, Velocity) == 0x000008, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::Velocity' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, __WorldContext) == 0x000018, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::__WorldContext' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, AccumulatedSpeed) == 0x000020, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::AccumulatedSpeed' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, CallFunc_VSize_ReturnValue) == 0x000024, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables, CallFunc_MapRangeClamped_ReturnValue) == 0x000028, "Member 'FL_NiagaraVehicleUserVariables_C_setNiagaraSkydiveUserVariables::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UCommonUIRichTextData_C final : public UCommonUIRichTextData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CommonUIRichTextData_C">();
+		BP_STATIC_CLASS_IMPL("CommonUIRichTextData_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUIRichTextData_C")
 	}
 	static class UCommonUIRichTextData_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUIRichTextData_C>();
 	}
 };
-static_assert(alignof(UCommonUIRichTextData_C) == 0x000008, "Wrong alignment on UCommonUIRichTextData_C");
-static_assert(sizeof(UCommonUIRichTextData_C) == 0x000030, "Wrong size on UCommonUIRichTextData_C");
 
 }
 

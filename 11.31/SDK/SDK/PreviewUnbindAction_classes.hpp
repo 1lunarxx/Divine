@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PreviewUnbindAction_C">();
+		BP_STATIC_CLASS_IMPL("PreviewUnbindAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PreviewUnbindAction_C")
 	}
 	static class UPreviewUnbindAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPreviewUnbindAction_C>();
 	}
 };
-static_assert(alignof(UPreviewUnbindAction_C) == 0x000008, "Wrong alignment on UPreviewUnbindAction_C");
-static_assert(sizeof(UPreviewUnbindAction_C) == 0x000270, "Wrong size on UPreviewUnbindAction_C");
-static_assert(offsetof(UPreviewUnbindAction_C, UberGraphFrame) == 0x000248, "Member 'UPreviewUnbindAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPreviewUnbindAction_C, BorderFrame) == 0x000250, "Member 'UPreviewUnbindAction_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UPreviewUnbindAction_C, CommonBorder_0) == 0x000258, "Member 'UPreviewUnbindAction_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UPreviewUnbindAction_C, PrimaryKeybindTextSizeBox) == 0x000260, "Member 'UPreviewUnbindAction_C::PrimaryKeybindTextSizeBox' has a wrong offset!");
-static_assert(offsetof(UPreviewUnbindAction_C, SecondaryKeybindTextSizeBox) == 0x000268, "Member 'UPreviewUnbindAction_C::SecondaryKeybindTextSizeBox' has a wrong offset!");
 
 }
 

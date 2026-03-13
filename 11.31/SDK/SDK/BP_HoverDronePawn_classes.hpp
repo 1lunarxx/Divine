@@ -50,28 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_HoverDronePawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_HoverDronePawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_HoverDronePawn_C")
 	}
 	static class ABP_HoverDronePawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_HoverDronePawn_C>();
 	}
 };
-static_assert(alignof(ABP_HoverDronePawn_C) == 0x000008, "Wrong alignment on ABP_HoverDronePawn_C");
-static_assert(sizeof(ABP_HoverDronePawn_C) == 0x0003B0, "Wrong size on ABP_HoverDronePawn_C");
-static_assert(offsetof(ABP_HoverDronePawn_C, UberGraphFrame) == 0x000360, "Member 'ABP_HoverDronePawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, WindAudioEnabled) == 0x000368, "Member 'ABP_HoverDronePawn_C::WindAudioEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, AltitudeWindAudioComp) == 0x000370, "Member 'ABP_HoverDronePawn_C::AltitudeWindAudioComp' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, WindAudioAltMin) == 0x000378, "Member 'ABP_HoverDronePawn_C::WindAudioAltMin' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, WindAudioAltMax) == 0x00037C, "Member 'ABP_HoverDronePawn_C::WindAudioAltMax' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, WindAudioVolMin) == 0x000380, "Member 'ABP_HoverDronePawn_C::WindAudioVolMin' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, WindAudioVolMax) == 0x000384, "Member 'ABP_HoverDronePawn_C::WindAudioVolMax' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, SoundWindMovementLoop) == 0x000388, "Member 'ABP_HoverDronePawn_C::SoundWindMovementLoop' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, SoundWindAltitudeLoop) == 0x000390, "Member 'ABP_HoverDronePawn_C::SoundWindAltitudeLoop' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, CurrentAltitudeWindVolume) == 0x000398, "Member 'ABP_HoverDronePawn_C::CurrentAltitudeWindVolume' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, Speed) == 0x00039C, "Member 'ABP_HoverDronePawn_C::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, MovementWindAudioComp) == 0x0003A0, "Member 'ABP_HoverDronePawn_C::MovementWindAudioComp' has a wrong offset!");
-static_assert(offsetof(ABP_HoverDronePawn_C, CurrentMovementWindVolume) == 0x0003A8, "Member 'ABP_HoverDronePawn_C::CurrentMovementWindVolume' has a wrong offset!");
 
 }
 

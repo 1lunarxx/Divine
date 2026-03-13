@@ -27,13 +27,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaTemperature_C_ShowTemperatureChanged) == 0x000001, "Wrong alignment on AthenaTemperature_C_ShowTemperatureChanged");
-static_assert(sizeof(AthenaTemperature_C_ShowTemperatureChanged) == 0x000005, "Wrong size on AthenaTemperature_C_ShowTemperatureChanged");
-static_assert(offsetof(AthenaTemperature_C_ShowTemperatureChanged, bShowTemperature) == 0x000000, "Member 'AthenaTemperature_C_ShowTemperatureChanged::bShowTemperature' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ShowTemperatureChanged, Temp_bool_Variable) == 0x000001, "Member 'AthenaTemperature_C_ShowTemperatureChanged::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ShowTemperatureChanged, Temp_byte_Variable) == 0x000002, "Member 'AthenaTemperature_C_ShowTemperatureChanged::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ShowTemperatureChanged, Temp_byte_Variable_1) == 0x000003, "Member 'AthenaTemperature_C_ShowTemperatureChanged::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ShowTemperatureChanged, K2Node_Select_Default) == 0x000004, "Member 'AthenaTemperature_C_ShowTemperatureChanged::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaTemperature.AthenaTemperature_C.ExecuteUbergraph_AthenaTemperature
 // 0x0030 (0x0030 - 0x0000)
@@ -47,13 +40,6 @@ public:
 	class AFortPlayerController*                  K2Node_DynamicCast_AsFort_Player_Controller;       // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature) == 0x000008, "Wrong alignment on AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature");
-static_assert(sizeof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature) == 0x000030, "Wrong size on AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature");
-static_assert(offsetof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature, EntryPoint) == 0x000000, "Member 'AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000020, "Member 'AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AthenaTemperature_C_ExecuteUbergraph_AthenaTemperature::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

@@ -43,26 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChannelSettings_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChannelSettings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChannelSettings_C")
 	}
 	static class UVoiceChannelSettings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChannelSettings_C>();
 	}
 };
-static_assert(alignof(UVoiceChannelSettings_C) == 0x000008, "Wrong alignment on UVoiceChannelSettings_C");
-static_assert(sizeof(UVoiceChannelSettings_C) == 0x0002F8, "Wrong size on UVoiceChannelSettings_C");
-static_assert(offsetof(UVoiceChannelSettings_C, UberGraphFrame) == 0x0002A0, "Member 'UVoiceChannelSettings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, GearHover) == 0x0002A8, "Member 'UVoiceChannelSettings_C::GearHover' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, ActionWidget_InputDisplay) == 0x0002B0, "Member 'UVoiceChannelSettings_C::ActionWidget_InputDisplay' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, GearIcon) == 0x0002B8, "Member 'UVoiceChannelSettings_C::GearIcon' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, InputDevice) == 0x0002C0, "Member 'UVoiceChannelSettings_C::InputDevice' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, OutputDevice) == 0x0002C8, "Member 'UVoiceChannelSettings_C::OutputDevice' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, PTTKeybindWidget) == 0x0002D0, "Member 'UVoiceChannelSettings_C::PTTKeybindWidget' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, PushToTalk) == 0x0002D8, "Member 'UVoiceChannelSettings_C::PushToTalk' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, SettingsTitle) == 0x0002E0, "Member 'UVoiceChannelSettings_C::SettingsTitle' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, VoiceDisabledIcon) == 0x0002E8, "Member 'UVoiceChannelSettings_C::VoiceDisabledIcon' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelSettings_C, VoiceDisabledText) == 0x0002F0, "Member 'UVoiceChannelSettings_C::VoiceDisabledText' has a wrong offset!");
 
 }
 

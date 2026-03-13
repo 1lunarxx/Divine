@@ -21,9 +21,6 @@ struct RealMoneyStorefront_C_OnSectionEstablished final
 public:
 	bool                                          bEmptySection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RealMoneyStorefront_C_OnSectionEstablished) == 0x000001, "Wrong alignment on RealMoneyStorefront_C_OnSectionEstablished");
-static_assert(sizeof(RealMoneyStorefront_C_OnSectionEstablished) == 0x000001, "Wrong size on RealMoneyStorefront_C_OnSectionEstablished");
-static_assert(offsetof(RealMoneyStorefront_C_OnSectionEstablished, bEmptySection) == 0x000000, "Member 'RealMoneyStorefront_C_OnSectionEstablished::bEmptySection' has a wrong offset!");
 
 // Function RealMoneyStorefront.RealMoneyStorefront_C.ExecuteUbergraph_RealMoneyStorefront
 // 0x0010 (0x0010 - 0x0000)
@@ -36,12 +33,6 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront) == 0x000008, "Wrong alignment on RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront");
-static_assert(sizeof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront) == 0x000010, "Wrong size on RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront");
-static_assert(offsetof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront, EntryPoint) == 0x000000, "Member 'RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront, K2Node_Event_bEmptySection) == 0x000004, "Member 'RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront::K2Node_Event_bEmptySection' has a wrong offset!");
-static_assert(offsetof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront, Temp_bool_Variable) == 0x000005, "Member 'RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront, K2Node_Select_Default) == 0x000008, "Member 'RealMoneyStorefront_C_ExecuteUbergraph_RealMoneyStorefront::K2Node_Select_Default' has a wrong offset!");
 
 }
 

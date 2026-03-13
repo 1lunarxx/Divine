@@ -23,9 +23,6 @@ struct VoiceChannelChangePopup_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(VoiceChannelChangePopup_C_PreConstruct) == 0x000001, "Wrong alignment on VoiceChannelChangePopup_C_PreConstruct");
-static_assert(sizeof(VoiceChannelChangePopup_C_PreConstruct) == 0x000001, "Wrong size on VoiceChannelChangePopup_C_PreConstruct");
-static_assert(offsetof(VoiceChannelChangePopup_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'VoiceChannelChangePopup_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function VoiceChannelChangePopup.VoiceChannelChangePopup_C.OnInputModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,6 @@ struct VoiceChannelChangePopup_C_OnInputModeChanged final
 public:
 	ECommonInputType                              NewInputType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(VoiceChannelChangePopup_C_OnInputModeChanged) == 0x000001, "Wrong alignment on VoiceChannelChangePopup_C_OnInputModeChanged");
-static_assert(sizeof(VoiceChannelChangePopup_C_OnInputModeChanged) == 0x000001, "Wrong size on VoiceChannelChangePopup_C_OnInputModeChanged");
-static_assert(offsetof(VoiceChannelChangePopup_C_OnInputModeChanged, NewInputType) == 0x000000, "Member 'VoiceChannelChangePopup_C_OnInputModeChanged::NewInputType' has a wrong offset!");
 
 // Function VoiceChannelChangePopup.VoiceChannelChangePopup_C.ExecuteUbergraph_VoiceChannelChangePopup
 // 0x0040 (0x0040 - 0x0000)
@@ -55,17 +49,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                K2Node_Select_Default;                             // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup) == 0x000008, "Wrong alignment on VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup");
-static_assert(sizeof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup) == 0x000040, "Wrong size on VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, EntryPoint) == 0x000000, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, Temp_byte_Variable) == 0x000004, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, K2Node_Event_IsDesignTime) == 0x000028, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, K2Node_Event_NewInputType) == 0x000029, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::K2Node_Event_NewInputType' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, CallFunc_PlayAnimation_ReturnValue_2) == 0x000030, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup, K2Node_Select_Default) == 0x000038, "Member 'VoiceChannelChangePopup_C_ExecuteUbergraph_VoiceChannelChangePopup::K2Node_Select_Default' has a wrong offset!");
 
 }
 

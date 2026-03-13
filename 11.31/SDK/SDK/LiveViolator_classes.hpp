@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LiveViolator_C">();
+		BP_STATIC_CLASS_IMPL("LiveViolator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveViolator_C")
 	}
 	static class ULiveViolator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveViolator_C>();
 	}
 };
-static_assert(alignof(ULiveViolator_C) == 0x000008, "Wrong alignment on ULiveViolator_C");
-static_assert(sizeof(ULiveViolator_C) == 0x000258, "Wrong size on ULiveViolator_C");
-static_assert(offsetof(ULiveViolator_C, UberGraphFrame) == 0x000230, "Member 'ULiveViolator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULiveViolator_C, Text_Callout) == 0x000238, "Member 'ULiveViolator_C::Text_Callout' has a wrong offset!");
-static_assert(offsetof(ULiveViolator_C, LiveText) == 0x000240, "Member 'ULiveViolator_C::LiveText' has a wrong offset!");
 
 }
 

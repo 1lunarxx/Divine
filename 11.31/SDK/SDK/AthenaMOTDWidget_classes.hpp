@@ -34,7 +34,7 @@ public:
 	class USafeZone*                              SafeZone_0;                                        // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_1;                                        // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USafeZone*                              SafeZone_2;                                        // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(EAthenaNewsStyle NewStyle)> UpdateStyle;                                       // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EAthenaNewsStyle NewStyle)> UpdateStyle;                           // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   ButtonDefaultText_WatchVideo;                      // 0x0438(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   ButtonDefaultText_ViewItem;                        // 0x0450(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class FText                                   ButtonDefaultText_ViewRMTItem;                     // 0x0468(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -43,6 +43,8 @@ public:
 	class FText                                   ButtonDefaultText_STWUpsell;                       // 0x04B0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
+	void UpdateCustomColorStyle(bool bHasCustomColor, const struct FColor& CustomDarkColor, const struct FColor& CustomLightColor);
+	void SetTextIfValidOrDefault(class UCommonButton* Button, const class FString& String, const class FText& DefaultText);
 	void DialogResult_B7839D98483DEF9593D448BA28AE74F7(EFortDialogResult Result, class FName ResultName);
 	void OnInitialized();
 	void BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -50,38 +52,21 @@ public:
 	void StartSTWUpsell();
 	void OnSelectedNews(const struct FAthenaNewsEntry& NewsEntry);
 	void ExecuteUbergraph_AthenaMOTDWidget(int32 EntryPoint);
-	void UpdateCustomColorStyle(bool bHasCustomColor, const struct FColor& CustomDarkColor, const struct FColor& CustomLightColor);
-	void SetTextIfValidOrDefault(class UCommonButton* Button, const class FString& String, const class FText& DefaultText);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDWidget_C")
 	}
 	static class UAthenaMOTDWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDWidget_C");
-static_assert(sizeof(UAthenaMOTDWidget_C) == 0x0004C8, "Wrong size on UAthenaMOTDWidget_C");
-static_assert(offsetof(UAthenaMOTDWidget_C, UberGraphFrame) == 0x0003D8, "Member 'UAthenaMOTDWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, IntroAnim) == 0x0003E0, "Member 'UAthenaMOTDWidget_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, OnNewSelect) == 0x0003E8, "Member 'UAthenaMOTDWidget_C::OnNewSelect' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, CircleArrowButton_Left) == 0x0003F0, "Member 'UAthenaMOTDWidget_C::CircleArrowButton_Left' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, CircleArrowButton_Right) == 0x0003F8, "Member 'UAthenaMOTDWidget_C::CircleArrowButton_Right' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, CommonText_NewsHeader) == 0x000400, "Member 'UAthenaMOTDWidget_C::CommonText_NewsHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, Image_TextFloater) == 0x000408, "Member 'UAthenaMOTDWidget_C::Image_TextFloater' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, SafeZone_0) == 0x000410, "Member 'UAthenaMOTDWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, SafeZone_1) == 0x000418, "Member 'UAthenaMOTDWidget_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, SafeZone_2) == 0x000420, "Member 'UAthenaMOTDWidget_C::SafeZone_2' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, UpdateStyle) == 0x000428, "Member 'UAthenaMOTDWidget_C::UpdateStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_WatchVideo) == 0x000438, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_WatchVideo' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_ViewItem) == 0x000450, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_ViewItem' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_ViewRMTItem) == 0x000468, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_ViewRMTItem' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_OpenWebsite) == 0x000480, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_OpenWebsite' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_NavigateToTab) == 0x000498, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_NavigateToTab' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWidget_C, ButtonDefaultText_STWUpsell) == 0x0004B0, "Member 'UAthenaMOTDWidget_C::ButtonDefaultText_STWUpsell' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UAthena_PlayerCameraHoisted_C final : public UAthena_PlayerCameraModeBase_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraHoisted_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraHoisted_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraHoisted_C")
 	}
 	static class UAthena_PlayerCameraHoisted_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraHoisted_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraHoisted_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraHoisted_C");
-static_assert(sizeof(UAthena_PlayerCameraHoisted_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraHoisted_C");
 
 }
 

@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialSettingToggle_C">();
+		BP_STATIC_CLASS_IMPL("SocialSettingToggle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialSettingToggle_C")
 	}
 	static class USocialSettingToggle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialSettingToggle_C>();
 	}
 };
-static_assert(alignof(USocialSettingToggle_C) == 0x000008, "Wrong alignment on USocialSettingToggle_C");
-static_assert(sizeof(USocialSettingToggle_C) == 0x0002A8, "Wrong size on USocialSettingToggle_C");
-static_assert(offsetof(USocialSettingToggle_C, UberGraphFrame) == 0x000288, "Member 'USocialSettingToggle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialSettingToggle_C, HorizontalBox_0) == 0x000290, "Member 'USocialSettingToggle_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(USocialSettingToggle_C, NameBox) == 0x000298, "Member 'USocialSettingToggle_C::NameBox' has a wrong offset!");
-static_assert(offsetof(USocialSettingToggle_C, DefaultFontSize) == 0x0002A0, "Member 'USocialSettingToggle_C::DefaultFontSize' has a wrong offset!");
-static_assert(offsetof(USocialSettingToggle_C, MobileFontSize) == 0x0002A4, "Member 'USocialSettingToggle_C::MobileFontSize' has a wrong offset!");
 
 }
 

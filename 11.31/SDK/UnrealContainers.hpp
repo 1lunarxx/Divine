@@ -11,6 +11,7 @@
 #include <string>
 #include <stdexcept>
 #include <iostream>
+#include <optional>
 #include "UtfN.hpp"
 
 namespace UC
@@ -40,6 +41,19 @@ namespace UC
 	template<typename KeyElementType, typename ValueElementType>
 	class TPair;
 
+	class FMemory
+	{
+	public:
+		static inline void* Realloc(void* _a1, __int64 _a2, unsigned int _a3) {
+			static auto ret = reinterpret_cast<void* (*)(void*, __int64, unsigned int)>(__int64(GetModuleHandleA(0)) + 0x25C64B0);
+			return ret(_a1, _a2, _a3);
+		}
+
+		static inline void Free(void* ptr) {
+			Realloc(ptr, 0, 0);
+		}
+	};
+
 	namespace Iterators
 	{
 		class FSetBitIterator;
@@ -60,18 +74,6 @@ namespace UC
 		using TMapIterator = TContainerIterator<TMap<KeyElementType, ValueElementType>>;
 	}
 
-	class FMemory
-	{
-	public:
-		static inline void* Realloc(void* _a1, __int64 _a2, unsigned int _a3) {
-			static auto ret = reinterpret_cast<void* (*)(void*, __int64, unsigned int)>(__int64(GetModuleHandleA(0)) + 0x25C64B0);
-			return ret(_a1, _a2, _a3);
-		}
-
-		static inline void Free(void* ptr) {
-			Realloc(ptr, 0, 0);
-		}
-	};
 
 	namespace ContainerImpl
 	{
@@ -259,7 +261,12 @@ namespace UC
 
 	public:
 		TArray()
-			: Data(nullptr), NumElements(0), MaxElements(0)
+			: TArray(nullptr, 0, 0)
+		{
+		}
+
+		TArray(ArrayElementType* Data, int32 NumElements, int32 MaxElements)
+			: Data(Data), NumElements(NumElements), MaxElements(MaxElements)
 		{
 		}
 
@@ -285,27 +292,15 @@ namespace UC
 			Data = (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = Num + NumElements) * Size, 0);
 		}
 
-		inline void Free()
-		{
-			if (Data)
-				FMemory::Free(Data);
-
-			MaxElements = 0;
-			NumElements = 0;
-			Data = nullptr;
-		}
-
 		/* Adds to the array if there is still space for one more element */
-		inline ArrayElementType& Add(const ArrayElementType& Element, size_t Size = sizeof(ArrayElementType))
+		inline bool Add(const ArrayElementType& Element)
 		{
-			if (MaxElements < (1 + NumElements)) {
-				Reserve(1, Size);
-			}
+			Reserve(1);
 
-			memcpy_s((void*)(__int64(Data) + (NumElements * Size)), Size, (void*)&Element, Size);
-			++NumElements;
+			Data[NumElements] = Element;
+			NumElements++;
 
-			return Data[NumElements - 1];
+			return true;
 		}
 
 		inline bool Remove(int32 Index)
@@ -331,6 +326,43 @@ namespace UC
 			if (Data)
 				memset(Data, 0, NumElements * ElementSize);
 		}
+
+    public:
+        template<typename OtherType>
+        inline std::optional<ArrayElementType> Find(const OtherType& ElementToSearch, bool(*IsEqual)(const ArrayElementType&, const OtherType&)) const
+        {
+            for (const auto& Element : *this)
+            {
+                if (IsEqual(Element, ElementToSearch))
+                    return Element;
+            }
+
+            return {};
+        }
+
+        inline std::optional<ArrayElementType> Find(const ArrayElementType& ElementToSearch) const
+            requires std::equality_comparable<ArrayElementType>
+        {
+            for (const auto& Element : *this)
+            {
+                if (Element == ElementToSearch)
+                    return Element;
+            }
+
+            return {};
+        }
+
+        template<typename OtherType>
+        inline bool Contains(const OtherType& ElementToSearch,     bool(*IsEqual)(const ArrayElementType&, const OtherType&)) const
+        {
+            return Find<OtherType>(ElementToSearch, IsEqual).has_value();
+        }
+
+        inline bool Contains(const ArrayElementType& ElementToSearch) const
+            requires std::equality_comparable<ArrayElementType>
+        {
+            return Find(ElementToSearch).has_value();
+        }
 
 	public:
 		inline int32 Num() const { return NumElements; }
@@ -373,6 +405,13 @@ namespace UC
 			MaxElements = NullTerminatedLength;
 		}
 
+		FString(wchar_t* Str, int32 Num, int32 Max)
+		{
+			Data = Str;
+			NumElements = Num;
+			MaxElements = Max;
+		}
+
 	public:
 		inline std::string ToString() const
 		{
@@ -400,6 +439,119 @@ namespace UC
 		inline bool operator==(const FString& Other) const { return Other ? NumElements == Other.NumElements && wcscmp(Data, Other.Data) == 0 : false; }
 		inline bool operator!=(const FString& Other) const { return Other ? NumElements != Other.NumElements || wcscmp(Data, Other.Data) != 0 : true; }
 	};
+
+	// Utf8String that assumes C-APIs (strlen, strcmp) behaviour works for char8_t like Ansi strings, execept it's counting/comparing bytes not characters.
+	class FUtf8String : public TArray<char8_t>
+	{
+	public:
+		friend std::ostream& operator<<(std::ostream& Stream, const UC::FUtf8String& Str) { return Stream << Str.ToString(); }
+
+	private:
+		inline const char* GetDataAsConstCharPtr() const
+		{
+			return reinterpret_cast<const char*>(Data);
+		}
+
+	public:
+		using TArray::TArray;
+
+		FUtf8String(const char8_t* Str)
+		{
+			Data = const_cast<char8_t*>(Str);
+
+			const uint32 NullTerminatedLength = static_cast<uint32>(strlen(GetDataAsConstCharPtr()) + 0x1);
+
+			NumElements = NullTerminatedLength;
+			MaxElements = NullTerminatedLength;
+		}
+
+		FUtf8String(char8_t* Str, int32 Num, int32 Max)
+		{
+			Data = Str;
+			NumElements = Num;
+			MaxElements = Max;
+		}
+
+	public:
+		inline std::string ToString() const
+		{
+			if (*this)
+			{
+				return std::string(GetDataAsConstCharPtr(), NumElements - 1); // Exclude null-terminator
+			}
+
+			return "";
+		}
+
+		inline std::wstring ToWString() const
+		{
+			if (*this)
+				return UtfN::StringToWString<std::string>(ToString()); // Exclude null-terminator
+
+			return L"";
+		}
+
+	public:
+		inline       char8_t* CStr()       { return Data; }
+		inline const char8_t* CStr() const { return Data; }
+
+	public:
+		inline bool operator==(const FUtf8String& Other) const { return Other ? NumElements == Other.NumElements && strcmp(GetDataAsConstCharPtr(), Other.GetDataAsConstCharPtr()) == 0 : false; }
+		inline bool operator!=(const FUtf8String& Other) const { return Other ? NumElements != Other.NumElements || strcmp(GetDataAsConstCharPtr(), Other.GetDataAsConstCharPtr()) != 0 : true; }
+	};
+
+	class FAnsiString : public TArray<char>
+	{
+	public:
+		friend std::ostream& operator<<(std::ostream& Stream, const UC::FAnsiString& Str) { return Stream << Str.ToString(); }
+
+	public:
+		using TArray::TArray;
+
+		FAnsiString(const char* Str)
+		{
+			const uint32 NullTerminatedLength = static_cast<uint32>(strlen(Str) + 0x1);
+
+			Data = const_cast<char*>(Str);
+			NumElements = NullTerminatedLength;
+			MaxElements = NullTerminatedLength;
+		}
+
+		FAnsiString(char* Str, int32 Num, int32 Max)
+		{
+			Data = Str;
+			NumElements = Num;
+			MaxElements = Max;
+		}
+
+	public:
+		inline std::string ToString() const
+		{
+			if (*this)
+			{
+				return std::string(Data, NumElements - 1); // Exclude null-terminator
+			}
+
+			return "";
+		}
+
+		inline std::wstring ToWString() const
+		{
+			if (*this)
+				return UtfN::StringToWString<std::string>(ToString()); // Exclude null-terminator
+
+			return L"";
+		}
+
+	public:
+		inline       char* CStr() { return Data; }
+		inline const char* CStr() const { return Data; }
+
+	public:
+		inline bool operator==(const FAnsiString& Other) const { return Other ? NumElements == Other.NumElements && strcmp(Data, Other.Data) == 0 : false; }
+		inline bool operator!=(const FAnsiString& Other) const { return Other ? NumElements != Other.NumElements || strcmp(Data, Other.Data) != 0 : true; }
+	};
+
 
 	/*
 	* Class to allow construction of a TArray, that uses c-style standard-library memory allocation.

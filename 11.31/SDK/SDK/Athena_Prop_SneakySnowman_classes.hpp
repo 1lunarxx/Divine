@@ -68,31 +68,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_Prop_SneakySnowman_C">();
+		BP_STATIC_CLASS_IMPL("Athena_Prop_SneakySnowman_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_Prop_SneakySnowman_C")
 	}
 	static class AAthena_Prop_SneakySnowman_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_Prop_SneakySnowman_C>();
 	}
 };
-static_assert(alignof(AAthena_Prop_SneakySnowman_C) == 0x000008, "Wrong alignment on AAthena_Prop_SneakySnowman_C");
-static_assert(sizeof(AAthena_Prop_SneakySnowman_C) == 0x000BD0, "Wrong size on AAthena_Prop_SneakySnowman_C");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, UberGraphFrame) == 0x000B08, "Member 'AAthena_Prop_SneakySnowman_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, OverlapCheck) == 0x000B10, "Member 'AAthena_Prop_SneakySnowman_C::OverlapCheck' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, ProjectileMovementComp) == 0x000B18, "Member 'AAthena_Prop_SneakySnowman_C::ProjectileMovementComp' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, bSimulationRunning) == 0x000B20, "Member 'AAthena_Prop_SneakySnowman_C::bSimulationRunning' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, GE_ApplyEnemySnowman) == 0x000B28, "Member 'AAthena_Prop_SneakySnowman_C::GE_ApplyEnemySnowman' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, ShouldSnowmanEnemies) == 0x000B30, "Member 'AAthena_Prop_SneakySnowman_C::ShouldSnowmanEnemies' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, PickupAthena) == 0x000B50, "Member 'AAthena_Prop_SneakySnowman_C::PickupAthena' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, Ignored_Actors) == 0x000B58, "Member 'AAthena_Prop_SneakySnowman_C::Ignored_Actors' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, LineTraceObjects) == 0x000B68, "Member 'AAthena_Prop_SneakySnowman_C::LineTraceObjects' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, DestroyAfterHit) == 0x000B78, "Member 'AAthena_Prop_SneakySnowman_C::DestroyAfterHit' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, LandedLocation) == 0x000B7C, "Member 'AAthena_Prop_SneakySnowman_C::LandedLocation' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, InitialGravityScale) == 0x000B88, "Member 'AAthena_Prop_SneakySnowman_C::InitialGravityScale' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, GamestateLoaded) == 0x000B8C, "Member 'AAthena_Prop_SneakySnowman_C::GamestateLoaded' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, ObjectTypes) == 0x000B90, "Member 'AAthena_Prop_SneakySnowman_C::ObjectTypes' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, StopLocation) == 0x000BA0, "Member 'AAthena_Prop_SneakySnowman_C::StopLocation' has a wrong offset!");
-static_assert(offsetof(AAthena_Prop_SneakySnowman_C, FallHeightToDestroy) == 0x000BB0, "Member 'AAthena_Prop_SneakySnowman_C::FallHeightToDestroy' has a wrong offset!");
 
 }
 

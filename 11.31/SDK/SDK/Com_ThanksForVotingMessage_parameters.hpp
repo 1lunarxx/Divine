@@ -38,20 +38,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(Com_ThanksForVotingMessage_C_TapToClose) == 0x000008, "Wrong alignment on Com_ThanksForVotingMessage_C_TapToClose");
-static_assert(sizeof(Com_ThanksForVotingMessage_C_TapToClose) == 0x0003B0, "Wrong size on Com_ThanksForVotingMessage_C_TapToClose");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, MyGeometry) == 0x000000, "Member 'Com_ThanksForVotingMessage_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, MouseEvent) == 0x000038, "Member 'Com_ThanksForVotingMessage_C_TapToClose::MouseEvent' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'Com_ThanksForVotingMessage_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'Com_ThanksForVotingMessage_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'Com_ThanksForVotingMessage_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'Com_ThanksForVotingMessage_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function Com_ThanksForVotingMessage.Com_ThanksForVotingMessage_C.ExecuteUbergraph_Com_ThanksForVotingMessage
 // 0x0028 (0x0028 - 0x0000)
@@ -64,12 +50,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage) == 0x000008, "Wrong alignment on Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage");
-static_assert(sizeof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage) == 0x000028, "Wrong size on Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage, EntryPoint) == 0x000000, "Member 'Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000018, "Member 'Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage, CallFunc_PlayAnimationForward_ReturnValue) == 0x000020, "Member 'Com_ThanksForVotingMessage_C_ExecuteUbergraph_Com_ThanksForVotingMessage::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

@@ -49,22 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HBOnboardingFlow_C">();
+		BP_STATIC_CLASS_IMPL("HBOnboardingFlow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HBOnboardingFlow_C")
 	}
 	static class AHBOnboardingFlow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AHBOnboardingFlow_C>();
 	}
 };
-static_assert(alignof(AHBOnboardingFlow_C) == 0x000008, "Wrong alignment on AHBOnboardingFlow_C");
-static_assert(sizeof(AHBOnboardingFlow_C) == 0x000250, "Wrong size on AHBOnboardingFlow_C");
-static_assert(offsetof(AHBOnboardingFlow_C, UberGraphFrame) == 0x000218, "Member 'AHBOnboardingFlow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, DefaultSceneRoot) == 0x000220, "Member 'AHBOnboardingFlow_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventMovieQuest) == 0x000228, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventMovieQuest' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, bPlayedPeriodicEventMovie) == 0x000230, "Member 'AHBOnboardingFlow_C::bPlayedPeriodicEventMovie' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, bHasRecheckedNeedToPlayPeriodicEventMovie) == 0x000231, "Member 'AHBOnboardingFlow_C::bHasRecheckedNeedToPlayPeriodicEventMovie' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PlayPeriodicEventCineObjective) == 0x000238, "Member 'AHBOnboardingFlow_C::PlayPeriodicEventCineObjective' has a wrong offset!");
-static_assert(offsetof(AHBOnboardingFlow_C, PeriodicEventMovieAnnouncementClass) == 0x000248, "Member 'AHBOnboardingFlow_C::PeriodicEventMovieAnnouncementClass' has a wrong offset!");
 
 }
 

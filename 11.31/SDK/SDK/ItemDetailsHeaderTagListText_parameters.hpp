@@ -42,22 +42,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x00F8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0108(0x0018)()
 };
-static_assert(alignof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x000008, "Wrong alignment on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
-static_assert(sizeof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags) == 0x000120, "Wrong size on ItemDetailsHeaderTagListText_C_FormatItemDisplayTags");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, TagTexts) == 0x000000, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::TagTexts' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, FormatedText) == 0x000010, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::FormatedText' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, Result) == 0x000028, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::Result' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, Temp_int_Array_Index_Variable) == 0x000040, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_Array_Get_Item) == 0x000048, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, Temp_int_Loop_Counter_Variable) == 0x0000A0, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_Add_IntInt_ReturnValue) == 0x0000A8, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000B0, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_TextIsEmpty_ReturnValue) == 0x0000F0, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, K2Node_MakeArray_Array) == 0x0000F8, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_FormatItemDisplayTags, CallFunc_Format_ReturnValue) == 0x000108, "Member 'ItemDetailsHeaderTagListText_C_FormatItemDisplayTags::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsHeaderTagListText.ItemDetailsHeaderTagListText_C.ExecuteUbergraph_ItemDetailsHeaderTagListText
 // 0x0108 (0x0108 - 0x0000)
@@ -83,22 +67,6 @@ public:
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D8(0x0028)()
 	bool                                          CallFunc_IsSchematicOrCraftedWeapon_ReturnValue;   // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x000008, "Wrong alignment on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
-static_assert(sizeof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText) == 0x000108, "Wrong size on ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, EntryPoint) == 0x000000, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, Temp_byte_Variable) == 0x000004, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, Temp_byte_Variable_1) == 0x000005, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, Temp_bool_Variable) == 0x000006, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_GetUserFriendlyTags_ReturnValue) == 0x000018, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_GetUserFriendlyTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_FormatItemDisplayTags_FormatedText) == 0x000028, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_FormatItemDisplayTags_FormatedText' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000040, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_TextIsEmpty_ReturnValue) == 0x000048, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_BPGetRarityDataForItemDef_ReturnValue) == 0x000050, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_BPGetRarityDataForItemDef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, K2Node_Select_Default) == 0x0000D0, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, K2Node_MakeStruct_SlateColor) == 0x0000D8, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText, CallFunc_IsSchematicOrCraftedWeapon_ReturnValue) == 0x000100, "Member 'ItemDetailsHeaderTagListText_C_ExecuteUbergraph_ItemDetailsHeaderTagListText::CallFunc_IsSchematicOrCraftedWeapon_ReturnValue' has a wrong offset!");
 
 }
 

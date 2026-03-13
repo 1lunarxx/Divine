@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortnitePartyBackdrop_Camera_C">();
+		BP_STATIC_CLASS_IMPL("FortnitePartyBackdrop_Camera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortnitePartyBackdrop_Camera_C")
 	}
 	static class AFortnitePartyBackdrop_Camera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFortnitePartyBackdrop_Camera_C>();
 	}
 };
-static_assert(alignof(AFortnitePartyBackdrop_Camera_C) == 0x000010, "Wrong alignment on AFortnitePartyBackdrop_Camera_C");
-static_assert(sizeof(AFortnitePartyBackdrop_Camera_C) == 0x000810, "Wrong size on AFortnitePartyBackdrop_Camera_C");
-static_assert(offsetof(AFortnitePartyBackdrop_Camera_C, UberGraphFrame) == 0x0007C0, "Member 'AFortnitePartyBackdrop_Camera_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyBackdrop_Camera_C, Arrow) == 0x0007C8, "Member 'AFortnitePartyBackdrop_Camera_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyBackdrop_Camera_C, SavedTransform) == 0x0007D0, "Member 'AFortnitePartyBackdrop_Camera_C::SavedTransform' has a wrong offset!");
-static_assert(offsetof(AFortnitePartyBackdrop_Camera_C, Active) == 0x000800, "Member 'AFortnitePartyBackdrop_Camera_C::Active' has a wrong offset!");
 
 }
 

@@ -56,38 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialBanModal_C">();
+		BP_STATIC_CLASS_IMPL("SocialBanModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialBanModal_C")
 	}
 	static class USocialBanModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialBanModal_C>();
 	}
 };
-static_assert(alignof(USocialBanModal_C) == 0x000008, "Wrong alignment on USocialBanModal_C");
-static_assert(sizeof(USocialBanModal_C) == 0x000540, "Wrong size on USocialBanModal_C");
-static_assert(offsetof(USocialBanModal_C, UberGraphFrame) == 0x000418, "Member 'USocialBanModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, disclaimer) == 0x000420, "Member 'USocialBanModal_C::disclaimer' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, disclaimer_1) == 0x000428, "Member 'USocialBanModal_C::disclaimer_1' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, disclaimer_2) == 0x000430, "Member 'USocialBanModal_C::disclaimer_2' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Image_Severe) == 0x000438, "Member 'USocialBanModal_C::Image_Severe' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Lightbox_51) == 0x000440, "Member 'USocialBanModal_C::Lightbox_51' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Switcher_Message) == 0x000448, "Member 'USocialBanModal_C::Switcher_Message' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Title) == 0x000450, "Member 'USocialBanModal_C::Title' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Title_1) == 0x000458, "Member 'USocialBanModal_C::Title_1' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Triangles_1) == 0x000460, "Member 'USocialBanModal_C::Triangles_1' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Triangles_2) == 0x000468, "Member 'USocialBanModal_C::Triangles_2' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, Triangles_3) == 0x000470, "Member 'USocialBanModal_C::Triangles_3' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, VBox_Banned) == 0x000478, "Member 'USocialBanModal_C::VBox_Banned' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, VBox_Warned) == 0x000480, "Member 'USocialBanModal_C::VBox_Warned' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, WidgetSwitcher_SeverityImage) == 0x000488, "Member 'USocialBanModal_C::WidgetSwitcher_SeverityImage' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, AckSucceeded) == 0x000490, "Member 'USocialBanModal_C::AckSucceeded' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, BanInformation) == 0x000498, "Member 'USocialBanModal_C::BanInformation' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, OnCloseSucceeded) == 0x0004B0, "Member 'USocialBanModal_C::OnCloseSucceeded' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, TryCount) == 0x0004C0, "Member 'USocialBanModal_C::TryCount' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, bIsWarning) == 0x0004C4, "Member 'USocialBanModal_C::bIsWarning' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, McpBanInfo) == 0x0004C8, "Member 'USocialBanModal_C::McpBanInfo' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, BanType) == 0x000520, "Member 'USocialBanModal_C::BanType' has a wrong offset!");
-static_assert(offsetof(USocialBanModal_C, bIsCompetitiveBan) == 0x000538, "Member 'USocialBanModal_C::bIsCompetitiveBan' has a wrong offset!");
 
 }
 

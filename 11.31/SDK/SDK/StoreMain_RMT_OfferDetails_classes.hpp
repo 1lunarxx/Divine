@@ -91,58 +91,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_RMT_OfferDetails_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_RMT_OfferDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_RMT_OfferDetails_C")
 	}
 	static class UStoreMain_RMT_OfferDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_RMT_OfferDetails_C>();
 	}
 };
-static_assert(alignof(UStoreMain_RMT_OfferDetails_C) == 0x000008, "Wrong alignment on UStoreMain_RMT_OfferDetails_C");
-static_assert(sizeof(UStoreMain_RMT_OfferDetails_C) == 0x000828, "Wrong size on UStoreMain_RMT_OfferDetails_C");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, UberGraphFrame) == 0x000688, "Member 'UStoreMain_RMT_OfferDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Intro) == 0x000690, "Member 'UStoreMain_RMT_OfferDetails_C::Intro' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, BaseColor) == 0x000698, "Member 'UStoreMain_RMT_OfferDetails_C::BaseColor' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, BonusMTXArea) == 0x0006A0, "Member 'UStoreMain_RMT_OfferDetails_C::BonusMTXArea' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, BorderDisclaimer) == 0x0006A8, "Member 'UStoreMain_RMT_OfferDetails_C::BorderDisclaimer' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CloseIcon) == 0x0006B0, "Member 'UStoreMain_RMT_OfferDetails_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonBorder_VBucks) == 0x0006B8, "Member 'UStoreMain_RMT_OfferDetails_C::CommonBorder_VBucks' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonRichTextBlock_Legal) == 0x0006C0, "Member 'UStoreMain_RMT_OfferDetails_C::CommonRichTextBlock_Legal' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonRichTextBlock_SubTitle) == 0x0006C8, "Member 'UStoreMain_RMT_OfferDetails_C::CommonRichTextBlock_SubTitle' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonRichTextBlock_TaglineandInclusion) == 0x0006D0, "Member 'UStoreMain_RMT_OfferDetails_C::CommonRichTextBlock_TaglineandInclusion' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonText_BaseQuantity) == 0x0006D8, "Member 'UStoreMain_RMT_OfferDetails_C::CommonText_BaseQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonText_BonusQuantity) == 0x0006E0, "Member 'UStoreMain_RMT_OfferDetails_C::CommonText_BonusQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonTextBlock_VbucksLegal) == 0x0006E8, "Member 'UStoreMain_RMT_OfferDetails_C::CommonTextBlock_VbucksLegal' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, CommonWidgetSwitcher_147) == 0x0006F0, "Member 'UStoreMain_RMT_OfferDetails_C::CommonWidgetSwitcher_147' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Highlight) == 0x0006F8, "Member 'UStoreMain_RMT_OfferDetails_C::Highlight' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, HorizontalBox_LTM) == 0x000700, "Member 'UStoreMain_RMT_OfferDetails_C::HorizontalBox_LTM' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_999) == 0x000708, "Member 'UStoreMain_RMT_OfferDetails_C::Image_999' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_Badge) == 0x000710, "Member 'UStoreMain_RMT_OfferDetails_C::Image_Badge' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_CurrencyIcon) == 0x000718, "Member 'UStoreMain_RMT_OfferDetails_C::Image_CurrencyIcon' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_LTM) == 0x000720, "Member 'UStoreMain_RMT_OfferDetails_C::Image_LTM' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_Separator_Down) == 0x000728, "Member 'UStoreMain_RMT_OfferDetails_C::Image_Separator_Down' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, Image_Separator_Up) == 0x000730, "Member 'UStoreMain_RMT_OfferDetails_C::Image_Separator_Up' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, KeyArt) == 0x000738, "Member 'UStoreMain_RMT_OfferDetails_C::KeyArt' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, MTXArea) == 0x000740, "Member 'UStoreMain_RMT_OfferDetails_C::MTXArea' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, MTXButton) == 0x000748, "Member 'UStoreMain_RMT_OfferDetails_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, MTXButtonBox) == 0x000750, "Member 'UStoreMain_RMT_OfferDetails_C::MTXButtonBox' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, OverlayGradientDetails) == 0x000758, "Member 'UStoreMain_RMT_OfferDetails_C::OverlayGradientDetails' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, OverlaySalePrice) == 0x000760, "Member 'UStoreMain_RMT_OfferDetails_C::OverlaySalePrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, RichText_Header) == 0x000768, "Member 'UStoreMain_RMT_OfferDetails_C::RichText_Header' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, RMT_Offer_EntryRow) == 0x000770, "Member 'UStoreMain_RMT_OfferDetails_C::RMT_Offer_EntryRow' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, SafeZone_1) == 0x000778, "Member 'UStoreMain_RMT_OfferDetails_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, ScrollBox_Details_reworked) == 0x000780, "Member 'UStoreMain_RMT_OfferDetails_C::ScrollBox_Details_reworked' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, SpeedLines) == 0x000788, "Member 'UStoreMain_RMT_OfferDetails_C::SpeedLines' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, StoreMain_Offer_VBucks_Modal) == 0x000790, "Member 'UStoreMain_RMT_OfferDetails_C::StoreMain_Offer_VBucks_Modal' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, StoreMain_OfferDetailsAttribute1) == 0x000798, "Member 'UStoreMain_RMT_OfferDetails_C::StoreMain_OfferDetailsAttribute1' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, StoreMain_OfferDetailsAttribute2) == 0x0007A0, "Member 'UStoreMain_RMT_OfferDetails_C::StoreMain_OfferDetailsAttribute2' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, TextDescription) == 0x0007A8, "Member 'UStoreMain_RMT_OfferDetails_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, TextName) == 0x0007B0, "Member 'UStoreMain_RMT_OfferDetails_C::TextName' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, TextOfferDisplayPrice) == 0x0007B8, "Member 'UStoreMain_RMT_OfferDetails_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, TextOriginalPrice) == 0x0007C0, "Member 'UStoreMain_RMT_OfferDetails_C::TextOriginalPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, VBoxOfferInfo) == 0x0007C8, "Member 'UStoreMain_RMT_OfferDetails_C::VBoxOfferInfo' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, ABAssetCollection) == 0x0007D0, "Member 'UStoreMain_RMT_OfferDetails_C::ABAssetCollection' has a wrong offset!");
-static_assert(offsetof(UStoreMain_RMT_OfferDetails_C, PriceItem) == 0x000820, "Member 'UStoreMain_RMT_OfferDetails_C::PriceItem' has a wrong offset!");
 
 }
 

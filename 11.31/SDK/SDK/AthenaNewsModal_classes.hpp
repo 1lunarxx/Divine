@@ -49,6 +49,10 @@ public:
 	class UClass*                                 BS_SpecialEvent_Secondary;                         // 0x04E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdateExternalNewsWidgets();
+	void ShouldShowSTWUpsellInBR(bool* ShouldShow);
+	struct FEventReply OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
+	void DialogResult_3BE479B64CDE5378C77A8DA453770A3B(EFortDialogResult Result, class FName ResultName);
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ForceNewsClosed();
 	void BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -58,45 +62,21 @@ public:
 	void BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_AthenaNewsModal(int32 EntryPoint);
-	void UpdateExternalNewsWidgets();
-	void ShouldShowSTWUpsellInBR(bool* ShouldShow);
-	struct FEventReply OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent);
-	void DialogResult_3BE479B64CDE5378C77A8DA453770A3B(EFortDialogResult Result, class FName ResultName);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaNewsModal_C">();
+		BP_STATIC_CLASS_IMPL("AthenaNewsModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaNewsModal_C")
 	}
 	static class UAthenaNewsModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaNewsModal_C>();
 	}
 };
-static_assert(alignof(UAthenaNewsModal_C) == 0x000008, "Wrong alignment on UAthenaNewsModal_C");
-static_assert(sizeof(UAthenaNewsModal_C) == 0x0004F0, "Wrong size on UAthenaNewsModal_C");
-static_assert(offsetof(UAthenaNewsModal_C, UberGraphFrame) == 0x000440, "Member 'UAthenaNewsModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, NewPopUpIntro) == 0x000448, "Member 'UAthenaNewsModal_C::NewPopUpIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, B_TapToClose) == 0x000450, "Member 'UAthenaNewsModal_C::B_TapToClose' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BackgroundFill) == 0x000458, "Member 'UAthenaNewsModal_C::BackgroundFill' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BackgroundFill_1) == 0x000460, "Member 'UAthenaNewsModal_C::BackgroundFill_1' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BrowseToExternalURLButton) == 0x000468, "Member 'UAthenaNewsModal_C::BrowseToExternalURLButton' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BrowseToExternalURLSpacer) == 0x000470, "Member 'UAthenaNewsModal_C::BrowseToExternalURLSpacer' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, ButtonBar_Spacer) == 0x000478, "Member 'UAthenaNewsModal_C::ButtonBar_Spacer' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, FNBR_LobbyButton) == 0x000480, "Member 'UAthenaNewsModal_C::FNBR_LobbyButton' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, ItemShopButton) == 0x000488, "Member 'UAthenaNewsModal_C::ItemShopButton' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, Lightbox) == 0x000490, "Member 'UAthenaNewsModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, SafeZone_0) == 0x000498, "Member 'UAthenaNewsModal_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, SpecialEventBackgroundOVR) == 0x0004A0, "Member 'UAthenaNewsModal_C::SpecialEventBackgroundOVR' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, SpecialEventBackgroundOVR_Secondary) == 0x0004A8, "Member 'UAthenaNewsModal_C::SpecialEventBackgroundOVR_Secondary' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, SpeedLines) == 0x0004B0, "Member 'UAthenaNewsModal_C::SpeedLines' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, STW_CloseButton) == 0x0004B8, "Member 'UAthenaNewsModal_C::STW_CloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, STWFounderPackButton) == 0x0004C0, "Member 'UAthenaNewsModal_C::STWFounderPackButton' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, STWFounderPackSpacer) == 0x0004C8, "Member 'UAthenaNewsModal_C::STWFounderPackSpacer' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, WidgetSwitcher_ExitButtons) == 0x0004D0, "Member 'UAthenaNewsModal_C::WidgetSwitcher_ExitButtons' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BS_Default) == 0x0004D8, "Member 'UAthenaNewsModal_C::BS_Default' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BS_SpecialEvent) == 0x0004E0, "Member 'UAthenaNewsModal_C::BS_SpecialEvent' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsModal_C, BS_SpecialEvent_Secondary) == 0x0004E8, "Member 'UAthenaNewsModal_C::BS_SpecialEvent_Secondary' has a wrong offset!");
 
 }
 

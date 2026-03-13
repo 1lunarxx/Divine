@@ -21,9 +21,6 @@ struct WinterQuestPreviewScreen_C_UpdateOfferTwoText final
 public:
 	class FText                                   OfferText;                                         // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WinterQuestPreviewScreen_C_UpdateOfferTwoText) == 0x000008, "Wrong alignment on WinterQuestPreviewScreen_C_UpdateOfferTwoText");
-static_assert(sizeof(WinterQuestPreviewScreen_C_UpdateOfferTwoText) == 0x000018, "Wrong size on WinterQuestPreviewScreen_C_UpdateOfferTwoText");
-static_assert(offsetof(WinterQuestPreviewScreen_C_UpdateOfferTwoText, OfferText) == 0x000000, "Member 'WinterQuestPreviewScreen_C_UpdateOfferTwoText::OfferText' has a wrong offset!");
 
 // Function WinterQuestPreviewScreen.WinterQuestPreviewScreen_C.UpdateOfferOneText
 // 0x0018 (0x0018 - 0x0000)
@@ -32,9 +29,6 @@ struct WinterQuestPreviewScreen_C_UpdateOfferOneText final
 public:
 	class FText                                   OfferText;                                         // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(WinterQuestPreviewScreen_C_UpdateOfferOneText) == 0x000008, "Wrong alignment on WinterQuestPreviewScreen_C_UpdateOfferOneText");
-static_assert(sizeof(WinterQuestPreviewScreen_C_UpdateOfferOneText) == 0x000018, "Wrong size on WinterQuestPreviewScreen_C_UpdateOfferOneText");
-static_assert(offsetof(WinterQuestPreviewScreen_C_UpdateOfferOneText, OfferText) == 0x000000, "Member 'WinterQuestPreviewScreen_C_UpdateOfferOneText::OfferText' has a wrong offset!");
 
 // Function WinterQuestPreviewScreen.WinterQuestPreviewScreen_C.ExecuteUbergraph_WinterQuestPreviewScreen
 // 0x0058 (0x0058 - 0x0000)
@@ -51,15 +45,6 @@ public:
 	class USimpleFeatured_YellowButton_C*         K2Node_DynamicCast_AsSimple_Featured_Yellow_Button_1; // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen) == 0x000008, "Wrong alignment on WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen");
-static_assert(sizeof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen) == 0x000058, "Wrong size on WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, EntryPoint) == 0x000000, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_DynamicCast_AsSimple_Featured_Yellow_Button) == 0x000008, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_DynamicCast_AsSimple_Featured_Yellow_Button' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_Event_OfferText_1) == 0x000018, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_Event_OfferText_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_Event_OfferText) == 0x000030, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_Event_OfferText' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_DynamicCast_AsSimple_Featured_Yellow_Button_1) == 0x000048, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_DynamicCast_AsSimple_Featured_Yellow_Button_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'WinterQuestPreviewScreen_C_ExecuteUbergraph_WinterQuestPreviewScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 }
 

@@ -23,9 +23,6 @@ struct ActivityDetailsSetting_C_OnSettingChanged final
 public:
 	bool                                          NewValue;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ActivityDetailsSetting_C_OnSettingChanged) == 0x000001, "Wrong alignment on ActivityDetailsSetting_C_OnSettingChanged");
-static_assert(sizeof(ActivityDetailsSetting_C_OnSettingChanged) == 0x000001, "Wrong size on ActivityDetailsSetting_C_OnSettingChanged");
-static_assert(offsetof(ActivityDetailsSetting_C_OnSettingChanged, NewValue) == 0x000000, "Member 'ActivityDetailsSetting_C_OnSettingChanged::NewValue' has a wrong offset!");
 
 // Function ActivityDetailsSetting.ActivityDetailsSetting_C.BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +31,6 @@ struct ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ActivityDetailsSetting.ActivityDetailsSetting_C.BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +39,6 @@ struct ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBou
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ActivityDetailsSetting_C_BndEvt__Button_ToggleSetting_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ActivityDetailsSetting.ActivityDetailsSetting_C.ExecuteUbergraph_ActivityDetailsSetting
 // 0x0040 (0x0040 - 0x0000)
@@ -64,15 +55,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor_1;                   // 0x0030(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting) == 0x000008, "Wrong alignment on ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting");
-static_assert(sizeof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting) == 0x000040, "Wrong size on ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, EntryPoint) == 0x000000, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, K2Node_MakeStruct_LinearColor) == 0x000004, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, K2Node_Event_NewValue) == 0x000014, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::K2Node_Event_NewValue' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, CallFunc_SelectInt_ReturnValue) == 0x000018, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, K2Node_ComponentBoundEvent_Button_1) == 0x000020, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, K2Node_ComponentBoundEvent_Button) == 0x000028, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting, K2Node_MakeStruct_LinearColor_1) == 0x000030, "Member 'ActivityDetailsSetting_C_ExecuteUbergraph_ActivityDetailsSetting::K2Node_MakeStruct_LinearColor_1' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UPhoebe_Evaluator_DangerDetection_C final : public UFortAthenaAIBotEvaluat
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_Evaluator_DangerDetection_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_Evaluator_DangerDetection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_Evaluator_DangerDetection_C")
 	}
 	static class UPhoebe_Evaluator_DangerDetection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_Evaluator_DangerDetection_C>();
 	}
 };
-static_assert(alignof(UPhoebe_Evaluator_DangerDetection_C) == 0x000008, "Wrong alignment on UPhoebe_Evaluator_DangerDetection_C");
-static_assert(sizeof(UPhoebe_Evaluator_DangerDetection_C) == 0x000120, "Wrong size on UPhoebe_Evaluator_DangerDetection_C");
 
 }
 

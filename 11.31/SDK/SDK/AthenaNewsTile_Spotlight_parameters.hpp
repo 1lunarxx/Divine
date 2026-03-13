@@ -23,10 +23,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight) == 0x000008, "Wrong alignment on AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight");
-static_assert(sizeof(AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight) == 0x000010, "Wrong size on AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight");
-static_assert(offsetof(AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight, EntryPoint) == 0x000000, "Member 'AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'AthenaNewsTile_Spotlight_C_ExecuteUbergraph_AthenaNewsTile_Spotlight::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

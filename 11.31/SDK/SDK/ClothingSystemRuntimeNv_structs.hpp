@@ -48,12 +48,6 @@ public:
 	float                                         StretchLimit;                                      // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CompressionLimit;                                  // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FClothConstraintSetup) == 0x000004, "Wrong alignment on FClothConstraintSetup");
-static_assert(sizeof(FClothConstraintSetup) == 0x000010, "Wrong size on FClothConstraintSetup");
-static_assert(offsetof(FClothConstraintSetup, Stiffness) == 0x000000, "Member 'FClothConstraintSetup::Stiffness' has a wrong offset!");
-static_assert(offsetof(FClothConstraintSetup, StiffnessMultiplier) == 0x000004, "Member 'FClothConstraintSetup::StiffnessMultiplier' has a wrong offset!");
-static_assert(offsetof(FClothConstraintSetup, StretchLimit) == 0x000008, "Member 'FClothConstraintSetup::StretchLimit' has a wrong offset!");
-static_assert(offsetof(FClothConstraintSetup, CompressionLimit) == 0x00000C, "Member 'FClothConstraintSetup::CompressionLimit' has a wrong offset!");
 
 // ScriptStruct ClothingSystemRuntimeNv.ClothConfig
 // 0x00D4 (0x00D4 - 0x0000)
@@ -90,35 +84,6 @@ public:
 	float                                         AnimDriveSpringStiffness;                          // 0x00CC(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AnimDriveDamperStiffness;                          // 0x00D0(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FClothConfig) == 0x000004, "Wrong alignment on FClothConfig");
-static_assert(sizeof(FClothConfig) == 0x0000D4, "Wrong size on FClothConfig");
-static_assert(offsetof(FClothConfig, WindMethod) == 0x000000, "Member 'FClothConfig::WindMethod' has a wrong offset!");
-static_assert(offsetof(FClothConfig, VerticalConstraintConfig) == 0x000004, "Member 'FClothConfig::VerticalConstraintConfig' has a wrong offset!");
-static_assert(offsetof(FClothConfig, HorizontalConstraintConfig) == 0x000014, "Member 'FClothConfig::HorizontalConstraintConfig' has a wrong offset!");
-static_assert(offsetof(FClothConfig, BendConstraintConfig) == 0x000024, "Member 'FClothConfig::BendConstraintConfig' has a wrong offset!");
-static_assert(offsetof(FClothConfig, ShearConstraintConfig) == 0x000034, "Member 'FClothConfig::ShearConstraintConfig' has a wrong offset!");
-static_assert(offsetof(FClothConfig, SelfCollisionRadius) == 0x000044, "Member 'FClothConfig::SelfCollisionRadius' has a wrong offset!");
-static_assert(offsetof(FClothConfig, SelfCollisionStiffness) == 0x000048, "Member 'FClothConfig::SelfCollisionStiffness' has a wrong offset!");
-static_assert(offsetof(FClothConfig, SelfCollisionCullScale) == 0x00004C, "Member 'FClothConfig::SelfCollisionCullScale' has a wrong offset!");
-static_assert(offsetof(FClothConfig, Damping) == 0x000050, "Member 'FClothConfig::Damping' has a wrong offset!");
-static_assert(offsetof(FClothConfig, Friction) == 0x00005C, "Member 'FClothConfig::Friction' has a wrong offset!");
-static_assert(offsetof(FClothConfig, WindDragCoefficient) == 0x000060, "Member 'FClothConfig::WindDragCoefficient' has a wrong offset!");
-static_assert(offsetof(FClothConfig, WindLiftCoefficient) == 0x000064, "Member 'FClothConfig::WindLiftCoefficient' has a wrong offset!");
-static_assert(offsetof(FClothConfig, LinearDrag) == 0x000068, "Member 'FClothConfig::LinearDrag' has a wrong offset!");
-static_assert(offsetof(FClothConfig, AngularDrag) == 0x000074, "Member 'FClothConfig::AngularDrag' has a wrong offset!");
-static_assert(offsetof(FClothConfig, LinearInertiaScale) == 0x000080, "Member 'FClothConfig::LinearInertiaScale' has a wrong offset!");
-static_assert(offsetof(FClothConfig, AngularInertiaScale) == 0x00008C, "Member 'FClothConfig::AngularInertiaScale' has a wrong offset!");
-static_assert(offsetof(FClothConfig, CentrifugalInertiaScale) == 0x000098, "Member 'FClothConfig::CentrifugalInertiaScale' has a wrong offset!");
-static_assert(offsetof(FClothConfig, SolverFrequency) == 0x0000A4, "Member 'FClothConfig::SolverFrequency' has a wrong offset!");
-static_assert(offsetof(FClothConfig, StiffnessFrequency) == 0x0000A8, "Member 'FClothConfig::StiffnessFrequency' has a wrong offset!");
-static_assert(offsetof(FClothConfig, GravityScale) == 0x0000AC, "Member 'FClothConfig::GravityScale' has a wrong offset!");
-static_assert(offsetof(FClothConfig, GravityOverride) == 0x0000B0, "Member 'FClothConfig::GravityOverride' has a wrong offset!");
-static_assert(offsetof(FClothConfig, bUseGravityOverride) == 0x0000BC, "Member 'FClothConfig::bUseGravityOverride' has a wrong offset!");
-static_assert(offsetof(FClothConfig, TetherStiffness) == 0x0000C0, "Member 'FClothConfig::TetherStiffness' has a wrong offset!");
-static_assert(offsetof(FClothConfig, TetherLimit) == 0x0000C4, "Member 'FClothConfig::TetherLimit' has a wrong offset!");
-static_assert(offsetof(FClothConfig, CollisionThickness) == 0x0000C8, "Member 'FClothConfig::CollisionThickness' has a wrong offset!");
-static_assert(offsetof(FClothConfig, AnimDriveSpringStiffness) == 0x0000CC, "Member 'FClothConfig::AnimDriveSpringStiffness' has a wrong offset!");
-static_assert(offsetof(FClothConfig, AnimDriveDamperStiffness) == 0x0000D0, "Member 'FClothConfig::AnimDriveDamperStiffness' has a wrong offset!");
 
 // ScriptStruct ClothingSystemRuntimeNv.ClothPhysicalMeshData
 // 0x00A8 (0x00A8 - 0x0000)
@@ -138,20 +103,6 @@ public:
 	int32                                         NumFixedVerts;                                     // 0x0094(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint32>                                SelfCollisionIndices;                              // 0x0098(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FClothPhysicalMeshData) == 0x000008, "Wrong alignment on FClothPhysicalMeshData");
-static_assert(sizeof(FClothPhysicalMeshData) == 0x0000A8, "Wrong size on FClothPhysicalMeshData");
-static_assert(offsetof(FClothPhysicalMeshData, Vertices) == 0x000000, "Member 'FClothPhysicalMeshData::Vertices' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, Normals) == 0x000010, "Member 'FClothPhysicalMeshData::Normals' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, Indices) == 0x000020, "Member 'FClothPhysicalMeshData::Indices' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, MaxDistances) == 0x000030, "Member 'FClothPhysicalMeshData::MaxDistances' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, BackstopDistances) == 0x000040, "Member 'FClothPhysicalMeshData::BackstopDistances' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, BackstopRadiuses) == 0x000050, "Member 'FClothPhysicalMeshData::BackstopRadiuses' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, AnimDriveMultipliers) == 0x000060, "Member 'FClothPhysicalMeshData::AnimDriveMultipliers' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, InverseMasses) == 0x000070, "Member 'FClothPhysicalMeshData::InverseMasses' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, BoneData) == 0x000080, "Member 'FClothPhysicalMeshData::BoneData' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, MaxBoneWeights) == 0x000090, "Member 'FClothPhysicalMeshData::MaxBoneWeights' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, NumFixedVerts) == 0x000094, "Member 'FClothPhysicalMeshData::NumFixedVerts' has a wrong offset!");
-static_assert(offsetof(FClothPhysicalMeshData, SelfCollisionIndices) == 0x000098, "Member 'FClothPhysicalMeshData::SelfCollisionIndices' has a wrong offset!");
 
 // ScriptStruct ClothingSystemRuntimeNv.ClothLODData
 // 0x0108 (0x0108 - 0x0000)
@@ -162,10 +113,6 @@ public:
 	struct FClothCollisionData                    CollisionData;                                     // 0x00A8(0x0040)(Edit, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E8[0x20];                                      // 0x00E8(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FClothLODData) == 0x000008, "Wrong alignment on FClothLODData");
-static_assert(sizeof(FClothLODData) == 0x000108, "Wrong size on FClothLODData");
-static_assert(offsetof(FClothLODData, PhysicalMeshData) == 0x000000, "Member 'FClothLODData::PhysicalMeshData' has a wrong offset!");
-static_assert(offsetof(FClothLODData, CollisionData) == 0x0000A8, "Member 'FClothLODData::CollisionData' has a wrong offset!");
 
 // ScriptStruct ClothingSystemRuntimeNv.ClothParameterMask_PhysMesh
 // 0x0030 (0x0030 - 0x0000)
@@ -182,14 +129,6 @@ public:
 	bool                                          bEnabled;                                          // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FClothParameterMask_PhysMesh) == 0x000008, "Wrong alignment on FClothParameterMask_PhysMesh");
-static_assert(sizeof(FClothParameterMask_PhysMesh) == 0x000030, "Wrong size on FClothParameterMask_PhysMesh");
-static_assert(offsetof(FClothParameterMask_PhysMesh, MaskName) == 0x000000, "Member 'FClothParameterMask_PhysMesh::MaskName' has a wrong offset!");
-static_assert(offsetof(FClothParameterMask_PhysMesh, CurrentTarget) == 0x000008, "Member 'FClothParameterMask_PhysMesh::CurrentTarget' has a wrong offset!");
-static_assert(offsetof(FClothParameterMask_PhysMesh, MaxValue) == 0x00000C, "Member 'FClothParameterMask_PhysMesh::MaxValue' has a wrong offset!");
-static_assert(offsetof(FClothParameterMask_PhysMesh, MinValue) == 0x000010, "Member 'FClothParameterMask_PhysMesh::MinValue' has a wrong offset!");
-static_assert(offsetof(FClothParameterMask_PhysMesh, Values) == 0x000018, "Member 'FClothParameterMask_PhysMesh::Values' has a wrong offset!");
-static_assert(offsetof(FClothParameterMask_PhysMesh, bEnabled) == 0x000028, "Member 'FClothParameterMask_PhysMesh::bEnabled' has a wrong offset!");
 
 }
 

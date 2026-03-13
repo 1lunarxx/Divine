@@ -33,7 +33,7 @@ public:
 	class UKeybindWidget_C*                       KeybindWidget_Clear;                               // 0x0468(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOptionsMenuHeader_C*                   OptionsMenuHeader;                                 // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FDataTableRowHandle                    Back;                                              // 0x0478(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	TMulticastInlineDelegate<void(int32 SelectedIndex, class FName ActionName)> CustomActionSelected;                              // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 SelectedIndex, class FName ActionName)> CustomActionSelected; // 0x0488(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UFortOptionsMenuInputData*>      CurrentInputData;                                  // 0x0498(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TMulticastInlineDelegate<void()>              CustomClosedUsingBack;                             // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              CustomClearButton;                                 // 0x04B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -55,30 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GamepadCustomActionSelectorPanel_v3_C">();
+		BP_STATIC_CLASS_IMPL("GamepadCustomActionSelectorPanel_v3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GamepadCustomActionSelectorPanel_v3_C")
 	}
 	static class UGamepadCustomActionSelectorPanel_v3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGamepadCustomActionSelectorPanel_v3_C>();
 	}
 };
-static_assert(alignof(UGamepadCustomActionSelectorPanel_v3_C) == 0x000008, "Wrong alignment on UGamepadCustomActionSelectorPanel_v3_C");
-static_assert(sizeof(UGamepadCustomActionSelectorPanel_v3_C) == 0x0004F0, "Wrong size on UGamepadCustomActionSelectorPanel_v3_C");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, UberGraphFrame) == 0x000438, "Member 'UGamepadCustomActionSelectorPanel_v3_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, Button_Clear) == 0x000440, "Member 'UGamepadCustomActionSelectorPanel_v3_C::Button_Clear' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CommonBorder_Clear) == 0x000448, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CommonBorder_Clear' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CommonListView_GamepadActions) == 0x000450, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CommonListView_GamepadActions' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, FortRichTextBlock_Clear1) == 0x000458, "Member 'UGamepadCustomActionSelectorPanel_v3_C::FortRichTextBlock_Clear1' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, FortRichTextBlock_Clear2) == 0x000460, "Member 'UGamepadCustomActionSelectorPanel_v3_C::FortRichTextBlock_Clear2' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, KeybindWidget_Clear) == 0x000468, "Member 'UGamepadCustomActionSelectorPanel_v3_C::KeybindWidget_Clear' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, OptionsMenuHeader) == 0x000470, "Member 'UGamepadCustomActionSelectorPanel_v3_C::OptionsMenuHeader' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, Back) == 0x000478, "Member 'UGamepadCustomActionSelectorPanel_v3_C::Back' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CustomActionSelected) == 0x000488, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CustomActionSelected' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CurrentInputData) == 0x000498, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CurrentInputData' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CustomClosedUsingBack) == 0x0004A8, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CustomClosedUsingBack' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, CustomClearButton) == 0x0004B8, "Member 'UGamepadCustomActionSelectorPanel_v3_C::CustomClearButton' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, KeyNone) == 0x0004C8, "Member 'UGamepadCustomActionSelectorPanel_v3_C::KeyNone' has a wrong offset!");
-static_assert(offsetof(UGamepadCustomActionSelectorPanel_v3_C, Clear) == 0x0004E0, "Member 'UGamepadCustomActionSelectorPanel_v3_C::Clear' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UGE_Trap_FloorSpikes_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Trap_FloorSpikes_C">();
+		BP_STATIC_CLASS_IMPL("GE_Trap_FloorSpikes_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Trap_FloorSpikes_C")
 	}
 	static class UGE_Trap_FloorSpikes_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Trap_FloorSpikes_C>();
 	}
 };
-static_assert(alignof(UGE_Trap_FloorSpikes_C) == 0x000008, "Wrong alignment on UGE_Trap_FloorSpikes_C");
-static_assert(sizeof(UGE_Trap_FloorSpikes_C) == 0x000770, "Wrong size on UGE_Trap_FloorSpikes_C");
 
 }
 

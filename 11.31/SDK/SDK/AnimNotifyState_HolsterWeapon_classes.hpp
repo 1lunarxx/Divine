@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotifyState_HolsterWeapon_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotifyState_HolsterWeapon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_HolsterWeapon_C")
 	}
 	static class UAnimNotifyState_HolsterWeapon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_HolsterWeapon_C>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_HolsterWeapon_C) == 0x000008, "Wrong alignment on UAnimNotifyState_HolsterWeapon_C");
-static_assert(sizeof(UAnimNotifyState_HolsterWeapon_C) == 0x000040, "Wrong size on UAnimNotifyState_HolsterWeapon_C");
-static_assert(offsetof(UAnimNotifyState_HolsterWeapon_C, PlayEquipAnim) == 0x000030, "Member 'UAnimNotifyState_HolsterWeapon_C::PlayEquipAnim' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_HolsterWeapon_C, AnimNotifyStateHolster) == 0x000034, "Member 'UAnimNotifyState_HolsterWeapon_C::AnimNotifyStateHolster' has a wrong offset!");
 
 }
 

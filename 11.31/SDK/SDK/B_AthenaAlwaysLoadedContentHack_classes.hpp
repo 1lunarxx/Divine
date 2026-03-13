@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_AthenaAlwaysLoadedContentHack_C">();
+		BP_STATIC_CLASS_IMPL("B_AthenaAlwaysLoadedContentHack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_AthenaAlwaysLoadedContentHack_C")
 	}
 	static class AB_AthenaAlwaysLoadedContentHack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_AthenaAlwaysLoadedContentHack_C>();
 	}
 };
-static_assert(alignof(AB_AthenaAlwaysLoadedContentHack_C) == 0x000008, "Wrong alignment on AB_AthenaAlwaysLoadedContentHack_C");
-static_assert(sizeof(AB_AthenaAlwaysLoadedContentHack_C) == 0x000240, "Wrong size on AB_AthenaAlwaysLoadedContentHack_C");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, DefaultSceneRoot) == 0x000218, "Member 'AB_AthenaAlwaysLoadedContentHack_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardObjectList) == 0x000220, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardObjectList' has a wrong offset!");
-static_assert(offsetof(AB_AthenaAlwaysLoadedContentHack_C, HardClassList) == 0x000230, "Member 'AB_AthenaAlwaysLoadedContentHack_C::HardClassList' has a wrong offset!");
 
 }
 

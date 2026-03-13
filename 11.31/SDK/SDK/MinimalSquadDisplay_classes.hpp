@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinimalSquadDisplay_C">();
+		BP_STATIC_CLASS_IMPL("MinimalSquadDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinimalSquadDisplay_C")
 	}
 	static class UMinimalSquadDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinimalSquadDisplay_C>();
 	}
 };
-static_assert(alignof(UMinimalSquadDisplay_C) == 0x000008, "Wrong alignment on UMinimalSquadDisplay_C");
-static_assert(sizeof(UMinimalSquadDisplay_C) == 0x000278, "Wrong size on UMinimalSquadDisplay_C");
-static_assert(offsetof(UMinimalSquadDisplay_C, UberGraphFrame) == 0x000268, "Member 'UMinimalSquadDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadDisplay_C, SquadRibbon) == 0x000270, "Member 'UMinimalSquadDisplay_C::SquadRibbon' has a wrong offset!");
 
 }
 

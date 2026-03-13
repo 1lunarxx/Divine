@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function SimpleFeatured_YellowButton.SimpleFeatured_YellowButton_C.SetText
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      NewText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void USimpleFeatured_YellowButton_C::SetText(const class FText& NewText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "SetText");
-
-	Params::SimpleFeatured_YellowButton_C_SetText Parms{};
-
-	Parms.NewText = std::move(NewText);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function SimpleFeatured_YellowButton.SimpleFeatured_YellowButton_C.ChangeSecondaryText
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -164,6 +144,26 @@ void USimpleFeatured_YellowButton_C::ExecuteUbergraph_SimpleFeatured_YellowButto
 	Params::SimpleFeatured_YellowButton_C_ExecuteUbergraph_SimpleFeatured_YellowButton Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function SimpleFeatured_YellowButton.SimpleFeatured_YellowButton_C.SetText
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      NewText                                                (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void USimpleFeatured_YellowButton_C::SetText(const class FText& NewText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("SimpleFeatured_YellowButton_C", "SetText");
+
+	Params::SimpleFeatured_YellowButton_C_SetText Parms{};
+
+	Parms.NewText = std::move(NewText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

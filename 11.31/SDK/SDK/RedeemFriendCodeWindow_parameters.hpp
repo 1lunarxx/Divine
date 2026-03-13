@@ -35,19 +35,6 @@ public:
 	class UFortMcpContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default;                             // 0x0098(0x0018)()
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete) == 0x000008, "Wrong alignment on RedeemFriendCodeWindow_C_HandleRedeemCodeComplete");
-static_assert(sizeof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete) == 0x0000B0, "Wrong size on RedeemFriendCodeWindow_C_HandleRedeemCodeComplete");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Success) == 0x000000, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Success' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, FailureReason) == 0x000001, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::FailureReason' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_byte_Variable) == 0x000002, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable) == 0x000008, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable_1) == 0x000020, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable_2) == 0x000038, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable_3) == 0x000050, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, Temp_text_Variable_4) == 0x000068, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, K2Node_MakeArray_Array) == 0x000080, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, CallFunc_GetContext_ReturnValue) == 0x000090, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_HandleRedeemCodeComplete, K2Node_Select_Default) == 0x000098, "Member 'RedeemFriendCodeWindow_C_HandleRedeemCodeComplete::K2Node_Select_Default' has a wrong offset!");
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +43,6 @@ struct RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RedeemFriendCodeWindow_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_57_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +51,6 @@ struct RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RedeemFriendCodeWindow_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_75_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.OnRedeemFriendCodeComplete
 // 0x0002 (0x0002 - 0x0000)
@@ -79,10 +60,6 @@ public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	ERedeemCodeFailureReason                      FailureReason;                                     // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete) == 0x000001, "Wrong alignment on RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete");
-static_assert(sizeof(RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete) == 0x000002, "Wrong size on RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete");
-static_assert(offsetof(RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete, bSuccess) == 0x000000, "Member 'RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete::bSuccess' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete, FailureReason) == 0x000001, "Member 'RedeemFriendCodeWindow_C_OnRedeemFriendCodeComplete::FailureReason' has a wrong offset!");
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -91,9 +68,6 @@ struct RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEve
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
-static_assert(sizeof(RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature) == 0x000018, "Wrong size on RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature");
-static_assert(offsetof(RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'RedeemFriendCodeWindow_C_BndEvt__FriendCodeEntry_K2Node_ComponentBoundEvent_0_OnEditableTextChangedEvent__DelegateSignature::Text' has a wrong offset!");
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.ExecuteUbergraph_RedeemFriendCodeWindow
 // 0x0070 (0x0070 - 0x0000)
@@ -115,18 +89,6 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button_1;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow) == 0x000008, "Wrong alignment on RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow");
-static_assert(sizeof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow) == 0x000070, "Wrong size on RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, EntryPoint) == 0x000000, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, K2Node_Event_bSuccess) == 0x000010, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::K2Node_Event_bSuccess' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, K2Node_Event_FailureReason) == 0x000011, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::K2Node_Event_FailureReason' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, CallFunc_GetText_ReturnValue) == 0x000018, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, CallFunc_TextIsEmpty_ReturnValue) == 0x000040, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, K2Node_ComponentBoundEvent_Text) == 0x000048, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, CallFunc_IsVisible_ReturnValue) == 0x000060, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow, K2Node_ComponentBoundEvent_Button_1) == 0x000068, "Member 'RedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
 
 }
 

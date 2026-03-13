@@ -23,15 +23,17 @@ class UAthena_PlayerCameraFocalPoint_C final : public UFortCameraMode_FocalPoint
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraFocalPoint_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraFocalPoint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraFocalPoint_C")
 	}
 	static class UAthena_PlayerCameraFocalPoint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraFocalPoint_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraFocalPoint_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraFocalPoint_C");
-static_assert(sizeof(UAthena_PlayerCameraFocalPoint_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraFocalPoint_C");
 
 }
 

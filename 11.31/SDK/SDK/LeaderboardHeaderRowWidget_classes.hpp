@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaderboardHeaderRowWidget_C">();
+		BP_STATIC_CLASS_IMPL("LeaderboardHeaderRowWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaderboardHeaderRowWidget_C")
 	}
 	static class ULeaderboardHeaderRowWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaderboardHeaderRowWidget_C>();
 	}
 };
-static_assert(alignof(ULeaderboardHeaderRowWidget_C) == 0x000008, "Wrong alignment on ULeaderboardHeaderRowWidget_C");
-static_assert(sizeof(ULeaderboardHeaderRowWidget_C) == 0x000278, "Wrong size on ULeaderboardHeaderRowWidget_C");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, UberGraphFrame) == 0x000258, "Member 'ULeaderboardHeaderRowWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, Rank) == 0x000260, "Member 'ULeaderboardHeaderRowWidget_C::Rank' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, StatName) == 0x000268, "Member 'ULeaderboardHeaderRowWidget_C::StatName' has a wrong offset!");
-static_assert(offsetof(ULeaderboardHeaderRowWidget_C, User) == 0x000270, "Member 'ULeaderboardHeaderRowWidget_C::User' has a wrong offset!");
 
 }
 

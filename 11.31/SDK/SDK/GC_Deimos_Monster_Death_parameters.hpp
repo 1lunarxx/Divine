@@ -53,32 +53,6 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0225(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0226(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GC_Deimos_Monster_Death_C_OnBurst) == 0x000008, "Wrong alignment on GC_Deimos_Monster_Death_C_OnBurst");
-static_assert(sizeof(GC_Deimos_Monster_Death_C_OnBurst) == 0x000228, "Wrong size on GC_Deimos_Monster_Death_C_OnBurst");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, MyTarget) == 0x000000, "Member 'GC_Deimos_Monster_Death_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, Parameters) == 0x000008, "Member 'GC_Deimos_Monster_Death_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GC_Deimos_Monster_Death_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GC_Deimos_Monster_Death_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GC_Deimos_Monster_Death_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GC_Deimos_Monster_Death_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, BruteTags) == 0x0000F0, "Member 'GC_Deimos_Monster_Death_C_OnBurst::BruteTags' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, FiendTags) == 0x000110, "Member 'GC_Deimos_Monster_Death_C_OnBurst::FiendTags' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_Array_Get_Item) == 0x000130, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface) == 0x000138, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x000148, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x00014C, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_HasAnyMatchingGameplayTags_ReturnValue) == 0x0001D4, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_HasAnyMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1) == 0x0001D8, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_bSuccess_1) == 0x0001E8, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_AsDeimos_Type_Info) == 0x0001F0, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_AsDeimos_Type_Info' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, K2Node_DynamicCast_bSuccess_2) == 0x000200, "Member 'GC_Deimos_Monster_Death_C_OnBurst::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, Temp_bool_Variable) == 0x000201, "Member 'GC_Deimos_Monster_Death_C_OnBurst::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_GetEnemyColor_Color) == 0x000204, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_GetEnemyColor_Color' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x000214, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000220, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1) == 0x000224, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, Temp_bool_Variable_1) == 0x000225, "Member 'GC_Deimos_Monster_Death_C_OnBurst::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(GC_Deimos_Monster_Death_C_OnBurst, CallFunc_BooleanOR_ReturnValue) == 0x000226, "Member 'GC_Deimos_Monster_Death_C_OnBurst::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 }
 

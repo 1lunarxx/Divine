@@ -73,8 +73,6 @@ public:
 	void VFXParameters(TArray<struct FParticleSysParam>* Array);
 	void UpdateMinigameVisuals();
 	void WasActivatedByOverlappingActor(bool* bActivated);
-	void UpdateVisuals();
-	void ReceiveBeginPlay();
 	void BindOnExitVehicleForAffectPawn(class AFortPlayerPawnAthena* AffectedPawn);
 	void OnAffectedPlayerExitedVehicle();
 	void OnRep_bEnabled();
@@ -82,46 +80,23 @@ public:
 	void Update_Volume_State();
 	void Minigame_State_Logic(EFortMinigameState State);
 	void Transmit_if_Valid_Actor(class UFortGameplayTriggerMessageComponent* Transmitter, const class AActor* Actor, bool Enter, bool* Valid);
+	void UpdateVisuals();
+	void ReceiveBeginPlay();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Volume_Floor_C">();
+		BP_STATIC_CLASS_IMPL("Device_Volume_Floor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Volume_Floor_C")
 	}
 	static class ADevice_Volume_Floor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Volume_Floor_C>();
 	}
 };
-static_assert(alignof(ADevice_Volume_Floor_C) == 0x000008, "Wrong alignment on ADevice_Volume_Floor_C");
-static_assert(sizeof(ADevice_Volume_Floor_C) == 0x000D48, "Wrong size on ADevice_Volume_Floor_C");
-static_assert(offsetof(ADevice_Volume_Floor_C, UberGraphFrame_Device_Volume_Floor_C) == 0x000C98, "Member 'ADevice_Volume_Floor_C::UberGraphFrame_Device_Volume_Floor_C' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, DisableWhenReceived) == 0x000CA0, "Member 'ADevice_Volume_Floor_C::DisableWhenReceived' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, EnableWhenReceived) == 0x000CA8, "Member 'ADevice_Volume_Floor_C::EnableWhenReceived' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, PointLight) == 0x000CB0, "Member 'ADevice_Volume_Floor_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, LightRays) == 0x000CB8, "Member 'ADevice_Volume_Floor_C::LightRays' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, Frame) == 0x000CC0, "Member 'ADevice_Volume_Floor_C::Frame' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, Trigger) == 0x000CC8, "Member 'ADevice_Volume_Floor_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, Scene) == 0x000CD0, "Member 'ADevice_Volume_Floor_C::Scene' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneVisibleInGame) == 0x000CD8, "Member 'ADevice_Volume_Floor_C::ZoneVisibleInGame' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneZScale) == 0x000CDC, "Member 'ADevice_Volume_Floor_C::ZoneZScale' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneXScale) == 0x000CE0, "Member 'ADevice_Volume_Floor_C::ZoneXScale' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneYScale) == 0x000CE4, "Member 'ADevice_Volume_Floor_C::ZoneYScale' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, TrapFireSound) == 0x000CE8, "Member 'ADevice_Volume_Floor_C::TrapFireSound' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, VolumeMID) == 0x000CF0, "Member 'ADevice_Volume_Floor_C::VolumeMID' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneEdgesSize) == 0x000CF8, "Member 'ADevice_Volume_Floor_C::ZoneEdgesSize' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, BlocksVolumeHigh) == 0x000D04, "Member 'ADevice_Volume_Floor_C::BlocksVolumeHigh' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, BlocksVolumeLow) == 0x000D10, "Member 'ADevice_Volume_Floor_C::BlocksVolumeLow' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, TriggerLocationDotProduct) == 0x000D1C, "Member 'ADevice_Volume_Floor_C::TriggerLocationDotProduct' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, ZoneProtectedTeam) == 0x000D28, "Member 'ADevice_Volume_Floor_C::ZoneProtectedTeam' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, BaseMeshVisibleInGame) == 0x000D2C, "Member 'ADevice_Volume_Floor_C::BaseMeshVisibleInGame' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, AffectedPlayersInVehicles) == 0x000D30, "Member 'ADevice_Volume_Floor_C::AffectedPlayersInVehicles' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, bDamageEmptyVehicles) == 0x000D40, "Member 'ADevice_Volume_Floor_C::bDamageEmptyVehicles' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, bDamagePlayers) == 0x000D41, "Member 'ADevice_Volume_Floor_C::bDamagePlayers' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, bDamageVehicles) == 0x000D42, "Member 'ADevice_Volume_Floor_C::bDamageVehicles' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, bDamageCreatures) == 0x000D43, "Member 'ADevice_Volume_Floor_C::bDamageCreatures' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, EnabledOnStart) == 0x000D44, "Member 'ADevice_Volume_Floor_C::EnabledOnStart' has a wrong offset!");
-static_assert(offsetof(ADevice_Volume_Floor_C, bEnabled) == 0x000D45, "Member 'ADevice_Volume_Floor_C::bEnabled' has a wrong offset!");
 
 }
 

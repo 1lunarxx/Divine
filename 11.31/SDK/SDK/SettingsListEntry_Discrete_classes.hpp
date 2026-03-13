@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsListEntry_Discrete_C">();
+		BP_STATIC_CLASS_IMPL("SettingsListEntry_Discrete_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsListEntry_Discrete_C")
 	}
 	static class USettingsListEntry_Discrete_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsListEntry_Discrete_C>();
 	}
 };
-static_assert(alignof(USettingsListEntry_Discrete_C) == 0x000008, "Wrong alignment on USettingsListEntry_Discrete_C");
-static_assert(sizeof(USettingsListEntry_Discrete_C) == 0x0002D8, "Wrong size on USettingsListEntry_Discrete_C");
-static_assert(offsetof(USettingsListEntry_Discrete_C, UberGraphFrame) == 0x0002A8, "Member 'USettingsListEntry_Discrete_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Discrete_C, OnHover) == 0x0002B0, "Member 'USettingsListEntry_Discrete_C::OnHover' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Discrete_C, Button_FirstOption) == 0x0002B8, "Member 'USettingsListEntry_Discrete_C::Button_FirstOption' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Discrete_C, Button_SecondOption) == 0x0002C0, "Member 'USettingsListEntry_Discrete_C::Button_SecondOption' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Discrete_C, OptionsSets) == 0x0002C8, "Member 'USettingsListEntry_Discrete_C::OptionsSets' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Discrete_C, Several_Options) == 0x0002D0, "Member 'USettingsListEntry_Discrete_C::Several_Options' has a wrong offset!");
 
 }
 

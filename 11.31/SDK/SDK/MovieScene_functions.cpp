@@ -1478,13 +1478,13 @@ float IMovieSceneEasingFunction::OnEvaluate(float Interp) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneEasingFunction", "OnEvaluate");
+		Func = AsUObject()->Class->GetFunction("MovieSceneEasingFunction", "OnEvaluate");
 
 	Params::MovieSceneEasingFunction_OnEvaluate Parms{};
 
 	Parms.Interp = Interp;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }

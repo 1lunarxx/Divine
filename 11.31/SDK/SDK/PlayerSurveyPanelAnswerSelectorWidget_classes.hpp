@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0240(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USpacer*                                EmptyWidget;                                       // 0x0248(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  Switcher;                                          // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMap<class UClass*, class UFortPlayerSurveyAnswerWidgetBase*> SwitcherWidgets;                                   // 0x0258(0x0050)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<class UClass*, class UFortPlayerSurveyAnswerWidgetBase*> SwitcherWidgets;                   // 0x0258(0x0050)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, ContainsInstancedReference)
 	class UFortPlayerSurveyAnswerWidgetBase*      CurrentChild;                                      // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortPlayerSurveyAnswerWidgetDataTable* AnswerWidgetTable;                                 // 0x02B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -49,21 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelAnswerSelectorWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelAnswerSelectorWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelAnswerSelectorWidget_C")
 	}
 	static class UPlayerSurveyPanelAnswerSelectorWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelAnswerSelectorWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelAnswerSelectorWidget_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelAnswerSelectorWidget_C");
-static_assert(sizeof(UPlayerSurveyPanelAnswerSelectorWidget_C) == 0x0002B8, "Wrong size on UPlayerSurveyPanelAnswerSelectorWidget_C");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, UberGraphFrame) == 0x000240, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, EmptyWidget) == 0x000248, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::EmptyWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, Switcher) == 0x000250, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, SwitcherWidgets) == 0x000258, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::SwitcherWidgets' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, CurrentChild) == 0x0002A8, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::CurrentChild' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelAnswerSelectorWidget_C, AnswerWidgetTable) == 0x0002B0, "Member 'UPlayerSurveyPanelAnswerSelectorWidget_C::AnswerWidgetTable' has a wrong offset!");
 
 }
 

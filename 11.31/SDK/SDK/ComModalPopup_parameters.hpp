@@ -38,20 +38,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(ComModalPopup_C_TapToClose) == 0x000008, "Wrong alignment on ComModalPopup_C_TapToClose");
-static_assert(sizeof(ComModalPopup_C_TapToClose) == 0x0003B0, "Wrong size on ComModalPopup_C_TapToClose");
-static_assert(offsetof(ComModalPopup_C_TapToClose, MyGeometry) == 0x000000, "Member 'ComModalPopup_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, Mouse_Event) == 0x000038, "Member 'ComModalPopup_C_TapToClose::Mouse_Event' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'ComModalPopup_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'ComModalPopup_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'ComModalPopup_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'ComModalPopup_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'ComModalPopup_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'ComModalPopup_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'ComModalPopup_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'ComModalPopup_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'ComModalPopup_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'ComModalPopup_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function ComModalPopup.ComModalPopup_C.BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -60,9 +46,6 @@ struct ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ComModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ComModalPopup.ComModalPopup_C.ExecuteUbergraph_ComModalPopup
 // 0x0020 (0x0020 - 0x0000)
@@ -75,12 +58,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup) == 0x000008, "Wrong alignment on ComModalPopup_C_ExecuteUbergraph_ComModalPopup");
-static_assert(sizeof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup) == 0x000020, "Wrong size on ComModalPopup_C_ExecuteUbergraph_ComModalPopup");
-static_assert(offsetof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup, EntryPoint) == 0x000000, "Member 'ComModalPopup_C_ExecuteUbergraph_ComModalPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'ComModalPopup_C_ExecuteUbergraph_ComModalPopup::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ComModalPopup_C_ExecuteUbergraph_ComModalPopup::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ComModalPopup_C_ExecuteUbergraph_ComModalPopup, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'ComModalPopup_C_ExecuteUbergraph_ComModalPopup::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 }
 

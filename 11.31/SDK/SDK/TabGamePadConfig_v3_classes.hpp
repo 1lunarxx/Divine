@@ -49,85 +49,64 @@ public:
 	TArray<class UFortOptionsMenuInputData*>      InputDataForActionsPanel;                          // 0x0408(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	TMulticastInlineDelegate<void()>              TabGamePadConfigBack;                              // 0x0418(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              TabGamePadConfigApply;                             // 0x0428(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(TArray<class FText>& ScreenLabels)> TabGamePadActionsThatNeedBinds;                    // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(TArray<class FText>& ScreenLabels)> TabGamePadActionsThatNeedBinds; // 0x0438(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
-	void GamepadInfoSelectorNavRight();
-	void AreWeOkayWithThisChange(class FName ActionName, const struct FKey& Key, bool* IsOkay);
-	void HandleGamepadInfoSelectorFocus();
-	void NavigateToSelectedConfig();
-	void ChangeCustomClearVisibilityForInputType(ECommonInputType InputType);
-	void ChangeCustomResetVisibilityForInputType(ECommonInputType InputType);
-	void HandleGamepadInfoSelectorApply();
-	void HandleGamepadInfoSelectorBack();
-	void ChangeCustomTabListVisibilityForInputType(ECommonInputType Selection);
-	TArray<struct FConfirmationDialogAction> CreateCustomResetToDefaultList();
-	void CloseCustomActionsPanel(bool FocusLastButton);
-	void SelectSameItemInActionsList();
-	void SetupDisplayObject(class FName ActionName, const struct FKey& Key, class UGamepadKeyTextButton_C** DisplayObject_0);
-	bool IsCustomConfig(int32 PresetIndex);
-	bool IsConsole();
-	void HandleGamepadMappingInfoChange();
-	void GetCurrentPlatformIndex(int32* PlatformIndex);
-	void UpdateData();
-	void PreConstructData();
-	void InitializeData();
-	void DialogResult_017CD690454514A07B4DE5BE109AEC6E(EFortDialogResult Result, class FName ResultName);
-	void DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717(EFortDialogResult Result, class FName ResultName);
-	void Gamepad_Config_Changed(class UCommonButton* AssociatedButton, int32 ButtonIndex);
-	void GamepadPlatformConfigChanged(class UCommonButton* AssociatedButton, int32 ButtonIndex);
-	void CenterOnTab();
-	void UpdateOptionsTab();
-	void CustomDoResetToDefault();
-	void CustomKeySelected_Bind(const struct FKey& Key);
-	void CustomActionSelected_Bind(int32 SelectedIndex, class FName ActionName);
-	void CustomClosedUsingBack_Bind();
-	void CustomClearButton_Bind();
-	void ModesTabSelected_Bind(class FName TabId);
-	void Construct();
-	void HandleUsingGamepadChanged(ECommonInputType NewInputType);
-	void OnTabDeactivated_Bind();
-	void OnTabActivated_Bind();
-	void DeadZoneLookSettingValueChanged_Bind(float Value);
-	void DeadZoneMoveSettingValueChanged_Bind(float Value);
-	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_TabGamePadConfig_v3(int32 EntryPoint);
+	void PreConstruct(bool IsDesignTime);
+	void DeadZoneMoveSettingValueChanged_Bind(float Value);
+	void DeadZoneLookSettingValueChanged_Bind(float Value);
+	void OnTabActivated_Bind();
+	void OnTabDeactivated_Bind();
+	void HandleUsingGamepadChanged(ECommonInputType NewInputType);
+	void Construct();
+	void ModesTabSelected_Bind(class FName TabId);
+	void CustomClearButton_Bind();
+	void CustomClosedUsingBack_Bind();
+	void CustomActionSelected_Bind(int32 SelectedIndex, class FName ActionName);
+	void CustomKeySelected_Bind(const struct FKey& Key);
+	void CustomDoResetToDefault();
+	void UpdateOptionsTab();
+	void CenterOnTab();
+	void GamepadPlatformConfigChanged(class UCommonButton* AssociatedButton, int32 ButtonIndex);
+	void Gamepad_Config_Changed(class UCommonButton* AssociatedButton, int32 ButtonIndex);
+	void DialogResult_7D7E06D747FFEF9849D3CAA2D3D91717(EFortDialogResult Result, class FName ResultName);
+	void DialogResult_017CD690454514A07B4DE5BE109AEC6E(EFortDialogResult Result, class FName ResultName);
+	void InitializeData();
+	void PreConstructData();
+	void UpdateData();
+	void GetCurrentPlatformIndex(int32* PlatformIndex);
+	void HandleGamepadMappingInfoChange();
+	bool IsConsole();
+	bool IsCustomConfig(int32 PresetIndex);
+	void SetupDisplayObject(class FName ActionName, const struct FKey& Key, class UGamepadKeyTextButton_C** DisplayObject_0);
+	void SelectSameItemInActionsList();
+	void CloseCustomActionsPanel(bool FocusLastButton);
+	TArray<struct FConfirmationDialogAction> CreateCustomResetToDefaultList();
+	void ChangeCustomTabListVisibilityForInputType(ECommonInputType Selection);
+	void HandleGamepadInfoSelectorBack();
+	void HandleGamepadInfoSelectorApply();
+	void ChangeCustomResetVisibilityForInputType(ECommonInputType InputType);
+	void ChangeCustomClearVisibilityForInputType(ECommonInputType InputType);
+	void NavigateToSelectedConfig();
+	void HandleGamepadInfoSelectorFocus();
+	void AreWeOkayWithThisChange(class FName ActionName, const struct FKey& Key, bool* IsOkay);
+	void GamepadInfoSelectorNavRight();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGamePadConfig_v3_C">();
+		BP_STATIC_CLASS_IMPL("TabGamePadConfig_v3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGamePadConfig_v3_C")
 	}
 	static class UTabGamePadConfig_v3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGamePadConfig_v3_C>();
 	}
 };
-static_assert(alignof(UTabGamePadConfig_v3_C) == 0x000008, "Wrong alignment on UTabGamePadConfig_v3_C");
-static_assert(sizeof(UTabGamePadConfig_v3_C) == 0x000448, "Wrong size on UTabGamePadConfig_v3_C");
-static_assert(offsetof(UTabGamePadConfig_v3_C, UberGraphFrame) == 0x000350, "Member 'UTabGamePadConfig_v3_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, GamepadInfoSelectorPanel_v3) == 0x000358, "Member 'UTabGamePadConfig_v3_C::GamepadInfoSelectorPanel_v3' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, GamepadMappingInfo_v3) == 0x000360, "Member 'UTabGamePadConfig_v3_C::GamepadMappingInfo_v3' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, GamepadMappingInfoChanged) == 0x000368, "Member 'UTabGamePadConfig_v3_C::GamepadMappingInfoChanged' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, InputPresets) == 0x000378, "Member 'UTabGamePadConfig_v3_C::InputPresets' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, InputPresetNames_NoCustom) == 0x000388, "Member 'UTabGamePadConfig_v3_C::InputPresetNames_NoCustom' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, PresetMappingIndex) == 0x000398, "Member 'UTabGamePadConfig_v3_C::PresetMappingIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, PlatformMappingIndex) == 0x00039C, "Member 'UTabGamePadConfig_v3_C::PlatformMappingIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomInputTemplatePresetIndex) == 0x0003A0, "Member 'UTabGamePadConfig_v3_C::CustomInputTemplatePresetIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, DisplayObject) == 0x0003A8, "Member 'UTabGamePadConfig_v3_C::DisplayObject' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CurrentInputActionGroup) == 0x0003B0, "Member 'UTabGamePadConfig_v3_C::CurrentInputActionGroup' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomResetToDefaultConfig) == 0x0003B4, "Member 'UTabGamePadConfig_v3_C::CustomResetToDefaultConfig' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomKeySelection) == 0x0003B8, "Member 'UTabGamePadConfig_v3_C::CustomKeySelection' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomActionSelection) == 0x0003D0, "Member 'UTabGamePadConfig_v3_C::CustomActionSelection' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomInputActionGroupSelectionIndex) == 0x0003D8, "Member 'UTabGamePadConfig_v3_C::CustomInputActionGroupSelectionIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, CustomActionSelectionIndex) == 0x0003DC, "Member 'UTabGamePadConfig_v3_C::CustomActionSelectionIndex' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, Key_None) == 0x0003E0, "Member 'UTabGamePadConfig_v3_C::Key_None' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, RadioButtonClass) == 0x0003F8, "Member 'UTabGamePadConfig_v3_C::RadioButtonClass' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, RadioButtonStyle) == 0x000400, "Member 'UTabGamePadConfig_v3_C::RadioButtonStyle' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, InputDataForActionsPanel) == 0x000408, "Member 'UTabGamePadConfig_v3_C::InputDataForActionsPanel' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, TabGamePadConfigBack) == 0x000418, "Member 'UTabGamePadConfig_v3_C::TabGamePadConfigBack' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, TabGamePadConfigApply) == 0x000428, "Member 'UTabGamePadConfig_v3_C::TabGamePadConfigApply' has a wrong offset!");
-static_assert(offsetof(UTabGamePadConfig_v3_C, TabGamePadActionsThatNeedBinds) == 0x000438, "Member 'UTabGamePadConfig_v3_C::TabGamePadActionsThatNeedBinds' has a wrong offset!");
 
 }
 

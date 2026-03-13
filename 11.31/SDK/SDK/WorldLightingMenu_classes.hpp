@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WorldLightingMenu_C">();
+		BP_STATIC_CLASS_IMPL("WorldLightingMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WorldLightingMenu_C")
 	}
 	static class AWorldLightingMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWorldLightingMenu_C>();
 	}
 };
-static_assert(alignof(AWorldLightingMenu_C) == 0x000008, "Wrong alignment on AWorldLightingMenu_C");
-static_assert(sizeof(AWorldLightingMenu_C) == 0x000238, "Wrong size on AWorldLightingMenu_C");
-static_assert(offsetof(AWorldLightingMenu_C, DefaultSceneRoot) == 0x000230, "Member 'AWorldLightingMenu_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

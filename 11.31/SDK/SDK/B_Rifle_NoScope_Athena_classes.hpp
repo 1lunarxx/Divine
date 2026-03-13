@@ -23,15 +23,17 @@ class AB_Rifle_NoScope_Athena_C final : public AB_Rifle_Generic_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Rifle_NoScope_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Rifle_NoScope_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Rifle_NoScope_Athena_C")
 	}
 	static class AB_Rifle_NoScope_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Rifle_NoScope_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Rifle_NoScope_Athena_C) == 0x000008, "Wrong alignment on AB_Rifle_NoScope_Athena_C");
-static_assert(sizeof(AB_Rifle_NoScope_Athena_C) == 0x000FB8, "Wrong size on AB_Rifle_NoScope_Athena_C");
 
 }
 

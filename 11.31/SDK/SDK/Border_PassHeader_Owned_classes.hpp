@@ -23,15 +23,17 @@ class UBorder_PassHeader_Owned_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_PassHeader_Owned_C">();
+		BP_STATIC_CLASS_IMPL("Border_PassHeader_Owned_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_PassHeader_Owned_C")
 	}
 	static class UBorder_PassHeader_Owned_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_PassHeader_Owned_C>();
 	}
 };
-static_assert(alignof(UBorder_PassHeader_Owned_C) == 0x000008, "Wrong alignment on UBorder_PassHeader_Owned_C");
-static_assert(sizeof(UBorder_PassHeader_Owned_C) == 0x0000B0, "Wrong size on UBorder_PassHeader_Owned_C");
 
 }
 

@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraTrack")
 	}
 	static class UMovieSceneNiagaraTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraTrack");
-static_assert(sizeof(UMovieSceneNiagaraTrack) == 0x000068, "Wrong size on UMovieSceneNiagaraTrack");
-static_assert(offsetof(UMovieSceneNiagaraTrack, Sections) == 0x000058, "Member 'UMovieSceneNiagaraTrack::Sections' has a wrong offset!");
 
 // Class Niagara.MovieSceneNiagaraParameterTrack
 // 0x0030 (0x0098 - 0x0068)
@@ -53,16 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraParameterTrack")
 	}
 	static class UMovieSceneNiagaraParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraParameterTrack) == 0x000098, "Wrong size on UMovieSceneNiagaraParameterTrack");
-static_assert(offsetof(UMovieSceneNiagaraParameterTrack, Parameter) == 0x000068, "Member 'UMovieSceneNiagaraParameterTrack::Parameter' has a wrong offset!");
 
 // Class Niagara.MovieSceneNiagaraBoolParameterTrack
 // 0x0000 (0x0098 - 0x0098)
@@ -71,15 +73,17 @@ class UMovieSceneNiagaraBoolParameterTrack final : public UMovieSceneNiagaraPara
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraBoolParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraBoolParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraBoolParameterTrack")
 	}
 	static class UMovieSceneNiagaraBoolParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraBoolParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraBoolParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraBoolParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraBoolParameterTrack) == 0x000098, "Wrong size on UMovieSceneNiagaraBoolParameterTrack");
 
 // Class Niagara.MovieSceneNiagaraColorParameterTrack
 // 0x0000 (0x0098 - 0x0098)
@@ -88,15 +92,17 @@ class UMovieSceneNiagaraColorParameterTrack final : public UMovieSceneNiagaraPar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraColorParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraColorParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraColorParameterTrack")
 	}
 	static class UMovieSceneNiagaraColorParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraColorParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraColorParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraColorParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraColorParameterTrack) == 0x000098, "Wrong size on UMovieSceneNiagaraColorParameterTrack");
 
 // Class Niagara.MovieSceneNiagaraFloatParameterTrack
 // 0x0000 (0x0098 - 0x0098)
@@ -105,15 +111,17 @@ class UMovieSceneNiagaraFloatParameterTrack final : public UMovieSceneNiagaraPar
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraFloatParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraFloatParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraFloatParameterTrack")
 	}
 	static class UMovieSceneNiagaraFloatParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraFloatParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraFloatParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraFloatParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraFloatParameterTrack) == 0x000098, "Wrong size on UMovieSceneNiagaraFloatParameterTrack");
 
 // Class Niagara.MovieSceneNiagaraIntegerParameterTrack
 // 0x0000 (0x0098 - 0x0098)
@@ -122,15 +130,17 @@ class UMovieSceneNiagaraIntegerParameterTrack final : public UMovieSceneNiagaraP
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraIntegerParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraIntegerParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraIntegerParameterTrack")
 	}
 	static class UMovieSceneNiagaraIntegerParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraIntegerParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraIntegerParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraIntegerParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraIntegerParameterTrack) == 0x000098, "Wrong size on UMovieSceneNiagaraIntegerParameterTrack");
 
 // Class Niagara.MovieSceneNiagaraSystemSpawnSection
 // 0x0000 (0x00E0 - 0x00E0)
@@ -139,15 +149,17 @@ class UMovieSceneNiagaraSystemSpawnSection final : public UMovieSceneSection
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraSystemSpawnSection">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraSystemSpawnSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraSystemSpawnSection")
 	}
 	static class UMovieSceneNiagaraSystemSpawnSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraSystemSpawnSection>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraSystemSpawnSection) == 0x000008, "Wrong alignment on UMovieSceneNiagaraSystemSpawnSection");
-static_assert(sizeof(UMovieSceneNiagaraSystemSpawnSection) == 0x0000E0, "Wrong size on UMovieSceneNiagaraSystemSpawnSection");
 
 // Class Niagara.MovieSceneNiagaraSystemTrack
 // 0x0000 (0x0068 - 0x0068)
@@ -156,15 +168,17 @@ class UMovieSceneNiagaraSystemTrack final : public UMovieSceneNiagaraTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraSystemTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraSystemTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraSystemTrack")
 	}
 	static class UMovieSceneNiagaraSystemTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraSystemTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraSystemTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraSystemTrack");
-static_assert(sizeof(UMovieSceneNiagaraSystemTrack) == 0x000068, "Wrong size on UMovieSceneNiagaraSystemTrack");
 
 // Class Niagara.MovieSceneNiagaraVectorParameterTrack
 // 0x0008 (0x00A0 - 0x0098)
@@ -177,16 +191,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneNiagaraVectorParameterTrack">();
+		STATIC_CLASS_IMPL("MovieSceneNiagaraVectorParameterTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneNiagaraVectorParameterTrack")
 	}
 	static class UMovieSceneNiagaraVectorParameterTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneNiagaraVectorParameterTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneNiagaraVectorParameterTrack) == 0x000008, "Wrong alignment on UMovieSceneNiagaraVectorParameterTrack");
-static_assert(sizeof(UMovieSceneNiagaraVectorParameterTrack) == 0x0000A0, "Wrong size on UMovieSceneNiagaraVectorParameterTrack");
-static_assert(offsetof(UMovieSceneNiagaraVectorParameterTrack, ChannelsUsed) == 0x000098, "Member 'UMovieSceneNiagaraVectorParameterTrack::ChannelsUsed' has a wrong offset!");
 
 // Class Niagara.NiagaraActor
 // 0x0008 (0x0220 - 0x0218)
@@ -198,16 +213,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraActor">();
+		STATIC_CLASS_IMPL("NiagaraActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraActor")
 	}
 	static class ANiagaraActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANiagaraActor>();
 	}
 };
-static_assert(alignof(ANiagaraActor) == 0x000008, "Wrong alignment on ANiagaraActor");
-static_assert(sizeof(ANiagaraActor) == 0x000220, "Wrong size on ANiagaraActor");
-static_assert(offsetof(ANiagaraActor, NiagaraComponent) == 0x000218, "Member 'ANiagaraActor::NiagaraComponent' has a wrong offset!");
 
 // Class Niagara.NiagaraComponent
 // 0x01B0 (0x0590 - 0x03E0)
@@ -227,7 +243,7 @@ public:
 	uint8                                         Pad_519[0x3];                                      // 0x0519(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MaxTimeBeforeForceUpdateTransform;                 // 0x051C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_520[0x8];                                      // 0x0520(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UNiagaraComponent* PSystem)> OnSystemFinished;                                  // 0x0528(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class UNiagaraComponent* PSystem)> OnSystemFinished;               // 0x0528(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class USceneComponent>         AutoAttachParent;                                  // 0x0538(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, DisableEditOnTemplate, EditConst, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   AutoAttachSocketName;                              // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAttachmentRule                               AutoAttachLocationRule;                            // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -295,27 +311,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraComponent">();
+		STATIC_CLASS_IMPL("NiagaraComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraComponent")
 	}
 	static class UNiagaraComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraComponent>();
 	}
 };
-static_assert(alignof(UNiagaraComponent) == 0x000010, "Wrong alignment on UNiagaraComponent");
-static_assert(sizeof(UNiagaraComponent) == 0x000590, "Wrong size on UNiagaraComponent");
-static_assert(offsetof(UNiagaraComponent, Asset) == 0x0003D8, "Member 'UNiagaraComponent::Asset' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, TickBehavior) == 0x0003E0, "Member 'UNiagaraComponent::TickBehavior' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, OverrideParameters) == 0x0003E8, "Member 'UNiagaraComponent::OverrideParameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, MaxTimeBeforeForceUpdateTransform) == 0x00051C, "Member 'UNiagaraComponent::MaxTimeBeforeForceUpdateTransform' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, OnSystemFinished) == 0x000528, "Member 'UNiagaraComponent::OnSystemFinished' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, AutoAttachParent) == 0x000538, "Member 'UNiagaraComponent::AutoAttachParent' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, AutoAttachSocketName) == 0x000540, "Member 'UNiagaraComponent::AutoAttachSocketName' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, AutoAttachLocationRule) == 0x000548, "Member 'UNiagaraComponent::AutoAttachLocationRule' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, AutoAttachRotationRule) == 0x000549, "Member 'UNiagaraComponent::AutoAttachRotationRule' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, AutoAttachScaleRule) == 0x00054A, "Member 'UNiagaraComponent::AutoAttachScaleRule' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, PreviewDetailLevel) == 0x00054C, "Member 'UNiagaraComponent::PreviewDetailLevel' has a wrong offset!");
-static_assert(offsetof(UNiagaraComponent, PreviewLODDistance) == 0x000550, "Member 'UNiagaraComponent::PreviewLODDistance' has a wrong offset!");
 
 // Class Niagara.NiagaraComponentPool
 // 0x0058 (0x0080 - 0x0028)
@@ -328,16 +334,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraComponentPool">();
+		STATIC_CLASS_IMPL("NiagaraComponentPool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraComponentPool")
 	}
 	static class UNiagaraComponentPool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraComponentPool>();
 	}
 };
-static_assert(alignof(UNiagaraComponentPool) == 0x000008, "Wrong alignment on UNiagaraComponentPool");
-static_assert(sizeof(UNiagaraComponentPool) == 0x000080, "Wrong size on UNiagaraComponentPool");
-static_assert(offsetof(UNiagaraComponentPool, WorldParticleSystemPools) == 0x000028, "Member 'UNiagaraComponentPool::WorldParticleSystemPools' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterface
 // 0x0010 (0x0038 - 0x0028)
@@ -349,15 +356,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterface">();
+		STATIC_CLASS_IMPL("NiagaraDataInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterface")
 	}
 	static class UNiagaraDataInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterface>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterface) == 0x000008, "Wrong alignment on UNiagaraDataInterface");
-static_assert(sizeof(UNiagaraDataInterface) == 0x000038, "Wrong size on UNiagaraDataInterface");
 
 // Class Niagara.NiagaraDataInterfaceCollisionQuery
 // 0x0010 (0x0048 - 0x0038)
@@ -369,15 +378,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceCollisionQuery">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceCollisionQuery")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceCollisionQuery")
 	}
 	static class UNiagaraDataInterfaceCollisionQuery* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceCollisionQuery>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceCollisionQuery) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceCollisionQuery");
-static_assert(sizeof(UNiagaraDataInterfaceCollisionQuery) == 0x000048, "Wrong size on UNiagaraDataInterfaceCollisionQuery");
 
 // Class Niagara.NiagaraDataInterfaceCurveBase
 // 0x0028 (0x0060 - 0x0038)
@@ -395,20 +406,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceCurveBase">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceCurveBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceCurveBase")
 	}
 	static class UNiagaraDataInterfaceCurveBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceCurveBase>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceCurveBase) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceCurveBase");
-static_assert(sizeof(UNiagaraDataInterfaceCurveBase) == 0x000060, "Wrong size on UNiagaraDataInterfaceCurveBase");
-static_assert(offsetof(UNiagaraDataInterfaceCurveBase, ShaderLUT) == 0x000038, "Member 'UNiagaraDataInterfaceCurveBase::ShaderLUT' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceCurveBase, LUTMinTime) == 0x000048, "Member 'UNiagaraDataInterfaceCurveBase::LUTMinTime' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceCurveBase, LUTMaxTime) == 0x00004C, "Member 'UNiagaraDataInterfaceCurveBase::LUTMaxTime' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceCurveBase, LUTInvTimeRange) == 0x000050, "Member 'UNiagaraDataInterfaceCurveBase::LUTInvTimeRange' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceCurveBase, LUTNumSamplesMinusOne) == 0x000054, "Member 'UNiagaraDataInterfaceCurveBase::LUTNumSamplesMinusOne' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceColorCurve
 // 0x0200 (0x0260 - 0x0060)
@@ -423,19 +431,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceColorCurve">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceColorCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceColorCurve")
 	}
 	static class UNiagaraDataInterfaceColorCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceColorCurve>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceColorCurve) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceColorCurve");
-static_assert(sizeof(UNiagaraDataInterfaceColorCurve) == 0x000260, "Wrong size on UNiagaraDataInterfaceColorCurve");
-static_assert(offsetof(UNiagaraDataInterfaceColorCurve, RedCurve) == 0x000060, "Member 'UNiagaraDataInterfaceColorCurve::RedCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceColorCurve, GreenCurve) == 0x0000E0, "Member 'UNiagaraDataInterfaceColorCurve::GreenCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceColorCurve, BlueCurve) == 0x000160, "Member 'UNiagaraDataInterfaceColorCurve::BlueCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceColorCurve, AlphaCurve) == 0x0001E0, "Member 'UNiagaraDataInterfaceColorCurve::AlphaCurve' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceCurlNoise
 // 0x0010 (0x0048 - 0x0038)
@@ -448,16 +454,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceCurlNoise">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceCurlNoise")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceCurlNoise")
 	}
 	static class UNiagaraDataInterfaceCurlNoise* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceCurlNoise>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceCurlNoise) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceCurlNoise");
-static_assert(sizeof(UNiagaraDataInterfaceCurlNoise) == 0x000048, "Wrong size on UNiagaraDataInterfaceCurlNoise");
-static_assert(offsetof(UNiagaraDataInterfaceCurlNoise, Seed) == 0x000038, "Member 'UNiagaraDataInterfaceCurlNoise::Seed' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceCurve
 // 0x0080 (0x00E0 - 0x0060)
@@ -469,20 +476,21 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceCurve">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceCurve")
 	}
 	static class UNiagaraDataInterfaceCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceCurve>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceCurve) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceCurve");
-static_assert(sizeof(UNiagaraDataInterfaceCurve) == 0x0000E0, "Wrong size on UNiagaraDataInterfaceCurve");
-static_assert(offsetof(UNiagaraDataInterfaceCurve, Curve) == 0x000060, "Member 'UNiagaraDataInterfaceCurve::Curve' has a wrong offset!");
 
 // Class Niagara.NiagaraParticleCallbackHandler
-// 0x0000 (0x0028 - 0x0028)
-class INiagaraParticleCallbackHandler final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class INiagaraParticleCallbackHandler final
 {
 public:
 	void ReceiveParticleData(const TArray<struct FBasicParticleData>& Data, class UNiagaraSystem* NiagaraSystem) const;
@@ -490,15 +498,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraParticleCallbackHandler">();
+		STATIC_CLASS_IMPL("NiagaraParticleCallbackHandler")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraParticleCallbackHandler")
 	}
 	static class INiagaraParticleCallbackHandler* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<INiagaraParticleCallbackHandler>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(INiagaraParticleCallbackHandler) == 0x000008, "Wrong alignment on INiagaraParticleCallbackHandler");
-static_assert(sizeof(INiagaraParticleCallbackHandler) == 0x000028, "Wrong size on INiagaraParticleCallbackHandler");
 
 // Class Niagara.NiagaraDataInterfaceExport
 // 0x0030 (0x0068 - 0x0038)
@@ -510,16 +529,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceExport">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceExport")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceExport")
 	}
 	static class UNiagaraDataInterfaceExport* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceExport>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceExport) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceExport");
-static_assert(sizeof(UNiagaraDataInterfaceExport) == 0x000068, "Wrong size on UNiagaraDataInterfaceExport");
-static_assert(offsetof(UNiagaraDataInterfaceExport, CallbackHandlerParameter) == 0x000038, "Member 'UNiagaraDataInterfaceExport::CallbackHandlerParameter' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceRWBase
 // 0x00A8 (0x00E0 - 0x0038)
@@ -533,17 +553,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceRWBase">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceRWBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceRWBase")
 	}
 	static class UNiagaraDataInterfaceRWBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceRWBase>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceRWBase) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceRWBase");
-static_assert(sizeof(UNiagaraDataInterfaceRWBase) == 0x0000E0, "Wrong size on UNiagaraDataInterfaceRWBase");
-static_assert(offsetof(UNiagaraDataInterfaceRWBase, OutputShaderStages) == 0x000038, "Member 'UNiagaraDataInterfaceRWBase::OutputShaderStages' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceRWBase, IterationShaderStages) == 0x000088, "Member 'UNiagaraDataInterfaceRWBase::IterationShaderStages' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceGrid2D
 // 0x0028 (0x0108 - 0x00E0)
@@ -562,22 +582,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGrid2D">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGrid2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGrid2D")
 	}
 	static class UNiagaraDataInterfaceGrid2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGrid2D>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGrid2D) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGrid2D");
-static_assert(sizeof(UNiagaraDataInterfaceGrid2D) == 0x000108, "Wrong size on UNiagaraDataInterfaceGrid2D");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, NumCellsX) == 0x0000E0, "Member 'UNiagaraDataInterfaceGrid2D::NumCellsX' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, NumCellsY) == 0x0000E4, "Member 'UNiagaraDataInterfaceGrid2D::NumCellsY' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, CellSize) == 0x0000E8, "Member 'UNiagaraDataInterfaceGrid2D::CellSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, NumAttributes) == 0x0000EC, "Member 'UNiagaraDataInterfaceGrid2D::NumAttributes' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, SetGridFromCellSize) == 0x0000F0, "Member 'UNiagaraDataInterfaceGrid2D::SetGridFromCellSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, WorldBBoxMin) == 0x0000F4, "Member 'UNiagaraDataInterfaceGrid2D::WorldBBoxMin' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid2D, WorldBBoxSize) == 0x000100, "Member 'UNiagaraDataInterfaceGrid2D::WorldBBoxSize' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceGrid2DCollection
 // 0x0000 (0x0108 - 0x0108)
@@ -592,15 +607,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGrid2DCollection">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGrid2DCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGrid2DCollection")
 	}
 	static class UNiagaraDataInterfaceGrid2DCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGrid2DCollection>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGrid2DCollection) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGrid2DCollection");
-static_assert(sizeof(UNiagaraDataInterfaceGrid2DCollection) == 0x000108, "Wrong size on UNiagaraDataInterfaceGrid2DCollection");
 
 // Class Niagara.NiagaraDataInterfaceGrid3D
 // 0x0030 (0x0110 - 0x00E0)
@@ -618,20 +635,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceGrid3D">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceGrid3D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceGrid3D")
 	}
 	static class UNiagaraDataInterfaceGrid3D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceGrid3D>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceGrid3D) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceGrid3D");
-static_assert(sizeof(UNiagaraDataInterfaceGrid3D) == 0x000110, "Wrong size on UNiagaraDataInterfaceGrid3D");
-static_assert(offsetof(UNiagaraDataInterfaceGrid3D, NumVoxels) == 0x0000E0, "Member 'UNiagaraDataInterfaceGrid3D::NumVoxels' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid3D, VoxelSize) == 0x0000EC, "Member 'UNiagaraDataInterfaceGrid3D::VoxelSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid3D, SetGridFromVoxelSize) == 0x0000F0, "Member 'UNiagaraDataInterfaceGrid3D::SetGridFromVoxelSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid3D, WorldBBoxMin) == 0x0000F4, "Member 'UNiagaraDataInterfaceGrid3D::WorldBBoxMin' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceGrid3D, WorldBBoxSize) == 0x000100, "Member 'UNiagaraDataInterfaceGrid3D::WorldBBoxSize' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceNeighborGrid3D
 // 0x0008 (0x0118 - 0x0110)
@@ -644,16 +658,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceNeighborGrid3D">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceNeighborGrid3D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceNeighborGrid3D")
 	}
 	static class UNiagaraDataInterfaceNeighborGrid3D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceNeighborGrid3D>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceNeighborGrid3D) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceNeighborGrid3D");
-static_assert(sizeof(UNiagaraDataInterfaceNeighborGrid3D) == 0x000118, "Wrong size on UNiagaraDataInterfaceNeighborGrid3D");
-static_assert(offsetof(UNiagaraDataInterfaceNeighborGrid3D, MaxNeighborsPerVoxel) == 0x000110, "Member 'UNiagaraDataInterfaceNeighborGrid3D::MaxNeighborsPerVoxel' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceParticleRead
 // 0x0010 (0x0048 - 0x0038)
@@ -665,16 +680,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceParticleRead">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceParticleRead")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceParticleRead")
 	}
 	static class UNiagaraDataInterfaceParticleRead* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceParticleRead>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceParticleRead) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceParticleRead");
-static_assert(sizeof(UNiagaraDataInterfaceParticleRead) == 0x000048, "Wrong size on UNiagaraDataInterfaceParticleRead");
-static_assert(offsetof(UNiagaraDataInterfaceParticleRead, EmitterName) == 0x000038, "Member 'UNiagaraDataInterfaceParticleRead::EmitterName' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceSimpleCounter
 // 0x0000 (0x0038 - 0x0038)
@@ -683,15 +699,17 @@ class UNiagaraDataInterfaceSimpleCounter final : public UNiagaraDataInterface
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceSimpleCounter">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceSimpleCounter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceSimpleCounter")
 	}
 	static class UNiagaraDataInterfaceSimpleCounter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceSimpleCounter>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceSimpleCounter) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceSimpleCounter");
-static_assert(sizeof(UNiagaraDataInterfaceSimpleCounter) == 0x000038, "Wrong size on UNiagaraDataInterfaceSimpleCounter");
 
 // Class Niagara.NiagaraDataInterfaceSkeletalMesh
 // 0x0088 (0x00C0 - 0x0038)
@@ -713,23 +731,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceSkeletalMesh">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceSkeletalMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceSkeletalMesh")
 	}
 	static class UNiagaraDataInterfaceSkeletalMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceSkeletalMesh>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceSkeletalMesh) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceSkeletalMesh");
-static_assert(sizeof(UNiagaraDataInterfaceSkeletalMesh) == 0x0000C0, "Wrong size on UNiagaraDataInterfaceSkeletalMesh");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, Source) == 0x000038, "Member 'UNiagaraDataInterfaceSkeletalMesh::Source' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, MeshUserParameter) == 0x000040, "Member 'UNiagaraDataInterfaceSkeletalMesh::MeshUserParameter' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, SourceComponent) == 0x000070, "Member 'UNiagaraDataInterfaceSkeletalMesh::SourceComponent' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, SkinningMode) == 0x000078, "Member 'UNiagaraDataInterfaceSkeletalMesh::SkinningMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, SamplingRegions) == 0x000080, "Member 'UNiagaraDataInterfaceSkeletalMesh::SamplingRegions' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, WholeMeshLOD) == 0x000090, "Member 'UNiagaraDataInterfaceSkeletalMesh::WholeMeshLOD' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, SpecificBones) == 0x000098, "Member 'UNiagaraDataInterfaceSkeletalMesh::SpecificBones' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceSkeletalMesh, SpecificSockets) == 0x0000A8, "Member 'UNiagaraDataInterfaceSkeletalMesh::SpecificSockets' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceSpline
 // 0x0008 (0x0040 - 0x0038)
@@ -741,16 +753,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceSpline">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceSpline")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceSpline")
 	}
 	static class UNiagaraDataInterfaceSpline* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceSpline>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceSpline) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceSpline");
-static_assert(sizeof(UNiagaraDataInterfaceSpline) == 0x000040, "Wrong size on UNiagaraDataInterfaceSpline");
-static_assert(offsetof(UNiagaraDataInterfaceSpline, Source) == 0x000038, "Member 'UNiagaraDataInterfaceSpline::Source' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceStaticMesh
 // 0x0030 (0x0068 - 0x0038)
@@ -766,19 +779,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceStaticMesh">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceStaticMesh")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceStaticMesh")
 	}
 	static class UNiagaraDataInterfaceStaticMesh* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceStaticMesh>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceStaticMesh) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceStaticMesh");
-static_assert(sizeof(UNiagaraDataInterfaceStaticMesh) == 0x000068, "Wrong size on UNiagaraDataInterfaceStaticMesh");
-static_assert(offsetof(UNiagaraDataInterfaceStaticMesh, DefaultMesh) == 0x000038, "Member 'UNiagaraDataInterfaceStaticMesh::DefaultMesh' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceStaticMesh, Source) == 0x000040, "Member 'UNiagaraDataInterfaceStaticMesh::Source' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceStaticMesh, SourceComponent) == 0x000048, "Member 'UNiagaraDataInterfaceStaticMesh::SourceComponent' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceStaticMesh, SectionFilter) == 0x000050, "Member 'UNiagaraDataInterfaceStaticMesh::SectionFilter' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceTexture
 // 0x0008 (0x0040 - 0x0038)
@@ -790,16 +801,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceTexture">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceTexture")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceTexture")
 	}
 	static class UNiagaraDataInterfaceTexture* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceTexture>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceTexture) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceTexture");
-static_assert(sizeof(UNiagaraDataInterfaceTexture) == 0x000040, "Wrong size on UNiagaraDataInterfaceTexture");
-static_assert(offsetof(UNiagaraDataInterfaceTexture, Texture) == 0x000038, "Member 'UNiagaraDataInterfaceTexture::Texture' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceVector2DCurve
 // 0x0100 (0x0160 - 0x0060)
@@ -812,17 +824,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceVector2DCurve">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceVector2DCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceVector2DCurve")
 	}
 	static class UNiagaraDataInterfaceVector2DCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceVector2DCurve>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceVector2DCurve) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceVector2DCurve");
-static_assert(sizeof(UNiagaraDataInterfaceVector2DCurve) == 0x000160, "Wrong size on UNiagaraDataInterfaceVector2DCurve");
-static_assert(offsetof(UNiagaraDataInterfaceVector2DCurve, XCurve) == 0x000060, "Member 'UNiagaraDataInterfaceVector2DCurve::XCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVector2DCurve, YCurve) == 0x0000E0, "Member 'UNiagaraDataInterfaceVector2DCurve::YCurve' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceVector4Curve
 // 0x0200 (0x0260 - 0x0060)
@@ -837,19 +849,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceVector4Curve">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceVector4Curve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceVector4Curve")
 	}
 	static class UNiagaraDataInterfaceVector4Curve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceVector4Curve>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceVector4Curve) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceVector4Curve");
-static_assert(sizeof(UNiagaraDataInterfaceVector4Curve) == 0x000260, "Wrong size on UNiagaraDataInterfaceVector4Curve");
-static_assert(offsetof(UNiagaraDataInterfaceVector4Curve, XCurve) == 0x000060, "Member 'UNiagaraDataInterfaceVector4Curve::XCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVector4Curve, YCurve) == 0x0000E0, "Member 'UNiagaraDataInterfaceVector4Curve::YCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVector4Curve, ZCurve) == 0x000160, "Member 'UNiagaraDataInterfaceVector4Curve::ZCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVector4Curve, WCurve) == 0x0001E0, "Member 'UNiagaraDataInterfaceVector4Curve::WCurve' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceVectorCurve
 // 0x0180 (0x01E0 - 0x0060)
@@ -863,18 +873,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceVectorCurve">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceVectorCurve")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceVectorCurve")
 	}
 	static class UNiagaraDataInterfaceVectorCurve* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceVectorCurve>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceVectorCurve) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceVectorCurve");
-static_assert(sizeof(UNiagaraDataInterfaceVectorCurve) == 0x0001E0, "Wrong size on UNiagaraDataInterfaceVectorCurve");
-static_assert(offsetof(UNiagaraDataInterfaceVectorCurve, XCurve) == 0x000060, "Member 'UNiagaraDataInterfaceVectorCurve::XCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVectorCurve, YCurve) == 0x0000E0, "Member 'UNiagaraDataInterfaceVectorCurve::YCurve' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVectorCurve, ZCurve) == 0x000160, "Member 'UNiagaraDataInterfaceVectorCurve::ZCurve' has a wrong offset!");
 
 // Class Niagara.NiagaraDataInterfaceVectorField
 // 0x0010 (0x0048 - 0x0038)
@@ -890,19 +899,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceVectorField">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceVectorField")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceVectorField")
 	}
 	static class UNiagaraDataInterfaceVectorField* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceVectorField>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceVectorField) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceVectorField");
-static_assert(sizeof(UNiagaraDataInterfaceVectorField) == 0x000048, "Wrong size on UNiagaraDataInterfaceVectorField");
-static_assert(offsetof(UNiagaraDataInterfaceVectorField, Field) == 0x000038, "Member 'UNiagaraDataInterfaceVectorField::Field' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVectorField, bTileX) == 0x000040, "Member 'UNiagaraDataInterfaceVectorField::bTileX' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVectorField, bTileY) == 0x000041, "Member 'UNiagaraDataInterfaceVectorField::bTileY' has a wrong offset!");
-static_assert(offsetof(UNiagaraDataInterfaceVectorField, bTileZ) == 0x000042, "Member 'UNiagaraDataInterfaceVectorField::bTileZ' has a wrong offset!");
 
 // Class Niagara.NiagaraEditorDataBase
 // 0x0000 (0x0028 - 0x0028)
@@ -911,15 +918,17 @@ class UNiagaraEditorDataBase final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraEditorDataBase">();
+		STATIC_CLASS_IMPL("NiagaraEditorDataBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraEditorDataBase")
 	}
 	static class UNiagaraEditorDataBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraEditorDataBase>();
 	}
 };
-static_assert(alignof(UNiagaraEditorDataBase) == 0x000008, "Wrong alignment on UNiagaraEditorDataBase");
-static_assert(sizeof(UNiagaraEditorDataBase) == 0x000028, "Wrong size on UNiagaraEditorDataBase");
 
 // Class Niagara.NiagaraEmitter
 // 0x0300 (0x0328 - 0x0028)
@@ -955,11 +964,11 @@ public:
 	TSet<uint32>                                  SpawnStages;                                       // 0x0120(0x0050)(Edit, ZeroConstructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	uint8                                         bLimitDeltaTime : 1;                               // 0x0170(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_171[0x3];                                      // 0x0171(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FNiagaraFastPath_Module_EmitterScalability EmitterScalability;                                // 0x0174(0x002C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FNiagaraFastPath_Module_EmitterLifeCycle EmitterLifeCycle;                                  // 0x01A0(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	TArray<struct FNiagaraFastPath_Module_SpawnRate> SpawnRate;                                         // 0x01B0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FNiagaraFastPath_Module_SpawnPerUnit> SpawnPerUnit;                                      // 0x01C0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<struct FNiagaraFastPath_Module_SpawnBurstInstantaneous> SpawnBurstInstantaneous;                           // 0x01D0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	struct FNiagaraFastPath_Module_EmitterScalability EmitterScalability;                            // 0x0174(0x002C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNiagaraFastPath_Module_EmitterLifeCycle EmitterLifeCycle;                                // 0x01A0(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	TArray<struct FNiagaraFastPath_Module_SpawnRate> SpawnRate;                                      // 0x01B0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FNiagaraFastPath_Module_SpawnPerUnit> SpawnPerUnit;                                // 0x01C0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<struct FNiagaraFastPath_Module_SpawnBurstInstantaneous> SpawnBurstInstantaneous;          // 0x01D0(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FNiagaraFastPathAttributeNames         SpawnFastPathAttributeNames;                       // 0x01E0(0x0040)(NativeAccessSpecifierPublic)
 	struct FNiagaraFastPathAttributeNames         UpdateFastPathAttributeNames;                      // 0x0220(0x0040)(NativeAccessSpecifierPublic)
 	class FString                                 UniqueEmitterName;                                 // 0x0260(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
@@ -972,44 +981,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraEmitter">();
+		STATIC_CLASS_IMPL("NiagaraEmitter")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraEmitter")
 	}
 	static class UNiagaraEmitter* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraEmitter>();
 	}
 };
-static_assert(alignof(UNiagaraEmitter) == 0x000008, "Wrong alignment on UNiagaraEmitter");
-static_assert(sizeof(UNiagaraEmitter) == 0x000328, "Wrong size on UNiagaraEmitter");
-static_assert(offsetof(UNiagaraEmitter, bLocalSpace) == 0x000028, "Member 'UNiagaraEmitter::bLocalSpace' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, bDeterminism) == 0x000029, "Member 'UNiagaraEmitter::bDeterminism' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, RandomSeed) == 0x00002C, "Member 'UNiagaraEmitter::RandomSeed' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, AllocationMode) == 0x000030, "Member 'UNiagaraEmitter::AllocationMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, PreAllocationCount) == 0x000034, "Member 'UNiagaraEmitter::PreAllocationCount' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, UpdateScriptProps) == 0x000038, "Member 'UNiagaraEmitter::UpdateScriptProps' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnScriptProps) == 0x000060, "Member 'UNiagaraEmitter::SpawnScriptProps' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, EmitterSpawnScriptProps) == 0x000088, "Member 'UNiagaraEmitter::EmitterSpawnScriptProps' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, EmitterUpdateScriptProps) == 0x0000B0, "Member 'UNiagaraEmitter::EmitterUpdateScriptProps' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SimTarget) == 0x0000D8, "Member 'UNiagaraEmitter::SimTarget' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, FixedBounds) == 0x0000DC, "Member 'UNiagaraEmitter::FixedBounds' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, MinDetailLevel) == 0x0000F8, "Member 'UNiagaraEmitter::MinDetailLevel' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, MaxDetailLevel) == 0x0000FC, "Member 'UNiagaraEmitter::MaxDetailLevel' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, GlobalSpawnCountScaleOverrides) == 0x000100, "Member 'UNiagaraEmitter::GlobalSpawnCountScaleOverrides' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, MaxDeltaTimePerTick) == 0x000118, "Member 'UNiagaraEmitter::MaxDeltaTimePerTick' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, MaxUpdateIterations) == 0x00011C, "Member 'UNiagaraEmitter::MaxUpdateIterations' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnStages) == 0x000120, "Member 'UNiagaraEmitter::SpawnStages' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, EmitterScalability) == 0x000174, "Member 'UNiagaraEmitter::EmitterScalability' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, EmitterLifeCycle) == 0x0001A0, "Member 'UNiagaraEmitter::EmitterLifeCycle' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnRate) == 0x0001B0, "Member 'UNiagaraEmitter::SpawnRate' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnPerUnit) == 0x0001C0, "Member 'UNiagaraEmitter::SpawnPerUnit' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnBurstInstantaneous) == 0x0001D0, "Member 'UNiagaraEmitter::SpawnBurstInstantaneous' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SpawnFastPathAttributeNames) == 0x0001E0, "Member 'UNiagaraEmitter::SpawnFastPathAttributeNames' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, UpdateFastPathAttributeNames) == 0x000220, "Member 'UNiagaraEmitter::UpdateFastPathAttributeNames' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, UniqueEmitterName) == 0x000260, "Member 'UNiagaraEmitter::UniqueEmitterName' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, RendererProperties) == 0x000270, "Member 'UNiagaraEmitter::RendererProperties' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, EventHandlerScriptProps) == 0x000280, "Member 'UNiagaraEmitter::EventHandlerScriptProps' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, GPUComputeScript) == 0x000290, "Member 'UNiagaraEmitter::GPUComputeScript' has a wrong offset!");
-static_assert(offsetof(UNiagaraEmitter, SharedEventGeneratorIds) == 0x000298, "Member 'UNiagaraEmitter::SharedEventGeneratorIds' has a wrong offset!");
 
 // Class Niagara.NiagaraEventReceiverEmitterAction
 // 0x0000 (0x0028 - 0x0028)
@@ -1018,15 +1000,17 @@ class UNiagaraEventReceiverEmitterAction : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraEventReceiverEmitterAction">();
+		STATIC_CLASS_IMPL("NiagaraEventReceiverEmitterAction")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraEventReceiverEmitterAction")
 	}
 	static class UNiagaraEventReceiverEmitterAction* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraEventReceiverEmitterAction>();
 	}
 };
-static_assert(alignof(UNiagaraEventReceiverEmitterAction) == 0x000008, "Wrong alignment on UNiagaraEventReceiverEmitterAction");
-static_assert(sizeof(UNiagaraEventReceiverEmitterAction) == 0x000028, "Wrong size on UNiagaraEventReceiverEmitterAction");
 
 // Class Niagara.NiagaraEventReceiverEmitterAction_SpawnParticles
 // 0x0008 (0x0030 - 0x0028)
@@ -1039,16 +1023,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraEventReceiverEmitterAction_SpawnParticles">();
+		STATIC_CLASS_IMPL("NiagaraEventReceiverEmitterAction_SpawnParticles")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraEventReceiverEmitterAction_SpawnParticles")
 	}
 	static class UNiagaraEventReceiverEmitterAction_SpawnParticles* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraEventReceiverEmitterAction_SpawnParticles>();
 	}
 };
-static_assert(alignof(UNiagaraEventReceiverEmitterAction_SpawnParticles) == 0x000008, "Wrong alignment on UNiagaraEventReceiverEmitterAction_SpawnParticles");
-static_assert(sizeof(UNiagaraEventReceiverEmitterAction_SpawnParticles) == 0x000030, "Wrong size on UNiagaraEventReceiverEmitterAction_SpawnParticles");
-static_assert(offsetof(UNiagaraEventReceiverEmitterAction_SpawnParticles, NumParticles) == 0x000028, "Member 'UNiagaraEventReceiverEmitterAction_SpawnParticles::NumParticles' has a wrong offset!");
 
 // Class Niagara.NiagaraFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -1065,15 +1050,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraFunctionLibrary">();
+		STATIC_CLASS_IMPL("NiagaraFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraFunctionLibrary")
 	}
 	static class UNiagaraFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraFunctionLibrary>();
 	}
 };
-static_assert(alignof(UNiagaraFunctionLibrary) == 0x000008, "Wrong alignment on UNiagaraFunctionLibrary");
-static_assert(sizeof(UNiagaraFunctionLibrary) == 0x000028, "Wrong size on UNiagaraFunctionLibrary");
 
 // Class Niagara.NiagaraRendererProperties
 // 0x0008 (0x0030 - 0x0028)
@@ -1087,17 +1074,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraRendererProperties">();
+		STATIC_CLASS_IMPL("NiagaraRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraRendererProperties")
 	}
 	static class UNiagaraRendererProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraRendererProperties>();
 	}
 };
-static_assert(alignof(UNiagaraRendererProperties) == 0x000008, "Wrong alignment on UNiagaraRendererProperties");
-static_assert(sizeof(UNiagaraRendererProperties) == 0x000030, "Wrong size on UNiagaraRendererProperties");
-static_assert(offsetof(UNiagaraRendererProperties, SortOrderHint) == 0x000028, "Member 'UNiagaraRendererProperties::SortOrderHint' has a wrong offset!");
-static_assert(offsetof(UNiagaraRendererProperties, bIsEnabled) == 0x00002C, "Member 'UNiagaraRendererProperties::bIsEnabled' has a wrong offset!");
 
 // Class Niagara.NiagaraLightRendererProperties
 // 0x0378 (0x03A8 - 0x0030)
@@ -1121,23 +1108,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraLightRendererProperties">();
+		STATIC_CLASS_IMPL("NiagaraLightRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraLightRendererProperties")
 	}
 	static class UNiagaraLightRendererProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraLightRendererProperties>();
 	}
 };
-static_assert(alignof(UNiagaraLightRendererProperties) == 0x000008, "Wrong alignment on UNiagaraLightRendererProperties");
-static_assert(sizeof(UNiagaraLightRendererProperties) == 0x0003A8, "Wrong size on UNiagaraLightRendererProperties");
-static_assert(offsetof(UNiagaraLightRendererProperties, RadiusScale) == 0x000034, "Member 'UNiagaraLightRendererProperties::RadiusScale' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, ColorAdd) == 0x000038, "Member 'UNiagaraLightRendererProperties::ColorAdd' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, LightRenderingEnabledBinding) == 0x000048, "Member 'UNiagaraLightRendererProperties::LightRenderingEnabledBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, LightExponentBinding) == 0x0000D8, "Member 'UNiagaraLightRendererProperties::LightExponentBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, PositionBinding) == 0x000168, "Member 'UNiagaraLightRendererProperties::PositionBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, ColorBinding) == 0x0001F8, "Member 'UNiagaraLightRendererProperties::ColorBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, RadiusBinding) == 0x000288, "Member 'UNiagaraLightRendererProperties::RadiusBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraLightRendererProperties, VolumetricScatteringBinding) == 0x000318, "Member 'UNiagaraLightRendererProperties::VolumetricScatteringBinding' has a wrong offset!");
 
 // Class Niagara.NiagaraMeshRendererProperties
 // 0x06E8 (0x0718 - 0x0030)
@@ -1169,31 +1150,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraMeshRendererProperties">();
+		STATIC_CLASS_IMPL("NiagaraMeshRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraMeshRendererProperties")
 	}
 	static class UNiagaraMeshRendererProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraMeshRendererProperties>();
 	}
 };
-static_assert(alignof(UNiagaraMeshRendererProperties) == 0x000008, "Wrong alignment on UNiagaraMeshRendererProperties");
-static_assert(sizeof(UNiagaraMeshRendererProperties) == 0x000718, "Wrong size on UNiagaraMeshRendererProperties");
-static_assert(offsetof(UNiagaraMeshRendererProperties, ParticleMesh) == 0x000030, "Member 'UNiagaraMeshRendererProperties::ParticleMesh' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, SortMode) == 0x000038, "Member 'UNiagaraMeshRendererProperties::SortMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, OverrideMaterials) == 0x000040, "Member 'UNiagaraMeshRendererProperties::OverrideMaterials' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, FacingMode) == 0x000050, "Member 'UNiagaraMeshRendererProperties::FacingMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, PositionBinding) == 0x000058, "Member 'UNiagaraMeshRendererProperties::PositionBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, ColorBinding) == 0x0000E8, "Member 'UNiagaraMeshRendererProperties::ColorBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, VelocityBinding) == 0x000178, "Member 'UNiagaraMeshRendererProperties::VelocityBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, MeshOrientationBinding) == 0x000208, "Member 'UNiagaraMeshRendererProperties::MeshOrientationBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, ScaleBinding) == 0x000298, "Member 'UNiagaraMeshRendererProperties::ScaleBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, DynamicMaterialBinding) == 0x000328, "Member 'UNiagaraMeshRendererProperties::DynamicMaterialBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, DynamicMaterial1Binding) == 0x0003B8, "Member 'UNiagaraMeshRendererProperties::DynamicMaterial1Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, DynamicMaterial2Binding) == 0x000448, "Member 'UNiagaraMeshRendererProperties::DynamicMaterial2Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, DynamicMaterial3Binding) == 0x0004D8, "Member 'UNiagaraMeshRendererProperties::DynamicMaterial3Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, MaterialRandomBinding) == 0x000568, "Member 'UNiagaraMeshRendererProperties::MaterialRandomBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, CustomSortingBinding) == 0x0005F8, "Member 'UNiagaraMeshRendererProperties::CustomSortingBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraMeshRendererProperties, NormalizedAgeBinding) == 0x000688, "Member 'UNiagaraMeshRendererProperties::NormalizedAgeBinding' has a wrong offset!");
 
 // Class Niagara.NiagaraParameterCollectionInstance
 // 0x00D0 (0x00F8 - 0x0028)
@@ -1225,18 +1192,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraParameterCollectionInstance">();
+		STATIC_CLASS_IMPL("NiagaraParameterCollectionInstance")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraParameterCollectionInstance")
 	}
 	static class UNiagaraParameterCollectionInstance* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraParameterCollectionInstance>();
 	}
 };
-static_assert(alignof(UNiagaraParameterCollectionInstance) == 0x000008, "Wrong alignment on UNiagaraParameterCollectionInstance");
-static_assert(sizeof(UNiagaraParameterCollectionInstance) == 0x0000F8, "Wrong size on UNiagaraParameterCollectionInstance");
-static_assert(offsetof(UNiagaraParameterCollectionInstance, Collection) == 0x000028, "Member 'UNiagaraParameterCollectionInstance::Collection' has a wrong offset!");
-static_assert(offsetof(UNiagaraParameterCollectionInstance, OverridenParameters) == 0x000030, "Member 'UNiagaraParameterCollectionInstance::OverridenParameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraParameterCollectionInstance, ParameterStorage) == 0x000040, "Member 'UNiagaraParameterCollectionInstance::ParameterStorage' has a wrong offset!");
 
 // Class Niagara.NiagaraParameterCollection
 // 0x0030 (0x0058 - 0x0028)
@@ -1251,19 +1217,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraParameterCollection">();
+		STATIC_CLASS_IMPL("NiagaraParameterCollection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraParameterCollection")
 	}
 	static class UNiagaraParameterCollection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraParameterCollection>();
 	}
 };
-static_assert(alignof(UNiagaraParameterCollection) == 0x000008, "Wrong alignment on UNiagaraParameterCollection");
-static_assert(sizeof(UNiagaraParameterCollection) == 0x000058, "Wrong size on UNiagaraParameterCollection");
-static_assert(offsetof(UNiagaraParameterCollection, Namespace) == 0x000028, "Member 'UNiagaraParameterCollection::Namespace' has a wrong offset!");
-static_assert(offsetof(UNiagaraParameterCollection, Parameters) == 0x000030, "Member 'UNiagaraParameterCollection::Parameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraParameterCollection, DefaultInstance) == 0x000040, "Member 'UNiagaraParameterCollection::DefaultInstance' has a wrong offset!");
-static_assert(offsetof(UNiagaraParameterCollection, CompileId) == 0x000048, "Member 'UNiagaraParameterCollection::CompileId' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewBase
 // 0x0000 (0x0218 - 0x0218)
@@ -1276,15 +1240,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewBase">();
+		STATIC_CLASS_IMPL("NiagaraPreviewBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewBase")
 	}
 	static class ANiagaraPreviewBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANiagaraPreviewBase>();
 	}
 };
-static_assert(alignof(ANiagaraPreviewBase) == 0x000008, "Wrong alignment on ANiagaraPreviewBase");
-static_assert(sizeof(ANiagaraPreviewBase) == 0x000218, "Wrong size on ANiagaraPreviewBase");
 
 // Class Niagara.NiagaraPreviewAxis
 // 0x0000 (0x0028 - 0x0028)
@@ -1297,15 +1263,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis")
 	}
 	static class UNiagaraPreviewAxis* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis");
-static_assert(sizeof(UNiagaraPreviewAxis) == 0x000028, "Wrong size on UNiagaraPreviewAxis");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamBase
 // 0x0010 (0x0038 - 0x0028)
@@ -1319,17 +1287,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamBase">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamBase")
 	}
 	static class UNiagaraPreviewAxis_InterpParamBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamBase>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamBase) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamBase");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamBase) == 0x000038, "Wrong size on UNiagaraPreviewAxis_InterpParamBase");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamBase, Param) == 0x000028, "Member 'UNiagaraPreviewAxis_InterpParamBase::Param' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamBase, Count) == 0x000030, "Member 'UNiagaraPreviewAxis_InterpParamBase::Count' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamInt32
 // 0x0008 (0x0040 - 0x0038)
@@ -1342,17 +1310,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamInt32">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamInt32")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamInt32")
 	}
 	static class UNiagaraPreviewAxis_InterpParamInt32* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamInt32>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamInt32) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamInt32");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamInt32) == 0x000040, "Wrong size on UNiagaraPreviewAxis_InterpParamInt32");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamInt32, min_0) == 0x000038, "Member 'UNiagaraPreviewAxis_InterpParamInt32::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamInt32, max_0) == 0x00003C, "Member 'UNiagaraPreviewAxis_InterpParamInt32::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamFloat
 // 0x0008 (0x0040 - 0x0038)
@@ -1365,17 +1333,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamFloat">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamFloat")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamFloat")
 	}
 	static class UNiagaraPreviewAxis_InterpParamFloat* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamFloat>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamFloat) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamFloat");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamFloat) == 0x000040, "Wrong size on UNiagaraPreviewAxis_InterpParamFloat");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamFloat, min_0) == 0x000038, "Member 'UNiagaraPreviewAxis_InterpParamFloat::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamFloat, max_0) == 0x00003C, "Member 'UNiagaraPreviewAxis_InterpParamFloat::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamVector2D
 // 0x0010 (0x0048 - 0x0038)
@@ -1388,17 +1356,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamVector2D">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamVector2D")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamVector2D")
 	}
 	static class UNiagaraPreviewAxis_InterpParamVector2D* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamVector2D>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamVector2D) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamVector2D");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamVector2D) == 0x000048, "Wrong size on UNiagaraPreviewAxis_InterpParamVector2D");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector2D, min_0) == 0x000038, "Member 'UNiagaraPreviewAxis_InterpParamVector2D::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector2D, max_0) == 0x000040, "Member 'UNiagaraPreviewAxis_InterpParamVector2D::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamVector
 // 0x0018 (0x0050 - 0x0038)
@@ -1411,17 +1379,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamVector">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamVector")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamVector")
 	}
 	static class UNiagaraPreviewAxis_InterpParamVector* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamVector>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamVector) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamVector");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamVector) == 0x000050, "Wrong size on UNiagaraPreviewAxis_InterpParamVector");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector, min_0) == 0x000038, "Member 'UNiagaraPreviewAxis_InterpParamVector::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector, max_0) == 0x000044, "Member 'UNiagaraPreviewAxis_InterpParamVector::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamVector4
 // 0x0028 (0x0060 - 0x0038)
@@ -1435,17 +1403,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamVector4">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamVector4")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamVector4")
 	}
 	static class UNiagaraPreviewAxis_InterpParamVector4* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamVector4>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamVector4) == 0x000010, "Wrong alignment on UNiagaraPreviewAxis_InterpParamVector4");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamVector4) == 0x000060, "Wrong size on UNiagaraPreviewAxis_InterpParamVector4");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector4, min_0) == 0x000040, "Member 'UNiagaraPreviewAxis_InterpParamVector4::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamVector4, max_0) == 0x000050, "Member 'UNiagaraPreviewAxis_InterpParamVector4::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewAxis_InterpParamLinearColor
 // 0x0020 (0x0058 - 0x0038)
@@ -1458,17 +1426,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewAxis_InterpParamLinearColor">();
+		STATIC_CLASS_IMPL("NiagaraPreviewAxis_InterpParamLinearColor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewAxis_InterpParamLinearColor")
 	}
 	static class UNiagaraPreviewAxis_InterpParamLinearColor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraPreviewAxis_InterpParamLinearColor>();
 	}
 };
-static_assert(alignof(UNiagaraPreviewAxis_InterpParamLinearColor) == 0x000008, "Wrong alignment on UNiagaraPreviewAxis_InterpParamLinearColor");
-static_assert(sizeof(UNiagaraPreviewAxis_InterpParamLinearColor) == 0x000058, "Wrong size on UNiagaraPreviewAxis_InterpParamLinearColor");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamLinearColor, min_0) == 0x000038, "Member 'UNiagaraPreviewAxis_InterpParamLinearColor::min_0' has a wrong offset!");
-static_assert(offsetof(UNiagaraPreviewAxis_InterpParamLinearColor, max_0) == 0x000048, "Member 'UNiagaraPreviewAxis_InterpParamLinearColor::max_0' has a wrong offset!");
 
 // Class Niagara.NiagaraPreviewGrid
 // 0x0050 (0x0268 - 0x0218)
@@ -1495,25 +1463,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraPreviewGrid">();
+		STATIC_CLASS_IMPL("NiagaraPreviewGrid")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraPreviewGrid")
 	}
 	static class ANiagaraPreviewGrid* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ANiagaraPreviewGrid>();
 	}
 };
-static_assert(alignof(ANiagaraPreviewGrid) == 0x000008, "Wrong alignment on ANiagaraPreviewGrid");
-static_assert(sizeof(ANiagaraPreviewGrid) == 0x000268, "Wrong size on ANiagaraPreviewGrid");
-static_assert(offsetof(ANiagaraPreviewGrid, System) == 0x000218, "Member 'ANiagaraPreviewGrid::System' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, ResetMode) == 0x000220, "Member 'ANiagaraPreviewGrid::ResetMode' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, PreviewAxisX) == 0x000228, "Member 'ANiagaraPreviewGrid::PreviewAxisX' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, PreviewAxisY) == 0x000230, "Member 'ANiagaraPreviewGrid::PreviewAxisY' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, PreviewClass) == 0x000238, "Member 'ANiagaraPreviewGrid::PreviewClass' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, SpacingX) == 0x000240, "Member 'ANiagaraPreviewGrid::SpacingX' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, SpacingY) == 0x000244, "Member 'ANiagaraPreviewGrid::SpacingY' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, NumX) == 0x000248, "Member 'ANiagaraPreviewGrid::NumX' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, NumY) == 0x00024C, "Member 'ANiagaraPreviewGrid::NumY' has a wrong offset!");
-static_assert(offsetof(ANiagaraPreviewGrid, PreviewComponents) == 0x000250, "Member 'ANiagaraPreviewGrid::PreviewComponents' has a wrong offset!");
 
 // Class Niagara.NiagaraRibbonRendererProperties
 // 0x0868 (0x0898 - 0x0030)
@@ -1562,47 +1522,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraRibbonRendererProperties">();
+		STATIC_CLASS_IMPL("NiagaraRibbonRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraRibbonRendererProperties")
 	}
 	static class UNiagaraRibbonRendererProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraRibbonRendererProperties>();
 	}
 };
-static_assert(alignof(UNiagaraRibbonRendererProperties) == 0x000008, "Wrong alignment on UNiagaraRibbonRendererProperties");
-static_assert(sizeof(UNiagaraRibbonRendererProperties) == 0x000898, "Wrong size on UNiagaraRibbonRendererProperties");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, Material) == 0x000030, "Member 'UNiagaraRibbonRendererProperties::Material' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, MaterialUserParamBinding) == 0x000038, "Member 'UNiagaraRibbonRendererProperties::MaterialUserParamBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, FacingMode) == 0x000068, "Member 'UNiagaraRibbonRendererProperties::FacingMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV0TilingDistance) == 0x00006C, "Member 'UNiagaraRibbonRendererProperties::UV0TilingDistance' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV0Scale) == 0x000070, "Member 'UNiagaraRibbonRendererProperties::UV0Scale' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV0Offset) == 0x000078, "Member 'UNiagaraRibbonRendererProperties::UV0Offset' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV0AgeOffsetMode) == 0x000080, "Member 'UNiagaraRibbonRendererProperties::UV0AgeOffsetMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV1TilingDistance) == 0x000084, "Member 'UNiagaraRibbonRendererProperties::UV1TilingDistance' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV1Scale) == 0x000088, "Member 'UNiagaraRibbonRendererProperties::UV1Scale' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV1Offset) == 0x000090, "Member 'UNiagaraRibbonRendererProperties::UV1Offset' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, UV1AgeOffsetMode) == 0x000098, "Member 'UNiagaraRibbonRendererProperties::UV1AgeOffsetMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, DrawDirection) == 0x000099, "Member 'UNiagaraRibbonRendererProperties::DrawDirection' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, CurveTension) == 0x00009C, "Member 'UNiagaraRibbonRendererProperties::CurveTension' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, TessellationMode) == 0x0000A0, "Member 'UNiagaraRibbonRendererProperties::TessellationMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, TessellationFactor) == 0x0000A4, "Member 'UNiagaraRibbonRendererProperties::TessellationFactor' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, bUseConstantFactor) == 0x0000A8, "Member 'UNiagaraRibbonRendererProperties::bUseConstantFactor' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, TessellationAngle) == 0x0000AC, "Member 'UNiagaraRibbonRendererProperties::TessellationAngle' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, bScreenSpaceTessellation) == 0x0000B0, "Member 'UNiagaraRibbonRendererProperties::bScreenSpaceTessellation' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, PositionBinding) == 0x0000B8, "Member 'UNiagaraRibbonRendererProperties::PositionBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, ColorBinding) == 0x000148, "Member 'UNiagaraRibbonRendererProperties::ColorBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, VelocityBinding) == 0x0001D8, "Member 'UNiagaraRibbonRendererProperties::VelocityBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, NormalizedAgeBinding) == 0x000268, "Member 'UNiagaraRibbonRendererProperties::NormalizedAgeBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, RibbonTwistBinding) == 0x0002F8, "Member 'UNiagaraRibbonRendererProperties::RibbonTwistBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, RibbonWidthBinding) == 0x000388, "Member 'UNiagaraRibbonRendererProperties::RibbonWidthBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, RibbonFacingBinding) == 0x000418, "Member 'UNiagaraRibbonRendererProperties::RibbonFacingBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, RibbonIdBinding) == 0x0004A8, "Member 'UNiagaraRibbonRendererProperties::RibbonIdBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, RibbonLinkOrderBinding) == 0x000538, "Member 'UNiagaraRibbonRendererProperties::RibbonLinkOrderBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, MaterialRandomBinding) == 0x0005C8, "Member 'UNiagaraRibbonRendererProperties::MaterialRandomBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, DynamicMaterialBinding) == 0x000658, "Member 'UNiagaraRibbonRendererProperties::DynamicMaterialBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, DynamicMaterial1Binding) == 0x0006E8, "Member 'UNiagaraRibbonRendererProperties::DynamicMaterial1Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, DynamicMaterial2Binding) == 0x000778, "Member 'UNiagaraRibbonRendererProperties::DynamicMaterial2Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraRibbonRendererProperties, DynamicMaterial3Binding) == 0x000808, "Member 'UNiagaraRibbonRendererProperties::DynamicMaterial3Binding' has a wrong offset!");
 
 // Class Niagara.NiagaraScript
 // 0x0538 (0x0560 - 0x0028)
@@ -1621,7 +1551,7 @@ public:
 	uint8                                         Pad_280[0x198];                                    // 0x0280(0x0198)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FNiagaraVMExecutableData               CachedScriptVM;                                    // 0x0418(0x0128)(NativeAccessSpecifierPrivate)
 	TArray<class UNiagaraParameterCollection*>    CachedParameterCollectionReferences;               // 0x0540(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<struct FNiagaraScriptDataInterfaceInfo> CachedDefaultDataInterfaces;                       // 0x0550(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FNiagaraScriptDataInterfaceInfo> CachedDefaultDataInterfaces;                      // 0x0550(0x0010)(ZeroConstructor, NativeAccessSpecifierPrivate)
 
 public:
 	void OnCompilationComplete();
@@ -1629,26 +1559,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraScript">();
+		STATIC_CLASS_IMPL("NiagaraScript")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraScript")
 	}
 	static class UNiagaraScript* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraScript>();
 	}
 };
-static_assert(alignof(UNiagaraScript) == 0x000008, "Wrong alignment on UNiagaraScript");
-static_assert(sizeof(UNiagaraScript) == 0x000560, "Wrong size on UNiagaraScript");
-static_assert(offsetof(UNiagaraScript, Usage) == 0x000028, "Member 'UNiagaraScript::Usage' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, UsageIndex) == 0x00002C, "Member 'UNiagaraScript::UsageIndex' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, UsageId) == 0x000030, "Member 'UNiagaraScript::UsageId' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, RapidIterationParameters) == 0x000040, "Member 'UNiagaraScript::RapidIterationParameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, ScriptExecutionParamStore) == 0x0000F8, "Member 'UNiagaraScript::ScriptExecutionParamStore' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, ScriptExecutionBoundParameters) == 0x0001D0, "Member 'UNiagaraScript::ScriptExecutionBoundParameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, CachedScriptVMId) == 0x0001E0, "Member 'UNiagaraScript::CachedScriptVMId' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, LastGeneratedVMId) == 0x000230, "Member 'UNiagaraScript::LastGeneratedVMId' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, CachedScriptVM) == 0x000418, "Member 'UNiagaraScript::CachedScriptVM' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, CachedParameterCollectionReferences) == 0x000540, "Member 'UNiagaraScript::CachedParameterCollectionReferences' has a wrong offset!");
-static_assert(offsetof(UNiagaraScript, CachedDefaultDataInterfaces) == 0x000550, "Member 'UNiagaraScript::CachedDefaultDataInterfaces' has a wrong offset!");
 
 // Class Niagara.NiagaraScriptSourceBase
 // 0x0020 (0x0048 - 0x0028)
@@ -1660,15 +1581,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraScriptSourceBase">();
+		STATIC_CLASS_IMPL("NiagaraScriptSourceBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraScriptSourceBase")
 	}
 	static class UNiagaraScriptSourceBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraScriptSourceBase>();
 	}
 };
-static_assert(alignof(UNiagaraScriptSourceBase) == 0x000008, "Wrong alignment on UNiagaraScriptSourceBase");
-static_assert(sizeof(UNiagaraScriptSourceBase) == 0x000048, "Wrong size on UNiagaraScriptSourceBase");
 
 // Class Niagara.NiagaraSettings
 // 0x0030 (0x0068 - 0x0038)
@@ -1682,18 +1605,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraSettings">();
+		STATIC_CLASS_IMPL("NiagaraSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraSettings")
 	}
 	static class UNiagaraSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraSettings>();
 	}
 };
-static_assert(alignof(UNiagaraSettings) == 0x000008, "Wrong alignment on UNiagaraSettings");
-static_assert(sizeof(UNiagaraSettings) == 0x000068, "Wrong size on UNiagaraSettings");
-static_assert(offsetof(UNiagaraSettings, AdditionalParameterTypes) == 0x000038, "Member 'UNiagaraSettings::AdditionalParameterTypes' has a wrong offset!");
-static_assert(offsetof(UNiagaraSettings, AdditionalPayloadTypes) == 0x000048, "Member 'UNiagaraSettings::AdditionalPayloadTypes' has a wrong offset!");
-static_assert(offsetof(UNiagaraSettings, AdditionalParameterEnums) == 0x000058, "Member 'UNiagaraSettings::AdditionalParameterEnums' has a wrong offset!");
 
 // Class Niagara.NiagaraSpriteRendererProperties
 // 0x0A08 (0x0A38 - 0x0030)
@@ -1738,42 +1660,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraSpriteRendererProperties">();
+		STATIC_CLASS_IMPL("NiagaraSpriteRendererProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraSpriteRendererProperties")
 	}
 	static class UNiagaraSpriteRendererProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraSpriteRendererProperties>();
 	}
 };
-static_assert(alignof(UNiagaraSpriteRendererProperties) == 0x000008, "Wrong alignment on UNiagaraSpriteRendererProperties");
-static_assert(sizeof(UNiagaraSpriteRendererProperties) == 0x000A38, "Wrong size on UNiagaraSpriteRendererProperties");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, Material) == 0x000030, "Member 'UNiagaraSpriteRendererProperties::Material' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, MaterialUserParamBinding) == 0x000038, "Member 'UNiagaraSpriteRendererProperties::MaterialUserParamBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, Alignment) == 0x000068, "Member 'UNiagaraSpriteRendererProperties::Alignment' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, FacingMode) == 0x000069, "Member 'UNiagaraSpriteRendererProperties::FacingMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, CustomFacingVectorMask) == 0x00006C, "Member 'UNiagaraSpriteRendererProperties::CustomFacingVectorMask' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, PivotInUVSpace) == 0x000078, "Member 'UNiagaraSpriteRendererProperties::PivotInUVSpace' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SortMode) == 0x000080, "Member 'UNiagaraSpriteRendererProperties::SortMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SubImageSize) == 0x000084, "Member 'UNiagaraSpriteRendererProperties::SubImageSize' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, MinFacingCameraBlendDistance) == 0x000090, "Member 'UNiagaraSpriteRendererProperties::MinFacingCameraBlendDistance' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, MaxFacingCameraBlendDistance) == 0x000094, "Member 'UNiagaraSpriteRendererProperties::MaxFacingCameraBlendDistance' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, PositionBinding) == 0x000098, "Member 'UNiagaraSpriteRendererProperties::PositionBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, ColorBinding) == 0x000128, "Member 'UNiagaraSpriteRendererProperties::ColorBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, VelocityBinding) == 0x0001B8, "Member 'UNiagaraSpriteRendererProperties::VelocityBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SpriteRotationBinding) == 0x000248, "Member 'UNiagaraSpriteRendererProperties::SpriteRotationBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SpriteSizeBinding) == 0x0002D8, "Member 'UNiagaraSpriteRendererProperties::SpriteSizeBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SpriteFacingBinding) == 0x000368, "Member 'UNiagaraSpriteRendererProperties::SpriteFacingBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SpriteAlignmentBinding) == 0x0003F8, "Member 'UNiagaraSpriteRendererProperties::SpriteAlignmentBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, SubImageIndexBinding) == 0x000488, "Member 'UNiagaraSpriteRendererProperties::SubImageIndexBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, DynamicMaterialBinding) == 0x000518, "Member 'UNiagaraSpriteRendererProperties::DynamicMaterialBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, DynamicMaterial1Binding) == 0x0005A8, "Member 'UNiagaraSpriteRendererProperties::DynamicMaterial1Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, DynamicMaterial2Binding) == 0x000638, "Member 'UNiagaraSpriteRendererProperties::DynamicMaterial2Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, DynamicMaterial3Binding) == 0x0006C8, "Member 'UNiagaraSpriteRendererProperties::DynamicMaterial3Binding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, CameraOffsetBinding) == 0x000758, "Member 'UNiagaraSpriteRendererProperties::CameraOffsetBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, UVScaleBinding) == 0x0007E8, "Member 'UNiagaraSpriteRendererProperties::UVScaleBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, MaterialRandomBinding) == 0x000878, "Member 'UNiagaraSpriteRendererProperties::MaterialRandomBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, CustomSortingBinding) == 0x000908, "Member 'UNiagaraSpriteRendererProperties::CustomSortingBinding' has a wrong offset!");
-static_assert(offsetof(UNiagaraSpriteRendererProperties, NormalizedAgeBinding) == 0x000998, "Member 'UNiagaraSpriteRendererProperties::NormalizedAgeBinding' has a wrong offset!");
 
 // Class Niagara.NiagaraSystem
 // 0x0350 (0x0380 - 0x0030)
@@ -1787,11 +1684,11 @@ public:
 	uint8                                         bFixedBounds : 1;                                  // 0x0034(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	ENiagaraFastPathMode                          FastPathMode;                                      // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FNiagaraFastPath_Module_SystemScalability SystemScalability;                                 // 0x003C(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	struct FNiagaraFastPath_Module_SystemLifeCycle SystemLifeCycle;                                   // 0x004C(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNiagaraFastPath_Module_SystemScalability SystemScalability;                              // 0x003C(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNiagaraFastPath_Module_SystemLifeCycle SystemLifeCycle;                                  // 0x004C(0x0001)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_4D[0x3];                                       // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FNiagaraEmitterHandle>          EmitterHandles;                                    // 0x0050(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	TArray<class UNiagaraParameterCollectionInstance*> ParameterCollectionOverrides;                      // 0x0060(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<class UNiagaraParameterCollectionInstance*> ParameterCollectionOverrides;                 // 0x0060(0x0010)(Edit, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	class UNiagaraScript*                         SystemSpawnScript;                                 // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UNiagaraScript*                         SystemUpdateScript;                                // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_80[0x10];                                      // 0x0080(0x0010)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1810,33 +1707,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraSystem">();
+		STATIC_CLASS_IMPL("NiagaraSystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraSystem")
 	}
 	static class UNiagaraSystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraSystem>();
 	}
 };
-static_assert(alignof(UNiagaraSystem) == 0x000008, "Wrong alignment on UNiagaraSystem");
-static_assert(sizeof(UNiagaraSystem) == 0x000380, "Wrong size on UNiagaraSystem");
-static_assert(offsetof(UNiagaraSystem, bDumpDebugSystemInfo) == 0x000031, "Member 'UNiagaraSystem::bDumpDebugSystemInfo' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, bDumpDebugEmitterInfo) == 0x000032, "Member 'UNiagaraSystem::bDumpDebugEmitterInfo' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, FastPathMode) == 0x000038, "Member 'UNiagaraSystem::FastPathMode' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, SystemScalability) == 0x00003C, "Member 'UNiagaraSystem::SystemScalability' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, SystemLifeCycle) == 0x00004C, "Member 'UNiagaraSystem::SystemLifeCycle' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, EmitterHandles) == 0x000050, "Member 'UNiagaraSystem::EmitterHandles' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, ParameterCollectionOverrides) == 0x000060, "Member 'UNiagaraSystem::ParameterCollectionOverrides' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, SystemSpawnScript) == 0x000070, "Member 'UNiagaraSystem::SystemSpawnScript' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, SystemUpdateScript) == 0x000078, "Member 'UNiagaraSystem::SystemUpdateScript' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, SystemCompiledData) == 0x000090, "Member 'UNiagaraSystem::SystemCompiledData' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, ExposedParameters) == 0x000238, "Member 'UNiagaraSystem::ExposedParameters' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, FixedBounds) == 0x000340, "Member 'UNiagaraSystem::FixedBounds' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, bAutoDeactivate) == 0x00035C, "Member 'UNiagaraSystem::bAutoDeactivate' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, WarmupTime) == 0x000360, "Member 'UNiagaraSystem::WarmupTime' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, WarmupTickCount) == 0x000364, "Member 'UNiagaraSystem::WarmupTickCount' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, WarmupTickDelta) == 0x000368, "Member 'UNiagaraSystem::WarmupTickDelta' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, bHasSystemScriptDIsWithPerInstanceData) == 0x00036C, "Member 'UNiagaraSystem::bHasSystemScriptDIsWithPerInstanceData' has a wrong offset!");
-static_assert(offsetof(UNiagaraSystem, UserDINamesReadInSystemScripts) == 0x000370, "Member 'UNiagaraSystem::UserDINamesReadInSystemScripts' has a wrong offset!");
 
 }
 

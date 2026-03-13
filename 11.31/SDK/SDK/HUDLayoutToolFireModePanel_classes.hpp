@@ -85,44 +85,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HUDLayoutToolFireModePanel_C">();
+		BP_STATIC_CLASS_IMPL("HUDLayoutToolFireModePanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HUDLayoutToolFireModePanel_C")
 	}
 	static class UHUDLayoutToolFireModePanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHUDLayoutToolFireModePanel_C>();
 	}
 };
-static_assert(alignof(UHUDLayoutToolFireModePanel_C) == 0x000008, "Wrong alignment on UHUDLayoutToolFireModePanel_C");
-static_assert(sizeof(UHUDLayoutToolFireModePanel_C) == 0x000540, "Wrong size on UHUDLayoutToolFireModePanel_C");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, UberGraphFrame) == 0x000450, "Member 'UHUDLayoutToolFireModePanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, ScreenTutorial) == 0x000458, "Member 'UHUDLayoutToolFireModePanel_C::ScreenTutorial' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, OnOpen) == 0x000460, "Member 'UHUDLayoutToolFireModePanel_C::OnOpen' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, ThreeDTouchBox) == 0x000468, "Member 'UHUDLayoutToolFireModePanel_C::ThreeDTouchBox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, ThreeDTouchCheckbox) == 0x000470, "Member 'UHUDLayoutToolFireModePanel_C::ThreeDTouchCheckbox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, AutofireBox) == 0x000478, "Member 'UHUDLayoutToolFireModePanel_C::AutofireBox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, AutofireCheckbox) == 0x000480, "Member 'UHUDLayoutToolFireModePanel_C::AutofireCheckbox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, ClickBlocker) == 0x000488, "Member 'UHUDLayoutToolFireModePanel_C::ClickBlocker' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, CommonWidgetSwitcher_0) == 0x000490, "Member 'UHUDLayoutToolFireModePanel_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, CustomButton) == 0x000498, "Member 'UHUDLayoutToolFireModePanel_C::CustomButton' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, CustomOverlay) == 0x0004A0, "Member 'UHUDLayoutToolFireModePanel_C::CustomOverlay' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, DedicatedButtonBox) == 0x0004A8, "Member 'UHUDLayoutToolFireModePanel_C::DedicatedButtonBox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, DedicatedButtonCheckbox) == 0x0004B0, "Member 'UHUDLayoutToolFireModePanel_C::DedicatedButtonCheckbox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, DismissDialogue) == 0x0004B8, "Member 'UHUDLayoutToolFireModePanel_C::DismissDialogue' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, FireMode_AutoFire) == 0x0004C0, "Member 'UHUDLayoutToolFireModePanel_C::FireMode_AutoFire' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, FireMode_FireButton) == 0x0004C8, "Member 'UHUDLayoutToolFireModePanel_C::FireMode_FireButton' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, FireMode_ForceTouch) == 0x0004D0, "Member 'UHUDLayoutToolFireModePanel_C::FireMode_ForceTouch' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, FireMode_TapToShoot) == 0x0004D8, "Member 'UHUDLayoutToolFireModePanel_C::FireMode_TapToShoot' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, ModeButtonSwitcher) == 0x0004E0, "Member 'UHUDLayoutToolFireModePanel_C::ModeButtonSwitcher' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, PresetOverlay) == 0x0004E8, "Member 'UHUDLayoutToolFireModePanel_C::PresetOverlay' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, PresetsButton) == 0x0004F0, "Member 'UHUDLayoutToolFireModePanel_C::PresetsButton' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, PreviewDescriptionText) == 0x0004F8, "Member 'UHUDLayoutToolFireModePanel_C::PreviewDescriptionText' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, SelectionTypeSwitcher) == 0x000500, "Member 'UHUDLayoutToolFireModePanel_C::SelectionTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, TapAnywhereBox) == 0x000508, "Member 'UHUDLayoutToolFireModePanel_C::TapAnywhereBox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, TapAnywhereCheckbox) == 0x000510, "Member 'UHUDLayoutToolFireModePanel_C::TapAnywhereCheckbox' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, TextDescription) == 0x000518, "Member 'UHUDLayoutToolFireModePanel_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, TutorialConfirm) == 0x000520, "Member 'UHUDLayoutToolFireModePanel_C::TutorialConfirm' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, FireOptionTiles) == 0x000528, "Member 'UHUDLayoutToolFireModePanel_C::FireOptionTiles' has a wrong offset!");
-static_assert(offsetof(UHUDLayoutToolFireModePanel_C, CurSelectedTile) == 0x000538, "Member 'UHUDLayoutToolFireModePanel_C::CurSelectedTile' has a wrong offset!");
 
 }
 

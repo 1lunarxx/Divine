@@ -21,9 +21,6 @@ struct ComRevealScreen_C_StartFadeOutScreen final
 public:
 	float                                         Delay;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComRevealScreen_C_StartFadeOutScreen) == 0x000004, "Wrong alignment on ComRevealScreen_C_StartFadeOutScreen");
-static_assert(sizeof(ComRevealScreen_C_StartFadeOutScreen) == 0x000004, "Wrong size on ComRevealScreen_C_StartFadeOutScreen");
-static_assert(offsetof(ComRevealScreen_C_StartFadeOutScreen, Delay) == 0x000000, "Member 'ComRevealScreen_C_StartFadeOutScreen::Delay' has a wrong offset!");
 
 // Function ComRevealScreen.ComRevealScreen_C.ExecuteUbergraph_ComRevealScreen
 // 0x0040 (0x0040 - 0x0000)
@@ -38,15 +35,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen) == 0x000008, "Wrong alignment on ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen");
-static_assert(sizeof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen) == 0x000040, "Wrong size on ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, EntryPoint) == 0x000000, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, K2Node_Event_Delay) == 0x000004, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::K2Node_Event_Delay' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x000028, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen, CallFunc_PlayAnimation_ReturnValue_2) == 0x000038, "Member 'ComRevealScreen_C_ExecuteUbergraph_ComRevealScreen::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 
 }
 

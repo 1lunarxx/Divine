@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_FloppingRabbit_Passive_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_FloppingRabbit_Passive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_FloppingRabbit_Passive_C")
 	}
 	static class UGA_Athena_FloppingRabbit_Passive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_FloppingRabbit_Passive_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_FloppingRabbit_Passive_C) == 0x000008, "Wrong alignment on UGA_Athena_FloppingRabbit_Passive_C");
-static_assert(sizeof(UGA_Athena_FloppingRabbit_Passive_C) == 0x000AD0, "Wrong size on UGA_Athena_FloppingRabbit_Passive_C");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_FloppingRabbit_Passive_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, GE_Active) == 0x000A38, "Member 'UGA_Athena_FloppingRabbit_Passive_C::GE_Active' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, T_Active) == 0x000A40, "Member 'UGA_Athena_FloppingRabbit_Passive_C::T_Active' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, GE_InWorld) == 0x000A60, "Member 'UGA_Athena_FloppingRabbit_Passive_C::GE_InWorld' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, T_InWorld) == 0x000A68, "Member 'UGA_Athena_FloppingRabbit_Passive_C::T_InWorld' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, Projectile) == 0x000A88, "Member 'UGA_Athena_FloppingRabbit_Passive_C::Projectile' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, Wire) == 0x000A90, "Member 'UGA_Athena_FloppingRabbit_Passive_C::Wire' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, FailsafeDelay) == 0x000A98, "Member 'UGA_Athena_FloppingRabbit_Passive_C::FailsafeDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, GE_ReelIn) == 0x000AA0, "Member 'UGA_Athena_FloppingRabbit_Passive_C::GE_ReelIn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, T_ReelIn) == 0x000AA8, "Member 'UGA_Athena_FloppingRabbit_Passive_C::T_ReelIn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Passive_C, WeaponRod) == 0x000AC8, "Member 'UGA_Athena_FloppingRabbit_Passive_C::WeaponRod' has a wrong offset!");
 
 }
 

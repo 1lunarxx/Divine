@@ -23,15 +23,17 @@ class AGCN_Generic_Stunned_C final : public AFortGameplayCueNotify_Looping
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Generic_Stunned_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Generic_Stunned_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Generic_Stunned_C")
 	}
 	static class AGCN_Generic_Stunned_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Generic_Stunned_C>();
 	}
 };
-static_assert(alignof(AGCN_Generic_Stunned_C) == 0x000008, "Wrong alignment on AGCN_Generic_Stunned_C");
-static_assert(sizeof(AGCN_Generic_Stunned_C) == 0x000310, "Wrong size on AGCN_Generic_Stunned_C");
 
 }
 

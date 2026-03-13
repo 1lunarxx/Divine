@@ -84,49 +84,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInfoHeaderWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemInfoHeaderWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInfoHeaderWidget_C")
 	}
 	static class UItemInfoHeaderWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInfoHeaderWidget_C>();
 	}
 };
-static_assert(alignof(UItemInfoHeaderWidget_C) == 0x000008, "Wrong alignment on UItemInfoHeaderWidget_C");
-static_assert(sizeof(UItemInfoHeaderWidget_C) == 0x0003B8, "Wrong size on UItemInfoHeaderWidget_C");
-static_assert(offsetof(UItemInfoHeaderWidget_C, UberGraphFrame) == 0x000278, "Member 'UItemInfoHeaderWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, AlternateBGContainer) == 0x000280, "Member 'UItemInfoHeaderWidget_C::AlternateBGContainer' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, AlternateBorder) == 0x000288, "Member 'UItemInfoHeaderWidget_C::AlternateBorder' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, AlternateRule) == 0x000290, "Member 'UItemInfoHeaderWidget_C::AlternateRule' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, BackgroundSwitcher) == 0x000298, "Member 'UItemInfoHeaderWidget_C::BackgroundSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, Card) == 0x0002A0, "Member 'UItemInfoHeaderWidget_C::Card' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, CardContainer) == 0x0002A8, "Member 'UItemInfoHeaderWidget_C::CardContainer' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, DetailsScrollBox) == 0x0002B0, "Member 'UItemInfoHeaderWidget_C::DetailsScrollBox' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, HeaderBackground) == 0x0002B8, "Member 'UItemInfoHeaderWidget_C::HeaderBackground' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, HeaderBGContainer) == 0x0002C0, "Member 'UItemInfoHeaderWidget_C::HeaderBGContainer' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, HeaderRule) == 0x0002C8, "Member 'UItemInfoHeaderWidget_C::HeaderRule' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, Image_0) == 0x0002D0, "Member 'UItemInfoHeaderWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ItemSeriesOrRarity) == 0x0002D8, "Member 'UItemInfoHeaderWidget_C::ItemSeriesOrRarity' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, LockedTextBlock) == 0x0002E0, "Member 'UItemInfoHeaderWidget_C::LockedTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, LockImage) == 0x0002E8, "Member 'UItemInfoHeaderWidget_C::LockImage' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, MainHB) == 0x0002F0, "Member 'UItemInfoHeaderWidget_C::MainHB' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, NameTextBlock) == 0x0002F8, "Member 'UItemInfoHeaderWidget_C::NameTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RarityGlow) == 0x000300, "Member 'UItemInfoHeaderWidget_C::RarityGlow' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RarityTypeSeperatorImage) == 0x000308, "Member 'UItemInfoHeaderWidget_C::RarityTypeSeperatorImage' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RemainingContainer) == 0x000310, "Member 'UItemInfoHeaderWidget_C::RemainingContainer' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RemainingText) == 0x000318, "Member 'UItemInfoHeaderWidget_C::RemainingText' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RichDescriptionBox) == 0x000320, "Member 'UItemInfoHeaderWidget_C::RichDescriptionBox' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RootBackground) == 0x000328, "Member 'UItemInfoHeaderWidget_C::RootBackground' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, TextContainer) == 0x000330, "Member 'UItemInfoHeaderWidget_C::TextContainer' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, TypeTextBlock) == 0x000338, "Member 'UItemInfoHeaderWidget_C::TypeTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, RemainingQuantity) == 0x000340, "Member 'UItemInfoHeaderWidget_C::RemainingQuantity' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ShowCard) == 0x000344, "Member 'UItemInfoHeaderWidget_C::ShowCard' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, Locked) == 0x000345, "Member 'UItemInfoHeaderWidget_C::Locked' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, LockedReason) == 0x000348, "Member 'UItemInfoHeaderWidget_C::LockedReason' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ShowRemainingQuantity) == 0x000360, "Member 'UItemInfoHeaderWidget_C::ShowRemainingQuantity' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ShowDetails) == 0x000361, "Member 'UItemInfoHeaderWidget_C::ShowDetails' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, CardSize) == 0x000362, "Member 'UItemInfoHeaderWidget_C::CardSize' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ShowDescription) == 0x000363, "Member 'UItemInfoHeaderWidget_C::ShowDescription' has a wrong offset!");
-static_assert(offsetof(UItemInfoHeaderWidget_C, ItemAlternateName) == 0x000368, "Member 'UItemInfoHeaderWidget_C::ItemAlternateName' has a wrong offset!");
 
 }
 

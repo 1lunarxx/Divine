@@ -23,15 +23,17 @@ class UB_GrenadeCameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_GrenadeCameraShake_C">();
+		BP_STATIC_CLASS_IMPL("B_GrenadeCameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_GrenadeCameraShake_C")
 	}
 	static class UB_GrenadeCameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UB_GrenadeCameraShake_C>();
 	}
 };
-static_assert(alignof(UB_GrenadeCameraShake_C) == 0x000010, "Wrong alignment on UB_GrenadeCameraShake_C");
-static_assert(sizeof(UB_GrenadeCameraShake_C) == 0x000160, "Wrong size on UB_GrenadeCameraShake_C");
 
 }
 

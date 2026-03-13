@@ -23,15 +23,17 @@ class UBorder_Solid_MdBlue_C final : public UBorder_TabM_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_Solid_MdBlue_C">();
+		BP_STATIC_CLASS_IMPL("Border_Solid_MdBlue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_Solid_MdBlue_C")
 	}
 	static class UBorder_Solid_MdBlue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_Solid_MdBlue_C>();
 	}
 };
-static_assert(alignof(UBorder_Solid_MdBlue_C) == 0x000008, "Wrong alignment on UBorder_Solid_MdBlue_C");
-static_assert(sizeof(UBorder_Solid_MdBlue_C) == 0x0000B0, "Wrong size on UBorder_Solid_MdBlue_C");
 
 }
 

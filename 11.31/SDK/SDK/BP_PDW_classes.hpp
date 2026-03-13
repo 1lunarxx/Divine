@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PDW_C">();
+		BP_STATIC_CLASS_IMPL("BP_PDW_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PDW_C")
 	}
 	static class UBP_PDW_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_PDW_C>();
 	}
 };
-static_assert(alignof(UBP_PDW_C) == 0x000010, "Wrong alignment on UBP_PDW_C");
-static_assert(sizeof(UBP_PDW_C) == 0x000310, "Wrong size on UBP_PDW_C");
-static_assert(offsetof(UBP_PDW_C, UberGraphFrame) == 0x000270, "Member 'UBP_PDW_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_PDW_C, AnimGraphNode_Root_0562F6184C86E34D2BBC87BBF67B4E94) == 0x000278, "Member 'UBP_PDW_C::AnimGraphNode_Root_0562F6184C86E34D2BBC87BBF67B4E94' has a wrong offset!");
-static_assert(offsetof(UBP_PDW_C, AnimGraphNode_LocalRefPose_8DF0F768443238A6FA9CD39C6A756B6D) == 0x0002A8, "Member 'UBP_PDW_C::AnimGraphNode_LocalRefPose_8DF0F768443238A6FA9CD39C6A756B6D' has a wrong offset!");
-static_assert(offsetof(UBP_PDW_C, AnimGraphNode_Slot_1186B52041A8BE0BBE0BB29197667B1A) == 0x0002C0, "Member 'UBP_PDW_C::AnimGraphNode_Slot_1186B52041A8BE0BBE0BB29197667B1A' has a wrong offset!");
 
 }
 

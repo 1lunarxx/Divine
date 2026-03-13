@@ -17,6 +17,103 @@
 namespace SDK
 {
 
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.InitAffiliateInfo
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionMTXDetails_C::InitAffiliateInfo()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
+
+	Params::AthenaDirectAcquisitionMTXDetails_C_GetWidgetForFramingViewedItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.InitPurchaseButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.PopDetails
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.Init
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionMTXDetails_C::Init()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.HandleBack
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
+
+	Params::AthenaDirectAcquisitionMTXDetails_C_HandleBack Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
+}
+
+
 // Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.HandlePurchaseComplete
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -132,103 +229,6 @@ void UAthenaDirectAcquisitionMTXDetails_C::ExecuteUbergraph_AthenaDirectAcquisit
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.InitAffiliateInfo
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionMTXDetails_C::InitAffiliateInfo()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitAffiliateInfo");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.GetWidgetForFramingViewedItem
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UAthenaDirectAcquisitionMTXDetails_C::GetWidgetForFramingViewedItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "GetWidgetForFramingViewedItem");
-
-	Params::AthenaDirectAcquisitionMTXDetails_C_GetWidgetForFramingViewedItem Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.InitPurchaseButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionMTXDetails_C::InitPurchaseButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "InitPurchaseButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.PopDetails
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionMTXDetails_C::PopDetails()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "PopDetails");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.Init
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionMTXDetails_C::Init()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "Init");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionMTXDetails.AthenaDirectAcquisitionMTXDetails_C.HandleBack
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaDirectAcquisitionMTXDetails_C::HandleBack(bool* PassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionMTXDetails_C", "HandleBack");
-
-	Params::AthenaDirectAcquisitionMTXDetails_C_HandleBack Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PassThrough != nullptr)
-		*PassThrough = Parms.PassThrough;
 }
 
 }

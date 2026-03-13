@@ -44,23 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemNotification_C">();
+		BP_STATIC_CLASS_IMPL("ItemNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemNotification_C")
 	}
 	static class UItemNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemNotification_C>();
 	}
 };
-static_assert(alignof(UItemNotification_C) == 0x000008, "Wrong alignment on UItemNotification_C");
-static_assert(sizeof(UItemNotification_C) == 0x0004C8, "Wrong size on UItemNotification_C");
-static_assert(offsetof(UItemNotification_C, UberGraphFrame) == 0x000488, "Member 'UItemNotification_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, Content_Intro) == 0x000490, "Member 'UItemNotification_C::Content_Intro' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, Content_Fade) == 0x000498, "Member 'UItemNotification_C::Content_Fade' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, Fade) == 0x0004A0, "Member 'UItemNotification_C::Fade' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, InitialState) == 0x0004A8, "Member 'UItemNotification_C::InitialState' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, Intro) == 0x0004B0, "Member 'UItemNotification_C::Intro' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, Backplate) == 0x0004B8, "Member 'UItemNotification_C::Backplate' has a wrong offset!");
-static_assert(offsetof(UItemNotification_C, SafeZone_Content) == 0x0004C0, "Member 'UItemNotification_C::SafeZone_Content' has a wrong offset!");
 
 }
 

@@ -61,41 +61,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x012B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x012C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer) == 0x000008, "Wrong alignment on GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer");
-static_assert(sizeof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer) == 0x000130, "Wrong size on GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, EntryPoint) == 0x000000, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_Event_bWasCancelled) == 0x000044, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_IsValid_ReturnValue) == 0x000045, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x000048, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000050, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_IsValid_ReturnValue_1) == 0x00005C, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000060, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Vector_Distance_ReturnValue) == 0x00006C, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Round_ReturnValue) == 0x000070, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Round_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Divide_IntInt_ReturnValue) == 0x000074, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_IsServer_ReturnValue) == 0x000078, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000079, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_GetActorInfo_ReturnValue) == 0x000080, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x0000C0, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_GetQuestManager_ReturnValue) == 0x0000C8, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000D0, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_SendComplexCustomStatEvent_QuestActive) == 0x0000D9, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_SendComplexCustomStatEvent_QuestActive' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_SendComplexCustomStatEvent_QuestCompleted) == 0x0000DA, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_SendComplexCustomStatEvent_QuestCompleted' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x0000E0, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000108, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_K2_CommitAbility_ReturnValue) == 0x000118, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_IsServer_ReturnValue_1) == 0x000119, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_IsServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1) == 0x000120, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid) == 0x000128, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestIsValid' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted) == 0x000129, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Athena_CheckQuestAndObjectiveCompletion_QuestCompleted' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted) == 0x00012A, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Athena_CheckQuestAndObjectiveCompletion_ObjectiveCompleted' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_Not_PreBool_ReturnValue) == 0x00012B, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer, CallFunc_BooleanAND_ReturnValue) == 0x00012C, "Member 'GAB_CarryPlayer_C_ExecuteUbergraph_GAB_CarryPlayer::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function GAB_CarryPlayer.GAB_CarryPlayer_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -104,9 +69,6 @@ struct GAB_CarryPlayer_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_CarryPlayer_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GAB_CarryPlayer_C_K2_OnEndAbility");
-static_assert(sizeof(GAB_CarryPlayer_C_K2_OnEndAbility) == 0x000001, "Wrong size on GAB_CarryPlayer_C_K2_OnEndAbility");
-static_assert(offsetof(GAB_CarryPlayer_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GAB_CarryPlayer_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

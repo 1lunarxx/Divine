@@ -58,35 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeImageGrid_Button_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeImageGrid_Button_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeImageGrid_Button_C")
 	}
 	static class UChallengeImageGrid_Button_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeImageGrid_Button_C>();
 	}
 };
-static_assert(alignof(UChallengeImageGrid_Button_C) == 0x000008, "Wrong alignment on UChallengeImageGrid_Button_C");
-static_assert(sizeof(UChallengeImageGrid_Button_C) == 0x000C48, "Wrong size on UChallengeImageGrid_Button_C");
-static_assert(offsetof(UChallengeImageGrid_Button_C, UberGraphFrame) == 0x000BB8, "Member 'UChallengeImageGrid_Button_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, OnLoad_Locked) == 0x000BC0, "Member 'UChallengeImageGrid_Button_C::OnLoad_Locked' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, OnLoad_Unlocked) == 0x000BC8, "Member 'UChallengeImageGrid_Button_C::OnLoad_Unlocked' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, LowPulse) == 0x000BD0, "Member 'UChallengeImageGrid_Button_C::LowPulse' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, Hover) == 0x000BD8, "Member 'UChallengeImageGrid_Button_C::Hover' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, PlateRemoval) == 0x000BE0, "Member 'UChallengeImageGrid_Button_C::PlateRemoval' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, ChipInstall) == 0x000BE8, "Member 'UChallengeImageGrid_Button_C::ChipInstall' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, BlockNumber) == 0x000BF0, "Member 'UChallengeImageGrid_Button_C::BlockNumber' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, Chip) == 0x000BF8, "Member 'UChallengeImageGrid_Button_C::Chip' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, CircuitBurst) == 0x000C00, "Member 'UChallengeImageGrid_Button_C::CircuitBurst' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, EnergyMarker) == 0x000C08, "Member 'UChallengeImageGrid_Button_C::EnergyMarker' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, EnergyMarker_base) == 0x000C10, "Member 'UChallengeImageGrid_Button_C::EnergyMarker_base' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, Flash) == 0x000C18, "Member 'UChallengeImageGrid_Button_C::Flash' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, GridLocationHB) == 0x000C20, "Member 'UChallengeImageGrid_Button_C::GridLocationHB' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, PuzzlePiece) == 0x000C28, "Member 'UChallengeImageGrid_Button_C::PuzzlePiece' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, swipe) == 0x000C30, "Member 'UChallengeImageGrid_Button_C::swipe' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, zaps) == 0x000C38, "Member 'UChallengeImageGrid_Button_C::zaps' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, TransitionState) == 0x000C40, "Member 'UChallengeImageGrid_Button_C::TransitionState' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, Completed) == 0x000C41, "Member 'UChallengeImageGrid_Button_C::Completed' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGrid_Button_C, Locked) == 0x000C42, "Member 'UChallengeImageGrid_Button_C::Locked' has a wrong offset!");
 
 }
 

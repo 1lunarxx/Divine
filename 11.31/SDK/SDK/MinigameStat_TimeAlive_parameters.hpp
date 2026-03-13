@@ -34,21 +34,6 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameStat_TimeAlive_C_Compare) == 0x000004, "Wrong alignment on MinigameStat_TimeAlive_C_Compare");
-static_assert(sizeof(MinigameStat_TimeAlive_C_Compare) == 0x00001C, "Wrong size on MinigameStat_TimeAlive_C_Compare");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, FirstScore) == 0x000000, "Member 'MinigameStat_TimeAlive_C_Compare::FirstScore' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, SecondScore) == 0x000004, "Member 'MinigameStat_TimeAlive_C_Compare::SecondScore' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, ReturnValue) == 0x000008, "Member 'MinigameStat_TimeAlive_C_Compare::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, IsSecondValid) == 0x00000C, "Member 'MinigameStat_TimeAlive_C_Compare::IsSecondValid' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, IsFirstValid) == 0x00000D, "Member 'MinigameStat_TimeAlive_C_Compare::IsFirstValid' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_Not_PreBool_ReturnValue) == 0x00000E, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_BooleanAND_ReturnValue) == 0x00000F, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000010, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_Not_PreBool_ReturnValue_1) == 0x000011, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_BooleanAND_ReturnValue_1) == 0x000012, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_TimeAlive_C_Compare, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000019, "Member 'MinigameStat_TimeAlive_C_Compare::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
 
 }
 

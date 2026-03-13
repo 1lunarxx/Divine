@@ -23,12 +23,12 @@ struct GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup 
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate;  // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilityTask_WaitGameplayEvent*         CallFunc_WaitGameplayEvent_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0044(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_54[0x4];                                       // 0x0054(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -69,42 +69,6 @@ public:
 	uint8                                         Pad_271[0x7];                                      // 0x0271(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0278(0x00B0)()
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup) == 0x000008, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup) == 0x000328, "Wrong size on GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, EntryPoint) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_WaitGameplayEvent_ReturnValue) == 0x000018, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_WaitGameplayEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CreateDelegate_OutputDelegate_2) == 0x000034, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CreateDelegate_OutputDelegate_3) == 0x000044, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_WaitGameplayTagAdd_ReturnValue) == 0x000058, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_WaitGameplayTagAdd_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000068, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_IsValid_ReturnValue_2) == 0x000070, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000078, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_DynamicCast_AsFort_Player_Controller_Gameplay) == 0x000080, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_DynamicCast_AsFort_Player_Controller_Gameplay' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1) == 0x000090, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, Temp_struct_Variable) == 0x000098, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x000148, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_DynamicCast_bSuccess_1) == 0x000150, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000154, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_GetValueAtLevel_ReturnValue) == 0x00015C, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_DamagedActor) == 0x000160, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_DamagedActor' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_Damage) == 0x000168, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_InstigatedBy) == 0x000170, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_DamageCauser) == 0x000178, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_DamageCauser' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_HitLocation) == 0x000180, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_FHitComponent) == 0x000190, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_FHitComponent' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_BoneName) == 0x000198, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_BoneName' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_Momentum) == 0x0001A0, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_Momentum' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_CustomEvent_Payload) == 0x0001B0, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_CustomEvent_Payload' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000260, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000264, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1) == 0x000268, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_Event_bWasCancelled) == 0x000270, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup, K2Node_MakeStruct_GameplayEventData) == 0x000278, "Member 'GA_SpookyMist_PassiveSetup_C_ExecuteUbergraph_GA_SpookyMist_PassiveSetup::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -113,9 +77,6 @@ struct GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.WhenDamaged
 // 0x0050 (0x0050 - 0x0000)
@@ -133,16 +94,6 @@ public:
 	class FName                                   BoneName;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Momentum;                                          // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_WhenDamaged) == 0x000008, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_WhenDamaged");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_WhenDamaged) == 0x000050, "Wrong size on GA_SpookyMist_PassiveSetup_C_WhenDamaged");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, DamagedActor) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::DamagedActor' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, Damage) == 0x000008, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::Damage' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, InstigatedBy) == 0x000010, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, DamageCauser) == 0x000018, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::DamageCauser' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, HitLocation) == 0x000020, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::HitLocation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, FHitComponent) == 0x000030, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::FHitComponent' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, BoneName) == 0x000038, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::BoneName' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_WhenDamaged, Momentum) == 0x000040, "Member 'GA_SpookyMist_PassiveSetup_C_WhenDamaged::Momentum' has a wrong offset!");
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.EventReceived_3CB208084D361EC6BA9A619CA44CFB21
 // 0x00B0 (0x00B0 - 0x0000)
@@ -151,9 +102,6 @@ struct GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB
 public:
 	struct FGameplayEventData                     Payload;                                           // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21) == 0x000008, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21) == 0x0000B0, "Wrong size on GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21, Payload) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_EventReceived_3CB208084D361EC6BA9A619CA44CFB21::Payload' has a wrong offset!");
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.SetBlockAbilityTags
 // 0x0068 (0x0068 - 0x0000)
@@ -170,15 +118,6 @@ public:
 	class UFortAbilitySystemComponent*            K2Node_DynamicCast_AsFort_Ability_System_Component; // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags) == 0x000008, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags) == 0x000068, "Wrong size on GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, CallFunc_GetValueAtLevel_ReturnValue) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000004, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, CallFunc_GetActorInfo_ReturnValue) == 0x000008, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000048, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, K2Node_DynamicCast_AsFort_Ability_System_Component) == 0x000058, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::K2Node_DynamicCast_AsFort_Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'GA_SpookyMist_PassiveSetup_C_SetBlockAbilityTags::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_SpookyMist_PassiveSetup.GA_SpookyMist_PassiveSetup_C.UnBlockAbilityTags
 // 0x0068 (0x0068 - 0x0000)
@@ -195,15 +134,6 @@ public:
 	class UFortAbilitySystemComponent*            K2Node_DynamicCast_AsFort_Ability_System_Component; // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags) == 0x000008, "Wrong alignment on GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags");
-static_assert(sizeof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags) == 0x000068, "Wrong size on GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, CallFunc_GetValueAtLevel_ReturnValue) == 0x000000, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000004, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, CallFunc_GetActorInfo_ReturnValue) == 0x000008, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000048, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, K2Node_DynamicCast_AsFort_Ability_System_Component) == 0x000058, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::K2Node_DynamicCast_AsFort_Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'GA_SpookyMist_PassiveSetup_C_UnBlockAbilityTags::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

@@ -29,20 +29,12 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetCurrentAnswer_bOutIsSet;               // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPlayerSurveyAnswerMultipleSelection CallFunc_GetCurrentAnswer_OutAnswer;               // 0x0008(0x0018)()
-	struct FFortPlayerSurveyAnswerContainerChangeEventInfo K2Node_Event_EventInfo;                            // 0x0020(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortPlayerSurveyAnswerMultipleSelection CallFunc_GetCurrentAnswer_OutAnswer;             // 0x0008(0x0018)()
+	struct FFortPlayerSurveyAnswerContainerChangeEventInfo K2Node_Event_EventInfo;                   // 0x0020(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_ButtonIndex;                          // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          CallFunc_GetButtonAtIndex_ReturnValue;             // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget) == 0x000030, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, EntryPoint) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, CallFunc_GetCurrentAnswer_bOutIsSet) == 0x000004, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::CallFunc_GetCurrentAnswer_bOutIsSet' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, CallFunc_GetCurrentAnswer_OutAnswer) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::CallFunc_GetCurrentAnswer_OutAnswer' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, K2Node_Event_EventInfo) == 0x000020, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::K2Node_Event_EventInfo' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, K2Node_Event_ButtonIndex) == 0x000024, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::K2Node_Event_ButtonIndex' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget, CallFunc_GetButtonAtIndex_ReturnValue) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ExecuteUbergraph_PlayerSurveyPanelContentsAnswerMultipleSelectionWidget::CallFunc_GetButtonAtIndex_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.HandleButtonClicked
 // 0x0004 (0x0004 - 0x0000)
@@ -51,35 +43,24 @@ struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClic
 public:
 	int32                                         ButtonIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked) == 0x000004, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked) == 0x000004, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked, ButtonIndex) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleButtonClicked::ButtonIndex' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.HandleAnswerChanged
 // 0x0001 (0x0001 - 0x0000)
 struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged final
 {
 public:
-	struct FFortPlayerSurveyAnswerContainerChangeEventInfo EventInfo;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
+	struct FFortPlayerSurveyAnswerContainerChangeEventInfo EventInfo;                                // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged) == 0x000001, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged) == 0x000001, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged, EventInfo) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandleAnswerChanged::EventInfo' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.HandlePlayerRequestAnswer
 // 0x0030 (0x0030 - 0x0000)
 struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer final
 {
 public:
-	TArray<struct FFortPlayerSurveyAnswerMultipleSelectionSingleAnswer> AnswerChoices;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+	TArray<struct FFortPlayerSurveyAnswerMultipleSelectionSingleAnswer> AnswerChoices;               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	struct FTimespan                              CallFunc_GetStopwatchTime_ReturnValue;             // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FFortPlayerSurveyAnswerMultipleSelection K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleSelection; // 0x0018(0x0018)()
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer) == 0x000030, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer, AnswerChoices) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer::AnswerChoices' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer, CallFunc_GetStopwatchTime_ReturnValue) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer::CallFunc_GetStopwatchTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer, K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleSelection) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestAnswer::K2Node_MakeStruct_FortPlayerSurveyAnswerMultipleSelection' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.UpdateEntryBoxContents
 // 0x0080 (0x0080 - 0x0000)
@@ -87,7 +68,7 @@ struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxCo
 {
 public:
 	class UWidget*                                ChoiceWidget;                                      // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPlayerSurveyQuestionMultipleSelection* CurrentQuestion;                                   // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPlayerSurveyQuestionMultipleSelection* CurrentQuestion;                               // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TScriptInterface<class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C> K2Node_DynamicCast_AsPlayer_Survey_Multiple_Choice_List_Item_Widget_Interface; // 0x0018(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -105,27 +86,9 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPlayerSurveyQuestionMultipleSelection* CallFunc_GetCurrentQuestion_ReturnValue;           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPlayerSurveyQuestionMultipleSelection* CallFunc_GetCurrentQuestion_ReturnValue;       // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            CallFunc_BP_CreateEntry_ReturnValue;               // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents) == 0x000080, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, ChoiceWidget) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::ChoiceWidget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CurrentQuestion) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CurrentQuestion' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, K2Node_DynamicCast_AsPlayer_Survey_Multiple_Choice_List_Item_Widget_Interface) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::K2Node_DynamicCast_AsPlayer_Survey_Multiple_Choice_List_Item_Widget_Interface' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, K2Node_DynamicCast_AsCommon_Button) == 0x000030, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::K2Node_DynamicCast_AsCommon_Button' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_Array_Add_ReturnValue) == 0x000040, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, Temp_int_Loop_Counter_Variable) == 0x000044, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_Array_Get_Item) == 0x000048, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_Array_Length_ReturnValue) == 0x000060, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_GetCurrentQuestion_ReturnValue) == 0x000070, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_GetCurrentQuestion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents, CallFunc_BP_CreateEntry_ReturnValue) == 0x000078, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateEntryBoxContents::CallFunc_BP_CreateEntry_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.ScrollSelectedItemIntoView
 // 0x0030 (0x0030 - 0x0000)
@@ -148,21 +111,6 @@ public:
 	class UWidget*                                CallFunc_GetDefaultFocusedWidget_ReturnValue;      // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_GetDefaultFocusedWidgetPostDummy_Widget;  // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView) == 0x000030, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, FallBackToDefault) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::FallBackToDefault' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, AnimateScroll) == 0x000001, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::AnimateScroll' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, OverrideScrollDestination) == 0x000002, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::OverrideScrollDestination' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, WidgetToFocus) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::WidgetToFocus' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, DefaultFocusedWidget) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::DefaultFocusedWidget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, Temp_byte_Variable) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, Temp_bool_Variable) == 0x00001A, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, CallFunc_IsValid_ReturnValue_1) == 0x00001B, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, K2Node_Select_Default) == 0x00001C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00001D, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, CallFunc_GetDefaultFocusedWidget_ReturnValue) == 0x000020, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::CallFunc_GetDefaultFocusedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView, CallFunc_GetDefaultFocusedWidgetPostDummy_Widget) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_ScrollSelectedItemIntoView::CallFunc_GetDefaultFocusedWidgetPostDummy_Widget' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.HandlePlayerRequestToggleChoice
 // 0x0008 (0x0008 - 0x0000)
@@ -173,11 +121,6 @@ public:
 	bool                                          CallFunc_IsChoiceSelected_ReturnValue;             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice) == 0x000004, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice) == 0x000008, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice, Index_0) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice::Index_0' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice, CallFunc_IsChoiceSelected_ReturnValue) == 0x000004, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice::CallFunc_IsChoiceSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice, CallFunc_Not_PreBool_ReturnValue) == 0x000005, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_HandlePlayerRequestToggleChoice::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.UpdateSelectionCountText
 // 0x0150 (0x0150 - 0x0000)
@@ -187,7 +130,7 @@ public:
 	class FText                                   TextFormatToUse;                                   // 0x0000(0x0018)(Edit, BlueprintVisible)
 	int32                                         MaxNumAnswers;                                     // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MinNumAnswers;                                     // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortPlayerSurveyQuestionMultipleSelection* CurrentQuestion;                                   // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPlayerSurveyQuestionMultipleSelection* CurrentQuestion;                               // 0x0020(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         NumSelected;                                       // 0x0028(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x002D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -205,31 +148,9 @@ public:
 	int32                                         CallFunc_TryGetMaxNumAnswers_OutMaxNumAnswers;     // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_TryGetMaxNumAnswers_ReturnValue;          // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_13D[0x3];                                      // 0x013D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortPlayerSurveyQuestionMultipleSelection* CallFunc_GetCurrentQuestion_ReturnValue;           // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortPlayerSurveyQuestionMultipleSelection* CallFunc_GetCurrentQuestion_ReturnValue;       // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetNumChoicesSelected_ReturnValue;        // 0x0148(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText) == 0x000150, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, TextFormatToUse) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::TextFormatToUse' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, MaxNumAnswers) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::MaxNumAnswers' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, MinNumAnswers) == 0x00001C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::MinNumAnswers' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CurrentQuestion) == 0x000020, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CurrentQuestion' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, NumSelected) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::NumSelected' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_IsValid_ReturnValue) == 0x00002C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002D, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, K2Node_MakeStruct_FormatArgumentData_1) == 0x000070, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000B0, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, K2Node_MakeArray_Array) == 0x0000F0, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_Format_ReturnValue) == 0x000100, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_Greater_IntInt_ReturnValue) == 0x000118, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, Temp_bool_Variable) == 0x000119, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_Greater_IntInt_ReturnValue_1) == 0x00011A, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, K2Node_Select_Default) == 0x000120, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_TryGetMaxNumAnswers_OutMaxNumAnswers) == 0x000138, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_TryGetMaxNumAnswers_OutMaxNumAnswers' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_TryGetMaxNumAnswers_ReturnValue) == 0x00013C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_TryGetMaxNumAnswers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_GetCurrentQuestion_ReturnValue) == 0x000140, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_GetCurrentQuestion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText, CallFunc_GetNumChoicesSelected_ReturnValue) == 0x000148, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateSelectionCountText::CallFunc_GetNumChoicesSelected_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.UpdateValidDisplay
 // 0x0010 (0x0010 - 0x0000)
@@ -242,12 +163,6 @@ public:
 	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay) == 0x000010, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay, CurrentAnswerValid) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay::CurrentAnswerValid' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay, Temp_bool_Variable) == 0x000001, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay, CallFunc_IsCurrentAnswerValid_ReturnValue) == 0x000002, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay::CallFunc_IsCurrentAnswerValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay, K2Node_Select_Default) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateValidDisplay::K2Node_Select_Default' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.UpdateActionDisplay
 // 0x0048 (0x0048 - 0x0000)
@@ -257,7 +172,7 @@ public:
 	bool                                          bWillSelect;                                       // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bCanToggle;                                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2[0x2];                                        // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo FocusInfo;                                         // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo FocusInfo;              // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsChoiceSelected_ReturnValue;             // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_CanToggleChoice_ReturnValue;              // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x000E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -267,24 +182,10 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0018(0x0018)()
 	bool                                          Temp_bool_Variable_1;                              // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x3];                                       // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo CallFunc_GetFocusInfo_ReturnValue;                 // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortPlayerSurveyButtonListMultipleSelectionAnswerWidgetFocusInfo CallFunc_GetFocusInfo_ReturnValue; // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_Select_Default_1;                           // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay) == 0x000048, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, bWillSelect) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::bWillSelect' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, bCanToggle) == 0x000001, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::bCanToggle' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, FocusInfo) == 0x000004, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::FocusInfo' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, CallFunc_IsChoiceSelected_ReturnValue) == 0x00000C, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::CallFunc_IsChoiceSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, CallFunc_CanToggleChoice_ReturnValue) == 0x00000D, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::CallFunc_CanToggleChoice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, CallFunc_Not_PreBool_ReturnValue) == 0x00000E, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, K2Node_SwitchEnum_CmpSuccess) == 0x00000F, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, Temp_bool_Variable) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, K2Node_Select_Default) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, Temp_bool_Variable_1) == 0x000030, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, CallFunc_GetFocusInfo_ReturnValue) == 0x000034, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::CallFunc_GetFocusInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay, K2Node_Select_Default_1) == 0x000040, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_UpdateActionDisplay::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.GetDefaultFocusedWidget
 // 0x0048 (0x0048 - 0x0000)
@@ -302,19 +203,8 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_GetCurrentAnswer_bOutIsSet;               // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2B[0x5];                                       // 0x002B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFortPlayerSurveyAnswerMultipleSelection CallFunc_GetCurrentAnswer_OutAnswer;               // 0x0030(0x0018)()
+	struct FFortPlayerSurveyAnswerMultipleSelection CallFunc_GetCurrentAnswer_OutAnswer;             // 0x0030(0x0018)()
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget) == 0x000048, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, ReturnValue) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, DefaultIndex) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::DefaultIndex' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, TargetWidget) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::TargetWidget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, SelectedIndex) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, CallFunc_GetButtonAtIndex_ReturnValue) == 0x000020, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::CallFunc_GetButtonAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, CallFunc_Less_IntInt_ReturnValue) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, CallFunc_GetCurrentAnswer_bOutIsSet) == 0x00002A, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::CallFunc_GetCurrentAnswer_bOutIsSet' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget, CallFunc_GetCurrentAnswer_OutAnswer) == 0x000030, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidget::CallFunc_GetCurrentAnswer_OutAnswer' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.GetSubtitleText
 // 0x0018 (0x0018 - 0x0000)
@@ -323,9 +213,6 @@ struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText 
 public:
 	class FText                                   ReturnValue;                                       // 0x0000(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText) == 0x000018, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText, ReturnValue) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetSubtitleText::ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.GetDefaultFocusedWidgetPostDummy
 // 0x0038 (0x0038 - 0x0000)
@@ -342,15 +229,6 @@ public:
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy) == 0x000008, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy) == 0x000038, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, Navigation_0) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::Navigation_0' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, Widget) == 0x000008, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::Widget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, Index_0) == 0x000010, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::Index_0' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, CallFunc_GetDefaultInitialChoiceIndex_Index) == 0x000014, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::CallFunc_GetDefaultInitialChoiceIndex_Index' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, CallFunc_GetAllEntries_ReturnValue) == 0x000018, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::CallFunc_GetAllEntries_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000028, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy, CallFunc_Array_Get_Item) == 0x000030, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultFocusedWidgetPostDummy::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function PlayerSurveyPanelContentsAnswerMultipleSelectionWidget.PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C.GetDefaultInitialChoiceIndex
 // 0x0004 (0x0004 - 0x0000)
@@ -359,9 +237,6 @@ struct PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitia
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex) == 0x000004, "Wrong alignment on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex");
-static_assert(sizeof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex) == 0x000004, "Wrong size on PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex");
-static_assert(offsetof(PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex, Index_0) == 0x000000, "Member 'PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C_GetDefaultInitialChoiceIndex::Index_0' has a wrong offset!");
 
 }
 

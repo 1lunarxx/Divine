@@ -23,15 +23,17 @@ class UAthena_PlayerCameraModeRocket_C final : public UAthena_PlayerCameraModeRa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeRocket_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeRocket_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeRocket_C")
 	}
 	static class UAthena_PlayerCameraModeRocket_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeRocket_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeRocket_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeRocket_C");
-static_assert(sizeof(UAthena_PlayerCameraModeRocket_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraModeRocket_C");
 
 }
 

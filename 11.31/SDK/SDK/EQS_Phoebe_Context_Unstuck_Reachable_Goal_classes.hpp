@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EQS_Phoebe_Context_Unstuck_Reachable_Goal_C">();
+		BP_STATIC_CLASS_IMPL("EQS_Phoebe_Context_Unstuck_Reachable_Goal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EQS_Phoebe_Context_Unstuck_Reachable_Goal_C")
 	}
 	static class UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C>();
 	}
 };
-static_assert(alignof(UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C) == 0x000008, "Wrong alignment on UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C");
-static_assert(sizeof(UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C) == 0x000030, "Wrong size on UEQS_Phoebe_Context_Unstuck_Reachable_Goal_C");
 
 }
 

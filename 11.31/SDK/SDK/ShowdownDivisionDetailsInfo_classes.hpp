@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownDivisionDetailsInfo_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownDivisionDetailsInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownDivisionDetailsInfo_C")
 	}
 	static class UShowdownDivisionDetailsInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownDivisionDetailsInfo_C>();
 	}
 };
-static_assert(alignof(UShowdownDivisionDetailsInfo_C) == 0x000008, "Wrong alignment on UShowdownDivisionDetailsInfo_C");
-static_assert(sizeof(UShowdownDivisionDetailsInfo_C) == 0x000640, "Wrong size on UShowdownDivisionDetailsInfo_C");
-static_assert(offsetof(UShowdownDivisionDetailsInfo_C, Hidden_Delete_) == 0x000628, "Member 'UShowdownDivisionDetailsInfo_C::Hidden_Delete_' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionDetailsInfo_C, Image_66) == 0x000630, "Member 'UShowdownDivisionDetailsInfo_C::Image_66' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionDetailsInfo_C, RichTextBlock_AboutLeagues) == 0x000638, "Member 'UShowdownDivisionDetailsInfo_C::RichTextBlock_AboutLeagues' has a wrong offset!");
 
 }
 

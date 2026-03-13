@@ -76,46 +76,6 @@ public:
 	uint8                                         Pad_2E9[0x3];                                      // 0x02E9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue_1; // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack) == 0x000008, "Wrong alignment on DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack");
-static_assert(sizeof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack) == 0x0002F0, "Wrong size on DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, EntryPoint) == 0x000000, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, Temp_bool_Variable) == 0x000004, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_Event_FortDecoHelper_1) == 0x000008, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_Event_FortDecoHelper_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_Event_FortDecoHelper) == 0x000018, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_Event_FortDecoHelper' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue) == 0x000020, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_AsFort_Pawn) == 0x000028, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_MakeStruct_GameplayEventData) == 0x000038, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_IsFalling_ReturnValue) == 0x0000E8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_IsFalling_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_MakeStruct_GameplayEventData_1) == 0x0000F0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_MakeStruct_GameplayEventData_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_Less_FloatFloat_ReturnValue) == 0x0001A0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_Add_FloatFloat_ReturnValue) == 0x0001A4, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0001A8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_1) == 0x0001B0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_2) == 0x0001B8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface) == 0x0001C0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_bSuccess_1) == 0x0001D0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_3) == 0x0001D8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_CustomEvent_Hit) == 0x0001E0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_AsFort_Pawn_1) == 0x000268, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_AsFort_Pawn_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_bSuccess_2) == 0x000270, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_4) == 0x000278, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_BooleanAND_ReturnValue) == 0x000280, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1) == 0x000288, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_bSuccess_3) == 0x000298, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_5) == 0x0002A0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_AsFort_Pawn_2) == 0x0002A8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_AsFort_Pawn_2' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_DynamicCast_bSuccess_4) == 0x0002B0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, K2Node_CreateDelegate_OutputDelegate) == 0x0002B4, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0002C8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_HasAnyMatchingGameplayTags_ReturnValue) == 0x0002D0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_HasAnyMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1) == 0x0002D1, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_HasAnyMatchingGameplayTags_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_GetInstigator_ReturnValue_6) == 0x0002D8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_GetInstigator_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, Temp_bool_Variable_1) == 0x0002E0, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue) == 0x0002E4, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_Not_PreBool_ReturnValue_1) == 0x0002E8, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack, CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue_1) == 0x0002EC, "Member 'DA_AshtonPack_C_ExecuteUbergraph_DA_AshtonPack::CallFunc_RemoveActiveEffectsWithSourceTags_ReturnValue_1' has a wrong offset!");
 
 // Function DA_AshtonPack.DA_AshtonPack_C.BPPressSecondaryFire
 // 0x0008 (0x0008 - 0x0000)
@@ -124,9 +84,6 @@ struct DA_AshtonPack_C_BPPressSecondaryFire final
 public:
 	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_AshtonPack_C_BPPressSecondaryFire) == 0x000008, "Wrong alignment on DA_AshtonPack_C_BPPressSecondaryFire");
-static_assert(sizeof(DA_AshtonPack_C_BPPressSecondaryFire) == 0x000008, "Wrong size on DA_AshtonPack_C_BPPressSecondaryFire");
-static_assert(offsetof(DA_AshtonPack_C_BPPressSecondaryFire, FortDecoHelper) == 0x000000, "Member 'DA_AshtonPack_C_BPPressSecondaryFire::FortDecoHelper' has a wrong offset!");
 
 // Function DA_AshtonPack.DA_AshtonPack_C.BPPressTrigger
 // 0x0008 (0x0008 - 0x0000)
@@ -135,9 +92,6 @@ struct DA_AshtonPack_C_BPPressTrigger final
 public:
 	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_AshtonPack_C_BPPressTrigger) == 0x000008, "Wrong alignment on DA_AshtonPack_C_BPPressTrigger");
-static_assert(sizeof(DA_AshtonPack_C_BPPressTrigger) == 0x000008, "Wrong size on DA_AshtonPack_C_BPPressTrigger");
-static_assert(offsetof(DA_AshtonPack_C_BPPressTrigger, FortDecoHelper) == 0x000000, "Member 'DA_AshtonPack_C_BPPressTrigger::FortDecoHelper' has a wrong offset!");
 
 // Function DA_AshtonPack.DA_AshtonPack_C.Landed
 // 0x0088 (0x0088 - 0x0000)
@@ -146,9 +100,6 @@ struct DA_AshtonPack_C_Landed final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(DA_AshtonPack_C_Landed) == 0x000004, "Wrong alignment on DA_AshtonPack_C_Landed");
-static_assert(sizeof(DA_AshtonPack_C_Landed) == 0x000088, "Wrong size on DA_AshtonPack_C_Landed");
-static_assert(offsetof(DA_AshtonPack_C_Landed, Hit) == 0x000000, "Member 'DA_AshtonPack_C_Landed::Hit' has a wrong offset!");
 
 }
 

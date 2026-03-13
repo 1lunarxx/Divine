@@ -83,42 +83,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Trap_Floor_Spikes_C">();
+		BP_STATIC_CLASS_IMPL("Trap_Floor_Spikes_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Trap_Floor_Spikes_C")
 	}
 	static class ATrap_Floor_Spikes_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrap_Floor_Spikes_C>();
 	}
 };
-static_assert(alignof(ATrap_Floor_Spikes_C) == 0x000008, "Wrong alignment on ATrap_Floor_Spikes_C");
-static_assert(sizeof(ATrap_Floor_Spikes_C) == 0x000D30, "Wrong size on ATrap_Floor_Spikes_C");
-static_assert(offsetof(ATrap_Floor_Spikes_C, UberGraphFrame) == 0x000C78, "Member 'ATrap_Floor_Spikes_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Spike_Mesh) == 0x000C80, "Member 'ATrap_Floor_Spikes_C::Spike_Mesh' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Trigger) == 0x000C88, "Member 'ATrap_Floor_Spikes_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, root) == 0x000C90, "Member 'ATrap_Floor_Spikes_C::root' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, ResetSpikes_LERP_FCB6779D4DCA9F66ECE8A7B3FDDF9459) == 0x000C98, "Member 'ATrap_Floor_Spikes_C::ResetSpikes_LERP_FCB6779D4DCA9F66ECE8A7B3FDDF9459' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, ResetSpikes__Direction_FCB6779D4DCA9F66ECE8A7B3FDDF9459) == 0x000C9C, "Member 'ATrap_Floor_Spikes_C::ResetSpikes__Direction_FCB6779D4DCA9F66ECE8A7B3FDDF9459' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, ResetSpikes) == 0x000CA0, "Member 'ATrap_Floor_Spikes_C::ResetSpikes' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Retract_LERP_0B9D97AE4B5C790D47D67889C6EAE1CD) == 0x000CA8, "Member 'ATrap_Floor_Spikes_C::Retract_LERP_0B9D97AE4B5C790D47D67889C6EAE1CD' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Retract__Direction_0B9D97AE4B5C790D47D67889C6EAE1CD) == 0x000CAC, "Member 'ATrap_Floor_Spikes_C::Retract__Direction_0B9D97AE4B5C790D47D67889C6EAE1CD' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Retract) == 0x000CB0, "Member 'ATrap_Floor_Spikes_C::Retract' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Fire_LERP_31BA074043AA09D9C415BAAA81B9DCBF) == 0x000CB8, "Member 'ATrap_Floor_Spikes_C::Fire_LERP_31BA074043AA09D9C415BAAA81B9DCBF' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Fire__Direction_31BA074043AA09D9C415BAAA81B9DCBF) == 0x000CBC, "Member 'ATrap_Floor_Spikes_C::Fire__Direction_31BA074043AA09D9C415BAAA81B9DCBF' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Fire) == 0x000CC0, "Member 'ATrap_Floor_Spikes_C::Fire' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Place_Trap_Sound) == 0x000CC8, "Member 'ATrap_Floor_Spikes_C::Place_Trap_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Trap_Active_Sound) == 0x000CD0, "Member 'ATrap_Floor_Spikes_C::Trap_Active_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Reload_Sound) == 0x000CD8, "Member 'ATrap_Floor_Spikes_C::Reload_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Trap_Explode_Sound) == 0x000CE0, "Member 'ATrap_Floor_Spikes_C::Trap_Explode_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, Trap_Fire_Sound) == 0x000CE8, "Member 'ATrap_Floor_Spikes_C::Trap_Fire_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SpikeRestingScale) == 0x000CF0, "Member 'ATrap_Floor_Spikes_C::SpikeRestingScale' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SpikeActiveScale) == 0x000CF4, "Member 'ATrap_Floor_Spikes_C::SpikeActiveScale' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SpikeHoldOnFireLength) == 0x000CF8, "Member 'ATrap_Floor_Spikes_C::SpikeHoldOnFireLength' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SpikesMID) == 0x000D00, "Member 'ATrap_Floor_Spikes_C::SpikesMID' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SweepExponent) == 0x000D08, "Member 'ATrap_Floor_Spikes_C::SweepExponent' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SweepColor) == 0x000D0C, "Member 'ATrap_Floor_Spikes_C::SweepColor' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, SweepSpeed) == 0x000D1C, "Member 'ATrap_Floor_Spikes_C::SweepSpeed' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, FriendlyTrapMaterial) == 0x000D20, "Member 'ATrap_Floor_Spikes_C::FriendlyTrapMaterial' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Spikes_C, NormalSpikeMaterial) == 0x000D28, "Member 'ATrap_Floor_Spikes_C::NormalSpikeMaterial' has a wrong offset!");
 
 }
 

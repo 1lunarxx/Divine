@@ -41,21 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassItemTracker_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassItemTracker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassItemTracker_C")
 	}
 	static class UBattlePassItemTracker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassItemTracker_C>();
 	}
 };
-static_assert(alignof(UBattlePassItemTracker_C) == 0x000008, "Wrong alignment on UBattlePassItemTracker_C");
-static_assert(sizeof(UBattlePassItemTracker_C) == 0x000298, "Wrong size on UBattlePassItemTracker_C");
-static_assert(offsetof(UBattlePassItemTracker_C, UberGraphFrame) == 0x000268, "Member 'UBattlePassItemTracker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassItemTracker_C, InitialState) == 0x000270, "Member 'UBattlePassItemTracker_C::InitialState' has a wrong offset!");
-static_assert(offsetof(UBattlePassItemTracker_C, SetNumberVisible) == 0x000278, "Member 'UBattlePassItemTracker_C::SetNumberVisible' has a wrong offset!");
-static_assert(offsetof(UBattlePassItemTracker_C, IntroAnim) == 0x000280, "Member 'UBattlePassItemTracker_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassItemTracker_C, Increase) == 0x000288, "Member 'UBattlePassItemTracker_C::Increase' has a wrong offset!");
-static_assert(offsetof(UBattlePassItemTracker_C, IsSecondary) == 0x000290, "Member 'UBattlePassItemTracker_C::IsSecondary' has a wrong offset!");
 
 }
 

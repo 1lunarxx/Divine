@@ -44,23 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestTitleScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestTitleScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestTitleScreen_C")
 	}
 	static class UWinterQuestTitleScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestTitleScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestTitleScreen_C) == 0x000008, "Wrong alignment on UWinterQuestTitleScreen_C");
-static_assert(sizeof(UWinterQuestTitleScreen_C) == 0x0004A8, "Wrong size on UWinterQuestTitleScreen_C");
-static_assert(offsetof(UWinterQuestTitleScreen_C, UberGraphFrame) == 0x000468, "Member 'UWinterQuestTitleScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, FadeFX) == 0x000470, "Member 'UWinterQuestTitleScreen_C::FadeFX' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Image_FadeFX) == 0x000478, "Member 'UWinterQuestTitleScreen_C::Image_FadeFX' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Winterfest_OutsideCabinLogo) == 0x000480, "Member 'UWinterQuestTitleScreen_C::Winterfest_OutsideCabinLogo' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Music_Entry) == 0x000488, "Member 'UWinterQuestTitleScreen_C::Music_Entry' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Is_winterfest_widget) == 0x000490, "Member 'UWinterQuestTitleScreen_C::Is_winterfest_widget' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Wind_Audio_Component) == 0x000498, "Member 'UWinterQuestTitleScreen_C::Wind_Audio_Component' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTitleScreen_C, Ambient_Audio) == 0x0004A0, "Member 'UWinterQuestTitleScreen_C::Ambient_Audio' has a wrong offset!");
 
 }
 

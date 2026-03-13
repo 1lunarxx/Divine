@@ -28,13 +28,13 @@ void IPlayerAnimOverrideLayerInterface_C::FullBodyOverride(const struct FPoseLin
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
+		Func = AsUObject()->Class->GetFunction("PlayerAnimOverrideLayerInterface_C", "FullBodyOverride");
 
 	Params::PlayerAnimOverrideLayerInterface_C_FullBodyOverride Parms{};
 
 	Parms.PassThroughFullBodyPose = std::move(PassThroughFullBodyPose);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (FullBodyOverride_0 != nullptr)
 		*FullBodyOverride_0 = std::move(Parms.FullBodyOverride_0);

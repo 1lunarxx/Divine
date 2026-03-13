@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass ItemAnimLayerInterface.ItemAnimLayerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IItemAnimLayerInterface_C final : public IAnimLayerInterface
+// 0x0000 (0x0000 - 0x0000)
+class IItemAnimLayerInterface_C final
 {
 public:
 	void ItemUpperBody(const struct FPoseLink& InPoseUpperBody, const struct FFortAnimInput_AdjustedAim& InputParam, struct FPoseLink* ItemUpperBody_0);
@@ -57,15 +57,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemAnimLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("ItemAnimLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemAnimLayerInterface_C")
 	}
 	static class IItemAnimLayerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IItemAnimLayerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IItemAnimLayerInterface_C) == 0x000008, "Wrong alignment on IItemAnimLayerInterface_C");
-static_assert(sizeof(IItemAnimLayerInterface_C) == 0x000028, "Wrong size on IItemAnimLayerInterface_C");
 
 }
 

@@ -177,96 +177,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_ShootingTarget_Master_C">();
+		BP_STATIC_CLASS_IMPL("B_ShootingTarget_Master_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_ShootingTarget_Master_C")
 	}
 	static class AB_ShootingTarget_Master_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_ShootingTarget_Master_C>();
 	}
 };
-static_assert(alignof(AB_ShootingTarget_Master_C) == 0x000008, "Wrong alignment on AB_ShootingTarget_Master_C");
-static_assert(sizeof(AB_ShootingTarget_Master_C) == 0x000F00, "Wrong size on AB_ShootingTarget_Master_C");
-static_assert(offsetof(AB_ShootingTarget_Master_C, UberGraphFrame) == 0x000B08, "Member 'AB_ShootingTarget_Master_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, AimAssistPawn) == 0x000B10, "Member 'AB_ShootingTarget_Master_C::AimAssistPawn' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, P_TargetImpact_Falldown) == 0x000B18, "Member 'AB_ShootingTarget_Master_C::P_TargetImpact_Falldown' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, RoundShortWeakPoint) == 0x000B20, "Member 'AB_ShootingTarget_Master_C::RoundShortWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, RoundWeakPoint) == 0x000B28, "Member 'AB_ShootingTarget_Master_C::RoundWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HuskyWeakPoint1) == 0x000B30, "Member 'AB_ShootingTarget_Master_C::HuskyWeakPoint1' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PumpkinHeadTargetWeakPoint) == 0x000B38, "Member 'AB_ShootingTarget_Master_C::PumpkinHeadTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, LlamaTargetWeakPoint) == 0x000B40, "Member 'AB_ShootingTarget_Master_C::LlamaTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TomatoHeadTargetWeakPoint) == 0x000B48, "Member 'AB_ShootingTarget_Master_C::TomatoHeadTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HandsOnHipsWeakPoint) == 0x000B50, "Member 'AB_ShootingTarget_Master_C::HandsOnHipsWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PandaHeadWeakPoint) == 0x000B58, "Member 'AB_ShootingTarget_Master_C::PandaHeadWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TeddyBearWeakPoint) == 0x000B60, "Member 'AB_ShootingTarget_Master_C::TeddyBearWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, CrouchingTargetWeakPoint) == 0x000B68, "Member 'AB_ShootingTarget_Master_C::CrouchingTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HuskTargetWeakPoint) == 0x000B70, "Member 'AB_ShootingTarget_Master_C::HuskTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, DancingTargetWeakPoint) == 0x000B78, "Member 'AB_ShootingTarget_Master_C::DancingTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, LoserTargetWeakPoint) == 0x000B80, "Member 'AB_ShootingTarget_Master_C::LoserTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, StandingTargetWeakPoint) == 0x000B88, "Member 'AB_ShootingTarget_Master_C::StandingTargetWeakPoint' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetMesh) == 0x000B90, "Member 'AB_ShootingTarget_Master_C::TargetMesh' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HeightExtender) == 0x000B98, "Member 'AB_ShootingTarget_Master_C::HeightExtender' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, AbilitySystem) == 0x000BA0, "Member 'AB_ShootingTarget_Master_C::AbilitySystem' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ProximityTrigger) == 0x000BA8, "Member 'AB_ShootingTarget_Master_C::ProximityTrigger' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, FortMinigameProgress) == 0x000BB0, "Member 'AB_ShootingTarget_Master_C::FortMinigameProgress' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ToyOptionsComponent) == 0x000BB8, "Member 'AB_ShootingTarget_Master_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, SM_Target_StandShort) == 0x000BC0, "Member 'AB_ShootingTarget_Master_C::SM_Target_StandShort' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, SM_Target_Base) == 0x000BC8, "Member 'AB_ShootingTarget_Master_C::SM_Target_Base' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, KnockDownTimeline_Rotation_8B965F244DB51315A670CE8BD54F045D) == 0x000BD0, "Member 'AB_ShootingTarget_Master_C::KnockDownTimeline_Rotation_8B965F244DB51315A670CE8BD54F045D' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, KnockDownTimeline__Direction_8B965F244DB51315A670CE8BD54F045D) == 0x000BD4, "Member 'AB_ShootingTarget_Master_C::KnockDownTimeline__Direction_8B965F244DB51315A670CE8BD54F045D' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, KnockDownTimeline) == 0x000BD8, "Member 'AB_ShootingTarget_Master_C::KnockDownTimeline' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, Timeline_2_Height_50A7E1DD45D0851E9ECD309DBAE220D5) == 0x000BE0, "Member 'AB_ShootingTarget_Master_C::Timeline_2_Height_50A7E1DD45D0851E9ECD309DBAE220D5' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, Timeline_2__Direction_50A7E1DD45D0851E9ECD309DBAE220D5) == 0x000BE4, "Member 'AB_ShootingTarget_Master_C::Timeline_2__Direction_50A7E1DD45D0851E9ECD309DBAE220D5' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, Timeline_2) == 0x000BE8, "Member 'AB_ShootingTarget_Master_C::Timeline_2' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PopUpTimeline_Rotation_EC7265FB4A8A31A05B401FB83B908B21) == 0x000BF0, "Member 'AB_ShootingTarget_Master_C::PopUpTimeline_Rotation_EC7265FB4A8A31A05B401FB83B908B21' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PopUpTimeline__Direction_EC7265FB4A8A31A05B401FB83B908B21) == 0x000BF4, "Member 'AB_ShootingTarget_Master_C::PopUpTimeline__Direction_EC7265FB4A8A31A05B401FB83B908B21' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PopUpTimeline) == 0x000BF8, "Member 'AB_ShootingTarget_Master_C::PopUpTimeline' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, Rotated_Piece) == 0x000C00, "Member 'AB_ShootingTarget_Master_C::Rotated_Piece' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, StartingHealthSetting) == 0x000C08, "Member 'AB_ShootingTarget_Master_C::StartingHealthSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ResetDelaySetting) == 0x000C0C, "Member 'AB_ShootingTarget_Master_C::ResetDelaySetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, JumpTimeSetting) == 0x000C10, "Member 'AB_ShootingTarget_Master_C::JumpTimeSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TimeBeforeHidingSetting) == 0x000C14, "Member 'AB_ShootingTarget_Master_C::TimeBeforeHidingSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, CurrentMaxHealthMultiplier) == 0x000C18, "Member 'AB_ShootingTarget_Master_C::CurrentMaxHealthMultiplier' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HingeLocationSetting) == 0x000C1C, "Member 'AB_ShootingTarget_Master_C::HingeLocationSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, StartingPositionSetting) == 0x000C20, "Member 'AB_ShootingTarget_Master_C::StartingPositionSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, MaxPopUpsSetting) == 0x000C24, "Member 'AB_ShootingTarget_Master_C::MaxPopUpsSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ScoreValueSetting) == 0x000C28, "Member 'AB_ShootingTarget_Master_C::ScoreValueSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, WeakPointMultiplierSetting) == 0x000C2C, "Member 'AB_ShootingTarget_Master_C::WeakPointMultiplierSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ProximityDistanceSetting) == 0x000C30, "Member 'AB_ShootingTarget_Master_C::ProximityDistanceSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TeamAssignmentSetting) == 0x000C34, "Member 'AB_ShootingTarget_Master_C::TeamAssignmentSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, AddGameTimeSetting) == 0x000C38, "Member 'AB_ShootingTarget_Master_C::AddGameTimeSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetMeshSetting) == 0x000C3C, "Member 'AB_ShootingTarget_Master_C::TargetMeshSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, NumResets) == 0x000C40, "Member 'AB_ShootingTarget_Master_C::NumResets' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PopUpOnJumpSetting) == 0x000C44, "Member 'AB_ShootingTarget_Master_C::PopUpOnJumpSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, WeakPointKnockdownSetting) == 0x000C45, "Member 'AB_ShootingTarget_Master_C::WeakPointKnockdownSetting' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetIsUp) == 0x000C46, "Member 'AB_ShootingTarget_Master_C::TargetIsUp' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, CurrentlyDisplayedMesh) == 0x000C48, "Member 'AB_ShootingTarget_Master_C::CurrentlyDisplayedMesh' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, InJumpUpPosition) == 0x000C50, "Member 'AB_ShootingTarget_Master_C::InJumpUpPosition' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, WeakpointHit) == 0x000C51, "Member 'AB_ShootingTarget_Master_C::WeakpointHit' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, ModifyMaxHealth) == 0x000C58, "Member 'AB_ShootingTarget_Master_C::ModifyMaxHealth' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetKnockedDownDispatcher) == 0x000C60, "Member 'AB_ShootingTarget_Master_C::TargetKnockedDownDispatcher' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetPopUpDispatcher) == 0x000C70, "Member 'AB_ShootingTarget_Master_C::TargetPopUpDispatcher' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, StandingTargetRef) == 0x000C80, "Member 'AB_ShootingTarget_Master_C::StandingTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, LoserTargetRef) == 0x000CA8, "Member 'AB_ShootingTarget_Master_C::LoserTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, DancingTargetRef) == 0x000CD0, "Member 'AB_ShootingTarget_Master_C::DancingTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HuskTargetRef) == 0x000CF8, "Member 'AB_ShootingTarget_Master_C::HuskTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, CrouchingTargetRef) == 0x000D20, "Member 'AB_ShootingTarget_Master_C::CrouchingTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TeddyBearTargetRef) == 0x000D48, "Member 'AB_ShootingTarget_Master_C::TeddyBearTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PandaHeadTargetRef) == 0x000D70, "Member 'AB_ShootingTarget_Master_C::PandaHeadTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HandsOnHipsTargetRef) == 0x000D98, "Member 'AB_ShootingTarget_Master_C::HandsOnHipsTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TomatoHeadTargetRef) == 0x000DC0, "Member 'AB_ShootingTarget_Master_C::TomatoHeadTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, LlamaTargetRef) == 0x000DE8, "Member 'AB_ShootingTarget_Master_C::LlamaTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PumpkinHeadTargetRef) == 0x000E10, "Member 'AB_ShootingTarget_Master_C::PumpkinHeadTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HuskyTargetRef) == 0x000E38, "Member 'AB_ShootingTarget_Master_C::HuskyTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, RoundTargetRef) == 0x000E60, "Member 'AB_ShootingTarget_Master_C::RoundTargetRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, RoundTargetShortRef) == 0x000E88, "Member 'AB_ShootingTarget_Master_C::RoundTargetShortRef' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, PopUpDelayTimer) == 0x000EB0, "Member 'AB_ShootingTarget_Master_C::PopUpDelayTimer' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HideTargetTimer) == 0x000EB8, "Member 'AB_ShootingTarget_Master_C::HideTargetTimer' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, HopTimer) == 0x000EC0, "Member 'AB_ShootingTarget_Master_C::HopTimer' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, TargetMeshesArray) == 0x000EC8, "Member 'AB_ShootingTarget_Master_C::TargetMeshesArray' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, WeakPointArray) == 0x000ED8, "Member 'AB_ShootingTarget_Master_C::WeakPointArray' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, UserSuppressHealthBar) == 0x000EE8, "Member 'AB_ShootingTarget_Master_C::UserSuppressHealthBar' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, SetMaxHealthDataTag) == 0x000EEC, "Member 'AB_ShootingTarget_Master_C::SetMaxHealthDataTag' has a wrong offset!");
-static_assert(offsetof(AB_ShootingTarget_Master_C, MaxHealthEffectHandler) == 0x000EF4, "Member 'AB_ShootingTarget_Master_C::MaxHealthEffectHandler' has a wrong offset!");
 
 }
 

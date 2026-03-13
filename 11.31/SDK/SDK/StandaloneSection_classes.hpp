@@ -35,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StandaloneSection_C">();
+		BP_STATIC_CLASS_IMPL("StandaloneSection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StandaloneSection_C")
 	}
 	static class UStandaloneSection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStandaloneSection_C>();
 	}
 };
-static_assert(alignof(UStandaloneSection_C) == 0x000008, "Wrong alignment on UStandaloneSection_C");
-static_assert(sizeof(UStandaloneSection_C) == 0x0003C0, "Wrong size on UStandaloneSection_C");
-static_assert(offsetof(UStandaloneSection_C, UberGraphFrame) == 0x000398, "Member 'UStandaloneSection_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStandaloneSection_C, Border_NoCV_1) == 0x0003A0, "Member 'UStandaloneSection_C::Border_NoCV_1' has a wrong offset!");
-static_assert(offsetof(UStandaloneSection_C, NoOffersBox) == 0x0003A8, "Member 'UStandaloneSection_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(UStandaloneSection_C, Overlay_EntryBox_Offers) == 0x0003B0, "Member 'UStandaloneSection_C::Overlay_EntryBox_Offers' has a wrong offset!");
-static_assert(offsetof(UStandaloneSection_C, Switcher_Offers) == 0x0003B8, "Member 'UStandaloneSection_C::Switcher_Offers' has a wrong offset!");
 
 }
 

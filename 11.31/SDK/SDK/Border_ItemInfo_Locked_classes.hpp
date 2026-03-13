@@ -23,15 +23,17 @@ class UBorder_ItemInfo_Locked_C final : public UBorder_ItemInfo_Unlocked_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ItemInfo-Locked_C">();
+		BP_STATIC_CLASS_IMPL("Border-ItemInfo-Locked_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ItemInfo-Locked_C")
 	}
 	static class UBorder_ItemInfo_Locked_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ItemInfo_Locked_C>();
 	}
 };
-static_assert(alignof(UBorder_ItemInfo_Locked_C) == 0x000008, "Wrong alignment on UBorder_ItemInfo_Locked_C");
-static_assert(sizeof(UBorder_ItemInfo_Locked_C) == 0x0000B0, "Wrong size on UBorder_ItemInfo_Locked_C");
 
 }
 

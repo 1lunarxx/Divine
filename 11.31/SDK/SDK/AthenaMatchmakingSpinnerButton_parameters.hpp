@@ -55,37 +55,8 @@ public:
 	int32                                         K2Node_Event_Value;                                // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bUserInitiated;                       // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_89[0x3];                                       // 0x0089(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x008C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_2;          // 0x008C(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton) == 0x000008, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton) == 0x0000A0, "Wrong size on AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, EntryPoint) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_GetCurrentInputType_ReturnValue) == 0x000010, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, Temp_bool_Variable) == 0x000011, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, Temp_byte_Variable) == 0x000012, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, Temp_byte_Variable_1) == 0x000013, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CustomEvent_GamePad) == 0x000014, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CustomEvent_GamePad' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CustomEvent_InputType) == 0x000015, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CustomEvent_InputType' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_ComponentBoundEvent_Button_1) == 0x000018, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_ComponentBoundEvent_Button) == 0x000020, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CustomEvent_bNewInputType) == 0x000028, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CustomEvent_bNewInputType' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000029, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_PlayAnimation_ReturnValue_1) == 0x000048, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_PlayAnimation_ReturnValue_2) == 0x000050, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_PlayAnimation_ReturnValue_3) == 0x000058, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CreateDelegate_OutputDelegate_1) == 0x000060, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CustomEvent_Index) == 0x000070, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CustomEvent_Index' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000074, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, CallFunc_PlayAnimation_ReturnValue_4) == 0x000078, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_Event_bCurrentlyLoading) == 0x000080, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_Event_bCurrentlyLoading' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_Select_Default) == 0x000081, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_Event_bVisible) == 0x000082, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_Event_bVisible' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_Event_Value) == 0x000084, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_Event_bUserInitiated) == 0x000088, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_Event_bUserInitiated' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton, K2Node_CreateDelegate_OutputDelegate_2) == 0x00008C, "Member 'AthenaMatchmakingSpinnerButton_C_ExecuteUbergraph_AthenaMatchmakingSpinnerButton::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.OnSpinnerRotated
 // 0x0008 (0x0008 - 0x0000)
@@ -95,10 +66,6 @@ public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bUserInitiated;                                    // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated) == 0x000004, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated) == 0x000008, "Wrong size on AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated, Value) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated::Value' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated, bUserInitiated) == 0x000004, "Member 'AthenaMatchmakingSpinnerButton_C_OnSpinnerRotated::bUserInitiated' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.SetSpinnerOptionsVisiblity
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +74,6 @@ struct AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity final
 public:
 	bool                                          bVisible;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity) == 0x000001, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity) == 0x000001, "Wrong size on AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity, bVisible) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_SetSpinnerOptionsVisiblity::bVisible' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.OnLoadingStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -118,9 +82,6 @@ struct AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged final
 public:
 	bool                                          bCurrentlyLoading;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged) == 0x000001, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged) == 0x000001, "Wrong size on AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged, bCurrentlyLoading) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_OnLoadingStateChanged::bCurrentlyLoading' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.AnimateIn
 // 0x0004 (0x0004 - 0x0000)
@@ -129,9 +90,6 @@ struct AthenaMatchmakingSpinnerButton_C_AnimateIn final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_AnimateIn) == 0x000004, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_AnimateIn");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_AnimateIn) == 0x000004, "Wrong size on AthenaMatchmakingSpinnerButton_C_AnimateIn");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_AnimateIn, Index_0) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_AnimateIn::Index_0' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.InputUpdated
 // 0x0001 (0x0001 - 0x0000)
@@ -140,9 +98,6 @@ struct AthenaMatchmakingSpinnerButton_C_InputUpdated final
 public:
 	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_InputUpdated) == 0x000001, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_InputUpdated");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_InputUpdated) == 0x000001, "Wrong size on AthenaMatchmakingSpinnerButton_C_InputUpdated");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_InputUpdated, bNewInputType) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_InputUpdated::bNewInputType' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -151,9 +106,6 @@ struct AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_Compon
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -162,9 +114,6 @@ struct AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_Comp
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_BndEvt__SimpleCommonButton_1_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.InputModeChanged
 // 0x0002 (0x0002 - 0x0000)
@@ -174,10 +123,6 @@ public:
 	bool                                          Gamepad;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECommonInputType                              InputType;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_InputModeChanged) == 0x000001, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_InputModeChanged");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_InputModeChanged) == 0x000002, "Wrong size on AthenaMatchmakingSpinnerButton_C_InputModeChanged");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_InputModeChanged, Gamepad) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_InputModeChanged::Gamepad' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_InputModeChanged, InputType) == 0x000001, "Member 'AthenaMatchmakingSpinnerButton_C_InputModeChanged::InputType' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.Set Button Sizes
 // 0x0001 (0x0001 - 0x0000)
@@ -186,9 +131,6 @@ struct AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes final
 public:
 	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes) == 0x000001, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes) == 0x000001, "Wrong size on AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes, CallFunc_IsMobileGame_ReturnValue) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_Set_Button_Sizes::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.DoCustomNavigation_0
 // 0x0010 (0x0010 - 0x0000)
@@ -199,10 +141,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0) == 0x000008, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0) == 0x000010, "Wrong size on AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0, Navigation_0) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0::Navigation_0' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0, ReturnValue) == 0x000008, "Member 'AthenaMatchmakingSpinnerButton_C_DoCustomNavigation_0::ReturnValue' has a wrong offset!");
 
 // Function AthenaMatchmakingSpinnerButton.AthenaMatchmakingSpinnerButton_C.UpdateSyle
 // 0x0190 (0x0190 - 0x0000)
@@ -235,29 +173,6 @@ public:
 	float                                         K2Node_Select_Default_2;                           // 0x0184(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 K2Node_Select_Default_3;                           // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMatchmakingSpinnerButton_C_UpdateSyle) == 0x000008, "Wrong alignment on AthenaMatchmakingSpinnerButton_C_UpdateSyle");
-static_assert(sizeof(AthenaMatchmakingSpinnerButton_C_UpdateSyle) == 0x000190, "Wrong size on AthenaMatchmakingSpinnerButton_C_UpdateSyle");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, InputType) == 0x000000, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::InputType' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_byte_Variable) == 0x000001, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_struct_Variable) == 0x000008, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_byte_Variable_1) == 0x000058, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable) == 0x00005C, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_1) == 0x000060, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_2) == 0x000064, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_3) == 0x000068, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_byte_Variable_2) == 0x00006C, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_4) == 0x000070, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_5) == 0x000074, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_6) == 0x000078, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_6' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_float_Variable_7) == 0x00007C, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_float_Variable_7' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_byte_Variable_3) == 0x000080, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, Temp_class_Variable) == 0x000088, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_MakeStruct_SlateFontInfo) == 0x000090, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_MakeStruct_SlateFontInfo_1) == 0x0000E0, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_MakeStruct_SlateFontInfo_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_Select_Default) == 0x000130, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_Select_Default_1) == 0x000180, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_Select_Default_2) == 0x000184, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaMatchmakingSpinnerButton_C_UpdateSyle, K2Node_Select_Default_3) == 0x000188, "Member 'AthenaMatchmakingSpinnerButton_C_UpdateSyle::K2Node_Select_Default_3' has a wrong offset!");
 
 }
 

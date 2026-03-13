@@ -54,22 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelectScreen_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelectScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelectScreen_C")
 	}
 	static class USubgameSelectScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelectScreen_C>();
 	}
 };
-static_assert(alignof(USubgameSelectScreen_C) == 0x000008, "Wrong alignment on USubgameSelectScreen_C");
-static_assert(sizeof(USubgameSelectScreen_C) == 0x000358, "Wrong size on USubgameSelectScreen_C");
-static_assert(offsetof(USubgameSelectScreen_C, UberGraphFrame) == 0x000318, "Member 'USubgameSelectScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, SelectModeIdle) == 0x000320, "Member 'USubgameSelectScreen_C::SelectModeIdle' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, ModeSelect) == 0x000328, "Member 'USubgameSelectScreen_C::ModeSelect' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, LeavingMatchmakingDialog) == 0x000330, "Member 'USubgameSelectScreen_C::LeavingMatchmakingDialog' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, MID_Keyart) == 0x000338, "Member 'USubgameSelectScreen_C::MID_Keyart' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, TextureCycle) == 0x000340, "Member 'USubgameSelectScreen_C::TextureCycle' has a wrong offset!");
-static_assert(offsetof(USubgameSelectScreen_C, TextureCycleIndex) == 0x000350, "Member 'USubgameSelectScreen_C::TextureCycleIndex' has a wrong offset!");
 
 }
 

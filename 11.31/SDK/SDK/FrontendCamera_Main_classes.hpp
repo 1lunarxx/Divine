@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontendCamera_Main_C">();
+		BP_STATIC_CLASS_IMPL("FrontendCamera_Main_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontendCamera_Main_C")
 	}
 	static class AFrontendCamera_Main_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontendCamera_Main_C>();
 	}
 };
-static_assert(alignof(AFrontendCamera_Main_C) == 0x000010, "Wrong alignment on AFrontendCamera_Main_C");
-static_assert(sizeof(AFrontendCamera_Main_C) == 0x0007D0, "Wrong size on AFrontendCamera_Main_C");
-static_assert(offsetof(AFrontendCamera_Main_C, UberGraphFrame) == 0x0007C0, "Member 'AFrontendCamera_Main_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontendCamera_Main_C, LoginCamera_0) == 0x0007C8, "Member 'AFrontendCamera_Main_C::LoginCamera_0' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class AB_Prj_Ranged_Rocket_Athena_LowTier_C final : public AB_Prj_Ranged_Rocket_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Ranged_Rocket_Athena_LowTier_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Ranged_Rocket_Athena_LowTier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Ranged_Rocket_Athena_LowTier_C")
 	}
 	static class AB_Prj_Ranged_Rocket_Athena_LowTier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Ranged_Rocket_Athena_LowTier_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Ranged_Rocket_Athena_LowTier_C) == 0x000008, "Wrong alignment on AB_Prj_Ranged_Rocket_Athena_LowTier_C");
-static_assert(sizeof(AB_Prj_Ranged_Rocket_Athena_LowTier_C) == 0x000980, "Wrong size on AB_Prj_Ranged_Rocket_Athena_LowTier_C");
 
 }
 

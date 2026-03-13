@@ -23,15 +23,17 @@ class UF5PlayerFactorySettings final : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"F5PlayerFactorySettings">();
+		STATIC_CLASS_IMPL("F5PlayerFactorySettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"F5PlayerFactorySettings")
 	}
 	static class UF5PlayerFactorySettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UF5PlayerFactorySettings>();
 	}
 };
-static_assert(alignof(UF5PlayerFactorySettings) == 0x000008, "Wrong alignment on UF5PlayerFactorySettings");
-static_assert(sizeof(UF5PlayerFactorySettings) == 0x000028, "Wrong size on UF5PlayerFactorySettings");
 
 }
 

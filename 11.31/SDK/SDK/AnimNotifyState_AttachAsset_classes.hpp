@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotifyState_AttachAsset_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotifyState_AttachAsset_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_AttachAsset_C")
 	}
 	static class UAnimNotifyState_AttachAsset_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_AttachAsset_C>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_AttachAsset_C) == 0x000008, "Wrong alignment on UAnimNotifyState_AttachAsset_C");
-static_assert(sizeof(UAnimNotifyState_AttachAsset_C) == 0x000090, "Wrong size on UAnimNotifyState_AttachAsset_C");
-static_assert(offsetof(UAnimNotifyState_AttachAsset_C, Attachment) == 0x000030, "Member 'UAnimNotifyState_AttachAsset_C::Attachment' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_AttachAsset_C, Animation) == 0x000060, "Member 'UAnimNotifyState_AttachAsset_C::Animation' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_AttachAsset_C, Looping) == 0x000068, "Member 'UAnimNotifyState_AttachAsset_C::Looping' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_AttachAsset_C, PlayRate) == 0x00006C, "Member 'UAnimNotifyState_AttachAsset_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(UAnimNotifyState_AttachAsset_C, DoNotAttachTagContainer) == 0x000070, "Member 'UAnimNotifyState_AttachAsset_C::DoNotAttachTagContainer' has a wrong offset!");
 
 }
 

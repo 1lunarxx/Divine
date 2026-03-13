@@ -43,28 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PCB_InfoPanel_C">();
+		BP_STATIC_CLASS_IMPL("PCB_InfoPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PCB_InfoPanel_C")
 	}
 	static class UPCB_InfoPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPCB_InfoPanel_C>();
 	}
 };
-static_assert(alignof(UPCB_InfoPanel_C) == 0x000008, "Wrong alignment on UPCB_InfoPanel_C");
-static_assert(sizeof(UPCB_InfoPanel_C) == 0x0002E8, "Wrong size on UPCB_InfoPanel_C");
-static_assert(offsetof(UPCB_InfoPanel_C, UberGraphFrame) == 0x000280, "Member 'UPCB_InfoPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, BoltL) == 0x000288, "Member 'UPCB_InfoPanel_C::BoltL' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, BoltR) == 0x000290, "Member 'UPCB_InfoPanel_C::BoltR' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, Border) == 0x000298, "Member 'UPCB_InfoPanel_C::Border' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, CrownGlow) == 0x0002A0, "Member 'UPCB_InfoPanel_C::CrownGlow' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, HandGlow) == 0x0002A8, "Member 'UPCB_InfoPanel_C::HandGlow' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, HeaderGlow) == 0x0002B0, "Member 'UPCB_InfoPanel_C::HeaderGlow' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, IconGlow) == 0x0002B8, "Member 'UPCB_InfoPanel_C::IconGlow' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, Image_9) == 0x0002C0, "Member 'UPCB_InfoPanel_C::Image_9' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, Image_10) == 0x0002C8, "Member 'UPCB_InfoPanel_C::Image_10' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, PCBIcon) == 0x0002D0, "Member 'UPCB_InfoPanel_C::PCBIcon' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, Text_Body) == 0x0002D8, "Member 'UPCB_InfoPanel_C::Text_Body' has a wrong offset!");
-static_assert(offsetof(UPCB_InfoPanel_C, Text_Header) == 0x0002E0, "Member 'UPCB_InfoPanel_C::Text_Header' has a wrong offset!");
 
 }
 

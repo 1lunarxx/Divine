@@ -71,29 +71,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IconTextButton_C">();
+		BP_STATIC_CLASS_IMPL("IconTextButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IconTextButton_C")
 	}
 	static class UIconTextButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIconTextButton_C>();
 	}
 };
-static_assert(alignof(UIconTextButton_C) == 0x000008, "Wrong alignment on UIconTextButton_C");
-static_assert(sizeof(UIconTextButton_C) == 0x000C70, "Wrong size on UIconTextButton_C");
-static_assert(offsetof(UIconTextButton_C, UberGraphFrame) == 0x000B70, "Member 'UIconTextButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, CenterButtonTextWidget) == 0x000B78, "Member 'UIconTextButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, ContentBorder) == 0x000B80, "Member 'UIconTextButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, LeftSideImage) == 0x000B88, "Member 'UIconTextButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, RightExtraContentSlot) == 0x000B90, "Member 'UIconTextButton_C::RightExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, ButtonText) == 0x000B98, "Member 'UIconTextButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, IconBrush) == 0x000BB0, "Member 'UIconTextButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, ControllerInputStyle) == 0x000C38, "Member 'UIconTextButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, MouseKeyboardStyle) == 0x000C40, "Member 'UIconTextButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, ContentAlignment) == 0x000C48, "Member 'UIconTextButton_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, bMouseKeyboardStyleSet) == 0x000C49, "Member 'UIconTextButton_C::bMouseKeyboardStyleSet' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, OverrideButtonText) == 0x000C50, "Member 'UIconTextButton_C::OverrideButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, ButtonTextJustification) == 0x000C68, "Member 'UIconTextButton_C::ButtonTextJustification' has a wrong offset!");
-static_assert(offsetof(UIconTextButton_C, bDisplayAllCaps) == 0x000C69, "Member 'UIconTextButton_C::bDisplayAllCaps' has a wrong offset!");
 
 }
 

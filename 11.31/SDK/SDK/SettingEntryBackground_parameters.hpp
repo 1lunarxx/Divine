@@ -23,9 +23,6 @@ struct SettingEntryBackground_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingEntryBackground_C_OnMouseLeave) == 0x000008, "Wrong alignment on SettingEntryBackground_C_OnMouseLeave");
-static_assert(sizeof(SettingEntryBackground_C_OnMouseLeave) == 0x000070, "Wrong size on SettingEntryBackground_C_OnMouseLeave");
-static_assert(offsetof(SettingEntryBackground_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'SettingEntryBackground_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function SettingEntryBackground.SettingEntryBackground_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -35,10 +32,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingEntryBackground_C_OnMouseEnter) == 0x000008, "Wrong alignment on SettingEntryBackground_C_OnMouseEnter");
-static_assert(sizeof(SettingEntryBackground_C_OnMouseEnter) == 0x0000A8, "Wrong size on SettingEntryBackground_C_OnMouseEnter");
-static_assert(offsetof(SettingEntryBackground_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'SettingEntryBackground_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'SettingEntryBackground_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function SettingEntryBackground.SettingEntryBackground_C.ExecuteUbergraph_SettingEntryBackground
 // 0x0130 (0x0130 - 0x0000)
@@ -53,14 +46,6 @@ public:
 	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x0050(0x0070)(ConstParm)
 	struct FPointerEvent                          K2Node_Event_MouseEvent;                           // 0x00C0(0x0070)(ConstParm)
 };
-static_assert(alignof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground) == 0x000008, "Wrong alignment on SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground");
-static_assert(sizeof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground) == 0x000130, "Wrong size on SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, EntryPoint) == 0x000000, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000010, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, K2Node_Event_MyGeometry) == 0x000018, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, K2Node_Event_MouseEvent_1) == 0x000050, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground, K2Node_Event_MouseEvent) == 0x0000C0, "Member 'SettingEntryBackground_C_ExecuteUbergraph_SettingEntryBackground::K2Node_Event_MouseEvent' has a wrong offset!");
 
 }
 

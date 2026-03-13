@@ -23,15 +23,17 @@ class AS_Water_Shallow_1x3_C final : public A_WaterMeshBlueprintMaster_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"S_Water_Shallow_1x3_C">();
+		BP_STATIC_CLASS_IMPL("S_Water_Shallow_1x3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"S_Water_Shallow_1x3_C")
 	}
 	static class AS_Water_Shallow_1x3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AS_Water_Shallow_1x3_C>();
 	}
 };
-static_assert(alignof(AS_Water_Shallow_1x3_C) == 0x000008, "Wrong alignment on AS_Water_Shallow_1x3_C");
-static_assert(sizeof(AS_Water_Shallow_1x3_C) == 0x0002E0, "Wrong size on AS_Water_Shallow_1x3_C");
 
 }
 

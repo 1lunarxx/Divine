@@ -80,10 +80,6 @@ public:
 	bool                                          bPause;                                            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKairosSnippetPlayRecord) == 0x000008, "Wrong alignment on FKairosSnippetPlayRecord");
-static_assert(sizeof(FKairosSnippetPlayRecord) == 0x000018, "Wrong size on FKairosSnippetPlayRecord");
-static_assert(offsetof(FKairosSnippetPlayRecord, PlayerID) == 0x000000, "Member 'FKairosSnippetPlayRecord::PlayerID' has a wrong offset!");
-static_assert(offsetof(FKairosSnippetPlayRecord, bPause) == 0x000010, "Member 'FKairosSnippetPlayRecord::bPause' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosSnippetParams
 // 0x0018 (0x0018 - 0x0000)
@@ -94,10 +90,6 @@ public:
 	bool                                          bPause;                                            // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKairosSnippetParams) == 0x000008, "Wrong alignment on FKairosSnippetParams");
-static_assert(sizeof(FKairosSnippetParams) == 0x000018, "Wrong size on FKairosSnippetParams");
-static_assert(offsetof(FKairosSnippetParams, PlayerID) == 0x000000, "Member 'FKairosSnippetParams::PlayerID' has a wrong offset!");
-static_assert(offsetof(FKairosSnippetParams, bPause) == 0x000010, "Member 'FKairosSnippetParams::bPause' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosAvatarAttributesMcpData
 // 0x0010 (0x0010 - 0x0000)
@@ -106,9 +98,6 @@ struct FKairosAvatarAttributesMcpData final
 public:
 	TArray<struct FMcpVariantReader>              Variants;                                          // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosAvatarAttributesMcpData) == 0x000008, "Wrong alignment on FKairosAvatarAttributesMcpData");
-static_assert(sizeof(FKairosAvatarAttributesMcpData) == 0x000010, "Wrong size on FKairosAvatarAttributesMcpData");
-static_assert(offsetof(FKairosAvatarAttributesMcpData, Variants) == 0x000000, "Member 'FKairosAvatarAttributesMcpData::Variants' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosAvatarItemMcpData
 // 0x0020 (0x0020 - 0x0000)
@@ -118,10 +107,6 @@ public:
 	class FString                                 TemplateId;                                        // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FKairosAvatarAttributesMcpData         Attributes;                                        // 0x0010(0x0010)(NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosAvatarItemMcpData) == 0x000008, "Wrong alignment on FKairosAvatarItemMcpData");
-static_assert(sizeof(FKairosAvatarItemMcpData) == 0x000020, "Wrong size on FKairosAvatarItemMcpData");
-static_assert(offsetof(FKairosAvatarItemMcpData, TemplateId) == 0x000000, "Member 'FKairosAvatarItemMcpData::TemplateId' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarItemMcpData, Attributes) == 0x000010, "Member 'FKairosAvatarItemMcpData::Attributes' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosAvatarMcpData
 // 0x0098 (0x0098 - 0x0000)
@@ -138,16 +123,6 @@ public:
 	struct FKairosAvatarItemMcpData               Dance;                                             // 0x0068(0x0020)(NativeAccessSpecifierPublic)
 	TArray<class FString>                         BackgroundColors;                                  // 0x0088(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosAvatarMcpData) == 0x000008, "Wrong alignment on FKairosAvatarMcpData");
-static_assert(sizeof(FKairosAvatarMcpData) == 0x000098, "Wrong size on FKairosAvatarMcpData");
-static_assert(offsetof(FKairosAvatarMcpData, ID) == 0x000000, "Member 'FKairosAvatarMcpData::ID' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, DisplayName) == 0x000010, "Member 'FKairosAvatarMcpData::DisplayName' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, CurrentUser) == 0x000020, "Member 'FKairosAvatarMcpData::CurrentUser' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, ShouldPlayFacialAnimation) == 0x000021, "Member 'FKairosAvatarMcpData::ShouldPlayFacialAnimation' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, Character) == 0x000028, "Member 'FKairosAvatarMcpData::Character' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, Backpack) == 0x000048, "Member 'FKairosAvatarMcpData::Backpack' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, Dance) == 0x000068, "Member 'FKairosAvatarMcpData::Dance' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarMcpData, BackgroundColors) == 0x000088, "Member 'FKairosAvatarMcpData::BackgroundColors' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosCaptureAvatarParams
 // 0x0040 (0x0040 - 0x0000)
@@ -162,15 +137,6 @@ public:
 	int32                                         NumFrames;                                         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FKairosAvatarMcpData>           Characters;                                        // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosCaptureAvatarParams) == 0x000008, "Wrong alignment on FKairosCaptureAvatarParams");
-static_assert(sizeof(FKairosCaptureAvatarParams) == 0x000040, "Wrong size on FKairosCaptureAvatarParams");
-static_assert(offsetof(FKairosCaptureAvatarParams, Background) == 0x000000, "Member 'FKairosCaptureAvatarParams::Background' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, Format) == 0x000010, "Member 'FKairosCaptureAvatarParams::Format' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, Width) == 0x000020, "Member 'FKairosCaptureAvatarParams::Width' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, Height) == 0x000024, "Member 'FKairosCaptureAvatarParams::Height' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, FrameRate) == 0x000028, "Member 'FKairosCaptureAvatarParams::FrameRate' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, NumFrames) == 0x00002C, "Member 'FKairosCaptureAvatarParams::NumFrames' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureAvatarParams, Characters) == 0x000030, "Member 'FKairosCaptureAvatarParams::Characters' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosCaptureParams
 // 0x0100 (0x0100 - 0x0000)
@@ -185,13 +151,6 @@ public:
 	class FString                                 FullPathAndName;                                   // 0x0018(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_28[0xD8];                                      // 0x0028(0x00D8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKairosCaptureParams) == 0x000010, "Wrong alignment on FKairosCaptureParams");
-static_assert(sizeof(FKairosCaptureParams) == 0x000100, "Wrong size on FKairosCaptureParams");
-static_assert(offsetof(FKairosCaptureParams, FrameRate) == 0x000000, "Member 'FKairosCaptureParams::FrameRate' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureParams, OverrideNumFrames) == 0x000004, "Member 'FKairosCaptureParams::OverrideNumFrames' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureParams, Size) == 0x000008, "Member 'FKairosCaptureParams::Size' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureParams, BackgroundColor) == 0x000010, "Member 'FKairosCaptureParams::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(FKairosCaptureParams, FullPathAndName) == 0x000018, "Member 'FKairosCaptureParams::FullPathAndName' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosAvatarDisplayInfo
 // 0x03C0 (0x03C0 - 0x0000)
@@ -226,27 +185,6 @@ public:
 	bool                                          bUseDefaultFrontendAnimClass;                      // 0x03B0(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_3B1[0xF];                                      // 0x03B1(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKairosAvatarDisplayInfo) == 0x000010, "Wrong alignment on FKairosAvatarDisplayInfo");
-static_assert(sizeof(FKairosAvatarDisplayInfo) == 0x0003C0, "Wrong size on FKairosAvatarDisplayInfo");
-static_assert(offsetof(FKairosAvatarDisplayInfo, CurrentState) == 0x000000, "Member 'FKairosAvatarDisplayInfo::CurrentState' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, TargetState) == 0x000001, "Member 'FKairosAvatarDisplayInfo::TargetState' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, SpawnTransform) == 0x000010, "Member 'FKairosAvatarDisplayInfo::SpawnTransform' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, AvatarData) == 0x000040, "Member 'FKairosAvatarDisplayInfo::AvatarData' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, Loadout) == 0x000108, "Member 'FKairosAvatarDisplayInfo::Loadout' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, AnimToPlay) == 0x0001F8, "Member 'FKairosAvatarDisplayInfo::AnimToPlay' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, SnippetPathToPlay) == 0x000200, "Member 'FKairosAvatarDisplayInfo::SnippetPathToPlay' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, HeroItem) == 0x000220, "Member 'FKairosAvatarDisplayInfo::HeroItem' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, CaptureParams) == 0x000230, "Member 'FKairosAvatarDisplayInfo::CaptureParams' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, BackgroundColors) == 0x000330, "Member 'FKairosAvatarDisplayInfo::BackgroundColors' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, KairosHero) == 0x000340, "Member 'FKairosAvatarDisplayInfo::KairosHero' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, Pawn) == 0x000348, "Member 'FKairosAvatarDisplayInfo::Pawn' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, bIsCurrentUser) == 0x000350, "Member 'FKairosAvatarDisplayInfo::bIsCurrentUser' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, DisplayName) == 0x000358, "Member 'FKairosAvatarDisplayInfo::DisplayName' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, HeadBoneTransform) == 0x000370, "Member 'FKairosAvatarDisplayInfo::HeadBoneTransform' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, bSpawnTransformIsAbsolute) == 0x0003A0, "Member 'FKairosAvatarDisplayInfo::bSpawnTransformIsAbsolute' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, bIsNewCharacter) == 0x0003A1, "Member 'FKairosAvatarDisplayInfo::bIsNewCharacter' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, HeroPawnClass) == 0x0003A8, "Member 'FKairosAvatarDisplayInfo::HeroPawnClass' has a wrong offset!");
-static_assert(offsetof(FKairosAvatarDisplayInfo, bUseDefaultFrontendAnimClass) == 0x0003B0, "Member 'FKairosAvatarDisplayInfo::bUseDefaultFrontendAnimClass' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosSceneInfo
 // 0x0020 (0x0020 - 0x0000)
@@ -259,11 +197,6 @@ public:
 	struct FColor                                 BackgroundColor;                                   // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FKairosSceneInfo) == 0x000008, "Wrong alignment on FKairosSceneInfo");
-static_assert(sizeof(FKairosSceneInfo) == 0x000020, "Wrong size on FKairosSceneInfo");
-static_assert(offsetof(FKairosSceneInfo, SceneAppMode) == 0x000000, "Member 'FKairosSceneInfo::SceneAppMode' has a wrong offset!");
-static_assert(offsetof(FKairosSceneInfo, SpawnedAvatars) == 0x000008, "Member 'FKairosSceneInfo::SpawnedAvatars' has a wrong offset!");
-static_assert(offsetof(FKairosSceneInfo, BackgroundColor) == 0x000018, "Member 'FKairosSceneInfo::BackgroundColor' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosBobbleTimeParams
 // 0x0060 (0x0060 - 0x0000)
@@ -277,14 +210,6 @@ public:
 	class FString                                 ContainerID;                                       // 0x0040(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MessageID;                                         // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosBobbleTimeParams) == 0x000008, "Wrong alignment on FKairosBobbleTimeParams");
-static_assert(sizeof(FKairosBobbleTimeParams) == 0x000060, "Wrong size on FKairosBobbleTimeParams");
-static_assert(offsetof(FKairosBobbleTimeParams, Background) == 0x000000, "Member 'FKairosBobbleTimeParams::Background' has a wrong offset!");
-static_assert(offsetof(FKairosBobbleTimeParams, Characters) == 0x000010, "Member 'FKairosBobbleTimeParams::Characters' has a wrong offset!");
-static_assert(offsetof(FKairosBobbleTimeParams, SnippetPath) == 0x000020, "Member 'FKairosBobbleTimeParams::SnippetPath' has a wrong offset!");
-static_assert(offsetof(FKairosBobbleTimeParams, ContainerType) == 0x000030, "Member 'FKairosBobbleTimeParams::ContainerType' has a wrong offset!");
-static_assert(offsetof(FKairosBobbleTimeParams, ContainerID) == 0x000040, "Member 'FKairosBobbleTimeParams::ContainerID' has a wrong offset!");
-static_assert(offsetof(FKairosBobbleTimeParams, MessageID) == 0x000050, "Member 'FKairosBobbleTimeParams::MessageID' has a wrong offset!");
 
 // ScriptStruct KairosSceneCapture.KairosAnimationFramingInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -298,13 +223,6 @@ public:
 	uint8                                         Pad_12[0xE];                                       // 0x0012(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CameraTransform;                                   // 0x0020(0x0030)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FKairosAnimationFramingInfo) == 0x000010, "Wrong alignment on FKairosAnimationFramingInfo");
-static_assert(sizeof(FKairosAnimationFramingInfo) == 0x000050, "Wrong size on FKairosAnimationFramingInfo");
-static_assert(offsetof(FKairosAnimationFramingInfo, Name) == 0x000000, "Member 'FKairosAnimationFramingInfo::Name' has a wrong offset!");
-static_assert(offsetof(FKairosAnimationFramingInfo, IdleMontage) == 0x000008, "Member 'FKairosAnimationFramingInfo::IdleMontage' has a wrong offset!");
-static_assert(offsetof(FKairosAnimationFramingInfo, AnimationType) == 0x000010, "Member 'FKairosAnimationFramingInfo::AnimationType' has a wrong offset!");
-static_assert(offsetof(FKairosAnimationFramingInfo, SkeletonType) == 0x000011, "Member 'FKairosAnimationFramingInfo::SkeletonType' has a wrong offset!");
-static_assert(offsetof(FKairosAnimationFramingInfo, CameraTransform) == 0x000020, "Member 'FKairosAnimationFramingInfo::CameraTransform' has a wrong offset!");
 
 }
 

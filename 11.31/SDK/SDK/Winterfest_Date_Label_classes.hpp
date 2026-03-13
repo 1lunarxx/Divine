@@ -23,15 +23,17 @@ class UWinterfest_Date_Label_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Winterfest_Date_Label_C">();
+		BP_STATIC_CLASS_IMPL("Winterfest_Date_Label_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Winterfest_Date_Label_C")
 	}
 	static class UWinterfest_Date_Label_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterfest_Date_Label_C>();
 	}
 };
-static_assert(alignof(UWinterfest_Date_Label_C) == 0x000008, "Wrong alignment on UWinterfest_Date_Label_C");
-static_assert(sizeof(UWinterfest_Date_Label_C) == 0x000230, "Wrong size on UWinterfest_Date_Label_C");
 
 }
 

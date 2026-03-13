@@ -36,18 +36,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_3;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track) == 0x000008, "Wrong alignment on BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track");
-static_assert(sizeof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track) == 0x000050, "Wrong size on BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, EntryPoint) == 0x000000, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000008, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_PlayAnimationForward_ReturnValue) == 0x000010, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000018, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, K2Node_Event_IsDesignTime) == 0x000020, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x000030, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, K2Node_Event_LayoutType) == 0x000038, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::K2Node_Event_LayoutType' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x000040, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track, K2Node_SwitchEnum_CmpSuccess) == 0x000048, "Member 'BattlePassPurchaseButton_Track_C_ExecuteUbergraph_BattlePassPurchaseButton_Track::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function BattlePassPurchaseButton_Track.BattlePassPurchaseButton_Track_C.OnSetData
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +44,6 @@ struct BattlePassPurchaseButton_Track_C_OnSetData final
 public:
 	EBattlePassPurchaseButtonLayout               LayoutType;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPurchaseButton_Track_C_OnSetData) == 0x000001, "Wrong alignment on BattlePassPurchaseButton_Track_C_OnSetData");
-static_assert(sizeof(BattlePassPurchaseButton_Track_C_OnSetData) == 0x000001, "Wrong size on BattlePassPurchaseButton_Track_C_OnSetData");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_OnSetData, LayoutType) == 0x000000, "Member 'BattlePassPurchaseButton_Track_C_OnSetData::LayoutType' has a wrong offset!");
 
 // Function BattlePassPurchaseButton_Track.BattlePassPurchaseButton_Track_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +52,6 @@ struct BattlePassPurchaseButton_Track_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassPurchaseButton_Track_C_PreConstruct) == 0x000001, "Wrong alignment on BattlePassPurchaseButton_Track_C_PreConstruct");
-static_assert(sizeof(BattlePassPurchaseButton_Track_C_PreConstruct) == 0x000001, "Wrong size on BattlePassPurchaseButton_Track_C_PreConstruct");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BattlePassPurchaseButton_Track_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BattlePassPurchaseButton_Track.BattlePassPurchaseButton_Track_C.HandleText
 // 0x0060 (0x0060 - 0x0000)
@@ -83,12 +65,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0010(0x0050)(HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPurchaseButton_Track_C_HandleText) == 0x000008, "Wrong alignment on BattlePassPurchaseButton_Track_C_HandleText");
-static_assert(sizeof(BattlePassPurchaseButton_Track_C_HandleText) == 0x000060, "Wrong size on BattlePassPurchaseButton_Track_C_HandleText");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_HandleText, Temp_bool_Variable) == 0x000000, "Member 'BattlePassPurchaseButton_Track_C_HandleText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_HandleText, Temp_int_Variable) == 0x000004, "Member 'BattlePassPurchaseButton_Track_C_HandleText::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_HandleText, K2Node_Select_Default) == 0x000008, "Member 'BattlePassPurchaseButton_Track_C_HandleText::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassPurchaseButton_Track_C_HandleText, K2Node_MakeStruct_SlateFontInfo) == 0x000010, "Member 'BattlePassPurchaseButton_Track_C_HandleText::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
 
 }
 

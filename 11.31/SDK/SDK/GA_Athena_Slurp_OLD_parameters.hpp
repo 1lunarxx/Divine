@@ -58,35 +58,6 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x00ED(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD) == 0x000008, "Wrong alignment on GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD");
-static_assert(sizeof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD) == 0x0000F0, "Wrong size on GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, EntryPoint) == 0x000000, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_Event_bWasCancelled) == 0x000004, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000008, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1) == 0x000010, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_K2_CommitAbility_ReturnValue) == 0x000018, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_IsDBNO_ReturnValue) == 0x000019, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_IsDBNO_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_GetHealth_ReturnValue) == 0x00001C, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_GetHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_GetMaxHealth_ReturnValue) == 0x000020, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_GetMaxHealth_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_Less_FloatFloat_ReturnValue) == 0x000024, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_GetActorInfo_ReturnValue) == 0x000030, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_CreateDelegate_OutputDelegate) == 0x000070, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000080, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_DynamicCast_bSuccess) == 0x000088, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000090, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000098, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x0000C0, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_EvaluateCurveTableRow_OutResult) == 0x0000D0, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_EvaluateCurveTableRow_OutXY) == 0x0000D4, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_EvaluateCurveTableRow_OutResult_1) == 0x0000D8, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_EvaluateCurveTableRow_OutResult_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_EvaluateCurveTableRow_OutXY_1) == 0x0000DC, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_EvaluateCurveTableRow_OutXY_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_SwitchEnum_CmpSuccess) == 0x0000E0, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, K2Node_SwitchEnum_CmpSuccess_1) == 0x0000E1, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, Temp_int_Variable) == 0x0000E4, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_FTrunc_ReturnValue) == 0x0000E8, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_Greater_IntInt_ReturnValue) == 0x0000EC, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD, CallFunc_Less_IntInt_ReturnValue) == 0x0000ED, "Member 'GA_Athena_Slurp_OLD_C_ExecuteUbergraph_GA_Athena_Slurp_OLD::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_Slurp_OLD.GA_Athena_Slurp_OLD_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +66,6 @@ struct GA_Athena_Slurp_OLD_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Slurp_OLD_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Athena_Slurp_OLD_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Athena_Slurp_OLD_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Athena_Slurp_OLD_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Athena_Slurp_OLD_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Athena_Slurp_OLD_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

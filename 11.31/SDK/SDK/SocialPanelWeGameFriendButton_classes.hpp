@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanelWeGameFriendButton_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanelWeGameFriendButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanelWeGameFriendButton_C")
 	}
 	static class USocialPanelWeGameFriendButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanelWeGameFriendButton_C>();
 	}
 };
-static_assert(alignof(USocialPanelWeGameFriendButton_C) == 0x000008, "Wrong alignment on USocialPanelWeGameFriendButton_C");
-static_assert(sizeof(USocialPanelWeGameFriendButton_C) == 0x000B88, "Wrong size on USocialPanelWeGameFriendButton_C");
-static_assert(offsetof(USocialPanelWeGameFriendButton_C, UberGraphFrame) == 0x000B70, "Member 'USocialPanelWeGameFriendButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanelWeGameFriendButton_C, OnHovered) == 0x000B78, "Member 'USocialPanelWeGameFriendButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(USocialPanelWeGameFriendButton_C, Text_LinkPrompt) == 0x000B80, "Member 'USocialPanelWeGameFriendButton_C::Text_LinkPrompt' has a wrong offset!");
 
 }
 

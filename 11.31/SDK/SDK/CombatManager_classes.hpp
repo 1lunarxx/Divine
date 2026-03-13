@@ -23,15 +23,17 @@ class UCombatManager_C final : public UCombatManagerComponentSTW
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CombatManager_C">();
+		BP_STATIC_CLASS_IMPL("CombatManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CombatManager_C")
 	}
 	static class UCombatManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCombatManager_C>();
 	}
 };
-static_assert(alignof(UCombatManager_C) == 0x000008, "Wrong alignment on UCombatManager_C");
-static_assert(sizeof(UCombatManager_C) == 0x000C30, "Wrong size on UCombatManager_C");
 
 }
 

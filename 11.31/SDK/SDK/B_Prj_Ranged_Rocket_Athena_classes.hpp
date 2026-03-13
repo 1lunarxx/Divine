@@ -89,56 +89,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Ranged_Rocket_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Ranged_Rocket_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Ranged_Rocket_Athena_C")
 	}
 	static class AB_Prj_Ranged_Rocket_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Ranged_Rocket_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Ranged_Rocket_Athena_C) == 0x000008, "Wrong alignment on AB_Prj_Ranged_Rocket_Athena_C");
-static_assert(sizeof(AB_Prj_Ranged_Rocket_Athena_C) == 0x000980, "Wrong size on AB_Prj_Ranged_Rocket_Athena_C");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Ranged_Rocket_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, BP_SurfaceTypeSoundComponent) == 0x000840, "Member 'AB_Prj_Ranged_Rocket_Athena_C::BP_SurfaceTypeSoundComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Rocket_AudioComponent) == 0x000848, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Rocket_AudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Mesh) == 0x000850, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, CollisionMesh) == 0x000858, "Member 'AB_Prj_Ranged_Rocket_Athena_C::CollisionMesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, PP_Explode) == 0x000860, "Member 'AB_Prj_Ranged_Rocket_Athena_C::PP_Explode' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, PPFader_PPFade_6840155342A20C80B8C71EB25DE77BD9) == 0x000868, "Member 'AB_Prj_Ranged_Rocket_Athena_C::PPFader_PPFade_6840155342A20C80B8C71EB25DE77BD9' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, PPFader__Direction_6840155342A20C80B8C71EB25DE77BD9) == 0x00086C, "Member 'AB_Prj_Ranged_Rocket_Athena_C::PPFader__Direction_6840155342A20C80B8C71EB25DE77BD9' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, PPFader) == 0x000870, "Member 'AB_Prj_Ranged_Rocket_Athena_C::PPFader' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Ribbon_Trail_PSC) == 0x000878, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Ribbon_Trail_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Water_Explosion_PSC) == 0x000880, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Water_Explosion_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Ribbon_Trail_PS) == 0x000888, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Ribbon_Trail_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Water_Explosion_PS) == 0x000890, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Water_Explosion_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_Generic_PS) == 0x000898, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_Generic_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_Generic_PSC) == 0x0008A0, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_Generic_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Rocket_Projectile_Explosion_Sound) == 0x0008A8, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Rocket_Projectile_Explosion_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, StopLocation) == 0x0008B0, "Member 'AB_Prj_Ranged_Rocket_Athena_C::StopLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, ObjectsToTraceAgainst) == 0x0008C0, "Member 'AB_Prj_Ranged_Rocket_Athena_C::ObjectsToTraceAgainst' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_Flesh_Damage_PS) == 0x0008D0, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_Flesh_Damage_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, StopRotZ) == 0x0008D8, "Member 'AB_Prj_Ranged_Rocket_Athena_C::StopRotZ' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, TrailLifetime) == 0x0008E4, "Member 'AB_Prj_Ranged_Rocket_Athena_C::TrailLifetime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_Flesh_Damage_PSC) == 0x0008E8, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_Flesh_Damage_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Rocket_Projectile_Explosion_Water_Sound) == 0x0008F0, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Rocket_Projectile_Explosion_Water_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Rocket_Projectile_InAir_Sound) == 0x0008F8, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Rocket_Projectile_InAir_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, RocketTrailPS) == 0x000900, "Member 'AB_Prj_Ranged_Rocket_Athena_C::RocketTrailPS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Tick_Delta) == 0x000908, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Tick_Delta' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, RocketSpinRate) == 0x00090C, "Member 'AB_Prj_Ranged_Rocket_Athena_C::RocketSpinRate' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_Impact_Offset) == 0x000910, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_Impact_Offset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, RocketSpin) == 0x000914, "Member 'AB_Prj_Ranged_Rocket_Athena_C::RocketSpin' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, RocketScale) == 0x000920, "Member 'AB_Prj_Ranged_Rocket_Athena_C::RocketScale' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, TimerMaxReached_) == 0x00092C, "Member 'AB_Prj_Ranged_Rocket_Athena_C::TimerMaxReached_' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Ground_Decal) == 0x000930, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Ground_Decal' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Ground_Decal_MID) == 0x000938, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Ground_Decal_MID' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Decal_Size_Max) == 0x000940, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Decal_Size_Max' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Decal_Size_Min) == 0x000944, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Decal_Size_Min' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, DecalLocation) == 0x000948, "Member 'AB_Prj_Ranged_Rocket_Athena_C::DecalLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Rocket_Trail_Template) == 0x000958, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Rocket_Trail_Template' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, SurfaceType) == 0x000960, "Member 'AB_Prj_Ranged_Rocket_Athena_C::SurfaceType' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, Explosion_PS) == 0x000968, "Member 'AB_Prj_Ranged_Rocket_Athena_C::Explosion_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, FeedbackCue) == 0x000970, "Member 'AB_Prj_Ranged_Rocket_Athena_C::FeedbackCue' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_Rocket_Athena_C, WaterInteractionDelay) == 0x000978, "Member 'AB_Prj_Ranged_Rocket_Athena_C::WaterInteractionDelay' has a wrong offset!");
 
 }
 

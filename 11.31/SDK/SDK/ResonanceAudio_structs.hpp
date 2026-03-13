@@ -111,23 +111,6 @@ public:
 	float                                         ReverbBrightness;                                  // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_44[0xC];                                       // 0x0044(0x000C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FResonanceAudioReverbPluginSettings) == 0x000010, "Wrong alignment on FResonanceAudioReverbPluginSettings");
-static_assert(sizeof(FResonanceAudioReverbPluginSettings) == 0x000050, "Wrong size on FResonanceAudioReverbPluginSettings");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, bEnableRoomEffects) == 0x000000, "Member 'FResonanceAudioReverbPluginSettings::bEnableRoomEffects' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, bGetTransformFromAudioVolume) == 0x000001, "Member 'FResonanceAudioReverbPluginSettings::bGetTransformFromAudioVolume' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, RoomPosition) == 0x000004, "Member 'FResonanceAudioReverbPluginSettings::RoomPosition' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, RoomRotation) == 0x000010, "Member 'FResonanceAudioReverbPluginSettings::RoomRotation' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, RoomDimensions) == 0x000020, "Member 'FResonanceAudioReverbPluginSettings::RoomDimensions' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, LeftWallMaterial) == 0x00002C, "Member 'FResonanceAudioReverbPluginSettings::LeftWallMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, RightWallMaterial) == 0x00002D, "Member 'FResonanceAudioReverbPluginSettings::RightWallMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, FloorMaterial) == 0x00002E, "Member 'FResonanceAudioReverbPluginSettings::FloorMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, CeilingMaterial) == 0x00002F, "Member 'FResonanceAudioReverbPluginSettings::CeilingMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, FrontWallMaterial) == 0x000030, "Member 'FResonanceAudioReverbPluginSettings::FrontWallMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, BackWallMaterial) == 0x000031, "Member 'FResonanceAudioReverbPluginSettings::BackWallMaterial' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, ReflectionScalar) == 0x000034, "Member 'FResonanceAudioReverbPluginSettings::ReflectionScalar' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, ReverbGain) == 0x000038, "Member 'FResonanceAudioReverbPluginSettings::ReverbGain' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, ReverbTimeModifier) == 0x00003C, "Member 'FResonanceAudioReverbPluginSettings::ReverbTimeModifier' has a wrong offset!");
-static_assert(offsetof(FResonanceAudioReverbPluginSettings, ReverbBrightness) == 0x000040, "Member 'FResonanceAudioReverbPluginSettings::ReverbBrightness' has a wrong offset!");
 
 }
 

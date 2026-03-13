@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabMouseAndKeyboardOptions_New_C">();
+		BP_STATIC_CLASS_IMPL("TabMouseAndKeyboardOptions_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabMouseAndKeyboardOptions_New_C")
 	}
 	static class UTabMouseAndKeyboardOptions_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabMouseAndKeyboardOptions_New_C>();
 	}
 };
-static_assert(alignof(UTabMouseAndKeyboardOptions_New_C) == 0x000008, "Wrong alignment on UTabMouseAndKeyboardOptions_New_C");
-static_assert(sizeof(UTabMouseAndKeyboardOptions_New_C) == 0x000338, "Wrong size on UTabMouseAndKeyboardOptions_New_C");
-static_assert(offsetof(UTabMouseAndKeyboardOptions_New_C, UberGraphFrame) == 0x000330, "Member 'UTabMouseAndKeyboardOptions_New_C::UberGraphFrame' has a wrong offset!");
 
 }
 

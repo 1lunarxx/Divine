@@ -26,11 +26,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags) == 0x000030, "Wrong size on SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags, Actor) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags::Actor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags, GameplayTags) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags::GameplayTags' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags, ReturnValue) == 0x000028, "Member 'SmartObjectBlueprintFunctionLibrary_K2_AddLooseGameplayTags::ReturnValue' has a wrong offset!");
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.K2_RemoveLooseGameplayTags
 // 0x0030 (0x0030 - 0x0000)
@@ -42,11 +37,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags) == 0x000030, "Wrong size on SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags, Actor) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags::Actor' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags, GameplayTags) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags::GameplayTags' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags, ReturnValue) == 0x000028, "Member 'SmartObjectBlueprintFunctionLibrary_K2_RemoveLooseGameplayTags::ReturnValue' has a wrong offset!");
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.K2_SetSmartObjectEnabled
 // 0x0010 (0x0010 - 0x0000)
@@ -58,11 +48,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled) == 0x000010, "Wrong size on SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled, SmartObject) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled::SmartObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled, bEnabled) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled, ReturnValue) == 0x000009, "Member 'SmartObjectBlueprintFunctionLibrary_K2_SetSmartObjectEnabled::ReturnValue' has a wrong offset!");
 
 // Function SmartObjectsModule.SmartObjectBlueprintFunctionLibrary.K2_UseSmartObject
 // 0x0018 (0x0018 - 0x0000)
@@ -74,11 +59,6 @@ public:
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject) == 0x000008, "Wrong alignment on SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject");
-static_assert(sizeof(SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject) == 0x000018, "Wrong size on SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject, Avatar) == 0x000000, "Member 'SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject::Avatar' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject, SmartObject) == 0x000008, "Member 'SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject::SmartObject' has a wrong offset!");
-static_assert(offsetof(SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject, ReturnValue) == 0x000010, "Member 'SmartObjectBlueprintFunctionLibrary_K2_UseSmartObject::ReturnValue' has a wrong offset!");
 
 // Function SmartObjectsModule.AITask_UseSmartObject.UseSmartObject
 // 0x0028 (0x0028 - 0x0000)
@@ -92,13 +72,6 @@ public:
 	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAITask_UseSmartObject*                 ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(AITask_UseSmartObject_UseSmartObject) == 0x000008, "Wrong alignment on AITask_UseSmartObject_UseSmartObject");
-static_assert(sizeof(AITask_UseSmartObject_UseSmartObject) == 0x000028, "Wrong size on AITask_UseSmartObject_UseSmartObject");
-static_assert(offsetof(AITask_UseSmartObject_UseSmartObject, Controller) == 0x000000, "Member 'AITask_UseSmartObject_UseSmartObject::Controller' has a wrong offset!");
-static_assert(offsetof(AITask_UseSmartObject_UseSmartObject, SmartObjectActor) == 0x000008, "Member 'AITask_UseSmartObject_UseSmartObject::SmartObjectActor' has a wrong offset!");
-static_assert(offsetof(AITask_UseSmartObject_UseSmartObject, SmartObjectComponent) == 0x000010, "Member 'AITask_UseSmartObject_UseSmartObject::SmartObjectComponent' has a wrong offset!");
-static_assert(offsetof(AITask_UseSmartObject_UseSmartObject, bLockAILogic) == 0x000018, "Member 'AITask_UseSmartObject_UseSmartObject::bLockAILogic' has a wrong offset!");
-static_assert(offsetof(AITask_UseSmartObject_UseSmartObject, ReturnValue) == 0x000020, "Member 'AITask_UseSmartObject_UseSmartObject::ReturnValue' has a wrong offset!");
 
 }
 

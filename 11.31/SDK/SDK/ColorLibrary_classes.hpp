@@ -34,15 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ColorLibrary_C">();
+		BP_STATIC_CLASS_IMPL("ColorLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ColorLibrary_C")
 	}
 	static class UColorLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UColorLibrary_C>();
 	}
 };
-static_assert(alignof(UColorLibrary_C) == 0x000008, "Wrong alignment on UColorLibrary_C");
-static_assert(sizeof(UColorLibrary_C) == 0x000028, "Wrong size on UColorLibrary_C");
 
 }
 

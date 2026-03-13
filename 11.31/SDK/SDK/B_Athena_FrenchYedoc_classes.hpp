@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_FrenchYedoc_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_FrenchYedoc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_FrenchYedoc_C")
 	}
 	static class AB_Athena_FrenchYedoc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_FrenchYedoc_C>();
 	}
 };
-static_assert(alignof(AB_Athena_FrenchYedoc_C) == 0x000008, "Wrong alignment on AB_Athena_FrenchYedoc_C");
-static_assert(sizeof(AB_Athena_FrenchYedoc_C) == 0x000248, "Wrong size on AB_Athena_FrenchYedoc_C");
-static_assert(offsetof(AB_Athena_FrenchYedoc_C, UberGraphFrame) == 0x000218, "Member 'AB_Athena_FrenchYedoc_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_C, DefaultSceneRoot) == 0x000220, "Member 'AB_Athena_FrenchYedoc_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_C, BotData) == 0x000228, "Member 'AB_Athena_FrenchYedoc_C::BotData' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_C, DecoyLifetimeRow) == 0x000230, "Member 'AB_Athena_FrenchYedoc_C::DecoyLifetimeRow' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_C, BotPawn) == 0x000240, "Member 'AB_Athena_FrenchYedoc_C::BotPawn' has a wrong offset!");
 
 }
 

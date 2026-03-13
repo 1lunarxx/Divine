@@ -30,11 +30,11 @@ public:
 	int32                                         Currently_Selected_Input;                          // 0x0360(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Is_Currently_Primary;                              // 0x0364(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_365[0x3];                                      // 0x0365(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool Accept_Input, class FText Overlay_Text)> Enable_Overlay;                                    // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Accept_Input, class FText Overlay_Text)> Enable_Overlay;      // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              Disable_Overlay;                                   // 0x0378(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Using_Gamepad;                                     // 0x0388(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_389[0x7];                                      // 0x0389(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool Gamepad_Enabled)> Gamepad_Changed;                                   // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Gamepad_Enabled)> Gamepad_Changed;                            // 0x0390(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UOptionsMenuInputDisplayOnly_C*         DisplayObject;                                     // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
@@ -56,24 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabInputOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabInputOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabInputOptions_C")
 	}
 	static class UTabInputOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabInputOptions_C>();
 	}
 };
-static_assert(alignof(UTabInputOptions_C) == 0x000008, "Wrong alignment on UTabInputOptions_C");
-static_assert(sizeof(UTabInputOptions_C) == 0x0003A8, "Wrong size on UTabInputOptions_C");
-static_assert(offsetof(UTabInputOptions_C, UberGraphFrame) == 0x000350, "Member 'UTabInputOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, OverlayBorder) == 0x000358, "Member 'UTabInputOptions_C::OverlayBorder' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Currently_Selected_Input) == 0x000360, "Member 'UTabInputOptions_C::Currently_Selected_Input' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Is_Currently_Primary) == 0x000364, "Member 'UTabInputOptions_C::Is_Currently_Primary' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Enable_Overlay) == 0x000368, "Member 'UTabInputOptions_C::Enable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Disable_Overlay) == 0x000378, "Member 'UTabInputOptions_C::Disable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Using_Gamepad) == 0x000388, "Member 'UTabInputOptions_C::Using_Gamepad' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, Gamepad_Changed) == 0x000390, "Member 'UTabInputOptions_C::Gamepad_Changed' has a wrong offset!");
-static_assert(offsetof(UTabInputOptions_C, DisplayObject) == 0x0003A0, "Member 'UTabInputOptions_C::DisplayObject' has a wrong offset!");
 
 }
 

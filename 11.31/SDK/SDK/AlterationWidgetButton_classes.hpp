@@ -44,7 +44,6 @@ public:
 	struct FFortRarityItemData                    RarityData;                                        // 0x0BD8(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Setup_Triangles();
 	void Update_Colors();
 	void IntroStart();
 	void IntroReset();
@@ -52,36 +51,22 @@ public:
 	void OnSetup();
 	void Construct();
 	void ExecuteUbergraph_AlterationWidgetButton(int32 EntryPoint);
+	void Setup_Triangles();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlterationWidgetButton_C">();
+		BP_STATIC_CLASS_IMPL("AlterationWidgetButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlterationWidgetButton_C")
 	}
 	static class UAlterationWidgetButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlterationWidgetButton_C>();
 	}
 };
-static_assert(alignof(UAlterationWidgetButton_C) == 0x000008, "Wrong alignment on UAlterationWidgetButton_C");
-static_assert(sizeof(UAlterationWidgetButton_C) == 0x000C58, "Wrong size on UAlterationWidgetButton_C");
-static_assert(offsetof(UAlterationWidgetButton_C, UberGraphFrame) == 0x000B78, "Member 'UAlterationWidgetButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, PanelLoad) == 0x000B80, "Member 'UAlterationWidgetButton_C::PanelLoad' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, TriangelUpgrade) == 0x000B88, "Member 'UAlterationWidgetButton_C::TriangelUpgrade' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, AlterationWidget) == 0x000B90, "Member 'UAlterationWidgetButton_C::AlterationWidget' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, Flash) == 0x000B98, "Member 'UAlterationWidgetButton_C::Flash' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, Shine) == 0x000BA0, "Member 'UAlterationWidgetButton_C::Shine' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, TriangleUpgrade) == 0x000BA8, "Member 'UAlterationWidgetButton_C::TriangleUpgrade' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, bIncludeName) == 0x000BB0, "Member 'UAlterationWidgetButton_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, bIncludeShortDescription) == 0x000BB1, "Member 'UAlterationWidgetButton_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, bIncludeDescription) == 0x000BB2, "Member 'UAlterationWidgetButton_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, IconSize) == 0x000BB3, "Member 'UAlterationWidgetButton_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, bUseLargeFormatName) == 0x000BB4, "Member 'UAlterationWidgetButton_C::bUseLargeFormatName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, Locked_Description_Style) == 0x000BB8, "Member 'UAlterationWidgetButton_C::Locked_Description_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, Locked_Text_Style) == 0x000BC0, "Member 'UAlterationWidgetButton_C::Locked_Text_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, ShouldShowRarity) == 0x000BC8, "Member 'UAlterationWidgetButton_C::ShouldShowRarity' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, Triangles_Upgrade) == 0x000BD0, "Member 'UAlterationWidgetButton_C::Triangles_Upgrade' has a wrong offset!");
-static_assert(offsetof(UAlterationWidgetButton_C, RarityData) == 0x000BD8, "Member 'UAlterationWidgetButton_C::RarityData' has a wrong offset!");
 
 }
 

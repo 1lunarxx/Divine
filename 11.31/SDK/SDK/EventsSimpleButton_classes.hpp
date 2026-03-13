@@ -42,44 +42,31 @@ public:
 	struct FVector2D                              ButtonPadding;                                     // 0x0C40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad);
+	void PreConstruct(bool IsDesignTime);
+	void InputTypeChanged(bool bUsingGamepad);
+	void ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint);
 	struct FEventReply OnMouseButtonUp(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void Construct();
 	void BP_OnHovered();
 	void BP_OnUnhovered();
 	void BP_OnClicked();
-	void BndEvt__CommonActionWidgetAction_K2Node_ComponentBoundEvent_0_OnInputMethodChanged__DelegateSignature(bool bUsingGamepad);
-	void PreConstruct(bool IsDesignTime);
-	void InputTypeChanged(bool bUsingGamepad);
-	void ExecuteUbergraph_EventsSimpleButton(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventsSimpleButton_C">();
+		BP_STATIC_CLASS_IMPL("EventsSimpleButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventsSimpleButton_C")
 	}
 	static class UEventsSimpleButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventsSimpleButton_C>();
 	}
 };
-static_assert(alignof(UEventsSimpleButton_C) == 0x000008, "Wrong alignment on UEventsSimpleButton_C");
-static_assert(sizeof(UEventsSimpleButton_C) == 0x000C48, "Wrong size on UEventsSimpleButton_C");
-static_assert(offsetof(UEventsSimpleButton_C, UberGraphFrame) == 0x000B70, "Member 'UEventsSimpleButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Pressed) == 0x000B78, "Member 'UEventsSimpleButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Hover) == 0x000B80, "Member 'UEventsSimpleButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, CenterButtonTextWidget) == 0x000B88, "Member 'UEventsSimpleButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, CommonBorder_VariablePadding) == 0x000B90, "Member 'UEventsSimpleButton_C::CommonBorder_VariablePadding' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Image_ButtonTop) == 0x000B98, "Member 'UEventsSimpleButton_C::Image_ButtonTop' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Image_Shadow) == 0x000BA0, "Member 'UEventsSimpleButton_C::Image_Shadow' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Overlay_ButtonBG) == 0x000BA8, "Member 'UEventsSimpleButton_C::Overlay_ButtonBG' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, ToUpper) == 0x000BB0, "Member 'UEventsSimpleButton_C::ToUpper' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, XL) == 0x000BB1, "Member 'UEventsSimpleButton_C::XL' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, ButtonNameText) == 0x000BB8, "Member 'UEventsSimpleButton_C::ButtonNameText' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, Color) == 0x000BD0, "Member 'UEventsSimpleButton_C::Color' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, GamepadButtonTextColor) == 0x000C20, "Member 'UEventsSimpleButton_C::GamepadButtonTextColor' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, DefaultTextColor) == 0x000C30, "Member 'UEventsSimpleButton_C::DefaultTextColor' has a wrong offset!");
-static_assert(offsetof(UEventsSimpleButton_C, ButtonPadding) == 0x000C40, "Member 'UEventsSimpleButton_C::ButtonPadding' has a wrong offset!");
 
 }
 

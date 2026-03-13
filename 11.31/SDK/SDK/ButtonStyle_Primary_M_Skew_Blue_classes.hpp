@@ -23,15 +23,17 @@ class UButtonStyle_Primary_M_Skew_Blue_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Primary-M_Skew_Blue_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Primary-M_Skew_Blue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Primary-M_Skew_Blue_C")
 	}
 	static class UButtonStyle_Primary_M_Skew_Blue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Primary_M_Skew_Blue_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Primary_M_Skew_Blue_C) == 0x000008, "Wrong alignment on UButtonStyle_Primary_M_Skew_Blue_C");
-static_assert(sizeof(UButtonStyle_Primary_M_Skew_Blue_C) == 0x000570, "Wrong size on UButtonStyle_Primary_M_Skew_Blue_C");
 
 }
 

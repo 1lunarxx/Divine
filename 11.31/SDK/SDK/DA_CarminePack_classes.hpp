@@ -48,25 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DA_CarminePack_C">();
+		BP_STATIC_CLASS_IMPL("DA_CarminePack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DA_CarminePack_C")
 	}
 	static class ADA_CarminePack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADA_CarminePack_C>();
 	}
 };
-static_assert(alignof(ADA_CarminePack_C) == 0x000008, "Wrong alignment on ADA_CarminePack_C");
-static_assert(sizeof(ADA_CarminePack_C) == 0x000B60, "Wrong size on ADA_CarminePack_C");
-static_assert(offsetof(ADA_CarminePack_C, UberGraphFrame) == 0x000AC0, "Member 'ADA_CarminePack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, TimePressed) == 0x000AC8, "Member 'ADA_CarminePack_C::TimePressed' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, PunchPicker) == 0x000ACC, "Member 'ADA_CarminePack_C::PunchPicker' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, hasLandedAfterBeam) == 0x000AD0, "Member 'ADA_CarminePack_C::hasLandedAfterBeam' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, Carmine_Ability_Tags) == 0x000AD8, "Member 'ADA_CarminePack_C::Carmine_Ability_Tags' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, StoneTags) == 0x000AF8, "Member 'ADA_CarminePack_C::StoneTags' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, GemTags) == 0x000B08, "Member 'ADA_CarminePack_C::GemTags' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, int_0) == 0x000B18, "Member 'ADA_CarminePack_C::int_0' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, SkydiveCue) == 0x000B20, "Member 'ADA_CarminePack_C::SkydiveCue' has a wrong offset!");
-static_assert(offsetof(ADA_CarminePack_C, TrailsCue) == 0x000B40, "Member 'ADA_CarminePack_C::TrailsCue' has a wrong offset!");
 
 }
 

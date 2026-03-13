@@ -23,15 +23,17 @@ class As_pool_floor_C final : public A_WaterMeshBlueprintMaster_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"s_pool_floor_C">();
+		BP_STATIC_CLASS_IMPL("s_pool_floor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"s_pool_floor_C")
 	}
 	static class As_pool_floor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<As_pool_floor_C>();
 	}
 };
-static_assert(alignof(As_pool_floor_C) == 0x000008, "Wrong alignment on As_pool_floor_C");
-static_assert(sizeof(As_pool_floor_C) == 0x0002E0, "Wrong size on As_pool_floor_C");
 
 }
 

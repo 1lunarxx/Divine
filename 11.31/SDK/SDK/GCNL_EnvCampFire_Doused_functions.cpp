@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function GCNL_EnvCampFire_Doused.GCNL_EnvCampFire_Doused_C.Fade Doused Smoke__UpdateFunc
-// (BlueprintEvent)
-
-void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GCNL_EnvCampFire_Doused.GCNL_EnvCampFire_Doused_C.Fade Doused Smoke__FinishedFunc
 // (BlueprintEvent)
 
@@ -138,6 +124,20 @@ void AGCNL_EnvCampFire_Doused_C::ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCNL_EnvCampFire_Doused.GCNL_EnvCampFire_Doused_C.Fade Doused Smoke__UpdateFunc
+// (BlueprintEvent)
+
+void AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Doused_C", "Fade Doused Smoke__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

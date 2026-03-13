@@ -50,10 +50,10 @@ public:
 	class UCommonTextBlock*                       Text_BusFare;                                      // 0x06C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TournamentContextText;                             // 0x06D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UEventScoreRow_C*                       VictoryRoyaleInfo;                                 // 0x06D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const class FString& TournamentId, const class FString& EventId)> ViewLeaderboard;                                   // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const class FString& TournamentId, const class FString& EventId)> ViewLeaderboard; // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          AllowLeaderboardAccess;                            // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6F1[0x7];                                      // 0x06F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const class FString& EventWindowId, const class FString& EventId)> ViewPayouts;                                       // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const class FString& EventWindowId, const class FString& EventId)> ViewPayouts; // 0x06F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void RefreshDataBP();
@@ -69,44 +69,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentEventWindowDetails_C">();
+		BP_STATIC_CLASS_IMPL("TournamentEventWindowDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentEventWindowDetails_C")
 	}
 	static class UTournamentEventWindowDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentEventWindowDetails_C>();
 	}
 };
-static_assert(alignof(UTournamentEventWindowDetails_C) == 0x000008, "Wrong alignment on UTournamentEventWindowDetails_C");
-static_assert(sizeof(UTournamentEventWindowDetails_C) == 0x000708, "Wrong size on UTournamentEventWindowDetails_C");
-static_assert(offsetof(UTournamentEventWindowDetails_C, UberGraphFrame) == 0x000610, "Member 'UTournamentEventWindowDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, PayoutHover) == 0x000618, "Member 'UTournamentEventWindowDetails_C::PayoutHover' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, LeaderboardHover) == 0x000620, "Member 'UTournamentEventWindowDetails_C::LeaderboardHover' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, RefreshData) == 0x000628, "Member 'UTournamentEventWindowDetails_C::RefreshData' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, RefreshTime) == 0x000630, "Member 'UTournamentEventWindowDetails_C::RefreshTime' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, RefreshDate) == 0x000638, "Member 'UTournamentEventWindowDetails_C::RefreshDate' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Border_SubheaderBG) == 0x000640, "Member 'UTournamentEventWindowDetails_C::Border_SubheaderBG' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Button_Leaderboard) == 0x000648, "Member 'UTournamentEventWindowDetails_C::Button_Leaderboard' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Button_Payout) == 0x000650, "Member 'UTournamentEventWindowDetails_C::Button_Payout' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, CommonBorder_LeaderboardButtonBG) == 0x000658, "Member 'UTournamentEventWindowDetails_C::CommonBorder_LeaderboardButtonBG' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, CommonBorder_PayoutButtonBG) == 0x000660, "Member 'UTournamentEventWindowDetails_C::CommonBorder_PayoutButtonBG' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, CommonBorder_StartingScore) == 0x000668, "Member 'UTournamentEventWindowDetails_C::CommonBorder_StartingScore' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, CommonWidgetSwitcher_isFuture) == 0x000670, "Member 'UTournamentEventWindowDetails_C::CommonWidgetSwitcher_isFuture' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, EliminationsInfo) == 0x000678, "Member 'UTournamentEventWindowDetails_C::EliminationsInfo' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, EventDateText) == 0x000680, "Member 'UTournamentEventWindowDetails_C::EventDateText' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, HorizontalBox_SquadInfoContainer) == 0x000688, "Member 'UTournamentEventWindowDetails_C::HorizontalBox_SquadInfoContainer' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, MatchesPlayedInfo) == 0x000690, "Member 'UTournamentEventWindowDetails_C::MatchesPlayedInfo' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, MatchTypeText) == 0x000698, "Member 'UTournamentEventWindowDetails_C::MatchTypeText' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Overlay_LeaderboardButton) == 0x0006A0, "Member 'UTournamentEventWindowDetails_C::Overlay_LeaderboardButton' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Overlay_PayoutButton) == 0x0006A8, "Member 'UTournamentEventWindowDetails_C::Overlay_PayoutButton' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, PlacementInfo) == 0x0006B0, "Member 'UTournamentEventWindowDetails_C::PlacementInfo' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, PointsScoredInfo) == 0x0006B8, "Member 'UTournamentEventWindowDetails_C::PointsScoredInfo' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, RichTextBlock_OtherReason) == 0x0006C0, "Member 'UTournamentEventWindowDetails_C::RichTextBlock_OtherReason' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, Text_BusFare) == 0x0006C8, "Member 'UTournamentEventWindowDetails_C::Text_BusFare' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, TournamentContextText) == 0x0006D0, "Member 'UTournamentEventWindowDetails_C::TournamentContextText' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, VictoryRoyaleInfo) == 0x0006D8, "Member 'UTournamentEventWindowDetails_C::VictoryRoyaleInfo' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, ViewLeaderboard) == 0x0006E0, "Member 'UTournamentEventWindowDetails_C::ViewLeaderboard' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, AllowLeaderboardAccess) == 0x0006F0, "Member 'UTournamentEventWindowDetails_C::AllowLeaderboardAccess' has a wrong offset!");
-static_assert(offsetof(UTournamentEventWindowDetails_C, ViewPayouts) == 0x0006F8, "Member 'UTournamentEventWindowDetails_C::ViewPayouts' has a wrong offset!");
 
 }
 

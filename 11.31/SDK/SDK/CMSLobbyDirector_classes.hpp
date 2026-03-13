@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CMSLobbyDirector_C">();
+		BP_STATIC_CLASS_IMPL("CMSLobbyDirector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CMSLobbyDirector_C")
 	}
 	static class ACMSLobbyDirector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACMSLobbyDirector_C>();
 	}
 };
-static_assert(alignof(ACMSLobbyDirector_C) == 0x000008, "Wrong alignment on ACMSLobbyDirector_C");
-static_assert(sizeof(ACMSLobbyDirector_C) == 0x000268, "Wrong size on ACMSLobbyDirector_C");
-static_assert(offsetof(ACMSLobbyDirector_C, DefaultSceneRoot) == 0x000260, "Member 'ACMSLobbyDirector_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

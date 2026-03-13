@@ -36,21 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TwitchLoginModalWidget_C">();
+		BP_STATIC_CLASS_IMPL("TwitchLoginModalWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TwitchLoginModalWidget_C")
 	}
 	static class UTwitchLoginModalWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTwitchLoginModalWidget_C>();
 	}
 };
-static_assert(alignof(UTwitchLoginModalWidget_C) == 0x000008, "Wrong alignment on UTwitchLoginModalWidget_C");
-static_assert(sizeof(UTwitchLoginModalWidget_C) == 0x000478, "Wrong size on UTwitchLoginModalWidget_C");
-static_assert(offsetof(UTwitchLoginModalWidget_C, UberGraphFrame) == 0x000440, "Member 'UTwitchLoginModalWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTwitchLoginModalWidget_C, IconTextButton) == 0x000448, "Member 'UTwitchLoginModalWidget_C::IconTextButton' has a wrong offset!");
-static_assert(offsetof(UTwitchLoginModalWidget_C, Image_0) == 0x000450, "Member 'UTwitchLoginModalWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTwitchLoginModalWidget_C, Image_21) == 0x000458, "Member 'UTwitchLoginModalWidget_C::Image_21' has a wrong offset!");
-static_assert(offsetof(UTwitchLoginModalWidget_C, Lightbox_101) == 0x000460, "Member 'UTwitchLoginModalWidget_C::Lightbox_101' has a wrong offset!");
-static_assert(offsetof(UTwitchLoginModalWidget_C, OnCancelButtonClicked) == 0x000468, "Member 'UTwitchLoginModalWidget_C::OnCancelButtonClicked' has a wrong offset!");
 
 }
 

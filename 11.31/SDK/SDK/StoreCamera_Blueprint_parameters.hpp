@@ -27,12 +27,6 @@ public:
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0018(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_1;    // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreCamera_Blueprint_C_UserConstructionScript) == 0x000004, "Wrong alignment on StoreCamera_Blueprint_C_UserConstructionScript");
-static_assert(sizeof(StoreCamera_Blueprint_C_UserConstructionScript) == 0x000030, "Wrong size on StoreCamera_Blueprint_C_UserConstructionScript");
-static_assert(offsetof(StoreCamera_Blueprint_C_UserConstructionScript, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000000, "Member 'StoreCamera_Blueprint_C_UserConstructionScript::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_UserConstructionScript, CallFunc_K2_GetComponentRotation_ReturnValue_1) == 0x00000C, "Member 'StoreCamera_Blueprint_C_UserConstructionScript::CallFunc_K2_GetComponentRotation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000018, "Member 'StoreCamera_Blueprint_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_UserConstructionScript, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000024, "Member 'StoreCamera_Blueprint_C_UserConstructionScript::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
 
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.DarkenBGVisibility
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +35,6 @@ struct StoreCamera_Blueprint_C_DarkenBGVisibility final
 public:
 	bool                                          Enable;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreCamera_Blueprint_C_DarkenBGVisibility) == 0x000001, "Wrong alignment on StoreCamera_Blueprint_C_DarkenBGVisibility");
-static_assert(sizeof(StoreCamera_Blueprint_C_DarkenBGVisibility) == 0x000001, "Wrong size on StoreCamera_Blueprint_C_DarkenBGVisibility");
-static_assert(offsetof(StoreCamera_Blueprint_C_DarkenBGVisibility, Enable) == 0x000000, "Member 'StoreCamera_Blueprint_C_DarkenBGVisibility::Enable' has a wrong offset!");
 
 // Function StoreCamera_Blueprint.StoreCamera_Blueprint_C.ExecuteUbergraph_StoreCamera_Blueprint
 // 0x0150 (0x0150 - 0x0000)
@@ -90,41 +81,6 @@ public:
 	class ATVPostProcessBP_C*                     CallFunc_Array_Get_Item_2;                         // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint) == 0x000008, "Wrong alignment on StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint");
-static_assert(sizeof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint) == 0x000150, "Wrong size on StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, EntryPoint) == 0x000000, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Lerp_ReturnValue) == 0x000008, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Array_Index_Variable) == 0x000010, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Lerp_ReturnValue_1) == 0x000014, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_RLerp_ReturnValue) == 0x000018, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_RLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_VLerp_ReturnValue) == 0x000024, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_K2_SetActorLocationAndRotation_SweepHitResult) == 0x000030, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_K2_SetActorLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_K2_SetActorLocationAndRotation_ReturnValue) == 0x0000B8, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_K2_SetActorLocationAndRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Array_Index_Variable_1) == 0x0000BC, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, K2Node_CustomEvent_Enable) == 0x0000C0, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::K2Node_CustomEvent_Enable' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors) == 0x0000C8, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Get_Item) == 0x0000D8, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Length_ReturnValue) == 0x0000E0, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x0000E8, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Get_Item_1) == 0x0000F8, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Length_ReturnValue_1) == 0x000100, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue) == 0x000104, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_IsValid_ReturnValue) == 0x000105, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_IsValid_ReturnValue_1) == 0x000106, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors_2) == 0x000108, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Loop_Counter_Variable_1) == 0x000118, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Length_ReturnValue_2) == 0x00011C, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue_1) == 0x000120, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Add_IntInt_ReturnValue_1) == 0x000124, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000128, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Loop_Counter_Variable_2) == 0x000130, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue_2) == 0x000134, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Add_IntInt_ReturnValue_2) == 0x000138, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, Temp_int_Array_Index_Variable_2) == 0x00013C, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_Array_Get_Item_2) == 0x000140, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint, CallFunc_IsValid_ReturnValue_2) == 0x000148, "Member 'StoreCamera_Blueprint_C_ExecuteUbergraph_StoreCamera_Blueprint::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 }
 

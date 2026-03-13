@@ -44,25 +44,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button_1;               // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_ExecuteUbergraph_Feedback) == 0x000008, "Wrong alignment on Feedback_C_ExecuteUbergraph_Feedback");
-static_assert(sizeof(Feedback_C_ExecuteUbergraph_Feedback) == 0x000068, "Wrong size on Feedback_C_ExecuteUbergraph_Feedback");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, EntryPoint) == 0x000000, "Member 'Feedback_C_ExecuteUbergraph_Feedback::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, Temp_bool_Variable) == 0x000004, "Member 'Feedback_C_ExecuteUbergraph_Feedback::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, Temp_byte_Variable) == 0x000005, "Member 'Feedback_C_ExecuteUbergraph_Feedback::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, Temp_byte_Variable_1) == 0x000006, "Member 'Feedback_C_ExecuteUbergraph_Feedback::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_6) == 0x000008, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_CustomEvent_Text) == 0x000010, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_CustomEvent_Text' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_Event_FeedbackType) == 0x000028, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_Event_FeedbackType' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, CallFunc_IsMobileGame_ReturnValue) == 0x000029, "Member 'Feedback_C_ExecuteUbergraph_Feedback::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_Select_Default) == 0x00002A, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_5) == 0x000030, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_4) == 0x000038, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, CallFunc_CanSendFeedback_ReturnValue) == 0x000040, "Member 'Feedback_C_ExecuteUbergraph_Feedback::CallFunc_CanSendFeedback_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'Feedback_C_ExecuteUbergraph_Feedback::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_3) == 0x000048, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_2) == 0x000050, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button_1) == 0x000058, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(Feedback_C_ExecuteUbergraph_Feedback, K2Node_ComponentBoundEvent_Button) == 0x000060, "Member 'Feedback_C_ExecuteUbergraph_Feedback::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -71,9 +52,6 @@ struct Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonCli
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__CancelBug_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +60,6 @@ struct Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonCli
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__SubmitBug_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -93,9 +68,6 @@ struct Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__CancelSignIn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -104,9 +76,6 @@ struct Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__SubmitSignIn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -115,9 +84,6 @@ struct Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonCl
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__SendButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -126,9 +92,6 @@ struct Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.OnFeedbackTypeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -137,9 +100,6 @@ struct Feedback_C_OnFeedbackTypeChanged final
 public:
 	EFortUIGameFeedbackType                       FeedBackType_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_OnFeedbackTypeChanged) == 0x000001, "Wrong alignment on Feedback_C_OnFeedbackTypeChanged");
-static_assert(sizeof(Feedback_C_OnFeedbackTypeChanged) == 0x000001, "Wrong size on Feedback_C_OnFeedbackTypeChanged");
-static_assert(offsetof(Feedback_C_OnFeedbackTypeChanged, FeedBackType_0) == 0x000000, "Member 'Feedback_C_OnFeedbackTypeChanged::FeedBackType_0' has a wrong offset!");
 
 // Function Feedback.Feedback_C.HandleTextChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -148,9 +108,6 @@ struct Feedback_C_HandleTextChanged final
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(Feedback_C_HandleTextChanged) == 0x000008, "Wrong alignment on Feedback_C_HandleTextChanged");
-static_assert(sizeof(Feedback_C_HandleTextChanged) == 0x000018, "Wrong size on Feedback_C_HandleTextChanged");
-static_assert(offsetof(Feedback_C_HandleTextChanged, Text) == 0x000000, "Member 'Feedback_C_HandleTextChanged::Text' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -159,9 +116,6 @@ struct Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButton
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'Feedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function Feedback.Feedback_C.BindDelegates
 // 0x0020 (0x0020 - 0x0000)
@@ -171,10 +125,6 @@ public:
 	TDelegate<void(const class FText& Text)>      K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(const class FText& Text)>      K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Feedback_C_BindDelegates) == 0x000004, "Wrong alignment on Feedback_C_BindDelegates");
-static_assert(sizeof(Feedback_C_BindDelegates) == 0x000020, "Wrong size on Feedback_C_BindDelegates");
-static_assert(offsetof(Feedback_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'Feedback_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Feedback_C_BindDelegates, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'Feedback_C_BindDelegates::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 // Function Feedback.Feedback_C.CanSendFeedback
 // 0x0060 (0x0060 - 0x0000)
@@ -196,20 +146,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue_2;                // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x005A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Feedback_C_CanSendFeedback) == 0x000008, "Wrong alignment on Feedback_C_CanSendFeedback");
-static_assert(sizeof(Feedback_C_CanSendFeedback) == 0x000060, "Wrong size on Feedback_C_CanSendFeedback");
-static_assert(offsetof(Feedback_C_CanSendFeedback, ReturnValue) == 0x000000, "Member 'Feedback_C_CanSendFeedback::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_GetText_ReturnValue) == 0x000008, "Member 'Feedback_C_CanSendFeedback::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_GetText_ReturnValue_1) == 0x000020, "Member 'Feedback_C_CanSendFeedback::CallFunc_GetText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_TextIsEmpty_ReturnValue) == 0x000038, "Member 'Feedback_C_CanSendFeedback::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_TextIsEmpty_ReturnValue_1) == 0x000039, "Member 'Feedback_C_CanSendFeedback::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_Not_PreBool_ReturnValue) == 0x00003A, "Member 'Feedback_C_CanSendFeedback::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_Not_PreBool_ReturnValue_1) == 0x00003B, "Member 'Feedback_C_CanSendFeedback::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_BooleanOR_ReturnValue) == 0x00003C, "Member 'Feedback_C_CanSendFeedback::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_GetText_ReturnValue_2) == 0x000040, "Member 'Feedback_C_CanSendFeedback::CallFunc_GetText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_TextIsEmpty_ReturnValue_2) == 0x000058, "Member 'Feedback_C_CanSendFeedback::CallFunc_TextIsEmpty_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_Not_PreBool_ReturnValue_2) == 0x000059, "Member 'Feedback_C_CanSendFeedback::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Feedback_C_CanSendFeedback, CallFunc_BooleanAND_ReturnValue) == 0x00005A, "Member 'Feedback_C_CanSendFeedback::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function Feedback.Feedback_C.TouchToClose
 // 0x0218 (0x0218 - 0x0000)
@@ -221,12 +157,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 };
-static_assert(alignof(Feedback_C_TouchToClose) == 0x000008, "Wrong alignment on Feedback_C_TouchToClose");
-static_assert(sizeof(Feedback_C_TouchToClose) == 0x000218, "Wrong size on Feedback_C_TouchToClose");
-static_assert(offsetof(Feedback_C_TouchToClose, MyGeometry) == 0x000000, "Member 'Feedback_C_TouchToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(Feedback_C_TouchToClose, MouseEvent) == 0x000038, "Member 'Feedback_C_TouchToClose::MouseEvent' has a wrong offset!");
-static_assert(offsetof(Feedback_C_TouchToClose, ReturnValue) == 0x0000A8, "Member 'Feedback_C_TouchToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Feedback_C_TouchToClose, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'Feedback_C_TouchToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function Feedback.Feedback_C.UpdateSendButtonEnabled
 // 0x0001 (0x0001 - 0x0000)
@@ -235,9 +165,6 @@ struct Feedback_C_UpdateSendButtonEnabled final
 public:
 	bool                                          CallFunc_CanSendFeedback_ReturnValue;              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Feedback_C_UpdateSendButtonEnabled) == 0x000001, "Wrong alignment on Feedback_C_UpdateSendButtonEnabled");
-static_assert(sizeof(Feedback_C_UpdateSendButtonEnabled) == 0x000001, "Wrong size on Feedback_C_UpdateSendButtonEnabled");
-static_assert(offsetof(Feedback_C_UpdateSendButtonEnabled, CallFunc_CanSendFeedback_ReturnValue) == 0x000000, "Member 'Feedback_C_UpdateSendButtonEnabled::CallFunc_CanSendFeedback_ReturnValue' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class USTW_PlayerCameraModeMelee_C : public UAthena_PlayerCameraModeMelee_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"STW_PlayerCameraModeMelee_C">();
+		BP_STATIC_CLASS_IMPL("STW_PlayerCameraModeMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"STW_PlayerCameraModeMelee_C")
 	}
 	static class USTW_PlayerCameraModeMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USTW_PlayerCameraModeMelee_C>();
 	}
 };
-static_assert(alignof(USTW_PlayerCameraModeMelee_C) == 0x000010, "Wrong alignment on USTW_PlayerCameraModeMelee_C");
-static_assert(sizeof(USTW_PlayerCameraModeMelee_C) == 0x000D80, "Wrong size on USTW_PlayerCameraModeMelee_C");
 
 }
 

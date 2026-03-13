@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityDetailsSetting_C">();
+		BP_STATIC_CLASS_IMPL("ActivityDetailsSetting_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityDetailsSetting_C")
 	}
 	static class UActivityDetailsSetting_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityDetailsSetting_C>();
 	}
 };
-static_assert(alignof(UActivityDetailsSetting_C) == 0x000008, "Wrong alignment on UActivityDetailsSetting_C");
-static_assert(sizeof(UActivityDetailsSetting_C) == 0x000298, "Wrong size on UActivityDetailsSetting_C");
-static_assert(offsetof(UActivityDetailsSetting_C, UberGraphFrame) == 0x000270, "Member 'UActivityDetailsSetting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsSetting_C, Border_Background) == 0x000278, "Member 'UActivityDetailsSetting_C::Border_Background' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsSetting_C, Image_Checked) == 0x000280, "Member 'UActivityDetailsSetting_C::Image_Checked' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsSetting_C, Image_Unchecked) == 0x000288, "Member 'UActivityDetailsSetting_C::Image_Unchecked' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsSetting_C, Switcher_CheckBox) == 0x000290, "Member 'UActivityDetailsSetting_C::Switcher_CheckBox' has a wrong offset!");
 
 }
 

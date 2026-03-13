@@ -23,15 +23,17 @@ class UGE_Constructor_HammerHitsHeal_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Constructor_HammerHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("GE_Constructor_HammerHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Constructor_HammerHitsHeal_C")
 	}
 	static class UGE_Constructor_HammerHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Constructor_HammerHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGE_Constructor_HammerHitsHeal_C) == 0x000008, "Wrong alignment on UGE_Constructor_HammerHitsHeal_C");
-static_assert(sizeof(UGE_Constructor_HammerHitsHeal_C) == 0x000770, "Wrong size on UGE_Constructor_HammerHitsHeal_C");
 
 }
 

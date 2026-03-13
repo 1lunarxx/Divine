@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ControllerActionsMenu_C">();
+		BP_STATIC_CLASS_IMPL("ControllerActionsMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControllerActionsMenu_C")
 	}
 	static class UControllerActionsMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControllerActionsMenu_C>();
 	}
 };
-static_assert(alignof(UControllerActionsMenu_C) == 0x000008, "Wrong alignment on UControllerActionsMenu_C");
-static_assert(sizeof(UControllerActionsMenu_C) == 0x000438, "Wrong size on UControllerActionsMenu_C");
-static_assert(offsetof(UControllerActionsMenu_C, UberGraphFrame) == 0x000420, "Member 'UControllerActionsMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UControllerActionsMenu_C, Button_86) == 0x000428, "Member 'UControllerActionsMenu_C::Button_86' has a wrong offset!");
-static_assert(offsetof(UControllerActionsMenu_C, DynamicEntryBox_77) == 0x000430, "Member 'UControllerActionsMenu_C::DynamicEntryBox_77' has a wrong offset!");
 
 }
 

@@ -27,10 +27,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu) == 0x000008, "Wrong alignment on MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu");
-static_assert(sizeof(MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu) == 0x000010, "Wrong size on MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu");
-static_assert(offsetof(MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu, EntryPoint) == 0x000000, "Member 'MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'MissedInvitesActionMenu_C_ExecuteUbergraph_MissedInvitesActionMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function MissedInvitesActionMenu.MissedInvitesActionMenu_C.OnKeyUp
 // 0x02B8 (0x02B8 - 0x0000)
@@ -46,15 +42,6 @@ public:
 	uint8                                         Pad_1F9[0x7];                                      // 0x01F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0200(0x00B8)()
 };
-static_assert(alignof(MissedInvitesActionMenu_C_OnKeyUp) == 0x000008, "Wrong alignment on MissedInvitesActionMenu_C_OnKeyUp");
-static_assert(sizeof(MissedInvitesActionMenu_C_OnKeyUp) == 0x0002B8, "Wrong size on MissedInvitesActionMenu_C_OnKeyUp");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, MyGeometry) == 0x000000, "Member 'MissedInvitesActionMenu_C_OnKeyUp::MyGeometry' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, InKeyEvent) == 0x000038, "Member 'MissedInvitesActionMenu_C_OnKeyUp::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, ReturnValue) == 0x000070, "Member 'MissedInvitesActionMenu_C_OnKeyUp::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, CallFunc_Unhandled_ReturnValue) == 0x000128, "Member 'MissedInvitesActionMenu_C_OnKeyUp::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, CallFunc_GetKey_ReturnValue) == 0x0001E0, "Member 'MissedInvitesActionMenu_C_OnKeyUp::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x0001F8, "Member 'MissedInvitesActionMenu_C_OnKeyUp::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissedInvitesActionMenu_C_OnKeyUp, CallFunc_Handled_ReturnValue) == 0x000200, "Member 'MissedInvitesActionMenu_C_OnKeyUp::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }
 

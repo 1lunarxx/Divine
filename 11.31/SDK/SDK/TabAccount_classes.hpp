@@ -140,83 +140,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabAccount_C">();
+		BP_STATIC_CLASS_IMPL("TabAccount_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabAccount_C")
 	}
 	static class UTabAccount_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabAccount_C>();
 	}
 };
-static_assert(alignof(UTabAccount_C) == 0x000008, "Wrong alignment on UTabAccount_C");
-static_assert(sizeof(UTabAccount_C) == 0x000538, "Wrong size on UTabAccount_C");
-static_assert(offsetof(UTabAccount_C, UberGraphFrame) == 0x000328, "Member 'UTabAccount_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, AccountInfoHeader) == 0x000330, "Member 'UTabAccount_C::AccountInfoHeader' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, AccountLinkText) == 0x000338, "Member 'UTabAccount_C::AccountLinkText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_AccountLinking) == 0x000340, "Member 'UTabAccount_C::Button_AccountLinking' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_CustomerService) == 0x000348, "Member 'UTabAccount_C::Button_CustomerService' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Button_RefundRequest) == 0x000350, "Member 'UTabAccount_C::Button_RefundRequest' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonHierarchicalScrollBox_0) == 0x000358, "Member 'UTabAccount_C::CommonHierarchicalScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_2) == 0x000360, "Member 'UTabAccount_C::CommonTextBlock_2' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_5) == 0x000368, "Member 'UTabAccount_C::CommonTextBlock_5' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_6) == 0x000370, "Member 'UTabAccount_C::CommonTextBlock_6' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CommonTextBlock_7) == 0x000378, "Member 'UTabAccount_C::CommonTextBlock_7' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ConfigurationSwitcher) == 0x000380, "Member 'UTabAccount_C::ConfigurationSwitcher' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ContentHeader) == 0x000388, "Member 'UTabAccount_C::ContentHeader' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CopyCustomerIDButton) == 0x000390, "Member 'UTabAccount_C::CopyCustomerIDButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, CopyEpicAccountIDButton) == 0x000398, "Member 'UTabAccount_C::CopyEpicAccountIDButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, DefaultConfigurationBox) == 0x0003A0, "Member 'UTabAccount_C::DefaultConfigurationBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, DesktopConsoleOptions) == 0x0003A8, "Member 'UTabAccount_C::DesktopConsoleOptions' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, EpicId) == 0x0003B0, "Member 'UTabAccount_C::EpicId' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, EpicIdLabel) == 0x0003B8, "Member 'UTabAccount_C::EpicIdLabel' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, FortTwitchLogin) == 0x0003C0, "Member 'UTabAccount_C::FortTwitchLogin' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, HorizontalBox_6) == 0x0003C8, "Member 'UTabAccount_C::HorizontalBox_6' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Image_0) == 0x0003D0, "Member 'UTabAccount_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LeaderboardPrivacy) == 0x0003D8, "Member 'UTabAccount_C::LeaderboardPrivacy' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LifetimeRefundDesc) == 0x0003E0, "Member 'UTabAccount_C::LifetimeRefundDesc' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LifetimeRefundText) == 0x0003E8, "Member 'UTabAccount_C::LifetimeRefundText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LocalNotificationsToggle) == 0x0003F0, "Member 'UTabAccount_C::LocalNotificationsToggle' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, MobileOptions) == 0x0003F8, "Member 'UTabAccount_C::MobileOptions' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, NotificationsHeader) == 0x000400, "Member 'UTabAccount_C::NotificationsHeader' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, NotifyWhenPlayingToggle) == 0x000408, "Member 'UTabAccount_C::NotifyWhenPlayingToggle' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PlayerSurveysToggle) == 0x000410, "Member 'UTabAccount_C::PlayerSurveysToggle' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PrivacySettings) == 0x000418, "Member 'UTabAccount_C::PrivacySettings' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RailId) == 0x000420, "Member 'UTabAccount_C::RailId' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RailIdLabel) == 0x000428, "Member 'UTabAccount_C::RailIdLabel' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ReceiveGiftToggle) == 0x000430, "Member 'UTabAccount_C::ReceiveGiftToggle' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RefundRequest) == 0x000438, "Member 'UTabAccount_C::RefundRequest' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, SamsungStoreToggle) == 0x000440, "Member 'UTabAccount_C::SamsungStoreToggle' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, SizeBox_RefundRequest) == 0x000448, "Member 'UTabAccount_C::SizeBox_RefundRequest' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, SocialHeader) == 0x000450, "Member 'UTabAccount_C::SocialHeader' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, SocialSettings) == 0x000458, "Member 'UTabAccount_C::SocialSettings' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Spacer_RefundRequest) == 0x000460, "Member 'UTabAccount_C::Spacer_RefundRequest' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, StaticURLText) == 0x000468, "Member 'UTabAccount_C::StaticURLText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, TencentRailInfoHBox) == 0x000470, "Member 'UTabAccount_C::TencentRailInfoHBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, Text_RemainingRefunds) == 0x000478, "Member 'UTabAccount_C::Text_RemainingRefunds' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, TooltipTextBox) == 0x000480, "Member 'UTabAccount_C::TooltipTextBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, UninstallSTW) == 0x000488, "Member 'UTabAccount_C::UninstallSTW' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, UninstallStWButton) == 0x000490, "Member 'UTabAccount_C::UninstallStWButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, UninstallSTWDesc) == 0x000498, "Member 'UTabAccount_C::UninstallSTWDesc' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, URLButton) == 0x0004A0, "Member 'UTabAccount_C::URLButton' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, VBox_TwitchSettings) == 0x0004A8, "Member 'UTabAccount_C::VBox_TwitchSettings' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, WebsiteConfigurationBox) == 0x0004B0, "Member 'UTabAccount_C::WebsiteConfigurationBox' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, StWUninstallProgres) == 0x0004B8, "Member 'UTabAccount_C::StWUninstallProgres' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ScrollBarSizeDefault) == 0x0004BC, "Member 'UTabAccount_C::ScrollBarSizeDefault' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ScrollBarSizeMobile) == 0x0004C4, "Member 'UTabAccount_C::ScrollBarSizeMobile' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, DefaultFontSize) == 0x0004CC, "Member 'UTabAccount_C::DefaultFontSize' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, MobileFontSize) == 0x0004D0, "Member 'UTabAccount_C::MobileFontSize' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, MobileTitleSize) == 0x0004D4, "Member 'UTabAccount_C::MobileTitleSize' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ButtonMinWidthMobile) == 0x0004D8, "Member 'UTabAccount_C::ButtonMinWidthMobile' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, ButtonMinHeightMobile) == 0x0004DC, "Member 'UTabAccount_C::ButtonMinHeightMobile' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LeftPaddingSelectorMobile) == 0x0004E0, "Member 'UTabAccount_C::LeftPaddingSelectorMobile' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RotatorContentBtnSize) == 0x0004E4, "Member 'UTabAccount_C::RotatorContentBtnSize' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, RefaundSpacerSizeMobile) == 0x0004EC, "Member 'UTabAccount_C::RefaundSpacerSizeMobile' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PlayerSurveysToggleDisplayText) == 0x0004F0, "Member 'UTabAccount_C::PlayerSurveysToggleDisplayText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PlayerSurveysToggleHoverText) == 0x000508, "Member 'UTabAccount_C::PlayerSurveysToggleHoverText' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PlayerSurveysToggleSetting) == 0x000520, "Member 'UTabAccount_C::PlayerSurveysToggleSetting' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, PlayerSurveysTogglePreviousValue) == 0x000524, "Member 'UTabAccount_C::PlayerSurveysTogglePreviousValue' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, NotifyWhenPlayingToggleSetting) == 0x000528, "Member 'UTabAccount_C::NotifyWhenPlayingToggleSetting' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, NotifyWhenPlayingTogglePreviousValue) == 0x00052C, "Member 'UTabAccount_C::NotifyWhenPlayingTogglePreviousValue' has a wrong offset!");
-static_assert(offsetof(UTabAccount_C, LocalNotificationsTogglePreviousValue) == 0x000530, "Member 'UTabAccount_C::LocalNotificationsTogglePreviousValue' has a wrong offset!");
 
 }
 

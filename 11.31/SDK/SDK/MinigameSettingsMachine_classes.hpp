@@ -13,8 +13,8 @@
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "MinigameScoringPreset_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -143,77 +143,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameSettingsMachine_C">();
+		BP_STATIC_CLASS_IMPL("MinigameSettingsMachine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameSettingsMachine_C")
 	}
 	static class AMinigameSettingsMachine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMinigameSettingsMachine_C>();
 	}
 };
-static_assert(alignof(AMinigameSettingsMachine_C) == 0x000008, "Wrong alignment on AMinigameSettingsMachine_C");
-static_assert(sizeof(AMinigameSettingsMachine_C) == 0x000490, "Wrong size on AMinigameSettingsMachine_C");
-static_assert(offsetof(AMinigameSettingsMachine_C, UberGraphFrame) == 0x000300, "Member 'AMinigameSettingsMachine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ToyOptionsComponent) == 0x000308, "Member 'AMinigameSettingsMachine_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, GameModeIndex) == 0x000310, "Member 'AMinigameSettingsMachine_C::GameModeIndex' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TimeLimit) == 0x000314, "Member 'AMinigameSettingsMachine_C::TimeLimit' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, SpawnLocationSetting) == 0x000318, "Member 'AMinigameSettingsMachine_C::SpawnLocationSetting' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, NumTeams) == 0x00031C, "Member 'AMinigameSettingsMachine_C::NumTeams' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, PostGameSpawnLocationSetting) == 0x000320, "Member 'AMinigameSettingsMachine_C::PostGameSpawnLocationSetting' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, PlayerLives) == 0x000324, "Member 'AMinigameSettingsMachine_C::PlayerLives' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, AutoEndTeamThreshold) == 0x000328, "Member 'AMinigameSettingsMachine_C::AutoEndTeamThreshold' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TeamToMoveToWhenOutOfSpawns) == 0x00032C, "Member 'AMinigameSettingsMachine_C::TeamToMoveToWhenOutOfSpawns' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, NumKillsForEndCondition) == 0x000330, "Member 'AMinigameSettingsMachine_C::NumKillsForEndCondition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, AutoStartDelay) == 0x000334, "Member 'AMinigameSettingsMachine_C::AutoStartDelay' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, NumCollectItemsForEndCondition) == 0x000338, "Member 'AMinigameSettingsMachine_C::NumCollectItemsForEndCondition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ScoringPresets) == 0x000340, "Member 'AMinigameSettingsMachine_C::ScoringPresets' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedStats) == 0x000350, "Member 'AMinigameSettingsMachine_C::TrackedStats' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, NumAIKillsForEndCondition) == 0x000360, "Member 'AMinigameSettingsMachine_C::NumAIKillsForEndCondition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ScoreForEndCondition) == 0x000364, "Member 'AMinigameSettingsMachine_C::ScoreForEndCondition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TotalRounds) == 0x000368, "Member 'AMinigameSettingsMachine_C::TotalRounds' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, NumObjectDestroysForWin) == 0x00036C, "Member 'AMinigameSettingsMachine_C::NumObjectDestroysForWin' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, WinnerDisplayTime) == 0x000370, "Member 'AMinigameSettingsMachine_C::WinnerDisplayTime' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ScoreDisplayTime) == 0x000374, "Member 'AMinigameSettingsMachine_C::ScoreDisplayTime' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat0) == 0x000378, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat0' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat1) == 0x00037C, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat1' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat2) == 0x000380, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat2' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat3) == 0x000384, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat3' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat4) == 0x000388, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat4' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStats) == 0x000390, "Member 'AMinigameSettingsMachine_C::TrackedScoreStats' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, AvailableUIExtensions) == 0x0003A0, "Member 'AMinigameSettingsMachine_C::AvailableUIExtensions' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, CommonUIExtensions) == 0x0003B0, "Member 'AMinigameSettingsMachine_C::CommonUIExtensions' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, UIExtensionSetting) == 0x0003D0, "Member 'AMinigameSettingsMachine_C::UIExtensionSetting' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat0_Definition) == 0x0003D8, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat0_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat1_Definition) == 0x0003E0, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat1_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat2_Definition) == 0x0003E8, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat2_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat3_Definition) == 0x0003F0, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat3_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TrackedScoreStat4_Definition) == 0x0003F8, "Member 'AMinigameSettingsMachine_C::TrackedScoreStat4_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, UIExtensionSetting_Definition) == 0x000400, "Member 'AMinigameSettingsMachine_C::UIExtensionSetting_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TeamSetting) == 0x000408, "Member 'AMinigameSettingsMachine_C::TeamSetting' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TeamSetting_Definition) == 0x000410, "Member 'AMinigameSettingsMachine_C::TeamSetting_Definition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, bUseIngameScoreboard) == 0x000418, "Member 'AMinigameSettingsMachine_C::bUseIngameScoreboard' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, MinigameFullscreenMapWidgetType) == 0x000419, "Member 'AMinigameSettingsMachine_C::MinigameFullscreenMapWidgetType' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TimerDirection) == 0x00041C, "Member 'AMinigameSettingsMachine_C::TimerDirection' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, TeamRotationSetting) == 0x000420, "Member 'AMinigameSettingsMachine_C::TeamRotationSetting' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, RoundScoreDisplayTime) == 0x000424, "Member 'AMinigameSettingsMachine_C::RoundScoreDisplayTime' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, RoundWinnerDisplayTime) == 0x000428, "Member 'AMinigameSettingsMachine_C::RoundWinnerDisplayTime' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, bStopwatchMode) == 0x00042C, "Member 'AMinigameSettingsMachine_C::bStopwatchMode' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, bUseSolaris) == 0x00042D, "Member 'AMinigameSettingsMachine_C::bUseSolaris' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, bStableTeamCosmetics) == 0x00042E, "Member 'AMinigameSettingsMachine_C::bStableTeamCosmetics' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, bShowCumulativeScoreOnHUD) == 0x00042F, "Member 'AMinigameSettingsMachine_C::bShowCumulativeScoreOnHUD' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, WinCondition) == 0x000430, "Member 'AMinigameSettingsMachine_C::WinCondition' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, AllTeamsMustMatchEndConditions) == 0x000434, "Member 'AMinigameSettingsMachine_C::AllTeamsMustMatchEndConditions' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, EndGameOnMatchPointWin) == 0x000438, "Member 'AMinigameSettingsMachine_C::EndGameOnMatchPointWin' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, DefaultClassSlot) == 0x00043C, "Member 'AMinigameSettingsMachine_C::DefaultClassSlot' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ClassResetType) == 0x000440, "Member 'AMinigameSettingsMachine_C::ClassResetType' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, PlayerPersistence) == 0x000441, "Member 'AMinigameSettingsMachine_C::PlayerPersistence' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, OnlyAllowRespawningIfPlayerStartPadsFound) == 0x000444, "Member 'AMinigameSettingsMachine_C::OnlyAllowRespawningIfPlayerStartPadsFound' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, ShowCumulativeScoreboard) == 0x000448, "Member 'AMinigameSettingsMachine_C::ShowCumulativeScoreboard' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, GameEndCallout) == 0x00044C, "Member 'AMinigameSettingsMachine_C::GameEndCallout' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, VictoryAudioIndex) == 0x000450, "Member 'AMinigameSettingsMachine_C::VictoryAudioIndex' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, DrawAudioIndex) == 0x000454, "Member 'AMinigameSettingsMachine_C::DrawAudioIndex' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, DefeatAudioIndex) == 0x000458, "Member 'AMinigameSettingsMachine_C::DefeatAudioIndex' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, CustomVictoryCallout) == 0x000460, "Member 'AMinigameSettingsMachine_C::CustomVictoryCallout' has a wrong offset!");
-static_assert(offsetof(AMinigameSettingsMachine_C, CustomDefeatCallout) == 0x000478, "Member 'AMinigameSettingsMachine_C::CustomDefeatCallout' has a wrong offset!");
 
 }
 

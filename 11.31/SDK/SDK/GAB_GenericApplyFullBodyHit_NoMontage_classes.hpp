@@ -46,22 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_GenericApplyFullBodyHit_NoMontage_C">();
+		BP_STATIC_CLASS_IMPL("GAB_GenericApplyFullBodyHit_NoMontage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_GenericApplyFullBodyHit_NoMontage_C")
 	}
 	static class UGAB_GenericApplyFullBodyHit_NoMontage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_GenericApplyFullBodyHit_NoMontage_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericApplyFullBodyHit_NoMontage_C) == 0x000008, "Wrong alignment on UGAB_GenericApplyFullBodyHit_NoMontage_C");
-static_assert(sizeof(UGAB_GenericApplyFullBodyHit_NoMontage_C) == 0x000A68, "Wrong size on UGAB_GenericApplyFullBodyHit_NoMontage_C");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, GE_TransferFullBodyHit) == 0x000A38, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::GE_TransferFullBodyHit' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, GE_FullBodyHitActiveEffect) == 0x000A40, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::GE_FullBodyHitActiveEffect' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, GE_RestoreControlResistance) == 0x000A48, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::GE_RestoreControlResistance' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, ActiveImpactImmunity) == 0x000A50, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::ActiveImpactImmunity' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, GE_ImpactImmunity) == 0x000A58, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::GE_ImpactImmunity' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericApplyFullBodyHit_NoMontage_C, ActiveFullBodyHit) == 0x000A60, "Member 'UGAB_GenericApplyFullBodyHit_NoMontage_C::ActiveFullBodyHit' has a wrong offset!");
 
 }
 

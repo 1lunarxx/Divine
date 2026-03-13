@@ -21,9 +21,6 @@ struct GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming fi
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming) == 0x000004, "Wrong alignment on GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming");
-static_assert(sizeof(GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming) == 0x000004, "Wrong size on GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming");
-static_assert(offsetof(GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming, EntryPoint) == 0x000000, "Member 'GSC_DynamicLevelStreaming_C_ExecuteUbergraph_GSC_DynamicLevelStreaming::EntryPoint' has a wrong offset!");
 
 }
 

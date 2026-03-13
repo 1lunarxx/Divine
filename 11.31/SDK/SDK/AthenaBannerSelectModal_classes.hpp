@@ -43,21 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaBannerSelectModal_C">();
+		BP_STATIC_CLASS_IMPL("AthenaBannerSelectModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaBannerSelectModal_C")
 	}
 	static class UAthenaBannerSelectModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaBannerSelectModal_C>();
 	}
 };
-static_assert(alignof(UAthenaBannerSelectModal_C) == 0x000008, "Wrong alignment on UAthenaBannerSelectModal_C");
-static_assert(sizeof(UAthenaBannerSelectModal_C) == 0x000470, "Wrong size on UAthenaBannerSelectModal_C");
-static_assert(offsetof(UAthenaBannerSelectModal_C, UberGraphFrame) == 0x000438, "Member 'UAthenaBannerSelectModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaBannerSelectModal_C, BorderTouch) == 0x000440, "Member 'UAthenaBannerSelectModal_C::BorderTouch' has a wrong offset!");
-static_assert(offsetof(UAthenaBannerSelectModal_C, BP_LocalPlayerBannerEditor) == 0x000448, "Member 'UAthenaBannerSelectModal_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
-static_assert(offsetof(UAthenaBannerSelectModal_C, Lightbox) == 0x000450, "Member 'UAthenaBannerSelectModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaBannerSelectModal_C, ScaleBox_Banner) == 0x000458, "Member 'UAthenaBannerSelectModal_C::ScaleBox_Banner' has a wrong offset!");
-static_assert(offsetof(UAthenaBannerSelectModal_C, CloseAction) == 0x000460, "Member 'UAthenaBannerSelectModal_C::CloseAction' has a wrong offset!");
 
 }
 

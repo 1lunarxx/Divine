@@ -37,22 +37,6 @@ public:
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_Select_Default;                             // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TopBar_C_UpdateMTXButton) == 0x000008, "Wrong alignment on TopBar_C_UpdateMTXButton");
-static_assert(sizeof(TopBar_C_UpdateMTXButton) == 0x000040, "Wrong size on TopBar_C_UpdateMTXButton");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_byte_Variable) == 0x000000, "Member 'TopBar_C_UpdateMTXButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_bool_Variable) == 0x000001, "Member 'TopBar_C_UpdateMTXButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_bool_Variable_1) == 0x000002, "Member 'TopBar_C_UpdateMTXButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_bool_Variable_2) == 0x000003, "Member 'TopBar_C_UpdateMTXButton::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_int_Array_Index_Variable) == 0x000004, "Member 'TopBar_C_UpdateMTXButton::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'TopBar_C_UpdateMTXButton::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'TopBar_C_UpdateMTXButton::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000010, "Member 'TopBar_C_UpdateMTXButton::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue) == 0x000018, "Member 'TopBar_C_UpdateMTXButton::CallFunc_GetDisabledFrontendNavigationTabs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'TopBar_C_UpdateMTXButton::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_Array_Get_Item) == 0x00002C, "Member 'TopBar_C_UpdateMTXButton::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'TopBar_C_UpdateMTXButton::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000039, "Member 'TopBar_C_UpdateMTXButton::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_UpdateMTXButton, K2Node_Select_Default) == 0x00003A, "Member 'TopBar_C_UpdateMTXButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function TopBar.TopBar_C.ExecuteUbergraph_TopBar
 // 0x0068 (0x0068 - 0x0000)
@@ -73,18 +57,6 @@ public:
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TopBar_C_ExecuteUbergraph_TopBar) == 0x000008, "Wrong alignment on TopBar_C_ExecuteUbergraph_TopBar");
-static_assert(sizeof(TopBar_C_ExecuteUbergraph_TopBar) == 0x000068, "Wrong size on TopBar_C_ExecuteUbergraph_TopBar");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, EntryPoint) == 0x000000, "Member 'TopBar_C_ExecuteUbergraph_TopBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_MakeStruct_Margin) == 0x000004, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_IsMobileGame_ReturnValue) == 0x000014, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_MakeStruct_Margin_1) == 0x000020, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface) == 0x000030, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface_1) == 0x000048, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_DynamicCast_AsFort_Client_Announcement_Tutorial_Interface_1' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'TopBar_C_ExecuteUbergraph_TopBar::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TopBar_C_ExecuteUbergraph_TopBar, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000060, "Member 'TopBar_C_ExecuteUbergraph_TopBar::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
 
 }
 

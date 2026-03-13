@@ -23,15 +23,17 @@ class UBorder_ShellTopBar_C : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-ShellTopBar_C">();
+		BP_STATIC_CLASS_IMPL("Border-ShellTopBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-ShellTopBar_C")
 	}
 	static class UBorder_ShellTopBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_ShellTopBar_C>();
 	}
 };
-static_assert(alignof(UBorder_ShellTopBar_C) == 0x000008, "Wrong alignment on UBorder_ShellTopBar_C");
-static_assert(sizeof(UBorder_ShellTopBar_C) == 0x0000B0, "Wrong size on UBorder_ShellTopBar_C");
 
 }
 

@@ -23,15 +23,17 @@ class ABP_ZipLine_Camera_LensEffect_C final : public AEmitterCameraLensEffectBas
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZipLine_Camera_LensEffect_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZipLine_Camera_LensEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZipLine_Camera_LensEffect_C")
 	}
 	static class ABP_ZipLine_Camera_LensEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ZipLine_Camera_LensEffect_C>();
 	}
 };
-static_assert(alignof(ABP_ZipLine_Camera_LensEffect_C) == 0x000010, "Wrong alignment on ABP_ZipLine_Camera_LensEffect_C");
-static_assert(sizeof(ABP_ZipLine_Camera_LensEffect_C) == 0x0002D0, "Wrong size on ABP_ZipLine_Camera_LensEffect_C");
 
 }
 

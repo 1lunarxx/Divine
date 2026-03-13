@@ -23,15 +23,17 @@ class AGCNL_Creative_EliminationZone_DOT_Player_C final : public AFortGameplayCu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_Creative_EliminationZone_DOT_Player_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_Creative_EliminationZone_DOT_Player_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_Creative_EliminationZone_DOT_Player_C")
 	}
 	static class AGCNL_Creative_EliminationZone_DOT_Player_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_Creative_EliminationZone_DOT_Player_C>();
 	}
 };
-static_assert(alignof(AGCNL_Creative_EliminationZone_DOT_Player_C) == 0x000008, "Wrong alignment on AGCNL_Creative_EliminationZone_DOT_Player_C");
-static_assert(sizeof(AGCNL_Creative_EliminationZone_DOT_Player_C) == 0x000788, "Wrong size on AGCNL_Creative_EliminationZone_DOT_Player_C");
 
 }
 

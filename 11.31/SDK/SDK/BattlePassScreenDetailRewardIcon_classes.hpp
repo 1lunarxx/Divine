@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassScreenDetailRewardIcon_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassScreenDetailRewardIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassScreenDetailRewardIcon_C")
 	}
 	static class UBattlePassScreenDetailRewardIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassScreenDetailRewardIcon_C>();
 	}
 };
-static_assert(alignof(UBattlePassScreenDetailRewardIcon_C) == 0x000008, "Wrong alignment on UBattlePassScreenDetailRewardIcon_C");
-static_assert(sizeof(UBattlePassScreenDetailRewardIcon_C) == 0x000BC8, "Wrong size on UBattlePassScreenDetailRewardIcon_C");
-static_assert(offsetof(UBattlePassScreenDetailRewardIcon_C, UberGraphFrame) == 0x000BA0, "Member 'UBattlePassScreenDetailRewardIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenDetailRewardIcon_C, Card) == 0x000BA8, "Member 'UBattlePassScreenDetailRewardIcon_C::Card' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenDetailRewardIcon_C, Hovered) == 0x000BB0, "Member 'UBattlePassScreenDetailRewardIcon_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenDetailRewardIcon_C, Image_0) == 0x000BB8, "Member 'UBattlePassScreenDetailRewardIcon_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenDetailRewardIcon_C, LockImage) == 0x000BC0, "Member 'UBattlePassScreenDetailRewardIcon_C::LockImage' has a wrong offset!");
 
 }
 

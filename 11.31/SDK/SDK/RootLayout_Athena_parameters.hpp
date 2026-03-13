@@ -28,13 +28,6 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue_1;          // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RootLayout_Athena_C_IsConsole) == 0x000008, "Wrong alignment on RootLayout_Athena_C_IsConsole");
-static_assert(sizeof(RootLayout_Athena_C_IsConsole) == 0x000020, "Wrong size on RootLayout_Athena_C_IsConsole");
-static_assert(offsetof(RootLayout_Athena_C_IsConsole, ReturnValue) == 0x000000, "Member 'RootLayout_Athena_C_IsConsole::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_IsConsole, CallFunc_GetPlatformName_ReturnValue) == 0x000008, "Member 'RootLayout_Athena_C_IsConsole::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_IsConsole, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000018, "Member 'RootLayout_Athena_C_IsConsole::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_IsConsole, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x000019, "Member 'RootLayout_Athena_C_IsConsole::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_IsConsole, CallFunc_BooleanOR_ReturnValue) == 0x00001A, "Member 'RootLayout_Athena_C_IsConsole::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function RootLayout_Athena.RootLayout_Athena_C.DialogResult_0099D78247C40A9775C753A2024EA419
 // 0x000C (0x000C - 0x0000)
@@ -45,10 +38,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419) == 0x000004, "Wrong alignment on RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419");
-static_assert(sizeof(RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419) == 0x00000C, "Wrong size on RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419");
-static_assert(offsetof(RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419, Result) == 0x000000, "Member 'RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419::Result' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419, ResultName) == 0x000004, "Member 'RootLayout_Athena_C_DialogResult_0099D78247C40A9775C753A2024EA419::ResultName' has a wrong offset!");
 
 // Function RootLayout_Athena.RootLayout_Athena_C.ExecuteUbergraph_RootLayout_Athena
 // 0x0058 (0x0058 - 0x0000)
@@ -58,7 +47,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0024(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -70,19 +59,6 @@ public:
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue; // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena) == 0x000008, "Wrong alignment on RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena");
-static_assert(sizeof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena) == 0x000058, "Wrong size on RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, EntryPoint) == 0x000000, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, K2Node_CustomEvent_Result) == 0x000020, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, K2Node_CustomEvent_ResultName) == 0x000024, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, Temp_name_Variable) == 0x00002C, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, Temp_byte_Variable) == 0x000034, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, K2Node_SwitchEnum_CmpSuccess) == 0x000035, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x000048, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'RootLayout_Athena_C_ExecuteUbergraph_RootLayout_Athena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

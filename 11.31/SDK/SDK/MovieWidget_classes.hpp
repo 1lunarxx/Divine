@@ -46,23 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MovieWidget_C">();
+		BP_STATIC_CLASS_IMPL("MovieWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieWidget_C")
 	}
 	static class UMovieWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieWidget_C>();
 	}
 };
-static_assert(alignof(UMovieWidget_C) == 0x000008, "Wrong alignment on UMovieWidget_C");
-static_assert(sizeof(UMovieWidget_C) == 0x0002B0, "Wrong size on UMovieWidget_C");
-static_assert(offsetof(UMovieWidget_C, UberGraphFrame) == 0x000270, "Member 'UMovieWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_Image) == 0x000278, "Member 'UMovieWidget_C::Video_Image' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, Video_ScaleBox) == 0x000280, "Member 'UMovieWidget_C::Video_ScaleBox' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, shouldloop) == 0x000288, "Member 'UMovieWidget_C::shouldloop' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, AutoPlay) == 0x000289, "Member 'UMovieWidget_C::AutoPlay' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, MaintainAspectRatio) == 0x00028A, "Member 'UMovieWidget_C::MaintainAspectRatio' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, OnMediaReadyToPlay) == 0x000290, "Member 'UMovieWidget_C::OnMediaReadyToPlay' has a wrong offset!");
-static_assert(offsetof(UMovieWidget_C, OnMediaFailedToOpen) == 0x0002A0, "Member 'UMovieWidget_C::OnMediaFailedToOpen' has a wrong offset!");
 
 }
 

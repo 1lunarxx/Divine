@@ -24,9 +24,6 @@ struct WinterQuestPresentScreen_C_OnUpdatePlatformType final
 public:
 	ECommonPlatformType                           PlatformType;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentScreen_C_OnUpdatePlatformType) == 0x000001, "Wrong alignment on WinterQuestPresentScreen_C_OnUpdatePlatformType");
-static_assert(sizeof(WinterQuestPresentScreen_C_OnUpdatePlatformType) == 0x000001, "Wrong size on WinterQuestPresentScreen_C_OnUpdatePlatformType");
-static_assert(offsetof(WinterQuestPresentScreen_C_OnUpdatePlatformType, PlatformType) == 0x000000, "Member 'WinterQuestPresentScreen_C_OnUpdatePlatformType::PlatformType' has a wrong offset!");
 
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnInputMethodChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +32,6 @@ struct WinterQuestPresentScreen_C_OnInputMethodChanged final
 public:
 	ECommonInputType                              NewMethod;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentScreen_C_OnInputMethodChanged) == 0x000001, "Wrong alignment on WinterQuestPresentScreen_C_OnInputMethodChanged");
-static_assert(sizeof(WinterQuestPresentScreen_C_OnInputMethodChanged) == 0x000001, "Wrong size on WinterQuestPresentScreen_C_OnInputMethodChanged");
-static_assert(offsetof(WinterQuestPresentScreen_C_OnInputMethodChanged, NewMethod) == 0x000000, "Member 'WinterQuestPresentScreen_C_OnInputMethodChanged::NewMethod' has a wrong offset!");
 
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnUpdateShakePercentage
 // 0x0004 (0x0004 - 0x0000)
@@ -46,9 +40,6 @@ struct WinterQuestPresentScreen_C_OnUpdateShakePercentage final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentScreen_C_OnUpdateShakePercentage) == 0x000004, "Wrong alignment on WinterQuestPresentScreen_C_OnUpdateShakePercentage");
-static_assert(sizeof(WinterQuestPresentScreen_C_OnUpdateShakePercentage) == 0x000004, "Wrong size on WinterQuestPresentScreen_C_OnUpdateShakePercentage");
-static_assert(offsetof(WinterQuestPresentScreen_C_OnUpdateShakePercentage, InPercentage) == 0x000000, "Member 'WinterQuestPresentScreen_C_OnUpdateShakePercentage::InPercentage' has a wrong offset!");
 
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnUpdateShakeRecharge
 // 0x0004 (0x0004 - 0x0000)
@@ -57,9 +48,6 @@ struct WinterQuestPresentScreen_C_OnUpdateShakeRecharge final
 public:
 	float                                         InPercentage;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentScreen_C_OnUpdateShakeRecharge) == 0x000004, "Wrong alignment on WinterQuestPresentScreen_C_OnUpdateShakeRecharge");
-static_assert(sizeof(WinterQuestPresentScreen_C_OnUpdateShakeRecharge) == 0x000004, "Wrong size on WinterQuestPresentScreen_C_OnUpdateShakeRecharge");
-static_assert(offsetof(WinterQuestPresentScreen_C_OnUpdateShakeRecharge, InPercentage) == 0x000000, "Member 'WinterQuestPresentScreen_C_OnUpdateShakeRecharge::InPercentage' has a wrong offset!");
 
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.ExecuteUbergraph_WinterQuestPresentScreen
 // 0x0050 (0x0050 - 0x0000)
@@ -93,28 +81,6 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Event_InPercentage;                         // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen) == 0x000008, "Wrong alignment on WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen");
-static_assert(sizeof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen) == 0x000050, "Wrong size on WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, EntryPoint) == 0x000000, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, Temp_byte_Variable) == 0x000004, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt) == 0x000008, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, Temp_byte_Variable_1) == 0x000011, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, Temp_byte_Variable_2) == 0x000012, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, Temp_byte_Variable_3) == 0x000013, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, Temp_byte_Variable_4) == 0x000014, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_Event_PlatformType) == 0x000015, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_Event_PlatformType' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_AsWinter_Quest_Open_Prompt) == 0x000018, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_AsWinter_Quest_Open_Prompt' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_SwitchEnum_CmpSuccess) == 0x000021, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_Event_NewMethod) == 0x000022, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_Event_NewMethod' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_Event_InPercentage_1) == 0x000024, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_Event_InPercentage_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_Select_Default) == 0x000028, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt_1) == 0x000030, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_AsWinter_Quest_Shake_Prompt_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_bSuccess_2) == 0x000038, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1) == 0x000040, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_DynamicCast_bSuccess_3) == 0x000048, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen, K2Node_Event_InPercentage) == 0x00004C, "Member 'WinterQuestPresentScreen_C_ExecuteUbergraph_WinterQuestPresentScreen::K2Node_Event_InPercentage' has a wrong offset!");
 
 }
 

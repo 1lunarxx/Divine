@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaViewStreamingReplayModal_C">();
+		BP_STATIC_CLASS_IMPL("AthenaViewStreamingReplayModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaViewStreamingReplayModal_C")
 	}
 	static class UAthenaViewStreamingReplayModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaViewStreamingReplayModal_C>();
 	}
 };
-static_assert(alignof(UAthenaViewStreamingReplayModal_C) == 0x000008, "Wrong alignment on UAthenaViewStreamingReplayModal_C");
-static_assert(sizeof(UAthenaViewStreamingReplayModal_C) == 0x000460, "Wrong size on UAthenaViewStreamingReplayModal_C");
-static_assert(offsetof(UAthenaViewStreamingReplayModal_C, UberGraphFrame) == 0x000440, "Member 'UAthenaViewStreamingReplayModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaViewStreamingReplayModal_C, CloseButton) == 0x000448, "Member 'UAthenaViewStreamingReplayModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaViewStreamingReplayModal_C, GameSessionVB) == 0x000450, "Member 'UAthenaViewStreamingReplayModal_C::GameSessionVB' has a wrong offset!");
-static_assert(offsetof(UAthenaViewStreamingReplayModal_C, JoinButton) == 0x000458, "Member 'UAthenaViewStreamingReplayModal_C::JoinButton' has a wrong offset!");
 
 }
 

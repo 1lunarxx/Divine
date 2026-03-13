@@ -23,15 +23,17 @@ class UPhoebe_EvasiveManauvers_C final : public UFortAthenaAIBotEvaluator_Evasiv
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_EvasiveManauvers_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_EvasiveManauvers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_EvasiveManauvers_C")
 	}
 	static class UPhoebe_EvasiveManauvers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_EvasiveManauvers_C>();
 	}
 };
-static_assert(alignof(UPhoebe_EvasiveManauvers_C) == 0x000008, "Wrong alignment on UPhoebe_EvasiveManauvers_C");
-static_assert(sizeof(UPhoebe_EvasiveManauvers_C) == 0x0000C8, "Wrong size on UPhoebe_EvasiveManauvers_C");
 
 }
 

@@ -59,33 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_AthenaMapMarkerBase_C">();
+		BP_STATIC_CLASS_IMPL("B_AthenaMapMarkerBase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_AthenaMapMarkerBase_C")
 	}
 	static class AB_AthenaMapMarkerBase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_AthenaMapMarkerBase_C>();
 	}
 };
-static_assert(alignof(AB_AthenaMapMarkerBase_C) == 0x000008, "Wrong alignment on AB_AthenaMapMarkerBase_C");
-static_assert(sizeof(AB_AthenaMapMarkerBase_C) == 0x0004C0, "Wrong size on AB_AthenaMapMarkerBase_C");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, UberGraphFrame) == 0x000350, "Member 'AB_AthenaMapMarkerBase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, PingMarkerProto) == 0x000358, "Member 'AB_AthenaMapMarkerBase_C::PingMarkerProto' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SM_Target) == 0x000360, "Member 'AB_AthenaMapMarkerBase_C::SM_Target' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, OnProtoMarkerPlaced_RampPow_83EEC58A4783B077FB03728C433B4B7E) == 0x000368, "Member 'AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced_RampPow_83EEC58A4783B077FB03728C433B4B7E' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, OnProtoMarkerPlaced_Pinch_83EEC58A4783B077FB03728C433B4B7E) == 0x00036C, "Member 'AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced_Pinch_83EEC58A4783B077FB03728C433B4B7E' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, OnProtoMarkerPlaced_Glow_83EEC58A4783B077FB03728C433B4B7E) == 0x000370, "Member 'AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced_Glow_83EEC58A4783B077FB03728C433B4B7E' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, OnProtoMarkerPlaced__Direction_83EEC58A4783B077FB03728C433B4B7E) == 0x000374, "Member 'AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced__Direction_83EEC58A4783B077FB03728C433B4B7E' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, OnProtoMarkerPlaced) == 0x000378, "Member 'AB_AthenaMapMarkerBase_C::OnProtoMarkerPlaced' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SpawnMarkerAnim_SpawnVerticalScale_D00BAF4B4CCD528A4D4E94BA8CAE97A2) == 0x000380, "Member 'AB_AthenaMapMarkerBase_C::SpawnMarkerAnim_SpawnVerticalScale_D00BAF4B4CCD528A4D4E94BA8CAE97A2' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SpawnMarkerAnim_SpawnScale_D00BAF4B4CCD528A4D4E94BA8CAE97A2) == 0x000384, "Member 'AB_AthenaMapMarkerBase_C::SpawnMarkerAnim_SpawnScale_D00BAF4B4CCD528A4D4E94BA8CAE97A2' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SpawnMarkerAnim_Opacity_D00BAF4B4CCD528A4D4E94BA8CAE97A2) == 0x000388, "Member 'AB_AthenaMapMarkerBase_C::SpawnMarkerAnim_Opacity_D00BAF4B4CCD528A4D4E94BA8CAE97A2' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SpawnMarkerAnim__Direction_D00BAF4B4CCD528A4D4E94BA8CAE97A2) == 0x00038C, "Member 'AB_AthenaMapMarkerBase_C::SpawnMarkerAnim__Direction_D00BAF4B4CCD528A4D4E94BA8CAE97A2' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, SpawnMarkerAnim) == 0x000390, "Member 'AB_AthenaMapMarkerBase_C::SpawnMarkerAnim' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, MID_Main) == 0x000398, "Member 'AB_AthenaMapMarkerBase_C::MID_Main' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, MID_Target) == 0x0003A0, "Member 'AB_AthenaMapMarkerBase_C::MID_Target' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, bUseProtoMarker) == 0x0003A8, "Member 'AB_AthenaMapMarkerBase_C::bUseProtoMarker' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, MIDProtoMarker) == 0x0003B0, "Member 'AB_AthenaMapMarkerBase_C::MIDProtoMarker' has a wrong offset!");
-static_assert(offsetof(AB_AthenaMapMarkerBase_C, MarkerData) == 0x0003B8, "Member 'AB_AthenaMapMarkerBase_C::MarkerData' has a wrong offset!");
 
 }
 

@@ -72,6 +72,17 @@ public:
 	int32                                         NextCycle_LevelUnlocked;                           // 0x0524(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void HandleOnGainedFocus();
+	void OnCyclePreviewReward(const class UFortItem* NextReward, bool bReadyToUnlock, int32 LevelUnlocked);
+	void BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void ExecuteUbergraph_BattlePassPreview(int32 EntryPoint);
 	void CallRenderSwapOnBlade(class UObject* Object);
 	void SetRotatingPreviewData(class UFortItem* ItemToDisplay, bool ReadyToUnlock, int32 LevelUnlocked);
 	void HandleUnhovered(class UBattlePassScreenPreviewRewardWidget* Button);
@@ -87,76 +98,21 @@ public:
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void OnInitData(const struct FPreviewUnlockData& Data, const class UFortItem* SinglePreviewCycleReward, bool bReadyToUnlock, int32 LevelUnlocked, bool bPurchasedAnnualPass);
 	void BndEvt__Button_ViewAllRewards_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void HandleOnGainedFocus();
-	void OnCyclePreviewReward(const class UFortItem* NextReward, bool bReadyToUnlock, int32 LevelUnlocked);
-	void BndEvt__Currency_Widget_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget3_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget4_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget5_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget6_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget7_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__Character_Widget1_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void ExecuteUbergraph_BattlePassPreview(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassPreview_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassPreview_C")
 	}
 	static class UBattlePassPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassPreview_C>();
 	}
 };
-static_assert(alignof(UBattlePassPreview_C) == 0x000008, "Wrong alignment on UBattlePassPreview_C");
-static_assert(sizeof(UBattlePassPreview_C) == 0x000528, "Wrong size on UBattlePassPreview_C");
-static_assert(offsetof(UBattlePassPreview_C, UberGraphFrame) == 0x0003C8, "Member 'UBattlePassPreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, DisplaySpecialLockString) == 0x0003D0, "Member 'UBattlePassPreview_C::DisplaySpecialLockString' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, ScreenIntro) == 0x0003D8, "Member 'UBattlePassPreview_C::ScreenIntro' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, ScreenIntro_OLD) == 0x0003E0, "Member 'UBattlePassPreview_C::ScreenIntro_OLD' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, RevealSeasonItemRewardIcon) == 0x0003E8, "Member 'UBattlePassPreview_C::RevealSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HideSeasonItemRewardIcon) == 0x0003F0, "Member 'UBattlePassPreview_C::HideSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, CycleSeasonItemRewardIcon) == 0x0003F8, "Member 'UBattlePassPreview_C::CycleSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, AdditionalRewardsListContainer) == 0x000400, "Member 'UBattlePassPreview_C::AdditionalRewardsListContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, AlsoEarnedSwitcher) == 0x000408, "Member 'UBattlePassPreview_C::AlsoEarnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, AlterEgoUnlockRichText) == 0x000410, "Member 'UBattlePassPreview_C::AlterEgoUnlockRichText' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, AnnualPassAccountFlair) == 0x000418, "Member 'UBattlePassPreview_C::AnnualPassAccountFlair' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, AthenaSeasonItemRewardIcon) == 0x000420, "Member 'UBattlePassPreview_C::AthenaSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, BottomAreaBacking) == 0x000428, "Member 'UBattlePassPreview_C::BottomAreaBacking' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, BottomAreaTris) == 0x000430, "Member 'UBattlePassPreview_C::BottomAreaTris' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, BottomContentArea) == 0x000438, "Member 'UBattlePassPreview_C::BottomContentArea' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, BottomLine) == 0x000440, "Member 'UBattlePassPreview_C::BottomLine' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, BpIcon) == 0x000448, "Member 'UBattlePassPreview_C::BpIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Button_PurchaseBattlePass_OLD) == 0x000450, "Member 'UBattlePassPreview_C::Button_PurchaseBattlePass_OLD' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, CharacterSlices) == 0x000458, "Member 'UBattlePassPreview_C::CharacterSlices' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Image_74) == 0x000460, "Member 'UBattlePassPreview_C::Image_74' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Past100Text) == 0x000468, "Member 'UBattlePassPreview_C::Past100Text' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, RotatingRewardVBox) == 0x000470, "Member 'UBattlePassPreview_C::RotatingRewardVBox' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, SafeZone_2) == 0x000478, "Member 'UBattlePassPreview_C::SafeZone_2' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_Chapter) == 0x000480, "Member 'UBattlePassPreview_C::Text_Chapter' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_Characters_Earned) == 0x000488, "Member 'UBattlePassPreview_C::Text_Characters_Earned' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_Other_Earned) == 0x000490, "Member 'UBattlePassPreview_C::Text_Other_Earned' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_PaysForSelf) == 0x000498, "Member 'UBattlePassPreview_C::Text_PaysForSelf' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_RotatingItemName) == 0x0004A0, "Member 'UBattlePassPreview_C::Text_RotatingItemName' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_RotatingLevel) == 0x0004A8, "Member 'UBattlePassPreview_C::Text_RotatingLevel' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_Season) == 0x0004B0, "Member 'UBattlePassPreview_C::Text_Season' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Text_VBucks_Earned) == 0x0004B8, "Member 'UBattlePassPreview_C::Text_VBucks_Earned' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, TopLine) == 0x0004C0, "Member 'UBattlePassPreview_C::TopLine' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, Underline) == 0x0004C8, "Member 'UBattlePassPreview_C::Underline' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, UpsellTag) == 0x0004D0, "Member 'UBattlePassPreview_C::UpsellTag' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_2) == 0x0004D8, "Member 'UBattlePassPreview_C::HB_Slot_2' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_1) == 0x0004E0, "Member 'UBattlePassPreview_C::HB_Slot_1' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_3) == 0x0004E8, "Member 'UBattlePassPreview_C::HB_Slot_3' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_SLOT_4) == 0x0004F0, "Member 'UBattlePassPreview_C::HB_SLOT_4' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_5) == 0x0004F8, "Member 'UBattlePassPreview_C::HB_Slot_5' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_6) == 0x000500, "Member 'UBattlePassPreview_C::HB_Slot_6' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_7) == 0x000508, "Member 'UBattlePassPreview_C::HB_Slot_7' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, HB_Slot_8) == 0x000510, "Member 'UBattlePassPreview_C::HB_Slot_8' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, NextCycleUpsellReward) == 0x000518, "Member 'UBattlePassPreview_C::NextCycleUpsellReward' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, UpsellIconVisible) == 0x000520, "Member 'UBattlePassPreview_C::UpsellIconVisible' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, NextCycle_ReadyToUnlock) == 0x000521, "Member 'UBattlePassPreview_C::NextCycle_ReadyToUnlock' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_C, NextCycle_LevelUnlocked) == 0x000524, "Member 'UBattlePassPreview_C::NextCycle_LevelUnlocked' has a wrong offset!");
 
 }
 

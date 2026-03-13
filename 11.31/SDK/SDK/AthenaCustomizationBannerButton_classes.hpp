@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaCustomizationBannerButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaCustomizationBannerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaCustomizationBannerButton_C")
 	}
 	static class UAthenaCustomizationBannerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaCustomizationBannerButton_C>();
 	}
 };
-static_assert(alignof(UAthenaCustomizationBannerButton_C) == 0x000008, "Wrong alignment on UAthenaCustomizationBannerButton_C");
-static_assert(sizeof(UAthenaCustomizationBannerButton_C) == 0x000B88, "Wrong size on UAthenaCustomizationBannerButton_C");
-static_assert(offsetof(UAthenaCustomizationBannerButton_C, UberGraphFrame) == 0x000B70, "Member 'UAthenaCustomizationBannerButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationBannerButton_C, NormalBangWrapper) == 0x000B78, "Member 'UAthenaCustomizationBannerButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationBannerButton_C, PlayerBanner) == 0x000B80, "Member 'UAthenaCustomizationBannerButton_C::PlayerBanner' has a wrong offset!");
 
 }
 

@@ -41,20 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatNumericTextBlock_C">();
+		BP_STATIC_CLASS_IMPL("StatNumericTextBlock_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatNumericTextBlock_C")
 	}
 	static class UStatNumericTextBlock_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatNumericTextBlock_C>();
 	}
 };
-static_assert(alignof(UStatNumericTextBlock_C) == 0x000008, "Wrong alignment on UStatNumericTextBlock_C");
-static_assert(sizeof(UStatNumericTextBlock_C) == 0x000280, "Wrong size on UStatNumericTextBlock_C");
-static_assert(offsetof(UStatNumericTextBlock_C, UberGraphFrame) == 0x000258, "Member 'UStatNumericTextBlock_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, ComparisonArrowImage) == 0x000260, "Member 'UStatNumericTextBlock_C::ComparisonArrowImage' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, NumericText) == 0x000268, "Member 'UStatNumericTextBlock_C::NumericText' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, Buff_State) == 0x000270, "Member 'UStatNumericTextBlock_C::Buff_State' has a wrong offset!");
-static_assert(offsetof(UStatNumericTextBlock_C, Numeric_Text_Style) == 0x000278, "Member 'UStatNumericTextBlock_C::Numeric_Text_Style' has a wrong offset!");
 
 }
 

@@ -23,11 +23,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena) == 0x000004, "Wrong alignment on B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
-static_assert(sizeof(B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena) == 0x000008, "Wrong size on B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena");
-static_assert(offsetof(B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena, EntryPoint) == 0x000000, "Member 'B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'B_FloppingRabbit_Weap_Athena_C_ExecuteUbergraph_B_FloppingRabbit_Weap_Athena::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 }
 

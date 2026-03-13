@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Squad_C">();
+		BP_STATIC_CLASS_IMPL("Squad_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Squad_C")
 	}
 	static class USquad_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquad_C>();
 	}
 };
-static_assert(alignof(USquad_C) == 0x000008, "Wrong alignment on USquad_C");
-static_assert(sizeof(USquad_C) == 0x0002E0, "Wrong size on USquad_C");
-static_assert(offsetof(USquad_C, UberGraphFrame) == 0x0002B8, "Member 'USquad_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquad_C, DarkenBorder) == 0x0002C0, "Member 'USquad_C::DarkenBorder' has a wrong offset!");
-static_assert(offsetof(USquad_C, EntryLockSwitcher) == 0x0002C8, "Member 'USquad_C::EntryLockSwitcher' has a wrong offset!");
-static_assert(offsetof(USquad_C, SquadLogo) == 0x0002D0, "Member 'USquad_C::SquadLogo' has a wrong offset!");
-static_assert(offsetof(USquad_C, SquadRibbon) == 0x0002D8, "Member 'USquad_C::SquadRibbon' has a wrong offset!");
 
 }
 

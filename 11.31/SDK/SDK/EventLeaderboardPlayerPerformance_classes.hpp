@@ -38,22 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardPlayerPerformance_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardPlayerPerformance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardPlayerPerformance_C")
 	}
 	static class UEventLeaderboardPlayerPerformance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardPlayerPerformance_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardPlayerPerformance_C) == 0x000008, "Wrong alignment on UEventLeaderboardPlayerPerformance_C");
-static_assert(sizeof(UEventLeaderboardPlayerPerformance_C) == 0x000648, "Wrong size on UEventLeaderboardPlayerPerformance_C");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, UberGraphFrame) == 0x000610, "Member 'UEventLeaderboardPlayerPerformance_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, Button_MyPosition) == 0x000618, "Member 'UEventLeaderboardPlayerPerformance_C::Button_MyPosition' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, CommonTextBlock_0) == 0x000620, "Member 'UEventLeaderboardPlayerPerformance_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, CommonTextBlock_1) == 0x000628, "Member 'UEventLeaderboardPlayerPerformance_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, HorizontalBox_Container) == 0x000630, "Member 'UEventLeaderboardPlayerPerformance_C::HorizontalBox_Container' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, Text_PlayerPerformance) == 0x000638, "Member 'UEventLeaderboardPlayerPerformance_C::Text_PlayerPerformance' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardPlayerPerformance_C, Text_PlayerScore) == 0x000640, "Member 'UEventLeaderboardPlayerPerformance_C::Text_PlayerScore' has a wrong offset!");
 
 }
 

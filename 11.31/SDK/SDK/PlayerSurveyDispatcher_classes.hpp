@@ -35,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyDispatcher_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyDispatcher_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyDispatcher_C")
 	}
 	static class UPlayerSurveyDispatcher_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyDispatcher_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyDispatcher_C) == 0x000008, "Wrong alignment on UPlayerSurveyDispatcher_C");
-static_assert(sizeof(UPlayerSurveyDispatcher_C) == 0x000070, "Wrong size on UPlayerSurveyDispatcher_C");
-static_assert(offsetof(UPlayerSurveyDispatcher_C, UberGraphFrame) == 0x000060, "Member 'UPlayerSurveyDispatcher_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyDispatcher_C, DoIntroOnActivate) == 0x000068, "Member 'UPlayerSurveyDispatcher_C::DoIntroOnActivate' has a wrong offset!");
 
 }
 

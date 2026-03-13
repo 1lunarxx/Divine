@@ -46,26 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"W_AvailableSparks_C">();
+		BP_STATIC_CLASS_IMPL("W_AvailableSparks_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"W_AvailableSparks_C")
 	}
 	static class UW_AvailableSparks_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UW_AvailableSparks_C>();
 	}
 };
-static_assert(alignof(UW_AvailableSparks_C) == 0x000008, "Wrong alignment on UW_AvailableSparks_C");
-static_assert(sizeof(UW_AvailableSparks_C) == 0x0002F0, "Wrong size on UW_AvailableSparks_C");
-static_assert(offsetof(UW_AvailableSparks_C, UberGraphFrame) == 0x000298, "Member 'UW_AvailableSparks_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, Idle) == 0x0002A0, "Member 'UW_AvailableSparks_C::Idle' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, idle_to_LastDayMessage) == 0x0002A8, "Member 'UW_AvailableSparks_C::idle_to_LastDayMessage' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, idle_to_countdown) == 0x0002B0, "Member 'UW_AvailableSparks_C::idle_to_countdown' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, decrement) == 0x0002B8, "Member 'UW_AvailableSparks_C::decrement' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, Increment) == 0x0002C0, "Member 'UW_AvailableSparks_C::Increment' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, Com_LikeCounter_BG) == 0x0002C8, "Member 'UW_AvailableSparks_C::Com_LikeCounter_BG' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, Com_LikeCounter_BG_5) == 0x0002D0, "Member 'UW_AvailableSparks_C::Com_LikeCounter_BG_5' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, Com_LikeCounter_BG_6) == 0x0002D8, "Member 'UW_AvailableSparks_C::Com_LikeCounter_BG_6' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, flameInCounter) == 0x0002E0, "Member 'UW_AvailableSparks_C::flameInCounter' has a wrong offset!");
-static_assert(offsetof(UW_AvailableSparks_C, flameInCounter_2) == 0x0002E8, "Member 'UW_AvailableSparks_C::flameInCounter_2' has a wrong offset!");
 
 }
 

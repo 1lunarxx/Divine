@@ -27,11 +27,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton) == 0x000008, "Wrong alignment on SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton");
-static_assert(sizeof(SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton) == 0x000018, "Wrong size on SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton, EntryPoint) == 0x000000, "Member 'SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'SocialPanel_FriendSearchButton_C_ExecuteUbergraph_SocialPanel_FriendSearchButton::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 // Function SocialPanel_FriendSearchButton.SocialPanel_FriendSearchButton_C.On_ClickCapture_MouseButtonDown_0
 // 0x0218 (0x0218 - 0x0000)
@@ -43,12 +38,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 };
-static_assert(alignof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0) == 0x000008, "Wrong alignment on SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0");
-static_assert(sizeof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0) == 0x000218, "Wrong size on SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0, MyGeometry) == 0x000000, "Member 'SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0, MouseEvent) == 0x000038, "Member 'SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0::MouseEvent' has a wrong offset!");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0, ReturnValue) == 0x0000A8, "Member 'SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'SocialPanel_FriendSearchButton_C_On_ClickCapture_MouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 }
 

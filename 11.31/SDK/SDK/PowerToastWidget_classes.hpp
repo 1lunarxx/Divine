@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerToastWidget_C">();
+		BP_STATIC_CLASS_IMPL("PowerToastWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerToastWidget_C")
 	}
 	static class UPowerToastWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerToastWidget_C>();
 	}
 };
-static_assert(alignof(UPowerToastWidget_C) == 0x000008, "Wrong alignment on UPowerToastWidget_C");
-static_assert(sizeof(UPowerToastWidget_C) == 0x0002F0, "Wrong size on UPowerToastWidget_C");
-static_assert(offsetof(UPowerToastWidget_C, UberGraphFrame) == 0x000298, "Member 'UPowerToastWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, LookAtMe) == 0x0002A0, "Member 'UPowerToastWidget_C::LookAtMe' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, Outro) == 0x0002A8, "Member 'UPowerToastWidget_C::Outro' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, Intro) == 0x0002B0, "Member 'UPowerToastWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, Image_2) == 0x0002B8, "Member 'UPowerToastWidget_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, Image_Power) == 0x0002C0, "Member 'UPowerToastWidget_C::Image_Power' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, LineSeparator) == 0x0002C8, "Member 'UPowerToastWidget_C::LineSeparator' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, PowerIconGlow) == 0x0002D0, "Member 'UPowerToastWidget_C::PowerIconGlow' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, ToastNotification) == 0x0002D8, "Member 'UPowerToastWidget_C::ToastNotification' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, AnimationFinishedDelay) == 0x0002E0, "Member 'UPowerToastWidget_C::AnimationFinishedDelay' has a wrong offset!");
-static_assert(offsetof(UPowerToastWidget_C, AnimationDelayTimer) == 0x0002E8, "Member 'UPowerToastWidget_C::AnimationDelayTimer' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UAthena_PlayerCameraModeTargetingPistol_C : public UAthena_PlayerCameraMod
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeTargetingPistol_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeTargetingPistol_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeTargetingPistol_C")
 	}
 	static class UAthena_PlayerCameraModeTargetingPistol_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeTargetingPistol_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeTargetingPistol_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeTargetingPistol_C");
-static_assert(sizeof(UAthena_PlayerCameraModeTargetingPistol_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraModeTargetingPistol_C");
 
 }
 

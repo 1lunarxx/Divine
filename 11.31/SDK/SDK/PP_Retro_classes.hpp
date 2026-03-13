@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PP_Retro_C">();
+		BP_STATIC_CLASS_IMPL("PP_Retro_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PP_Retro_C")
 	}
 	static class APP_Retro_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APP_Retro_C>();
 	}
 };
-static_assert(alignof(APP_Retro_C) == 0x000008, "Wrong alignment on APP_Retro_C");
-static_assert(sizeof(APP_Retro_C) == 0x000238, "Wrong size on APP_Retro_C");
-static_assert(offsetof(APP_Retro_C, UberGraphFrame) == 0x000218, "Member 'APP_Retro_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APP_Retro_C, PostProcess_High) == 0x000220, "Member 'APP_Retro_C::PostProcess_High' has a wrong offset!");
-static_assert(offsetof(APP_Retro_C, Box) == 0x000228, "Member 'APP_Retro_C::Box' has a wrong offset!");
-static_assert(offsetof(APP_Retro_C, DefaultSceneRoot) == 0x000230, "Member 'APP_Retro_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

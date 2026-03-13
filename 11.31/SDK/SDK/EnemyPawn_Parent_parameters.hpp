@@ -319,247 +319,6 @@ public:
 	struct FVector                                CallFunc_K2_GetComponentLocation_ReturnValue_4;    // 0x0994(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ShouldApplyBuildingHitEffect_ReturnValue; // 0x09A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
-static_assert(sizeof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent) == 0x0009B0, "Wrong size on EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, EntryPoint) == 0x000000, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_bool_Variable) == 0x000004, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_1) == 0x000010, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_1) == 0x000024, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetTimer_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_2) == 0x000038, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_2) == 0x00003C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_struct_Variable) == 0x000040, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_SwitchEnum_CmpSuccess) == 0x000078, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_1) == 0x000079, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00007C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_2) == 0x000088, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00008C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BooleanAND_ReturnValue) == 0x000114, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_3) == 0x000118, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x00011C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_3) == 0x000128, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_1) == 0x00012C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_bool_Has_Been_Initd_Variable) == 0x000138, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_object_Variable) == 0x000140, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000150, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetSocketLocation_ReturnValue) == 0x000158, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Damage_2) == 0x000164, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Damage_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_DamageTags_2) == 0x000168, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_DamageTags_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Momentum_2) == 0x000188, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Momentum_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_HitInfo_2) == 0x000194, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_HitInfo_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_InstigatedBy_1) == 0x000220, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_InstigatedBy_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_DamageCauser_1) == 0x000228, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_DamageCauser_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_EffectContext_2) == 0x000230, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_EffectContext_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetDamageZone_ReturnValue) == 0x000248, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetDamageZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_bBlockingHit) == 0x000249, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_bInitialOverlap) == 0x00024A, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_Time) == 0x00024C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_Distance) == 0x000250, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_Location) == 0x000254, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_ImpactPoint) == 0x000260, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_Normal) == 0x00026C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_ImpactNormal) == 0x000278, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_PhysMat) == 0x000288, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_HitActor) == 0x000290, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_HitComponent) == 0x000298, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_HitBoneName) == 0x0002A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_HitItem) == 0x0002A8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_FaceIndex) == 0x0002AC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_TraceStart) == 0x0002B0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakHitResult_TraceEnd) == 0x0002BC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_SwitchEnum_CmpSuccess_1) == 0x0002C8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_EnemyDeathVisuals_HQ) == 0x0002C9, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_EnemyDeathVisuals_HQ' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CustomEvent_RiftLocationWS_2) == 0x0002CC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CustomEvent_RiftLocationWS_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_3) == 0x0002D8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CustomEvent_RiftLocationWS_1) == 0x0002DC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CustomEvent_RiftLocationWS_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_X) == 0x0002E8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_Y) == 0x0002EC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_Z) == 0x0002F0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_bool_IsClosed_Variable) == 0x0002F4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002F8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_4) == 0x0002FC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_X_1) == 0x000300, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_Y_1) == 0x000304, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakVector_Z_1) == 0x000308, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatInRange_ReturnValue) == 0x00030C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000310, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x000314, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_MakeVector_ReturnValue) == 0x000318, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CustomEvent_RiftLocationWS) == 0x000324, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CustomEvent_RiftLocationWS' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000330, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x00033C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_VectorVector_ReturnValue) == 0x000340, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentLocation_ReturnValue_2) == 0x00034C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_4) == 0x000358, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_4) == 0x00035C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnSoundAttached_ReturnValue_1) == 0x000360, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnSoundAttached_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_5) == 0x000368, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakTransform_Location) == 0x00036C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakTransform_Rotation) == 0x000378, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BreakTransform_Scale) == 0x000384, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000390, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_AsBuilding_Rift) == 0x000398, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_AsBuilding_Rift' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_bSuccess) == 0x0003A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_EqualEqual_VectorVector_ReturnValue) == 0x0003A1, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_EqualEqual_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0003A4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_VectorVector_ReturnValue_1) == 0x0003B0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_MakeTransform_ReturnValue) == 0x0003C0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_6) == 0x0003F0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsDedicatedServer_ReturnValue) == 0x0003F1, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_7) == 0x0003F2, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x0003F4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_float_Variable) == 0x000400, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatFromStream_ReturnValue) == 0x000404, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatFromStream_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_PickColorFromAnArrayOfColors_Color) == 0x000408, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_PickColorFromAnArrayOfColors_Color' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_2) == 0x000418, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_PickColorFromAnArrayOfColors_Color_1) == 0x000424, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_PickColorFromAnArrayOfColors_Color_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_PickColorFromAnArrayOfColors_Color_2) == 0x000434, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_PickColorFromAnArrayOfColors_Color_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_3) == 0x000444, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_4) == 0x000450, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_PickColorFromAnArrayOfColors_Color_3) == 0x00045C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_PickColorFromAnArrayOfColors_Color_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_5) == 0x00046C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000478, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatInRange_ReturnValue_3) == 0x00047C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatInRange_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetFloatValue_ReturnValue) == 0x000480, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetFloatValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000484, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000488, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000490, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_8) == 0x000494, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000498, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_FloatFloat_ReturnValue) == 0x00049C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetCameraLocation_ReturnValue) == 0x0004A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_MakeVector_ReturnValue_1) == 0x0004AC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_6) == 0x0004B8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_7) == 0x0004C4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_8) == 0x0004D0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_9) == 0x0004DC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_9) == 0x0004E8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetBoneIndex_ReturnValue) == 0x0004EC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetBoneIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetRefPosePosition_ReturnValue) == 0x0004F0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetRefPosePosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetSocketLocation_ReturnValue_1) == 0x0004FC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetSocketLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnEmitterAtLocation_ReturnValue_1) == 0x000508, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnEmitterAtLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000510, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Not_PreBool_ReturnValue) == 0x000511, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Not_PreBool_ReturnValue_1) == 0x000512, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Damage_1) == 0x000514, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Damage_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_DamageTags_1) == 0x000518, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_DamageTags_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Momentum_1) == 0x000538, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Momentum_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_HitInfo_1) == 0x000544, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_HitInfo_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_InstigatedBy) == 0x0005D0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_DamageCauser) == 0x0005D8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_EffectContext_1) == 0x0005E0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_EffectContext_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BooleanAND_ReturnValue_1) == 0x0005F8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_AsFort_Projectile_Base) == 0x000600, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_AsFort_Projectile_Base' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_bSuccess_1) == 0x000608, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_AsFort_Weapon) == 0x000610, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_AsFort_Weapon' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_DynamicCast_bSuccess_2) == 0x000618, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetDamageZone_ReturnValue_1) == 0x000619, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetDamageZone_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_SwitchEnum_CmpSuccess_2) == 0x00061A, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetTimer_ReturnValue_1) == 0x000620, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetTimer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_10) == 0x000628, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_5) == 0x00062C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_5) == 0x000630, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_struct_Variable_1) == 0x000634, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000644, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_struct_Variable_2) == 0x000648, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsDedicatedServer_ReturnValue_2) == 0x000658, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsDedicatedServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_11) == 0x000659, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_11' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item) == 0x000660, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue) == 0x000668, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_Value) == 0x000670, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_ReturnValue) == 0x000678, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue) == 0x00067C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000680, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_12) == 0x000681, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_12' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_1) == 0x000684, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsDedicatedServer_ReturnValue_3) == 0x000688, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsDedicatedServer_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x00068C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000690, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000698, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_6) == 0x0006A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_6) == 0x0006A4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_1) == 0x0006A8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_2) == 0x0006B0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_2) == 0x0006B4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_13) == 0x0006B8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_13' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0006B9, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_bool_Variable_1) == 0x0006BA, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_14) == 0x0006BB, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_14' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Select_Default) == 0x0006BC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Not_PreBool_ReturnValue_2) == 0x0006CC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Conv_LinearColorToVector_ReturnValue_10) == 0x0006D0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Conv_LinearColorToVector_ReturnValue_10' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_2) == 0x0006E0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CreateDelegate_OutputDelegate_1) == 0x0006E8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_15) == 0x0006F8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_15' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_3) == 0x0006FC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_3) == 0x000700, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x000704, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetSocketLocation_ReturnValue_2) == 0x000708, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetSocketLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnEmitterAtLocation_ReturnValue_2) == 0x000718, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnEmitterAtLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_RandomFloatInRange_ReturnValue_4) == 0x000720, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_RandomFloatInRange_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_GetSocketLocation_ReturnValue_3) == 0x000724, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_GetSocketLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LineTraceSingle_OutHit) == 0x000730, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LineTraceSingle_ReturnValue) == 0x0007B8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_WeaponDataHasAnyMatchingGameplayTags_ReturnValue) == 0x0007B9, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_WeaponDataHasAnyMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_SpawnSoundAttached_ReturnValue_2) == 0x0007C0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_SpawnSoundAttached_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Not_PreBool_ReturnValue_3) == 0x0007C8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Not_PreBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0007C9, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_BooleanAND_ReturnValue_2) == 0x0007CA, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentLocation_ReturnValue_3) == 0x0007CC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0007D8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_VSize_ReturnValue) == 0x0007E4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CustomEvent_Delay_Amount) == 0x0007E8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CustomEvent_Delay_Amount' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0007F0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_3) == 0x0007F8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_4) == 0x000800, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_4) == 0x000804, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_16) == 0x000808, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_16' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000809, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_bool_Option_B___If_false__use_Option_A_Variable) == 0x00080A, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_bool_Option_B___If_false__use_Option_A_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Select_Default_1) == 0x00080C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_4) == 0x000818, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_5) == 0x000820, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_Value_1) == 0x000828, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_ReturnValue_1) == 0x000830, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_5) == 0x000834, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_4) == 0x000838, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_17) == 0x000839, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_17' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, Temp_int_Variable_7) == 0x00083C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_5) == 0x000840, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_Value_2) == 0x000848, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_Value_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_ReturnValue_2) == 0x000850, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_5) == 0x000851, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_18) == 0x000852, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_18' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_IntInt_ReturnValue_7) == 0x000854, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsDedicatedServer_ReturnValue_4) == 0x000858, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsDedicatedServer_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_6) == 0x000860, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_Value_3) == 0x000868, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_Value_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Map_Find_ReturnValue_3) == 0x000870, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Map_Find_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_6) == 0x000874, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_6) == 0x000878, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_6) == 0x00087C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_19) == 0x00087D, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_19' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_CreateDelegate_OutputDelegate_2) == 0x000880, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Get_Item_7) == 0x000890, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_IsValid_ReturnValue_20) == 0x000898, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_IsValid_ReturnValue_20' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Array_Length_ReturnValue_7) == 0x00089C, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Array_Length_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Subtract_IntInt_ReturnValue_7) == 0x0008A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Subtract_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_LessEqual_IntInt_ReturnValue_7) == 0x0008A4, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_LessEqual_IntInt_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x0008A8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0008B0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Damage) == 0x0008B8, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_DamageTags) == 0x0008C0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_Momentum) == 0x0008E0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_HitInfo) == 0x0008EC, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_EffectContext) == 0x000978, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_EffectContext' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, K2Node_Event_bPlayerPlaced) == 0x000990, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::K2Node_Event_bPlayerPlaced' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_K2_GetComponentLocation_ReturnValue_4) == 0x000994, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_K2_GetComponentLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent, CallFunc_ShouldApplyBuildingHitEffect_ReturnValue) == 0x0009A0, "Member 'EnemyPawn_Parent_C_ExecuteUbergraph_EnemyPawn_Parent::CallFunc_ShouldApplyBuildingHitEffect_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnBuildingHitPlayEffects
 // 0x00E0 (0x00E0 - 0x0000)
@@ -575,14 +334,6 @@ public:
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00C0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	bool                                          bPlayerPlaced;                                     // 0x00D8(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OnBuildingHitPlayEffects");
-static_assert(sizeof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects) == 0x0000E0, "Wrong size on EnemyPawn_Parent_C_OnBuildingHitPlayEffects");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, Damage) == 0x000000, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, DamageTags) == 0x000008, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, Momentum) == 0x000028, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, HitInfo) == 0x000034, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, EffectContext) == 0x0000C0, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::EffectContext' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnBuildingHitPlayEffects, bPlayerPlaced) == 0x0000D8, "Member 'EnemyPawn_Parent_C_OnBuildingHitPlayEffects::bPlayerPlaced' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialDelay
 // 0x0004 (0x0004 - 0x0000)
@@ -591,9 +342,6 @@ struct EnemyPawn_Parent_C_RestorePreviousMaterialDelay final
 public:
 	float                                         Delay_Amount;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_RestorePreviousMaterialDelay) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_RestorePreviousMaterialDelay");
-static_assert(sizeof(EnemyPawn_Parent_C_RestorePreviousMaterialDelay) == 0x000004, "Wrong size on EnemyPawn_Parent_C_RestorePreviousMaterialDelay");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialDelay, Delay_Amount) == 0x000000, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialDelay::Delay_Amount' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnDamagePlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -610,15 +358,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OnDamagePlayEffects");
-static_assert(sizeof(EnemyPawn_Parent_C_OnDamagePlayEffects) == 0x0000E8, "Wrong size on EnemyPawn_Parent_C_OnDamagePlayEffects");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, Damage) == 0x000000, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, DamageTags) == 0x000008, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, Momentum) == 0x000028, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, HitInfo) == 0x000034, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, InstigatedBy) == 0x0000C0, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, DamageCauser) == 0x0000C8, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDamagePlayEffects, EffectContext) == 0x0000D0, "Member 'EnemyPawn_Parent_C_OnDamagePlayEffects::EffectContext' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DespawnEnemy
 // 0x000C (0x000C - 0x0000)
@@ -627,9 +366,6 @@ struct EnemyPawn_Parent_C_DespawnEnemy final
 public:
 	struct FVector                                RiftLocationWS;                                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DespawnEnemy) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_DespawnEnemy");
-static_assert(sizeof(EnemyPawn_Parent_C_DespawnEnemy) == 0x00000C, "Wrong size on EnemyPawn_Parent_C_DespawnEnemy");
-static_assert(offsetof(EnemyPawn_Parent_C_DespawnEnemy, RiftLocationWS) == 0x000000, "Member 'EnemyPawn_Parent_C_DespawnEnemy::RiftLocationWS' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ManualEnemySpawnIn
 // 0x000C (0x000C - 0x0000)
@@ -638,9 +374,6 @@ struct EnemyPawn_Parent_C_ManualEnemySpawnIn final
 public:
 	struct FVector                                RiftLocationWS;                                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ManualEnemySpawnIn) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_ManualEnemySpawnIn");
-static_assert(sizeof(EnemyPawn_Parent_C_ManualEnemySpawnIn) == 0x00000C, "Wrong size on EnemyPawn_Parent_C_ManualEnemySpawnIn");
-static_assert(offsetof(EnemyPawn_Parent_C_ManualEnemySpawnIn, RiftLocationWS) == 0x000000, "Member 'EnemyPawn_Parent_C_ManualEnemySpawnIn::RiftLocationWS' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ManualDespawnEnemy
 // 0x000C (0x000C - 0x0000)
@@ -649,9 +382,6 @@ struct EnemyPawn_Parent_C_ManualDespawnEnemy final
 public:
 	struct FVector                                RiftLocationWS;                                    // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ManualDespawnEnemy) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_ManualDespawnEnemy");
-static_assert(sizeof(EnemyPawn_Parent_C_ManualDespawnEnemy) == 0x00000C, "Wrong size on EnemyPawn_Parent_C_ManualDespawnEnemy");
-static_assert(offsetof(EnemyPawn_Parent_C_ManualDespawnEnemy, RiftLocationWS) == 0x000000, "Member 'EnemyPawn_Parent_C_ManualDespawnEnemy::RiftLocationWS' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OnDeathPlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -668,15 +398,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OnDeathPlayEffects");
-static_assert(sizeof(EnemyPawn_Parent_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on EnemyPawn_Parent_C_OnDeathPlayEffects");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, HitInfo) == 0x000034, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'EnemyPawn_Parent_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
@@ -687,10 +408,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetScalarParameterValue_ReturnValue;      // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_UserConstructionScript) == 0x000004, "Wrong alignment on EnemyPawn_Parent_C_UserConstructionScript");
-static_assert(sizeof(EnemyPawn_Parent_C_UserConstructionScript) == 0x000008, "Wrong size on EnemyPawn_Parent_C_UserConstructionScript");
-static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'EnemyPawn_Parent_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_UserConstructionScript, CallFunc_GetScalarParameterValue_ReturnValue) == 0x000004, "Member 'EnemyPawn_Parent_C_UserConstructionScript::CallFunc_GetScalarParameterValue_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.EnemyDeathVisuals
 // 0x0530 (0x0530 - 0x0000)
@@ -752,52 +469,6 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference_1; // 0x0520(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0528(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_EnemyDeathVisuals");
-static_assert(sizeof(EnemyPawn_Parent_C_EnemyDeathVisuals) == 0x000530, "Wrong size on EnemyPawn_Parent_C_EnemyDeathVisuals");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, HQ) == 0x000000, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::HQ' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_Origin) == 0x000004, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_BoxExtent) == 0x000010, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_SphereRadius) == 0x00001C, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam) == 0x000020, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000A0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_BreakVector_X) == 0x0000A4, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_BreakVector_Y) == 0x0000A8, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_BreakVector_Z) == 0x0000AC, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_1) == 0x0000B0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000130, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_2) == 0x000140, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeArray_Array) == 0x0001C0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_IsDedicatedServer_ReturnValue) == 0x0001D0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0001D4, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetGameUserSettings_ReturnValue) == 0x0001E0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0001E8, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetVisualEffectQuality_ReturnValue) == 0x0001F0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetVisualEffectQuality_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001F4, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_SwitchInteger_CmpSuccess) == 0x0001F5, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_TransformHitLocationWorldSpaceToPreskinnedLocalSpace_PreskinnedLS) == 0x0001F8, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_TransformHitLocationWorldSpaceToPreskinnedLocalSpace_PreskinnedLS' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_3) == 0x000210, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_4) == 0x000290, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_5) == 0x000310, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeArray_Array_1) == 0x000390, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference) == 0x0003A0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_6) == 0x0003B0, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_6' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_IsValid_ReturnValue) == 0x000430, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_IsValid_ReturnValue_1) == 0x000431, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_Origin_1) == 0x000434, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_Origin_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_BoxExtent_1) == 0x000440, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_BoxExtent_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetComponentBounds_SphereRadius_1) == 0x00044C, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetComponentBounds_SphereRadius_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_GetSocketLocation_ReturnValue) == 0x000450, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00045C, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000460, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00046C, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_VSize_ReturnValue) == 0x000470, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000474, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeStruct_ParticleSysParam_7) == 0x000480, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeStruct_ParticleSysParam_7' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Lerp_ReturnValue) == 0x000500, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, K2Node_MakeArray_Array_2) == 0x000508, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000518, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference_1) == 0x000520, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_EnemyDeathVisuals, CallFunc_IsValid_ReturnValue_2) == 0x000528, "Member 'EnemyPawn_Parent_C_EnemyDeathVisuals::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PickColorFromAnArrayOfColors
 // 0x0038 (0x0038 - 0x0000)
@@ -810,13 +481,6 @@ public:
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Array_Get_Item;                           // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
-static_assert(sizeof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors) == 0x000038, "Wrong size on EnemyPawn_Parent_C_PickColorFromAnArrayOfColors");
-static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, ArrayOfColors) == 0x000000, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::ArrayOfColors' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, Color) == 0x000010, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::Color' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc_Array_LastIndex_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc_Percent_IntInt_ReturnValue) == 0x000024, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PickColorFromAnArrayOfColors, CallFunc_Array_Get_Item) == 0x000028, "Member 'EnemyPawn_Parent_C_PickColorFromAnArrayOfColors::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDs
 // 0x0098 (0x0098 - 0x0000)
@@ -863,39 +527,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x0093(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs");
-static_assert(sizeof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs) == 0x000098, "Wrong size on EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Parameter_Name) == 0x000000, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Parameter_Name' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Vector_Value) == 0x000008, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Vector_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Propagate_to_Auxiliary_Meshes) == 0x000014, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Propagate_to_Auxiliary_Meshes' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable) == 0x000028, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable_1) == 0x000034, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue_1) == 0x000038, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue) == 0x00003C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Greater_IntInt_ReturnValue) == 0x00004C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_BooleanAND_ReturnValue) == 0x00004D, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item) == 0x000050, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_2) == 0x000058, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, K2Node_DynamicCast_AsMesh_Component) == 0x000060, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue_1) == 0x000069, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_1) == 0x00006A, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_3) == 0x00006C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000070, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable_1) == 0x000074, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_BooleanAND_ReturnValue_1) == 0x000078, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item_1) == 0x000080, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, K2Node_DynamicCast_AsMesh_Component_1) == 0x000088, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::K2Node_DynamicCast_AsMesh_Component_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, K2Node_DynamicCast_bSuccess_1) == 0x000090, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_2) == 0x000091, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_3) == 0x000092, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_4) == 0x000093, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllCharacterMIDs
 // 0x00B8 (0x00B8 - 0x0000)
@@ -952,48 +583,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_5;               // 0x00AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs");
-static_assert(sizeof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs) == 0x0000B8, "Wrong size on EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Parameter_Name) == 0x000000, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Parameter_Name' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Scalar_Value) == 0x000008, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Scalar_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, AlsoModifyOriginalMIDs) == 0x00000C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::AlsoModifyOriginalMIDs' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue) == 0x00000D, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable_1) == 0x000018, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable_2) == 0x00001C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue_2) == 0x000024, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable) == 0x000028, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_1) == 0x00002C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable_1) == 0x000030, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Loop_Counter_Variable_3) == 0x000034, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Add_IntInt_ReturnValue_3) == 0x000038, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable_2) == 0x00003C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, Temp_int_Array_Index_Variable_3) == 0x000040, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_2) == 0x000044, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item) == 0x000048, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item_1) == 0x000050, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_1) == 0x00005C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue) == 0x000060, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue_1) == 0x000061, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item_2) == 0x000068, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_2) == 0x000070, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, K2Node_DynamicCast_AsMesh_Component) == 0x000078, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Greater_IntInt_ReturnValue) == 0x000081, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_3) == 0x000082, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_3) == 0x000084, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue_2) == 0x000088, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_4) == 0x00008C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Get_Item_3) == 0x000090, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Less_IntInt_ReturnValue_3) == 0x000098, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, K2Node_DynamicCast_AsMesh_Component_1) == 0x0000A0, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::K2Node_DynamicCast_AsMesh_Component_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_IsValid_ReturnValue_4) == 0x0000A9, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Array_Length_ReturnValue_5) == 0x0000AC, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Array_Length_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs, CallFunc_Greater_IntInt_ReturnValue_1) == 0x0000B0, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDs::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetActiveElementalParticles
 // 0x0028 (0x0028 - 0x0000)
@@ -1013,17 +602,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetActiveElementalParticles) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetActiveElementalParticles");
-static_assert(sizeof(EnemyPawn_Parent_C_SetActiveElementalParticles) == 0x000028, "Wrong size on EnemyPawn_Parent_C_SetActiveElementalParticles");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, Active) == 0x000000, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::Active' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, Reset) == 0x000001, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::Reset' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, Temp_int_Array_Index_Variable) == 0x000004, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, CallFunc_Array_Get_Item) == 0x000010, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetActiveElementalParticles, CallFunc_Less_IntInt_ReturnValue) == 0x000024, "Member 'EnemyPawn_Parent_C_SetActiveElementalParticles::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.PlayAdditiveHitReacts
 // 0x0028 (0x0028 - 0x0000)
@@ -1036,12 +614,6 @@ public:
 	class FName                                   CallFunc_SetFNameBasedOnHitDirection_NameResult;   // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_PlayLocalAnimMontage_ReturnValue;         // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
-static_assert(sizeof(EnemyPawn_Parent_C_PlayAdditiveHitReacts) == 0x000028, "Wrong size on EnemyPawn_Parent_C_PlayAdditiveHitReacts");
-static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, Hit_Direction) == 0x000000, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::Hit_Direction' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, Anim_Montage) == 0x000010, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::Anim_Montage' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, CallFunc_SetFNameBasedOnHitDirection_NameResult) == 0x000018, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::CallFunc_SetFNameBasedOnHitDirection_NameResult' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_PlayAdditiveHitReacts, CallFunc_PlayLocalAnimMontage_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_PlayAdditiveHitReacts::CallFunc_PlayLocalAnimMontage_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverrideMaterialAndCopyParametersOnCharacterElements
 // 0x0070 (0x0070 - 0x0000)
@@ -1072,24 +644,6 @@ public:
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             CallFunc_GetMaterials_ReturnValue_1;               // 0x0060(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements");
-static_assert(sizeof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements) == 0x000070, "Wrong size on EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, New_Material_To_Apply) == 0x000000, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::New_Material_To_Apply' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_IsDedicatedServer_ReturnValue) == 0x000014, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, Temp_int_Array_Index_Variable) == 0x000018, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Array_Get_Item) == 0x000020, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, K2Node_DynamicCast_AsMesh_Component) == 0x000030, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Less_IntInt_ReturnValue) == 0x000039, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_GetMaterials_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_IsValid_ReturnValue_1) == 0x000050, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Array_Length_ReturnValue_1) == 0x000054, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_Greater_IntInt_ReturnValue) == 0x000058, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements, CallFunc_GetMaterials_ReturnValue_1) == 0x000060, "Member 'EnemyPawn_Parent_C_OverrideMaterialAndCopyParametersOnCharacterElements::CallFunc_GetMaterials_ReturnValue_1' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.OverridePhysicalMaterialOnCharacterMesh
 // 0x0048 (0x0048 - 0x0000)
@@ -1111,19 +665,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh) == 0x000048, "Wrong size on EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, Physical_Material_Override) == 0x000000, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::Physical_Material_Override' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_IsDedicatedServer_ReturnValue) == 0x000009, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_GetPhysicalMaterial_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_GetPhysicalMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_GetMaterials_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh, CallFunc_Less_IntInt_ReturnValue) == 0x000044, "Member 'EnemyPawn_Parent_C_OverridePhysicalMaterialOnCharacterMesh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnParticleSystemOnCharacterMesh
 // 0x0060 (0x0060 - 0x0000)
@@ -1149,24 +690,6 @@ public:
 	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh) == 0x000060, "Wrong size on EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, ParticleSystemTemplate) == 0x000000, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::ParticleSystemTemplate' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, ParticleSystemComponentReferenceVar) == 0x000008, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::ParticleSystemComponentReferenceVar' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AttachPointName) == 0x000010, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AttachPointName' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, Location) == 0x000018, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::Location' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, Rotation) == 0x000024, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::Rotation' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, InstanceParameters) == 0x000030, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::InstanceParameters' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AutoActivate) == 0x000040, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AutoActivate' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AutoDestroy) == 0x000041, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AutoDestroy' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AbsoluteLocation) == 0x000042, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AbsoluteLocation' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AbsoluteRotation) == 0x000043, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AbsoluteRotation' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, AbsoluteScale) == 0x000044, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::AbsoluteScale' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, PSComponentReference) == 0x000048, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::PSComponentReference' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, CallFunc_IsDedicatedServer_ReturnValue) == 0x000050, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, CallFunc_IsValid_ReturnValue_1) == 0x000052, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000058, "Member 'EnemyPawn_Parent_C_SpawnParticleSystemOnCharacterMesh::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousMaterialOnCharacterElements
 // 0x00A0 (0x00A0 - 0x0000)
@@ -1214,41 +737,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_3;               // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements");
-static_assert(sizeof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements) == 0x0000A0, "Wrong size on EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Delay_in_Seconds) == 0x000000, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Delay_in_Seconds' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Array_Index_Variable) == 0x000004, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Array_Index_Variable_1) == 0x000014, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_IsDedicatedServer_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Loop_Counter_Variable_1) == 0x00001C, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Add_IntInt_ReturnValue_1) == 0x000020, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Get_Item) == 0x000028, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Length_ReturnValue_1) == 0x000034, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Loop_Counter_Variable_2) == 0x000038, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Greater_IntInt_ReturnValue) == 0x00003C, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Less_IntInt_ReturnValue) == 0x00003D, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Add_IntInt_ReturnValue_2) == 0x000040, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, Temp_int_Array_Index_Variable_2) == 0x000044, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Get_Item_1) == 0x000048, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, K2Node_DynamicCast_AsMesh_Component) == 0x000050, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_IsValid_ReturnValue) == 0x000059, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_GetMaterials_ReturnValue) == 0x000060, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Get_Item_2) == 0x000070, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Length_ReturnValue_2) == 0x000078, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00007C, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Less_IntInt_ReturnValue_1) == 0x00007D, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_IsValid_ReturnValue_1) == 0x00007E, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Get_Item_3) == 0x000080, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue) == 0x000088, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000090, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_IsValid_ReturnValue_2) == 0x000091, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Array_Length_ReturnValue_3) == 0x000094, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements, CallFunc_Less_IntInt_ReturnValue_2) == 0x000098, "Member 'EnemyPawn_Parent_C_RestorePreviousMaterialOnCharacterElements::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.CreateDuplicateCharacterElements
 // 0x01A0 (0x01A0 - 0x0000)
@@ -1317,57 +805,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue_3;                // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_K2_AttachToComponent_ReturnValue_2;       // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_CreateDuplicateCharacterElements");
-static_assert(sizeof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements) == 0x0001A0, "Wrong size on EnemyPawn_Parent_C_CreateDuplicateCharacterElements");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Material_to_Apply) == 0x000000, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Material_to_Apply' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_struct_Variable) == 0x000010, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_IsDedicatedServer_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_AddComponent_ReturnValue) == 0x000048, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_GetMaterials_ReturnValue) == 0x000058, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_GetMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue) == 0x000068, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Loop_Counter_Variable_1) == 0x000070, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Loop_Counter_Variable_2) == 0x000074, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Add_IntInt_ReturnValue_1) == 0x00007C, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Add_IntInt_ReturnValue_2) == 0x000080, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Array_Index_Variable_1) == 0x000084, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_IsValid_ReturnValue_1) == 0x000088, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Array_Index_Variable_2) == 0x00008C, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_struct_Variable_1) == 0x000090, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_AddComponent_ReturnValue_1) == 0x0000C0, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000C8, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_IsValid_ReturnValue_2) == 0x0000D0, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_GetMaterials_ReturnValue_1) == 0x0000D8, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_GetMaterials_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue_1) == 0x0000E8, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000EC, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Loop_Counter_Variable_3) == 0x0000F0, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Add_IntInt_ReturnValue_3) == 0x0000F4, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_int_Array_Index_Variable_3) == 0x0000F8, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000100, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Get_Item) == 0x000108, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue_2) == 0x000110, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, K2Node_DynamicCast_AsSkeletal_Mesh_Component) == 0x000118, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::K2Node_DynamicCast_AsSkeletal_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Less_IntInt_ReturnValue_2) == 0x000121, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000122, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, K2Node_DynamicCast_AsStatic_Mesh_Component) == 0x000128, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::K2Node_DynamicCast_AsStatic_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, K2Node_DynamicCast_bSuccess_1) == 0x000130, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_K2_AttachToComponent_ReturnValue_1) == 0x000131, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_K2_AttachToComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue_3) == 0x000134, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_SetStaticMesh_ReturnValue) == 0x000138, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Greater_IntInt_ReturnValue) == 0x000139, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_IsValid_ReturnValue_3) == 0x00013A, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, Temp_struct_Variable_2) == 0x000140, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_CreateDynamicMaterialInstance_ReturnValue_2) == 0x000170, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_CreateDynamicMaterialInstance_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_GetMaterials_ReturnValue_2) == 0x000178, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_GetMaterials_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_AddComponent_ReturnValue_2) == 0x000188, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_AddComponent_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue_4) == 0x000190, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_Less_IntInt_ReturnValue_3) == 0x000194, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_CreateDuplicateCharacterElements, CallFunc_K2_AttachToComponent_ReturnValue_2) == 0x000195, "Member 'EnemyPawn_Parent_C_CreateDuplicateCharacterElements::CallFunc_K2_AttachToComponent_ReturnValue_2' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetDuplicateCharacterMeshHiddenInGame
 // 0x0040 (0x0040 - 0x0000)
@@ -1393,22 +830,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame");
-static_assert(sizeof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame) == 0x000040, "Wrong size on EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, Hidden) == 0x000000, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::Hidden' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, Temp_int_Array_Index_Variable) == 0x000004, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_IsDedicatedServer_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Array_Get_Item) == 0x000018, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, K2Node_DynamicCast_AsMesh_Component) == 0x000028, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_IsValid_ReturnValue_1) == 0x000031, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Array_Length_ReturnValue_1) == 0x000034, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'EnemyPawn_Parent_C_SetDuplicateCharacterMeshHiddenInGame::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetElementalParticlesHiddenInGame
 // 0x0028 (0x0028 - 0x0000)
@@ -1427,16 +848,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame");
-static_assert(sizeof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame) == 0x000028, "Wrong size on EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, Hidden) == 0x000000, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::Hidden' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, Temp_int_Array_Index_Variable) == 0x000004, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, CallFunc_Array_Get_Item) == 0x000008, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, CallFunc_Less_IntInt_ReturnValue) == 0x00001C, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame, CallFunc_Add_IntInt_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_SetElementalParticlesHiddenInGame::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.TransformHitLocationWorldSpaceToPreskinnedLocalSpace
 // 0x0070 (0x0070 - 0x0000)
@@ -1450,13 +861,6 @@ public:
 	struct FVector                                CallFunc_InverseTransformLocation_ReturnValue;     // 0x004C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0058(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace");
-static_assert(sizeof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace) == 0x000070, "Wrong size on EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace");
-static_assert(offsetof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace, PreskinnedLS) == 0x000000, "Member 'EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace::PreskinnedLS' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace, CallFunc_GetSocketLocation_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace, CallFunc_InverseTransformLocation_ReturnValue) == 0x00004C, "Member 'EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace::CallFunc_InverseTransformLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace, CallFunc_Add_VectorVector_ReturnValue) == 0x000058, "Member 'EnemyPawn_Parent_C_TransformHitLocationWorldSpaceToPreskinnedLocalSpace::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetVectorParameterOnAllCharacterMIDsByMap
 // 0x00A0 (0x00A0 - 0x0000)
@@ -1478,19 +882,6 @@ public:
 	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x009C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap");
-static_assert(sizeof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap) == 0x0000A0, "Wrong size on EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, Map) == 0x000000, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::Map' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, Propagate_to_Auxiliary_Meshes) == 0x000050, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::Propagate_to_Auxiliary_Meshes' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, Temp_int_Array_Index_Variable) == 0x000054, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Map_Keys_Keys) == 0x000058, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Array_Get_Item) == 0x000068, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Map_Values_Values) == 0x000078, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, Temp_int_Loop_Counter_Variable) == 0x000088, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x00008C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Less_IntInt_ReturnValue) == 0x000098, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap, CallFunc_Add_IntInt_ReturnValue) == 0x00009C, "Member 'EnemyPawn_Parent_C_SetVectorParameterOnAllCharacterMIDsByMap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetScalarParameterOnAllCharacterMIDsByMap
 // 0x0090 (0x0090 - 0x0000)
@@ -1509,18 +900,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_Array_Get_Item_1;                         // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap");
-static_assert(sizeof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap) == 0x000090, "Wrong size on EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, Map) == 0x000000, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::Map' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Map_Values_Values) == 0x000050, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Map_Keys_Keys) == 0x000060, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Map_Keys_Keys' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, Temp_int_Array_Index_Variable) == 0x000074, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, Temp_int_Loop_Counter_Variable) == 0x000078, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Array_Get_Item) == 0x00007C, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Less_IntInt_ReturnValue) == 0x000080, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Add_IntInt_ReturnValue) == 0x000084, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap, CallFunc_Array_Get_Item_1) == 0x000088, "Member 'EnemyPawn_Parent_C_SetScalarParameterOnAllCharacterMIDsByMap::CallFunc_Array_Get_Item_1' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SpawnMinibossLight
 // 0x0080 (0x0080 - 0x0000)
@@ -1538,17 +917,6 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 	class UPointLightComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SpawnMinibossLight) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_SpawnMinibossLight");
-static_assert(sizeof(EnemyPawn_Parent_C_SpawnMinibossLight) == 0x000080, "Wrong size on EnemyPawn_Parent_C_SpawnMinibossLight");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_GetSocketLocation_ReturnValue) == 0x000000, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_GetSocketLocation_ReturnValue_1) == 0x00000C, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_GetSocketLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_BreakVector_X) == 0x000024, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_BreakVector_Y) == 0x000028, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_BreakVector_Z) == 0x00002C, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_MakeVector_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_MakeTransform_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SpawnMinibossLight, CallFunc_AddComponent_ReturnValue) == 0x000070, "Member 'EnemyPawn_Parent_C_SpawnMinibossLight::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.SetMinibossLightHiddenInGame
 // 0x0002 (0x0002 - 0x0000)
@@ -1558,10 +926,6 @@ public:
 	bool                                          Hidden;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_SetMinibossLightHiddenInGame) == 0x000001, "Wrong alignment on EnemyPawn_Parent_C_SetMinibossLightHiddenInGame");
-static_assert(sizeof(EnemyPawn_Parent_C_SetMinibossLightHiddenInGame) == 0x000002, "Wrong size on EnemyPawn_Parent_C_SetMinibossLightHiddenInGame");
-static_assert(offsetof(EnemyPawn_Parent_C_SetMinibossLightHiddenInGame, Hidden) == 0x000000, "Member 'EnemyPawn_Parent_C_SetMinibossLightHiddenInGame::Hidden' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_SetMinibossLightHiddenInGame, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'EnemyPawn_Parent_C_SetMinibossLightHiddenInGame::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.RestorePreviousPhysMaterialOnCharacterMesh
 // 0x0040 (0x0040 - 0x0000)
@@ -1585,21 +949,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh) == 0x000040, "Wrong size on EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, Delay_in_Seconds) == 0x000000, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::Delay_in_Seconds' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000005, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, Temp_int_Array_Index_Variable) == 0x000010, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Array_Get_Item) == 0x000018, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Array_Get_Item_1) == 0x000020, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue) == 0x000028, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'EnemyPawn_Parent_C_RestorePreviousPhysMaterialOnCharacterMesh::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeleteDuplicateCharacterElements
 // 0x0040 (0x0040 - 0x0000)
@@ -1623,20 +972,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_DeleteDuplicateCharacterElements");
-static_assert(sizeof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements) == 0x000040, "Wrong size on EnemyPawn_Parent_C_DeleteDuplicateCharacterElements");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, Temp_int_Array_Index_Variable) == 0x000000, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Array_Get_Item) == 0x000018, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Greater_IntInt_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, K2Node_DynamicCast_AsMesh_Component) == 0x000028, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::K2Node_DynamicCast_AsMesh_Component' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Array_Length_ReturnValue_1) == 0x000034, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeleteDuplicateCharacterElements, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'EnemyPawn_Parent_C_DeleteDuplicateCharacterElements::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DynamicMaterialArraySetup
 // 0x0080 (0x0080 - 0x0000)
@@ -1666,27 +1001,6 @@ public:
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DynamicMaterialArraySetup) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_DynamicMaterialArraySetup");
-static_assert(sizeof(EnemyPawn_Parent_C_DynamicMaterialArraySetup) == 0x000080, "Wrong size on EnemyPawn_Parent_C_DynamicMaterialArraySetup");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, Array_to_Check) == 0x000000, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::Array_to_Check' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, Array_to_Store) == 0x000010, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::Array_to_Store' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, New_Material) == 0x000020, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::New_Material' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, Mesh_to_Assign_New_Material) == 0x000028, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::Mesh_to_Assign_New_Material' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000030, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000038, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, Temp_int_Array_Index_Variable) == 0x000044, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Array_Get_Item) == 0x000048, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000050, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_CreateDynamicMaterialInstance_ReturnValue_2) == 0x000060, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_CreateDynamicMaterialInstance_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Array_Add_ReturnValue) == 0x000068, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Array_Add_ReturnValue_1) == 0x00006C, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000071, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, Temp_int_Loop_Counter_Variable) == 0x000074, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Less_IntInt_ReturnValue) == 0x000078, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DynamicMaterialArraySetup, CallFunc_Add_IntInt_ReturnValue) == 0x00007C, "Member 'EnemyPawn_Parent_C_DynamicMaterialArraySetup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ApplyBuildingHitEffectToSkeletalMesh
 // 0x0070 (0x0070 - 0x0000)
@@ -1705,16 +1019,6 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFXSkeletonMeshComponent_C*             CallFunc_AddComponent_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh) == 0x000070, "Wrong size on EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, FXSkeletalMesh) == 0x000008, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::FXSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, CallFunc_Map_Find_Value) == 0x000018, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, CallFunc_Map_Find_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, Temp_struct_Variable) == 0x000030, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh, CallFunc_AddComponent_ReturnValue) == 0x000068, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToSkeletalMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ApplyBuildingHitEffectToStaticMesh
 // 0x0070 (0x0070 - 0x0000)
@@ -1732,16 +1036,6 @@ public:
 	struct FTransform                             Temp_struct_Variable;                              // 0x0030(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	class UFXStaticMeshComponent_C*               CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh) == 0x000070, "Wrong size on EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, FXStaticMesh) == 0x000008, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::FXStaticMesh' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, CallFunc_Map_Find_Value) == 0x000018, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, CallFunc_Map_Find_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, CallFunc_IsValid_ReturnValue_1) == 0x000021, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, Temp_struct_Variable) == 0x000030, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'EnemyPawn_Parent_C_ApplyBuildingHitEffectToStaticMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.RegisterEffectSkeletalMesh
 // 0x0010 (0x0010 - 0x0000)
@@ -1753,11 +1047,6 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_RegisterEffectSkeletalMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_RegisterEffectSkeletalMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_RegisterEffectSkeletalMesh) == 0x000010, "Wrong size on EnemyPawn_Parent_C_RegisterEffectSkeletalMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectSkeletalMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_RegisterEffectSkeletalMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectSkeletalMesh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_RegisterEffectSkeletalMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectSkeletalMesh, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_RegisterEffectSkeletalMesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.RegisterEffectStaticMesh
 // 0x0010 (0x0010 - 0x0000)
@@ -1769,11 +1058,6 @@ public:
 	uint8                                         Pad_9[0x3];                                        // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_RegisterEffectStaticMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_RegisterEffectStaticMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_RegisterEffectStaticMesh) == 0x000010, "Wrong size on EnemyPawn_Parent_C_RegisterEffectStaticMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectStaticMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_RegisterEffectStaticMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectStaticMesh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_RegisterEffectStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_RegisterEffectStaticMesh, CallFunc_Array_Add_ReturnValue) == 0x00000C, "Member 'EnemyPawn_Parent_C_RegisterEffectStaticMesh::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ApplyAwakenEffectToSkeletalMesh
 // 0x0070 (0x0070 - 0x0000)
@@ -1791,16 +1075,6 @@ public:
 	class UFXSkeletonMeshComponent_C*             CallFunc_AddComponent_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh) == 0x000070, "Wrong size on EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, FXSkeletalMesh) == 0x000008, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::FXSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, CallFunc_Map_Find_Value) == 0x000018, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, CallFunc_Map_Find_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, Temp_struct_Variable) == 0x000030, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh, CallFunc_IsValid_ReturnValue_1) == 0x000068, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToSkeletalMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.ApplyAwakenEffectToStaticMesh
 // 0x0070 (0x0070 - 0x0000)
@@ -1819,16 +1093,6 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFXStaticMeshComponent_C*               CallFunc_AddComponent_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh) == 0x000010, "Wrong alignment on EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh) == 0x000070, "Wrong size on EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, FXStaticMesh) == 0x000008, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::FXStaticMesh' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, CallFunc_Map_Find_Value) == 0x000018, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, CallFunc_Map_Find_ReturnValue) == 0x000020, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, Temp_struct_Variable) == 0x000030, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, CallFunc_IsValid_ReturnValue_1) == 0x000060, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh, CallFunc_AddComponent_ReturnValue) == 0x000068, "Member 'EnemyPawn_Parent_C_ApplyAwakenEffectToStaticMesh::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeregisterEffectStaticMesh
 // 0x0030 (0x0030 - 0x0000)
@@ -1849,19 +1113,6 @@ public:
 	bool                                          CallFunc_Map_Remove_ReturnValue_1;                 // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_RemoveItem_ReturnValue;             // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_DeregisterEffectStaticMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh) == 0x000030, "Wrong size on EnemyPawn_Parent_C_DeregisterEffectStaticMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Find_Value) == 0x000010, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Find_Value_1) == 0x000020, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Find_ReturnValue_1) == 0x000028, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Remove_ReturnValue) == 0x000029, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Remove_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_IsValid_ReturnValue_2) == 0x00002A, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Map_Remove_ReturnValue_1) == 0x00002B, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Map_Remove_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectStaticMesh, CallFunc_Array_RemoveItem_ReturnValue) == 0x00002C, "Member 'EnemyPawn_Parent_C_DeregisterEffectStaticMesh::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.DeregisterEffectSkeletalMesh
 // 0x0030 (0x0030 - 0x0000)
@@ -1882,19 +1133,6 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh");
-static_assert(sizeof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh) == 0x000030, "Wrong size on EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, Mesh_0) == 0x000000, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::Mesh_0' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Find_Value) == 0x000010, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Find_ReturnValue) == 0x000018, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_IsValid_ReturnValue_1) == 0x000019, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Remove_ReturnValue) == 0x00001A, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Remove_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Remove_ReturnValue_1) == 0x00001B, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Remove_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Array_RemoveItem_ReturnValue) == 0x00001C, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Array_RemoveItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Find_Value_1) == 0x000020, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_Map_Find_ReturnValue_1) == 0x000028, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh, CallFunc_IsValid_ReturnValue_2) == 0x000029, "Member 'EnemyPawn_Parent_C_DeregisterEffectSkeletalMesh::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function EnemyPawn_Parent.EnemyPawn_Parent_C.Orphaned
 // 0x0010 (0x0010 - 0x0000)
@@ -1905,10 +1143,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              AttachedPawn;                                      // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EnemyPawn_Parent_C_Orphaned) == 0x000008, "Wrong alignment on EnemyPawn_Parent_C_Orphaned");
-static_assert(sizeof(EnemyPawn_Parent_C_Orphaned) == 0x000010, "Wrong size on EnemyPawn_Parent_C_Orphaned");
-static_assert(offsetof(EnemyPawn_Parent_C_Orphaned, IsOrphaned) == 0x000000, "Member 'EnemyPawn_Parent_C_Orphaned::IsOrphaned' has a wrong offset!");
-static_assert(offsetof(EnemyPawn_Parent_C_Orphaned, AttachedPawn) == 0x000008, "Member 'EnemyPawn_Parent_C_Orphaned::AttachedPawn' has a wrong offset!");
 
 }
 

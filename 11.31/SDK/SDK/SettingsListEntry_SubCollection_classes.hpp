@@ -35,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsListEntry_SubCollection_C">();
+		BP_STATIC_CLASS_IMPL("SettingsListEntry_SubCollection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsListEntry_SubCollection_C")
 	}
 	static class USettingsListEntry_SubCollection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsListEntry_SubCollection_C>();
 	}
 };
-static_assert(alignof(USettingsListEntry_SubCollection_C) == 0x000008, "Wrong alignment on USettingsListEntry_SubCollection_C");
-static_assert(sizeof(USettingsListEntry_SubCollection_C) == 0x0002A0, "Wrong size on USettingsListEntry_SubCollection_C");
-static_assert(offsetof(USettingsListEntry_SubCollection_C, UberGraphFrame) == 0x000290, "Member 'USettingsListEntry_SubCollection_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_SubCollection_C, OnHover) == 0x000298, "Member 'USettingsListEntry_SubCollection_C::OnHover' has a wrong offset!");
 
 }
 

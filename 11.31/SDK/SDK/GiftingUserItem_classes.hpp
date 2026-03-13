@@ -40,23 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GiftingUserItem_C">();
+		BP_STATIC_CLASS_IMPL("GiftingUserItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GiftingUserItem_C")
 	}
 	static class UGiftingUserItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGiftingUserItem_C>();
 	}
 };
-static_assert(alignof(UGiftingUserItem_C) == 0x000008, "Wrong alignment on UGiftingUserItem_C");
-static_assert(sizeof(UGiftingUserItem_C) == 0x000BC8, "Wrong size on UGiftingUserItem_C");
-static_assert(offsetof(UGiftingUserItem_C, UberGraphFrame) == 0x000B88, "Member 'UGiftingUserItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, Toggle) == 0x000B90, "Member 'UGiftingUserItem_C::Toggle' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageEmptyCheck) == 0x000B98, "Member 'UGiftingUserItem_C::ImageEmptyCheck' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageErrorState) == 0x000BA0, "Member 'UGiftingUserItem_C::ImageErrorState' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, ImageSelectedCheck) == 0x000BA8, "Member 'UGiftingUserItem_C::ImageSelectedCheck' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, Switcher_UserStatus) == 0x000BB0, "Member 'UGiftingUserItem_C::Switcher_UserStatus' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, Text_Message) == 0x000BB8, "Member 'UGiftingUserItem_C::Text_Message' has a wrong offset!");
-static_assert(offsetof(UGiftingUserItem_C, VerticalBox_UserDetails) == 0x000BC0, "Member 'UGiftingUserItem_C::VerticalBox_UserDetails' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class ABGA_Athena_FlopperSpawn_Default_C final : public ABGA_Athena_FlopperSpawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BGA_Athena_FlopperSpawn_Default_C">();
+		BP_STATIC_CLASS_IMPL("BGA_Athena_FlopperSpawn_Default_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BGA_Athena_FlopperSpawn_Default_C")
 	}
 	static class ABGA_Athena_FlopperSpawn_Default_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABGA_Athena_FlopperSpawn_Default_C>();
 	}
 };
-static_assert(alignof(ABGA_Athena_FlopperSpawn_Default_C) == 0x000008, "Wrong alignment on ABGA_Athena_FlopperSpawn_Default_C");
-static_assert(sizeof(ABGA_Athena_FlopperSpawn_Default_C) == 0x000A08, "Wrong size on ABGA_Athena_FlopperSpawn_Default_C");
 
 }
 

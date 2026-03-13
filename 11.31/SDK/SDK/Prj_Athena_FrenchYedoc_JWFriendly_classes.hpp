@@ -23,15 +23,17 @@ class APrj_Athena_FrenchYedoc_JWFriendly_C final : public APrj_Athena_FrenchYedo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Prj_Athena_FrenchYedoc_JWFriendly_C">();
+		BP_STATIC_CLASS_IMPL("Prj_Athena_FrenchYedoc_JWFriendly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Prj_Athena_FrenchYedoc_JWFriendly_C")
 	}
 	static class APrj_Athena_FrenchYedoc_JWFriendly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APrj_Athena_FrenchYedoc_JWFriendly_C>();
 	}
 };
-static_assert(alignof(APrj_Athena_FrenchYedoc_JWFriendly_C) == 0x000008, "Wrong alignment on APrj_Athena_FrenchYedoc_JWFriendly_C");
-static_assert(sizeof(APrj_Athena_FrenchYedoc_JWFriendly_C) == 0x0008F8, "Wrong size on APrj_Athena_FrenchYedoc_JWFriendly_C");
 
 }
 

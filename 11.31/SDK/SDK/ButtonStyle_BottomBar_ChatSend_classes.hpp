@@ -23,15 +23,17 @@ class UButtonStyle_BottomBar_ChatSend_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-BottomBar_ChatSend_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-BottomBar_ChatSend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-BottomBar_ChatSend_C")
 	}
 	static class UButtonStyle_BottomBar_ChatSend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_BottomBar_ChatSend_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_BottomBar_ChatSend_C) == 0x000008, "Wrong alignment on UButtonStyle_BottomBar_ChatSend_C");
-static_assert(sizeof(UButtonStyle_BottomBar_ChatSend_C) == 0x000570, "Wrong size on UButtonStyle_BottomBar_ChatSend_C");
 
 }
 

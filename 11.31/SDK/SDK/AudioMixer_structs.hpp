@@ -98,21 +98,6 @@ public:
 	float                                         WetLevel;                                          // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DryLevel;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectReverbSettings) == 0x000004, "Wrong alignment on FSubmixEffectReverbSettings");
-static_assert(sizeof(FSubmixEffectReverbSettings) == 0x000034, "Wrong size on FSubmixEffectReverbSettings");
-static_assert(offsetof(FSubmixEffectReverbSettings, Density) == 0x000000, "Member 'FSubmixEffectReverbSettings::Density' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, Diffusion) == 0x000004, "Member 'FSubmixEffectReverbSettings::Diffusion' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, Gain) == 0x000008, "Member 'FSubmixEffectReverbSettings::Gain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, GainHF) == 0x00000C, "Member 'FSubmixEffectReverbSettings::GainHF' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, DecayTime) == 0x000010, "Member 'FSubmixEffectReverbSettings::DecayTime' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, DecayHFRatio) == 0x000014, "Member 'FSubmixEffectReverbSettings::DecayHFRatio' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, ReflectionsGain) == 0x000018, "Member 'FSubmixEffectReverbSettings::ReflectionsGain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, ReflectionsDelay) == 0x00001C, "Member 'FSubmixEffectReverbSettings::ReflectionsDelay' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, LateGain) == 0x000020, "Member 'FSubmixEffectReverbSettings::LateGain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, LateDelay) == 0x000024, "Member 'FSubmixEffectReverbSettings::LateDelay' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, AirAbsorptionGainHF) == 0x000028, "Member 'FSubmixEffectReverbSettings::AirAbsorptionGainHF' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, WetLevel) == 0x00002C, "Member 'FSubmixEffectReverbSettings::WetLevel' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbSettings, DryLevel) == 0x000030, "Member 'FSubmixEffectReverbSettings::DryLevel' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectEQBand
 // 0x0010 (0x0010 - 0x0000)
@@ -125,11 +110,6 @@ public:
 	uint8                                         bEnabled : 1;                                      // 0x000C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSubmixEffectEQBand) == 0x000004, "Wrong alignment on FSubmixEffectEQBand");
-static_assert(sizeof(FSubmixEffectEQBand) == 0x000010, "Wrong size on FSubmixEffectEQBand");
-static_assert(offsetof(FSubmixEffectEQBand, Frequency) == 0x000000, "Member 'FSubmixEffectEQBand::Frequency' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectEQBand, Bandwidth) == 0x000004, "Member 'FSubmixEffectEQBand::Bandwidth' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectEQBand, GainDb) == 0x000008, "Member 'FSubmixEffectEQBand::GainDb' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectSubmixEQSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -138,9 +118,6 @@ struct FSubmixEffectSubmixEQSettings final
 public:
 	TArray<struct FSubmixEffectEQBand>            EQBands;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectSubmixEQSettings) == 0x000008, "Wrong alignment on FSubmixEffectSubmixEQSettings");
-static_assert(sizeof(FSubmixEffectSubmixEQSettings) == 0x000010, "Wrong size on FSubmixEffectSubmixEQSettings");
-static_assert(offsetof(FSubmixEffectSubmixEQSettings, EQBands) == 0x000000, "Member 'FSubmixEffectSubmixEQSettings::EQBands' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectDynamicsProcessorSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -162,18 +139,6 @@ public:
 	uint8                                         bAnalogMode : 1;                                   // 0x0024(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSubmixEffectDynamicsProcessorSettings) == 0x000004, "Wrong alignment on FSubmixEffectDynamicsProcessorSettings");
-static_assert(sizeof(FSubmixEffectDynamicsProcessorSettings) == 0x000028, "Wrong size on FSubmixEffectDynamicsProcessorSettings");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, DynamicsProcessorType) == 0x000000, "Member 'FSubmixEffectDynamicsProcessorSettings::DynamicsProcessorType' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, PeakMode) == 0x000001, "Member 'FSubmixEffectDynamicsProcessorSettings::PeakMode' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, LookAheadMsec) == 0x000004, "Member 'FSubmixEffectDynamicsProcessorSettings::LookAheadMsec' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, AttackTimeMsec) == 0x000008, "Member 'FSubmixEffectDynamicsProcessorSettings::AttackTimeMsec' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, ReleaseTimeMsec) == 0x00000C, "Member 'FSubmixEffectDynamicsProcessorSettings::ReleaseTimeMsec' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, ThresholdDb) == 0x000010, "Member 'FSubmixEffectDynamicsProcessorSettings::ThresholdDb' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, Ratio) == 0x000014, "Member 'FSubmixEffectDynamicsProcessorSettings::Ratio' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, KneeBandwidthDb) == 0x000018, "Member 'FSubmixEffectDynamicsProcessorSettings::KneeBandwidthDb' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, InputGainDb) == 0x00001C, "Member 'FSubmixEffectDynamicsProcessorSettings::InputGainDb' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDynamicsProcessorSettings, OutputGainDb) == 0x000020, "Member 'FSubmixEffectDynamicsProcessorSettings::OutputGainDb' has a wrong offset!");
 
 // ScriptStruct AudioMixer.SubmixEffectReverbFastSettings
 // 0x0034 (0x0034 - 0x0000)
@@ -194,21 +159,6 @@ public:
 	float                                         WetLevel;                                          // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DryLevel;                                          // 0x0030(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectReverbFastSettings) == 0x000004, "Wrong alignment on FSubmixEffectReverbFastSettings");
-static_assert(sizeof(FSubmixEffectReverbFastSettings) == 0x000034, "Wrong size on FSubmixEffectReverbFastSettings");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, Density) == 0x000000, "Member 'FSubmixEffectReverbFastSettings::Density' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, Diffusion) == 0x000004, "Member 'FSubmixEffectReverbFastSettings::Diffusion' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, Gain) == 0x000008, "Member 'FSubmixEffectReverbFastSettings::Gain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, GainHF) == 0x00000C, "Member 'FSubmixEffectReverbFastSettings::GainHF' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, DecayTime) == 0x000010, "Member 'FSubmixEffectReverbFastSettings::DecayTime' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, DecayHFRatio) == 0x000014, "Member 'FSubmixEffectReverbFastSettings::DecayHFRatio' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, ReflectionsGain) == 0x000018, "Member 'FSubmixEffectReverbFastSettings::ReflectionsGain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, ReflectionsDelay) == 0x00001C, "Member 'FSubmixEffectReverbFastSettings::ReflectionsDelay' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, LateGain) == 0x000020, "Member 'FSubmixEffectReverbFastSettings::LateGain' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, LateDelay) == 0x000024, "Member 'FSubmixEffectReverbFastSettings::LateDelay' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, AirAbsorptionGainHF) == 0x000028, "Member 'FSubmixEffectReverbFastSettings::AirAbsorptionGainHF' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, WetLevel) == 0x00002C, "Member 'FSubmixEffectReverbFastSettings::WetLevel' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectReverbFastSettings, DryLevel) == 0x000030, "Member 'FSubmixEffectReverbFastSettings::DryLevel' has a wrong offset!");
 
 }
 

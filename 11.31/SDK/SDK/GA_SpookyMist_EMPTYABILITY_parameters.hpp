@@ -21,9 +21,6 @@ struct GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY) == 0x000004, "Wrong alignment on GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY");
-static_assert(sizeof(GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY) == 0x000004, "Wrong size on GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY");
-static_assert(offsetof(GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY, EntryPoint) == 0x000000, "Member 'GA_SpookyMist_EMPTYABILITY_C_ExecuteUbergraph_GA_SpookyMist_EMPTYABILITY::EntryPoint' has a wrong offset!");
 
 }
 

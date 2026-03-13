@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivatableMovieWidget_C">();
+		BP_STATIC_CLASS_IMPL("ActivatableMovieWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivatableMovieWidget_C")
 	}
 	static class UActivatableMovieWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivatableMovieWidget_C>();
 	}
 };
-static_assert(alignof(UActivatableMovieWidget_C) == 0x000008, "Wrong alignment on UActivatableMovieWidget_C");
-static_assert(sizeof(UActivatableMovieWidget_C) == 0x0004D0, "Wrong size on UActivatableMovieWidget_C");
-static_assert(offsetof(UActivatableMovieWidget_C, MainSafeZone) == 0x0004C8, "Member 'UActivatableMovieWidget_C::MainSafeZone' has a wrong offset!");
 
 }
 

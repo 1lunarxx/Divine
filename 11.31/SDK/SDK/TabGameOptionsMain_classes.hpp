@@ -37,17 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGameOptionsMain_C">();
+		BP_STATIC_CLASS_IMPL("TabGameOptionsMain_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGameOptionsMain_C")
 	}
 	static class UTabGameOptionsMain_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGameOptionsMain_C>();
 	}
 };
-static_assert(alignof(UTabGameOptionsMain_C) == 0x000008, "Wrong alignment on UTabGameOptionsMain_C");
-static_assert(sizeof(UTabGameOptionsMain_C) == 0x000340, "Wrong size on UTabGameOptionsMain_C");
-static_assert(offsetof(UTabGameOptionsMain_C, UberGraphFrame) == 0x000330, "Member 'UTabGameOptionsMain_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGameOptionsMain_C, TooltipDisplayReference) == 0x000338, "Member 'UTabGameOptionsMain_C::TooltipDisplayReference' has a wrong offset!");
 
 }
 

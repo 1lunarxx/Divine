@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_SlamDoorOpen_Victim_C">();
+		BP_STATIC_CLASS_IMPL("GA_SlamDoorOpen_Victim_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_SlamDoorOpen_Victim_C")
 	}
 	static class UGA_SlamDoorOpen_Victim_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_SlamDoorOpen_Victim_C>();
 	}
 };
-static_assert(alignof(UGA_SlamDoorOpen_Victim_C) == 0x000008, "Wrong alignment on UGA_SlamDoorOpen_Victim_C");
-static_assert(sizeof(UGA_SlamDoorOpen_Victim_C) == 0x000A48, "Wrong size on UGA_SlamDoorOpen_Victim_C");
-static_assert(offsetof(UGA_SlamDoorOpen_Victim_C, UberGraphFrame) == 0x000A30, "Member 'UGA_SlamDoorOpen_Victim_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_SlamDoorOpen_Victim_C, BuildingWall) == 0x000A38, "Member 'UGA_SlamDoorOpen_Victim_C::BuildingWall' has a wrong offset!");
-static_assert(offsetof(UGA_SlamDoorOpen_Victim_C, PlayerPawn) == 0x000A40, "Member 'UGA_SlamDoorOpen_Victim_C::PlayerPawn' has a wrong offset!");
 
 }
 

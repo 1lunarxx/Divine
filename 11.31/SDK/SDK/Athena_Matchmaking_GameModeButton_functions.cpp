@@ -17,6 +17,118 @@
 namespace SDK
 {
 
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.SetButtonSize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    UseLargeSize                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthena_Matchmaking_GameModeButton_C::SetButtonSize(bool UseLargeSize)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetButtonSize");
+
+	Params::Athena_Matchmaking_GameModeButton_C_SetButtonSize Parms{};
+
+	Parms.UseLargeSize = UseLargeSize;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.SetOwningDisplayWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAthenaMatchmakingOptionsDisplay_v2_C*OwningDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthena_Matchmaking_GameModeButton_C::SetOwningDisplayWidget(class UAthenaMatchmakingOptionsDisplay_v2_C* OwningDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetOwningDisplayWidget");
+
+	Params::Athena_Matchmaking_GameModeButton_C_SetOwningDisplayWidget Parms{};
+
+	Parms.OwningDisplay = OwningDisplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.UpdateGameModeAvailibilty
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthena_Matchmaking_GameModeButton_C::UpdateGameModeAvailibilty()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "UpdateGameModeAvailibilty");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.ShowDisabledMessage
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthena_Matchmaking_GameModeButton_C::ShowDisabledMessage(bool Show)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ShowDisabledMessage");
+
+	Params::Athena_Matchmaking_GameModeButton_C_ShowDisabledMessage Parms{};
+
+	Parms.Show = Show;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.DisableGameModeButton
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthena_Matchmaking_GameModeButton_C::DisableGameModeButton()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "DisableGameModeButton");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.IsGameModeAvailable
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortPlaylistAthena*              InMode                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool*                                   Available                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthena_Matchmaking_GameModeButton_C::IsGameModeAvailable(class UFortPlaylistAthena* InMode, bool* Available)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "IsGameModeAvailable");
+
+	Params::Athena_Matchmaking_GameModeButton_C_IsGameModeAvailable Parms{};
+
+	Parms.InMode = InMode;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Available != nullptr)
+		*Available = Parms.Available;
+}
+
+
 // Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.OnFocusReceived
 // (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -155,118 +267,6 @@ void UAthena_Matchmaking_GameModeButton_C::ExecuteUbergraph_Athena_Matchmaking_G
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.SetButtonSize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    UseLargeSize                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthena_Matchmaking_GameModeButton_C::SetButtonSize(bool UseLargeSize)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetButtonSize");
-
-	Params::Athena_Matchmaking_GameModeButton_C_SetButtonSize Parms{};
-
-	Parms.UseLargeSize = UseLargeSize;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.SetOwningDisplayWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAthenaMatchmakingOptionsDisplay_v2_C*OwningDisplay                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthena_Matchmaking_GameModeButton_C::SetOwningDisplayWidget(class UAthenaMatchmakingOptionsDisplay_v2_C* OwningDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "SetOwningDisplayWidget");
-
-	Params::Athena_Matchmaking_GameModeButton_C_SetOwningDisplayWidget Parms{};
-
-	Parms.OwningDisplay = OwningDisplay;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.UpdateGameModeAvailibilty
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthena_Matchmaking_GameModeButton_C::UpdateGameModeAvailibilty()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "UpdateGameModeAvailibilty");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.ShowDisabledMessage
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Show                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthena_Matchmaking_GameModeButton_C::ShowDisabledMessage(bool Show)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "ShowDisabledMessage");
-
-	Params::Athena_Matchmaking_GameModeButton_C_ShowDisabledMessage Parms{};
-
-	Parms.Show = Show;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.DisableGameModeButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthena_Matchmaking_GameModeButton_C::DisableGameModeButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "DisableGameModeButton");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Athena_Matchmaking_GameModeButton.Athena_Matchmaking_GameModeButton_C.IsGameModeAvailable
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortPlaylistAthena*              InMode                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool*                                   Available                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthena_Matchmaking_GameModeButton_C::IsGameModeAvailable(class UFortPlaylistAthena* InMode, bool* Available)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Athena_Matchmaking_GameModeButton_C", "IsGameModeAvailable");
-
-	Params::Athena_Matchmaking_GameModeButton_C_IsGameModeAvailable Parms{};
-
-	Parms.InMode = InMode;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Available != nullptr)
-		*Available = Parms.Available;
 }
 
 }

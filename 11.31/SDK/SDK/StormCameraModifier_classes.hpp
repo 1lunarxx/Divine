@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StormCameraModifier_C">();
+		BP_STATIC_CLASS_IMPL("StormCameraModifier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StormCameraModifier_C")
 	}
 	static class UStormCameraModifier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStormCameraModifier_C>();
 	}
 };
-static_assert(alignof(UStormCameraModifier_C) == 0x000010, "Wrong alignment on UStormCameraModifier_C");
-static_assert(sizeof(UStormCameraModifier_C) == 0x000070, "Wrong size on UStormCameraModifier_C");
-static_assert(offsetof(UStormCameraModifier_C, Saturation) == 0x000050, "Member 'UStormCameraModifier_C::Saturation' has a wrong offset!");
-static_assert(offsetof(UStormCameraModifier_C, Contrast) == 0x000060, "Member 'UStormCameraModifier_C::Contrast' has a wrong offset!");
 
 }
 

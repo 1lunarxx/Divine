@@ -26,11 +26,6 @@ public:
 	float                                         TimeOffset;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AdditionalTime;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions) == 0x000004, "Wrong alignment on ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions) == 0x00000C, "Wrong size on ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions, Count) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions::Count' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions, TimeOffset) == 0x000004, "Member 'ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions::TimeOffset' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions, AdditionalTime) == 0x000008, "Member 'ChallengeDetailsImageGrid_C_OnLockedToOwnedTransitions::AdditionalTime' has a wrong offset!");
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.Start Rollout Tick
 // 0x0004 (0x0004 - 0x0000)
@@ -39,9 +34,6 @@ struct ChallengeDetailsImageGrid_C_Start_Rollout_Tick final
 public:
 	float                                         Time;                                              // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_Start_Rollout_Tick) == 0x000004, "Wrong alignment on ChallengeDetailsImageGrid_C_Start_Rollout_Tick");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_Start_Rollout_Tick) == 0x000004, "Wrong size on ChallengeDetailsImageGrid_C_Start_Rollout_Tick");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_Start_Rollout_Tick, Time) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_Start_Rollout_Tick::Time' has a wrong offset!");
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.OnFocusLost
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +42,6 @@ struct ChallengeDetailsImageGrid_C_OnFocusLost final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_OnFocusLost) == 0x000004, "Wrong alignment on ChallengeDetailsImageGrid_C_OnFocusLost");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_OnFocusLost) == 0x000008, "Wrong size on ChallengeDetailsImageGrid_C_OnFocusLost");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnFocusLost, InFocusEvent) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_OnFocusLost::InFocusEvent' has a wrong offset!");
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.OnRemovedFromFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +50,6 @@ struct ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath) == 0x000004, "Wrong alignment on ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath) == 0x000008, "Wrong size on ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath, InFocusEvent) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_OnRemovedFromFocusPath::InFocusEvent' has a wrong offset!");
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.OnOwnedToCompleteTransitions
 // 0x000C (0x000C - 0x0000)
@@ -74,11 +60,6 @@ public:
 	float                                         TimeOffset;                                        // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AdditionalTime;                                    // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions) == 0x000004, "Wrong alignment on ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions) == 0x00000C, "Wrong size on ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions, Count) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions::Count' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions, TimeOffset) == 0x000004, "Member 'ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions::TimeOffset' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions, AdditionalTime) == 0x000008, "Member 'ChallengeDetailsImageGrid_C_OnOwnedToCompleteTransitions::AdditionalTime' has a wrong offset!");
 
 // Function ChallengeDetailsImageGrid.ChallengeDetailsImageGrid_C.ExecuteUbergraph_ChallengeDetailsImageGrid
 // 0x0100 (0x0100 - 0x0000)
@@ -129,44 +110,6 @@ public:
 	class USoundBase*                             K2Node_Select_Default_1;                           // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid) == 0x000008, "Wrong alignment on ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid");
-static_assert(sizeof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid) == 0x000100, "Wrong size on ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, EntryPoint) == 0x000000, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_object_Variable) == 0x000008, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_object_Variable_1) == 0x000010, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_bool_Variable) == 0x000018, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_object_Variable_2) == 0x000020, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_object_Variable_3) == 0x000028, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000048, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_Count_1) == 0x000050, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_Count_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_TimeOffset_1) == 0x000054, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_TimeOffset_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_AdditionalTime_1) == 0x000058, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_AdditionalTime_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_IsValid_ReturnValue_1) == 0x00005C, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_Add_FloatFloat_ReturnValue) == 0x000060, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_CustomEvent_Time) == 0x000064, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_CustomEvent_Time' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_CreateDelegate_OutputDelegate_1) == 0x000068, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_CreateDelegate_OutputDelegate_2) == 0x000078, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000088, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x000090, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_CreateDelegate_OutputDelegate_3) == 0x000098, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x0000A8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, Temp_bool_Variable_1) == 0x0000B0, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x0000B4, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_GetGameTimeInSeconds_ReturnValue_1) == 0x0000B8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_GetGameTimeInSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0000BC, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_MapRangeClamped_ReturnValue) == 0x0000C0, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_IsValid_ReturnValue_2) == 0x0000C4, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_InFocusEvent_1) == 0x0000C8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_InFocusEvent_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_InFocusEvent) == 0x0000D0, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_Count) == 0x0000D8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_Count' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_TimeOffset) == 0x0000DC, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_TimeOffset' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Event_AdditionalTime) == 0x0000E0, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Event_AdditionalTime' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x0000E4, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Select_Default) == 0x0000E8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, K2Node_Select_Default_1) == 0x0000F0, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid, CallFunc_SpawnSound2D_ReturnValue) == 0x0000F8, "Member 'ChallengeDetailsImageGrid_C_ExecuteUbergraph_ChallengeDetailsImageGrid::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UButtonStyle_ReplayBrowserRow_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle_ReplayBrowserRow_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle_ReplayBrowserRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle_ReplayBrowserRow_C")
 	}
 	static class UButtonStyle_ReplayBrowserRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_ReplayBrowserRow_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_ReplayBrowserRow_C) == 0x000008, "Wrong alignment on UButtonStyle_ReplayBrowserRow_C");
-static_assert(sizeof(UButtonStyle_ReplayBrowserRow_C) == 0x000570, "Wrong size on UButtonStyle_ReplayBrowserRow_C");
 
 }
 

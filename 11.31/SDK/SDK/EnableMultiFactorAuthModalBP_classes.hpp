@@ -75,41 +75,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EnableMultiFactorAuthModalBP_C">();
+		BP_STATIC_CLASS_IMPL("EnableMultiFactorAuthModalBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnableMultiFactorAuthModalBP_C")
 	}
 	static class UEnableMultiFactorAuthModalBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnableMultiFactorAuthModalBP_C>();
 	}
 };
-static_assert(alignof(UEnableMultiFactorAuthModalBP_C) == 0x000008, "Wrong alignment on UEnableMultiFactorAuthModalBP_C");
-static_assert(sizeof(UEnableMultiFactorAuthModalBP_C) == 0x0005C8, "Wrong size on UEnableMultiFactorAuthModalBP_C");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, UberGraphFrame) == 0x0004A8, "Member 'UEnableMultiFactorAuthModalBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, Intro_V2) == 0x0004B0, "Member 'UEnableMultiFactorAuthModalBP_C::Intro_V2' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, ArrowPulse) == 0x0004B8, "Member 'UEnableMultiFactorAuthModalBP_C::ArrowPulse' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, Intro) == 0x0004C0, "Member 'UEnableMultiFactorAuthModalBP_C::Intro' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, ConsoleTextBlock) == 0x0004C8, "Member 'UEnableMultiFactorAuthModalBP_C::ConsoleTextBlock' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, CT_LimitedTimeHeader) == 0x0004D0, "Member 'UEnableMultiFactorAuthModalBP_C::CT_LimitedTimeHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, CT_TakenToWebsite) == 0x0004D8, "Member 'UEnableMultiFactorAuthModalBP_C::CT_TakenToWebsite' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, EnableButtonSwitcher) == 0x0004E0, "Member 'UEnableMultiFactorAuthModalBP_C::EnableButtonSwitcher' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, Image_0) == 0x0004E8, "Member 'UEnableMultiFactorAuthModalBP_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, ItemInfoWidget_FromSocialImport) == 0x0004F0, "Member 'UEnableMultiFactorAuthModalBP_C::ItemInfoWidget_FromSocialImport' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, lazyImage) == 0x0004F8, "Member 'UEnableMultiFactorAuthModalBP_C::lazyImage' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, SafeZone) == 0x000500, "Member 'UEnableMultiFactorAuthModalBP_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, ScaleBox_TitleHeader) == 0x000508, "Member 'UEnableMultiFactorAuthModalBP_C::ScaleBox_TitleHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, DesiredFrontEndCamera) == 0x000510, "Member 'UEnableMultiFactorAuthModalBP_C::DesiredFrontEndCamera' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, PreviewItemDef) == 0x000518, "Member 'UEnableMultiFactorAuthModalBP_C::PreviewItemDef' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, HeartbeatDelayIntroAnimation) == 0x000520, "Member 'UEnableMultiFactorAuthModalBP_C::HeartbeatDelayIntroAnimation' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, debugSocialImportType) == 0x000524, "Member 'UEnableMultiFactorAuthModalBP_C::debugSocialImportType' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, bHasReward) == 0x000525, "Member 'UEnableMultiFactorAuthModalBP_C::bHasReward' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, FacebookHeader) == 0x000528, "Member 'UEnableMultiFactorAuthModalBP_C::FacebookHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, VKHeader) == 0x000540, "Member 'UEnableMultiFactorAuthModalBP_C::VKHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, SteamHeader) == 0x000558, "Member 'UEnableMultiFactorAuthModalBP_C::SteamHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, PlaystationHeader) == 0x000570, "Member 'UEnableMultiFactorAuthModalBP_C::PlaystationHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, XboxHeader) == 0x000588, "Member 'UEnableMultiFactorAuthModalBP_C::XboxHeader' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, SocialPlatform) == 0x0005A0, "Member 'UEnableMultiFactorAuthModalBP_C::SocialPlatform' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, NewVar_0) == 0x0005A8, "Member 'UEnableMultiFactorAuthModalBP_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UEnableMultiFactorAuthModalBP_C, MobileLimitedTimeHeaderStyle) == 0x0005C0, "Member 'UEnableMultiFactorAuthModalBP_C::MobileLimitedTimeHeaderStyle' has a wrong offset!");
 
 }
 

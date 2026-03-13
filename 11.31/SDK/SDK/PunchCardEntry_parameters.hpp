@@ -23,9 +23,6 @@ struct PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C) == 0x000008, "Wrong alignment on PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C");
-static_assert(sizeof(PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C) == 0x000008, "Wrong size on PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C");
-static_assert(offsetof(PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C, Loaded) == 0x000000, "Member 'PunchCardEntry_C_OnLoaded_D1FE60014F4F3FD64C242F91B2A30C9C::Loaded' has a wrong offset!");
 
 // Function PunchCardEntry.PunchCardEntry_C.OnLoaded_5FE293294CDD1131C46B229A3E23F648
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +31,6 @@ struct PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648) == 0x000008, "Wrong alignment on PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648");
-static_assert(sizeof(PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648) == 0x000008, "Wrong size on PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648");
-static_assert(offsetof(PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648, Loaded) == 0x000000, "Member 'PunchCardEntry_C_OnLoaded_5FE293294CDD1131C46B229A3E23F648::Loaded' has a wrong offset!");
 
 // Function PunchCardEntry.PunchCardEntry_C.OnNewMedalPlaced
 // 0x0010 (0x0010 - 0x0000)
@@ -46,10 +40,6 @@ public:
 	const class UFortAccoladeItemDefinition*      PunchedMedal;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlaySocketAnim;                                   // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PunchCardEntry_C_OnNewMedalPlaced) == 0x000008, "Wrong alignment on PunchCardEntry_C_OnNewMedalPlaced");
-static_assert(sizeof(PunchCardEntry_C_OnNewMedalPlaced) == 0x000010, "Wrong size on PunchCardEntry_C_OnNewMedalPlaced");
-static_assert(offsetof(PunchCardEntry_C_OnNewMedalPlaced, PunchedMedal) == 0x000000, "Member 'PunchCardEntry_C_OnNewMedalPlaced::PunchedMedal' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_OnNewMedalPlaced, bPlaySocketAnim) == 0x000008, "Member 'PunchCardEntry_C_OnNewMedalPlaced::bPlaySocketAnim' has a wrong offset!");
 
 // Function PunchCardEntry.PunchCardEntry_C.SetAccoladeVisuals
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +48,6 @@ struct PunchCardEntry_C_SetAccoladeVisuals final
 public:
 	class UFortAccoladeItemDefinition*            ItemDef;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PunchCardEntry_C_SetAccoladeVisuals) == 0x000008, "Wrong alignment on PunchCardEntry_C_SetAccoladeVisuals");
-static_assert(sizeof(PunchCardEntry_C_SetAccoladeVisuals) == 0x000008, "Wrong size on PunchCardEntry_C_SetAccoladeVisuals");
-static_assert(offsetof(PunchCardEntry_C_SetAccoladeVisuals, ItemDef) == 0x000000, "Member 'PunchCardEntry_C_SetAccoladeVisuals::ItemDef' has a wrong offset!");
 
 // Function PunchCardEntry.PunchCardEntry_C.OnSetMedal
 // 0x0008 (0x0008 - 0x0000)
@@ -69,9 +56,6 @@ struct PunchCardEntry_C_OnSetMedal final
 public:
 	const class UFortAccoladeItemDefinition*      PunchedMedal;                                      // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PunchCardEntry_C_OnSetMedal) == 0x000008, "Wrong alignment on PunchCardEntry_C_OnSetMedal");
-static_assert(sizeof(PunchCardEntry_C_OnSetMedal) == 0x000008, "Wrong size on PunchCardEntry_C_OnSetMedal");
-static_assert(offsetof(PunchCardEntry_C_OnSetMedal, PunchedMedal) == 0x000000, "Member 'PunchCardEntry_C_OnSetMedal::PunchedMedal' has a wrong offset!");
 
 // Function PunchCardEntry.PunchCardEntry_C.ExecuteUbergraph_PunchCardEntry
 // 0x0190 (0x0190 - 0x0000)
@@ -127,46 +111,6 @@ public:
 	uint8                                         Pad_17A[0x2];                                      // 0x017A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(class UObject* Loaded)>        K2Node_CreateDelegate_OutputDelegate_3;            // 0x017C(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry) == 0x000008, "Wrong alignment on PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry");
-static_assert(sizeof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry) == 0x000190, "Wrong size on PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, EntryPoint) == 0x000000, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_object_Variable) == 0x000008, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CustomEvent_Loaded) == 0x000020, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_object_Variable_1) == 0x000028, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_bool_A_Execution_Happened_Variable) == 0x000030, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_bool_A_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_bool_B_Execution_Happened_Variable) == 0x000031, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_bool_B_Execution_Happened_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_BooleanAND_ReturnValue) == 0x000032, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Event_PunchedMedal_1) == 0x000038, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Event_PunchedMedal_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Event_bPlaySocketAnim) == 0x000040, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Event_bPlaySocketAnim' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CreateDelegate_OutputDelegate_1) == 0x000044, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CustomEvent_ItemDef) == 0x000058, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CustomEvent_ItemDef' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_GetPreviousAccoladeLargePreviewImage_ReturnValue) == 0x000060, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_GetPreviousAccoladeLargePreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_IsAssetNull_ReturnValue) == 0x000088, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_GetLargePreviewImage_ReturnValue) == 0x000090, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_GetLargePreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_GetAccoladeLevel_ReturnValue) == 0x0000B8, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_GetAccoladeLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_FTrunc_ReturnValue) == 0x0000BC, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CustomEvent_Loaded_1) == 0x0000C0, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_bool_Variable) == 0x0000C8, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Select_Default) == 0x0000D0, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000F8, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_object_Variable_2) == 0x000108, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_object_Variable_3) == 0x000110, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_bool_Variable_1) == 0x000118, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_PlayAnimation_ReturnValue) == 0x000120, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_byte_Variable) == 0x000128, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_byte_Variable_1) == 0x000129, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, Temp_bool_Variable_2) == 0x00012A, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000130, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_IsInZone_ReturnValue) == 0x000138, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_Not_PreBool_ReturnValue) == 0x000139, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Select_Default_1) == 0x00013A, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Select_Default_2) == 0x000140, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_Event_PunchedMedal) == 0x000148, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_Event_PunchedMedal' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_GetLargePreviewImage_ReturnValue_1) == 0x000150, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_GetLargePreviewImage_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_IsValid_ReturnValue) == 0x000178, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, CallFunc_IsValid_ReturnValue_1) == 0x000179, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry, K2Node_CreateDelegate_OutputDelegate_3) == 0x00017C, "Member 'PunchCardEntry_C_ExecuteUbergraph_PunchCardEntry::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
 
 }
 

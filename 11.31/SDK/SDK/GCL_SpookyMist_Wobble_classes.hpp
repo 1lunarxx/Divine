@@ -50,27 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCL_SpookyMist_Wobble_C">();
+		BP_STATIC_CLASS_IMPL("GCL_SpookyMist_Wobble_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCL_SpookyMist_Wobble_C")
 	}
 	static class AGCL_SpookyMist_Wobble_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCL_SpookyMist_Wobble_C>();
 	}
 };
-static_assert(alignof(AGCL_SpookyMist_Wobble_C) == 0x000008, "Wrong alignment on AGCL_SpookyMist_Wobble_C");
-static_assert(sizeof(AGCL_SpookyMist_Wobble_C) == 0x000808, "Wrong size on AGCL_SpookyMist_Wobble_C");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, UberGraphFrame) == 0x000788, "Member 'AGCL_SpookyMist_Wobble_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, TargetPawn) == 0x000790, "Member 'AGCL_SpookyMist_Wobble_C::TargetPawn' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, PlayerHeightOffset) == 0x000798, "Member 'AGCL_SpookyMist_Wobble_C::PlayerHeightOffset' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, TargetVelocity) == 0x0007A4, "Member 'AGCL_SpookyMist_Wobble_C::TargetVelocity' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, PlayerVelocityMultiplier) == 0x0007A8, "Member 'AGCL_SpookyMist_Wobble_C::PlayerVelocityMultiplier' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, RadiusOfCornToWiggle) == 0x0007AC, "Member 'AGCL_SpookyMist_Wobble_C::RadiusOfCornToWiggle' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, WiggleCooldown) == 0x0007B0, "Member 'AGCL_SpookyMist_Wobble_C::WiggleCooldown' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, ObjectTypes) == 0x0007B8, "Member 'AGCL_SpookyMist_Wobble_C::ObjectTypes' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, TravelTime) == 0x0007C8, "Member 'AGCL_SpookyMist_Wobble_C::TravelTime' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, DashStrength) == 0x0007D0, "Member 'AGCL_SpookyMist_Wobble_C::DashStrength' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, ArrayOfActors) == 0x0007F0, "Member 'AGCL_SpookyMist_Wobble_C::ArrayOfActors' has a wrong offset!");
-static_assert(offsetof(AGCL_SpookyMist_Wobble_C, WiggleTimer) == 0x000800, "Member 'AGCL_SpookyMist_Wobble_C::WiggleTimer' has a wrong offset!");
 
 }
 

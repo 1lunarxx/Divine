@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImagePlate">();
+		STATIC_CLASS_IMPL("ImagePlate")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImagePlate")
 	}
 	static class AImagePlate* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AImagePlate>();
 	}
 };
-static_assert(alignof(AImagePlate) == 0x000008, "Wrong alignment on AImagePlate");
-static_assert(sizeof(AImagePlate) == 0x000220, "Wrong size on AImagePlate");
-static_assert(offsetof(AImagePlate, ImagePlate) == 0x000218, "Member 'AImagePlate::ImagePlate' has a wrong offset!");
 
 // Class ImagePlate.ImagePlateComponent
 // 0x00C0 (0x04A0 - 0x03E0)
@@ -59,16 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImagePlateComponent">();
+		STATIC_CLASS_IMPL("ImagePlateComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImagePlateComponent")
 	}
 	static class UImagePlateComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImagePlateComponent>();
 	}
 };
-static_assert(alignof(UImagePlateComponent) == 0x000010, "Wrong alignment on UImagePlateComponent");
-static_assert(sizeof(UImagePlateComponent) == 0x0004A0, "Wrong size on UImagePlateComponent");
-static_assert(offsetof(UImagePlateComponent, Plate) == 0x0003D8, "Member 'UImagePlateComponent::Plate' has a wrong offset!");
 
 // Class ImagePlate.ImagePlateSettings
 // 0x0010 (0x0038 - 0x0028)
@@ -80,16 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImagePlateSettings">();
+		STATIC_CLASS_IMPL("ImagePlateSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImagePlateSettings")
 	}
 	static class UImagePlateSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImagePlateSettings>();
 	}
 };
-static_assert(alignof(UImagePlateSettings) == 0x000008, "Wrong alignment on UImagePlateSettings");
-static_assert(sizeof(UImagePlateSettings) == 0x000038, "Wrong size on UImagePlateSettings");
-static_assert(offsetof(UImagePlateSettings, ProxyName) == 0x000028, "Member 'UImagePlateSettings::ProxyName' has a wrong offset!");
 
 // Class ImagePlate.ImagePlateFileSequence
 // 0x0028 (0x0050 - 0x0028)
@@ -104,18 +107,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImagePlateFileSequence">();
+		STATIC_CLASS_IMPL("ImagePlateFileSequence")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImagePlateFileSequence")
 	}
 	static class UImagePlateFileSequence* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImagePlateFileSequence>();
 	}
 };
-static_assert(alignof(UImagePlateFileSequence) == 0x000008, "Wrong alignment on UImagePlateFileSequence");
-static_assert(sizeof(UImagePlateFileSequence) == 0x000050, "Wrong size on UImagePlateFileSequence");
-static_assert(offsetof(UImagePlateFileSequence, SequencePath) == 0x000028, "Member 'UImagePlateFileSequence::SequencePath' has a wrong offset!");
-static_assert(offsetof(UImagePlateFileSequence, FileWildcard) == 0x000038, "Member 'UImagePlateFileSequence::FileWildcard' has a wrong offset!");
-static_assert(offsetof(UImagePlateFileSequence, FrameRate) == 0x000048, "Member 'UImagePlateFileSequence::FrameRate' has a wrong offset!");
 
 // Class ImagePlate.ImagePlateFrustumComponent
 // 0x0000 (0x03E0 - 0x03E0)
@@ -124,15 +126,17 @@ class UImagePlateFrustumComponent final : public UPrimitiveComponent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ImagePlateFrustumComponent">();
+		STATIC_CLASS_IMPL("ImagePlateFrustumComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImagePlateFrustumComponent")
 	}
 	static class UImagePlateFrustumComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImagePlateFrustumComponent>();
 	}
 };
-static_assert(alignof(UImagePlateFrustumComponent) == 0x000010, "Wrong alignment on UImagePlateFrustumComponent");
-static_assert(sizeof(UImagePlateFrustumComponent) == 0x0003E0, "Wrong size on UImagePlateFrustumComponent");
 
 // Class ImagePlate.MovieSceneImagePlateSection
 // 0x0010 (0x00F0 - 0x00E0)
@@ -146,17 +150,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneImagePlateSection">();
+		STATIC_CLASS_IMPL("MovieSceneImagePlateSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneImagePlateSection")
 	}
 	static class UMovieSceneImagePlateSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneImagePlateSection>();
 	}
 };
-static_assert(alignof(UMovieSceneImagePlateSection) == 0x000008, "Wrong alignment on UMovieSceneImagePlateSection");
-static_assert(sizeof(UMovieSceneImagePlateSection) == 0x0000F0, "Wrong size on UMovieSceneImagePlateSection");
-static_assert(offsetof(UMovieSceneImagePlateSection, FileSequence) == 0x0000E0, "Member 'UMovieSceneImagePlateSection::FileSequence' has a wrong offset!");
-static_assert(offsetof(UMovieSceneImagePlateSection, bReuseExistingTexture) == 0x0000E8, "Member 'UMovieSceneImagePlateSection::bReuseExistingTexture' has a wrong offset!");
 
 // Class ImagePlate.MovieSceneImagePlateTrack
 // 0x0000 (0x0088 - 0x0088)
@@ -165,15 +169,17 @@ class UMovieSceneImagePlateTrack final : public UMovieScenePropertyTrack
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneImagePlateTrack">();
+		STATIC_CLASS_IMPL("MovieSceneImagePlateTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneImagePlateTrack")
 	}
 	static class UMovieSceneImagePlateTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneImagePlateTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneImagePlateTrack) == 0x000008, "Wrong alignment on UMovieSceneImagePlateTrack");
-static_assert(sizeof(UMovieSceneImagePlateTrack) == 0x000088, "Wrong size on UMovieSceneImagePlateTrack");
 
 }
 

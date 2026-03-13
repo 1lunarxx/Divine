@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_HidingProp_LandedOn_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_HidingProp_LandedOn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_HidingProp_LandedOn_C")
 	}
 	static class UGA_Athena_HidingProp_LandedOn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_HidingProp_LandedOn_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_HidingProp_LandedOn_C) == 0x000008, "Wrong alignment on UGA_Athena_HidingProp_LandedOn_C");
-static_assert(sizeof(UGA_Athena_HidingProp_LandedOn_C) == 0x000A58, "Wrong size on UGA_Athena_HidingProp_LandedOn_C");
-static_assert(offsetof(UGA_Athena_HidingProp_LandedOn_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_HidingProp_LandedOn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_LandedOn_C, Enabled) == 0x000A38, "Member 'UGA_Athena_HidingProp_LandedOn_C::Enabled' has a wrong offset!");
 
 }
 

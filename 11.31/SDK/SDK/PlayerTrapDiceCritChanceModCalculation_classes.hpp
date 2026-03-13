@@ -23,15 +23,17 @@ class UPlayerTrapDiceCritChanceModCalculation_C final : public UPlayerTrapBonusM
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapDiceCritChanceModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapDiceCritChanceModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapDiceCritChanceModCalculation_C")
 	}
 	static class UPlayerTrapDiceCritChanceModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapDiceCritChanceModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapDiceCritChanceModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapDiceCritChanceModCalculation_C");
-static_assert(sizeof(UPlayerTrapDiceCritChanceModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapDiceCritChanceModCalculation_C");
 
 }
 

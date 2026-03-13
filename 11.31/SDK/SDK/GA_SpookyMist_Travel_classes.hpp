@@ -70,38 +70,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_SpookyMist_Travel_C">();
+		BP_STATIC_CLASS_IMPL("GA_SpookyMist_Travel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_SpookyMist_Travel_C")
 	}
 	static class UGA_SpookyMist_Travel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_SpookyMist_Travel_C>();
 	}
 };
-static_assert(alignof(UGA_SpookyMist_Travel_C) == 0x000008, "Wrong alignment on UGA_SpookyMist_Travel_C");
-static_assert(sizeof(UGA_SpookyMist_Travel_C) == 0x000B30, "Wrong size on UGA_SpookyMist_Travel_C");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, UberGraphFrame) == 0x000A30, "Member 'UGA_SpookyMist_Travel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, Target) == 0x000A38, "Member 'UGA_SpookyMist_Travel_C::Target' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, PlayerPawn) == 0x000A40, "Member 'UGA_SpookyMist_Travel_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, ActorLocation) == 0x000A48, "Member 'UGA_SpookyMist_Travel_C::ActorLocation' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, TravelToLocation) == 0x000A54, "Member 'UGA_SpookyMist_Travel_C::TravelToLocation' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, TravelTime) == 0x000A60, "Member 'UGA_SpookyMist_Travel_C::TravelTime' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, GravityScale) == 0x000A64, "Member 'UGA_SpookyMist_Travel_C::GravityScale' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, RestoreGrav) == 0x000A68, "Member 'UGA_SpookyMist_Travel_C::RestoreGrav' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, ObjectTypes) == 0x000A70, "Member 'UGA_SpookyMist_Travel_C::ObjectTypes' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, MovementStrength) == 0x000A80, "Member 'UGA_SpookyMist_Travel_C::MovementStrength' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, DashAnimation) == 0x000A88, "Member 'UGA_SpookyMist_Travel_C::DashAnimation' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, DashSoundCue) == 0x000A90, "Member 'UGA_SpookyMist_Travel_C::DashSoundCue' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, Cooldown) == 0x000A98, "Member 'UGA_SpookyMist_Travel_C::Cooldown' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, GC_Burst) == 0x000AA0, "Member 'UGA_SpookyMist_Travel_C::GC_Burst' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, DashCooldown) == 0x000AA8, "Member 'UGA_SpookyMist_Travel_C::DashCooldown' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, DashStrength) == 0x000AC8, "Member 'UGA_SpookyMist_Travel_C::DashStrength' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, DashDuration) == 0x000AE8, "Member 'UGA_SpookyMist_Travel_C::DashDuration' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, CheckIfColliding) == 0x000B08, "Member 'UGA_SpookyMist_Travel_C::CheckIfColliding' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, IsOnCooldown) == 0x000B10, "Member 'UGA_SpookyMist_Travel_C::IsOnCooldown' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, OverlappingActor) == 0x000B18, "Member 'UGA_SpookyMist_Travel_C::OverlappingActor' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, OverlappingActors) == 0x000B20, "Member 'UGA_SpookyMist_Travel_C::OverlappingActors' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, GC_Wobble) == 0x000B24, "Member 'UGA_SpookyMist_Travel_C::GC_Wobble' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_Travel_C, Traveling_) == 0x000B2C, "Member 'UGA_SpookyMist_Travel_C::Traveling_' has a wrong offset!");
 
 }
 

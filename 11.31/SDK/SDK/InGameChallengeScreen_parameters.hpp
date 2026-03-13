@@ -26,10 +26,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InGameChallengeScreen_C_HandleBack) == 0x000008, "Wrong alignment on InGameChallengeScreen_C_HandleBack");
-static_assert(sizeof(InGameChallengeScreen_C_HandleBack) == 0x000010, "Wrong size on InGameChallengeScreen_C_HandleBack");
-static_assert(offsetof(InGameChallengeScreen_C_HandleBack, PassThrough) == 0x000000, "Member 'InGameChallengeScreen_C_HandleBack::PassThrough' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_HandleBack, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'InGameChallengeScreen_C_HandleBack::CallFunc_GetContext_ReturnValue' has a wrong offset!");
 
 // Function InGameChallengeScreen.InGameChallengeScreen_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -38,9 +34,6 @@ struct InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'InGameChallengeScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function InGameChallengeScreen.InGameChallengeScreen_C.ExecuteUbergraph_InGameChallengeScreen
 // 0x0040 (0x0040 - 0x0000)
@@ -60,18 +53,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen) == 0x000008, "Wrong alignment on InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen");
-static_assert(sizeof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen) == 0x000040, "Wrong size on InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, EntryPoint) == 0x000000, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, Temp_bool_Variable) == 0x000004, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, Temp_byte_Variable) == 0x000005, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, Temp_byte_Variable_1) == 0x000006, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000028, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, CallFunc_HandleBack_PassThrough) == 0x000029, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::CallFunc_HandleBack_PassThrough' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen, K2Node_Select_Default) == 0x000038, "Member 'InGameChallengeScreen_C_ExecuteUbergraph_InGameChallengeScreen::K2Node_Select_Default' has a wrong offset!");
 
 }
 

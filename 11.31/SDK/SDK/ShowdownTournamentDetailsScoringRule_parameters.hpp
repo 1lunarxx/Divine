@@ -48,27 +48,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x02A0(0x0018)()
 	class FText                                   K2Node_Select_Default_1;                           // 0x02B8(0x0018)()
 };
-static_assert(alignof(ShowdownTournamentDetailsScoringRule_C_SetData) == 0x000008, "Wrong alignment on ShowdownTournamentDetailsScoringRule_C_SetData");
-static_assert(sizeof(ShowdownTournamentDetailsScoringRule_C_SetData) == 0x0002D0, "Wrong size on ShowdownTournamentDetailsScoringRule_C_SetData");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, ScoreRule) == 0x000000, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::ScoreRule' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, TournamentDisplayInfo) == 0x000018, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::TournamentDisplayInfo' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, Temp_struct_Variable) == 0x000188, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, Temp_struct_Variable_1) == 0x000198, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, K2Node_MakeStruct_FormatArgumentData) == 0x0001A8, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, K2Node_MakeArray_Array) == 0x0001E8, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001F8, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_Conv_IntToText_ReturnValue) == 0x000200, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000218, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000219, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_BooleanAND_ReturnValue) == 0x00021A, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, Temp_bool_Variable) == 0x00021B, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, Temp_text_Variable) == 0x000220, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, K2Node_Select_Default) == 0x000238, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, Temp_bool_Variable_1) == 0x000248, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_GetDataTableRowFromName_OutRow) == 0x000250, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_GetDataTableRowFromName_OutRow' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_GetDataTableRowFromName_ReturnValue) == 0x000298, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_GetDataTableRowFromName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, CallFunc_Format_ReturnValue) == 0x0002A0, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownTournamentDetailsScoringRule_C_SetData, K2Node_Select_Default_1) == 0x0002B8, "Member 'ShowdownTournamentDetailsScoringRule_C_SetData::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

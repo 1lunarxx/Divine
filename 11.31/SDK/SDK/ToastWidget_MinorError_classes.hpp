@@ -66,35 +66,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToastWidget_MinorError_C">();
+		BP_STATIC_CLASS_IMPL("ToastWidget_MinorError_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToastWidget_MinorError_C")
 	}
 	static class UToastWidget_MinorError_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToastWidget_MinorError_C>();
 	}
 };
-static_assert(alignof(UToastWidget_MinorError_C) == 0x000008, "Wrong alignment on UToastWidget_MinorError_C");
-static_assert(sizeof(UToastWidget_MinorError_C) == 0x000300, "Wrong size on UToastWidget_MinorError_C");
-static_assert(offsetof(UToastWidget_MinorError_C, UberGraphFrame) == 0x000258, "Member 'UToastWidget_MinorError_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Outro_New) == 0x000260, "Member 'UToastWidget_MinorError_C::Outro_New' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Intro_212) == 0x000268, "Member 'UToastWidget_MinorError_C::Intro_212' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Intro_4114) == 0x000270, "Member 'UToastWidget_MinorError_C::Intro_4114' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Intro_new2) == 0x000278, "Member 'UToastWidget_MinorError_C::Intro_new2' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Outro) == 0x000280, "Member 'UToastWidget_MinorError_C::Outro' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Intro) == 0x000288, "Member 'UToastWidget_MinorError_C::Intro' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, B_NotificationImage) == 0x000290, "Member 'UToastWidget_MinorError_C::B_NotificationImage' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, B_NotificationImageExtended) == 0x000298, "Member 'UToastWidget_MinorError_C::B_NotificationImageExtended' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, CommonBorder_MainWidget) == 0x0002A0, "Member 'UToastWidget_MinorError_C::CommonBorder_MainWidget' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Description) == 0x0002A8, "Member 'UToastWidget_MinorError_C::Description' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, NotificationImage) == 0x0002B0, "Member 'UToastWidget_MinorError_C::NotificationImage' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, OpenButton) == 0x0002B8, "Member 'UToastWidget_MinorError_C::OpenButton' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, ProgrammerNote) == 0x0002C0, "Member 'UToastWidget_MinorError_C::ProgrammerNote' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, Title) == 0x0002C8, "Member 'UToastWidget_MinorError_C::Title' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, ToastNotification) == 0x0002D0, "Member 'UToastWidget_MinorError_C::ToastNotification' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, AnimationFinishedDelay) == 0x0002D8, "Member 'UToastWidget_MinorError_C::AnimationFinishedDelay' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, OnFinishedToast) == 0x0002E0, "Member 'UToastWidget_MinorError_C::OnFinishedToast' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, AnimationDelayTimer) == 0x0002F0, "Member 'UToastWidget_MinorError_C::AnimationDelayTimer' has a wrong offset!");
-static_assert(offsetof(UToastWidget_MinorError_C, bActionTaken) == 0x0002F8, "Member 'UToastWidget_MinorError_C::bActionTaken' has a wrong offset!");
 
 }
 

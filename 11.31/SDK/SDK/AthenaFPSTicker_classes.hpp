@@ -23,15 +23,17 @@ class UAthenaFPSTicker_C final : public UAthenaFPSBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaFPSTicker_C">();
+		BP_STATIC_CLASS_IMPL("AthenaFPSTicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaFPSTicker_C")
 	}
 	static class UAthenaFPSTicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaFPSTicker_C>();
 	}
 };
-static_assert(alignof(UAthenaFPSTicker_C) == 0x000008, "Wrong alignment on UAthenaFPSTicker_C");
-static_assert(sizeof(UAthenaFPSTicker_C) == 0x000278, "Wrong size on UAthenaFPSTicker_C");
 
 }
 

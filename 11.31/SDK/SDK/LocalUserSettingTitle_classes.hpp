@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LocalUserSettingTitle_C">();
+		BP_STATIC_CLASS_IMPL("LocalUserSettingTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalUserSettingTitle_C")
 	}
 	static class ULocalUserSettingTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalUserSettingTitle_C>();
 	}
 };
-static_assert(alignof(ULocalUserSettingTitle_C) == 0x000008, "Wrong alignment on ULocalUserSettingTitle_C");
-static_assert(sizeof(ULocalUserSettingTitle_C) == 0x000BA0, "Wrong size on ULocalUserSettingTitle_C");
-static_assert(offsetof(ULocalUserSettingTitle_C, UberGraphFrame) == 0x000B78, "Member 'ULocalUserSettingTitle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingTitle_C, OnExpansion) == 0x000B80, "Member 'ULocalUserSettingTitle_C::OnExpansion' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingTitle_C, OnHover) == 0x000B88, "Member 'ULocalUserSettingTitle_C::OnHover' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingTitle_C, ExpandDirectionTick) == 0x000B90, "Member 'ULocalUserSettingTitle_C::ExpandDirectionTick' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingTitle_C, SB_EntryContent) == 0x000B98, "Member 'ULocalUserSettingTitle_C::SB_EntryContent' has a wrong offset!");
 
 }
 

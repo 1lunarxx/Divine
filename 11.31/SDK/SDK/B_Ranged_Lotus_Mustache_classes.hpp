@@ -70,38 +70,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Ranged_Lotus_Mustache_C">();
+		BP_STATIC_CLASS_IMPL("B_Ranged_Lotus_Mustache_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Ranged_Lotus_Mustache_C")
 	}
 	static class AB_Ranged_Lotus_Mustache_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Ranged_Lotus_Mustache_C>();
 	}
 };
-static_assert(alignof(AB_Ranged_Lotus_Mustache_C) == 0x000008, "Wrong alignment on AB_Ranged_Lotus_Mustache_C");
-static_assert(sizeof(AB_Ranged_Lotus_Mustache_C) == 0x000FD8, "Wrong size on AB_Ranged_Lotus_Mustache_C");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, UberGraphFrame_B_Ranged_Lotus_Mustache_C) == 0x000F08, "Member 'AB_Ranged_Lotus_Mustache_C::UberGraphFrame_B_Ranged_Lotus_Mustache_C' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_1_NewTrack_0_8351400740E359EACF6851AB2B2BF762) == 0x000F10, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_1_NewTrack_0_8351400740E359EACF6851AB2B2BF762' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_1__Direction_8351400740E359EACF6851AB2B2BF762) == 0x000F14, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_1__Direction_8351400740E359EACF6851AB2B2BF762' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_1) == 0x000F18, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_1' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_0_NewTrack_0_1366F380457842955A635D98E5E62F34) == 0x000F20, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_0_NewTrack_0_1366F380457842955A635D98E5E62F34' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_0__Direction_1366F380457842955A635D98E5E62F34) == 0x000F24, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_0__Direction_1366F380457842955A635D98E5E62F34' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Timeline_0) == 0x000F28, "Member 'AB_Ranged_Lotus_Mustache_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, DataRow) == 0x000F30, "Member 'AB_Ranged_Lotus_Mustache_C::DataRow' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Screen_Full_Color__Material_) == 0x000F40, "Member 'AB_Ranged_Lotus_Mustache_C::Screen_Full_Color__Material_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Screen_Empty_Color__Material_) == 0x000F50, "Member 'AB_Ranged_Lotus_Mustache_C::Screen_Empty_Color__Material_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Test_AmmoClipMax) == 0x000F60, "Member 'AB_Ranged_Lotus_Mustache_C::Test_AmmoClipMax' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Screen_Empty_Color__Light_) == 0x000F64, "Member 'AB_Ranged_Lotus_Mustache_C::Screen_Empty_Color__Light_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, Screen_Full_Color__Light_) == 0x000F74, "Member 'AB_Ranged_Lotus_Mustache_C::Screen_Full_Color__Light_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, CanPlay_) == 0x000F84, "Member 'AB_Ranged_Lotus_Mustache_C::CanPlay_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, LockOnTarget) == 0x000F88, "Member 'AB_Ranged_Lotus_Mustache_C::LockOnTarget' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, TurnSpeedMax) == 0x000F90, "Member 'AB_Ranged_Lotus_Mustache_C::TurnSpeedMax' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, HomingDistanceThreshold) == 0x000F94, "Member 'AB_Ranged_Lotus_Mustache_C::HomingDistanceThreshold' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, TimeUntilMax) == 0x000F98, "Member 'AB_Ranged_Lotus_Mustache_C::TimeUntilMax' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, LockOnWidget) == 0x000FA0, "Member 'AB_Ranged_Lotus_Mustache_C::LockOnWidget' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, WidgetActor) == 0x000FA8, "Member 'AB_Ranged_Lotus_Mustache_C::WidgetActor' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, HealthPercent) == 0x000FB0, "Member 'AB_Ranged_Lotus_Mustache_C::HealthPercent' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, MaxTime) == 0x000FB4, "Member 'AB_Ranged_Lotus_Mustache_C::MaxTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Lotus_Mustache_C, ShouldSpawnBandages) == 0x000FB8, "Member 'AB_Ranged_Lotus_Mustache_C::ShouldSpawnBandages' has a wrong offset!");
 
 }
 

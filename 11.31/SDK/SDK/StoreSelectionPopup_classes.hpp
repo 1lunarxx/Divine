@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreSelectionPopup_C">();
+		BP_STATIC_CLASS_IMPL("StoreSelectionPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreSelectionPopup_C")
 	}
 	static class UStoreSelectionPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreSelectionPopup_C>();
 	}
 };
-static_assert(alignof(UStoreSelectionPopup_C) == 0x000008, "Wrong alignment on UStoreSelectionPopup_C");
-static_assert(sizeof(UStoreSelectionPopup_C) == 0x000460, "Wrong size on UStoreSelectionPopup_C");
-static_assert(offsetof(UStoreSelectionPopup_C, UberGraphFrame) == 0x000440, "Member 'UStoreSelectionPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreSelectionPopup_C, Intro) == 0x000448, "Member 'UStoreSelectionPopup_C::Intro' has a wrong offset!");
-static_assert(offsetof(UStoreSelectionPopup_C, SpeedLines) == 0x000450, "Member 'UStoreSelectionPopup_C::SpeedLines' has a wrong offset!");
-static_assert(offsetof(UStoreSelectionPopup_C, StorePrompt_Header) == 0x000458, "Member 'UStoreSelectionPopup_C::StorePrompt_Header' has a wrong offset!");
 
 }
 

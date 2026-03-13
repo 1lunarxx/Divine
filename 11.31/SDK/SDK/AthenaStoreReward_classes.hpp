@@ -54,13 +54,6 @@ public:
 	int32                                         VariantTimerIndex;                                 // 0x0C20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void GetItem(class UFortItem** Result);
-	void SetupQuantity(int32 Quantity);
-	void ResetVariantToDefault();
-	void CancelVariantTimer();
-	void StartVariantTimer(float OverrideTimer);
-	void GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition);
-	void OnVaultItemsChanged(TArray<class UFortItem*>& Items);
 	void ShowNextVariant();
 	void StopCyclingVariants();
 	void BeginCyclingVariants();
@@ -76,45 +69,30 @@ public:
 	void ViewItem();
 	void BP_OnClicked();
 	void ExecuteUbergraph_AthenaStoreReward(int32 EntryPoint);
+	void GetItem(class UFortItem** Result);
+	void SetupQuantity(int32 Quantity);
+	void ResetVariantToDefault();
+	void CancelVariantTimer();
+	void StartVariantTimer(float OverrideTimer);
+	void GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition);
+	void OnVaultItemsChanged(TArray<class UFortItem*>& Items);
 
 	void GetTemporaryItems(TArray<struct FFortCosmeticVariantPreviewElement>& Cosmetics, TArray<class UFortItem*>* Temporary_Items) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStoreReward_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStoreReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStoreReward_C")
 	}
 	static class UAthenaStoreReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStoreReward_C>();
 	}
 };
-static_assert(alignof(UAthenaStoreReward_C) == 0x000008, "Wrong alignment on UAthenaStoreReward_C");
-static_assert(sizeof(UAthenaStoreReward_C) == 0x000C28, "Wrong size on UAthenaStoreReward_C");
-static_assert(offsetof(UAthenaStoreReward_C, UberGraphFrame) == 0x000B78, "Member 'UAthenaStoreReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, Fade) == 0x000B80, "Member 'UAthenaStoreReward_C::Fade' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, Intro) == 0x000B88, "Member 'UAthenaStoreReward_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, BorderOwned) == 0x000B90, "Member 'UAthenaStoreReward_C::BorderOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, Check) == 0x000B98, "Member 'UAthenaStoreReward_C::Check' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, ClaimedImage) == 0x000BA0, "Member 'UAthenaStoreReward_C::ClaimedImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, ItemCard) == 0x000BA8, "Member 'UAthenaStoreReward_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, LockedImage) == 0x000BB0, "Member 'UAthenaStoreReward_C::LockedImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, OwnedText) == 0x000BB8, "Member 'UAthenaStoreReward_C::OwnedText' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, RarityFlare) == 0x000BC0, "Member 'UAthenaStoreReward_C::RarityFlare' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, RevealOverlay) == 0x000BC8, "Member 'UAthenaStoreReward_C::RevealOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, SBoxOwned) == 0x000BD0, "Member 'UAthenaStoreReward_C::SBoxOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, UnEarned_OverlayTint) == 0x000BD8, "Member 'UAthenaStoreReward_C::UnEarned_OverlayTint' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, StrongItemToRepresent) == 0x000BE0, "Member 'UAthenaStoreReward_C::StrongItemToRepresent' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, SoundOnReveal) == 0x000BE8, "Member 'UAthenaStoreReward_C::SoundOnReveal' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, ViewOnHover) == 0x000BF0, "Member 'UAthenaStoreReward_C::ViewOnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, SecondaryItem) == 0x000BF8, "Member 'UAthenaStoreReward_C::SecondaryItem' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, ShowVariantTimer) == 0x000C00, "Member 'UAthenaStoreReward_C::ShowVariantTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, ResetVariantTimer) == 0x000C08, "Member 'UAthenaStoreReward_C::ResetVariantTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, VariantIndex) == 0x000C10, "Member 'UAthenaStoreReward_C::VariantIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, WaitingForVaultToChange) == 0x000C14, "Member 'UAthenaStoreReward_C::WaitingForVaultToChange' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, TimeBetweenVariants) == 0x000C18, "Member 'UAthenaStoreReward_C::TimeBetweenVariants' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, TimeBetweenVariantsRestart) == 0x000C1C, "Member 'UAthenaStoreReward_C::TimeBetweenVariantsRestart' has a wrong offset!");
-static_assert(offsetof(UAthenaStoreReward_C, VariantTimerIndex) == 0x000C20, "Member 'UAthenaStoreReward_C::VariantTimerIndex' has a wrong offset!");
 
 }
 

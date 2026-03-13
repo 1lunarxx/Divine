@@ -34,10 +34,6 @@ public:
 	class FString                                 DataInterfaceHLSLSymbol;                           // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DIClassName;                                       // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNiagaraDataInterfaceGPUParamInfo) == 0x000008, "Wrong alignment on FNiagaraDataInterfaceGPUParamInfo");
-static_assert(sizeof(FNiagaraDataInterfaceGPUParamInfo) == 0x000020, "Wrong size on FNiagaraDataInterfaceGPUParamInfo");
-static_assert(offsetof(FNiagaraDataInterfaceGPUParamInfo, DataInterfaceHLSLSymbol) == 0x000000, "Member 'FNiagaraDataInterfaceGPUParamInfo::DataInterfaceHLSLSymbol' has a wrong offset!");
-static_assert(offsetof(FNiagaraDataInterfaceGPUParamInfo, DIClassName) == 0x000010, "Member 'FNiagaraDataInterfaceGPUParamInfo::DIClassName' has a wrong offset!");
 
 // ScriptStruct NiagaraShader.NiagaraCompileEvent
 // 0x0048 (0x0048 - 0x0000)
@@ -51,13 +47,6 @@ public:
 	struct FGuid                                  PinGuid;                                           // 0x0028(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FGuid>                          StackGuids;                                        // 0x0038(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FNiagaraCompileEvent) == 0x000008, "Wrong alignment on FNiagaraCompileEvent");
-static_assert(sizeof(FNiagaraCompileEvent) == 0x000048, "Wrong size on FNiagaraCompileEvent");
-static_assert(offsetof(FNiagaraCompileEvent, Severity) == 0x000000, "Member 'FNiagaraCompileEvent::Severity' has a wrong offset!");
-static_assert(offsetof(FNiagaraCompileEvent, Message) == 0x000008, "Member 'FNiagaraCompileEvent::Message' has a wrong offset!");
-static_assert(offsetof(FNiagaraCompileEvent, NodeGuid) == 0x000018, "Member 'FNiagaraCompileEvent::NodeGuid' has a wrong offset!");
-static_assert(offsetof(FNiagaraCompileEvent, PinGuid) == 0x000028, "Member 'FNiagaraCompileEvent::PinGuid' has a wrong offset!");
-static_assert(offsetof(FNiagaraCompileEvent, StackGuids) == 0x000038, "Member 'FNiagaraCompileEvent::StackGuids' has a wrong offset!");
 
 }
 

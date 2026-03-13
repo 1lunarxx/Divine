@@ -23,15 +23,17 @@ class USimpleCommonButton_C final : public UCommonButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SimpleCommonButton_C">();
+		BP_STATIC_CLASS_IMPL("SimpleCommonButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleCommonButton_C")
 	}
 	static class USimpleCommonButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleCommonButton_C>();
 	}
 };
-static_assert(alignof(USimpleCommonButton_C) == 0x000008, "Wrong alignment on USimpleCommonButton_C");
-static_assert(sizeof(USimpleCommonButton_C) == 0x000B70, "Wrong size on USimpleCommonButton_C");
 
 }
 

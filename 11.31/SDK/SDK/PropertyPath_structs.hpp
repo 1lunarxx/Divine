@@ -25,12 +25,6 @@ public:
 	class UStruct*                                struct_0;                                          // 0x0010(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UField*                                 Field;                                             // 0x0018(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
-static_assert(alignof(FPropertyPathSegment) == 0x000008, "Wrong alignment on FPropertyPathSegment");
-static_assert(sizeof(FPropertyPathSegment) == 0x000020, "Wrong size on FPropertyPathSegment");
-static_assert(offsetof(FPropertyPathSegment, Name) == 0x000000, "Member 'FPropertyPathSegment::Name' has a wrong offset!");
-static_assert(offsetof(FPropertyPathSegment, ArrayIndex) == 0x000008, "Member 'FPropertyPathSegment::ArrayIndex' has a wrong offset!");
-static_assert(offsetof(FPropertyPathSegment, struct_0) == 0x000010, "Member 'FPropertyPathSegment::struct_0' has a wrong offset!");
-static_assert(offsetof(FPropertyPathSegment, Field) == 0x000018, "Member 'FPropertyPathSegment::Field' has a wrong offset!");
 
 // ScriptStruct PropertyPath.CachedPropertyPath
 // 0x0028 (0x0028 - 0x0000)
@@ -42,10 +36,6 @@ public:
 	class UFunction*                              CachedFunction;                                    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_20[0x8];                                       // 0x0020(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FCachedPropertyPath) == 0x000008, "Wrong alignment on FCachedPropertyPath");
-static_assert(sizeof(FCachedPropertyPath) == 0x000028, "Wrong size on FCachedPropertyPath");
-static_assert(offsetof(FCachedPropertyPath, Segments) == 0x000000, "Member 'FCachedPropertyPath::Segments' has a wrong offset!");
-static_assert(offsetof(FCachedPropertyPath, CachedFunction) == 0x000018, "Member 'FCachedPropertyPath::CachedFunction' has a wrong offset!");
 
 }
 

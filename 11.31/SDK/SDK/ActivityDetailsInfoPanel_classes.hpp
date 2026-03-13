@@ -23,15 +23,17 @@ class UActivityDetailsInfoPanel_C final : public UFortActivityDetailsInfoPanel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityDetailsInfoPanel_C">();
+		BP_STATIC_CLASS_IMPL("ActivityDetailsInfoPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityDetailsInfoPanel_C")
 	}
 	static class UActivityDetailsInfoPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityDetailsInfoPanel_C>();
 	}
 };
-static_assert(alignof(UActivityDetailsInfoPanel_C) == 0x000008, "Wrong alignment on UActivityDetailsInfoPanel_C");
-static_assert(sizeof(UActivityDetailsInfoPanel_C) == 0x000458, "Wrong size on UActivityDetailsInfoPanel_C");
 
 }
 

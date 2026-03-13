@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Bucket_Old_Gadget_Skeleton_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("Bucket_Old_Gadget_Skeleton_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Bucket_Old_Gadget_Skeleton_AnimBP_C")
 	}
 	static class UBucket_Old_Gadget_Skeleton_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBucket_Old_Gadget_Skeleton_AnimBP_C>();
 	}
 };
-static_assert(alignof(UBucket_Old_Gadget_Skeleton_AnimBP_C) == 0x000010, "Wrong alignment on UBucket_Old_Gadget_Skeleton_AnimBP_C");
-static_assert(sizeof(UBucket_Old_Gadget_Skeleton_AnimBP_C) == 0x000B50, "Wrong size on UBucket_Old_Gadget_Skeleton_AnimBP_C");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, UberGraphFrame) == 0x0003F0, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_RigidBody_100A68464EFD27B24AC5D39A7070E7BB) == 0x000400, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_RigidBody_100A68464EFD27B24AC5D39A7070E7BB' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_LocalToComponentSpace_D9CDABBC42AEDAD1965D0BBA81A7D90E) == 0x000960, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_LocalToComponentSpace_D9CDABBC42AEDAD1965D0BBA81A7D90E' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_7B76CF1B466C82BF33D73CA3A143B952) == 0x000980, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_7B76CF1B466C82BF33D73CA3A143B952' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_SubInput_5665FF0E4A879C97D18D2881B5897A6D) == 0x0009A0, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_SubInput_5665FF0E4A879C97D18D2881B5897A6D' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_Root_3EE1C4B34CE43804012628A05F924445) == 0x000A10, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_Root_3EE1C4B34CE43804012628A05F924445' has a wrong offset!");
-static_assert(offsetof(UBucket_Old_Gadget_Skeleton_AnimBP_C, AnimGraphNode_ModifyBone_DEC1B9EF40E29A24759C37BAFB571A61) == 0x000A40, "Member 'UBucket_Old_Gadget_Skeleton_AnimBP_C::AnimGraphNode_ModifyBone_DEC1B9EF40E29A24759C37BAFB571A61' has a wrong offset!");
 
 }
 

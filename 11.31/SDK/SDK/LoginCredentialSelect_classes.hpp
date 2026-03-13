@@ -42,27 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginCredentialSelect_C">();
+		BP_STATIC_CLASS_IMPL("LoginCredentialSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginCredentialSelect_C")
 	}
 	static class ULoginCredentialSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginCredentialSelect_C>();
 	}
 };
-static_assert(alignof(ULoginCredentialSelect_C) == 0x000008, "Wrong alignment on ULoginCredentialSelect_C");
-static_assert(sizeof(ULoginCredentialSelect_C) == 0x000330, "Wrong size on ULoginCredentialSelect_C");
-static_assert(offsetof(ULoginCredentialSelect_C, UberGraphFrame) == 0x0002D0, "Member 'ULoginCredentialSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, CommonWidgetSwitcher_0) == 0x0002D8, "Member 'ULoginCredentialSelect_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Erebus_Title) == 0x0002E0, "Member 'ULoginCredentialSelect_C::Erebus_Title' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, ErebusType) == 0x0002E8, "Member 'ULoginCredentialSelect_C::ErebusType' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_0) == 0x0002F0, "Member 'ULoginCredentialSelect_C::Image_0' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_1) == 0x0002F8, "Member 'ULoginCredentialSelect_C::Image_1' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_2) == 0x000300, "Member 'ULoginCredentialSelect_C::Image_2' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_3) == 0x000308, "Member 'ULoginCredentialSelect_C::Image_3' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_4) == 0x000310, "Member 'ULoginCredentialSelect_C::Image_4' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_5) == 0x000318, "Member 'ULoginCredentialSelect_C::Image_5' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, Image_48) == 0x000320, "Member 'ULoginCredentialSelect_C::Image_48' has a wrong offset!");
-static_assert(offsetof(ULoginCredentialSelect_C, TrademarksBorder) == 0x000328, "Member 'ULoginCredentialSelect_C::TrademarksBorder' has a wrong offset!");
 
 }
 

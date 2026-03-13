@@ -73,44 +73,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonItemRewardIcon_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonItemRewardIcon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonItemRewardIcon_C")
 	}
 	static class UAthenaSeasonItemRewardIcon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonItemRewardIcon_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonItemRewardIcon_C) == 0x000008, "Wrong alignment on UAthenaSeasonItemRewardIcon_C");
-static_assert(sizeof(UAthenaSeasonItemRewardIcon_C) == 0x0002D8, "Wrong size on UAthenaSeasonItemRewardIcon_C");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, UberGraphFrame) == 0x000230, "Member 'UAthenaSeasonItemRewardIcon_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, AdjustRewardFillSize) == 0x000238, "Member 'UAthenaSeasonItemRewardIcon_C::AdjustRewardFillSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Selected) == 0x000240, "Member 'UAthenaSeasonItemRewardIcon_C::Selected' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, HoverState) == 0x000248, "Member 'UAthenaSeasonItemRewardIcon_C::HoverState' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Image_BattlePassIcon) == 0x000250, "Member 'UAthenaSeasonItemRewardIcon_C::Image_BattlePassIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Image_RewardContainer) == 0x000258, "Member 'UAthenaSeasonItemRewardIcon_C::Image_RewardContainer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, RewardContainer_Size) == 0x000260, "Member 'UAthenaSeasonItemRewardIcon_C::RewardContainer_Size' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, RewardTile) == 0x000268, "Member 'UAthenaSeasonItemRewardIcon_C::RewardTile' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, SizeBox_BattlePassIcon) == 0x000270, "Member 'UAthenaSeasonItemRewardIcon_C::SizeBox_BattlePassIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, SizeBox_Styles) == 0x000278, "Member 'UAthenaSeasonItemRewardIcon_C::SizeBox_Styles' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Styles_Count) == 0x000280, "Member 'UAthenaSeasonItemRewardIcon_C::Styles_Count' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Styles_Backing) == 0x000288, "Member 'UAthenaSeasonItemRewardIcon_C::Styles_Backing' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, StylesLabel) == 0x000290, "Member 'UAthenaSeasonItemRewardIcon_C::StylesLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, StylesWrapper) == 0x000298, "Member 'UAthenaSeasonItemRewardIcon_C::StylesWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Text_Count) == 0x0002A0, "Member 'UAthenaSeasonItemRewardIcon_C::Text_Count' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Width) == 0x0002A8, "Member 'UAthenaSeasonItemRewardIcon_C::Width' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, Height) == 0x0002AC, "Member 'UAthenaSeasonItemRewardIcon_C::Height' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, ShowStyle) == 0x0002B0, "Member 'UAthenaSeasonItemRewardIcon_C::ShowStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, ShowCount) == 0x0002B1, "Member 'UAthenaSeasonItemRewardIcon_C::ShowCount' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, BattlePassIconSize) == 0x0002B4, "Member 'UAthenaSeasonItemRewardIcon_C::BattlePassIconSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, BattlePassIconEnabled) == 0x0002B8, "Member 'UAthenaSeasonItemRewardIcon_C::BattlePassIconEnabled' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, BattlePassIconPositionOffsetMultiplier) == 0x0002BC, "Member 'UAthenaSeasonItemRewardIcon_C::BattlePassIconPositionOffsetMultiplier' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, RewardItem) == 0x0002C0, "Member 'UAthenaSeasonItemRewardIcon_C::RewardItem' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, bSelectedStateStylesText) == 0x0002C8, "Member 'UAthenaSeasonItemRewardIcon_C::bSelectedStateStylesText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, bWidthOverride) == 0x0002C9, "Member 'UAthenaSeasonItemRewardIcon_C::bWidthOverride' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, bHeightOverride) == 0x0002CA, "Member 'UAthenaSeasonItemRewardIcon_C::bHeightOverride' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, FillSize) == 0x0002CC, "Member 'UAthenaSeasonItemRewardIcon_C::FillSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, DesiredPixelSize) == 0x0002D0, "Member 'UAthenaSeasonItemRewardIcon_C::DesiredPixelSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonItemRewardIcon_C, bIsEmoji) == 0x0002D4, "Member 'UAthenaSeasonItemRewardIcon_C::bIsEmoji' has a wrong offset!");
 
 }
 

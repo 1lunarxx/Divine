@@ -42,27 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassScreen_SideMessaging_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassScreen_SideMessaging_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassScreen_SideMessaging_C")
 	}
 	static class UBattlePassScreen_SideMessaging_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassScreen_SideMessaging_C>();
 	}
 };
-static_assert(alignof(UBattlePassScreen_SideMessaging_C) == 0x000008, "Wrong alignment on UBattlePassScreen_SideMessaging_C");
-static_assert(sizeof(UBattlePassScreen_SideMessaging_C) == 0x000290, "Wrong size on UBattlePassScreen_SideMessaging_C");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, UberGraphFrame) == 0x000230, "Member 'UBattlePassScreen_SideMessaging_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, Backing) == 0x000238, "Member 'UBattlePassScreen_SideMessaging_C::Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, BottomAngle) == 0x000240, "Member 'UBattlePassScreen_SideMessaging_C::BottomAngle' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, FreeGlow) == 0x000248, "Member 'UBattlePassScreen_SideMessaging_C::FreeGlow' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, FreeTag_Backing) == 0x000250, "Member 'UBattlePassScreen_SideMessaging_C::FreeTag_Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, FreeTrack_FreeTag) == 0x000258, "Member 'UBattlePassScreen_SideMessaging_C::FreeTrack_FreeTag' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, Image_191) == 0x000260, "Member 'UBattlePassScreen_SideMessaging_C::Image_191' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, Messaging) == 0x000268, "Member 'UBattlePassScreen_SideMessaging_C::Messaging' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, SafeZone_0) == 0x000270, "Member 'UBattlePassScreen_SideMessaging_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, Text_Free) == 0x000278, "Member 'UBattlePassScreen_SideMessaging_C::Text_Free' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, TopAngle) == 0x000280, "Member 'UBattlePassScreen_SideMessaging_C::TopAngle' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_SideMessaging_C, FlipAxis) == 0x000288, "Member 'UBattlePassScreen_SideMessaging_C::FlipAxis' has a wrong offset!");
 
 }
 

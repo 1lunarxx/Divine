@@ -40,18 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComOptionVote_C">();
+		BP_STATIC_CLASS_IMPL("ComOptionVote_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComOptionVote_C")
 	}
 	static class UComOptionVote_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComOptionVote_C>();
 	}
 };
-static_assert(alignof(UComOptionVote_C) == 0x000008, "Wrong alignment on UComOptionVote_C");
-static_assert(sizeof(UComOptionVote_C) == 0x000B88, "Wrong size on UComOptionVote_C");
-static_assert(offsetof(UComOptionVote_C, UberGraphFrame) == 0x000B70, "Member 'UComOptionVote_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComOptionVote_C, FadeOut) == 0x000B78, "Member 'UComOptionVote_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UComOptionVote_C, FadeIn) == 0x000B80, "Member 'UComOptionVote_C::FadeIn' has a wrong offset!");
 
 }
 

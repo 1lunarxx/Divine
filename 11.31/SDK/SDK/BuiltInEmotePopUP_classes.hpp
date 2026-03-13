@@ -29,19 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuiltInEmotePopUP_C">();
+		BP_STATIC_CLASS_IMPL("BuiltInEmotePopUP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuiltInEmotePopUP_C")
 	}
 	static class UBuiltInEmotePopUP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuiltInEmotePopUP_C>();
 	}
 };
-static_assert(alignof(UBuiltInEmotePopUP_C) == 0x000008, "Wrong alignment on UBuiltInEmotePopUP_C");
-static_assert(sizeof(UBuiltInEmotePopUP_C) == 0x000250, "Wrong size on UBuiltInEmotePopUP_C");
-static_assert(offsetof(UBuiltInEmotePopUP_C, FadeAnim) == 0x000230, "Member 'UBuiltInEmotePopUP_C::FadeAnim' has a wrong offset!");
-static_assert(offsetof(UBuiltInEmotePopUP_C, IntroAnim) == 0x000238, "Member 'UBuiltInEmotePopUP_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UBuiltInEmotePopUP_C, Border_ItemRarity) == 0x000240, "Member 'UBuiltInEmotePopUP_C::Border_ItemRarity' has a wrong offset!");
-static_assert(offsetof(UBuiltInEmotePopUP_C, RichText_ItemPrompt) == 0x000248, "Member 'UBuiltInEmotePopUP_C::RichText_ItemPrompt' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UGCN_RiftSpawnerLifeTimeLapsed_C final : public UFortGameplayCueNotify_Bur
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_RiftSpawnerLifeTimeLapsed_C">();
+		BP_STATIC_CLASS_IMPL("GCN_RiftSpawnerLifeTimeLapsed_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_RiftSpawnerLifeTimeLapsed_C")
 	}
 	static class UGCN_RiftSpawnerLifeTimeLapsed_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_RiftSpawnerLifeTimeLapsed_C>();
 	}
 };
-static_assert(alignof(UGCN_RiftSpawnerLifeTimeLapsed_C) == 0x000008, "Wrong alignment on UGCN_RiftSpawnerLifeTimeLapsed_C");
-static_assert(sizeof(UGCN_RiftSpawnerLifeTimeLapsed_C) == 0x0001B0, "Wrong size on UGCN_RiftSpawnerLifeTimeLapsed_C");
 
 }
 

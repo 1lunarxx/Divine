@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass PlayerAnimOverrideLayerInterface.PlayerAnimOverrideLayerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IPlayerAnimOverrideLayerInterface_C final : public IAnimLayerInterface
+// 0x0000 (0x0000 - 0x0000)
+class IPlayerAnimOverrideLayerInterface_C final
 {
 public:
 	void FullBodyOverride(const struct FPoseLink& PassThroughFullBodyPose, struct FPoseLink* FullBodyOverride_0);
@@ -26,15 +26,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerAnimOverrideLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("PlayerAnimOverrideLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerAnimOverrideLayerInterface_C")
 	}
 	static class IPlayerAnimOverrideLayerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IPlayerAnimOverrideLayerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IPlayerAnimOverrideLayerInterface_C) == 0x000008, "Wrong alignment on IPlayerAnimOverrideLayerInterface_C");
-static_assert(sizeof(IPlayerAnimOverrideLayerInterface_C) == 0x000028, "Wrong size on IPlayerAnimOverrideLayerInterface_C");
 
 }
 

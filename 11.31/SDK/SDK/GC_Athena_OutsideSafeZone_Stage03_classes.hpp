@@ -25,23 +25,24 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_GC_Athena_OutsideSafeZone_Stage03_C; // 0x0800(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:
-	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void On_Distant_Lightning_Spawn(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity);
 	void ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03(int32 EntryPoint);
+	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Athena_OutsideSafeZone_Stage03_C">();
+		BP_STATIC_CLASS_IMPL("GC_Athena_OutsideSafeZone_Stage03_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Athena_OutsideSafeZone_Stage03_C")
 	}
 	static class AGC_Athena_OutsideSafeZone_Stage03_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_Athena_OutsideSafeZone_Stage03_C>();
 	}
 };
-static_assert(alignof(AGC_Athena_OutsideSafeZone_Stage03_C) == 0x000008, "Wrong alignment on AGC_Athena_OutsideSafeZone_Stage03_C");
-static_assert(sizeof(AGC_Athena_OutsideSafeZone_Stage03_C) == 0x000808, "Wrong size on AGC_Athena_OutsideSafeZone_Stage03_C");
-static_assert(offsetof(AGC_Athena_OutsideSafeZone_Stage03_C, UberGraphFrame_GC_Athena_OutsideSafeZone_Stage03_C) == 0x000800, "Member 'AGC_Athena_OutsideSafeZone_Stage03_C::UberGraphFrame_GC_Athena_OutsideSafeZone_Stage03_C' has a wrong offset!");
 
 }
 

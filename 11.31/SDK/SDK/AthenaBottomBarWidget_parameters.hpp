@@ -23,9 +23,6 @@ struct AthenaBottomBarWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaBottomBarWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaBottomBarWidget_C_PreConstruct");
-static_assert(sizeof(AthenaBottomBarWidget_C_PreConstruct) == 0x000001, "Wrong size on AthenaBottomBarWidget_C_PreConstruct");
-static_assert(offsetof(AthenaBottomBarWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaBottomBarWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaBottomBarWidget.AthenaBottomBarWidget_C.ExecuteUbergraph_AthenaBottomBarWidget
 // 0x001C (0x001C - 0x0000)
@@ -38,12 +35,6 @@ public:
 	struct FLinearColor                           K2Node_MakeStruct_LinearColor;                     // 0x0008(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget) == 0x000004, "Wrong alignment on AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget");
-static_assert(sizeof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget) == 0x00001C, "Wrong size on AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget");
-static_assert(offsetof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget, EntryPoint) == 0x000000, "Member 'AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget, K2Node_MakeStruct_LinearColor) == 0x000008, "Member 'AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget, K2Node_Event_IsDesignTime) == 0x000018, "Member 'AthenaBottomBarWidget_C_ExecuteUbergraph_AthenaBottomBarWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 }
 

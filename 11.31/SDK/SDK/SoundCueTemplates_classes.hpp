@@ -23,15 +23,17 @@ class USoundCueContainer final : public USoundCueTemplate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundCueContainer">();
+		STATIC_CLASS_IMPL("SoundCueContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundCueContainer")
 	}
 	static class USoundCueContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundCueContainer>();
 	}
 };
-static_assert(alignof(USoundCueContainer) == 0x000008, "Wrong alignment on USoundCueContainer");
-static_assert(sizeof(USoundCueContainer) == 0x000480, "Wrong size on USoundCueContainer");
 
 // Class SoundCueTemplates.SoundCueDistanceCrossfade
 // 0x0000 (0x0480 - 0x0480)
@@ -40,15 +42,17 @@ class USoundCueDistanceCrossfade final : public USoundCueTemplate
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundCueDistanceCrossfade">();
+		STATIC_CLASS_IMPL("SoundCueDistanceCrossfade")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundCueDistanceCrossfade")
 	}
 	static class USoundCueDistanceCrossfade* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundCueDistanceCrossfade>();
 	}
 };
-static_assert(alignof(USoundCueDistanceCrossfade) == 0x000008, "Wrong alignment on USoundCueDistanceCrossfade");
-static_assert(sizeof(USoundCueDistanceCrossfade) == 0x000480, "Wrong size on USoundCueDistanceCrossfade");
 
 // Class SoundCueTemplates.SoundCueTemplateSettings
 // 0x0000 (0x0038 - 0x0038)
@@ -57,15 +61,17 @@ class USoundCueTemplateSettings final : public UDeveloperSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SoundCueTemplateSettings">();
+		STATIC_CLASS_IMPL("SoundCueTemplateSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoundCueTemplateSettings")
 	}
 	static class USoundCueTemplateSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoundCueTemplateSettings>();
 	}
 };
-static_assert(alignof(USoundCueTemplateSettings) == 0x000008, "Wrong alignment on USoundCueTemplateSettings");
-static_assert(sizeof(USoundCueTemplateSettings) == 0x000038, "Wrong size on USoundCueTemplateSettings");
 
 }
 

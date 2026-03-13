@@ -46,25 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamMemberManage_C">();
+		BP_STATIC_CLASS_IMPL("TeamMemberManage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamMemberManage_C")
 	}
 	static class UTeamMemberManage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamMemberManage_C>();
 	}
 };
-static_assert(alignof(UTeamMemberManage_C) == 0x000008, "Wrong alignment on UTeamMemberManage_C");
-static_assert(sizeof(UTeamMemberManage_C) == 0x0004F8, "Wrong size on UTeamMemberManage_C");
-static_assert(offsetof(UTeamMemberManage_C, UberGraphFrame) == 0x0004A8, "Member 'UTeamMemberManage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, BP_LocalPlayerBannerEditor) == 0x0004B0, "Member 'UTeamMemberManage_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, CloseButton) == 0x0004B8, "Member 'UTeamMemberManage_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, CloseProfileButton) == 0x0004C0, "Member 'UTeamMemberManage_C::CloseProfileButton' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, ContentSwitcher) == 0x0004C8, "Member 'UTeamMemberManage_C::ContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, Image_0) == 0x0004D0, "Member 'UTeamMemberManage_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, Image_8) == 0x0004D8, "Member 'UTeamMemberManage_C::Image_8' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, Lightbox) == 0x0004E0, "Member 'UTeamMemberManage_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, OverlayCloseButton) == 0x0004E8, "Member 'UTeamMemberManage_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UTeamMemberManage_C, TeamMemberManageOptions) == 0x0004F0, "Member 'UTeamMemberManage_C::TeamMemberManageOptions' has a wrong offset!");
 
 }
 

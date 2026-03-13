@@ -77,48 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestNavigationActorIndicator_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestNavigationActorIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestNavigationActorIndicator_C")
 	}
 	static class UWinterQuestNavigationActorIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestNavigationActorIndicator_C>();
 	}
 };
-static_assert(alignof(UWinterQuestNavigationActorIndicator_C) == 0x000008, "Wrong alignment on UWinterQuestNavigationActorIndicator_C");
-static_assert(sizeof(UWinterQuestNavigationActorIndicator_C) == 0x000370, "Wrong size on UWinterQuestNavigationActorIndicator_C");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, UberGraphFrame) == 0x000260, "Member 'UWinterQuestNavigationActorIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopLeftArrowAnim) == 0x000268, "Member 'UWinterQuestNavigationActorIndicator_C::TopLeftArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomLeftArrowAnim) == 0x000270, "Member 'UWinterQuestNavigationActorIndicator_C::BottomLeftArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomRightArrowAnim) == 0x000278, "Member 'UWinterQuestNavigationActorIndicator_C::BottomRightArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, RightArrowAnim) == 0x000280, "Member 'UWinterQuestNavigationActorIndicator_C::RightArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomArrowAnim) == 0x000288, "Member 'UWinterQuestNavigationActorIndicator_C::BottomArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopArrowAnim) == 0x000290, "Member 'UWinterQuestNavigationActorIndicator_C::TopArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, LeftArrowAnim) == 0x000298, "Member 'UWinterQuestNavigationActorIndicator_C::LeftArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopRightArrowAnim) == 0x0002A0, "Member 'UWinterQuestNavigationActorIndicator_C::TopRightArrowAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, AllContent) == 0x0002A8, "Member 'UWinterQuestNavigationActorIndicator_C::AllContent' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomCenterArrow_VisibilityWrapper) == 0x0002B0, "Member 'UWinterQuestNavigationActorIndicator_C::BottomCenterArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomCenterRadialArrow) == 0x0002B8, "Member 'UWinterQuestNavigationActorIndicator_C::BottomCenterRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomLeftArrow_VisibilityWrapper) == 0x0002C0, "Member 'UWinterQuestNavigationActorIndicator_C::BottomLeftArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomLeftRadialArrow) == 0x0002C8, "Member 'UWinterQuestNavigationActorIndicator_C::BottomLeftRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomRightArrow_VisibilityWrapper) == 0x0002D0, "Member 'UWinterQuestNavigationActorIndicator_C::BottomRightArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, BottomRightRadialArrow) == 0x0002D8, "Member 'UWinterQuestNavigationActorIndicator_C::BottomRightRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, CommonActionWidget_Left) == 0x0002E0, "Member 'UWinterQuestNavigationActorIndicator_C::CommonActionWidget_Left' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, CommonActionWidget_Right) == 0x0002E8, "Member 'UWinterQuestNavigationActorIndicator_C::CommonActionWidget_Right' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, ContentContainer) == 0x0002F0, "Member 'UWinterQuestNavigationActorIndicator_C::ContentContainer' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, HorizontalBox_0) == 0x0002F8, "Member 'UWinterQuestNavigationActorIndicator_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, LeftArrow_VisibilityWrapper) == 0x000300, "Member 'UWinterQuestNavigationActorIndicator_C::LeftArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, LeftButton_VisibilityWrapper) == 0x000308, "Member 'UWinterQuestNavigationActorIndicator_C::LeftButton_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, LeftRadialArrow) == 0x000310, "Member 'UWinterQuestNavigationActorIndicator_C::LeftRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, RightArrow_VisibilityWrapper) == 0x000318, "Member 'UWinterQuestNavigationActorIndicator_C::RightArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, RightButton_VisibilityWrapper) == 0x000320, "Member 'UWinterQuestNavigationActorIndicator_C::RightButton_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, RightRadialArrow) == 0x000328, "Member 'UWinterQuestNavigationActorIndicator_C::RightRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopCenterArrow_VisibilityWrapper) == 0x000330, "Member 'UWinterQuestNavigationActorIndicator_C::TopCenterArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopCenterRadialArrow) == 0x000338, "Member 'UWinterQuestNavigationActorIndicator_C::TopCenterRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopLeftArrow_VisibilityWrapper) == 0x000340, "Member 'UWinterQuestNavigationActorIndicator_C::TopLeftArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopLeftRadialArrow) == 0x000348, "Member 'UWinterQuestNavigationActorIndicator_C::TopLeftRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopRightArrow_VisibilityWrapper) == 0x000350, "Member 'UWinterQuestNavigationActorIndicator_C::TopRightArrow_VisibilityWrapper' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, TopRightRadialArrow) == 0x000358, "Member 'UWinterQuestNavigationActorIndicator_C::TopRightRadialArrow' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNavigationActorIndicator_C, ActionTexts) == 0x000360, "Member 'UWinterQuestNavigationActorIndicator_C::ActionTexts' has a wrong offset!");
 
 }
 

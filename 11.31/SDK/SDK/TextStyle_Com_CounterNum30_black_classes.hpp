@@ -23,15 +23,17 @@ class UTextStyle_Com_CounterNum30_black_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Com-CounterNum30-black_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Com-CounterNum30-black_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Com-CounterNum30-black_C")
 	}
 	static class UTextStyle_Com_CounterNum30_black_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Com_CounterNum30_black_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Com_CounterNum30_black_C) == 0x000008, "Wrong alignment on UTextStyle_Com_CounterNum30_black_C");
-static_assert(sizeof(UTextStyle_Com_CounterNum30_black_C) == 0x000148, "Wrong size on UTextStyle_Com_CounterNum30_black_C");
 
 }
 

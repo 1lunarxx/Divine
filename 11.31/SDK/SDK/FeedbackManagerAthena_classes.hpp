@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FeedbackManagerAthena_C">();
+		BP_STATIC_CLASS_IMPL("FeedbackManagerAthena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FeedbackManagerAthena_C")
 	}
 	static class AFeedbackManagerAthena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFeedbackManagerAthena_C>();
 	}
 };
-static_assert(alignof(AFeedbackManagerAthena_C) == 0x000008, "Wrong alignment on AFeedbackManagerAthena_C");
-static_assert(sizeof(AFeedbackManagerAthena_C) == 0x000358, "Wrong size on AFeedbackManagerAthena_C");
-static_assert(offsetof(AFeedbackManagerAthena_C, DefaultSceneRoot) == 0x000350, "Member 'AFeedbackManagerAthena_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

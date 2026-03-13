@@ -23,15 +23,17 @@ class ABP_PhoebeController_FrenchYedoc_C final : public ABP_PhoebePlayerControll
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_PhoebeController_FrenchYedoc_C">();
+		BP_STATIC_CLASS_IMPL("BP_PhoebeController_FrenchYedoc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_PhoebeController_FrenchYedoc_C")
 	}
 	static class ABP_PhoebeController_FrenchYedoc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_PhoebeController_FrenchYedoc_C>();
 	}
 };
-static_assert(alignof(ABP_PhoebeController_FrenchYedoc_C) == 0x000008, "Wrong alignment on ABP_PhoebeController_FrenchYedoc_C");
-static_assert(sizeof(ABP_PhoebeController_FrenchYedoc_C) == 0x0008D0, "Wrong size on ABP_PhoebeController_FrenchYedoc_C");
 
 }
 

@@ -45,11 +45,6 @@ public:
 	struct FSlateColor                            UnSelectedIconColor;                               // 0x0CA0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Play_Hover_Sound();
-	void SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor);
-	void Update_Bang_State(bool bBangEnabled_0, int32 Count);
-	void SetTutorialBorderStyle(class UClass* BorderStyle);
-	void ShowText();
 	void Set_Icon(const struct FSlateBrush& IconBrush_0);
 	void Set_Text(const class FText& ButtonText_0);
 	void PreConstruct(bool IsDesignTime);
@@ -63,35 +58,26 @@ public:
 	void BP_OnDisabled();
 	void OnCurrentTextStyleChanged();
 	void ExecuteUbergraph_IconTabButton(int32 EntryPoint);
+	void Play_Hover_Sound();
+	void SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor);
+	void Update_Bang_State(bool bBangEnabled_0, int32 Count);
+	void SetTutorialBorderStyle(class UClass* BorderStyle);
+	void ShowText();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IconTabButton_C">();
+		BP_STATIC_CLASS_IMPL("IconTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IconTabButton_C")
 	}
 	static class UIconTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIconTabButton_C>();
 	}
 };
-static_assert(alignof(UIconTabButton_C) == 0x000008, "Wrong alignment on UIconTabButton_C");
-static_assert(sizeof(UIconTabButton_C) == 0x000CC8, "Wrong size on UIconTabButton_C");
-static_assert(offsetof(UIconTabButton_C, UberGraphFrame) == 0x000B70, "Member 'UIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, BangWrapper) == 0x000B78, "Member 'UIconTabButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, CenterButtonTextWidget) == 0x000B80, "Member 'UIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ContentHB) == 0x000B88, "Member 'UIconTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, LeftSideImage) == 0x000B90, "Member 'UIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SizeBoxShell) == 0x000B98, "Member 'UIconTabButton_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ButtonText) == 0x000BA0, "Member 'UIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, IconBrush) == 0x000BB8, "Member 'UIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, UseText) == 0x000C40, "Member 'UIconTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SelectedIconTint) == 0x000C44, "Member 'UIconTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, DeselectedIconTint) == 0x000C54, "Member 'UIconTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, HoveredIconTint) == 0x000C64, "Member 'UIconTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, bBangEnabled) == 0x000C74, "Member 'UIconTabButton_C::bBangEnabled' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, ChangeIconColorWhenSelected) == 0x000C75, "Member 'UIconTabButton_C::ChangeIconColorWhenSelected' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, SelectedIconColor) == 0x000C78, "Member 'UIconTabButton_C::SelectedIconColor' has a wrong offset!");
-static_assert(offsetof(UIconTabButton_C, UnSelectedIconColor) == 0x000CA0, "Member 'UIconTabButton_C::UnSelectedIconColor' has a wrong offset!");
 
 }
 

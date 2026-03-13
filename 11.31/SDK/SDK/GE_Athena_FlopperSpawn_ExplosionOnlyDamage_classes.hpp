@@ -23,15 +23,17 @@ class UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C final : public UGameplayEffe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Athena_FlopperSpawn_ExplosionOnlyDamage_C">();
+		BP_STATIC_CLASS_IMPL("GE_Athena_FlopperSpawn_ExplosionOnlyDamage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Athena_FlopperSpawn_ExplosionOnlyDamage_C")
 	}
 	static class UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C>();
 	}
 };
-static_assert(alignof(UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C) == 0x000008, "Wrong alignment on UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C");
-static_assert(sizeof(UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C) == 0x000770, "Wrong size on UGE_Athena_FlopperSpawn_ExplosionOnlyDamage_C");
 
 }
 

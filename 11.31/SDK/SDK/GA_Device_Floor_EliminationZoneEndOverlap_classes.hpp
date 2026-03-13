@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Device_Floor_EliminationZoneEndOverlap_C">();
+		BP_STATIC_CLASS_IMPL("GA_Device_Floor_EliminationZoneEndOverlap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Device_Floor_EliminationZoneEndOverlap_C")
 	}
 	static class UGA_Device_Floor_EliminationZoneEndOverlap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Device_Floor_EliminationZoneEndOverlap_C>();
 	}
 };
-static_assert(alignof(UGA_Device_Floor_EliminationZoneEndOverlap_C) == 0x000008, "Wrong alignment on UGA_Device_Floor_EliminationZoneEndOverlap_C");
-static_assert(sizeof(UGA_Device_Floor_EliminationZoneEndOverlap_C) == 0x000A68, "Wrong size on UGA_Device_Floor_EliminationZoneEndOverlap_C");
-static_assert(offsetof(UGA_Device_Floor_EliminationZoneEndOverlap_C, UberGraphFrame_GA_Device_Floor_EliminationZoneEndOverlap_C) == 0x000A60, "Member 'UGA_Device_Floor_EliminationZoneEndOverlap_C::UberGraphFrame_GA_Device_Floor_EliminationZoneEndOverlap_C' has a wrong offset!");
 
 }
 

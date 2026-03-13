@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestPreviewScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestPreviewScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestPreviewScreen_C")
 	}
 	static class UWinterQuestPreviewScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestPreviewScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestPreviewScreen_C) == 0x000008, "Wrong alignment on UWinterQuestPreviewScreen_C");
-static_assert(sizeof(UWinterQuestPreviewScreen_C) == 0x0004E0, "Wrong size on UWinterQuestPreviewScreen_C");
-static_assert(offsetof(UWinterQuestPreviewScreen_C, UberGraphFrame) == 0x0004C0, "Member 'UWinterQuestPreviewScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPreviewScreen_C, Border_Presents) == 0x0004C8, "Member 'UWinterQuestPreviewScreen_C::Border_Presents' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPreviewScreen_C, Image_PresentIcon) == 0x0004D0, "Member 'UWinterQuestPreviewScreen_C::Image_PresentIcon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPreviewScreen_C, Text_NumberOfPresents) == 0x0004D8, "Member 'UWinterQuestPreviewScreen_C::Text_NumberOfPresents' has a wrong offset!");
 
 }
 

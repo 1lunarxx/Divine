@@ -42,23 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownEventTileViolator_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownEventTileViolator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownEventTileViolator_C")
 	}
 	static class UShowdownEventTileViolator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownEventTileViolator_C>();
 	}
 };
-static_assert(alignof(UShowdownEventTileViolator_C) == 0x000008, "Wrong alignment on UShowdownEventTileViolator_C");
-static_assert(sizeof(UShowdownEventTileViolator_C) == 0x000650, "Wrong size on UShowdownEventTileViolator_C");
-static_assert(offsetof(UShowdownEventTileViolator_C, UberGraphFrame) == 0x000610, "Member 'UShowdownEventTileViolator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, Focus) == 0x000618, "Member 'UShowdownEventTileViolator_C::Focus' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, CommonTextBlock_0) == 0x000620, "Member 'UShowdownEventTileViolator_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, CommonTextBlock_RoundNumber) == 0x000628, "Member 'UShowdownEventTileViolator_C::CommonTextBlock_RoundNumber' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, CommonWidgetSwitcher_EventState) == 0x000630, "Member 'UShowdownEventTileViolator_C::CommonWidgetSwitcher_EventState' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, CommonWidgetSwitcher_Proximity) == 0x000638, "Member 'UShowdownEventTileViolator_C::CommonWidgetSwitcher_Proximity' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, LiveViolator) == 0x000640, "Member 'UShowdownEventTileViolator_C::LiveViolator' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileViolator_C, OverrideDoNotShowRound) == 0x000648, "Member 'UShowdownEventTileViolator_C::OverrideDoNotShowRound' has a wrong offset!");
 
 }
 

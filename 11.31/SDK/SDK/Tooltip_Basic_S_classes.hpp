@@ -47,28 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tooltip-Basic-S_C">();
+		BP_STATIC_CLASS_IMPL("Tooltip-Basic-S_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tooltip-Basic-S_C")
 	}
 	static class UTooltip_Basic_S_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltip_Basic_S_C>();
 	}
 };
-static_assert(alignof(UTooltip_Basic_S_C) == 0x000008, "Wrong alignment on UTooltip_Basic_S_C");
-static_assert(sizeof(UTooltip_Basic_S_C) == 0x0002E0, "Wrong size on UTooltip_Basic_S_C");
-static_assert(offsetof(UTooltip_Basic_S_C, UberGraphFrame) == 0x000258, "Member 'UTooltip_Basic_S_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, _hr_) == 0x000260, "Member 'UTooltip_Basic_S_C::_hr_' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Body_HBox) == 0x000268, "Member 'UTooltip_Basic_S_C::Body_HBox' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Header_HBox) == 0x000270, "Member 'UTooltip_Basic_S_C::Header_HBox' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Icon_Header) == 0x000278, "Member 'UTooltip_Basic_S_C::Icon_Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Spacer_Icon) == 0x000280, "Member 'UTooltip_Basic_S_C::Spacer_Icon' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Text_Body) == 0x000288, "Member 'UTooltip_Basic_S_C::Text_Body' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Text_Header) == 0x000290, "Member 'UTooltip_Basic_S_C::Text_Header' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, BodyText) == 0x000298, "Member 'UTooltip_Basic_S_C::BodyText' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, HeaderText) == 0x0002B0, "Member 'UTooltip_Basic_S_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Icon_Brush) == 0x0002C8, "Member 'UTooltip_Basic_S_C::Icon_Brush' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Body_Style) == 0x0002D0, "Member 'UTooltip_Basic_S_C::Body_Style' has a wrong offset!");
-static_assert(offsetof(UTooltip_Basic_S_C, Header_Style) == 0x0002D8, "Member 'UTooltip_Basic_S_C::Header_Style' has a wrong offset!");
 
 }
 

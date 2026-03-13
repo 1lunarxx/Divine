@@ -26,13 +26,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt) == 0x000008, "Wrong alignment on GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt");
-static_assert(sizeof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt) == 0x000028, "Wrong size on GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt");
-static_assert(offsetof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt, EntryPoint) == 0x000000, "Member 'GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt, CallFunc_PlayAnimation_ReturnValue_2) == 0x000018, "Member 'GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt, CallFunc_PlayAnimation_ReturnValue_3) == 0x000020, "Member 'GiftReceivedPrompt_C_ExecuteUbergraph_GiftReceivedPrompt::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
 
 }
 

@@ -37,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDWatchVideoWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDWatchVideoWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDWatchVideoWidget_C")
 	}
 	static class UAthenaMOTDWatchVideoWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDWatchVideoWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDWatchVideoWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDWatchVideoWidget_C");
-static_assert(sizeof(UAthenaMOTDWatchVideoWidget_C) == 0x000328, "Wrong size on UAthenaMOTDWatchVideoWidget_C");
-static_assert(offsetof(UAthenaMOTDWatchVideoWidget_C, UberGraphFrame) == 0x000308, "Member 'UAthenaMOTDWatchVideoWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWatchVideoWidget_C, SafeZone_0) == 0x000310, "Member 'UAthenaMOTDWatchVideoWidget_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWatchVideoWidget_C, MonolithicVideoWidget) == 0x000318, "Member 'UAthenaMOTDWatchVideoWidget_C::MonolithicVideoWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDWatchVideoWidget_C, MediaSource) == 0x000320, "Member 'UAthenaMOTDWatchVideoWidget_C::MediaSource' has a wrong offset!");
 
 }
 

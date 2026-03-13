@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SpectatorPawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_SpectatorPawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SpectatorPawn_C")
 	}
 	static class ABP_SpectatorPawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SpectatorPawn_C>();
 	}
 };
-static_assert(alignof(ABP_SpectatorPawn_C) == 0x000008, "Wrong alignment on ABP_SpectatorPawn_C");
-static_assert(sizeof(ABP_SpectatorPawn_C) == 0x000358, "Wrong size on ABP_SpectatorPawn_C");
-static_assert(offsetof(ABP_SpectatorPawn_C, UberGraphFrame) == 0x000330, "Member 'ABP_SpectatorPawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, bIsTargetSkydiving) == 0x000338, "Member 'ABP_SpectatorPawn_C::bIsTargetSkydiving' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, bIsTargetParachuting) == 0x000339, "Member 'ABP_SpectatorPawn_C::bIsTargetParachuting' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, bIsSkydivingAudioEnabled) == 0x00033A, "Member 'ABP_SpectatorPawn_C::bIsSkydivingAudioEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, CurrentSkydivingSound) == 0x000340, "Member 'ABP_SpectatorPawn_C::CurrentSkydivingSound' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, SkydivingAudioLoop) == 0x000348, "Member 'ABP_SpectatorPawn_C::SkydivingAudioLoop' has a wrong offset!");
-static_assert(offsetof(ABP_SpectatorPawn_C, Current_Player_Pawn) == 0x000350, "Member 'ABP_SpectatorPawn_C::Current_Player_Pawn' has a wrong offset!");
 
 }
 

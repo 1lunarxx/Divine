@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityBrowserTag_C">();
+		BP_STATIC_CLASS_IMPL("ActivityBrowserTag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityBrowserTag_C")
 	}
 	static class UActivityBrowserTag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityBrowserTag_C>();
 	}
 };
-static_assert(alignof(UActivityBrowserTag_C) == 0x000008, "Wrong alignment on UActivityBrowserTag_C");
-static_assert(sizeof(UActivityBrowserTag_C) == 0x000270, "Wrong size on UActivityBrowserTag_C");
-static_assert(offsetof(UActivityBrowserTag_C, UberGraphFrame) == 0x000230, "Member 'UActivityBrowserTag_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTag_C, BorderTagContainer) == 0x000238, "Member 'UActivityBrowserTag_C::BorderTagContainer' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTag_C, Text_TagName) == 0x000240, "Member 'UActivityBrowserTag_C::Text_TagName' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTag_C, TagColor) == 0x000248, "Member 'UActivityBrowserTag_C::TagColor' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTag_C, TagText) == 0x000258, "Member 'UActivityBrowserTag_C::TagText' has a wrong offset!");
 
 }
 

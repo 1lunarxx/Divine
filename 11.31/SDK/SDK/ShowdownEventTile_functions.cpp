@@ -17,6 +17,124 @@
 namespace SDK
 {
 
+// Function ShowdownEventTile.ShowdownEventTile_C.SetData
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    TournamentInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FString&                    EventInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UShowdownEventTile_C::SetData(const class FString& TournamentInfo, const class FString& EventInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
+
+	Params::ShowdownEventTile_C_SetData Parms{};
+
+	Parms.TournamentInfo = std::move(TournamentInfo);
+	Parms.EventInfo = std::move(EventInfo);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.EventIntro
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UShowdownEventTile_C::EventIntro(int32 Index_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
+
+	Params::ShowdownEventTile_C_EventIntro Parms{};
+
+	Parms.Index_0 = Index_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UShowdownEventTile_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnClicked
+// (Event, Protected, BlueprintEvent)
+
+void UShowdownEventTile_C::BP_OnClicked()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.EventResize
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Out                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UShowdownEventTile_C::EventResize(bool Out)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
+
+	Params::ShowdownEventTile_C_EventResize Parms{};
+
+	Parms.Out = Out;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnHovered
+// (Event, Protected, BlueprintEvent)
+
+void UShowdownEventTile_C::BP_OnHovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnUnhovered
+// (Event, Protected, BlueprintEvent)
+
+void UShowdownEventTile_C::BP_OnUnhovered()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function ShowdownEventTile.ShowdownEventTile_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 
@@ -176,124 +294,6 @@ void UShowdownEventTile_C::ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.SetData
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    TournamentInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FString&                    EventInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UShowdownEventTile_C::SetData(const class FString& TournamentInfo, const class FString& EventInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "SetData");
-
-	Params::ShowdownEventTile_C_SetData Parms{};
-
-	Parms.TournamentInfo = std::move(TournamentInfo);
-	Parms.EventInfo = std::move(EventInfo);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.EventIntro
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UShowdownEventTile_C::EventIntro(int32 Index_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventIntro");
-
-	Params::ShowdownEventTile_C_EventIntro Parms{};
-
-	Parms.Index_0 = Index_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UShowdownEventTile_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnClicked
-// (Event, Protected, BlueprintEvent)
-
-void UShowdownEventTile_C::BP_OnClicked()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnClicked");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.EventResize
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Out                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UShowdownEventTile_C::EventResize(bool Out)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "EventResize");
-
-	Params::ShowdownEventTile_C_EventResize Parms{};
-
-	Parms.Out = Out;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnHovered
-// (Event, Protected, BlueprintEvent)
-
-void UShowdownEventTile_C::BP_OnHovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnHovered");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function ShowdownEventTile.ShowdownEventTile_C.BP_OnUnhovered
-// (Event, Protected, BlueprintEvent)
-
-void UShowdownEventTile_C::BP_OnUnhovered()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ShowdownEventTile_C", "BP_OnUnhovered");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

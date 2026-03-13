@@ -23,15 +23,17 @@ class UGCN_BattleLab_FrenchYedoc_Throw_C final : public UFortGameplayCueNotify_B
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_BattleLab_FrenchYedoc_Throw_C">();
+		BP_STATIC_CLASS_IMPL("GCN_BattleLab_FrenchYedoc_Throw_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_BattleLab_FrenchYedoc_Throw_C")
 	}
 	static class UGCN_BattleLab_FrenchYedoc_Throw_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_BattleLab_FrenchYedoc_Throw_C>();
 	}
 };
-static_assert(alignof(UGCN_BattleLab_FrenchYedoc_Throw_C) == 0x000008, "Wrong alignment on UGCN_BattleLab_FrenchYedoc_Throw_C");
-static_assert(sizeof(UGCN_BattleLab_FrenchYedoc_Throw_C) == 0x0001B0, "Wrong size on UGCN_BattleLab_FrenchYedoc_Throw_C");
 
 }
 

@@ -12,9 +12,9 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "CoreUObject_structs.hpp"
 #include "FluidBoundary_structs.hpp"
 #include "FluidForceImpulsePerInstanceData_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FluidForceDynamicPerInstanceData_structs.hpp"
 
 
@@ -64,9 +64,9 @@ public:
 	bool                                          Perf_Test_Mode;                                    // 0x0305(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_306[0x2];                                      // 0x0306(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTextureRenderTarget2D*                 PerfRT;                                            // 0x0308(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FFluidForceImpulsePerInstanceData> ImpulseForces;                                     // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
-	TMap<class UActorComponent*, struct FFluidForceDynamicPerInstanceData> DynamicForces;                                     // 0x0320(0x0050)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
-	TMap<class UMaterialInterface*, class UMaterialInstanceDynamic*> ForceParentAndMIDMap;                              // 0x0370(0x0050)(Edit, BlueprintVisible, ZeroConstructor)
+	TArray<struct FFluidForceImpulsePerInstanceData> ImpulseForces;                                  // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
+	TMap<class UActorComponent*, struct FFluidForceDynamicPerInstanceData> DynamicForces;            // 0x0320(0x0050)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
+	TMap<class UMaterialInterface*, class UMaterialInstanceDynamic*> ForceParentAndMIDMap;           // 0x0370(0x0050)(Edit, BlueprintVisible, ZeroConstructor)
 	bool                                          Show_Simulation_Mesh;                              // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3C1[0x7];                                      // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMeshComponent*                   Fluid_Display_Mesh;                                // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,7 +77,7 @@ public:
 	uint8                                         Pad_3DE[0x2];                                      // 0x03DE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Pawn_Check_Every_N_Frames;                         // 0x03E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_3E4[0x4];                                      // 0x03E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class UActorComponent*, struct FFluidForceDynamicPerInstanceData> ProjectileForces;                                  // 0x03E8(0x0050)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
+	TMap<class UActorComponent*, struct FFluidForceDynamicPerInstanceData> ProjectileForces;         // 0x03E8(0x0050)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
 
 public:
 	void ExecuteUbergraph_BP_FluidSim_01(int32 EntryPoint);
@@ -114,60 +114,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FluidSim_01_C">();
+		BP_STATIC_CLASS_IMPL("BP_FluidSim_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FluidSim_01_C")
 	}
 	static class ABP_FluidSim_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FluidSim_01_C>();
 	}
 };
-static_assert(alignof(ABP_FluidSim_01_C) == 0x000008, "Wrong alignment on ABP_FluidSim_01_C");
-static_assert(sizeof(ABP_FluidSim_01_C) == 0x000438, "Wrong size on ABP_FluidSim_01_C");
-static_assert(offsetof(ABP_FluidSim_01_C, UberGraphFrame) == 0x000218, "Member 'ABP_FluidSim_01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, DefaultSceneRoot) == 0x000220, "Member 'ABP_FluidSim_01_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, SimMID) == 0x000228, "Member 'ABP_FluidSim_01_C::SimMID' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, RenderNormalsMID) == 0x000230, "Member 'ABP_FluidSim_01_C::RenderNormalsMID' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, DisplayMID) == 0x000238, "Member 'ABP_FluidSim_01_C::DisplayMID' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, DisplayBottomMID) == 0x000240, "Member 'ABP_FluidSim_01_C::DisplayBottomMID' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, CrossSectionMID) == 0x000248, "Member 'ABP_FluidSim_01_C::CrossSectionMID' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, RTs) == 0x000250, "Member 'ABP_FluidSim_01_C::RTs' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Display_Material) == 0x000260, "Member 'ABP_FluidSim_01_C::Display_Material' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Virtual_FPS) == 0x000268, "Member 'ABP_FluidSim_01_C::Virtual_FPS' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Passes) == 0x00026C, "Member 'ABP_FluidSim_01_C::Passes' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, TimeAccumulator) == 0x000270, "Member 'ABP_FluidSim_01_C::TimeAccumulator' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, FixedStep) == 0x000274, "Member 'ABP_FluidSim_01_C::FixedStep' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Enabled) == 0x000278, "Member 'ABP_FluidSim_01_C::Enabled' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Fluid_Size) == 0x00027C, "Member 'ABP_FluidSim_01_C::Fluid_Size' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Resolution) == 0x000280, "Member 'ABP_FluidSim_01_C::Resolution' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Boundary_Condition) == 0x000284, "Member 'ABP_FluidSim_01_C::Boundary_Condition' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Travel_Speed) == 0x000288, "Member 'ABP_FluidSim_01_C::Travel_Speed' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Damping) == 0x00028C, "Member 'ABP_FluidSim_01_C::Damping' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, NormalRT) == 0x000290, "Member 'ABP_FluidSim_01_C::NormalRT' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, CutPos) == 0x000298, "Member 'ABP_FluidSim_01_C::CutPos' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, PrevLoc) == 0x0002A4, "Member 'ABP_FluidSim_01_C::PrevLoc' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, PrecLoc2) == 0x0002B0, "Member 'ABP_FluidSim_01_C::PrecLoc2' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, PrevOffset) == 0x0002BC, "Member 'ABP_FluidSim_01_C::PrevOffset' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, PrevOffset2) == 0x0002C8, "Member 'ABP_FluidSim_01_C::PrevOffset2' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, GridCenter) == 0x0002D4, "Member 'ABP_FluidSim_01_C::GridCenter' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, TempRT) == 0x0002E0, "Member 'ABP_FluidSim_01_C::TempRT' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, ForcesRT) == 0x0002E8, "Member 'ABP_FluidSim_01_C::ForcesRT' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, ApplyForces) == 0x0002F0, "Member 'ABP_FluidSim_01_C::ApplyForces' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, LandscapeWaterInfo) == 0x0002F8, "Member 'ABP_FluidSim_01_C::LandscapeWaterInfo' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Renders_Per_Frame) == 0x000300, "Member 'ABP_FluidSim_01_C::Renders_Per_Frame' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Show_Cross_Section) == 0x000304, "Member 'ABP_FluidSim_01_C::Show_Cross_Section' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Perf_Test_Mode) == 0x000305, "Member 'ABP_FluidSim_01_C::Perf_Test_Mode' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, PerfRT) == 0x000308, "Member 'ABP_FluidSim_01_C::PerfRT' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, ImpulseForces) == 0x000310, "Member 'ABP_FluidSim_01_C::ImpulseForces' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, DynamicForces) == 0x000320, "Member 'ABP_FluidSim_01_C::DynamicForces' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, ForceParentAndMIDMap) == 0x000370, "Member 'ABP_FluidSim_01_C::ForceParentAndMIDMap' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Show_Simulation_Mesh) == 0x0003C0, "Member 'ABP_FluidSim_01_C::Show_Simulation_Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Fluid_Display_Mesh) == 0x0003C8, "Member 'ABP_FluidSim_01_C::Fluid_Display_Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Cross_Section_Mesh) == 0x0003D0, "Member 'ABP_FluidSim_01_C::Cross_Section_Mesh' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, FluidSizeSquared) == 0x0003D8, "Member 'ABP_FluidSim_01_C::FluidSizeSquared' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, LocalPawnRef) == 0x0003DC, "Member 'ABP_FluidSim_01_C::LocalPawnRef' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Debug_Text) == 0x0003DD, "Member 'ABP_FluidSim_01_C::Debug_Text' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, Pawn_Check_Every_N_Frames) == 0x0003E0, "Member 'ABP_FluidSim_01_C::Pawn_Check_Every_N_Frames' has a wrong offset!");
-static_assert(offsetof(ABP_FluidSim_01_C, ProjectileForces) == 0x0003E8, "Member 'ABP_FluidSim_01_C::ProjectileForces' has a wrong offset!");
 
 }
 

@@ -68,14 +68,14 @@ public:
 	class UShowdownEventTile_C*                   ShowdownEventTile_0;                               // 0x0770(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UShowdownEventTile_C*                   ShowdownEventTile_1;                               // 0x0778(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UShowdownEventTile_C*                   ShowdownEventTile_2;                               // 0x0780(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule;              // 0x0788(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_0;          // 0x0790(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_1;          // 0x0798(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_2;          // 0x07A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_3;          // 0x07A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_4;          // 0x07B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_5;          // 0x07B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_6;          // 0x07C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule;             // 0x0788(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_0;         // 0x0790(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_1;         // 0x0798(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_2;         // 0x07A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_3;         // 0x07A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_4;         // 0x07B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_5;         // 0x07B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* ShowdownTournamentDetailsScoringRule_C_6;         // 0x07C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Text_PinUnlockScore;                               // 0x07C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTournamentEventWindowDetails_C*        TournamentEventWindowDetails;                      // 0x07D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TournamentMatchType;                               // 0x07D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -142,87 +142,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentDetails_C">();
+		BP_STATIC_CLASS_IMPL("TournamentDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentDetails_C")
 	}
 	static class UTournamentDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentDetails_C>();
 	}
 };
-static_assert(alignof(UTournamentDetails_C) == 0x000008, "Wrong alignment on UTournamentDetails_C");
-static_assert(sizeof(UTournamentDetails_C) == 0x000868, "Wrong size on UTournamentDetails_C");
-static_assert(offsetof(UTournamentDetails_C, UberGraphFrame) == 0x000628, "Member 'UTournamentDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, HidePosterFade) == 0x000630, "Member 'UTournamentDetails_C::HidePosterFade' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CollapseLeaderboardSummary) == 0x000638, "Member 'UTournamentDetails_C::CollapseLeaderboardSummary' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, FullScreenContent) == 0x000640, "Member 'UTournamentDetails_C::FullScreenContent' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Intro) == 0x000648, "Member 'UTournamentDetails_C::Intro' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, BlurPoster) == 0x000650, "Member 'UTournamentDetails_C::BlurPoster' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, BlurBG) == 0x000658, "Member 'UTournamentDetails_C::BlurBG' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowEventWindowDetails) == 0x000660, "Member 'UTournamentDetails_C::ShowEventWindowDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowDetails) == 0x000668, "Member 'UTournamentDetails_C::ShowDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, PosterFlip) == 0x000670, "Member 'UTournamentDetails_C::PosterFlip' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, BackgroundBlur_Background) == 0x000678, "Member 'UTournamentDetails_C::BackgroundBlur_Background' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, BackgroundBlur_PosterLayer) == 0x000680, "Member 'UTournamentDetails_C::BackgroundBlur_PosterLayer' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Button_Back) == 0x000688, "Member 'UTournamentDetails_C::Button_Back' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Button_EnableMFA) == 0x000690, "Member 'UTournamentDetails_C::Button_EnableMFA' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Button_PlayNow) == 0x000698, "Member 'UTournamentDetails_C::Button_PlayNow' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CloseIcon) == 0x0006A0, "Member 'UTournamentDetails_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonBorder_BGText) == 0x0006A8, "Member 'UTournamentDetails_C::CommonBorder_BGText' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonBorder_ScoringBG) == 0x0006B0, "Member 'UTournamentDetails_C::CommonBorder_ScoringBG' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonBorder_ScoringTitleBG) == 0x0006B8, "Member 'UTournamentDetails_C::CommonBorder_ScoringTitleBG' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonTextBlock_TournamentDescription) == 0x0006C0, "Member 'UTournamentDetails_C::CommonTextBlock_TournamentDescription' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonTextBlock_TournamentSubtitle) == 0x0006C8, "Member 'UTournamentDetails_C::CommonTextBlock_TournamentSubtitle' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonTextBlock_UnlockCriteria) == 0x0006D0, "Member 'UTournamentDetails_C::CommonTextBlock_UnlockCriteria' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonWidgetSwitcher_DetailsButtons) == 0x0006D8, "Member 'UTournamentDetails_C::CommonWidgetSwitcher_DetailsButtons' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonWidgetSwitcher_FullScreenSwitch) == 0x0006E0, "Member 'UTournamentDetails_C::CommonWidgetSwitcher_FullScreenSwitch' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, CommonWidgetSwitcher_WindowsDetails) == 0x0006E8, "Member 'UTournamentDetails_C::CommonWidgetSwitcher_WindowsDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, DetailsPanelButton) == 0x0006F0, "Member 'UTournamentDetails_C::DetailsPanelButton' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, DetailsSwitcher) == 0x0006F8, "Member 'UTournamentDetails_C::DetailsSwitcher' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, EventLeaderboardScreen) == 0x000700, "Member 'UTournamentDetails_C::EventLeaderboardScreen' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, EventLeaderboardSummary) == 0x000708, "Member 'UTournamentDetails_C::EventLeaderboardSummary' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, EventsScrollBox) == 0x000710, "Member 'UTournamentDetails_C::EventsScrollBox' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Image_PosterFade) == 0x000718, "Member 'UTournamentDetails_C::Image_PosterFade' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, MFA_WarningText) == 0x000720, "Member 'UTournamentDetails_C::MFA_WarningText' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, MFAContainer) == 0x000728, "Member 'UTournamentDetails_C::MFAContainer' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, MobileCloseButton) == 0x000730, "Member 'UTournamentDetails_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, OverlayCloseButton) == 0x000738, "Member 'UTournamentDetails_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, OverviewPanel) == 0x000740, "Member 'UTournamentDetails_C::OverviewPanel' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, OverviewPanelButton) == 0x000748, "Member 'UTournamentDetails_C::OverviewPanelButton' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, RetainerBox_BGText) == 0x000750, "Member 'UTournamentDetails_C::RetainerBox_BGText' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, RetainerBox_TimeCallout) == 0x000758, "Member 'UTournamentDetails_C::RetainerBox_TimeCallout' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, RichTextBlock_TournamentTimeCallout1) == 0x000760, "Member 'UTournamentDetails_C::RichTextBlock_TournamentTimeCallout1' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownEventTile) == 0x000768, "Member 'UTournamentDetails_C::ShowdownEventTile' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownEventTile_0) == 0x000770, "Member 'UTournamentDetails_C::ShowdownEventTile_0' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownEventTile_1) == 0x000778, "Member 'UTournamentDetails_C::ShowdownEventTile_1' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownEventTile_2) == 0x000780, "Member 'UTournamentDetails_C::ShowdownEventTile_2' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule) == 0x000788, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_0) == 0x000790, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_0' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_1) == 0x000798, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_1' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_2) == 0x0007A0, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_2' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_3) == 0x0007A8, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_3' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_4) == 0x0007B0, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_4' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_5) == 0x0007B8, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_5' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, ShowdownTournamentDetailsScoringRule_C_6) == 0x0007C0, "Member 'UTournamentDetails_C::ShowdownTournamentDetailsScoringRule_C_6' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, Text_PinUnlockScore) == 0x0007C8, "Member 'UTournamentDetails_C::Text_PinUnlockScore' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentEventWindowDetails) == 0x0007D0, "Member 'UTournamentDetails_C::TournamentEventWindowDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentMatchType) == 0x0007D8, "Member 'UTournamentDetails_C::TournamentMatchType' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentPayoutModal) == 0x0007E0, "Member 'UTournamentDetails_C::TournamentPayoutModal' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentPosterBack) == 0x0007E8, "Member 'UTournamentDetails_C::TournamentPosterBack' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentPosterFront) == 0x0007F0, "Member 'UTournamentDetails_C::TournamentPosterFront' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentRoundText) == 0x0007F8, "Member 'UTournamentDetails_C::TournamentRoundText' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentScoringRulesScrollBox) == 0x000800, "Member 'UTournamentDetails_C::TournamentScoringRulesScrollBox' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentSubTitleBackground) == 0x000808, "Member 'UTournamentDetails_C::TournamentSubTitleBackground' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentWatchList) == 0x000810, "Member 'UTournamentDetails_C::TournamentWatchList' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, UniformGridPanel_TournamentScoringRules) == 0x000818, "Member 'UTournamentDetails_C::UniformGridPanel_TournamentScoringRules' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, UnlockPinContent) == 0x000820, "Member 'UTournamentDetails_C::UnlockPinContent' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, EventWindowDetailsShown) == 0x000828, "Member 'UTournamentDetails_C::EventWindowDetailsShown' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, TournamentDetailsShown) == 0x000829, "Member 'UTournamentDetails_C::TournamentDetailsShown' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, BackActionSelected) == 0x000830, "Member 'UTournamentDetails_C::BackActionSelected' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, firstActiveEvent) == 0x000840, "Member 'UTournamentDetails_C::firstActiveEvent' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, lastFocusedEvent) == 0x000848, "Member 'UTournamentDetails_C::lastFocusedEvent' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, isCenteringScrollBox) == 0x000850, "Member 'UTournamentDetails_C::isCenteringScrollBox' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, LeaderboardisCollapsed) == 0x000851, "Member 'UTournamentDetails_C::LeaderboardisCollapsed' has a wrong offset!");
-static_assert(offsetof(UTournamentDetails_C, DefaultTournamentIdForScoringRules) == 0x000858, "Member 'UTournamentDetails_C::DefaultTournamentIdForScoringRules' has a wrong offset!");
 
 }
 

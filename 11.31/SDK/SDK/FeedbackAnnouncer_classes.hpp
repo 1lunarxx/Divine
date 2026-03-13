@@ -23,15 +23,17 @@ class AFeedbackAnnouncer_C final : public AFortPawn_FeedbackAnnouncer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FeedbackAnnouncer_C">();
+		BP_STATIC_CLASS_IMPL("FeedbackAnnouncer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FeedbackAnnouncer_C")
 	}
 	static class AFeedbackAnnouncer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFeedbackAnnouncer_C>();
 	}
 };
-static_assert(alignof(AFeedbackAnnouncer_C) == 0x000010, "Wrong alignment on AFeedbackAnnouncer_C");
-static_assert(sizeof(AFeedbackAnnouncer_C) == 0x001180, "Wrong size on AFeedbackAnnouncer_C");
 
 }
 

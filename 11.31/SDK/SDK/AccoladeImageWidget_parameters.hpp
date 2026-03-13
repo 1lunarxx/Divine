@@ -24,9 +24,6 @@ struct AccoladeImageWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccoladeImageWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AccoladeImageWidget_C_PreConstruct");
-static_assert(sizeof(AccoladeImageWidget_C_PreConstruct) == 0x000001, "Wrong size on AccoladeImageWidget_C_PreConstruct");
-static_assert(offsetof(AccoladeImageWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AccoladeImageWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AccoladeImageWidget.AccoladeImageWidget_C.EventSocket
 // 0x0001 (0x0001 - 0x0000)
@@ -35,9 +32,6 @@ struct AccoladeImageWidget_C_EventSocket final
 public:
 	bool                                          bAlreadySocketed;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AccoladeImageWidget_C_EventSocket) == 0x000001, "Wrong alignment on AccoladeImageWidget_C_EventSocket");
-static_assert(sizeof(AccoladeImageWidget_C_EventSocket) == 0x000001, "Wrong size on AccoladeImageWidget_C_EventSocket");
-static_assert(offsetof(AccoladeImageWidget_C_EventSocket, bAlreadySocketed) == 0x000000, "Member 'AccoladeImageWidget_C_EventSocket::bAlreadySocketed' has a wrong offset!");
 
 // Function AccoladeImageWidget.AccoladeImageWidget_C.ExecuteUbergraph_AccoladeImageWidget
 // 0x0080 (0x0080 - 0x0000)
@@ -81,37 +75,6 @@ public:
 	uint8                                         Pad_72[0x6];                                       // 0x0072(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             K2Node_Select_Default_4;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget) == 0x000008, "Wrong alignment on AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget");
-static_assert(sizeof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget) == 0x000080, "Wrong size on AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, EntryPoint) == 0x000000, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_struct_Variable) == 0x000004, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_struct_Variable_1) == 0x00000C, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_bool_Variable) == 0x000014, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_float_Variable) == 0x000018, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_float_Variable_1) == 0x00001C, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_bool_Variable_1) == 0x000020, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_bool_Variable_2) == 0x000021, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Event_IsDesignTime) == 0x000022, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_Greater_IntInt_ReturnValue) == 0x000023, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000024, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_bool_Variable_3) == 0x000038, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Select_Default) == 0x00003C, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_BooleanAND_ReturnValue) == 0x000044, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_CustomEvent_bAlreadySocketed) == 0x000045, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_CustomEvent_bAlreadySocketed' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Select_Default_1) == 0x000048, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_byte_Variable) == 0x00004C, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_Less_IntInt_ReturnValue) == 0x00004D, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_byte_Variable_1) == 0x00004E, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Select_Default_2) == 0x000050, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, Temp_bool_Variable_4) == 0x000060, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_GetEndTime_ReturnValue) == 0x000064, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_PlayAnimation_ReturnValue_3) == 0x000068, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Select_Default_3) == 0x000070, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, CallFunc_Less_IntInt_ReturnValue_1) == 0x000071, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget, K2Node_Select_Default_4) == 0x000078, "Member 'AccoladeImageWidget_C_ExecuteUbergraph_AccoladeImageWidget::K2Node_Select_Default_4' has a wrong offset!");
 
 }
 

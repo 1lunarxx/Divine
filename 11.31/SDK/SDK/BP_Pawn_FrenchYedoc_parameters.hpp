@@ -56,32 +56,6 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0150(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0158(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc) == 0x000008, "Wrong alignment on BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc");
-static_assert(sizeof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc) == 0x000168, "Wrong size on BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, EntryPoint) == 0x000000, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_Damage) == 0x000004, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_DamageTags) == 0x000008, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_Momentum) == 0x000028, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_HitInfo) == 0x000034, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_InstigatedBy) == 0x0000C0, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_DamageCauser) == 0x0000C8, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Event_EffectContext) == 0x0000D0, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Event_EffectContext' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_bool_Variable) == 0x0000E8, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_object_Variable) == 0x0000F0, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_object_Variable_1) == 0x0000F8, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_bool_Variable_1) == 0x000100, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_object_Variable_2) == 0x000108, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_bool_Variable_2) == 0x000110, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, Temp_object_Variable_3) == 0x000118, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_IsDBNO_ReturnValue) == 0x000120, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_IsDBNO_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_IsSkydiving_ReturnValue) == 0x000121, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_IsSkydiving_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Select_Default) == 0x000128, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_IsSurfaceSwimming_ReturnValue) == 0x000130, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_IsSurfaceSwimming_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Select_Default_1) == 0x000138, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, K2Node_Select_Default_2) == 0x000140, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_PlayLocalAnimMontage_ReturnValue) == 0x000148, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_PlayLocalAnimMontage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000150, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000158, "Member 'BP_Pawn_FrenchYedoc_C_ExecuteUbergraph_BP_Pawn_FrenchYedoc::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function BP_Pawn_FrenchYedoc.BP_Pawn_FrenchYedoc_C.OnDeathPlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -98,15 +72,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects");
-static_assert(sizeof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, HitInfo) == 0x000034, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'BP_Pawn_FrenchYedoc_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 }
 

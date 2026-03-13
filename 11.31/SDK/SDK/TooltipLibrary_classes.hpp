@@ -31,15 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TooltipLibrary_C">();
+		BP_STATIC_CLASS_IMPL("TooltipLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TooltipLibrary_C")
 	}
 	static class UTooltipLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTooltipLibrary_C>();
 	}
 };
-static_assert(alignof(UTooltipLibrary_C) == 0x000008, "Wrong alignment on UTooltipLibrary_C");
-static_assert(sizeof(UTooltipLibrary_C) == 0x000028, "Wrong size on UTooltipLibrary_C");
 
 }
 

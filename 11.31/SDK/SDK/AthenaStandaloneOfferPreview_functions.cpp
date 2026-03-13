@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function AthenaStandaloneOfferPreview.AthenaStandaloneOfferPreview_C.UpdateSeriesBlock
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaStandaloneOfferPreview_C::UpdateSeriesBlock()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStandaloneOfferPreview_C", "UpdateSeriesBlock");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaStandaloneOfferPreview.AthenaStandaloneOfferPreview_C.Bundle Short Text
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -444,20 +458,6 @@ void UAthenaStandaloneOfferPreview_C::ExecuteUbergraph_AthenaStandaloneOfferPrev
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaStandaloneOfferPreview.AthenaStandaloneOfferPreview_C.UpdateSeriesBlock
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaStandaloneOfferPreview_C::UpdateSeriesBlock()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStandaloneOfferPreview_C", "UpdateSeriesBlock");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

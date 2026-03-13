@@ -23,15 +23,17 @@ class AFortVolumeManager_BP_C final : public AFortVolumeManager
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortVolumeManager_BP_C">();
+		BP_STATIC_CLASS_IMPL("FortVolumeManager_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortVolumeManager_BP_C")
 	}
 	static class AFortVolumeManager_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFortVolumeManager_BP_C>();
 	}
 };
-static_assert(alignof(AFortVolumeManager_BP_C) == 0x000010, "Wrong alignment on AFortVolumeManager_BP_C");
-static_assert(sizeof(AFortVolumeManager_BP_C) == 0x000540, "Wrong size on AFortVolumeManager_BP_C");
 
 }
 

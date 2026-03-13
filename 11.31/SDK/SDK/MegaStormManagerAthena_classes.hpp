@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MegaStormManagerAthena_C">();
+		BP_STATIC_CLASS_IMPL("MegaStormManagerAthena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MegaStormManagerAthena_C")
 	}
 	static class AMegaStormManagerAthena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AMegaStormManagerAthena_C>();
 	}
 };
-static_assert(alignof(AMegaStormManagerAthena_C) == 0x000008, "Wrong alignment on AMegaStormManagerAthena_C");
-static_assert(sizeof(AMegaStormManagerAthena_C) == 0x000258, "Wrong size on AMegaStormManagerAthena_C");
-static_assert(offsetof(AMegaStormManagerAthena_C, DefaultSceneRoot) == 0x000250, "Member 'AMegaStormManagerAthena_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

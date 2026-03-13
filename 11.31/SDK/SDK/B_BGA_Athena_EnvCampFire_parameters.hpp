@@ -70,13 +70,13 @@ public:
 	class AFortGameStateAthena*                   K2Node_CustomEvent_GameState;                      // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UFortPlaylist*                    K2Node_CustomEvent_Playlist;                       // 0x0118(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  K2Node_CustomEvent_PlaylistContextTags;            // 0x0120(0x0020)(ConstParm)
-	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate;              // 0x0140(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate; // 0x0140(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPawn*                              K2Node_CustomEvent_TransitioningPawn;              // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0158(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0168(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_169[0x3];                                      // 0x0169(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x016C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortPlayerController* Controller, const class UFortQuestItemDefinition* QuestDef, class FName BackendName, int32 CompletionCount, bool ObjectiveCompleted, bool QuestCompleted)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0178(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0188(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0189(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_18A[0x6];                                      // 0x018A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -88,7 +88,7 @@ public:
 	class AAthena_PlayerController_C*             K2Node_DynamicCast_AsAthena_Player_Controller;     // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1B1[0x3];                                      // 0x01B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x01B4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3; // 0x01B4(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x01C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C5[0x3];                                      // 0x01C5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              K2Node_CustomEvent_InteractingPawn_1;              // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -129,96 +129,6 @@ public:
 	class ABuildingActor*                         K2Node_DynamicCast_AsBuilding_Actor;               // 0x0490(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0498(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire) == 0x0004A0, "Wrong size on B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, EntryPoint) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, Temp_struct_Variable) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, Temp_object_Variable) == 0x000028, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, Temp_object_Variable_1) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_PlaylistDataReadyAsync_ReturnValue) == 0x000038, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_PlaylistDataReadyAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue) == 0x000040, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000044, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_DamagedActor) == 0x000050, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_DamagedActor' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_Damage) == 0x000058, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_InstigatedBy) == 0x000060, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_DamageCauser) == 0x000068, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_DamageCauser' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_HitLocation) == 0x000070, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_FHitComponent) == 0x000080, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_FHitComponent' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_BoneName) == 0x000088, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_BoneName' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_Momentum) == 0x000090, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_Momentum' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00009C, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_Add_VectorVector_ReturnValue) == 0x0000A8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_Not_PreBool_ReturnValue) == 0x0000B4, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BooleanAND_ReturnValue) == 0x0000B5, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_Event_InteractingPawn) == 0x0000B8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_Event_InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_Event_InteractionBeingAttempted) == 0x0000C0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_Event_InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial) == 0x0000C1, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_Controller) == 0x0000C8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_Controller' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_QuestDef) == 0x0000D0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_QuestDef' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_BackendName) == 0x0000D8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_BackendName' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_CompletionCount) == 0x0000E0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_CompletionCount' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_ObjectiveCompleted) == 0x0000E4, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_ObjectiveCompleted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_QuestCompleted) == 0x0000E5, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_QuestCompleted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BooleanOR_ReturnValue) == 0x0000E6, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0000E7, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetPersistentName_ReturnValue) == 0x0000E8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetPersistentName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0000F8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetPlayerPawn_ReturnValue) == 0x000100, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BooleanAND_ReturnValue_1) == 0x000108, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_GameState) == 0x000110, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_GameState' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_Playlist) == 0x000118, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_Playlist' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_PlaylistContextTags) == 0x000120, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_PlaylistContextTags' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate) == 0x000140, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_TransitioningPawn) == 0x000150, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_TransitioningPawn' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_1) == 0x000158, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_1) == 0x000168, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00016C, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_2) == 0x000178, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_2) == 0x000188, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_3) == 0x000189, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000190, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_4) == 0x000198, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial_1) == 0x000199, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_CheckIfUserIsSpecialS7_UserIsSpecial_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetController_ReturnValue) == 0x0001A0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_DynamicCast_AsAthena_Player_Controller) == 0x0001A8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_DynamicCast_AsAthena_Player_Controller' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess) == 0x0001B0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_3) == 0x0001B4, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0001C4, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_InteractingPawn_1) == 0x0001C8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_InteractingPawn_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x0001D0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetCostReActivate_ReturnValue) == 0x0001D8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetCostReActivate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_K2_RemoveItemFromPlayer_ReturnValue) == 0x0001DC, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_K2_RemoveItemFromPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0001E0, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_MakeStruct_GameplayEventData) == 0x0001E8, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_MakeStruct_GameplayEventData_1) == 0x000298, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_MakeStruct_GameplayEventData_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_4) == 0x000348, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000358, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetValueAtLevel_ReturnValue) == 0x000360, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_FCeil_ReturnValue) == 0x000364, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_CustomEvent_InteractingPawn) == 0x000368, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_CustomEvent_InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1) == 0x000370, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_GetFortPlayerControllerFromActor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, Temp_object_Variable_2) == 0x000378, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_K2_RemoveItemFromPlayer_ReturnValue_1) == 0x000388, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_K2_RemoveItemFromPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_LineTraceSingle_OutHit) == 0x00038C, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_LineTraceSingle_ReturnValue) == 0x000414, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_bBlockingHit) == 0x000415, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_bInitialOverlap) == 0x000416, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_Time) == 0x000418, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_Distance) == 0x00041C, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_Location) == 0x000420, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_ImpactPoint) == 0x00042C, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_Normal) == 0x000438, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_ImpactNormal) == 0x000444, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_PhysMat) == 0x000450, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_HitActor) == 0x000458, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_HitComponent) == 0x000460, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_HitBoneName) == 0x000468, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_HitItem) == 0x000470, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_FaceIndex) == 0x000474, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_TraceStart) == 0x000478, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, CallFunc_BreakHitResult_TraceEnd) == 0x000484, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_DynamicCast_AsBuilding_Actor) == 0x000490, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess_1) == 0x000498, "Member 'B_BGA_Athena_EnvCampFire_C_ExecuteUbergraph_B_BGA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.PayStokeCost
 // 0x0008 (0x0008 - 0x0000)
@@ -227,9 +137,6 @@ struct B_BGA_Athena_EnvCampFire_C_PayStokeCost final
 public:
 	class AFortPawn*                              InteractingPawn_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_PayStokeCost) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_PayStokeCost");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_PayStokeCost) == 0x000008, "Wrong size on B_BGA_Athena_EnvCampFire_C_PayStokeCost");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_PayStokeCost, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_PayStokeCost::InteractingPawn_0' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.PayLightCost
 // 0x0008 (0x0008 - 0x0000)
@@ -238,9 +145,6 @@ struct B_BGA_Athena_EnvCampFire_C_PayLightCost final
 public:
 	class AFortPawn*                              InteractingPawn_0;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_PayLightCost) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_PayLightCost");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_PayLightCost) == 0x000008, "Wrong size on B_BGA_Athena_EnvCampFire_C_PayLightCost");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_PayLightCost, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_PayLightCost::InteractingPawn_0' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.HandleCharacterVariantTransition
 // 0x0008 (0x0008 - 0x0000)
@@ -249,9 +153,6 @@ struct B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition final
 public:
 	class AFortPawn*                              TransitioningPawn;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition) == 0x000008, "Wrong size on B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition, TransitioningPawn) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_HandleCharacterVariantTransition::TransitioningPawn' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.Server_QuestObjectiveUpdated
 // 0x0020 (0x0020 - 0x0000)
@@ -265,14 +166,6 @@ public:
 	bool                                          ObjectiveCompleted;                                // 0x001C(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          QuestCompleted;                                    // 0x001D(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated) == 0x000020, "Wrong size on B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, Controller) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::Controller' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, QuestDef) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::QuestDef' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, BackendName) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::BackendName' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, CompletionCount) == 0x000018, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::CompletionCount' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, ObjectiveCompleted) == 0x00001C, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::ObjectiveCompleted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated, QuestCompleted) == 0x00001D, "Member 'B_BGA_Athena_EnvCampFire_C_Server_QuestObjectiveUpdated::QuestCompleted' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.BlueprintOnInteract
 // 0x0010 (0x0010 - 0x0000)
@@ -282,10 +175,6 @@ public:
 	const class AFortPawn*                        InteractingPawn_0;                                 // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInteractionBeingAttempted                    InteractionBeingAttempted;                         // 0x0008(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract) == 0x000010, "Wrong size on B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract::InteractingPawn_0' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract, InteractionBeingAttempted) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintOnInteract::InteractionBeingAttempted' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.BuildingActorDestroyedCleanUp
 // 0x0050 (0x0050 - 0x0000)
@@ -303,16 +192,6 @@ public:
 	class FName                                   BoneName;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Momentum;                                          // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp) == 0x000050, "Wrong size on B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, DamagedActor) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::DamagedActor' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, Damage) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::Damage' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, InstigatedBy) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, DamageCauser) == 0x000018, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::DamageCauser' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, HitLocation) == 0x000020, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::HitLocation' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, FHitComponent) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::FHitComponent' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, BoneName) == 0x000038, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::BoneName' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp, Momentum) == 0x000040, "Member 'B_BGA_Athena_EnvCampFire_C_BuildingActorDestroyedCleanUp::Momentum' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.OnReady_9F4554BE40FCB41157835B9AD897EE69
 // 0x0030 (0x0030 - 0x0000)
@@ -323,11 +202,6 @@ public:
 	const class UFortPlaylist*                    Playlist;                                          // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  PlaylistContextTags;                               // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69) == 0x000030, "Wrong size on B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69, GameState) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69::GameState' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69, Playlist) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69::Playlist' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69, PlaylistContextTags) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_OnReady_9F4554BE40FCB41157835B9AD897EE69::PlaylistContextTags' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.SetSheetValues
 // 0x0008 (0x0008 - 0x0000)
@@ -338,10 +212,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetValueAtLevel_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_SetSheetValues) == 0x000004, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_SetSheetValues");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_SetSheetValues) == 0x000008, "Wrong size on B_BGA_Athena_EnvCampFire_C_SetSheetValues");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_SetSheetValues, CallFunc_RowToBool_ReturnValue) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_SetSheetValues::CallFunc_RowToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_SetSheetValues, CallFunc_GetValueAtLevel_ReturnValue) == 0x000004, "Member 'B_BGA_Athena_EnvCampFire_C_SetSheetValues::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.RowToBool
 // 0x0030 (0x0030 - 0x0000)
@@ -355,13 +225,6 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_RowToBool) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_RowToBool");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_RowToBool) == 0x000030, "Wrong size on B_BGA_Athena_EnvCampFire_C_RowToBool");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_RowToBool, Input) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_RowToBool::Input' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_RowToBool, ReturnValue) == 0x000020, "Member 'B_BGA_Athena_EnvCampFire_C_RowToBool::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_RowToBool, CallFunc_GetValueAtLevel_ReturnValue) == 0x000024, "Member 'B_BGA_Athena_EnvCampFire_C_RowToBool::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_RowToBool, CallFunc_FTrunc_ReturnValue) == 0x000028, "Member 'B_BGA_Athena_EnvCampFire_C_RowToBool::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_RowToBool, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'B_BGA_Athena_EnvCampFire_C_RowToBool::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.CheckIfUserIsSpecialS7
 // 0x0070 (0x0070 - 0x0000)
@@ -378,15 +241,6 @@ public:
 	struct FGameplayTagContainer                  CallFunc_GetOwnedGameplayTags_TagContainer;        // 0x0048(0x0020)()
 	bool                                          CallFunc_HasAllTags_ReturnValue;                   // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7) == 0x000070, "Wrong size on B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, PawnWhoLitFire) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::PawnWhoLitFire' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, UserIsSpecial) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::UserIsSpecial' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, Temp_struct_Variable) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, CallFunc_GetOwnedGameplayTags_TagContainer) == 0x000048, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::CallFunc_GetOwnedGameplayTags_TagContainer' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7, CallFunc_HasAllTags_ReturnValue) == 0x000068, "Member 'B_BGA_Athena_EnvCampFire_C_CheckIfUserIsSpecialS7::CallFunc_HasAllTags_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.OnRep_LitRepBool
 // 0x0001 (0x0001 - 0x0000)
@@ -395,9 +249,6 @@ struct B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool final
 public:
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool) == 0x000001, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool) == 0x000001, "Wrong size on B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool, CallFunc_Conv_IntToBool_ReturnValue) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_OnRep_LitRepBool::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.GetCostReActivate
 // 0x000C (0x000C - 0x0000)
@@ -408,11 +259,6 @@ public:
 	float                                         CallFunc_GetValueAtLevel_ReturnValue;              // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FCeil_ReturnValue;                        // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_GetCostReActivate) == 0x000004, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_GetCostReActivate");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_GetCostReActivate) == 0x00000C, "Wrong size on B_BGA_Athena_EnvCampFire_C_GetCostReActivate");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_GetCostReActivate, ReturnValue) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_GetCostReActivate::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_GetCostReActivate, CallFunc_GetValueAtLevel_ReturnValue) == 0x000004, "Member 'B_BGA_Athena_EnvCampFire_C_GetCostReActivate::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_GetCostReActivate, CallFunc_FCeil_ReturnValue) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_GetCostReActivate::CallFunc_FCeil_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.BlueprintCanInteract
 // 0x0038 (0x0038 - 0x0000)
@@ -439,25 +285,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0036(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0037(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract) == 0x000038, "Wrong size on B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::InteractingPawn_0' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, InteractionBeingAttempted) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, ReturnValue) == 0x000009, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_GetValueAtLevel_ReturnValue) == 0x000018, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_FCeil_ReturnValue) == 0x00001C, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_RowToBool_ReturnValue) == 0x000020, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_RowToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_Not_PreBool_ReturnValue) == 0x000021, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000022, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000024, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue) == 0x000028, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_FCeil_ReturnValue_1) == 0x00002C, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_FCeil_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_SelectInt_ReturnValue) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000034, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_BooleanAND_ReturnValue) == 0x000035, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_BooleanAND_ReturnValue_1) == 0x000036, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract, CallFunc_BooleanAND_ReturnValue_2) == 0x000037, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintCanInteract::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.BlueprintGetInteractionString
 // 0x0148 (0x0148 - 0x0000)
@@ -502,37 +329,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0128(0x0018)()
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString) == 0x000148, "Wrong size on B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::InteractingPawn_0' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, ReturnValue) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000028, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_GetValueAtLevel_ReturnValue) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_FCeil_ReturnValue) == 0x000034, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Not_PreBool_ReturnValue) == 0x000038, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_IntToString_ReturnValue) == 0x000040, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_MakeLiteralText_ReturnValue) == 0x000050, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_TextToString_ReturnValue) == 0x000068, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000078, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue) == 0x000080, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000090, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000A0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_BooleanAND_ReturnValue) == 0x0000C0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_BooleanAND_ReturnValue_1) == 0x0000C1, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000C8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_BooleanAND_ReturnValue_2) == 0x0000D8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x0000DC, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_FCeil_ReturnValue_1) == 0x0000E0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_FCeil_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_GetValueAtLevel_ReturnValue_2) == 0x0000E4, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_GetValueAtLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0000E8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_FCeil_ReturnValue_2) == 0x0000F8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_FCeil_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000100, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000110, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue) == 0x000120, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_K2_GetItemQuantityOnPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000128, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000140, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetInteractionString::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_BGA_Athena_EnvCampFire.B_BGA_Athena_EnvCampFire_C.BlueprintGetFailedInteractionString
 // 0x0120 (0x0120 - 0x0000)
@@ -568,29 +364,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x00F0(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0108(0x0018)()
 };
-static_assert(alignof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString) == 0x000008, "Wrong alignment on B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString");
-static_assert(sizeof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString) == 0x000120, "Wrong size on B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, InteractingPawn_0) == 0x000000, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::InteractingPawn_0' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, ReturnValue) == 0x000010, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, Temp_bool_Variable) == 0x000028, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_GetValueAtLevel_ReturnValue) == 0x00002C, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_FCeil_ReturnValue) == 0x000040, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_FCeil_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_IntToString_ReturnValue) == 0x000048, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000058, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Concat_StrStr_ReturnValue) == 0x000060, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000070, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_BooleanAND_ReturnValue) == 0x000080, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_StringToText_ReturnValue) == 0x000088, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x0000A0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_TextToString_ReturnValue_1) == 0x0000A8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_FCeil_ReturnValue_1) == 0x0000B8, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_FCeil_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_IntToString_ReturnValue_1) == 0x0000C0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Concat_StrStr_ReturnValue_2) == 0x0000D0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Concat_StrStr_ReturnValue_3) == 0x0000E0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0000F0, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString, K2Node_Select_Default) == 0x000108, "Member 'B_BGA_Athena_EnvCampFire_C_BlueprintGetFailedInteractionString::K2Node_Select_Default' has a wrong offset!");
 
 }
 

@@ -27,15 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TT_Ninja_Tactical_MeleeHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("TT_Ninja_Tactical_MeleeHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TT_Ninja_Tactical_MeleeHitsHeal_C")
 	}
 	static class UTT_Ninja_Tactical_MeleeHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTT_Ninja_Tactical_MeleeHitsHeal_C>();
 	}
 };
-static_assert(alignof(UTT_Ninja_Tactical_MeleeHitsHeal_C) == 0x000008, "Wrong alignment on UTT_Ninja_Tactical_MeleeHitsHeal_C");
-static_assert(sizeof(UTT_Ninja_Tactical_MeleeHitsHeal_C) == 0x000168, "Wrong size on UTT_Ninja_Tactical_MeleeHitsHeal_C");
 
 }
 

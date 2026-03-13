@@ -49,31 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIEmitterElement_C">();
+		BP_STATIC_CLASS_IMPL("UIEmitterElement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIEmitterElement_C")
 	}
 	static class UUIEmitterElement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIEmitterElement_C>();
 	}
 };
-static_assert(alignof(UUIEmitterElement_C) == 0x000008, "Wrong alignment on UUIEmitterElement_C");
-static_assert(sizeof(UUIEmitterElement_C) == 0x0002B8, "Wrong size on UUIEmitterElement_C");
-static_assert(offsetof(UUIEmitterElement_C, UberGraphFrame) == 0x000230, "Member 'UUIEmitterElement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, SpanTranslate) == 0x000238, "Member 'UUIEmitterElement_C::SpanTranslate' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, Span) == 0x000240, "Member 'UUIEmitterElement_C::Span' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, TimeToFade) == 0x000248, "Member 'UUIEmitterElement_C::TimeToFade' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, FadeOut) == 0x000250, "Member 'UUIEmitterElement_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, ScaleOut) == 0x000258, "Member 'UUIEmitterElement_C::ScaleOut' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, SpinCCW) == 0x000260, "Member 'UUIEmitterElement_C::SpinCCW' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, SpinCW) == 0x000268, "Member 'UUIEmitterElement_C::SpinCW' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, Twinkle) == 0x000270, "Member 'UUIEmitterElement_C::Twinkle' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, CommonBorder_SizeContainer) == 0x000278, "Member 'UUIEmitterElement_C::CommonBorder_SizeContainer' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, Image_EmitterMaterial) == 0x000280, "Member 'UUIEmitterElement_C::Image_EmitterMaterial' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, SizeBox_Distance) == 0x000288, "Member 'UUIEmitterElement_C::SizeBox_Distance' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, EmitterBirth) == 0x000290, "Member 'UUIEmitterElement_C::EmitterBirth' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, EmitterDeath) == 0x0002A0, "Member 'UUIEmitterElement_C::EmitterDeath' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, LifeDuration) == 0x0002B0, "Member 'UUIEmitterElement_C::LifeDuration' has a wrong offset!");
-static_assert(offsetof(UUIEmitterElement_C, SpinSpeed) == 0x0002B4, "Member 'UUIEmitterElement_C::SpinSpeed' has a wrong offset!");
 
 }
 

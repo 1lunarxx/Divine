@@ -40,21 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLockedStyleNotification_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLockedStyleNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLockedStyleNotification_C")
 	}
 	static class UAthenaLockedStyleNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLockedStyleNotification_C>();
 	}
 };
-static_assert(alignof(UAthenaLockedStyleNotification_C) == 0x000008, "Wrong alignment on UAthenaLockedStyleNotification_C");
-static_assert(sizeof(UAthenaLockedStyleNotification_C) == 0x0002E8, "Wrong size on UAthenaLockedStyleNotification_C");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, UberGraphFrame) == 0x0002B8, "Member 'UAthenaLockedStyleNotification_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, DataUpdate) == 0x0002C0, "Member 'UAthenaLockedStyleNotification_C::DataUpdate' has a wrong offset!");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, Intro) == 0x0002C8, "Member 'UAthenaLockedStyleNotification_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, SizeBox_ProgressInfo) == 0x0002D0, "Member 'UAthenaLockedStyleNotification_C::SizeBox_ProgressInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, SizeBox_StaticText) == 0x0002D8, "Member 'UAthenaLockedStyleNotification_C::SizeBox_StaticText' has a wrong offset!");
-static_assert(offsetof(UAthenaLockedStyleNotification_C, Switcher_LockedInfo) == 0x0002E0, "Member 'UAthenaLockedStyleNotification_C::Switcher_LockedInfo' has a wrong offset!");
 
 }
 

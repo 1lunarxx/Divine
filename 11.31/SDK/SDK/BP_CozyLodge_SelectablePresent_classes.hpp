@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CozyLodge_SelectablePresent_C">();
+		BP_STATIC_CLASS_IMPL("BP_CozyLodge_SelectablePresent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CozyLodge_SelectablePresent_C")
 	}
 	static class ABP_CozyLodge_SelectablePresent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CozyLodge_SelectablePresent_C>();
 	}
 };
-static_assert(alignof(ABP_CozyLodge_SelectablePresent_C) == 0x000008, "Wrong alignment on ABP_CozyLodge_SelectablePresent_C");
-static_assert(sizeof(ABP_CozyLodge_SelectablePresent_C) == 0x000548, "Wrong size on ABP_CozyLodge_SelectablePresent_C");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, UberGraphFrame) == 0x0004E8, "Member 'ABP_CozyLodge_SelectablePresent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, DebugOpenState) == 0x0004F0, "Member 'ABP_CozyLodge_SelectablePresent_C::DebugOpenState' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, NewVar_0) == 0x0004F4, "Member 'ABP_CozyLodge_SelectablePresent_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, Debugmesh) == 0x000500, "Member 'ABP_CozyLodge_SelectablePresent_C::Debugmesh' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, DisableRandom) == 0x000508, "Member 'ABP_CozyLodge_SelectablePresent_C::DisableRandom' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, OpenedMesh) == 0x000510, "Member 'ABP_CozyLodge_SelectablePresent_C::OpenedMesh' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, MID_Present) == 0x000518, "Member 'ABP_CozyLodge_SelectablePresent_C::MID_Present' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, MID_Open) == 0x000520, "Member 'ABP_CozyLodge_SelectablePresent_C::MID_Open' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, HightlightMaterial) == 0x000528, "Member 'ABP_CozyLodge_SelectablePresent_C::HightlightMaterial' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, FixOpenedMesh) == 0x000538, "Member 'ABP_CozyLodge_SelectablePresent_C::FixOpenedMesh' has a wrong offset!");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_C, ShakeSound) == 0x000540, "Member 'ABP_CozyLodge_SelectablePresent_C::ShakeSound' has a wrong offset!");
 
 }
 

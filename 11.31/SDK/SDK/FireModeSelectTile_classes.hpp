@@ -48,13 +48,13 @@ public:
 	class UCommonTextBlock*                       TextName;                                          // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 UnhoveredVignette;                                 // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMediaSource*                           Media_Source;                                      // 0x0368(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleFocus;                                       // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleSelectConfirmed;                             // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleFocus;                   // 0x0370(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleSelectConfirmed;         // 0x0380(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bIsSelected;                                       // 0x0390(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bHasPreviewTexture;                                // 0x0391(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          bIsRecommendedOption;                              // 0x0392(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_393[0x5];                                      // 0x0393(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleDeselectTile;                                // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UFireModeSelectTile_C* Tile)> HandleDeselectTile;            // 0x0398(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_FireModeSelectTile(int32 EntryPoint);
@@ -77,46 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FireModeSelectTile_C">();
+		BP_STATIC_CLASS_IMPL("FireModeSelectTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FireModeSelectTile_C")
 	}
 	static class UFireModeSelectTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFireModeSelectTile_C>();
 	}
 };
-static_assert(alignof(UFireModeSelectTile_C) == 0x000008, "Wrong alignment on UFireModeSelectTile_C");
-static_assert(sizeof(UFireModeSelectTile_C) == 0x0003A8, "Wrong size on UFireModeSelectTile_C");
-static_assert(offsetof(UFireModeSelectTile_C, UberGraphFrame) == 0x0002A8, "Member 'UFireModeSelectTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, CheckMarkAppear) == 0x0002B0, "Member 'UFireModeSelectTile_C::CheckMarkAppear' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, IntroAndOutro) == 0x0002B8, "Member 'UFireModeSelectTile_C::IntroAndOutro' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ConfirmSelection) == 0x0002C0, "Member 'UFireModeSelectTile_C::ConfirmSelection' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, GameModeSelection) == 0x0002C8, "Member 'UFireModeSelectTile_C::GameModeSelection' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ArtImage) == 0x0002D0, "Member 'UFireModeSelectTile_C::ArtImage' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ArtScale) == 0x0002D8, "Member 'UFireModeSelectTile_C::ArtScale' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, Border_Recommended) == 0x0002E0, "Member 'UFireModeSelectTile_C::Border_Recommended' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ConfirmSelectionFlash) == 0x0002E8, "Member 'UFireModeSelectTile_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ConfirmSelectionShine) == 0x0002F0, "Member 'UFireModeSelectTile_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, DetailsSB) == 0x0002F8, "Member 'UFireModeSelectTile_C::DetailsSB' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, DisabledGray) == 0x000300, "Member 'UFireModeSelectTile_C::DisabledGray' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, Fill) == 0x000308, "Member 'UFireModeSelectTile_C::Fill' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, IconSpacer) == 0x000310, "Member 'UFireModeSelectTile_C::IconSpacer' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, ImageGlow) == 0x000318, "Member 'UFireModeSelectTile_C::ImageGlow' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, LoadingImage) == 0x000320, "Member 'UFireModeSelectTile_C::LoadingImage' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, LoadingImageOvr) == 0x000328, "Member 'UFireModeSelectTile_C::LoadingImageOvr' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, LoadSwitcher) == 0x000330, "Member 'UFireModeSelectTile_C::LoadSwitcher' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, SelectedIcon) == 0x000338, "Member 'UFireModeSelectTile_C::SelectedIcon' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, SelectionBorder) == 0x000340, "Member 'UFireModeSelectTile_C::SelectionBorder' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, SizeBox_Tile) == 0x000348, "Member 'UFireModeSelectTile_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, T_Recommended) == 0x000350, "Member 'UFireModeSelectTile_C::T_Recommended' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, TextName) == 0x000358, "Member 'UFireModeSelectTile_C::TextName' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, UnhoveredVignette) == 0x000360, "Member 'UFireModeSelectTile_C::UnhoveredVignette' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, Media_Source) == 0x000368, "Member 'UFireModeSelectTile_C::Media_Source' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, HandleFocus) == 0x000370, "Member 'UFireModeSelectTile_C::HandleFocus' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, HandleSelectConfirmed) == 0x000380, "Member 'UFireModeSelectTile_C::HandleSelectConfirmed' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, bIsSelected) == 0x000390, "Member 'UFireModeSelectTile_C::bIsSelected' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, bHasPreviewTexture) == 0x000391, "Member 'UFireModeSelectTile_C::bHasPreviewTexture' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, bIsRecommendedOption) == 0x000392, "Member 'UFireModeSelectTile_C::bIsRecommendedOption' has a wrong offset!");
-static_assert(offsetof(UFireModeSelectTile_C, HandleDeselectTile) == 0x000398, "Member 'UFireModeSelectTile_C::HandleDeselectTile' has a wrong offset!");
 
 }
 

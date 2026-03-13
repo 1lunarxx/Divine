@@ -52,31 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeTile_Mission_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeTile_Mission_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeTile_Mission_C")
 	}
 	static class UChallengeTile_Mission_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeTile_Mission_C>();
 	}
 };
-static_assert(alignof(UChallengeTile_Mission_C) == 0x000008, "Wrong alignment on UChallengeTile_Mission_C");
-static_assert(sizeof(UChallengeTile_Mission_C) == 0x000C90, "Wrong size on UChallengeTile_Mission_C");
-static_assert(offsetof(UChallengeTile_Mission_C, UberGraphFrame) == 0x000C10, "Member 'UChallengeTile_Mission_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, AmbientPartyAssistAttention) == 0x000C18, "Member 'UChallengeTile_Mission_C::AmbientPartyAssistAttention' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, Outro) == 0x000C20, "Member 'UChallengeTile_Mission_C::Outro' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, OnHover) == 0x000C28, "Member 'UChallengeTile_Mission_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, CountdownSB) == 0x000C30, "Member 'UChallengeTile_Mission_C::CountdownSB' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, Icon_BattlePass) == 0x000C38, "Member 'UChallengeTile_Mission_C::Icon_BattlePass' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, Icon_LimitedTime) == 0x000C40, "Member 'UChallengeTile_Mission_C::Icon_LimitedTime' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, Icon_Prestige) == 0x000C48, "Member 'UChallengeTile_Mission_C::Icon_Prestige' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, LazyImage_Background) == 0x000C50, "Member 'UChallengeTile_Mission_C::LazyImage_Background' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, OverlayPartyAssist) == 0x000C58, "Member 'UChallengeTile_Mission_C::OverlayPartyAssist' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, PrestigeBorder) == 0x000C60, "Member 'UChallengeTile_Mission_C::PrestigeBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, ScaleBoxTextScale) == 0x000C68, "Member 'UChallengeTile_Mission_C::ScaleBoxTextScale' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, SizeBox_Reward) == 0x000C70, "Member 'UChallengeTile_Mission_C::SizeBox_Reward' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, Text_ChallengeContext_1) == 0x000C78, "Member 'UChallengeTile_Mission_C::Text_ChallengeContext_1' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, UnavailableBox) == 0x000C80, "Member 'UChallengeTile_Mission_C::UnavailableBox' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Mission_C, UnavailableOvr) == 0x000C88, "Member 'UChallengeTile_Mission_C::UnavailableOvr' has a wrong offset!");
 
 }
 

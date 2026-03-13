@@ -39,23 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Com_Countdown_C">();
+		BP_STATIC_CLASS_IMPL("Com_Countdown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Com_Countdown_C")
 	}
 	static class UCom_Countdown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCom_Countdown_C>();
 	}
 };
-static_assert(alignof(UCom_Countdown_C) == 0x000008, "Wrong alignment on UCom_Countdown_C");
-static_assert(sizeof(UCom_Countdown_C) == 0x000290, "Wrong size on UCom_Countdown_C");
-static_assert(offsetof(UCom_Countdown_C, UberGraphFrame) == 0x000250, "Member 'UCom_Countdown_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, Clock) == 0x000258, "Member 'UCom_Countdown_C::Clock' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, PaddingHB) == 0x000260, "Member 'UCom_Countdown_C::PaddingHB' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, RedBoxBorder) == 0x000268, "Member 'UCom_Countdown_C::RedBoxBorder' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, Text_TimeRemainingTag) == 0x000270, "Member 'UCom_Countdown_C::Text_TimeRemainingTag' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, TextScale) == 0x000278, "Member 'UCom_Countdown_C::TextScale' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, TransformOvr) == 0x000280, "Member 'UCom_Countdown_C::TransformOvr' has a wrong offset!");
-static_assert(offsetof(UCom_Countdown_C, IsLargeDisplay) == 0x000288, "Member 'UCom_Countdown_C::IsLargeDisplay' has a wrong offset!");
 
 }
 

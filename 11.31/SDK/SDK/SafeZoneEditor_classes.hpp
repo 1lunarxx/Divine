@@ -32,22 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SafeZoneEditor_C">();
+		BP_STATIC_CLASS_IMPL("SafeZoneEditor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SafeZoneEditor_C")
 	}
 	static class USafeZoneEditor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USafeZoneEditor_C>();
 	}
 };
-static_assert(alignof(USafeZoneEditor_C) == 0x000008, "Wrong alignment on USafeZoneEditor_C");
-static_assert(sizeof(USafeZoneEditor_C) == 0x000488, "Wrong size on USafeZoneEditor_C");
-static_assert(offsetof(USafeZoneEditor_C, Default) == 0x000450, "Member 'USafeZoneEditor_C::Default' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, Image_156) == 0x000458, "Member 'USafeZoneEditor_C::Image_156' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, LowerLeftCorner) == 0x000460, "Member 'USafeZoneEditor_C::LowerLeftCorner' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, LowerRightCorner) == 0x000468, "Member 'USafeZoneEditor_C::LowerRightCorner' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, SafeZone_0) == 0x000470, "Member 'USafeZoneEditor_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, UpperLeftCorner) == 0x000478, "Member 'USafeZoneEditor_C::UpperLeftCorner' has a wrong offset!");
-static_assert(offsetof(USafeZoneEditor_C, UpperRightCorner) == 0x000480, "Member 'USafeZoneEditor_C::UpperRightCorner' has a wrong offset!");
 
 }
 

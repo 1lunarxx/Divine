@@ -33,16 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Generic_Instance_Grenade_Playset_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Generic_Instance_Grenade_Playset_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Generic_Instance_Grenade_Playset_Athena_C")
 	}
 	static class AB_Generic_Instance_Grenade_Playset_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Generic_Instance_Grenade_Playset_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Generic_Instance_Grenade_Playset_Athena_C) == 0x000008, "Wrong alignment on AB_Generic_Instance_Grenade_Playset_Athena_C");
-static_assert(sizeof(AB_Generic_Instance_Grenade_Playset_Athena_C) == 0x000A50, "Wrong size on AB_Generic_Instance_Grenade_Playset_Athena_C");
-static_assert(offsetof(AB_Generic_Instance_Grenade_Playset_Athena_C, UberGraphFrame_B_Generic_Instance_Grenade_Playset_Athena_C) == 0x000A48, "Member 'AB_Generic_Instance_Grenade_Playset_Athena_C::UberGraphFrame_B_Generic_Instance_Grenade_Playset_Athena_C' has a wrong offset!");
 
 }
 

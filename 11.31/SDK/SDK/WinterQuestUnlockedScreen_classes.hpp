@@ -23,15 +23,17 @@ class UWinterQuestUnlockedScreen_C final : public UFortWinterQuestUnlockedScreen
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestUnlockedScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestUnlockedScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestUnlockedScreen_C")
 	}
 	static class UWinterQuestUnlockedScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestUnlockedScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestUnlockedScreen_C) == 0x000008, "Wrong alignment on UWinterQuestUnlockedScreen_C");
-static_assert(sizeof(UWinterQuestUnlockedScreen_C) == 0x000470, "Wrong size on UWinterQuestUnlockedScreen_C");
 
 }
 

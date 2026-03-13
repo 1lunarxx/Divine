@@ -31,18 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestLobbyHeader_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestLobbyHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestLobbyHeader_C")
 	}
 	static class UWinterQuestLobbyHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestLobbyHeader_C>();
 	}
 };
-static_assert(alignof(UWinterQuestLobbyHeader_C) == 0x000008, "Wrong alignment on UWinterQuestLobbyHeader_C");
-static_assert(sizeof(UWinterQuestLobbyHeader_C) == 0x000328, "Wrong size on UWinterQuestLobbyHeader_C");
-static_assert(offsetof(UWinterQuestLobbyHeader_C, LabelIntro) == 0x000310, "Member 'UWinterQuestLobbyHeader_C::LabelIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuestLobbyHeader_C, Winterfest_CabinLogo) == 0x000318, "Member 'UWinterQuestLobbyHeader_C::Winterfest_CabinLogo' has a wrong offset!");
-static_assert(offsetof(UWinterQuestLobbyHeader_C, Winterfest_Date_Label) == 0x000320, "Member 'UWinterQuestLobbyHeader_C::Winterfest_Date_Label' has a wrong offset!");
 
 }
 

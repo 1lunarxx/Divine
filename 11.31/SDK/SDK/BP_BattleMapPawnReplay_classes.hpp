@@ -23,15 +23,17 @@ class ABP_BattleMapPawnReplay_C final : public ABattleMapPawnReplay
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BattleMapPawnReplay_C">();
+		BP_STATIC_CLASS_IMPL("BP_BattleMapPawnReplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BattleMapPawnReplay_C")
 	}
 	static class ABP_BattleMapPawnReplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BattleMapPawnReplay_C>();
 	}
 };
-static_assert(alignof(ABP_BattleMapPawnReplay_C) == 0x000008, "Wrong alignment on ABP_BattleMapPawnReplay_C");
-static_assert(sizeof(ABP_BattleMapPawnReplay_C) == 0x000590, "Wrong size on ABP_BattleMapPawnReplay_C");
 
 }
 

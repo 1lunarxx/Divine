@@ -27,10 +27,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFortChallengeSetStyle                 DisplayStyle;                                      // 0x0008(0x00A0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ChallengeListEntry_CompletionReward_C_OnRewardInfoSet) == 0x000008, "Wrong alignment on ChallengeListEntry_CompletionReward_C_OnRewardInfoSet");
-static_assert(sizeof(ChallengeListEntry_CompletionReward_C_OnRewardInfoSet) == 0x0000A8, "Wrong size on ChallengeListEntry_CompletionReward_C_OnRewardInfoSet");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_OnRewardInfoSet, bIsCompleted) == 0x000000, "Member 'ChallengeListEntry_CompletionReward_C_OnRewardInfoSet::bIsCompleted' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_OnRewardInfoSet, DisplayStyle) == 0x000008, "Member 'ChallengeListEntry_CompletionReward_C_OnRewardInfoSet::DisplayStyle' has a wrong offset!");
 
 // Function ChallengeListEntry_CompletionReward.ChallengeListEntry_CompletionReward_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -40,10 +36,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ChallengeListEntry_CompletionReward_C_OnMouseEnter) == 0x000008, "Wrong alignment on ChallengeListEntry_CompletionReward_C_OnMouseEnter");
-static_assert(sizeof(ChallengeListEntry_CompletionReward_C_OnMouseEnter) == 0x0000A8, "Wrong size on ChallengeListEntry_CompletionReward_C_OnMouseEnter");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'ChallengeListEntry_CompletionReward_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'ChallengeListEntry_CompletionReward_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function ChallengeListEntry_CompletionReward.ChallengeListEntry_CompletionReward_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -52,9 +44,6 @@ struct ChallengeListEntry_CompletionReward_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ChallengeListEntry_CompletionReward_C_OnMouseLeave) == 0x000008, "Wrong alignment on ChallengeListEntry_CompletionReward_C_OnMouseLeave");
-static_assert(sizeof(ChallengeListEntry_CompletionReward_C_OnMouseLeave) == 0x000070, "Wrong size on ChallengeListEntry_CompletionReward_C_OnMouseLeave");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'ChallengeListEntry_CompletionReward_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function ChallengeListEntry_CompletionReward.ChallengeListEntry_CompletionReward_C.ExecuteUbergraph_ChallengeListEntry_CompletionReward
 // 0x0220 (0x0220 - 0x0000)
@@ -83,26 +72,6 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward) == 0x000008, "Wrong alignment on ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward");
-static_assert(sizeof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward) == 0x000220, "Wrong size on ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, EntryPoint) == 0x000000, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_byte_Variable) == 0x000004, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_byte_Variable_1) == 0x000005, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_bool_Variable) == 0x000006, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_float_Variable) == 0x000008, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_float_Variable_1) == 0x00000C, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Event_bIsCompleted) == 0x000010, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Event_bIsCompleted' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Event_DisplayStyle) == 0x000018, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Event_DisplayStyle' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Event_MyGeometry) == 0x0000B8, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Event_MouseEvent_1) == 0x0000F0, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_MakeStruct_SlateColor) == 0x000160, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Select_Default) == 0x000188, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Event_MouseEvent) == 0x000190, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, CallFunc_PlayAnimationForward_ReturnValue) == 0x000200, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000208, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000210, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, Temp_bool_Variable_1) == 0x000218, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward, K2Node_Select_Default_1) == 0x000219, "Member 'ChallengeListEntry_CompletionReward_C_ExecuteUbergraph_ChallengeListEntry_CompletionReward::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

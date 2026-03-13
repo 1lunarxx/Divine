@@ -23,15 +23,17 @@ class UGE_DudebroDamageWallsLOTS_C final : public UGet_DirectDamageParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_DudebroDamageWallsLOTS_C">();
+		BP_STATIC_CLASS_IMPL("GE_DudebroDamageWallsLOTS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_DudebroDamageWallsLOTS_C")
 	}
 	static class UGE_DudebroDamageWallsLOTS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_DudebroDamageWallsLOTS_C>();
 	}
 };
-static_assert(alignof(UGE_DudebroDamageWallsLOTS_C) == 0x000008, "Wrong alignment on UGE_DudebroDamageWallsLOTS_C");
-static_assert(sizeof(UGE_DudebroDamageWallsLOTS_C) == 0x000770, "Wrong size on UGE_DudebroDamageWallsLOTS_C");
 
 }
 

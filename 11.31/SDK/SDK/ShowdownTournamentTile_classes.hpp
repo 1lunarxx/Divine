@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownTournamentTile_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownTournamentTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownTournamentTile_C")
 	}
 	static class UShowdownTournamentTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownTournamentTile_C>();
 	}
 };
-static_assert(alignof(UShowdownTournamentTile_C) == 0x000008, "Wrong alignment on UShowdownTournamentTile_C");
-static_assert(sizeof(UShowdownTournamentTile_C) == 0x000BC0, "Wrong size on UShowdownTournamentTile_C");
-static_assert(offsetof(UShowdownTournamentTile_C, UberGraphFrame) == 0x000B90, "Member 'UShowdownTournamentTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentTile_C, sizeUp) == 0x000B98, "Member 'UShowdownTournamentTile_C::sizeUp' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentTile_C, changeFocus) == 0x000BA0, "Member 'UShowdownTournamentTile_C::changeFocus' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentTile_C, Image_TileFade) == 0x000BA8, "Member 'UShowdownTournamentTile_C::Image_TileFade' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentTile_C, PosterSizeBox) == 0x000BB0, "Member 'UShowdownTournamentTile_C::PosterSizeBox' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentTile_C, isFaded) == 0x000BB8, "Member 'UShowdownTournamentTile_C::isFaded' has a wrong offset!");
 
 }
 

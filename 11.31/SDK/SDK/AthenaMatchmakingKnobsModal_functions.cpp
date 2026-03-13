@@ -17,6 +17,20 @@
 namespace SDK
 {
 
+// Function AthenaMatchmakingKnobsModal.AthenaMatchmakingKnobsModal_C.BP_OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaMatchmakingKnobsModal_C::BP_OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BP_OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaMatchmakingKnobsModal.AthenaMatchmakingKnobsModal_C.OnInputModeChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -122,20 +136,6 @@ void UAthenaMatchmakingKnobsModal_C::ExecuteUbergraph_AthenaMatchmakingKnobsModa
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaMatchmakingKnobsModal.AthenaMatchmakingKnobsModal_C.BP_OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UAthenaMatchmakingKnobsModal_C::BP_OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMatchmakingKnobsModal_C", "BP_OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

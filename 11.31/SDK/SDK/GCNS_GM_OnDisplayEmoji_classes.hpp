@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNS_GM_OnDisplayEmoji_C">();
+		BP_STATIC_CLASS_IMPL("GCNS_GM_OnDisplayEmoji_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNS_GM_OnDisplayEmoji_C")
 	}
 	static class UGCNS_GM_OnDisplayEmoji_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNS_GM_OnDisplayEmoji_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnDisplayEmoji_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnDisplayEmoji_C");
-static_assert(sizeof(UGCNS_GM_OnDisplayEmoji_C) == 0x000080, "Wrong size on UGCNS_GM_OnDisplayEmoji_C");
 
 }
 

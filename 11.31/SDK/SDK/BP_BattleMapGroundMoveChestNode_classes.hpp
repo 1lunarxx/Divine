@@ -23,15 +23,17 @@ class ABP_BattleMapGroundMoveChestNode_C final : public ABP_BattleMapBaseNode_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BattleMapGroundMoveChestNode_C">();
+		BP_STATIC_CLASS_IMPL("BP_BattleMapGroundMoveChestNode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BattleMapGroundMoveChestNode_C")
 	}
 	static class ABP_BattleMapGroundMoveChestNode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BattleMapGroundMoveChestNode_C>();
 	}
 };
-static_assert(alignof(ABP_BattleMapGroundMoveChestNode_C) == 0x000008, "Wrong alignment on ABP_BattleMapGroundMoveChestNode_C");
-static_assert(sizeof(ABP_BattleMapGroundMoveChestNode_C) == 0x000350, "Wrong size on ABP_BattleMapGroundMoveChestNode_C");
 
 }
 

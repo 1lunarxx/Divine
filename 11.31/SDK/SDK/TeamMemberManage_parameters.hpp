@@ -38,22 +38,6 @@ public:
 	int32                                         K2Node_ComponentBoundEvent_ActiveWidgetIndex;      // 0x0088(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x008C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage) == 0x000008, "Wrong alignment on TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage");
-static_assert(sizeof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage) == 0x000090, "Wrong size on TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, EntryPoint) == 0x000000, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, Temp_bool_Variable) == 0x000004, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, Temp_text_Variable) == 0x000008, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, Temp_text_Variable_1) == 0x000020, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_ComponentBoundEvent_Button) == 0x000038, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_Event_bIsParticipating) == 0x000040, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_Event_bIsParticipating' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_Select_Default) == 0x000048, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000060, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_ComponentBoundEvent_IconId) == 0x00006C, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_ComponentBoundEvent_IconId' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_ComponentBoundEvent_ColorId) == 0x000074, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_ComponentBoundEvent_ColorId' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000080, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000088, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00008C, "Member 'TeamMemberManage_C_ExecuteUbergraph_TeamMemberManage::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function TeamMemberManage.TeamMemberManage_C.BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -63,10 +47,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'TeamMemberManage_C_BndEvt__ContentSwitcher_K2Node_ComponentBoundEvent_2_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function TeamMemberManage.TeamMemberManage_C.BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -76,10 +56,6 @@ public:
 	class FName                                   IconId;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   ColorId;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature) == 0x000004, "Wrong alignment on TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
-static_assert(sizeof(TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature) == 0x000010, "Wrong size on TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature");
-static_assert(offsetof(TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature, IconId) == 0x000000, "Member 'TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature::IconId' has a wrong offset!");
-static_assert(offsetof(TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature, ColorId) == 0x000008, "Member 'TeamMemberManage_C_BndEvt__BP_LocalPlayerBannerEditor_K2Node_ComponentBoundEvent_1_CloseBannerEditor__DelegateSignature::ColorId' has a wrong offset!");
 
 // Function TeamMemberManage.TeamMemberManage_C.OnParticipationChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -88,9 +64,6 @@ struct TeamMemberManage_C_OnParticipationChanged final
 public:
 	bool                                          bIsParticipating;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TeamMemberManage_C_OnParticipationChanged) == 0x000001, "Wrong alignment on TeamMemberManage_C_OnParticipationChanged");
-static_assert(sizeof(TeamMemberManage_C_OnParticipationChanged) == 0x000001, "Wrong size on TeamMemberManage_C_OnParticipationChanged");
-static_assert(offsetof(TeamMemberManage_C_OnParticipationChanged, bIsParticipating) == 0x000000, "Member 'TeamMemberManage_C_OnParticipationChanged::bIsParticipating' has a wrong offset!");
 
 // Function TeamMemberManage.TeamMemberManage_C.BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -99,9 +72,6 @@ struct TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TeamMemberManage_C_BndEvt__CloseProfileButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 }
 

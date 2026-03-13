@@ -25,10 +25,6 @@ public:
 	struct FFortUIPerkTier                        FortPerkTier;                                      // 0x0000(0x0020)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	class UFortPerkTierWidget_NUI*                PerkTierWidget;                                    // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_OnGeneratePerkTier) == 0x000008, "Wrong alignment on PerksList_C_OnGeneratePerkTier");
-static_assert(sizeof(PerksList_C_OnGeneratePerkTier) == 0x000028, "Wrong size on PerksList_C_OnGeneratePerkTier");
-static_assert(offsetof(PerksList_C_OnGeneratePerkTier, FortPerkTier) == 0x000000, "Member 'PerksList_C_OnGeneratePerkTier::FortPerkTier' has a wrong offset!");
-static_assert(offsetof(PerksList_C_OnGeneratePerkTier, PerkTierWidget) == 0x000020, "Member 'PerksList_C_OnGeneratePerkTier::PerkTierWidget' has a wrong offset!");
 
 // Function PerksList.PerksList_C.OnGeneratePerk
 // 0x00A0 (0x00A0 - 0x0000)
@@ -38,10 +34,6 @@ public:
 	struct FFortUIPerk                            FortPerk;                                          // 0x0000(0x0098)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UFortPerkWidget_NUI*                    PerkWidget;                                        // 0x0098(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_OnGeneratePerk) == 0x000008, "Wrong alignment on PerksList_C_OnGeneratePerk");
-static_assert(sizeof(PerksList_C_OnGeneratePerk) == 0x0000A0, "Wrong size on PerksList_C_OnGeneratePerk");
-static_assert(offsetof(PerksList_C_OnGeneratePerk, FortPerk) == 0x000000, "Member 'PerksList_C_OnGeneratePerk::FortPerk' has a wrong offset!");
-static_assert(offsetof(PerksList_C_OnGeneratePerk, PerkWidget) == 0x000098, "Member 'PerksList_C_OnGeneratePerk::PerkWidget' has a wrong offset!");
 
 // Function PerksList.PerksList_C.ExecuteUbergraph_PerksList
 // 0x0170 (0x0170 - 0x0000)
@@ -109,57 +101,6 @@ public:
 	uint8                                         Pad_161[0x7];                                      // 0x0161(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue_1;                   // 0x0168(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PerksList_C_ExecuteUbergraph_PerksList) == 0x000008, "Wrong alignment on PerksList_C_ExecuteUbergraph_PerksList");
-static_assert(sizeof(PerksList_C_ExecuteUbergraph_PerksList) == 0x000170, "Wrong size on PerksList_C_ExecuteUbergraph_PerksList");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, EntryPoint) == 0x000000, "Member 'PerksList_C_ExecuteUbergraph_PerksList::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Event_FortPerkTier) == 0x000008, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Event_FortPerkTier' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Event_PerkTierWidget) == 0x000028, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Event_PerkTierWidget' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_DynamicCast_AsPerk_Tier_Widget_New) == 0x000030, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_DynamicCast_AsPerk_Tier_Widget_New' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChild_ReturnValue) == 0x000040, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable) == 0x000048, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_int_Variable) == 0x00004C, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable) == 0x000050, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_Greater_IntInt_ReturnValue) == 0x000051, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_1) == 0x000052, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Event_FortPerk) == 0x000058, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Event_FortPerk' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Event_PerkWidget) == 0x0000F0, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Event_PerkWidget' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_DynamicCast_AsPerk_Widget_New) == 0x0000F8, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_DynamicCast_AsPerk_Widget_New' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_DynamicCast_bSuccess_1) == 0x000100, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_IsPerkUnlocked_ReturnValue) == 0x000101, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_IsPerkUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_HasAnyChildren_ReturnValue) == 0x000102, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_HasAnyChildren_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_HasAnyChildren_ReturnValue_1) == 0x000103, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_HasAnyChildren_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable_1) == 0x000104, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_2) == 0x000105, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_Add_IntInt_ReturnValue) == 0x000108, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_3) == 0x00010C, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000110, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_HasAnyChildren_ReturnValue_2) == 0x000118, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_HasAnyChildren_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_HasAnyChildren_ReturnValue_3) == 0x000119, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_HasAnyChildren_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default) == 0x00011A, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable_2) == 0x00011B, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_4) == 0x00011C, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default_1) == 0x00011D, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_5) == 0x00011E, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable_3) == 0x00011F, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_6) == 0x000120, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default_2) == 0x000121, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_7) == 0x000122, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable_4) == 0x000123, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_8) == 0x000124, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default_3) == 0x000125, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_9) == 0x000126, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChildToVerticalBox_ReturnValue_1) == 0x000128, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChildToVerticalBox_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_bool_Variable_5) == 0x000130, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default_4) == 0x000131, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_10) == 0x000132, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChildToVerticalBox_ReturnValue_2) == 0x000138, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChildToVerticalBox_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, Temp_byte_Variable_11) == 0x000140, "Member 'PerksList_C_ExecuteUbergraph_PerksList::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChildToVerticalBox_ReturnValue_3) == 0x000148, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChildToVerticalBox_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, K2Node_Select_Default_5) == 0x000150, "Member 'PerksList_C_ExecuteUbergraph_PerksList::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_Create_ReturnValue) == 0x000158, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_IsValid_ReturnValue) == 0x000160, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PerksList_C_ExecuteUbergraph_PerksList, CallFunc_AddChild_ReturnValue_1) == 0x000168, "Member 'PerksList_C_ExecuteUbergraph_PerksList::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
 
 }
 

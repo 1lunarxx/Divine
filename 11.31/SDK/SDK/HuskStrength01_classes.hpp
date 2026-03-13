@@ -23,15 +23,17 @@ class UHuskStrength01_C final : public UFortNavAreaAutomatic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HuskStrength01_C">();
+		BP_STATIC_CLASS_IMPL("HuskStrength01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HuskStrength01_C")
 	}
 	static class UHuskStrength01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHuskStrength01_C>();
 	}
 };
-static_assert(alignof(UHuskStrength01_C) == 0x000008, "Wrong alignment on UHuskStrength01_C");
-static_assert(sizeof(UHuskStrength01_C) == 0x000068, "Wrong size on UHuskStrength01_C");
 
 }
 

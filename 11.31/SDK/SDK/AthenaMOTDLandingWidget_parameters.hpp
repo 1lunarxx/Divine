@@ -35,17 +35,6 @@ public:
 	class UIconTextButton_C*                      K2Node_DynamicCast_AsIcon_Text_Button_2;           // 0x01B0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x01B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget) == 0x000008, "Wrong alignment on AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget");
-static_assert(sizeof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget) == 0x0001C0, "Wrong size on AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, EntryPoint) == 0x000000, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_Event_NewsEntry) == 0x000008, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_Event_NewsEntry' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_SwitchEnum_CmpSuccess) == 0x000188, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000190, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_bSuccess) == 0x000198, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_AsIcon_Text_Button_1) == 0x0001A0, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_AsIcon_Text_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_bSuccess_1) == 0x0001A8, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_AsIcon_Text_Button_2) == 0x0001B0, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_AsIcon_Text_Button_2' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget, K2Node_DynamicCast_bSuccess_2) == 0x0001B8, "Member 'AthenaMOTDLandingWidget_C_ExecuteUbergraph_AthenaMOTDLandingWidget::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
 
 // Function AthenaMOTDLandingWidget.AthenaMOTDLandingWidget_C.OnPopulateNews
 // 0x0180 (0x0180 - 0x0000)
@@ -54,9 +43,6 @@ struct AthenaMOTDLandingWidget_C_OnPopulateNews final
 public:
 	struct FAthenaNewsEntry                       NewsEntry;                                         // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaMOTDLandingWidget_C_OnPopulateNews) == 0x000008, "Wrong alignment on AthenaMOTDLandingWidget_C_OnPopulateNews");
-static_assert(sizeof(AthenaMOTDLandingWidget_C_OnPopulateNews) == 0x000180, "Wrong size on AthenaMOTDLandingWidget_C_OnPopulateNews");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_OnPopulateNews, NewsEntry) == 0x000000, "Member 'AthenaMOTDLandingWidget_C_OnPopulateNews::NewsEntry' has a wrong offset!");
 
 // Function AthenaMOTDLandingWidget.AthenaMOTDLandingWidget_C.SetTextIfValidOrDefault
 // 0x0078 (0x0078 - 0x0000)
@@ -75,17 +61,6 @@ public:
 	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0060(0x0018)()
 };
-static_assert(alignof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault) == 0x000008, "Wrong alignment on AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault");
-static_assert(sizeof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault) == 0x000078, "Wrong size on AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, Button) == 0x000000, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::Button' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, String) == 0x000008, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::String' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, DefaultText) == 0x000018, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::DefaultText' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, Temp_bool_Variable) == 0x000030, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, CallFunc_Conv_StringToText_ReturnValue) == 0x000038, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000050, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, CallFunc_TextIsEmpty_ReturnValue) == 0x000059, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault, K2Node_Select_Default) == 0x000060, "Member 'AthenaMOTDLandingWidget_C_SetTextIfValidOrDefault::K2Node_Select_Default' has a wrong offset!");
 
 }
 

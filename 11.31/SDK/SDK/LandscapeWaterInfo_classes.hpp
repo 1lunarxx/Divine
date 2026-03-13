@@ -47,25 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LandscapeWaterInfo_C">();
+		BP_STATIC_CLASS_IMPL("LandscapeWaterInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LandscapeWaterInfo_C")
 	}
 	static class ALandscapeWaterInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALandscapeWaterInfo_C>();
 	}
 };
-static_assert(alignof(ALandscapeWaterInfo_C) == 0x000010, "Wrong alignment on ALandscapeWaterInfo_C");
-static_assert(sizeof(ALandscapeWaterInfo_C) == 0x000290, "Wrong size on ALandscapeWaterInfo_C");
-static_assert(offsetof(ALandscapeWaterInfo_C, UberGraphFrame) == 0x000218, "Member 'ALandscapeWaterInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, DefaultSceneRoot) == 0x000220, "Member 'ALandscapeWaterInfo_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, Game_Texture__Water_Velocity_and_Height) == 0x000228, "Member 'ALandscapeWaterInfo_C::Game_Texture__Water_Velocity_and_Height' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, LS_Transform) == 0x000230, "Member 'ALandscapeWaterInfo_C::LS_Transform' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, LS_RT_Res) == 0x000260, "Member 'ALandscapeWaterInfo_C::LS_RT_Res' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, Use_Terrain_Velocity_and_Height_Texture) == 0x000268, "Member 'ALandscapeWaterInfo_C::Use_Terrain_Velocity_and_Height_Texture' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, External_Water_MID_To_Update) == 0x000270, "Member 'ALandscapeWaterInfo_C::External_Water_MID_To_Update' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, Underwater_PostProcess_Material) == 0x000278, "Member 'ALandscapeWaterInfo_C::Underwater_PostProcess_Material' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, Underwater_PP_MID) == 0x000280, "Member 'ALandscapeWaterInfo_C::Underwater_PP_MID' has a wrong offset!");
-static_assert(offsetof(ALandscapeWaterInfo_C, Underwater_PostProcess_Material_Transitions) == 0x000288, "Member 'ALandscapeWaterInfo_C::Underwater_PostProcess_Material_Transitions' has a wrong offset!");
 
 }
 

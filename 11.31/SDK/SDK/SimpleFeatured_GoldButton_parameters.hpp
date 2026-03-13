@@ -24,9 +24,6 @@ struct SimpleFeatured_GoldButton_C_SetText final
 public:
 	class FText                                   NewText;                                           // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(SimpleFeatured_GoldButton_C_SetText) == 0x000008, "Wrong alignment on SimpleFeatured_GoldButton_C_SetText");
-static_assert(sizeof(SimpleFeatured_GoldButton_C_SetText) == 0x000018, "Wrong size on SimpleFeatured_GoldButton_C_SetText");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_SetText, NewText) == 0x000000, "Member 'SimpleFeatured_GoldButton_C_SetText::NewText' has a wrong offset!");
 
 // Function SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C.ChangeSecondaryText
 // 0x0020 (0x0020 - 0x0000)
@@ -40,14 +37,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleFeatured_GoldButton_C_ChangeSecondaryText) == 0x000008, "Wrong alignment on SimpleFeatured_GoldButton_C_ChangeSecondaryText");
-static_assert(sizeof(SimpleFeatured_GoldButton_C_ChangeSecondaryText) == 0x000020, "Wrong size on SimpleFeatured_GoldButton_C_ChangeSecondaryText");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, InValue) == 0x000000, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::InValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, Temp_bool_Variable) == 0x000018, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, Temp_byte_Variable) == 0x00001A, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, Temp_byte_Variable_1) == 0x00001B, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ChangeSecondaryText, K2Node_Select_Default) == 0x00001C, "Member 'SimpleFeatured_GoldButton_C_ChangeSecondaryText::K2Node_Select_Default' has a wrong offset!");
 
 // Function SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C.HandleSize
 // 0x0080 (0x0080 - 0x0000)
@@ -64,15 +53,6 @@ public:
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x0030(0x0050)(HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleFeatured_GoldButton_C_HandleSize) == 0x000008, "Wrong alignment on SimpleFeatured_GoldButton_C_HandleSize");
-static_assert(sizeof(SimpleFeatured_GoldButton_C_HandleSize) == 0x000080, "Wrong size on SimpleFeatured_GoldButton_C_HandleSize");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, Temp_bool_Variable) == 0x000000, "Member 'SimpleFeatured_GoldButton_C_HandleSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, Temp_bool_Variable_1) == 0x000001, "Member 'SimpleFeatured_GoldButton_C_HandleSize::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, Temp_int_Variable) == 0x000004, "Member 'SimpleFeatured_GoldButton_C_HandleSize::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, K2Node_MakeStruct_Margin) == 0x000008, "Member 'SimpleFeatured_GoldButton_C_HandleSize::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, K2Node_Select_Default) == 0x000018, "Member 'SimpleFeatured_GoldButton_C_HandleSize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, K2Node_Select_Default_1) == 0x000028, "Member 'SimpleFeatured_GoldButton_C_HandleSize::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_HandleSize, K2Node_MakeStruct_SlateFontInfo) == 0x000030, "Member 'SimpleFeatured_GoldButton_C_HandleSize::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
 
 // Function SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -81,9 +61,6 @@ struct SimpleFeatured_GoldButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SimpleFeatured_GoldButton_C_PreConstruct) == 0x000001, "Wrong alignment on SimpleFeatured_GoldButton_C_PreConstruct");
-static_assert(sizeof(SimpleFeatured_GoldButton_C_PreConstruct) == 0x000001, "Wrong size on SimpleFeatured_GoldButton_C_PreConstruct");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'SimpleFeatured_GoldButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function SimpleFeatured_GoldButton.SimpleFeatured_GoldButton_C.ExecuteUbergraph_SimpleFeatured_GoldButton
 // 0x0050 (0x0050 - 0x0000)
@@ -104,19 +81,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton) == 0x000008, "Wrong alignment on SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton");
-static_assert(sizeof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton) == 0x000050, "Wrong size on SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, EntryPoint) == 0x000000, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, Temp_bool_Variable) == 0x000004, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, Temp_object_Variable) == 0x000008, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, Temp_object_Variable_1) == 0x000010, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, K2Node_Event_IsDesignTime) == 0x000018, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, CallFunc_PlayAnimationForward_ReturnValue) == 0x000020, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000028, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000038, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, CallFunc_PlayAnimation_ReturnValue_1) == 0x000040, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton, K2Node_Select_Default) == 0x000048, "Member 'SimpleFeatured_GoldButton_C_ExecuteUbergraph_SimpleFeatured_GoldButton::K2Node_Select_Default' has a wrong offset!");
 
 }
 

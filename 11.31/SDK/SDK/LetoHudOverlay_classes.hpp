@@ -23,15 +23,17 @@ class ULetoHudOverlay_C final : public ULetoHudOverlay
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LetoHudOverlay_C">();
+		BP_STATIC_CLASS_IMPL("LetoHudOverlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LetoHudOverlay_C")
 	}
 	static class ULetoHudOverlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULetoHudOverlay_C>();
 	}
 };
-static_assert(alignof(ULetoHudOverlay_C) == 0x000008, "Wrong alignment on ULetoHudOverlay_C");
-static_assert(sizeof(ULetoHudOverlay_C) == 0x000290, "Wrong size on ULetoHudOverlay_C");
 
 }
 

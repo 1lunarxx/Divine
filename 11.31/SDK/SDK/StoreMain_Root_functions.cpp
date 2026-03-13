@@ -17,120 +17,6 @@
 namespace SDK
 {
 
-// Function StoreMain_Root.StoreMain_Root_C.GetVisibilityByChildrenPresence
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UPanelWidget*                     Panel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ESlateVisibility*                       NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
-
-	Params::StoreMain_Root_C_GetVisibilityByChildrenPresence Parms{};
-
-	Parms.Panel = Panel;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.HandleAllOffersGenerated
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UStoreMain_Root_C::HandleAllOffersGenerated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.HandleGenerateOffer
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortStoreFrontOfferInfo*         OfferInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
-
-	Params::StoreMain_Root_C_HandleGenerateOffer Parms{};
-
-	Parms.OfferInfo = OfferInfo;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.PlayEquippedLockerMusic
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UStoreMain_Root_C::PlayEquippedLockerMusic()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.HandleBack
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UStoreMain_Root_C::HandleBack(bool* PassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
-
-	Params::StoreMain_Root_C_HandleBack Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PassThrough != nullptr)
-		*PassThrough = Parms.PassThrough;
-}
-
-
-// Function StoreMain_Root.StoreMain_Root_C.HandleRedeem
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
-
-	Params::StoreMain_Root_C_HandleRedeem Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (bPassThrough != nullptr)
-		*bPassThrough = Parms.bPassThrough;
-}
-
-
 // Function StoreMain_Root.StoreMain_Root_C.SetupForCampaignUpsell
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -440,6 +326,120 @@ void UStoreMain_Root_C::ExecuteUbergraph_StoreMain_Root(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.GetVisibilityByChildrenPresence
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UPanelWidget*                     Panel                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ESlateVisibility*                       NewParam                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UStoreMain_Root_C::GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "GetVisibilityByChildrenPresence");
+
+	Params::StoreMain_Root_C_GetVisibilityByChildrenPresence Parms{};
+
+	Parms.Panel = Panel;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.HandleAllOffersGenerated
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UStoreMain_Root_C::HandleAllOffersGenerated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleAllOffersGenerated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.HandleGenerateOffer
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortStoreFrontOfferInfo*         OfferInfo                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UStoreMain_Root_C::HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleGenerateOffer");
+
+	Params::StoreMain_Root_C_HandleGenerateOffer Parms{};
+
+	Parms.OfferInfo = OfferInfo;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.PlayEquippedLockerMusic
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UStoreMain_Root_C::PlayEquippedLockerMusic()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "PlayEquippedLockerMusic");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.HandleBack
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UStoreMain_Root_C::HandleBack(bool* PassThrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleBack");
+
+	Params::StoreMain_Root_C_HandleBack Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
+}
+
+
+// Function StoreMain_Root.StoreMain_Root_C.HandleRedeem
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   bPassThrough                                           (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UStoreMain_Root_C::HandleRedeem(bool* bPassThrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("StoreMain_Root_C", "HandleRedeem");
+
+	Params::StoreMain_Root_C_HandleRedeem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bPassThrough != nullptr)
+		*bPassThrough = Parms.bPassThrough;
 }
 
 

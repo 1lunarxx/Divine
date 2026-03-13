@@ -54,34 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UserListEntry_XS_C">();
+		BP_STATIC_CLASS_IMPL("UserListEntry_XS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserListEntry_XS_C")
 	}
 	static class UUserListEntry_XS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserListEntry_XS_C>();
 	}
 };
-static_assert(alignof(UUserListEntry_XS_C) == 0x000008, "Wrong alignment on UUserListEntry_XS_C");
-static_assert(sizeof(UUserListEntry_XS_C) == 0x000D00, "Wrong size on UUserListEntry_XS_C");
-static_assert(offsetof(UUserListEntry_XS_C, UberGraphFrame) == 0x000BE0, "Member 'UUserListEntry_XS_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Selected) == 0x000BE8, "Member 'UUserListEntry_XS_C::Selected' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Hovered) == 0x000BF0, "Member 'UUserListEntry_XS_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Arrow) == 0x000BF8, "Member 'UUserListEntry_XS_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, EmptyButtonToEatOneMouseUpEvent) == 0x000C00, "Member 'UUserListEntry_XS_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Text_DisplayName) == 0x000C08, "Member 'UUserListEntry_XS_C::Text_DisplayName' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, UserActionMenuInputButton) == 0x000C10, "Member 'UUserListEntry_XS_C::UserActionMenuInputButton' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Online) == 0x000C18, "Member 'UUserListEntry_XS_C::Online' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Offline) == 0x000C28, "Member 'UUserListEntry_XS_C::Offline' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, Away) == 0x000C38, "Member 'UUserListEntry_XS_C::Away' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, bLocked) == 0x000C48, "Member 'UUserListEntry_XS_C::bLocked' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, UserNameOnline) == 0x000C58, "Member 'UUserListEntry_XS_C::UserNameOnline' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, UserNameOfflineAway) == 0x000C80, "Member 'UUserListEntry_XS_C::UserNameOfflineAway' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, UserNameBlocked) == 0x000CA8, "Member 'UUserListEntry_XS_C::UserNameBlocked' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, IsPlatOnlyFriend) == 0x000CD0, "Member 'UUserListEntry_XS_C::IsPlatOnlyFriend' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, EncourageEpicFriend_IdleColor) == 0x000CD4, "Member 'UUserListEntry_XS_C::EncourageEpicFriend_IdleColor' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, EncourageEpicFriend_HoveredColor) == 0x000CE4, "Member 'UUserListEntry_XS_C::EncourageEpicFriend_HoveredColor' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, NickNameOnline) == 0x000CF4, "Member 'UUserListEntry_XS_C::NickNameOnline' has a wrong offset!");
-static_assert(offsetof(UUserListEntry_XS_C, NickNameOffline) == 0x000CF8, "Member 'UUserListEntry_XS_C::NickNameOffline' has a wrong offset!");
 
 }
 

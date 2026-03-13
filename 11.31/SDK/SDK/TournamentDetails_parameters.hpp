@@ -42,7 +42,7 @@ public:
 	uint8                                         Pad_65[0x3];                                       // 0x0065(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0068(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_6C[0x4];                                       // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UShowdownTournamentDetailsScoringRule_C* CallFunc_Create_ReturnValue;                       // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UShowdownTournamentDetailsScoringRule_C* CallFunc_Create_ReturnValue;                      // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_79[0x3];                                       // 0x0079(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -53,29 +53,6 @@ public:
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default_1;                           // 0x0094(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_CreateScoringWidgets) == 0x000008, "Wrong alignment on TournamentDetails_C_CreateScoringWidgets");
-static_assert(sizeof(TournamentDetails_C_CreateScoringWidgets) == 0x000098, "Wrong size on TournamentDetails_C_CreateScoringWidgets");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, TournamentSeriesId) == 0x000000, "Member 'TournamentDetails_C_CreateScoringWidgets::TournamentSeriesId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, TournamentId) == 0x000010, "Member 'TournamentDetails_C_CreateScoringWidgets::TournamentId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_FindTournamentScoringRules_ReturnValue) == 0x000020, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_FindTournamentScoringRules_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_int_Array_Index_Variable) == 0x000030, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Array_Get_Item) == 0x000038, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_int_Loop_Counter_Variable) == 0x000054, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Divide_IntInt_ReturnValue) == 0x000058, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00005C, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Subtract_IntInt_ReturnValue) == 0x000060, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Less_IntInt_ReturnValue) == 0x000064, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_Create_ReturnValue) == 0x000070, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_bool_Variable) == 0x000078, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, K2Node_Select_Default) == 0x00007C, "Member 'TournamentDetails_C_CreateScoringWidgets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, CallFunc_AddChildToUniformGrid_ReturnValue) == 0x000080, "Member 'TournamentDetails_C_CreateScoringWidgets::CallFunc_AddChildToUniformGrid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_int_Variable) == 0x000088, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_int_Variable_1) == 0x00008C, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, Temp_bool_Variable_1) == 0x000090, "Member 'TournamentDetails_C_CreateScoringWidgets::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_CreateScoringWidgets, K2Node_Select_Default_1) == 0x000094, "Member 'TournamentDetails_C_CreateScoringWidgets::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.OnHandleBack
 // 0x0002 (0x0002 - 0x0000)
@@ -85,10 +62,6 @@ public:
 	bool                                          bResult;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Handle_Back_Passthrough;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_OnHandleBack) == 0x000001, "Wrong alignment on TournamentDetails_C_OnHandleBack");
-static_assert(sizeof(TournamentDetails_C_OnHandleBack) == 0x000002, "Wrong size on TournamentDetails_C_OnHandleBack");
-static_assert(offsetof(TournamentDetails_C_OnHandleBack, bResult) == 0x000000, "Member 'TournamentDetails_C_OnHandleBack::bResult' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_OnHandleBack, CallFunc_Handle_Back_Passthrough) == 0x000001, "Member 'TournamentDetails_C_OnHandleBack::CallFunc_Handle_Back_Passthrough' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.RefreshViolators
 // 0x00B8 (0x00B8 - 0x0000)
@@ -125,32 +98,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00B4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00B5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_RefreshViolators) == 0x000008, "Wrong alignment on TournamentDetails_C_RefreshViolators");
-static_assert(sizeof(TournamentDetails_C_RefreshViolators) == 0x0000B8, "Wrong size on TournamentDetails_C_RefreshViolators");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, FocusedEvent) == 0x000000, "Member 'TournamentDetails_C_RefreshViolators::FocusedEvent' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetNumEventRounds_ReturnValue) == 0x000008, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetNumEventRounds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00000C, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetWindowRoundDisplayString_ReturnValue) == 0x000010, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetWindowRoundDisplayString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_TextToUpper_ReturnValue) == 0x000028, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetEventWindowRoundNumber_ReturnValue) == 0x000040, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetEventWindowRoundNumber_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_IsNullItem_Is_Null_Item) == 0x000044, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_IsNullItem_Is_Null_Item' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_IsNullItem_Is_Null_Item_1) == 0x000045, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_IsNullItem_Is_Null_Item_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_BooleanOR_ReturnValue) == 0x000046, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_Not_PreBool_ReturnValue) == 0x000047, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_Conv_StringToText_ReturnValue) == 0x000048, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, K2Node_DynamicCast_AsShowdown_Event_Tile) == 0x000060, "Member 'TournamentDetails_C_RefreshViolators::K2Node_DynamicCast_AsShowdown_Event_Tile' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'TournamentDetails_C_RefreshViolators::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_TextToUpper_ReturnValue_1) == 0x000070, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, Temp_int_Variable) == 0x000088, "Member 'TournamentDetails_C_RefreshViolators::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetChildAt_ReturnValue) == 0x000090, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetChildrenCount_ReturnValue) == 0x000098, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, K2Node_DynamicCast_AsShowdown_Event_Tile_1) == 0x0000A0, "Member 'TournamentDetails_C_RefreshViolators::K2Node_DynamicCast_AsShowdown_Event_Tile_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'TournamentDetails_C_RefreshViolators::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x0000A9, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_GetEventWindowRoundNumber_ReturnValue_1) == 0x0000AC, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_GetEventWindowRoundNumber_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_Add_IntInt_ReturnValue) == 0x0000B0, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000B4, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshViolators, CallFunc_BooleanAND_ReturnValue) == 0x0000B5, "Member 'TournamentDetails_C_RefreshViolators::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.Handle_Back
 // 0x000C (0x000C - 0x0000)
@@ -164,13 +111,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_2;          // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_Handle_Back) == 0x000004, "Wrong alignment on TournamentDetails_C_Handle_Back");
-static_assert(sizeof(TournamentDetails_C_Handle_Back) == 0x00000C, "Wrong size on TournamentDetails_C_Handle_Back");
-static_assert(offsetof(TournamentDetails_C_Handle_Back, PassThrough) == 0x000000, "Member 'TournamentDetails_C_Handle_Back::PassThrough' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Handle_Back, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'TournamentDetails_C_Handle_Back::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Handle_Back, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'TournamentDetails_C_Handle_Back::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Handle_Back, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000009, "Member 'TournamentDetails_C_Handle_Back::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Handle_Back, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x00000A, "Member 'TournamentDetails_C_Handle_Back::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.RefreshDetailsPanel
 // 0x0178 (0x0178 - 0x0000)
@@ -229,49 +169,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0150(0x0018)()
 	class FString                                 CallFunc_GetTournamentId_ReturnValue;              // 0x0168(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_RefreshDetailsPanel) == 0x000008, "Wrong alignment on TournamentDetails_C_RefreshDetailsPanel");
-static_assert(sizeof(TournamentDetails_C_RefreshDetailsPanel) == 0x000178, "Wrong size on TournamentDetails_C_RefreshDetailsPanel");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_IsMobileGame_ReturnValue) == 0x000000, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetEffectMaterial_ReturnValue) == 0x000008, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetEffectMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_IsUsingTouch_ReturnValue) == 0x000010, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_IsUsingTouch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_int_Array_Index_Variable) == 0x000014, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, K2Node_MakeArray_Array) == 0x000018, "Member 'TournamentDetails_C_RefreshDetailsPanel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Array_Get_Item) == 0x000028, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000038, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000040, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_byte_Variable) == 0x000048, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_byte_Variable_1) == 0x000049, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_bool_Variable) == 0x00004A, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetEffectMaterial_ReturnValue_1) == 0x000050, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetEffectMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_byte_Variable_2) == 0x000058, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_byte_Variable_3) == 0x000059, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_int_Loop_Counter_Variable) == 0x00005C, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000060, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Less_IntInt_ReturnValue) == 0x000068, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Add_IntInt_ReturnValue) == 0x00006C, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, Temp_bool_Variable_1) == 0x000070, "Member 'TournamentDetails_C_RefreshDetailsPanel::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, K2Node_Select_Default) == 0x000071, "Member 'TournamentDetails_C_RefreshDetailsPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_BreakColor_R) == 0x000074, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_BreakColor_G) == 0x000078, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_BreakColor_B) == 0x00007C, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_BreakColor_A) == 0x000080, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_MakeColor_ReturnValue) == 0x000084, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_RGBToHSV_H) == 0x000094, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_RGBToHSV_H' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_RGBToHSV_S) == 0x000098, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_RGBToHSV_S' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_RGBToHSV_V) == 0x00009C, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_RGBToHSV_V' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_RGBToHSV_A) == 0x0000A0, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_RGBToHSV_A' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Less_FloatFloat_ReturnValue) == 0x0000A4, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, K2Node_MakeStruct_SlateColor) == 0x0000A8, "Member 'TournamentDetails_C_RefreshDetailsPanel::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, K2Node_MakeStruct_SlateColor_1) == 0x0000D0, "Member 'TournamentDetails_C_RefreshDetailsPanel::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Conv_IntToText_ReturnValue) == 0x0000F8, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Greater_IntInt_ReturnValue) == 0x000110, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Conv_StringToText_ReturnValue) == 0x000118, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, K2Node_Select_Default_1) == 0x000130, "Member 'TournamentDetails_C_RefreshDetailsPanel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_TextToUpper_ReturnValue) == 0x000138, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000150, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshDetailsPanel, CallFunc_GetTournamentId_ReturnValue) == 0x000168, "Member 'TournamentDetails_C_RefreshDetailsPanel::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.RefreshOverviewPanel
 // 0x03C0 (0x03C0 - 0x0000)
@@ -338,59 +235,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0390(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue_3;                // 0x03A8(0x0018)()
 };
-static_assert(alignof(TournamentDetails_C_RefreshOverviewPanel) == 0x000008, "Wrong alignment on TournamentDetails_C_RefreshOverviewPanel");
-static_assert(sizeof(TournamentDetails_C_RefreshOverviewPanel) == 0x0003C0, "Wrong size on TournamentDetails_C_RefreshOverviewPanel");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable) == 0x000000, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_1) == 0x000018, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_bool_Variable) == 0x000030, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_2) == 0x000038, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_3) == 0x000050, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_byte_Variable) == 0x000068, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_4) == 0x000070, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_5) == 0x000088, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_6) == 0x0000A0, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_6' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_7) == 0x0000B8, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_7' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_bool_Variable_1) == 0x0000D0, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_8) == 0x0000D8, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_8' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_byte_Variable_1) == 0x0000F0, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_9) == 0x0000F8, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_9' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_10) == 0x000110, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_10' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_11) == 0x000128, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_11' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_12) == 0x000140, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_12' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_13) == 0x000158, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_13' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_14) == 0x000170, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_14' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_15) == 0x000188, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_15' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_16) == 0x0001A0, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_16' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_text_Variable_17) == 0x0001B8, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_text_Variable_17' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_GetTournamentTimeState_ReturnValue) == 0x0001D0, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_GetTournamentTimeState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, Temp_bool_Variable_2) == 0x0001D1, "Member 'TournamentDetails_C_RefreshOverviewPanel::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_GetTournamentMatchType_ReturnValue) == 0x0001D2, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_GetTournamentMatchType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_ParseIntoArray_ReturnValue) == 0x0001D8, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_ParseIntoArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_Select_Default) == 0x0001E8, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_JoinStringArray_ReturnValue) == 0x000200, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_JoinStringArray_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_TextToUpper_ReturnValue) == 0x000210, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_Conv_StringToText_ReturnValue) == 0x000228, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000240, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_TextToUpper_ReturnValue_1) == 0x000258, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_TextToUpper_ReturnValue_2) == 0x000270, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_TextToUpper_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_GetTournamentTimeLeft_ReturnValue) == 0x000288, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_GetTournamentTimeLeft_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_GetEventTimespanAsText_ReturnValue) == 0x000290, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_GetEventTimespanAsText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_BreakTimespan_Days) == 0x0002A8, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_BreakTimespan_Days' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_BreakTimespan_Hours) == 0x0002AC, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_BreakTimespan_Hours' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_BreakTimespan_Minutes) == 0x0002B0, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_BreakTimespan_Minutes' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_BreakTimespan_Seconds) == 0x0002B4, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_BreakTimespan_Seconds' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_BreakTimespan_Milliseconds) == 0x0002B8, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_BreakTimespan_Milliseconds' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_MakeStruct_FormatArgumentData) == 0x0002C0, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000300, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_MakeArray_Array) == 0x000308, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000318, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_Select_Default_1) == 0x000320, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_Select_Default_2) == 0x000338, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_Select_Default_3) == 0x000350, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, K2Node_Select_Default_4) == 0x000368, "Member 'TournamentDetails_C_RefreshOverviewPanel::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_GetTournamentId_ReturnValue) == 0x000380, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_Format_ReturnValue) == 0x000390, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshOverviewPanel, CallFunc_TextToUpper_ReturnValue_3) == 0x0003A8, "Member 'TournamentDetails_C_RefreshOverviewPanel::CallFunc_TextToUpper_ReturnValue_3' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.RefreshScoringRules
 // 0x0020 (0x0020 - 0x0000)
@@ -401,11 +245,6 @@ public:
 	class UShowdownEventTile_C*                   K2Node_DynamicCast_AsShowdown_Event_Tile;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_RefreshScoringRules) == 0x000008, "Wrong alignment on TournamentDetails_C_RefreshScoringRules");
-static_assert(sizeof(TournamentDetails_C_RefreshScoringRules) == 0x000020, "Wrong size on TournamentDetails_C_RefreshScoringRules");
-static_assert(offsetof(TournamentDetails_C_RefreshScoringRules, CallFunc_GetTournamentId_ReturnValue) == 0x000000, "Member 'TournamentDetails_C_RefreshScoringRules::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshScoringRules, K2Node_DynamicCast_AsShowdown_Event_Tile) == 0x000010, "Member 'TournamentDetails_C_RefreshScoringRules::K2Node_DynamicCast_AsShowdown_Event_Tile' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshScoringRules, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'TournamentDetails_C_RefreshScoringRules::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.RefreshEvents
 // 0x0078 (0x0078 - 0x0000)
@@ -428,22 +267,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0074(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_RefreshEvents) == 0x000008, "Wrong alignment on TournamentDetails_C_RefreshEvents");
-static_assert(sizeof(TournamentDetails_C_RefreshEvents) == 0x000078, "Wrong size on TournamentDetails_C_RefreshEvents");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Create_ReturnValue) == 0x000000, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'TournamentDetails_C_RefreshEvents::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'TournamentDetails_C_RefreshEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Add_IntInt_ReturnValue) == 0x00001C, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_GetTournamentId_ReturnValue) == 0x000020, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, Temp_int_Array_Index_Variable) == 0x000030, "Member 'TournamentDetails_C_RefreshEvents::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000034, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Create_ReturnValue_1) == 0x000038, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_GetTournamentEvents_ReturnValue) == 0x000040, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_GetTournamentEvents_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Array_Get_Item) == 0x000050, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_AddChild_ReturnValue) == 0x000060, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_AddChild_ReturnValue_1) == 0x000068, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_RefreshEvents, CallFunc_Less_IntInt_ReturnValue) == 0x000074, "Member 'TournamentDetails_C_RefreshEvents::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.Refresh
 // 0x0020 (0x0020 - 0x0000)
@@ -453,10 +276,6 @@ public:
 	class FString                                 CallFunc_GetTournamentId_ReturnValue;              // 0x0000(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 CallFunc_GetTournamentNextEvent_ReturnValue;       // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_Refresh) == 0x000008, "Wrong alignment on TournamentDetails_C_Refresh");
-static_assert(sizeof(TournamentDetails_C_Refresh) == 0x000020, "Wrong size on TournamentDetails_C_Refresh");
-static_assert(offsetof(TournamentDetails_C_Refresh, CallFunc_GetTournamentId_ReturnValue) == 0x000000, "Member 'TournamentDetails_C_Refresh::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Refresh, CallFunc_GetTournamentNextEvent_ReturnValue) == 0x000010, "Member 'TournamentDetails_C_Refresh::CallFunc_GetTournamentNextEvent_ReturnValue' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventShowWindowDetails
 // 0x0008 (0x0008 - 0x0000)
@@ -465,9 +284,6 @@ struct TournamentDetails_C_EventShowWindowDetails final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_EventShowWindowDetails) == 0x000008, "Wrong alignment on TournamentDetails_C_EventShowWindowDetails");
-static_assert(sizeof(TournamentDetails_C_EventShowWindowDetails) == 0x000008, "Wrong size on TournamentDetails_C_EventShowWindowDetails");
-static_assert(offsetof(TournamentDetails_C_EventShowWindowDetails, Button) == 0x000000, "Member 'TournamentDetails_C_EventShowWindowDetails::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -476,9 +292,6 @@ struct TournamentDetails_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_PreConstruct) == 0x000001, "Wrong alignment on TournamentDetails_C_PreConstruct");
-static_assert(sizeof(TournamentDetails_C_PreConstruct) == 0x000001, "Wrong size on TournamentDetails_C_PreConstruct");
-static_assert(offsetof(TournamentDetails_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'TournamentDetails_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.AnimTransition
 // 0x0018 (0x0018 - 0x0000)
@@ -490,11 +303,6 @@ public:
 	class UWidgetAnimation*                       Animation;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         PlaySpeed;                                         // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_AnimTransition) == 0x000008, "Wrong alignment on TournamentDetails_C_AnimTransition");
-static_assert(sizeof(TournamentDetails_C_AnimTransition) == 0x000018, "Wrong size on TournamentDetails_C_AnimTransition");
-static_assert(offsetof(TournamentDetails_C_AnimTransition, In) == 0x000000, "Member 'TournamentDetails_C_AnimTransition::In' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_AnimTransition, Animation) == 0x000008, "Member 'TournamentDetails_C_AnimTransition::Animation' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_AnimTransition, PlaySpeed) == 0x000010, "Member 'TournamentDetails_C_AnimTransition::PlaySpeed' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventDeselectWindows
 // 0x0008 (0x0008 - 0x0000)
@@ -503,9 +311,6 @@ struct TournamentDetails_C_EventDeselectWindows final
 public:
 	class UWidget*                                SelectedWidget;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_EventDeselectWindows) == 0x000008, "Wrong alignment on TournamentDetails_C_EventDeselectWindows");
-static_assert(sizeof(TournamentDetails_C_EventDeselectWindows) == 0x000008, "Wrong size on TournamentDetails_C_EventDeselectWindows");
-static_assert(offsetof(TournamentDetails_C_EventDeselectWindows, SelectedWidget) == 0x000000, "Member 'TournamentDetails_C_EventDeselectWindows::SelectedWidget' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventCenterEventWindow
 // 0x0008 (0x0008 - 0x0000)
@@ -514,9 +319,6 @@ struct TournamentDetails_C_EventCenterEventWindow final
 public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_EventCenterEventWindow) == 0x000008, "Wrong alignment on TournamentDetails_C_EventCenterEventWindow");
-static_assert(sizeof(TournamentDetails_C_EventCenterEventWindow) == 0x000008, "Wrong size on TournamentDetails_C_EventCenterEventWindow");
-static_assert(offsetof(TournamentDetails_C_EventCenterEventWindow, Widget) == 0x000000, "Member 'TournamentDetails_C_EventCenterEventWindow::Widget' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -526,10 +328,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_Tick) == 0x000004, "Wrong alignment on TournamentDetails_C_Tick");
-static_assert(sizeof(TournamentDetails_C_Tick) == 0x00003C, "Wrong size on TournamentDetails_C_Tick");
-static_assert(offsetof(TournamentDetails_C_Tick, MyGeometry) == 0x000000, "Member 'TournamentDetails_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_Tick, InDeltaTime) == 0x000038, "Member 'TournamentDetails_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -538,9 +336,6 @@ struct TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__BackButton2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -549,9 +344,6 @@ struct TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__DetailsPanelButton2_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -560,9 +352,6 @@ struct TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__OverviewPanelButton2_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -571,9 +360,6 @@ struct TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundE
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__Button_ViewLeaderboard_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventViewFullLeaderboard
 // 0x0020 (0x0020 - 0x0000)
@@ -583,10 +369,6 @@ public:
 	class FString                                 TournamentId;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 EventId;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_EventViewFullLeaderboard) == 0x000008, "Wrong alignment on TournamentDetails_C_EventViewFullLeaderboard");
-static_assert(sizeof(TournamentDetails_C_EventViewFullLeaderboard) == 0x000020, "Wrong size on TournamentDetails_C_EventViewFullLeaderboard");
-static_assert(offsetof(TournamentDetails_C_EventViewFullLeaderboard, TournamentId) == 0x000000, "Member 'TournamentDetails_C_EventViewFullLeaderboard::TournamentId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_EventViewFullLeaderboard, EventId) == 0x000010, "Member 'TournamentDetails_C_EventViewFullLeaderboard::EventId' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventToggleFullScreenContent
 // 0x0001 (0x0001 - 0x0000)
@@ -595,9 +377,6 @@ struct TournamentDetails_C_EventToggleFullScreenContent final
 public:
 	bool                                          In;                                                // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_EventToggleFullScreenContent) == 0x000001, "Wrong alignment on TournamentDetails_C_EventToggleFullScreenContent");
-static_assert(sizeof(TournamentDetails_C_EventToggleFullScreenContent) == 0x000001, "Wrong size on TournamentDetails_C_EventToggleFullScreenContent");
-static_assert(offsetof(TournamentDetails_C_EventToggleFullScreenContent, In) == 0x000000, "Member 'TournamentDetails_C_EventToggleFullScreenContent::In' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -606,9 +385,6 @@ struct TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__Button_EnableMFA_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.EventViewPayout
 // 0x0020 (0x0020 - 0x0000)
@@ -618,10 +394,6 @@ public:
 	class FString                                 EventWindowId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 EventId;                                           // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_EventViewPayout) == 0x000008, "Wrong alignment on TournamentDetails_C_EventViewPayout");
-static_assert(sizeof(TournamentDetails_C_EventViewPayout) == 0x000020, "Wrong size on TournamentDetails_C_EventViewPayout");
-static_assert(offsetof(TournamentDetails_C_EventViewPayout, EventWindowId) == 0x000000, "Member 'TournamentDetails_C_EventViewPayout::EventWindowId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_EventViewPayout, EventId) == 0x000010, "Member 'TournamentDetails_C_EventViewPayout::EventId' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -630,9 +402,6 @@ struct TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentDetails_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentDetails.TournamentDetails_C.ExecuteUbergraph_TournamentDetails
 // 0x0390 (0x0390 - 0x0000)
@@ -678,7 +447,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00B0(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C1[0x3];                                       // 0x00C1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const class FString& EventWindowId, const class FString& EventId)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x00C4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& EventWindowId, const class FString& EventId)> K2Node_CreateDelegate_OutputDelegate_5; // 0x00C4(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              Temp_byte_Variable_4;                              // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetChildrenCount_ReturnValue;             // 0x00D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -711,7 +480,7 @@ public:
 	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x013C(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_GetChildrenCount_ReturnValue_3;           // 0x014C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& TournamentId, const class FString& EventId)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0150(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& TournamentId, const class FString& EventId)> K2Node_CreateDelegate_OutputDelegate_7; // 0x0150(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_8;            // 0x0160(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_9;            // 0x0170(0x0010)(ZeroConstructor, NoDestructor)
 	class UWidget*                                K2Node_CustomEvent_Widget;                         // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -808,141 +577,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_3;                 // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0380(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails) == 0x000010, "Wrong alignment on TournamentDetails_C_ExecuteUbergraph_TournamentDetails");
-static_assert(sizeof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails) == 0x000390, "Wrong size on TournamentDetails_C_ExecuteUbergraph_TournamentDetails");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, EntryPoint) == 0x000000, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_bool_Variable) == 0x000004, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable) == 0x000018, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_1) == 0x000019, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_int_Variable) == 0x00001C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Add_IntInt_ReturnValue) == 0x000030, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_bool_Variable_1) == 0x000034, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_2) == 0x000035, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Not_PreBool_ReturnValue) == 0x000036, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_Button) == 0x000038, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile) == 0x000040, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Event_IsDesignTime) == 0x000049, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_In_1) == 0x00004A, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_In_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_Animation) == 0x000050, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_Animation' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_PlaySpeed) == 0x000058, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_PlaySpeed' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_PauseAnimation_ReturnValue) == 0x00005C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_2) == 0x000060, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetStartTime_ReturnValue) == 0x000070, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetStartTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_PauseAnimation_ReturnValue_1) == 0x000074, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000078, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Add_FloatFloat_ReturnValue) == 0x00007C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetEndTime_ReturnValue) == 0x000080, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_PlayAnimation_ReturnValue) == 0x000088, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000090, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_3) == 0x000094, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000A8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000B0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_3) == 0x0000C0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000C4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_4) == 0x0000D4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildrenCount_ReturnValue) == 0x0000D8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000DC, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_int_Variable_1) == 0x0000E0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_bool_Variable_2) == 0x0000E4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildAt_ReturnValue) == 0x0000E8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile_1) == 0x0000F0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_1) == 0x0000F8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0000F9, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000FC, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetEventTimeState_ReturnValue) == 0x000100, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetEventTimeState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000104, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildAt_ReturnValue_1) == 0x000108, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildAt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Greater_IntInt_ReturnValue) == 0x000110, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile_2) == 0x000118, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_2) == 0x000120, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildrenCount_ReturnValue_2) == 0x000124, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildrenCount_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000128, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Not_PreBool_ReturnValue_1) == 0x00012C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00012D, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_LessEqual_IntInt_ReturnValue_1) == 0x00012E, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_LessEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_BooleanAND_ReturnValue) == 0x00012F, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_SelectedWidget) == 0x000130, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_SelectedWidget' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildIndex_ReturnValue) == 0x000138, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_6) == 0x00013C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildrenCount_ReturnValue_3) == 0x00014C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildrenCount_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_7) == 0x000150, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_8) == 0x000160, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CreateDelegate_OutputDelegate_9) == 0x000170, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_Widget) == 0x000180, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_Widget' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile_3) == 0x000188, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_3) == 0x000190, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsCommon_Button) == 0x000198, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsCommon_Button' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_4) == 0x0001A0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_5) == 0x0001A1, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_float_Variable) == 0x0001A4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_6) == 0x0001A8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_7) == 0x0001A9, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Event_MyGeometry) == 0x0001AC, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Event_InDeltaTime) == 0x0001E4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetSafeZonePadding_SafePadding) == 0x0001F0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetSafeZonePadding_SafePadding' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetSafeZonePadding_SafePaddingScale) == 0x000200, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetSafeZonePadding_SafePaddingScale' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetSafeZonePadding_SpillOverPadding) == 0x000210, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetSafeZonePadding_SpillOverPadding' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000220, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_8) == 0x000228, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_9) == 0x000229, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_9' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x00022C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x000230, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_FloatFloat_ReturnValue_3) == 0x000234, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Subtract_FloatFloat_ReturnValue_4) == 0x000238, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Subtract_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_MakeStruct_Margin) == 0x00023C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_SlotAsOverlaySlot_ReturnValue_1) == 0x000250, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_SlotAsOverlaySlot_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_10) == 0x000258, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_10' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_SlotAsOverlaySlot_ReturnValue_2) == 0x000260, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_SlotAsOverlaySlot_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_11) == 0x000268, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_11' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button_5) == 0x000270, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button_4) == 0x000278, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button_3) == 0x000280, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button_2) == 0x000288, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_12) == 0x000290, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_12' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_int_Variable_2) == 0x000294, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildAt_ReturnValue_2) == 0x000298, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildAt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0002A0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile_4) == 0x0002A8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile_4' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_5) == 0x0002B0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetSelected_ReturnValue) == 0x0002B1, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_LessEqual_IntInt_ReturnValue_2) == 0x0002B2, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_LessEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Add_IntInt_ReturnValue_2) == 0x0002B4, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_TournamentId) == 0x0002B8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_TournamentId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_EventId_1) == 0x0002C8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_EventId_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_In) == 0x0002D8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_In' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_13) == 0x0002D9, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_13' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_14) == 0x0002DA, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_14' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetActiveWidget_ReturnValue) == 0x0002E0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0002E8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button_1) == 0x0002F0, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_bool_Variable_3) == 0x0002F8, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetOwningPlayer_ReturnValue) == 0x000300, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Create_ReturnValue) == 0x000308, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Select_Default) == 0x000310, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_PlayAnimation_ReturnValue_2) == 0x000318, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_QueueModal_ReturnValue) == 0x000320, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_QueueModal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_DoCalloutMFARequirement_ReturnValue) == 0x000321, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_DoCalloutMFARequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Select_Default_1) == 0x000322, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_EventWindowId) == 0x000328, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_EventWindowId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_CustomEvent_EventId) == 0x000338, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_CustomEvent_EventId' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_byte_Variable_15) == 0x000348, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_byte_Variable_15' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Select_Default_2) == 0x000349, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_ComponentBoundEvent_Button) == 0x000350, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_IsMobileGame_ReturnValue) == 0x000358, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_IsUsingTouch_ReturnValue) == 0x000359, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_IsUsingTouch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_BooleanAND_ReturnValue_1) == 0x00035A, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_Select_Default_3) == 0x00035B, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_IsValid_ReturnValue) == 0x00035C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, Temp_int_Variable_3) == 0x000360, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_GetChildAt_ReturnValue_3) == 0x000368, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_GetChildAt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_AsShowdown_Event_Tile_5) == 0x000370, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_AsShowdown_Event_Tile_5' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, K2Node_DynamicCast_bSuccess_6) == 0x000378, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_LessEqual_IntInt_ReturnValue_3) == 0x000379, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_LessEqual_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_Add_IntInt_ReturnValue_3) == 0x00037C, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDetails_C_ExecuteUbergraph_TournamentDetails, CallFunc_IsValid_ReturnValue_1) == 0x000380, "Member 'TournamentDetails_C_ExecuteUbergraph_TournamentDetails::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 }
 

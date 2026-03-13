@@ -30,20 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_Offer_VBucks_Modal_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_Offer_VBucks_Modal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_Offer_VBucks_Modal_C")
 	}
 	static class UStoreMain_Offer_VBucks_Modal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_Offer_VBucks_Modal_C>();
 	}
 };
-static_assert(alignof(UStoreMain_Offer_VBucks_Modal_C) == 0x000008, "Wrong alignment on UStoreMain_Offer_VBucks_Modal_C");
-static_assert(sizeof(UStoreMain_Offer_VBucks_Modal_C) == 0x000258, "Wrong size on UStoreMain_Offer_VBucks_Modal_C");
-static_assert(offsetof(UStoreMain_Offer_VBucks_Modal_C, CommonRichTextBlock_133) == 0x000230, "Member 'UStoreMain_Offer_VBucks_Modal_C::CommonRichTextBlock_133' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Offer_VBucks_Modal_C, CommonRichTextBlock_239) == 0x000238, "Member 'UStoreMain_Offer_VBucks_Modal_C::CommonRichTextBlock_239' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Offer_VBucks_Modal_C, ConfirmButton) == 0x000240, "Member 'UStoreMain_Offer_VBucks_Modal_C::ConfirmButton' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Offer_VBucks_Modal_C, Image_0) == 0x000248, "Member 'UStoreMain_Offer_VBucks_Modal_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Offer_VBucks_Modal_C, Image_376) == 0x000250, "Member 'UStoreMain_Offer_VBucks_Modal_C::Image_376' has a wrong offset!");
 
 }
 

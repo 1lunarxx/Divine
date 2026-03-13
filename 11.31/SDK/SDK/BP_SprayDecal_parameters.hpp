@@ -29,7 +29,7 @@ public:
 	class AFortGameStateAthena*                   K2Node_CustomEvent_GameState;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UFortPlaylist*                    K2Node_CustomEvent_Playlist;                       // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  K2Node_CustomEvent_PlaylistContextTags;            // 0x0018(0x0020)(ConstParm)
-	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate; // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayTagContainer                  Temp_struct_Variable;                              // 0x0048(0x0020)()
 	class UFortPlaylist*                          Temp_object_Variable;                              // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortGameStateAthena*                   Temp_object_Variable_1;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -116,80 +116,6 @@ public:
 	bool                                          CallFunc_HasPermissionToEditWorld_ReturnValue;     // 0x02A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal) == 0x000008, "Wrong alignment on BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal");
-static_assert(sizeof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal) == 0x0002A8, "Wrong size on BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, EntryPoint) == 0x000000, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_GameState) == 0x000008, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_GameState' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Playlist) == 0x000010, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Playlist' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_PlaylistContextTags) == 0x000018, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_PlaylistContextTags' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_struct_Variable) == 0x000048, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_object_Variable) == 0x000068, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_object_Variable_1) == 0x000070, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_PlaylistDataReadyAsync_ReturnValue) == 0x000078, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_PlaylistDataReadyAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_IsCreativeModePlaylist_ReturnValue) == 0x000081, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_IsCreativeModePlaylist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_bool_IsClosed_Variable) == 0x000082, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_bool_Has_Been_Initd_Variable) == 0x000083, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_HasAuthority_ReturnValue) == 0x000084, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_object_Variable_2) == 0x000088, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_AsMaterial_Interface) == 0x000090, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_AsMaterial_Interface' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_HasAuthority_ReturnValue_1) == 0x000099, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetDecalMaterial_ReturnValue) == 0x0000A0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetDecalMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_int_Variable) == 0x0000C8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000CC, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000D0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_IsAssetNull_ReturnValue) == 0x0000D1, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Loaded_1) == 0x0000D8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000E0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetDecalTexture_ReturnValue) == 0x0000F0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetDecalTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_object_Variable_3) == 0x000118, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_AsTexture_2D) == 0x000120, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_AsTexture_2D' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_bSuccess_1) == 0x000128, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_ShouldUseBannerAsTexture_ReturnValue) == 0x000129, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_ShouldUseBannerAsTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetBannerColorFromRowName_ReturnValue) == 0x00012C, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetBannerColorFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue) == 0x000150, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetBannerLargeIconAssetFromRowName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetSecondaryColor_ReturnValue) == 0x000178, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetSecondaryColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_GetPrimaryColor_ReturnValue) == 0x000188, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_GetPrimaryColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_NotEqual_NameName_ReturnValue) == 0x000198, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_BooleanAND_ReturnValue) == 0x000199, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_NotEqual_NameName_ReturnValue_1) == 0x00019A, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_NotEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_BooleanAND_ReturnValue_1) == 0x00019B, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Loaded) == 0x0001A0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_int_Variable_1) == 0x0001A8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_DamagedActor_1) == 0x0001B0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_DamagedActor_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Damage_1) == 0x0001B8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Damage_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_InstigatedBy_1) == 0x0001C0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_InstigatedBy_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_DamageCauser_1) == 0x0001C8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_DamageCauser_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_HitLocation_1) == 0x0001D0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_HitLocation_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_FHitComponent_1) == 0x0001E0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_FHitComponent_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_BoneName_1) == 0x0001E8, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_BoneName_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Momentum_1) == 0x0001F0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Momentum_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_DamagedActor) == 0x000200, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_DamagedActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Damage) == 0x000208, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Damage' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_InstigatedBy) == 0x000210, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_DamageCauser) == 0x000218, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_HitLocation) == 0x000220, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_HitLocation' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_FHitComponent) == 0x000230, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_FHitComponent' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_BoneName) == 0x000238, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_BoneName' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Momentum) == 0x000240, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Momentum' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000250, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_DynamicCast_bSuccess_2) == 0x000258, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000259, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_Trap) == 0x000260, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_Trap' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_bDetatched) == 0x000268, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_bDetatched' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CreateDelegate_OutputDelegate_2) == 0x00026C, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_IsValid_ReturnValue_1) == 0x00027C, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_int_Variable_2) == 0x000280, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_IsValid_ReturnValue_2) == 0x000284, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_BooleanAND_ReturnValue_2) == 0x000285, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_CustomEvent_DestroyedActor) == 0x000288, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, Temp_bool_Variable) == 0x000290, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_MakeRotator_ReturnValue) == 0x000294, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, K2Node_Select_Default) == 0x0002A0, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_HasPermissionToEditWorld_ReturnValue) == 0x0002A4, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_HasPermissionToEditWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal, CallFunc_BooleanOR_ReturnValue) == 0x0002A5, "Member 'BP_SprayDecal_C_ExecuteUbergraph_BP_SprayDecal::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnWallDestoryed
 // 0x0008 (0x0008 - 0x0000)
@@ -198,9 +124,6 @@ struct BP_SprayDecal_C_OnWallDestoryed final
 public:
 	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_OnWallDestoryed) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnWallDestoryed");
-static_assert(sizeof(BP_SprayDecal_C_OnWallDestoryed) == 0x000008, "Wrong size on BP_SprayDecal_C_OnWallDestoryed");
-static_assert(offsetof(BP_SprayDecal_C_OnWallDestoryed, DestroyedActor) == 0x000000, "Member 'BP_SprayDecal_C_OnWallDestoryed::DestroyedActor' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnNearbyTrapPlaced
 // 0x0010 (0x0010 - 0x0000)
@@ -210,10 +133,6 @@ public:
 	class ABuildingTrap*                          Trap;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bDetatched;                                        // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SprayDecal_C_OnNearbyTrapPlaced) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnNearbyTrapPlaced");
-static_assert(sizeof(BP_SprayDecal_C_OnNearbyTrapPlaced) == 0x000010, "Wrong size on BP_SprayDecal_C_OnNearbyTrapPlaced");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyTrapPlaced, Trap) == 0x000000, "Member 'BP_SprayDecal_C_OnNearbyTrapPlaced::Trap' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyTrapPlaced, bDetatched) == 0x000008, "Member 'BP_SprayDecal_C_OnNearbyTrapPlaced::bDetatched' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnNearbyWallDamaged
 // 0x0050 (0x0050 - 0x0000)
@@ -231,16 +150,6 @@ public:
 	class FName                                   BoneName;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Momentum;                                          // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_OnNearbyWallDamaged) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnNearbyWallDamaged");
-static_assert(sizeof(BP_SprayDecal_C_OnNearbyWallDamaged) == 0x000050, "Wrong size on BP_SprayDecal_C_OnNearbyWallDamaged");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, DamagedActor) == 0x000000, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::DamagedActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, Damage) == 0x000008, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::Damage' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, InstigatedBy) == 0x000010, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, DamageCauser) == 0x000018, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, HitLocation) == 0x000020, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::HitLocation' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, FHitComponent) == 0x000030, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::FHitComponent' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, BoneName) == 0x000038, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::BoneName' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDamaged, Momentum) == 0x000040, "Member 'BP_SprayDecal_C_OnNearbyWallDamaged::Momentum' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnNearbyWallDied
 // 0x0050 (0x0050 - 0x0000)
@@ -258,16 +167,6 @@ public:
 	class FName                                   BoneName;                                          // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Momentum;                                          // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_OnNearbyWallDied) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnNearbyWallDied");
-static_assert(sizeof(BP_SprayDecal_C_OnNearbyWallDied) == 0x000050, "Wrong size on BP_SprayDecal_C_OnNearbyWallDied");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, DamagedActor) == 0x000000, "Member 'BP_SprayDecal_C_OnNearbyWallDied::DamagedActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, Damage) == 0x000008, "Member 'BP_SprayDecal_C_OnNearbyWallDied::Damage' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, InstigatedBy) == 0x000010, "Member 'BP_SprayDecal_C_OnNearbyWallDied::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, DamageCauser) == 0x000018, "Member 'BP_SprayDecal_C_OnNearbyWallDied::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, HitLocation) == 0x000020, "Member 'BP_SprayDecal_C_OnNearbyWallDied::HitLocation' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, FHitComponent) == 0x000030, "Member 'BP_SprayDecal_C_OnNearbyWallDied::FHitComponent' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, BoneName) == 0x000038, "Member 'BP_SprayDecal_C_OnNearbyWallDied::BoneName' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnNearbyWallDied, Momentum) == 0x000040, "Member 'BP_SprayDecal_C_OnNearbyWallDied::Momentum' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnReady_B252FED346EAB98D54D786BD15C1CC7B
 // 0x0030 (0x0030 - 0x0000)
@@ -278,11 +177,6 @@ public:
 	const class UFortPlaylist*                    Playlist;                                          // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  PlaylistContextTags;                               // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B");
-static_assert(sizeof(BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B) == 0x000030, "Wrong size on BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B");
-static_assert(offsetof(BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B, GameState) == 0x000000, "Member 'BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B::GameState' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B, Playlist) == 0x000008, "Member 'BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B::Playlist' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B, PlaylistContextTags) == 0x000010, "Member 'BP_SprayDecal_C_OnReady_B252FED346EAB98D54D786BD15C1CC7B::PlaylistContextTags' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnLoaded_F925FF00475A018319C73E9FB1540BC6
 // 0x0008 (0x0008 - 0x0000)
@@ -291,9 +185,6 @@ struct BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6");
-static_assert(sizeof(BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6) == 0x000008, "Wrong size on BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6");
-static_assert(offsetof(BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6, Loaded) == 0x000000, "Member 'BP_SprayDecal_C_OnLoaded_F925FF00475A018319C73E9FB1540BC6::Loaded' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA
 // 0x0008 (0x0008 - 0x0000)
@@ -302,9 +193,6 @@ struct BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA) == 0x000008, "Wrong alignment on BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
-static_assert(sizeof(BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA) == 0x000008, "Wrong size on BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA");
-static_assert(offsetof(BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA, Loaded) == 0x000000, "Member 'BP_SprayDecal_C_OnLoaded_F8AB699B4D8DD22B5A0409B608B7D6FA::Loaded' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.CreateDecalComponents
 // 0x0070 (0x0070 - 0x0000)
@@ -324,17 +212,6 @@ public:
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_CreateDecalComponents) == 0x000010, "Wrong alignment on BP_SprayDecal_C_CreateDecalComponents");
-static_assert(sizeof(BP_SprayDecal_C_CreateDecalComponents) == 0x000070, "Wrong size on BP_SprayDecal_C_CreateDecalComponents");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_GetRealTimeSeconds_ReturnValue) == 0x000000, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_GetRealTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, Temp_struct_Variable) == 0x000010, "Member 'BP_SprayDecal_C_CreateDecalComponents::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_Add_FloatFloat_ReturnValue) == 0x000040, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_AddComponent_ReturnValue) == 0x000048, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_MakeVector_ReturnValue) == 0x000050, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00005C, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_ShouldUseBannerAsTexture_ReturnValue) == 0x000060, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_ShouldUseBannerAsTexture_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_IsValid_ReturnValue) == 0x000061, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_CreateDecalComponents, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000068, "Member 'BP_SprayDecal_C_CreateDecalComponents::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.GetInstigatorPlayerId
 // 0x0058 (0x0058 - 0x0000)
@@ -345,11 +222,6 @@ public:
 	class AFortPlayerController*                  TestController;                                    // 0x0028(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0030(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_GetInstigatorPlayerId) == 0x000008, "Wrong alignment on BP_SprayDecal_C_GetInstigatorPlayerId");
-static_assert(sizeof(BP_SprayDecal_C_GetInstigatorPlayerId) == 0x000058, "Wrong size on BP_SprayDecal_C_GetInstigatorPlayerId");
-static_assert(offsetof(BP_SprayDecal_C_GetInstigatorPlayerId, ReturnValue) == 0x000000, "Member 'BP_SprayDecal_C_GetInstigatorPlayerId::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_GetInstigatorPlayerId, TestController) == 0x000028, "Member 'BP_SprayDecal_C_GetInstigatorPlayerId::TestController' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_GetInstigatorPlayerId, CallFunc_GetGameAccountId_ReturnValue) == 0x000030, "Member 'BP_SprayDecal_C_GetInstigatorPlayerId::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.OnRep_DecalFadeoutTime
 // 0x0002 (0x0002 - 0x0000)
@@ -359,10 +231,6 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SprayDecal_C_OnRep_DecalFadeoutTime) == 0x000001, "Wrong alignment on BP_SprayDecal_C_OnRep_DecalFadeoutTime");
-static_assert(sizeof(BP_SprayDecal_C_OnRep_DecalFadeoutTime) == 0x000002, "Wrong size on BP_SprayDecal_C_OnRep_DecalFadeoutTime");
-static_assert(offsetof(BP_SprayDecal_C_OnRep_DecalFadeoutTime, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_SprayDecal_C_OnRep_DecalFadeoutTime::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_OnRep_DecalFadeoutTime, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BP_SprayDecal_C_OnRep_DecalFadeoutTime::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.UnbindAndClearNearbyBuildingActors
 // 0x0080 (0x0080 - 0x0000)
@@ -373,9 +241,9 @@ public:
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class ABuildingTrap* Trap, const bool bDetached)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class ABuildingTrap* Trap, const bool bDetached)> K2Node_CreateDelegate_OutputDelegate_1; // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_2; // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3; // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -386,22 +254,6 @@ public:
 	class ABuildingSMActor*                       K2Node_DynamicCast_AsBuilding_SMActor;             // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors) == 0x000008, "Wrong alignment on BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors");
-static_assert(sizeof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors) == 0x000080, "Wrong size on BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_CreateDelegate_OutputDelegate_3) == 0x00003C, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, CallFunc_Array_Get_Item) == 0x000050, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, CallFunc_Less_IntInt_ReturnValue) == 0x000058, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_DynamicCast_AsBuilding_Actor) == 0x000060, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_DynamicCast_bSuccess) == 0x000068, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_DynamicCast_AsBuilding_SMActor) == 0x000070, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors, K2Node_DynamicCast_bSuccess_1) == 0x000078, "Member 'BP_SprayDecal_C_UnbindAndClearNearbyBuildingActors::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.FindNearbyBuildingActorsAndBindDelegates
 // 0x0138 (0x0138 - 0x0000)
@@ -416,12 +268,12 @@ public:
 	TDelegate<void(class AActor* DestroyedActor)> K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<class AActor*>                         K2Node_MakeArray_Array;                            // 0x0040(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class ABuildingTrap* Trap, const bool bDetached)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class ABuildingTrap* Trap, const bool bDetached)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	class AActor*                                 CallFunc_Array_Get_Item;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_84[0x4];                                       // 0x0084(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -432,7 +284,7 @@ public:
 	class ABuildingActor*                         K2Node_DynamicCast_AsBuilding_Actor;               // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_GetOwnedGameplayTags_self_CastInput;      // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_GetOwnedGameplayTags_self_CastInput; // 0x00A8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FGameplayTagContainer                  CallFunc_GetOwnedGameplayTags_TagContainer;        // 0x00B8(0x0020)()
 	bool                                          CallFunc_DoesImplementInterface_ReturnValue;       // 0x00D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SendComplexCustomStatEvent_QuestActive;   // 0x00D9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -450,39 +302,6 @@ public:
 	TArray<class AActor*>                         CallFunc_BoxOverlapActors_OutActors;               // 0x0120(0x0010)(ZeroConstructor, ReferenceParm)
 	bool                                          CallFunc_BoxOverlapActors_ReturnValue;             // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates) == 0x000008, "Wrong alignment on BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates");
-static_assert(sizeof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates) == 0x000138, "Wrong size on BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, Temp_int_Array_Index_Variable) == 0x000000, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Athena_CheckCreativeMode_CanCompleteQuest) == 0x000010, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Athena_CheckCreativeMode_CanCompleteQuest' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_GetQuestManager_ReturnValue) == 0x000028, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_MakeArray_Array) == 0x000040, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_CreateDelegate_OutputDelegate_3) == 0x000068, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Array_Get_Item) == 0x000078, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_AsBP_Spray_Decal) == 0x000088, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_AsBP_Spray_Decal' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Less_IntInt_ReturnValue) == 0x000091, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_AsBuilding_Actor) == 0x000098, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_bSuccess_1) == 0x0000A0, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_GetOwnedGameplayTags_self_CastInput) == 0x0000A8, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_GetOwnedGameplayTags_self_CastInput' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_GetOwnedGameplayTags_TagContainer) == 0x0000B8, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_GetOwnedGameplayTags_TagContainer' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_DoesImplementInterface_ReturnValue) == 0x0000D8, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_DoesImplementInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_SendComplexCustomStatEvent_QuestActive) == 0x0000D9, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_SendComplexCustomStatEvent_QuestActive' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_SendComplexCustomStatEvent_QuestCompleted) == 0x0000DA, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_SendComplexCustomStatEvent_QuestCompleted' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_AsBuilding_SMActor) == 0x0000E0, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_DynamicCast_bSuccess_2) == 0x0000E8, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000EC, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000F8, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, K2Node_MakeArray_Array_1) == 0x000100, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_Conv_FloatToVector_ReturnValue) == 0x000110, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_BoxOverlapActors_OutActors) == 0x000120, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_BoxOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates, CallFunc_BoxOverlapActors_ReturnValue) == 0x000130, "Member 'BP_SprayDecal_C_FindNearbyBuildingActorsAndBindDelegates::CallFunc_BoxOverlapActors_ReturnValue' has a wrong offset!");
 
 // Function BP_SprayDecal.BP_SprayDecal_C.AddBoxCollisionForCreative
 // 0x0060 (0x0060 - 0x0000)
@@ -496,13 +315,6 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 	class UBoxComponent*                          CallFunc_AddComponent_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SprayDecal_C_AddBoxCollisionForCreative) == 0x000010, "Wrong alignment on BP_SprayDecal_C_AddBoxCollisionForCreative");
-static_assert(sizeof(BP_SprayDecal_C_AddBoxCollisionForCreative) == 0x000060, "Wrong size on BP_SprayDecal_C_AddBoxCollisionForCreative");
-static_assert(offsetof(BP_SprayDecal_C_AddBoxCollisionForCreative, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_SprayDecal_C_AddBoxCollisionForCreative::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_AddBoxCollisionForCreative, CallFunc_MakeVector_ReturnValue) == 0x000004, "Member 'BP_SprayDecal_C_AddBoxCollisionForCreative::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_AddBoxCollisionForCreative, CallFunc_Add_VectorVector_ReturnValue) == 0x000010, "Member 'BP_SprayDecal_C_AddBoxCollisionForCreative::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_AddBoxCollisionForCreative, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'BP_SprayDecal_C_AddBoxCollisionForCreative::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SprayDecal_C_AddBoxCollisionForCreative, CallFunc_AddComponent_ReturnValue) == 0x000050, "Member 'BP_SprayDecal_C_AddBoxCollisionForCreative::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 }
 

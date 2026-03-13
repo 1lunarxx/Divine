@@ -23,15 +23,17 @@ class UCommonUI_XboxBrushData_C final : public UFortInputControllerData
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CommonUI_XboxBrushData_C">();
+		BP_STATIC_CLASS_IMPL("CommonUI_XboxBrushData_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommonUI_XboxBrushData_C")
 	}
 	static class UCommonUI_XboxBrushData_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommonUI_XboxBrushData_C>();
 	}
 };
-static_assert(alignof(UCommonUI_XboxBrushData_C) == 0x000008, "Wrong alignment on UCommonUI_XboxBrushData_C");
-static_assert(sizeof(UCommonUI_XboxBrushData_C) == 0x0000A0, "Wrong size on UCommonUI_XboxBrushData_C");
 
 }
 

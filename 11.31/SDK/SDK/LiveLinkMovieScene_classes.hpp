@@ -39,23 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkSection">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkSection")
 	}
 	static class UMovieSceneLiveLinkSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkSection>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkSection) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkSection");
-static_assert(sizeof(UMovieSceneLiveLinkSection) == 0x000220, "Wrong size on UMovieSceneLiveLinkSection");
-static_assert(offsetof(UMovieSceneLiveLinkSection, SubjectPreset) == 0x0000E0, "Member 'UMovieSceneLiveLinkSection::SubjectPreset' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, ChannelMask) == 0x000118, "Member 'UMovieSceneLiveLinkSection::ChannelMask' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, SubSections) == 0x000128, "Member 'UMovieSceneLiveLinkSection::SubSections' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, SubjectName) == 0x000148, "Member 'UMovieSceneLiveLinkSection::SubjectName' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, TemplateToPush) == 0x000150, "Member 'UMovieSceneLiveLinkSection::TemplateToPush' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, RefSkeleton) == 0x0001E0, "Member 'UMovieSceneLiveLinkSection::RefSkeleton' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, CurveNames) == 0x000200, "Member 'UMovieSceneLiveLinkSection::CurveNames' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSection, PropertyFloatChannels) == 0x000210, "Member 'UMovieSceneLiveLinkSection::PropertyFloatChannels' has a wrong offset!");
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkTrack
 // 0x0008 (0x0090 - 0x0088)
@@ -67,16 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkTrack">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkTrack")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkTrack")
 	}
 	static class UMovieSceneLiveLinkTrack* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkTrack>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkTrack) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkTrack");
-static_assert(sizeof(UMovieSceneLiveLinkTrack) == 0x000090, "Wrong size on UMovieSceneLiveLinkTrack");
-static_assert(offsetof(UMovieSceneLiveLinkTrack, TrackRole) == 0x000088, "Member 'UMovieSceneLiveLinkTrack::TrackRole' has a wrong offset!");
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkSubSection
 // 0x0028 (0x0050 - 0x0028)
@@ -90,17 +85,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkSubSection">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkSubSection")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkSubSection")
 	}
 	static class UMovieSceneLiveLinkSubSection* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkSubSection>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkSubSection) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkSubSection");
-static_assert(sizeof(UMovieSceneLiveLinkSubSection) == 0x000050, "Wrong size on UMovieSceneLiveLinkSubSection");
-static_assert(offsetof(UMovieSceneLiveLinkSubSection, SubSectionData) == 0x000028, "Member 'UMovieSceneLiveLinkSubSection::SubSectionData' has a wrong offset!");
-static_assert(offsetof(UMovieSceneLiveLinkSubSection, SubjectRole) == 0x000038, "Member 'UMovieSceneLiveLinkSubSection::SubjectRole' has a wrong offset!");
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkSubSectionAnimation
 // 0x0010 (0x0060 - 0x0050)
@@ -112,15 +107,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkSubSectionAnimation">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkSubSectionAnimation")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkSubSectionAnimation")
 	}
 	static class UMovieSceneLiveLinkSubSectionAnimation* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkSubSectionAnimation>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkSubSectionAnimation) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkSubSectionAnimation");
-static_assert(sizeof(UMovieSceneLiveLinkSubSectionAnimation) == 0x000060, "Wrong size on UMovieSceneLiveLinkSubSectionAnimation");
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkSubSectionBasicRole
 // 0x0010 (0x0060 - 0x0050)
@@ -132,15 +129,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkSubSectionBasicRole">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkSubSectionBasicRole")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkSubSectionBasicRole")
 	}
 	static class UMovieSceneLiveLinkSubSectionBasicRole* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkSubSectionBasicRole>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkSubSectionBasicRole) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkSubSectionBasicRole");
-static_assert(sizeof(UMovieSceneLiveLinkSubSectionBasicRole) == 0x000060, "Wrong size on UMovieSceneLiveLinkSubSectionBasicRole");
 
 // Class LiveLinkMovieScene.MovieSceneLiveLinkSubSectionProperties
 // 0x0010 (0x0060 - 0x0050)
@@ -152,15 +151,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MovieSceneLiveLinkSubSectionProperties">();
+		STATIC_CLASS_IMPL("MovieSceneLiveLinkSubSectionProperties")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MovieSceneLiveLinkSubSectionProperties")
 	}
 	static class UMovieSceneLiveLinkSubSectionProperties* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMovieSceneLiveLinkSubSectionProperties>();
 	}
 };
-static_assert(alignof(UMovieSceneLiveLinkSubSectionProperties) == 0x000008, "Wrong alignment on UMovieSceneLiveLinkSubSectionProperties");
-static_assert(sizeof(UMovieSceneLiveLinkSubSectionProperties) == 0x000060, "Wrong size on UMovieSceneLiveLinkSubSectionProperties");
 
 }
 

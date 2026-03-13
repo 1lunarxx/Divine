@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Creative_Teleport_C">();
+		BP_STATIC_CLASS_IMPL("GA_Creative_Teleport_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Creative_Teleport_C")
 	}
 	static class UGA_Creative_Teleport_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Creative_Teleport_C>();
 	}
 };
-static_assert(alignof(UGA_Creative_Teleport_C) == 0x000008, "Wrong alignment on UGA_Creative_Teleport_C");
-static_assert(sizeof(UGA_Creative_Teleport_C) == 0x000A88, "Wrong size on UGA_Creative_Teleport_C");
-static_assert(offsetof(UGA_Creative_Teleport_C, UberGraphFrame_GA_Creative_Teleport_C) == 0x000A70, "Member 'UGA_Creative_Teleport_C::UberGraphFrame_GA_Creative_Teleport_C' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_Teleport_C, Teleporter) == 0x000A78, "Member 'UGA_Creative_Teleport_C::Teleporter' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_Teleport_C, PlayerPawn) == 0x000A80, "Member 'UGA_Creative_Teleport_C::PlayerPawn' has a wrong offset!");
 
 }
 

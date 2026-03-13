@@ -61,30 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Floor_NoWeaponZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Floor_NoWeaponZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Floor_NoWeaponZone_C")
 	}
 	static class ADevice_Floor_NoWeaponZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Floor_NoWeaponZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Floor_NoWeaponZone_C) == 0x000008, "Wrong alignment on ADevice_Floor_NoWeaponZone_C");
-static_assert(sizeof(ADevice_Floor_NoWeaponZone_C) == 0x000DD8, "Wrong size on ADevice_Floor_NoWeaponZone_C");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, UberGraphFrame_Device_Floor_NoWeaponZone_C) == 0x000D48, "Member 'ADevice_Floor_NoWeaponZone_C::UberGraphFrame_Device_Floor_NoWeaponZone_C' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TransmitOnEmoteEnded) == 0x000D50, "Member 'ADevice_Floor_NoWeaponZone_C::TransmitOnEmoteEnded' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TransmitOnEmoteStarted) == 0x000D58, "Member 'ADevice_Floor_NoWeaponZone_C::TransmitOnEmoteStarted' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TransmitOnLeaving) == 0x000D60, "Member 'ADevice_Floor_NoWeaponZone_C::TransmitOnLeaving' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TransmitOnEntering) == 0x000D68, "Member 'ADevice_Floor_NoWeaponZone_C::TransmitOnEntering' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, idleFX) == 0x000D70, "Member 'ADevice_Floor_NoWeaponZone_C::idleFX' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, Bounds) == 0x000D78, "Member 'ADevice_Floor_NoWeaponZone_C::Bounds' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, ParticlesMaxDrawDistance) == 0x000D80, "Member 'ADevice_Floor_NoWeaponZone_C::ParticlesMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, CancelAbilitiesWithTheseTags) == 0x000D88, "Member 'ADevice_Floor_NoWeaponZone_C::CancelAbilitiesWithTheseTags' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, ApplyEffectToActor) == 0x000DA8, "Member 'ADevice_Floor_NoWeaponZone_C::ApplyEffectToActor' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, AllowBuilding) == 0x000DB0, "Member 'ADevice_Floor_NoWeaponZone_C::AllowBuilding' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, Effect_Class) == 0x000DB8, "Member 'ADevice_Floor_NoWeaponZone_C::Effect_Class' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TagDisableBuild) == 0x000DC0, "Member 'ADevice_Floor_NoWeaponZone_C::TagDisableBuild' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, TagDisableFire) == 0x000DC8, "Member 'ADevice_Floor_NoWeaponZone_C::TagDisableFire' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_NoWeaponZone_C, Knob_bAllowFiring) == 0x000DD0, "Member 'ADevice_Floor_NoWeaponZone_C::Knob_bAllowFiring' has a wrong offset!");
 
 }
 

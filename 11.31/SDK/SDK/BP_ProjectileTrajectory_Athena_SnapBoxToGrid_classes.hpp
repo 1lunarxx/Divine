@@ -57,32 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C">();
+		BP_STATIC_CLASS_IMPL("BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C")
 	}
 	static class ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C>();
 	}
 };
-static_assert(alignof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C) == 0x000008, "Wrong alignment on ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C");
-static_assert(sizeof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C) == 0x0002F8, "Wrong size on ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, UberGraphFrame_BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C) == 0x000270, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::UberGraphFrame_BP_ProjectileTrajectory_Athena_SnapBoxToGrid_C' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, SM_BuildingPreview) == 0x000278, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::SM_BuildingPreview' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, Building) == 0x000280, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::Building' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridSizeXY) == 0x000288, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridSizeXY' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridSizeZ) == 0x00028C, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridSizeZ' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridYOffset) == 0x000290, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridYOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, LastPointDist) == 0x000294, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::LastPointDist' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridZOffset) == 0x000298, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridZOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, YawOffset) == 0x00029C, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::YawOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, LastYawOffset) == 0x0002A8, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::LastYawOffset' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridSnapPosition) == 0x0002B4, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridSnapPosition' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, LastGridSnapPosition) == 0x0002C0, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::LastGridSnapPosition' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, GridSnapSound) == 0x0002D0, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::GridSnapSound' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, CardinalDirection) == 0x0002D8, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::CardinalDirection' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, BuildingPreviewMesh) == 0x0002E0, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::BuildingPreviewMesh' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, CachedPlayset) == 0x0002E8, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::CachedPlayset' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C, Throw_Loop_Sound) == 0x0002F0, "Member 'ABP_ProjectileTrajectory_Athena_SnapBoxToGrid_C::Throw_Loop_Sound' has a wrong offset!");
 
 }
 

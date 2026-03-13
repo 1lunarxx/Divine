@@ -23,9 +23,6 @@ struct JoinServer_C_OnEnterState final
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_OnEnterState) == 0x000001, "Wrong alignment on JoinServer_C_OnEnterState");
-static_assert(sizeof(JoinServer_C_OnEnterState) == 0x000001, "Wrong size on JoinServer_C_OnEnterState");
-static_assert(offsetof(JoinServer_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'JoinServer_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function JoinServer.JoinServer_C.ExecuteUbergraph_JoinServer
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +32,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortUIState                                  K2Node_Event_PreviousUIState;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000004, "Wrong alignment on JoinServer_C_ExecuteUbergraph_JoinServer");
-static_assert(sizeof(JoinServer_C_ExecuteUbergraph_JoinServer) == 0x000008, "Wrong size on JoinServer_C_ExecuteUbergraph_JoinServer");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, EntryPoint) == 0x000000, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::EntryPoint' has a wrong offset!");
-static_assert(offsetof(JoinServer_C_ExecuteUbergraph_JoinServer, K2Node_Event_PreviousUIState) == 0x000004, "Member 'JoinServer_C_ExecuteUbergraph_JoinServer::K2Node_Event_PreviousUIState' has a wrong offset!");
 
 }
 

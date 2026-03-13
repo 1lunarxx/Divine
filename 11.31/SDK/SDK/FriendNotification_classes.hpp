@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FriendNotification_C">();
+		BP_STATIC_CLASS_IMPL("FriendNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FriendNotification_C")
 	}
 	static class UFriendNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFriendNotification_C>();
 	}
 };
-static_assert(alignof(UFriendNotification_C) == 0x000008, "Wrong alignment on UFriendNotification_C");
-static_assert(sizeof(UFriendNotification_C) == 0x000110, "Wrong size on UFriendNotification_C");
-static_assert(offsetof(UFriendNotification_C, UberGraphFrame) == 0x000108, "Member 'UFriendNotification_C::UberGraphFrame' has a wrong offset!");
 
 }
 

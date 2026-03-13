@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_TimeAlive_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_TimeAlive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_TimeAlive_C")
 	}
 	static class UMinigameStat_TimeAlive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_TimeAlive_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_TimeAlive_C) == 0x000008, "Wrong alignment on UMinigameStat_TimeAlive_C");
-static_assert(sizeof(UMinigameStat_TimeAlive_C) == 0x000198, "Wrong size on UMinigameStat_TimeAlive_C");
 
 }
 

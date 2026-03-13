@@ -17,71 +17,6 @@
 namespace SDK
 {
 
-// Function RadialPickerItem.RadialPickerItem_C.UpdateSelectionColor
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Selected_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void URadialPickerItem_C::UpdateSelectionColor(bool Selected_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialPickerItem_C", "UpdateSelectionColor");
-
-	Params::RadialPickerItem_C_UpdateSelectionColor Parms{};
-
-	Parms.Selected_0 = Selected_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function RadialPickerItem.RadialPickerItem_C.OnMouseButtonDown
-// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply URadialPickerItem_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialPickerItem_C", "OnMouseButtonDown");
-
-	Params::RadialPickerItem_C_OnMouseButtonDown Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function RadialPickerItem.RadialPickerItem_C.SetShowImageAndLabel
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ShowImageAndLabel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("RadialPickerItem_C", "SetShowImageAndLabel");
-
-	Params::RadialPickerItem_C_SetShowImageAndLabel Parms{};
-
-	Parms.ShowImageAndLabel = ShowImageAndLabel;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function RadialPickerItem.RadialPickerItem_C.SetItemContent
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -183,6 +118,71 @@ void URadialPickerItem_C::ExecuteUbergraph_RadialPickerItem(int32 EntryPoint)
 	Params::RadialPickerItem_C_ExecuteUbergraph_RadialPickerItem Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function RadialPickerItem.RadialPickerItem_C.UpdateSelectionColor
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Selected_0                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URadialPickerItem_C::UpdateSelectionColor(bool Selected_0)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RadialPickerItem_C", "UpdateSelectionColor");
+
+	Params::RadialPickerItem_C_UpdateSelectionColor Parms{};
+
+	Parms.Selected_0 = Selected_0;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function RadialPickerItem.RadialPickerItem_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// const struct FPointerEvent&             MouseEvent                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply URadialPickerItem_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RadialPickerItem_C", "OnMouseButtonDown");
+
+	Params::RadialPickerItem_C_OnMouseButtonDown Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function RadialPickerItem.RadialPickerItem_C.SetShowImageAndLabel
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ShowImageAndLabel                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URadialPickerItem_C::SetShowImageAndLabel(bool ShowImageAndLabel)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("RadialPickerItem_C", "SetShowImageAndLabel");
+
+	Params::RadialPickerItem_C_SetShowImageAndLabel Parms{};
+
+	Parms.ShowImageAndLabel = ShowImageAndLabel;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

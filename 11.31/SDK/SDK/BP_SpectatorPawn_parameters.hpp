@@ -45,28 +45,6 @@ public:
 	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue;                 // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn) == 0x000008, "Wrong alignment on BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn");
-static_assert(sizeof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn) == 0x000060, "Wrong size on BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, EntryPoint) == 0x000000, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_BooleanOR_ReturnValue) == 0x000005, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_GetController_ReturnValue) == 0x000018, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000020, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_GetViewTarget_ReturnValue) == 0x000028, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_GetSkydivingSound_ReturnValue) == 0x000030, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_GetSkydivingSound_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000038, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000041, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_IsParachuteOpen_ReturnValue) == 0x000042, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_IsParachuteOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_Not_PreBool_ReturnValue) == 0x000043, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_IsSkydiving_ReturnValue) == 0x000044, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_IsSkydiving_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_BooleanAND_ReturnValue) == 0x000045, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_GetSkydivingSound_ReturnValue_1) == 0x000048, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_GetSkydivingSound_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_NotEqual_ObjectObject_ReturnValue_1) == 0x000050, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_NotEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_IsValid_ReturnValue_1) == 0x000051, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_IsPlaying_ReturnValue) == 0x000052, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn, CallFunc_SpawnSound2D_ReturnValue) == 0x000058, "Member 'BP_SpectatorPawn_C_ExecuteUbergraph_BP_SpectatorPawn::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
 
 // Function BP_SpectatorPawn.BP_SpectatorPawn_C.GetSkydivingSound
 // 0x0028 (0x0028 - 0x0000)
@@ -80,13 +58,6 @@ public:
 	class USoundBase*                             Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SpectatorPawn_C_GetSkydivingSound) == 0x000008, "Wrong alignment on BP_SpectatorPawn_C_GetSkydivingSound");
-static_assert(sizeof(BP_SpectatorPawn_C_GetSkydivingSound) == 0x000028, "Wrong size on BP_SpectatorPawn_C_GetSkydivingSound");
-static_assert(offsetof(BP_SpectatorPawn_C_GetSkydivingSound, ReturnValue) == 0x000000, "Member 'BP_SpectatorPawn_C_GetSkydivingSound::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_GetSkydivingSound, Temp_bool_Variable) == 0x000008, "Member 'BP_SpectatorPawn_C_GetSkydivingSound::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_GetSkydivingSound, Temp_object_Variable) == 0x000010, "Member 'BP_SpectatorPawn_C_GetSkydivingSound::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_GetSkydivingSound, Temp_object_Variable_1) == 0x000018, "Member 'BP_SpectatorPawn_C_GetSkydivingSound::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_GetSkydivingSound, K2Node_Select_Default) == 0x000020, "Member 'BP_SpectatorPawn_C_GetSkydivingSound::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_SpectatorPawn.BP_SpectatorPawn_C.SetSkydivingAudioEnabled
 // 0x0020 (0x0020 - 0x0000)
@@ -100,12 +71,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             CallFunc_GetSkydivingSound_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled) == 0x000008, "Wrong alignment on BP_SpectatorPawn_C_SetSkydivingAudioEnabled");
-static_assert(sizeof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled) == 0x000020, "Wrong size on BP_SpectatorPawn_C_SetSkydivingAudioEnabled");
-static_assert(offsetof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled, Enabled) == 0x000000, "Member 'BP_SpectatorPawn_C_SetSkydivingAudioEnabled::Enabled' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled, CallFunc_SpawnSound2D_ReturnValue) == 0x000008, "Member 'BP_SpectatorPawn_C_SetSkydivingAudioEnabled::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_SpectatorPawn_C_SetSkydivingAudioEnabled::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_SpectatorPawn_C_SetSkydivingAudioEnabled, CallFunc_GetSkydivingSound_ReturnValue) == 0x000018, "Member 'BP_SpectatorPawn_C_SetSkydivingAudioEnabled::CallFunc_GetSkydivingSound_ReturnValue' has a wrong offset!");
 
 }
 

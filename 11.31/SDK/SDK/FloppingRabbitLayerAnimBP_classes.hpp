@@ -135,86 +135,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FloppingRabbitLayerAnimBP_C">();
+		BP_STATIC_CLASS_IMPL("FloppingRabbitLayerAnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloppingRabbitLayerAnimBP_C")
 	}
 	static class UFloppingRabbitLayerAnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFloppingRabbitLayerAnimBP_C>();
 	}
 };
-static_assert(alignof(UFloppingRabbitLayerAnimBP_C) == 0x000010, "Wrong alignment on UFloppingRabbitLayerAnimBP_C");
-static_assert(sizeof(UFloppingRabbitLayerAnimBP_C) == 0x001AE0, "Wrong size on UFloppingRabbitLayerAnimBP_C");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, UberGraphFrame) == 0x000310, "Member 'UFloppingRabbitLayerAnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_9D54C1FE4C8BA604F2DBAF99DADC4A46) == 0x000318, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_9D54C1FE4C8BA604F2DBAF99DADC4A46' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, Pitch) == 0x000348, "Member 'UFloppingRabbitLayerAnimBP_C::Pitch' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, Yaw) == 0x00034C, "Member 'UFloppingRabbitLayerAnimBP_C::Yaw' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AimOffsetAlpha) == 0x000350, "Member 'UFloppingRabbitLayerAnimBP_C::AimOffsetAlpha' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_BF8C7DCF4D4B51329346D687D9F8920F) == 0x000358, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_BF8C7DCF4D4B51329346D687D9F8920F' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_231FC2D24ABD39DB9AE21F9357AF24D0) == 0x0003C8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_231FC2D24ABD39DB9AE21F9357AF24D0' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_B0F85DC9427CC6103F03AFA899B28A0E) == 0x000438, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_B0F85DC9427CC6103F03AFA899B28A0E' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_C20A030E43177AD7428667A6C8D5DF7A) == 0x000468, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_C20A030E43177AD7428667A6C8D5DF7A' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_6CABC06C408D6AD3C1B428AB59015E6B) == 0x0004D8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_6CABC06C408D6AD3C1B428AB59015E6B' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_BD46CEAC4922652C296EC495047C0D85) == 0x000508, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_BD46CEAC4922652C296EC495047C0D85' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_BlendListByBool_C72C9359411630B8A64A0BB7499ADCA7) == 0x000580, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_BlendListByBool_C72C9359411630B8A64A0BB7499ADCA7' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_0FDF39C64D19C9FA3A779A8565B79015) == 0x000620, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_0FDF39C64D19C9FA3A779A8565B79015' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_5EFB4E7B440AD7B8CD601DBC0652E10C) == 0x000698, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_5EFB4E7B440AD7B8CD601DBC0652E10C' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_C1DE94DD4364E591C099BAA2A58196AA) == 0x0006C8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_C1DE94DD4364E591C099BAA2A58196AA' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_BlendListByBool_3B6913F04E4665B15DADF4930526498F) == 0x000740, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_BlendListByBool_3B6913F04E4665B15DADF4930526498F' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_CA2C18444BB2EB84444A47933FFF0CE5) == 0x0007E0, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_CA2C18444BB2EB84444A47933FFF0CE5' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_82633773478F0B8DBF440F88E17647D2) == 0x000858, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_82633773478F0B8DBF440F88E17647D2' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_44505C4D4F0EAA7BF88E60A8F623E7E6) == 0x000888, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_44505C4D4F0EAA7BF88E60A8F623E7E6' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_BlendListByBool_D89BF890438520456A3E1C87B6A451E2) == 0x000900, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_BlendListByBool_D89BF890438520456A3E1C87B6A451E2' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_B9D25CA34FEDF27C4D8C94915E373774) == 0x0009A0, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_B9D25CA34FEDF27C4D8C94915E373774' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_0E69E4BA4D5087F58C8C459DBB8DFD14) == 0x000A18, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_0E69E4BA4D5087F58C8C459DBB8DFD14' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_6E1E336C4F451EA72015A19191E67339) == 0x000A48, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_6E1E336C4F451EA72015A19191E67339' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_BlendListByBool_2E38C7E0442505D7B5E26AB33E738132) == 0x000AC0, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_BlendListByBool_2E38C7E0442505D7B5E26AB33E738132' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_87F0D1684CACCA042AD948B4A3193BB6) == 0x000B60, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_87F0D1684CACCA042AD948B4A3193BB6' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_E42FE0E248DC071CA7862EB1B8D71D08) == 0x000BD8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_E42FE0E248DC071CA7862EB1B8D71D08' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, InputParam) == 0x000C08, "Member 'UFloppingRabbitLayerAnimBP_C::InputParam' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_647A44D64CE9B31AEF051A97A8CC03E5) == 0x000E48, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_647A44D64CE9B31AEF051A97A8CC03E5' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_33AC0DC74BAB52D25D161392150FA9CE) == 0x000EB8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_33AC0DC74BAB52D25D161392150FA9CE' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_B01543B840D2CF0D32E71DB0203F15C5) == 0x000EE8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_B01543B840D2CF0D32E71DB0203F15C5' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_8C1F75E549CB40EA43D5F995CF2C4249) == 0x000F58, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_8C1F75E549CB40EA43D5F995CF2C4249' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_94C35A5E4404A09E9BCE4984B210798E) == 0x000F88, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_94C35A5E4404A09E9BCE4984B210798E' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_D958B1614E40DEA03C73ABB4D7C7BCF2) == 0x000FF8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_D958B1614E40DEA03C73ABB4D7C7BCF2' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_A65C4D9547432885D0F3CCA49D581CFE) == 0x001028, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_A65C4D9547432885D0F3CCA49D581CFE' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_300D69CB4278CA1E4346E38654E2490C) == 0x001058, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_300D69CB4278CA1E4346E38654E2490C' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_AF8713684618DD506ACE0D9DDEE06853) == 0x001088, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_AF8713684618DD506ACE0D9DDEE06853' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_384F15CE44554CA7D3DC38B91D99C78C) == 0x0010B8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_384F15CE44554CA7D3DC38B91D99C78C' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_600B7B114655869DBE27709A91B2484F) == 0x0010E8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_600B7B114655869DBE27709A91B2484F' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_00D29E1E46711AAD4029C49A49E27C83) == 0x001118, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_00D29E1E46711AAD4029C49A49E27C83' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_D1CEC1D74888A9AA89811A9C318E09D5) == 0x001148, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_D1CEC1D74888A9AA89811A9C318E09D5' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_79FF03BE455DE5CAD5D02E8C0255F121) == 0x001178, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_79FF03BE455DE5CAD5D02E8C0255F121' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_7BB190E84D649CF6D05F60B318C9CA3A) == 0x0011A8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_7BB190E84D649CF6D05F60B318C9CA3A' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_084A55384FEE80240083C59591281E1D) == 0x0011D8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_084A55384FEE80240083C59591281E1D' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_85816209487D8057EA546C8EC9EE3115) == 0x001208, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_85816209487D8057EA546C8EC9EE3115' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_E4B22F5D410F7BF05814F49D644242AE) == 0x001238, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_E4B22F5D410F7BF05814F49D644242AE' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_24727BD04606BFB45D18D89D8933B1BC) == 0x0012A8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_24727BD04606BFB45D18D89D8933B1BC' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_FE5BB4B0460C1B9C0FA0DCAD99086BFD) == 0x0012D8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_FE5BB4B0460C1B9C0FA0DCAD99086BFD' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_3B3768704656047D4E26E2A29ED15FC2) == 0x001348, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_3B3768704656047D4E26E2A29ED15FC2' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_A7BF2B7D48F1F69BFA5762A3F9DED043) == 0x001378, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_A7BF2B7D48F1F69BFA5762A3F9DED043' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_7F6517DB4640FDCEECF15CBA7ABC9421) == 0x0013E8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_7F6517DB4640FDCEECF15CBA7ABC9421' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_CD96D23E4AE62AB9CFD95EA6A33B75DA) == 0x001418, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_CD96D23E4AE62AB9CFD95EA6A33B75DA' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_A3727C9D43BE275B546B068F4DA90F70) == 0x001488, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_A3727C9D43BE275B546B068F4DA90F70' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_4DABA8A842E5C6C071384587F94A7F35) == 0x0014B8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_4DABA8A842E5C6C071384587F94A7F35' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_DE2FE5164B94643AB9D4379CE21EBF69) == 0x001528, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_DE2FE5164B94643AB9D4379CE21EBF69' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_6FC45C19492CEFBB62A2259785901C36) == 0x001558, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_6FC45C19492CEFBB62A2259785901C36' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_02B8E8E9414549886AF52189AEADF8C2) == 0x0015C8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_02B8E8E9414549886AF52189AEADF8C2' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_DDBC5FAD423C95740EC0E8960DB2AA3E) == 0x0015F8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_DDBC5FAD423C95740EC0E8960DB2AA3E' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_E4081392450971A5C87604A97FE58BC4) == 0x001668, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_E4081392450971A5C87604A97FE58BC4' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_7D86E8DD4490C9A1C575D7B41547B9A0) == 0x001698, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_7D86E8DD4490C9A1C575D7B41547B9A0' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_ADA701154664D72028134FB148DB399A) == 0x001708, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_ADA701154664D72028134FB148DB399A' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_F43B30DF4CEB532CA0607FA029B89B0B) == 0x001738, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_F43B30DF4CEB532CA0607FA029B89B0B' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_4662FAAB41A288ED9F18768A634E79D7) == 0x0017A8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_4662FAAB41A288ED9F18768A634E79D7' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_6CBD766747A2AB6837606188DDF25A63) == 0x0017D8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_6CBD766747A2AB6837606188DDF25A63' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_532BD426463A5309F07835B18990606E) == 0x001848, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_532BD426463A5309F07835B18990606E' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_LinkedInputPose_E04FE24B4746983927D37D8D024012ED) == 0x001878, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_LinkedInputPose_E04FE24B4746983927D37D8D024012ED' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_DFF0A97E4BD59DB1A4C069A59E2A3556) == 0x0018E8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_DFF0A97E4BD59DB1A4C069A59E2A3556' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_DC0713B549A3D64DA47E5F97098D4CBC) == 0x001918, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_DC0713B549A3D64DA47E5F97098D4CBC' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_BlendListByBool_10E293954C4964E6641AF4936CA1F2E4) == 0x001990, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_BlendListByBool_10E293954C4964E6641AF4936CA1F2E4' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_SequencePlayer_0A3CE5794281BCB3C79028ACF23AD7EC) == 0x001A30, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_SequencePlayer_0A3CE5794281BCB3C79028ACF23AD7EC' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, AnimGraphNode_Root_9FFFAD1544C2BE6FD27026802785567A) == 0x001AA8, "Member 'UFloppingRabbitLayerAnimBP_C::AnimGraphNode_Root_9FFFAD1544C2BE6FD27026802785567A' has a wrong offset!");
-static_assert(offsetof(UFloppingRabbitLayerAnimBP_C, OneHandGrip) == 0x001AD8, "Member 'UFloppingRabbitLayerAnimBP_C::OneHandGrip' has a wrong offset!");
 
 }
 

@@ -39,19 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamMicStack_C">();
+		BP_STATIC_CLASS_IMPL("TeamMicStack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamMicStack_C")
 	}
 	static class UTeamMicStack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamMicStack_C>();
 	}
 };
-static_assert(alignof(UTeamMicStack_C) == 0x000008, "Wrong alignment on UTeamMicStack_C");
-static_assert(sizeof(UTeamMicStack_C) == 0x0002C0, "Wrong size on UTeamMicStack_C");
-static_assert(offsetof(UTeamMicStack_C, UberGraphFrame) == 0x000298, "Member 'UTeamMicStack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamMicStack_C, _Vertical_Box__Team_Members) == 0x0002A0, "Member 'UTeamMicStack_C::_Vertical_Box__Team_Members' has a wrong offset!");
-static_assert(offsetof(UTeamMicStack_C, BorderFrame) == 0x0002A8, "Member 'UTeamMicStack_C::BorderFrame' has a wrong offset!");
-static_assert(offsetof(UTeamMicStack_C, TeamMembers) == 0x0002B0, "Member 'UTeamMicStack_C::TeamMembers' has a wrong offset!");
 
 }
 

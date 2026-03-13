@@ -107,71 +107,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ThreatPostProcessManagerAndParticleBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("ThreatPostProcessManagerAndParticleBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ThreatPostProcessManagerAndParticleBlueprint_C")
 	}
 	static class AThreatPostProcessManagerAndParticleBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AThreatPostProcessManagerAndParticleBlueprint_C>();
 	}
 };
-static_assert(alignof(AThreatPostProcessManagerAndParticleBlueprint_C) == 0x000010, "Wrong alignment on AThreatPostProcessManagerAndParticleBlueprint_C");
-static_assert(sizeof(AThreatPostProcessManagerAndParticleBlueprint_C) == 0x0003F0, "Wrong size on AThreatPostProcessManagerAndParticleBlueprint_C");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, UberGraphFrame) == 0x000228, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, EnterTheStormSound) == 0x000230, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::EnterTheStormSound' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Sprite1) == 0x000238, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Sprite1' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Ramp_Up_down_values_on_death_NewTrack_0_1CA080D642E9F1C3CB297DBE1BD2C9A4) == 0x000240, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death_NewTrack_0_1CA080D642E9F1C3CB297DBE1BD2C9A4' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Ramp_Up_down_values_on_death__Direction_1CA080D642E9F1C3CB297DBE1BD2C9A4) == 0x000244, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death__Direction_1CA080D642E9F1C3CB297DBE1BD2C9A4' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Ramp_Up_down_values_on_death) == 0x000248, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_down_values_on_death' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Min_Cloud_Distance_from_player) == 0x000250, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Min_Cloud_Distance_from_player' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Localized_Particle_System_MID) == 0x000258, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Localized_Particle_System_MID' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, NewEventDispatcher) == 0x000260, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, NewEventDispatcher0) == 0x000270, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::NewEventDispatcher0' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Array_of_Cloud_Positions) == 0x000280, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Array_of_Cloud_Positions' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, SkyParticleCloudDistances) == 0x000290, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::SkyParticleCloudDistances' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, CloudDistanceToPlayerLookUpArray) == 0x0002A0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::CloudDistanceToPlayerLookUpArray' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Target_Cloud_Position) == 0x0002B0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Target_Cloud_Position' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, RecalculateTimer) == 0x0002BC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::RecalculateTimer' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Is_Alive) == 0x0002C0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Is_Alive' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsAliveJustChanged) == 0x0002C1, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsAliveJustChanged' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsAlivePrevious) == 0x0002C2, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsAlivePrevious' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_alive) == 0x0002C4, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_alive' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, CurrentCloudMesh) == 0x0002C8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::CurrentCloudMesh' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_dead) == 0x0002CC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_ticks_before_checking_for_the_nearest_cloud_again___when_dead' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Materialpost) == 0x0002D0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Materialpost' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, post_process_volume_falloff__around_the_threat_volume) == 0x0002D8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::post_process_volume_falloff__around_the_threat_volume' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ShowRainEffect) == 0x0002DC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ShowRainEffect' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, FourClosestClouds) == 0x0002E0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::FourClosestClouds' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Number_Of_Volumes_to_check) == 0x0002F0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Number_Of_Volumes_to_check' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, DeltaTime) == 0x0002F4, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::DeltaTime' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, PostProcessTargetWeight) == 0x0002F8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::PostProcessTargetWeight' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Current_Post_Process_Weight) == 0x0002FC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Current_Post_Process_Weight' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Post_Process_Fade_in_speed) == 0x000300, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Post_Process_Fade_in_speed' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, SoundIsActive) == 0x000304, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::SoundIsActive' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, SoundWasPreviouslyActive) == 0x000305, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::SoundWasPreviouslyActive' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, PlayerTransform) == 0x000310, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::PlayerTransform' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, is_On) == 0x000340, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::is_On' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, MaterialEffectsPostProcess) == 0x000348, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::MaterialEffectsPostProcess' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Morning) == 0x000350, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Morning' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Day) == 0x000360, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Day' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Evening) == 0x000370, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Evening' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ThreatFogPostProcessColor_Night) == 0x000380, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ThreatFogPostProcessColor_Night' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Array_of_Cloud_Volumes) == 0x000390, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Array_of_Cloud_Volumes' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ClosestCloudIndex) == 0x0003A0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ClosestCloudIndex' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ClosestCloudDistance) == 0x0003A4, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ClosestCloudDistance' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, PostProcessWeightModulation) == 0x0003A8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::PostProcessWeightModulation' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Ramp_Up_And_Down_Anim_Values) == 0x0003AC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Ramp_Up_And_Down_Anim_Values' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, ShowRainOnCameraLens) == 0x0003B0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::ShowRainOnCameraLens' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Rain_Camera_Lens_Effect) == 0x0003B8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Rain_Camera_Lens_Effect' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, LocalizedParticleSystem) == 0x0003C0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::LocalizedParticleSystem' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsWorldReady) == 0x0003C8, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsWorldReady' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Rain_Trace_Timer) == 0x0003CC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Rain_Trace_Timer' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, RainTraceOffset) == 0x0003D0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::RainTraceOffset' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, RainMultiplierCurrent) == 0x0003DC, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::RainMultiplierCurrent' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, Rain_Spawn_Rate_Exponent) == 0x0003E0, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::Rain_Spawn_Rate_Exponent' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, TracePrevious) == 0x0003E4, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::TracePrevious' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, IsAthenaWorld) == 0x0003E5, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::IsAthenaWorld' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, bThreatOverride) == 0x0003E6, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::bThreatOverride' has a wrong offset!");
-static_assert(offsetof(AThreatPostProcessManagerAndParticleBlueprint_C, bForceOff) == 0x0003E7, "Member 'AThreatPostProcessManagerAndParticleBlueprint_C::bForceOff' has a wrong offset!");
 
 }
 

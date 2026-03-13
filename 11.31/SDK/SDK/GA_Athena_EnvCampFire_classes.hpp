@@ -66,33 +66,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_EnvCampFire_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_EnvCampFire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_EnvCampFire_C")
 	}
 	static class UGA_Athena_EnvCampFire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_EnvCampFire_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_EnvCampFire_C) == 0x000010, "Wrong alignment on UGA_Athena_EnvCampFire_C");
-static_assert(sizeof(UGA_Athena_EnvCampFire_C) == 0x000B70, "Wrong size on UGA_Athena_EnvCampFire_C");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_EnvCampFire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, TimeBetweenHeals) == 0x000A38, "Member 'UGA_Athena_EnvCampFire_C::TimeBetweenHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Timer_ApplyHeal) == 0x000A40, "Member 'UGA_Athena_EnvCampFire_C::Timer_ApplyHeal' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, MaxHeals) == 0x000A48, "Member 'UGA_Athena_EnvCampFire_C::MaxHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, CurrentHeals) == 0x000A4C, "Member 'UGA_Athena_EnvCampFire_C::CurrentHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, CustomTargeting) == 0x000A50, "Member 'UGA_Athena_EnvCampFire_C::CustomTargeting' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, TargetingHeightOffset) == 0x000A80, "Member 'UGA_Athena_EnvCampFire_C::TargetingHeightOffset' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_MaxHeals) == 0x000A88, "Member 'UGA_Athena_EnvCampFire_C::Row_MaxHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_TimeBetweenHeals) == 0x000AA8, "Member 'UGA_Athena_EnvCampFire_C::Row_TimeBetweenHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, StokeTimeBetweenHeals) == 0x000AC8, "Member 'UGA_Athena_EnvCampFire_C::StokeTimeBetweenHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_StokeDuration) == 0x000AD0, "Member 'UGA_Athena_EnvCampFire_C::Row_StokeDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_Stoke_TimeBetweenHeals) == 0x000AF0, "Member 'UGA_Athena_EnvCampFire_C::Row_Stoke_TimeBetweenHeals' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_Stoke_MaxHeals_Extension) == 0x000B10, "Member 'UGA_Athena_EnvCampFire_C::Row_Stoke_MaxHeals_Extension' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, IsStoked) == 0x000B30, "Member 'UGA_Athena_EnvCampFire_C::IsStoked' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Row_HealPerTick) == 0x000B38, "Member 'UGA_Athena_EnvCampFire_C::Row_HealPerTick' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, GC_StokedLoop) == 0x000B58, "Member 'UGA_Athena_EnvCampFire_C::GC_StokedLoop' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, GC_StokeBurst) == 0x000B60, "Member 'UGA_Athena_EnvCampFire_C::GC_StokeBurst' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_EnvCampFire_C, Campfire) == 0x000B68, "Member 'UGA_Athena_EnvCampFire_C::Campfire' has a wrong offset!");
 
 }
 

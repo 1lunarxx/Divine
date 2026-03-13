@@ -34,19 +34,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0138(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0150(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerRankEmblem_C_SetBannerInfo) == 0x000008, "Wrong alignment on PlayerRankEmblem_C_SetBannerInfo");
-static_assert(sizeof(PlayerRankEmblem_C_SetBannerInfo) == 0x000160, "Wrong size on PlayerRankEmblem_C_SetBannerInfo");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, Banner) == 0x000000, "Member 'PlayerRankEmblem_C_SetBannerInfo::Banner' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToName_ReturnValue) == 0x000028, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToName_ReturnValue_1) == 0x000030, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData) == 0x000038, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToText_ReturnValue) == 0x000078, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000090, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000E8, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, K2Node_MakeArray_Array) == 0x000128, "Member 'PlayerRankEmblem_C_SetBannerInfo::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Format_ReturnValue) == 0x000138, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerInfo, CallFunc_Conv_TextToString_ReturnValue) == 0x000150, "Member 'PlayerRankEmblem_C_SetBannerInfo::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function PlayerRankEmblem.PlayerRankEmblem_C.SetBannerSurroundLevel
 // 0x0010 (0x0010 - 0x0000)
@@ -58,11 +45,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerRankEmblem_C_SetBannerSurroundLevel) == 0x000008, "Wrong alignment on PlayerRankEmblem_C_SetBannerSurroundLevel");
-static_assert(sizeof(PlayerRankEmblem_C_SetBannerSurroundLevel) == 0x000010, "Wrong size on PlayerRankEmblem_C_SetBannerSurroundLevel");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerSurroundLevel, Level) == 0x000000, "Member 'PlayerRankEmblem_C_SetBannerSurroundLevel::Level' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerSurroundLevel, Animate) == 0x000004, "Member 'PlayerRankEmblem_C_SetBannerSurroundLevel::Animate' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerSurroundLevel, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'PlayerRankEmblem_C_SetBannerSurroundLevel::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function PlayerRankEmblem.PlayerRankEmblem_C.SetBannerOwner
 // 0x0030 (0x0030 - 0x0000)
@@ -72,10 +54,6 @@ public:
 	class AFortPlayerController*                  Target;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0008(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerRankEmblem_C_SetBannerOwner) == 0x000008, "Wrong alignment on PlayerRankEmblem_C_SetBannerOwner");
-static_assert(sizeof(PlayerRankEmblem_C_SetBannerOwner) == 0x000030, "Wrong size on PlayerRankEmblem_C_SetBannerOwner");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerOwner, Target) == 0x000000, "Member 'PlayerRankEmblem_C_SetBannerOwner::Target' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_SetBannerOwner, CallFunc_GetGameAccountId_ReturnValue) == 0x000008, "Member 'PlayerRankEmblem_C_SetBannerOwner::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
 
 // Function PlayerRankEmblem.PlayerRankEmblem_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +62,6 @@ struct PlayerRankEmblem_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerRankEmblem_C_PreConstruct) == 0x000001, "Wrong alignment on PlayerRankEmblem_C_PreConstruct");
-static_assert(sizeof(PlayerRankEmblem_C_PreConstruct) == 0x000001, "Wrong size on PlayerRankEmblem_C_PreConstruct");
-static_assert(offsetof(PlayerRankEmblem_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PlayerRankEmblem_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PlayerRankEmblem.PlayerRankEmblem_C.ExecuteUbergraph_PlayerRankEmblem
 // 0x0050 (0x0050 - 0x0000)
@@ -102,14 +77,6 @@ public:
 	struct FUniqueNetIdRepl                       CallFunc_GetGameAccountId_ReturnValue;             // 0x0020(0x0028)(HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem) == 0x000008, "Wrong alignment on PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem");
-static_assert(sizeof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem) == 0x000050, "Wrong size on PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, EntryPoint) == 0x000000, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000010, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, CallFunc_GetGameAccountId_ReturnValue) == 0x000020, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::CallFunc_GetGameAccountId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem, K2Node_Event_IsDesignTime) == 0x000048, "Member 'PlayerRankEmblem_C_ExecuteUbergraph_PlayerRankEmblem::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 }
 

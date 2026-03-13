@@ -33,10 +33,10 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn_1;                  // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn;        // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn;       // 0x0038(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x7];                                       // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_1;      // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_1;     // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -54,10 +54,10 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn_3;                  // 0x00A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_6;                     // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_2;      // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_2;     // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_7;                     // 0x00C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_C9[0x7];                                       // 0x00C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_3;      // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_3;     // 0x00D0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_8;                     // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x7];                                       // 0x00E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class APawn*                                  CallFunc_TryGetPawnOwner_ReturnValue_4;            // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -68,52 +68,12 @@ public:
 	class AFortPawn*                              K2Node_DynamicCast_AsFort_Pawn_5;                  // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_111[0x7];                                      // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_4;      // 0x0118(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_4;     // 0x0118(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0128(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_129[0x7];                                      // 0x0129(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_5;      // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IInterfacePlayerPawn_C> K2Node_DynamicCast_AsInterface_Player_Pawn_5;     // 0x0130(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint) == 0x000148, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, EntryPoint) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable) == 0x000004, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue) == 0x000008, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue_1) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn) == 0x000018, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn_1) == 0x000028, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_1) == 0x000030, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn) == 0x000038, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_2) == 0x000048, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn_1) == 0x000050, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_3) == 0x000060, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, Temp_bool_Has_Been_Initd_Variable) == 0x000061, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, Temp_bool_IsClosed_Variable) == 0x000062, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_GetGameState_ReturnValue) == 0x000068, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_CustomEvent_CharPart) == 0x000070, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_CustomEvent_CharPart' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x000078, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_4) == 0x000080, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue_2) == 0x000088, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue_3) == 0x000090, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn_2) == 0x000098, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_5) == 0x0000A0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn_3) == 0x0000A8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_6) == 0x0000B0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn_2) == 0x0000B8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_7) == 0x0000C8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn_3) == 0x0000D0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_8) == 0x0000E0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue_4) == 0x0000E8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, CallFunc_TryGetPawnOwner_ReturnValue_5) == 0x0000F0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::CallFunc_TryGetPawnOwner_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn_4) == 0x0000F8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_9) == 0x000100, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsFort_Pawn_5) == 0x000108, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsFort_Pawn_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_10) == 0x000110, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn_4) == 0x000118, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_11) == 0x000128, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_AsInterface_Player_Pawn_5) == 0x000130, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_AsInterface_Player_Pawn_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint, K2Node_DynamicCast_bSuccess_12) == 0x000140, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ExecuteUbergraph_Fortnite_M_Avg_Player_AnimBlueprint::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.CharPartEvent
 // 0x0008 (0x0008 - 0x0000)
@@ -122,9 +82,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent final
 public:
 	class UFortPlayerAnimInstance*                CharPart;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent) == 0x000008, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent, CharPart) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_CharPartEvent::CharPart' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ValidateDBNONativize
 // 0x0168 (0x0168 - 0x0000)
@@ -177,46 +134,6 @@ public:
 	uint8                                         Pad_151[0x7];                                      // 0x0151(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 CallFunc_Concat_StrStr_ReturnValue_10;             // 0x0158(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize) == 0x000168, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_BoolToString_ReturnValue) == 0x000030, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_BoolToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000040, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_BooleanAND_ReturnValue) == 0x000050, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue_1) == 0x000058, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue_2) == 0x000068, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_3) == 0x000078, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_4) == 0x000088, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_5) == 0x000098, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_6) == 0x0000A8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x0000B8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000B9, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_BooleanAND_ReturnValue_1) == 0x0000BA, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_BoolToString_ReturnValue_1) == 0x0000C0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_BoolToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x0000D0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_7) == 0x0000D8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue_1) == 0x0000E8, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue_2) == 0x0000E9, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue_3) == 0x0000EA, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue_4) == 0x0000EB, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_BoolBool_ReturnValue_5) == 0x0000EC, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_BoolBool_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x0000ED, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Not_PreBool_ReturnValue) == 0x0000EE, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue_3) == 0x0000F0, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_8) == 0x000100, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_1) == 0x000110, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_2) == 0x000111, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_3) == 0x000112, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_4) == 0x000113, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_5) == 0x000114, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue_4) == 0x000118, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_6) == 0x000128, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_9) == 0x000130, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Conv_FloatToString_ReturnValue_5) == 0x000140, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Conv_FloatToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_NotEqual_FloatFloat_ReturnValue_7) == 0x000150, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_NotEqual_FloatFloat_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize, CallFunc_Concat_StrStr_ReturnValue_10) == 0x000158, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ValidateDBNONativize::CallFunc_Concat_StrStr_ReturnValue_10' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -225,9 +142,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.VehicleLowerBodyOverride
 // 0x0030 (0x0030 - 0x0000)
@@ -238,11 +152,6 @@ public:
 	struct FPoseLink                              InPoseUpperBody;                                   // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              VehicleLowerBodyOverride_0;                        // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride) == 0x000030, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride, InPoseLowerBodyDefault) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride::InPoseLowerBodyDefault' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride, InPoseUpperBody) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride::InPoseUpperBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride, VehicleLowerBodyOverride_0) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleLowerBodyOverride::VehicleLowerBodyOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.VehicleFullBodyOverride
 // 0x0030 (0x0030 - 0x0000)
@@ -253,11 +162,6 @@ public:
 	struct FPoseLink                              InPoseUpperAndLowerCachePose;                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              VehicleFullBodyOverride_0;                         // 0x0020(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride) == 0x000030, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride, InPoseFullBody) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride::InPoseFullBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride, InPoseUpperAndLowerCachePose) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride::InPoseUpperAndLowerCachePose' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride, VehicleFullBodyOverride_0) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleFullBodyOverride::VehicleFullBodyOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.VehicleSplitBodyOverride
 // 0x00A0 (0x00A0 - 0x0000)
@@ -269,12 +173,6 @@ public:
 	struct FFortAnimInput_TurnInPlace             TurnInPlace_0;                                     // 0x0020(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FPoseLink                              VehicleSplitBodyOverride_0;                        // 0x0090(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride) == 0x0000A0, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride, InPoseSplitBody) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride::InPoseSplitBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride, InPoseInPoseUpperAndLowerBody) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride::InPoseInPoseUpperAndLowerBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride, TurnInPlace_0) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride::TurnInPlace_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride, VehicleSplitBodyOverride_0) == 0x000090, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleSplitBodyOverride::VehicleSplitBodyOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemRelaxedEntry
 // 0x0020 (0x0020 - 0x0000)
@@ -284,10 +182,6 @@ public:
 	struct FPoseLink                              InPoseRelaxedEntry;                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemRelaxedEntry_0;                                // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry, InPoseRelaxedEntry) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry::InPoseRelaxedEntry' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry, ItemRelaxedEntry_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemRelaxedEntry::ItemRelaxedEntry_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyJogPostPivot
 // 0x0020 (0x0020 - 0x0000)
@@ -297,10 +191,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyJogPostPivot;                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyJogPostPivot_0;                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot, InPoseLowerBodyJogPostPivot) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot::InPoseLowerBodyJogPostPivot' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot, ItemLowerBodyJogPostPivot_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPostPivot::ItemLowerBodyJogPostPivot_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyJogPrePivot
 // 0x0020 (0x0020 - 0x0000)
@@ -310,10 +200,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyJogPrePivot;                        // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyJogPrePivot_0;                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot, InPoseLowerBodyJogPrePivot) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot::InPoseLowerBodyJogPrePivot' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot, ItemLowerBodyJogPrePivot_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogPrePivot::ItemLowerBodyJogPrePivot_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyJogStop
 // 0x0020 (0x0020 - 0x0000)
@@ -323,10 +209,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyJogStop;                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyJogStop_0;                            // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop, InPoseLowerBodyJogStop) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop::InPoseLowerBodyJogStop' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop, ItemLowerBodyJogStop_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStop::ItemLowerBodyJogStop_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyJogStart
 // 0x0020 (0x0020 - 0x0000)
@@ -336,10 +218,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyJogStart;                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyJogStart_0;                           // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart, InPoseLowerBodyJogStart) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart::InPoseLowerBodyJogStart' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart, ItemLowerBodyJogStart_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyJogStart::ItemLowerBodyJogStart_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyMovement
 // 0x0020 (0x0020 - 0x0000)
@@ -349,10 +227,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyMovement;                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyMovement_0;                           // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement, InPoseLowerBodyMovement) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement::InPoseLowerBodyMovement' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement, ItemLowerBodyMovement_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyMovement::ItemLowerBodyMovement_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJogPostPivotAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -362,10 +236,6 @@ public:
 	struct FPoseLink                              InPosePostPivotAdditive;                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemJogPostPivotAdditive_0;                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive, InPosePostPivotAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive::InPosePostPivotAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive, ItemJogPostPivotAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPostPivotAdditive::ItemJogPostPivotAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJogPrePivotAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -375,10 +245,6 @@ public:
 	struct FPoseLink                              InPosePrePivotAdditive;                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemJogPrePivotAdditive_0;                         // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive, InPosePrePivotAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive::InPosePrePivotAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive, ItemJogPrePivotAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogPrePivotAdditive::ItemJogPrePivotAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJogStopAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -388,10 +254,6 @@ public:
 	struct FPoseLink                              InPoseJogStopAdditive;                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemJogStopAdditive_0;                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive, InPoseJogStopAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive::InPoseJogStopAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive, ItemJogStopAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStopAdditive::ItemJogStopAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJogStartAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -401,10 +263,6 @@ public:
 	struct FPoseLink                              InPoseJogStartAdditive;                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemJogStartAdditive_0;                            // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive, InPoseJogStartAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive::InPoseJogStartAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive, ItemJogStartAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJogStartAdditive::ItemJogStartAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemFlyModeLoopAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -413,9 +271,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive final
 public:
 	struct FPoseLink                              ItemFlyModeLoopAdditive_0;                         // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive, ItemFlyModeLoopAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeLoopAdditive::ItemFlyModeLoopAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemFlyModeStartAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -424,9 +279,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive final
 public:
 	struct FPoseLink                              ItemFlyModeStartAdditive_0;                        // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive, ItemFlyModeStartAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFlyModeStartAdditive::ItemFlyModeStartAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemZipLineStartAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -435,9 +287,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive final
 public:
 	struct FPoseLink                              ItemZipLineStartAdditive_0;                        // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive, ItemZipLineStartAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemZipLineStartAdditive::ItemZipLineStartAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJetPackJumpAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -446,9 +295,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive final
 public:
 	struct FPoseLink                              ItemJetPackJumpAdditive_0;                         // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive, ItemJetPackJumpAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackJumpAdditive::ItemJetPackJumpAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJetPackStartAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -457,9 +303,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive final
 public:
 	struct FPoseLink                              ItemJetPackStartAdditive_0;                        // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive, ItemJetPackStartAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJetPackStartAdditive::ItemJetPackStartAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemFallLandAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -468,9 +311,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive final
 public:
 	struct FPoseLink                              ItemFallLandAdditive_0;                            // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive, ItemFallLandAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallLandAdditive::ItemFallLandAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemFallAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -479,9 +319,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive final
 public:
 	struct FPoseLink                              ItemFallAdditive_0;                                // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive, ItemFallAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFallAdditive::ItemFallAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJumpLoopAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -490,9 +327,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive final
 public:
 	struct FPoseLink                              ItemJumpLoopAdditive_0;                            // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive, ItemJumpLoopAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpLoopAdditive::ItemJumpLoopAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemJumpUpAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -501,9 +335,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive final
 public:
 	struct FPoseLink                              ItemJumpUpAdditive_0;                              // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive, ItemJumpUpAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemJumpUpAdditive::ItemJumpUpAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSlopeSliding
 // 0x0010 (0x0010 - 0x0000)
@@ -512,9 +343,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding final
 public:
 	struct FPoseLink                              ItemSlopeSliding_0;                                // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding, ItemSlopeSliding_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSlopeSliding::ItemSlopeSliding_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemCrouchTurningAdditive
 // 0x0010 (0x0010 - 0x0000)
@@ -523,9 +351,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive final
 public:
 	struct FPoseLink                              ItemCrouchTurningAdditive_0;                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive, ItemCrouchTurningAdditive_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemCrouchTurningAdditive::ItemCrouchTurningAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemIdleAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -535,10 +360,6 @@ public:
 	struct FPoseLink                              InPoseIdleAdditive;                                // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemIdleAdditive_0;                                // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive, InPoseIdleAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive::InPoseIdleAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive, ItemIdleAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemIdleAdditive::ItemIdleAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemFullBodySprint
 // 0x0020 (0x0020 - 0x0000)
@@ -548,10 +369,6 @@ public:
 	struct FPoseLink                              InPoseSprint;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemFullBodySprint_0;                              // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint, InPoseSprint) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint::InPoseSprint' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint, ItemFullBodySprint_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemFullBodySprint::ItemFullBodySprint_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemUpperBody
 // 0x0260 (0x0260 - 0x0000)
@@ -562,11 +379,6 @@ public:
 	struct FFortAnimInput_AdjustedAim             InputParam_0;                                      // 0x0010(0x0240)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemUpperBody_0;                                   // 0x0250(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody) == 0x000260, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody, InPoseUpperBody) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody::InPoseUpperBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody, InputParam_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody::InputParam_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody, ItemUpperBody_0) == 0x000250, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemUpperBody::ItemUpperBody_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemLowerBodyLeanAdditive
 // 0x0020 (0x0020 - 0x0000)
@@ -576,10 +388,6 @@ public:
 	struct FPoseLink                              InPoseLowerBodyLeanAdditive;                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemLowerBodyLeanAdditive_0;                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive, InPoseLowerBodyLeanAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive::InPoseLowerBodyLeanAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive, ItemLowerBodyLeanAdditive_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemLowerBodyLeanAdditive::ItemLowerBodyLeanAdditive_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSwimJumpStart
 // 0x0010 (0x0010 - 0x0000)
@@ -588,9 +396,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart final
 public:
 	struct FPoseLink                              ItemSwimJumpStart_0;                               // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart, ItemSwimJumpStart_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStart::ItemSwimJumpStart_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSwimJumpStartLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -599,9 +404,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop final
 public:
 	struct FPoseLink                              ItemSwimJumpStartLoop_0;                           // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop, ItemSwimJumpStartLoop_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpStartLoop::ItemSwimJumpStartLoop_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSwimJumpFallLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -610,9 +412,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop final
 public:
 	struct FPoseLink                              ItemSwimJumpFallLoop_0;                            // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop, ItemSwimJumpFallLoop_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpFallLoop::ItemSwimJumpFallLoop_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSwimJumpSurfaceLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -621,9 +420,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop final
 public:
 	struct FPoseLink                              ItemSwimJumpSurfaceLoop_0;                         // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop, ItemSwimJumpSurfaceLoop_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceLoop::ItemSwimJumpSurfaceLoop_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSwimJumpSurfaceEnd
 // 0x0010 (0x0010 - 0x0000)
@@ -632,9 +428,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd final
 public:
 	struct FPoseLink                              ItemSwimJumpSurfaceEnd_0;                          // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd, ItemSwimJumpSurfaceEnd_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSwimJumpSurfaceEnd::ItemSwimJumpSurfaceEnd_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemSkeletalControl
 // 0x0020 (0x0020 - 0x0000)
@@ -644,10 +437,6 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemSkeletalControl_0;                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl, InPose) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl::InPose' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl, ItemSkeletalControl_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemSkeletalControl::ItemSkeletalControl_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.ItemAimOffset
 // 0x0040 (0x0040 - 0x0000)
@@ -662,14 +451,6 @@ public:
 	struct FPoseLink                              InPose_UpperLowerPreMeleeAO;                       // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              ItemAimOffset_0;                                   // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset) == 0x000040, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, InPose_AimOffset) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::InPose_AimOffset' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, AimOffsetAlpha_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::AimOffsetAlpha_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, Yaw_0) == 0x000014, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::Yaw_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, Pitch_0) == 0x000018, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::Pitch_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, InPose_UpperLowerPreMeleeAO) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::InPose_UpperLowerPreMeleeAO' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset, ItemAimOffset_0) == 0x000030, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_ItemAimOffset::ItemAimOffset_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.VehicleDBNOJoggingOverride
 // 0x0010 (0x0010 - 0x0000)
@@ -678,9 +459,6 @@ struct Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride final
 public:
 	struct FPoseLink                              VehicleDBNOJoggingOverride_0;                      // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride) == 0x000010, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride, VehicleDBNOJoggingOverride_0) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOJoggingOverride::VehicleDBNOJoggingOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.VehicleDBNOCarriedLeansOverride
 // 0x0020 (0x0020 - 0x0000)
@@ -690,10 +468,6 @@ public:
 	struct FPoseLink                              InPoseDBNOCarried;                                 // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              VehicleDBNOCarriedLeansOverride_0;                 // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride, InPoseDBNOCarried) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride::InPoseDBNOCarried' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride, VehicleDBNOCarriedLeansOverride_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_VehicleDBNOCarriedLeansOverride::VehicleDBNOCarriedLeansOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -703,10 +477,6 @@ public:
 	struct FPoseLink                              MainPlayerAnimBP;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingLayer_0;                                   // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer, MainPlayerAnimBP) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer::MainPlayerAnimBP' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer, SwimmingLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLayer::SwimmingLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingSprintLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -716,10 +486,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingSprint;                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingSprintLayer_0;                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer, PassThroughSwimmingSprint) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer::PassThroughSwimmingSprint' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer, SwimmingSprintLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingSprintLayer::SwimmingSprintLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingMovementAdditiveLayerPose
 // 0x0020 (0x0020 - 0x0000)
@@ -729,10 +495,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingMovementAdditive;               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingMovementAdditiveLayerPose_0;               // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose, PassThroughSwimmingMovementAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose::PassThroughSwimmingMovementAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose, SwimmingMovementAdditiveLayerPose_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingMovementAdditiveLayerPose::SwimmingMovementAdditiveLayerPose_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingUpperBodyPoseTargetingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -742,10 +504,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingUpperBodyPoseTargeting;         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingUpperBodyPoseTargetingLayer_0;             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer, PassThroughSwimmingUpperBodyPoseTargeting) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer::PassThroughSwimmingUpperBodyPoseTargeting' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer, SwimmingUpperBodyPoseTargetingLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseTargetingLayer::SwimmingUpperBodyPoseTargetingLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingUpperBodyPoseNonTargetingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -755,10 +513,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingUpperBodyPoseNonTargeting;      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingUpperBodyPoseNonTargetingLayer_0;          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer, PassThroughSwimmingUpperBodyPoseNonTargeting) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer::PassThroughSwimmingUpperBodyPoseNonTargeting' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer, SwimmingUpperBodyPoseNonTargetingLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingUpperBodyPoseNonTargetingLayer::SwimmingUpperBodyPoseNonTargetingLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingLowerBodyLayer
 // 0x0040 (0x0040 - 0x0000)
@@ -770,12 +524,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingLowerBody;                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingLowerBodyLayer_0;                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer) == 0x000040, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer, UpperBody_Cache) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer::UpperBody_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer, PreUpperBodySlot_Cache) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer::PreUpperBodySlot_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer, PassThroughSwimmingLowerBody) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer::PassThroughSwimmingLowerBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer, SwimmingLowerBodyLayer_0) == 0x000030, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingLowerBodyLayer::SwimmingLowerBodyLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingAdditiveLayer
 // 0x0078 (0x0078 - 0x0000)
@@ -795,19 +543,6 @@ public:
 	struct FPoseLink                              SprintingPose_PostMask_Cache;                      // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingAdditiveLayer_0;                           // 0x0068(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer) == 0x000078, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, IdleAdditive_Cache) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::IdleAdditive_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, MovementAdditiveLayerPose_Cache) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::MovementAdditiveLayerPose_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, FullBody) == 0x000020, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::FullBody' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, PlayMeleeAttackAOLayer_0) == 0x000030, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::PlayMeleeAttackAOLayer_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, DisableArmsHeadAdditiveCurveAlphaLayer_0) == 0x000034, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::DisableArmsHeadAdditiveCurveAlphaLayer_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, DisableIKRootAdditiveCurveAlphaLayer_0) == 0x000038, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::DisableIKRootAdditiveCurveAlphaLayer_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, LocomotionAdditiveAlphaLayer_0) == 0x00003C, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::LocomotionAdditiveAlphaLayer_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, isDBNOLayer_0) == 0x000040, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::isDBNOLayer_0' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, UpperAndLowerBody_Cache) == 0x000048, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::UpperAndLowerBody_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, SprintingPose_PostMask_Cache) == 0x000058, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::SprintingPose_PostMask_Cache' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer, SwimmingAdditiveLayer_0) == 0x000068, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingAdditiveLayer::SwimmingAdditiveLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.FullBodyOverride
 // 0x0020 (0x0020 - 0x0000)
@@ -817,10 +552,6 @@ public:
 	struct FPoseLink                              PassThroughFullBodyPose;                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              FullBodyOverride_0;                                // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride, PassThroughFullBodyPose) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride::PassThroughFullBodyPose' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride, FullBodyOverride_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_FullBodyOverride::FullBodyOverride_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingDiveJumpingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -830,10 +561,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingDiveJumping;                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingDiveJumpingLayer_0;                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer, PassThroughSwimmingDiveJumping) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer::PassThroughSwimmingDiveJumping' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer, SwimmingDiveJumpingLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingDiveJumpingLayer::SwimmingDiveJumpingLayer_0' has a wrong offset!");
 
 // Function Fortnite_M_Avg_Player_AnimBlueprint.Fortnite_M_Avg_Player_AnimBlueprint_C.SwimmingFullBodyAdditiveLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -843,10 +570,6 @@ public:
 	struct FPoseLink                              PassThroughFullBodyAdditive;                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingFullBodyAdditiveLayer_0;                   // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer) == 0x000008, "Wrong alignment on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer");
-static_assert(sizeof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer) == 0x000020, "Wrong size on Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer, PassThroughFullBodyAdditive) == 0x000000, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer::PassThroughFullBodyAdditive' has a wrong offset!");
-static_assert(offsetof(Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer, SwimmingFullBodyAdditiveLayer_0) == 0x000010, "Member 'Fortnite_M_Avg_Player_AnimBlueprint_C_SwimmingFullBodyAdditiveLayer::SwimmingFullBodyAdditiveLayer_0' has a wrong offset!");
 
 }
 

@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Commando_FragGrenade_Cluster_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Commando_FragGrenade_Cluster_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Commando_FragGrenade_Cluster_C")
 	}
 	static class AB_Prj_Commando_FragGrenade_Cluster_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Commando_FragGrenade_Cluster_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Commando_FragGrenade_Cluster_C) == 0x000008, "Wrong alignment on AB_Prj_Commando_FragGrenade_Cluster_C");
-static_assert(sizeof(AB_Prj_Commando_FragGrenade_Cluster_C) == 0x000880, "Wrong size on AB_Prj_Commando_FragGrenade_Cluster_C");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ParticleSystem1) == 0x000840, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ParticleSystem1' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, Audio1) == 0x000848, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::Audio1' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, BounceSound) == 0x000850, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::BounceSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, P_Explosion) == 0x000858, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::P_Explosion' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionSound) == 0x000860, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, ExplosionLocation) == 0x000868, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::ExplosionLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MinExplosionDelay) == 0x000874, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MinExplosionDelay' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Commando_FragGrenade_Cluster_C, MaxExplosionDelay) == 0x000878, "Member 'AB_Prj_Commando_FragGrenade_Cluster_C::MaxExplosionDelay' has a wrong offset!");
 
 }
 

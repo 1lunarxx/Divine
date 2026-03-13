@@ -31,15 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosCaptureStatics">();
+		STATIC_CLASS_IMPL("KairosCaptureStatics")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosCaptureStatics")
 	}
 	static class UKairosCaptureStatics* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKairosCaptureStatics>();
 	}
 };
-static_assert(alignof(UKairosCaptureStatics) == 0x000008, "Wrong alignment on UKairosCaptureStatics");
-static_assert(sizeof(UKairosCaptureStatics) == 0x000028, "Wrong size on UKairosCaptureStatics");
 
 // Class KairosSceneCapture.KairosConfig
 // 0x0010 (0x0040 - 0x0030)
@@ -53,17 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosConfig">();
+		STATIC_CLASS_IMPL("KairosConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosConfig")
 	}
 	static class UKairosConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKairosConfig>();
 	}
 };
-static_assert(alignof(UKairosConfig) == 0x000008, "Wrong alignment on UKairosConfig");
-static_assert(sizeof(UKairosConfig) == 0x000040, "Wrong size on UKairosConfig");
-static_assert(offsetof(UKairosConfig, DefaultHeroScale) == 0x000030, "Member 'UKairosConfig::DefaultHeroScale' has a wrong offset!");
-static_assert(offsetof(UKairosConfig, AvatarCaptureBlueprint) == 0x000038, "Member 'UKairosConfig::AvatarCaptureBlueprint' has a wrong offset!");
 
 // Class KairosSceneCapture.KairosGameModeBase
 // 0x0008 (0x02C0 - 0x02B8)
@@ -78,16 +80,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosGameModeBase">();
+		STATIC_CLASS_IMPL("KairosGameModeBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosGameModeBase")
 	}
 	static class AKairosGameModeBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AKairosGameModeBase>();
 	}
 };
-static_assert(alignof(AKairosGameModeBase) == 0x000008, "Wrong alignment on AKairosGameModeBase");
-static_assert(sizeof(AKairosGameModeBase) == 0x0002C0, "Wrong size on AKairosGameModeBase");
-static_assert(offsetof(AKairosGameModeBase, DefaultConfig) == 0x0002B8, "Member 'AKairosGameModeBase::DefaultConfig' has a wrong offset!");
 
 // Class KairosSceneCapture.KairosHeroBase
 // 0x0030 (0x0248 - 0x0218)
@@ -110,21 +113,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosHeroBase">();
+		STATIC_CLASS_IMPL("KairosHeroBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosHeroBase")
 	}
 	static class AKairosHeroBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AKairosHeroBase>();
 	}
 };
-static_assert(alignof(AKairosHeroBase) == 0x000008, "Wrong alignment on AKairosHeroBase");
-static_assert(sizeof(AKairosHeroBase) == 0x000248, "Wrong size on AKairosHeroBase");
-static_assert(offsetof(AKairosHeroBase, PlayerID) == 0x000218, "Member 'AKairosHeroBase::PlayerID' has a wrong offset!");
-static_assert(offsetof(AKairosHeroBase, bIsBeingCaptured) == 0x000228, "Member 'AKairosHeroBase::bIsBeingCaptured' has a wrong offset!");
-static_assert(offsetof(AKairosHeroBase, SceneCaptureComponent2D) == 0x000230, "Member 'AKairosHeroBase::SceneCaptureComponent2D' has a wrong offset!");
-static_assert(offsetof(AKairosHeroBase, CurrentAnimationState) == 0x000238, "Member 'AKairosHeroBase::CurrentAnimationState' has a wrong offset!");
-static_assert(offsetof(AKairosHeroBase, SkeletonType) == 0x000239, "Member 'AKairosHeroBase::SkeletonType' has a wrong offset!");
-static_assert(offsetof(AKairosHeroBase, CapturePawn) == 0x000240, "Member 'AKairosHeroBase::CapturePawn' has a wrong offset!");
 
 // Class KairosSceneCapture.KairosPawn
 // 0x0000 (0x0278 - 0x0278)
@@ -133,15 +132,17 @@ class AKairosPawn final : public APawn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosPawn">();
+		STATIC_CLASS_IMPL("KairosPawn")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosPawn")
 	}
 	static class AKairosPawn* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AKairosPawn>();
 	}
 };
-static_assert(alignof(AKairosPawn) == 0x000008, "Wrong alignment on AKairosPawn");
-static_assert(sizeof(AKairosPawn) == 0x000278, "Wrong size on AKairosPawn");
 
 // Class KairosSceneCapture.KairosPlayerController
 // 0x0000 (0x0568 - 0x0568)
@@ -150,22 +151,24 @@ class AKairosPlayerController final : public APlayerController
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosPlayerController">();
+		STATIC_CLASS_IMPL("KairosPlayerController")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosPlayerController")
 	}
 	static class AKairosPlayerController* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AKairosPlayerController>();
 	}
 };
-static_assert(alignof(AKairosPlayerController) == 0x000008, "Wrong alignment on AKairosPlayerController");
-static_assert(sizeof(AKairosPlayerController) == 0x000568, "Wrong size on AKairosPlayerController");
 
 // Class KairosSceneCapture.KairosSceneManagerActor
 // 0x0188 (0x03A0 - 0x0218)
 class AKairosSceneManagerActor final : public AActor
 {
 public:
-	TMap<class FString, struct FKairosAvatarDisplayInfo> DisplayAvatars;                                    // 0x0218(0x0050)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	TMap<class FString, struct FKairosAvatarDisplayInfo> DisplayAvatars;                             // 0x0218(0x0050)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
 	uint8                                         Pad_268[0x8];                                      // 0x0268(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             SpawnedPawnHeadCaptureTransform;                   // 0x0270(0x0030)(BlueprintVisible, BlueprintReadOnly, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	class UAudioComponent*                        SnippetAudioComponent;                             // 0x02A0(0x0008)(Edit, BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -185,21 +188,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"KairosSceneManagerActor">();
+		STATIC_CLASS_IMPL("KairosSceneManagerActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KairosSceneManagerActor")
 	}
 	static class AKairosSceneManagerActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AKairosSceneManagerActor>();
 	}
 };
-static_assert(alignof(AKairosSceneManagerActor) == 0x000010, "Wrong alignment on AKairosSceneManagerActor");
-static_assert(sizeof(AKairosSceneManagerActor) == 0x0003A0, "Wrong size on AKairosSceneManagerActor");
-static_assert(offsetof(AKairosSceneManagerActor, DisplayAvatars) == 0x000218, "Member 'AKairosSceneManagerActor::DisplayAvatars' has a wrong offset!");
-static_assert(offsetof(AKairosSceneManagerActor, SpawnedPawnHeadCaptureTransform) == 0x000270, "Member 'AKairosSceneManagerActor::SpawnedPawnHeadCaptureTransform' has a wrong offset!");
-static_assert(offsetof(AKairosSceneManagerActor, SnippetAudioComponent) == 0x0002A0, "Member 'AKairosSceneManagerActor::SnippetAudioComponent' has a wrong offset!");
-static_assert(offsetof(AKairosSceneManagerActor, ActiveGroupWidget) == 0x0002A8, "Member 'AKairosSceneManagerActor::ActiveGroupWidget' has a wrong offset!");
-static_assert(offsetof(AKairosSceneManagerActor, bIsSnippetPaused) == 0x0002B0, "Member 'AKairosSceneManagerActor::bIsSnippetPaused' has a wrong offset!");
-static_assert(offsetof(AKairosSceneManagerActor, ActiveSceneInfo) == 0x0002D0, "Member 'AKairosSceneManagerActor::ActiveSceneInfo' has a wrong offset!");
 
 }
 

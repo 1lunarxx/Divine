@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_GameState_C">();
+		BP_STATIC_CLASS_IMPL("Athena_GameState_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_GameState_C")
 	}
 	static class AAthena_GameState_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_GameState_C>();
 	}
 };
-static_assert(alignof(AAthena_GameState_C) == 0x000008, "Wrong alignment on AAthena_GameState_C");
-static_assert(sizeof(AAthena_GameState_C) == 0x002490, "Wrong size on AAthena_GameState_C");
-static_assert(offsetof(AAthena_GameState_C, UberGraphFrame) == 0x002468, "Member 'AAthena_GameState_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_GameState_C, DefaultSceneRoot) == 0x002470, "Member 'AAthena_GameState_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAthena_GameState_C, Timeline_0_NewTrack_0_21F3C11243B4DF8C6B6A958D51E85950) == 0x002478, "Member 'AAthena_GameState_C::Timeline_0_NewTrack_0_21F3C11243B4DF8C6B6A958D51E85950' has a wrong offset!");
-static_assert(offsetof(AAthena_GameState_C, Timeline_0__Direction_21F3C11243B4DF8C6B6A958D51E85950) == 0x00247C, "Member 'AAthena_GameState_C::Timeline_0__Direction_21F3C11243B4DF8C6B6A958D51E85950' has a wrong offset!");
-static_assert(offsetof(AAthena_GameState_C, Timeline_0) == 0x002480, "Member 'AAthena_GameState_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AAthena_GameState_C, Victory_Royale_Sound) == 0x002488, "Member 'AAthena_GameState_C::Victory_Royale_Sound' has a wrong offset!");
 
 }
 

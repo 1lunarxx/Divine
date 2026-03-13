@@ -112,64 +112,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Prj_Athena_FloppingRabbit_C">();
+		BP_STATIC_CLASS_IMPL("Prj_Athena_FloppingRabbit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Prj_Athena_FloppingRabbit_C")
 	}
 	static class APrj_Athena_FloppingRabbit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APrj_Athena_FloppingRabbit_C>();
 	}
 };
-static_assert(alignof(APrj_Athena_FloppingRabbit_C) == 0x000008, "Wrong alignment on APrj_Athena_FloppingRabbit_C");
-static_assert(sizeof(APrj_Athena_FloppingRabbit_C) == 0x000B70, "Wrong size on APrj_Athena_FloppingRabbit_C");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, UberGraphFrame_Prj_Athena_FloppingRabbit_C) == 0x0008C8, "Member 'APrj_Athena_FloppingRabbit_C::UberGraphFrame_Prj_Athena_FloppingRabbit_C' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, LineLoc) == 0x0008D0, "Member 'APrj_Athena_FloppingRabbit_C::LineLoc' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, BigBob_BigDip_9789CB934FE6D3F1A956D993031B4307) == 0x0008D8, "Member 'APrj_Athena_FloppingRabbit_C::BigBob_BigDip_9789CB934FE6D3F1A956D993031B4307' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, BigBob__Direction_9789CB934FE6D3F1A956D993031B4307) == 0x0008DC, "Member 'APrj_Athena_FloppingRabbit_C::BigBob__Direction_9789CB934FE6D3F1A956D993031B4307' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, BigBob) == 0x0008E0, "Member 'APrj_Athena_FloppingRabbit_C::BigBob' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, NullHit) == 0x0008E8, "Member 'APrj_Athena_FloppingRabbit_C::NullHit' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, WaterRotation) == 0x000970, "Member 'APrj_Athena_FloppingRabbit_C::WaterRotation' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, MeshLocAfterHit) == 0x00097C, "Member 'APrj_Athena_FloppingRabbit_C::MeshLocAfterHit' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, ChanceForBigBob) == 0x000988, "Member 'APrj_Athena_FloppingRabbit_C::ChanceForBigBob' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, ObjectTypes) == 0x000990, "Member 'APrj_Athena_FloppingRabbit_C::ObjectTypes' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, DistanceCheckInterval) == 0x0009A0, "Member 'APrj_Athena_FloppingRabbit_C::DistanceCheckInterval' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Spawner) == 0x0009A8, "Member 'APrj_Athena_FloppingRabbit_C::Spawner' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, StartingCatchBigBobChance) == 0x0009B0, "Member 'APrj_Athena_FloppingRabbit_C::StartingCatchBigBobChance' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Delay_CatchWindow) == 0x0009B4, "Member 'APrj_Athena_FloppingRabbit_C::Delay_CatchWindow' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, CanCatch) == 0x0009B8, "Member 'APrj_Athena_FloppingRabbit_C::CanCatch' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, InWater) == 0x0009B9, "Member 'APrj_Athena_FloppingRabbit_C::InWater' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, PlayerPawn) == 0x0009C0, "Member 'APrj_Athena_FloppingRabbit_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Wire) == 0x0009C8, "Member 'APrj_Athena_FloppingRabbit_C::Wire' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Event_Fire) == 0x0009D0, "Member 'APrj_Athena_FloppingRabbit_C::Event_Fire' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Event_InWorld) == 0x0009D8, "Member 'APrj_Athena_FloppingRabbit_C::Event_InWorld' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, MaxDistanceFromPlayer) == 0x0009E0, "Member 'APrj_Athena_FloppingRabbit_C::MaxDistanceFromPlayer' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, DefaultSpawner) == 0x0009E4, "Member 'APrj_Athena_FloppingRabbit_C::DefaultSpawner' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, IncreaseBigBobChanceAmount) == 0x0009E8, "Member 'APrj_Athena_FloppingRabbit_C::IncreaseBigBobChanceAmount' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_ChanceForBigBob) == 0x0009F0, "Member 'APrj_Athena_FloppingRabbit_C::Row_ChanceForBigBob' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_ChanceForBigBobIncrease) == 0x000A10, "Member 'APrj_Athena_FloppingRabbit_C::Row_ChanceForBigBobIncrease' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_CatchWindow) == 0x000A30, "Member 'APrj_Athena_FloppingRabbit_C::Row_CatchWindow' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FX_HitWater) == 0x000A50, "Member 'APrj_Athena_FloppingRabbit_C::FX_HitWater' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FXScaleHitWater) == 0x000A58, "Member 'APrj_Athena_FloppingRabbit_C::FXScaleHitWater' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Sound_HitWater) == 0x000A68, "Member 'APrj_Athena_FloppingRabbit_C::Sound_HitWater' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FX_WaterDip) == 0x000A70, "Member 'APrj_Athena_FloppingRabbit_C::FX_WaterDip' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FX_WaterDip_HighTier) == 0x000A78, "Member 'APrj_Athena_FloppingRabbit_C::FX_WaterDip_HighTier' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FXScaleWaterDip) == 0x000A80, "Member 'APrj_Athena_FloppingRabbit_C::FXScaleWaterDip' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Sound_WaterDip) == 0x000A90, "Member 'APrj_Athena_FloppingRabbit_C::Sound_WaterDip' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Event_ProjDestroyed) == 0x000A98, "Member 'APrj_Athena_FloppingRabbit_C::Event_ProjDestroyed' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_DistanceCheck) == 0x000AA0, "Member 'APrj_Athena_FloppingRabbit_C::Row_DistanceCheck' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_DistanceCheckZ) == 0x000AC0, "Member 'APrj_Athena_FloppingRabbit_C::Row_DistanceCheckZ' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Dipping) == 0x000AE0, "Member 'APrj_Athena_FloppingRabbit_C::Dipping' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, SpawnedDefaultSpawner) == 0x000AE8, "Member 'APrj_Athena_FloppingRabbit_C::SpawnedDefaultSpawner' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_BobChanceDelayMin) == 0x000AF0, "Member 'APrj_Athena_FloppingRabbit_C::Row_BobChanceDelayMin' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Row_BobChanceDelayMax) == 0x000B10, "Member 'APrj_Athena_FloppingRabbit_C::Row_BobChanceDelayMax' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, SpawnedItem) == 0x000B30, "Member 'APrj_Athena_FloppingRabbit_C::SpawnedItem' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FluidSim) == 0x000B38, "Member 'APrj_Athena_FloppingRabbit_C::FluidSim' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Sound_WaterDip_HighTier) == 0x000B40, "Member 'APrj_Athena_FloppingRabbit_C::Sound_WaterDip_HighTier' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, WorldSpawner) == 0x000B48, "Member 'APrj_Athena_FloppingRabbit_C::WorldSpawner' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, FX_SpawnItems) == 0x000B50, "Member 'APrj_Athena_FloppingRabbit_C::FX_SpawnItems' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, Sound_SpawnItems) == 0x000B58, "Member 'APrj_Athena_FloppingRabbit_C::Sound_SpawnItems' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, ItemAttachMinDist) == 0x000B60, "Member 'APrj_Athena_FloppingRabbit_C::ItemAttachMinDist' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, ItemAttachDistanceRequirement) == 0x000B64, "Member 'APrj_Athena_FloppingRabbit_C::ItemAttachDistanceRequirement' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_FloppingRabbit_C, bStartedFishingSession) == 0x000B68, "Member 'APrj_Athena_FloppingRabbit_C::bStartedFishingSession' has a wrong offset!");
 
 }
 

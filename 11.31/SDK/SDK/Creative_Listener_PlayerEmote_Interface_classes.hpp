@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Creative_Listener_PlayerEmote_Interface.Creative_Listener_PlayerEmote_Interface_C
-// 0x0000 (0x0028 - 0x0028)
-class ICreative_Listener_PlayerEmote_Interface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICreative_Listener_PlayerEmote_Interface_C final
 {
 public:
 	void OnPlayerEmoteStarted(class AFortPawn* PlayerEmoting);
@@ -27,15 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_Listener_PlayerEmote_Interface_C">();
+		BP_STATIC_CLASS_IMPL("Creative_Listener_PlayerEmote_Interface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_Listener_PlayerEmote_Interface_C")
 	}
 	static class ICreative_Listener_PlayerEmote_Interface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICreative_Listener_PlayerEmote_Interface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICreative_Listener_PlayerEmote_Interface_C) == 0x000008, "Wrong alignment on ICreative_Listener_PlayerEmote_Interface_C");
-static_assert(sizeof(ICreative_Listener_PlayerEmote_Interface_C) == 0x000028, "Wrong size on ICreative_Listener_PlayerEmote_Interface_C");
 
 }
 

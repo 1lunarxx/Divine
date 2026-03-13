@@ -40,20 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerVisited_C">();
+		BP_STATIC_CLASS_IMPL("PlayerVisited_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerVisited_C")
 	}
 	static class UPlayerVisited_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerVisited_C>();
 	}
 };
-static_assert(alignof(UPlayerVisited_C) == 0x000008, "Wrong alignment on UPlayerVisited_C");
-static_assert(sizeof(UPlayerVisited_C) == 0x000318, "Wrong size on UPlayerVisited_C");
-static_assert(offsetof(UPlayerVisited_C, UberGraphFrame) == 0x0002F0, "Member 'UPlayerVisited_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerVisited_C, BriefShow) == 0x0002F8, "Member 'UPlayerVisited_C::BriefShow' has a wrong offset!");
-static_assert(offsetof(UPlayerVisited_C, CommonWidgetSwitcher_landmarkorPOI) == 0x000300, "Member 'UPlayerVisited_C::CommonWidgetSwitcher_landmarkorPOI' has a wrong offset!");
-static_assert(offsetof(UPlayerVisited_C, MainBox) == 0x000308, "Member 'UPlayerVisited_C::MainBox' has a wrong offset!");
-static_assert(offsetof(UPlayerVisited_C, MainLocationText) == 0x000310, "Member 'UPlayerVisited_C::MainLocationText' has a wrong offset!");
 
 }
 

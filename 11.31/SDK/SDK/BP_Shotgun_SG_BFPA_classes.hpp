@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Shotgun_SG_BFPA_C">();
+		BP_STATIC_CLASS_IMPL("BP_Shotgun_SG_BFPA_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Shotgun_SG_BFPA_C")
 	}
 	static class UBP_Shotgun_SG_BFPA_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Shotgun_SG_BFPA_C>();
 	}
 };
-static_assert(alignof(UBP_Shotgun_SG_BFPA_C) == 0x000010, "Wrong alignment on UBP_Shotgun_SG_BFPA_C");
-static_assert(sizeof(UBP_Shotgun_SG_BFPA_C) == 0x000310, "Wrong size on UBP_Shotgun_SG_BFPA_C");
-static_assert(offsetof(UBP_Shotgun_SG_BFPA_C, UberGraphFrame) == 0x000270, "Member 'UBP_Shotgun_SG_BFPA_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_SG_BFPA_C, AnimGraphNode_Root_4F6329394B95E045DDC6838AB743FA3F) == 0x000278, "Member 'UBP_Shotgun_SG_BFPA_C::AnimGraphNode_Root_4F6329394B95E045DDC6838AB743FA3F' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_SG_BFPA_C, AnimGraphNode_Slot_58DF360140B29B2553BE3DB3DD1B36FB) == 0x0002A8, "Member 'UBP_Shotgun_SG_BFPA_C::AnimGraphNode_Slot_58DF360140B29B2553BE3DB3DD1B36FB' has a wrong offset!");
-static_assert(offsetof(UBP_Shotgun_SG_BFPA_C, AnimGraphNode_LocalRefPose_87A69A934D766ABE8EC875A0703F52BB) == 0x0002F0, "Member 'UBP_Shotgun_SG_BFPA_C::AnimGraphNode_LocalRefPose_87A69A934D766ABE8EC875A0703F52BB' has a wrong offset!");
 
 }
 

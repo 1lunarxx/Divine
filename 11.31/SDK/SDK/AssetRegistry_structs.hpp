@@ -32,16 +32,6 @@ public:
 	bool                                          bIncludeOnlyOnDiskAssets;                          // 0x00E2(0x0001)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E3[0x5];                                       // 0x00E3(0x0005)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FARFilter) == 0x000008, "Wrong alignment on FARFilter");
-static_assert(sizeof(FARFilter) == 0x0000E8, "Wrong size on FARFilter");
-static_assert(offsetof(FARFilter, PackageNames) == 0x000000, "Member 'FARFilter::PackageNames' has a wrong offset!");
-static_assert(offsetof(FARFilter, PackagePaths) == 0x000010, "Member 'FARFilter::PackagePaths' has a wrong offset!");
-static_assert(offsetof(FARFilter, ObjectPaths) == 0x000020, "Member 'FARFilter::ObjectPaths' has a wrong offset!");
-static_assert(offsetof(FARFilter, ClassNames) == 0x000030, "Member 'FARFilter::ClassNames' has a wrong offset!");
-static_assert(offsetof(FARFilter, RecursiveClassesExclusionSet) == 0x000090, "Member 'FARFilter::RecursiveClassesExclusionSet' has a wrong offset!");
-static_assert(offsetof(FARFilter, bRecursivePaths) == 0x0000E0, "Member 'FARFilter::bRecursivePaths' has a wrong offset!");
-static_assert(offsetof(FARFilter, bRecursiveClasses) == 0x0000E1, "Member 'FARFilter::bRecursiveClasses' has a wrong offset!");
-static_assert(offsetof(FARFilter, bIncludeOnlyOnDiskAssets) == 0x0000E2, "Member 'FARFilter::bIncludeOnlyOnDiskAssets' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.AssetData
 // 0x0050 (0x0050 - 0x0000)
@@ -55,13 +45,6 @@ public:
 	class FName                                   AssetClass;                                        // 0x0020(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_28[0x28];                                      // 0x0028(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FAssetData) == 0x000008, "Wrong alignment on FAssetData");
-static_assert(sizeof(FAssetData) == 0x000050, "Wrong size on FAssetData");
-static_assert(offsetof(FAssetData, ObjectPath) == 0x000000, "Member 'FAssetData::ObjectPath' has a wrong offset!");
-static_assert(offsetof(FAssetData, PackageName) == 0x000008, "Member 'FAssetData::PackageName' has a wrong offset!");
-static_assert(offsetof(FAssetData, PackagePath) == 0x000010, "Member 'FAssetData::PackagePath' has a wrong offset!");
-static_assert(offsetof(FAssetData, AssetName) == 0x000018, "Member 'FAssetData::AssetName' has a wrong offset!");
-static_assert(offsetof(FAssetData, AssetClass) == 0x000020, "Member 'FAssetData::AssetClass' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.AssetBundleEntry
 // 0x0028 (0x0028 - 0x0000)
@@ -72,11 +55,6 @@ public:
 	class FName                                   BundleName;                                        // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>                BundleAssets;                                      // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAssetBundleEntry) == 0x000008, "Wrong alignment on FAssetBundleEntry");
-static_assert(sizeof(FAssetBundleEntry) == 0x000028, "Wrong size on FAssetBundleEntry");
-static_assert(offsetof(FAssetBundleEntry, BundleScope) == 0x000000, "Member 'FAssetBundleEntry::BundleScope' has a wrong offset!");
-static_assert(offsetof(FAssetBundleEntry, BundleName) == 0x000010, "Member 'FAssetBundleEntry::BundleName' has a wrong offset!");
-static_assert(offsetof(FAssetBundleEntry, BundleAssets) == 0x000018, "Member 'FAssetBundleEntry::BundleAssets' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.AssetBundleData
 // 0x0010 (0x0010 - 0x0000)
@@ -85,9 +63,6 @@ struct FAssetBundleData final
 public:
 	TArray<struct FAssetBundleEntry>              Bundles;                                           // 0x0000(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAssetBundleData) == 0x000008, "Wrong alignment on FAssetBundleData");
-static_assert(sizeof(FAssetBundleData) == 0x000010, "Wrong size on FAssetBundleData");
-static_assert(offsetof(FAssetBundleData, Bundles) == 0x000000, "Member 'FAssetBundleData::Bundles' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.TagAndValue
 // 0x0018 (0x0018 - 0x0000)
@@ -97,10 +72,6 @@ public:
 	class FName                                   Tag;                                               // 0x0000(0x0008)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0008(0x0010)(BlueprintVisible, ZeroConstructor, Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTagAndValue) == 0x000008, "Wrong alignment on FTagAndValue");
-static_assert(sizeof(FTagAndValue) == 0x000018, "Wrong size on FTagAndValue");
-static_assert(offsetof(FTagAndValue, Tag) == 0x000000, "Member 'FTagAndValue::Tag' has a wrong offset!");
-static_assert(offsetof(FTagAndValue, Value) == 0x000008, "Member 'FTagAndValue::Value' has a wrong offset!");
 
 // ScriptStruct AssetRegistry.AssetRegistryDependencyOptions
 // 0x0005 (0x0005 - 0x0000)
@@ -113,13 +84,6 @@ public:
 	bool                                          bIncludeSoftManagementReferences;                  // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeHardManagementReferences;                  // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FAssetRegistryDependencyOptions) == 0x000001, "Wrong alignment on FAssetRegistryDependencyOptions");
-static_assert(sizeof(FAssetRegistryDependencyOptions) == 0x000005, "Wrong size on FAssetRegistryDependencyOptions");
-static_assert(offsetof(FAssetRegistryDependencyOptions, bIncludeSoftPackageReferences) == 0x000000, "Member 'FAssetRegistryDependencyOptions::bIncludeSoftPackageReferences' has a wrong offset!");
-static_assert(offsetof(FAssetRegistryDependencyOptions, bIncludeHardPackageReferences) == 0x000001, "Member 'FAssetRegistryDependencyOptions::bIncludeHardPackageReferences' has a wrong offset!");
-static_assert(offsetof(FAssetRegistryDependencyOptions, bIncludeSearchableNames) == 0x000002, "Member 'FAssetRegistryDependencyOptions::bIncludeSearchableNames' has a wrong offset!");
-static_assert(offsetof(FAssetRegistryDependencyOptions, bIncludeSoftManagementReferences) == 0x000003, "Member 'FAssetRegistryDependencyOptions::bIncludeSoftManagementReferences' has a wrong offset!");
-static_assert(offsetof(FAssetRegistryDependencyOptions, bIncludeHardManagementReferences) == 0x000004, "Member 'FAssetRegistryDependencyOptions::bIncludeHardManagementReferences' has a wrong offset!");
 
 }
 

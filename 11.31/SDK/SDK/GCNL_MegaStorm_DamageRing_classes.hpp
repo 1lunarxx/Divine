@@ -51,26 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_MegaStorm_DamageRing_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_MegaStorm_DamageRing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_MegaStorm_DamageRing_C")
 	}
 	static class AGCNL_MegaStorm_DamageRing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_MegaStorm_DamageRing_C>();
 	}
 };
-static_assert(alignof(AGCNL_MegaStorm_DamageRing_C) == 0x000008, "Wrong alignment on AGCNL_MegaStorm_DamageRing_C");
-static_assert(sizeof(AGCNL_MegaStorm_DamageRing_C) == 0x0007D0, "Wrong size on AGCNL_MegaStorm_DamageRing_C");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_MegaStorm_DamageRing_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_1_StormDamage_20EF97A841793BC1BC17A38E68D1694B) == 0x000790, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_1_StormDamage_20EF97A841793BC1BC17A38E68D1694B' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_1__Direction_20EF97A841793BC1BC17A38E68D1694B) == 0x000794, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_1__Direction_20EF97A841793BC1BC17A38E68D1694B' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_1) == 0x000798, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_1' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_0_StormDamage_217AB728482679C9E1B9D281A03AF2D6) == 0x0007A0, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_0_StormDamage_217AB728482679C9E1B9D281A03AF2D6' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_0__Direction_217AB728482679C9E1B9D281A03AF2D6) == 0x0007A4, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_0__Direction_217AB728482679C9E1B9D281A03AF2D6' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, Timeline_0) == 0x0007A8, "Member 'AGCNL_MegaStorm_DamageRing_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, StormDamageFX) == 0x0007B0, "Member 'AGCNL_MegaStorm_DamageRing_C::StormDamageFX' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, RawMagnitude) == 0x0007B8, "Member 'AGCNL_MegaStorm_DamageRing_C::RawMagnitude' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, SafeZoneIndicator) == 0x0007C0, "Member 'AGCNL_MegaStorm_DamageRing_C::SafeZoneIndicator' has a wrong offset!");
-static_assert(offsetof(AGCNL_MegaStorm_DamageRing_C, OnDamageSound) == 0x0007C8, "Member 'AGCNL_MegaStorm_DamageRing_C::OnDamageSound' has a wrong offset!");
 
 }
 

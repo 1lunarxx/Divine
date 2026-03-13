@@ -49,24 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Fort_Entry_Music_Controller_BP_C">();
+		BP_STATIC_CLASS_IMPL("Fort_Entry_Music_Controller_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Fort_Entry_Music_Controller_BP_C")
 	}
 	static class AFort_Entry_Music_Controller_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFort_Entry_Music_Controller_BP_C>();
 	}
 };
-static_assert(alignof(AFort_Entry_Music_Controller_BP_C) == 0x000008, "Wrong alignment on AFort_Entry_Music_Controller_BP_C");
-static_assert(sizeof(AFort_Entry_Music_Controller_BP_C) == 0x000260, "Wrong size on AFort_Entry_Music_Controller_BP_C");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, UberGraphFrame) == 0x000218, "Member 'AFort_Entry_Music_Controller_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Enter_Menu_Loop) == 0x000220, "Member 'AFort_Entry_Music_Controller_BP_C::Enter_Menu_Loop' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_B) == 0x000228, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_B' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MenuMusic_A) == 0x000230, "Member 'AFort_Entry_Music_Controller_BP_C::MenuMusic_A' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, LoginMusic) == 0x000238, "Member 'AFort_Entry_Music_Controller_BP_C::LoginMusic' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, FadeOutTime) == 0x000240, "Member 'AFort_Entry_Music_Controller_BP_C::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, CurrentMusic) == 0x000248, "Member 'AFort_Entry_Music_Controller_BP_C::CurrentMusic' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, Is_Music_Activate_Override) == 0x000250, "Member 'AFort_Entry_Music_Controller_BP_C::Is_Music_Activate_Override' has a wrong offset!");
-static_assert(offsetof(AFort_Entry_Music_Controller_BP_C, MusicPackToPlayLater) == 0x000258, "Member 'AFort_Entry_Music_Controller_BP_C::MusicPackToPlayLater' has a wrong offset!");
 
 }
 

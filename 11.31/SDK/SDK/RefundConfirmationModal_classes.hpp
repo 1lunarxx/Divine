@@ -38,23 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RefundConfirmationModal_C">();
+		BP_STATIC_CLASS_IMPL("RefundConfirmationModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RefundConfirmationModal_C")
 	}
 	static class URefundConfirmationModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URefundConfirmationModal_C>();
 	}
 };
-static_assert(alignof(URefundConfirmationModal_C) == 0x000008, "Wrong alignment on URefundConfirmationModal_C");
-static_assert(sizeof(URefundConfirmationModal_C) == 0x000478, "Wrong size on URefundConfirmationModal_C");
-static_assert(offsetof(URefundConfirmationModal_C, UberGraphFrame) == 0x000430, "Member 'URefundConfirmationModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, CommonTextBlock_6) == 0x000438, "Member 'URefundConfirmationModal_C::CommonTextBlock_6' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, Text_Name) == 0x000440, "Member 'URefundConfirmationModal_C::Text_Name' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, Text_RefundCount) == 0x000448, "Member 'URefundConfirmationModal_C::Text_RefundCount' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, Text_RefundsRemaining) == 0x000450, "Member 'URefundConfirmationModal_C::Text_RefundsRemaining' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, Text_YesDetails) == 0x000458, "Member 'URefundConfirmationModal_C::Text_YesDetails' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, TicketCounter) == 0x000460, "Member 'URefundConfirmationModal_C::TicketCounter' has a wrong offset!");
-static_assert(offsetof(URefundConfirmationModal_C, TicketArray) == 0x000468, "Member 'URefundConfirmationModal_C::TicketArray' has a wrong offset!");
 
 }
 

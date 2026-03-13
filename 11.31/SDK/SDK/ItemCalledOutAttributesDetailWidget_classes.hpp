@@ -40,19 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCalledOutAttributesDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemCalledOutAttributesDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCalledOutAttributesDetailWidget_C")
 	}
 	static class UItemCalledOutAttributesDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCalledOutAttributesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemCalledOutAttributesDetailWidget_C) == 0x000008, "Wrong alignment on UItemCalledOutAttributesDetailWidget_C");
-static_assert(sizeof(UItemCalledOutAttributesDetailWidget_C) == 0x0002D8, "Wrong size on UItemCalledOutAttributesDetailWidget_C");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, UberGraphFrame) == 0x0002B0, "Member 'UItemCalledOutAttributesDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, AmmoTypeIndicator) == 0x0002B8, "Member 'UItemCalledOutAttributesDetailWidget_C::AmmoTypeIndicator' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, ContainerWrapBox) == 0x0002C0, "Member 'UItemCalledOutAttributesDetailWidget_C::ContainerWrapBox' has a wrong offset!");
-static_assert(offsetof(UItemCalledOutAttributesDetailWidget_C, StatWidgets) == 0x0002C8, "Member 'UItemCalledOutAttributesDetailWidget_C::StatWidgets' has a wrong offset!");
 
 }
 

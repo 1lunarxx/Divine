@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Abilities_Activation_DBNOResurrect_Athena_C">();
+		BP_STATIC_CLASS_IMPL("GC_Abilities_Activation_DBNOResurrect_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Abilities_Activation_DBNOResurrect_Athena_C")
 	}
 	static class UGC_Abilities_Activation_DBNOResurrect_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGC_Abilities_Activation_DBNOResurrect_Athena_C>();
 	}
 };
-static_assert(alignof(UGC_Abilities_Activation_DBNOResurrect_Athena_C) == 0x000008, "Wrong alignment on UGC_Abilities_Activation_DBNOResurrect_Athena_C");
-static_assert(sizeof(UGC_Abilities_Activation_DBNOResurrect_Athena_C) == 0x0001B0, "Wrong size on UGC_Abilities_Activation_DBNOResurrect_Athena_C");
 
 }
 

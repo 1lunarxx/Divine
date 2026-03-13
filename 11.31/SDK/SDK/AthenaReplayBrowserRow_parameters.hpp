@@ -25,11 +25,6 @@ public:
 	bool                                          Bold;                                              // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bCorrupt;                                          // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaReplayBrowserRow_C_BP_HandleReplayStateSet) == 0x000001, "Wrong alignment on AthenaReplayBrowserRow_C_BP_HandleReplayStateSet");
-static_assert(sizeof(AthenaReplayBrowserRow_C_BP_HandleReplayStateSet) == 0x000003, "Wrong size on AthenaReplayBrowserRow_C_BP_HandleReplayStateSet");
-static_assert(offsetof(AthenaReplayBrowserRow_C_BP_HandleReplayStateSet, bSaved) == 0x000000, "Member 'AthenaReplayBrowserRow_C_BP_HandleReplayStateSet::bSaved' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_BP_HandleReplayStateSet, Bold) == 0x000001, "Member 'AthenaReplayBrowserRow_C_BP_HandleReplayStateSet::Bold' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_BP_HandleReplayStateSet, bCorrupt) == 0x000002, "Member 'AthenaReplayBrowserRow_C_BP_HandleReplayStateSet::bCorrupt' has a wrong offset!");
 
 // Function AthenaReplayBrowserRow.AthenaReplayBrowserRow_C.ExecuteUbergraph_AthenaReplayBrowserRow
 // 0x0098 (0x0098 - 0x0000)
@@ -62,30 +57,6 @@ public:
 	class UWidgetAnimation*                       K2Node_Select_Default_2;                           // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow) == 0x000008, "Wrong alignment on AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow");
-static_assert(sizeof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow) == 0x000098, "Wrong size on AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, EntryPoint) == 0x000000, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Event_bSaved) == 0x000004, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Event_bSaved' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Event_bOld) == 0x000005, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Event_bOld' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Event_bCorrupt) == 0x000006, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Event_bCorrupt' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_bool_Variable) == 0x000007, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_BooleanOR_ReturnValue) == 0x000008, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_bool_Variable_1) == 0x000009, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_struct_Variable) == 0x00000C, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_bool_Variable_2) == 0x00001C, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_struct_Variable_1) == 0x000020, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, Temp_struct_Variable_2) == 0x000030, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Select_Default) == 0x000040, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Select_Default_1) == 0x000050, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000060, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_PlayAnimationForward_ReturnValue) == 0x000068, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_PlayAnimationReverse_ReturnValue_1) == 0x000070, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_PlayAnimationReverse_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000078, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_GetSelected_ReturnValue) == 0x000080, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_GetSelected_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_IsHovered_ReturnValue) == 0x000081, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_GetSelected_ReturnValue_1) == 0x000082, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_GetSelected_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, K2Node_Select_Default_2) == 0x000088, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000090, "Member 'AthenaReplayBrowserRow_C_ExecuteUbergraph_AthenaReplayBrowserRow::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
 
 }
 

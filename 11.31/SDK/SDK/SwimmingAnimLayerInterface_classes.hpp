@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class ISwimmingAnimLayerInterface_C final : public IAnimLayerInterface
+// 0x0000 (0x0000 - 0x0000)
+class ISwimmingAnimLayerInterface_C final
 {
 public:
 	void SwimmingLayer(const struct FPoseLink& MainPlayerAnimBP, struct FPoseLink* SwimmingLayer_0);
@@ -34,15 +34,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SwimmingAnimLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("SwimmingAnimLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SwimmingAnimLayerInterface_C")
 	}
 	static class ISwimmingAnimLayerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ISwimmingAnimLayerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ISwimmingAnimLayerInterface_C) == 0x000008, "Wrong alignment on ISwimmingAnimLayerInterface_C");
-static_assert(sizeof(ISwimmingAnimLayerInterface_C) == 0x000028, "Wrong size on ISwimmingAnimLayerInterface_C");
 
 }
 

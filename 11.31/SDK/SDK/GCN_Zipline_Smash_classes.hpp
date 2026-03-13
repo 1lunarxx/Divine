@@ -27,15 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Zipline_Smash_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Zipline_Smash_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Zipline_Smash_C")
 	}
 	static class UGCN_Zipline_Smash_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_Zipline_Smash_C>();
 	}
 };
-static_assert(alignof(UGCN_Zipline_Smash_C) == 0x000008, "Wrong alignment on UGCN_Zipline_Smash_C");
-static_assert(sizeof(UGCN_Zipline_Smash_C) == 0x0001B0, "Wrong size on UGCN_Zipline_Smash_C");
 
 }
 

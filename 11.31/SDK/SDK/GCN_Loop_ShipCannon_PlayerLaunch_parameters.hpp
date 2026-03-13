@@ -26,12 +26,6 @@ public:
 	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart) == 0x000008, "Wrong alignment on GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart");
-static_assert(sizeof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart) == 0x0000E0, "Wrong size on GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnLoopingStart::AudioComponents' has a wrong offset!");
 
 // Function GCN_Loop_ShipCannon_PlayerLaunch.GCN_Loop_ShipCannon_PlayerLaunch_C.OnRemoval
 // 0x00F0 (0x00F0 - 0x0000)
@@ -45,14 +39,6 @@ public:
 	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval) == 0x000008, "Wrong alignment on GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval");
-static_assert(sizeof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval) == 0x0000F0, "Wrong size on GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, MyTarget) == 0x000000, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, Parameters) == 0x000008, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, ParticleComponents) == 0x0000C0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, AudioComponents) == 0x0000D0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval, BurstDecalInstance) == 0x0000E8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_OnRemoval::BurstDecalInstance' has a wrong offset!");
 
 // Function GCN_Loop_ShipCannon_PlayerLaunch.GCN_Loop_ShipCannon_PlayerLaunch_C.ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch
 // 0x01F8 (0x01F8 - 0x0000)
@@ -77,23 +63,6 @@ public:
 	class AFortPlayerPawnAthena*                  K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1;    // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch) == 0x000008, "Wrong alignment on GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch");
-static_assert(sizeof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch) == 0x0001F8, "Wrong size on GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, EntryPoint) == 0x000000, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_MyTarget) == 0x000008, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_Parameters) == 0x000010, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_ParticleComponents) == 0x0000C8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_AudioComponents) == 0x0000D8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_BurstCameraShakeInstance) == 0x0000E8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_BurstDecalInstance) == 0x0000F0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0000F8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_MyTarget_1) == 0x000108, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_MyTarget_1' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_Parameters_1) == 0x000110, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_Parameters_1' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_ParticleComponents_1) == 0x0001C8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_ParticleComponents_1' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_Event_AudioComponents_1) == 0x0001D8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_Event_AudioComponents_1' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1) == 0x0001E8, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1' has a wrong offset!");
-static_assert(offsetof(GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch, K2Node_DynamicCast_bSuccess_1) == 0x0001F0, "Member 'GCN_Loop_ShipCannon_PlayerLaunch_C_ExecuteUbergraph_GCN_Loop_ShipCannon_PlayerLaunch::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 }
 

@@ -48,28 +48,6 @@ public:
 	int32                                         CallFunc_GetCurrentSeasonNumber_ReturnValue;       // 0x007C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0080(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen) == 0x000008, "Wrong alignment on BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen) == 0x000088, "Wrong size on BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, EntryPoint) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_HandleMobileClosed_PassThrough) == 0x000004, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_HandleMobileClosed_PassThrough' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, Temp_byte_Variable) == 0x000005, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, Temp_byte_Variable_1) == 0x000006, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_Event_ItemDisplayed) == 0x000008, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_Event_ItemDisplayed' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_SwitchEnum_CmpSuccess) == 0x000010, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_MakeStruct_DataTableRowHandle) == 0x000018, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000028, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition) == 0x000040, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_DynamicCast_AsAthena_Cosmetic_Item_Definition' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, Temp_bool_Variable) == 0x000049, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_ComponentBoundEvent_Button_1) == 0x000050, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_PlayAnimation_ReturnValue) == 0x000058, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_PlayAnimation_ReturnValue_1) == 0x000060, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000068, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_GetContext_ReturnValue) == 0x000070, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_Select_Default) == 0x000078, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, CallFunc_GetCurrentSeasonNumber_ReturnValue) == 0x00007C, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::CallFunc_GetCurrentSeasonNumber_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen, K2Node_ComponentBoundEvent_Button) == 0x000080, "Member 'BattlePassViewRewardsScreen_C_ExecuteUbergraph_BattlePassViewRewardsScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -78,9 +56,6 @@ struct BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -89,9 +64,6 @@ struct BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_BndEvt__Button_CycleSort_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.OnItemViewed
 // 0x0008 (0x0008 - 0x0000)
@@ -100,9 +72,6 @@ struct BattlePassViewRewardsScreen_C_OnItemViewed final
 public:
 	const class UBattlePassViewRewardData*        ItemDisplayed;                                     // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_OnItemViewed) == 0x000008, "Wrong alignment on BattlePassViewRewardsScreen_C_OnItemViewed");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_OnItemViewed) == 0x000008, "Wrong size on BattlePassViewRewardsScreen_C_OnItemViewed");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_OnItemViewed, ItemDisplayed) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_OnItemViewed::ItemDisplayed' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.GetWidgetForFramingViewedItem
 // 0x0008 (0x0008 - 0x0000)
@@ -111,9 +80,6 @@ struct BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong alignment on BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong size on BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem, ReturnValue) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_GetWidgetForFramingViewedItem::ReturnValue' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.CloseScreen
 // 0x0001 (0x0001 - 0x0000)
@@ -122,9 +88,6 @@ struct BattlePassViewRewardsScreen_C_CloseScreen final
 public:
 	bool                                          bPassThrough;                                      // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_CloseScreen) == 0x000001, "Wrong alignment on BattlePassViewRewardsScreen_C_CloseScreen");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_CloseScreen) == 0x000001, "Wrong size on BattlePassViewRewardsScreen_C_CloseScreen");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_CloseScreen, bPassThrough) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_CloseScreen::bPassThrough' has a wrong offset!");
 
 // Function BattlePassViewRewardsScreen.BattlePassViewRewardsScreen_C.HandleMobileClosed
 // 0x0001 (0x0001 - 0x0000)
@@ -133,9 +96,6 @@ struct BattlePassViewRewardsScreen_C_HandleMobileClosed final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassViewRewardsScreen_C_HandleMobileClosed) == 0x000001, "Wrong alignment on BattlePassViewRewardsScreen_C_HandleMobileClosed");
-static_assert(sizeof(BattlePassViewRewardsScreen_C_HandleMobileClosed) == 0x000001, "Wrong size on BattlePassViewRewardsScreen_C_HandleMobileClosed");
-static_assert(offsetof(BattlePassViewRewardsScreen_C_HandleMobileClosed, PassThrough) == 0x000000, "Member 'BattlePassViewRewardsScreen_C_HandleMobileClosed::PassThrough' has a wrong offset!");
 
 }
 

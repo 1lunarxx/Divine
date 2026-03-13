@@ -43,23 +43,6 @@ public:
 	bool                                          CallFunc_GetIsPlayingReplay_ReturnValue;           // 0x00F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x00FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor");
-static_assert(sizeof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor) == 0x000100, "Wrong size on Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, EntryPoint) == 0x000000, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, Temp_bool_IsClosed_Variable) == 0x000004, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, Temp_bool_Has_Been_Initd_Variable) == 0x000005, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_GameplayCueEvent_EventType) == 0x000006, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_GameplayCueEvent_Parameters) == 0x000008, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000C0, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_SwitchEnum_CmpSuccess) == 0x0000CC, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000D0, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, CallFunc_Conv_IntToByte_ReturnValue) == 0x0000DC, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_ComponentBoundEvent_TriggerInstigator_1) == 0x0000E0, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_ComponentBoundEvent_TriggerInstigator_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_ComponentBoundEvent_TriggerInstigator) == 0x0000E8, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_ComponentBoundEvent_TriggerInstigator' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_ComponentBoundEvent_Minigame) == 0x0000F0, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_ComponentBoundEvent_Minigame' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, K2Node_ComponentBoundEvent_NewMinigameState) == 0x0000F8, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::K2Node_ComponentBoundEvent_NewMinigameState' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, CallFunc_GetIsPlayingReplay_ReturnValue) == 0x0000F9, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::CallFunc_GetIsPlayingReplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor, CallFunc_Not_PreBool_ReturnValue) == 0x0000FA, "Member 'Device_Volume_Floor_C_ExecuteUbergraph_Device_Volume_Floor::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -69,10 +52,6 @@ public:
 	class AFortMinigame*                          Minigame;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortMinigameState                            NewMinigameState;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature");
-static_assert(sizeof(Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature) == 0x000010, "Wrong size on Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature");
-static_assert(offsetof(Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature, Minigame) == 0x000000, "Member 'Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature::Minigame' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature, NewMinigameState) == 0x000008, "Member 'Device_Volume_Floor_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_9_OnMinigameStateChanged__DelegateSignature::NewMinigameState' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +60,6 @@ struct Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEv
 public:
 	class AController*                            TriggerInstigator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature");
-static_assert(sizeof(Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong size on Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature");
-static_assert(offsetof(Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature, TriggerInstigator) == 0x000000, "Member 'Device_Volume_Floor_C_BndEvt__DisableWhenReceived_K2Node_ComponentBoundEvent_5_OnGameplayMessageReceived__DelegateSignature::TriggerInstigator' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -92,9 +68,6 @@ struct Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEve
 public:
 	class AController*                            TriggerInstigator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
-static_assert(sizeof(Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong size on Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature");
-static_assert(offsetof(Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature, TriggerInstigator) == 0x000000, "Member 'Device_Volume_Floor_C_BndEvt__EnableWhenReceived_K2Node_ComponentBoundEvent_4_OnGameplayMessageReceived__DelegateSignature::TriggerInstigator' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.GameplayCue.Abilities.Activation.Traps.ActivateTrap
 // 0x00C0 (0x00C0 - 0x0000)
@@ -105,10 +78,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap");
-static_assert(sizeof(Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap) == 0x0000C0, "Wrong size on Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap");
-static_assert(offsetof(Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap, EventType) == 0x000000, "Member 'Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap::EventType' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap, Parameters) == 0x000008, "Member 'Device_Volume_Floor_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap::Parameters' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
@@ -119,10 +88,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_UserConstructionScript) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_UserConstructionScript");
-static_assert(sizeof(Device_Volume_Floor_C_UserConstructionScript) == 0x000010, "Wrong size on Device_Volume_Floor_C_UserConstructionScript");
-static_assert(offsetof(Device_Volume_Floor_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'Device_Volume_Floor_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Device_Volume_Floor_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.UpdateVolumeSize
 // 0x00F0 (0x00F0 - 0x0000)
@@ -142,19 +107,6 @@ public:
 	struct FVector                                CallFunc_Subtract_VectorVector_ReturnValue;        // 0x00D0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0x00DC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_UpdateVolumeSize) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_UpdateVolumeSize");
-static_assert(sizeof(Device_Volume_Floor_C_UpdateVolumeSize) == 0x0000F0, "Wrong size on Device_Volume_Floor_C_UpdateVolumeSize");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_GetTriggerLocation_Location) == 0x000000, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_GetTriggerLocation_Location' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_GetVolumeMID_EliminationVolumeMID) == 0x000010, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_GetVolumeMID_EliminationVolumeMID' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000018, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_FMax_ReturnValue) == 0x0000A0, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_MakeVector_ReturnValue) == 0x0000A4, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_FMax_ReturnValue_1) == 0x0000B0, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000B4, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_MakeVector_ReturnValue_1) == 0x0000B8, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_Multiply_VectorVector_ReturnValue) == 0x0000C4, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000D0, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateVolumeSize, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0000DC, "Member 'Device_Volume_Floor_C_UpdateVolumeSize::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.GetVolumeMID
 // 0x0028 (0x0028 - 0x0000)
@@ -167,13 +119,6 @@ public:
 	class UMaterialInstanceDynamic*               K2Node_DynamicCast_AsMaterial_Instance_Dynamic;    // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_GetVolumeMID) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_GetVolumeMID");
-static_assert(sizeof(Device_Volume_Floor_C_GetVolumeMID) == 0x000028, "Wrong size on Device_Volume_Floor_C_GetVolumeMID");
-static_assert(offsetof(Device_Volume_Floor_C_GetVolumeMID, EliminationVolumeMID) == 0x000000, "Member 'Device_Volume_Floor_C_GetVolumeMID::EliminationVolumeMID' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetVolumeMID, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'Device_Volume_Floor_C_GetVolumeMID::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetVolumeMID, CallFunc_GetMaterial_ReturnValue) == 0x000010, "Member 'Device_Volume_Floor_C_GetVolumeMID::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetVolumeMID, K2Node_DynamicCast_AsMaterial_Instance_Dynamic) == 0x000018, "Member 'Device_Volume_Floor_C_GetVolumeMID::K2Node_DynamicCast_AsMaterial_Instance_Dynamic' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetVolumeMID, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Device_Volume_Floor_C_GetVolumeMID::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.GetTriggerLocation
 // 0x003C (0x003C - 0x0000)
@@ -192,19 +137,6 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue;               // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0030(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_GetTriggerLocation) == 0x000004, "Wrong alignment on Device_Volume_Floor_C_GetTriggerLocation");
-static_assert(sizeof(Device_Volume_Floor_C_GetTriggerLocation) == 0x00003C, "Wrong size on Device_Volume_Floor_C_GetTriggerLocation");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, Location) == 0x000000, "Member 'Device_Volume_Floor_C_GetTriggerLocation::Location' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_Dot_VectorVector_ReturnValue) == 0x00000C, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_X) == 0x000010, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_Y) == 0x000014, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_Z) == 0x000018, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_X_1) == 0x00001C, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_Y_1) == 0x000020, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_BreakVector_Z_1) == 0x000024, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000028, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_GetTriggerLocation, CallFunc_MakeVector_ReturnValue) == 0x000030, "Member 'Device_Volume_Floor_C_GetTriggerLocation::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.VFXParameters
 // 0x0350 (0x0350 - 0x0000)
@@ -247,39 +179,6 @@ public:
 	struct FParticleSysParam                      K2Node_MakeStruct_ParticleSysParam_4;              // 0x02C0(0x0080)(IsPlainOldData, NoDestructor)
 	TArray<struct FParticleSysParam>              K2Node_MakeArray_Array;                            // 0x0340(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Device_Volume_Floor_C_VFXParameters) == 0x000010, "Wrong alignment on Device_Volume_Floor_C_VFXParameters");
-static_assert(sizeof(Device_Volume_Floor_C_VFXParameters) == 0x000350, "Wrong size on Device_Volume_Floor_C_VFXParameters");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, Array) == 0x000000, "Member 'Device_Volume_Floor_C_VFXParameters::Array' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue) == 0x000010, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeStruct_ParticleSysParam) == 0x000020, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_X) == 0x0000A0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_Y) == 0x0000A4, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_Z) == 0x0000A8, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_FMax_ReturnValue) == 0x0000AC, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_FMax_ReturnValue_1) == 0x0000B0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000B4, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x0000B8, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000BC, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue_1) == 0x0000C0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue_2) == 0x0000CC, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeStruct_ParticleSysParam_1) == 0x0000E0, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeStruct_ParticleSysParam_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeStruct_ParticleSysParam_2) == 0x000160, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeStruct_ParticleSysParam_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue_3) == 0x0001E0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0001EC, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue_4) == 0x0001F0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeStruct_ParticleSysParam_3) == 0x000200, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeStruct_ParticleSysParam_3' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000280, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_MakeVector_ReturnValue_5) == 0x000284, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_MakeVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Multiply_VectorVector_ReturnValue) == 0x000290, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_X_1) == 0x00029C, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_Y_1) == 0x0002A0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_BreakVector_Z_1) == 0x0002A4, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0002A8, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x0002AC, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_Divide_FloatFloat_ReturnValue_3) == 0x0002B0, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_Divide_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, CallFunc_FMin_ReturnValue) == 0x0002B4, "Member 'Device_Volume_Floor_C_VFXParameters::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeStruct_ParticleSysParam_4) == 0x0002C0, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeStruct_ParticleSysParam_4' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_VFXParameters, K2Node_MakeArray_Array) == 0x000340, "Member 'Device_Volume_Floor_C_VFXParameters::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.UpdateMinigameVisuals
 // 0x0008 (0x0008 - 0x0000)
@@ -295,16 +194,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0007(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_UpdateMinigameVisuals) == 0x000001, "Wrong alignment on Device_Volume_Floor_C_UpdateMinigameVisuals");
-static_assert(sizeof(Device_Volume_Floor_C_UpdateMinigameVisuals) == 0x000008, "Wrong size on Device_Volume_Floor_C_UpdateMinigameVisuals");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, bIsInPregame) == 0x000000, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::bIsInPregame' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_IsDedicatedServer_ReturnValue) == 0x000001, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_IsPregame_ReturnValue) == 0x000003, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_IsPregame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_BooleanOR_ReturnValue) == 0x000005, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_BooleanAND_ReturnValue_1) == 0x000006, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_UpdateMinigameVisuals, CallFunc_BooleanOR_ReturnValue_1) == 0x000007, "Member 'Device_Volume_Floor_C_UpdateMinigameVisuals::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.WasActivatedByOverlappingActor
 // 0x00E8 (0x00E8 - 0x0000)
@@ -359,44 +248,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x00D4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class AActor*>                         CallFunc_GetOverlappingActors_OverlappingActors;   // 0x00D8(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(Device_Volume_Floor_C_WasActivatedByOverlappingActor) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_WasActivatedByOverlappingActor");
-static_assert(sizeof(Device_Volume_Floor_C_WasActivatedByOverlappingActor) == 0x0000E8, "Wrong size on Device_Volume_Floor_C_WasActivatedByOverlappingActor");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, bActivated) == 0x000000, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::bActivated' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, Passengers) == 0x000008, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::Passengers' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, OverlappingActors) == 0x000018, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::OverlappingActors' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, Temp_int_Array_Index_Variable) == 0x000030, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_BooleanAND_ReturnValue) == 0x000034, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Conv_IntToByte_ReturnValue) == 0x00003C, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Conv_IntToByte_ReturnValue_1) == 0x00003D, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Conv_IntToByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, Temp_int_Array_Index_Variable_1) == 0x000040, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Array_Get_Item) == 0x000048, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000058, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Greater_IntInt_ReturnValue) == 0x000061, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_GetActorTeam_ReturnValue) == 0x000062, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000063, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, Temp_int_Loop_Counter_Variable_1) == 0x000064, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Array_Get_Item_1) == 0x000068, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Array_Length_ReturnValue_2) == 0x000070, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_AsBuilding_Rift) == 0x000078, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_AsBuilding_Rift' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Less_IntInt_ReturnValue) == 0x000081, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_AsFort_Pawn) == 0x000088, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_bSuccess_2) == 0x000090, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_AsFort_Player_Pawn_1) == 0x000098, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_AsFort_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_bSuccess_3) == 0x0000A0, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_GetActorTeam_ReturnValue_1) == 0x0000A1, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_GetActorTeam_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_AsFort_Vehicle_Interface) == 0x0000A8, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_AsFort_Vehicle_Interface' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, K2Node_DynamicCast_bSuccess_4) == 0x0000B8, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x0000B9, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_GetAllPassengers_ReturnValue) == 0x0000C0, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_GetAllPassengers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000D0, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000D4, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_WasActivatedByOverlappingActor, CallFunc_GetOverlappingActors_OverlappingActors) == 0x0000D8, "Member 'Device_Volume_Floor_C_WasActivatedByOverlappingActor::CallFunc_GetOverlappingActors_OverlappingActors' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.BindOnExitVehicleForAffectPawn
 // 0x0030 (0x0030 - 0x0000)
@@ -411,14 +262,6 @@ public:
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn");
-static_assert(sizeof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn) == 0x000030, "Wrong size on Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, AffectedPawn) == 0x000000, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::AffectedPawn' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000018, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, CallFunc_Array_AddUnique_ReturnValue) == 0x000024, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000028, "Member 'Device_Volume_Floor_C_BindOnExitVehicleForAffectPawn::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.OnAffectedPlayerExitedVehicle
 // 0x0100 (0x0100 - 0x0000)
@@ -480,50 +323,6 @@ public:
 	uint8                                         Pad_EB[0x1];                                       // 0x00EB(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x00EC(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle");
-static_assert(sizeof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle) == 0x000100, "Wrong size on Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, OverlappingTargets) == 0x000000, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::OverlappingTargets' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, Temp_int_Array_Index_Variable) == 0x000014, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, Temp_int_Loop_Counter_Variable) == 0x00001C, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Add_IntInt_ReturnValue) == 0x000024, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, Temp_int_Loop_Counter_Variable_1) == 0x000028, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_GetTouchingDamageTargets_ReturnValue) == 0x000030, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_GetTouchingDamageTargets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Add_IntInt_ReturnValue_1) == 0x000044, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Length_ReturnValue_1) == 0x000048, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00004C, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, Temp_int_Array_Index_Variable_1) == 0x000050, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Get_Item) == 0x000058, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000068, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000078, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_GetAbilitySystemComponent_ReturnValue_1) == 0x000080, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_GetAbilitySystemComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_RemoveActiveEffectsWithTags_ReturnValue) == 0x000088, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_RemoveActiveEffectsWithTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_RemoveActiveEffectsWithTags_ReturnValue_1) == 0x00008C, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_RemoveActiveEffectsWithTags_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_IsValid_ReturnValue_1) == 0x000091, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000098, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_AsFort_Vehicle_Interface) == 0x0000A0, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_AsFort_Vehicle_Interface' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_bSuccess_1) == 0x0000B0, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_IsValid_ReturnValue_2) == 0x0000B1, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_GetAllPassengers_ReturnValue) == 0x0000B8, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_GetAllPassengers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Length_ReturnValue_2) == 0x0000C8, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Find_ReturnValue) == 0x0000CC, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000D0, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_EqualEqual_IntInt_ReturnValue_2) == 0x0000D1, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_EqualEqual_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000D8, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_DynamicCast_bSuccess_2) == 0x0000E0, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_IsInVehicle_ReturnValue) == 0x0000E1, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_IsInVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000E2, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Array_Length_ReturnValue_3) == 0x0000E4, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_BooleanAND_ReturnValue) == 0x0000E8, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000E9, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, CallFunc_BooleanAND_ReturnValue_1) == 0x0000EA, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle, K2Node_CreateDelegate_OutputDelegate) == 0x0000EC, "Member 'Device_Volume_Floor_C_OnAffectedPlayerExitedVehicle::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.OnRep_bEnabled
 // 0x0008 (0x0008 - 0x0000)
@@ -532,9 +331,6 @@ struct Device_Volume_Floor_C_OnRep_bEnabled final
 public:
 	class AFortMinigame*                          CurrentMinigame;                                   // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_OnRep_bEnabled) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_OnRep_bEnabled");
-static_assert(sizeof(Device_Volume_Floor_C_OnRep_bEnabled) == 0x000008, "Wrong size on Device_Volume_Floor_C_OnRep_bEnabled");
-static_assert(offsetof(Device_Volume_Floor_C_OnRep_bEnabled, CurrentMinigame) == 0x000000, "Member 'Device_Volume_Floor_C_OnRep_bEnabled::CurrentMinigame' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.EmptyCueParameters
 // 0x0170 (0x0170 - 0x0000)
@@ -544,10 +340,6 @@ public:
 	struct FGameplayCueParameters                 ReturnValue;                                       // 0x0000(0x00B8)(Parm, OutParm, ReturnParm, ContainsInstancedReference)
 	struct FGameplayCueParameters                 CallFunc_MakeGameplayCueParameters_ReturnValue;    // 0x00B8(0x00B8)(ContainsInstancedReference)
 };
-static_assert(alignof(Device_Volume_Floor_C_EmptyCueParameters) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_EmptyCueParameters");
-static_assert(sizeof(Device_Volume_Floor_C_EmptyCueParameters) == 0x000170, "Wrong size on Device_Volume_Floor_C_EmptyCueParameters");
-static_assert(offsetof(Device_Volume_Floor_C_EmptyCueParameters, ReturnValue) == 0x000000, "Member 'Device_Volume_Floor_C_EmptyCueParameters::ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_EmptyCueParameters, CallFunc_MakeGameplayCueParameters_ReturnValue) == 0x0000B8, "Member 'Device_Volume_Floor_C_EmptyCueParameters::CallFunc_MakeGameplayCueParameters_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.Update Volume State
 // 0x0007 (0x0007 - 0x0000)
@@ -562,15 +354,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECollisionEnabled                             K2Node_Select_Default;                             // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Volume_Floor_C_Update_Volume_State) == 0x000001, "Wrong alignment on Device_Volume_Floor_C_Update_Volume_State");
-static_assert(sizeof(Device_Volume_Floor_C_Update_Volume_State) == 0x000007, "Wrong size on Device_Volume_Floor_C_Update_Volume_State");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, Temp_bool_Variable) == 0x000000, "Member 'Device_Volume_Floor_C_Update_Volume_State::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, Temp_byte_Variable) == 0x000001, "Member 'Device_Volume_Floor_C_Update_Volume_State::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, Temp_byte_Variable_1) == 0x000002, "Member 'Device_Volume_Floor_C_Update_Volume_State::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, CallFunc_IsValid_ReturnValue) == 0x000003, "Member 'Device_Volume_Floor_C_Update_Volume_State::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, CallFunc_IsInProgress_ReturnValue) == 0x000004, "Member 'Device_Volume_Floor_C_Update_Volume_State::CallFunc_IsInProgress_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'Device_Volume_Floor_C_Update_Volume_State::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Update_Volume_State, K2Node_Select_Default) == 0x000006, "Member 'Device_Volume_Floor_C_Update_Volume_State::K2Node_Select_Default' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.Minigame State Logic
 // 0x0006 (0x0006 - 0x0000)
@@ -584,14 +367,6 @@ public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsPregame_ReturnValue;                    // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_Minigame_State_Logic) == 0x000001, "Wrong alignment on Device_Volume_Floor_C_Minigame_State_Logic");
-static_assert(sizeof(Device_Volume_Floor_C_Minigame_State_Logic) == 0x000006, "Wrong size on Device_Volume_Floor_C_Minigame_State_Logic");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, State) == 0x000000, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::State' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, CallFunc_HasAuthority_ReturnValue) == 0x000001, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, CallFunc_K2_IsInProgress_OutExec) == 0x000002, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::CallFunc_K2_IsInProgress_OutExec' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, CallFunc_IsValid_ReturnValue) == 0x000003, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, K2Node_SwitchEnum_CmpSuccess) == 0x000004, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Minigame_State_Logic, CallFunc_IsPregame_ReturnValue) == 0x000005, "Member 'Device_Volume_Floor_C_Minigame_State_Logic::CallFunc_IsPregame_ReturnValue' has a wrong offset!");
 
 // Function Device_Volume_Floor.Device_Volume_Floor_C.Transmit if Valid Actor
 // 0x01E0 (0x01E0 - 0x0000)
@@ -624,28 +399,6 @@ public:
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x01DB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Volume_Floor_C_Transmit_if_Valid_Actor) == 0x000008, "Wrong alignment on Device_Volume_Floor_C_Transmit_if_Valid_Actor");
-static_assert(sizeof(Device_Volume_Floor_C_Transmit_if_Valid_Actor) == 0x0001E0, "Wrong size on Device_Volume_Floor_C_Transmit_if_Valid_Actor");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Transmitter) == 0x000000, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Transmitter' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Actor) == 0x000008, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Actor' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Enter) == 0x000010, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Enter' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Valid) == 0x000011, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Valid' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Exit_Game_States) == 0x000018, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Exit_Game_States' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Enter_Game_States) == 0x000068, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Enter_Game_States' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_HasAuthority_ReturnValue) == 0x0000B8, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0000C0, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_GetController_ReturnValue) == 0x0000D0, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_GetActorTeam_ReturnValue) == 0x0000D8, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, K2Node_MakeVariable_MakeVariableOutput) == 0x0000E0, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::K2Node_MakeVariable_MakeVariableOutput' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, Temp_bool_Variable) == 0x000130, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, K2Node_Select_Default) == 0x000138, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, K2Node_MakeVariable_MakeVariableOutput_1) == 0x000188, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::K2Node_MakeVariable_MakeVariableOutput_1' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_IsValid_ReturnValue) == 0x0001D8, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_Set_Contains_ReturnValue) == 0x0001D9, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_Set_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_Conv_IntToByte_ReturnValue) == 0x0001DA, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0001DB, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Volume_Floor_C_Transmit_if_Valid_Actor, CallFunc_BooleanAND_ReturnValue) == 0x0001DC, "Member 'Device_Volume_Floor_C_Transmit_if_Valid_Actor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

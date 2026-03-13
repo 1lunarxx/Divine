@@ -23,15 +23,17 @@ class UTextStyle_BurbReg_Black_22_C final : public UTextStyle_Base_M_B_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-BurbReg-Black-22_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-BurbReg-Black-22_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-BurbReg-Black-22_C")
 	}
 	static class UTextStyle_BurbReg_Black_22_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_BurbReg_Black_22_C>();
 	}
 };
-static_assert(alignof(UTextStyle_BurbReg_Black_22_C) == 0x000008, "Wrong alignment on UTextStyle_BurbReg_Black_22_C");
-static_assert(sizeof(UTextStyle_BurbReg_Black_22_C) == 0x000148, "Wrong size on UTextStyle_BurbReg_Black_22_C");
 
 }
 

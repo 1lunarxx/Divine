@@ -27,11 +27,11 @@ void IDeimosTypeInfo_C::GetEnemyColor(struct FLinearColor* Color) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DeimosTypeInfo_C", "GetEnemyColor");
+		Func = AsUObject()->Class->GetFunction("DeimosTypeInfo_C", "GetEnemyColor");
 
 	Params::DeimosTypeInfo_C_GetEnemyColor Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Color != nullptr)
 		*Color = std::move(Parms.Color);

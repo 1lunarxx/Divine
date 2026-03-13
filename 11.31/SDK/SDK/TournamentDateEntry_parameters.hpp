@@ -27,9 +27,6 @@ struct TournamentDateEntry_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentDateEntry_C_PreConstruct) == 0x000001, "Wrong alignment on TournamentDateEntry_C_PreConstruct");
-static_assert(sizeof(TournamentDateEntry_C_PreConstruct) == 0x000001, "Wrong size on TournamentDateEntry_C_PreConstruct");
-static_assert(offsetof(TournamentDateEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'TournamentDateEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function TournamentDateEntry.TournamentDateEntry_C.EventColor
 // 0x0170 (0x0170 - 0x0000)
@@ -38,9 +35,6 @@ struct TournamentDateEntry_C_EventColor final
 public:
 	struct FFortTournamentDisplayInfo             showdownData;                                      // 0x0000(0x0170)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(TournamentDateEntry_C_EventColor) == 0x000008, "Wrong alignment on TournamentDateEntry_C_EventColor");
-static_assert(sizeof(TournamentDateEntry_C_EventColor) == 0x000170, "Wrong size on TournamentDateEntry_C_EventColor");
-static_assert(offsetof(TournamentDateEntry_C_EventColor, showdownData) == 0x000000, "Member 'TournamentDateEntry_C_EventColor::showdownData' has a wrong offset!");
 
 // Function TournamentDateEntry.TournamentDateEntry_C.ExecuteUbergraph_TournamentDateEntry
 // 0x04D0 (0x04D0 - 0x0000)
@@ -102,55 +96,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x04A8(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x04B8(0x0018)()
 };
-static_assert(alignof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry) == 0x000008, "Wrong alignment on TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry");
-static_assert(sizeof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry) == 0x0004D0, "Wrong size on TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, EntryPoint) == 0x000000, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventTimeState_ReturnValue) == 0x000004, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventTimeState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_int_Variable) == 0x000008, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000C, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_bool_Variable) == 0x00000D, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_byte_Variable) == 0x00000E, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_byte_Variable_1) == 0x00000F, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_bool_Variable_1) == 0x000010, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Select_Default) == 0x000011, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_struct_Variable) == 0x000014, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_bool_Variable_2) == 0x000024, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_bool_Variable_3) == 0x000025, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_text_Variable) == 0x000028, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Event_IsDesignTime) == 0x000040, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_CustomEvent_showdownData) == 0x000048, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_CustomEvent_showdownData' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_SlateColor) == 0x0001B8, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_SlateColor_1) == 0x0001E0, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Select_Default_1) == 0x000208, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000230, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_RandomFloatInRange_ReturnValue) == 0x000238, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_int_Variable_1) == 0x00023C, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventBeginTime_ReturnValue) == 0x000240, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventBeginTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventDateAsText_ReturnValue) == 0x000248, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventDateAsText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventEndTime_ReturnValue) == 0x000260, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Select_Default_2) == 0x000268, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventDateAsText_ReturnValue_1) == 0x000278, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventDateAsText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_EqualEqual_TextText_ReturnValue) == 0x000290, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventBeginTime_ReturnValue_1) == 0x000298, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventBeginTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventTimeAsText_ReturnValue) == 0x0002A0, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventTimeAsText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventEndTime_ReturnValue_1) == 0x0002B8, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventEndTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_FormatArgumentData) == 0x0002C0, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventTimeAsText_ReturnValue_1) == 0x000300, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventTimeAsText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventBeginTime_ReturnValue_2) == 0x000318, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventBeginTime_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_FormatArgumentData_1) == 0x000320, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventDateAsText_ReturnValue_2) == 0x000360, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventDateAsText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventEndTime_ReturnValue_2) == 0x000378, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventEndTime_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_FormatArgumentData_2) == 0x000380, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_GetEventDateAsText_ReturnValue_3) == 0x0003C0, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_GetEventDateAsText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, Temp_bool_Variable_4) == 0x0003D8, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_FormatArgumentData_3) == 0x0003E0, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeArray_Array) == 0x000420, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Select_Default_3) == 0x000430, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_Format_ReturnValue) == 0x000438, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_Select_Default_4) == 0x000450, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeStruct_FormatArgumentData_4) == 0x000468, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, K2Node_MakeArray_Array_1) == 0x0004A8, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry, CallFunc_Format_ReturnValue_1) == 0x0004B8, "Member 'TournamentDateEntry_C_ExecuteUbergraph_TournamentDateEntry::CallFunc_Format_ReturnValue_1' has a wrong offset!");
 
 }
 

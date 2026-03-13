@@ -34,17 +34,6 @@ public:
 	uint8                                         Pad_42[0xE];                                       // 0x0042(0x000E)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_GetTransform_ReturnValue_1;               // 0x0050(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CameraAnimationTransition_C_UserConstructionScript) == 0x000010, "Wrong alignment on CameraAnimationTransition_C_UserConstructionScript");
-static_assert(sizeof(CameraAnimationTransition_C_UserConstructionScript) == 0x000080, "Wrong size on CameraAnimationTransition_C_UserConstructionScript");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_IsValid_ReturnValue_1) == 0x000001, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_IsValid_ReturnValue_2) == 0x000002, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_IsValid_ReturnValue_3) == 0x000003, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue_1) == 0x000040, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_BooleanAND_ReturnValue_2) == 0x000041, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_UserConstructionScript, CallFunc_GetTransform_ReturnValue_1) == 0x000050, "Member 'CameraAnimationTransition_C_UserConstructionScript::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
 
 // Function CameraAnimationTransition.CameraAnimationTransition_C.ExecuteUbergraph_CameraAnimationTransition
 // 0x0200 (0x0200 - 0x0000)
@@ -71,25 +60,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x01EF(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition) == 0x000010, "Wrong alignment on CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition");
-static_assert(sizeof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition) == 0x000200, "Wrong size on CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, EntryPoint) == 0x000000, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_TLerp_ReturnValue) == 0x000040, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_TLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_GetTransform_ReturnValue_1) == 0x000070, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_GetTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_K2_SetActorTransform_SweepHitResult) == 0x0000A0, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_K2_SetActorTransform_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_K2_SetActorTransform_ReturnValue) == 0x000128, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_K2_SetActorTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_TLerp_ReturnValue_1) == 0x000130, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_TLerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_K2_SetActorTransform_SweepHitResult_1) == 0x000160, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_K2_SetActorTransform_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_K2_SetActorTransform_ReturnValue_1) == 0x0001E8, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_K2_SetActorTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_IsValid_ReturnValue) == 0x0001E9, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_IsValid_ReturnValue_1) == 0x0001EA, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_BooleanAND_ReturnValue) == 0x0001EB, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_IsValid_ReturnValue_2) == 0x0001EC, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_BooleanAND_ReturnValue_1) == 0x0001ED, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_IsValid_ReturnValue_3) == 0x0001EE, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_BooleanAND_ReturnValue_2) == 0x0001EF, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition, CallFunc_Lerp_ReturnValue) == 0x0001F0, "Member 'CameraAnimationTransition_C_ExecuteUbergraph_CameraAnimationTransition::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 }
 

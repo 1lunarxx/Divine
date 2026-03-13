@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeProgressDisplay_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeProgressDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeProgressDisplay_C")
 	}
 	static class UChallengeProgressDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeProgressDisplay_C>();
 	}
 };
-static_assert(alignof(UChallengeProgressDisplay_C) == 0x000008, "Wrong alignment on UChallengeProgressDisplay_C");
-static_assert(sizeof(UChallengeProgressDisplay_C) == 0x000258, "Wrong size on UChallengeProgressDisplay_C");
-static_assert(offsetof(UChallengeProgressDisplay_C, UberGraphFrame) == 0x000240, "Member 'UChallengeProgressDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeProgressDisplay_C, SizeBoxProgressContainer) == 0x000248, "Member 'UChallengeProgressDisplay_C::SizeBoxProgressContainer' has a wrong offset!");
-static_assert(offsetof(UChallengeProgressDisplay_C, Text_Desired_Minimum_Width) == 0x000250, "Member 'UChallengeProgressDisplay_C::Text_Desired_Minimum_Width' has a wrong offset!");
 
 }
 

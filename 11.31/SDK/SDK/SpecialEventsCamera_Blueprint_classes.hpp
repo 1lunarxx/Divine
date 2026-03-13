@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SpecialEventsCamera_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("SpecialEventsCamera_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SpecialEventsCamera_Blueprint_C")
 	}
 	static class ASpecialEventsCamera_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASpecialEventsCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(ASpecialEventsCamera_Blueprint_C) == 0x000010, "Wrong alignment on ASpecialEventsCamera_Blueprint_C");
-static_assert(sizeof(ASpecialEventsCamera_Blueprint_C) == 0x0007D0, "Wrong size on ASpecialEventsCamera_Blueprint_C");
-static_assert(offsetof(ASpecialEventsCamera_Blueprint_C, UberGraphFrame) == 0x0007C0, "Member 'ASpecialEventsCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
 
 }
 

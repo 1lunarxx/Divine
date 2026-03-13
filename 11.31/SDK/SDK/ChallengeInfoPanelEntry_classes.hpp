@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeInfoPanelEntry_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeInfoPanelEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeInfoPanelEntry_C")
 	}
 	static class UChallengeInfoPanelEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeInfoPanelEntry_C>();
 	}
 };
-static_assert(alignof(UChallengeInfoPanelEntry_C) == 0x000008, "Wrong alignment on UChallengeInfoPanelEntry_C");
-static_assert(sizeof(UChallengeInfoPanelEntry_C) == 0x0002A0, "Wrong size on UChallengeInfoPanelEntry_C");
-static_assert(offsetof(UChallengeInfoPanelEntry_C, UberGraphFrame) == 0x000280, "Member 'UChallengeInfoPanelEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeInfoPanelEntry_C, PartyAssistInfoIntro) == 0x000288, "Member 'UChallengeInfoPanelEntry_C::PartyAssistInfoIntro' has a wrong offset!");
-static_assert(offsetof(UChallengeInfoPanelEntry_C, AmbientPartyAssistAttention) == 0x000290, "Member 'UChallengeInfoPanelEntry_C::AmbientPartyAssistAttention' has a wrong offset!");
-static_assert(offsetof(UChallengeInfoPanelEntry_C, SwitcherContent) == 0x000298, "Member 'UChallengeInfoPanelEntry_C::SwitcherContent' has a wrong offset!");
 
 }
 

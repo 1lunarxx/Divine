@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function AffiliateKeyModal.AffiliateKeyModal_C.SetupAffiliateField
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FString&                    AffilateName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+
+void UAffiliateKeyModal_C::SetupAffiliateField(const class FString& AffilateName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
+
+	Params::AffiliateKeyModal_C_SetupAffiliateField Parms{};
+
+	Parms.AffilateName = std::move(AffilateName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AffiliateKeyModal.AffiliateKeyModal_C.SetMobileButtons
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -232,26 +252,6 @@ void UAffiliateKeyModal_C::ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint)
 	Params::AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AffiliateKeyModal.AffiliateKeyModal_C.SetupAffiliateField
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FString&                    AffilateName                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-
-void UAffiliateKeyModal_C::SetupAffiliateField(const class FString& AffilateName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AffiliateKeyModal_C", "SetupAffiliateField");
-
-	Params::AffiliateKeyModal_C_SetupAffiliateField Parms{};
-
-	Parms.AffilateName = std::move(AffilateName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -49,27 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingModeButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingModeButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingModeButton_C")
 	}
 	static class UAthenaMatchmakingModeButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingModeButton_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingModeButton_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingModeButton_C");
-static_assert(sizeof(UAthenaMatchmakingModeButton_C) == 0x000BD0, "Wrong size on UAthenaMatchmakingModeButton_C");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, UberGraphFrame) == 0x000B70, "Member 'UAthenaMatchmakingModeButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, OnHover) == 0x000B78, "Member 'UAthenaMatchmakingModeButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, ConfirmSelection) == 0x000B80, "Member 'UAthenaMatchmakingModeButton_C::ConfirmSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, ConfirmSelectionFlash) == 0x000B88, "Member 'UAthenaMatchmakingModeButton_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, ConfirmSelectionShine) == 0x000B90, "Member 'UAthenaMatchmakingModeButton_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, GameModeIcon) == 0x000B98, "Member 'UAthenaMatchmakingModeButton_C::GameModeIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, GameModeName) == 0x000BA0, "Member 'UAthenaMatchmakingModeButton_C::GameModeName' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, LTMModeSubIcon) == 0x000BA8, "Member 'UAthenaMatchmakingModeButton_C::LTMModeSubIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, SubGameModeName) == 0x000BB0, "Member 'UAthenaMatchmakingModeButton_C::SubGameModeName' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, SubGameModeNameHB) == 0x000BB8, "Member 'UAthenaMatchmakingModeButton_C::SubGameModeNameHB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, FillSquad) == 0x000BC0, "Member 'UAthenaMatchmakingModeButton_C::FillSquad' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingModeButton_C, PlaylistData) == 0x000BC8, "Member 'UAthenaMatchmakingModeButton_C::PlaylistData' has a wrong offset!");
 
 }
 

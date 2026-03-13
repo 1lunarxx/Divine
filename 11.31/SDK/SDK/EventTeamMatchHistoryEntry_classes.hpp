@@ -43,26 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventTeamMatchHistoryEntry_C">();
+		BP_STATIC_CLASS_IMPL("EventTeamMatchHistoryEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventTeamMatchHistoryEntry_C")
 	}
 	static class UEventTeamMatchHistoryEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventTeamMatchHistoryEntry_C>();
 	}
 };
-static_assert(alignof(UEventTeamMatchHistoryEntry_C) == 0x000008, "Wrong alignment on UEventTeamMatchHistoryEntry_C");
-static_assert(sizeof(UEventTeamMatchHistoryEntry_C) == 0x000C18, "Wrong size on UEventTeamMatchHistoryEntry_C");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, UberGraphFrame) == 0x000BB0, "Member 'UEventTeamMatchHistoryEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Selected) == 0x000BB8, "Member 'UEventTeamMatchHistoryEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Border_Zebra) == 0x000BC0, "Member 'UEventTeamMatchHistoryEntry_C::Border_Zebra' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Image_eliminations) == 0x000BC8, "Member 'UEventTeamMatchHistoryEntry_C::Image_eliminations' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Image_OnlineStatus) == 0x000BD0, "Member 'UEventTeamMatchHistoryEntry_C::Image_OnlineStatus' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Image_Placement) == 0x000BD8, "Member 'UEventTeamMatchHistoryEntry_C::Image_Placement' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Image_SelectedBG) == 0x000BE0, "Member 'UEventTeamMatchHistoryEntry_C::Image_SelectedBG' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Text_ReplayInteraction) == 0x000BE8, "Member 'UEventTeamMatchHistoryEntry_C::Text_ReplayInteraction' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, ProfileStatSelector) == 0x000BF0, "Member 'UEventTeamMatchHistoryEntry_C::ProfileStatSelector' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Hovered) == 0x000BF8, "Member 'UEventTeamMatchHistoryEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryEntry_C, Unhovered) == 0x000C08, "Member 'UEventTeamMatchHistoryEntry_C::Unhovered' has a wrong offset!");
 
 }
 

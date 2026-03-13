@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_KairosHero_C">();
+		BP_STATIC_CLASS_IMPL("BP_KairosHero_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_KairosHero_C")
 	}
 	static class ABP_KairosHero_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_KairosHero_C>();
 	}
 };
-static_assert(alignof(ABP_KairosHero_C) == 0x000008, "Wrong alignment on ABP_KairosHero_C");
-static_assert(sizeof(ABP_KairosHero_C) == 0x000250, "Wrong size on ABP_KairosHero_C");
-static_assert(offsetof(ABP_KairosHero_C, SceneCaptureComponent2D_AA) == 0x000248, "Member 'ABP_KairosHero_C::SceneCaptureComponent2D_AA' has a wrong offset!");
 
 }
 

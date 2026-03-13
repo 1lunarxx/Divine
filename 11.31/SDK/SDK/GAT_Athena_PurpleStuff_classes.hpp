@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_Athena_PurpleStuff_C">();
+		BP_STATIC_CLASS_IMPL("GAT_Athena_PurpleStuff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_Athena_PurpleStuff_C")
 	}
 	static class UGAT_Athena_PurpleStuff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_Athena_PurpleStuff_C>();
 	}
 };
-static_assert(alignof(UGAT_Athena_PurpleStuff_C) == 0x000008, "Wrong alignment on UGAT_Athena_PurpleStuff_C");
-static_assert(sizeof(UGAT_Athena_PurpleStuff_C) == 0x000A58, "Wrong size on UGAT_Athena_PurpleStuff_C");
-static_assert(offsetof(UGAT_Athena_PurpleStuff_C, UberGraphFrame_GAT_Athena_PurpleStuff_C) == 0x000A48, "Member 'UGAT_Athena_PurpleStuff_C::UberGraphFrame_GAT_Athena_PurpleStuff_C' has a wrong offset!");
-static_assert(offsetof(UGAT_Athena_PurpleStuff_C, PlayerPawn) == 0x000A50, "Member 'UGAT_Athena_PurpleStuff_C::PlayerPawn' has a wrong offset!");
 
 }
 

@@ -50,23 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuHeader_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuHeader_C")
 	}
 	static class UOptionsMenuHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuHeader_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuHeader_C) == 0x000008, "Wrong alignment on UOptionsMenuHeader_C");
-static_assert(sizeof(UOptionsMenuHeader_C) == 0x000310, "Wrong size on UOptionsMenuHeader_C");
-static_assert(offsetof(UOptionsMenuHeader_C, UberGraphFrame) == 0x000288, "Member 'UOptionsMenuHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, Image_0) == 0x000290, "Member 'UOptionsMenuHeader_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, SizeBoxContainer) == 0x000298, "Member 'UOptionsMenuHeader_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, SpacerBottom) == 0x0002A0, "Member 'UOptionsMenuHeader_C::SpacerBottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, TextHeader) == 0x0002A8, "Member 'UOptionsMenuHeader_C::TextHeader' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, Tab_Tooltip_Text) == 0x0002B0, "Member 'UOptionsMenuHeader_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, FontMobile) == 0x0002B8, "Member 'UOptionsMenuHeader_C::FontMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHeader_C, FontSizeMobile) == 0x000308, "Member 'UOptionsMenuHeader_C::FontSizeMobile' has a wrong offset!");
 
 }
 

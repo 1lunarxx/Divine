@@ -23,9 +23,6 @@ struct Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt final
 public:
 	TSoftObjectPtr<class UTexture2D>              NewParam;                                          // 0x0000(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt) == 0x000008, "Wrong alignment on Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt");
-static_assert(sizeof(Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt) == 0x000028, "Wrong size on Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt, NewParam) == 0x000000, "Member 'Athena_Matchmaking_SpecialEventButton_C_SetLTMSplashArt::NewParam' has a wrong offset!");
 
 // Function Athena_Matchmaking_SpecialEventButton.Athena_Matchmaking_SpecialEventButton_C.FirstTime_NewBang
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +31,6 @@ struct Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang) == 0x000008, "Wrong alignment on Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang");
-static_assert(sizeof(Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang) == 0x000008, "Wrong size on Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'Athena_Matchmaking_SpecialEventButton_C_FirstTime_NewBang::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function Athena_Matchmaking_SpecialEventButton.Athena_Matchmaking_SpecialEventButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +39,6 @@ struct Athena_Matchmaking_SpecialEventButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Athena_Matchmaking_SpecialEventButton_C_PreConstruct) == 0x000001, "Wrong alignment on Athena_Matchmaking_SpecialEventButton_C_PreConstruct");
-static_assert(sizeof(Athena_Matchmaking_SpecialEventButton_C_PreConstruct) == 0x000001, "Wrong size on Athena_Matchmaking_SpecialEventButton_C_PreConstruct");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Athena_Matchmaking_SpecialEventButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Athena_Matchmaking_SpecialEventButton.Athena_Matchmaking_SpecialEventButton_C.ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton
 // 0x0030 (0x0030 - 0x0000)
@@ -70,21 +61,6 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton) == 0x000008, "Wrong alignment on Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton");
-static_assert(sizeof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton) == 0x000030, "Wrong size on Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, EntryPoint) == 0x000000, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_bool_Variable) == 0x000004, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_byte_Variable) == 0x000005, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_byte_Variable_1) == 0x000006, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_bool_Variable_1) == 0x000007, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_byte_Variable_2) == 0x000008, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, Temp_byte_Variable_3) == 0x000009, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, K2Node_DynamicCast_AsAthena_Matchmaking_Game_Mode_Button) == 0x000010, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::K2Node_DynamicCast_AsAthena_Matchmaking_Game_Mode_Button' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, K2Node_Select_Default) == 0x000028, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, K2Node_Event_IsDesignTime) == 0x000029, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton, K2Node_Select_Default_1) == 0x00002A, "Member 'Athena_Matchmaking_SpecialEventButton_C_ExecuteUbergraph_Athena_Matchmaking_SpecialEventButton::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

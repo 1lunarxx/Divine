@@ -23,15 +23,17 @@ class UWinterQuestDetailsEntry_C final : public UFortWinterQuestDetailsEntry
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestDetailsEntry_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestDetailsEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestDetailsEntry_C")
 	}
 	static class UWinterQuestDetailsEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestDetailsEntry_C>();
 	}
 };
-static_assert(alignof(UWinterQuestDetailsEntry_C) == 0x000008, "Wrong alignment on UWinterQuestDetailsEntry_C");
-static_assert(sizeof(UWinterQuestDetailsEntry_C) == 0x000B88, "Wrong size on UWinterQuestDetailsEntry_C");
 
 }
 

@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChannelHeader_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChannelHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChannelHeader_C")
 	}
 	static class UVoiceChannelHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChannelHeader_C>();
 	}
 };
-static_assert(alignof(UVoiceChannelHeader_C) == 0x000008, "Wrong alignment on UVoiceChannelHeader_C");
-static_assert(sizeof(UVoiceChannelHeader_C) == 0x000300, "Wrong size on UVoiceChannelHeader_C");
-static_assert(offsetof(UVoiceChannelHeader_C, UberGraphFrame) == 0x0002F0, "Member 'UVoiceChannelHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeader_C, VBox_ActiveChannelExtras) == 0x0002F8, "Member 'UVoiceChannelHeader_C::VBox_ActiveChannelExtras' has a wrong offset!");
 
 }
 

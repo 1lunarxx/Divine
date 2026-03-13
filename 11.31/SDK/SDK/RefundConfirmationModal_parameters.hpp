@@ -24,10 +24,6 @@ public:
 	int32                                         RefundsRemaining;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TotalRefunds;                                      // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RefundConfirmationModal_C_SetRefundsRemainingText) == 0x000004, "Wrong alignment on RefundConfirmationModal_C_SetRefundsRemainingText");
-static_assert(sizeof(RefundConfirmationModal_C_SetRefundsRemainingText) == 0x000008, "Wrong size on RefundConfirmationModal_C_SetRefundsRemainingText");
-static_assert(offsetof(RefundConfirmationModal_C_SetRefundsRemainingText, RefundsRemaining) == 0x000000, "Member 'RefundConfirmationModal_C_SetRefundsRemainingText::RefundsRemaining' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_SetRefundsRemainingText, TotalRefunds) == 0x000004, "Member 'RefundConfirmationModal_C_SetRefundsRemainingText::TotalRefunds' has a wrong offset!");
 
 // Function RefundConfirmationModal.RefundConfirmationModal_C.ExecuteUbergraph_RefundConfirmationModal
 // 0x0080 (0x0080 - 0x0000)
@@ -44,16 +40,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0058(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0068(0x0018)()
 };
-static_assert(alignof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal) == 0x000008, "Wrong alignment on RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal");
-static_assert(sizeof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal) == 0x000080, "Wrong size on RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, EntryPoint) == 0x000000, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, K2Node_Event_RefundsRemaining) == 0x000004, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::K2Node_Event_RefundsRemaining' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, K2Node_Event_TotalRefunds) == 0x000008, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::K2Node_Event_TotalRefunds' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, CallFunc_Subtract_IntInt_ReturnValue) == 0x00000C, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000010, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, K2Node_MakeArray_Array) == 0x000058, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal, CallFunc_Format_ReturnValue) == 0x000068, "Member 'RefundConfirmationModal_C_ExecuteUbergraph_RefundConfirmationModal::CallFunc_Format_ReturnValue' has a wrong offset!");
 
 }
 

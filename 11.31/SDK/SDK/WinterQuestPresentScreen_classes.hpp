@@ -29,30 +29,29 @@ public:
 	class UOverlay*                               Root_Overlay;                                      // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void OnStopOpeningPresent();
+	void OnStartOpeningPresent();
 	void OnUpdatePlatformType(ECommonPlatformType PlatformType);
 	void OnInputMethodChanged(ECommonInputType NewMethod);
 	void OnUpdateShakePercentage(float InPercentage);
 	void BP_OnActivated();
 	void OnUpdateShakeRecharge(float InPercentage);
 	void ExecuteUbergraph_WinterQuestPresentScreen(int32 EntryPoint);
-	void OnStopOpeningPresent();
-	void OnStartOpeningPresent();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestPresentScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestPresentScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestPresentScreen_C")
 	}
 	static class UWinterQuestPresentScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestPresentScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestPresentScreen_C) == 0x000008, "Wrong alignment on UWinterQuestPresentScreen_C");
-static_assert(sizeof(UWinterQuestPresentScreen_C) == 0x0005D8, "Wrong size on UWinterQuestPresentScreen_C");
-static_assert(offsetof(UWinterQuestPresentScreen_C, UberGraphFrame) == 0x0005C0, "Member 'UWinterQuestPresentScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentScreen_C, PlatformTypeSwitcher) == 0x0005C8, "Member 'UWinterQuestPresentScreen_C::PlatformTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentScreen_C, Root_Overlay) == 0x0005D0, "Member 'UWinterQuestPresentScreen_C::Root_Overlay' has a wrong offset!");
 
 }
 

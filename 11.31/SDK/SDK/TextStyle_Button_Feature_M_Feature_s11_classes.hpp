@@ -23,15 +23,17 @@ class UTextStyle_Button_Feature_M_Feature_s11_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle_Button_Feature_M_Feature_s11_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle_Button_Feature_M_Feature_s11_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle_Button_Feature_M_Feature_s11_C")
 	}
 	static class UTextStyle_Button_Feature_M_Feature_s11_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Button_Feature_M_Feature_s11_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Button_Feature_M_Feature_s11_C) == 0x000008, "Wrong alignment on UTextStyle_Button_Feature_M_Feature_s11_C");
-static_assert(sizeof(UTextStyle_Button_Feature_M_Feature_s11_C) == 0x000148, "Wrong size on UTextStyle_Button_Feature_M_Feature_s11_C");
 
 }
 

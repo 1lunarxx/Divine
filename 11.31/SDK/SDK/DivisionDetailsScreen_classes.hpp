@@ -46,26 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DivisionDetailsScreen_C">();
+		BP_STATIC_CLASS_IMPL("DivisionDetailsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DivisionDetailsScreen_C")
 	}
 	static class UDivisionDetailsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDivisionDetailsScreen_C>();
 	}
 };
-static_assert(alignof(UDivisionDetailsScreen_C) == 0x000008, "Wrong alignment on UDivisionDetailsScreen_C");
-static_assert(sizeof(UDivisionDetailsScreen_C) == 0x0004B0, "Wrong size on UDivisionDetailsScreen_C");
-static_assert(offsetof(UDivisionDetailsScreen_C, UberGraphFrame) == 0x000458, "Member 'UDivisionDetailsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, Intro) == 0x000460, "Member 'UDivisionDetailsScreen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, BackButton) == 0x000468, "Member 'UDivisionDetailsScreen_C::BackButton' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, GeneralDivisionInfo) == 0x000470, "Member 'UDivisionDetailsScreen_C::GeneralDivisionInfo' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, Image_12) == 0x000478, "Member 'UDivisionDetailsScreen_C::Image_12' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, Image_PanelBG) == 0x000480, "Member 'UDivisionDetailsScreen_C::Image_PanelBG' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, Image_PanelBorder) == 0x000488, "Member 'UDivisionDetailsScreen_C::Image_PanelBorder' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, NextButton) == 0x000490, "Member 'UDivisionDetailsScreen_C::NextButton' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, SafeZone_1) == 0x000498, "Member 'UDivisionDetailsScreen_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, ScoringPayoutInfo) == 0x0004A0, "Member 'UDivisionDetailsScreen_C::ScoringPayoutInfo' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsScreen_C, SizeBox_TopContainer) == 0x0004A8, "Member 'UDivisionDetailsScreen_C::SizeBox_TopContainer' has a wrong offset!");
 
 }
 

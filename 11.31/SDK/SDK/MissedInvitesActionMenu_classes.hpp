@@ -41,25 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissedInvitesActionMenu_C">();
+		BP_STATIC_CLASS_IMPL("MissedInvitesActionMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissedInvitesActionMenu_C")
 	}
 	static class UMissedInvitesActionMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissedInvitesActionMenu_C>();
 	}
 };
-static_assert(alignof(UMissedInvitesActionMenu_C) == 0x000008, "Wrong alignment on UMissedInvitesActionMenu_C");
-static_assert(sizeof(UMissedInvitesActionMenu_C) == 0x000348, "Wrong size on UMissedInvitesActionMenu_C");
-static_assert(offsetof(UMissedInvitesActionMenu_C, UberGraphFrame) == 0x0002F8, "Member 'UMissedInvitesActionMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, ConfirmationOpened) == 0x000300, "Member 'UMissedInvitesActionMenu_C::ConfirmationOpened' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, Opened) == 0x000308, "Member 'UMissedInvitesActionMenu_C::Opened' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, Border_OnlineStatusIndicator) == 0x000310, "Member 'UMissedInvitesActionMenu_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, CommonRichTextBlock) == 0x000318, "Member 'UMissedInvitesActionMenu_C::CommonRichTextBlock' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, CommonRichTextBlock_143) == 0x000320, "Member 'UMissedInvitesActionMenu_C::CommonRichTextBlock_143' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, EntryBorder) == 0x000328, "Member 'UMissedInvitesActionMenu_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, Image_119) == 0x000330, "Member 'UMissedInvitesActionMenu_C::Image_119' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, Image_Platform) == 0x000338, "Member 'UMissedInvitesActionMenu_C::Image_Platform' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesActionMenu_C, Text_DisplayName) == 0x000340, "Member 'UMissedInvitesActionMenu_C::Text_DisplayName' has a wrong offset!");
 
 }
 

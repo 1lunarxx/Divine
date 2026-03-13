@@ -76,42 +76,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BGA_Athena_FlopperSpawn_Parent_C">();
+		BP_STATIC_CLASS_IMPL("BGA_Athena_FlopperSpawn_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BGA_Athena_FlopperSpawn_Parent_C")
 	}
 	static class ABGA_Athena_FlopperSpawn_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABGA_Athena_FlopperSpawn_Parent_C>();
 	}
 };
-static_assert(alignof(ABGA_Athena_FlopperSpawn_Parent_C) == 0x000008, "Wrong alignment on ABGA_Athena_FlopperSpawn_Parent_C");
-static_assert(sizeof(ABGA_Athena_FlopperSpawn_Parent_C) == 0x000A08, "Wrong size on ABGA_Athena_FlopperSpawn_Parent_C");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, UberGraphFrame) == 0x000788, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, OverlapVolume) == 0x000790, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::OverlapVolume' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, DefaultSceneRoot) == 0x000798, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_MaxUses) == 0x0007A0, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_MaxUses' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_MinUses) == 0x0007C0, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_MinUses' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Uses) == 0x0007E0, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Uses' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, AfterHideLifeSpan) == 0x0007E4, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::AfterHideLifeSpan' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, ItemsToDrop) == 0x0007E8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::ItemsToDrop' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, GC_Spawn) == 0x0007F0, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::GC_Spawn' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_SpawnChanceMax) == 0x0007F8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_SpawnChanceMax' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, IsWorldSpawner) == 0x000818, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::IsWorldSpawner' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_SpawnChanceMin) == 0x000820, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_SpawnChanceMin' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Map_TagToLoot_HighTier) == 0x000840, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Map_TagToLoot_HighTier' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, AlreadySpawnChecked) == 0x000890, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::AlreadySpawnChecked' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Map_TagToLoot_DefaultTier) == 0x000898, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Map_TagToLoot_DefaultTier' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Map_TagToLoot_ToUse) == 0x0008E8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Map_TagToLoot_ToUse' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, HasTypeTag) == 0x000938, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::HasTypeTag' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, ObjectTypes) == 0x000940, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::ObjectTypes' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, LocationTags) == 0x000950, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::LocationTags' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, MaxUses) == 0x000970, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::MaxUses' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Debug) == 0x000971, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Debug' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_AddedBobChanceOnOverlapMin) == 0x000978, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_AddedBobChanceOnOverlapMin' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Row_AddedBobChanceOnOverlapMax) == 0x000998, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Row_AddedBobChanceOnOverlapMax' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, SpawnedItem) == 0x0009B8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::SpawnedItem' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, Sound_HighTierPoolSpawn) == 0x0009C0, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::Sound_HighTierPoolSpawn' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, QuestTag_DefaultSpawn) == 0x0009C8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::QuestTag_DefaultSpawn' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_Parent_C, QuestTag_WorldSpawn) == 0x0009E8, "Member 'ABGA_Athena_FlopperSpawn_Parent_C::QuestTag_WorldSpawn' has a wrong offset!");
 
 }
 

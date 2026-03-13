@@ -23,15 +23,17 @@ class ABP_VictoryDrone_Athena_C final : public ABP_VictoryDrone_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_VictoryDrone_Athena_C">();
+		BP_STATIC_CLASS_IMPL("BP_VictoryDrone_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_VictoryDrone_Athena_C")
 	}
 	static class ABP_VictoryDrone_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_VictoryDrone_Athena_C>();
 	}
 };
-static_assert(alignof(ABP_VictoryDrone_Athena_C) == 0x000008, "Wrong alignment on ABP_VictoryDrone_Athena_C");
-static_assert(sizeof(ABP_VictoryDrone_Athena_C) == 0x0002D0, "Wrong size on ABP_VictoryDrone_Athena_C");
 
 }
 

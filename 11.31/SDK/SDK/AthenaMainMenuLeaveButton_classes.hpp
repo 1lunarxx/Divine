@@ -23,15 +23,17 @@ class UAthenaMainMenuLeaveButton_C final : public UFortMainMenuLeaveButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMainMenuLeaveButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMainMenuLeaveButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMainMenuLeaveButton_C")
 	}
 	static class UAthenaMainMenuLeaveButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMainMenuLeaveButton_C>();
 	}
 };
-static_assert(alignof(UAthenaMainMenuLeaveButton_C) == 0x000008, "Wrong alignment on UAthenaMainMenuLeaveButton_C");
-static_assert(sizeof(UAthenaMainMenuLeaveButton_C) == 0x000C48, "Wrong size on UAthenaMainMenuLeaveButton_C");
 
 }
 

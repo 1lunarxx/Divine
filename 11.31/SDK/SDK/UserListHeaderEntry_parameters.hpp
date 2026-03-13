@@ -39,21 +39,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsListItemExpanded_ReturnValue;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry) == 0x000008, "Wrong alignment on UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry");
-static_assert(sizeof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry) == 0x000050, "Wrong size on UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, EntryPoint) == 0x000000, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, K2Node_Event_ListItemObject) == 0x000008, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, Temp_bool_Variable) == 0x000010, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, Temp_byte_Variable) == 0x000011, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, Temp_byte_Variable_1) == 0x000012, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, K2Node_Event_bIsExpanded) == 0x000028, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, K2Node_Select_Default) == 0x000029, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_PlayAnimation_ReturnValue_2) == 0x000030, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_GetEndTime_ReturnValue) == 0x000038, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_PlayAnimation_ReturnValue_3) == 0x000040, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry, CallFunc_IsListItemExpanded_ReturnValue) == 0x000048, "Member 'UserListHeaderEntry_C_ExecuteUbergraph_UserListHeaderEntry::CallFunc_IsListItemExpanded_ReturnValue' has a wrong offset!");
 
 // Function UserListHeaderEntry.UserListHeaderEntry_C.OnListItemObjectSet_1
 // 0x0008 (0x0008 - 0x0000)
@@ -62,9 +47,6 @@ struct UserListHeaderEntry_C_OnListItemObjectSet_1 final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UserListHeaderEntry_C_OnListItemObjectSet_1) == 0x000008, "Wrong alignment on UserListHeaderEntry_C_OnListItemObjectSet_1");
-static_assert(sizeof(UserListHeaderEntry_C_OnListItemObjectSet_1) == 0x000008, "Wrong size on UserListHeaderEntry_C_OnListItemObjectSet_1");
-static_assert(offsetof(UserListHeaderEntry_C_OnListItemObjectSet_1, ListItemObject) == 0x000000, "Member 'UserListHeaderEntry_C_OnListItemObjectSet_1::ListItemObject' has a wrong offset!");
 
 // Function UserListHeaderEntry.UserListHeaderEntry_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -73,9 +55,6 @@ struct UserListHeaderEntry_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UserListHeaderEntry_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on UserListHeaderEntry_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(UserListHeaderEntry_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on UserListHeaderEntry_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(UserListHeaderEntry_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'UserListHeaderEntry_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 }
 

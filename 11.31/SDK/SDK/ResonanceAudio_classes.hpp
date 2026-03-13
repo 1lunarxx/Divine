@@ -30,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioAmbisonicsSettings">();
+		STATIC_CLASS_IMPL("ResonanceAudioAmbisonicsSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioAmbisonicsSettings")
 	}
 	static class UResonanceAudioAmbisonicsSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResonanceAudioAmbisonicsSettings>();
 	}
 };
-static_assert(alignof(UResonanceAudioAmbisonicsSettings) == 0x000008, "Wrong alignment on UResonanceAudioAmbisonicsSettings");
-static_assert(sizeof(UResonanceAudioAmbisonicsSettings) == 0x000030, "Wrong size on UResonanceAudioAmbisonicsSettings");
-static_assert(offsetof(UResonanceAudioAmbisonicsSettings, AmbisonicsOrder) == 0x000028, "Member 'UResonanceAudioAmbisonicsSettings::AmbisonicsOrder' has a wrong offset!");
 
 // Class ResonanceAudio.ResonanceAudioBlueprintFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -52,15 +53,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("ResonanceAudioBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioBlueprintFunctionLibrary")
 	}
 	static class UResonanceAudioBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResonanceAudioBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(UResonanceAudioBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on UResonanceAudioBlueprintFunctionLibrary");
-static_assert(sizeof(UResonanceAudioBlueprintFunctionLibrary) == 0x000028, "Wrong size on UResonanceAudioBlueprintFunctionLibrary");
 
 // Class ResonanceAudio.ResonanceAudioDirectivityVisualizer
 // 0x0080 (0x0298 - 0x0218)
@@ -69,22 +72,22 @@ class AResonanceAudioDirectivityVisualizer final : public AActor
 public:
 	uint8                                         Pad_218[0x70];                                     // 0x0218(0x0070)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterial*                              Material;                                          // 0x0288(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UResonanceAudioSpatializationSourceSettings* Settings;                                          // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UResonanceAudioSpatializationSourceSettings* Settings;                                     // 0x0290(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioDirectivityVisualizer">();
+		STATIC_CLASS_IMPL("ResonanceAudioDirectivityVisualizer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioDirectivityVisualizer")
 	}
 	static class AResonanceAudioDirectivityVisualizer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AResonanceAudioDirectivityVisualizer>();
 	}
 };
-static_assert(alignof(AResonanceAudioDirectivityVisualizer) == 0x000008, "Wrong alignment on AResonanceAudioDirectivityVisualizer");
-static_assert(sizeof(AResonanceAudioDirectivityVisualizer) == 0x000298, "Wrong size on AResonanceAudioDirectivityVisualizer");
-static_assert(offsetof(AResonanceAudioDirectivityVisualizer, Material) == 0x000288, "Member 'AResonanceAudioDirectivityVisualizer::Material' has a wrong offset!");
-static_assert(offsetof(AResonanceAudioDirectivityVisualizer, Settings) == 0x000290, "Member 'AResonanceAudioDirectivityVisualizer::Settings' has a wrong offset!");
 
 // Class ResonanceAudio.ResonanceAudioReverbPluginPreset
 // 0x00D0 (0x0110 - 0x0040)
@@ -108,16 +111,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioReverbPluginPreset">();
+		STATIC_CLASS_IMPL("ResonanceAudioReverbPluginPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioReverbPluginPreset")
 	}
 	static class UResonanceAudioReverbPluginPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResonanceAudioReverbPluginPreset>();
 	}
 };
-static_assert(alignof(UResonanceAudioReverbPluginPreset) == 0x000010, "Wrong alignment on UResonanceAudioReverbPluginPreset");
-static_assert(sizeof(UResonanceAudioReverbPluginPreset) == 0x000110, "Wrong size on UResonanceAudioReverbPluginPreset");
-static_assert(offsetof(UResonanceAudioReverbPluginPreset, Settings) == 0x0000C0, "Member 'UResonanceAudioReverbPluginPreset::Settings' has a wrong offset!");
 
 // Class ResonanceAudio.ResonanceAudioSettings
 // 0x0038 (0x0060 - 0x0028)
@@ -132,18 +136,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioSettings">();
+		STATIC_CLASS_IMPL("ResonanceAudioSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioSettings")
 	}
 	static class UResonanceAudioSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResonanceAudioSettings>();
 	}
 };
-static_assert(alignof(UResonanceAudioSettings) == 0x000008, "Wrong alignment on UResonanceAudioSettings");
-static_assert(sizeof(UResonanceAudioSettings) == 0x000060, "Wrong size on UResonanceAudioSettings");
-static_assert(offsetof(UResonanceAudioSettings, QualityMode) == 0x000028, "Member 'UResonanceAudioSettings::QualityMode' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSettings, GlobalReverbPreset) == 0x000030, "Member 'UResonanceAudioSettings::GlobalReverbPreset' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSettings, GlobalSourcePreset) == 0x000048, "Member 'UResonanceAudioSettings::GlobalSourcePreset' has a wrong offset!");
 
 // Class ResonanceAudio.ResonanceAudioSpatializationSourceSettings
 // 0x0028 (0x0050 - 0x0028)
@@ -171,24 +174,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ResonanceAudioSpatializationSourceSettings">();
+		STATIC_CLASS_IMPL("ResonanceAudioSpatializationSourceSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ResonanceAudioSpatializationSourceSettings")
 	}
 	static class UResonanceAudioSpatializationSourceSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UResonanceAudioSpatializationSourceSettings>();
 	}
 };
-static_assert(alignof(UResonanceAudioSpatializationSourceSettings) == 0x000008, "Wrong alignment on UResonanceAudioSpatializationSourceSettings");
-static_assert(sizeof(UResonanceAudioSpatializationSourceSettings) == 0x000050, "Wrong size on UResonanceAudioSpatializationSourceSettings");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, SpatializationMethod) == 0x000028, "Member 'UResonanceAudioSpatializationSourceSettings::SpatializationMethod' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, Pattern) == 0x00002C, "Member 'UResonanceAudioSpatializationSourceSettings::Pattern' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, Sharpness) == 0x000030, "Member 'UResonanceAudioSpatializationSourceSettings::Sharpness' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, bToggleVisualization) == 0x000034, "Member 'UResonanceAudioSpatializationSourceSettings::bToggleVisualization' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, Scale) == 0x000038, "Member 'UResonanceAudioSpatializationSourceSettings::Scale' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, Spread) == 0x00003C, "Member 'UResonanceAudioSpatializationSourceSettings::Spread' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, Rolloff) == 0x000040, "Member 'UResonanceAudioSpatializationSourceSettings::Rolloff' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, MinDistance) == 0x000044, "Member 'UResonanceAudioSpatializationSourceSettings::MinDistance' has a wrong offset!");
-static_assert(offsetof(UResonanceAudioSpatializationSourceSettings, MaxDistance) == 0x000048, "Member 'UResonanceAudioSpatializationSourceSettings::MaxDistance' has a wrong offset!");
 
 }
 

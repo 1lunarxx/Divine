@@ -23,15 +23,17 @@ class UGE_Devices_Common_SetMaxHealth_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Devices_Common_SetMaxHealth_C">();
+		BP_STATIC_CLASS_IMPL("GE_Devices_Common_SetMaxHealth_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Devices_Common_SetMaxHealth_C")
 	}
 	static class UGE_Devices_Common_SetMaxHealth_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Devices_Common_SetMaxHealth_C>();
 	}
 };
-static_assert(alignof(UGE_Devices_Common_SetMaxHealth_C) == 0x000008, "Wrong alignment on UGE_Devices_Common_SetMaxHealth_C");
-static_assert(sizeof(UGE_Devices_Common_SetMaxHealth_C) == 0x000770, "Wrong size on UGE_Devices_Common_SetMaxHealth_C");
 
 }
 

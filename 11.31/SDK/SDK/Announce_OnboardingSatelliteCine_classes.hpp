@@ -39,19 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_OnboardingSatelliteCine_C">();
+		BP_STATIC_CLASS_IMPL("Announce_OnboardingSatelliteCine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_OnboardingSatelliteCine_C")
 	}
 	static class AAnnounce_OnboardingSatelliteCine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_OnboardingSatelliteCine_C>();
 	}
 };
-static_assert(alignof(AAnnounce_OnboardingSatelliteCine_C) == 0x000008, "Wrong alignment on AAnnounce_OnboardingSatelliteCine_C");
-static_assert(sizeof(AAnnounce_OnboardingSatelliteCine_C) == 0x0002B0, "Wrong size on AAnnounce_OnboardingSatelliteCine_C");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, UberGraphFrame) == 0x000290, "Member 'AAnnounce_OnboardingSatelliteCine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, DefaultSceneRoot) == 0x000298, "Member 'AAnnounce_OnboardingSatelliteCine_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, AllowSkipping) == 0x0002A0, "Member 'AAnnounce_OnboardingSatelliteCine_C::AllowSkipping' has a wrong offset!");
-static_assert(offsetof(AAnnounce_OnboardingSatelliteCine_C, SatelliteSubtitlesPlayer) == 0x0002A8, "Member 'AAnnounce_OnboardingSatelliteCine_C::SatelliteSubtitlesPlayer' has a wrong offset!");
 
 }
 

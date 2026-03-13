@@ -43,26 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonBPTrackerWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonBPTrackerWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonBPTrackerWidget_C")
 	}
 	static class UAthenaSeasonBPTrackerWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonBPTrackerWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonBPTrackerWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonBPTrackerWidget_C");
-static_assert(sizeof(UAthenaSeasonBPTrackerWidget_C) == 0x0002E8, "Wrong size on UAthenaSeasonBPTrackerWidget_C");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, UberGraphFrame) == 0x000290, "Member 'UAthenaSeasonBPTrackerWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, FadeOut) == 0x000298, "Member 'UAthenaSeasonBPTrackerWidget_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, Intro) == 0x0002A0, "Member 'UAthenaSeasonBPTrackerWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, AthenaSeasonBPTrackerSimpleWidget) == 0x0002A8, "Member 'UAthenaSeasonBPTrackerWidget_C::AthenaSeasonBPTrackerSimpleWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, BattelTierText) == 0x0002B0, "Member 'UAthenaSeasonBPTrackerWidget_C::BattelTierText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, CompleteMission) == 0x0002B8, "Member 'UAthenaSeasonBPTrackerWidget_C::CompleteMission' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, Image_103) == 0x0002C0, "Member 'UAthenaSeasonBPTrackerWidget_C::Image_103' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, NextTierHB) == 0x0002C8, "Member 'UAthenaSeasonBPTrackerWidget_C::NextTierHB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, NextTierText) == 0x0002D0, "Member 'UAthenaSeasonBPTrackerWidget_C::NextTierText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, PointBar) == 0x0002D8, "Member 'UAthenaSeasonBPTrackerWidget_C::PointBar' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerWidget_C, TierTitle) == 0x0002E0, "Member 'UAthenaSeasonBPTrackerWidget_C::TierTitle' has a wrong offset!");
 
 }
 

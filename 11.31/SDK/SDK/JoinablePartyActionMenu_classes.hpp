@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoinablePartyActionMenu_C">();
+		BP_STATIC_CLASS_IMPL("JoinablePartyActionMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinablePartyActionMenu_C")
 	}
 	static class UJoinablePartyActionMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinablePartyActionMenu_C>();
 	}
 };
-static_assert(alignof(UJoinablePartyActionMenu_C) == 0x000008, "Wrong alignment on UJoinablePartyActionMenu_C");
-static_assert(sizeof(UJoinablePartyActionMenu_C) == 0x000390, "Wrong size on UJoinablePartyActionMenu_C");
-static_assert(offsetof(UJoinablePartyActionMenu_C, UberGraphFrame) == 0x000368, "Member 'UJoinablePartyActionMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyActionMenu_C, ConfirmationOpened) == 0x000370, "Member 'UJoinablePartyActionMenu_C::ConfirmationOpened' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyActionMenu_C, Opened) == 0x000378, "Member 'UJoinablePartyActionMenu_C::Opened' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyActionMenu_C, Border_OnlineStatusIndicator) == 0x000380, "Member 'UJoinablePartyActionMenu_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyActionMenu_C, EntryBorder) == 0x000388, "Member 'UJoinablePartyActionMenu_C::EntryBorder' has a wrong offset!");
 
 }
 

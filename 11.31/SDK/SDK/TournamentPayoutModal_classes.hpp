@@ -59,36 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentPayoutModal_C">();
+		BP_STATIC_CLASS_IMPL("TournamentPayoutModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentPayoutModal_C")
 	}
 	static class UTournamentPayoutModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentPayoutModal_C>();
 	}
 };
-static_assert(alignof(UTournamentPayoutModal_C) == 0x000008, "Wrong alignment on UTournamentPayoutModal_C");
-static_assert(sizeof(UTournamentPayoutModal_C) == 0x0003B8, "Wrong size on UTournamentPayoutModal_C");
-static_assert(offsetof(UTournamentPayoutModal_C, UberGraphFrame) == 0x000300, "Member 'UTournamentPayoutModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, Intro) == 0x000308, "Member 'UTournamentPayoutModal_C::Intro' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, BackButton) == 0x000310, "Member 'UTournamentPayoutModal_C::BackButton' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CloseIcon) == 0x000318, "Member 'UTournamentPayoutModal_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CommonBorder_ContainerBG) == 0x000320, "Member 'UTournamentPayoutModal_C::CommonBorder_ContainerBG' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CommonBorder_OptionsBarBG) == 0x000328, "Member 'UTournamentPayoutModal_C::CommonBorder_OptionsBarBG' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CommonHierarchicalScrollBox_0) == 0x000330, "Member 'UTournamentPayoutModal_C::CommonHierarchicalScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CommonTextBlock_1) == 0x000338, "Member 'UTournamentPayoutModal_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CommonWidgetSwitcher_476) == 0x000340, "Member 'UTournamentPayoutModal_C::CommonWidgetSwitcher_476' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, Content_LeaderboardEntries) == 0x000348, "Member 'UTournamentPayoutModal_C::Content_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, Content_NoLeaderboardEntries) == 0x000350, "Member 'UTournamentPayoutModal_C::Content_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, EventLeaderboardEventDetails) == 0x000358, "Member 'UTournamentPayoutModal_C::EventLeaderboardEventDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, EventLeaderboardHeaderDetails) == 0x000360, "Member 'UTournamentPayoutModal_C::EventLeaderboardHeaderDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, MobileCloseButton) == 0x000368, "Member 'UTournamentPayoutModal_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, OverlayCloseButton) == 0x000370, "Member 'UTournamentPayoutModal_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, SafeZone_1) == 0x000378, "Member 'UTournamentPayoutModal_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, SizeBox_TopContainer) == 0x000380, "Member 'UTournamentPayoutModal_C::SizeBox_TopContainer' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, Switcher_LeaderboardEntries) == 0x000388, "Member 'UTournamentPayoutModal_C::Switcher_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, Text_NoLeaderboardEntries) == 0x000390, "Member 'UTournamentPayoutModal_C::Text_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, CallEventBack) == 0x000398, "Member 'UTournamentPayoutModal_C::CallEventBack' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutModal_C, NoPayout) == 0x0003A8, "Member 'UTournamentPayoutModal_C::NoPayout' has a wrong offset!");
 
 }
 

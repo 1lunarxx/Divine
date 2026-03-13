@@ -42,22 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CornField_Rectangle_C">();
+		BP_STATIC_CLASS_IMPL("CornField_Rectangle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CornField_Rectangle_C")
 	}
 	static class ACornField_Rectangle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACornField_Rectangle_C>();
 	}
 };
-static_assert(alignof(ACornField_Rectangle_C) == 0x000008, "Wrong alignment on ACornField_Rectangle_C");
-static_assert(sizeof(ACornField_Rectangle_C) == 0x000B40, "Wrong size on ACornField_Rectangle_C");
-static_assert(offsetof(ACornField_Rectangle_C, UberGraphFrame) == 0x000B08, "Member 'ACornField_Rectangle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, P_Hay_Destruction_CornField) == 0x000B10, "Member 'ACornField_Rectangle_C::P_Hay_Destruction_CornField' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, OverlapBox) == 0x000B18, "Member 'ACornField_Rectangle_C::OverlapBox' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, GE_CornField_GC) == 0x000B20, "Member 'ACornField_Rectangle_C::GE_CornField_GC' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, ShouldWobble) == 0x000B28, "Member 'ACornField_Rectangle_C::ShouldWobble' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, PlayerVelocity) == 0x000B2C, "Member 'ACornField_Rectangle_C::PlayerVelocity' has a wrong offset!");
-static_assert(offsetof(ACornField_Rectangle_C, Mid) == 0x000B38, "Member 'ACornField_Rectangle_C::Mid' has a wrong offset!");
 
 }
 

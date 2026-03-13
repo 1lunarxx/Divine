@@ -64,7 +64,7 @@ public:
 	class UCommonBorder*                          TouchToCloseZone;                                  // 0x0680(0x0008)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UHorizontalBox*                         WarningHB;                                         // 0x0688(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	struct FDataTableRowHandle                    Input_Cancel;                                      // 0x0690(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	class UAthena_Matchmaking_SpecialEventButton_C* MyLTM;                                             // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthena_Matchmaking_SpecialEventButton_C* MyLTM;                                           // 0x06A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         LastHoveredStandardModeIndex;                      // 0x06A8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SM_Button_IndexMax;                                // 0x06AC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         SM_Button_IndexCurrent;                            // 0x06B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -85,7 +85,6 @@ public:
 	struct FDataTableRowHandle                    Confirm;                                           // 0x0708(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
-	void ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2(int32 EntryPoint);
 	void Is_Performing_Transition(bool* Performing_Transition);
 	void OnSpectateMatch(bool* PassThrough);
 	void SetScrollWidget();
@@ -115,73 +114,22 @@ public:
 	void Construct();
 	void UpdateShowSupportAffiliateButton(bool bIsCreativeLTM);
 	void On_Intro_Complete();
+	void ExecuteUbergraph_AthenaMatchmakingOptionsDisplay_v2(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingOptionsDisplay_v2_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingOptionsDisplay_v2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingOptionsDisplay_v2_C")
 	}
 	static class UAthenaMatchmakingOptionsDisplay_v2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingOptionsDisplay_v2_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingOptionsDisplay_v2_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingOptionsDisplay_v2_C");
-static_assert(sizeof(UAthenaMatchmakingOptionsDisplay_v2_C) == 0x000718, "Wrong size on UAthenaMatchmakingOptionsDisplay_v2_C");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, UberGraphFrame) == 0x000568, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IntroRightPanel) == 0x000570, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IntroRightPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, OutroRightPanel) == 0x000578, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::OutroRightPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AcceptButton) == 0x000580, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AcceptButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile) == 0x000588, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile_0) == 0x000590, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, AthenaMatchmakingTile_1) == 0x000598, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::AthenaMatchmakingTile_1' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BangSwitcher) == 0x0005A0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BangSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BGImage) == 0x0005A8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BGImage' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BorderLTMBang) == 0x0005B0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BorderLTMBang' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, BorderLTMBang_Heist) == 0x0005B8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::BorderLTMBang_Heist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ChoosePromptSB) == 0x0005C0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ChoosePromptSB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CloseIcon) == 0x0005C8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ConfirmSelectionShine) == 0x0005D0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeDescription) == 0x0005D8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeDisabledDescription) == 0x0005E0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeDisabledDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentGameModeName) == 0x0005E8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentGameModeName' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeGlow) == 0x0005F0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeIcon) == 0x0005F8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModes) == 0x000600, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModes' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, GameModeSlideShow) == 0x000608, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::GameModeSlideShow' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IconSpacer) == 0x000610, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IconSpacer' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Lightbox) == 0x000618, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LineRule) == 0x000620, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LineRule' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LTMModeSubIcon) == 0x000628, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LTMModeSubIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MobileCloseButton) == 0x000630, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, ModeDescriptionScrollBox) == 0x000638, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::ModeDescriptionScrollBox' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, OverlayCloseButton) == 0x000640, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, RootBorder) == 0x000648, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::RootBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, RootOverlay) == 0x000650, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SubGameModeName) == 0x000658, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SubGameModeName' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SubGameModeNameHB) == 0x000660, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SubGameModeNameHB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SupportAffliateButton) == 0x000668, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SupportAffliateButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, T_LTMBangText) == 0x000670, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::T_LTMBangText' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, T_LTMBangText_Heist) == 0x000678, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::T_LTMBangText_Heist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, TouchToCloseZone) == 0x000680, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::TouchToCloseZone' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, WarningHB) == 0x000688, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::WarningHB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Input_Cancel) == 0x000690, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Input_Cancel' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MyLTM) == 0x0006A0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MyLTM' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, LastHoveredStandardModeIndex) == 0x0006A8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::LastHoveredStandardModeIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexMax) == 0x0006AC, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexMax' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, SM_Button_IndexCurrent) == 0x0006B0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::SM_Button_IndexCurrent' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, DefaultPlaylists) == 0x0006B8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::DefaultPlaylists' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InitialButtonSelection) == 0x0006C0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InitialButtonSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, CurrentPlaylist) == 0x0006C8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::CurrentPlaylist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, MatchmakingPageTileIndex) == 0x0006D0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::MatchmakingPageTileIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IntroOutroTileDelayTime) == 0x0006D4, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IntroOutroTileDelayTime' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InputCustomMatchmaking) == 0x0006D8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InputCustomMatchmaking' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IsPerformingOutro) == 0x0006E8, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IsPerformingOutro' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, PlayIntroAnim) == 0x0006E9, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::PlayIntroAnim' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, InputSpectateMatch) == 0x0006F0, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::InputSpectateMatch' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IsShowingSupportCreator) == 0x000700, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IsShowingSupportCreator' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, IsPerformingIntro) == 0x000701, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::IsPerformingIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingOptionsDisplay_v2_C, Confirm) == 0x000708, "Member 'UAthenaMatchmakingOptionsDisplay_v2_C::Confirm' has a wrong offset!");
 
 }
 

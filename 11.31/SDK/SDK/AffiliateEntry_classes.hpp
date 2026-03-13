@@ -23,15 +23,17 @@ class UAffiliateEntry_C final : public UFortAffiliateEntry
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AffiliateEntry_C">();
+		BP_STATIC_CLASS_IMPL("AffiliateEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AffiliateEntry_C")
 	}
 	static class UAffiliateEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAffiliateEntry_C>();
 	}
 };
-static_assert(alignof(UAffiliateEntry_C) == 0x000008, "Wrong alignment on UAffiliateEntry_C");
-static_assert(sizeof(UAffiliateEntry_C) == 0x000B90, "Wrong size on UAffiliateEntry_C");
 
 }
 

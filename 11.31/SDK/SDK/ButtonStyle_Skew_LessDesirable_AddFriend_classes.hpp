@@ -23,15 +23,17 @@ class UButtonStyle_Skew_LessDesirable_AddFriend_C final : public UCommonButtonSt
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Skew_LessDesirable_AddFriend_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Skew_LessDesirable_AddFriend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Skew_LessDesirable_AddFriend_C")
 	}
 	static class UButtonStyle_Skew_LessDesirable_AddFriend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Skew_LessDesirable_AddFriend_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Skew_LessDesirable_AddFriend_C) == 0x000008, "Wrong alignment on UButtonStyle_Skew_LessDesirable_AddFriend_C");
-static_assert(sizeof(UButtonStyle_Skew_LessDesirable_AddFriend_C) == 0x000570, "Wrong size on UButtonStyle_Skew_LessDesirable_AddFriend_C");
 
 }
 

@@ -23,15 +23,17 @@ class APBWA_W1_QuarterWallHalf_C final : public ABuildingWall
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_W1_QuarterWallHalf_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_W1_QuarterWallHalf_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_W1_QuarterWallHalf_C")
 	}
 	static class APBWA_W1_QuarterWallHalf_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_W1_QuarterWallHalf_C>();
 	}
 };
-static_assert(alignof(APBWA_W1_QuarterWallHalf_C) == 0x000008, "Wrong alignment on APBWA_W1_QuarterWallHalf_C");
-static_assert(sizeof(APBWA_W1_QuarterWallHalf_C) == 0x000C48, "Wrong size on APBWA_W1_QuarterWallHalf_C");
 
 }
 

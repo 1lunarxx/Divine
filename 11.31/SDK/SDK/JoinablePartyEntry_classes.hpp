@@ -48,29 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoinablePartyEntry_C">();
+		BP_STATIC_CLASS_IMPL("JoinablePartyEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinablePartyEntry_C")
 	}
 	static class UJoinablePartyEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinablePartyEntry_C>();
 	}
 };
-static_assert(alignof(UJoinablePartyEntry_C) == 0x000008, "Wrong alignment on UJoinablePartyEntry_C");
-static_assert(sizeof(UJoinablePartyEntry_C) == 0x000C68, "Wrong size on UJoinablePartyEntry_C");
-static_assert(offsetof(UJoinablePartyEntry_C, UberGraphFrame) == 0x000BB8, "Member 'UJoinablePartyEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, Selected) == 0x000BC0, "Member 'UJoinablePartyEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, Hovered) == 0x000BC8, "Member 'UJoinablePartyEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, AnimatedInputBorder) == 0x000BD0, "Member 'UJoinablePartyEntry_C::AnimatedInputBorder' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, Arrow) == 0x000BD8, "Member 'UJoinablePartyEntry_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, Border_OnlineStatusIndicator) == 0x000BE0, "Member 'UJoinablePartyEntry_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, EmptyButtonToEatOneMouseUpEvent) == 0x000BE8, "Member 'UJoinablePartyEntry_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, EntryBorder) == 0x000BF0, "Member 'UJoinablePartyEntry_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, Exclamation) == 0x000BF8, "Member 'UJoinablePartyEntry_C::Exclamation' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, UserActionMenuInputButton) == 0x000C00, "Member 'UJoinablePartyEntry_C::UserActionMenuInputButton' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, InviteMaterial) == 0x000C08, "Member 'UJoinablePartyEntry_C::InviteMaterial' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, DefaultMaterial) == 0x000C10, "Member 'UJoinablePartyEntry_C::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, InviteFontColor) == 0x000C18, "Member 'UJoinablePartyEntry_C::InviteFontColor' has a wrong offset!");
-static_assert(offsetof(UJoinablePartyEntry_C, DefaultFontColor) == 0x000C40, "Member 'UJoinablePartyEntry_C::DefaultFontColor' has a wrong offset!");
 
 }
 

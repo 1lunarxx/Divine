@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemShopStandaloneModalPopup_C">();
+		BP_STATIC_CLASS_IMPL("ItemShopStandaloneModalPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemShopStandaloneModalPopup_C")
 	}
 	static class UItemShopStandaloneModalPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemShopStandaloneModalPopup_C>();
 	}
 };
-static_assert(alignof(UItemShopStandaloneModalPopup_C) == 0x000008, "Wrong alignment on UItemShopStandaloneModalPopup_C");
-static_assert(sizeof(UItemShopStandaloneModalPopup_C) == 0x0004E8, "Wrong size on UItemShopStandaloneModalPopup_C");
-static_assert(offsetof(UItemShopStandaloneModalPopup_C, UberGraphFrame) == 0x0004C0, "Member 'UItemShopStandaloneModalPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemShopStandaloneModalPopup_C, FadeOut) == 0x0004C8, "Member 'UItemShopStandaloneModalPopup_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UItemShopStandaloneModalPopup_C, comArrowsIn) == 0x0004D0, "Member 'UItemShopStandaloneModalPopup_C::comArrowsIn' has a wrong offset!");
-static_assert(offsetof(UItemShopStandaloneModalPopup_C, Darken_1) == 0x0004D8, "Member 'UItemShopStandaloneModalPopup_C::Darken_1' has a wrong offset!");
-static_assert(offsetof(UItemShopStandaloneModalPopup_C, PopUpBgarrows) == 0x0004E0, "Member 'UItemShopStandaloneModalPopup_C::PopUpBgarrows' has a wrong offset!");
 
 }
 

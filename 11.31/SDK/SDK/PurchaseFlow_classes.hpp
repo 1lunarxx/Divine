@@ -35,15 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"PurchaseFlowJSBridge">();
+		STATIC_CLASS_IMPL("PurchaseFlowJSBridge")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PurchaseFlowJSBridge")
 	}
 	static class UPurchaseFlowJSBridge* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPurchaseFlowJSBridge>();
 	}
 };
-static_assert(alignof(UPurchaseFlowJSBridge) == 0x000008, "Wrong alignment on UPurchaseFlowJSBridge");
-static_assert(sizeof(UPurchaseFlowJSBridge) == 0x000038, "Wrong size on UPurchaseFlowJSBridge");
 
 }
 

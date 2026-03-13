@@ -42,22 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeScreen_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeScreen_C")
 	}
 	static class UChallengeScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeScreen_C>();
 	}
 };
-static_assert(alignof(UChallengeScreen_C) == 0x000008, "Wrong alignment on UChallengeScreen_C");
-static_assert(sizeof(UChallengeScreen_C) == 0x000520, "Wrong size on UChallengeScreen_C");
-static_assert(offsetof(UChallengeScreen_C, UberGraphFrame) == 0x0004E0, "Member 'UChallengeScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, OnPartyAssistEnabledHover) == 0x0004E8, "Member 'UChallengeScreen_C::OnPartyAssistEnabledHover' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, CommonActionWidget_0) == 0x0004F0, "Member 'UChallengeScreen_C::CommonActionWidget_0' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, CommonActionWidget_1) == 0x0004F8, "Member 'UChallengeScreen_C::CommonActionWidget_1' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, CommonRichTextBlock_0) == 0x000500, "Member 'UChallengeScreen_C::CommonRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, Input_ReplayCinematic) == 0x000508, "Member 'UChallengeScreen_C::Input_ReplayCinematic' has a wrong offset!");
-static_assert(offsetof(UChallengeScreen_C, AutoPlayVideo) == 0x000518, "Member 'UChallengeScreen_C::AutoPlayVideo' has a wrong offset!");
 
 }
 

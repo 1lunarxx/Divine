@@ -23,15 +23,17 @@ class UTargeting3PCamera_VeryShortRange_C final : public UFort3PCam_Targeting
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Targeting3PCamera_VeryShortRange_C">();
+		BP_STATIC_CLASS_IMPL("Targeting3PCamera_VeryShortRange_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Targeting3PCamera_VeryShortRange_C")
 	}
 	static class UTargeting3PCamera_VeryShortRange_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTargeting3PCamera_VeryShortRange_C>();
 	}
 };
-static_assert(alignof(UTargeting3PCamera_VeryShortRange_C) == 0x000008, "Wrong alignment on UTargeting3PCamera_VeryShortRange_C");
-static_assert(sizeof(UTargeting3PCamera_VeryShortRange_C) == 0x000138, "Wrong size on UTargeting3PCamera_VeryShortRange_C");
 
 }
 

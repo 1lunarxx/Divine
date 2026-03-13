@@ -57,30 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCL_BoostJumpPack_Hovering_C">();
+		BP_STATIC_CLASS_IMPL("GCL_BoostJumpPack_Hovering_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCL_BoostJumpPack_Hovering_C")
 	}
 	static class AGCL_BoostJumpPack_Hovering_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCL_BoostJumpPack_Hovering_C>();
 	}
 };
-static_assert(alignof(AGCL_BoostJumpPack_Hovering_C) == 0x000008, "Wrong alignment on AGCL_BoostJumpPack_Hovering_C");
-static_assert(sizeof(AGCL_BoostJumpPack_Hovering_C) == 0x0008F8, "Wrong size on AGCL_BoostJumpPack_Hovering_C");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, UberGraphFrame) == 0x000838, "Member 'AGCL_BoostJumpPack_Hovering_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, bJetpackAudioEnabled) == 0x000840, "Member 'AGCL_BoostJumpPack_Hovering_C::bJetpackAudioEnabled' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundOnStart) == 0x000848, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundOnStart' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundOnStop) == 0x000850, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundOnStop' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundLoopOnIdle) == 0x000858, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundLoopOnIdle' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundLoopOnAccel) == 0x000860, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundLoopOnAccel' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundLoopOnOutOfFuel) == 0x000868, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundLoopOnOutOfFuel' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundOnFuelWarning) == 0x000870, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundOnFuelWarning' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundOnOutOfFuel) == 0x000878, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundOnOutOfFuel' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, SoundOnThrust) == 0x000880, "Member 'AGCL_BoostJumpPack_Hovering_C::SoundOnThrust' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, bIsFirstJump) == 0x000888, "Member 'AGCL_BoostJumpPack_Hovering_C::bIsFirstJump' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, GroundInteract) == 0x000890, "Member 'AGCL_BoostJumpPack_Hovering_C::GroundInteract' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, Milo_Check) == 0x000898, "Member 'AGCL_BoostJumpPack_Hovering_C::Milo_Check' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, Milo_Backpack) == 0x0008C0, "Member 'AGCL_BoostJumpPack_Hovering_C::Milo_Backpack' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_Hovering_C, Milo_LightScale) == 0x0008E8, "Member 'AGCL_BoostJumpPack_Hovering_C::Milo_LightScale' has a wrong offset!");
 
 }
 

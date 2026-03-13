@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitonDetails_BattlePassStarDetails_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitonDetails_BattlePassStarDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitonDetails_BattlePassStarDetails_C")
 	}
 	static class UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C");
-static_assert(sizeof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C) == 0x000250, "Wrong size on UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C, UberGraphFrame) == 0x000230, "Member 'UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C, HB_BattlePassStarsSupplemental) == 0x000238, "Member 'UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::HB_BattlePassStarsSupplemental' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C, Image_BattleStarSupplemental) == 0x000240, "Member 'UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::Image_BattleStarSupplemental' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C, T_BattleStarInfoSupplemental) == 0x000248, "Member 'UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::T_BattleStarInfoSupplemental' has a wrong offset!");
 
 }
 

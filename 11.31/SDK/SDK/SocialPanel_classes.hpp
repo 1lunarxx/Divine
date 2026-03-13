@@ -44,21 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanel_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanel_C")
 	}
 	static class USocialPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanel_C>();
 	}
 };
-static_assert(alignof(USocialPanel_C) == 0x000008, "Wrong alignment on USocialPanel_C");
-static_assert(sizeof(USocialPanel_C) == 0x0004A0, "Wrong size on USocialPanel_C");
-static_assert(offsetof(USocialPanel_C, UberGraphFrame) == 0x000470, "Member 'USocialPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, OnOpened) == 0x000478, "Member 'USocialPanel_C::OnOpened' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, Image_Back) == 0x000480, "Member 'USocialPanel_C::Image_Back' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, Lightbox) == 0x000488, "Member 'USocialPanel_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, SafeZone_0) == 0x000490, "Member 'USocialPanel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(USocialPanel_C, SocialPanel_TopBarExtension) == 0x000498, "Member 'USocialPanel_C::SocialPanel_TopBarExtension' has a wrong offset!");
 
 }
 

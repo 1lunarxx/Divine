@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeInGameTreeEntry_Header_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeInGameTreeEntry_Header_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeInGameTreeEntry_Header_C")
 	}
 	static class UChallengeInGameTreeEntry_Header_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeInGameTreeEntry_Header_C>();
 	}
 };
-static_assert(alignof(UChallengeInGameTreeEntry_Header_C) == 0x000008, "Wrong alignment on UChallengeInGameTreeEntry_Header_C");
-static_assert(sizeof(UChallengeInGameTreeEntry_Header_C) == 0x0002A8, "Wrong size on UChallengeInGameTreeEntry_Header_C");
-static_assert(offsetof(UChallengeInGameTreeEntry_Header_C, UberGraphFrame) == 0x000280, "Member 'UChallengeInGameTreeEntry_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeInGameTreeEntry_Header_C, OnExpand) == 0x000288, "Member 'UChallengeInGameTreeEntry_Header_C::OnExpand' has a wrong offset!");
-static_assert(offsetof(UChallengeInGameTreeEntry_Header_C, OnHover) == 0x000290, "Member 'UChallengeInGameTreeEntry_Header_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeInGameTreeEntry_Header_C, AnimBoundEntryBorder) == 0x000298, "Member 'UChallengeInGameTreeEntry_Header_C::AnimBoundEntryBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeInGameTreeEntry_Header_C, BaseColorBorder) == 0x0002A0, "Member 'UChallengeInGameTreeEntry_Header_C::BaseColorBorder' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UGSC_FrontEndFlowSTW_C final : public UFortGameStateComponent_FrontEndFlow
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GSC_FrontEndFlowSTW_C">();
+		BP_STATIC_CLASS_IMPL("GSC_FrontEndFlowSTW_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GSC_FrontEndFlowSTW_C")
 	}
 	static class UGSC_FrontEndFlowSTW_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGSC_FrontEndFlowSTW_C>();
 	}
 };
-static_assert(alignof(UGSC_FrontEndFlowSTW_C) == 0x000008, "Wrong alignment on UGSC_FrontEndFlowSTW_C");
-static_assert(sizeof(UGSC_FrontEndFlowSTW_C) == 0x000138, "Wrong size on UGSC_FrontEndFlowSTW_C");
 
 }
 

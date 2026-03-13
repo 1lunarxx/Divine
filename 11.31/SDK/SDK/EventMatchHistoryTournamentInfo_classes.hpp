@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventMatchHistoryTournamentInfo_C">();
+		BP_STATIC_CLASS_IMPL("EventMatchHistoryTournamentInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventMatchHistoryTournamentInfo_C")
 	}
 	static class UEventMatchHistoryTournamentInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventMatchHistoryTournamentInfo_C>();
 	}
 };
-static_assert(alignof(UEventMatchHistoryTournamentInfo_C) == 0x000008, "Wrong alignment on UEventMatchHistoryTournamentInfo_C");
-static_assert(sizeof(UEventMatchHistoryTournamentInfo_C) == 0x000620, "Wrong size on UEventMatchHistoryTournamentInfo_C");
-static_assert(offsetof(UEventMatchHistoryTournamentInfo_C, UberGraphFrame) == 0x000610, "Member 'UEventMatchHistoryTournamentInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventMatchHistoryTournamentInfo_C, Text_TournamentInfo) == 0x000618, "Member 'UEventMatchHistoryTournamentInfo_C::Text_TournamentInfo' has a wrong offset!");
 
 }
 

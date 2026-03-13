@@ -26,11 +26,6 @@ public:
 	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0008(0x00B0)(ConstParm)
 	class ABuildingActor*                         CallFunc_SetupBuildingActorAbility_BuildingActor;  // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor) == 0x000008, "Wrong alignment on GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor");
-static_assert(sizeof(GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor) == 0x0000C0, "Wrong size on GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor, EntryPoint) == 0x000000, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor, K2Node_Event_EventData) == 0x000008, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor, CallFunc_SetupBuildingActorAbility_BuildingActor) == 0x0000B8, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_TriggeredAbility_BuildingActor::CallFunc_SetupBuildingActorAbility_BuildingActor' has a wrong offset!");
 
 // Function GAT_Creative_TriggeredAbility_BuildingActor.GAT_Creative_TriggeredAbility_BuildingActor_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -39,9 +34,6 @@ struct GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAT_Creative_TriggeredAbility_BuildingActor.GAT_Creative_TriggeredAbility_BuildingActor_C.SetupBuildingActorAbility
 // 0x0060 (0x0060 - 0x0000)
@@ -54,13 +46,6 @@ public:
 	class ABuildingActor*                         K2Node_DynamicCast_AsBuilding_Actor;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility) == 0x000008, "Wrong alignment on GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility");
-static_assert(sizeof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility) == 0x000060, "Wrong size on GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility, BuildingActor) == 0x000000, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility::BuildingActor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility, LocalBuildingActor) == 0x000008, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility::LocalBuildingActor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility, CallFunc_GetActorInfo_ReturnValue) == 0x000010, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility, K2Node_DynamicCast_AsBuilding_Actor) == 0x000050, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'GAT_Creative_TriggeredAbility_BuildingActor_C_SetupBuildingActorAbility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

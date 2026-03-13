@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_TrapGeneric_C">();
+		BP_STATIC_CLASS_IMPL("GA_TrapGeneric_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_TrapGeneric_C")
 	}
 	static class UGA_TrapGeneric_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_TrapGeneric_C>();
 	}
 };
-static_assert(alignof(UGA_TrapGeneric_C) == 0x000008, "Wrong alignment on UGA_TrapGeneric_C");
-static_assert(sizeof(UGA_TrapGeneric_C) == 0x000A60, "Wrong size on UGA_TrapGeneric_C");
-static_assert(offsetof(UGA_TrapGeneric_C, UberGraphFrame) == 0x000A30, "Member 'UGA_TrapGeneric_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, CeilingTrap) == 0x000A38, "Member 'UGA_TrapGeneric_C::CeilingTrap' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, CachedDamageTargets) == 0x000A40, "Member 'UGA_TrapGeneric_C::CachedDamageTargets' has a wrong offset!");
-static_assert(offsetof(UGA_TrapGeneric_C, TargetArray) == 0x000A50, "Member 'UGA_TrapGeneric_C::TargetArray' has a wrong offset!");
 
 }
 

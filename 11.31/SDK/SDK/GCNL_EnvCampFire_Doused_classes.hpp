@@ -31,30 +31,27 @@ public:
 	struct FScalableFloat                         Row_Duration;                                      // 0x07A0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Fade_Doused_Smoke__UpdateFunc();
 	void Fade_Doused_Smoke__FinishedFunc();
 	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void DestroyOnDestroy(class AActor* DestroyedActor);
 	void ExecuteUbergraph_GCNL_EnvCampFire_Doused(int32 EntryPoint);
+	void Fade_Doused_Smoke__UpdateFunc();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_EnvCampFire_Doused_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_EnvCampFire_Doused_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_EnvCampFire_Doused_C")
 	}
 	static class AGCNL_EnvCampFire_Doused_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_EnvCampFire_Doused_C>();
 	}
 };
-static_assert(alignof(AGCNL_EnvCampFire_Doused_C) == 0x000008, "Wrong alignment on AGCNL_EnvCampFire_Doused_C");
-static_assert(sizeof(AGCNL_EnvCampFire_Doused_C) == 0x0007C0, "Wrong size on AGCNL_EnvCampFire_Doused_C");
-static_assert(offsetof(AGCNL_EnvCampFire_Doused_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_EnvCampFire_Doused_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Doused_C, Fade_Doused_Smoke_Fade_50A77D974140FDA04967E2BABB987458) == 0x000790, "Member 'AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke_Fade_50A77D974140FDA04967E2BABB987458' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Doused_C, Fade_Doused_Smoke__Direction_50A77D974140FDA04967E2BABB987458) == 0x000794, "Member 'AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke__Direction_50A77D974140FDA04967E2BABB987458' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Doused_C, Fade_Doused_Smoke) == 0x000798, "Member 'AGCNL_EnvCampFire_Doused_C::Fade_Doused_Smoke' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Doused_C, Row_Duration) == 0x0007A0, "Member 'AGCNL_EnvCampFire_Doused_C::Row_Duration' has a wrong offset!");
 
 }
 

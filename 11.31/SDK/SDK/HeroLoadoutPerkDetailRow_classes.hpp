@@ -67,6 +67,15 @@ public:
 	class UFortAbilityKit*                        Raw_Ability_Kit;                                   // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	class UFortAbilityKit* GetPerkAbilityKit();
+	void SetHero(class UFortHero* Hero);
+	void UpdateTextStyles();
+	void UpdateFromState();
+	void UpdateFromStyle();
+	void PreConstruct(bool IsDesignTime);
+	void SetHoverAlphaValue(float NewValue);
+	void SetHoverHorizontalOffset(float NewValue);
+	void ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint);
 	void SetTeamPerk(class UFortTeamPerkItem* Team_Perk_0);
 	void SetRawAbilityKit(class UFortAbilityKit* Ability_Kit);
 	void PlayUnHover();
@@ -78,63 +87,21 @@ public:
 	void SetShouldDisplayAsIgnored(bool InShouldDisplayAsIgnored);
 	void SetPerkTypeToRepresent(EFortHeroLoadoutPerkType Perk_Type);
 	bool IsPerkUnlocked();
-	class UFortAbilityKit* GetPerkAbilityKit();
-	void SetHero(class UFortHero* Hero);
-	void UpdateTextStyles();
-	void UpdateFromState();
-	void UpdateFromStyle();
-	void PreConstruct(bool IsDesignTime);
-	void SetHoverAlphaValue(float NewValue);
-	void SetHoverHorizontalOffset(float NewValue);
-	void ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroLoadoutPerkDetailRow_C">();
+		BP_STATIC_CLASS_IMPL("HeroLoadoutPerkDetailRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroLoadoutPerkDetailRow_C")
 	}
 	static class UHeroLoadoutPerkDetailRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroLoadoutPerkDetailRow_C>();
 	}
 };
-static_assert(alignof(UHeroLoadoutPerkDetailRow_C) == 0x000008, "Wrong alignment on UHeroLoadoutPerkDetailRow_C");
-static_assert(sizeof(UHeroLoadoutPerkDetailRow_C) == 0x000458, "Wrong size on UHeroLoadoutPerkDetailRow_C");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, UberGraphFrame) == 0x000258, "Member 'UHeroLoadoutPerkDetailRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Hover) == 0x000260, "Member 'UHeroLoadoutPerkDetailRow_C::Hover' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Border_PerkIcon) == 0x000268, "Member 'UHeroLoadoutPerkDetailRow_C::Border_PerkIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, ImageLockPerk) == 0x000270, "Member 'UHeroLoadoutPerkDetailRow_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, ImagePerkIcon) == 0x000278, "Member 'UHeroLoadoutPerkDetailRow_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, ImageTier) == 0x000280, "Member 'UHeroLoadoutPerkDetailRow_C::ImageTier' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, InfoSwitcher) == 0x000288, "Member 'UHeroLoadoutPerkDetailRow_C::InfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LargeInfo) == 0x000290, "Member 'UHeroLoadoutPerkDetailRow_C::LargeInfo' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LargeName) == 0x000298, "Member 'UHeroLoadoutPerkDetailRow_C::LargeName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LevelTextNew) == 0x0002A0, "Member 'UHeroLoadoutPerkDetailRow_C::LevelTextNew' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, OverlayLockPerk) == 0x0002A8, "Member 'UHeroLoadoutPerkDetailRow_C::OverlayLockPerk' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, PerkIconSizeBox) == 0x0002B0, "Member 'UHeroLoadoutPerkDetailRow_C::PerkIconSizeBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, RichText_SmallDescription) == 0x0002B8, "Member 'UHeroLoadoutPerkDetailRow_C::RichText_SmallDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Shadow) == 0x0002C0, "Member 'UHeroLoadoutPerkDetailRow_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, SmallInfo) == 0x0002C8, "Member 'UHeroLoadoutPerkDetailRow_C::SmallInfo' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, SmallName) == 0x0002D0, "Member 'UHeroLoadoutPerkDetailRow_C::SmallName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, IncludeName) == 0x0002D8, "Member 'UHeroLoadoutPerkDetailRow_C::IncludeName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, IncludeDescription) == 0x0002D9, "Member 'UHeroLoadoutPerkDetailRow_C::IncludeDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, ShouldDisplayAsIgnored) == 0x0002DA, "Member 'UHeroLoadoutPerkDetailRow_C::ShouldDisplayAsIgnored' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, UnlockedDisplayNameTextStyle) == 0x0002E0, "Member 'UHeroLoadoutPerkDetailRow_C::UnlockedDisplayNameTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LockedDisplayNameTextStyle) == 0x0002E8, "Member 'UHeroLoadoutPerkDetailRow_C::LockedDisplayNameTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, IgnoredDisplayNameTextStyle) == 0x0002F0, "Member 'UHeroLoadoutPerkDetailRow_C::IgnoredDisplayNameTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, UnlockedDescriptionTextStyle) == 0x0002F8, "Member 'UHeroLoadoutPerkDetailRow_C::UnlockedDescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LockedDescriptionTextStyle) == 0x000300, "Member 'UHeroLoadoutPerkDetailRow_C::LockedDescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, IgnoredDescriptionTextStyle) == 0x000308, "Member 'UHeroLoadoutPerkDetailRow_C::IgnoredDescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Icon_Size) == 0x000310, "Member 'UHeroLoadoutPerkDetailRow_C::Icon_Size' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Host_Hero) == 0x000318, "Member 'UHeroLoadoutPerkDetailRow_C::Host_Hero' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Perk_Type_To_Represent) == 0x000320, "Member 'UHeroLoadoutPerkDetailRow_C::Perk_Type_To_Represent' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, HoverAlphaValue) == 0x000324, "Member 'UHeroLoadoutPerkDetailRow_C::HoverAlphaValue' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, HoverHorizontalOffset) == 0x000328, "Member 'UHeroLoadoutPerkDetailRow_C::HoverHorizontalOffset' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, LockedIcon) == 0x000330, "Member 'UHeroLoadoutPerkDetailRow_C::LockedIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, WarningIcon) == 0x0003B8, "Member 'UHeroLoadoutPerkDetailRow_C::WarningIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, ShouldDisplayWarning) == 0x000440, "Member 'UHeroLoadoutPerkDetailRow_C::ShouldDisplayWarning' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Team_Perk) == 0x000448, "Member 'UHeroLoadoutPerkDetailRow_C::Team_Perk' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutPerkDetailRow_C, Raw_Ability_Kit) == 0x000450, "Member 'UHeroLoadoutPerkDetailRow_C::Raw_Ability_Kit' has a wrong offset!");
 
 }
 

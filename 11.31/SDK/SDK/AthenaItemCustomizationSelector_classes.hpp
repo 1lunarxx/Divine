@@ -59,6 +59,9 @@ public:
 	int32                                         MaxSeason;                                         // 0x07DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdateSeasonButtonEnabledState();
+	class UMaterialInstance* GetCategoryImage(EAthenaCustomizationCategory Index_0, class UMaterialInstance* OverrideImage);
+	void HandleItemSetupFinished(const class FText& InText, EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage);
 	void ApplyToAllSlots(bool* PassThrough);
 	void UpdateInputActionVisibilities(class UFortItem* Item);
 	void UpdateApplyToAllVisibility(class UFortItem* Item);
@@ -82,52 +85,21 @@ public:
 	void OnFinishedItemSetup(const class FText& CategoryDisplayName, const class FText& ItemDisplayTypeName, EAthenaCustomizationCategory SelectedCategory, class UMaterialInstance* OverrideSlotImage);
 	void HandleTextSearchSelectedChanged(bool bIsSelected);
 	void ExecuteUbergraph_AthenaItemCustomizationSelector(int32 EntryPoint);
-	void UpdateSeasonButtonEnabledState();
-	class UMaterialInstance* GetCategoryImage(EAthenaCustomizationCategory Index_0, class UMaterialInstance* OverrideImage);
-	void HandleItemSetupFinished(const class FText& InText, EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaItemCustomizationSelector_C">();
+		BP_STATIC_CLASS_IMPL("AthenaItemCustomizationSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaItemCustomizationSelector_C")
 	}
 	static class UAthenaItemCustomizationSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaItemCustomizationSelector_C>();
 	}
 };
-static_assert(alignof(UAthenaItemCustomizationSelector_C) == 0x000008, "Wrong alignment on UAthenaItemCustomizationSelector_C");
-static_assert(sizeof(UAthenaItemCustomizationSelector_C) == 0x0007E0, "Wrong size on UAthenaItemCustomizationSelector_C");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, UberGraphFrame) == 0x0006E8, "Member 'UAthenaItemCustomizationSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, CannotSlide) == 0x0006F0, "Member 'UAthenaItemCustomizationSelector_C::CannotSlide' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, NormalState) == 0x0006F8, "Member 'UAthenaItemCustomizationSelector_C::NormalState' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SlideRight) == 0x000700, "Member 'UAthenaItemCustomizationSelector_C::SlideRight' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SlideLeft) == 0x000708, "Member 'UAthenaItemCustomizationSelector_C::SlideLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, HideTextSearch) == 0x000710, "Member 'UAthenaItemCustomizationSelector_C::HideTextSearch' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, ShowTextSearch) == 0x000718, "Member 'UAthenaItemCustomizationSelector_C::ShowTextSearch' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, ItemInfoIntroOutro) == 0x000720, "Member 'UAthenaItemCustomizationSelector_C::ItemInfoIntroOutro' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, Intro) == 0x000728, "Member 'UAthenaItemCustomizationSelector_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, CameraFramingWidget) == 0x000730, "Member 'UAthenaItemCustomizationSelector_C::CameraFramingWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, CloseIcon) == 0x000738, "Member 'UAthenaItemCustomizationSelector_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, MainSafeZone) == 0x000740, "Member 'UAthenaItemCustomizationSelector_C::MainSafeZone' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, MobileCloseButton) == 0x000748, "Member 'UAthenaItemCustomizationSelector_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, OverlayCloseButton) == 0x000750, "Member 'UAthenaItemCustomizationSelector_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SB_MainContent) == 0x000758, "Member 'UAthenaItemCustomizationSelector_C::SB_MainContent' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SB_SaveAndExit) == 0x000760, "Member 'UAthenaItemCustomizationSelector_C::SB_SaveAndExit' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, ShortDescriptionText) == 0x000768, "Member 'UAthenaItemCustomizationSelector_C::ShortDescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SlotImage) == 0x000770, "Member 'UAthenaItemCustomizationSelector_C::SlotImage' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, TextBox_LockerRoomMode) == 0x000778, "Member 'UAthenaItemCustomizationSelector_C::TextBox_LockerRoomMode' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, WidgetSwitcher_InteractionMethod) == 0x000780, "Member 'UAthenaItemCustomizationSelector_C::WidgetSwitcher_InteractionMethod' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, WidgetSwitcher_ItemEditor) == 0x000788, "Member 'UAthenaItemCustomizationSelector_C::WidgetSwitcher_ItemEditor' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, ProgressModal) == 0x000790, "Member 'UAthenaItemCustomizationSelector_C::ProgressModal' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, FavoriteInputActionRow) == 0x000798, "Member 'UAthenaItemCustomizationSelector_C::FavoriteInputActionRow' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, bPickingStyle) == 0x0007A8, "Member 'UAthenaItemCustomizationSelector_C::bPickingStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, ApplyToAllInputActionRow) == 0x0007B0, "Member 'UAthenaItemCustomizationSelector_C::ApplyToAllInputActionRow' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, bHandledBackRequest) == 0x0007C0, "Member 'UAthenaItemCustomizationSelector_C::bHandledBackRequest' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, AutoHideInfoPanelForDances) == 0x0007C8, "Member 'UAthenaItemCustomizationSelector_C::AutoHideInfoPanelForDances' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, TextEntryTimer) == 0x0007D0, "Member 'UAthenaItemCustomizationSelector_C::TextEntryTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, SeasonFilter) == 0x0007D8, "Member 'UAthenaItemCustomizationSelector_C::SeasonFilter' has a wrong offset!");
-static_assert(offsetof(UAthenaItemCustomizationSelector_C, MaxSeason) == 0x0007DC, "Member 'UAthenaItemCustomizationSelector_C::MaxSeason' has a wrong offset!");
 
 }
 

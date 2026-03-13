@@ -21,9 +21,6 @@ struct TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature) == 0x000008, "Wrong alignment on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
-static_assert(sizeof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature) == 0x000008, "Wrong size on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
-static_assert(offsetof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature, Widget) == 0x000000, "Member 'TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabNewControllerSettings.TabNewControllerSettings_C.SettingValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +29,6 @@ struct TabNewControllerSettings_C_SettingValueChanged final
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabNewControllerSettings_C_SettingValueChanged) == 0x000004, "Wrong alignment on TabNewControllerSettings_C_SettingValueChanged");
-static_assert(sizeof(TabNewControllerSettings_C_SettingValueChanged) == 0x000004, "Wrong size on TabNewControllerSettings_C_SettingValueChanged");
-static_assert(offsetof(TabNewControllerSettings_C_SettingValueChanged, Value) == 0x000000, "Member 'TabNewControllerSettings_C_SettingValueChanged::Value' has a wrong offset!");
 
 // Function TabNewControllerSettings.TabNewControllerSettings_C.BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -44,10 +38,6 @@ public:
 	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature) == 0x000008, "Wrong alignment on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature");
-static_assert(sizeof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature) == 0x000010, "Wrong size on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature");
-static_assert(offsetof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature, Item) == 0x000000, "Member 'TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature, Widget) == 0x000008, "Member 'TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_1_OnListItemScrolledIntoViewDynamic__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabNewControllerSettings.TabNewControllerSettings_C.AdvancedSettingsChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +46,6 @@ struct TabNewControllerSettings_C_AdvancedSettingsChanged final
 public:
 	bool                                          Enabled;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabNewControllerSettings_C_AdvancedSettingsChanged) == 0x000001, "Wrong alignment on TabNewControllerSettings_C_AdvancedSettingsChanged");
-static_assert(sizeof(TabNewControllerSettings_C_AdvancedSettingsChanged) == 0x000001, "Wrong size on TabNewControllerSettings_C_AdvancedSettingsChanged");
-static_assert(offsetof(TabNewControllerSettings_C_AdvancedSettingsChanged, Enabled) == 0x000000, "Member 'TabNewControllerSettings_C_AdvancedSettingsChanged::Enabled' has a wrong offset!");
 
 // Function TabNewControllerSettings.TabNewControllerSettings_C.BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +54,6 @@ struct TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature) == 0x000008, "Wrong alignment on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature");
-static_assert(sizeof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature) == 0x000008, "Wrong size on TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature");
-static_assert(offsetof(TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature, Widget) == 0x000000, "Member 'TabNewControllerSettings_C_BndEvt__TabListView_K2Node_ComponentBoundEvent_2_OnListEntryReleasedDynamic__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabNewControllerSettings.TabNewControllerSettings_C.ExecuteUbergraph_TabNewControllerSettings
 // 0x00B0 (0x00B0 - 0x0000)
@@ -114,38 +98,6 @@ public:
 	class UOptionsMenuRotator_C*                  K2Node_DynamicCast_AsOptions_Menu_Rotator_1;       // 0x00A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings) == 0x000008, "Wrong alignment on TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings");
-static_assert(sizeof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings) == 0x0000B0, "Wrong size on TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, EntryPoint) == 0x000000, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_ComponentBoundEvent_Widget_2) == 0x000018, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_ComponentBoundEvent_Widget_2' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_AsFort_Options_Menu_Setting) == 0x000020, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_AsFort_Options_Menu_Setting' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_CustomEvent_Value) == 0x00002C, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_AsOptions_Menu_Rotator) == 0x000030, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_AsOptions_Menu_Rotator' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000039, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00003A, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00003B, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_BooleanOR_ReturnValue) == 0x00003C, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_ComponentBoundEvent_Item) == 0x000040, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_ComponentBoundEvent_Widget_1) == 0x000048, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_ComponentBoundEvent_Widget_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_CustomEvent_Enabled) == 0x000050, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_CustomEvent_Enabled' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_AsFort_Options_Menu_Setting_1) == 0x000058, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_AsFort_Options_Menu_Setting_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_IsAdvancedSettingsEnabled_ReturnValue) == 0x000061, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_IsAdvancedSettingsEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, Temp_int_Variable) == 0x000064, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_CreateDelegate_OutputDelegate_1) == 0x000068, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_CreateDelegate_OutputDelegate_2) == 0x000078, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, Temp_int_Variable_1) == 0x000088, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, Temp_bool_Variable) == 0x00008C, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_IsAdvancedSettingsEnabled_ReturnValue_1) == 0x00008D, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_IsAdvancedSettingsEnabled_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_Select_Default) == 0x000090, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_BooleanAND_ReturnValue) == 0x000094, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, CallFunc_Not_PreBool_ReturnValue) == 0x000095, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_ComponentBoundEvent_Widget) == 0x000098, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_AsOptions_Menu_Rotator_1) == 0x0000A0, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_AsOptions_Menu_Rotator_1' has a wrong offset!");
-static_assert(offsetof(TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings, K2Node_DynamicCast_bSuccess_3) == 0x0000A8, "Member 'TabNewControllerSettings_C_ExecuteUbergraph_TabNewControllerSettings::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
 
 }
 

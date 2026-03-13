@@ -24,9 +24,9 @@ void IBPI_HuskDance_C::OnBeginDance()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
+		Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnBeginDance");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -38,9 +38,9 @@ void IBPI_HuskDance_C::OnEndDance()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
+		Func = AsUObject()->Class->GetFunction("BPI_HuskDance_C", "OnEndDance");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 }

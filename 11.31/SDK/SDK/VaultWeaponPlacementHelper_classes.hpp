@@ -49,26 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultWeaponPlacementHelper_C">();
+		BP_STATIC_CLASS_IMPL("VaultWeaponPlacementHelper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultWeaponPlacementHelper_C")
 	}
 	static class AVaultWeaponPlacementHelper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultWeaponPlacementHelper_C>();
 	}
 };
-static_assert(alignof(AVaultWeaponPlacementHelper_C) == 0x000008, "Wrong alignment on AVaultWeaponPlacementHelper_C");
-static_assert(sizeof(AVaultWeaponPlacementHelper_C) == 0x000278, "Wrong size on AVaultWeaponPlacementHelper_C");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, UberGraphFrame) == 0x000218, "Member 'AVaultWeaponPlacementHelper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, CUBE) == 0x000220, "Member 'AVaultWeaponPlacementHelper_C::CUBE' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Sparkle) == 0x000228, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Sparkle' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl02) == 0x000230, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl02' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PS_NoPlayer_Swirl01) == 0x000238, "Member 'AVaultWeaponPlacementHelper_C::PS_NoPlayer_Swirl01' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, CharacterPlacement) == 0x000240, "Member 'AVaultWeaponPlacementHelper_C::CharacterPlacement' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, root) == 0x000248, "Member 'AVaultWeaponPlacementHelper_C::root' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, PlayerID) == 0x000250, "Member 'AVaultWeaponPlacementHelper_C::PlayerID' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, Mesh) == 0x000258, "Member 'AVaultWeaponPlacementHelper_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, bIsPlayerSelected) == 0x000260, "Member 'AVaultWeaponPlacementHelper_C::bIsPlayerSelected' has a wrong offset!");
-static_assert(offsetof(AVaultWeaponPlacementHelper_C, NewEventDispatcher_0) == 0x000268, "Member 'AVaultWeaponPlacementHelper_C::NewEventDispatcher_0' has a wrong offset!");
 
 }
 

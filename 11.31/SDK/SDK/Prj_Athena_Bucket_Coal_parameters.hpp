@@ -44,25 +44,6 @@ public:
 	bool                                          Temp_bool_Has_Been_Initd_Variable;                 // 0x0193(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0194(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal");
-static_assert(sizeof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal) == 0x0001A0, "Wrong size on Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, EntryPoint) == 0x000000, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_MyComp) == 0x000008, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_Other) == 0x000010, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_OtherComp) == 0x000018, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_bSelfMoved) == 0x000020, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_HitLocation) == 0x000024, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_HitNormal) == 0x000030, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_NormalImpulse) == 0x00003C, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_Event_Hit) == 0x000048, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire) == 0x0000D0, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_DynamicCast_bSuccess) == 0x0000D8, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, K2Node_MakeStruct_GameplayEventData) == 0x0000E0, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000190, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, CallFunc_IsServer_ReturnValue) == 0x000191, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, Temp_bool_IsClosed_Variable) == 0x000192, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, Temp_bool_Has_Been_Initd_Variable) == 0x000193, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000194, "Member 'Prj_Athena_Bucket_Coal_C_ExecuteUbergraph_Prj_Athena_Bucket_Coal::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
 
 // Function Prj_Athena_Bucket_Coal.Prj_Athena_Bucket_Coal_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -79,16 +60,6 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_Bucket_Coal_C_ReceiveHit) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Coal_C_ReceiveHit");
-static_assert(sizeof(Prj_Athena_Bucket_Coal_C_ReceiveHit) == 0x0000C8, "Wrong size on Prj_Athena_Bucket_Coal_C_ReceiveHit");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, MyComp) == 0x000000, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, Other) == 0x000008, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, OtherComp) == 0x000010, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, bSelfMoved) == 0x000018, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, HitLocation) == 0x00001C, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, HitNormal) == 0x000028, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, NormalImpulse) == 0x000034, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Coal_C_ReceiveHit, Hit) == 0x000040, "Member 'Prj_Athena_Bucket_Coal_C_ReceiveHit::Hit' has a wrong offset!");
 
 }
 

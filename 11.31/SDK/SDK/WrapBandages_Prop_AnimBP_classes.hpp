@@ -40,24 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WrapBandages_Prop_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("WrapBandages_Prop_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WrapBandages_Prop_AnimBP_C")
 	}
 	static class UWrapBandages_Prop_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWrapBandages_Prop_AnimBP_C>();
 	}
 };
-static_assert(alignof(UWrapBandages_Prop_AnimBP_C) == 0x000010, "Wrong alignment on UWrapBandages_Prop_AnimBP_C");
-static_assert(sizeof(UWrapBandages_Prop_AnimBP_C) == 0x000570, "Wrong size on UWrapBandages_Prop_AnimBP_C");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, UberGraphFrame) == 0x000270, "Member 'UWrapBandages_Prop_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_Root_5542383742DA5238F8A178848A7C8FD7) == 0x000278, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_Root_5542383742DA5238F8A178848A7C8FD7' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_SequencePlayer_8B69A99142C5520097614183EAC7D467) == 0x0002A8, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_SequencePlayer_8B69A99142C5520097614183EAC7D467' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_Slot_9B269E1E4E036D2064B0DE9B141A5FA7) == 0x000320, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_Slot_9B269E1E4E036D2064B0DE9B141A5FA7' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_BlendListByEnum_ECF34B08453D54989318B1AA42733840) == 0x000368, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_BlendListByEnum_ECF34B08453D54989318B1AA42733840' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_SaveCachedPose_0011D2534D31C2D5F2559C9C9E1174F5) == 0x000418, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_SaveCachedPose_0011D2534D31C2D5F2559C9C9E1174F5' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_UseCachedPose_C3A0993548249B24D187929033166E8F) == 0x0004D0, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_UseCachedPose_C3A0993548249B24D187929033166E8F' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_UseCachedPose_F17D123C4EB3DE0C42DC5ABC4130E5DE) == 0x0004F8, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_UseCachedPose_F17D123C4EB3DE0C42DC5ABC4130E5DE' has a wrong offset!");
-static_assert(offsetof(UWrapBandages_Prop_AnimBP_C, AnimGraphNode_Slot_F32F7F1D429948AD568109AEBA7E7315) == 0x000520, "Member 'UWrapBandages_Prop_AnimBP_C::AnimGraphNode_Slot_F32F7F1D429948AD568109AEBA7E7315' has a wrong offset!");
 
 }
 

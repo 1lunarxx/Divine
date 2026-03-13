@@ -63,42 +63,6 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0135(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Montage_IsPlaying_ReturnValue_1;          // 0x0136(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried) == 0x000010, "Wrong alignment on DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried");
-static_assert(sizeof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried) == 0x000140, "Wrong size on DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, EntryPoint) == 0x000000, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetInstanceStateWeight_ReturnValue) == 0x000004, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetInstanceStateWeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, K2Node_Event_DeltaTimeX) == 0x000008, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::K2Node_Event_DeltaTimeX' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetAttachParentActor_ReturnValue) == 0x000010, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetAnimInstance_ReturnValue) == 0x000020, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x000028, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, K2Node_DynamicCast_AsFort_Player_Anim_Instance) == 0x000038, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::K2Node_DynamicCast_AsFort_Player_Anim_Instance' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_IsValid_ReturnValue_1) == 0x000041, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetSocketTransform_ReturnValue) == 0x000050, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetSocketTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Location) == 0x000080, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Rotation) == 0x00008C, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Scale) == 0x000098, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetSocketTransform_ReturnValue_1) == 0x0000B0, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetSocketTransform_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Location_1) == 0x0000E0, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Location_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Rotation_1) == 0x0000EC, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Rotation_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_BreakTransform_Scale_1) == 0x0000F8, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_BreakTransform_Scale_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetCurveValue_ReturnValue) == 0x000104, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetCurveValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000108, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00010C, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000110, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_GetWorldDeltaSeconds_ReturnValue_1) == 0x000114, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_GetWorldDeltaSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Montage_GetPosition_ReturnValue) == 0x000118, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Montage_GetPosition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Montage_GetPlayRate_ReturnValue) == 0x00011C, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Montage_GetPlayRate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Add_FloatFloat_ReturnValue) == 0x000120, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000124, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Montage_GetPosition_ReturnValue_1) == 0x000128, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Montage_GetPosition_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x00012C, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000130, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Montage_IsPlaying_ReturnValue) == 0x000134, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Montage_IsPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000135, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried, CallFunc_Montage_IsPlaying_ReturnValue_1) == 0x000136, "Member 'DBNO_Carried_C_ExecuteUbergraph_DBNO_Carried::CallFunc_Montage_IsPlaying_ReturnValue_1' has a wrong offset!");
 
 // Function DBNO_Carried.DBNO_Carried_C.BlueprintUpdateAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -107,9 +71,6 @@ struct DBNO_Carried_C_BlueprintUpdateAnimation final
 public:
 	float                                         DeltaTimeX;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DBNO_Carried_C_BlueprintUpdateAnimation) == 0x000004, "Wrong alignment on DBNO_Carried_C_BlueprintUpdateAnimation");
-static_assert(sizeof(DBNO_Carried_C_BlueprintUpdateAnimation) == 0x000004, "Wrong size on DBNO_Carried_C_BlueprintUpdateAnimation");
-static_assert(offsetof(DBNO_Carried_C_BlueprintUpdateAnimation, DeltaTimeX) == 0x000000, "Member 'DBNO_Carried_C_BlueprintUpdateAnimation::DeltaTimeX' has a wrong offset!");
 
 // Function DBNO_Carried.DBNO_Carried_C.AnimGraph
 // 0x0010 (0x0010 - 0x0000)
@@ -118,9 +79,6 @@ struct DBNO_Carried_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(DBNO_Carried_C_AnimGraph) == 0x000008, "Wrong alignment on DBNO_Carried_C_AnimGraph");
-static_assert(sizeof(DBNO_Carried_C_AnimGraph) == 0x000010, "Wrong size on DBNO_Carried_C_AnimGraph");
-static_assert(offsetof(DBNO_Carried_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'DBNO_Carried_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

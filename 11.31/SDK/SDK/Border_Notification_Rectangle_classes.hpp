@@ -23,15 +23,17 @@ class UBorder_Notification_Rectangle_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_Notification_Rectangle_C">();
+		BP_STATIC_CLASS_IMPL("Border_Notification_Rectangle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_Notification_Rectangle_C")
 	}
 	static class UBorder_Notification_Rectangle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_Notification_Rectangle_C>();
 	}
 };
-static_assert(alignof(UBorder_Notification_Rectangle_C) == 0x000008, "Wrong alignment on UBorder_Notification_Rectangle_C");
-static_assert(sizeof(UBorder_Notification_Rectangle_C) == 0x0000B0, "Wrong size on UBorder_Notification_Rectangle_C");
 
 }
 

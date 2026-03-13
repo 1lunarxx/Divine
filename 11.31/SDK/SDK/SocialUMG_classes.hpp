@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialChatChannelTab">();
+		STATIC_CLASS_IMPL("SocialChatChannelTab")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialChatChannelTab")
 	}
 	static class USocialChatChannelTab* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialChatChannelTab>();
 	}
 };
-static_assert(alignof(USocialChatChannelTab) == 0x000008, "Wrong alignment on USocialChatChannelTab");
-static_assert(sizeof(USocialChatChannelTab) == 0x000B80, "Wrong size on USocialChatChannelTab");
-static_assert(offsetof(USocialChatChannelTab, ChatChannel) == 0x000B70, "Member 'USocialChatChannelTab::ChatChannel' has a wrong offset!");
-static_assert(offsetof(USocialChatChannelTab, CommonText_ChannelName) == 0x000B78, "Member 'USocialChatChannelTab::CommonText_ChannelName' has a wrong offset!");
 
 // Class SocialUMG.SocialChatContainer
 // 0x0058 (0x0288 - 0x0230)
@@ -72,24 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialChatContainer">();
+		STATIC_CLASS_IMPL("SocialChatContainer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialChatContainer")
 	}
 	static class USocialChatContainer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialChatContainer>();
 	}
 };
-static_assert(alignof(USocialChatContainer) == 0x000008, "Wrong alignment on USocialChatContainer");
-static_assert(sizeof(USocialChatContainer) == 0x000288, "Wrong size on USocialChatContainer");
-static_assert(offsetof(USocialChatContainer, ChatManager) == 0x000230, "Member 'USocialChatContainer::ChatManager' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, JoinedChannels) == 0x000238, "Member 'USocialChatContainer::JoinedChannels' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, ActiveChannel) == 0x000248, "Member 'USocialChatContainer::ActiveChannel' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, TabButtonGroup) == 0x000250, "Member 'USocialChatContainer::TabButtonGroup' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, ChatList_Messages) == 0x000260, "Member 'USocialChatContainer::ChatList_Messages' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, ChatEditableText_MessageEntry) == 0x000268, "Member 'USocialChatContainer::ChatEditableText_MessageEntry' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, Button_SendMessage) == 0x000270, "Member 'USocialChatContainer::Button_SendMessage' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, EntryBox_JoinedChannels) == 0x000278, "Member 'USocialChatContainer::EntryBox_JoinedChannels' has a wrong offset!");
-static_assert(offsetof(USocialChatContainer, ScrollBox_Channels) == 0x000280, "Member 'USocialChatContainer::ScrollBox_Channels' has a wrong offset!");
 
 // Class SocialUMG.SocialChatEditableText
 // 0x04E0 (0x05E8 - 0x0108)
@@ -104,17 +97,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialChatEditableText">();
+		STATIC_CLASS_IMPL("SocialChatEditableText")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialChatEditableText")
 	}
 	static class USocialChatEditableText* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialChatEditableText>();
 	}
 };
-static_assert(alignof(USocialChatEditableText) == 0x000008, "Wrong alignment on USocialChatEditableText");
-static_assert(sizeof(USocialChatEditableText) == 0x0005E8, "Wrong size on USocialChatEditableText");
-static_assert(offsetof(USocialChatEditableText, EditableTextStyle) == 0x000128, "Member 'USocialChatEditableText::EditableTextStyle' has a wrong offset!");
-static_assert(offsetof(USocialChatEditableText, AutoCompleteStyle) == 0x000340, "Member 'USocialChatEditableText::AutoCompleteStyle' has a wrong offset!");
 
 // Class SocialUMG.SocialChatMessageEntry
 // 0x0148 (0x0378 - 0x0230)
@@ -134,18 +127,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialChatMessageEntry">();
+		STATIC_CLASS_IMPL("SocialChatMessageEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialChatMessageEntry")
 	}
 	static class USocialChatMessageEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialChatMessageEntry>();
 	}
 };
-static_assert(alignof(USocialChatMessageEntry) == 0x000008, "Wrong alignment on USocialChatMessageEntry");
-static_assert(sizeof(USocialChatMessageEntry) == 0x000378, "Wrong size on USocialChatMessageEntry");
-static_assert(offsetof(USocialChatMessageEntry, DefaultStyle) == 0x000248, "Member 'USocialChatMessageEntry::DefaultStyle' has a wrong offset!");
-static_assert(offsetof(USocialChatMessageEntry, RichText_Message) == 0x000368, "Member 'USocialChatMessageEntry::RichText_Message' has a wrong offset!");
-static_assert(offsetof(USocialChatMessageEntry, Button_MessageButton) == 0x000370, "Member 'USocialChatMessageEntry::Button_MessageButton' has a wrong offset!");
 
 // Class SocialUMG.SocialChatMessageList
 // 0x00F0 (0x0308 - 0x0218)
@@ -161,17 +153,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialChatMessageList">();
+		STATIC_CLASS_IMPL("SocialChatMessageList")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialChatMessageList")
 	}
 	static class USocialChatMessageList* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialChatMessageList>();
 	}
 };
-static_assert(alignof(USocialChatMessageList) == 0x000008, "Wrong alignment on USocialChatMessageList");
-static_assert(sizeof(USocialChatMessageList) == 0x000308, "Wrong size on USocialChatMessageList");
-static_assert(offsetof(USocialChatMessageList, bIsFocusable) == 0x0002D8, "Member 'USocialChatMessageList::bIsFocusable' has a wrong offset!");
-static_assert(offsetof(USocialChatMessageList, ActiveChannel) == 0x0002E0, "Member 'USocialChatMessageList::ActiveChannel' has a wrong offset!");
 
 // Class SocialUMG.SocialGroupListEntry
 // 0x0028 (0x0B98 - 0x0B70)
@@ -190,19 +182,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialGroupListEntry">();
+		STATIC_CLASS_IMPL("SocialGroupListEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialGroupListEntry")
 	}
 	static class USocialGroupListEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialGroupListEntry>();
 	}
 };
-static_assert(alignof(USocialGroupListEntry) == 0x000008, "Wrong alignment on USocialGroupListEntry");
-static_assert(sizeof(USocialGroupListEntry) == 0x000B98, "Wrong size on USocialGroupListEntry");
-static_assert(offsetof(USocialGroupListEntry, ActionMenuClass) == 0x000B78, "Member 'USocialGroupListEntry::ActionMenuClass' has a wrong offset!");
-static_assert(offsetof(USocialGroupListEntry, SocialGroup) == 0x000B80, "Member 'USocialGroupListEntry::SocialGroup' has a wrong offset!");
-static_assert(offsetof(USocialGroupListEntry, Text_GroupName) == 0x000B88, "Member 'USocialGroupListEntry::Text_GroupName' has a wrong offset!");
-static_assert(offsetof(USocialGroupListEntry, MenuAnchor_Actions) == 0x000B90, "Member 'USocialGroupListEntry::MenuAnchor_Actions' has a wrong offset!");
 
 // Class SocialUMG.SocialGroupTreeView
 // 0x0020 (0x03E0 - 0x03C0)
@@ -217,19 +207,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialGroupTreeView">();
+		STATIC_CLASS_IMPL("SocialGroupTreeView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialGroupTreeView")
 	}
 	static class USocialGroupTreeView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialGroupTreeView>();
 	}
 };
-static_assert(alignof(USocialGroupTreeView) == 0x000008, "Wrong alignment on USocialGroupTreeView");
-static_assert(sizeof(USocialGroupTreeView) == 0x0003E0, "Wrong size on USocialGroupTreeView");
-static_assert(offsetof(USocialGroupTreeView, GroupEntryWidgetClass) == 0x0003C0, "Member 'USocialGroupTreeView::GroupEntryWidgetClass' has a wrong offset!");
-static_assert(offsetof(USocialGroupTreeView, UserEntryWidgetClass) == 0x0003C8, "Member 'USocialGroupTreeView::UserEntryWidgetClass' has a wrong offset!");
-static_assert(offsetof(USocialGroupTreeView, ActionMenuClass) == 0x0003D0, "Member 'USocialGroupTreeView::ActionMenuClass' has a wrong offset!");
-static_assert(offsetof(USocialGroupTreeView, ActionMenu) == 0x0003D8, "Member 'USocialGroupTreeView::ActionMenu' has a wrong offset!");
 
 // Class SocialUMG.SocialInteractionButton
 // 0x0060 (0x0BD0 - 0x0B70)
@@ -251,19 +239,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialInteractionButton">();
+		STATIC_CLASS_IMPL("SocialInteractionButton")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialInteractionButton")
 	}
 	static class USocialInteractionButton* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialInteractionButton>();
 	}
 };
-static_assert(alignof(USocialInteractionButton) == 0x000008, "Wrong alignment on USocialInteractionButton");
-static_assert(sizeof(USocialInteractionButton) == 0x000BD0, "Wrong size on USocialInteractionButton");
-static_assert(offsetof(USocialInteractionButton, DefaultIndicatorColor) == 0x000B70, "Member 'USocialInteractionButton::DefaultIndicatorColor' has a wrong offset!");
-static_assert(offsetof(USocialInteractionButton, AlertingIndicatorColor) == 0x000B80, "Member 'USocialInteractionButton::AlertingIndicatorColor' has a wrong offset!");
-static_assert(offsetof(USocialInteractionButton, Text_InteractionName) == 0x000BC0, "Member 'USocialInteractionButton::Text_InteractionName' has a wrong offset!");
-static_assert(offsetof(USocialInteractionButton, Border_InteractionIndicator) == 0x000BC8, "Member 'USocialInteractionButton::Border_InteractionIndicator' has a wrong offset!");
 
 // Class SocialUMG.SocialActionMenu
 // 0x0020 (0x02F0 - 0x02D0)
@@ -278,15 +264,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialActionMenu">();
+		STATIC_CLASS_IMPL("SocialActionMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialActionMenu")
 	}
 	static class USocialActionMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialActionMenu>();
 	}
 };
-static_assert(alignof(USocialActionMenu) == 0x000008, "Wrong alignment on USocialActionMenu");
-static_assert(sizeof(USocialActionMenu) == 0x0002F0, "Wrong size on USocialActionMenu");
 
 // Class SocialUMG.SocialInteractionMenu
 // 0x0068 (0x0358 - 0x02F0)
@@ -311,22 +299,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialInteractionMenu">();
+		STATIC_CLASS_IMPL("SocialInteractionMenu")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialInteractionMenu")
 	}
 	static class USocialInteractionMenu* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialInteractionMenu>();
 	}
 };
-static_assert(alignof(USocialInteractionMenu) == 0x000008, "Wrong alignment on USocialInteractionMenu");
-static_assert(sizeof(USocialInteractionMenu) == 0x000358, "Wrong size on USocialInteractionMenu");
-static_assert(offsetof(USocialInteractionMenu, EntryBox_PositiveInteractions) == 0x000320, "Member 'USocialInteractionMenu::EntryBox_PositiveInteractions' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, EntryBox_NegativeInteractions) == 0x000328, "Member 'USocialInteractionMenu::EntryBox_NegativeInteractions' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, Spacer_InteractionSeparator) == 0x000330, "Member 'USocialInteractionMenu::Spacer_InteractionSeparator' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, Switcher_Confirmation) == 0x000338, "Member 'USocialInteractionMenu::Switcher_Confirmation' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, Text_ConfirmationLabel) == 0x000340, "Member 'USocialInteractionMenu::Text_ConfirmationLabel' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, Button_Confirm) == 0x000348, "Member 'USocialInteractionMenu::Button_Confirm' has a wrong offset!");
-static_assert(offsetof(USocialInteractionMenu, Button_Decline) == 0x000350, "Member 'USocialInteractionMenu::Button_Decline' has a wrong offset!");
 
 // Class SocialUMG.SocialNameTextBlock
 // 0x0020 (0x06C0 - 0x06A0)
@@ -347,23 +330,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialNameTextBlock">();
+		STATIC_CLASS_IMPL("SocialNameTextBlock")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialNameTextBlock")
 	}
 	static class USocialNameTextBlock* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialNameTextBlock>();
 	}
 };
-static_assert(alignof(USocialNameTextBlock) == 0x000008, "Wrong alignment on USocialNameTextBlock");
-static_assert(sizeof(USocialNameTextBlock) == 0x0006C0, "Wrong size on USocialNameTextBlock");
-static_assert(offsetof(USocialNameTextBlock, SocialUser) == 0x0006A0, "Member 'USocialNameTextBlock::SocialUser' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, MinDesiredSize) == 0x0006A8, "Member 'USocialNameTextBlock::MinDesiredSize' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, MaxDesiredSize) == 0x0006AC, "Member 'USocialNameTextBlock::MaxDesiredSize' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, bShowSecondName) == 0x0006B0, "Member 'USocialNameTextBlock::bShowSecondName' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, PlatformIconDisplayRule) == 0x0006B1, "Member 'USocialNameTextBlock::PlatformIconDisplayRule' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, bWrapToNextLine) == 0x0006B2, "Member 'USocialNameTextBlock::bWrapToNextLine' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, SecondNameColor) == 0x0006B4, "Member 'USocialNameTextBlock::SecondNameColor' has a wrong offset!");
-static_assert(offsetof(USocialNameTextBlock, SecondNameFontSize) == 0x0006B8, "Member 'USocialNameTextBlock::SecondNameFontSize' has a wrong offset!");
 
 // Class SocialUMG.DesignerPreviewChatChannel
 // 0x0068 (0x0150 - 0x00E8)
@@ -375,15 +352,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"DesignerPreviewChatChannel">();
+		STATIC_CLASS_IMPL("DesignerPreviewChatChannel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DesignerPreviewChatChannel")
 	}
 	static class UDesignerPreviewChatChannel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDesignerPreviewChatChannel>();
 	}
 };
-static_assert(alignof(UDesignerPreviewChatChannel) == 0x000008, "Wrong alignment on UDesignerPreviewChatChannel");
-static_assert(sizeof(UDesignerPreviewChatChannel) == 0x000150, "Wrong size on UDesignerPreviewChatChannel");
 
 // Class SocialUMG.SocialListEntryBase
 // 0x0018 (0x0B88 - 0x0B70)
@@ -395,15 +374,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialListEntryBase">();
+		STATIC_CLASS_IMPL("SocialListEntryBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialListEntryBase")
 	}
 	static class USocialListEntryBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialListEntryBase>();
 	}
 };
-static_assert(alignof(USocialListEntryBase) == 0x000008, "Wrong alignment on USocialListEntryBase");
-static_assert(sizeof(USocialListEntryBase) == 0x000B88, "Wrong size on USocialListEntryBase");
 
 // Class SocialUMG.SocialListInteractableEntryBase
 // 0x0010 (0x0B98 - 0x0B88)
@@ -420,17 +401,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialListInteractableEntryBase">();
+		STATIC_CLASS_IMPL("SocialListInteractableEntryBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialListInteractableEntryBase")
 	}
 	static class USocialListInteractableEntryBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialListInteractableEntryBase>();
 	}
 };
-static_assert(alignof(USocialListInteractableEntryBase) == 0x000008, "Wrong alignment on USocialListInteractableEntryBase");
-static_assert(sizeof(USocialListInteractableEntryBase) == 0x000B98, "Wrong size on USocialListInteractableEntryBase");
-static_assert(offsetof(USocialListInteractableEntryBase, ActionMenuClass) == 0x000B88, "Member 'USocialListInteractableEntryBase::ActionMenuClass' has a wrong offset!");
-static_assert(offsetof(USocialListInteractableEntryBase, MenuAnchor_Actions) == 0x000B90, "Member 'USocialListInteractableEntryBase::MenuAnchor_Actions' has a wrong offset!");
 
 // Class SocialUMG.SocialListUserEntryBase
 // 0x0018 (0x0BB0 - 0x0B98)
@@ -444,17 +425,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialListUserEntryBase">();
+		STATIC_CLASS_IMPL("SocialListUserEntryBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialListUserEntryBase")
 	}
 	static class USocialListUserEntryBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialListUserEntryBase>();
 	}
 };
-static_assert(alignof(USocialListUserEntryBase) == 0x000008, "Wrong alignment on USocialListUserEntryBase");
-static_assert(sizeof(USocialListUserEntryBase) == 0x000BB0, "Wrong size on USocialListUserEntryBase");
-static_assert(offsetof(USocialListUserEntryBase, Text_SocialName) == 0x000BA0, "Member 'USocialListUserEntryBase::Text_SocialName' has a wrong offset!");
-static_assert(offsetof(USocialListUserEntryBase, Text_RichPresence) == 0x000BA8, "Member 'USocialListUserEntryBase::Text_RichPresence' has a wrong offset!");
 
 // Class SocialUMG.SocialUserListHeaderEntry
 // 0x0010 (0x0B98 - 0x0B88)
@@ -467,17 +448,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialUserListHeaderEntry">();
+		STATIC_CLASS_IMPL("SocialUserListHeaderEntry")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialUserListHeaderEntry")
 	}
 	static class USocialUserListHeaderEntry* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialUserListHeaderEntry>();
 	}
 };
-static_assert(alignof(USocialUserListHeaderEntry) == 0x000008, "Wrong alignment on USocialUserListHeaderEntry");
-static_assert(sizeof(USocialUserListHeaderEntry) == 0x000B98, "Wrong size on USocialUserListHeaderEntry");
-static_assert(offsetof(USocialUserListHeaderEntry, Text_ListName) == 0x000B88, "Member 'USocialUserListHeaderEntry::Text_ListName' has a wrong offset!");
-static_assert(offsetof(USocialUserListHeaderEntry, Text_NumEntries) == 0x000B90, "Member 'USocialUserListHeaderEntry::Text_NumEntries' has a wrong offset!");
 
 // Class SocialUMG.SocialUserListViewBase
 // 0x00E8 (0x0300 - 0x0218)
@@ -491,16 +472,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialUserListViewBase">();
+		STATIC_CLASS_IMPL("SocialUserListViewBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialUserListViewBase")
 	}
 	static class USocialUserListViewBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialUserListViewBase>();
 	}
 };
-static_assert(alignof(USocialUserListViewBase) == 0x000008, "Wrong alignment on USocialUserListViewBase");
-static_assert(sizeof(USocialUserListViewBase) == 0x000300, "Wrong size on USocialUserListViewBase");
-static_assert(offsetof(USocialUserListViewBase, EntrySpacing) == 0x0002F8, "Member 'USocialUserListViewBase::EntrySpacing' has a wrong offset!");
 
 // Class SocialUMG.SocialUserListView
 // 0x0080 (0x0380 - 0x0300)
@@ -509,22 +491,22 @@ class USocialUserListView : public USocialUserListViewBase
 public:
 	uint8                                         Pad_300[0x28];                                     // 0x0300(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class USocialActionMenu*                      ActiveActionMenu;                                  // 0x0328(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	TMap<TSubclassOf<class USocialActionMenu>, class USocialActionMenu*> CachedActionMenuPool;                              // 0x0330(0x0050)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
+	TMap<TSubclassOf<class USocialActionMenu>, class USocialActionMenu*> CachedActionMenuPool;       // 0x0330(0x0050)(ExportObject, ZeroConstructor, Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialUserListView">();
+		STATIC_CLASS_IMPL("SocialUserListView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialUserListView")
 	}
 	static class USocialUserListView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialUserListView>();
 	}
 };
-static_assert(alignof(USocialUserListView) == 0x000008, "Wrong alignment on USocialUserListView");
-static_assert(sizeof(USocialUserListView) == 0x000380, "Wrong size on USocialUserListView");
-static_assert(offsetof(USocialUserListView, ActiveActionMenu) == 0x000328, "Member 'USocialUserListView::ActiveActionMenu' has a wrong offset!");
-static_assert(offsetof(USocialUserListView, CachedActionMenuPool) == 0x000330, "Member 'USocialUserListView::CachedActionMenuPool' has a wrong offset!");
 
 // Class SocialUMG.SocialUserTreeView
 // 0x0090 (0x0410 - 0x0380)
@@ -539,17 +521,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SocialUserTreeView">();
+		STATIC_CLASS_IMPL("SocialUserTreeView")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialUserTreeView")
 	}
 	static class USocialUserTreeView* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialUserTreeView>();
 	}
 };
-static_assert(alignof(USocialUserTreeView) == 0x000008, "Wrong alignment on USocialUserTreeView");
-static_assert(sizeof(USocialUserTreeView) == 0x000410, "Wrong size on USocialUserTreeView");
-static_assert(offsetof(USocialUserTreeView, UserEntryWidgetClass) == 0x0003F0, "Member 'USocialUserTreeView::UserEntryWidgetClass' has a wrong offset!");
-static_assert(offsetof(USocialUserTreeView, InviteEntryWidgetClass) == 0x0003F8, "Member 'USocialUserTreeView::InviteEntryWidgetClass' has a wrong offset!");
 
 }
 

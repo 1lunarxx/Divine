@@ -38,17 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ProgressModalWidget_C">();
+		BP_STATIC_CLASS_IMPL("ProgressModalWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressModalWidget_C")
 	}
 	static class UProgressModalWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProgressModalWidget_C>();
 	}
 };
-static_assert(alignof(UProgressModalWidget_C) == 0x000008, "Wrong alignment on UProgressModalWidget_C");
-static_assert(sizeof(UProgressModalWidget_C) == 0x000510, "Wrong size on UProgressModalWidget_C");
-static_assert(offsetof(UProgressModalWidget_C, UberGraphFrame) == 0x000500, "Member 'UProgressModalWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UProgressModalWidget_C, Lightbox) == 0x000508, "Member 'UProgressModalWidget_C::Lightbox' has a wrong offset!");
 
 }
 

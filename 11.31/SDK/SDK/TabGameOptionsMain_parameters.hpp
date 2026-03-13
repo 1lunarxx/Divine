@@ -22,10 +22,6 @@ public:
 	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUserWidget*                            Widget;                                            // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature) == 0x000008, "Wrong alignment on TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature) == 0x000010, "Wrong size on TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
-static_assert(offsetof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature, Item) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature::Item' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature, Widget) == 0x000008, "Member 'TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -34,9 +30,6 @@ struct TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong alignment on TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(sizeof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature) == 0x000008, "Wrong size on TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
-static_assert(offsetof(TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature, Widget) == 0x000000, "Member 'TabGameOptionsMain_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature::Widget' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.Setting Value Changed
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +38,6 @@ struct TabGameOptionsMain_C_Setting_Value_Changed final
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_Setting_Value_Changed) == 0x000004, "Wrong alignment on TabGameOptionsMain_C_Setting_Value_Changed");
-static_assert(sizeof(TabGameOptionsMain_C_Setting_Value_Changed) == 0x000004, "Wrong size on TabGameOptionsMain_C_Setting_Value_Changed");
-static_assert(offsetof(TabGameOptionsMain_C_Setting_Value_Changed, Value) == 0x000000, "Member 'TabGameOptionsMain_C_Setting_Value_Changed::Value' has a wrong offset!");
 
 // Function TabGameOptionsMain.TabGameOptionsMain_C.ExecuteUbergraph_TabGameOptionsMain
 // 0x00C0 (0x00C0 - 0x0000)
@@ -103,48 +93,6 @@ public:
 	uint8                                         Pad_B1[0x7];                                       // 0x00B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonTextBlock*                       K2Node_Select_Default;                             // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain) == 0x000008, "Wrong alignment on TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain");
-static_assert(sizeof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain) == 0x0000C0, "Wrong size on TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, EntryPoint) == 0x000000, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_ComponentBoundEvent_Widget_1) == 0x000018, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_ComponentBoundEvent_Widget_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_AsFort_Options_Menu_Setting) == 0x000020, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_AsFort_Options_Menu_Setting' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000029, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00002A, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00002B, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x00002C, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue) == 0x00002D, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x00002E, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_1) == 0x00002F, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_5) == 0x000030, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_2) == 0x000031, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_6) == 0x000032, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_3) == 0x000033, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_7) == 0x000034, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_4) == 0x000035, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_8) == 0x000036, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_5) == 0x000037, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_EqualEqual_ByteByte_ReturnValue_9) == 0x000038, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_EqualEqual_ByteByte_ReturnValue_9' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_6) == 0x000039, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_BooleanOR_ReturnValue_7) == 0x00003A, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_BooleanOR_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_ComponentBoundEvent_Item) == 0x000040, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_ComponentBoundEvent_Widget) == 0x000048, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_AsFort_Options_Menu_Setting_1) == 0x000050, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_AsFort_Options_Menu_Setting_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_CustomEvent_Value) == 0x00005C, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_CustomEvent_Value' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_IsMobileGame_ReturnValue) == 0x000060, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_MakeLiteralText_ReturnValue) == 0x000068, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_AreParentalControlsEnabled_ReturnValue) == 0x000080, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_AreParentalControlsEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_GetOwningPlayer_ReturnValue) == 0x000088, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_Not_PreBool_ReturnValue) == 0x000090, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000098, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_DynamicCast_bSuccess_2) == 0x0000A0, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_IsCrucibleControls_ReturnValue) == 0x0000A1, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_IsCrucibleControls_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, CallFunc_Not_PreBool_ReturnValue_1) == 0x0000A2, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, Temp_object_Variable) == 0x0000A8, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, Temp_bool_Variable) == 0x0000B0, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain, K2Node_Select_Default) == 0x0000B8, "Member 'TabGameOptionsMain_C_ExecuteUbergraph_TabGameOptionsMain::K2Node_Select_Default' has a wrong offset!");
 
 }
 

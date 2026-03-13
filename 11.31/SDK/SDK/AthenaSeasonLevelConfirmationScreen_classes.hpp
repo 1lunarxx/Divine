@@ -25,7 +25,7 @@ class UAthenaSeasonLevelConfirmationScreen_C final : public UFortSeasonLevelConf
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0560(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* AthenaDirectAcquisitonDetails_RefundDisclaimer;    // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* AthenaDirectAcquisitonDetails_RefundDisclaimer; // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USizeBox*                               BulkMessageAlertSB;                                // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BulkTierMessage;                                   // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 CloseIcon;                                         // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -77,42 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonLevelConfirmationScreen_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonLevelConfirmationScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonLevelConfirmationScreen_C")
 	}
 	static class UAthenaSeasonLevelConfirmationScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonLevelConfirmationScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonLevelConfirmationScreen_C) == 0x000008, "Wrong alignment on UAthenaSeasonLevelConfirmationScreen_C");
-static_assert(sizeof(UAthenaSeasonLevelConfirmationScreen_C) == 0x000688, "Wrong size on UAthenaSeasonLevelConfirmationScreen_C");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, UberGraphFrame) == 0x000560, "Member 'UAthenaSeasonLevelConfirmationScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, AthenaDirectAcquisitonDetails_RefundDisclaimer) == 0x000568, "Member 'UAthenaSeasonLevelConfirmationScreen_C::AthenaDirectAcquisitonDetails_RefundDisclaimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, BulkMessageAlertSB) == 0x000570, "Member 'UAthenaSeasonLevelConfirmationScreen_C::BulkMessageAlertSB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, BulkTierMessage) == 0x000578, "Member 'UAthenaSeasonLevelConfirmationScreen_C::BulkTierMessage' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, CloseIcon) == 0x000580, "Member 'UAthenaSeasonLevelConfirmationScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, ConfirmState) == 0x000588, "Member 'UAthenaSeasonLevelConfirmationScreen_C::ConfirmState' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, DecreasePurchaseTier) == 0x000590, "Member 'UAthenaSeasonLevelConfirmationScreen_C::DecreasePurchaseTier' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, FramingWidget) == 0x000598, "Member 'UAthenaSeasonLevelConfirmationScreen_C::FramingWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, HeaderText) == 0x0005A0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, IncreasePurchaseTier) == 0x0005A8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::IncreasePurchaseTier' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, ItemRewardsSB) == 0x0005B0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::ItemRewardsSB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, MobileCloseButton) == 0x0005B8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, MobileCloseOverlay) == 0x0005C0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::MobileCloseOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, PurchaseBtn) == 0x0005C8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::PurchaseBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, PurchasingState) == 0x0005D0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::PurchasingState' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, StateSwitcher) == 0x0005D8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::StateSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, TierTitle) == 0x0005E0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::TierTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, VBuckIcon) == 0x0005E8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::VBuckIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, VBuckPurchasePrice) == 0x0005F0, "Member 'UAthenaSeasonLevelConfirmationScreen_C::VBuckPurchasePrice' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, AllBattlePassLevels) == 0x0005F8, "Member 'UAthenaSeasonLevelConfirmationScreen_C::AllBattlePassLevels' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, BaseLevel) == 0x000648, "Member 'UAthenaSeasonLevelConfirmationScreen_C::BaseLevel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, BuyExtraLevels) == 0x000650, "Member 'UAthenaSeasonLevelConfirmationScreen_C::BuyExtraLevels' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, MaxBattlePassLevel) == 0x000654, "Member 'UAthenaSeasonLevelConfirmationScreen_C::MaxBattlePassLevel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, BuyTierOfferID) == 0x000658, "Member 'UAthenaSeasonLevelConfirmationScreen_C::BuyTierOfferID' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, MaxExtraLevelsYouCanBuyInOneGo) == 0x000668, "Member 'UAthenaSeasonLevelConfirmationScreen_C::MaxExtraLevelsYouCanBuyInOneGo' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, FirstWidget) == 0x000670, "Member 'UAthenaSeasonLevelConfirmationScreen_C::FirstWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelConfirmationScreen_C, Handle_BackAction) == 0x000678, "Member 'UAthenaSeasonLevelConfirmationScreen_C::Handle_BackAction' has a wrong offset!");
 
 }
 

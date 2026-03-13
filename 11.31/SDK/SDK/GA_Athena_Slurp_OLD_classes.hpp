@@ -41,23 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_Slurp_OLD_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_Slurp_OLD_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_Slurp_OLD_C")
 	}
 	static class UGA_Athena_Slurp_OLD_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_Slurp_OLD_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_Slurp_OLD_C) == 0x000008, "Wrong alignment on UGA_Athena_Slurp_OLD_C");
-static_assert(sizeof(UGA_Athena_Slurp_OLD_C) == 0x000A60, "Wrong size on UGA_Athena_Slurp_OLD_C");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_Slurp_OLD_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_Slurp_OLD_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, IncreCheck) == 0x000A40, "Member 'UGA_Athena_Slurp_OLD_C::IncreCheck' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, MaxTicks) == 0x000A44, "Member 'UGA_Athena_Slurp_OLD_C::MaxTicks' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, TimerHandle) == 0x000A48, "Member 'UGA_Athena_Slurp_OLD_C::TimerHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, TickRate) == 0x000A50, "Member 'UGA_Athena_Slurp_OLD_C::TickRate' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, TriggerDuration) == 0x000A54, "Member 'UGA_Athena_Slurp_OLD_C::TriggerDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Slurp_OLD_C, ShieldPotionGameplayCue) == 0x000A58, "Member 'UGA_Athena_Slurp_OLD_C::ShieldPotionGameplayCue' has a wrong offset!");
 
 }
 

@@ -42,20 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabGameOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabGameOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabGameOptions_C")
 	}
 	static class UTabGameOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabGameOptions_C>();
 	}
 };
-static_assert(alignof(UTabGameOptions_C) == 0x000008, "Wrong alignment on UTabGameOptions_C");
-static_assert(sizeof(UTabGameOptions_C) == 0x000358, "Wrong size on UTabGameOptions_C");
-static_assert(offsetof(UTabGameOptions_C, UberGraphFrame) == 0x000330, "Member 'UTabGameOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, CommonWidgetSwitcher_0) == 0x000338, "Member 'UTabGameOptions_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, GameTabs) == 0x000340, "Member 'UTabGameOptions_C::GameTabs' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, SafeZone_54) == 0x000348, "Member 'UTabGameOptions_C::SafeZone_54' has a wrong offset!");
-static_assert(offsetof(UTabGameOptions_C, TooltipDisplay) == 0x000350, "Member 'UTabGameOptions_C::TooltipDisplay' has a wrong offset!");
 
 }
 

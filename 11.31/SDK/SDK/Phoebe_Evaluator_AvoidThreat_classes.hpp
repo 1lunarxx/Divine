@@ -23,15 +23,17 @@ class UPhoebe_Evaluator_AvoidThreat_C final : public UFortAthenaAIBotEvaluator_A
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_Evaluator_AvoidThreat_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_Evaluator_AvoidThreat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_Evaluator_AvoidThreat_C")
 	}
 	static class UPhoebe_Evaluator_AvoidThreat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_Evaluator_AvoidThreat_C>();
 	}
 };
-static_assert(alignof(UPhoebe_Evaluator_AvoidThreat_C) == 0x000008, "Wrong alignment on UPhoebe_Evaluator_AvoidThreat_C");
-static_assert(sizeof(UPhoebe_Evaluator_AvoidThreat_C) == 0x000160, "Wrong size on UPhoebe_Evaluator_AvoidThreat_C");
 
 }
 

@@ -17,6 +17,34 @@
 namespace SDK
 {
 
+// Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnStopOpeningPresent
+// (Event, Protected, BlueprintEvent)
+
+void UWinterQuestPresentScreen_C::OnStopOpeningPresent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStopOpeningPresent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnStartOpeningPresent
+// (Event, Protected, BlueprintEvent)
+
+void UWinterQuestPresentScreen_C::OnStartOpeningPresent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStartOpeningPresent");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnUpdatePlatformType
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -128,34 +156,6 @@ void UWinterQuestPresentScreen_C::ExecuteUbergraph_WinterQuestPresentScreen(int3
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnStopOpeningPresent
-// (Event, Protected, BlueprintEvent)
-
-void UWinterQuestPresentScreen_C::OnStopOpeningPresent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStopOpeningPresent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WinterQuestPresentScreen.WinterQuestPresentScreen_C.OnStartOpeningPresent
-// (Event, Protected, BlueprintEvent)
-
-void UWinterQuestPresentScreen_C::OnStartOpeningPresent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestPresentScreen_C", "OnStartOpeningPresent");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

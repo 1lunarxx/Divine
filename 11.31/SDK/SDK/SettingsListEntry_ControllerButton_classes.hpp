@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsListEntry_ControllerButton_C">();
+		BP_STATIC_CLASS_IMPL("SettingsListEntry_ControllerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsListEntry_ControllerButton_C")
 	}
 	static class USettingsListEntry_ControllerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsListEntry_ControllerButton_C>();
 	}
 };
-static_assert(alignof(USettingsListEntry_ControllerButton_C) == 0x000008, "Wrong alignment on USettingsListEntry_ControllerButton_C");
-static_assert(sizeof(USettingsListEntry_ControllerButton_C) == 0x0002B8, "Wrong size on USettingsListEntry_ControllerButton_C");
-static_assert(offsetof(USettingsListEntry_ControllerButton_C, UberGraphFrame) == 0x0002A8, "Member 'USettingsListEntry_ControllerButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_ControllerButton_C, CommonRichTextBlock_97) == 0x0002B0, "Member 'USettingsListEntry_ControllerButton_C::CommonRichTextBlock_97' has a wrong offset!");
 
 }
 

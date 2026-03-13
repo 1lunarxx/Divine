@@ -23,15 +23,17 @@ class UBorder_MainL_Black_C final : public UBorder_MainL_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-MainL-Black_C">();
+		BP_STATIC_CLASS_IMPL("Border-MainL-Black_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-MainL-Black_C")
 	}
 	static class UBorder_MainL_Black_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_MainL_Black_C>();
 	}
 };
-static_assert(alignof(UBorder_MainL_Black_C) == 0x000008, "Wrong alignment on UBorder_MainL_Black_C");
-static_assert(sizeof(UBorder_MainL_Black_C) == 0x0000B0, "Wrong size on UBorder_MainL_Black_C");
 
 }
 

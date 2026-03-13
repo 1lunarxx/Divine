@@ -23,15 +23,17 @@ class UGE_Device_Floor_EliminationZoneTrueDOT_C final : public UGE_Device_Floor_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Device_Floor_EliminationZoneTrueDOT_C">();
+		BP_STATIC_CLASS_IMPL("GE_Device_Floor_EliminationZoneTrueDOT_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Device_Floor_EliminationZoneTrueDOT_C")
 	}
 	static class UGE_Device_Floor_EliminationZoneTrueDOT_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Device_Floor_EliminationZoneTrueDOT_C>();
 	}
 };
-static_assert(alignof(UGE_Device_Floor_EliminationZoneTrueDOT_C) == 0x000008, "Wrong alignment on UGE_Device_Floor_EliminationZoneTrueDOT_C");
-static_assert(sizeof(UGE_Device_Floor_EliminationZoneTrueDOT_C) == 0x000770, "Wrong size on UGE_Device_Floor_EliminationZoneTrueDOT_C");
 
 }
 

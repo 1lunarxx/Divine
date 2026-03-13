@@ -46,6 +46,13 @@ public:
 	class FString                                 TournamentId;                                      // 0x0C10(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 
 public:
+	void SetData(const class FString& TournamentInfo, const class FString& EventInfo);
+	void EventIntro(int32 Index_0);
+	void Construct();
+	void BP_OnClicked();
+	void EventResize(bool Out);
+	void BP_OnHovered();
+	void BP_OnUnhovered();
 	void BP_OnSelected();
 	void BP_OnDeselected();
 	void OnAddedToFocusPath(const struct FFocusEvent& InFocusEvent);
@@ -55,46 +62,21 @@ public:
 	void EventColorizeDispatch(const struct FFortTournamentDisplayInfo& DisplayInfo);
 	void EventMultiRoundStyle();
 	void ExecuteUbergraph_ShowdownEventTile(int32 EntryPoint);
-	void SetData(const class FString& TournamentInfo, const class FString& EventInfo);
-	void EventIntro(int32 Index_0);
-	void Construct();
-	void BP_OnClicked();
-	void EventResize(bool Out);
-	void BP_OnHovered();
-	void BP_OnUnhovered();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownEventTile_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownEventTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownEventTile_C")
 	}
 	static class UShowdownEventTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownEventTile_C>();
 	}
 };
-static_assert(alignof(UShowdownEventTile_C) == 0x000008, "Wrong alignment on UShowdownEventTile_C");
-static_assert(sizeof(UShowdownEventTile_C) == 0x000C20, "Wrong size on UShowdownEventTile_C");
-static_assert(offsetof(UShowdownEventTile_C, UberGraphFrame) == 0x000B70, "Member 'UShowdownEventTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Focus_Violator) == 0x000B78, "Member 'UShowdownEventTile_C::Focus_Violator' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Hover) == 0x000B80, "Member 'UShowdownEventTile_C::Hover' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Focus) == 0x000B88, "Member 'UShowdownEventTile_C::Focus' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, TransitionSize) == 0x000B90, "Member 'UShowdownEventTile_C::TransitionSize' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Intro) == 0x000B98, "Member 'UShowdownEventTile_C::Intro' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, CommonBorder_InputContainer) == 0x000BA0, "Member 'UShowdownEventTile_C::CommonBorder_InputContainer' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Image_BG) == 0x000BA8, "Member 'UShowdownEventTile_C::Image_BG' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Image_Ended) == 0x000BB0, "Member 'UShowdownEventTile_C::Image_Ended' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Image_Focus) == 0x000BB8, "Member 'UShowdownEventTile_C::Image_Focus' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Image_Hover) == 0x000BC0, "Member 'UShowdownEventTile_C::Image_Hover' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Image_Tail) == 0x000BC8, "Member 'UShowdownEventTile_C::Image_Tail' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, ShowdownEventTile_RoundBreak) == 0x000BD0, "Member 'UShowdownEventTile_C::ShowdownEventTile_RoundBreak' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, ShowdownEventTileInfo) == 0x000BD8, "Member 'UShowdownEventTile_C::ShowdownEventTileInfo' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, Violator) == 0x000BE0, "Member 'UShowdownEventTile_C::Violator' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, EventId) == 0x000BE8, "Member 'UShowdownEventTile_C::EventId' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, isEnded) == 0x000BF8, "Member 'UShowdownEventTile_C::isEnded' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, isLive) == 0x000BF9, "Member 'UShowdownEventTile_C::isLive' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, OnWindowSelected) == 0x000C00, "Member 'UShowdownEventTile_C::OnWindowSelected' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_C, TournamentId) == 0x000C10, "Member 'UShowdownEventTile_C::TournamentId' has a wrong offset!");
 
 }
 

@@ -31,17 +31,6 @@ public:
 	class ABP_DeimosRift_Dynamic_C*               K2Node_DynamicCast_AsBP_Deimos_Rift_Dynamic;       // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_RiftSpawnerDestroyed_C_OnBurst) == 0x000008, "Wrong alignment on GCN_RiftSpawnerDestroyed_C_OnBurst");
-static_assert(sizeof(GCN_RiftSpawnerDestroyed_C_OnBurst) == 0x000108, "Wrong size on GCN_RiftSpawnerDestroyed_C_OnBurst");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, K2Node_DynamicCast_AsBP_Deimos_Rift_Dynamic) == 0x0000F8, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::K2Node_DynamicCast_AsBP_Deimos_Rift_Dynamic' has a wrong offset!");
-static_assert(offsetof(GCN_RiftSpawnerDestroyed_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GCN_RiftSpawnerDestroyed_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

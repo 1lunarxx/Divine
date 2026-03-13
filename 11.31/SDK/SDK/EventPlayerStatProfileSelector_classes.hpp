@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventPlayerStatProfileSelector_C">();
+		BP_STATIC_CLASS_IMPL("EventPlayerStatProfileSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventPlayerStatProfileSelector_C")
 	}
 	static class UEventPlayerStatProfileSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventPlayerStatProfileSelector_C>();
 	}
 };
-static_assert(alignof(UEventPlayerStatProfileSelector_C) == 0x000008, "Wrong alignment on UEventPlayerStatProfileSelector_C");
-static_assert(sizeof(UEventPlayerStatProfileSelector_C) == 0x000480, "Wrong size on UEventPlayerStatProfileSelector_C");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, UberGraphFrame) == 0x000450, "Member 'UEventPlayerStatProfileSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, Intro) == 0x000458, "Member 'UEventPlayerStatProfileSelector_C::Intro' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, CloseMainPanel) == 0x000460, "Member 'UEventPlayerStatProfileSelector_C::CloseMainPanel' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, CommonTextBlock_2) == 0x000468, "Member 'UEventPlayerStatProfileSelector_C::CommonTextBlock_2' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, SafeZone_0) == 0x000470, "Member 'UEventPlayerStatProfileSelector_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelector_C, Switcher_Content) == 0x000478, "Member 'UEventPlayerStatProfileSelector_C::Switcher_Content' has a wrong offset!");
 
 }
 

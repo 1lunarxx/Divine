@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputOptionsHeader_C">();
+		BP_STATIC_CLASS_IMPL("InputOptionsHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputOptionsHeader_C")
 	}
 	static class UInputOptionsHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputOptionsHeader_C>();
 	}
 };
-static_assert(alignof(UInputOptionsHeader_C) == 0x000008, "Wrong alignment on UInputOptionsHeader_C");
-static_assert(sizeof(UInputOptionsHeader_C) == 0x000258, "Wrong size on UInputOptionsHeader_C");
-static_assert(offsetof(UInputOptionsHeader_C, UberGraphFrame) == 0x000230, "Member 'UInputOptionsHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputOptionsHeader_C, Image_0) == 0x000238, "Member 'UInputOptionsHeader_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UInputOptionsHeader_C, SizeBoxContainer) == 0x000240, "Member 'UInputOptionsHeader_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UInputOptionsHeader_C, SpacerBottom) == 0x000248, "Member 'UInputOptionsHeader_C::SpacerBottom' has a wrong offset!");
-static_assert(offsetof(UInputOptionsHeader_C, TextHeader) == 0x000250, "Member 'UInputOptionsHeader_C::TextHeader' has a wrong offset!");
 
 }
 

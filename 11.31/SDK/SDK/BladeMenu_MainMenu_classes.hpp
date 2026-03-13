@@ -138,62 +138,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BladeMenu_MainMenu_C">();
+		BP_STATIC_CLASS_IMPL("BladeMenu_MainMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BladeMenu_MainMenu_C")
 	}
 	static class UBladeMenu_MainMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBladeMenu_MainMenu_C>();
 	}
 };
-static_assert(alignof(UBladeMenu_MainMenu_C) == 0x000008, "Wrong alignment on UBladeMenu_MainMenu_C");
-static_assert(sizeof(UBladeMenu_MainMenu_C) == 0x000618, "Wrong size on UBladeMenu_MainMenu_C");
-static_assert(offsetof(UBladeMenu_MainMenu_C, UberGraphFrame) == 0x000320, "Member 'UBladeMenu_MainMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, OnClose) == 0x000328, "Member 'UBladeMenu_MainMenu_C::OnClose' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, OnOpen) == 0x000330, "Member 'UBladeMenu_MainMenu_C::OnOpen' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, AthenaMainMenuLeaveButton) == 0x000338, "Member 'UBladeMenu_MainMenu_C::AthenaMainMenuLeaveButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Button_Feedback) == 0x000340, "Member 'UBladeMenu_MainMenu_C::Button_Feedback' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Button_MyIsland) == 0x000348, "Member 'UBladeMenu_MainMenu_C::Button_MyIsland' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Button_Store) == 0x000350, "Member 'UBladeMenu_MainMenu_C::Button_Store' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ButtonBacchusHelp) == 0x000358, "Member 'UBladeMenu_MainMenu_C::ButtonBacchusHelp' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ButtonCredits) == 0x000360, "Member 'UBladeMenu_MainMenu_C::ButtonCredits' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ButtonHUDLayoutTool) == 0x000368, "Member 'UBladeMenu_MainMenu_C::ButtonHUDLayoutTool' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ButtonNews) == 0x000370, "Member 'UBladeMenu_MainMenu_C::ButtonNews' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ButtonSupport) == 0x000378, "Member 'UBladeMenu_MainMenu_C::ButtonSupport' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ChallengesButton) == 0x000380, "Member 'UBladeMenu_MainMenu_C::ChallengesButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, CheatsButton) == 0x000388, "Member 'UBladeMenu_MainMenu_C::CheatsButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, CodeOfConduct) == 0x000390, "Member 'UBladeMenu_MainMenu_C::CodeOfConduct' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ExitButton) == 0x000398, "Member 'UBladeMenu_MainMenu_C::ExitButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Image_MenuIcon_1) == 0x0003A0, "Member 'UBladeMenu_MainMenu_C::Image_MenuIcon_1' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Legal) == 0x0003A8, "Member 'UBladeMenu_MainMenu_C::Legal' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, LiveStreamMenuButtonToggle) == 0x0003B0, "Member 'UBladeMenu_MainMenu_C::LiveStreamMenuButtonToggle' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, LogoutButton) == 0x0003B8, "Member 'UBladeMenu_MainMenu_C::LogoutButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, MinigameButtons) == 0x0003C0, "Member 'UBladeMenu_MainMenu_C::MinigameButtons' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, NewSettingsButton) == 0x0003C8, "Member 'UBladeMenu_MainMenu_C::NewSettingsButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ParentalControlsButton) == 0x0003D0, "Member 'UBladeMenu_MainMenu_C::ParentalControlsButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ReportPlayerButton) == 0x0003D8, "Member 'UBladeMenu_MainMenu_C::ReportPlayerButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, RespawnButton) == 0x0003E0, "Member 'UBladeMenu_MainMenu_C::RespawnButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, SafeZone_Content) == 0x0003E8, "Member 'UBladeMenu_MainMenu_C::SafeZone_Content' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, SafeZoneRatingIcons) == 0x0003F0, "Member 'UBladeMenu_MainMenu_C::SafeZoneRatingIcons' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, TeamSelectButton) == 0x0003F8, "Member 'UBladeMenu_MainMenu_C::TeamSelectButton' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Text_MenuTitle) == 0x000400, "Member 'UBladeMenu_MainMenu_C::Text_MenuTitle' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, TextLowPowerMode) == 0x000408, "Member 'UBladeMenu_MainMenu_C::TextLowPowerMode' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, windowchromebuttons) == 0x000410, "Member 'UBladeMenu_MainMenu_C::windowchromebuttons' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, OptionsMenu) == 0x000418, "Member 'UBladeMenu_MainMenu_C::OptionsMenu' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, InGameChallengeScreenClass) == 0x000420, "Member 'UBladeMenu_MainMenu_C::InGameChallengeScreenClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, CreditsScreenClass) == 0x000448, "Member 'UBladeMenu_MainMenu_C::CreditsScreenClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, LegalInfoClass) == 0x000470, "Member 'UBladeMenu_MainMenu_C::LegalInfoClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, AthenaNewsClass) == 0x000498, "Member 'UBladeMenu_MainMenu_C::AthenaNewsClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, RespawnClass) == 0x0004C0, "Member 'UBladeMenu_MainMenu_C::RespawnClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, MobileControlsHelpClass) == 0x0004E8, "Member 'UBladeMenu_MainMenu_C::MobileControlsHelpClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, HUDLayoutToolClass) == 0x000510, "Member 'UBladeMenu_MainMenu_C::HUDLayoutToolClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, Machine) == 0x000538, "Member 'UBladeMenu_MainMenu_C::Machine' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, TeamSelectWidgetClass) == 0x000540, "Member 'UBladeMenu_MainMenu_C::TeamSelectWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, InGameChallengeScreen) == 0x000568, "Member 'UBladeMenu_MainMenu_C::InGameChallengeScreen' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ReportPlayerClass) == 0x000570, "Member 'UBladeMenu_MainMenu_C::ReportPlayerClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, ParentalControlsClass) == 0x000598, "Member 'UBladeMenu_MainMenu_C::ParentalControlsClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, FeedbackWidgetClass) == 0x0005C0, "Member 'UBladeMenu_MainMenu_C::FeedbackWidgetClass' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, SettingTabToOpen) == 0x0005E8, "Member 'UBladeMenu_MainMenu_C::SettingTabToOpen' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_MainMenu_C, AthenaMOTDPanel) == 0x0005F0, "Member 'UBladeMenu_MainMenu_C::AthenaMOTDPanel' has a wrong offset!");
 
 }
 

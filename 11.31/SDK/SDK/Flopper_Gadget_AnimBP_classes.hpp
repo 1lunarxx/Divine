@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Flopper_Gadget_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("Flopper_Gadget_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Flopper_Gadget_AnimBP_C")
 	}
 	static class UFlopper_Gadget_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlopper_Gadget_AnimBP_C>();
 	}
 };
-static_assert(alignof(UFlopper_Gadget_AnimBP_C) == 0x000010, "Wrong alignment on UFlopper_Gadget_AnimBP_C");
-static_assert(sizeof(UFlopper_Gadget_AnimBP_C) == 0x0007E0, "Wrong size on UFlopper_Gadget_AnimBP_C");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, UberGraphFrame) == 0x000270, "Member 'UFlopper_Gadget_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_LocalRefPose_2F2AB8FA4E1C815767E9FF85ED9DB64C) == 0x000278, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_LocalRefPose_2F2AB8FA4E1C815767E9FF85ED9DB64C' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_LocalToComponentSpace_F503A4E3403EE6E7C2EFEF835B120AE3) == 0x000290, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_LocalToComponentSpace_F503A4E3403EE6E7C2EFEF835B120AE3' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_072C83FB4DE31E194B88C79635DBA857) == 0x0002B0, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_072C83FB4DE31E194B88C79635DBA857' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_Trail_31475A4D4176A843679325975216423F) == 0x0002D0, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_Trail_31475A4D4176A843679325975216423F' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_Trail_BD2C0AE146BBEC3C1A4E439940E02D82) == 0x000540, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_Trail_BD2C0AE146BBEC3C1A4E439940E02D82' has a wrong offset!");
-static_assert(offsetof(UFlopper_Gadget_AnimBP_C, AnimGraphNode_Root_E1C0D5694227B227D5EBBDB62D4F6321) == 0x0007B0, "Member 'UFlopper_Gadget_AnimBP_C::AnimGraphNode_Root_E1C0D5694227B227D5EBBDB62D4F6321' has a wrong offset!");
 
 }
 

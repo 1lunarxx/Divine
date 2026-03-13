@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentModal_C">();
+		BP_STATIC_CLASS_IMPL("TournamentModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentModal_C")
 	}
 	static class UTournamentModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentModal_C>();
 	}
 };
-static_assert(alignof(UTournamentModal_C) == 0x000008, "Wrong alignment on UTournamentModal_C");
-static_assert(sizeof(UTournamentModal_C) == 0x000458, "Wrong size on UTournamentModal_C");
-static_assert(offsetof(UTournamentModal_C, UberGraphFrame) == 0x000440, "Member 'UTournamentModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentModal_C, Intro) == 0x000448, "Member 'UTournamentModal_C::Intro' has a wrong offset!");
-static_assert(offsetof(UTournamentModal_C, Image_BG) == 0x000450, "Member 'UTournamentModal_C::Image_BG' has a wrong offset!");
 
 }
 

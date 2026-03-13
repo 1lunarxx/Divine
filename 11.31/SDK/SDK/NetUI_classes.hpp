@@ -43,19 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BadNetworkIndicator">();
+		STATIC_CLASS_IMPL("BadNetworkIndicator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BadNetworkIndicator")
 	}
 	static class UBadNetworkIndicator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBadNetworkIndicator>();
 	}
 };
-static_assert(alignof(UBadNetworkIndicator) == 0x000008, "Wrong alignment on UBadNetworkIndicator");
-static_assert(sizeof(UBadNetworkIndicator) == 0x000258, "Wrong size on UBadNetworkIndicator");
-static_assert(offsetof(UBadNetworkIndicator, bEnabled) == 0x000230, "Member 'UBadNetworkIndicator::bEnabled' has a wrong offset!");
-static_assert(offsetof(UBadNetworkIndicator, MinimumDisplayTime) == 0x000234, "Member 'UBadNetworkIndicator::MinimumDisplayTime' has a wrong offset!");
-static_assert(offsetof(UBadNetworkIndicator, UpdateTime) == 0x000238, "Member 'UBadNetworkIndicator::UpdateTime' has a wrong offset!");
-static_assert(offsetof(UBadNetworkIndicator, InitialDelay) == 0x00023C, "Member 'UBadNetworkIndicator::InitialDelay' has a wrong offset!");
 
 // Class NetUI.NetDebugWidget
 // 0x00E8 (0x0318 - 0x0230)
@@ -78,22 +76,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetDebugWidget">();
+		STATIC_CLASS_IMPL("NetDebugWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetDebugWidget")
 	}
 	static class UNetDebugWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetDebugWidget>();
 	}
 };
-static_assert(alignof(UNetDebugWidget) == 0x000008, "Wrong alignment on UNetDebugWidget");
-static_assert(sizeof(UNetDebugWidget) == 0x000318, "Wrong size on UNetDebugWidget");
-static_assert(offsetof(UNetDebugWidget, PingUI) == 0x000230, "Member 'UNetDebugWidget::PingUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, PacketInRateUI) == 0x000238, "Member 'UNetDebugWidget::PacketInRateUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, PacketOutRateUI) == 0x000240, "Member 'UNetDebugWidget::PacketOutRateUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, PacketInLossUI) == 0x000248, "Member 'UNetDebugWidget::PacketInLossUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, PacketOutLossUI) == 0x000250, "Member 'UNetDebugWidget::PacketOutLossUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, UpBandwidthUI) == 0x000258, "Member 'UNetDebugWidget::UpBandwidthUI' has a wrong offset!");
-static_assert(offsetof(UNetDebugWidget, DownBandwidthUI) == 0x000260, "Member 'UNetDebugWidget::DownBandwidthUI' has a wrong offset!");
 
 // Class NetUI.NetGraph
 // 0x0030 (0x0260 - 0x0230)
@@ -111,21 +104,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NetGraph">();
+		STATIC_CLASS_IMPL("NetGraph")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NetGraph")
 	}
 	static class UNetGraph* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNetGraph>();
 	}
 };
-static_assert(alignof(UNetGraph) == 0x000008, "Wrong alignment on UNetGraph");
-static_assert(sizeof(UNetGraph) == 0x000260, "Wrong size on UNetGraph");
-static_assert(offsetof(UNetGraph, BackgroundColor) == 0x000230, "Member 'UNetGraph::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(UNetGraph, PingLineColor) == 0x000234, "Member 'UNetGraph::PingLineColor' has a wrong offset!");
-static_assert(offsetof(UNetGraph, QueuedBunchesLineColor) == 0x000238, "Member 'UNetGraph::QueuedBunchesLineColor' has a wrong offset!");
-static_assert(offsetof(UNetGraph, PacketLossLineColor) == 0x00023C, "Member 'UNetGraph::PacketLossLineColor' has a wrong offset!");
-static_assert(offsetof(UNetGraph, DesiredSize) == 0x000240, "Member 'UNetGraph::DesiredSize' has a wrong offset!");
-static_assert(offsetof(UNetGraph, MaxPingToGraph) == 0x000248, "Member 'UNetGraph::MaxPingToGraph' has a wrong offset!");
 
 }
 

@@ -33,15 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectBlueprintFunctionLibrary">();
+		STATIC_CLASS_IMPL("SmartObjectBlueprintFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectBlueprintFunctionLibrary")
 	}
 	static class USmartObjectBlueprintFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectBlueprintFunctionLibrary>();
 	}
 };
-static_assert(alignof(USmartObjectBlueprintFunctionLibrary) == 0x000008, "Wrong alignment on USmartObjectBlueprintFunctionLibrary");
-static_assert(sizeof(USmartObjectBlueprintFunctionLibrary) == 0x000028, "Wrong size on USmartObjectBlueprintFunctionLibrary");
 
 // Class SmartObjectsModule.AITask_UseSmartObject
 // 0x0040 (0x00B0 - 0x0070)
@@ -59,18 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AITask_UseSmartObject">();
+		STATIC_CLASS_IMPL("AITask_UseSmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AITask_UseSmartObject")
 	}
 	static class UAITask_UseSmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAITask_UseSmartObject>();
 	}
 };
-static_assert(alignof(UAITask_UseSmartObject) == 0x000008, "Wrong alignment on UAITask_UseSmartObject");
-static_assert(sizeof(UAITask_UseSmartObject) == 0x0000B0, "Wrong size on UAITask_UseSmartObject");
-static_assert(offsetof(UAITask_UseSmartObject, SOComponent) == 0x000070, "Member 'UAITask_UseSmartObject::SOComponent' has a wrong offset!");
-static_assert(offsetof(UAITask_UseSmartObject, OnFinished) == 0x000078, "Member 'UAITask_UseSmartObject::OnFinished' has a wrong offset!");
-static_assert(offsetof(UAITask_UseSmartObject, MoveToTask) == 0x000088, "Member 'UAITask_UseSmartObject::MoveToTask' has a wrong offset!");
 
 // Class SmartObjectsModule.BTTask_FindAndUseSmartObject
 // 0x0050 (0x00C0 - 0x0070)
@@ -84,17 +85,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_FindAndUseSmartObject">();
+		STATIC_CLASS_IMPL("BTTask_FindAndUseSmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_FindAndUseSmartObject")
 	}
 	static class UBTTask_FindAndUseSmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_FindAndUseSmartObject>();
 	}
 };
-static_assert(alignof(UBTTask_FindAndUseSmartObject) == 0x000008, "Wrong alignment on UBTTask_FindAndUseSmartObject");
-static_assert(sizeof(UBTTask_FindAndUseSmartObject) == 0x0000C0, "Wrong size on UBTTask_FindAndUseSmartObject");
-static_assert(offsetof(UBTTask_FindAndUseSmartObject, ActivityRequirements) == 0x000070, "Member 'UBTTask_FindAndUseSmartObject::ActivityRequirements' has a wrong offset!");
-static_assert(offsetof(UBTTask_FindAndUseSmartObject, Radius) == 0x0000B8, "Member 'UBTTask_FindAndUseSmartObject::Radius' has a wrong offset!");
 
 // Class SmartObjectsModule.BTTask_UseSmartObject
 // 0x0000 (0x0098 - 0x0098)
@@ -103,15 +104,17 @@ class UBTTask_UseSmartObject final : public UBTTask_BlackboardBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BTTask_UseSmartObject">();
+		STATIC_CLASS_IMPL("BTTask_UseSmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BTTask_UseSmartObject")
 	}
 	static class UBTTask_UseSmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBTTask_UseSmartObject>();
 	}
 };
-static_assert(alignof(UBTTask_UseSmartObject) == 0x000008, "Wrong alignment on UBTTask_UseSmartObject");
-static_assert(sizeof(UBTTask_UseSmartObject) == 0x000098, "Wrong size on UBTTask_UseSmartObject");
 
 // Class SmartObjectsModule.GenericSmartObject
 // 0x0020 (0x0238 - 0x0218)
@@ -125,34 +128,45 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GenericSmartObject">();
+		STATIC_CLASS_IMPL("GenericSmartObject")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GenericSmartObject")
 	}
 	static class AGenericSmartObject* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGenericSmartObject>();
 	}
 };
-static_assert(alignof(AGenericSmartObject) == 0x000008, "Wrong alignment on AGenericSmartObject");
-static_assert(sizeof(AGenericSmartObject) == 0x000238, "Wrong size on AGenericSmartObject");
-static_assert(offsetof(AGenericSmartObject, SOComponent) == 0x000220, "Member 'AGenericSmartObject::SOComponent' has a wrong offset!");
-static_assert(offsetof(AGenericSmartObject, ReferenceActors) == 0x000228, "Member 'AGenericSmartObject::ReferenceActors' has a wrong offset!");
 
 // Class SmartObjectsModule.RichSmartObjectInterface
-// 0x0000 (0x0028 - 0x0028)
-class IRichSmartObjectInterface final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IRichSmartObjectInterface final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RichSmartObjectInterface">();
+		STATIC_CLASS_IMPL("RichSmartObjectInterface")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RichSmartObjectInterface")
 	}
 	static class IRichSmartObjectInterface* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IRichSmartObjectInterface>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IRichSmartObjectInterface) == 0x000008, "Wrong alignment on IRichSmartObjectInterface");
-static_assert(sizeof(IRichSmartObjectInterface) == 0x000028, "Wrong size on IRichSmartObjectInterface");
 
 // Class SmartObjectsModule.SmartObjectComponent
 // 0x0060 (0x0110 - 0x00B0)
@@ -163,7 +177,7 @@ public:
 	TSoftObjectPtr<class USmartObjectConfig>      Config;                                            // 0x00B8(0x0028)(Edit, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FSmartObjectID                         RegisteredID;                                      // 0x00E0(0x0004)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint32                                        ExecutionPriorityOverride;                         // 0x00E4(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TScriptInterface<class IGameplayTagAssetInterface> GameplayTagAssetInterfaceImplementation;           // 0x00E8(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TScriptInterface<class IGameplayTagAssetInterface> GameplayTagAssetInterfaceImplementation;      // 0x00E8(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	uint8                                         bRichSmartObjectOwner : 1;                         // 0x00F8(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, EditConst, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         bRichSmartObjectComponent : 1;                     // 0x00F8(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, EditConst, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected))
 	uint8                                         Pad_F9[0x17];                                      // 0x00F9(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -171,19 +185,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectComponent">();
+		STATIC_CLASS_IMPL("SmartObjectComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectComponent")
 	}
 	static class USmartObjectComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectComponent>();
 	}
 };
-static_assert(alignof(USmartObjectComponent) == 0x000008, "Wrong alignment on USmartObjectComponent");
-static_assert(sizeof(USmartObjectComponent) == 0x000110, "Wrong size on USmartObjectComponent");
-static_assert(offsetof(USmartObjectComponent, Config) == 0x0000B8, "Member 'USmartObjectComponent::Config' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, RegisteredID) == 0x0000E0, "Member 'USmartObjectComponent::RegisteredID' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, ExecutionPriorityOverride) == 0x0000E4, "Member 'USmartObjectComponent::ExecutionPriorityOverride' has a wrong offset!");
-static_assert(offsetof(USmartObjectComponent, GameplayTagAssetInterfaceImplementation) == 0x0000E8, "Member 'USmartObjectComponent::GameplayTagAssetInterfaceImplementation' has a wrong offset!");
 
 // Class SmartObjectsModule.SmartObjectConfig
 // 0x0038 (0x0068 - 0x0030)
@@ -198,25 +210,24 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectConfig">();
+		STATIC_CLASS_IMPL("SmartObjectConfig")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectConfig")
 	}
 	static class USmartObjectConfig* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectConfig>();
 	}
 };
-static_assert(alignof(USmartObjectConfig) == 0x000008, "Wrong alignment on USmartObjectConfig");
-static_assert(sizeof(USmartObjectConfig) == 0x000068, "Wrong size on USmartObjectConfig");
-static_assert(offsetof(USmartObjectConfig, Uses) == 0x000030, "Member 'USmartObjectConfig::Uses' has a wrong offset!");
-static_assert(offsetof(USmartObjectConfig, DescriptionTags) == 0x000040, "Member 'USmartObjectConfig::DescriptionTags' has a wrong offset!");
-static_assert(offsetof(USmartObjectConfig, MaxConcurrentUsers) == 0x000060, "Member 'USmartObjectConfig::MaxConcurrentUsers' has a wrong offset!");
 
 // Class SmartObjectsModule.SmartObjectManager
 // 0x0528 (0x0550 - 0x0028)
 class alignas(0x10) USmartObjectManager final : public UObject
 {
 public:
-	TMap<struct FSmartObjectID, struct FSmartObjectRuntime> RuntimeSmartObjects;                               // 0x0028(0x0050)(ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
+	TMap<struct FSmartObjectID, struct FSmartObjectRuntime> RuntimeSmartObjects;                     // 0x0028(0x0050)(ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_78[0x4C8];                                     // 0x0078(0x04C8)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         BitPad_540_0 : 1;                                  // 0x0540(0x0001)(Fixing Bit-Field Size Between Bits [ Dumper-7 ])
 	uint8                                         bCreateIfMissing : 1;                              // 0x0540(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, Config, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate))
@@ -227,17 +238,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectManager">();
+		STATIC_CLASS_IMPL("SmartObjectManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectManager")
 	}
 	static class USmartObjectManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectManager>();
 	}
 };
-static_assert(alignof(USmartObjectManager) == 0x000010, "Wrong alignment on USmartObjectManager");
-static_assert(sizeof(USmartObjectManager) == 0x000550, "Wrong size on USmartObjectManager");
-static_assert(offsetof(USmartObjectManager, RuntimeSmartObjects) == 0x000028, "Member 'USmartObjectManager::RuntimeSmartObjects' has a wrong offset!");
-static_assert(offsetof(USmartObjectManager, DefaultUnusedSmartObjectLifespan) == 0x000544, "Member 'USmartObjectManager::DefaultUnusedSmartObjectLifespan' has a wrong offset!");
 
 // Class SmartObjectsModule.SmartObjectRenderingComponent
 // 0x0000 (0x03E0 - 0x03E0)
@@ -250,16 +261,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SmartObjectRenderingComponent">();
+		STATIC_CLASS_IMPL("SmartObjectRenderingComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmartObjectRenderingComponent")
 	}
 	static class USmartObjectRenderingComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmartObjectRenderingComponent>();
 	}
 };
-static_assert(alignof(USmartObjectRenderingComponent) == 0x000010, "Wrong alignment on USmartObjectRenderingComponent");
-static_assert(sizeof(USmartObjectRenderingComponent) == 0x0003E0, "Wrong size on USmartObjectRenderingComponent");
-static_assert(offsetof(USmartObjectRenderingComponent, ReferenceDrawingMode) == 0x0003D8, "Member 'USmartObjectRenderingComponent::ReferenceDrawingMode' has a wrong offset!");
 
 }
 

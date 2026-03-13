@@ -23,15 +23,17 @@ class UActivityBrowserWidget_C final : public UFortActivityBrowser
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityBrowserWidget_C">();
+		BP_STATIC_CLASS_IMPL("ActivityBrowserWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityBrowserWidget_C")
 	}
 	static class UActivityBrowserWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityBrowserWidget_C>();
 	}
 };
-static_assert(alignof(UActivityBrowserWidget_C) == 0x000008, "Wrong alignment on UActivityBrowserWidget_C");
-static_assert(sizeof(UActivityBrowserWidget_C) == 0x000450, "Wrong size on UActivityBrowserWidget_C");
 
 }
 

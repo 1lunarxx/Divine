@@ -23,15 +23,17 @@ class UBorder_StatRow_Unlocked_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_StatRow_Unlocked_C">();
+		BP_STATIC_CLASS_IMPL("Border_StatRow_Unlocked_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_StatRow_Unlocked_C")
 	}
 	static class UBorder_StatRow_Unlocked_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_StatRow_Unlocked_C>();
 	}
 };
-static_assert(alignof(UBorder_StatRow_Unlocked_C) == 0x000008, "Wrong alignment on UBorder_StatRow_Unlocked_C");
-static_assert(sizeof(UBorder_StatRow_Unlocked_C) == 0x0000B0, "Wrong size on UBorder_StatRow_Unlocked_C");
 
 }
 

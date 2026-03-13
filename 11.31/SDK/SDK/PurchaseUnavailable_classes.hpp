@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PurchaseUnavailable_C">();
+		BP_STATIC_CLASS_IMPL("PurchaseUnavailable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PurchaseUnavailable_C")
 	}
 	static class UPurchaseUnavailable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPurchaseUnavailable_C>();
 	}
 };
-static_assert(alignof(UPurchaseUnavailable_C) == 0x000008, "Wrong alignment on UPurchaseUnavailable_C");
-static_assert(sizeof(UPurchaseUnavailable_C) == 0x000468, "Wrong size on UPurchaseUnavailable_C");
-static_assert(offsetof(UPurchaseUnavailable_C, UberGraphFrame) == 0x000448, "Member 'UPurchaseUnavailable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPurchaseUnavailable_C, Intro) == 0x000450, "Member 'UPurchaseUnavailable_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPurchaseUnavailable_C, RichText_Details) == 0x000458, "Member 'UPurchaseUnavailable_C::RichText_Details' has a wrong offset!");
-static_assert(offsetof(UPurchaseUnavailable_C, RichText_HeaderText) == 0x000460, "Member 'UPurchaseUnavailable_C::RichText_HeaderText' has a wrong offset!");
 
 }
 

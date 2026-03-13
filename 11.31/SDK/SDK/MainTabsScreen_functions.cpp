@@ -17,6 +17,324 @@
 namespace SDK
 {
 
+// Function MainTabsScreen.MainTabsScreen_C.Update Quest Tab Button Bang
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
+
+	Params::MainTabsScreen_C_Update_Quest_Tab_Button_Bang Parms{};
+
+	Parms.Tab = Tab;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Update Tab Button Bangs
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             InTab                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
+
+	Params::MainTabsScreen_C_Update_Tab_Button_Bangs Parms{};
+
+	Parms.InTab = InTab;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Update Hero Tab Button Bang
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
+
+	Params::MainTabsScreen_C_Update_Hero_Tab_Button_Bang Parms{};
+
+	Parms.Tab = Tab;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Update Squad Tab Button Bang
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
+
+	Params::MainTabsScreen_C_Update_Squad_Tab_Button_Bang Parms{};
+
+	Parms.Tab = Tab;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.HandleTabSelected
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             TabName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::HandleTabSelected(class FName TabName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
+
+	Params::MainTabsScreen_C_HandleTabSelected Parms{};
+
+	Parms.TabName = TabName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.HandleTabCreated
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
+
+	Params::MainTabsScreen_C_HandleTabCreated Parms{};
+
+	Parms.TabId = TabId;
+	Parms.TabButton = TabButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.BP_OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UMainTabsScreen_C::BP_OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.CustomEvent
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
+
+	Params::MainTabsScreen_C_CustomEvent Parms{};
+
+	Parms.TabId = TabId;
+	Parms.TabButton = TabButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.OnHomebaseInventoryUpdated
+// (BlueprintCallable, BlueprintEvent)
+
+void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UMainTabsScreen_C::Destruct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+
+void UMainTabsScreen_C::Construct()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Construct");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.OnQuestSeen_Event_0
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortQuestItem*                   Quest                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
+
+	Params::MainTabsScreen_C_OnQuestSeen_Event_0 Parms{};
+
+	Parms.Quest = Quest;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.SquadSlotMarkedAsSeen_Event_0
+// (BlueprintCallable, BlueprintEvent)
+
+void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.HandleMainTabSelected
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
+
+	Params::MainTabsScreen_C_HandleMainTabSelected Parms{};
+
+	Parms.TabNameID = TabNameID;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.HandleMainTabCreated
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommonButton* TabButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
+
+	Params::MainTabsScreen_C_HandleMainTabCreated Parms{};
+
+	Parms.TabNameID = TabNameID;
+	Parms.TabButton = TabButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "Tick");
+
+	Params::MainTabsScreen_C_Tick Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.ExecuteUbergraph_MainTabsScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
+
+	Params::MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function MainTabsScreen.MainTabsScreen_C.Determine If Any non-MTX offers are purchasable
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -358,324 +676,6 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 
 	if (OutItem != nullptr)
 		*OutItem = Parms.OutItem;
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Update Quest Tab Button Bang
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::Update_Quest_Tab_Button_Bang(class FName Tab)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Quest Tab Button Bang");
-
-	Params::MainTabsScreen_C_Update_Quest_Tab_Button_Bang Parms{};
-
-	Parms.Tab = Tab;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Update Tab Button Bangs
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             InTab                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Tab Button Bangs");
-
-	Params::MainTabsScreen_C_Update_Tab_Button_Bangs Parms{};
-
-	Parms.InTab = InTab;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Update Hero Tab Button Bang
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
-
-	Params::MainTabsScreen_C_Update_Hero_Tab_Button_Bang Parms{};
-
-	Parms.Tab = Tab;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Update Squad Tab Button Bang
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             Tab                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
-
-	Params::MainTabsScreen_C_Update_Squad_Tab_Button_Bang Parms{};
-
-	Parms.Tab = Tab;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.HandleTabSelected
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             TabName                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::HandleTabSelected(class FName TabName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabSelected");
-
-	Params::MainTabsScreen_C_HandleTabSelected Parms{};
-
-	Parms.TabName = TabName;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.HandleTabCreated
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
-
-	Params::MainTabsScreen_C_HandleTabCreated Parms{};
-
-	Parms.TabId = TabId;
-	Parms.TabButton = TabButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.BP_OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UMainTabsScreen_C::BP_OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "BP_OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.CustomEvent
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                             TabId                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "CustomEvent");
-
-	Params::MainTabsScreen_C_CustomEvent Parms{};
-
-	Parms.TabId = TabId;
-	Parms.TabButton = TabButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.OnHomebaseInventoryUpdated
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "OnHomebaseInventoryUpdated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Destruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UMainTabsScreen_C::Destruct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-
-void UMainTabsScreen_C::Construct()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Construct");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.OnQuestSeen_Event_0
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortQuestItem*                   Quest                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::OnQuestSeen_Event_0(class UFortQuestItem* Quest)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "OnQuestSeen_Event_0");
-
-	Params::MainTabsScreen_C_OnQuestSeen_Event_0 Parms{};
-
-	Parms.Quest = Quest;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.SquadSlotMarkedAsSeen_Event_0
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainTabsScreen_C::SquadSlotMarkedAsSeen_Event_0()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "SquadSlotMarkedAsSeen_Event_0");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.HandleMainTabSelected
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::HandleMainTabSelected(class FName TabNameID)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabSelected");
-
-	Params::MainTabsScreen_C_HandleMainTabSelected Parms{};
-
-	Parms.TabNameID = TabNameID;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.HandleMainTabCreated
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommonButton* TabButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "HandleMainTabCreated");
-
-	Params::MainTabsScreen_C_HandleMainTabCreated Parms{};
-
-	Parms.TabNameID = TabNameID;
-	Parms.TabButton = TabButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Tick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// float                                   InDeltaTime                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "Tick");
-
-	Params::MainTabsScreen_C_Tick Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.InDeltaTime = InDeltaTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.ExecuteUbergraph_MainTabsScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
-
-	Params::MainTabsScreen_C_ExecuteUbergraph_MainTabsScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

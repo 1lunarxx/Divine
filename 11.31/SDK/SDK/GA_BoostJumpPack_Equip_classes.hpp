@@ -37,17 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_BoostJumpPack_Equip_C">();
+		BP_STATIC_CLASS_IMPL("GA_BoostJumpPack_Equip_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_BoostJumpPack_Equip_C")
 	}
 	static class UGA_BoostJumpPack_Equip_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_BoostJumpPack_Equip_C>();
 	}
 };
-static_assert(alignof(UGA_BoostJumpPack_Equip_C) == 0x000008, "Wrong alignment on UGA_BoostJumpPack_Equip_C");
-static_assert(sizeof(UGA_BoostJumpPack_Equip_C) == 0x000A40, "Wrong size on UGA_BoostJumpPack_Equip_C");
-static_assert(offsetof(UGA_BoostJumpPack_Equip_C, UberGraphFrame) == 0x000A30, "Member 'UGA_BoostJumpPack_Equip_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_Equip_C, PlayerPawn) == 0x000A38, "Member 'UGA_BoostJumpPack_Equip_C::PlayerPawn' has a wrong offset!");
 
 }
 

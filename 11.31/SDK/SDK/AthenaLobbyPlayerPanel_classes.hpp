@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobbyPlayerPanel_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobbyPlayerPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobbyPlayerPanel_C")
 	}
 	static class UAthenaLobbyPlayerPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobbyPlayerPanel_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyPlayerPanel_C) == 0x000008, "Wrong alignment on UAthenaLobbyPlayerPanel_C");
-static_assert(sizeof(UAthenaLobbyPlayerPanel_C) == 0x000748, "Wrong size on UAthenaLobbyPlayerPanel_C");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, UberGraphFrame) == 0x0004B8, "Member 'UAthenaLobbyPlayerPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, BattlePassRow) == 0x0004C0, "Member 'UAthenaLobbyPlayerPanel_C::BattlePassRow' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, Border_0) == 0x0004C8, "Member 'UAthenaLobbyPlayerPanel_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, SeasonPassIcon) == 0x0004D0, "Member 'UAthenaLobbyPlayerPanel_C::SeasonPassIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, TeamMemberInfo) == 0x0004D8, "Member 'UAthenaLobbyPlayerPanel_C::TeamMemberInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, OnGadgetsClicked) == 0x0006D8, "Member 'UAthenaLobbyPlayerPanel_C::OnGadgetsClicked' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, AddFriendText) == 0x0006E8, "Member 'UAthenaLobbyPlayerPanel_C::AddFriendText' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, AcceptInviteText) == 0x000700, "Member 'UAthenaLobbyPlayerPanel_C::AcceptInviteText' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, SentInviteText) == 0x000718, "Member 'UAthenaLobbyPlayerPanel_C::SentInviteText' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyPlayerPanel_C, AcceptedInviteText) == 0x000730, "Member 'UAthenaLobbyPlayerPanel_C::AcceptedInviteText' has a wrong offset!");
 
 }
 

@@ -2513,13 +2513,13 @@ void IFortAthenaMOTDNewsChildren::OnPopulateNews(const struct FAthenaNewsEntry& 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDNewsChildren", "OnPopulateNews");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDNewsChildren", "OnPopulateNews");
 
 	Params::FortAthenaMOTDNewsChildren_OnPopulateNews Parms{};
 
 	Parms.NewsEntry = std::move(NewsEntry);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -2531,9 +2531,9 @@ void IFortAthenaMOTDNewsChildren::SetDefaultImage()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDNewsChildren", "SetDefaultImage");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDNewsChildren", "SetDefaultImage");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -18364,14 +18364,14 @@ void IFortBangWrapperContentInterface::OnBangStateChanged(bool bEnabled, int32 C
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortBangWrapperContentInterface", "OnBangStateChanged");
+		Func = AsUObject()->Class->GetFunction("FortBangWrapperContentInterface", "OnBangStateChanged");
 
 	Params::FortBangWrapperContentInterface_OnBangStateChanged Parms{};
 
 	Parms.bEnabled = bEnabled;
 	Parms.Count = Count;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -18386,14 +18386,14 @@ void IFortBangWrapperContentInterface::OnStartCallout(class FName TutorialObject
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortBangWrapperContentInterface", "OnStartCallout");
+		Func = AsUObject()->Class->GetFunction("FortBangWrapperContentInterface", "OnStartCallout");
 
 	Params::FortBangWrapperContentInterface_OnStartCallout Parms{};
 
 	Parms.TutorialObjectiveName = TutorialObjectiveName;
 	Parms.TutorialType = TutorialType;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -18405,9 +18405,9 @@ void IFortBangWrapperContentInterface::OnStopCallout()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortBangWrapperContentInterface", "OnStopCallout");
+		Func = AsUObject()->Class->GetFunction("FortBangWrapperContentInterface", "OnStopCallout");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -28347,7 +28347,7 @@ void IFortTabButtonInterface::SetTabLabelInfo(const struct FFortTabButtonLabelIn
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTabButtonInterface", "SetTabLabelInfo");
+		Func = AsUObject()->Class->GetFunction("FortTabButtonInterface", "SetTabLabelInfo");
 
 	Params::FortTabButtonInterface_SetTabLabelInfo Parms{};
 
@@ -28356,7 +28356,7 @@ void IFortTabButtonInterface::SetTabLabelInfo(const struct FFortTabButtonLabelIn
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -69156,7 +69156,7 @@ void IFortAthenaMOTDPanelChildren::AddGenericWidgetInstanceToMOTDParent(class UC
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDPanelChildren", "AddGenericWidgetInstanceToMOTDParent");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDPanelChildren", "AddGenericWidgetInstanceToMOTDParent");
 
 	Params::FortAthenaMOTDPanelChildren_AddGenericWidgetInstanceToMOTDParent Parms{};
 
@@ -69165,7 +69165,7 @@ void IFortAthenaMOTDPanelChildren::AddGenericWidgetInstanceToMOTDParent(class UC
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -69181,7 +69181,7 @@ void IFortAthenaMOTDPanelChildren::CloseMOTDParent(bool bFireAnalytics) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDPanelChildren", "CloseMOTDParent");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDPanelChildren", "CloseMOTDParent");
 
 	Params::FortAthenaMOTDPanelChildren_CloseMOTDParent Parms{};
 
@@ -69190,7 +69190,7 @@ void IFortAthenaMOTDPanelChildren::CloseMOTDParent(bool bFireAnalytics) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -69206,14 +69206,14 @@ bool IFortAthenaMOTDPanelChildren::HasValidMOTDParent() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDPanelChildren", "HasValidMOTDParent");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDPanelChildren", "HasValidMOTDParent");
 
 	Params::FortAthenaMOTDPanelChildren_HasValidMOTDParent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -69229,12 +69229,12 @@ void IFortAthenaMOTDPanelChildren::HideMOTDParentBackground() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDPanelChildren", "HideMOTDParentBackground");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDPanelChildren", "HideMOTDParentBackground");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -69248,12 +69248,12 @@ void IFortAthenaMOTDPanelChildren::ShowMOTDParentBackground() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAthenaMOTDPanelChildren", "ShowMOTDParentBackground");
+		Func = AsUObject()->Class->GetFunction("FortAthenaMOTDPanelChildren", "ShowMOTDParentBackground");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -77742,12 +77742,12 @@ void IFortPrioritizedWidget::RequestActivation()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPrioritizedWidget", "RequestActivation");
+		Func = AsUObject()->Class->GetFunction("FortPrioritizedWidget", "RequestActivation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -77763,7 +77763,7 @@ void IFortPrioritizedWidget::SetHasActiveContent(bool bNewActive)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPrioritizedWidget", "SetHasActiveContent");
+		Func = AsUObject()->Class->GetFunction("FortPrioritizedWidget", "SetHasActiveContent");
 
 	Params::FortPrioritizedWidget_SetHasActiveContent Parms{};
 
@@ -77772,7 +77772,7 @@ void IFortPrioritizedWidget::SetHasActiveContent(bool bNewActive)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -77786,12 +77786,12 @@ void IFortPrioritizedWidget::WidgetIsFinished()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPrioritizedWidget", "WidgetIsFinished");
+		Func = AsUObject()->Class->GetFunction("FortPrioritizedWidget", "WidgetIsFinished");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -82289,12 +82289,12 @@ void IFortItemManagementMulchPanel::HideMulchConfirmationModal()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemManagementMulchPanel", "HideMulchConfirmationModal");
+		Func = AsUObject()->Class->GetFunction("FortItemManagementMulchPanel", "HideMulchConfirmationModal");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -82308,12 +82308,12 @@ void IFortItemManagementMulchPanel::NotifyPanelActivated()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemManagementMulchPanel", "NotifyPanelActivated");
+		Func = AsUObject()->Class->GetFunction("FortItemManagementMulchPanel", "NotifyPanelActivated");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -82327,12 +82327,12 @@ void IFortItemManagementMulchPanel::NotifyPanelDeactivated()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemManagementMulchPanel", "NotifyPanelDeactivated");
+		Func = AsUObject()->Class->GetFunction("FortItemManagementMulchPanel", "NotifyPanelDeactivated");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -82346,12 +82346,12 @@ void IFortItemManagementMulchPanel::ShowMulchConfirmationModal()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemManagementMulchPanel", "ShowMulchConfirmationModal");
+		Func = AsUObject()->Class->GetFunction("FortItemManagementMulchPanel", "ShowMulchConfirmationModal");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -88887,7 +88887,7 @@ void IFortGlobalActionDetailsDataSource::AddOnChangeDelegate(const TDelegate<voi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalActionDetailsDataSource", "AddOnChangeDelegate");
+		Func = AsUObject()->Class->GetFunction("FortGlobalActionDetailsDataSource", "AddOnChangeDelegate");
 
 	Params::FortGlobalActionDetailsDataSource_AddOnChangeDelegate Parms{};
 
@@ -88896,7 +88896,7 @@ void IFortGlobalActionDetailsDataSource::AddOnChangeDelegate(const TDelegate<voi
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -88912,7 +88912,7 @@ void IFortGlobalActionDetailsDataSource::RemoveOnChangeDelegate(const TDelegate<
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalActionDetailsDataSource", "RemoveOnChangeDelegate");
+		Func = AsUObject()->Class->GetFunction("FortGlobalActionDetailsDataSource", "RemoveOnChangeDelegate");
 
 	Params::FortGlobalActionDetailsDataSource_RemoveOnChangeDelegate Parms{};
 
@@ -88921,7 +88921,7 @@ void IFortGlobalActionDetailsDataSource::RemoveOnChangeDelegate(const TDelegate<
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -88937,14 +88937,14 @@ struct FFortGlobalActionDetails IFortGlobalActionDetailsDataSource::GetValue() c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortGlobalActionDetailsDataSource", "GetValue");
+		Func = AsUObject()->Class->GetFunction("FortGlobalActionDetailsDataSource", "GetValue");
 
 	Params::FortGlobalActionDetailsDataSource_GetValue Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -100129,14 +100129,14 @@ float IFortHUDObjectiveSizeInterface::GetHeightEstimate() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDObjectiveSizeInterface", "GetHeightEstimate");
+		Func = AsUObject()->Class->GetFunction("FortHUDObjectiveSizeInterface", "GetHeightEstimate");
 
 	Params::FortHUDObjectiveSizeInterface_GetHeightEstimate Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -105392,12 +105392,12 @@ void IFortItemListViewInterface::CenterSelectedItemListEntryWidget()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "CenterSelectedItemListEntryWidget");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "CenterSelectedItemListEntryWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105411,12 +105411,12 @@ void IFortItemListViewInterface::ClearCustomItemList()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "ClearCustomItemList");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "ClearCustomItemList");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105432,7 +105432,7 @@ void IFortItemListViewInterface::HandleItemEvolutionBegun(const class FString& O
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemEvolutionBegun");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemEvolutionBegun");
 
 	Params::FortItemListViewInterface_HandleItemEvolutionBegun Parms{};
 
@@ -105441,7 +105441,7 @@ void IFortItemListViewInterface::HandleItemEvolutionBegun(const class FString& O
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105459,7 +105459,7 @@ void IFortItemListViewInterface::HandleItemEvolutionCompleted(const bool bWasSuc
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemEvolutionCompleted");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemEvolutionCompleted");
 
 	Params::FortItemListViewInterface_HandleItemEvolutionCompleted Parms{};
 
@@ -105470,7 +105470,7 @@ void IFortItemListViewInterface::HandleItemEvolutionCompleted(const bool bWasSuc
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105486,7 +105486,7 @@ void IFortItemListViewInterface::HandleItemRarityUpgradeBegun(const class FStrin
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemRarityUpgradeBegun");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemRarityUpgradeBegun");
 
 	Params::FortItemListViewInterface_HandleItemRarityUpgradeBegun Parms{};
 
@@ -105495,7 +105495,7 @@ void IFortItemListViewInterface::HandleItemRarityUpgradeBegun(const class FStrin
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105513,7 +105513,7 @@ void IFortItemListViewInterface::HandleItemRarityUpgradeCompleted(const bool bWa
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemRarityUpgradeCompleted");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemRarityUpgradeCompleted");
 
 	Params::FortItemListViewInterface_HandleItemRarityUpgradeCompleted Parms{};
 
@@ -105524,7 +105524,7 @@ void IFortItemListViewInterface::HandleItemRarityUpgradeCompleted(const bool bWa
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105540,7 +105540,7 @@ void IFortItemListViewInterface::HandleItemRefundBegun(const class FString& Orig
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemRefundBegun");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemRefundBegun");
 
 	Params::FortItemListViewInterface_HandleItemRefundBegun Parms{};
 
@@ -105549,7 +105549,7 @@ void IFortItemListViewInterface::HandleItemRefundBegun(const class FString& Orig
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105567,7 +105567,7 @@ void IFortItemListViewInterface::HandleItemRefundCompleted(const bool bWasSucces
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HandleItemRefundCompleted");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HandleItemRefundCompleted");
 
 	Params::FortItemListViewInterface_HandleItemRefundCompleted Parms{};
 
@@ -105578,7 +105578,7 @@ void IFortItemListViewInterface::HandleItemRefundCompleted(const bool bWasSucces
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105592,12 +105592,12 @@ void IFortItemListViewInterface::HideNullItemListEntry()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "HideNullItemListEntry");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "HideNullItemListEntry");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105611,12 +105611,12 @@ void IFortItemListViewInterface::RefreshFilterAndSort()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "RefreshFilterAndSort");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "RefreshFilterAndSort");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105630,12 +105630,12 @@ void IFortItemListViewInterface::RefreshSort()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "RefreshSort");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "RefreshSort");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105651,7 +105651,7 @@ void IFortItemListViewInterface::SetConfig(const struct FFortItemListViewConfig&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetConfig");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetConfig");
 
 	Params::FortItemListViewInterface_SetConfig Parms{};
 
@@ -105660,7 +105660,7 @@ void IFortItemListViewInterface::SetConfig(const struct FFortItemListViewConfig&
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105676,7 +105676,7 @@ void IFortItemListViewInterface::SetCustomItemList(const TArray<class UFortItem*
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetCustomItemList");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetCustomItemList");
 
 	Params::FortItemListViewInterface_SetCustomItemList Parms{};
 
@@ -105685,7 +105685,7 @@ void IFortItemListViewInterface::SetCustomItemList(const TArray<class UFortItem*
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105701,7 +105701,7 @@ void IFortItemListViewInterface::SetFilter(const struct FFortItemFilterDefinitio
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetFilter");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetFilter");
 
 	Params::FortItemListViewInterface_SetFilter Parms{};
 
@@ -105710,7 +105710,7 @@ void IFortItemListViewInterface::SetFilter(const struct FFortItemFilterDefinitio
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105727,7 +105727,7 @@ void IFortItemListViewInterface::SetFilterAndSorter(const struct FFortItemFilter
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetFilterAndSorter");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetFilterAndSorter");
 
 	Params::FortItemListViewInterface_SetFilterAndSorter Parms{};
 
@@ -105737,7 +105737,7 @@ void IFortItemListViewInterface::SetFilterAndSorter(const struct FFortItemFilter
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105753,7 +105753,7 @@ void IFortItemListViewInterface::SetItemViewContext(TScriptInterface<class IFort
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetItemViewContext");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetItemViewContext");
 
 	Params::FortItemListViewInterface_SetItemViewContext Parms{};
 
@@ -105762,7 +105762,7 @@ void IFortItemListViewInterface::SetItemViewContext(TScriptInterface<class IFort
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105778,7 +105778,7 @@ void IFortItemListViewInterface::SetSorter(const struct FFortItemSorterDefinitio
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "SetSorter");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "SetSorter");
 
 	Params::FortItemListViewInterface_SetSorter Parms{};
 
@@ -105787,7 +105787,7 @@ void IFortItemListViewInterface::SetSorter(const struct FFortItemSorterDefinitio
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105801,12 +105801,12 @@ void IFortItemListViewInterface::ShowNullItemListEntry()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "ShowNullItemListEntry");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "ShowNullItemListEntry");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -105823,7 +105823,7 @@ bool IFortItemListViewInterface::ContainsItem(const class UFortItem* Item) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "ContainsItem");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "ContainsItem");
 
 	Params::FortItemListViewInterface_ContainsItem Parms{};
 
@@ -105832,7 +105832,7 @@ bool IFortItemListViewInterface::ContainsItem(const class UFortItem* Item) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -105850,14 +105850,14 @@ const struct FFortItemListViewConfig IFortItemListViewInterface::GetConfig() con
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "GetConfig");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "GetConfig");
 
 	Params::FortItemListViewInterface_GetConfig Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -105875,14 +105875,14 @@ const struct FFortItemFilterDefinition IFortItemListViewInterface::GetFilter() c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "GetFilter");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "GetFilter");
 
 	Params::FortItemListViewInterface_GetFilter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -105900,14 +105900,14 @@ const struct FFortItemSorterDefinition IFortItemListViewInterface::GetSorter() c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortItemListViewInterface", "GetSorter");
+		Func = AsUObject()->Class->GetFunction("FortItemListViewInterface", "GetSorter");
 
 	Params::FortItemListViewInterface_GetSorter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -123571,7 +123571,7 @@ void IFortTimespanDataSource::AddOnChangeDelegate(const TDelegate<void(class UOb
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTimespanDataSource", "AddOnChangeDelegate");
+		Func = AsUObject()->Class->GetFunction("FortTimespanDataSource", "AddOnChangeDelegate");
 
 	Params::FortTimespanDataSource_AddOnChangeDelegate Parms{};
 
@@ -123580,7 +123580,7 @@ void IFortTimespanDataSource::AddOnChangeDelegate(const TDelegate<void(class UOb
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -123596,7 +123596,7 @@ void IFortTimespanDataSource::RemoveOnChangeDelegate(const TDelegate<void(class 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTimespanDataSource", "RemoveOnChangeDelegate");
+		Func = AsUObject()->Class->GetFunction("FortTimespanDataSource", "RemoveOnChangeDelegate");
 
 	Params::FortTimespanDataSource_RemoveOnChangeDelegate Parms{};
 
@@ -123605,7 +123605,7 @@ void IFortTimespanDataSource::RemoveOnChangeDelegate(const TDelegate<void(class 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -123621,14 +123621,14 @@ struct FTimespan IFortTimespanDataSource::GetValue() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTimespanDataSource", "GetValue");
+		Func = AsUObject()->Class->GetFunction("FortTimespanDataSource", "GetValue");
 
 	Params::FortTimespanDataSource_GetValue Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

@@ -23,15 +23,17 @@ class AGCN_Loop_ColdBreath_V2_C final : public AFortGameplayCueNotify_Loop
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_ColdBreath_V2_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_ColdBreath_V2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_ColdBreath_V2_C")
 	}
 	static class AGCN_Loop_ColdBreath_V2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_ColdBreath_V2_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_ColdBreath_V2_C) == 0x000008, "Wrong alignment on AGCN_Loop_ColdBreath_V2_C");
-static_assert(sizeof(AGCN_Loop_ColdBreath_V2_C) == 0x000788, "Wrong size on AGCN_Loop_ColdBreath_V2_C");
 
 }
 

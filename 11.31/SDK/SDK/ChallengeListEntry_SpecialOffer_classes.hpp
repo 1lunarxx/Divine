@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeListEntry_SpecialOffer_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeListEntry_SpecialOffer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeListEntry_SpecialOffer_C")
 	}
 	static class UChallengeListEntry_SpecialOffer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeListEntry_SpecialOffer_C>();
 	}
 };
-static_assert(alignof(UChallengeListEntry_SpecialOffer_C) == 0x000008, "Wrong alignment on UChallengeListEntry_SpecialOffer_C");
-static_assert(sizeof(UChallengeListEntry_SpecialOffer_C) == 0x0002D8, "Wrong size on UChallengeListEntry_SpecialOffer_C");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, UberGraphFrame) == 0x0002A8, "Member 'UChallengeListEntry_SpecialOffer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, OnHover) == 0x0002B0, "Member 'UChallengeListEntry_SpecialOffer_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, AxesOffer) == 0x0002B8, "Member 'UChallengeListEntry_SpecialOffer_C::AxesOffer' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, Border) == 0x0002C0, "Member 'UChallengeListEntry_SpecialOffer_C::Border' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, BoxActionWidgetWrapper) == 0x0002C8, "Member 'UChallengeListEntry_SpecialOffer_C::BoxActionWidgetWrapper' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_SpecialOffer_C, Smoke) == 0x0002D0, "Member 'UChallengeListEntry_SpecialOffer_C::Smoke' has a wrong offset!");
 
 }
 

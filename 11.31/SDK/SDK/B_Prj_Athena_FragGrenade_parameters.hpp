@@ -62,41 +62,6 @@ public:
 	struct FGameplayCueParameters                 CallFunc_MakeGameplayCueParameters_ReturnValue;    // 0x0208(0x00B8)(ContainsInstancedReference)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue_2;          // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade) == 0x000008, "Wrong alignment on B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade");
-static_assert(sizeof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade) == 0x0002C8, "Wrong size on B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, EntryPoint) == 0x000000, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_GetInstigatorController_ReturnValue) == 0x000008, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000010, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_GetPlayerController_ReturnValue) == 0x000098, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_OnSameTeam_ReturnValue) == 0x0000A0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_OnSameTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_Conv_FloatToVector_ReturnValue) == 0x0000A4, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, K2Node_Event_HitActors) == 0x0000B0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::K2Node_Event_HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, K2Node_Event_HitResults) == 0x0000C0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::K2Node_Event_HitResults' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, K2Node_Event_Hit) == 0x0000DC, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_bBlockingHit) == 0x000164, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_bInitialOverlap) == 0x000165, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_Time) == 0x000168, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_Distance) == 0x00016C, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_Location) == 0x000170, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_ImpactPoint) == 0x00017C, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_Normal) == 0x000188, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_ImpactNormal) == 0x000194, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_PhysMat) == 0x0001A0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_HitActor) == 0x0001A8, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_HitComponent) == 0x0001B0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_HitBoneName) == 0x0001B8, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_HitItem) == 0x0001C0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_FaceIndex) == 0x0001C4, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_TraceStart) == 0x0001C8, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_BreakHitResult_TraceEnd) == 0x0001D4, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_IsValid_ReturnValue) == 0x0001E0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, K2Node_CreateDelegate_OutputDelegate) == 0x0001E4, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0001F4, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0001F8, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x000200, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_MakeGameplayCueParameters_ReturnValue) == 0x000208, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_MakeGameplayCueParameters_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade, CallFunc_Divide_FloatFloat_ReturnValue_2) == 0x0002C0, "Member 'B_Prj_Athena_FragGrenade_C_ExecuteUbergraph_B_Prj_Athena_FragGrenade::CallFunc_Divide_FloatFloat_ReturnValue_2' has a wrong offset!");
 
 // Function B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C.OnBounce
 // 0x0088 (0x0088 - 0x0000)
@@ -105,9 +70,6 @@ struct B_Prj_Athena_FragGrenade_C_OnBounce final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Athena_FragGrenade_C_OnBounce) == 0x000004, "Wrong alignment on B_Prj_Athena_FragGrenade_C_OnBounce");
-static_assert(sizeof(B_Prj_Athena_FragGrenade_C_OnBounce) == 0x000088, "Wrong size on B_Prj_Athena_FragGrenade_C_OnBounce");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_OnBounce, Hit) == 0x000000, "Member 'B_Prj_Athena_FragGrenade_C_OnBounce::Hit' has a wrong offset!");
 
 // Function B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C.OnExploded
 // 0x0020 (0x0020 - 0x0000)
@@ -117,10 +79,6 @@ public:
 	TArray<class AActor*>                         HitActors;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Athena_FragGrenade_C_OnExploded) == 0x000008, "Wrong alignment on B_Prj_Athena_FragGrenade_C_OnExploded");
-static_assert(sizeof(B_Prj_Athena_FragGrenade_C_OnExploded) == 0x000020, "Wrong size on B_Prj_Athena_FragGrenade_C_OnExploded");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_OnExploded, HitActors) == 0x000000, "Member 'B_Prj_Athena_FragGrenade_C_OnExploded::HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_Athena_FragGrenade_C_OnExploded, HitResults) == 0x000010, "Member 'B_Prj_Athena_FragGrenade_C_OnExploded::HitResults' has a wrong offset!");
 
 }
 

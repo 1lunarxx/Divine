@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lotus_Mustache_HealthBar_C">();
+		BP_STATIC_CLASS_IMPL("Lotus_Mustache_HealthBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lotus_Mustache_HealthBar_C")
 	}
 	static class ULotus_Mustache_HealthBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULotus_Mustache_HealthBar_C>();
 	}
 };
-static_assert(alignof(ULotus_Mustache_HealthBar_C) == 0x000008, "Wrong alignment on ULotus_Mustache_HealthBar_C");
-static_assert(sizeof(ULotus_Mustache_HealthBar_C) == 0x000248, "Wrong size on ULotus_Mustache_HealthBar_C");
-static_assert(offsetof(ULotus_Mustache_HealthBar_C, UberGraphFrame) == 0x000230, "Member 'ULotus_Mustache_HealthBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULotus_Mustache_HealthBar_C, ProgressBar_35) == 0x000238, "Member 'ULotus_Mustache_HealthBar_C::ProgressBar_35' has a wrong offset!");
-static_assert(offsetof(ULotus_Mustache_HealthBar_C, Target) == 0x000240, "Member 'ULotus_Mustache_HealthBar_C::Target' has a wrong offset!");
 
 }
 

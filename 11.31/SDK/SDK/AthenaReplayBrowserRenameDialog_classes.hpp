@@ -23,15 +23,17 @@ class UAthenaReplayBrowserRenameDialog_C final : public UFortReplayBrowserRename
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaReplayBrowserRenameDialog_C">();
+		BP_STATIC_CLASS_IMPL("AthenaReplayBrowserRenameDialog_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaReplayBrowserRenameDialog_C")
 	}
 	static class UAthenaReplayBrowserRenameDialog_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaReplayBrowserRenameDialog_C>();
 	}
 };
-static_assert(alignof(UAthenaReplayBrowserRenameDialog_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserRenameDialog_C");
-static_assert(sizeof(UAthenaReplayBrowserRenameDialog_C) == 0x000308, "Wrong size on UAthenaReplayBrowserRenameDialog_C");
 
 }
 

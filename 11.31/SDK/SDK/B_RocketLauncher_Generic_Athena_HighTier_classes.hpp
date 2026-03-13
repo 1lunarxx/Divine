@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_RocketLauncher_Generic_Athena_HighTier_C">();
+		BP_STATIC_CLASS_IMPL("B_RocketLauncher_Generic_Athena_HighTier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_RocketLauncher_Generic_Athena_HighTier_C")
 	}
 	static class AB_RocketLauncher_Generic_Athena_HighTier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_RocketLauncher_Generic_Athena_HighTier_C>();
 	}
 };
-static_assert(alignof(AB_RocketLauncher_Generic_Athena_HighTier_C) == 0x000008, "Wrong alignment on AB_RocketLauncher_Generic_Athena_HighTier_C");
-static_assert(sizeof(AB_RocketLauncher_Generic_Athena_HighTier_C) == 0x000FC8, "Wrong size on AB_RocketLauncher_Generic_Athena_HighTier_C");
-static_assert(offsetof(AB_RocketLauncher_Generic_Athena_HighTier_C, UberGraphFrame_B_RocketLauncher_Generic_Athena_HighTier_C) == 0x000FB8, "Member 'AB_RocketLauncher_Generic_Athena_HighTier_C::UberGraphFrame_B_RocketLauncher_Generic_Athena_HighTier_C' has a wrong offset!");
-static_assert(offsetof(AB_RocketLauncher_Generic_Athena_HighTier_C, RearMuzzle) == 0x000FC0, "Member 'AB_RocketLauncher_Generic_Athena_HighTier_C::RearMuzzle' has a wrong offset!");
 
 }
 

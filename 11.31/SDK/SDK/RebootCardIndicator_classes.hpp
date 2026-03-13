@@ -45,26 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RebootCardIndicator_C">();
+		BP_STATIC_CLASS_IMPL("RebootCardIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RebootCardIndicator_C")
 	}
 	static class URebootCardIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URebootCardIndicator_C>();
 	}
 };
-static_assert(alignof(URebootCardIndicator_C) == 0x000008, "Wrong alignment on URebootCardIndicator_C");
-static_assert(sizeof(URebootCardIndicator_C) == 0x0004E0, "Wrong size on URebootCardIndicator_C");
-static_assert(offsetof(URebootCardIndicator_C, UberGraphFrame) == 0x000490, "Member 'URebootCardIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, UpdateTime) == 0x000498, "Member 'URebootCardIndicator_C::UpdateTime' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, Border_Nameplate) == 0x0004A0, "Member 'URebootCardIndicator_C::Border_Nameplate' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, burst) == 0x0004A8, "Member 'URebootCardIndicator_C::burst' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, Image_RebootIcon) == 0x0004B0, "Member 'URebootCardIndicator_C::Image_RebootIcon' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, IndicatorSpacer) == 0x0004B8, "Member 'URebootCardIndicator_C::IndicatorSpacer' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, RebootCountdownContainer) == 0x0004C0, "Member 'URebootCardIndicator_C::RebootCountdownContainer' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, TimeText) == 0x0004C8, "Member 'URebootCardIndicator_C::TimeText' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, CurTime) == 0x0004D0, "Member 'URebootCardIndicator_C::CurTime' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, EndTime) == 0x0004D4, "Member 'URebootCardIndicator_C::EndTime' has a wrong offset!");
-static_assert(offsetof(URebootCardIndicator_C, TimerHandle) == 0x0004D8, "Member 'URebootCardIndicator_C::TimerHandle' has a wrong offset!");
 
 }
 

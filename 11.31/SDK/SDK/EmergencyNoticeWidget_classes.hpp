@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EmergencyNoticeWidget_C">();
+		BP_STATIC_CLASS_IMPL("EmergencyNoticeWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EmergencyNoticeWidget_C")
 	}
 	static class UEmergencyNoticeWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEmergencyNoticeWidget_C>();
 	}
 };
-static_assert(alignof(UEmergencyNoticeWidget_C) == 0x000008, "Wrong alignment on UEmergencyNoticeWidget_C");
-static_assert(sizeof(UEmergencyNoticeWidget_C) == 0x000288, "Wrong size on UEmergencyNoticeWidget_C");
-static_assert(offsetof(UEmergencyNoticeWidget_C, UberGraphFrame) == 0x000258, "Member 'UEmergencyNoticeWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEmergencyNoticeWidget_C, Entrance) == 0x000260, "Member 'UEmergencyNoticeWidget_C::Entrance' has a wrong offset!");
-static_assert(offsetof(UEmergencyNoticeWidget_C, BodyText) == 0x000268, "Member 'UEmergencyNoticeWidget_C::BodyText' has a wrong offset!");
-static_assert(offsetof(UEmergencyNoticeWidget_C, BorderAll) == 0x000270, "Member 'UEmergencyNoticeWidget_C::BorderAll' has a wrong offset!");
-static_assert(offsetof(UEmergencyNoticeWidget_C, Image_0) == 0x000278, "Member 'UEmergencyNoticeWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UEmergencyNoticeWidget_C, TitleText) == 0x000280, "Member 'UEmergencyNoticeWidget_C::TitleText' has a wrong offset!");
 
 }
 

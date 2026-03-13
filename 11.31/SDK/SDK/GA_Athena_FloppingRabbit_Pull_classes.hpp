@@ -41,24 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_FloppingRabbit_Pull_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_FloppingRabbit_Pull_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_FloppingRabbit_Pull_C")
 	}
 	static class UGA_Athena_FloppingRabbit_Pull_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_FloppingRabbit_Pull_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_FloppingRabbit_Pull_C) == 0x000008, "Wrong alignment on UGA_Athena_FloppingRabbit_Pull_C");
-static_assert(sizeof(UGA_Athena_FloppingRabbit_Pull_C) == 0x000AB8, "Wrong size on UGA_Athena_FloppingRabbit_Pull_C");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_FloppingRabbit_Pull_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, Target) == 0x000A38, "Member 'UGA_Athena_FloppingRabbit_Pull_C::Target' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, Launcher) == 0x000A40, "Member 'UGA_Athena_FloppingRabbit_Pull_C::Launcher' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, T_InVehicle) == 0x000A48, "Member 'UGA_Athena_FloppingRabbit_Pull_C::T_InVehicle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, LaunchArc) == 0x000A50, "Member 'UGA_Athena_FloppingRabbit_Pull_C::LaunchArc' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, LaunchGrav) == 0x000A54, "Member 'UGA_Athena_FloppingRabbit_Pull_C::LaunchGrav' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, Row_PullAmount) == 0x000A58, "Member 'UGA_Athena_FloppingRabbit_Pull_C::Row_PullAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, Row_PullEnabled) == 0x000A78, "Member 'UGA_Athena_FloppingRabbit_Pull_C::Row_PullEnabled' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_Pull_C, Row_CanPullFriends) == 0x000A98, "Member 'UGA_Athena_FloppingRabbit_Pull_C::Row_CanPullFriends' has a wrong offset!");
 
 }
 

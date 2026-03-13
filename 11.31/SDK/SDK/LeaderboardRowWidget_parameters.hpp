@@ -23,9 +23,6 @@ struct LeaderboardRowWidget_C_SetDataDirect final
 public:
 	class UFortLeaderboardRowProxyInstance*       NewData;                                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaderboardRowWidget_C_SetDataDirect) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_SetDataDirect");
-static_assert(sizeof(LeaderboardRowWidget_C_SetDataDirect) == 0x000008, "Wrong size on LeaderboardRowWidget_C_SetDataDirect");
-static_assert(offsetof(LeaderboardRowWidget_C_SetDataDirect, NewData) == 0x000000, "Member 'LeaderboardRowWidget_C_SetDataDirect::NewData' has a wrong offset!");
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.Refresh
 // 0x0050 (0x0050 - 0x0000)
@@ -37,12 +34,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0020(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0038(0x0018)()
 };
-static_assert(alignof(LeaderboardRowWidget_C_Refresh) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_Refresh");
-static_assert(sizeof(LeaderboardRowWidget_C_Refresh) == 0x000050, "Wrong size on LeaderboardRowWidget_C_Refresh");
-static_assert(offsetof(LeaderboardRowWidget_C_Refresh, RowObject) == 0x000000, "Member 'LeaderboardRowWidget_C_Refresh::RowObject' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_Refresh, CallFunc_Conv_IntToText_ReturnValue) == 0x000008, "Member 'LeaderboardRowWidget_C_Refresh::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_Refresh, CallFunc_Conv_StringToText_ReturnValue) == 0x000020, "Member 'LeaderboardRowWidget_C_Refresh::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_Refresh, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000038, "Member 'LeaderboardRowWidget_C_Refresh::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -51,9 +42,6 @@ struct LeaderboardRowWidget_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LeaderboardRowWidget_C_OnMouseLeave) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_OnMouseLeave");
-static_assert(sizeof(LeaderboardRowWidget_C_OnMouseLeave) == 0x000070, "Wrong size on LeaderboardRowWidget_C_OnMouseLeave");
-static_assert(offsetof(LeaderboardRowWidget_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'LeaderboardRowWidget_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -63,10 +51,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LeaderboardRowWidget_C_OnMouseEnter) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_OnMouseEnter");
-static_assert(sizeof(LeaderboardRowWidget_C_OnMouseEnter) == 0x0000A8, "Wrong size on LeaderboardRowWidget_C_OnMouseEnter");
-static_assert(offsetof(LeaderboardRowWidget_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LeaderboardRowWidget_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LeaderboardRowWidget_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -75,9 +59,6 @@ struct LeaderboardRowWidget_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaderboardRowWidget_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_OnListItemObjectSet");
-static_assert(sizeof(LeaderboardRowWidget_C_OnListItemObjectSet) == 0x000008, "Wrong size on LeaderboardRowWidget_C_OnListItemObjectSet");
-static_assert(offsetof(LeaderboardRowWidget_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'LeaderboardRowWidget_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
 // 0x0160 (0x0160 - 0x0000)
@@ -100,20 +81,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_2;       // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x000008, "Wrong alignment on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
-static_assert(sizeof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget) == 0x000160, "Wrong size on LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, EntryPoint) == 0x000000, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_Event_ListItemObject) == 0x000008, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance) == 0x000010, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_Event_MyGeometry) == 0x00001C, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_Event_MouseEvent_1) == 0x000058, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, K2Node_Event_MouseEvent) == 0x0000C8, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, CallFunc_PlayAnimationForward_ReturnValue) == 0x000138, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000140, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000148, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x000150, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget, CallFunc_PlayAnimationReverse_ReturnValue_1) == 0x000158, "Member 'LeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget::CallFunc_PlayAnimationReverse_ReturnValue_1' has a wrong offset!");
 
 }
 

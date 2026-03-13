@@ -35,7 +35,7 @@ public:
 	class UImage*                                 SpecialEventImage;                                 // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonWidgetSwitcher*                  Switcher_NewsTitle;                                // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        WidgetSwitcher_MoTD_Layout;                        // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(EAthenaNewsStyle NewStyle)> UpdateStyle;                                       // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EAthenaNewsStyle NewStyle)> UpdateStyle;                           // 0x0318(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void SingleItemConfiguration();
@@ -47,28 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaNews_C">();
+		BP_STATIC_CLASS_IMPL("AthenaNews_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaNews_C")
 	}
 	static class UAthenaNews_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaNews_C>();
 	}
 };
-static_assert(alignof(UAthenaNews_C) == 0x000008, "Wrong alignment on UAthenaNews_C");
-static_assert(sizeof(UAthenaNews_C) == 0x000328, "Wrong size on UAthenaNews_C");
-static_assert(offsetof(UAthenaNews_C, UberGraphFrame) == 0x0002B8, "Member 'UAthenaNews_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, AirRoyaleIntro) == 0x0002C0, "Member 'UAthenaNews_C::AirRoyaleIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, Intro) == 0x0002C8, "Member 'UAthenaNews_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, AthenaNewsTile) == 0x0002D0, "Member 'UAthenaNews_C::AthenaNewsTile' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_1) == 0x0002D8, "Member 'UAthenaNews_C::AthenaNewsTile_1' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_2) == 0x0002E0, "Member 'UAthenaNews_C::AthenaNewsTile_2' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, AthenaNewsTile_Spotlight) == 0x0002E8, "Member 'UAthenaNews_C::AthenaNewsTile_Spotlight' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, CommonText_SpecialEvent) == 0x0002F0, "Member 'UAthenaNews_C::CommonText_SpecialEvent' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, CommonText_SpecialEvent_1) == 0x0002F8, "Member 'UAthenaNews_C::CommonText_SpecialEvent_1' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, SpecialEventImage) == 0x000300, "Member 'UAthenaNews_C::SpecialEventImage' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, Switcher_NewsTitle) == 0x000308, "Member 'UAthenaNews_C::Switcher_NewsTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, WidgetSwitcher_MoTD_Layout) == 0x000310, "Member 'UAthenaNews_C::WidgetSwitcher_MoTD_Layout' has a wrong offset!");
-static_assert(offsetof(UAthenaNews_C, UpdateStyle) == 0x000318, "Member 'UAthenaNews_C::UpdateStyle' has a wrong offset!");
 
 }
 

@@ -54,6 +54,12 @@ public:
 	struct FDataTableRowHandle                    Back_Action;                                       // 0x06A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 public:
+	void GetFriendMatchXpBoostText(class FText* Result);
+	class FText GetAccountLevelText();
+	void Init_Back_Action();
+	void HandleBack(bool* PassThrough);
+	void BP_OnActivated();
+	void OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay);
 	void BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature(class FName TabId);
 	void OnQueryStarted();
 	void Construct();
@@ -63,53 +69,21 @@ public:
 	void BndEvt__MobileCloseButton2_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint);
-	void GetFriendMatchXpBoostText(class FText* Result);
-	class FText GetAccountLevelText();
-	void Init_Back_Action();
-	void HandleBack(bool* PassThrough);
-	void BP_OnActivated();
-	void OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStatsTab_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStatsTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStatsTab_C")
 	}
 	static class UAthenaStatsTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStatsTab_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsTab_C) == 0x000008, "Wrong alignment on UAthenaStatsTab_C");
-static_assert(sizeof(UAthenaStatsTab_C) == 0x0006B0, "Wrong size on UAthenaStatsTab_C");
-static_assert(offsetof(UAthenaStatsTab_C, UberGraphFrame) == 0x0005C8, "Member 'UAthenaStatsTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Entrance) == 0x0005D0, "Member 'UAthenaStatsTab_C::Entrance' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Tabs_Paginate) == 0x0005D8, "Member 'UAthenaStatsTab_C::Tabs_Paginate' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, AccountLevelLabel) == 0x0005E0, "Member 'UAthenaStatsTab_C::AccountLevelLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, CloseIcon) == 0x0005E8, "Member 'UAthenaStatsTab_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, CommonWidgetSwitcher_0) == 0x0005F0, "Member 'UAthenaStatsTab_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Divider) == 0x0005F8, "Member 'UAthenaStatsTab_C::Divider' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Divider1) == 0x000600, "Member 'UAthenaStatsTab_C::Divider1' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Divider2) == 0x000608, "Member 'UAthenaStatsTab_C::Divider2' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, FriendMatchXpBoostPointsLabel) == 0x000610, "Member 'UAthenaStatsTab_C::FriendMatchXpBoostPointsLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, HBoxNoStats) == 0x000618, "Member 'UAthenaStatsTab_C::HBoxNoStats' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, HiddenSwitcher) == 0x000620, "Member 'UAthenaStatsTab_C::HiddenSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Image_0) == 0x000628, "Member 'UAthenaStatsTab_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, LastUpdatedTimeBox) == 0x000630, "Member 'UAthenaStatsTab_C::LastUpdatedTimeBox' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, MainStatWidgetSwitcher) == 0x000638, "Member 'UAthenaStatsTab_C::MainStatWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, MatchXpBoostPointsLabel) == 0x000640, "Member 'UAthenaStatsTab_C::MatchXpBoostPointsLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, MobileCloseButton) == 0x000648, "Member 'UAthenaStatsTab_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, MobileCloseButton_Disabled) == 0x000650, "Member 'UAthenaStatsTab_C::MobileCloseButton_Disabled' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, NoStatsText) == 0x000658, "Member 'UAthenaStatsTab_C::NoStatsText' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, OverlayCloseButton) == 0x000660, "Member 'UAthenaStatsTab_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, OverlayCloseButton_Disabled) == 0x000668, "Member 'UAthenaStatsTab_C::OverlayCloseButton_Disabled' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, PlayerRankEmblem) == 0x000670, "Member 'UAthenaStatsTab_C::PlayerRankEmblem' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, ProgressSpinner) == 0x000678, "Member 'UAthenaStatsTab_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, SeasonLabel) == 0x000680, "Member 'UAthenaStatsTab_C::SeasonLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, UpdatingBox) == 0x000688, "Member 'UAthenaStatsTab_C::UpdatingBox' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, VBoxbannerstats) == 0x000690, "Member 'UAthenaStatsTab_C::VBoxbannerstats' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, VBoxStats) == 0x000698, "Member 'UAthenaStatsTab_C::VBoxStats' has a wrong offset!");
-static_assert(offsetof(UAthenaStatsTab_C, Back_Action) == 0x0006A0, "Member 'UAthenaStatsTab_C::Back_Action' has a wrong offset!");
 
 }
 

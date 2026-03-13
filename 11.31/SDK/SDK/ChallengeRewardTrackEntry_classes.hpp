@@ -54,28 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeRewardTrackEntry_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeRewardTrackEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeRewardTrackEntry_C")
 	}
 	static class UChallengeRewardTrackEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeRewardTrackEntry_C>();
 	}
 };
-static_assert(alignof(UChallengeRewardTrackEntry_C) == 0x000008, "Wrong alignment on UChallengeRewardTrackEntry_C");
-static_assert(sizeof(UChallengeRewardTrackEntry_C) == 0x000328, "Wrong size on UChallengeRewardTrackEntry_C");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, UberGraphFrame) == 0x0002C0, "Member 'UChallengeRewardTrackEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, NextObjective) == 0x0002C8, "Member 'UChallengeRewardTrackEntry_C::NextObjective' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, Completed_CurrentNode_Last) == 0x0002D0, "Member 'UChallengeRewardTrackEntry_C::Completed_CurrentNode_Last' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, Completed_NextNode) == 0x0002D8, "Member 'UChallengeRewardTrackEntry_C::Completed_NextNode' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, Completed_CurrentNode) == 0x0002E0, "Member 'UChallengeRewardTrackEntry_C::Completed_CurrentNode' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, FinishGlow) == 0x0002E8, "Member 'UChallengeRewardTrackEntry_C::FinishGlow' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, Image_Pip) == 0x0002F0, "Member 'UChallengeRewardTrackEntry_C::Image_Pip' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, LazyImage_Reward) == 0x0002F8, "Member 'UChallengeRewardTrackEntry_C::LazyImage_Reward' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, NextRewardIndicator) == 0x000300, "Member 'UChallengeRewardTrackEntry_C::NextRewardIndicator' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, TriBurst_1) == 0x000308, "Member 'UChallengeRewardTrackEntry_C::TriBurst_1' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, TriBurst_2) == 0x000310, "Member 'UChallengeRewardTrackEntry_C::TriBurst_2' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, TriBurst_3) == 0x000318, "Member 'UChallengeRewardTrackEntry_C::TriBurst_3' has a wrong offset!");
-static_assert(offsetof(UChallengeRewardTrackEntry_C, NewVar_0) == 0x000320, "Member 'UChallengeRewardTrackEntry_C::NewVar_0' has a wrong offset!");
 
 }
 

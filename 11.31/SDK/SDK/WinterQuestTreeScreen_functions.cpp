@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.OnInputMethodChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ECommonInputType                        NewMethod                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWinterQuestTreeScreen_C::OnInputMethodChanged(ECommonInputType NewMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestTreeScreen_C", "OnInputMethodChanged");
-
-	Params::WinterQuestTreeScreen_C_OnInputMethodChanged Parms{};
-
-	Parms.NewMethod = NewMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.ExecuteUbergraph_WinterQuestTreeScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWinterQuestTreeScreen_C::ExecuteUbergraph_WinterQuestTreeScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestTreeScreen_C", "ExecuteUbergraph_WinterQuestTreeScreen");
-
-	Params::WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.Stop Opening Audio
 // (BlueprintCallable, BlueprintEvent)
 
@@ -166,6 +126,46 @@ void UWinterQuestTreeScreen_C::BP_OnActivated()
 		Func = Class->GetFunction("WinterQuestTreeScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.OnInputMethodChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        NewMethod                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWinterQuestTreeScreen_C::OnInputMethodChanged(ECommonInputType NewMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestTreeScreen_C", "OnInputMethodChanged");
+
+	Params::WinterQuestTreeScreen_C_OnInputMethodChanged Parms{};
+
+	Parms.NewMethod = NewMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.ExecuteUbergraph_WinterQuestTreeScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWinterQuestTreeScreen_C::ExecuteUbergraph_WinterQuestTreeScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestTreeScreen_C", "ExecuteUbergraph_WinterQuestTreeScreen");
+
+	Params::WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

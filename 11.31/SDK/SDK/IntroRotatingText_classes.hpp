@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"IntroRotatingText_C">();
+		BP_STATIC_CLASS_IMPL("IntroRotatingText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"IntroRotatingText_C")
 	}
 	static class UIntroRotatingText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UIntroRotatingText_C>();
 	}
 };
-static_assert(alignof(UIntroRotatingText_C) == 0x000008, "Wrong alignment on UIntroRotatingText_C");
-static_assert(sizeof(UIntroRotatingText_C) == 0x000258, "Wrong size on UIntroRotatingText_C");
-static_assert(offsetof(UIntroRotatingText_C, UberGraphFrame) == 0x000230, "Member 'UIntroRotatingText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UIntroRotatingText_C, RotatingText) == 0x000238, "Member 'UIntroRotatingText_C::RotatingText' has a wrong offset!");
-static_assert(offsetof(UIntroRotatingText_C, Texts) == 0x000240, "Member 'UIntroRotatingText_C::Texts' has a wrong offset!");
-static_assert(offsetof(UIntroRotatingText_C, TimeBetweenRotations) == 0x000250, "Member 'UIntroRotatingText_C::TimeBetweenRotations' has a wrong offset!");
-static_assert(offsetof(UIntroRotatingText_C, TextsIndex) == 0x000254, "Member 'UIntroRotatingText_C::TextsIndex' has a wrong offset!");
 
 }
 

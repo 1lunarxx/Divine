@@ -41,26 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityBrowserView_C">();
+		BP_STATIC_CLASS_IMPL("ActivityBrowserView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityBrowserView_C")
 	}
 	static class UActivityBrowserView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityBrowserView_C>();
 	}
 };
-static_assert(alignof(UActivityBrowserView_C) == 0x000008, "Wrong alignment on UActivityBrowserView_C");
-static_assert(sizeof(UActivityBrowserView_C) == 0x000540, "Wrong size on UActivityBrowserView_C");
-static_assert(offsetof(UActivityBrowserView_C, UberGraphFrame) == 0x0004E8, "Member 'UActivityBrowserView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Update_Out) == 0x0004F0, "Member 'UActivityBrowserView_C::Update_Out' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Update_In) == 0x0004F8, "Member 'UActivityBrowserView_C::Update_In' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Intro) == 0x000500, "Member 'UActivityBrowserView_C::Intro' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Button_SupportCreator) == 0x000508, "Member 'UActivityBrowserView_C::Button_SupportCreator' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Button_ViewDetails_1) == 0x000510, "Member 'UActivityBrowserView_C::Button_ViewDetails_1' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, EntryBox_ActivityTags) == 0x000518, "Member 'UActivityBrowserView_C::EntryBox_ActivityTags' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, Image_Background) == 0x000520, "Member 'UActivityBrowserView_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, LazyImage_HeaderBackplate) == 0x000528, "Member 'UActivityBrowserView_C::LazyImage_HeaderBackplate' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, SizeBox_HeaderControl) == 0x000530, "Member 'UActivityBrowserView_C::SizeBox_HeaderControl' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserView_C, SoloButton_Viewdetails) == 0x000538, "Member 'UActivityBrowserView_C::SoloButton_Viewdetails' has a wrong offset!");
 
 }
 

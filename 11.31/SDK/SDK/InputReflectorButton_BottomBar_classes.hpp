@@ -69,28 +69,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputReflectorButton_BottomBar_C">();
+		BP_STATIC_CLASS_IMPL("InputReflectorButton_BottomBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputReflectorButton_BottomBar_C")
 	}
 	static class UInputReflectorButton_BottomBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputReflectorButton_BottomBar_C>();
 	}
 };
-static_assert(alignof(UInputReflectorButton_BottomBar_C) == 0x000008, "Wrong alignment on UInputReflectorButton_BottomBar_C");
-static_assert(sizeof(UInputReflectorButton_BottomBar_C) == 0x000C80, "Wrong size on UInputReflectorButton_BottomBar_C");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, UberGraphFrame) == 0x000B80, "Member 'UInputReflectorButton_BottomBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, CenterButtonTextWidget) == 0x000B88, "Member 'UInputReflectorButton_BottomBar_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, ContentBorder) == 0x000B90, "Member 'UInputReflectorButton_BottomBar_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, IconScale) == 0x000B98, "Member 'UInputReflectorButton_BottomBar_C::IconScale' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, LeftSideImage) == 0x000BA0, "Member 'UInputReflectorButton_BottomBar_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, RightExtraContentSlot) == 0x000BA8, "Member 'UInputReflectorButton_BottomBar_C::RightExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, ButtonText) == 0x000BB0, "Member 'UInputReflectorButton_BottomBar_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, IconBrush) == 0x000BC8, "Member 'UInputReflectorButton_BottomBar_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, ControllerInputStyle) == 0x000C50, "Member 'UInputReflectorButton_BottomBar_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, MouseKeyboardStyle) == 0x000C58, "Member 'UInputReflectorButton_BottomBar_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, ContentAlignment) == 0x000C60, "Member 'UInputReflectorButton_BottomBar_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, bMouseKeyboardStyleSet) == 0x000C61, "Member 'UInputReflectorButton_BottomBar_C::bMouseKeyboardStyleSet' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_BottomBar_C, OverrideButtonText) == 0x000C68, "Member 'UInputReflectorButton_BottomBar_C::OverrideButtonText' has a wrong offset!");
 
 }
 

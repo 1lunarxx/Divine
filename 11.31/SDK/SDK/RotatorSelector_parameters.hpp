@@ -29,13 +29,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Show_Param_Name) == 0x000001, "Wrong alignment on RotatorSelector_C_Show_Param_Name");
-static_assert(sizeof(RotatorSelector_C_Show_Param_Name) == 0x000005, "Wrong size on RotatorSelector_C_Show_Param_Name");
-static_assert(offsetof(RotatorSelector_C_Show_Param_Name, Show) == 0x000000, "Member 'RotatorSelector_C_Show_Param_Name::Show' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Show_Param_Name, Temp_bool_Variable) == 0x000001, "Member 'RotatorSelector_C_Show_Param_Name::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Show_Param_Name, Temp_byte_Variable) == 0x000002, "Member 'RotatorSelector_C_Show_Param_Name::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Show_Param_Name, Temp_byte_Variable_1) == 0x000003, "Member 'RotatorSelector_C_Show_Param_Name::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Show_Param_Name, K2Node_Select_Default) == 0x000004, "Member 'RotatorSelector_C_Show_Param_Name::K2Node_Select_Default' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Size
 // 0x0038 (0x0038 - 0x0000)
@@ -58,21 +51,6 @@ public:
 	struct FVector2D                              K2Node_Select_Default_1;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              K2Node_Select_Default_2;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Update_Size) == 0x000004, "Wrong alignment on RotatorSelector_C_Update_Size");
-static_assert(sizeof(RotatorSelector_C_Update_Size) == 0x000038, "Wrong size on RotatorSelector_C_Update_Size");
-static_assert(offsetof(RotatorSelector_C_Update_Size, LargeSize) == 0x000000, "Member 'RotatorSelector_C_Update_Size::LargeSize' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, SmallSize) == 0x000008, "Member 'RotatorSelector_C_Update_Size::SmallSize' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, Temp_int_Variable) == 0x000010, "Member 'RotatorSelector_C_Update_Size::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, Temp_bool_Variable) == 0x000014, "Member 'RotatorSelector_C_Update_Size::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, CallFunc_IsMobileGame_ReturnValue) == 0x000015, "Member 'RotatorSelector_C_Update_Size::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, CallFunc_IsMobileGame_ReturnValue_1) == 0x000016, "Member 'RotatorSelector_C_Update_Size::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, CallFunc_IsMobileGame_ReturnValue_2) == 0x000017, "Member 'RotatorSelector_C_Update_Size::CallFunc_IsMobileGame_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, Temp_int_Variable_1) == 0x000018, "Member 'RotatorSelector_C_Update_Size::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, Temp_bool_Variable_1) == 0x00001C, "Member 'RotatorSelector_C_Update_Size::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, K2Node_Select_Default) == 0x000020, "Member 'RotatorSelector_C_Update_Size::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, Temp_bool_Variable_2) == 0x000024, "Member 'RotatorSelector_C_Update_Size::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, K2Node_Select_Default_1) == 0x000028, "Member 'RotatorSelector_C_Update_Size::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Update_Size, K2Node_Select_Default_2) == 0x000030, "Member 'RotatorSelector_C_Update_Size::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -84,12 +62,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x00F8(0x00B8)()
 };
-static_assert(alignof(RotatorSelector_C_OnFocusReceived) == 0x000008, "Wrong alignment on RotatorSelector_C_OnFocusReceived");
-static_assert(sizeof(RotatorSelector_C_OnFocusReceived) == 0x0001B0, "Wrong size on RotatorSelector_C_OnFocusReceived");
-static_assert(offsetof(RotatorSelector_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'RotatorSelector_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'RotatorSelector_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'RotatorSelector_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue) == 0x0000F8, "Member 'RotatorSelector_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Options
 // 0x0010 (0x0010 - 0x0000)
@@ -98,9 +70,6 @@ struct RotatorSelector_C_Update_Options final
 public:
 	TArray<class FText>                           NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_Update_Options) == 0x000008, "Wrong alignment on RotatorSelector_C_Update_Options");
-static_assert(sizeof(RotatorSelector_C_Update_Options) == 0x000010, "Wrong size on RotatorSelector_C_Update_Options");
-static_assert(offsetof(RotatorSelector_C_Update_Options, NewParam) == 0x000000, "Member 'RotatorSelector_C_Update_Options::NewParam' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Initialize
 // 0x0048 (0x0048 - 0x0000)
@@ -112,12 +81,6 @@ public:
 	class FText                                   Hover_Text;                                        // 0x0028(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UCommonTextBlock*                       Tab_Tooltip;                                       // 0x0040(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Initialize) == 0x000008, "Wrong alignment on RotatorSelector_C_Initialize");
-static_assert(sizeof(RotatorSelector_C_Initialize) == 0x000048, "Wrong size on RotatorSelector_C_Initialize");
-static_assert(offsetof(RotatorSelector_C_Initialize, Display_Text) == 0x000000, "Member 'RotatorSelector_C_Initialize::Display_Text' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Options) == 0x000018, "Member 'RotatorSelector_C_Initialize::Options' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Hover_Text) == 0x000028, "Member 'RotatorSelector_C_Initialize::Hover_Text' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_Initialize, Tab_Tooltip) == 0x000040, "Member 'RotatorSelector_C_Initialize::Tab_Tooltip' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.Update Row Selector
 // 0x0004 (0x0004 - 0x0000)
@@ -126,9 +89,6 @@ struct RotatorSelector_C_Update_Row_Selector final
 public:
 	int32                                         Currently_Selected;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_Update_Row_Selector) == 0x000004, "Wrong alignment on RotatorSelector_C_Update_Row_Selector");
-static_assert(sizeof(RotatorSelector_C_Update_Row_Selector) == 0x000004, "Wrong size on RotatorSelector_C_Update_Row_Selector");
-static_assert(offsetof(RotatorSelector_C_Update_Row_Selector, Currently_Selected) == 0x000000, "Member 'RotatorSelector_C_Update_Row_Selector::Currently_Selected' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -137,9 +97,6 @@ struct RotatorSelector_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_OnMouseLeave) == 0x000008, "Wrong alignment on RotatorSelector_C_OnMouseLeave");
-static_assert(sizeof(RotatorSelector_C_OnMouseLeave) == 0x000070, "Wrong size on RotatorSelector_C_OnMouseLeave");
-static_assert(offsetof(RotatorSelector_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'RotatorSelector_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -149,10 +106,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(RotatorSelector_C_OnMouseEnter) == 0x000008, "Wrong alignment on RotatorSelector_C_OnMouseEnter");
-static_assert(sizeof(RotatorSelector_C_OnMouseEnter) == 0x0000A8, "Wrong size on RotatorSelector_C_OnMouseEnter");
-static_assert(offsetof(RotatorSelector_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'RotatorSelector_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'RotatorSelector_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -161,9 +114,6 @@ struct RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRota
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong alignment on RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(sizeof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong size on RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(offsetof(RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'RotatorSelector_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -172,9 +122,6 @@ struct RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RotatorSelector_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -183,9 +130,6 @@ struct RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'RotatorSelector_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -194,9 +138,6 @@ struct RotatorSelector_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RotatorSelector_C_PreConstruct) == 0x000001, "Wrong alignment on RotatorSelector_C_PreConstruct");
-static_assert(sizeof(RotatorSelector_C_PreConstruct) == 0x000001, "Wrong size on RotatorSelector_C_PreConstruct");
-static_assert(offsetof(RotatorSelector_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'RotatorSelector_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 // 0x0148 (0x0148 - 0x0000)
@@ -217,18 +158,6 @@ public:
 	uint8                                         Pad_139[0x3];                                      // 0x0139(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x013C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector) == 0x000008, "Wrong alignment on RotatorSelector_C_ExecuteUbergraph_RotatorSelector");
-static_assert(sizeof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector) == 0x000148, "Wrong size on RotatorSelector_C_ExecuteUbergraph_RotatorSelector");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, EntryPoint) == 0x000000, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, CallFunc_Not_PreBool_ReturnValue) == 0x000004, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MouseEvent_1) == 0x000008, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MyGeometry) == 0x000078, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_MouseEvent) == 0x0000B0, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_ComponentBoundEvent_Value) == 0x000120, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_ComponentBoundEvent_Button_1) == 0x000128, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_ComponentBoundEvent_Button) == 0x000130, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, K2Node_Event_IsDesignTime) == 0x000138, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(RotatorSelector_C_ExecuteUbergraph_RotatorSelector, CallFunc_MakeVector2D_ReturnValue) == 0x00013C, "Member 'RotatorSelector_C_ExecuteUbergraph_RotatorSelector::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 }
 

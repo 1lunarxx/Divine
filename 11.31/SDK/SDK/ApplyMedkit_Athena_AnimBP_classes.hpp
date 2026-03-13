@@ -40,24 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ApplyMedkit_Athena_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("ApplyMedkit_Athena_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ApplyMedkit_Athena_AnimBP_C")
 	}
 	static class UApplyMedkit_Athena_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UApplyMedkit_Athena_AnimBP_C>();
 	}
 };
-static_assert(alignof(UApplyMedkit_Athena_AnimBP_C) == 0x000010, "Wrong alignment on UApplyMedkit_Athena_AnimBP_C");
-static_assert(sizeof(UApplyMedkit_Athena_AnimBP_C) == 0x000570, "Wrong size on UApplyMedkit_Athena_AnimBP_C");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, UberGraphFrame) == 0x000270, "Member 'UApplyMedkit_Athena_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_Root_5FAA15A34682216510D589A50487471A) == 0x000278, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_Root_5FAA15A34682216510D589A50487471A' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_Slot_F9A34A2B463D37243970C4B4C478BEEC) == 0x0002A8, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_Slot_F9A34A2B463D37243970C4B4C478BEEC' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_SequencePlayer_0A922DF04C01828D0F5A42838F0C626E) == 0x0002F0, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_SequencePlayer_0A922DF04C01828D0F5A42838F0C626E' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_BlendListByEnum_BF6BBA2D4BFA8438C4D6609C33CA86C9) == 0x000368, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_BlendListByEnum_BF6BBA2D4BFA8438C4D6609C33CA86C9' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_SaveCachedPose_FD3F608B440246E77EBEB1B065FCF60A) == 0x000418, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_SaveCachedPose_FD3F608B440246E77EBEB1B065FCF60A' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_Slot_216D9F694D96C1FCFF7C009A530AF1DA) == 0x0004D0, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_Slot_216D9F694D96C1FCFF7C009A530AF1DA' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_UseCachedPose_24AD787544D7B979140370BE70006301) == 0x000518, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_UseCachedPose_24AD787544D7B979140370BE70006301' has a wrong offset!");
-static_assert(offsetof(UApplyMedkit_Athena_AnimBP_C, AnimGraphNode_UseCachedPose_5DEB5D87408BBFCCBE4CAE8EB3BDFC0F) == 0x000540, "Member 'UApplyMedkit_Athena_AnimBP_C::AnimGraphNode_UseCachedPose_5DEB5D87408BBFCCBE4CAE8EB3BDFC0F' has a wrong offset!");
 
 }
 

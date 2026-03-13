@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Pickaxe_Rhino_AnimBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("Pickaxe_Rhino_AnimBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Pickaxe_Rhino_AnimBlueprint_C")
 	}
 	static class UPickaxe_Rhino_AnimBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPickaxe_Rhino_AnimBlueprint_C>();
 	}
 };
-static_assert(alignof(UPickaxe_Rhino_AnimBlueprint_C) == 0x000010, "Wrong alignment on UPickaxe_Rhino_AnimBlueprint_C");
-static_assert(sizeof(UPickaxe_Rhino_AnimBlueprint_C) == 0x0008C0, "Wrong size on UPickaxe_Rhino_AnimBlueprint_C");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, UberGraphFrame) == 0x000270, "Member 'UPickaxe_Rhino_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, AnimGraphNode_Root_B338F36F4A96F29AF29546A430EEB6D1) == 0x000278, "Member 'UPickaxe_Rhino_AnimBlueprint_C::AnimGraphNode_Root_B338F36F4A96F29AF29546A430EEB6D1' has a wrong offset!");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, AnimGraphNode_SubInput_0A688F724C4804496F7057B1DA3573EF) == 0x0002A8, "Member 'UPickaxe_Rhino_AnimBlueprint_C::AnimGraphNode_SubInput_0A688F724C4804496F7057B1DA3573EF' has a wrong offset!");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, AnimGraphNode_RigidBody_69841E3A45072CCDC404A5BB8795C346) == 0x000320, "Member 'UPickaxe_Rhino_AnimBlueprint_C::AnimGraphNode_RigidBody_69841E3A45072CCDC404A5BB8795C346' has a wrong offset!");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, AnimGraphNode_LocalToComponentSpace_28CBDE064A82CB1CEAD5B4963C22704A) == 0x000880, "Member 'UPickaxe_Rhino_AnimBlueprint_C::AnimGraphNode_LocalToComponentSpace_28CBDE064A82CB1CEAD5B4963C22704A' has a wrong offset!");
-static_assert(offsetof(UPickaxe_Rhino_AnimBlueprint_C, AnimGraphNode_ComponentToLocalSpace_62E8F4EB43FE70F8EDDEF08EAD87625B) == 0x0008A0, "Member 'UPickaxe_Rhino_AnimBlueprint_C::AnimGraphNode_ComponentToLocalSpace_62E8F4EB43FE70F8EDDEF08EAD87625B' has a wrong offset!");
 
 }
 

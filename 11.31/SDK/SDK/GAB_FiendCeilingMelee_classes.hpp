@@ -23,15 +23,17 @@ class UGAB_FiendCeilingMelee_C final : public UGAB_FiendMelee_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_FiendCeilingMelee_C">();
+		BP_STATIC_CLASS_IMPL("GAB_FiendCeilingMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_FiendCeilingMelee_C")
 	}
 	static class UGAB_FiendCeilingMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_FiendCeilingMelee_C>();
 	}
 };
-static_assert(alignof(UGAB_FiendCeilingMelee_C) == 0x000008, "Wrong alignment on UGAB_FiendCeilingMelee_C");
-static_assert(sizeof(UGAB_FiendCeilingMelee_C) == 0x000A68, "Wrong size on UGAB_FiendCeilingMelee_C");
 
 }
 

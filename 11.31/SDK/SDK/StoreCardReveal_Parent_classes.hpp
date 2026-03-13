@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreCardReveal_Parent_C">();
+		BP_STATIC_CLASS_IMPL("StoreCardReveal_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreCardReveal_Parent_C")
 	}
 	static class AStoreCardReveal_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AStoreCardReveal_Parent_C>();
 	}
 };
-static_assert(alignof(AStoreCardReveal_Parent_C) == 0x000008, "Wrong alignment on AStoreCardReveal_Parent_C");
-static_assert(sizeof(AStoreCardReveal_Parent_C) == 0x000228, "Wrong size on AStoreCardReveal_Parent_C");
-static_assert(offsetof(AStoreCardReveal_Parent_C, UberGraphFrame) == 0x000218, "Member 'AStoreCardReveal_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AStoreCardReveal_Parent_C, PinataSceneRoot) == 0x000220, "Member 'AStoreCardReveal_Parent_C::PinataSceneRoot' has a wrong offset!");
 
 }
 

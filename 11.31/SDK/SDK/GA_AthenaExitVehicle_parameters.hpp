@@ -34,17 +34,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0068(0x0028)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0090(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle) == 0x000008, "Wrong alignment on GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle");
-static_assert(sizeof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle) == 0x0000A0, "Wrong size on GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, EntryPoint) == 0x000000, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_K2_CommitAbility_ReturnValue) == 0x000004, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_GetActorInfo_ReturnValue) == 0x000008, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000048, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_ServerOnExitVehicle_ReturnValue) == 0x000058, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_ServerOnExitVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_HasAuthority_ReturnValue) == 0x000060, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000068, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000090, "Member 'GA_AthenaExitVehicle_C_ExecuteUbergraph_GA_AthenaExitVehicle::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
 
 }
 

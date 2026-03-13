@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameTile_C">();
+		BP_STATIC_CLASS_IMPL("SubgameTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameTile_C")
 	}
 	static class USubgameTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameTile_C>();
 	}
 };
-static_assert(alignof(USubgameTile_C) == 0x000008, "Wrong alignment on USubgameTile_C");
-static_assert(sizeof(USubgameTile_C) == 0x000CC8, "Wrong size on USubgameTile_C");
-static_assert(offsetof(USubgameTile_C, UberGraphFrame) == 0x000C90, "Member 'USubgameTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, RevealCMSKeyArt) == 0x000C98, "Member 'USubgameTile_C::RevealCMSKeyArt' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, UnFocused) == 0x000CA0, "Member 'USubgameTile_C::UnFocused' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, FocusedSecondary) == 0x000CA8, "Member 'USubgameTile_C::FocusedSecondary' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, Focused) == 0x000CB0, "Member 'USubgameTile_C::Focused' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, FocusPulse) == 0x000CB8, "Member 'USubgameTile_C::FocusPulse' has a wrong offset!");
-static_assert(offsetof(USubgameTile_C, PulseMID) == 0x000CC0, "Member 'USubgameTile_C::PulseMID' has a wrong offset!");
 
 }
 

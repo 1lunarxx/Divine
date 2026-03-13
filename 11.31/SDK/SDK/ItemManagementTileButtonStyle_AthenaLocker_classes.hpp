@@ -23,15 +23,17 @@ class UItemManagementTileButtonStyle_AthenaLocker_C final : public UButtonStyle_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemManagementTileButtonStyle-AthenaLocker_C">();
+		BP_STATIC_CLASS_IMPL("ItemManagementTileButtonStyle-AthenaLocker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemManagementTileButtonStyle-AthenaLocker_C")
 	}
 	static class UItemManagementTileButtonStyle_AthenaLocker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemManagementTileButtonStyle_AthenaLocker_C>();
 	}
 };
-static_assert(alignof(UItemManagementTileButtonStyle_AthenaLocker_C) == 0x000008, "Wrong alignment on UItemManagementTileButtonStyle_AthenaLocker_C");
-static_assert(sizeof(UItemManagementTileButtonStyle_AthenaLocker_C) == 0x000570, "Wrong size on UItemManagementTileButtonStyle_AthenaLocker_C");
 
 }
 

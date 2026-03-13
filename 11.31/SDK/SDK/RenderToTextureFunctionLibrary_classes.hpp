@@ -28,15 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RenderToTextureFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("RenderToTextureFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RenderToTextureFunctionLibrary_C")
 	}
 	static class URenderToTextureFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URenderToTextureFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(URenderToTextureFunctionLibrary_C) == 0x000008, "Wrong alignment on URenderToTextureFunctionLibrary_C");
-static_assert(sizeof(URenderToTextureFunctionLibrary_C) == 0x000028, "Wrong size on URenderToTextureFunctionLibrary_C");
 
 }
 

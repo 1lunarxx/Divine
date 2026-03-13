@@ -53,33 +53,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentLiveGames_C">();
+		BP_STATIC_CLASS_IMPL("TournamentLiveGames_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentLiveGames_C")
 	}
 	static class UTournamentLiveGames_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentLiveGames_C>();
 	}
 };
-static_assert(alignof(UTournamentLiveGames_C) == 0x000008, "Wrong alignment on UTournamentLiveGames_C");
-static_assert(sizeof(UTournamentLiveGames_C) == 0x000410, "Wrong size on UTournamentLiveGames_C");
-static_assert(offsetof(UTournamentLiveGames_C, UberGraphFrame) == 0x000378, "Member 'UTournamentLiveGames_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Intro) == 0x000380, "Member 'UTournamentLiveGames_C::Intro' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, BackButton) == 0x000388, "Member 'UTournamentLiveGames_C::BackButton' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, CommonBorder_ContainerBG) == 0x000390, "Member 'UTournamentLiveGames_C::CommonBorder_ContainerBG' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, CommonBorder_OptionsBarBG) == 0x000398, "Member 'UTournamentLiveGames_C::CommonBorder_OptionsBarBG' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, CommonBorder_ScoringTitleBG) == 0x0003A0, "Member 'UTournamentLiveGames_C::CommonBorder_ScoringTitleBG' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Content_LeaderboardEntries) == 0x0003A8, "Member 'UTournamentLiveGames_C::Content_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Content_LoadingEntries) == 0x0003B0, "Member 'UTournamentLiveGames_C::Content_LoadingEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Content_NoLeaderboardEntries) == 0x0003B8, "Member 'UTournamentLiveGames_C::Content_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, EventLeaderboardEventDetails) == 0x0003C0, "Member 'UTournamentLiveGames_C::EventLeaderboardEventDetails' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Image_0) == 0x0003C8, "Member 'UTournamentLiveGames_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Image_OnlineStatus) == 0x0003D0, "Member 'UTournamentLiveGames_C::Image_OnlineStatus' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Overlay_OnlineStatus) == 0x0003D8, "Member 'UTournamentLiveGames_C::Overlay_OnlineStatus' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, SafeZone_1) == 0x0003E0, "Member 'UTournamentLiveGames_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Switcher_LeaderboardEntries) == 0x0003E8, "Member 'UTournamentLiveGames_C::Switcher_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Text_NoLeaderboardEntries) == 0x0003F0, "Member 'UTournamentLiveGames_C::Text_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, Text_RoundTitle) == 0x0003F8, "Member 'UTournamentLiveGames_C::Text_RoundTitle' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGames_C, CallEventLiveGamesBack) == 0x000400, "Member 'UTournamentLiveGames_C::CallEventLiveGamesBack' has a wrong offset!");
 
 }
 

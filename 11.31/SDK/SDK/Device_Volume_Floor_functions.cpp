@@ -317,34 +317,6 @@ void ADevice_Volume_Floor_C::WasActivatedByOverlappingActor(bool* bActivated)
 }
 
 
-// Function Device_Volume_Floor.Device_Volume_Floor_C.UpdateVisuals
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void ADevice_Volume_Floor_C::UpdateVisuals()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVisuals");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function Device_Volume_Floor.Device_Volume_Floor_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void ADevice_Volume_Floor_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("Device_Volume_Floor_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function Device_Volume_Floor.Device_Volume_Floor_C.BindOnExitVehicleForAffectPawn
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -472,6 +444,34 @@ void ADevice_Volume_Floor_C::Transmit_if_Valid_Actor(class UFortGameplayTriggerM
 
 	if (Valid != nullptr)
 		*Valid = Parms.Valid;
+}
+
+
+// Function Device_Volume_Floor.Device_Volume_Floor_C.UpdateVisuals
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void ADevice_Volume_Floor_C::UpdateVisuals()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "UpdateVisuals");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function Device_Volume_Floor.Device_Volume_Floor_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void ADevice_Volume_Floor_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("Device_Volume_Floor_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

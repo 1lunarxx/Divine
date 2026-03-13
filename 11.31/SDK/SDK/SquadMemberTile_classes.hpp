@@ -40,6 +40,14 @@ public:
 	class UImage*                                 SquadRibbon;                                       // 0x0C48(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void SetVisuals(EGameReadiness Member_Readiness, bool Is_In_Frontend);
+	void SetEmptyVisuals();
+	void SetSitOutVisuals();
+	void SetReadyVisuals();
+	void SetNotReadyVisuals();
+	void OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject* Loaded);
+	void BP_OnUnhovered();
+	void BP_OnHovered();
 	void OnSquadAssigned();
 	void Construct();
 	void PreConstruct(bool IsDesignTime);
@@ -49,42 +57,21 @@ public:
 	void BP_OnTeamMemberEstablished(bool bHasValidMember);
 	void OnMemberIsInFrontendChanged(bool bIsInFrontend);
 	void ExecuteUbergraph_SquadMemberTile(int32 EntryPoint);
-	void SetVisuals(EGameReadiness Member_Readiness, bool Is_In_Frontend);
-	void SetEmptyVisuals();
-	void SetSitOutVisuals();
-	void SetReadyVisuals();
-	void SetNotReadyVisuals();
-	void OnLoaded_A3B69DDA4214DBAA66546FAB9F43D5E7(class UObject* Loaded);
-	void BP_OnUnhovered();
-	void BP_OnHovered();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadMemberTile_C">();
+		BP_STATIC_CLASS_IMPL("SquadMemberTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadMemberTile_C")
 	}
 	static class USquadMemberTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadMemberTile_C>();
 	}
 };
-static_assert(alignof(USquadMemberTile_C) == 0x000008, "Wrong alignment on USquadMemberTile_C");
-static_assert(sizeof(USquadMemberTile_C) == 0x000C50, "Wrong size on USquadMemberTile_C");
-static_assert(offsetof(USquadMemberTile_C, UberGraphFrame) == 0x000BD8, "Member 'USquadMemberTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, OnIntro) == 0x000BE0, "Member 'USquadMemberTile_C::OnIntro' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, OnLocalUserDefined) == 0x000BE8, "Member 'USquadMemberTile_C::OnLocalUserDefined' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, OnSelected) == 0x000BF0, "Member 'USquadMemberTile_C::OnSelected' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, SetRibbonRotation) == 0x000BF8, "Member 'USquadMemberTile_C::SetRibbonRotation' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, StyleEmpty) == 0x000C00, "Member 'USquadMemberTile_C::StyleEmpty' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, StyleNotReady) == 0x000C08, "Member 'USquadMemberTile_C::StyleNotReady' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, StyleReady) == 0x000C10, "Member 'USquadMemberTile_C::StyleReady' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, StyleSitOut) == 0x000C18, "Member 'USquadMemberTile_C::StyleSitOut' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, OnHovered) == 0x000C20, "Member 'USquadMemberTile_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, EntryBorder) == 0x000C28, "Member 'USquadMemberTile_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, LoadingThrobberBacking) == 0x000C30, "Member 'USquadMemberTile_C::LoadingThrobberBacking' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, LocalUserIcon) == 0x000C38, "Member 'USquadMemberTile_C::LocalUserIcon' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, SquadOverlay) == 0x000C40, "Member 'USquadMemberTile_C::SquadOverlay' has a wrong offset!");
-static_assert(offsetof(USquadMemberTile_C, SquadRibbon) == 0x000C48, "Member 'USquadMemberTile_C::SquadRibbon' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UAI_skill_phoebe_bot_healing_C final : public UFortAthenaAIBotHealingSkill
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_skill_phoebe_bot_healing_C">();
+		BP_STATIC_CLASS_IMPL("AI_skill_phoebe_bot_healing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_skill_phoebe_bot_healing_C")
 	}
 	static class UAI_skill_phoebe_bot_healing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_skill_phoebe_bot_healing_C>();
 	}
 };
-static_assert(alignof(UAI_skill_phoebe_bot_healing_C) == 0x000008, "Wrong alignment on UAI_skill_phoebe_bot_healing_C");
-static_assert(sizeof(UAI_skill_phoebe_bot_healing_C) == 0x000048, "Wrong size on UAI_skill_phoebe_bot_healing_C");
 
 }
 

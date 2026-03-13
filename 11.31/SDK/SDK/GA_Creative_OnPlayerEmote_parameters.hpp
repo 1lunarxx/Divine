@@ -38,20 +38,6 @@ public:
 	uint8                                         Pad_81[0x7];                                       // 0x0081(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortPawn*                              CallFunc_GetActivatingPawn_ReturnValue_1;          // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote) == 0x000008, "Wrong alignment on GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote");
-static_assert(sizeof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote) == 0x000090, "Wrong size on GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, EntryPoint) == 0x000000, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_GetActivatingPawn_ReturnValue) == 0x000008, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, K2Node_Event_bWasCancelled) == 0x000010, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_GetGrantedByEffectContext_ReturnValue) == 0x000018, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_GetGrantedByEffectContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_EffectContextGetSourceObject_ReturnValue) == 0x000030, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_EffectContextGetSourceObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_GetGrantedByEffectContext_ReturnValue_1) == 0x000038, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_GetGrantedByEffectContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, K2Node_DynamicCast_AsCreative_Listener_Player_Emote_Interface) == 0x000050, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::K2Node_DynamicCast_AsCreative_Listener_Player_Emote_Interface' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_EffectContextGetSourceObject_ReturnValue_1) == 0x000068, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_EffectContextGetSourceObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, K2Node_DynamicCast_AsCreative_Listener_Player_Emote_Interface_1) == 0x000070, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::K2Node_DynamicCast_AsCreative_Listener_Player_Emote_Interface_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote, CallFunc_GetActivatingPawn_ReturnValue_1) == 0x000088, "Member 'GA_Creative_OnPlayerEmote_C_ExecuteUbergraph_GA_Creative_OnPlayerEmote::CallFunc_GetActivatingPawn_ReturnValue_1' has a wrong offset!");
 
 // Function GA_Creative_OnPlayerEmote.GA_Creative_OnPlayerEmote_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +46,6 @@ struct GA_Creative_OnPlayerEmote_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Creative_OnPlayerEmote_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Creative_OnPlayerEmote_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Creative_OnPlayerEmote_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Creative_OnPlayerEmote_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Creative_OnPlayerEmote_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Creative_OnPlayerEmote_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

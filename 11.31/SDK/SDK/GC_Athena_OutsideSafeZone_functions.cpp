@@ -17,61 +17,6 @@
 namespace SDK
 {
 
-// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.Random Lighting Flashes
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void AGC_Athena_OutsideSafeZone_C::Random_Lighting_Flashes()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.Get Location in Circle XY
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// struct FVector*                         Location_Local_Space                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Location_Local_Space)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
-
-	Params::GC_Athena_OutsideSafeZone_C_Get_Location_in_Circle_XY Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Location_Local_Space != nullptr)
-		*Location_Local_Space = std::move(Parms.Location_Local_Space);
-}
-
-
-// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.RemoveStormAudio
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class APlayerPawn_Athena_C*             PlayerPawnAthena                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
-
-	Params::GC_Athena_OutsideSafeZone_C_RemoveStormAudio Parms{};
-
-	Parms.PlayerPawnAthena = PlayerPawnAthena;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.AddStormAudio
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -205,6 +150,61 @@ void AGC_Athena_OutsideSafeZone_C::ExecuteUbergraph_GC_Athena_OutsideSafeZone(in
 	Params::GC_Athena_OutsideSafeZone_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.Random Lighting Flashes
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void AGC_Athena_OutsideSafeZone_C::Random_Lighting_Flashes()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Random Lighting Flashes");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.Get Location in Circle XY
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// struct FVector*                         Location_Local_Space                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGC_Athena_OutsideSafeZone_C::Get_Location_in_Circle_XY(struct FVector* Location_Local_Space)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "Get Location in Circle XY");
+
+	Params::GC_Athena_OutsideSafeZone_C_Get_Location_in_Circle_XY Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Location_Local_Space != nullptr)
+		*Location_Local_Space = std::move(Parms.Location_Local_Space);
+}
+
+
+// Function GC_Athena_OutsideSafeZone.GC_Athena_OutsideSafeZone_C.RemoveStormAudio
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class APlayerPawn_Athena_C*             PlayerPawnAthena                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGC_Athena_OutsideSafeZone_C::RemoveStormAudio(class APlayerPawn_Athena_C* PlayerPawnAthena)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Athena_OutsideSafeZone_C", "RemoveStormAudio");
+
+	Params::GC_Athena_OutsideSafeZone_C_RemoveStormAudio Parms{};
+
+	Parms.PlayerPawnAthena = PlayerPawnAthena;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

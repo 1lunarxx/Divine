@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LocalUserSettingButton_C">();
+		BP_STATIC_CLASS_IMPL("LocalUserSettingButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalUserSettingButton_C")
 	}
 	static class ULocalUserSettingButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalUserSettingButton_C>();
 	}
 };
-static_assert(alignof(ULocalUserSettingButton_C) == 0x000008, "Wrong alignment on ULocalUserSettingButton_C");
-static_assert(sizeof(ULocalUserSettingButton_C) == 0x000BA8, "Wrong size on ULocalUserSettingButton_C");
-static_assert(offsetof(ULocalUserSettingButton_C, UberGraphFrame) == 0x000B88, "Member 'ULocalUserSettingButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingButton_C, OnHover) == 0x000B90, "Member 'ULocalUserSettingButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingButton_C, Border_InteractionIndicator) == 0x000B98, "Member 'ULocalUserSettingButton_C::Border_InteractionIndicator' has a wrong offset!");
-static_assert(offsetof(ULocalUserSettingButton_C, Image_AnimatedArrow) == 0x000BA0, "Member 'ULocalUserSettingButton_C::Image_AnimatedArrow' has a wrong offset!");
 
 }
 

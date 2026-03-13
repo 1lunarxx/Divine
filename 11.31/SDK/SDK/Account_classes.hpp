@@ -27,16 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ExternalAccountProvider">();
+		STATIC_CLASS_IMPL("ExternalAccountProvider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ExternalAccountProvider")
 	}
 	static class UExternalAccountProvider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UExternalAccountProvider>();
 	}
 };
-static_assert(alignof(UExternalAccountProvider) == 0x000008, "Wrong alignment on UExternalAccountProvider");
-static_assert(sizeof(UExternalAccountProvider) == 0x000038, "Wrong size on UExternalAccountProvider");
-static_assert(offsetof(UExternalAccountProvider, Services) == 0x000028, "Member 'UExternalAccountProvider::Services' has a wrong offset!");
 
 // Class Account.OnlineAccountCommon
 // 0x06A0 (0x06C8 - 0x0028)
@@ -72,32 +73,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineAccountCommon">();
+		STATIC_CLASS_IMPL("OnlineAccountCommon")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineAccountCommon")
 	}
 	static class UOnlineAccountCommon* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineAccountCommon>();
 	}
 };
-static_assert(alignof(UOnlineAccountCommon) == 0x000008, "Wrong alignment on UOnlineAccountCommon");
-static_assert(sizeof(UOnlineAccountCommon) == 0x0006C8, "Wrong size on UOnlineAccountCommon");
-static_assert(offsetof(UOnlineAccountCommon, AvailabilityServiceGameName) == 0x000038, "Member 'UOnlineAccountCommon::AvailabilityServiceGameName' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bRequireLightswitchAtStartup) == 0x000048, "Member 'UOnlineAccountCommon::bRequireLightswitchAtStartup' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, EulaKey) == 0x000050, "Member 'UOnlineAccountCommon::EulaKey' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, WebCreateEpicAccountUrl) == 0x000060, "Member 'UOnlineAccountCommon::WebCreateEpicAccountUrl' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bAllowLocalLogout) == 0x000070, "Member 'UOnlineAccountCommon::bAllowLocalLogout' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bAllowLocalLogoutKairos) == 0x000071, "Member 'UOnlineAccountCommon::bAllowLocalLogoutKairos' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bUsePinGrantCodeForLinking) == 0x000072, "Member 'UOnlineAccountCommon::bUsePinGrantCodeForLinking' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, RedeemAccessUrl) == 0x000078, "Member 'UOnlineAccountCommon::RedeemAccessUrl' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, RequestFreeAccessUrl) == 0x000088, "Member 'UOnlineAccountCommon::RequestFreeAccessUrl' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, RealGameAccessUrl) == 0x000098, "Member 'UOnlineAccountCommon::RealGameAccessUrl' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, SkipRedeemOfflinePurchasesChance) == 0x0000A8, "Member 'UOnlineAccountCommon::SkipRedeemOfflinePurchasesChance' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bShouldGrantFreeAccess) == 0x0000AC, "Member 'UOnlineAccountCommon::bShouldGrantFreeAccess' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bAllowHomeSharingAccess) == 0x0000AE, "Member 'UOnlineAccountCommon::bAllowHomeSharingAccess' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bRequireUGCPrivilege) == 0x0000AF, "Member 'UOnlineAccountCommon::bRequireUGCPrivilege' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, AccessGrantDelaySeconds) == 0x000348, "Member 'UOnlineAccountCommon::AccessGrantDelaySeconds' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, WaitingRoomState) == 0x000350, "Member 'UOnlineAccountCommon::WaitingRoomState' has a wrong offset!");
-static_assert(offsetof(UOnlineAccountCommon, bAutoCreateHeadlessAccount) == 0x000690, "Member 'UOnlineAccountCommon::bAutoCreateHeadlessAccount' has a wrong offset!");
 
 // Class Account.WaitingRoomState
 // 0x0060 (0x0088 - 0x0028)
@@ -111,16 +97,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaitingRoomState">();
+		STATIC_CLASS_IMPL("WaitingRoomState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaitingRoomState")
 	}
 	static class UWaitingRoomState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaitingRoomState>();
 	}
 };
-static_assert(alignof(UWaitingRoomState) == 0x000008, "Wrong alignment on UWaitingRoomState");
-static_assert(sizeof(UWaitingRoomState) == 0x000088, "Wrong size on UWaitingRoomState");
-static_assert(offsetof(UWaitingRoomState, GracePeriodMins) == 0x00005C, "Member 'UWaitingRoomState::GracePeriodMins' has a wrong offset!");
 
 }
 

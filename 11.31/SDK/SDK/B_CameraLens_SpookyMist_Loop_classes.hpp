@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_CameraLens_SpookyMist_Loop_C">();
+		BP_STATIC_CLASS_IMPL("B_CameraLens_SpookyMist_Loop_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_CameraLens_SpookyMist_Loop_C")
 	}
 	static class AB_CameraLens_SpookyMist_Loop_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_CameraLens_SpookyMist_Loop_C>();
 	}
 };
-static_assert(alignof(AB_CameraLens_SpookyMist_Loop_C) == 0x000010, "Wrong alignment on AB_CameraLens_SpookyMist_Loop_C");
-static_assert(sizeof(AB_CameraLens_SpookyMist_Loop_C) == 0x0002F0, "Wrong size on AB_CameraLens_SpookyMist_Loop_C");
-static_assert(offsetof(AB_CameraLens_SpookyMist_Loop_C, UberGraphFrame) == 0x0002D0, "Member 'AB_CameraLens_SpookyMist_Loop_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_CameraLens_SpookyMist_Loop_C, VelocityActor) == 0x0002D8, "Member 'AB_CameraLens_SpookyMist_Loop_C::VelocityActor' has a wrong offset!");
-static_assert(offsetof(AB_CameraLens_SpookyMist_Loop_C, TargetRot) == 0x0002E0, "Member 'AB_CameraLens_SpookyMist_Loop_C::TargetRot' has a wrong offset!");
 
 }
 

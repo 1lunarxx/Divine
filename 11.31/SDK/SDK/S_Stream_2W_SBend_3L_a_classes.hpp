@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"S_Stream_2W_SBend_3L_a_C">();
+		BP_STATIC_CLASS_IMPL("S_Stream_2W_SBend_3L_a_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"S_Stream_2W_SBend_3L_a_C")
 	}
 	static class AS_Stream_2W_SBend_3L_a_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AS_Stream_2W_SBend_3L_a_C>();
 	}
 };
-static_assert(alignof(AS_Stream_2W_SBend_3L_a_C) == 0x000008, "Wrong alignment on AS_Stream_2W_SBend_3L_a_C");
-static_assert(sizeof(AS_Stream_2W_SBend_3L_a_C) == 0x0002E0, "Wrong size on AS_Stream_2W_SBend_3L_a_C");
-static_assert(offsetof(AS_Stream_2W_SBend_3L_a_C, ShowTestMesh_0) == 0x0002DB, "Member 'AS_Stream_2W_SBend_3L_a_C::ShowTestMesh_0' has a wrong offset!");
 
 }
 

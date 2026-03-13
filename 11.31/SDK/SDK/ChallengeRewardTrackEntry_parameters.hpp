@@ -31,15 +31,6 @@ public:
 	float                                         Temp_float_Variable_1;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_SetIsInactive) == 0x000008, "Wrong alignment on ChallengeRewardTrackEntry_C_SetIsInactive");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_SetIsInactive) == 0x000028, "Wrong size on ChallengeRewardTrackEntry_C_SetIsInactive");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, MaterialBrush) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::MaterialBrush' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, IsInactive) == 0x000008, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::IsInactive' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, Temp_bool_Variable) == 0x000009, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, Temp_float_Variable) == 0x000018, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, Temp_float_Variable_1) == 0x00001C, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsInactive, K2Node_Select_Default) == 0x000020, "Member 'ChallengeRewardTrackEntry_C_SetIsInactive::K2Node_Select_Default' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.SetIsPrestige
 // 0x0028 (0x0028 - 0x0000)
@@ -55,15 +46,6 @@ public:
 	float                                         Temp_float_Variable_1;                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_SetIsPrestige) == 0x000008, "Wrong alignment on ChallengeRewardTrackEntry_C_SetIsPrestige");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_SetIsPrestige) == 0x000028, "Wrong size on ChallengeRewardTrackEntry_C_SetIsPrestige");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, MaterialBrush) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::MaterialBrush' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, ViewingPrestige) == 0x000008, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::ViewingPrestige' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, Temp_bool_Variable) == 0x000009, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, Temp_float_Variable) == 0x000018, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, Temp_float_Variable_1) == 0x00001C, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetIsPrestige, K2Node_Select_Default) == 0x000020, "Member 'ChallengeRewardTrackEntry_C_SetIsPrestige::K2Node_Select_Default' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.NextRewardToEarn
 // 0x0001 (0x0001 - 0x0000)
@@ -72,9 +54,6 @@ struct ChallengeRewardTrackEntry_C_NextRewardToEarn final
 public:
 	bool                                          bNext;                                             // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_NextRewardToEarn) == 0x000001, "Wrong alignment on ChallengeRewardTrackEntry_C_NextRewardToEarn");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_NextRewardToEarn) == 0x000001, "Wrong size on ChallengeRewardTrackEntry_C_NextRewardToEarn");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_NextRewardToEarn, bNext) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_NextRewardToEarn::bNext' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.CompletedNextNode
 // 0x0001 (0x0001 - 0x0000)
@@ -83,9 +62,6 @@ struct ChallengeRewardTrackEntry_C_CompletedNextNode final
 public:
 	bool                                          bAnimate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_CompletedNextNode) == 0x000001, "Wrong alignment on ChallengeRewardTrackEntry_C_CompletedNextNode");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_CompletedNextNode) == 0x000001, "Wrong size on ChallengeRewardTrackEntry_C_CompletedNextNode");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_CompletedNextNode, bAnimate) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_CompletedNextNode::bAnimate' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.CompletedCurrentNode
 // 0x0002 (0x0002 - 0x0000)
@@ -95,10 +71,6 @@ public:
 	bool                                          bAnimate;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          LastReward;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_CompletedCurrentNode) == 0x000001, "Wrong alignment on ChallengeRewardTrackEntry_C_CompletedCurrentNode");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_CompletedCurrentNode) == 0x000002, "Wrong size on ChallengeRewardTrackEntry_C_CompletedCurrentNode");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_CompletedCurrentNode, bAnimate) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_CompletedCurrentNode::bAnimate' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_CompletedCurrentNode, LastReward) == 0x000001, "Member 'ChallengeRewardTrackEntry_C_CompletedCurrentNode::LastReward' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.StyleChange
 // 0x0001 (0x0001 - 0x0000)
@@ -107,9 +79,6 @@ struct ChallengeRewardTrackEntry_C_StyleChange final
 public:
 	bool                                          bViewingPrestige;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_StyleChange) == 0x000001, "Wrong alignment on ChallengeRewardTrackEntry_C_StyleChange");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_StyleChange) == 0x000001, "Wrong size on ChallengeRewardTrackEntry_C_StyleChange");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_StyleChange, bViewingPrestige) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_StyleChange::bViewingPrestige' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.SetLastNodeInTrack
 // 0x0001 (0x0001 - 0x0000)
@@ -118,9 +87,6 @@ struct ChallengeRewardTrackEntry_C_SetLastNodeInTrack final
 public:
 	bool                                          bIsLast;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_SetLastNodeInTrack) == 0x000001, "Wrong alignment on ChallengeRewardTrackEntry_C_SetLastNodeInTrack");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_SetLastNodeInTrack) == 0x000001, "Wrong size on ChallengeRewardTrackEntry_C_SetLastNodeInTrack");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_SetLastNodeInTrack, bIsLast) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_SetLastNodeInTrack::bIsLast' has a wrong offset!");
 
 // Function ChallengeRewardTrackEntry.ChallengeRewardTrackEntry_C.ExecuteUbergraph_ChallengeRewardTrackEntry
 // 0x00B8 (0x00B8 - 0x0000)
@@ -168,39 +134,6 @@ public:
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x00A4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_2;                           // 0x00B4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry) == 0x000008, "Wrong alignment on ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry");
-static_assert(sizeof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry) == 0x0000B8, "Wrong size on ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, EntryPoint) == 0x000000, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_bool_Variable) == 0x000004, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_bool_Variable_1) == 0x000005, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_float_Variable) == 0x000008, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_float_Variable_1) == 0x00000C, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_bool_Variable_2) == 0x000010, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_struct_Variable) == 0x000014, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_struct_Variable_1) == 0x000024, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_bNext) == 0x000034, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_bNext' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_bAnimate_1) == 0x000035, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_bAnimate_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_bAnimate) == 0x000036, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_bAnimate' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_LastReward) == 0x000037, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_LastReward' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_bViewingPrestige) == 0x000038, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_bViewingPrestige' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_byte_Variable) == 0x000039, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, Temp_byte_Variable_1) == 0x00003A, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Select_Default) == 0x00003B, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_AsMission_Reward_Entry) == 0x000040, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_AsMission_Reward_Entry' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_AsMission_Reward_Entry_1) == 0x000050, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_AsMission_Reward_Entry_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_bSuccess_1) == 0x000058, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_AsMission_Reward_Entry_2) == 0x000060, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_AsMission_Reward_Entry_2' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_bSuccess_2) == 0x000068, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, CallFunc_PlayAnimation_ReturnValue) == 0x000070, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_AsMission_Reward_Entry_3) == 0x000078, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_AsMission_Reward_Entry_3' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_bSuccess_3) == 0x000080, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_AsMission_Reward_Entry_4) == 0x000088, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_AsMission_Reward_Entry_4' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_DynamicCast_bSuccess_4) == 0x000090, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000098, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Event_bIsLast) == 0x0000A0, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Event_bIsLast' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Select_Default_1) == 0x0000A4, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry, K2Node_Select_Default_2) == 0x0000B4, "Member 'ChallengeRewardTrackEntry_C_ExecuteUbergraph_ChallengeRewardTrackEntry::K2Node_Select_Default_2' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UMAD_KillStreak_03_C final : public UFortAwardDetectorKillStreak
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MAD_KillStreak_03_C">();
+		BP_STATIC_CLASS_IMPL("MAD_KillStreak_03_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MAD_KillStreak_03_C")
 	}
 	static class UMAD_KillStreak_03_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMAD_KillStreak_03_C>();
 	}
 };
-static_assert(alignof(UMAD_KillStreak_03_C) == 0x000008, "Wrong alignment on UMAD_KillStreak_03_C");
-static_assert(sizeof(UMAD_KillStreak_03_C) == 0x000038, "Wrong size on UMAD_KillStreak_03_C");
 
 }
 

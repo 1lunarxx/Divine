@@ -89,38 +89,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Creative_Billboard_C">();
+		BP_STATIC_CLASS_IMPL("BP_Creative_Billboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Creative_Billboard_C")
 	}
 	static class ABP_Creative_Billboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Creative_Billboard_C>();
 	}
 };
-static_assert(alignof(ABP_Creative_Billboard_C) == 0x000008, "Wrong alignment on ABP_Creative_Billboard_C");
-static_assert(sizeof(ABP_Creative_Billboard_C) == 0x000BB0, "Wrong size on ABP_Creative_Billboard_C");
-static_assert(offsetof(ABP_Creative_Billboard_C, UberGraphFrame) == 0x000B08, "Member 'ABP_Creative_Billboard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, FortMinigameLogic) == 0x000B10, "Member 'ABP_Creative_Billboard_C::FortMinigameLogic' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, HideTextReceiverComponent) == 0x000B18, "Member 'ABP_Creative_Billboard_C::HideTextReceiverComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, ShowTextReceiverComponent) == 0x000B20, "Member 'ABP_Creative_Billboard_C::ShowTextReceiverComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, ToolPickingBox) == 0x000B28, "Member 'ABP_Creative_Billboard_C::ToolPickingBox' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, ToyOptionsComponent) == 0x000B30, "Member 'ABP_Creative_Billboard_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, Background) == 0x000B38, "Member 'ABP_Creative_Billboard_C::Background' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, UserDefinedText) == 0x000B40, "Member 'ABP_Creative_Billboard_C::UserDefinedText' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, bShowBorder) == 0x000B50, "Member 'ABP_Creative_Billboard_C::bShowBorder' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, BackgroundColor) == 0x000B54, "Member 'ABP_Creative_Billboard_C::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, HorizontalTextAlignment) == 0x000B64, "Member 'ABP_Creative_Billboard_C::HorizontalTextAlignment' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, TextSize) == 0x000B68, "Member 'ABP_Creative_Billboard_C::TextSize' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, ViewDistance) == 0x000B6C, "Member 'ABP_Creative_Billboard_C::ViewDistance' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, bAlwaysFaceCamera) == 0x000B70, "Member 'ABP_Creative_Billboard_C::bAlwaysFaceCamera' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, WasInRangeLastCheck) == 0x000B71, "Member 'ABP_Creative_Billboard_C::WasInRangeLastCheck' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, BackgroundColorOverride) == 0x000B74, "Member 'ABP_Creative_Billboard_C::BackgroundColorOverride' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, TextColor) == 0x000B78, "Member 'ABP_Creative_Billboard_C::TextColor' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, bIsTextVisible) == 0x000B88, "Member 'ABP_Creative_Billboard_C::bIsTextVisible' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, EnabledIndex) == 0x000B8C, "Member 'ABP_Creative_Billboard_C::EnabledIndex' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, TextFont) == 0x000B90, "Member 'ABP_Creative_Billboard_C::TextFont' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, Show_Debug_Text) == 0x000B94, "Member 'ABP_Creative_Billboard_C::Show_Debug_Text' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, BackgroundRelativeRotationWithBorder) == 0x000B98, "Member 'ABP_Creative_Billboard_C::BackgroundRelativeRotationWithBorder' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Billboard_C, BackgroundRelativeRotationWithoutBorder) == 0x000BA4, "Member 'ABP_Creative_Billboard_C::BackgroundRelativeRotationWithoutBorder' has a wrong offset!");
 
 }
 

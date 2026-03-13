@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UserActionMenu_C">();
+		BP_STATIC_CLASS_IMPL("UserActionMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserActionMenu_C")
 	}
 	static class UUserActionMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserActionMenu_C>();
 	}
 };
-static_assert(alignof(UUserActionMenu_C) == 0x000008, "Wrong alignment on UUserActionMenu_C");
-static_assert(sizeof(UUserActionMenu_C) == 0x0003B8, "Wrong size on UUserActionMenu_C");
-static_assert(offsetof(UUserActionMenu_C, UberGraphFrame) == 0x000388, "Member 'UUserActionMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUserActionMenu_C, ConfirmationOpened) == 0x000390, "Member 'UUserActionMenu_C::ConfirmationOpened' has a wrong offset!");
-static_assert(offsetof(UUserActionMenu_C, Opened) == 0x000398, "Member 'UUserActionMenu_C::Opened' has a wrong offset!");
-static_assert(offsetof(UUserActionMenu_C, Border_OnlineStatusIndicator) == 0x0003A0, "Member 'UUserActionMenu_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UUserActionMenu_C, EntryBorder) == 0x0003A8, "Member 'UUserActionMenu_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(UUserActionMenu_C, Image_Platform) == 0x0003B0, "Member 'UUserActionMenu_C::Image_Platform' has a wrong offset!");
 
 }
 

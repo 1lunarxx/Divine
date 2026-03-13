@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_DemonHunterCrossbow_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_DemonHunterCrossbow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_DemonHunterCrossbow_C")
 	}
 	static class UAnimNotify_DemonHunterCrossbow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_DemonHunterCrossbow_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_DemonHunterCrossbow_C) == 0x000008, "Wrong alignment on UAnimNotify_DemonHunterCrossbow_C");
-static_assert(sizeof(UAnimNotify_DemonHunterCrossbow_C) == 0x000038, "Wrong size on UAnimNotify_DemonHunterCrossbow_C");
 
 }
 

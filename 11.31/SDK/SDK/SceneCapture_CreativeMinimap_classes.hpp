@@ -23,15 +23,17 @@ class ASceneCapture_CreativeMinimap_C final : public ASceneCapture2D
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SceneCapture_CreativeMinimap_C">();
+		BP_STATIC_CLASS_IMPL("SceneCapture_CreativeMinimap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SceneCapture_CreativeMinimap_C")
 	}
 	static class ASceneCapture_CreativeMinimap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASceneCapture_CreativeMinimap_C>();
 	}
 };
-static_assert(alignof(ASceneCapture_CreativeMinimap_C) == 0x000008, "Wrong alignment on ASceneCapture_CreativeMinimap_C");
-static_assert(sizeof(ASceneCapture_CreativeMinimap_C) == 0x000230, "Wrong size on ASceneCapture_CreativeMinimap_C");
 
 }
 

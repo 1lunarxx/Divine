@@ -42,26 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemShopScreen_C">();
+		BP_STATIC_CLASS_IMPL("ItemShopScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemShopScreen_C")
 	}
 	static class UItemShopScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemShopScreen_C>();
 	}
 };
-static_assert(alignof(UItemShopScreen_C) == 0x000008, "Wrong alignment on UItemShopScreen_C");
-static_assert(sizeof(UItemShopScreen_C) == 0x0007C8, "Wrong size on UItemShopScreen_C");
-static_assert(offsetof(UItemShopScreen_C, UberGraphFrame) == 0x000770, "Member 'UItemShopScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, AffilateInfo) == 0x000778, "Member 'UItemShopScreen_C::AffilateInfo' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, CommonActionWidget_0) == 0x000780, "Member 'UItemShopScreen_C::CommonActionWidget_0' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, CommonActionWidget_1) == 0x000788, "Member 'UItemShopScreen_C::CommonActionWidget_1' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, CommonBorder_CosmeticWarning) == 0x000790, "Member 'UItemShopScreen_C::CommonBorder_CosmeticWarning' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, NoOffersBox) == 0x000798, "Member 'UItemShopScreen_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, Overlay_OuterBounds) == 0x0007A0, "Member 'UItemShopScreen_C::Overlay_OuterBounds' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, ProgressSpinner) == 0x0007A8, "Member 'UItemShopScreen_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, SafeZone_4) == 0x0007B0, "Member 'UItemShopScreen_C::SafeZone_4' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, Switcher_Sections) == 0x0007B8, "Member 'UItemShopScreen_C::Switcher_Sections' has a wrong offset!");
-static_assert(offsetof(UItemShopScreen_C, VerticalBox_Sections) == 0x0007C0, "Member 'UItemShopScreen_C::VerticalBox_Sections' has a wrong offset!");
 
 }
 

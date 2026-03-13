@@ -23,15 +23,17 @@ class UQuickHealItemPickerBP_C final : public UQuickHealItemPicker
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuickHealItemPickerBP_C">();
+		BP_STATIC_CLASS_IMPL("QuickHealItemPickerBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuickHealItemPickerBP_C")
 	}
 	static class UQuickHealItemPickerBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuickHealItemPickerBP_C>();
 	}
 };
-static_assert(alignof(UQuickHealItemPickerBP_C) == 0x000008, "Wrong alignment on UQuickHealItemPickerBP_C");
-static_assert(sizeof(UQuickHealItemPickerBP_C) == 0x000060, "Wrong size on UQuickHealItemPickerBP_C");
 
 }
 

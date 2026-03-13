@@ -34,7 +34,7 @@ public:
 	struct FRotator                               OffsetRotate;                                      // 0x027C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Athena;                                            // 0x0288(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_289[0x7];                                      // 0x0289(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(float CurrentZoomLevel)> OnZoomLevelUpdated;                                // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(float CurrentZoomLevel)> OnZoomLevelUpdated;                       // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class USoundBase*                             Zoom_Out_Sound;                                    // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Zoom_In_Sound;                                     // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -49,26 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultCharacterPlacementHelper_C">();
+		BP_STATIC_CLASS_IMPL("VaultCharacterPlacementHelper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultCharacterPlacementHelper_C")
 	}
 	static class AVaultCharacterPlacementHelper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultCharacterPlacementHelper_C>();
 	}
 };
-static_assert(alignof(AVaultCharacterPlacementHelper_C) == 0x000010, "Wrong alignment on AVaultCharacterPlacementHelper_C");
-static_assert(sizeof(AVaultCharacterPlacementHelper_C) == 0x0002B0, "Wrong size on AVaultCharacterPlacementHelper_C");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, UberGraphFrame) == 0x000218, "Member 'AVaultCharacterPlacementHelper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, Floor) == 0x000220, "Member 'AVaultCharacterPlacementHelper_C::Floor' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, CharacterPlacement) == 0x000228, "Member 'AVaultCharacterPlacementHelper_C::CharacterPlacement' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, root) == 0x000230, "Member 'AVaultCharacterPlacementHelper_C::root' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, OriginalTransform) == 0x000240, "Member 'AVaultCharacterPlacementHelper_C::OriginalTransform' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, OffsetTranslate) == 0x000270, "Member 'AVaultCharacterPlacementHelper_C::OffsetTranslate' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, OffsetRotate) == 0x00027C, "Member 'AVaultCharacterPlacementHelper_C::OffsetRotate' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, Athena) == 0x000288, "Member 'AVaultCharacterPlacementHelper_C::Athena' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, OnZoomLevelUpdated) == 0x000290, "Member 'AVaultCharacterPlacementHelper_C::OnZoomLevelUpdated' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, Zoom_Out_Sound) == 0x0002A0, "Member 'AVaultCharacterPlacementHelper_C::Zoom_Out_Sound' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterPlacementHelper_C, Zoom_In_Sound) == 0x0002A8, "Member 'AVaultCharacterPlacementHelper_C::Zoom_In_Sound' has a wrong offset!");
 
 }
 

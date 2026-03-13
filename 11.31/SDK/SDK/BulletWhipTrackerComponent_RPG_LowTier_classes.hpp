@@ -23,15 +23,17 @@ class UBulletWhipTrackerComponent_RPG_LowTier_C final : public UBulletWhipTracke
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BulletWhipTrackerComponent_RPG_LowTier_C">();
+		BP_STATIC_CLASS_IMPL("BulletWhipTrackerComponent_RPG_LowTier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BulletWhipTrackerComponent_RPG_LowTier_C")
 	}
 	static class UBulletWhipTrackerComponent_RPG_LowTier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBulletWhipTrackerComponent_RPG_LowTier_C>();
 	}
 };
-static_assert(alignof(UBulletWhipTrackerComponent_RPG_LowTier_C) == 0x000008, "Wrong alignment on UBulletWhipTrackerComponent_RPG_LowTier_C");
-static_assert(sizeof(UBulletWhipTrackerComponent_RPG_LowTier_C) == 0x0000E8, "Wrong size on UBulletWhipTrackerComponent_RPG_LowTier_C");
 
 }
 

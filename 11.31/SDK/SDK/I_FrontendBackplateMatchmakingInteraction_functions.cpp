@@ -27,13 +27,13 @@ void II_FrontendBackplateMatchmakingInteraction_C::MatchmakingEnded(bool bWasSuc
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "MatchmakingEnded");
+		Func = AsUObject()->Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "MatchmakingEnded");
 
 	Params::I_FrontendBackplateMatchmakingInteraction_C_MatchmakingEnded Parms{};
 
 	Parms.bWasSuccess = bWasSuccess;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -47,11 +47,11 @@ void II_FrontendBackplateMatchmakingInteraction_C::HasMatcmakingInteraction(bool
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "HasMatcmakingInteraction");
+		Func = AsUObject()->Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "HasMatcmakingInteraction");
 
 	Params::I_FrontendBackplateMatchmakingInteraction_C_HasMatcmakingInteraction Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (HasInteraction != nullptr)
 		*HasInteraction = Parms.HasInteraction;
@@ -66,9 +66,9 @@ void II_FrontendBackplateMatchmakingInteraction_C::EnteringMatchmaking()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "EnteringMatchmaking");
+		Func = AsUObject()->Class->GetFunction("I_FrontendBackplateMatchmakingInteraction_C", "EnteringMatchmaking");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 }

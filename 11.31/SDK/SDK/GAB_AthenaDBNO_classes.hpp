@@ -56,26 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_AthenaDBNO_C">();
+		BP_STATIC_CLASS_IMPL("GAB_AthenaDBNO_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_AthenaDBNO_C")
 	}
 	static class UGAB_AthenaDBNO_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_AthenaDBNO_C>();
 	}
 };
-static_assert(alignof(UGAB_AthenaDBNO_C) == 0x000008, "Wrong alignment on UGAB_AthenaDBNO_C");
-static_assert(sizeof(UGAB_AthenaDBNO_C) == 0x000B40, "Wrong size on UGAB_AthenaDBNO_C");
-static_assert(offsetof(UGAB_AthenaDBNO_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_AthenaDBNO_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontage) == 0x000A38, "Member 'UGAB_AthenaDBNO_C::DeathMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitDirection) == 0x000A40, "Member 'UGAB_AthenaDBNO_C::DeathHitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathHitResult) == 0x000A4C, "Member 'UGAB_AthenaDBNO_C::DeathHitResult' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DamageTags) == 0x000AD8, "Member 'UGAB_AthenaDBNO_C::DamageTags' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, GameplayStatusAfflicted) == 0x000AF8, "Member 'UGAB_AthenaDBNO_C::GameplayStatusAfflicted' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontageSkydive) == 0x000B18, "Member 'UGAB_AthenaDBNO_C::DeathMontageSkydive' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DBNOBleedGEHandle) == 0x000B20, "Member 'UGAB_AthenaDBNO_C::DBNOBleedGEHandle' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, HolsterId) == 0x000B28, "Member 'UGAB_AthenaDBNO_C::HolsterId' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, DeathMontageSwimming) == 0x000B30, "Member 'UGAB_AthenaDBNO_C::DeathMontageSwimming' has a wrong offset!");
-static_assert(offsetof(UGAB_AthenaDBNO_C, Pawn) == 0x000B38, "Member 'UGAB_AthenaDBNO_C::Pawn' has a wrong offset!");
 
 }
 

@@ -35,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_PurpleStuff_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_PurpleStuff_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_PurpleStuff_C")
 	}
 	static class AGCNL_PurpleStuff_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_PurpleStuff_C>();
 	}
 };
-static_assert(alignof(AGCNL_PurpleStuff_C) == 0x000008, "Wrong alignment on AGCNL_PurpleStuff_C");
-static_assert(sizeof(AGCNL_PurpleStuff_C) == 0x000320, "Wrong size on AGCNL_PurpleStuff_C");
-static_assert(offsetof(AGCNL_PurpleStuff_C, UberGraphFrame) == 0x000310, "Member 'AGCNL_PurpleStuff_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_PurpleStuff_C, PlayerActor) == 0x000318, "Member 'AGCNL_PurpleStuff_C::PlayerActor' has a wrong offset!");
 
 }
 

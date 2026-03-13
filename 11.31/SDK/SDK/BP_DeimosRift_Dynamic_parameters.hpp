@@ -34,15 +34,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BP_DeimosRift_Dynamic_C_OnDamageServer) == 0x000008, "Wrong alignment on BP_DeimosRift_Dynamic_C_OnDamageServer");
-static_assert(sizeof(BP_DeimosRift_Dynamic_C_OnDamageServer) == 0x0000E8, "Wrong size on BP_DeimosRift_Dynamic_C_OnDamageServer");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, Damage) == 0x000000, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::Damage' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, DamageTags) == 0x000008, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::DamageTags' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, Momentum) == 0x000028, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::Momentum' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, HitInfo) == 0x000034, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::HitInfo' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, InstigatedBy) == 0x0000C0, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, DamageCauser) == 0x0000C8, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_OnDamageServer, EffectContext) == 0x0000D0, "Member 'BP_DeimosRift_Dynamic_C_OnDamageServer::EffectContext' has a wrong offset!");
 
 // Function BP_DeimosRift_Dynamic.BP_DeimosRift_Dynamic_C.ExecuteUbergraph_BP_DeimosRift_Dynamic
 // 0x0128 (0x0128 - 0x0000)
@@ -71,25 +62,6 @@ public:
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0118(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue; // 0x0120(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic) == 0x000008, "Wrong alignment on BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic");
-static_assert(sizeof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic) == 0x000128, "Wrong size on BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, EntryPoint) == 0x000000, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_Damage) == 0x000004, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_DamageTags) == 0x000008, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_Momentum) == 0x000028, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_HitInfo) == 0x000034, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_InstigatedBy) == 0x0000C0, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_DamageCauser) == 0x0000C8, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_Event_EffectContext) == 0x0000D0, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_Event_EffectContext' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, K2Node_CreateDelegate_OutputDelegate) == 0x0000E8, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_GetTimeSeconds_ReturnValue) == 0x0000F8, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_GetTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000100, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_HasAuthority_ReturnValue) == 0x000108, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_GetTimeSeconds_ReturnValue_1) == 0x00010C, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_GetTimeSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000110, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000114, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000118, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic, CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue) == 0x000120, "Member 'BP_DeimosRift_Dynamic_C_ExecuteUbergraph_BP_DeimosRift_Dynamic::CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue' has a wrong offset!");
 
 }
 

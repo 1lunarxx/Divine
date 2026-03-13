@@ -23,15 +23,17 @@ class UGAB_FiendFloorMelee_C final : public UGAB_FiendMelee_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_FiendFloorMelee_C">();
+		BP_STATIC_CLASS_IMPL("GAB_FiendFloorMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_FiendFloorMelee_C")
 	}
 	static class UGAB_FiendFloorMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_FiendFloorMelee_C>();
 	}
 };
-static_assert(alignof(UGAB_FiendFloorMelee_C) == 0x000008, "Wrong alignment on UGAB_FiendFloorMelee_C");
-static_assert(sizeof(UGAB_FiendFloorMelee_C) == 0x000A68, "Wrong size on UGAB_FiendFloorMelee_C");
 
 }
 

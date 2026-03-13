@@ -48,31 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComRevealScreen_C">();
+		BP_STATIC_CLASS_IMPL("ComRevealScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComRevealScreen_C")
 	}
 	static class UComRevealScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComRevealScreen_C>();
 	}
 };
-static_assert(alignof(UComRevealScreen_C) == 0x000008, "Wrong alignment on UComRevealScreen_C");
-static_assert(sizeof(UComRevealScreen_C) == 0x000548, "Wrong size on UComRevealScreen_C");
-static_assert(offsetof(UComRevealScreen_C, UberGraphFrame) == 0x0004C8, "Member 'UComRevealScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, PopIn) == 0x0004D0, "Member 'UComRevealScreen_C::PopIn' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, FadeOut) == 0x0004D8, "Member 'UComRevealScreen_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, Reveal) == 0x0004E0, "Member 'UComRevealScreen_C::Reveal' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, ComCenterImageBackground) == 0x0004E8, "Member 'UComRevealScreen_C::ComCenterImageBackground' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, ComLeftImageBackground) == 0x0004F0, "Member 'UComRevealScreen_C::ComLeftImageBackground' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, comLogoTitle) == 0x0004F8, "Member 'UComRevealScreen_C::comLogoTitle' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, ComPopUpBgarrows) == 0x000500, "Member 'UComRevealScreen_C::ComPopUpBgarrows' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, comPopUpWhiteBorder) == 0x000508, "Member 'UComRevealScreen_C::comPopUpWhiteBorder' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, comRevealFlashFullScreen) == 0x000510, "Member 'UComRevealScreen_C::comRevealFlashFullScreen' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, ComRightImageBackground) == 0x000518, "Member 'UComRevealScreen_C::ComRightImageBackground' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, Currency1ItemImage2) == 0x000520, "Member 'UComRevealScreen_C::Currency1ItemImage2' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, footerimage) == 0x000528, "Member 'UComRevealScreen_C::footerimage' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, footerimage_2) == 0x000530, "Member 'UComRevealScreen_C::footerimage_2' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, Reveal_screenBackground) == 0x000538, "Member 'UComRevealScreen_C::Reveal_screenBackground' has a wrong offset!");
-static_assert(offsetof(UComRevealScreen_C, TextOfferDisplayPrice1) == 0x000540, "Member 'UComRevealScreen_C::TextOfferDisplayPrice1' has a wrong offset!");
 
 }
 

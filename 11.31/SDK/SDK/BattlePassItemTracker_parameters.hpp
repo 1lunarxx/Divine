@@ -24,11 +24,6 @@ public:
 	class UCommonNumericTextBlock*                K2Node_Event_NumericTextBlock;                     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_HadCompleted;                         // 0x0010(0x0001)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker");
-static_assert(sizeof(BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker) == 0x000018, "Wrong size on BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker");
-static_assert(offsetof(BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker, EntryPoint) == 0x000000, "Member 'BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker, K2Node_Event_NumericTextBlock) == 0x000008, "Member 'BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker::K2Node_Event_NumericTextBlock' has a wrong offset!");
-static_assert(offsetof(BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker, K2Node_Event_HadCompleted) == 0x000010, "Member 'BattlePassItemTracker_C_ExecuteUbergraph_BattlePassItemTracker::K2Node_Event_HadCompleted' has a wrong offset!");
 
 // Function BattlePassItemTracker.BattlePassItemTracker_C.OnInterpEnded
 // 0x0010 (0x0010 - 0x0000)
@@ -38,10 +33,6 @@ public:
 	class UCommonNumericTextBlock*                NumericTextBlock;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HadCompleted;                                      // 0x0008(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassItemTracker_C_OnInterpEnded) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_OnInterpEnded");
-static_assert(sizeof(BattlePassItemTracker_C_OnInterpEnded) == 0x000010, "Wrong size on BattlePassItemTracker_C_OnInterpEnded");
-static_assert(offsetof(BattlePassItemTracker_C_OnInterpEnded, NumericTextBlock) == 0x000000, "Member 'BattlePassItemTracker_C_OnInterpEnded::NumericTextBlock' has a wrong offset!");
-static_assert(offsetof(BattlePassItemTracker_C_OnInterpEnded, HadCompleted) == 0x000008, "Member 'BattlePassItemTracker_C_OnInterpEnded::HadCompleted' has a wrong offset!");
 
 // Function BattlePassItemTracker.BattlePassItemTracker_C.HandleIncrease
 // 0x0008 (0x0008 - 0x0000)
@@ -50,9 +41,6 @@ struct BattlePassItemTracker_C_HandleIncrease final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassItemTracker_C_HandleIncrease) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_HandleIncrease");
-static_assert(sizeof(BattlePassItemTracker_C_HandleIncrease) == 0x000008, "Wrong size on BattlePassItemTracker_C_HandleIncrease");
-static_assert(offsetof(BattlePassItemTracker_C_HandleIncrease, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BattlePassItemTracker_C_HandleIncrease::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function BattlePassItemTracker.BattlePassItemTracker_C.HandleInitialState
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +49,6 @@ struct BattlePassItemTracker_C_HandleInitialState final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassItemTracker_C_HandleInitialState) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_HandleInitialState");
-static_assert(sizeof(BattlePassItemTracker_C_HandleInitialState) == 0x000008, "Wrong size on BattlePassItemTracker_C_HandleInitialState");
-static_assert(offsetof(BattlePassItemTracker_C_HandleInitialState, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BattlePassItemTracker_C_HandleInitialState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function BattlePassItemTracker.BattlePassItemTracker_C.HandleIntro
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +57,6 @@ struct BattlePassItemTracker_C_HandleIntro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassItemTracker_C_HandleIntro) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_HandleIntro");
-static_assert(sizeof(BattlePassItemTracker_C_HandleIntro) == 0x000008, "Wrong size on BattlePassItemTracker_C_HandleIntro");
-static_assert(offsetof(BattlePassItemTracker_C_HandleIntro, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BattlePassItemTracker_C_HandleIntro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function BattlePassItemTracker.BattlePassItemTracker_C.HandleNumberVisible
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +65,6 @@ struct BattlePassItemTracker_C_HandleNumberVisible final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassItemTracker_C_HandleNumberVisible) == 0x000008, "Wrong alignment on BattlePassItemTracker_C_HandleNumberVisible");
-static_assert(sizeof(BattlePassItemTracker_C_HandleNumberVisible) == 0x000008, "Wrong size on BattlePassItemTracker_C_HandleNumberVisible");
-static_assert(offsetof(BattlePassItemTracker_C_HandleNumberVisible, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BattlePassItemTracker_C_HandleNumberVisible::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

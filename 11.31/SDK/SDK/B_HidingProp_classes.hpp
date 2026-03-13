@@ -84,42 +84,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_HidingProp_C">();
+		BP_STATIC_CLASS_IMPL("B_HidingProp_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_HidingProp_C")
 	}
 	static class AB_HidingProp_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_HidingProp_C>();
 	}
 };
-static_assert(alignof(AB_HidingProp_C) == 0x000008, "Wrong alignment on AB_HidingProp_C");
-static_assert(sizeof(AB_HidingProp_C) == 0x000C80, "Wrong size on AB_HidingProp_C");
-static_assert(offsetof(AB_HidingProp_C, UberGraphFrame) == 0x000B08, "Member 'AB_HidingProp_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, S_Athena_Launchpad_Collision) == 0x000B10, "Member 'AB_HidingProp_C::S_Athena_Launchpad_Collision' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, Sphere) == 0x000B18, "Member 'AB_HidingProp_C::Sphere' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, HideLocation_ForwardVector) == 0x000B20, "Member 'AB_HidingProp_C::HideLocation_ForwardVector' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, HidingPlayers) == 0x000B28, "Member 'AB_HidingProp_C::HidingPlayers' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, InteractText) == 0x000B38, "Member 'AB_HidingProp_C::InteractText' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, EnterGameplayCue) == 0x000B50, "Member 'AB_HidingProp_C::EnterGameplayCue' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, ExitGameplayCue) == 0x000B58, "Member 'AB_HidingProp_C::ExitGameplayCue' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, LandedOnGameplayCue) == 0x000B60, "Member 'AB_HidingProp_C::LandedOnGameplayCue' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, Mid) == 0x000B68, "Member 'AB_HidingProp_C::Mid' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, RustleGameplayCue) == 0x000B70, "Member 'AB_HidingProp_C::RustleGameplayCue' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, ExitGameplayCue_Player) == 0x000B78, "Member 'AB_HidingProp_C::ExitGameplayCue_Player' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, WhileEnteringGameplayCue) == 0x000B80, "Member 'AB_HidingProp_C::WhileEnteringGameplayCue' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, Enabled) == 0x000B88, "Member 'AB_HidingProp_C::Enabled' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, PlayerLimit) == 0x000BA8, "Member 'AB_HidingProp_C::PlayerLimit' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, DamageHeight) == 0x000BC8, "Member 'AB_HidingProp_C::DamageHeight' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, DestroyObjectTypes) == 0x000BD0, "Member 'AB_HidingProp_C::DestroyObjectTypes' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, LaunchOffTopTraceExtents) == 0x000BE0, "Member 'AB_HidingProp_C::LaunchOffTopTraceExtents' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, Array) == 0x000BF0, "Member 'AB_HidingProp_C::Array' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, int_0) == 0x000C00, "Member 'AB_HidingProp_C::int_0' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, DeimosPropSpawnerOffset) == 0x000C04, "Member 'AB_HidingProp_C::DeimosPropSpawnerOffset' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, OnlyEnterFromFront) == 0x000C10, "Member 'AB_HidingProp_C::OnlyEnterFromFront' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, MaxInteractAngle) == 0x000C14, "Member 'AB_HidingProp_C::MaxInteractAngle' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, WobbleLocationOffset) == 0x000C18, "Member 'AB_HidingProp_C::WobbleLocationOffset' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, RandomWobbleNormal) == 0x000C24, "Member 'AB_HidingProp_C::RandomWobbleNormal' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, InteractBelowPropDistance) == 0x000C28, "Member 'AB_HidingProp_C::InteractBelowPropDistance' has a wrong offset!");
-static_assert(offsetof(AB_HidingProp_C, HiddenPlayersAndEnterTimes) == 0x000C30, "Member 'AB_HidingProp_C::HiddenPlayersAndEnterTimes' has a wrong offset!");
 
 }
 

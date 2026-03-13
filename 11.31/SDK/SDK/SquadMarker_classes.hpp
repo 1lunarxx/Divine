@@ -31,17 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SquadMarker_C">();
+		BP_STATIC_CLASS_IMPL("SquadMarker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SquadMarker_C")
 	}
 	static class USquadMarker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USquadMarker_C>();
 	}
 };
-static_assert(alignof(USquadMarker_C) == 0x000008, "Wrong alignment on USquadMarker_C");
-static_assert(sizeof(USquadMarker_C) == 0x000568, "Wrong size on USquadMarker_C");
-static_assert(offsetof(USquadMarker_C, UberGraphFrame) == 0x000558, "Member 'USquadMarker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USquadMarker_C, burst) == 0x000560, "Member 'USquadMarker_C::burst' has a wrong offset!");
 
 }
 

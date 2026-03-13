@@ -23,15 +23,17 @@ class ADefaultEditingTool_C final : public AFortWeap_EditingTool
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultEditingTool_C">();
+		BP_STATIC_CLASS_IMPL("DefaultEditingTool_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultEditingTool_C")
 	}
 	static class ADefaultEditingTool_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADefaultEditingTool_C>();
 	}
 };
-static_assert(alignof(ADefaultEditingTool_C) == 0x000008, "Wrong alignment on ADefaultEditingTool_C");
-static_assert(sizeof(ADefaultEditingTool_C) == 0x000A70, "Wrong size on ADefaultEditingTool_C");
 
 }
 

@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("SK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C")
 	}
 	static class USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C>();
 	}
 };
-static_assert(alignof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C) == 0x000010, "Wrong alignment on USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C) == 0x000310, "Wrong size on USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C");
-static_assert(offsetof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000270, "Member 'USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_92D36F244BA6D80A4E58C2B6BE684A28) == 0x000278, "Member 'USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_92D36F244BA6D80A4E58C2B6BE684A28' has a wrong offset!");
-static_assert(offsetof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalRefPose_438D38E44093076D3022318F9361AB01) == 0x0002A8, "Member 'USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalRefPose_438D38E44093076D3022318F9361AB01' has a wrong offset!");
-static_assert(offsetof(USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_BAF2D87E4290896A23024E8C2A5D11AB) == 0x0002C0, "Member 'USK_Assault_Bullpup_01_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_BAF2D87E4290896A23024E8C2A5D11AB' has a wrong offset!");
 
 }
 

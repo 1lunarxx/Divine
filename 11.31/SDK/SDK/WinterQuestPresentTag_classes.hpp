@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestPresentTag_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestPresentTag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestPresentTag_C")
 	}
 	static class UWinterQuestPresentTag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestPresentTag_C>();
 	}
 };
-static_assert(alignof(UWinterQuestPresentTag_C) == 0x000008, "Wrong alignment on UWinterQuestPresentTag_C");
-static_assert(sizeof(UWinterQuestPresentTag_C) == 0x000298, "Wrong size on UWinterQuestPresentTag_C");
-static_assert(offsetof(UWinterQuestPresentTag_C, UberGraphFrame) == 0x000268, "Member 'UWinterQuestPresentTag_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentTag_C, ContentHB) == 0x000270, "Member 'UWinterQuestPresentTag_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentTag_C, Tag) == 0x000278, "Member 'UWinterQuestPresentTag_C::Tag' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentTag_C, CachedRandomInt) == 0x000280, "Member 'UWinterQuestPresentTag_C::CachedRandomInt' has a wrong offset!");
-static_assert(offsetof(UWinterQuestPresentTag_C, FromNamesStringArray) == 0x000288, "Member 'UWinterQuestPresentTag_C::FromNamesStringArray' has a wrong offset!");
 
 }
 

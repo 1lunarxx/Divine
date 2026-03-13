@@ -23,15 +23,17 @@ class UGE_Homebase_CombinedRatings_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Homebase_CombinedRatings_C">();
+		BP_STATIC_CLASS_IMPL("GE_Homebase_CombinedRatings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Homebase_CombinedRatings_C")
 	}
 	static class UGE_Homebase_CombinedRatings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Homebase_CombinedRatings_C>();
 	}
 };
-static_assert(alignof(UGE_Homebase_CombinedRatings_C) == 0x000008, "Wrong alignment on UGE_Homebase_CombinedRatings_C");
-static_assert(sizeof(UGE_Homebase_CombinedRatings_C) == 0x000770, "Wrong size on UGE_Homebase_CombinedRatings_C");
 
 }
 

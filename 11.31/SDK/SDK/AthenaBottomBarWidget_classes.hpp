@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaBottomBarWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaBottomBarWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaBottomBarWidget_C")
 	}
 	static class UAthenaBottomBarWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaBottomBarWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaBottomBarWidget_C) == 0x000008, "Wrong alignment on UAthenaBottomBarWidget_C");
-static_assert(sizeof(UAthenaBottomBarWidget_C) == 0x000300, "Wrong size on UAthenaBottomBarWidget_C");
-static_assert(offsetof(UAthenaBottomBarWidget_C, UberGraphFrame) == 0x000258, "Member 'UAthenaBottomBarWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaBottomBarWidget_C, BorderShell) == 0x000260, "Member 'UAthenaBottomBarWidget_C::BorderShell' has a wrong offset!");
-static_assert(offsetof(UAthenaBottomBarWidget_C, CommonBoundActionBar_121) == 0x000268, "Member 'UAthenaBottomBarWidget_C::CommonBoundActionBar_121' has a wrong offset!");
-static_assert(offsetof(UAthenaBottomBarWidget_C, MobileBackground) == 0x000270, "Member 'UAthenaBottomBarWidget_C::MobileBackground' has a wrong offset!");
-static_assert(offsetof(UAthenaBottomBarWidget_C, Display_Owner_Actions_Only) == 0x0002F8, "Member 'UAthenaBottomBarWidget_C::Display_Owner_Actions_Only' has a wrong offset!");
 
 }
 

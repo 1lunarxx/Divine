@@ -29,15 +29,6 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS) == 0x000008, "Wrong alignment on UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS");
-static_assert(sizeof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS) == 0x000030, "Wrong size on UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, EntryPoint) == 0x000000, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::EntryPoint' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, K2Node_ComponentBoundEvent_bIsOpen) == 0x000004, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::K2Node_ComponentBoundEvent_bIsOpen' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, CallFunc_PlayAnimation_ReturnValue_2) == 0x000018, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000020, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS, CallFunc_PlayAnimation_ReturnValue_3) == 0x000028, "Member 'UserListEntry_XS_C_ExecuteUbergraph_UserListEntry_XS::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
 
 // Function UserListEntry_XS.UserListEntry_XS_C.BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -46,9 +37,6 @@ struct UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_
 public:
 	bool                                          bIsOpen;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong alignment on UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(sizeof(UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong size on UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(offsetof(UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature, bIsOpen) == 0x000000, "Member 'UserListEntry_XS_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature::bIsOpen' has a wrong offset!");
 
 }
 

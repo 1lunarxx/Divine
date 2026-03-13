@@ -48,18 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyBeaconClient">();
+		STATIC_CLASS_IMPL("LobbyBeaconClient")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyBeaconClient")
 	}
 	static class ALobbyBeaconClient* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALobbyBeaconClient>();
 	}
 };
-static_assert(alignof(ALobbyBeaconClient) == 0x000008, "Wrong alignment on ALobbyBeaconClient");
-static_assert(sizeof(ALobbyBeaconClient) == 0x000320, "Wrong size on ALobbyBeaconClient");
-static_assert(offsetof(ALobbyBeaconClient, LobbyState) == 0x000298, "Member 'ALobbyBeaconClient::LobbyState' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconClient, PlayerState) == 0x0002A0, "Member 'ALobbyBeaconClient::PlayerState' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconClient, LobbyJoinServerState) == 0x0002A9, "Member 'ALobbyBeaconClient::LobbyJoinServerState' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconHost
 // 0x0038 (0x0278 - 0x0240)
@@ -73,17 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyBeaconHost">();
+		STATIC_CLASS_IMPL("LobbyBeaconHost")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyBeaconHost")
 	}
 	static class ALobbyBeaconHost* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALobbyBeaconHost>();
 	}
 };
-static_assert(alignof(ALobbyBeaconHost) == 0x000008, "Wrong alignment on ALobbyBeaconHost");
-static_assert(sizeof(ALobbyBeaconHost) == 0x000278, "Wrong size on ALobbyBeaconHost");
-static_assert(offsetof(ALobbyBeaconHost, LobbyStateClass) == 0x000248, "Member 'ALobbyBeaconHost::LobbyStateClass' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconHost, LobbyState) == 0x000270, "Member 'ALobbyBeaconHost::LobbyState' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconPlayerState
 // 0x00C0 (0x02D8 - 0x0218)
@@ -106,20 +105,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyBeaconPlayerState">();
+		STATIC_CLASS_IMPL("LobbyBeaconPlayerState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyBeaconPlayerState")
 	}
 	static class ALobbyBeaconPlayerState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALobbyBeaconPlayerState>();
 	}
 };
-static_assert(alignof(ALobbyBeaconPlayerState) == 0x000008, "Wrong alignment on ALobbyBeaconPlayerState");
-static_assert(sizeof(ALobbyBeaconPlayerState) == 0x0002D8, "Wrong size on ALobbyBeaconPlayerState");
-static_assert(offsetof(ALobbyBeaconPlayerState, DisplayName) == 0x000218, "Member 'ALobbyBeaconPlayerState::DisplayName' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, UniqueId) == 0x000230, "Member 'ALobbyBeaconPlayerState::UniqueId' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, PartyOwnerUniqueId) == 0x000258, "Member 'ALobbyBeaconPlayerState::PartyOwnerUniqueId' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, bInLobby) == 0x000280, "Member 'ALobbyBeaconPlayerState::bInLobby' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconPlayerState, ClientActor) == 0x000288, "Member 'ALobbyBeaconPlayerState::ClientActor' has a wrong offset!");
 
 // Class Lobby.LobbyBeaconState
 // 0x01A8 (0x03C0 - 0x0218)
@@ -143,20 +139,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LobbyBeaconState">();
+		STATIC_CLASS_IMPL("LobbyBeaconState")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LobbyBeaconState")
 	}
 	static class ALobbyBeaconState* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALobbyBeaconState>();
 	}
 };
-static_assert(alignof(ALobbyBeaconState) == 0x000008, "Wrong alignment on ALobbyBeaconState");
-static_assert(sizeof(ALobbyBeaconState) == 0x0003C0, "Wrong size on ALobbyBeaconState");
-static_assert(offsetof(ALobbyBeaconState, MaxPlayers) == 0x000218, "Member 'ALobbyBeaconState::MaxPlayers' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, LobbyBeaconPlayerStateClass) == 0x000220, "Member 'ALobbyBeaconState::LobbyBeaconPlayerStateClass' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, bLobbyStarted) == 0x000230, "Member 'ALobbyBeaconState::bLobbyStarted' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, WaitForPlayersTimeRemaining) == 0x000234, "Member 'ALobbyBeaconState::WaitForPlayersTimeRemaining' has a wrong offset!");
-static_assert(offsetof(ALobbyBeaconState, Players) == 0x000238, "Member 'ALobbyBeaconState::Players' has a wrong offset!");
 
 }
 

@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FeatTimelineListEntry_C">();
+		BP_STATIC_CLASS_IMPL("FeatTimelineListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FeatTimelineListEntry_C")
 	}
 	static class UFeatTimelineListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFeatTimelineListEntry_C>();
 	}
 };
-static_assert(alignof(UFeatTimelineListEntry_C) == 0x000008, "Wrong alignment on UFeatTimelineListEntry_C");
-static_assert(sizeof(UFeatTimelineListEntry_C) == 0x0002F8, "Wrong size on UFeatTimelineListEntry_C");
-static_assert(offsetof(UFeatTimelineListEntry_C, UberGraphFrame) == 0x0002A8, "Member 'UFeatTimelineListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, OnActivated) == 0x0002B0, "Member 'UFeatTimelineListEntry_C::OnActivated' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, OnShowCompleted) == 0x0002B8, "Member 'UFeatTimelineListEntry_C::OnShowCompleted' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, OnHover) == 0x0002C0, "Member 'UFeatTimelineListEntry_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, EntryVisbilityBorder) == 0x0002C8, "Member 'UFeatTimelineListEntry_C::EntryVisbilityBorder' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, SimpleButton_ClickArea) == 0x0002D0, "Member 'UFeatTimelineListEntry_C::SimpleButton_ClickArea' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, SizeBox_Contents) == 0x0002D8, "Member 'UFeatTimelineListEntry_C::SizeBox_Contents' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, SizeBox_Date) == 0x0002E0, "Member 'UFeatTimelineListEntry_C::SizeBox_Date' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, TimespanMaxWidth) == 0x0002E8, "Member 'UFeatTimelineListEntry_C::TimespanMaxWidth' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, TimespanWidthPerDay) == 0x0002EC, "Member 'UFeatTimelineListEntry_C::TimespanWidthPerDay' has a wrong offset!");
-static_assert(offsetof(UFeatTimelineListEntry_C, bWaitingForCompletedTimer) == 0x0002F0, "Member 'UFeatTimelineListEntry_C::bWaitingForCompletedTimer' has a wrong offset!");
 
 }
 

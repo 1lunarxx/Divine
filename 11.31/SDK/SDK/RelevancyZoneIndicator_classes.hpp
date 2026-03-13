@@ -23,15 +23,17 @@ class ARelevancyZoneIndicator_C final : public AFortRelevancyZoneIndicator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RelevancyZoneIndicator_C">();
+		BP_STATIC_CLASS_IMPL("RelevancyZoneIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RelevancyZoneIndicator_C")
 	}
 	static class ARelevancyZoneIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ARelevancyZoneIndicator_C>();
 	}
 };
-static_assert(alignof(ARelevancyZoneIndicator_C) == 0x000008, "Wrong alignment on ARelevancyZoneIndicator_C");
-static_assert(sizeof(ARelevancyZoneIndicator_C) == 0x000378, "Wrong size on ARelevancyZoneIndicator_C");
 
 }
 

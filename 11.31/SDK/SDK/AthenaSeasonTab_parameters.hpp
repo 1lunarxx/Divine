@@ -30,10 +30,6 @@ public:
 	class UBattlePassOverviewVideo_C*             CallFunc_Create_ReturnValue;                       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LoadVideo_ReturnValue;                    // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_PlayOverviewVideo) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_PlayOverviewVideo");
-static_assert(sizeof(AthenaSeasonTab_C_PlayOverviewVideo) == 0x000010, "Wrong size on AthenaSeasonTab_C_PlayOverviewVideo");
-static_assert(offsetof(AthenaSeasonTab_C_PlayOverviewVideo, CallFunc_Create_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_PlayOverviewVideo::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlayOverviewVideo, CallFunc_LoadVideo_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_PlayOverviewVideo::CallFunc_LoadVideo_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.IntroAnim
 // 0x0008 (0x0008 - 0x0000)
@@ -42,9 +38,6 @@ struct AthenaSeasonTab_C_IntroAnim final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_IntroAnim) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_IntroAnim");
-static_assert(sizeof(AthenaSeasonTab_C_IntroAnim) == 0x000008, "Wrong size on AthenaSeasonTab_C_IntroAnim");
-static_assert(offsetof(AthenaSeasonTab_C_IntroAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_IntroAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetBattleStarBackingStyle
 // 0x0001 (0x0001 - 0x0000)
@@ -53,9 +46,6 @@ struct AthenaSeasonTab_C_SetBattleStarBackingStyle final
 public:
 	bool                                          CallFunc_OwnsSeasonPass_ReturnValue;               // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetBattleStarBackingStyle) == 0x000001, "Wrong alignment on AthenaSeasonTab_C_SetBattleStarBackingStyle");
-static_assert(sizeof(AthenaSeasonTab_C_SetBattleStarBackingStyle) == 0x000001, "Wrong size on AthenaSeasonTab_C_SetBattleStarBackingStyle");
-static_assert(offsetof(AthenaSeasonTab_C_SetBattleStarBackingStyle, CallFunc_OwnsSeasonPass_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_SetBattleStarBackingStyle::CallFunc_OwnsSeasonPass_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.AnimatePassLabels
 // 0x0008 (0x0008 - 0x0000)
@@ -66,11 +56,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_AnimatePassLabels) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_AnimatePassLabels");
-static_assert(sizeof(AthenaSeasonTab_C_AnimatePassLabels) == 0x000008, "Wrong size on AthenaSeasonTab_C_AnimatePassLabels");
-static_assert(offsetof(AthenaSeasonTab_C_AnimatePassLabels, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_AnimatePassLabels::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_AnimatePassLabels, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_AnimatePassLabels::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_AnimatePassLabels, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000005, "Member 'AthenaSeasonTab_C_AnimatePassLabels::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetRightPaginationVisibility
 // 0x000C (0x000C - 0x0000)
@@ -85,14 +70,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetRightPaginationVisibility) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_SetRightPaginationVisibility");
-static_assert(sizeof(AthenaSeasonTab_C_SetRightPaginationVisibility) == 0x00000C, "Wrong size on AthenaSeasonTab_C_SetRightPaginationVisibility");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, Temp_bool_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, Temp_byte_Variable) == 0x000001, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetRightPaginationVisibility, K2Node_Select_Default) == 0x000009, "Member 'AthenaSeasonTab_C_SetRightPaginationVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ClearPaginationPip
 // 0x0020 (0x0020 - 0x0000)
@@ -105,12 +82,6 @@ public:
 	class UAthenaSeasonPaginationPips_C*          K2Node_DynamicCast_AsAthena_Season_Pagination_Pips; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_ClearPaginationPip) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_ClearPaginationPip");
-static_assert(sizeof(AthenaSeasonTab_C_ClearPaginationPip) == 0x000020, "Wrong size on AthenaSeasonTab_C_ClearPaginationPip");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPaginationPip, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_ClearPaginationPip::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPaginationPip, CallFunc_Array_Get_Item) == 0x000008, "Member 'AthenaSeasonTab_C_ClearPaginationPip::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPaginationPip, K2Node_DynamicCast_AsAthena_Season_Pagination_Pips) == 0x000010, "Member 'AthenaSeasonTab_C_ClearPaginationPip::K2Node_DynamicCast_AsAthena_Season_Pagination_Pips' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPaginationPip, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaSeasonTab_C_ClearPaginationPip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetCurrentPaginationPip
 // 0x0020 (0x0020 - 0x0000)
@@ -123,12 +94,6 @@ public:
 	class UAthenaSeasonPaginationPips_C*          K2Node_DynamicCast_AsAthena_Season_Pagination_Pips; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetCurrentPaginationPip) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_SetCurrentPaginationPip");
-static_assert(sizeof(AthenaSeasonTab_C_SetCurrentPaginationPip) == 0x000020, "Wrong size on AthenaSeasonTab_C_SetCurrentPaginationPip");
-static_assert(offsetof(AthenaSeasonTab_C_SetCurrentPaginationPip, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_SetCurrentPaginationPip::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetCurrentPaginationPip, CallFunc_Array_Get_Item) == 0x000008, "Member 'AthenaSeasonTab_C_SetCurrentPaginationPip::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetCurrentPaginationPip, K2Node_DynamicCast_AsAthena_Season_Pagination_Pips) == 0x000010, "Member 'AthenaSeasonTab_C_SetCurrentPaginationPip::K2Node_DynamicCast_AsAthena_Season_Pagination_Pips' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetCurrentPaginationPip, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaSeasonTab_C_SetCurrentPaginationPip::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ClearPagePipLeft
 // 0x0028 (0x0028 - 0x0000)
@@ -143,14 +108,6 @@ public:
 	class UAthenaSeasonPaginationPips_C*          K2Node_DynamicCast_AsAthena_Season_Pagination_Pips; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_ClearPagePipLeft) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_ClearPagePipLeft");
-static_assert(sizeof(AthenaSeasonTab_C_ClearPagePipLeft) == 0x000028, "Wrong size on AthenaSeasonTab_C_ClearPagePipLeft");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, CallFunc_Add_IntInt_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, CallFunc_Greater_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, CallFunc_Array_Get_Item) == 0x000010, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, K2Node_DynamicCast_AsAthena_Season_Pagination_Pips) == 0x000018, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::K2Node_DynamicCast_AsAthena_Season_Pagination_Pips' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipLeft, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaSeasonTab_C_ClearPagePipLeft::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ClearPagePipRight
 // 0x0020 (0x0020 - 0x0000)
@@ -163,13 +120,6 @@ public:
 	class UAthenaSeasonPaginationPips_C*          K2Node_DynamicCast_AsAthena_Season_Pagination_Pips; // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_ClearPagePipRight) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_ClearPagePipRight");
-static_assert(sizeof(AthenaSeasonTab_C_ClearPagePipRight) == 0x000020, "Wrong size on AthenaSeasonTab_C_ClearPagePipRight");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipRight, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_ClearPagePipRight::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipRight, CallFunc_Subtract_IntInt_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_ClearPagePipRight::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipRight, CallFunc_Array_Get_Item) == 0x000008, "Member 'AthenaSeasonTab_C_ClearPagePipRight::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipRight, K2Node_DynamicCast_AsAthena_Season_Pagination_Pips) == 0x000010, "Member 'AthenaSeasonTab_C_ClearPagePipRight::K2Node_DynamicCast_AsAthena_Season_Pagination_Pips' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ClearPagePipRight, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'AthenaSeasonTab_C_ClearPagePipRight::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetupPaginationPips
 // 0x0030 (0x0030 - 0x0000)
@@ -185,15 +135,6 @@ public:
 	class UUserWidget*                            CallFunc_BP_CreateEntry_ReturnValue;               // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class UUserWidget*>                    CallFunc_GetAllEntries_ReturnValue;                // 0x0020(0x0010)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetupPaginationPips) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_SetupPaginationPips");
-static_assert(sizeof(AthenaSeasonTab_C_SetupPaginationPips) == 0x000030, "Wrong size on AthenaSeasonTab_C_SetupPaginationPips");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, Temp_int_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_SetupPaginationPips::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_GetChildrenCount_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_Subtract_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_BP_CreateEntry_ReturnValue) == 0x000018, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_BP_CreateEntry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupPaginationPips, CallFunc_GetAllEntries_ReturnValue) == 0x000020, "Member 'AthenaSeasonTab_C_SetupPaginationPips::CallFunc_GetAllEntries_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnUrlFailure
 // 0x0060 (0x0060 - 0x0000)
@@ -208,19 +149,9 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x002C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x004C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x003C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_2;       // 0x004C(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnUrlFailure");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure) == 0x000060, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnUrlFailure");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, URL) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::URL' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, CallFunc_GetPlayerController_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, CallFunc_LoadVideo_ReturnValue) == 0x000018, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::CallFunc_LoadVideo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000020, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, K2Node_CreateDelegate_OutputDelegate_1) == 0x00003C, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlFailure, K2Node_CreateDelegate_OutputDelegate_2) == 0x00004C, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlFailure::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnUrlSuccess
 // 0x0080 (0x0080 - 0x0000)
@@ -229,43 +160,26 @@ struct AthenaSeasonTab_C_StreamedVideoOnUrlSuccess final
 public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTimeLimitForReplayCinematic_ReturnValue; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;         // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_LoadVideo_ReturnValue;                    // 0x0044(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_45[0x3];                                       // 0x0045(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate_4;          // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_5;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0078(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnUrlSuccess");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess) == 0x000080, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnUrlSuccess");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, URL) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::URL' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, CallFunc_GetTimeLimitForReplayCinematic_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::CallFunc_GetTimeLimitForReplayCinematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate_2) == 0x000034, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, CallFunc_LoadVideo_ReturnValue) == 0x000044, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::CallFunc_LoadVideo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate_3) == 0x000048, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate_4) == 0x000058, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, K2Node_CreateDelegate_OutputDelegate_5) == 0x000068, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnUrlSuccess, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000078, "Member 'AthenaSeasonTab_C_StreamedVideoOnUrlSuccess::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnSkipBeforeVideoURLReceived
 // 0x0030 (0x0030 - 0x0000)
 struct AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived final
 {
 public:
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;         // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived) == 0x000030, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived, K2Node_CreateDelegate_OutputDelegate_2) == 0x000020, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipBeforeVideoURLReceived::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetLeftPaginationVisibility
 // 0x000C (0x000C - 0x0000)
@@ -280,14 +194,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetLeftPaginationVisibility) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_SetLeftPaginationVisibility");
-static_assert(sizeof(AthenaSeasonTab_C_SetLeftPaginationVisibility) == 0x00000C, "Wrong size on AthenaSeasonTab_C_SetLeftPaginationVisibility");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, Temp_bool_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, Temp_byte_Variable) == 0x000001, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetLeftPaginationVisibility, K2Node_Select_Default) == 0x000009, "Member 'AthenaSeasonTab_C_SetLeftPaginationVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoPlayingTimedOut
 // 0x0040 (0x0040 - 0x0000)
@@ -304,16 +210,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoPlayingTimedOut");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut) == 0x000040, "Wrong size on AthenaSeasonTab_C_StreamedVideoPlayingTimedOut");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000020, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, CallFunc_Array_Get_Item) == 0x000030, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoPlayingTimedOut, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'AthenaSeasonTab_C_StreamedVideoPlayingTimedOut::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnSkipButtonClicked
 // 0x0058 (0x0058 - 0x0000)
@@ -323,7 +219,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;            // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortPlayerController*>          CallFunc_GetLocalFortPlayerControllers_ReturnValue; // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
@@ -332,17 +228,6 @@ public:
 	class AFortPlayerController*                  CallFunc_Array_Get_Item;                           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked) == 0x000058, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000030, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, CallFunc_Array_Get_Item) == 0x000048, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'AthenaSeasonTab_C_StreamedVideoOnSkipButtonClicked::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnMediaPlayerEndReached
 // 0x0048 (0x0048 - 0x0000)
@@ -360,16 +245,6 @@ public:
 	class AFortPlayerController*                  CallFunc_Array_Get_Item;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached) == 0x000048, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000020, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, CallFunc_Array_Get_Item) == 0x000038, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaPlayerEndReached::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOpeningTimedOut
 // 0x0050 (0x0050 - 0x0000)
@@ -379,7 +254,7 @@ public:
 	int32                                         Temp_int_Array_Index_Variable;                     // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;            // 0x000C(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x001C(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_2C[0x4];                                       // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class AFortPlayerController*>          CallFunc_GetLocalFortPlayerControllers_ReturnValue; // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
@@ -388,18 +263,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_LoadVideo_ReturnValue;                    // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOpeningTimedOut");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut) == 0x000050, "Wrong size on AthenaSeasonTab_C_StreamedVideoOpeningTimedOut");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, Temp_int_Array_Index_Variable) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, K2Node_CreateDelegate_OutputDelegate) == 0x00000C, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, K2Node_CreateDelegate_OutputDelegate_1) == 0x00001C, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000030, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_Array_Get_Item) == 0x000040, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_Array_Length_ReturnValue) == 0x000048, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOpeningTimedOut, CallFunc_LoadVideo_ReturnValue) == 0x00004D, "Member 'AthenaSeasonTab_C_StreamedVideoOpeningTimedOut::CallFunc_LoadVideo_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.StreamedVideoOnMediaOpened
 // 0x0078 (0x0078 - 0x0000)
@@ -408,7 +271,7 @@ struct AthenaSeasonTab_C_StreamedVideoOnMediaOpened final
 public:
 	class FString                                 OpenedUrl;                                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetTimeLimitForReplayCinematic_ReturnValue; // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& OpenedUrl)> K2Node_CreateDelegate_OutputDelegate;            // 0x0014(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0034(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_44[0x4];                                       // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
@@ -420,20 +283,6 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0068(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_StreamedVideoOnMediaOpened");
-static_assert(sizeof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened) == 0x000078, "Wrong size on AthenaSeasonTab_C_StreamedVideoOnMediaOpened");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, OpenedUrl) == 0x000000, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::OpenedUrl' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_GetTimeLimitForReplayCinematic_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_GetTimeLimitForReplayCinematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, K2Node_CreateDelegate_OutputDelegate) == 0x000014, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, K2Node_CreateDelegate_OutputDelegate_2) == 0x000034, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_GetDuration_ReturnValue) == 0x000048, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_GetDuration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_GetTimeLimitForReplayCinematic_ReturnValue_1) == 0x000050, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_GetTimeLimitForReplayCinematic_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_GetTotalSeconds_ReturnValue) == 0x000054, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_GetTotalSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_Add_FloatFloat_ReturnValue) == 0x000058, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_FMin_ReturnValue) == 0x00005C, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000060, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_StreamedVideoOnMediaOpened, K2Node_CreateDelegate_OutputDelegate_3) == 0x000068, "Member 'AthenaSeasonTab_C_StreamedVideoOnMediaOpened::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.GetWidgetForFramingViewedItem
 // 0x0008 (0x0008 - 0x0000)
@@ -442,17 +291,14 @@ struct AthenaSeasonTab_C_GetWidgetForFramingViewedItem final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_GetWidgetForFramingViewedItem");
-static_assert(sizeof(AthenaSeasonTab_C_GetWidgetForFramingViewedItem) == 0x000008, "Wrong size on AthenaSeasonTab_C_GetWidgetForFramingViewedItem");
-static_assert(offsetof(AthenaSeasonTab_C_GetWidgetForFramingViewedItem, ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_GetWidgetForFramingViewedItem::ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.PlaySeasonCinematic
 // 0x0050 (0x0050 - 0x0000)
 struct AthenaSeasonTab_C_PlaySeasonCinematic final
 {
 public:
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;         // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_UseElectraForReplayCinematic_ReturnValue; // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -461,15 +307,6 @@ public:
 	class UActivatableMovieWidget_C*              CallFunc_Create_ReturnValue;                       // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LoadVideo_ReturnValue;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_PlaySeasonCinematic) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_PlaySeasonCinematic");
-static_assert(sizeof(AthenaSeasonTab_C_PlaySeasonCinematic) == 0x000050, "Wrong size on AthenaSeasonTab_C_PlaySeasonCinematic");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, CallFunc_GetPlayerController_ReturnValue) == 0x000020, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, CallFunc_UseElectraForReplayCinematic_ReturnValue) == 0x000028, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::CallFunc_UseElectraForReplayCinematic_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, K2Node_CreateDelegate_OutputDelegate_2) == 0x00002C, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, CallFunc_Create_ReturnValue) == 0x000040, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_PlaySeasonCinematic, CallFunc_LoadVideo_ReturnValue) == 0x000048, "Member 'AthenaSeasonTab_C_PlaySeasonCinematic::CallFunc_LoadVideo_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ReplayCinematic
 // 0x0001 (0x0001 - 0x0000)
@@ -478,9 +315,6 @@ struct AthenaSeasonTab_C_Handle_ReplayCinematic final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_Handle_ReplayCinematic) == 0x000001, "Wrong alignment on AthenaSeasonTab_C_Handle_ReplayCinematic");
-static_assert(sizeof(AthenaSeasonTab_C_Handle_ReplayCinematic) == 0x000001, "Wrong size on AthenaSeasonTab_C_Handle_ReplayCinematic");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ReplayCinematic, PassThrough) == 0x000000, "Member 'AthenaSeasonTab_C_Handle_ReplayCinematic::PassThrough' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdateLevelPageWidgetSwitcherTranslation
 // 0x0014 (0x0014 - 0x0000)
@@ -493,12 +327,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x000C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation");
-static_assert(sizeof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation) == 0x000014, "Wrong size on AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation, CallFunc_FClamp_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation, CallFunc_MakeVector2D_ReturnValue) == 0x00000C, "Member 'AthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnUpdateInputType
 // 0x0003 (0x0003 - 0x0000)
@@ -509,11 +337,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_OnUpdateInputType) == 0x000001, "Wrong alignment on AthenaSeasonTab_C_OnUpdateInputType");
-static_assert(sizeof(AthenaSeasonTab_C_OnUpdateInputType) == 0x000003, "Wrong size on AthenaSeasonTab_C_OnUpdateInputType");
-static_assert(offsetof(AthenaSeasonTab_C_OnUpdateInputType, NewInputType) == 0x000000, "Member 'AthenaSeasonTab_C_OnUpdateInputType::NewInputType' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OnUpdateInputType, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000001, "Member 'AthenaSeasonTab_C_OnUpdateInputType::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OnUpdateInputType, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'AthenaSeasonTab_C_OnUpdateInputType::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OpenPurchaseScreen
 // 0x0058 (0x0058 - 0x0000)
@@ -533,19 +356,6 @@ public:
 	int32                                         CallFunc_GetCurrentSeasonNumber_ReturnValue;       // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_OpenPurchaseScreen) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_OpenPurchaseScreen");
-static_assert(sizeof(AthenaSeasonTab_C_OpenPurchaseScreen) == 0x000058, "Wrong size on AthenaSeasonTab_C_OpenPurchaseScreen");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000000, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetContext_ReturnValue_1) == 0x000010, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetContext_ReturnValue_2) == 0x000018, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetCurrentSeasonDefinition_ReturnValue) == 0x000020, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetCurrentSeasonDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetOwningPlayer_ReturnValue) == 0x000028, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_Create_ReturnValue) == 0x000030, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, K2Node_MakeArray_Array) == 0x000038, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetContext_ReturnValue_3) == 0x000048, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_GetCurrentSeasonNumber_ReturnValue) == 0x000050, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_GetCurrentSeasonNumber_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OpenPurchaseScreen, CallFunc_Greater_IntInt_ReturnValue) == 0x000054, "Member 'AthenaSeasonTab_C_OpenPurchaseScreen::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ShowAbout
 // 0x0050 (0x0050 - 0x0000)
@@ -562,16 +372,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue_1;            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaSeasonAboutWidget_C*             CallFunc_Create_ReturnValue_1;                     // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_Handle_ShowAbout) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_Handle_ShowAbout");
-static_assert(sizeof(AthenaSeasonTab_C_Handle_ShowAbout) == 0x000050, "Wrong size on AthenaSeasonTab_C_Handle_ShowAbout");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, PassThrough) == 0x000000, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::PassThrough' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, Temp_text_Variable) == 0x000020, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_Create_ReturnValue) == 0x000038, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000040, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Handle_ShowAbout, CallFunc_Create_ReturnValue_1) == 0x000048, "Member 'AthenaSeasonTab_C_Handle_ShowAbout::CallFunc_Create_ReturnValue_1' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdatePageCount
 // 0x0050 (0x0050 - 0x0000)
@@ -592,18 +392,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x004D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_UpdatePageCount) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_UpdatePageCount");
-static_assert(sizeof(AthenaSeasonTab_C_UpdatePageCount) == 0x000050, "Wrong size on AthenaSeasonTab_C_UpdatePageCount");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, ActiveIndex) == 0x000000, "Member 'AthenaSeasonTab_C_UpdatePageCount::ActiveIndex' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_GetNumWidgets_ReturnValue) == 0x000028, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_GetNumWidgets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000030, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Subtract_IntInt_ReturnValue) == 0x000048, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x00004C, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdatePageCount, CallFunc_Not_PreBool_ReturnValue_1) == 0x00004D, "Member 'AthenaSeasonTab_C_UpdatePageCount::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdateSeasonPurchaseState
 // 0x0160 (0x0160 - 0x0000)
@@ -637,28 +425,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0140(0x0018)()
 	bool                                          CallFunc_OwnsSeasonPass_ReturnValue;               // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_UpdateSeasonPurchaseState) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_UpdateSeasonPurchaseState");
-static_assert(sizeof(AthenaSeasonTab_C_UpdateSeasonPurchaseState) == 0x000160, "Wrong size on AthenaSeasonTab_C_UpdateSeasonPurchaseState");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, bAlreadyOwnsPass) == 0x000000, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::bAlreadyOwnsPass' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, K2Node_MakeStruct_FortToastDisplayInfo) == 0x000008, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::K2Node_MakeStruct_FortToastDisplayInfo' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_CanClaimBattlePassDiscountToken_ReturnValue) == 0x000068, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_CanClaimBattlePassDiscountToken_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_HasUnclaimedBattlePassDiscountToken_ReturnValue) == 0x000069, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_HasUnclaimedBattlePassDiscountToken_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetSeasonPassLevelForPurchase_ReturnValue) == 0x00006C, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetSeasonPassLevelForPurchase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetLevelInfo_ReturnValue) == 0x000070, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetLevelInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_IsValid_ReturnValue) == 0x000078, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_Not_PreBool_ReturnValue) == 0x000079, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetFormattedPurchaseBattlePassDescriptionText_ReturnValue) == 0x000080, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetFormattedPurchaseBattlePassDescriptionText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetFormattedPurchaseTierDescriptionText_ReturnValue) == 0x000098, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetFormattedPurchaseTierDescriptionText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_PurchaseAvailible_ReturnValue) == 0x0000B0, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_PurchaseAvailible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetSeasonEndDate_ReturnValue) == 0x0000B8, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetSeasonEndDate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_BooleanAND_ReturnValue) == 0x0000C0, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetContext_ReturnValue) == 0x0000C8, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_GetCurrentSeasonNumber_ReturnValue) == 0x0000D0, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_GetCurrentSeasonNumber_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_Conv_IntToText_ReturnValue) == 0x0000D8, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, K2Node_MakeStruct_FormatArgumentData) == 0x0000F0, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, K2Node_MakeArray_Array) == 0x000130, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_Format_ReturnValue) == 0x000140, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateSeasonPurchaseState, CallFunc_OwnsSeasonPass_ReturnValue) == 0x000158, "Member 'AthenaSeasonTab_C_UpdateSeasonPurchaseState::CallFunc_OwnsSeasonPass_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetupViewedItemData
 // 0x0050 (0x0050 - 0x0000)
@@ -681,19 +447,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_SetupViewedItemData) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_SetupViewedItemData");
-static_assert(sizeof(AthenaSeasonTab_C_SetupViewedItemData) == 0x000050, "Wrong size on AthenaSeasonTab_C_SetupViewedItemData");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, Item) == 0x000000, "Member 'AthenaSeasonTab_C_SetupViewedItemData::Item' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_GetNumInStack_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_MakeItemQuantityPair_ReturnValue) == 0x000018, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_MakeItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_IsValid_ReturnValue) == 0x00002C, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_SetItemQuantityPairToRepresent_ReturnValue) == 0x00002D, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_SetItemQuantityPairToRepresent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_HasValidItemDefinition_HasValidDescription) == 0x00002E, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_HasValidItemDefinition_HasValidDescription' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_GetEndTime_ReturnValue) == 0x000030, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_PlayAnimation_ReturnValue) == 0x000038, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000040, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SetupViewedItemData, CallFunc_PlayAnimation_ReturnValue_1) == 0x000048, "Member 'AthenaSeasonTab_C_SetupViewedItemData::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SelectPageByLevel
 // 0x0030 (0x0030 - 0x0000)
@@ -714,18 +467,6 @@ public:
 	uint8                                         Pad_2A[0x2];                                       // 0x002A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_SelectPageByLevel) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_SelectPageByLevel");
-static_assert(sizeof(AthenaSeasonTab_C_SelectPageByLevel) == 0x000030, "Wrong size on AthenaSeasonTab_C_SelectPageByLevel");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, TargetLevel) == 0x000000, "Member 'AthenaSeasonTab_C_SelectPageByLevel::TargetLevel' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, Temp_int_Variable) == 0x000004, "Member 'AthenaSeasonTab_C_SelectPageByLevel::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_GetChildAt_ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_GetChildrenCount_ReturnValue) == 0x000010, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, K2Node_DynamicCast_AsSeason_Pass_Page_Widget) == 0x000018, "Member 'AthenaSeasonTab_C_SelectPageByLevel::K2Node_DynamicCast_AsSeason_Pass_Page_Widget' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaSeasonTab_C_SelectPageByLevel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_Subtract_IntInt_ReturnValue) == 0x000024, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_ContainsLevel_ReturnValue) == 0x000028, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_ContainsLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000029, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_SelectPageByLevel, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'AthenaSeasonTab_C_SelectPageByLevel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.GenerateLevelWidgets
 // 0x0068 (0x0068 - 0x0000)
@@ -744,18 +485,6 @@ public:
 	uint8                                         Pad_5A[0x6];                                       // 0x005A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0060(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_GenerateLevelWidgets) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_GenerateLevelWidgets");
-static_assert(sizeof(AthenaSeasonTab_C_GenerateLevelWidgets) == 0x000068, "Wrong size on AthenaSeasonTab_C_GenerateLevelWidgets");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, LevelInfo) == 0x000000, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::LevelInfo' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, ReturnValue) == 0x000008, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_AddLevelWidgets_LevelWidgets) == 0x000028, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_AddLevelWidgets_LevelWidgets' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_GetOwningPlayer_ReturnValue) == 0x000048, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_Create_ReturnValue) == 0x000050, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_IsFull_Full) == 0x000058, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_IsFull_Full' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_IsValid_ReturnValue) == 0x000059, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_GenerateLevelWidgets, CallFunc_AddChild_ReturnValue) == 0x000060, "Member 'AthenaSeasonTab_C_GenerateLevelWidgets::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnNavigateToLevel
 // 0x0004 (0x0004 - 0x0000)
@@ -764,9 +493,6 @@ struct AthenaSeasonTab_C_OnNavigateToLevel final
 public:
 	int32                                         Level;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_OnNavigateToLevel) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_OnNavigateToLevel");
-static_assert(sizeof(AthenaSeasonTab_C_OnNavigateToLevel) == 0x000004, "Wrong size on AthenaSeasonTab_C_OnNavigateToLevel");
-static_assert(offsetof(AthenaSeasonTab_C_OnNavigateToLevel, Level) == 0x000000, "Member 'AthenaSeasonTab_C_OnNavigateToLevel::Level' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -775,9 +501,6 @@ struct AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__PurchaseSeasonBtn_K2Node_ComponentBoundEvent_61_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -787,10 +510,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'AthenaSeasonTab_C_BndEvt__LevelPageWidgetSwitcher_K2Node_ComponentBoundEvent_1_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -799,9 +518,6 @@ struct AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__PurchaseLevelBtn_K2Node_ComponentBoundEvent_40_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdateStoreHasStarsNotification
 // 0x0001 (0x0001 - 0x0000)
@@ -810,9 +526,6 @@ struct AthenaSeasonTab_C_UpdateStoreHasStarsNotification final
 public:
 	bool                                          bShowNotification;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonTab_C_UpdateStoreHasStarsNotification) == 0x000001, "Wrong alignment on AthenaSeasonTab_C_UpdateStoreHasStarsNotification");
-static_assert(sizeof(AthenaSeasonTab_C_UpdateStoreHasStarsNotification) == 0x000001, "Wrong size on AthenaSeasonTab_C_UpdateStoreHasStarsNotification");
-static_assert(offsetof(AthenaSeasonTab_C_UpdateStoreHasStarsNotification, bShowNotification) == 0x000000, "Member 'AthenaSeasonTab_C_UpdateStoreHasStarsNotification::bShowNotification' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnFAQStateChanged
 // 0x0003 (0x0003 - 0x0000)
@@ -823,11 +536,6 @@ public:
 	EFortUIFeatureState                           NewState;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortUIFeatureStateReason                     StateReason;                                       // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_OnFAQStateChanged) == 0x000001, "Wrong alignment on AthenaSeasonTab_C_OnFAQStateChanged");
-static_assert(sizeof(AthenaSeasonTab_C_OnFAQStateChanged) == 0x000003, "Wrong size on AthenaSeasonTab_C_OnFAQStateChanged");
-static_assert(offsetof(AthenaSeasonTab_C_OnFAQStateChanged, ChangedFeature) == 0x000000, "Member 'AthenaSeasonTab_C_OnFAQStateChanged::ChangedFeature' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OnFAQStateChanged, NewState) == 0x000001, "Member 'AthenaSeasonTab_C_OnFAQStateChanged::NewState' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OnFAQStateChanged, StateReason) == 0x000002, "Member 'AthenaSeasonTab_C_OnFAQStateChanged::StateReason' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -837,10 +545,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_Tick) == 0x000004, "Wrong alignment on AthenaSeasonTab_C_Tick");
-static_assert(sizeof(AthenaSeasonTab_C_Tick) == 0x00003C, "Wrong size on AthenaSeasonTab_C_Tick");
-static_assert(offsetof(AthenaSeasonTab_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaSeasonTab_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_Tick, InDeltaTime) == 0x000038, "Member 'AthenaSeasonTab_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OnSetGiftability
 // 0x0020 (0x0020 - 0x0000)
@@ -851,10 +555,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   FinalPriceText;                                    // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaSeasonTab_C_OnSetGiftability) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_OnSetGiftability");
-static_assert(sizeof(AthenaSeasonTab_C_OnSetGiftability) == 0x000020, "Wrong size on AthenaSeasonTab_C_OnSetGiftability");
-static_assert(offsetof(AthenaSeasonTab_C_OnSetGiftability, bIsGiftable) == 0x000000, "Member 'AthenaSeasonTab_C_OnSetGiftability::bIsGiftable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_OnSetGiftability, FinalPriceText) == 0x000008, "Member 'AthenaSeasonTab_C_OnSetGiftability::FinalPriceText' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -863,9 +563,6 @@ struct AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__ClaimFreeSeasonBtn_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -874,9 +571,6 @@ struct AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_Common
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__PageLeftBtn_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -885,9 +579,6 @@ struct AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__PageRightBtn_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -896,9 +587,6 @@ struct AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__ViewAllRewards_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -907,9 +595,6 @@ struct AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSeasonTab_C_BndEvt__GiftSeasonPass_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ExecuteUbergraph_AthenaSeasonTab
 // 0x0578 (0x0578 - 0x0000)
@@ -988,8 +673,8 @@ public:
 	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData_3;            // 0x0300(0x0040)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_2;                          // 0x0340(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0350(0x0018)()
-	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason StateReason)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0368(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0378(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortUIFeature ChangedFeature, EFortUIFeatureState NewState, EFortUIFeatureStateReason StateReason)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0368(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate_3;          // 0x0378(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0388(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_GetSwipeInfo_OutIndex;                    // 0x038C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              CallFunc_GetSwipeInfo_OutSwipePercentage;          // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1065,129 +750,6 @@ public:
 	uint8                                         Pad_56B[0x5];                                      // 0x056B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0570(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab) == 0x000008, "Wrong alignment on AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab");
-static_assert(sizeof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab) == 0x000578, "Wrong size on AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, EntryPoint) == 0x000000, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_Level) == 0x000004, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_Level' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_6) == 0x000018, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_6' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_bool_Variable) == 0x000020, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_IsValid_ReturnValue) == 0x000021, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000028, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000030, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonPassLevel_ReturnValue) == 0x000034, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonPassLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_DynamicCast_AsAthena_Season_Page_Widget) == 0x000038, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_DynamicCast_AsAthena_Season_Page_Widget' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable) == 0x000041, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetLastLevel_LastLevel) == 0x000044, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetLastLevel_LastLevel' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetFirstLevel_FirstLevel) == 0x000048, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetFirstLevel_FirstLevel' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Conv_IntToString_ReturnValue) == 0x000050, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_5) == 0x000060, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_5' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetOwningPlayer_ReturnValue) == 0x000078, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Create_ReturnValue) == 0x000080, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable_1) == 0x000088, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_bool_Variable_1) == 0x000089, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonPassLevel_ReturnValue_1) == 0x00008C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonPassLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue) == 0x000090, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Conv_IntToText_ReturnValue) == 0x000098, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeStruct_FormatArgumentData) == 0x0000B0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeArray_Array) == 0x0000F0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Format_ReturnValue) == 0x000100, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetAllLevelInfos_ReturnValue) == 0x000118, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetAllLevelInfos_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonPassLevelMax_ReturnValue) == 0x000168, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonPassLevelMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_bShowNotification) == 0x00016C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_bShowNotification' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable_2) == 0x00016D, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CustomEvent_ChangedFeature) == 0x00016E, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CustomEvent_ChangedFeature' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CustomEvent_NewState) == 0x00016F, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CustomEvent_NewState' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CustomEvent_StateReason) == 0x000170, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CustomEvent_StateReason' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_SwitchEnum_CmpSuccess) == 0x000171, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate_1) == 0x000174, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable_3) == 0x000184, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_IsActivated_ReturnValue) == 0x000185, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_bool_Variable_2) == 0x000186, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_MyGeometry) == 0x000188, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_InDeltaTime) == 0x0001C0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetActiveWidget_ReturnValue) == 0x0001C8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_1) == 0x0001D0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_DynamicCast_AsAthena_Season_Page_Widget_1) == 0x0001D8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_DynamicCast_AsAthena_Season_Page_Widget_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_DynamicCast_bSuccess_1) == 0x0001E0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue) == 0x0001E8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeStruct_FormatArgumentData_1) == 0x000210, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Abs_ReturnValue) == 0x000250, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeStruct_FormatArgumentData_2) == 0x000258, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000298, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeArray_Array_1) == 0x0002A0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Format_ReturnValue_1) == 0x0002B0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Select_Default) == 0x0002C8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_2) == 0x0002D0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_3) == 0x0002D8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetCurrentChapterAndSeasonText_ReturnValue) == 0x0002E0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetCurrentChapterAndSeasonText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetCurrentInputType_ReturnValue) == 0x0002F8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetCurrentInputType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeStruct_FormatArgumentData_3) == 0x000300, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_MakeArray_Array_2) == 0x000340, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Format_ReturnValue_2) == 0x000350, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate_2) == 0x000368, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate_3) == 0x000378, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000388, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSwipeInfo_OutIndex) == 0x00038C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSwipeInfo_OutIndex' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSwipeInfo_OutSwipePercentage) == 0x000390, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSwipeInfo_OutSwipePercentage' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000398, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_X) == 0x00039C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_Y) == 0x0003A0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0003A4, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x0003A5, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetNumWidgets_ReturnValue) == 0x0003A8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetNumWidgets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetActiveWidgetIndex_ReturnValue_1) == 0x0003AC, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetActiveWidgetIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Subtract_IntInt_ReturnValue) == 0x0003B0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Less_IntInt_ReturnValue) == 0x0003B4, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate_4) == 0x0003B8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetRuntimeOptions_ReturnValue) == 0x0003C8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetShowReplayTrailerButton_Athena_ReturnValue) == 0x0003D0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetShowReplayTrailerButton_Athena_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_4) == 0x0003D8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetCachedGeometry_ReturnValue) == 0x0003E0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetCachedGeometry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetLocalSize_ReturnValue) == 0x000418, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetLocalSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_X_1) == 0x000420, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_X_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_Y_1) == 0x000424, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_Y_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_bIsGiftable) == 0x000428, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_bIsGiftable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Event_FinalPriceText) == 0x000430, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Event_FinalPriceText' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Select_Default_1) == 0x000448, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_CreateDelegate_OutputDelegate_5) == 0x00044C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_5) == 0x000460, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetCurrentSeasonDefinition_ReturnValue) == 0x000468, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetCurrentSeasonDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable_4) == 0x000470, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_byte_Variable_5) == 0x000471, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_4) == 0x000478, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, Temp_bool_Variable_3) == 0x000480, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonPassLevelForPurchase_ReturnValue) == 0x000484, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonPassLevelForPurchase_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetSeasonPassLevel_ReturnValue_2) == 0x000488, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetSeasonPassLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Select_Default_2) == 0x00048C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Add_IntInt_ReturnValue) == 0x000490, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetLevelInfo_ReturnValue) == 0x000498, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetLevelInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetCachedGeometry_ReturnValue_1) == 0x0004A0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetCachedGeometry_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_IsValid_ReturnValue_1) == 0x0004D8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetLocalSize_ReturnValue_1) == 0x0004DC, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetLocalSize_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_LocalToAbsolute_ReturnValue) == 0x0004E4, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_LocalToAbsolute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_3) == 0x0004F0, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_AbsoluteToLocal_ReturnValue) == 0x0004F8, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_AbsoluteToLocal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_2) == 0x000500, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_X_2) == 0x000508, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_X_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BreakVector2D_Y_2) == 0x00050C, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BreakVector2D_Y_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000510, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button_1) == 0x000518, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_6) == 0x000520, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetOwningPlayer_ReturnValue_1) == 0x000528, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetOwningPlayer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Create_ReturnValue_1) == 0x000530, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Create_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetRuntimeOptions_ReturnValue_1) == 0x000538, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetRuntimeOptions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetContext_ReturnValue_7) == 0x000540, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetContext_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_Select_Default_3) == 0x000548, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_ShouldDisplayUpsell_ReturnValue) == 0x000558, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_ShouldDisplayUpsell_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Not_PreBool_ReturnValue) == 0x000559, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_GetRuntimeOptions_ReturnValue_2) == 0x000560, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_GetRuntimeOptions_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BooleanAND_ReturnValue) == 0x000568, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_Handle_ShowAbout_Passthrough) == 0x000569, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_Handle_ShowAbout_Passthrough' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, CallFunc_BooleanAND_ReturnValue_1) == 0x00056A, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab, K2Node_ComponentBoundEvent_Button) == 0x000570, "Member 'AthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 }
 

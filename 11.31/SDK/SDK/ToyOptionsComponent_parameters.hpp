@@ -25,7 +25,7 @@ public:
 	class APlayerController*                      K2Node_CustomEvent_InteractingPlayer;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   K2Node_CustomEvent_WidgetClass;                    // 0x0018(0x0028)(HasGetValueTypeHash)
 	class UClass*                                 CallFunc_Conv_SoftClassReferenceToClass_ReturnValue; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate;              // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate;         // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValidClass_ReturnValue;                 // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_59[0x7];                                       // 0x0059(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 K2Node_ClassDynamicCast_AsUser_Widget;             // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -38,22 +38,6 @@ public:
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetOwner_ReturnValue;                     // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent) == 0x000008, "Wrong alignment on ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent");
-static_assert(sizeof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent) == 0x0000A0, "Wrong size on ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, EntryPoint) == 0x000000, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_CustomEvent_Loaded) == 0x000008, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_CustomEvent_InteractingPlayer) == 0x000010, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_CustomEvent_InteractingPlayer' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_CustomEvent_WidgetClass) == 0x000018, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_CustomEvent_WidgetClass' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, CallFunc_Conv_SoftClassReferenceToClass_ReturnValue) == 0x000040, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::CallFunc_Conv_SoftClassReferenceToClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_CreateDelegate_OutputDelegate) == 0x000048, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, CallFunc_IsValidClass_ReturnValue) == 0x000058, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_ClassDynamicCast_AsUser_Widget) == 0x000060, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_ClassDynamicCast_AsUser_Widget' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_ClassDynamicCast_bSuccess) == 0x000068, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, Temp_class_Variable) == 0x000070, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, CallFunc_Create_ReturnValue) == 0x000078, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface) == 0x000080, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_DynamicCast_AsFort_Initialize_from_Object_Interface' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent, CallFunc_GetOwner_ReturnValue) == 0x000098, "Member 'ToyOptionsComponent_C_ExecuteUbergraph_ToyOptionsComponent::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
 
 // Function ToyOptionsComponent.ToyOptionsComponent_C.DisplayOptions
 // 0x0030 (0x0030 - 0x0000)
@@ -63,10 +47,6 @@ public:
 	class APlayerController*                      InteractingPlayer_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   WidgetClass;                                       // 0x0008(0x0028)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
-static_assert(alignof(ToyOptionsComponent_C_DisplayOptions) == 0x000008, "Wrong alignment on ToyOptionsComponent_C_DisplayOptions");
-static_assert(sizeof(ToyOptionsComponent_C_DisplayOptions) == 0x000030, "Wrong size on ToyOptionsComponent_C_DisplayOptions");
-static_assert(offsetof(ToyOptionsComponent_C_DisplayOptions, InteractingPlayer_0) == 0x000000, "Member 'ToyOptionsComponent_C_DisplayOptions::InteractingPlayer_0' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_DisplayOptions, WidgetClass) == 0x000008, "Member 'ToyOptionsComponent_C_DisplayOptions::WidgetClass' has a wrong offset!");
 
 // Function ToyOptionsComponent.ToyOptionsComponent_C.OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27
 // 0x0008 (0x0008 - 0x0000)
@@ -75,9 +55,6 @@ struct ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27 final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27) == 0x000008, "Wrong alignment on ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27");
-static_assert(sizeof(ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27) == 0x000008, "Wrong size on ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27");
-static_assert(offsetof(ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27, Loaded) == 0x000000, "Member 'ToyOptionsComponent_C_OnLoaded_E8F4D2FB4AB5542DE83E50B51A402D27::Loaded' has a wrong offset!");
 
 // Function ToyOptionsComponent.ToyOptionsComponent_C.BlueprintOnLocalInteract
 // 0x00A8 (0x00A8 - 0x0000)
@@ -105,23 +82,6 @@ public:
 	TSoftObjectPtr<class UFortTrapItemDefinition> CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue; // 0x0078(0x0028)(HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToyOptionsComponent_C_BlueprintOnLocalInteract) == 0x000008, "Wrong alignment on ToyOptionsComponent_C_BlueprintOnLocalInteract");
-static_assert(sizeof(ToyOptionsComponent_C_BlueprintOnLocalInteract) == 0x0000A8, "Wrong size on ToyOptionsComponent_C_BlueprintOnLocalInteract");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, InteractingPawn) == 0x000000, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, ReturnValue) == 0x000008, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_GetPropertyEditorV2Enabled_ReturnValue) == 0x000009, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_GetPropertyEditorV2Enabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000010, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, Temp_bool_Variable) == 0x000019, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, K2Node_Select_Default) == 0x000020, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_GetOwner_ReturnValue) == 0x000050, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, K2Node_DynamicCast_AsFort_Minigame_Settings_Building) == 0x000058, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::K2Node_DynamicCast_AsFort_Minigame_Settings_Building' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, K2Node_DynamicCast_AsBuilding_Trap) == 0x000068, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::K2Node_DynamicCast_AsBuilding_Trap' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, K2Node_DynamicCast_bSuccess_1) == 0x000070, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue) == 0x000078, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_Conv_ObjectToSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToyOptionsComponent_C_BlueprintOnLocalInteract, CallFunc_IsValid_ReturnValue_1) == 0x0000A0, "Member 'ToyOptionsComponent_C_BlueprintOnLocalInteract::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 }
 

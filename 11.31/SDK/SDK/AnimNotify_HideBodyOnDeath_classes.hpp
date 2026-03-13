@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_HideBodyOnDeath_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_HideBodyOnDeath_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_HideBodyOnDeath_C")
 	}
 	static class UAnimNotify_HideBodyOnDeath_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_HideBodyOnDeath_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_HideBodyOnDeath_C) == 0x000008, "Wrong alignment on UAnimNotify_HideBodyOnDeath_C");
-static_assert(sizeof(UAnimNotify_HideBodyOnDeath_C) == 0x000038, "Wrong size on UAnimNotify_HideBodyOnDeath_C");
 
 }
 

@@ -62,34 +62,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ErrorWindow_C">();
+		BP_STATIC_CLASS_IMPL("ErrorWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ErrorWindow_C")
 	}
 	static class UErrorWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UErrorWindow_C>();
 	}
 };
-static_assert(alignof(UErrorWindow_C) == 0x000008, "Wrong alignment on UErrorWindow_C");
-static_assert(sizeof(UErrorWindow_C) == 0x000570, "Wrong size on UErrorWindow_C");
-static_assert(offsetof(UErrorWindow_C, UberGraphFrame) == 0x0004D0, "Member 'UErrorWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Intro_New_0) == 0x0004D8, "Member 'UErrorWindow_C::Intro_New_0' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Intro_New) == 0x0004E0, "Member 'UErrorWindow_C::Intro_New' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Llama_3) == 0x0004E8, "Member 'UErrorWindow_C::Llama_3' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Llama_2) == 0x0004F0, "Member 'UErrorWindow_C::Llama_2' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Intro_1) == 0x0004F8, "Member 'UErrorWindow_C::Intro_1' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Intro) == 0x000500, "Member 'UErrorWindow_C::Intro' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Llama_1) == 0x000508, "Member 'UErrorWindow_C::Llama_1' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, ErrorLlama_0) == 0x000510, "Member 'UErrorWindow_C::ErrorLlama_0' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, ErrorLlama_C_0) == 0x000518, "Member 'UErrorWindow_C::ErrorLlama_C_0' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, ErrorLlama_C_1) == 0x000520, "Member 'UErrorWindow_C::ErrorLlama_C_1' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Lightbox) == 0x000528, "Member 'UErrorWindow_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Triangles_1) == 0x000530, "Member 'UErrorWindow_C::Triangles_1' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Triangles_2) == 0x000538, "Member 'UErrorWindow_C::Triangles_2' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, Triangles_3) == 0x000540, "Member 'UErrorWindow_C::Triangles_3' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, CurLlamaAnim) == 0x000548, "Member 'UErrorWindow_C::CurLlamaAnim' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, LlamaArray) == 0x000550, "Member 'UErrorWindow_C::LlamaArray' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, LlamaReverseTimer) == 0x000560, "Member 'UErrorWindow_C::LlamaReverseTimer' has a wrong offset!");
-static_assert(offsetof(UErrorWindow_C, AmbientLlamaPlayTimer) == 0x000568, "Member 'UErrorWindow_C::AmbientLlamaPlayTimer' has a wrong offset!");
 
 }
 

@@ -38,18 +38,6 @@ public:
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x00D8(0x0018)()
 };
-static_assert(alignof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base) == 0x000008, "Wrong alignment on FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base");
-static_assert(sizeof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base) == 0x0000F0, "Wrong size on FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, EntryPoint) == 0x000000, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_Damage) == 0x000008, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_DamageTags) == 0x000010, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_Momentum) == 0x000030, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_HitInfo) == 0x00003C, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_InstigatedBy) == 0x0000C8, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_DamageCauser) == 0x0000D0, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base, K2Node_Event_EffectContext) == 0x0000D8, "Member 'FortVolumeActor_Base_C_ExecuteUbergraph_FortVolumeActor_Base::K2Node_Event_EffectContext' has a wrong offset!");
 
 // Function FortVolumeActor_Base.FortVolumeActor_Base_C.OnDeathPlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -66,15 +54,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(FortVolumeActor_Base_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on FortVolumeActor_Base_C_OnDeathPlayEffects");
-static_assert(sizeof(FortVolumeActor_Base_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on FortVolumeActor_Base_C_OnDeathPlayEffects");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, HitInfo) == 0x000034, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'FortVolumeActor_Base_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 // Function FortVolumeActor_Base.FortVolumeActor_Base_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
@@ -86,11 +65,6 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortVolumeActor_Base_C_UserConstructionScript) == 0x000008, "Wrong alignment on FortVolumeActor_Base_C_UserConstructionScript");
-static_assert(sizeof(FortVolumeActor_Base_C_UserConstructionScript) == 0x000010, "Wrong size on FortVolumeActor_Base_C_UserConstructionScript");
-static_assert(offsetof(FortVolumeActor_Base_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'FortVolumeActor_Base_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'FortVolumeActor_Base_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_Base_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'FortVolumeActor_Base_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 }
 

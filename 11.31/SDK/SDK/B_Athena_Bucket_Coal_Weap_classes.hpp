@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_Bucket_Coal_Weap_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_Bucket_Coal_Weap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_Bucket_Coal_Weap_C")
 	}
 	static class AB_Athena_Bucket_Coal_Weap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_Bucket_Coal_Weap_C>();
 	}
 };
-static_assert(alignof(AB_Athena_Bucket_Coal_Weap_C) == 0x000008, "Wrong alignment on AB_Athena_Bucket_Coal_Weap_C");
-static_assert(sizeof(AB_Athena_Bucket_Coal_Weap_C) == 0x000A40, "Wrong size on AB_Athena_Bucket_Coal_Weap_C");
-static_assert(offsetof(AB_Athena_Bucket_Coal_Weap_C, StaticMesh) == 0x000A38, "Member 'AB_Athena_Bucket_Coal_Weap_C::StaticMesh' has a wrong offset!");
 
 }
 

@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_FrenchYedoc_JWFriendly_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_FrenchYedoc_JWFriendly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_FrenchYedoc_JWFriendly_C")
 	}
 	static class AB_Athena_FrenchYedoc_JWFriendly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_FrenchYedoc_JWFriendly_C>();
 	}
 };
-static_assert(alignof(AB_Athena_FrenchYedoc_JWFriendly_C) == 0x000008, "Wrong alignment on AB_Athena_FrenchYedoc_JWFriendly_C");
-static_assert(sizeof(AB_Athena_FrenchYedoc_JWFriendly_C) == 0x0007D8, "Wrong size on AB_Athena_FrenchYedoc_JWFriendly_C");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, UberGraphFrame) == 0x000788, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, DefaultSceneRoot) == 0x000790, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, BotData) == 0x000798, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::BotData' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, DecoyLifetimeRow) == 0x0007A0, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::DecoyLifetimeRow' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, BotPawn) == 0x0007B0, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::BotPawn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, DelayBeforeSpawningStartingSpawninFX) == 0x0007B8, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::DelayBeforeSpawningStartingSpawninFX' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, VictoryDroneLifespan) == 0x0007BC, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::VictoryDroneLifespan' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, GC_Spawn) == 0x0007C0, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::GC_Spawn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, DelayBeforeCue) == 0x0007C8, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::DelayBeforeCue' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, IsFriendly) == 0x0007CC, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::IsFriendly' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FrenchYedoc_JWFriendly_C, TimeBeforeRevealingWeapon) == 0x0007D0, "Member 'AB_Athena_FrenchYedoc_JWFriendly_C::TimeBeforeRevealingWeapon' has a wrong offset!");
 
 }
 

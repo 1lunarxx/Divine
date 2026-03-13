@@ -23,9 +23,6 @@ struct LiveStreamMenuButtonToggle_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LiveStreamMenuButtonToggle_C_OnMouseLeave) == 0x000008, "Wrong alignment on LiveStreamMenuButtonToggle_C_OnMouseLeave");
-static_assert(sizeof(LiveStreamMenuButtonToggle_C_OnMouseLeave) == 0x000070, "Wrong size on LiveStreamMenuButtonToggle_C_OnMouseLeave");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'LiveStreamMenuButtonToggle_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function LiveStreamMenuButtonToggle.LiveStreamMenuButtonToggle_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -35,10 +32,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LiveStreamMenuButtonToggle_C_OnMouseEnter) == 0x000008, "Wrong alignment on LiveStreamMenuButtonToggle_C_OnMouseEnter");
-static_assert(sizeof(LiveStreamMenuButtonToggle_C_OnMouseEnter) == 0x0000A8, "Wrong size on LiveStreamMenuButtonToggle_C_OnMouseEnter");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LiveStreamMenuButtonToggle_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LiveStreamMenuButtonToggle_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function LiveStreamMenuButtonToggle.LiveStreamMenuButtonToggle_C.RefreshButton
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +40,6 @@ struct LiveStreamMenuButtonToggle_C_RefreshButton final
 public:
 	bool                                          IsLiveStreamEnabled;                               // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LiveStreamMenuButtonToggle_C_RefreshButton) == 0x000001, "Wrong alignment on LiveStreamMenuButtonToggle_C_RefreshButton");
-static_assert(sizeof(LiveStreamMenuButtonToggle_C_RefreshButton) == 0x000001, "Wrong size on LiveStreamMenuButtonToggle_C_RefreshButton");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_RefreshButton, IsLiveStreamEnabled) == 0x000000, "Member 'LiveStreamMenuButtonToggle_C_RefreshButton::IsLiveStreamEnabled' has a wrong offset!");
 
 // Function LiveStreamMenuButtonToggle.LiveStreamMenuButtonToggle_C.ExecuteUbergraph_LiveStreamMenuButtonToggle
 // 0x0180 (0x0180 - 0x0000)
@@ -70,19 +60,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0160(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   K2Node_Select_Default;                             // 0x0168(0x0018)()
 };
-static_assert(alignof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle) == 0x000008, "Wrong alignment on LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle");
-static_assert(sizeof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle) == 0x000180, "Wrong size on LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, EntryPoint) == 0x000000, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, Temp_bool_Variable) == 0x000004, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, Temp_text_Variable) == 0x000008, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, Temp_text_Variable_1) == 0x000020, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, K2Node_Event_MyGeometry) == 0x000038, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, K2Node_Event_MouseEvent_1) == 0x000070, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, K2Node_Event_MouseEvent) == 0x0000E0, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, K2Node_Event_IsLiveStreamEnabled) == 0x000150, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::K2Node_Event_IsLiveStreamEnabled' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000158, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, CallFunc_PlayAnimationForward_ReturnValue) == 0x000160, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle, K2Node_Select_Default) == 0x000168, "Member 'LiveStreamMenuButtonToggle_C_ExecuteUbergraph_LiveStreamMenuButtonToggle::K2Node_Select_Default' has a wrong offset!");
 
 }
 

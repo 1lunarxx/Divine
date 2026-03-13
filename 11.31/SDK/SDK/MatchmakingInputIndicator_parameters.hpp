@@ -23,9 +23,6 @@ struct MatchmakingInputIndicator_C_OnInputSourceTypeChanged final
 public:
 	ECommonInputType                              InputType;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MatchmakingInputIndicator_C_OnInputSourceTypeChanged) == 0x000001, "Wrong alignment on MatchmakingInputIndicator_C_OnInputSourceTypeChanged");
-static_assert(sizeof(MatchmakingInputIndicator_C_OnInputSourceTypeChanged) == 0x000001, "Wrong size on MatchmakingInputIndicator_C_OnInputSourceTypeChanged");
-static_assert(offsetof(MatchmakingInputIndicator_C_OnInputSourceTypeChanged, InputType) == 0x000000, "Member 'MatchmakingInputIndicator_C_OnInputSourceTypeChanged::InputType' has a wrong offset!");
 
 // Function MatchmakingInputIndicator.MatchmakingInputIndicator_C.ExecuteUbergraph_MatchmakingInputIndicator
 // 0x0028 (0x0028 - 0x0000)
@@ -40,13 +37,6 @@ public:
 	class UTexture2D*                             CallFunc_GetInputTypeIcon_ReturnValue;             // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator) == 0x000008, "Wrong alignment on MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator");
-static_assert(sizeof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator) == 0x000028, "Wrong size on MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator");
-static_assert(offsetof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator, EntryPoint) == 0x000000, "Member 'MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator, K2Node_Event_InputType) == 0x000010, "Member 'MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator::K2Node_Event_InputType' has a wrong offset!");
-static_assert(offsetof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator, CallFunc_GetInputTypeIcon_ReturnValue) == 0x000018, "Member 'MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator::CallFunc_GetInputTypeIcon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'MatchmakingInputIndicator_C_ExecuteUbergraph_MatchmakingInputIndicator::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

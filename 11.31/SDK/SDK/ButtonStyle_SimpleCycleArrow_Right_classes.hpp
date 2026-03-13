@@ -23,15 +23,17 @@ class UButtonStyle_SimpleCycleArrow_Right_C final : public UButtonStyle_MediumTr
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle_SimpleCycleArrow_Right_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle_SimpleCycleArrow_Right_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle_SimpleCycleArrow_Right_C")
 	}
 	static class UButtonStyle_SimpleCycleArrow_Right_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_SimpleCycleArrow_Right_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_SimpleCycleArrow_Right_C) == 0x000008, "Wrong alignment on UButtonStyle_SimpleCycleArrow_Right_C");
-static_assert(sizeof(UButtonStyle_SimpleCycleArrow_Right_C) == 0x000570, "Wrong size on UButtonStyle_SimpleCycleArrow_Right_C");
 
 }
 

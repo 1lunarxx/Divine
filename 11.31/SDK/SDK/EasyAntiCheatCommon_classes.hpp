@@ -30,15 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EasyAntiCheatNetComponent">();
+		STATIC_CLASS_IMPL("EasyAntiCheatNetComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EasyAntiCheatNetComponent")
 	}
 	static class UEasyAntiCheatNetComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEasyAntiCheatNetComponent>();
 	}
 };
-static_assert(alignof(UEasyAntiCheatNetComponent) == 0x000008, "Wrong alignment on UEasyAntiCheatNetComponent");
-static_assert(sizeof(UEasyAntiCheatNetComponent) == 0x0000B8, "Wrong size on UEasyAntiCheatNetComponent");
 
 }
 

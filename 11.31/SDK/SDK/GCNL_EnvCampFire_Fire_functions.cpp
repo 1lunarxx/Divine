@@ -17,34 +17,6 @@
 namespace SDK
 {
 
-// Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.Darken Logs__UpdateFunc
-// (BlueprintEvent)
-
-void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.Darken Logs__FinishedFunc
-// (BlueprintEvent)
-
-void AGCNL_EnvCampFire_Fire_C::Darken_Logs__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.OnLoopingStart
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -118,6 +90,34 @@ void AGCNL_EnvCampFire_Fire_C::ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 Entr
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.Darken Logs__UpdateFunc
+// (BlueprintEvent)
+
+void AGCNL_EnvCampFire_Fire_C::Darken_Logs__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.Darken Logs__FinishedFunc
+// (BlueprintEvent)
+
+void AGCNL_EnvCampFire_Fire_C::Darken_Logs__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCNL_EnvCampFire_Fire_C", "Darken Logs__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

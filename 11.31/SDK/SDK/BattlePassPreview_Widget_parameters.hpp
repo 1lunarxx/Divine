@@ -24,9 +24,6 @@ struct BattlePassPreview_Widget_C_RenderSwap final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_RenderSwap) == 0x000008, "Wrong alignment on BattlePassPreview_Widget_C_RenderSwap");
-static_assert(sizeof(BattlePassPreview_Widget_C_RenderSwap) == 0x000008, "Wrong size on BattlePassPreview_Widget_C_RenderSwap");
-static_assert(offsetof(BattlePassPreview_Widget_C_RenderSwap, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'BattlePassPreview_Widget_C_RenderSwap::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.RefreshVisuals
 // 0x0030 (0x0030 - 0x0000)
@@ -39,13 +36,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue_2;     // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_RefreshVisuals) == 0x000008, "Wrong alignment on BattlePassPreview_Widget_C_RefreshVisuals");
-static_assert(sizeof(BattlePassPreview_Widget_C_RefreshVisuals) == 0x000030, "Wrong size on BattlePassPreview_Widget_C_RefreshVisuals");
-static_assert(offsetof(BattlePassPreview_Widget_C_RefreshVisuals, NewLocalVar_0) == 0x000000, "Member 'BattlePassPreview_Widget_C_RefreshVisuals::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_RefreshVisuals, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000010, "Member 'BattlePassPreview_Widget_C_RefreshVisuals::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_RefreshVisuals, CallFunc_GetDynamicFontMaterial_ReturnValue_1) == 0x000018, "Member 'BattlePassPreview_Widget_C_RefreshVisuals::CallFunc_GetDynamicFontMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_RefreshVisuals, CallFunc_GetDynamicFontMaterial_ReturnValue_2) == 0x000020, "Member 'BattlePassPreview_Widget_C_RefreshVisuals::CallFunc_GetDynamicFontMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_RefreshVisuals, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'BattlePassPreview_Widget_C_RefreshVisuals::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -54,9 +44,6 @@ struct BattlePassPreview_Widget_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_OnMouseLeave) == 0x000008, "Wrong alignment on BattlePassPreview_Widget_C_OnMouseLeave");
-static_assert(sizeof(BattlePassPreview_Widget_C_OnMouseLeave) == 0x000070, "Wrong size on BattlePassPreview_Widget_C_OnMouseLeave");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'BattlePassPreview_Widget_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -66,10 +53,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_OnMouseEnter) == 0x000008, "Wrong alignment on BattlePassPreview_Widget_C_OnMouseEnter");
-static_assert(sizeof(BattlePassPreview_Widget_C_OnMouseEnter) == 0x0000A8, "Wrong size on BattlePassPreview_Widget_C_OnMouseEnter");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'BattlePassPreview_Widget_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'BattlePassPreview_Widget_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +61,6 @@ struct BattlePassPreview_Widget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_PreConstruct) == 0x000001, "Wrong alignment on BattlePassPreview_Widget_C_PreConstruct");
-static_assert(sizeof(BattlePassPreview_Widget_C_PreConstruct) == 0x000001, "Wrong size on BattlePassPreview_Widget_C_PreConstruct");
-static_assert(offsetof(BattlePassPreview_Widget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BattlePassPreview_Widget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.OnSetDataForCharacter
 // 0x0008 (0x0008 - 0x0000)
@@ -91,10 +71,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LayoutPosition;                                    // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_OnSetDataForCharacter) == 0x000004, "Wrong alignment on BattlePassPreview_Widget_C_OnSetDataForCharacter");
-static_assert(sizeof(BattlePassPreview_Widget_C_OnSetDataForCharacter) == 0x000008, "Wrong size on BattlePassPreview_Widget_C_OnSetDataForCharacter");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnSetDataForCharacter, bIsReadyToUnlock) == 0x000000, "Member 'BattlePassPreview_Widget_C_OnSetDataForCharacter::bIsReadyToUnlock' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnSetDataForCharacter, LayoutPosition) == 0x000004, "Member 'BattlePassPreview_Widget_C_OnSetDataForCharacter::LayoutPosition' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.OnSetDataForCurrency
 // 0x0004 (0x0004 - 0x0000)
@@ -103,9 +79,6 @@ struct BattlePassPreview_Widget_C_OnSetDataForCurrency final
 public:
 	float                                         LayoutPosition;                                    // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_OnSetDataForCurrency) == 0x000004, "Wrong alignment on BattlePassPreview_Widget_C_OnSetDataForCurrency");
-static_assert(sizeof(BattlePassPreview_Widget_C_OnSetDataForCurrency) == 0x000004, "Wrong size on BattlePassPreview_Widget_C_OnSetDataForCurrency");
-static_assert(offsetof(BattlePassPreview_Widget_C_OnSetDataForCurrency, LayoutPosition) == 0x000000, "Member 'BattlePassPreview_Widget_C_OnSetDataForCurrency::LayoutPosition' has a wrong offset!");
 
 // Function BattlePassPreview_Widget.BattlePassPreview_Widget_C.ExecuteUbergraph_BattlePassPreview_Widget
 // 0x0158 (0x0158 - 0x0000)
@@ -131,23 +104,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x00E8(0x0070)(ConstParm)
 };
-static_assert(alignof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget) == 0x000008, "Wrong alignment on BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget");
-static_assert(sizeof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget) == 0x000158, "Wrong size on BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, EntryPoint) == 0x000000, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_MyGeometry) == 0x000004, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_MouseEvent) == 0x000040, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_IsDesignTime) == 0x0000B0, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_bIsReadyToUnlock) == 0x0000B1, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_bIsReadyToUnlock' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_LayoutPosition_1) == 0x0000B4, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_LayoutPosition_1' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_LayoutPosition) == 0x0000B8, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_LayoutPosition' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_Greater_FloatFloat_ReturnValue) == 0x0000BC, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000BD, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C0, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0000C8, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x0000D0, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_PlayAnimation_ReturnValue) == 0x0000D8, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000E0, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget, K2Node_Event_MouseEvent_1) == 0x0000E8, "Member 'BattlePassPreview_Widget_C_ExecuteUbergraph_BattlePassPreview_Widget::K2Node_Event_MouseEvent_1' has a wrong offset!");
 
 }
 

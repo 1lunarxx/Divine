@@ -39,23 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComScreen_C">();
+		BP_STATIC_CLASS_IMPL("ComScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComScreen_C")
 	}
 	static class UComScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComScreen_C>();
 	}
 };
-static_assert(alignof(UComScreen_C) == 0x000008, "Wrong alignment on UComScreen_C");
-static_assert(sizeof(UComScreen_C) == 0x000520, "Wrong size on UComScreen_C");
-static_assert(offsetof(UComScreen_C, UberGraphFrame) == 0x0004E0, "Member 'UComScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, Fade) == 0x0004E8, "Member 'UComScreen_C::Fade' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, CloseIcon) == 0x0004F0, "Member 'UComScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, ComBgImage) == 0x0004F8, "Member 'UComScreen_C::ComBgImage' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, comLogoTitle) == 0x000500, "Member 'UComScreen_C::comLogoTitle' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, footerimage) == 0x000508, "Member 'UComScreen_C::footerimage' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, MobileCloseButton) == 0x000510, "Member 'UComScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UComScreen_C, OverlayCloseButton) == 0x000518, "Member 'UComScreen_C::OverlayCloseButton' has a wrong offset!");
 
 }
 

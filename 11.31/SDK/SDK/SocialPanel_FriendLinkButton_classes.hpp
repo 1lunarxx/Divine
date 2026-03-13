@@ -44,24 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanel_FriendLinkButton_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanel_FriendLinkButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanel_FriendLinkButton_C")
 	}
 	static class USocialPanel_FriendLinkButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanel_FriendLinkButton_C>();
 	}
 };
-static_assert(alignof(USocialPanel_FriendLinkButton_C) == 0x000008, "Wrong alignment on USocialPanel_FriendLinkButton_C");
-static_assert(sizeof(USocialPanel_FriendLinkButton_C) == 0x000BC0, "Wrong size on USocialPanel_FriendLinkButton_C");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, UberGraphFrame) == 0x000B78, "Member 'USocialPanel_FriendLinkButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, OnCopied) == 0x000B80, "Member 'USocialPanel_FriendLinkButton_C::OnCopied' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, OnHovered) == 0x000B88, "Member 'USocialPanel_FriendLinkButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, MenuAnchor_Actions) == 0x000B90, "Member 'USocialPanel_FriendLinkButton_C::MenuAnchor_Actions' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, SharingIcon) == 0x000B98, "Member 'USocialPanel_FriendLinkButton_C::SharingIcon' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, Switcher_CopyState) == 0x000BA0, "Member 'USocialPanel_FriendLinkButton_C::Switcher_CopyState' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, Text_CopyConfirmed) == 0x000BA8, "Member 'USocialPanel_FriendLinkButton_C::Text_CopyConfirmed' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, Text_FriendLinkInstructions) == 0x000BB0, "Member 'USocialPanel_FriendLinkButton_C::Text_FriendLinkInstructions' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendLinkButton_C, Text_LinkPrompt) == 0x000BB8, "Member 'USocialPanel_FriendLinkButton_C::Text_LinkPrompt' has a wrong offset!");
 
 }
 

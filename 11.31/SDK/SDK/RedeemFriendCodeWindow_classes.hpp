@@ -49,27 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RedeemFriendCodeWindow_C">();
+		BP_STATIC_CLASS_IMPL("RedeemFriendCodeWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RedeemFriendCodeWindow_C")
 	}
 	static class URedeemFriendCodeWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URedeemFriendCodeWindow_C>();
 	}
 };
-static_assert(alignof(URedeemFriendCodeWindow_C) == 0x000008, "Wrong alignment on URedeemFriendCodeWindow_C");
-static_assert(sizeof(URedeemFriendCodeWindow_C) == 0x0004A0, "Wrong size on URedeemFriendCodeWindow_C");
-static_assert(offsetof(URedeemFriendCodeWindow_C, UberGraphFrame) == 0x000440, "Member 'URedeemFriendCodeWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, CancelButton) == 0x000448, "Member 'URedeemFriendCodeWindow_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, EntryProgressSwitcher) == 0x000450, "Member 'URedeemFriendCodeWindow_C::EntryProgressSwitcher' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, EntryVbox) == 0x000458, "Member 'URedeemFriendCodeWindow_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, ErrorText) == 0x000460, "Member 'URedeemFriendCodeWindow_C::ErrorText' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, Image_0) == 0x000468, "Member 'URedeemFriendCodeWindow_C::Image_0' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, Lightbox) == 0x000470, "Member 'URedeemFriendCodeWindow_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, ProgressSizeBox) == 0x000478, "Member 'URedeemFriendCodeWindow_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, ProgressText) == 0x000480, "Member 'URedeemFriendCodeWindow_C::ProgressText' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, ProgressVBox) == 0x000488, "Member 'URedeemFriendCodeWindow_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, RedeemButton) == 0x000490, "Member 'URedeemFriendCodeWindow_C::RedeemButton' has a wrong offset!");
-static_assert(offsetof(URedeemFriendCodeWindow_C, Title) == 0x000498, "Member 'URedeemFriendCodeWindow_C::Title' has a wrong offset!");
 
 }
 

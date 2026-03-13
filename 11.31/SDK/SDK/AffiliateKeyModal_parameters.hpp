@@ -17,6 +17,15 @@
 namespace SDK::Params
 {
 
+// Function AffiliateKeyModal.AffiliateKeyModal_C.SetupAffiliateField
+// 0x0028 (0x0028 - 0x0000)
+struct AffiliateKeyModal_C_SetupAffiliateField final
+{
+public:
+	class FString                                 AffilateName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
+};
+
 // Function AffiliateKeyModal.AffiliateKeyModal_C.SetMobileButtons
 // 0x000A (0x000A - 0x0000)
 struct AffiliateKeyModal_C_SetMobileButtons final
@@ -33,18 +42,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_SetMobileButtons) == 0x000001, "Wrong alignment on AffiliateKeyModal_C_SetMobileButtons");
-static_assert(sizeof(AffiliateKeyModal_C_SetMobileButtons) == 0x00000A, "Wrong size on AffiliateKeyModal_C_SetMobileButtons");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_bool_Variable) == 0x000000, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_byte_Variable) == 0x000001, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_byte_Variable_1) == 0x000002, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_bool_Variable_1) == 0x000003, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_byte_Variable_2) == 0x000004, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, Temp_byte_Variable_3) == 0x000005, "Member 'AffiliateKeyModal_C_SetMobileButtons::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, CallFunc_IsUsingTouch_ReturnValue) == 0x000006, "Member 'AffiliateKeyModal_C_SetMobileButtons::CallFunc_IsUsingTouch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, CallFunc_IsUsingTouch_ReturnValue_1) == 0x000007, "Member 'AffiliateKeyModal_C_SetMobileButtons::CallFunc_IsUsingTouch_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, K2Node_Select_Default) == 0x000008, "Member 'AffiliateKeyModal_C_SetMobileButtons::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetMobileButtons, K2Node_Select_Default_1) == 0x000009, "Member 'AffiliateKeyModal_C_SetMobileButtons::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -53,9 +50,6 @@ struct AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_Com
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AffiliateKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -64,9 +58,6 @@ struct AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AffiliateKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.OnSet
 // 0x0001 (0x0001 - 0x0000)
@@ -75,9 +66,6 @@ struct AffiliateKeyModal_C_OnSet final
 public:
 	bool                                          bSuccess;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AffiliateKeyModal_C_OnSet) == 0x000001, "Wrong alignment on AffiliateKeyModal_C_OnSet");
-static_assert(sizeof(AffiliateKeyModal_C_OnSet) == 0x000001, "Wrong size on AffiliateKeyModal_C_OnSet");
-static_assert(offsetof(AffiliateKeyModal_C_OnSet, bSuccess) == 0x000000, "Member 'AffiliateKeyModal_C_OnSet::bSuccess' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -86,9 +74,6 @@ struct AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AffiliateKeyModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.OnCheckComplete
 // 0x0018 (0x0018 - 0x0000)
@@ -100,11 +85,6 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AffilateNameChecked;                               // 0x0008(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_OnCheckComplete) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_OnCheckComplete");
-static_assert(sizeof(AffiliateKeyModal_C_OnCheckComplete) == 0x000018, "Wrong size on AffiliateKeyModal_C_OnCheckComplete");
-static_assert(offsetof(AffiliateKeyModal_C_OnCheckComplete, bSuccess) == 0x000000, "Member 'AffiliateKeyModal_C_OnCheckComplete::bSuccess' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_OnCheckComplete, bWasValidAffiliateName) == 0x000001, "Member 'AffiliateKeyModal_C_OnCheckComplete::bWasValidAffiliateName' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_OnCheckComplete, AffilateNameChecked) == 0x000008, "Member 'AffiliateKeyModal_C_OnCheckComplete::AffilateNameChecked' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -113,9 +93,6 @@ struct AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AffiliateKeyModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.OnInputModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -124,9 +101,6 @@ struct AffiliateKeyModal_C_OnInputModeChanged final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AffiliateKeyModal_C_OnInputModeChanged) == 0x000001, "Wrong alignment on AffiliateKeyModal_C_OnInputModeChanged");
-static_assert(sizeof(AffiliateKeyModal_C_OnInputModeChanged) == 0x000001, "Wrong size on AffiliateKeyModal_C_OnInputModeChanged");
-static_assert(offsetof(AffiliateKeyModal_C_OnInputModeChanged, bUsingGamepad) == 0x000000, "Member 'AffiliateKeyModal_C_OnInputModeChanged::bUsingGamepad' has a wrong offset!");
 
 // Function AffiliateKeyModal.AffiliateKeyModal_C.ExecuteUbergraph_AffiliateKeyModal
 // 0x0380 (0x0380 - 0x0000)
@@ -201,7 +175,7 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x02A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2AA[0x2];                                      // 0x02AA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool bSuccess, bool bWasValidAffiliateName, const class FString& AffilateNameChecked)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x02AC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bSuccess, bool bWasValidAffiliateName, const class FString& AffilateNameChecked)> K2Node_CreateDelegate_OutputDelegate_2; // 0x02AC(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x02BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2BD[0x3];                                      // 0x02BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetText_ReturnValue_4;                    // 0x02C0(0x0018)()
@@ -223,91 +197,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0370(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bUsingGamepad;                        // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal");
-static_assert(sizeof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal) == 0x000380, "Wrong size on AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, EntryPoint) == 0x000000, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_bool_Variable) == 0x000010, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetAffiliateName_ReturnValue) == 0x000018, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetAffiliateName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_byte_Variable) == 0x000028, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_byte_Variable_1) == 0x000029, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetContext_ReturnValue_1) == 0x000030, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetContext_ReturnValue_2) == 0x000038, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetAffiliateName_ReturnValue_1) == 0x000040, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetAffiliateName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CreateDelegate_OutputDelegate) == 0x000050, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_ComponentBoundEvent_Button_3) == 0x000060, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_ComponentBoundEvent_Button_2) == 0x000068, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_PlayAnimation_ReturnValue) == 0x000070, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000078, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetValidAffiliateNames_ReturnValue) == 0x000080, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetValidAffiliateNames_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CustomEvent_bSuccess_1) == 0x000090, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CustomEvent_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetContext_ReturnValue_3) == 0x000098, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetAffiliateName_ReturnValue_2) == 0x0000A0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetAffiliateName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_1) == 0x0000B0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_StringToText_ReturnValue) == 0x0000B8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetOverrideAffiliateDescriptionText_ReturnValue) == 0x0000D0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetOverrideAffiliateDescriptionText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_TextIsEmpty_ReturnValue) == 0x0000E8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_2) == 0x0000F0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetOverrideAffiliateErrorText_ReturnValue) == 0x0000F8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetOverrideAffiliateErrorText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CreateDelegate_OutputDelegate_1) == 0x000110, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_TextIsEmpty_ReturnValue_1) == 0x000120, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_ComponentBoundEvent_Button_1) == 0x000128, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetContext_ReturnValue_4) == 0x000130, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetContext_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue) == 0x000138, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_byte_Variable_2) == 0x000150, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_1) == 0x000158, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue) == 0x000170, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Array_Find_ReturnValue) == 0x000180, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_3) == 0x000188, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000190, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000198, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_4) == 0x0001B0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_MakeStruct_FormatArgumentData) == 0x0001B8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_MakeArray_Array) == 0x0001F8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Format_ReturnValue) == 0x000208, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_CanLaunchURL_ReturnValue) == 0x000220, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_CanLaunchURL_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_5) == 0x000228, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Len_ReturnValue) == 0x000230, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Len_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_2) == 0x000238, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Greater_IntInt_ReturnValue) == 0x000250, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000258, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_Select_Default) == 0x000268, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_6) == 0x000270, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_byte_Variable_3) == 0x000278, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_3) == 0x000280, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue_2) == 0x000298, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x0002A8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, Temp_bool_Variable_1) == 0x0002A9, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CreateDelegate_OutputDelegate_2) == 0x0002AC, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_Select_Default_1) == 0x0002BC, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_4) == 0x0002C0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue_3) == 0x0002D8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetRuntimeOptions_ReturnValue_7) == 0x0002E8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetRuntimeOptions_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CustomEvent_bSuccess) == 0x0002F0, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CustomEvent_bWasValidAffiliateName) == 0x0002F1, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CustomEvent_bWasValidAffiliateName' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_CustomEvent_AffilateNameChecked) == 0x0002F8, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_CustomEvent_AffilateNameChecked' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_5) == 0x000308, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue_4) == 0x000320, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_EqualEqual_StrStr_ReturnValue_1) == 0x000330, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_EqualEqual_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_GetText_ReturnValue_6) == 0x000338, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_GetText_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_Conv_TextToString_ReturnValue_5) == 0x000350, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_Conv_TextToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_EqualEqual_StrStr_ReturnValue_2) == 0x000360, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_EqualEqual_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, CallFunc_PlayAnimation_ReturnValue_1) == 0x000368, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_ComponentBoundEvent_Button) == 0x000370, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal, K2Node_Event_bUsingGamepad) == 0x000378, "Member 'AffiliateKeyModal_C_ExecuteUbergraph_AffiliateKeyModal::K2Node_Event_bUsingGamepad' has a wrong offset!");
-
-// Function AffiliateKeyModal.AffiliateKeyModal_C.SetupAffiliateField
-// 0x0028 (0x0028 - 0x0000)
-struct AffiliateKeyModal_C_SetupAffiliateField final
-{
-public:
-	class FString                                 AffilateName;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0010(0x0018)()
-};
-static_assert(alignof(AffiliateKeyModal_C_SetupAffiliateField) == 0x000008, "Wrong alignment on AffiliateKeyModal_C_SetupAffiliateField");
-static_assert(sizeof(AffiliateKeyModal_C_SetupAffiliateField) == 0x000028, "Wrong size on AffiliateKeyModal_C_SetupAffiliateField");
-static_assert(offsetof(AffiliateKeyModal_C_SetupAffiliateField, AffilateName) == 0x000000, "Member 'AffiliateKeyModal_C_SetupAffiliateField::AffilateName' has a wrong offset!");
-static_assert(offsetof(AffiliateKeyModal_C_SetupAffiliateField, CallFunc_Conv_StringToText_ReturnValue) == 0x000010, "Member 'AffiliateKeyModal_C_SetupAffiliateField::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 }
 

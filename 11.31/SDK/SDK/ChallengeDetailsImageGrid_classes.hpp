@@ -42,20 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeDetailsImageGrid_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeDetailsImageGrid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeDetailsImageGrid_C")
 	}
 	static class UChallengeDetailsImageGrid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeDetailsImageGrid_C>();
 	}
 };
-static_assert(alignof(UChallengeDetailsImageGrid_C) == 0x000008, "Wrong alignment on UChallengeDetailsImageGrid_C");
-static_assert(sizeof(UChallengeDetailsImageGrid_C) == 0x000328, "Wrong size on UChallengeDetailsImageGrid_C");
-static_assert(offsetof(UChallengeDetailsImageGrid_C, UberGraphFrame) == 0x000308, "Member 'UChallengeDetailsImageGrid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeDetailsImageGrid_C, RolloutLoop) == 0x000310, "Member 'UChallengeDetailsImageGrid_C::RolloutLoop' has a wrong offset!");
-static_assert(offsetof(UChallengeDetailsImageGrid_C, RolloutStartTime) == 0x000318, "Member 'UChallengeDetailsImageGrid_C::RolloutStartTime' has a wrong offset!");
-static_assert(offsetof(UChallengeDetailsImageGrid_C, RolloutDuration) == 0x00031C, "Member 'UChallengeDetailsImageGrid_C::RolloutDuration' has a wrong offset!");
-static_assert(offsetof(UChallengeDetailsImageGrid_C, IsRevealRollout) == 0x000320, "Member 'UChallengeDetailsImageGrid_C::IsRevealRollout' has a wrong offset!");
 
 }
 

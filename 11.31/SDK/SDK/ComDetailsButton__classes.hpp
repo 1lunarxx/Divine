@@ -23,15 +23,17 @@ class UComDetailsButton__C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComDetailsButton__C">();
+		BP_STATIC_CLASS_IMPL("ComDetailsButton__C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComDetailsButton__C")
 	}
 	static class UComDetailsButton__C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComDetailsButton__C>();
 	}
 };
-static_assert(alignof(UComDetailsButton__C) == 0x000008, "Wrong alignment on UComDetailsButton__C");
-static_assert(sizeof(UComDetailsButton__C) == 0x000570, "Wrong size on UComDetailsButton__C");
 
 }
 

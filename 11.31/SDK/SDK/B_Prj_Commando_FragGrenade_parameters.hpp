@@ -128,93 +128,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromLocations_ReturnValue; // 0x0460(0x0028)()
 	struct FGameplayEventData                     K2Node_MakeStruct_GameplayEventData;               // 0x0488(0x00B0)()
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade) == 0x000010, "Wrong alignment on B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade) == 0x000540, "Wrong size on B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, EntryPoint) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Has_Been_Initd_Variable) == 0x000004, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_IsClosed_Variable) == 0x000005, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_HasAuthority_ReturnValue) == 0x000006, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Variable) == 0x000007, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_Hit_1) == 0x000008, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_Hit_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetInstigatorController_ReturnValue) == 0x000090, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetInstigatorController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000098, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetPlayerController_ReturnValue) == 0x000120, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_OnSameTeam_ReturnValue) == 0x000128, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_OnSameTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_HitActors) == 0x000130, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_HitResults) == 0x000140, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_HitResults' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_Damage) == 0x000150, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_DamageType) == 0x000158, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_DamageType' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_InstigatedBy) == 0x000160, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_DamageCauser) == 0x000168, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_MakeRotator_ReturnValue) == 0x000170, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetInstigator_ReturnValue) == 0x000180, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_IsLocallyControlled_ReturnValue) == 0x000188, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Conv_FloatToVector_ReturnValue) == 0x00018C, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_Hit) == 0x000198, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_bBlockingHit) == 0x000220, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_bInitialOverlap) == 0x000221, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_Time) == 0x000224, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_Distance) == 0x000228, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_Location) == 0x00022C, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_ImpactPoint) == 0x000238, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_Normal) == 0x000244, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_ImpactNormal) == 0x000250, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_PhysMat) == 0x000260, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_HitActor) == 0x000268, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_HitComponent) == 0x000270, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_HitBoneName) == 0x000278, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_HitItem) == 0x000280, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_FaceIndex) == 0x000284, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_TraceStart) == 0x000288, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakHitResult_TraceEnd) == 0x000294, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_AsPawn) == 0x0002A0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_AsPawn' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_bSuccess) == 0x0002A8, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Add_IntInt_ReturnValue) == 0x0002AC, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0002B0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0002B1, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Has_Been_Initd_Variable_1) == 0x0002B2, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Has_Been_Initd_Variable_2) == 0x0002B3, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Has_Been_Initd_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Has_Been_Initd_Variable_3) == 0x0002B4, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Has_Been_Initd_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_Has_Been_Initd_Variable_4) == 0x0002B5, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_Has_Been_Initd_Variable_4' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_IsClosed_Variable_1) == 0x0002B6, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0002B8, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Add_IntInt_ReturnValue_1) == 0x0002BC, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x0002C0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetInstigator_ReturnValue_1) == 0x0002C8, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetInstigator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x0002D0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetInstigator_ReturnValue_2) == 0x0002E0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetInstigator_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakVector_X) == 0x0002E8, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakVector_Y) == 0x0002EC, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_BreakVector_Z) == 0x0002F0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x0002F4, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Abs_ReturnValue) == 0x0002F8, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Abs_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_MakeVector_ReturnValue) == 0x0002FC, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_CustomEvent_DestroyedActor) == 0x000308, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_CustomEvent_DestroyedActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000310, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_IsClosed_Variable_2) == 0x00031C, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_IsClosed_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_IsClosed_Variable_3) == 0x00031D, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_IsClosed_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_IsDedicatedServer_ReturnValue) == 0x00031E, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x00031F, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, Temp_bool_IsClosed_Variable_4) == 0x000320, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::Temp_bool_IsClosed_Variable_4' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_CreateDelegate_OutputDelegate) == 0x000324, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_Event_OtherActor) == 0x000338, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_Event_OtherActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface) == 0x000340, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_bSuccess_1) == 0x000350, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_AsPawn_1) == 0x000358, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_AsPawn_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_DynamicCast_bSuccess_2) == 0x000360, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_HasAnyMatchingGameplayTags_ReturnValue) == 0x000361, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_HasAnyMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_NotEqual_ObjectObject_ReturnValue_1) == 0x000362, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_NotEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000364, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000370, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000380, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000388, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000394, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetInstigator_ReturnValue_3) == 0x0003A0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetInstigator_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_GetTransform_ReturnValue) == 0x0003B0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_IsValid_ReturnValue) == 0x0003E0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_MakeStruct_GameplayAbilityTargetingLocationInfo) == 0x0003F0, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_MakeStruct_GameplayAbilityTargetingLocationInfo' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, CallFunc_AbilityTargetDataFromLocations_ReturnValue) == 0x000460, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::CallFunc_AbilityTargetDataFromLocations_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade, K2Node_MakeStruct_GameplayEventData) == 0x000488, "Member 'B_Prj_Commando_FragGrenade_C_ExecuteUbergraph_B_Prj_Commando_FragGrenade::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.ReceiveActorBeginOverlap
 // 0x0008 (0x0008 - 0x0000)
@@ -223,9 +136,6 @@ struct B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap final
 public:
 	class AActor*                                 OtherActor;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap) == 0x000008, "Wrong size on B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap, OtherActor) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_ReceiveActorBeginOverlap::OtherActor' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.On Destroy Grenade
 // 0x0008 (0x0008 - 0x0000)
@@ -234,9 +144,6 @@ struct B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade final
 public:
 	class AActor*                                 DestroyedActor;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade) == 0x000008, "Wrong size on B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade, DestroyedActor) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_On_Destroy_Grenade::DestroyedActor' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.OnBounce
 // 0x0088 (0x0088 - 0x0000)
@@ -245,9 +152,6 @@ struct B_Prj_Commando_FragGrenade_C_OnBounce final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_OnBounce) == 0x000004, "Wrong alignment on B_Prj_Commando_FragGrenade_C_OnBounce");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_OnBounce) == 0x000088, "Wrong size on B_Prj_Commando_FragGrenade_C_OnBounce");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_OnBounce, Hit) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_OnBounce::Hit' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.ReceiveAnyDamage
 // 0x0020 (0x0020 - 0x0000)
@@ -260,12 +164,6 @@ public:
 	class AController*                            InstigatedBy;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                 DamageCauser;                                      // 0x0018(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage) == 0x000020, "Wrong size on B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage, Damage) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage::Damage' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage, DamageType) == 0x000008, "Member 'B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage::DamageType' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage, InstigatedBy) == 0x000010, "Member 'B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage, DamageCauser) == 0x000018, "Member 'B_Prj_Commando_FragGrenade_C_ReceiveAnyDamage::DamageCauser' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.OnExploded
 // 0x0020 (0x0020 - 0x0000)
@@ -275,10 +173,6 @@ public:
 	TArray<class AActor*>                         HitActors;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_OnExploded) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_OnExploded");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_OnExploded) == 0x000020, "Wrong size on B_Prj_Commando_FragGrenade_C_OnExploded");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_OnExploded, HitActors) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_OnExploded::HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_OnExploded, HitResults) == 0x000010, "Member 'B_Prj_Commando_FragGrenade_C_OnExploded::HitResults' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.OnStop
 // 0x0088 (0x0088 - 0x0000)
@@ -287,9 +181,6 @@ struct B_Prj_Commando_FragGrenade_C_OnStop final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_OnStop) == 0x000004, "Wrong alignment on B_Prj_Commando_FragGrenade_C_OnStop");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_OnStop) == 0x000088, "Wrong size on B_Prj_Commando_FragGrenade_C_OnStop");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_OnStop, Hit) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_OnStop::Hit' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -298,9 +189,6 @@ struct B_Prj_Commando_FragGrenade_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_UserConstructionScript) == 0x000001, "Wrong alignment on B_Prj_Commando_FragGrenade_C_UserConstructionScript");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_UserConstructionScript) == 0x000001, "Wrong size on B_Prj_Commando_FragGrenade_C_UserConstructionScript");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.CalcGrenadeSpeed
 // 0x0030 (0x0030 - 0x0000)
@@ -320,20 +208,6 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Lerp_ReturnValue;                         // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed) == 0x000004, "Wrong alignment on B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed) == 0x000030, "Wrong size on B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, Angle) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::Angle' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, ReturnValue) == 0x000004, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, GrenadeSpeedMin) == 0x000008, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::GrenadeSpeedMin' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, GrenadeSpeedMax) == 0x00000C, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::GrenadeSpeedMax' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, MaxSpeedPitch) == 0x000010, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::MaxSpeedPitch' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, MinSpeedPitch) == 0x000014, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::MinSpeedPitch' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_NormalizeAxis_ReturnValue) == 0x000018, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_NormalizeAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00001C, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_FClamp_ReturnValue) == 0x000020, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_FClamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000024, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000028, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed, CallFunc_Lerp_ReturnValue) == 0x00002C, "Member 'B_Prj_Commando_FragGrenade_C_CalcGrenadeSpeed::CallFunc_Lerp_ReturnValue' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.SpawnClusters
 // 0x0118 (0x0118 - 0x0000)
@@ -358,21 +232,6 @@ public:
 	class AFortProjectileBase*                    CallFunc_SpawnProjectile_ReturnValue;              // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_IntInt_ReturnValue;             // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_SpawnClusters) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_SpawnClusters");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_SpawnClusters) == 0x000118, "Wrong size on B_Prj_Commando_FragGrenade_C_SpawnClusters");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_RandomFloatInRange_ReturnValue) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_RandomFloatInRange_ReturnValue_1) == 0x000004, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_RandomFloatInRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_MakeRotator_ReturnValue) == 0x000014, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_Add_VectorVector_ReturnValue) == 0x000020, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_GetOwner_ReturnValue) == 0x000030, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, Temp_bool_Variable) == 0x000038, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_RandomFloatInRange_ReturnValue_2) == 0x00003C, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_RandomFloatInRange_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, Temp_int_Variable) == 0x000040, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, K2Node_Select_Default) == 0x000048, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_Add_IntInt_ReturnValue) == 0x000100, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_SpawnProjectile_ReturnValue) == 0x000108, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_SpawnProjectile_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnClusters, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000110, "Member 'B_Prj_Commando_FragGrenade_C_SpawnClusters::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Prj_Commando_FragGrenade.B_Prj_Commando_FragGrenade_C.SpawnKeepOut
 // 0x0040 (0x0040 - 0x0000)
@@ -388,14 +247,6 @@ public:
 	class AAOE_Commando_KeepOutExplosion_C*       K2Node_DynamicCast_AsAOE_Commando_Keep_Out_Explosion; // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut) == 0x000008, "Wrong alignment on B_Prj_Commando_FragGrenade_C_SpawnKeepOut");
-static_assert(sizeof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut) == 0x000040, "Wrong size on B_Prj_Commando_FragGrenade_C_SpawnKeepOut");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000000, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, CallFunc_MakeRotator_ReturnValue) == 0x000018, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, CallFunc_SpawnAreaOfEffectCloud_ReturnValue) == 0x000028, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::CallFunc_SpawnAreaOfEffectCloud_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, K2Node_DynamicCast_AsAOE_Commando_Keep_Out_Explosion) == 0x000030, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::K2Node_DynamicCast_AsAOE_Commando_Keep_Out_Explosion' has a wrong offset!");
-static_assert(offsetof(B_Prj_Commando_FragGrenade_C_SpawnKeepOut, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'B_Prj_Commando_FragGrenade_C_SpawnKeepOut::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

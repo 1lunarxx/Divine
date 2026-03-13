@@ -46,24 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_Ice_Feet_Creative_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_Ice_Feet_Creative_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_Ice_Feet_Creative_C")
 	}
 	static class AGCN_Loop_Ice_Feet_Creative_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_Ice_Feet_Creative_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_Ice_Feet_Creative_C) == 0x000008, "Wrong alignment on AGCN_Loop_Ice_Feet_Creative_C");
-static_assert(sizeof(AGCN_Loop_Ice_Feet_Creative_C) == 0x0007D8, "Wrong size on AGCN_Loop_Ice_Feet_Creative_C");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_Ice_Feet_Creative_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, TargetPlayer) == 0x000790, "Member 'AGCN_Loop_Ice_Feet_Creative_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SC_Footstep_Local) == 0x000798, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SC_Footstep_Local' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SC_Footstep_Remote) == 0x0007A0, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SC_Footstep_Remote' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SC_Collision) == 0x0007A8, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SC_Collision' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, CollisionAudioComp) == 0x0007B0, "Member 'AGCN_Loop_Ice_Feet_Creative_C::CollisionAudioComp' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SpawnedAudioComps) == 0x0007B8, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SpawnedAudioComps' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SC_OnJumpOrBeginFalling) == 0x0007C8, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SC_OnJumpOrBeginFalling' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Ice_Feet_Creative_C, SC_OnLand) == 0x0007D0, "Member 'AGCN_Loop_Ice_Feet_Creative_C::SC_OnLand' has a wrong offset!");
 
 }
 

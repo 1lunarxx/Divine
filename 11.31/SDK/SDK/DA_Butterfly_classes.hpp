@@ -40,20 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DA_Butterfly_C">();
+		BP_STATIC_CLASS_IMPL("DA_Butterfly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DA_Butterfly_C")
 	}
 	static class ADA_Butterfly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADA_Butterfly_C>();
 	}
 };
-static_assert(alignof(ADA_Butterfly_C) == 0x000008, "Wrong alignment on ADA_Butterfly_C");
-static_assert(sizeof(ADA_Butterfly_C) == 0x000B00, "Wrong size on ADA_Butterfly_C");
-static_assert(offsetof(ADA_Butterfly_C, UberGraphFrame) == 0x000AC0, "Member 'ADA_Butterfly_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADA_Butterfly_C, CanCancelAbility) == 0x000AC8, "Member 'ADA_Butterfly_C::CanCancelAbility' has a wrong offset!");
-static_assert(offsetof(ADA_Butterfly_C, CanCancelTimer) == 0x000AD0, "Member 'ADA_Butterfly_C::CanCancelTimer' has a wrong offset!");
-static_assert(offsetof(ADA_Butterfly_C, CancelDelay) == 0x000AD8, "Member 'ADA_Butterfly_C::CancelDelay' has a wrong offset!");
-static_assert(offsetof(ADA_Butterfly_C, PlayerPawn) == 0x000AF8, "Member 'ADA_Butterfly_C::PlayerPawn' has a wrong offset!");
 
 }
 

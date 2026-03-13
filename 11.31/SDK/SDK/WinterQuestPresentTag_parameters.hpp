@@ -65,45 +65,6 @@ public:
 	class FText                                   K2Node_Select_Default_6;                           // 0x0108(0x0018)()
 	class FText                                   K2Node_Select_Default_7;                           // 0x0120(0x0018)()
 };
-static_assert(alignof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag) == 0x000008, "Wrong alignment on WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag");
-static_assert(sizeof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag) == 0x000138, "Wrong size on WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, EntryPoint) == 0x000000, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_struct_Variable) == 0x000004, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_struct_Variable_1) == 0x000014, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_struct_Variable_2) == 0x000024, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_int_Variable) == 0x000034, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable) == 0x000038, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable_1) == 0x00003C, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable_2) == 0x000040, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_int_Variable_1) == 0x000044, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable_3) == 0x000048, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable_4) == 0x00004C, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_float_Variable_5) == 0x000050, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default) == 0x000054, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_1) == 0x000058, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_bool_Variable) == 0x00005C, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_MakeStruct_Margin) == 0x000060, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_bool_Variable_1) == 0x000070, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_bool_Variable_2) == 0x000071, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_bool_Variable_3) == 0x000072, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_bool_Variable_4) == 0x000073, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Event_IsDesignTime) == 0x000074, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_RandomInteger_ReturnValue) == 0x000078, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_RandomInteger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000080, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, Temp_int_Variable_2) == 0x000088, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000090, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_2) == 0x000098, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Event_CharacterName) == 0x0000A8, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Event_CharacterName' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_LinearColor_IsNearEqual_ReturnValue) == 0x0000B8, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_LinearColor_IsNearEqual_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_LinearColor_IsNearEqual_ReturnValue_1) == 0x0000B9, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_LinearColor_IsNearEqual_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_LinearColor_IsNearEqual_ReturnValue_2) == 0x0000BA, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_LinearColor_IsNearEqual_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_LinearColor_IsNearEqual_ReturnValue_3) == 0x0000BB, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_LinearColor_IsNearEqual_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, CallFunc_LinearColor_IsNearEqual_ReturnValue_4) == 0x0000BC, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::CallFunc_LinearColor_IsNearEqual_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_3) == 0x0000C0, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_4) == 0x0000D8, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_5) == 0x0000F0, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_6) == 0x000108, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag, K2Node_Select_Default_7) == 0x000120, "Member 'WinterQuestPresentTag_C_ExecuteUbergraph_WinterQuestPresentTag::K2Node_Select_Default_7' has a wrong offset!");
 
 // Function WinterQuestPresentTag.WinterQuestPresentTag_C.OnSetupCharacterNameTag
 // 0x0010 (0x0010 - 0x0000)
@@ -112,9 +73,6 @@ struct WinterQuestPresentTag_C_OnSetupCharacterNameTag final
 public:
 	struct FLinearColor                           CharacterName;                                     // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestPresentTag_C_OnSetupCharacterNameTag) == 0x000004, "Wrong alignment on WinterQuestPresentTag_C_OnSetupCharacterNameTag");
-static_assert(sizeof(WinterQuestPresentTag_C_OnSetupCharacterNameTag) == 0x000010, "Wrong size on WinterQuestPresentTag_C_OnSetupCharacterNameTag");
-static_assert(offsetof(WinterQuestPresentTag_C_OnSetupCharacterNameTag, CharacterName) == 0x000000, "Member 'WinterQuestPresentTag_C_OnSetupCharacterNameTag::CharacterName' has a wrong offset!");
 
 // Function WinterQuestPresentTag.WinterQuestPresentTag_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -123,9 +81,6 @@ struct WinterQuestPresentTag_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WinterQuestPresentTag_C_PreConstruct) == 0x000001, "Wrong alignment on WinterQuestPresentTag_C_PreConstruct");
-static_assert(sizeof(WinterQuestPresentTag_C_PreConstruct) == 0x000001, "Wrong size on WinterQuestPresentTag_C_PreConstruct");
-static_assert(offsetof(WinterQuestPresentTag_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WinterQuestPresentTag_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

@@ -46,24 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_CarryPlayer_C">();
+		BP_STATIC_CLASS_IMPL("GAB_CarryPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_CarryPlayer_C")
 	}
 	static class UGAB_CarryPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_CarryPlayer_C>();
 	}
 };
-static_assert(alignof(UGAB_CarryPlayer_C) == 0x000008, "Wrong alignment on UGAB_CarryPlayer_C");
-static_assert(sizeof(UGAB_CarryPlayer_C) == 0x000AA0, "Wrong size on UGAB_CarryPlayer_C");
-static_assert(offsetof(UGAB_CarryPlayer_C, UberGraphFrame) == 0x000A58, "Member 'UGAB_CarryPlayer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, PlayerPawn) == 0x000A60, "Member 'UGAB_CarryPlayer_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, PickedUpPawn) == 0x000A68, "Member 'UGAB_CarryPlayer_C::PickedUpPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, DBNOCarryHolster) == 0x000A70, "Member 'UGAB_CarryPlayer_C::DBNOCarryHolster' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, bCompletedPickup) == 0x000A78, "Member 'UGAB_CarryPlayer_C::bCompletedPickup' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, TotalDistanceTraveled) == 0x000A7C, "Member 'UGAB_CarryPlayer_C::TotalDistanceTraveled' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, PickupLocation) == 0x000A80, "Member 'UGAB_CarryPlayer_C::PickupLocation' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, CarryLongDistanceThreshold) == 0x000A8C, "Member 'UGAB_CarryPlayer_C::CarryLongDistanceThreshold' has a wrong offset!");
-static_assert(offsetof(UGAB_CarryPlayer_C, NewVar_0) == 0x000A90, "Member 'UGAB_CarryPlayer_C::NewVar_0' has a wrong offset!");
 
 }
 

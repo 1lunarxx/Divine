@@ -52,31 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Violator_ActivityInfo_C">();
+		BP_STATIC_CLASS_IMPL("Violator_ActivityInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Violator_ActivityInfo_C")
 	}
 	static class UViolator_ActivityInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UViolator_ActivityInfo_C>();
 	}
 };
-static_assert(alignof(UViolator_ActivityInfo_C) == 0x000008, "Wrong alignment on UViolator_ActivityInfo_C");
-static_assert(sizeof(UViolator_ActivityInfo_C) == 0x000390, "Wrong size on UViolator_ActivityInfo_C");
-static_assert(offsetof(UViolator_ActivityInfo_C, UberGraphFrame) == 0x000318, "Member 'UViolator_ActivityInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, Clock) == 0x000320, "Member 'UViolator_ActivityInfo_C::Clock' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, HorizontalBox_TimerText) == 0x000328, "Member 'UViolator_ActivityInfo_C::HorizontalBox_TimerText' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, PaddingHB) == 0x000330, "Member 'UViolator_ActivityInfo_C::PaddingHB' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, RedBoxBorder) == 0x000338, "Member 'UViolator_ActivityInfo_C::RedBoxBorder' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, SizeBox_Clock_Icon) == 0x000340, "Member 'UViolator_ActivityInfo_C::SizeBox_Clock_Icon' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, Text_CalloutTag) == 0x000348, "Member 'UViolator_ActivityInfo_C::Text_CalloutTag' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, Text_TimeRemainingTag) == 0x000350, "Member 'UViolator_ActivityInfo_C::Text_TimeRemainingTag' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, TextScale) == 0x000358, "Member 'UViolator_ActivityInfo_C::TextScale' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, TransformOvr) == 0x000360, "Member 'UViolator_ActivityInfo_C::TransformOvr' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, White) == 0x000368, "Member 'UViolator_ActivityInfo_C::White' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, IsLargeDisplay) == 0x000370, "Member 'UViolator_ActivityInfo_C::IsLargeDisplay' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, IsTextCallout) == 0x000371, "Member 'UViolator_ActivityInfo_C::IsTextCallout' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, MID_TextBackPlate) == 0x000378, "Member 'UViolator_ActivityInfo_C::MID_TextBackPlate' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, MID_TimerBackPlate) == 0x000380, "Member 'UViolator_ActivityInfo_C::MID_TimerBackPlate' has a wrong offset!");
-static_assert(offsetof(UViolator_ActivityInfo_C, MID_ClockBacking) == 0x000388, "Member 'UViolator_ActivityInfo_C::MID_ClockBacking' has a wrong offset!");
 
 }
 

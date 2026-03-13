@@ -47,26 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerDiscovered_C">();
+		BP_STATIC_CLASS_IMPL("PlayerDiscovered_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerDiscovered_C")
 	}
 	static class UPlayerDiscovered_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerDiscovered_C>();
 	}
 };
-static_assert(alignof(UPlayerDiscovered_C) == 0x000008, "Wrong alignment on UPlayerDiscovered_C");
-static_assert(sizeof(UPlayerDiscovered_C) == 0x000348, "Wrong size on UPlayerDiscovered_C");
-static_assert(offsetof(UPlayerDiscovered_C, UberGraphFrame) == 0x0002F0, "Member 'UPlayerDiscovered_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, BriefShow) == 0x0002F8, "Member 'UPlayerDiscovered_C::BriefShow' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, CommonTextBlock_LandmarkName) == 0x000300, "Member 'UPlayerDiscovered_C::CommonTextBlock_LandmarkName' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, Image_BulletLeft) == 0x000308, "Member 'UPlayerDiscovered_C::Image_BulletLeft' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, Image_BulletRight) == 0x000310, "Member 'UPlayerDiscovered_C::Image_BulletRight' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, MainBox) == 0x000318, "Member 'UPlayerDiscovered_C::MainBox' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, MainBox_Landmark) == 0x000320, "Member 'UPlayerDiscovered_C::MainBox_Landmark' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, MainLocationText) == 0x000328, "Member 'UPlayerDiscovered_C::MainLocationText' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, MainLocationText_1) == 0x000330, "Member 'UPlayerDiscovered_C::MainLocationText_1' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, Overlay_Container) == 0x000338, "Member 'UPlayerDiscovered_C::Overlay_Container' has a wrong offset!");
-static_assert(offsetof(UPlayerDiscovered_C, WidgetSwitcher_LandmarkOrPOI) == 0x000340, "Member 'UPlayerDiscovered_C::WidgetSwitcher_LandmarkOrPOI' has a wrong offset!");
 
 }
 

@@ -41,23 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassLeaderboardListEntry_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassLeaderboardListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassLeaderboardListEntry_C")
 	}
 	static class UBattlePassLeaderboardListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassLeaderboardListEntry_C>();
 	}
 };
-static_assert(alignof(UBattlePassLeaderboardListEntry_C) == 0x000008, "Wrong alignment on UBattlePassLeaderboardListEntry_C");
-static_assert(sizeof(UBattlePassLeaderboardListEntry_C) == 0x0002B8, "Wrong size on UBattlePassLeaderboardListEntry_C");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, UberGraphFrame) == 0x000278, "Member 'UBattlePassLeaderboardListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_DisplayNameTeamColor) == 0x000280, "Member 'UBattlePassLeaderboardListEntry_C::Border_DisplayNameTeamColor' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_Entry) == 0x000288, "Member 'UBattlePassLeaderboardListEntry_C::Border_Entry' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_HeaderDisplayName) == 0x000290, "Member 'UBattlePassLeaderboardListEntry_C::Border_HeaderDisplayName' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_HeaderLevel) == 0x000298, "Member 'UBattlePassLeaderboardListEntry_C::Border_HeaderLevel' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_LocalPlayer) == 0x0002A0, "Member 'UBattlePassLeaderboardListEntry_C::Border_LocalPlayer' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Border_NameLevelDivider) == 0x0002A8, "Member 'UBattlePassLeaderboardListEntry_C::Border_NameLevelDivider' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboardListEntry_C, Switcher_Rank) == 0x0002B0, "Member 'UBattlePassLeaderboardListEntry_C::Switcher_Rank' has a wrong offset!");
 
 }
 

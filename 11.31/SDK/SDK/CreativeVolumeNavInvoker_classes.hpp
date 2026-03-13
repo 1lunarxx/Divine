@@ -23,15 +23,17 @@ class ACreativeVolumeNavInvoker_C final : public AAthenaNavInvokerBox
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CreativeVolumeNavInvoker_C">();
+		BP_STATIC_CLASS_IMPL("CreativeVolumeNavInvoker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CreativeVolumeNavInvoker_C")
 	}
 	static class ACreativeVolumeNavInvoker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACreativeVolumeNavInvoker_C>();
 	}
 };
-static_assert(alignof(ACreativeVolumeNavInvoker_C) == 0x000008, "Wrong alignment on ACreativeVolumeNavInvoker_C");
-static_assert(sizeof(ACreativeVolumeNavInvoker_C) == 0x000228, "Wrong size on ACreativeVolumeNavInvoker_C");
 
 }
 

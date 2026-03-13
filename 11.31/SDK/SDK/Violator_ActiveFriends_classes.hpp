@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Violator_ActiveFriends_C">();
+		BP_STATIC_CLASS_IMPL("Violator_ActiveFriends_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Violator_ActiveFriends_C")
 	}
 	static class UViolator_ActiveFriends_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UViolator_ActiveFriends_C>();
 	}
 };
-static_assert(alignof(UViolator_ActiveFriends_C) == 0x000008, "Wrong alignment on UViolator_ActiveFriends_C");
-static_assert(sizeof(UViolator_ActiveFriends_C) == 0x0002A8, "Wrong size on UViolator_ActiveFriends_C");
-static_assert(offsetof(UViolator_ActiveFriends_C, UberGraphFrame) == 0x000260, "Member 'UViolator_ActiveFriends_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Reset_Off) == 0x000268, "Member 'UViolator_ActiveFriends_C::Reset_Off' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Update_Down) == 0x000270, "Member 'UViolator_ActiveFriends_C::Update_Down' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Update_Up) == 0x000278, "Member 'UViolator_ActiveFriends_C::Update_Up' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Intro) == 0x000280, "Member 'UViolator_ActiveFriends_C::Intro' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Image_UpdateFlare) == 0x000288, "Member 'UViolator_ActiveFriends_C::Image_UpdateFlare' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, SocialIcon) == 0x000290, "Member 'UViolator_ActiveFriends_C::SocialIcon' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, Text_DeltaChange) == 0x000298, "Member 'UViolator_ActiveFriends_C::Text_DeltaChange' has a wrong offset!");
-static_assert(offsetof(UViolator_ActiveFriends_C, YellowBox) == 0x0002A0, "Member 'UViolator_ActiveFriends_C::YellowBox' has a wrong offset!");
 
 }
 

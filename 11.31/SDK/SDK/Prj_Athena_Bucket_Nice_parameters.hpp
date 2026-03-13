@@ -26,11 +26,6 @@ public:
 	TArray<class AActor*>                         K2Node_Event_HitActors;                            // 0x0008(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     K2Node_Event_HitResults;                           // 0x0018(0x0010)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice");
-static_assert(sizeof(Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice) == 0x000028, "Wrong size on Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice");
-static_assert(offsetof(Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice, EntryPoint) == 0x000000, "Member 'Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice, K2Node_Event_HitActors) == 0x000008, "Member 'Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice::K2Node_Event_HitActors' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice, K2Node_Event_HitResults) == 0x000018, "Member 'Prj_Athena_Bucket_Nice_C_ExecuteUbergraph_Prj_Athena_Bucket_Nice::K2Node_Event_HitResults' has a wrong offset!");
 
 // Function Prj_Athena_Bucket_Nice.Prj_Athena_Bucket_Nice_C.OnExploded
 // 0x0020 (0x0020 - 0x0000)
@@ -40,10 +35,6 @@ public:
 	TArray<class AActor*>                         HitActors;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_Bucket_Nice_C_OnExploded) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Nice_C_OnExploded");
-static_assert(sizeof(Prj_Athena_Bucket_Nice_C_OnExploded) == 0x000020, "Wrong size on Prj_Athena_Bucket_Nice_C_OnExploded");
-static_assert(offsetof(Prj_Athena_Bucket_Nice_C_OnExploded, HitActors) == 0x000000, "Member 'Prj_Athena_Bucket_Nice_C_OnExploded::HitActors' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Nice_C_OnExploded, HitResults) == 0x000010, "Member 'Prj_Athena_Bucket_Nice_C_OnExploded::HitResults' has a wrong offset!");
 
 }
 

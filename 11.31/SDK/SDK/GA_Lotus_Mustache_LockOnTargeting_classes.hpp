@@ -66,33 +66,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Lotus_Mustache_LockOnTargeting_C">();
+		BP_STATIC_CLASS_IMPL("GA_Lotus_Mustache_LockOnTargeting_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Lotus_Mustache_LockOnTargeting_C")
 	}
 	static class UGA_Lotus_Mustache_LockOnTargeting_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Lotus_Mustache_LockOnTargeting_C>();
 	}
 };
-static_assert(alignof(UGA_Lotus_Mustache_LockOnTargeting_C) == 0x000008, "Wrong alignment on UGA_Lotus_Mustache_LockOnTargeting_C");
-static_assert(sizeof(UGA_Lotus_Mustache_LockOnTargeting_C) == 0x000BD8, "Wrong size on UGA_Lotus_Mustache_LockOnTargeting_C");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, PlayerPawn) == 0x000A38, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, LowGravRemoveDelay) == 0x000A40, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::LowGravRemoveDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, float_0) == 0x000A44, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::float_0' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, VelocityResetThreshold) == 0x000A48, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::VelocityResetThreshold' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, TargetData) == 0x000A50, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::TargetData' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, PotentialTargets) == 0x000A78, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::PotentialTargets' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, TargetPriorityFloat) == 0x000A88, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::TargetPriorityFloat' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, PotentialTarget) == 0x000A90, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::PotentialTarget' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, Target) == 0x000A98, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::Target' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, EffectContainer) == 0x000AA0, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::EffectContainer' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, DistanceInfluenceMultiple) == 0x000B58, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::DistanceInfluenceMultiple' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, LockOnRange) == 0x000B60, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::LockOnRange' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, LockOnRectSize) == 0x000B80, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::LockOnRectSize' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, Tick) == 0x000BA0, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::Tick' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, Attribute) == 0x000BA8, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::Attribute' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, Weapon) == 0x000BC8, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::Weapon' has a wrong offset!");
-static_assert(offsetof(UGA_Lotus_Mustache_LockOnTargeting_C, DotCheckValue) == 0x000BD0, "Member 'UGA_Lotus_Mustache_LockOnTargeting_C::DotCheckValue' has a wrong offset!");
 
 }
 

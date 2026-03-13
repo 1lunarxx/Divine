@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Mustache_SkBP_C">();
+		BP_STATIC_CLASS_IMPL("Mustache_SkBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Mustache_SkBP_C")
 	}
 	static class UMustache_SkBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMustache_SkBP_C>();
 	}
 };
-static_assert(alignof(UMustache_SkBP_C) == 0x000010, "Wrong alignment on UMustache_SkBP_C");
-static_assert(sizeof(UMustache_SkBP_C) == 0x000370, "Wrong size on UMustache_SkBP_C");
-static_assert(offsetof(UMustache_SkBP_C, UberGraphFrame) == 0x000270, "Member 'UMustache_SkBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMustache_SkBP_C, AnimGraphNode_Slot_943F7C4A41EBACC639D9488D87C53458) == 0x000278, "Member 'UMustache_SkBP_C::AnimGraphNode_Slot_943F7C4A41EBACC639D9488D87C53458' has a wrong offset!");
-static_assert(offsetof(UMustache_SkBP_C, AnimGraphNode_Root_7E3FA46448BAA601A9D6509EF1D3E4D7) == 0x0002C0, "Member 'UMustache_SkBP_C::AnimGraphNode_Root_7E3FA46448BAA601A9D6509EF1D3E4D7' has a wrong offset!");
-static_assert(offsetof(UMustache_SkBP_C, AnimGraphNode_SequencePlayer_8DE767264798029C9A03DDBCA1A479BB) == 0x0002F0, "Member 'UMustache_SkBP_C::AnimGraphNode_SequencePlayer_8DE767264798029C9A03DDBCA1A479BB' has a wrong offset!");
 
 }
 

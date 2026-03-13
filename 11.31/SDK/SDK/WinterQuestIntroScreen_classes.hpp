@@ -33,23 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestIntroScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestIntroScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestIntroScreen_C")
 	}
 	static class UWinterQuestIntroScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestIntroScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestIntroScreen_C) == 0x000008, "Wrong alignment on UWinterQuestIntroScreen_C");
-static_assert(sizeof(UWinterQuestIntroScreen_C) == 0x000498, "Wrong size on UWinterQuestIntroScreen_C");
-static_assert(offsetof(UWinterQuestIntroScreen_C, CenterRibbon) == 0x000458, "Member 'UWinterQuestIntroScreen_C::CenterRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, LargeLeftRibbon) == 0x000460, "Member 'UWinterQuestIntroScreen_C::LargeLeftRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, LargeRightRibbon) == 0x000468, "Member 'UWinterQuestIntroScreen_C::LargeRightRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, Ribbon) == 0x000470, "Member 'UWinterQuestIntroScreen_C::Ribbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, SmallBottomLeftRibbon) == 0x000478, "Member 'UWinterQuestIntroScreen_C::SmallBottomLeftRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, SmallBottomRightRibbon) == 0x000480, "Member 'UWinterQuestIntroScreen_C::SmallBottomRightRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, SmallTopLeftRibbon) == 0x000488, "Member 'UWinterQuestIntroScreen_C::SmallTopLeftRibbon' has a wrong offset!");
-static_assert(offsetof(UWinterQuestIntroScreen_C, SmallTopRightRibbon) == 0x000490, "Member 'UWinterQuestIntroScreen_C::SmallTopRightRibbon' has a wrong offset!");
 
 }
 

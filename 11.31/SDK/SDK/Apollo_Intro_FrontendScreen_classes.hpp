@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Apollo_Intro_FrontendScreen_C">();
+		BP_STATIC_CLASS_IMPL("Apollo_Intro_FrontendScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Apollo_Intro_FrontendScreen_C")
 	}
 	static class UApollo_Intro_FrontendScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UApollo_Intro_FrontendScreen_C>();
 	}
 };
-static_assert(alignof(UApollo_Intro_FrontendScreen_C) == 0x000008, "Wrong alignment on UApollo_Intro_FrontendScreen_C");
-static_assert(sizeof(UApollo_Intro_FrontendScreen_C) == 0x000460, "Wrong size on UApollo_Intro_FrontendScreen_C");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, UberGraphFrame) == 0x000430, "Member 'UApollo_Intro_FrontendScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, BaseColor) == 0x000438, "Member 'UApollo_Intro_FrontendScreen_C::BaseColor' has a wrong offset!");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, IntroRotatingText) == 0x000440, "Member 'UApollo_Intro_FrontendScreen_C::IntroRotatingText' has a wrong offset!");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, ProgressSpinner) == 0x000448, "Member 'UApollo_Intro_FrontendScreen_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, ProgressModal) == 0x000450, "Member 'UApollo_Intro_FrontendScreen_C::ProgressModal' has a wrong offset!");
-static_assert(offsetof(UApollo_Intro_FrontendScreen_C, LoadingScreenAsset) == 0x000458, "Member 'UApollo_Intro_FrontendScreen_C::LoadingScreenAsset' has a wrong offset!");
 
 }
 

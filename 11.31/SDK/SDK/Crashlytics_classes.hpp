@@ -34,15 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CrashlyticsBlueprintLibrary">();
+		STATIC_CLASS_IMPL("CrashlyticsBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CrashlyticsBlueprintLibrary")
 	}
 	static class UCrashlyticsBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCrashlyticsBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UCrashlyticsBlueprintLibrary) == 0x000008, "Wrong alignment on UCrashlyticsBlueprintLibrary");
-static_assert(sizeof(UCrashlyticsBlueprintLibrary) == 0x000028, "Wrong size on UCrashlyticsBlueprintLibrary");
 
 }
 

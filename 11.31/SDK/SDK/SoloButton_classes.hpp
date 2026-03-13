@@ -50,27 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SoloButton_C">();
+		BP_STATIC_CLASS_IMPL("SoloButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoloButton_C")
 	}
 	static class USoloButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoloButton_C>();
 	}
 };
-static_assert(alignof(USoloButton_C) == 0x000008, "Wrong alignment on USoloButton_C");
-static_assert(sizeof(USoloButton_C) == 0x000BE0, "Wrong size on USoloButton_C");
-static_assert(offsetof(USoloButton_C, UberGraphFrame) == 0x000B70, "Member 'USoloButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Pressed) == 0x000B78, "Member 'USoloButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Hover) == 0x000B80, "Member 'USoloButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Border_Container) == 0x000B88, "Member 'USoloButton_C::Border_Container' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, ButtonBacking) == 0x000B90, "Member 'USoloButton_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, SizeBox_Control) == 0x000B98, "Member 'USoloButton_C::SizeBox_Control' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Text_ButtonAction) == 0x000BA0, "Member 'USoloButton_C::Text_ButtonAction' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Button_Description) == 0x000BA8, "Member 'USoloButton_C::Button_Description' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, FontSizeOveride) == 0x000BC0, "Member 'USoloButton_C::FontSizeOveride' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, FontSize) == 0x000BC4, "Member 'USoloButton_C::FontSize' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, Padding_Overide) == 0x000BC8, "Member 'USoloButton_C::Padding_Overide' has a wrong offset!");
-static_assert(offsetof(USoloButton_C, PaddingOveride) == 0x000BD8, "Member 'USoloButton_C::PaddingOveride' has a wrong offset!");
 
 }
 

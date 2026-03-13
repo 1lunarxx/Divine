@@ -17,23 +17,6 @@
 namespace SDK::Params
 {
 
-// Function GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C.OnLoopingStart
-// 0x00E0 (0x00E0 - 0x0000)
-struct GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-};
-static_assert(alignof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart) == 0x000008, "Wrong alignment on GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart");
-static_assert(sizeof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart) == 0x0000E0, "Wrong size on GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart::AudioComponents' has a wrong offset!");
-
 // Function GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C.On Distant Lightning Spawn
 // 0x0024 (0x0024 - 0x0000)
 struct GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn final
@@ -44,12 +27,6 @@ public:
 	struct FVector                                Location;                                          // 0x000C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Velocity;                                          // 0x0018(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn) == 0x000004, "Wrong alignment on GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn");
-static_assert(sizeof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn) == 0x000024, "Wrong size on GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn, EventName) == 0x000000, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn::EventName' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn, EmitterTime) == 0x000008, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn::EmitterTime' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn, Location) == 0x00000C, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn::Location' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn, Velocity) == 0x000018, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_On_Distant_Lightning_Spawn::Velocity' has a wrong offset!");
 
 // Function GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C.ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03
 // 0x0140 (0x0140 - 0x0000)
@@ -62,7 +39,7 @@ public:
 	struct FGameplayCueParameters                 K2Node_Event_Parameters;                           // 0x0010(0x00B8)(ConstParm, ContainsInstancedReference)
 	TArray<class UParticleSystemComponent*>       K2Node_Event_ParticleComponents;                   // 0x00C8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                K2Node_Event_AudioComponents;                      // 0x00D8(0x0010)(ConstParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class FName EventName, float EmitterTime, const struct FVector& Location, const struct FVector& Velocity)> K2Node_CreateDelegate_OutputDelegate; // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
 	class UParticleSystemComponent*               CallFunc_Array_Get_Item;                           // 0x00F8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_EventName;                      // 0x0100(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_CustomEvent_EmitterTime;                    // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -76,24 +53,17 @@ public:
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03) == 0x000008, "Wrong alignment on GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
-static_assert(sizeof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03) == 0x000140, "Wrong size on GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, EntryPoint) == 0x000000, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_Event_MyTarget) == 0x000008, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_Event_Parameters) == 0x000010, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_Event_ParticleComponents) == 0x0000C8, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_Event_AudioComponents) == 0x0000D8, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_CreateDelegate_OutputDelegate) == 0x0000E8, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_Array_Get_Item) == 0x0000F8, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_CustomEvent_EventName) == 0x000100, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_CustomEvent_EventName' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_CustomEvent_EmitterTime) == 0x000108, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_CustomEvent_EmitterTime' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_CustomEvent_Location) == 0x00010C, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_CustomEvent_Location' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, K2Node_CustomEvent_Velocity) == 0x000118, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::K2Node_CustomEvent_Velocity' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x000128, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000130, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_RandomFloatInRange_ReturnValue) == 0x000134, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000138, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03, CallFunc_BooleanAND_ReturnValue) == 0x000139, "Member 'GC_Athena_OutsideSafeZone_Stage03_C_ExecuteUbergraph_GC_Athena_OutsideSafeZone_Stage03::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function GC_Athena_OutsideSafeZone_Stage03.GC_Athena_OutsideSafeZone_Stage03_C.OnLoopingStart
+// 0x00E0 (0x00E0 - 0x0000)
+struct GC_Athena_OutsideSafeZone_Stage03_C_OnLoopingStart final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+};
 
 }
 

@@ -23,15 +23,17 @@ class UFacialAnim_HeadRemapAsset_C final : public UFacialLiveLinkRemapAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FacialAnim_HeadRemapAsset_C">();
+		BP_STATIC_CLASS_IMPL("FacialAnim_HeadRemapAsset_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FacialAnim_HeadRemapAsset_C")
 	}
 	static class UFacialAnim_HeadRemapAsset_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFacialAnim_HeadRemapAsset_C>();
 	}
 };
-static_assert(alignof(UFacialAnim_HeadRemapAsset_C) == 0x000008, "Wrong alignment on UFacialAnim_HeadRemapAsset_C");
-static_assert(sizeof(UFacialAnim_HeadRemapAsset_C) == 0x000030, "Wrong size on UFacialAnim_HeadRemapAsset_C");
 
 }
 

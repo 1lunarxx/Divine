@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ImpactNumbers_C">();
+		BP_STATIC_CLASS_IMPL("ImpactNumbers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImpactNumbers_C")
 	}
 	static class AImpactNumbers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AImpactNumbers_C>();
 	}
 };
-static_assert(alignof(AImpactNumbers_C) == 0x000008, "Wrong alignment on AImpactNumbers_C");
-static_assert(sizeof(AImpactNumbers_C) == 0x000458, "Wrong size on AImpactNumbers_C");
-static_assert(offsetof(AImpactNumbers_C, UberGraphFrame) == 0x000430, "Member 'AImpactNumbers_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, DefaultSceneRoot) == 0x000438, "Member 'AImpactNumbers_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Spacing_percentage_for_1s) == 0x000440, "Member 'AImpactNumbers_C::Spacing_percentage_for_1s' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, FontYSize_0) == 0x000444, "Member 'AImpactNumbers_C::FontYSize_0' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, FontXSize_0) == 0x000448, "Member 'AImpactNumbers_C::FontXSize_0' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Number_Spacing_Multiplier) == 0x00044C, "Member 'AImpactNumbers_C::Number_Spacing_Multiplier' has a wrong offset!");
-static_assert(offsetof(AImpactNumbers_C, Number_of_number_rotations) == 0x000450, "Member 'AImpactNumbers_C::Number_of_number_rotations' has a wrong offset!");
 
 }
 

@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonLevelHeaderWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonLevelHeaderWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonLevelHeaderWidget_C")
 	}
 	static class UAthenaSeasonLevelHeaderWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonLevelHeaderWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonLevelHeaderWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonLevelHeaderWidget_C");
-static_assert(sizeof(UAthenaSeasonLevelHeaderWidget_C) == 0x000290, "Wrong size on UAthenaSeasonLevelHeaderWidget_C");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, UberGraphFrame) == 0x000270, "Member 'UAthenaSeasonLevelHeaderWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, CurrentTierIndicator) == 0x000278, "Member 'UAthenaSeasonLevelHeaderWidget_C::CurrentTierIndicator' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, HeaderNumber) == 0x000280, "Member 'UAthenaSeasonLevelHeaderWidget_C::HeaderNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelHeaderWidget_C, PaidHeaderBorder) == 0x000288, "Member 'UAthenaSeasonLevelHeaderWidget_C::PaidHeaderBorder' has a wrong offset!");
 
 }
 

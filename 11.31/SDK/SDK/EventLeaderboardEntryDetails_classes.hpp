@@ -83,57 +83,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardEntryDetails_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardEntryDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardEntryDetails_C")
 	}
 	static class UEventLeaderboardEntryDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardEntryDetails_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardEntryDetails_C) == 0x000008, "Wrong alignment on UEventLeaderboardEntryDetails_C");
-static_assert(sizeof(UEventLeaderboardEntryDetails_C) == 0x0003B0, "Wrong size on UEventLeaderboardEntryDetails_C");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, UberGraphFrame) == 0x000258, "Member 'UEventLeaderboardEntryDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, MatchHistoryHover) == 0x000260, "Member 'UEventLeaderboardEntryDetails_C::MatchHistoryHover' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, ProfileHover) == 0x000268, "Member 'UEventLeaderboardEntryDetails_C::ProfileHover' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Intro) == 0x000270, "Member 'UEventLeaderboardEntryDetails_C::Intro' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Button_MatchHistory) == 0x000278, "Member 'UEventLeaderboardEntryDetails_C::Button_MatchHistory' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Button_Profiles) == 0x000280, "Member 'UEventLeaderboardEntryDetails_C::Button_Profiles' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonBorder_ElimPointer) == 0x000288, "Member 'UEventLeaderboardEntryDetails_C::CommonBorder_ElimPointer' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonBorder_PlacementPointer) == 0x000290, "Member 'UEventLeaderboardEntryDetails_C::CommonBorder_PlacementPointer' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_1) == 0x000298, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_MatchHistoryTextMatchHistory) == 0x0002A0, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_MatchHistoryTextMatchHistory' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_PlayerNames) == 0x0002A8, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_PlayerNames' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_PlayerNamesTitle) == 0x0002B0, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_PlayerNamesTitle' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_ProfileText) == 0x0002B8, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_ProfileText' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_Score) == 0x0002C0, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_Score' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, CommonTextBlock_Title) == 0x0002C8, "Member 'UEventLeaderboardEntryDetails_C::CommonTextBlock_Title' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_31) == 0x0002D0, "Member 'UEventLeaderboardEntryDetails_C::Image_31' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_32) == 0x0002D8, "Member 'UEventLeaderboardEntryDetails_C::Image_32' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_57) == 0x0002E0, "Member 'UEventLeaderboardEntryDetails_C::Image_57' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_58) == 0x0002E8, "Member 'UEventLeaderboardEntryDetails_C::Image_58' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_93) == 0x0002F0, "Member 'UEventLeaderboardEntryDetails_C::Image_93' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_94) == 0x0002F8, "Member 'UEventLeaderboardEntryDetails_C::Image_94' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_DetailsBG) == 0x000300, "Member 'UEventLeaderboardEntryDetails_C::Image_DetailsBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_ElimIcon) == 0x000308, "Member 'UEventLeaderboardEntryDetails_C::Image_ElimIcon' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_LiveMatch) == 0x000310, "Member 'UEventLeaderboardEntryDetails_C::Image_LiveMatch' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_Pie) == 0x000318, "Member 'UEventLeaderboardEntryDetails_C::Image_Pie' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_PieShadow) == 0x000320, "Member 'UEventLeaderboardEntryDetails_C::Image_PieShadow' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_PlacementIcon) == 0x000328, "Member 'UEventLeaderboardEntryDetails_C::Image_PlacementIcon' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_PlayernameBG) == 0x000330, "Member 'UEventLeaderboardEntryDetails_C::Image_PlayernameBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Image_PlayernameBG_Shadow) == 0x000338, "Member 'UEventLeaderboardEntryDetails_C::Image_PlayernameBG_Shadow' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Overlay_PointBreakdown) == 0x000340, "Member 'UEventLeaderboardEntryDetails_C::Overlay_PointBreakdown' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Overlay_TeamMembers) == 0x000348, "Member 'UEventLeaderboardEntryDetails_C::Overlay_TeamMembers' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Stat_AveragePlacement) == 0x000350, "Member 'UEventLeaderboardEntryDetails_C::Stat_AveragePlacement' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Stat_AveragePointsPerMatch) == 0x000358, "Member 'UEventLeaderboardEntryDetails_C::Stat_AveragePointsPerMatch' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Stat_MatchesPlayed) == 0x000360, "Member 'UEventLeaderboardEntryDetails_C::Stat_MatchesPlayed' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Stat_TotalEliminations) == 0x000368, "Member 'UEventLeaderboardEntryDetails_C::Stat_TotalEliminations' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Stat_VictoryRoyales) == 0x000370, "Member 'UEventLeaderboardEntryDetails_C::Stat_VictoryRoyales' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Text_EliminationPointInfo) == 0x000378, "Member 'UEventLeaderboardEntryDetails_C::Text_EliminationPointInfo' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, Text_PlacementPointInfo) == 0x000380, "Member 'UEventLeaderboardEntryDetails_C::Text_PlacementPointInfo' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, VerticalBox_StatContainer) == 0x000388, "Member 'UEventLeaderboardEntryDetails_C::VerticalBox_StatContainer' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, LeaderboardEntryData) == 0x000390, "Member 'UEventLeaderboardEntryDetails_C::LeaderboardEntryData' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, ProfileSelectedFromSelector) == 0x000398, "Member 'UEventLeaderboardEntryDetails_C::ProfileSelectedFromSelector' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntryDetails_C, ProfileSelectorInstance) == 0x0003A8, "Member 'UEventLeaderboardEntryDetails_C::ProfileSelectorInstance' has a wrong offset!");
 
 }
 

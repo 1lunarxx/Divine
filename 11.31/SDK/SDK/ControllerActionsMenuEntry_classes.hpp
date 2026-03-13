@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ControllerActionsMenuEntry_C">();
+		BP_STATIC_CLASS_IMPL("ControllerActionsMenuEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ControllerActionsMenuEntry_C")
 	}
 	static class UControllerActionsMenuEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UControllerActionsMenuEntry_C>();
 	}
 };
-static_assert(alignof(UControllerActionsMenuEntry_C) == 0x000008, "Wrong alignment on UControllerActionsMenuEntry_C");
-static_assert(sizeof(UControllerActionsMenuEntry_C) == 0x000B78, "Wrong size on UControllerActionsMenuEntry_C");
-static_assert(offsetof(UControllerActionsMenuEntry_C, CommonRichTextBlock_97) == 0x000B70, "Member 'UControllerActionsMenuEntry_C::CommonRichTextBlock_97' has a wrong offset!");
 
 }
 

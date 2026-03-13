@@ -23,9 +23,6 @@ struct ToastDisplayArea_C_OnDisplayToast final
 public:
 	class UFortUINotification*                    NewToast;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ToastDisplayArea_C_OnDisplayToast) == 0x000008, "Wrong alignment on ToastDisplayArea_C_OnDisplayToast");
-static_assert(sizeof(ToastDisplayArea_C_OnDisplayToast) == 0x000008, "Wrong size on ToastDisplayArea_C_OnDisplayToast");
-static_assert(offsetof(ToastDisplayArea_C_OnDisplayToast, NewToast) == 0x000000, "Member 'ToastDisplayArea_C_OnDisplayToast::NewToast' has a wrong offset!");
 
 // Function ToastDisplayArea.ToastDisplayArea_C.ExecuteUbergraph_ToastDisplayArea
 // 0x0050 (0x0050 - 0x0000)
@@ -59,30 +56,6 @@ public:
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea) == 0x000008, "Wrong alignment on ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea");
-static_assert(sizeof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea) == 0x000050, "Wrong size on ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, EntryPoint) == 0x000000, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_MakeLiteralByte_ReturnValue) == 0x000004, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000005, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_MakeLiteralByte_ReturnValue_1) == 0x000006, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_MakeLiteralByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_Event_NewToast) == 0x000008, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_Event_NewToast' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_AsToast_Widget_New) == 0x000010, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_AsToast_Widget_New' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_SwitchEnum_CmpSuccess) == 0x000019, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_AsToast_Widget_Minor_Error) == 0x000020, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_AsToast_Widget_Minor_Error' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_MakeLiteralByte_ReturnValue_2) == 0x000029, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_MakeLiteralByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_AsFort_Player_Power_Rating_Toast) == 0x000030, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_AsFort_Player_Power_Rating_Toast' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, K2Node_DynamicCast_bSuccess_2) == 0x000038, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000039, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_LessEqual_ByteByte_ReturnValue) == 0x00003A, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_LessEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_MakeLiteralByte_ReturnValue_3) == 0x00003B, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_MakeLiteralByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_BooleanAND_ReturnValue) == 0x00003C, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_LessEqual_ByteByte_ReturnValue_1) == 0x00003D, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_LessEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_BooleanAND_ReturnValue_1) == 0x000048, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_GetSubGame_ReturnValue) == 0x000049, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00004A, "Member 'ToastDisplayArea_C_ExecuteUbergraph_ToastDisplayArea::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 }
 

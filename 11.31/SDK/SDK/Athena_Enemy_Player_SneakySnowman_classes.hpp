@@ -43,23 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_Enemy_Player_SneakySnowman_C">();
+		BP_STATIC_CLASS_IMPL("Athena_Enemy_Player_SneakySnowman_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_Enemy_Player_SneakySnowman_C")
 	}
 	static class AAthena_Enemy_Player_SneakySnowman_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_Enemy_Player_SneakySnowman_C>();
 	}
 };
-static_assert(alignof(AAthena_Enemy_Player_SneakySnowman_C) == 0x000008, "Wrong alignment on AAthena_Enemy_Player_SneakySnowman_C");
-static_assert(sizeof(AAthena_Enemy_Player_SneakySnowman_C) == 0x000B78, "Wrong size on AAthena_Enemy_Player_SneakySnowman_C");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, UberGraphFrame) == 0x000B08, "Member 'AAthena_Enemy_Player_SneakySnowman_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, SM_SneakySnowman) == 0x000B10, "Member 'AAthena_Enemy_Player_SneakySnowman_C::SM_SneakySnowman' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, Effects) == 0x000B18, "Member 'AAthena_Enemy_Player_SneakySnowman_C::Effects' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, EnemySnowmanHolster) == 0x000B1C, "Member 'AAthena_Enemy_Player_SneakySnowman_C::EnemySnowmanHolster' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, PlayerPawn) == 0x000B28, "Member 'AAthena_Enemy_Player_SneakySnowman_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, TotalDamage) == 0x000B30, "Member 'AAthena_Enemy_Player_SneakySnowman_C::TotalDamage' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, MaxHealth) == 0x000B38, "Member 'AAthena_Enemy_Player_SneakySnowman_C::MaxHealth' has a wrong offset!");
-static_assert(offsetof(AAthena_Enemy_Player_SneakySnowman_C, SnowmanDuration) == 0x000B58, "Member 'AAthena_Enemy_Player_SneakySnowman_C::SnowmanDuration' has a wrong offset!");
 
 }
 

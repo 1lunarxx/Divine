@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SunDirectionandColorSet_C">();
+		BP_STATIC_CLASS_IMPL("SunDirectionandColorSet_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SunDirectionandColorSet_C")
 	}
 	static class ASunDirectionandColorSet_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASunDirectionandColorSet_C>();
 	}
 };
-static_assert(alignof(ASunDirectionandColorSet_C) == 0x000008, "Wrong alignment on ASunDirectionandColorSet_C");
-static_assert(sizeof(ASunDirectionandColorSet_C) == 0x000260, "Wrong size on ASunDirectionandColorSet_C");
-static_assert(offsetof(ASunDirectionandColorSet_C, UberGraphFrame) == 0x000218, "Member 'ASunDirectionandColorSet_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASunDirectionandColorSet_C, Scene) == 0x000220, "Member 'ASunDirectionandColorSet_C::Scene' has a wrong offset!");
-static_assert(offsetof(ASunDirectionandColorSet_C, Arrow) == 0x000228, "Member 'ASunDirectionandColorSet_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ASunDirectionandColorSet_C, SunLightVector) == 0x000230, "Member 'ASunDirectionandColorSet_C::SunLightVector' has a wrong offset!");
-static_assert(offsetof(ASunDirectionandColorSet_C, SunLightColor) == 0x00023C, "Member 'ASunDirectionandColorSet_C::SunLightColor' has a wrong offset!");
-static_assert(offsetof(ASunDirectionandColorSet_C, Material_COllection) == 0x00024C, "Member 'ASunDirectionandColorSet_C::Material_COllection' has a wrong offset!");
 
 }
 

@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GiftBoxButton_C">();
+		BP_STATIC_CLASS_IMPL("GiftBoxButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GiftBoxButton_C")
 	}
 	static class UGiftBoxButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGiftBoxButton_C>();
 	}
 };
-static_assert(alignof(UGiftBoxButton_C) == 0x000008, "Wrong alignment on UGiftBoxButton_C");
-static_assert(sizeof(UGiftBoxButton_C) == 0x000BB8, "Wrong size on UGiftBoxButton_C");
-static_assert(offsetof(UGiftBoxButton_C, UberGraphFrame) == 0x000B88, "Member 'UGiftBoxButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGiftBoxButton_C, Hover) == 0x000B90, "Member 'UGiftBoxButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UGiftBoxButton_C, Deselected) == 0x000B98, "Member 'UGiftBoxButton_C::Deselected' has a wrong offset!");
-static_assert(offsetof(UGiftBoxButton_C, Selected) == 0x000BA0, "Member 'UGiftBoxButton_C::Selected' has a wrong offset!");
-static_assert(offsetof(UGiftBoxButton_C, ButtonSelected) == 0x000BA8, "Member 'UGiftBoxButton_C::ButtonSelected' has a wrong offset!");
-static_assert(offsetof(UGiftBoxButton_C, LocalIsHovered) == 0x000BB0, "Member 'UGiftBoxButton_C::LocalIsHovered' has a wrong offset!");
 
 }
 

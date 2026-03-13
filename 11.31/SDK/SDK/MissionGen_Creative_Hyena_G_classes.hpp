@@ -23,15 +23,17 @@ class UMissionGen_Creative_Hyena_G_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Creative_Hyena_G_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Creative_Hyena_G_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Creative_Hyena_G_C")
 	}
 	static class UMissionGen_Creative_Hyena_G_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Creative_Hyena_G_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Creative_Hyena_G_C) == 0x000008, "Wrong alignment on UMissionGen_Creative_Hyena_G_C");
-static_assert(sizeof(UMissionGen_Creative_Hyena_G_C) == 0x0006C0, "Wrong size on UMissionGen_Creative_Hyena_G_C");
 
 }
 

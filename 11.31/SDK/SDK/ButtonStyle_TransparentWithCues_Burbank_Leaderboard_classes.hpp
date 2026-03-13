@@ -23,15 +23,17 @@ class UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C final : public UBut
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-TransparentWithCues-Burbank_Leaderboard_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-TransparentWithCues-Burbank_Leaderboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-TransparentWithCues-Burbank_Leaderboard_C")
 	}
 	static class UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C) == 0x000008, "Wrong alignment on UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C");
-static_assert(sizeof(UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C) == 0x000570, "Wrong size on UButtonStyle_TransparentWithCues_Burbank_Leaderboard_C");
 
 }
 

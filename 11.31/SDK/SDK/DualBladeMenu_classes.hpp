@@ -23,15 +23,17 @@ class UDualBladeMenu_C final : public UFortDualBladeMenu
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DualBladeMenu_C">();
+		BP_STATIC_CLASS_IMPL("DualBladeMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DualBladeMenu_C")
 	}
 	static class UDualBladeMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDualBladeMenu_C>();
 	}
 };
-static_assert(alignof(UDualBladeMenu_C) == 0x000008, "Wrong alignment on UDualBladeMenu_C");
-static_assert(sizeof(UDualBladeMenu_C) == 0x000330, "Wrong size on UDualBladeMenu_C");
 
 }
 

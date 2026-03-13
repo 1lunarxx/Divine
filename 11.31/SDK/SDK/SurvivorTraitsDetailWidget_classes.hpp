@@ -40,35 +40,23 @@ public:
 	bool                                          HasManagerSynergy;                                 // 0x030A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void HandlePostDifferentItemToDetailSet();
 	void ExecuteUbergraph_SurvivorTraitsDetailWidget(int32 EntryPoint);
+	void HandlePostDifferentItemToDetailSet();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SurvivorTraitsDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("SurvivorTraitsDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SurvivorTraitsDetailWidget_C")
 	}
 	static class USurvivorTraitsDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USurvivorTraitsDetailWidget_C>();
 	}
 };
-static_assert(alignof(USurvivorTraitsDetailWidget_C) == 0x000008, "Wrong alignment on USurvivorTraitsDetailWidget_C");
-static_assert(sizeof(USurvivorTraitsDetailWidget_C) == 0x000310, "Wrong size on USurvivorTraitsDetailWidget_C");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, UberGraphFrame) == 0x0002B0, "Member 'USurvivorTraitsDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, DotRule) == 0x0002B8, "Member 'USurvivorTraitsDetailWidget_C::DotRule' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, FortItemCategoryIndicator2Icon) == 0x0002C0, "Member 'USurvivorTraitsDetailWidget_C::FortItemCategoryIndicator2Icon' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, FortItemCategoryIndicatorIcon) == 0x0002C8, "Member 'USurvivorTraitsDetailWidget_C::FortItemCategoryIndicatorIcon' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, ParentSizeBox) == 0x0002D0, "Member 'USurvivorTraitsDetailWidget_C::ParentSizeBox' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, SecondaryBorder) == 0x0002D8, "Member 'USurvivorTraitsDetailWidget_C::SecondaryBorder' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, SecondaryCategoryIndicator) == 0x0002E0, "Member 'USurvivorTraitsDetailWidget_C::SecondaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TertiaryBorder) == 0x0002E8, "Member 'USurvivorTraitsDetailWidget_C::TertiaryBorder' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TertiaryCategoryIndicator) == 0x0002F0, "Member 'USurvivorTraitsDetailWidget_C::TertiaryCategoryIndicator' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TextPersonality) == 0x0002F8, "Member 'USurvivorTraitsDetailWidget_C::TextPersonality' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, TextTertiaryHeader) == 0x000300, "Member 'USurvivorTraitsDetailWidget_C::TextTertiaryHeader' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, HasPersonality) == 0x000308, "Member 'USurvivorTraitsDetailWidget_C::HasPersonality' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, HasSetBonus) == 0x000309, "Member 'USurvivorTraitsDetailWidget_C::HasSetBonus' has a wrong offset!");
-static_assert(offsetof(USurvivorTraitsDetailWidget_C, HasManagerSynergy) == 0x00030A, "Member 'USurvivorTraitsDetailWidget_C::HasManagerSynergy' has a wrong offset!");
 
 }
 

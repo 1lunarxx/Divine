@@ -29,19 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CommunityVotingSection_C">();
+		BP_STATIC_CLASS_IMPL("CommunityVotingSection_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CommunityVotingSection_C")
 	}
 	static class UCommunityVotingSection_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCommunityVotingSection_C>();
 	}
 };
-static_assert(alignof(UCommunityVotingSection_C) == 0x000008, "Wrong alignment on UCommunityVotingSection_C");
-static_assert(sizeof(UCommunityVotingSection_C) == 0x0003E8, "Wrong size on UCommunityVotingSection_C");
-static_assert(offsetof(UCommunityVotingSection_C, Border_NoCV_1) == 0x0003C8, "Member 'UCommunityVotingSection_C::Border_NoCV_1' has a wrong offset!");
-static_assert(offsetof(UCommunityVotingSection_C, NoOffersBox) == 0x0003D0, "Member 'UCommunityVotingSection_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(UCommunityVotingSection_C, Overlay_EntryBox_Offers) == 0x0003D8, "Member 'UCommunityVotingSection_C::Overlay_EntryBox_Offers' has a wrong offset!");
-static_assert(offsetof(UCommunityVotingSection_C, Switcher_Offers) == 0x0003E0, "Member 'UCommunityVotingSection_C::Switcher_Offers' has a wrong offset!");
 
 }
 

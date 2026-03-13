@@ -57,25 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SimplePipButton_C">();
+		BP_STATIC_CLASS_IMPL("SimplePipButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimplePipButton_C")
 	}
 	static class USimplePipButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimplePipButton_C>();
 	}
 };
-static_assert(alignof(USimplePipButton_C) == 0x000008, "Wrong alignment on USimplePipButton_C");
-static_assert(sizeof(USimplePipButton_C) == 0x000BB8, "Wrong size on USimplePipButton_C");
-static_assert(offsetof(USimplePipButton_C, UberGraphFrame) == 0x000B70, "Member 'USimplePipButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, ContentSlot) == 0x000B78, "Member 'USimplePipButton_C::ContentSlot' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, ControllerInputStyle) == 0x000B80, "Member 'USimplePipButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, MouseKeyboardStyle) == 0x000B88, "Member 'USimplePipButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, ButtonClickAction) == 0x000B90, "Member 'USimplePipButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, InputActionHorizontalAlignment) == 0x000BA0, "Member 'USimplePipButton_C::InputActionHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, InputActionVerticalAlignment) == 0x000BA1, "Member 'USimplePipButton_C::InputActionVerticalAlignment' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, InputActionRenderTranslation) == 0x000BA4, "Member 'USimplePipButton_C::InputActionRenderTranslation' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, InputActionUseRimBrush) == 0x000BAC, "Member 'USimplePipButton_C::InputActionUseRimBrush' has a wrong offset!");
-static_assert(offsetof(USimplePipButton_C, InputActionRimBrushSize) == 0x000BB0, "Member 'USimplePipButton_C::InputActionRimBrushSize' has a wrong offset!");
 
 }
 

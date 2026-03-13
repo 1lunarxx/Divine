@@ -55,37 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C")
 	}
 	static class UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C>();
 	}
 };
-static_assert(alignof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C) == 0x000010, "Wrong alignment on UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C");
-static_assert(sizeof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C) == 0x001A90, "Wrong size on UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, UberGraphFrame) == 0x0003F0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_Root_966722F040605A529996238D427F43D4) == 0x0003F8, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_Root_966722F040605A529996238D427F43D4' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B) == 0x000428, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SubInput_706F137147C60FF00343D1942C15960B' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095) == 0x0004A0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_18FA112E46ABA0D05274AA95C741D095' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646) == 0x0008E0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_LocalToComponentSpace_6B89CDA04ED040E5B4E7049182772646' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2) == 0x000900, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_2F8266E641D30F638E18F9AD63452CB2' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9) == 0x000920, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_20B56F374DE380A7E12409AE93F8D7F9' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC) == 0x000D60, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_8B2A53064649ECCBE2C488A1BFAA1ABC' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505) == 0x0011A0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_AnimDynamics_912B846445FBAD349FA22EBCF5DB5505' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3) == 0x0015E0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SaveCachedPose_A51E3A934B8D907BC2DA37A7CE8355D3' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7) == 0x001698, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_E6FD1209434285325183BFB8C8B047D7' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405) == 0x0016C0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_BlendListByBool_90E87AEB4216ABCCD1A7C288696B4405' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E) == 0x001760, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_890553D14E92A2709A57D6913EA2991E' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_ModifyBone_67B8CD8B4C9B959DED2F5E89ACE6FB1C) == 0x001788, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_ModifyBone_67B8CD8B4C9B959DED2F5E89ACE6FB1C' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_LocalToComponentSpace_4881F0674D460CEDDEC22E99FDCBD724) == 0x001890, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_LocalToComponentSpace_4881F0674D460CEDDEC22E99FDCBD724' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_ComponentToLocalSpace_1A528F7A47B3D4714707ED96B298D1D0) == 0x0018B0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_ComponentToLocalSpace_1A528F7A47B3D4714707ED96B298D1D0' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_BlendListByBool_3077CAF64E1F65744AFBB18F63376A75) == 0x0018D0, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_BlendListByBool_3077CAF64E1F65744AFBB18F63376A75' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_4DCAC5274BDE487C996AF2AFD9A6ABD9) == 0x001970, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_4DCAC5274BDE487C996AF2AFD9A6ABD9' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_SaveCachedPose_90029CC74EF407C0DD580FA80F444EA3) == 0x001998, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_SaveCachedPose_90029CC74EF407C0DD580FA80F444EA3' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, AnimGraphNode_UseCachedPose_8B1399FF43838183D1B4EAA73C086674) == 0x001A50, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::AnimGraphNode_UseCachedPose_8B1399FF43838183D1B4EAA73C086674' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, MeshToCopy) == 0x001A78, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::MeshToCopy' has a wrong offset!");
-static_assert(offsetof(UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C, GetPlayerListUsesCustomCharacterParts) == 0x001A80, "Member 'UF_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C::GetPlayerListUsesCustomCharacterParts' has a wrong offset!");
 
 }
 

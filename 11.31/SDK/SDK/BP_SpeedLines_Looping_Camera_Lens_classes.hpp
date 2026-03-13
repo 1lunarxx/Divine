@@ -23,15 +23,17 @@ class ABP_SpeedLines_Looping_Camera_Lens_C final : public AEmitterCameraLensEffe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SpeedLines_Looping_Camera_Lens_C">();
+		BP_STATIC_CLASS_IMPL("BP_SpeedLines_Looping_Camera_Lens_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SpeedLines_Looping_Camera_Lens_C")
 	}
 	static class ABP_SpeedLines_Looping_Camera_Lens_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SpeedLines_Looping_Camera_Lens_C>();
 	}
 };
-static_assert(alignof(ABP_SpeedLines_Looping_Camera_Lens_C) == 0x000010, "Wrong alignment on ABP_SpeedLines_Looping_Camera_Lens_C");
-static_assert(sizeof(ABP_SpeedLines_Looping_Camera_Lens_C) == 0x0002D0, "Wrong size on ABP_SpeedLines_Looping_Camera_Lens_C");
 
 }
 

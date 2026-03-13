@@ -40,20 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_EventCine_C">();
+		BP_STATIC_CLASS_IMPL("Announce_EventCine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_EventCine_C")
 	}
 	static class AAnnounce_EventCine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_EventCine_C>();
 	}
 };
-static_assert(alignof(AAnnounce_EventCine_C) == 0x000008, "Wrong alignment on AAnnounce_EventCine_C");
-static_assert(sizeof(AAnnounce_EventCine_C) == 0x0002B8, "Wrong size on AAnnounce_EventCine_C");
-static_assert(offsetof(AAnnounce_EventCine_C, UberGraphFrame) == 0x000290, "Member 'AAnnounce_EventCine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_EventCine_C, DefaultSceneRoot) == 0x000298, "Member 'AAnnounce_EventCine_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAnnounce_EventCine_C, EventMediaSource) == 0x0002A0, "Member 'AAnnounce_EventCine_C::EventMediaSource' has a wrong offset!");
-static_assert(offsetof(AAnnounce_EventCine_C, AllowSkipping) == 0x0002A8, "Member 'AAnnounce_EventCine_C::AllowSkipping' has a wrong offset!");
-static_assert(offsetof(AAnnounce_EventCine_C, EventSubtitlesPlayer) == 0x0002B0, "Member 'AAnnounce_EventCine_C::EventSubtitlesPlayer' has a wrong offset!");
 
 }
 

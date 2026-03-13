@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaReplayBrowserRow_C">();
+		BP_STATIC_CLASS_IMPL("AthenaReplayBrowserRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaReplayBrowserRow_C")
 	}
 	static class UAthenaReplayBrowserRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaReplayBrowserRow_C>();
 	}
 };
-static_assert(alignof(UAthenaReplayBrowserRow_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserRow_C");
-static_assert(sizeof(UAthenaReplayBrowserRow_C) == 0x000BC8, "Wrong size on UAthenaReplayBrowserRow_C");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, UberGraphFrame) == 0x000BA0, "Member 'UAthenaReplayBrowserRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Selected_Hovered) == 0x000BA8, "Member 'UAthenaReplayBrowserRow_C::Selected_Hovered' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Hovered) == 0x000BB0, "Member 'UAthenaReplayBrowserRow_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Selected_Direct) == 0x000BB8, "Member 'UAthenaReplayBrowserRow_C::Selected_Direct' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserRow_C, Border_Background) == 0x000BC0, "Member 'UAthenaReplayBrowserRow_C::Border_Background' has a wrong offset!");
 
 }
 

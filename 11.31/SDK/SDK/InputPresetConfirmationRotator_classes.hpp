@@ -52,24 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputPresetConfirmationRotator_C">();
+		BP_STATIC_CLASS_IMPL("InputPresetConfirmationRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputPresetConfirmationRotator_C")
 	}
 	static class UInputPresetConfirmationRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputPresetConfirmationRotator_C>();
 	}
 };
-static_assert(alignof(UInputPresetConfirmationRotator_C) == 0x000008, "Wrong alignment on UInputPresetConfirmationRotator_C");
-static_assert(sizeof(UInputPresetConfirmationRotator_C) == 0x000298, "Wrong size on UInputPresetConfirmationRotator_C");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, UberGraphFrame) == 0x000258, "Member 'UInputPresetConfirmationRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, ButtonLeft) == 0x000260, "Member 'UInputPresetConfirmationRotator_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, ButtonRight) == 0x000268, "Member 'UInputPresetConfirmationRotator_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, Description) == 0x000270, "Member 'UInputPresetConfirmationRotator_C::Description' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, Spacer_0) == 0x000278, "Member 'UInputPresetConfirmationRotator_C::Spacer_0' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, SubDescription) == 0x000280, "Member 'UInputPresetConfirmationRotator_C::SubDescription' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, TextRotator) == 0x000288, "Member 'UInputPresetConfirmationRotator_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, SelectedIndex) == 0x000290, "Member 'UInputPresetConfirmationRotator_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(UInputPresetConfirmationRotator_C, Spacer_Width) == 0x000294, "Member 'UInputPresetConfirmationRotator_C::Spacer_Width' has a wrong offset!");
 
 }
 

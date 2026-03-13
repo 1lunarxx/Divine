@@ -33,7 +33,7 @@ public:
 	class UScrollBox*                             ItemRewardsSB;                                     // 0x0660(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class ULightbox_C*                            Lightbox;                                          // 0x0668(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UMTXButton_C*                           MTXButton;                                         // 0x0670(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* NonrefundableText;                                 // 0x0678(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* NonrefundableText;                      // 0x0678(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               O_Sale_PreviousPrice;                              // 0x0680(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       OfferName;                                         // 0x0688(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      PurchaseButton;                                    // 0x0690(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -66,38 +66,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionConfirmation_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionConfirmation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionConfirmation_C")
 	}
 	static class UAthenaDirectAcquisitionConfirmation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionConfirmation_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionConfirmation_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionConfirmation_C");
-static_assert(sizeof(UAthenaDirectAcquisitionConfirmation_C) == 0x0006D8, "Wrong size on UAthenaDirectAcquisitionConfirmation_C");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, UberGraphFrame) == 0x000630, "Member 'UAthenaDirectAcquisitionConfirmation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, AthenaDirectAcquisitonDetails_BattlePassStarDetails) == 0x000638, "Member 'UAthenaDirectAcquisitionConfirmation_C::AthenaDirectAcquisitonDetails_BattlePassStarDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CancelButton) == 0x000640, "Member 'UAthenaDirectAcquisitionConfirmation_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CommonTextBlock_0) == 0x000648, "Member 'UAthenaDirectAcquisitionConfirmation_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, Currency1ItemImage2) == 0x000650, "Member 'UAthenaDirectAcquisitionConfirmation_C::Currency1ItemImage2' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CurrencyVB) == 0x000658, "Member 'UAthenaDirectAcquisitionConfirmation_C::CurrencyVB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, ItemRewardsSB) == 0x000660, "Member 'UAthenaDirectAcquisitionConfirmation_C::ItemRewardsSB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, Lightbox) == 0x000668, "Member 'UAthenaDirectAcquisitionConfirmation_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, MTXButton) == 0x000670, "Member 'UAthenaDirectAcquisitionConfirmation_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, NonrefundableText) == 0x000678, "Member 'UAthenaDirectAcquisitionConfirmation_C::NonrefundableText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, O_Sale_PreviousPrice) == 0x000680, "Member 'UAthenaDirectAcquisitionConfirmation_C::O_Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, OfferName) == 0x000688, "Member 'UAthenaDirectAcquisitionConfirmation_C::OfferName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, PurchaseButton) == 0x000690, "Member 'UAthenaDirectAcquisitionConfirmation_C::PurchaseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, TextOfferDisplayPrice1) == 0x000698, "Member 'UAthenaDirectAcquisitionConfirmation_C::TextOfferDisplayPrice1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, TextOriginalPrice1) == 0x0006A0, "Member 'UAthenaDirectAcquisitionConfirmation_C::TextOriginalPrice1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CanPurchase) == 0x0006A8, "Member 'UAthenaDirectAcquisitionConfirmation_C::CanPurchase' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, IsPurchasing) == 0x0006A9, "Member 'UAthenaDirectAcquisitionConfirmation_C::IsPurchasing' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, NumberToPurchase) == 0x0006AC, "Member 'UAthenaDirectAcquisitionConfirmation_C::NumberToPurchase' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CanPurchaseLeft) == 0x0006B0, "Member 'UAthenaDirectAcquisitionConfirmation_C::CanPurchaseLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CanPurchaseRight) == 0x0006B1, "Member 'UAthenaDirectAcquisitionConfirmation_C::CanPurchaseRight' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, CanChangeQuantity) == 0x0006B2, "Member 'UAthenaDirectAcquisitionConfirmation_C::CanChangeQuantity' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, Confirm) == 0x0006B8, "Member 'UAthenaDirectAcquisitionConfirmation_C::Confirm' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionConfirmation_C, Decline) == 0x0006C8, "Member 'UAthenaDirectAcquisitionConfirmation_C::Decline' has a wrong offset!");
 
 }
 

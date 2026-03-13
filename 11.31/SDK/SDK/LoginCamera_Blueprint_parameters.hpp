@@ -30,17 +30,6 @@ public:
 	class ATVPostProcessBP_C*                     CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint) == 0x000008, "Wrong alignment on LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint");
-static_assert(sizeof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint) == 0x000040, "Wrong size on LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, EntryPoint) == 0x000000, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_GetTimeOfDayManagerFromContext_ReturnValue) == 0x000010, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_GetTimeOfDayManagerFromContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_GetAllActorsOfClass_OutActors) == 0x000018, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_Array_Get_Item) == 0x000030, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'LoginCamera_Blueprint_C_ExecuteUbergraph_LoginCamera_Blueprint::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

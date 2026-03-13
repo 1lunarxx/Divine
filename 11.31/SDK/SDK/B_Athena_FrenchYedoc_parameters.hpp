@@ -38,21 +38,6 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x005C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawnAthena*                  CallFunc_SpawnBot_ReturnValue;                     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc) == 0x000008, "Wrong alignment on B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc");
-static_assert(sizeof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc) == 0x000070, "Wrong size on B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, EntryPoint) == 0x000000, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_GetOwner_ReturnValue) == 0x000008, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_GetController_ReturnValue) == 0x000010, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000018, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_GetController_ReturnValue_1) == 0x000028, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_GetController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_GetGameMode_ReturnValue) == 0x000030, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_GetGameMode_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, K2Node_DynamicCast_AsAthena_Game_Mode) == 0x000038, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::K2Node_DynamicCast_AsAthena_Game_Mode' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_GetServerBotManager_ReturnValue) == 0x000048, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_GetServerBotManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000050, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00005C, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc, CallFunc_SpawnBot_ReturnValue) == 0x000068, "Member 'B_Athena_FrenchYedoc_C_ExecuteUbergraph_B_Athena_FrenchYedoc::CallFunc_SpawnBot_ReturnValue' has a wrong offset!");
 
 }
 

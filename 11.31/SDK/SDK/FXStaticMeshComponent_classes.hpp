@@ -28,15 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FXStaticMeshComponent_C">();
+		BP_STATIC_CLASS_IMPL("FXStaticMeshComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FXStaticMeshComponent_C")
 	}
 	static class UFXStaticMeshComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFXStaticMeshComponent_C>();
 	}
 };
-static_assert(alignof(UFXStaticMeshComponent_C) == 0x000010, "Wrong alignment on UFXStaticMeshComponent_C");
-static_assert(sizeof(UFXStaticMeshComponent_C) == 0x000490, "Wrong size on UFXStaticMeshComponent_C");
 
 }
 

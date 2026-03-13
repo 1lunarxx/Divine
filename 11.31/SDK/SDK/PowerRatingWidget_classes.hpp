@@ -61,37 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PowerRatingWidget_C">();
+		BP_STATIC_CLASS_IMPL("PowerRatingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PowerRatingWidget_C")
 	}
 	static class UPowerRatingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPowerRatingWidget_C>();
 	}
 };
-static_assert(alignof(UPowerRatingWidget_C) == 0x000008, "Wrong alignment on UPowerRatingWidget_C");
-static_assert(sizeof(UPowerRatingWidget_C) == 0x000308, "Wrong size on UPowerRatingWidget_C");
-static_assert(offsetof(UPowerRatingWidget_C, UberGraphFrame) == 0x000278, "Member 'UPowerRatingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, BaseRatingValue) == 0x000280, "Member 'UPowerRatingWidget_C::BaseRatingValue' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, BaseRatingValue_Large) == 0x000288, "Member 'UPowerRatingWidget_C::BaseRatingValue_Large' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, BuffedRatingOuterGlow) == 0x000290, "Member 'UPowerRatingWidget_C::BuffedRatingOuterGlow' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, HomebaseRatingBar) == 0x000298, "Member 'UPowerRatingWidget_C::HomebaseRatingBar' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, Image_Power) == 0x0002A0, "Member 'UPowerRatingWidget_C::Image_Power' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, ModeTypeSwitcher) == 0x0002A8, "Member 'UPowerRatingWidget_C::ModeTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, OversizedMode) == 0x0002B0, "Member 'UPowerRatingWidget_C::OversizedMode' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, PowerIconGlow) == 0x0002B8, "Member 'UPowerRatingWidget_C::PowerIconGlow' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, Rating_Glow_Large) == 0x0002C0, "Member 'UPowerRatingWidget_C::Rating_Glow_Large' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, RatingBar) == 0x0002C8, "Member 'UPowerRatingWidget_C::RatingBar' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, RegularMode) == 0x0002D0, "Member 'UPowerRatingWidget_C::RegularMode' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, TeamRatingValue) == 0x0002D8, "Member 'UPowerRatingWidget_C::TeamRatingValue' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, TeamRatingValue_Large) == 0x0002E0, "Member 'UPowerRatingWidget_C::TeamRatingValue_Large' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, ShowDualPower) == 0x0002E8, "Member 'UPowerRatingWidget_C::ShowDualPower' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, ShowProgress) == 0x0002E9, "Member 'UPowerRatingWidget_C::ShowProgress' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, ShowGlow) == 0x0002EA, "Member 'UPowerRatingWidget_C::ShowGlow' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, UseLargeStyle) == 0x0002EB, "Member 'UPowerRatingWidget_C::UseLargeStyle' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, UseOversizedMode) == 0x0002EC, "Member 'UPowerRatingWidget_C::UseOversizedMode' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, InterpDuration) == 0x0002F0, "Member 'UPowerRatingWidget_C::InterpDuration' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, PowerIncreasedSound) == 0x0002F8, "Member 'UPowerRatingWidget_C::PowerIncreasedSound' has a wrong offset!");
-static_assert(offsetof(UPowerRatingWidget_C, Power_Rating_Num) == 0x000300, "Member 'UPowerRatingWidget_C::Power_Rating_Num' has a wrong offset!");
 
 }
 

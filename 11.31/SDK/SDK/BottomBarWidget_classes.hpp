@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BottomBarWidget_C">();
+		BP_STATIC_CLASS_IMPL("BottomBarWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BottomBarWidget_C")
 	}
 	static class UBottomBarWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBottomBarWidget_C>();
 	}
 };
-static_assert(alignof(UBottomBarWidget_C) == 0x000008, "Wrong alignment on UBottomBarWidget_C");
-static_assert(sizeof(UBottomBarWidget_C) == 0x000308, "Wrong size on UBottomBarWidget_C");
-static_assert(offsetof(UBottomBarWidget_C, UberGraphFrame) == 0x000258, "Member 'UBottomBarWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, BorderShell) == 0x000260, "Member 'UBottomBarWidget_C::BorderShell' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, InputReflector) == 0x000268, "Member 'UBottomBarWidget_C::InputReflector' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, InputReflector_Athena) == 0x000270, "Member 'UBottomBarWidget_C::InputReflector_Athena' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, InputReflectorButtonStyle) == 0x000278, "Member 'UBottomBarWidget_C::InputReflectorButtonStyle' has a wrong offset!");
-static_assert(offsetof(UBottomBarWidget_C, MobileBackground) == 0x000280, "Member 'UBottomBarWidget_C::MobileBackground' has a wrong offset!");
 
 }
 

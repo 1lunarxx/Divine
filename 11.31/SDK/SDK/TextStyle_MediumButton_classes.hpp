@@ -23,15 +23,17 @@ class UTextStyle_MediumButton_C : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-MediumButton_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-MediumButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-MediumButton_C")
 	}
 	static class UTextStyle_MediumButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_MediumButton_C>();
 	}
 };
-static_assert(alignof(UTextStyle_MediumButton_C) == 0x000008, "Wrong alignment on UTextStyle_MediumButton_C");
-static_assert(sizeof(UTextStyle_MediumButton_C) == 0x000148, "Wrong size on UTextStyle_MediumButton_C");
 
 }
 

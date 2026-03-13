@@ -23,15 +23,17 @@ class UCinematicCamera_MatineeTransition_C final : public UFortCinematicCamera
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CinematicCamera_MatineeTransition_C">();
+		BP_STATIC_CLASS_IMPL("CinematicCamera_MatineeTransition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CinematicCamera_MatineeTransition_C")
 	}
 	static class UCinematicCamera_MatineeTransition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCinematicCamera_MatineeTransition_C>();
 	}
 };
-static_assert(alignof(UCinematicCamera_MatineeTransition_C) == 0x000008, "Wrong alignment on UCinematicCamera_MatineeTransition_C");
-static_assert(sizeof(UCinematicCamera_MatineeTransition_C) == 0x000060, "Wrong size on UCinematicCamera_MatineeTransition_C");
 
 }
 

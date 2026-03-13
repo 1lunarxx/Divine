@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "En_ShellTypes_01_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -100,7 +100,7 @@ public:
 	float                                         Reload_PS_Max_Draw_Distance;                       // 0x0F34(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Shells_PS_Max_Draw_Distance;                       // 0x0F38(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F3C[0x4];                                      // 0x0F3C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool AimDownsights)> onAimDownSightsChanged;                            // 0x0F40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool AimDownsights)> onAimDownSightsChanged;                       // 0x0F40(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsMuzzleNiagara;                                   // 0x0F50(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F51[0x7];                                      // 0x0F51(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UNiagaraSystem*                         MuzzleNiagaraSystemInstance;                       // 0x0F58(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -185,89 +185,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Ranged_Generic_C">();
+		BP_STATIC_CLASS_IMPL("B_Ranged_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Ranged_Generic_C")
 	}
 	static class AB_Ranged_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Ranged_Generic_C>();
 	}
 };
-static_assert(alignof(AB_Ranged_Generic_C) == 0x000008, "Wrong alignment on AB_Ranged_Generic_C");
-static_assert(sizeof(AB_Ranged_Generic_C) == 0x000FB8, "Wrong size on AB_Ranged_Generic_C");
-static_assert(offsetof(AB_Ranged_Generic_C, UberGraphFrame) == 0x000D98, "Member 'AB_Ranged_Generic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Reload_Empty_) == 0x000DA0, "Member 'AB_Ranged_Generic_C::Reload_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_empty_) == 0x000DA8, "Member 'AB_Ranged_Generic_C::Shells_empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ScopeMesh1P) == 0x000DB0, "Member 'AB_Ranged_Generic_C::ScopeMesh1P' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_Empty_) == 0x000DB8, "Member 'AB_Ranged_Generic_C::Muzzle_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, AnimateScopePostProcess_DownSightPostProcessAmount_393D8BA5486879173797EF8C9B8D4642) == 0x000DC0, "Member 'AB_Ranged_Generic_C::AnimateScopePostProcess_DownSightPostProcessAmount_393D8BA5486879173797EF8C9B8D4642' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, AnimateScopePostProcess__Direction_393D8BA5486879173797EF8C9B8D4642) == 0x000DC4, "Member 'AB_Ranged_Generic_C::AnimateScopePostProcess__Direction_393D8BA5486879173797EF8C9B8D4642' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, AnimateScopePostProcess) == 0x000DC8, "Member 'AB_Ranged_Generic_C::AnimateScopePostProcess' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleParticleSystem) == 0x000DD0, "Member 'AB_Ranged_Generic_C::MuzzleParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, WeaponDurabilityDestroyEffect) == 0x000DD8, "Member 'AB_Ranged_Generic_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, WeaponDurabilityDestroyEffectIcon) == 0x000DE0, "Member 'AB_Ranged_Generic_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, UseDestroyEffect) == 0x000DE8, "Member 'AB_Ranged_Generic_C::UseDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Use_Reload_Particles) == 0x000DE9, "Member 'AB_Ranged_Generic_C::Use_Reload_Particles' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Reload_ParticleSystem) == 0x000DF0, "Member 'AB_Ranged_Generic_C::Reload_ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, LastPlayFXTime) == 0x000DF8, "Member 'AB_Ranged_Generic_C::LastPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MinPlayFXTime) == 0x000DFC, "Member 'AB_Ranged_Generic_C::MinPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, UseShellsOnFire_) == 0x000E00, "Member 'AB_Ranged_Generic_C::UseShellsOnFire_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, UseShellsOnReload_) == 0x000E01, "Member 'AB_Ranged_Generic_C::UseShellsOnReload_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, UseShellsOnPump_) == 0x000E02, "Member 'AB_Ranged_Generic_C::UseShellsOnPump_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ShellsParticleSystemTemplate) == 0x000E08, "Member 'AB_Ranged_Generic_C::ShellsParticleSystemTemplate' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ReloadSocketName) == 0x000E10, "Member 'AB_Ranged_Generic_C::ReloadSocketName' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Array_Of_Active_Enemy_AI) == 0x000E18, "Member 'AB_Ranged_Generic_C::Array_Of_Active_Enemy_AI' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Scope___Render_Enemies_To_Custom_Depth_Buffer) == 0x000E28, "Member 'AB_Ranged_Generic_C::Scope___Render_Enemies_To_Custom_Depth_Buffer' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Socket_Name) == 0x000E2C, "Member 'AB_Ranged_Generic_C::Shells_Socket_Name' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ShellTypeSelect) == 0x000E34, "Member 'AB_Ranged_Generic_C::ShellTypeSelect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Spawn_Rate_Scale) == 0x000E38, "Member 'AB_Ranged_Generic_C::Shells_Spawn_Rate_Scale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ShellsRotationRate) == 0x000E3C, "Member 'AB_Ranged_Generic_C::ShellsRotationRate' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Velocity) == 0x000E48, "Member 'AB_Ranged_Generic_C::Shells_Velocity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Gravity) == 0x000E54, "Member 'AB_Ranged_Generic_C::Shells_Gravity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Lifetime) == 0x000E60, "Member 'AB_Ranged_Generic_C::Shells_Lifetime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Size) == 0x000E64, "Member 'AB_Ranged_Generic_C::Shells_Size' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_Time_Dilation) == 0x000E70, "Member 'AB_Ranged_Generic_C::Shells_Time_Dilation' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Target_Scope_Vignette_Blur_Screen_Percentage) == 0x000E74, "Member 'AB_Ranged_Generic_C::Target_Scope_Vignette_Blur_Screen_Percentage' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Scope_Camera_Offset_Amount) == 0x000E78, "Member 'AB_Ranged_Generic_C::Scope_Camera_Offset_Amount' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, SmallShells) == 0x000E7C, "Member 'AB_Ranged_Generic_C::SmallShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MediumShells) == 0x000E7D, "Member 'AB_Ranged_Generic_C::MediumShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, LargeShells) == 0x000E7E, "Member 'AB_Ranged_Generic_C::LargeShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ShotgunShells) == 0x000E7F, "Member 'AB_Ranged_Generic_C::ShotgunShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, EnergyShells) == 0x000E80, "Member 'AB_Ranged_Generic_C::EnergyShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Inherit_Parent_Velocity) == 0x000E84, "Member 'AB_Ranged_Generic_C::Inherit_Parent_Velocity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Cylindrical_Radius) == 0x000E88, "Member 'AB_Ranged_Generic_C::Cylindrical_Radius' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Cylindrical_Height) == 0x000E8C, "Member 'AB_Ranged_Generic_C::Cylindrical_Height' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, DebugShellsSocket_) == 0x000E90, "Member 'AB_Ranged_Generic_C::DebugShellsSocket_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Sound_ScopeZoomIn) == 0x000E98, "Member 'AB_Ranged_Generic_C::Sound_ScopeZoomIn' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Sound_ScopeZoomOut) == 0x000EA0, "Member 'AB_Ranged_Generic_C::Sound_ScopeZoomOut' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Alteration_Ambient_PS) == 0x000EA8, "Member 'AB_Ranged_Generic_C::Alteration_Ambient_PS' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ReticleHUDElementTags) == 0x000EB0, "Member 'AB_Ranged_Generic_C::ReticleHUDElementTags' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Is_Wind_Enabled) == 0x000ED0, "Member 'AB_Ranged_Generic_C::Is_Wind_Enabled' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleWindParticleSystem) == 0x000ED8, "Member 'AB_Ranged_Generic_C::MuzzleWindParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleParticleSystem1P) == 0x000EE0, "Member 'AB_Ranged_Generic_C::MuzzleParticleSystem1P' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ShouldHideReticleAfterDelay) == 0x000EE8, "Member 'AB_Ranged_Generic_C::ShouldHideReticleAfterDelay' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleWindParticleSpawned) == 0x000EF0, "Member 'AB_Ranged_Generic_C::MuzzleWindParticleSpawned' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, StencilBufferValue) == 0x000EF8, "Member 'AB_Ranged_Generic_C::StencilBufferValue' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Curve_PitchOffset) == 0x000F00, "Member 'AB_Ranged_Generic_C::Curve_PitchOffset' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Sound_ScopedInLoop) == 0x000F08, "Member 'AB_Ranged_Generic_C::Sound_ScopedInLoop' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ScopeZoomInComp) == 0x000F10, "Member 'AB_Ranged_Generic_C::ScopeZoomInComp' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ScopedInLoopComp) == 0x000F18, "Member 'AB_Ranged_Generic_C::ScopedInLoopComp' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, ScopeZoomOutComp) == 0x000F20, "Member 'AB_Ranged_Generic_C::ScopeZoomOutComp' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Alteration_Ambient_PS_Max_Draw_Distance) == 0x000F28, "Member 'AB_Ranged_Generic_C::Alteration_Ambient_PS_Max_Draw_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_PS_Max_Draw_Distance) == 0x000F2C, "Member 'AB_Ranged_Generic_C::Muzzle_PS_Max_Draw_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Beam_PS_Max_Draw_Distance) == 0x000F30, "Member 'AB_Ranged_Generic_C::Beam_PS_Max_Draw_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Reload_PS_Max_Draw_Distance) == 0x000F34, "Member 'AB_Ranged_Generic_C::Reload_PS_Max_Draw_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Shells_PS_Max_Draw_Distance) == 0x000F38, "Member 'AB_Ranged_Generic_C::Shells_PS_Max_Draw_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, onAimDownSightsChanged) == 0x000F40, "Member 'AB_Ranged_Generic_C::onAimDownSightsChanged' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, IsMuzzleNiagara) == 0x000F50, "Member 'AB_Ranged_Generic_C::IsMuzzleNiagara' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleNiagaraSystemInstance) == 0x000F58, "Member 'AB_Ranged_Generic_C::MuzzleNiagaraSystemInstance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleNiagaraSystemAsset) == 0x000F60, "Member 'AB_Ranged_Generic_C::MuzzleNiagaraSystemAsset' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleNiagaraComponentInstance) == 0x000F88, "Member 'AB_Ranged_Generic_C::MuzzleNiagaraComponentInstance' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, MuzzleParticleSystemComponents) == 0x000F90, "Member 'AB_Ranged_Generic_C::MuzzleParticleSystemComponents' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_ChanceOfLargeFlash) == 0x000FA0, "Member 'AB_Ranged_Generic_C::Muzzle_ChanceOfLargeFlash' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_FlashLarge_MinScale) == 0x000FA4, "Member 'AB_Ranged_Generic_C::Muzzle_FlashLarge_MinScale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_FlashLarge_MaxScale) == 0x000FA8, "Member 'AB_Ranged_Generic_C::Muzzle_FlashLarge_MaxScale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_FlashSmall_MinScale) == 0x000FAC, "Member 'AB_Ranged_Generic_C::Muzzle_FlashSmall_MinScale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_C, Muzzle_FlashSmall_MaxScale) == 0x000FB0, "Member 'AB_Ranged_Generic_C::Muzzle_FlashSmall_MaxScale' has a wrong offset!");
 
 }
 

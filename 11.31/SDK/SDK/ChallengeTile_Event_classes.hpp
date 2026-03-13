@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeTile_Event_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeTile_Event_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeTile_Event_C")
 	}
 	static class UChallengeTile_Event_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeTile_Event_C>();
 	}
 };
-static_assert(alignof(UChallengeTile_Event_C) == 0x000008, "Wrong alignment on UChallengeTile_Event_C");
-static_assert(sizeof(UChallengeTile_Event_C) == 0x000C10, "Wrong size on UChallengeTile_Event_C");
-static_assert(offsetof(UChallengeTile_Event_C, UberGraphFrame) == 0x000BC0, "Member 'UChallengeTile_Event_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, AmbientPartyAssistAttention) == 0x000BC8, "Member 'UChallengeTile_Event_C::AmbientPartyAssistAttention' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, Outro) == 0x000BD0, "Member 'UChallengeTile_Event_C::Outro' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, OnHover) == 0x000BD8, "Member 'UChallengeTile_Event_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, CountdownSB) == 0x000BE0, "Member 'UChallengeTile_Event_C::CountdownSB' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, Image_Background) == 0x000BE8, "Member 'UChallengeTile_Event_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, Image_BoltBorder) == 0x000BF0, "Member 'UChallengeTile_Event_C::Image_BoltBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, OverlayPartyAssist) == 0x000BF8, "Member 'UChallengeTile_Event_C::OverlayPartyAssist' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, UnavailableBox) == 0x000C00, "Member 'UChallengeTile_Event_C::UnavailableBox' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Event_C, UnavailableOvr) == 0x000C08, "Member 'UChallengeTile_Event_C::UnavailableOvr' has a wrong offset!");
 
 }
 

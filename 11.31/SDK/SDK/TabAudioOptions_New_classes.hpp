@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabAudioOptions_New_C">();
+		BP_STATIC_CLASS_IMPL("TabAudioOptions_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabAudioOptions_New_C")
 	}
 	static class UTabAudioOptions_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabAudioOptions_New_C>();
 	}
 };
-static_assert(alignof(UTabAudioOptions_New_C) == 0x000008, "Wrong alignment on UTabAudioOptions_New_C");
-static_assert(sizeof(UTabAudioOptions_New_C) == 0x000338, "Wrong size on UTabAudioOptions_New_C");
-static_assert(offsetof(UTabAudioOptions_New_C, UberGraphFrame) == 0x000330, "Member 'UTabAudioOptions_New_C::UberGraphFrame' has a wrong offset!");
 
 }
 

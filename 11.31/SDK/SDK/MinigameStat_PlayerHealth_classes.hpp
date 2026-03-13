@@ -23,15 +23,17 @@ class UMinigameStat_PlayerHealth_C final : public UFortMinigameStatFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_PlayerHealth_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_PlayerHealth_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_PlayerHealth_C")
 	}
 	static class UMinigameStat_PlayerHealth_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_PlayerHealth_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_PlayerHealth_C) == 0x000008, "Wrong alignment on UMinigameStat_PlayerHealth_C");
-static_assert(sizeof(UMinigameStat_PlayerHealth_C) == 0x000190, "Wrong size on UMinigameStat_PlayerHealth_C");
 
 }
 

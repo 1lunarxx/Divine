@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function AlterationWidget.AlterationWidget_C.GetValidLazyTexture
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash)
-
-TSoftObjectPtr<class UTexture2D> UAlterationWidget_C::GetValidLazyTexture()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidget_C", "GetValidLazyTexture");
-
-	Params::AlterationWidget_C_GetValidLazyTexture Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
 // Function AlterationWidget.AlterationWidget_C.HasValidTexture
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -267,6 +247,26 @@ void UAlterationWidget_C::ExecuteUbergraph_AlterationWidget(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationWidget.AlterationWidget_C.GetValidLazyTexture
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>        ReturnValue                                            (Parm, OutParm, ReturnParm, HasGetValueTypeHash)
+
+TSoftObjectPtr<class UTexture2D> UAlterationWidget_C::GetValidLazyTexture()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationWidget_C", "GetValidLazyTexture");
+
+	Params::AlterationWidget_C_GetValidLazyTexture Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
 }
 
 }

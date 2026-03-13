@@ -34,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCraftingIngredientsDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemCraftingIngredientsDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCraftingIngredientsDetailWidget_C")
 	}
 	static class UItemCraftingIngredientsDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCraftingIngredientsDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientsDetailWidget_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientsDetailWidget_C");
-static_assert(sizeof(UItemCraftingIngredientsDetailWidget_C) == 0x0002C0, "Wrong size on UItemCraftingIngredientsDetailWidget_C");
-static_assert(offsetof(UItemCraftingIngredientsDetailWidget_C, UberGraphFrame) == 0x0002B0, "Member 'UItemCraftingIngredientsDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientsDetailWidget_C, DetailsWidget_ItemCraftingIngredientsList) == 0x0002B8, "Member 'UItemCraftingIngredientsDetailWidget_C::DetailsWidget_ItemCraftingIngredientsList' has a wrong offset!");
 
 }
 

@@ -33,20 +33,8 @@ public:
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortPlayerSurveyQuestionType QuestionType, EFortPlayerSurveyQuestionPresentationStyle PresentationStyle, TSubclassOf<class UFortPlayerSurveyAnswerWidgetBase> WidgetClass)> K2Node_CreateDelegate_OutputDelegate;              // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortPlayerSurveyQuestionType QuestionType, EFortPlayerSurveyQuestionPresentationStyle PresentationStyle, TSubclassOf<class UFortPlayerSurveyAnswerWidgetBase> WidgetClass)> K2Node_CreateDelegate_OutputDelegate; // 0x0040(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget) == 0x000050, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, EntryPoint) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, K2Node_CustomEvent_QuestionType) == 0x000010, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::K2Node_CustomEvent_QuestionType' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, K2Node_CustomEvent_PresentationStyle) == 0x000011, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::K2Node_CustomEvent_PresentationStyle' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, K2Node_CustomEvent_WidgetClass) == 0x000018, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::K2Node_CustomEvent_WidgetClass' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, CallFunc_Create_ReturnValue) == 0x000020, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, CallFunc_Map_Find_Value) == 0x000028, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, CallFunc_Map_Find_ReturnValue) == 0x000030, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, CallFunc_AddChild_ReturnValue) == 0x000038, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000040, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_ExecuteUbergraph_PlayerSurveyPanelAnswerSelectorWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.InitSwitcherChildrenLoop
 // 0x0010 (0x0010 - 0x0000)
@@ -58,11 +46,6 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 WidgetClass;                                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop) == 0x000010, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop, QuestionType) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop::QuestionType' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop, PresentationStyle) == 0x000001, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop::PresentationStyle' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop, WidgetClass) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_InitSwitcherChildrenLoop::WidgetClass' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.UpdateCurrentChild
 // 0x0050 (0x0050 - 0x0000)
@@ -85,20 +68,6 @@ public:
 	class UObject*                                CallFunc_Conv_InterfaceToObject_ReturnValue;       // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild) == 0x000050, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, ForcePropagateQuestion) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::ForcePropagateQuestion' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, NewChildWidget) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::NewChildWidget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, Question) == 0x000010, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::Question' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_GetPresentationStyle_ReturnValue) == 0x000018, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_GetPresentationStyle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_GetQuestionType_ReturnValue) == 0x00001A, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_GetQuestionType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_GetClassForSurvey_ReturnValue) == 0x000020, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_GetClassForSurvey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_Map_Find_Value) == 0x000028, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_Map_Find_ReturnValue) == 0x000030, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_GetQuestion_ReturnValue) == 0x000038, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_GetQuestion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_Conv_InterfaceToObject_ReturnValue) == 0x000040, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_Conv_InterfaceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild, CallFunc_IsValid_ReturnValue_1) == 0x000048, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_UpdateCurrentChild::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.SetCurrentChild
 // 0x0010 (0x0010 - 0x0000)
@@ -111,13 +80,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild) == 0x000010, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild, Widget) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild::Widget' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild, ForcePropagateQuestion) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild::ForcePropagateQuestion' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000009, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild, CallFunc_IsValid_ReturnValue) == 0x00000A, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild, CallFunc_IsValid_ReturnValue_1) == 0x00000B, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_SetCurrentChild::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.CommitCurrentAnswer
 // 0x0001 (0x0001 - 0x0000)
@@ -126,9 +88,6 @@ struct PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer) == 0x000001, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer) == 0x000001, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_CommitCurrentAnswer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.PropagateCurrentQuestion
 // 0x0010 (0x0010 - 0x0000)
@@ -138,10 +97,6 @@ public:
 	class UFortPlayerSurveyQuestion*              CallFunc_GetCurrentQuestion_Question;              // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion) == 0x000010, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion, CallFunc_GetCurrentQuestion_Question) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion::CallFunc_GetCurrentQuestion_Question' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_PropagateCurrentQuestion::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.GetDefaultFocusedWidget
 // 0x0020 (0x0020 - 0x0000)
@@ -153,12 +108,6 @@ public:
 	class UWidget*                                CallFunc_GetDefaultFocusedWidget_ReturnValue;      // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget) == 0x000020, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget, Result) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget::Result' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget, ResultValue) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget::ResultValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget, CallFunc_GetDefaultFocusedWidget_ReturnValue) == 0x000010, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget::CallFunc_GetDefaultFocusedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetDefaultFocusedWidget::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.GetSubtitleText
 // 0x0050 (0x0050 - 0x0000)
@@ -170,12 +119,6 @@ public:
 	class FText                                   CallFunc_GetSubtitleText_ReturnValue;              // 0x0030(0x0018)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText) == 0x000050, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText, Text) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText::Text' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText, TextValue) == 0x000018, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText::TextValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText, CallFunc_GetSubtitleText_ReturnValue) == 0x000030, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText::CallFunc_GetSubtitleText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText, CallFunc_IsValid_ReturnValue) == 0x000048, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetSubtitleText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function PlayerSurveyPanelAnswerSelectorWidget.PlayerSurveyPanelAnswerSelectorWidget_C.GetCurrentQuestion
 // 0x0028 (0x0028 - 0x0000)
@@ -188,13 +131,6 @@ public:
 	class UObject*                                CallFunc_Conv_InterfaceToObject_ReturnValue;       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion) == 0x000008, "Wrong alignment on PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion");
-static_assert(sizeof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion) == 0x000028, "Wrong size on PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion, Question) == 0x000000, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion::Question' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion, QuestionValue) == 0x000008, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion::QuestionValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion, CallFunc_GetQuestion_ReturnValue) == 0x000010, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion::CallFunc_GetQuestion_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion, CallFunc_Conv_InterfaceToObject_ReturnValue) == 0x000018, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion::CallFunc_Conv_InterfaceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'PlayerSurveyPanelAnswerSelectorWidget_C_GetCurrentQuestion::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

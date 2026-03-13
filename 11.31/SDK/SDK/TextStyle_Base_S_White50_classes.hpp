@@ -23,15 +23,17 @@ class UTextStyle_Base_S_White50_C final : public UTextStyle_Base_S_B_Blue_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Base-S-White50_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Base-S-White50_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Base-S-White50_C")
 	}
 	static class UTextStyle_Base_S_White50_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Base_S_White50_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Base_S_White50_C) == 0x000008, "Wrong alignment on UTextStyle_Base_S_White50_C");
-static_assert(sizeof(UTextStyle_Base_S_White50_C) == 0x000148, "Wrong size on UTextStyle_Base_S_White50_C");
 
 }
 

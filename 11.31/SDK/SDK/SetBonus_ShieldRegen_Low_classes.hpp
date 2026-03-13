@@ -23,15 +23,17 @@ class USetBonus_ShieldRegen_Low_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetBonus_ShieldRegen_Low_C">();
+		BP_STATIC_CLASS_IMPL("SetBonus_ShieldRegen_Low_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetBonus_ShieldRegen_Low_C")
 	}
 	static class USetBonus_ShieldRegen_Low_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetBonus_ShieldRegen_Low_C>();
 	}
 };
-static_assert(alignof(USetBonus_ShieldRegen_Low_C) == 0x000008, "Wrong alignment on USetBonus_ShieldRegen_Low_C");
-static_assert(sizeof(USetBonus_ShieldRegen_Low_C) == 0x000770, "Wrong size on USetBonus_ShieldRegen_Low_C");
 
 }
 

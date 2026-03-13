@@ -58,37 +58,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0108(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsRespawningAllowed_ReturnValue;          // 0x0109(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive) == 0x000010, "Wrong alignment on GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive");
-static_assert(sizeof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive) == 0x000110, "Wrong size on GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, EntryPoint) == 0x000000, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000010, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_IsBattleLabModePlaylist_ReturnValue) == 0x000019, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_IsBattleLabModePlaylist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_IsCreativeLTMPlaylist_ReturnValue) == 0x00001A, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_IsCreativeLTMPlaylist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue) == 0x00001B, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_IsCreativeOrPlaygroundModePlaylist_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BooleanOR_ReturnValue) == 0x00001C, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_GetActorTeam_ReturnValue) == 0x00001D, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BooleanOR_ReturnValue_1) == 0x00001E, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_GetTransform_ReturnValue) == 0x000020, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_Not_PreBool_ReturnValue) == 0x000050, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BreakTransform_Location) == 0x000054, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BreakTransform_Rotation) == 0x000060, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BreakTransform_Scale) == 0x00006C, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000078, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_Add_VectorVector_ReturnValue) == 0x000084, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_GetGameState_ReturnValue_1) == 0x000090, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_GetGameState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_MakeTransform_ReturnValue) == 0x0000A0, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_AsFort_Game_State_Zone) == 0x0000D0, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_AsFort_Game_State_Zone' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_bSuccess_1) == 0x0000D8, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000E0, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_Check_Resurrection_Active_bEnabled) == 0x0000E8, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_Check_Resurrection_Active_bEnabled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000F0, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_CustomEvent_FortPlayerPawnAthena) == 0x0000F8, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_CustomEvent_FortPlayerPawnAthena' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_AsFort_Player_State) == 0x000100, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, K2Node_DynamicCast_bSuccess_2) == 0x000108, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive, CallFunc_IsRespawningAllowed_ReturnValue) == 0x000109, "Member 'GA_Athena_SCMachine_Passive_C_ExecuteUbergraph_GA_Athena_SCMachine_Passive::CallFunc_IsRespawningAllowed_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_SCMachine_Passive.GA_Athena_SCMachine_Passive_C.HandleOnFortPlayerDied
 // 0x0008 (0x0008 - 0x0000)
@@ -97,9 +66,6 @@ struct GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied final
 public:
 	class AFortPlayerPawnAthena*                  FortPlayerPawnAthena;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied) == 0x000008, "Wrong alignment on GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied");
-static_assert(sizeof(GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied) == 0x000008, "Wrong size on GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied, FortPlayerPawnAthena) == 0x000000, "Member 'GA_Athena_SCMachine_Passive_C_HandleOnFortPlayerDied::FortPlayerPawnAthena' has a wrong offset!");
 
 // Function GA_Athena_SCMachine_Passive.GA_Athena_SCMachine_Passive_C.SaveOutPlayer
 // 0x0018 (0x0018 - 0x0000)
@@ -110,11 +76,6 @@ public:
 	class AFortPlayerPawnAthena*                  K2Node_DynamicCast_AsFort_Player_Pawn_Athena;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_SCMachine_Passive_C_SaveOutPlayer) == 0x000008, "Wrong alignment on GA_Athena_SCMachine_Passive_C_SaveOutPlayer");
-static_assert(sizeof(GA_Athena_SCMachine_Passive_C_SaveOutPlayer) == 0x000018, "Wrong size on GA_Athena_SCMachine_Passive_C_SaveOutPlayer");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_SaveOutPlayer, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000000, "Member 'GA_Athena_SCMachine_Passive_C_SaveOutPlayer::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_SaveOutPlayer, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000008, "Member 'GA_Athena_SCMachine_Passive_C_SaveOutPlayer::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_SaveOutPlayer, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'GA_Athena_SCMachine_Passive_C_SaveOutPlayer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_Athena_SCMachine_Passive.GA_Athena_SCMachine_Passive_C.Check Resurrection Active
 // 0x0040 (0x0040 - 0x0000)
@@ -134,16 +95,6 @@ public:
 	class AFortGameStateAthena*                   K2Node_DynamicCast_AsFort_Game_State_Athena;       // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active) == 0x000008, "Wrong alignment on GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active");
-static_assert(sizeof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active) == 0x000040, "Wrong size on GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, bEnabled) == 0x000000, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::bEnabled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, GameStateAthena) == 0x000008, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::GameStateAthena' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, PlaylistValid) == 0x000010, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::PlaylistValid' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, TestPlaylist) == 0x000014, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::TestPlaylist' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, CallFunc_GetGameState_ReturnValue) == 0x000020, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, CallFunc_IsResurrectionEnabled_ReturnValue) == 0x000028, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::CallFunc_IsResurrectionEnabled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000030, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'GA_Athena_SCMachine_Passive_C_Check_Resurrection_Active::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

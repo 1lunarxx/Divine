@@ -52,34 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortTutorial_LobbyPopup_2_C">();
+		BP_STATIC_CLASS_IMPL("FortTutorial_LobbyPopup_2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortTutorial_LobbyPopup_2_C")
 	}
 	static class UFortTutorial_LobbyPopup_2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortTutorial_LobbyPopup_2_C>();
 	}
 };
-static_assert(alignof(UFortTutorial_LobbyPopup_2_C) == 0x000008, "Wrong alignment on UFortTutorial_LobbyPopup_2_C");
-static_assert(sizeof(UFortTutorial_LobbyPopup_2_C) == 0x000518, "Wrong size on UFortTutorial_LobbyPopup_2_C");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, UberGraphFrame) == 0x000480, "Member 'UFortTutorial_LobbyPopup_2_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, In_V2) == 0x000488, "Member 'UFortTutorial_LobbyPopup_2_C::In_V2' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, In_V1) == 0x000490, "Member 'UFortTutorial_LobbyPopup_2_C::In_V1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Out) == 0x000498, "Member 'UFortTutorial_LobbyPopup_2_C::Out' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, In) == 0x0004A0, "Member 'UFortTutorial_LobbyPopup_2_C::In' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Border_Darken) == 0x0004A8, "Member 'UFortTutorial_LobbyPopup_2_C::Border_Darken' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Close_Button) == 0x0004B0, "Member 'UFortTutorial_LobbyPopup_2_C::Close_Button' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Header) == 0x0004B8, "Member 'UFortTutorial_LobbyPopup_2_C::Header' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Header_1) == 0x0004C0, "Member 'UFortTutorial_LobbyPopup_2_C::Header_1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, IMG_Character) == 0x0004C8, "Member 'UFortTutorial_LobbyPopup_2_C::IMG_Character' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, IMG_Character_BG) == 0x0004D0, "Member 'UFortTutorial_LobbyPopup_2_C::IMG_Character_BG' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, PH1) == 0x0004D8, "Member 'UFortTutorial_LobbyPopup_2_C::PH1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, PH1_1) == 0x0004E0, "Member 'UFortTutorial_LobbyPopup_2_C::PH1_1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, PH2) == 0x0004E8, "Member 'UFortTutorial_LobbyPopup_2_C::PH2' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, PH2_1) == 0x0004F0, "Member 'UFortTutorial_LobbyPopup_2_C::PH2_1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, RichText_Desc) == 0x0004F8, "Member 'UFortTutorial_LobbyPopup_2_C::RichText_Desc' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, RichText_Desc_1) == 0x000500, "Member 'UFortTutorial_LobbyPopup_2_C::RichText_Desc_1' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, Skip_Button) == 0x000508, "Member 'UFortTutorial_LobbyPopup_2_C::Skip_Button' has a wrong offset!");
-static_assert(offsetof(UFortTutorial_LobbyPopup_2_C, YesButton) == 0x000510, "Member 'UFortTutorial_LobbyPopup_2_C::YesButton' has a wrong offset!");
 
 }
 

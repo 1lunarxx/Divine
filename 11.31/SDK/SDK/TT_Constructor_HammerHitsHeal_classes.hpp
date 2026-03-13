@@ -27,15 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TT_Constructor_HammerHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("TT_Constructor_HammerHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TT_Constructor_HammerHitsHeal_C")
 	}
 	static class UTT_Constructor_HammerHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTT_Constructor_HammerHitsHeal_C>();
 	}
 };
-static_assert(alignof(UTT_Constructor_HammerHitsHeal_C) == 0x000008, "Wrong alignment on UTT_Constructor_HammerHitsHeal_C");
-static_assert(sizeof(UTT_Constructor_HammerHitsHeal_C) == 0x000168, "Wrong size on UTT_Constructor_HammerHitsHeal_C");
 
 }
 

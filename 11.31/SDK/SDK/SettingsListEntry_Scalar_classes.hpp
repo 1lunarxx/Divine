@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsListEntry_Scalar_C">();
+		BP_STATIC_CLASS_IMPL("SettingsListEntry_Scalar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsListEntry_Scalar_C")
 	}
 	static class USettingsListEntry_Scalar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsListEntry_Scalar_C>();
 	}
 };
-static_assert(alignof(USettingsListEntry_Scalar_C) == 0x000008, "Wrong alignment on USettingsListEntry_Scalar_C");
-static_assert(sizeof(USettingsListEntry_Scalar_C) == 0x0002C0, "Wrong size on USettingsListEntry_Scalar_C");
-static_assert(offsetof(USettingsListEntry_Scalar_C, UberGraphFrame) == 0x0002A0, "Member 'USettingsListEntry_Scalar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Scalar_C, OnHover) == 0x0002A8, "Member 'USettingsListEntry_Scalar_C::OnHover' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Scalar_C, DefaultValueLayer) == 0x0002B0, "Member 'USettingsListEntry_Scalar_C::DefaultValueLayer' has a wrong offset!");
-static_assert(offsetof(USettingsListEntry_Scalar_C, Progress) == 0x0002B8, "Member 'USettingsListEntry_Scalar_C::Progress' has a wrong offset!");
 
 }
 

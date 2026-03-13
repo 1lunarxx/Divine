@@ -44,7 +44,7 @@ public:
 	bool                                          K2Node_Event_bIsExpanded;                          // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_15A[0x6];                                      // 0x015A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUserWidget*                            K2Node_CustomEvent_UserWidget;                     // 0x0160(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UUserWidget* UserWidget)> K2Node_CreateDelegate_OutputDelegate;              // 0x0168(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UUserWidget* UserWidget)> K2Node_CreateDelegate_OutputDelegate;             // 0x0168(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button_1;               // 0x0180(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -67,46 +67,9 @@ public:
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x01C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_Variable_1;                              // 0x01C1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1C2[0x2];                                      // 0x01C2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UCommonActivatablePanel* Panel)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x01C4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UCommonActivatablePanel* Panel)> K2Node_CreateDelegate_OutputDelegate_1;    // 0x01C4(0x0010)(ZeroConstructor, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton");
-static_assert(sizeof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton) == 0x0001D8, "Wrong size on OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, EntryPoint) == 0x000000, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, Temp_object_Variable) == 0x000010, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_CreateWidgetAsync_ReturnValue) == 0x000018, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_CreateWidgetAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_DynamicCast_AsHUDLayout_Tool_Fire_Mode_Panel) == 0x000020, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_DynamicCast_AsHUDLayout_Tool_Fire_Mode_Panel' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_IsValid_ReturnValue) == 0x000029, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_bIsSelected) == 0x00002A, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_MouseEvent_1) == 0x000030, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_MyGeometry) == 0x0000A0, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_MouseEvent) == 0x0000D8, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_ListItemObject) == 0x000148, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_DynamicCast_AsFort_Setting_Info) == 0x000150, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_DynamicCast_AsFort_Setting_Info' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_DynamicCast_bSuccess_1) == 0x000158, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Event_bIsExpanded) == 0x000159, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_CustomEvent_UserWidget) == 0x000160, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_CustomEvent_UserWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_CreateDelegate_OutputDelegate) == 0x000168, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_IsMobileGame_ReturnValue) == 0x000178, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_ComponentBoundEvent_Button_1) == 0x000180, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_TextIsEmpty_ReturnValue) == 0x000188, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00018C, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000190, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_IsMobileGame_ReturnValue_1) == 0x000194, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_K2_SetTimer_ReturnValue) == 0x000198, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_TextIsEmpty_ReturnValue_1) == 0x0001A0, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, Temp_bool_Variable) == 0x0001A1, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, Temp_byte_Variable) == 0x0001A2, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Select_Default) == 0x0001A4, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, Temp_byte_Variable_1) == 0x0001A8, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_GetContext_ReturnValue) == 0x0001B0, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_ComponentBoundEvent_Button) == 0x0001B8, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, CallFunc_IsUsingGamepad_ReturnValue) == 0x0001C0, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, Temp_bool_Variable_1) == 0x0001C1, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001C4, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton, K2Node_Select_Default_1) == 0x0001D4, "Member 'OptionsMenuFireModeButton_C_ExecuteUbergraph_OptionsMenuFireModeButton::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -115,9 +78,6 @@ struct OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_Component
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuFireModeButton_C_BndEvt__ChangeFireModeButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -126,9 +86,6 @@ struct OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuFireModeButton_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_11_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -137,9 +94,6 @@ struct OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'OptionsMenuFireModeButton_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -148,9 +102,6 @@ struct OptionsMenuFireModeButton_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_OnListItemObjectSet");
-static_assert(sizeof(OptionsMenuFireModeButton_C_OnListItemObjectSet) == 0x000008, "Wrong size on OptionsMenuFireModeButton_C_OnListItemObjectSet");
-static_assert(offsetof(OptionsMenuFireModeButton_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'OptionsMenuFireModeButton_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -160,10 +111,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_OnMouseEnter) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_OnMouseEnter");
-static_assert(sizeof(OptionsMenuFireModeButton_C_OnMouseEnter) == 0x0000A8, "Wrong size on OptionsMenuFireModeButton_C_OnMouseEnter");
-static_assert(offsetof(OptionsMenuFireModeButton_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'OptionsMenuFireModeButton_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'OptionsMenuFireModeButton_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -172,9 +119,6 @@ struct OptionsMenuFireModeButton_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuFireModeButton_C_OnMouseLeave) == 0x000070, "Wrong size on OptionsMenuFireModeButton_C_OnMouseLeave");
-static_assert(offsetof(OptionsMenuFireModeButton_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuFireModeButton_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -183,9 +127,6 @@ struct OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'OptionsMenuFireModeButton_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.OnComplete_A8B997BB40321F469E82A785FB369A27
 // 0x0008 (0x0008 - 0x0000)
@@ -194,9 +135,6 @@ struct OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27 f
 public:
 	class UUserWidget*                            UserWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27");
-static_assert(sizeof(OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27) == 0x000008, "Wrong size on OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27");
-static_assert(offsetof(OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27, UserWidget) == 0x000000, "Member 'OptionsMenuFireModeButton_C_OnComplete_A8B997BB40321F469E82A785FB369A27::UserWidget' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.UpdateSize
 // 0x0030 (0x0030 - 0x0000)
@@ -213,15 +151,6 @@ public:
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              K2Node_Select_Default;                             // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_UpdateSize) == 0x000004, "Wrong alignment on OptionsMenuFireModeButton_C_UpdateSize");
-static_assert(sizeof(OptionsMenuFireModeButton_C_UpdateSize) == 0x000030, "Wrong size on OptionsMenuFireModeButton_C_UpdateSize");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, LargeSize) == 0x000000, "Member 'OptionsMenuFireModeButton_C_UpdateSize::LargeSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, SmallSize) == 0x000008, "Member 'OptionsMenuFireModeButton_C_UpdateSize::SmallSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, Temp_bool_Variable) == 0x000010, "Member 'OptionsMenuFireModeButton_C_UpdateSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, Temp_struct_Variable) == 0x000014, "Member 'OptionsMenuFireModeButton_C_UpdateSize::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, Temp_struct_Variable_1) == 0x00001C, "Member 'OptionsMenuFireModeButton_C_UpdateSize::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, CallFunc_IsBROnly_ReturnValue) == 0x000024, "Member 'OptionsMenuFireModeButton_C_UpdateSize::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_UpdateSize, K2Node_Select_Default) == 0x000028, "Member 'OptionsMenuFireModeButton_C_UpdateSize::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.SetFontSize
 // 0x0068 (0x0068 - 0x0000)
@@ -237,15 +166,6 @@ public:
 	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_SetFontSize) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_SetFontSize");
-static_assert(sizeof(OptionsMenuFireModeButton_C_SetFontSize) == 0x000068, "Wrong size on OptionsMenuFireModeButton_C_SetFontSize");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, Text) == 0x000000, "Member 'OptionsMenuFireModeButton_C_SetFontSize::Text' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, DefaultSize) == 0x000008, "Member 'OptionsMenuFireModeButton_C_SetFontSize::DefaultSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, MobileSize) == 0x00000C, "Member 'OptionsMenuFireModeButton_C_SetFontSize::MobileSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, TempFont) == 0x000010, "Member 'OptionsMenuFireModeButton_C_SetFontSize::TempFont' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, Temp_bool_Variable) == 0x000060, "Member 'OptionsMenuFireModeButton_C_SetFontSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, CallFunc_IsMobileGame_ReturnValue) == 0x000061, "Member 'OptionsMenuFireModeButton_C_SetFontSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFontSize, K2Node_Select_Default) == 0x000064, "Member 'OptionsMenuFireModeButton_C_SetFontSize::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.SetToolTipSize
 // 0x001C (0x001C - 0x0000)
@@ -259,13 +179,6 @@ public:
 	uint8                                         Pad_12[0x2];                                       // 0x0012(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              K2Node_Select_Default;                             // 0x0014(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_SetToolTipSize) == 0x000004, "Wrong alignment on OptionsMenuFireModeButton_C_SetToolTipSize");
-static_assert(sizeof(OptionsMenuFireModeButton_C_SetToolTipSize) == 0x00001C, "Wrong size on OptionsMenuFireModeButton_C_SetToolTipSize");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetToolTipSize, DefaultSize) == 0x000000, "Member 'OptionsMenuFireModeButton_C_SetToolTipSize::DefaultSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetToolTipSize, MobileSize) == 0x000008, "Member 'OptionsMenuFireModeButton_C_SetToolTipSize::MobileSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetToolTipSize, CallFunc_IsMobileGame_ReturnValue) == 0x000010, "Member 'OptionsMenuFireModeButton_C_SetToolTipSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetToolTipSize, Temp_bool_Variable) == 0x000011, "Member 'OptionsMenuFireModeButton_C_SetToolTipSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetToolTipSize, K2Node_Select_Default) == 0x000014, "Member 'OptionsMenuFireModeButton_C_SetToolTipSize::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.On_MenuAnchorSettingDescription_GetMenuContent_0
 // 0x0018 (0x0018 - 0x0000)
@@ -276,11 +189,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltip_Basic_S_C*                     CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0");
-static_assert(sizeof(OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0) == 0x000018, "Wrong size on OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0");
-static_assert(offsetof(OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0, ReturnValue) == 0x000000, "Member 'OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0, CallFunc_Create_ReturnValue) == 0x000010, "Member 'OptionsMenuFireModeButton_C_On_MenuAnchorSettingDescription_GetMenuContent_0::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.SetFireModeButtonText
 // 0x0010 (0x0010 - 0x0000)
@@ -291,11 +199,6 @@ public:
 	struct FFireModeData                          CallFunc_GetFireModeData_ReturnValue;              // 0x0008(0x0005)(ConstParm, NoDestructor)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_SetFireModeButtonText) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_SetFireModeButtonText");
-static_assert(sizeof(OptionsMenuFireModeButton_C_SetFireModeButtonText) == 0x000010, "Wrong size on OptionsMenuFireModeButton_C_SetFireModeButtonText");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFireModeButtonText, CallFunc_GetFortGameUserSettings_ReturnValue) == 0x000000, "Member 'OptionsMenuFireModeButton_C_SetFireModeButtonText::CallFunc_GetFortGameUserSettings_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFireModeButtonText, CallFunc_GetFireModeData_ReturnValue) == 0x000008, "Member 'OptionsMenuFireModeButton_C_SetFireModeButtonText::CallFunc_GetFireModeData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuFireModeButton_C_SetFireModeButtonText, K2Node_SwitchEnum_CmpSuccess) == 0x00000D, "Member 'OptionsMenuFireModeButton_C_SetFireModeButtonText::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function OptionsMenuFireModeButton.OptionsMenuFireModeButton_C.HandleWidgetDeactivated
 // 0x0008 (0x0008 - 0x0000)
@@ -304,9 +207,6 @@ struct OptionsMenuFireModeButton_C_HandleWidgetDeactivated final
 public:
 	class UCommonActivatablePanel*                ActivatableWidget;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuFireModeButton_C_HandleWidgetDeactivated) == 0x000008, "Wrong alignment on OptionsMenuFireModeButton_C_HandleWidgetDeactivated");
-static_assert(sizeof(OptionsMenuFireModeButton_C_HandleWidgetDeactivated) == 0x000008, "Wrong size on OptionsMenuFireModeButton_C_HandleWidgetDeactivated");
-static_assert(offsetof(OptionsMenuFireModeButton_C_HandleWidgetDeactivated, ActivatableWidget) == 0x000000, "Member 'OptionsMenuFireModeButton_C_HandleWidgetDeactivated::ActivatableWidget' has a wrong offset!");
 
 }
 

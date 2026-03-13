@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Deimos_Monster_Death_C">();
+		BP_STATIC_CLASS_IMPL("GC_Deimos_Monster_Death_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Deimos_Monster_Death_C")
 	}
 	static class AGC_Deimos_Monster_Death_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_Deimos_Monster_Death_C>();
 	}
 };
-static_assert(alignof(AGC_Deimos_Monster_Death_C) == 0x000008, "Wrong alignment on AGC_Deimos_Monster_Death_C");
-static_assert(sizeof(AGC_Deimos_Monster_Death_C) == 0x000450, "Wrong size on AGC_Deimos_Monster_Death_C");
 
 }
 

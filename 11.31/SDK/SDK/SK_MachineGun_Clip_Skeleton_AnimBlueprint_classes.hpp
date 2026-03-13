@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SK_MachineGun_Clip_Skeleton_AnimBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("SK_MachineGun_Clip_Skeleton_AnimBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SK_MachineGun_Clip_Skeleton_AnimBlueprint_C")
 	}
 	static class USK_MachineGun_Clip_Skeleton_AnimBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USK_MachineGun_Clip_Skeleton_AnimBlueprint_C>();
 	}
 };
-static_assert(alignof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C) == 0x000010, "Wrong alignment on USK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C) == 0x000310, "Wrong size on USK_MachineGun_Clip_Skeleton_AnimBlueprint_C");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000270, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD) == 0x000278, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_3869FE004A7A40326F179A99947D40FD' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E) == 0x0002A8, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_42C4DC6D490B221E6A9F9A92B3FEA82E' has a wrong offset!");
-static_assert(offsetof(USK_MachineGun_Clip_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF) == 0x0002F0, "Member 'USK_MachineGun_Clip_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalRefPose_844915D14C4D660AA45FB1B5C63743BF' has a wrong offset!");
 
 }
 

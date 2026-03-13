@@ -24,10 +24,6 @@ public:
 	struct FPoseLink                              MainPlayerAnimBP;                                  // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingLayer_0;                                   // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLayer, MainPlayerAnimBP) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingLayer::MainPlayerAnimBP' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLayer, SwimmingLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingLayer::SwimmingLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingMovementAdditiveLayerPose
 // 0x0020 (0x0020 - 0x0000)
@@ -37,10 +33,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingMovementAdditive;               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingMovementAdditiveLayerPose_0;               // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose, PassThroughSwimmingMovementAdditive) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose::PassThroughSwimmingMovementAdditive' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose, SwimmingMovementAdditiveLayerPose_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingMovementAdditiveLayerPose::SwimmingMovementAdditiveLayerPose_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingSprintLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -50,10 +42,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingSprint;                         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingSprintLayer_0;                             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingSprintLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingSprintLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingSprintLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingSprintLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingSprintLayer, PassThroughSwimmingSprint) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingSprintLayer::PassThroughSwimmingSprint' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingSprintLayer, SwimmingSprintLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingSprintLayer::SwimmingSprintLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingUpperBodyPoseTargetingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -63,10 +51,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingUpperBodyPoseTargeting;         // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingUpperBodyPoseTargetingLayer_0;             // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer, PassThroughSwimmingUpperBodyPoseTargeting) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer::PassThroughSwimmingUpperBodyPoseTargeting' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer, SwimmingUpperBodyPoseTargetingLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseTargetingLayer::SwimmingUpperBodyPoseTargetingLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingUpperBodyPoseNonTargetingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -76,10 +60,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingUpperBodyPoseNonTargeting;      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingUpperBodyPoseNonTargetingLayer_0;          // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer, PassThroughSwimmingUpperBodyPoseNonTargeting) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer::PassThroughSwimmingUpperBodyPoseNonTargeting' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer, SwimmingUpperBodyPoseNonTargetingLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingUpperBodyPoseNonTargetingLayer::SwimmingUpperBodyPoseNonTargetingLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingLowerBodyLayer
 // 0x0040 (0x0040 - 0x0000)
@@ -91,12 +71,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingLowerBody;                      // 0x0020(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingLowerBodyLayer_0;                          // 0x0030(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer) == 0x000040, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer, UpperBody_Cache) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer::UpperBody_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer, PreUpperBodySlot_Cache) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer::PreUpperBodySlot_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer, PassThroughSwimmingLowerBody) == 0x000020, "Member 'SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer::PassThroughSwimmingLowerBody' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer, SwimmingLowerBodyLayer_0) == 0x000030, "Member 'SwimmingAnimLayerInterface_C_SwimmingLowerBodyLayer::SwimmingLowerBodyLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingAdditiveLayer
 // 0x0078 (0x0078 - 0x0000)
@@ -116,19 +90,6 @@ public:
 	struct FPoseLink                              SprintingPose_PostMask_Cache;                      // 0x0058(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingAdditiveLayer_0;                           // 0x0068(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer) == 0x000078, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, IdleAdditive_Cache) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::IdleAdditive_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, MovementAdditiveLayerPose_Cache) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::MovementAdditiveLayerPose_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, FullBody) == 0x000020, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::FullBody' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, PlayMeleeAttackAOLayer) == 0x000030, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::PlayMeleeAttackAOLayer' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, DisableArmsHeadAdditiveCurveAlphaLayer) == 0x000034, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::DisableArmsHeadAdditiveCurveAlphaLayer' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, DisableIKRootAdditiveCurveAlphaLayer) == 0x000038, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::DisableIKRootAdditiveCurveAlphaLayer' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, LocomotionAdditiveAlphaLayer) == 0x00003C, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::LocomotionAdditiveAlphaLayer' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, isDBNOLayer) == 0x000040, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::isDBNOLayer' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, UpperAndLowerBody_Cache) == 0x000048, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::UpperAndLowerBody_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, SprintingPose_PostMask_Cache) == 0x000058, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::SprintingPose_PostMask_Cache' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer, SwimmingAdditiveLayer_0) == 0x000068, "Member 'SwimmingAnimLayerInterface_C_SwimmingAdditiveLayer::SwimmingAdditiveLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingFullBodyAdditiveLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -138,10 +99,6 @@ public:
 	struct FPoseLink                              PassThroughFullBodyAdditive;                       // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingFullBodyAdditiveLayer_0;                   // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer, PassThroughFullBodyAdditive) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer::PassThroughFullBodyAdditive' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer, SwimmingFullBodyAdditiveLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingFullBodyAdditiveLayer::SwimmingFullBodyAdditiveLayer_0' has a wrong offset!");
 
 // Function SwimmingAnimLayerInterface.SwimmingAnimLayerInterface_C.SwimmingDiveJumpingLayer
 // 0x0020 (0x0020 - 0x0000)
@@ -151,10 +108,6 @@ public:
 	struct FPoseLink                              PassThroughSwimmingDiveJumping;                    // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              SwimmingDiveJumpingLayer_0;                        // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer) == 0x000008, "Wrong alignment on SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer");
-static_assert(sizeof(SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer) == 0x000020, "Wrong size on SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer, PassThroughSwimmingDiveJumping) == 0x000000, "Member 'SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer::PassThroughSwimmingDiveJumping' has a wrong offset!");
-static_assert(offsetof(SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer, SwimmingDiveJumpingLayer_0) == 0x000010, "Member 'SwimmingAnimLayerInterface_C_SwimmingDiveJumpingLayer::SwimmingDiveJumpingLayer_0' has a wrong offset!");
 
 }
 

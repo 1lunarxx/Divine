@@ -23,15 +23,17 @@ class UDefaultUIDataConfiguration_C final : public UFortUIDataConfiguration
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultUIDataConfiguration_C">();
+		BP_STATIC_CLASS_IMPL("DefaultUIDataConfiguration_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultUIDataConfiguration_C")
 	}
 	static class UDefaultUIDataConfiguration_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefaultUIDataConfiguration_C>();
 	}
 };
-static_assert(alignof(UDefaultUIDataConfiguration_C) == 0x000008, "Wrong alignment on UDefaultUIDataConfiguration_C");
-static_assert(sizeof(UDefaultUIDataConfiguration_C) == 0x003BC0, "Wrong size on UDefaultUIDataConfiguration_C");
 
 }
 

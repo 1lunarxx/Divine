@@ -23,15 +23,17 @@ class ABP_BattleMapWeaponGotKillNode_C final : public ABP_BattleMapBaseNode_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BattleMapWeaponGotKillNode_C">();
+		BP_STATIC_CLASS_IMPL("BP_BattleMapWeaponGotKillNode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BattleMapWeaponGotKillNode_C")
 	}
 	static class ABP_BattleMapWeaponGotKillNode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BattleMapWeaponGotKillNode_C>();
 	}
 };
-static_assert(alignof(ABP_BattleMapWeaponGotKillNode_C) == 0x000008, "Wrong alignment on ABP_BattleMapWeaponGotKillNode_C");
-static_assert(sizeof(ABP_BattleMapWeaponGotKillNode_C) == 0x000350, "Wrong size on ABP_BattleMapWeaponGotKillNode_C");
 
 }
 

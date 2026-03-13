@@ -23,15 +23,17 @@ class UMinigameStat_AIKills_C final : public UFortMinigameStatFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_AIKills_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_AIKills_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_AIKills_C")
 	}
 	static class UMinigameStat_AIKills_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_AIKills_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_AIKills_C) == 0x000008, "Wrong alignment on UMinigameStat_AIKills_C");
-static_assert(sizeof(UMinigameStat_AIKills_C) == 0x000190, "Wrong size on UMinigameStat_AIKills_C");
 
 }
 

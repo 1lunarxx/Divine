@@ -57,26 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CreativeRadio_C">();
+		BP_STATIC_CLASS_IMPL("BP_CreativeRadio_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CreativeRadio_C")
 	}
 	static class ABP_CreativeRadio_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CreativeRadio_C>();
 	}
 };
-static_assert(alignof(ABP_CreativeRadio_C) == 0x000008, "Wrong alignment on ABP_CreativeRadio_C");
-static_assert(sizeof(ABP_CreativeRadio_C) == 0x000BE0, "Wrong size on ABP_CreativeRadio_C");
-static_assert(offsetof(ABP_CreativeRadio_C, UberGraphFrame) == 0x000BA8, "Member 'ABP_CreativeRadio_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, Creative_Radio_AudioToMPC) == 0x000BB0, "Member 'ABP_CreativeRadio_C::Creative_Radio_AudioToMPC' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, FortMinigameProgress) == 0x000BB8, "Member 'ABP_CreativeRadio_C::FortMinigameProgress' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, ToyOptionsComponent) == 0x000BC0, "Member 'ABP_CreativeRadio_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, RadioAttenuationDistance) == 0x000BC8, "Member 'ABP_CreativeRadio_C::RadioAttenuationDistance' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, VolumeOverride) == 0x000BCC, "Member 'ABP_CreativeRadio_C::VolumeOverride' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, CachedVolumeMultiplier) == 0x000BD0, "Member 'ABP_CreativeRadio_C::CachedVolumeMultiplier' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, CachedAttenuationSetting) == 0x000BD4, "Member 'ABP_CreativeRadio_C::CachedAttenuationSetting' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, ShouldDriveVisualization) == 0x000BD8, "Member 'ABP_CreativeRadio_C::ShouldDriveVisualization' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, CachedShouldDriveVisualization) == 0x000BD9, "Member 'ABP_CreativeRadio_C::CachedShouldDriveVisualization' has a wrong offset!");
-static_assert(offsetof(ABP_CreativeRadio_C, IsMeshVisibleDuringMinigame) == 0x000BDA, "Member 'ABP_CreativeRadio_C::IsMeshVisibleDuringMinigame' has a wrong offset!");
 
 }
 

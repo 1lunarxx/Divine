@@ -21,9 +21,6 @@ struct CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'CustomMatchmakingKeyModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function CustomMatchmakingKeyModal.CustomMatchmakingKeyModal_C.BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'CustomMatchmakingKeyModal_C_BndEvt__AcceptButton_K2Node_ComponentBoundEvent_26_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function CustomMatchmakingKeyModal.CustomMatchmakingKeyModal_C.ExecuteUbergraph_CustomMatchmakingKeyModal
 // 0x0078 (0x0078 - 0x0000)
@@ -52,17 +46,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0050(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal) == 0x000008, "Wrong alignment on CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal");
-static_assert(sizeof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal) == 0x000078, "Wrong size on CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, EntryPoint) == 0x000000, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, K2Node_ComponentBoundEvent_Button_1) == 0x000010, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_GetContext_ReturnValue_1) == 0x000020, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_GetCustomMatchmakingKey_ReturnValue) == 0x000028, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_GetCustomMatchmakingKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_GetText_ReturnValue) == 0x000038, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_Conv_StringToText_ReturnValue) == 0x000050, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal, CallFunc_Conv_TextToString_ReturnValue) == 0x000068, "Member 'CustomMatchmakingKeyModal_C_ExecuteUbergraph_CustomMatchmakingKeyModal::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 }
 

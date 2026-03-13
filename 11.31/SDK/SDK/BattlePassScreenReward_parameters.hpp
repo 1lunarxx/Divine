@@ -26,10 +26,6 @@ public:
 	bool                                          bIsSelected_0;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleMultiRewardSelectionChange) == 0x000001, "Wrong alignment on BattlePassScreenReward_C_HandleMultiRewardSelectionChange");
-static_assert(sizeof(BattlePassScreenReward_C_HandleMultiRewardSelectionChange) == 0x000002, "Wrong size on BattlePassScreenReward_C_HandleMultiRewardSelectionChange");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSelectionChange, bIsSelected_0) == 0x000000, "Member 'BattlePassScreenReward_C_HandleMultiRewardSelectionChange::bIsSelected_0' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSelectionChange, CallFunc_Not_PreBool_ReturnValue) == 0x000001, "Member 'BattlePassScreenReward_C_HandleMultiRewardSelectionChange::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleMultiRewardSetup
 // 0x0048 (0x0048 - 0x0000)
@@ -43,13 +39,6 @@ public:
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue;      // 0x0038(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UHorizontalBoxSlot*                     CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1;    // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleMultiRewardSetup) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleMultiRewardSetup");
-static_assert(sizeof(BattlePassScreenReward_C_HandleMultiRewardSetup) == 0x000048, "Wrong size on BattlePassScreenReward_C_HandleMultiRewardSetup");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSetup, RewardItem) == 0x000000, "Member 'BattlePassScreenReward_C_HandleMultiRewardSetup::RewardItem' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSetup, RewardTexture) == 0x000008, "Member 'BattlePassScreenReward_C_HandleMultiRewardSetup::RewardTexture' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSetup, bHasAdditionalStylesToDisplay) == 0x000030, "Member 'BattlePassScreenReward_C_HandleMultiRewardSetup::bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSetup, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000038, "Member 'BattlePassScreenReward_C_HandleMultiRewardSetup::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardSetup, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1) == 0x000040, "Member 'BattlePassScreenReward_C_HandleMultiRewardSetup::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleHover
 // 0x0010 (0x0010 - 0x0000)
@@ -59,10 +48,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleHover) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleHover");
-static_assert(sizeof(BattlePassScreenReward_C_HandleHover) == 0x000010, "Wrong size on BattlePassScreenReward_C_HandleHover");
-static_assert(offsetof(BattlePassScreenReward_C_HandleHover, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000000, "Member 'BattlePassScreenReward_C_HandleHover::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleHover, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'BattlePassScreenReward_C_HandleHover::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleUnhover
 // 0x0010 (0x0010 - 0x0000)
@@ -72,10 +57,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleUnhover) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleUnhover");
-static_assert(sizeof(BattlePassScreenReward_C_HandleUnhover) == 0x000010, "Wrong size on BattlePassScreenReward_C_HandleUnhover");
-static_assert(offsetof(BattlePassScreenReward_C_HandleUnhover, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000000, "Member 'BattlePassScreenReward_C_HandleUnhover::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleUnhover, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000008, "Member 'BattlePassScreenReward_C_HandleUnhover::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleMultiRewardTickFillAnimation
 // 0x0018 (0x0018 - 0x0000)
@@ -89,12 +70,6 @@ public:
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateChildSize                        K2Node_MakeStruct_SlateChildSize_1;                // 0x0010(0x0008)(NoDestructor)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation) == 0x000004, "Wrong alignment on BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation");
-static_assert(sizeof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation) == 0x000018, "Wrong size on BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation, K2Node_MakeStruct_SlateChildSize) == 0x000004, "Member 'BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation::K2Node_MakeStruct_SlateChildSize' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation, CallFunc_IsValid_ReturnValue_1) == 0x00000C, "Member 'BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation, K2Node_MakeStruct_SlateChildSize_1) == 0x000010, "Member 'BattlePassScreenReward_C_HandleMultiRewardTickFillAnimation::K2Node_MakeStruct_SlateChildSize_1' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleSelectedAnim
 // 0x0018 (0x0018 - 0x0000)
@@ -106,11 +81,6 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleSelectedAnim) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleSelectedAnim");
-static_assert(sizeof(BattlePassScreenReward_C_HandleSelectedAnim) == 0x000018, "Wrong size on BattlePassScreenReward_C_HandleSelectedAnim");
-static_assert(offsetof(BattlePassScreenReward_C_HandleSelectedAnim, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000000, "Member 'BattlePassScreenReward_C_HandleSelectedAnim::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleSelectedAnim, CallFunc_GetEndTime_ReturnValue) == 0x000008, "Member 'BattlePassScreenReward_C_HandleSelectedAnim::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleSelectedAnim, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'BattlePassScreenReward_C_HandleSelectedAnim::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleDeselectedAnim
 // 0x0018 (0x0018 - 0x0000)
@@ -121,11 +91,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue_1;     // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleDeselectedAnim) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleDeselectedAnim");
-static_assert(sizeof(BattlePassScreenReward_C_HandleDeselectedAnim) == 0x000018, "Wrong size on BattlePassScreenReward_C_HandleDeselectedAnim");
-static_assert(offsetof(BattlePassScreenReward_C_HandleDeselectedAnim, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000000, "Member 'BattlePassScreenReward_C_HandleDeselectedAnim::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleDeselectedAnim, CallFunc_GetDynamicFontMaterial_ReturnValue_1) == 0x000008, "Member 'BattlePassScreenReward_C_HandleDeselectedAnim::CallFunc_GetDynamicFontMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleDeselectedAnim, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000010, "Member 'BattlePassScreenReward_C_HandleDeselectedAnim::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleCompletionState
 // 0x0040 (0x0040 - 0x0000)
@@ -157,28 +122,6 @@ public:
 	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     K2Node_Select_Default_2;                           // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleCompletionState) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleCompletionState");
-static_assert(sizeof(BattlePassScreenReward_C_HandleCompletionState) == 0x000040, "Wrong size on BattlePassScreenReward_C_HandleCompletionState");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, bIsFree) == 0x000000, "Member 'BattlePassScreenReward_C_HandleCompletionState::bIsFree' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, bOwnsBattlePass) == 0x000001, "Member 'BattlePassScreenReward_C_HandleCompletionState::bOwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, TierLevel_0) == 0x000004, "Member 'BattlePassScreenReward_C_HandleCompletionState::TierLevel_0' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, CurrentSeasonLevel) == 0x000008, "Member 'BattlePassScreenReward_C_HandleCompletionState::CurrentSeasonLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_object_Variable) == 0x000010, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000018, "Member 'BattlePassScreenReward_C_HandleCompletionState::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000019, "Member 'BattlePassScreenReward_C_HandleCompletionState::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, CallFunc_EqualEqual_BoolBool_ReturnValue_1) == 0x00001A, "Member 'BattlePassScreenReward_C_HandleCompletionState::CallFunc_EqualEqual_BoolBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_object_Variable_1) == 0x000020, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, CallFunc_BooleanAND_ReturnValue) == 0x000028, "Member 'BattlePassScreenReward_C_HandleCompletionState::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_bool_Variable) == 0x000029, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_byte_Variable) == 0x00002A, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_byte_Variable_1) == 0x00002B, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_bool_Variable_1) == 0x00002C, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, K2Node_Select_Default) == 0x00002D, "Member 'BattlePassScreenReward_C_HandleCompletionState::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_byte_Variable_2) == 0x00002E, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_byte_Variable_3) == 0x00002F, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, K2Node_Select_Default_1) == 0x000030, "Member 'BattlePassScreenReward_C_HandleCompletionState::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, Temp_bool_Variable_2) == 0x000031, "Member 'BattlePassScreenReward_C_HandleCompletionState::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleCompletionState, K2Node_Select_Default_2) == 0x000038, "Member 'BattlePassScreenReward_C_HandleCompletionState::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleFreeTagVisibility
 // 0x0018 (0x0018 - 0x0000)
@@ -193,14 +136,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleFreeTagVisibility) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleFreeTagVisibility");
-static_assert(sizeof(BattlePassScreenReward_C_HandleFreeTagVisibility) == 0x000018, "Wrong size on BattlePassScreenReward_C_HandleFreeTagVisibility");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, bIsFreeItem) == 0x000000, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::bIsFreeItem' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, Temp_byte_Variable) == 0x000001, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, Temp_bool_Variable) == 0x000003, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleFreeTagVisibility, K2Node_Select_Default) == 0x000010, "Member 'BattlePassScreenReward_C_HandleFreeTagVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleProgressBar
 // 0x0018 (0x0018 - 0x0000)
@@ -216,15 +151,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleProgressBar) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleProgressBar");
-static_assert(sizeof(BattlePassScreenReward_C_HandleProgressBar) == 0x000018, "Wrong size on BattlePassScreenReward_C_HandleProgressBar");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, ProgressAmount) == 0x000000, "Member 'BattlePassScreenReward_C_HandleProgressBar::ProgressAmount' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, bIsLastEntry) == 0x000004, "Member 'BattlePassScreenReward_C_HandleProgressBar::bIsLastEntry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, Temp_byte_Variable) == 0x000005, "Member 'BattlePassScreenReward_C_HandleProgressBar::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, Temp_byte_Variable_1) == 0x000006, "Member 'BattlePassScreenReward_C_HandleProgressBar::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, Temp_bool_Variable) == 0x000007, "Member 'BattlePassScreenReward_C_HandleProgressBar::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, K2Node_Select_Default) == 0x000008, "Member 'BattlePassScreenReward_C_HandleProgressBar::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleProgressBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'BattlePassScreenReward_C_HandleProgressBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.HandleLevelNumberStyling
 // 0x00D0 (0x00D0 - 0x0000)
@@ -253,25 +179,6 @@ public:
 	struct FLinearColor                           K2Node_Select_Default_2;                           // 0x00B8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_HandleLevelNumberStyling) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_HandleLevelNumberStyling");
-static_assert(sizeof(BattlePassScreenReward_C_HandleLevelNumberStyling) == 0x0000D0, "Wrong size on BattlePassScreenReward_C_HandleLevelNumberStyling");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, bIsCompletedLevel) == 0x000000, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::bIsCompletedLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, TierLevel_0) == 0x000004, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::TierLevel_0' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_bool_Variable) == 0x000008, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable) == 0x000028, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable_1) == 0x000038, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_bool_Variable_1) == 0x000048, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, K2Node_Select_Default) == 0x00004C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable_2) == 0x00005C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable_3) == 0x00006C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, K2Node_Select_Default_1) == 0x00007C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable_4) == 0x00008C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_struct_Variable_5) == 0x00009C, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, Temp_bool_Variable_2) == 0x0000AC, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x0000B0, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, K2Node_Select_Default_2) == 0x0000B8, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_HandleLevelNumberStyling, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C8, "Member 'BattlePassScreenReward_C_HandleLevelNumberStyling::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.SelectReward
 // 0x0010 (0x0010 - 0x0000)
@@ -281,10 +188,6 @@ public:
 	class UAthenaSeasonItemRewardIcon_C*          RewardIcon;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsSelected_0;                                     // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassScreenReward_C_SelectReward) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_SelectReward");
-static_assert(sizeof(BattlePassScreenReward_C_SelectReward) == 0x000010, "Wrong size on BattlePassScreenReward_C_SelectReward");
-static_assert(offsetof(BattlePassScreenReward_C_SelectReward, RewardIcon) == 0x000000, "Member 'BattlePassScreenReward_C_SelectReward::RewardIcon' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_SelectReward, bIsSelected_0) == 0x000008, "Member 'BattlePassScreenReward_C_SelectReward::bIsSelected_0' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.PopulateRewardData
 // 0x00C8 (0x00C8 - 0x0000)
@@ -324,33 +227,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicFontMaterial_ReturnValue;       // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_PopulateRewardData) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_PopulateRewardData");
-static_assert(sizeof(BattlePassScreenReward_C_PopulateRewardData) == 0x0000C8, "Wrong size on BattlePassScreenReward_C_PopulateRewardData");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, TierLevel_0) == 0x000000, "Member 'BattlePassScreenReward_C_PopulateRewardData::TierLevel_0' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, IsFree) == 0x000004, "Member 'BattlePassScreenReward_C_PopulateRewardData::IsFree' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, OwnsBattlePass) == 0x000005, "Member 'BattlePassScreenReward_C_PopulateRewardData::OwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CurrentSeasonLevel) == 0x000008, "Member 'BattlePassScreenReward_C_PopulateRewardData::CurrentSeasonLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_bool_Variable) == 0x00000C, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00000D, "Member 'BattlePassScreenReward_C_PopulateRewardData::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x00000E, "Member 'BattlePassScreenReward_C_PopulateRewardData::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CallFunc_BooleanAND_ReturnValue) == 0x00000F, "Member 'BattlePassScreenReward_C_PopulateRewardData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable) == 0x000010, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable_1) == 0x000020, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_bool_Variable_1) == 0x000030, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, K2Node_Select_Default) == 0x000034, "Member 'BattlePassScreenReward_C_PopulateRewardData::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable_2) == 0x000044, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable_3) == 0x000054, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_bool_Variable_2) == 0x000064, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, K2Node_Select_Default_1) == 0x000068, "Member 'BattlePassScreenReward_C_PopulateRewardData::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_byte_Variable) == 0x000078, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_byte_Variable_1) == 0x000079, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable_4) == 0x00007C, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, K2Node_Select_Default_2) == 0x00008C, "Member 'BattlePassScreenReward_C_PopulateRewardData::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_struct_Variable_5) == 0x000090, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, Temp_bool_Variable_3) == 0x0000A0, "Member 'BattlePassScreenReward_C_PopulateRewardData::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, K2Node_Select_Default_3) == 0x0000A4, "Member 'BattlePassScreenReward_C_PopulateRewardData::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x0000B8, "Member 'BattlePassScreenReward_C_PopulateRewardData::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_PopulateRewardData, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000C0, "Member 'BattlePassScreenReward_C_PopulateRewardData::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.OnSetReward
 // 0x0050 (0x0050 - 0x0000)
@@ -370,18 +246,6 @@ public:
 	int32                                         SeasonLevel;                                       // 0x0044(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsFirstEntry;                                     // 0x0048(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassScreenReward_C_OnSetReward) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_OnSetReward");
-static_assert(sizeof(BattlePassScreenReward_C_OnSetReward) == 0x000050, "Wrong size on BattlePassScreenReward_C_OnSetReward");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, InReward) == 0x000000, "Member 'BattlePassScreenReward_C_OnSetReward::InReward' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, TierLevel_0) == 0x000008, "Member 'BattlePassScreenReward_C_OnSetReward::TierLevel_0' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, TierProgress) == 0x00000C, "Member 'BattlePassScreenReward_C_OnSetReward::TierProgress' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, bIsLastEntry) == 0x000010, "Member 'BattlePassScreenReward_C_OnSetReward::bIsLastEntry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, bHasAdditionalStylesToDisplay) == 0x000011, "Member 'BattlePassScreenReward_C_OnSetReward::bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, RewardTexture) == 0x000018, "Member 'BattlePassScreenReward_C_OnSetReward::RewardTexture' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, bIsFreeItem) == 0x000040, "Member 'BattlePassScreenReward_C_OnSetReward::bIsFreeItem' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, bOwnsBattlePass) == 0x000041, "Member 'BattlePassScreenReward_C_OnSetReward::bOwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, SeasonLevel) == 0x000044, "Member 'BattlePassScreenReward_C_OnSetReward::SeasonLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetReward, bIsFirstEntry) == 0x000048, "Member 'BattlePassScreenReward_C_OnSetReward::bIsFirstEntry' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.FadeOutSocialUser
 // 0x0001 (0x0001 - 0x0000)
@@ -390,9 +254,6 @@ struct BattlePassScreenReward_C_FadeOutSocialUser final
 public:
 	bool                                          bCallback;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassScreenReward_C_FadeOutSocialUser) == 0x000001, "Wrong alignment on BattlePassScreenReward_C_FadeOutSocialUser");
-static_assert(sizeof(BattlePassScreenReward_C_FadeOutSocialUser) == 0x000001, "Wrong size on BattlePassScreenReward_C_FadeOutSocialUser");
-static_assert(offsetof(BattlePassScreenReward_C_FadeOutSocialUser, bCallback) == 0x000000, "Member 'BattlePassScreenReward_C_FadeOutSocialUser::bCallback' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.SetSocialPlayerProgress
 // 0x0004 (0x0004 - 0x0000)
@@ -401,9 +262,6 @@ struct BattlePassScreenReward_C_SetSocialPlayerProgress final
 public:
 	float                                         Progress_0;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_SetSocialPlayerProgress) == 0x000004, "Wrong alignment on BattlePassScreenReward_C_SetSocialPlayerProgress");
-static_assert(sizeof(BattlePassScreenReward_C_SetSocialPlayerProgress) == 0x000004, "Wrong size on BattlePassScreenReward_C_SetSocialPlayerProgress");
-static_assert(offsetof(BattlePassScreenReward_C_SetSocialPlayerProgress, Progress_0) == 0x000000, "Member 'BattlePassScreenReward_C_SetSocialPlayerProgress::Progress_0' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.OnLoadSocialIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -414,10 +272,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture2D*                             Texture;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_OnLoadSocialIcon) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_OnLoadSocialIcon");
-static_assert(sizeof(BattlePassScreenReward_C_OnLoadSocialIcon) == 0x000010, "Wrong size on BattlePassScreenReward_C_OnLoadSocialIcon");
-static_assert(offsetof(BattlePassScreenReward_C_OnLoadSocialIcon, bSuccess) == 0x000000, "Member 'BattlePassScreenReward_C_OnLoadSocialIcon::bSuccess' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnLoadSocialIcon, Texture) == 0x000008, "Member 'BattlePassScreenReward_C_OnLoadSocialIcon::Texture' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.OnSetRotatingReward
 // 0x0040 (0x0040 - 0x0000)
@@ -433,14 +287,6 @@ public:
 	uint8                                         Pad_3A[0x2];                                       // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         SeasonLevel;                                       // 0x003C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_OnSetRotatingReward) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_OnSetRotatingReward");
-static_assert(sizeof(BattlePassScreenReward_C_OnSetRotatingReward) == 0x000040, "Wrong size on BattlePassScreenReward_C_OnSetRotatingReward");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, InReward) == 0x000000, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::InReward' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, bHasAdditionalStylesToDisplay) == 0x000008, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, RewardTexture) == 0x000010, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::RewardTexture' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, bIsFreeItem) == 0x000038, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::bIsFreeItem' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, bOwnsBattlePass) == 0x000039, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::bOwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_OnSetRotatingReward, SeasonLevel) == 0x00003C, "Member 'BattlePassScreenReward_C_OnSetRotatingReward::SeasonLevel' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.OnRotateReward
 // 0x0004 (0x0004 - 0x0000)
@@ -449,9 +295,6 @@ struct BattlePassScreenReward_C_OnRotateReward final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_OnRotateReward) == 0x000004, "Wrong alignment on BattlePassScreenReward_C_OnRotateReward");
-static_assert(sizeof(BattlePassScreenReward_C_OnRotateReward) == 0x000004, "Wrong size on BattlePassScreenReward_C_OnRotateReward");
-static_assert(offsetof(BattlePassScreenReward_C_OnRotateReward, Index_0) == 0x000000, "Member 'BattlePassScreenReward_C_OnRotateReward::Index_0' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -461,10 +304,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_Tick) == 0x000004, "Wrong alignment on BattlePassScreenReward_C_Tick");
-static_assert(sizeof(BattlePassScreenReward_C_Tick) == 0x00003C, "Wrong size on BattlePassScreenReward_C_Tick");
-static_assert(offsetof(BattlePassScreenReward_C_Tick, MyGeometry) == 0x000000, "Member 'BattlePassScreenReward_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_Tick, InDeltaTime) == 0x000038, "Member 'BattlePassScreenReward_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function BattlePassScreenReward.BattlePassScreenReward_C.ExecuteUbergraph_BattlePassScreenReward
 // 0x0140 (0x0140 - 0x0000)
@@ -526,51 +365,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0139(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward) == 0x000008, "Wrong alignment on BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward");
-static_assert(sizeof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward) == 0x000140, "Wrong size on BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, EntryPoint) == 0x000000, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_InReward_1) == 0x000008, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_InReward_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_TierLevel) == 0x000010, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_TierLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_TierProgress) == 0x000014, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_TierProgress' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bIsLastEntry) == 0x000018, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bIsLastEntry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bHasAdditionalStylesToDisplay_1) == 0x000019, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bHasAdditionalStylesToDisplay_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_RewardTexture_1) == 0x000020, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_RewardTexture_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bIsFreeItem_1) == 0x000048, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bIsFreeItem_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bOwnsBattlePass_1) == 0x000049, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bOwnsBattlePass_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_SeasonLevel_1) == 0x00004C, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_SeasonLevel_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bIsFirstEntry) == 0x000050, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bIsFirstEntry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bCallback) == 0x000051, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bCallback' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_PlayAnimation_ReturnValue) == 0x000058, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_Progress) == 0x000060, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_Progress' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_PlayAnimation_ReturnValue_1) == 0x000068, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_Lerp_ReturnValue) == 0x000070, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_MakeVector2D_ReturnValue) == 0x000074, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bSuccess) == 0x00007C, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bSuccess' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_Texture) == 0x000080, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_Texture' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000088, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_InReward) == 0x000090, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_InReward' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bHasAdditionalStylesToDisplay) == 0x000098, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_RewardTexture) == 0x0000A0, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_RewardTexture' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bIsFreeItem) == 0x0000C8, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bIsFreeItem' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_bOwnsBattlePass) == 0x0000C9, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_bOwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_SeasonLevel) == 0x0000CC, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_SeasonLevel' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_Index) == 0x0000D0, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000D4, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_byte_Variable) == 0x0000D5, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_byte_Variable_1) == 0x0000D6, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_bool_Variable) == 0x0000D7, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_byte_Variable_2) == 0x0000D8, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_MyGeometry) == 0x0000DC, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Event_InDeltaTime) == 0x000114, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_byte_Variable_3) == 0x000118, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_bool_Variable_1) == 0x000119, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, Temp_bool_Variable_2) == 0x00011A, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Select_Default) == 0x00011B, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Select_Default_1) == 0x000120, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000128, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000130, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, CallFunc_BooleanAND_ReturnValue) == 0x000138, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward, K2Node_Select_Default_2) == 0x000139, "Member 'BattlePassScreenReward_C_ExecuteUbergraph_BattlePassScreenReward::K2Node_Select_Default_2' has a wrong offset!");
 
 }
 

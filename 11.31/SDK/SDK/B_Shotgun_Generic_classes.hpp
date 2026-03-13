@@ -23,15 +23,17 @@ class AB_Shotgun_Generic_C : public AB_Ranged_Generic_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Shotgun_Generic_C">();
+		BP_STATIC_CLASS_IMPL("B_Shotgun_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Shotgun_Generic_C")
 	}
 	static class AB_Shotgun_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Shotgun_Generic_C>();
 	}
 };
-static_assert(alignof(AB_Shotgun_Generic_C) == 0x000008, "Wrong alignment on AB_Shotgun_Generic_C");
-static_assert(sizeof(AB_Shotgun_Generic_C) == 0x000FB8, "Wrong size on AB_Shotgun_Generic_C");
 
 }
 

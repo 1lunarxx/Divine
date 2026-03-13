@@ -23,15 +23,17 @@ class UVideoPlayerWidget_C final : public UFortVideoPlayerWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VideoPlayerWidget_C">();
+		BP_STATIC_CLASS_IMPL("VideoPlayerWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VideoPlayerWidget_C")
 	}
 	static class UVideoPlayerWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVideoPlayerWidget_C>();
 	}
 };
-static_assert(alignof(UVideoPlayerWidget_C) == 0x000008, "Wrong alignment on UVideoPlayerWidget_C");
-static_assert(sizeof(UVideoPlayerWidget_C) == 0x000318, "Wrong size on UVideoPlayerWidget_C");
 
 }
 

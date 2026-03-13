@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "EFortUIThemeColor_structs.hpp"
 #include "FortniteUI_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "FortniteGame_structs.hpp"
 #include "EFortUITheme_structs.hpp"
-#include "EFortUIThemeColor_structs.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
@@ -46,15 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StyleLibrary_C">();
+		BP_STATIC_CLASS_IMPL("StyleLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StyleLibrary_C")
 	}
 	static class UStyleLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStyleLibrary_C>();
 	}
 };
-static_assert(alignof(UStyleLibrary_C) == 0x000008, "Wrong alignment on UStyleLibrary_C");
-static_assert(sizeof(UStyleLibrary_C) == 0x000028, "Wrong size on UStyleLibrary_C");
 
 }
 

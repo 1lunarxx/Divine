@@ -21,9 +21,6 @@ struct W_AvailableSparks_C_PlayCountdown final
 public:
 	float                                         StartValue;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(W_AvailableSparks_C_PlayCountdown) == 0x000004, "Wrong alignment on W_AvailableSparks_C_PlayCountdown");
-static_assert(sizeof(W_AvailableSparks_C_PlayCountdown) == 0x000004, "Wrong size on W_AvailableSparks_C_PlayCountdown");
-static_assert(offsetof(W_AvailableSparks_C_PlayCountdown, StartValue) == 0x000000, "Member 'W_AvailableSparks_C_PlayCountdown::StartValue' has a wrong offset!");
 
 // Function W_AvailableSparks.W_AvailableSparks_C.PlayEventOver
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +29,6 @@ struct W_AvailableSparks_C_PlayEventOver final
 public:
 	float                                         StartValue;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(W_AvailableSparks_C_PlayEventOver) == 0x000004, "Wrong alignment on W_AvailableSparks_C_PlayEventOver");
-static_assert(sizeof(W_AvailableSparks_C_PlayEventOver) == 0x000004, "Wrong size on W_AvailableSparks_C_PlayEventOver");
-static_assert(offsetof(W_AvailableSparks_C_PlayEventOver, StartValue) == 0x000000, "Member 'W_AvailableSparks_C_PlayEventOver::StartValue' has a wrong offset!");
 
 // Function W_AvailableSparks.W_AvailableSparks_C.ExecuteUbergraph_W_AvailableSparks
 // 0x0060 (0x0060 - 0x0000)
@@ -54,19 +48,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks) == 0x000008, "Wrong alignment on W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks");
-static_assert(sizeof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks) == 0x000060, "Wrong size on W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, EntryPoint) == 0x000000, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::EntryPoint' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, K2Node_Event_StartValue_1) == 0x000004, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::K2Node_Event_StartValue_1' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, K2Node_Event_StartValue) == 0x000008, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::K2Node_Event_StartValue' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue_2) == 0x000020, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue_3) == 0x000028, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, K2Node_CreateDelegate_OutputDelegate) == 0x000030, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue_4) == 0x000050, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks, CallFunc_PlayAnimation_ReturnValue_5) == 0x000058, "Member 'W_AvailableSparks_C_ExecuteUbergraph_W_AvailableSparks::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
 
 }
 

@@ -17,40 +17,6 @@
 namespace SDK
 {
 
-// Function PerkWidgetNew.PerkWidgetNew_C.SetDescriptionWraptTextAt
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   WrapTextAt                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UPerkWidgetNew_C::SetDescriptionWraptTextAt(float WrapTextAt)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "SetDescriptionWraptTextAt");
-
-	Params::PerkWidgetNew_C_SetDescriptionWraptTextAt Parms{};
-
-	Parms.WrapTextAt = WrapTextAt;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function PerkWidgetNew.PerkWidgetNew_C.UpdatePerk
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UPerkWidgetNew_C::UpdatePerk()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("PerkWidgetNew_C", "UpdatePerk");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function PerkWidgetNew.PerkWidgetNew_C.Get_OverlayAbilityPerk_ToolTipWidget
 // (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -346,6 +312,40 @@ void UPerkWidgetNew_C::ExecuteUbergraph_PerkWidgetNew(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PerkWidgetNew.PerkWidgetNew_C.SetDescriptionWraptTextAt
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   WrapTextAt                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UPerkWidgetNew_C::SetDescriptionWraptTextAt(float WrapTextAt)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerkWidgetNew_C", "SetDescriptionWraptTextAt");
+
+	Params::PerkWidgetNew_C_SetDescriptionWraptTextAt Parms{};
+
+	Parms.WrapTextAt = WrapTextAt;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function PerkWidgetNew.PerkWidgetNew_C.UpdatePerk
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UPerkWidgetNew_C::UpdatePerk()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("PerkWidgetNew_C", "UpdatePerk");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

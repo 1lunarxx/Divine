@@ -81,39 +81,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonReward_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonReward_C")
 	}
 	static class UAthenaSeasonReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonReward_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonReward_C) == 0x000008, "Wrong alignment on UAthenaSeasonReward_C");
-static_assert(sizeof(UAthenaSeasonReward_C) == 0x000C28, "Wrong size on UAthenaSeasonReward_C");
-static_assert(offsetof(UAthenaSeasonReward_C, UberGraphFrame) == 0x000B78, "Member 'UAthenaSeasonReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, Fade) == 0x000B80, "Member 'UAthenaSeasonReward_C::Fade' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, Intro) == 0x000B88, "Member 'UAthenaSeasonReward_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, BorderOwned) == 0x000B90, "Member 'UAthenaSeasonReward_C::BorderOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, Check) == 0x000B98, "Member 'UAthenaSeasonReward_C::Check' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, ClaimedImage) == 0x000BA0, "Member 'UAthenaSeasonReward_C::ClaimedImage' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, ItemCard) == 0x000BA8, "Member 'UAthenaSeasonReward_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, LockedImage) == 0x000BB0, "Member 'UAthenaSeasonReward_C::LockedImage' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, OwnedText) == 0x000BB8, "Member 'UAthenaSeasonReward_C::OwnedText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, RarityFlare) == 0x000BC0, "Member 'UAthenaSeasonReward_C::RarityFlare' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, RevealOverlay) == 0x000BC8, "Member 'UAthenaSeasonReward_C::RevealOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, SBoxOwned) == 0x000BD0, "Member 'UAthenaSeasonReward_C::SBoxOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, UnEarned_OverlayTint) == 0x000BD8, "Member 'UAthenaSeasonReward_C::UnEarned_OverlayTint' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, StrongItemToRepresent) == 0x000BE0, "Member 'UAthenaSeasonReward_C::StrongItemToRepresent' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, SoundOnReveal) == 0x000BE8, "Member 'UAthenaSeasonReward_C::SoundOnReveal' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, ViewOnHover) == 0x000BF0, "Member 'UAthenaSeasonReward_C::ViewOnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, SecondaryItem) == 0x000BF8, "Member 'UAthenaSeasonReward_C::SecondaryItem' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, ShowVariantTimer) == 0x000C00, "Member 'UAthenaSeasonReward_C::ShowVariantTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, ResetVariantTimer) == 0x000C08, "Member 'UAthenaSeasonReward_C::ResetVariantTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, VariantIndex) == 0x000C10, "Member 'UAthenaSeasonReward_C::VariantIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, WaitingForVaultToChange) == 0x000C14, "Member 'UAthenaSeasonReward_C::WaitingForVaultToChange' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, TimeBetweenVariants) == 0x000C18, "Member 'UAthenaSeasonReward_C::TimeBetweenVariants' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, TimeBetweenVariantsRestart) == 0x000C1C, "Member 'UAthenaSeasonReward_C::TimeBetweenVariantsRestart' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonReward_C, VariantTimerIndex) == 0x000C20, "Member 'UAthenaSeasonReward_C::VariantTimerIndex' has a wrong offset!");
 
 }
 

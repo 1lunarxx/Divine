@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassOverviewVideo_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassOverviewVideo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassOverviewVideo_C")
 	}
 	static class UBattlePassOverviewVideo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassOverviewVideo_C>();
 	}
 };
-static_assert(alignof(UBattlePassOverviewVideo_C) == 0x000008, "Wrong alignment on UBattlePassOverviewVideo_C");
-static_assert(sizeof(UBattlePassOverviewVideo_C) == 0x0004F8, "Wrong size on UBattlePassOverviewVideo_C");
-static_assert(offsetof(UBattlePassOverviewVideo_C, UberGraphFrame) == 0x0004C8, "Member 'UBattlePassOverviewVideo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassOverviewVideo_C, TitleIntro) == 0x0004D0, "Member 'UBattlePassOverviewVideo_C::TitleIntro' has a wrong offset!");
-static_assert(offsetof(UBattlePassOverviewVideo_C, BlackSlate) == 0x0004D8, "Member 'UBattlePassOverviewVideo_C::BlackSlate' has a wrong offset!");
-static_assert(offsetof(UBattlePassOverviewVideo_C, ImageThrobberBackground) == 0x0004E0, "Member 'UBattlePassOverviewVideo_C::ImageThrobberBackground' has a wrong offset!");
-static_assert(offsetof(UBattlePassOverviewVideo_C, MainSafeZone) == 0x0004E8, "Member 'UBattlePassOverviewVideo_C::MainSafeZone' has a wrong offset!");
-static_assert(offsetof(UBattlePassOverviewVideo_C, MediaHasBeenOpened) == 0x0004F0, "Member 'UBattlePassOverviewVideo_C::MediaHasBeenOpened' has a wrong offset!");
 
 }
 

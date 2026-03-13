@@ -23,15 +23,17 @@ class UGE_Lotus_Mustache_Heal_Burst_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Lotus_Mustache_Heal_Burst_C">();
+		BP_STATIC_CLASS_IMPL("GE_Lotus_Mustache_Heal_Burst_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Lotus_Mustache_Heal_Burst_C")
 	}
 	static class UGE_Lotus_Mustache_Heal_Burst_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Lotus_Mustache_Heal_Burst_C>();
 	}
 };
-static_assert(alignof(UGE_Lotus_Mustache_Heal_Burst_C) == 0x000008, "Wrong alignment on UGE_Lotus_Mustache_Heal_Burst_C");
-static_assert(sizeof(UGE_Lotus_Mustache_Heal_Burst_C) == 0x000770, "Wrong size on UGE_Lotus_Mustache_Heal_Burst_C");
 
 }
 

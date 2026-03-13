@@ -47,22 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DeimosRift_Dynamic_C">();
+		BP_STATIC_CLASS_IMPL("BP_DeimosRift_Dynamic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DeimosRift_Dynamic_C")
 	}
 	static class ABP_DeimosRift_Dynamic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DeimosRift_Dynamic_C>();
 	}
 };
-static_assert(alignof(ABP_DeimosRift_Dynamic_C) == 0x000008, "Wrong alignment on ABP_DeimosRift_Dynamic_C");
-static_assert(sizeof(ABP_DeimosRift_Dynamic_C) == 0x000CC8, "Wrong size on ABP_DeimosRift_Dynamic_C");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, UberGraphFrame_BP_DeimosRift_Dynamic_C) == 0x000C98, "Member 'ABP_DeimosRift_Dynamic_C::UberGraphFrame_BP_DeimosRift_Dynamic_C' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, LifeTime) == 0x000CA0, "Member 'ABP_DeimosRift_Dynamic_C::LifeTime' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, LifeTimeTimerHandle) == 0x000CA8, "Member 'ABP_DeimosRift_Dynamic_C::LifeTimeTimerHandle' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, TimeLastSetLifeTimeTimer) == 0x000CB0, "Member 'ABP_DeimosRift_Dynamic_C::TimeLastSetLifeTimeTimer' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, ThrottleTime) == 0x000CB4, "Member 'ABP_DeimosRift_Dynamic_C::ThrottleTime' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, GE_LifeTimeLapsed) == 0x000CB8, "Member 'ABP_DeimosRift_Dynamic_C::GE_LifeTimeLapsed' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_Dynamic_C, ServerSpawnTime) == 0x000CC0, "Member 'ABP_DeimosRift_Dynamic_C::ServerSpawnTime' has a wrong offset!");
 
 }
 

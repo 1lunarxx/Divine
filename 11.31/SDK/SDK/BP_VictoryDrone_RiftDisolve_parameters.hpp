@@ -23,9 +23,6 @@ struct BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolv
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve) == 0x000004, "Wrong alignment on BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve");
-static_assert(sizeof(BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve) == 0x000004, "Wrong size on BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve, EntryPoint) == 0x000000, "Member 'BP_VictoryDrone_RiftDisolve_C_ExecuteUbergraph_BP_VictoryDrone_RiftDisolve::EntryPoint' has a wrong offset!");
 
 // Function BP_VictoryDrone_RiftDisolve.BP_VictoryDrone_RiftDisolve_C.PlaySpawnAnim
 // 0x0028 (0x0028 - 0x0000)
@@ -41,14 +38,6 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim) == 0x000008, "Wrong alignment on BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim");
-static_assert(sizeof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim) == 0x000028, "Wrong size on BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, Montage) == 0x000000, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::Montage' has a wrong offset!");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, NewLocalVar_0) == 0x000008, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, CallFunc_IsValid_ReturnValue) == 0x00000C, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, CallFunc_IsValid_ReturnValue_1) == 0x00000D, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, CallFunc_GetSocketLocation_ReturnValue) == 0x000010, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::CallFunc_GetSocketLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000020, "Member 'BP_VictoryDrone_RiftDisolve_C_PlaySpawnAnim::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
 
 }
 

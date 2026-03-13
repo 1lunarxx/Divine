@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeListEntry_CompletionReward_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeListEntry_CompletionReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeListEntry_CompletionReward_C")
 	}
 	static class UChallengeListEntry_CompletionReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeListEntry_CompletionReward_C>();
 	}
 };
-static_assert(alignof(UChallengeListEntry_CompletionReward_C) == 0x000008, "Wrong alignment on UChallengeListEntry_CompletionReward_C");
-static_assert(sizeof(UChallengeListEntry_CompletionReward_C) == 0x0002A8, "Wrong size on UChallengeListEntry_CompletionReward_C");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, UberGraphFrame) == 0x000278, "Member 'UChallengeListEntry_CompletionReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, OnHover) == 0x000280, "Member 'UChallengeListEntry_CompletionReward_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, AnimBoundContentHB) == 0x000288, "Member 'UChallengeListEntry_CompletionReward_C::AnimBoundContentHB' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, AnimBoundEntryBorder) == 0x000290, "Member 'UChallengeListEntry_CompletionReward_C::AnimBoundEntryBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, ChallengeBulletSwitcher) == 0x000298, "Member 'UChallengeListEntry_CompletionReward_C::ChallengeBulletSwitcher' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_CompletionReward_C, TextEarned) == 0x0002A0, "Member 'UChallengeListEntry_CompletionReward_C::TextEarned' has a wrong offset!");
 
 }
 

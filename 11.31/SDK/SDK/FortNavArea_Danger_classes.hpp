@@ -23,15 +23,17 @@ class UFortNavArea_Danger_C final : public UFortNavArea
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortNavArea_Danger_C">();
+		BP_STATIC_CLASS_IMPL("FortNavArea_Danger_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortNavArea_Danger_C")
 	}
 	static class UFortNavArea_Danger_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortNavArea_Danger_C>();
 	}
 };
-static_assert(alignof(UFortNavArea_Danger_C) == 0x000008, "Wrong alignment on UFortNavArea_Danger_C");
-static_assert(sizeof(UFortNavArea_Danger_C) == 0x000050, "Wrong size on UFortNavArea_Danger_C");
 
 }
 

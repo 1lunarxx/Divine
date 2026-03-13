@@ -47,29 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissedInvitesEntry_C">();
+		BP_STATIC_CLASS_IMPL("MissedInvitesEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissedInvitesEntry_C")
 	}
 	static class UMissedInvitesEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissedInvitesEntry_C>();
 	}
 };
-static_assert(alignof(UMissedInvitesEntry_C) == 0x000008, "Wrong alignment on UMissedInvitesEntry_C");
-static_assert(sizeof(UMissedInvitesEntry_C) == 0x000C48, "Wrong size on UMissedInvitesEntry_C");
-static_assert(offsetof(UMissedInvitesEntry_C, UberGraphFrame) == 0x000B98, "Member 'UMissedInvitesEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, Selected) == 0x000BA0, "Member 'UMissedInvitesEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, Hovered) == 0x000BA8, "Member 'UMissedInvitesEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, AnimatedInputBorder) == 0x000BB0, "Member 'UMissedInvitesEntry_C::AnimatedInputBorder' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, Arrow) == 0x000BB8, "Member 'UMissedInvitesEntry_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, EmptyButtonToEatOneMouseUpEvent) == 0x000BC0, "Member 'UMissedInvitesEntry_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, EntryBorder) == 0x000BC8, "Member 'UMissedInvitesEntry_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, Exclamation) == 0x000BD0, "Member 'UMissedInvitesEntry_C::Exclamation' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, Text_MissedInvitesText) == 0x000BD8, "Member 'UMissedInvitesEntry_C::Text_MissedInvitesText' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, UserActionMenuInputButton) == 0x000BE0, "Member 'UMissedInvitesEntry_C::UserActionMenuInputButton' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, InviteMaterial) == 0x000BE8, "Member 'UMissedInvitesEntry_C::InviteMaterial' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, DefaultMaterial) == 0x000BF0, "Member 'UMissedInvitesEntry_C::DefaultMaterial' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, InviteFontColor) == 0x000BF8, "Member 'UMissedInvitesEntry_C::InviteFontColor' has a wrong offset!");
-static_assert(offsetof(UMissedInvitesEntry_C, DefaultFontColor) == 0x000C20, "Member 'UMissedInvitesEntry_C::DefaultFontColor' has a wrong offset!");
 
 }
 

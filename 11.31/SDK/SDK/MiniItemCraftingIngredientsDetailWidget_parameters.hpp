@@ -41,24 +41,6 @@ public:
 	struct FFortItemQuantityPair                  CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x00C8(0x0014)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x00DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x000008, "Wrong alignment on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
-static_assert(sizeof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs) == 0x0000E0, "Wrong size on MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Item) == 0x000000, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Item' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Pairs) == 0x000008, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Pairs' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Results) == 0x000018, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Results' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, K2Node_DynamicCast_AsFort_Schematic_Item) == 0x000030, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::K2Node_DynamicCast_AsFort_Schematic_Item' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_GetSchematicRecipe_ReturnValue) == 0x000040, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_GetSchematicRecipe_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_Array_Length_ReturnValue) == 0x000098, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, Temp_int_Array_Index_Variable) == 0x00009C, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_Less_IntInt_ReturnValue) == 0x0000A0, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_Array_Get_Item) == 0x0000A4, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_GetContext_ReturnValue) == 0x0000B8, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_GetItemFromItemQuantityPair_ReturnValue) == 0x0000C0, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_GetItemFromItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_MakeItemQuantityPair_ReturnValue) == 0x0000C8, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_MakeItemQuantityPair_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs, CallFunc_Array_Add_ReturnValue) == 0x0000DC, "Member 'MiniItemCraftingIngredientsDetailWidget_C_GetRecipeItemQuantityPairs::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget
 // 0x0028 (0x0028 - 0x0000)
@@ -70,11 +52,6 @@ public:
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetRecipeItemQuantityPairs_Pairs;         // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortItemQuantityPair>          CallFunc_GetRecipeItemQuantityPairs_Pairs_1;       // 0x0018(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget) == 0x000008, "Wrong alignment on MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
-static_assert(sizeof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget) == 0x000028, "Wrong size on MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget, EntryPoint) == 0x000000, "Member 'MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget, CallFunc_GetRecipeItemQuantityPairs_Pairs) == 0x000008, "Member 'MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget::CallFunc_GetRecipeItemQuantityPairs_Pairs' has a wrong offset!");
-static_assert(offsetof(MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget, CallFunc_GetRecipeItemQuantityPairs_Pairs_1) == 0x000018, "Member 'MiniItemCraftingIngredientsDetailWidget_C_ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget::CallFunc_GetRecipeItemQuantityPairs_Pairs_1' has a wrong offset!");
 
 }
 

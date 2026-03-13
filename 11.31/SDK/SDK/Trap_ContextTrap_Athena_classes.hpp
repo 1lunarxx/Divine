@@ -23,15 +23,17 @@ class ATrap_ContextTrap_Athena_C final : public ABuildingTrap
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Trap_ContextTrap_Athena_C">();
+		BP_STATIC_CLASS_IMPL("Trap_ContextTrap_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Trap_ContextTrap_Athena_C")
 	}
 	static class ATrap_ContextTrap_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrap_ContextTrap_Athena_C>();
 	}
 };
-static_assert(alignof(ATrap_ContextTrap_Athena_C) == 0x000008, "Wrong alignment on ATrap_ContextTrap_Athena_C");
-static_assert(sizeof(ATrap_ContextTrap_Athena_C) == 0x000C78, "Wrong size on ATrap_ContextTrap_Athena_C");
 
 }
 

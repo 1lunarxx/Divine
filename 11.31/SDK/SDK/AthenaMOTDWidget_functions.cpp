@@ -17,6 +17,54 @@
 namespace SDK
 {
 
+// Function AthenaMOTDWidget.AthenaMOTDWidget_C.UpdateCustomColorStyle
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bHasCustomColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FColor&                    CustomDarkColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FColor&                    CustomLightColor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaMOTDWidget_C::UpdateCustomColorStyle(bool bHasCustomColor, const struct FColor& CustomDarkColor, const struct FColor& CustomLightColor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaMOTDWidget_C", "UpdateCustomColorStyle");
+
+	Params::AthenaMOTDWidget_C_UpdateCustomColorStyle Parms{};
+
+	Parms.bHasCustomColor = bHasCustomColor;
+	Parms.CustomDarkColor = std::move(CustomDarkColor);
+	Parms.CustomLightColor = std::move(CustomLightColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaMOTDWidget.AthenaMOTDWidget_C.SetTextIfValidOrDefault
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class FString&                    String                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// const class FText&                      DefaultText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UAthenaMOTDWidget_C::SetTextIfValidOrDefault(class UCommonButton* Button, const class FString& String, const class FText& DefaultText)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaMOTDWidget_C", "SetTextIfValidOrDefault");
+
+	Params::AthenaMOTDWidget_C_SetTextIfValidOrDefault Parms{};
+
+	Parms.Button = Button;
+	Parms.String = std::move(String);
+	Parms.DefaultText = std::move(DefaultText);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaMOTDWidget.AthenaMOTDWidget_C.DialogResult_B7839D98483DEF9593D448BA28AE74F7
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -142,54 +190,6 @@ void UAthenaMOTDWidget_C::ExecuteUbergraph_AthenaMOTDWidget(int32 EntryPoint)
 	Params::AthenaMOTDWidget_C_ExecuteUbergraph_AthenaMOTDWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaMOTDWidget.AthenaMOTDWidget_C.UpdateCustomColorStyle
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bHasCustomColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const struct FColor&                    CustomDarkColor                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FColor&                    CustomLightColor                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaMOTDWidget_C::UpdateCustomColorStyle(bool bHasCustomColor, const struct FColor& CustomDarkColor, const struct FColor& CustomLightColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "UpdateCustomColorStyle");
-
-	Params::AthenaMOTDWidget_C_UpdateCustomColorStyle Parms{};
-
-	Parms.bHasCustomColor = bHasCustomColor;
-	Parms.CustomDarkColor = std::move(CustomDarkColor);
-	Parms.CustomLightColor = std::move(CustomLightColor);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaMOTDWidget.AthenaMOTDWidget_C.SetTextIfValidOrDefault
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const class FString&                    String                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
-// const class FText&                      DefaultText                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UAthenaMOTDWidget_C::SetTextIfValidOrDefault(class UCommonButton* Button, const class FString& String, const class FText& DefaultText)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaMOTDWidget_C", "SetTextIfValidOrDefault");
-
-	Params::AthenaMOTDWidget_C_SetTextIfValidOrDefault Parms{};
-
-	Parms.Button = Button;
-	Parms.String = std::move(String);
-	Parms.DefaultText = std::move(DefaultText);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -23,15 +23,17 @@ class UConsoleProfileWidget_C final : public UFortConsoleProfileWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConsoleProfileWidget_C">();
+		BP_STATIC_CLASS_IMPL("ConsoleProfileWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConsoleProfileWidget_C")
 	}
 	static class UConsoleProfileWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConsoleProfileWidget_C>();
 	}
 };
-static_assert(alignof(UConsoleProfileWidget_C) == 0x000008, "Wrong alignment on UConsoleProfileWidget_C");
-static_assert(sizeof(UConsoleProfileWidget_C) == 0x000240, "Wrong size on UConsoleProfileWidget_C");
 
 }
 

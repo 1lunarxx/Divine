@@ -40,20 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_EdgeOfStorm_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_EdgeOfStorm_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_EdgeOfStorm_C")
 	}
 	static class AGCNL_EdgeOfStorm_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_EdgeOfStorm_C>();
 	}
 };
-static_assert(alignof(AGCNL_EdgeOfStorm_C) == 0x000008, "Wrong alignment on AGCNL_EdgeOfStorm_C");
-static_assert(sizeof(AGCNL_EdgeOfStorm_C) == 0x0007A8, "Wrong size on AGCNL_EdgeOfStorm_C");
-static_assert(offsetof(AGCNL_EdgeOfStorm_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_EdgeOfStorm_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_EdgeOfStorm_C, Audio) == 0x000790, "Member 'AGCNL_EdgeOfStorm_C::Audio' has a wrong offset!");
-static_assert(offsetof(AGCNL_EdgeOfStorm_C, StormPawn) == 0x000798, "Member 'AGCNL_EdgeOfStorm_C::StormPawn' has a wrong offset!");
-static_assert(offsetof(AGCNL_EdgeOfStorm_C, bBoundAudioPercent) == 0x0007A0, "Member 'AGCNL_EdgeOfStorm_C::bBoundAudioPercent' has a wrong offset!");
-static_assert(offsetof(AGCNL_EdgeOfStorm_C, CurrentPlaybackPercent) == 0x0007A4, "Member 'AGCNL_EdgeOfStorm_C::CurrentPlaybackPercent' has a wrong offset!");
 
 }
 

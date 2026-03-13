@@ -32,19 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BroadcastPost_C">();
+		BP_STATIC_CLASS_IMPL("BP_BroadcastPost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BroadcastPost_C")
 	}
 	static class ABP_BroadcastPost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BroadcastPost_C>();
 	}
 };
-static_assert(alignof(ABP_BroadcastPost_C) == 0x000008, "Wrong alignment on ABP_BroadcastPost_C");
-static_assert(sizeof(ABP_BroadcastPost_C) == 0x000238, "Wrong size on ABP_BroadcastPost_C");
-static_assert(offsetof(ABP_BroadcastPost_C, Extreme) == 0x000218, "Member 'ABP_BroadcastPost_C::Extreme' has a wrong offset!");
-static_assert(offsetof(ABP_BroadcastPost_C, PostProcess) == 0x000220, "Member 'ABP_BroadcastPost_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(ABP_BroadcastPost_C, DefaultSceneRoot) == 0x000228, "Member 'ABP_BroadcastPost_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_BroadcastPost_C, ExtremePostEnabled) == 0x000230, "Member 'ABP_BroadcastPost_C::ExtremePostEnabled' has a wrong offset!");
 
 }
 

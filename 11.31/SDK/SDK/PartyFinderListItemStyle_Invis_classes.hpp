@@ -23,15 +23,17 @@ class UPartyFinderListItemStyle_Invis_C final : public UButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyFinderListItemStyle_Invis_C">();
+		BP_STATIC_CLASS_IMPL("PartyFinderListItemStyle_Invis_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyFinderListItemStyle_Invis_C")
 	}
 	static class UPartyFinderListItemStyle_Invis_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyFinderListItemStyle_Invis_C>();
 	}
 };
-static_assert(alignof(UPartyFinderListItemStyle_Invis_C) == 0x000008, "Wrong alignment on UPartyFinderListItemStyle_Invis_C");
-static_assert(sizeof(UPartyFinderListItemStyle_Invis_C) == 0x000570, "Wrong size on UPartyFinderListItemStyle_Invis_C");
 
 }
 

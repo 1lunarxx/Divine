@@ -23,15 +23,17 @@ class USmasherStrength08_C final : public UFortNavAreaAutomatic
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SmasherStrength08_C">();
+		BP_STATIC_CLASS_IMPL("SmasherStrength08_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmasherStrength08_C")
 	}
 	static class USmasherStrength08_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmasherStrength08_C>();
 	}
 };
-static_assert(alignof(USmasherStrength08_C) == 0x000008, "Wrong alignment on USmasherStrength08_C");
-static_assert(sizeof(USmasherStrength08_C) == 0x000068, "Wrong size on USmasherStrength08_C");
 
 }
 

@@ -51,29 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ARDronePawn_C">();
+		BP_STATIC_CLASS_IMPL("BP_ARDronePawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ARDronePawn_C")
 	}
 	static class ABP_ARDronePawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ARDronePawn_C>();
 	}
 };
-static_assert(alignof(ABP_ARDronePawn_C) == 0x000008, "Wrong alignment on ABP_ARDronePawn_C");
-static_assert(sizeof(ABP_ARDronePawn_C) == 0x000478, "Wrong size on ABP_ARDronePawn_C");
-static_assert(offsetof(ABP_ARDronePawn_C, UberGraphFrame) == 0x000420, "Member 'ABP_ARDronePawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, One080Plane) == 0x000428, "Member 'ABP_ARDronePawn_C::One080Plane' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, WindAudioEnabled) == 0x000430, "Member 'ABP_ARDronePawn_C::WindAudioEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, AltitudeWindAudioComp) == 0x000438, "Member 'ABP_ARDronePawn_C::AltitudeWindAudioComp' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, WindAudioAltMin) == 0x000440, "Member 'ABP_ARDronePawn_C::WindAudioAltMin' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, WindAudioAltMax) == 0x000444, "Member 'ABP_ARDronePawn_C::WindAudioAltMax' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, WindAudioVolMin) == 0x000448, "Member 'ABP_ARDronePawn_C::WindAudioVolMin' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, WindAudioVolMax) == 0x00044C, "Member 'ABP_ARDronePawn_C::WindAudioVolMax' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, SoundWindMovementLoop) == 0x000450, "Member 'ABP_ARDronePawn_C::SoundWindMovementLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, SoundWindAltitudeLoop) == 0x000458, "Member 'ABP_ARDronePawn_C::SoundWindAltitudeLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, CurrentAltitudeWindVolume) == 0x000460, "Member 'ABP_ARDronePawn_C::CurrentAltitudeWindVolume' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, Speed) == 0x000464, "Member 'ABP_ARDronePawn_C::Speed' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, MovementWindAudioComp) == 0x000468, "Member 'ABP_ARDronePawn_C::MovementWindAudioComp' has a wrong offset!");
-static_assert(offsetof(ABP_ARDronePawn_C, CurrentMovementWindVolume) == 0x000470, "Member 'ABP_ARDronePawn_C::CurrentMovementWindVolume' has a wrong offset!");
 
 }
 

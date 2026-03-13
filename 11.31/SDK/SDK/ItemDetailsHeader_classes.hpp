@@ -69,47 +69,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDetailsHeader_C">();
+		BP_STATIC_CLASS_IMPL("ItemDetailsHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDetailsHeader_C")
 	}
 	static class UItemDetailsHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDetailsHeader_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeader_C) == 0x000008, "Wrong alignment on UItemDetailsHeader_C");
-static_assert(sizeof(UItemDetailsHeader_C) == 0x000498, "Wrong size on UItemDetailsHeader_C");
-static_assert(offsetof(UItemDetailsHeader_C, UberGraphFrame) == 0x000320, "Member 'UItemDetailsHeader_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, AmmoLoadedText) == 0x000328, "Member 'UItemDetailsHeader_C::AmmoLoadedText' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, CategoryIndicator) == 0x000330, "Member 'UItemDetailsHeader_C::CategoryIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, CategoryIndicatorTertiary) == 0x000338, "Member 'UItemDetailsHeader_C::CategoryIndicatorTertiary' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, EvolutionAndTierBox) == 0x000340, "Member 'UItemDetailsHeader_C::EvolutionAndTierBox' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, EvolveIndicator) == 0x000348, "Member 'UItemDetailsHeader_C::EvolveIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ExtraIndicatorSlot) == 0x000350, "Member 'UItemDetailsHeader_C::ExtraIndicatorSlot' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, FavoriteIndicator) == 0x000358, "Member 'UItemDetailsHeader_C::FavoriteIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, IconSpacer) == 0x000360, "Member 'UItemDetailsHeader_C::IconSpacer' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, IconSpacerTertiary) == 0x000368, "Member 'UItemDetailsHeader_C::IconSpacerTertiary' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemDetailsHeaderItemDisplayText) == 0x000370, "Member 'UItemDetailsHeader_C::ItemDetailsHeaderItemDisplayText' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemDetailsHeaderKeywordsListText) == 0x000378, "Member 'UItemDetailsHeader_C::ItemDetailsHeaderKeywordsListText' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemDetailsHeaderRarityTypeText) == 0x000380, "Member 'UItemDetailsHeader_C::ItemDetailsHeaderRarityTypeText' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemDetailsHeaderTagListText) == 0x000388, "Member 'UItemDetailsHeader_C::ItemDetailsHeaderTagListText' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemDetailsStackCounter) == 0x000390, "Member 'UItemDetailsHeader_C::ItemDetailsStackCounter' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, ItemRatingIndicator) == 0x000398, "Member 'UItemDetailsHeader_C::ItemRatingIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, LevelBar) == 0x0003A0, "Member 'UItemDetailsHeader_C::LevelBar' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, LevelIndicator) == 0x0003A8, "Member 'UItemDetailsHeader_C::LevelIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, OverflowIndicator) == 0x0003B0, "Member 'UItemDetailsHeader_C::OverflowIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, RarityBorder) == 0x0003B8, "Member 'UItemDetailsHeader_C::RarityBorder' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, RatingSwitcher) == 0x0003C0, "Member 'UItemDetailsHeader_C::RatingSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, SizeBox_LoadGuard) == 0x0003C8, "Member 'UItemDetailsHeader_C::SizeBox_LoadGuard' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, TagListBox) == 0x0003D0, "Member 'UItemDetailsHeader_C::TagListBox' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, TertiaryRow) == 0x0003D8, "Member 'UItemDetailsHeader_C::TertiaryRow' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, TierIndicator) == 0x0003E0, "Member 'UItemDetailsHeader_C::TierIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, UpgradeIndicator) == 0x0003E8, "Member 'UItemDetailsHeader_C::UpgradeIndicator' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, RarityBorderMID) == 0x0003F0, "Member 'UItemDetailsHeader_C::RarityBorderMID' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, RarityData) == 0x0003F8, "Member 'UItemDetailsHeader_C::RarityData' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, Level_Bar_MID) == 0x000478, "Member 'UItemDetailsHeader_C::Level_Bar_MID' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, LockItemColor) == 0x000480, "Member 'UItemDetailsHeader_C::LockItemColor' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, Show_Ammo_Header) == 0x000490, "Member 'UItemDetailsHeader_C::Show_Ammo_Header' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeader_C, Force_Show_Details) == 0x000491, "Member 'UItemDetailsHeader_C::Force_Show_Details' has a wrong offset!");
 
 }
 

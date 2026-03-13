@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BattleMapGroundMoveNode_C">();
+		BP_STATIC_CLASS_IMPL("BP_BattleMapGroundMoveNode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BattleMapGroundMoveNode_C")
 	}
 	static class ABP_BattleMapGroundMoveNode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BattleMapGroundMoveNode_C>();
 	}
 };
-static_assert(alignof(ABP_BattleMapGroundMoveNode_C) == 0x000008, "Wrong alignment on ABP_BattleMapGroundMoveNode_C");
-static_assert(sizeof(ABP_BattleMapGroundMoveNode_C) == 0x000360, "Wrong size on ABP_BattleMapGroundMoveNode_C");
-static_assert(offsetof(ABP_BattleMapGroundMoveNode_C, StaticMesh) == 0x000350, "Member 'ABP_BattleMapGroundMoveNode_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_BattleMapGroundMoveNode_C, DefaultSceneRoot) == 0x000358, "Member 'ABP_BattleMapGroundMoveNode_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

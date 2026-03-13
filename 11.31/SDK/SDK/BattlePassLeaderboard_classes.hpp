@@ -42,22 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassLeaderboard_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassLeaderboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassLeaderboard_C")
 	}
 	static class UBattlePassLeaderboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassLeaderboard_C>();
 	}
 };
-static_assert(alignof(UBattlePassLeaderboard_C) == 0x000008, "Wrong alignment on UBattlePassLeaderboard_C");
-static_assert(sizeof(UBattlePassLeaderboard_C) == 0x000320, "Wrong size on UBattlePassLeaderboard_C");
-static_assert(offsetof(UBattlePassLeaderboard_C, UberGraphFrame) == 0x0002E8, "Member 'UBattlePassLeaderboard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, BattlePassLeaderboardListEntry) == 0x0002F0, "Member 'UBattlePassLeaderboard_C::BattlePassLeaderboardListEntry' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, CloseIcon) == 0x0002F8, "Member 'UBattlePassLeaderboard_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, Lightbox_26) == 0x000300, "Member 'UBattlePassLeaderboard_C::Lightbox_26' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, MobileCloseButton) == 0x000308, "Member 'UBattlePassLeaderboard_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, OverlayCloseButton) == 0x000310, "Member 'UBattlePassLeaderboard_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassLeaderboard_C, SafeZone_0) == 0x000318, "Member 'UBattlePassLeaderboard_C::SafeZone_0' has a wrong offset!");
 
 }
 

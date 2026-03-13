@@ -23,15 +23,17 @@ class APBWA_S1_StairW_C final : public ABuildingStairs
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_S1_StairW_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_S1_StairW_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_S1_StairW_C")
 	}
 	static class APBWA_S1_StairW_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_S1_StairW_C>();
 	}
 };
-static_assert(alignof(APBWA_S1_StairW_C) == 0x000008, "Wrong alignment on APBWA_S1_StairW_C");
-static_assert(sizeof(APBWA_S1_StairW_C) == 0x000AC0, "Wrong size on APBWA_S1_StairW_C");
 
 }
 

@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentDateEntry_C">();
+		BP_STATIC_CLASS_IMPL("TournamentDateEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentDateEntry_C")
 	}
 	static class UTournamentDateEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentDateEntry_C>();
 	}
 };
-static_assert(alignof(UTournamentDateEntry_C) == 0x000008, "Wrong alignment on UTournamentDateEntry_C");
-static_assert(sizeof(UTournamentDateEntry_C) == 0x000670, "Wrong size on UTournamentDateEntry_C");
-static_assert(offsetof(UTournamentDateEntry_C, UberGraphFrame) == 0x000610, "Member 'UTournamentDateEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, CommonBorder_DateContent) == 0x000618, "Member 'UTournamentDateEntry_C::CommonBorder_DateContent' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, CommonTextBlock_Date) == 0x000620, "Member 'UTournamentDateEntry_C::CommonTextBlock_Date' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, CommonTextBlock_Time) == 0x000628, "Member 'UTournamentDateEntry_C::CommonTextBlock_Time' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, CommonTextBlock_Title) == 0x000630, "Member 'UTournamentDateEntry_C::CommonTextBlock_Title' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, CommonWidgetSwitcher_EntryType) == 0x000638, "Member 'UTournamentDateEntry_C::CommonWidgetSwitcher_EntryType' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, Image_Strkethrough) == 0x000640, "Member 'UTournamentDateEntry_C::Image_Strkethrough' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, isTitle) == 0x000648, "Member 'UTournamentDateEntry_C::isTitle' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, Title) == 0x000650, "Member 'UTournamentDateEntry_C::Title' has a wrong offset!");
-static_assert(offsetof(UTournamentDateEntry_C, Two4HourFormat) == 0x000668, "Member 'UTournamentDateEntry_C::Two4HourFormat' has a wrong offset!");
 
 }
 

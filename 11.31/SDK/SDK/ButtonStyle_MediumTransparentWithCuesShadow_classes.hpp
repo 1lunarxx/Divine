@@ -23,15 +23,17 @@ class UButtonStyle_MediumTransparentWithCuesShadow_C final : public UButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-MediumTransparentWithCuesShadow_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-MediumTransparentWithCuesShadow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-MediumTransparentWithCuesShadow_C")
 	}
 	static class UButtonStyle_MediumTransparentWithCuesShadow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_MediumTransparentWithCuesShadow_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_MediumTransparentWithCuesShadow_C) == 0x000008, "Wrong alignment on UButtonStyle_MediumTransparentWithCuesShadow_C");
-static_assert(sizeof(UButtonStyle_MediumTransparentWithCuesShadow_C) == 0x000570, "Wrong size on UButtonStyle_MediumTransparentWithCuesShadow_C");
 
 }
 

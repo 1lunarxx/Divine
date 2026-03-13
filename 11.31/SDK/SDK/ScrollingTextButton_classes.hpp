@@ -63,26 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ScrollingTextButton_C">();
+		BP_STATIC_CLASS_IMPL("ScrollingTextButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ScrollingTextButton_C")
 	}
 	static class UScrollingTextButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScrollingTextButton_C>();
 	}
 };
-static_assert(alignof(UScrollingTextButton_C) == 0x000008, "Wrong alignment on UScrollingTextButton_C");
-static_assert(sizeof(UScrollingTextButton_C) == 0x000C58, "Wrong size on UScrollingTextButton_C");
-static_assert(offsetof(UScrollingTextButton_C, UberGraphFrame) == 0x000B70, "Member 'UScrollingTextButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, CenterButtonTextWidget) == 0x000B78, "Member 'UScrollingTextButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ContentBorder) == 0x000B80, "Member 'UScrollingTextButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, LeftSideImage) == 0x000B88, "Member 'UScrollingTextButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ButtonText) == 0x000B90, "Member 'UScrollingTextButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, IconBrush) == 0x000BA8, "Member 'UScrollingTextButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ControllerInputStyle) == 0x000C30, "Member 'UScrollingTextButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, MouseKeyboardStyle) == 0x000C38, "Member 'UScrollingTextButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ButtonClickAction) == 0x000C40, "Member 'UScrollingTextButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, ContentAlignment) == 0x000C50, "Member 'UScrollingTextButton_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UScrollingTextButton_C, bMouseKeyboardStyleSet) == 0x000C51, "Member 'UScrollingTextButton_C::bMouseKeyboardStyleSet' has a wrong offset!");
 
 }
 

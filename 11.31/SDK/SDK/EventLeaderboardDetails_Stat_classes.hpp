@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardDetails_Stat_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardDetails_Stat_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardDetails_Stat_C")
 	}
 	static class UEventLeaderboardDetails_Stat_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardDetails_Stat_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardDetails_Stat_C) == 0x000008, "Wrong alignment on UEventLeaderboardDetails_Stat_C");
-static_assert(sizeof(UEventLeaderboardDetails_Stat_C) == 0x000258, "Wrong size on UEventLeaderboardDetails_Stat_C");
-static_assert(offsetof(UEventLeaderboardDetails_Stat_C, UberGraphFrame) == 0x000230, "Member 'UEventLeaderboardDetails_Stat_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardDetails_Stat_C, UpdateStat) == 0x000238, "Member 'UEventLeaderboardDetails_Stat_C::UpdateStat' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardDetails_Stat_C, Text_StatName) == 0x000240, "Member 'UEventLeaderboardDetails_Stat_C::Text_StatName' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardDetails_Stat_C, Text_StatValue) == 0x000248, "Member 'UEventLeaderboardDetails_Stat_C::Text_StatValue' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardDetails_Stat_C, StatItemIndex) == 0x000250, "Member 'UEventLeaderboardDetails_Stat_C::StatItemIndex' has a wrong offset!");
 
 }
 

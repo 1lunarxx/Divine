@@ -51,27 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Trap_Floor_Player_Jump_Free_Direction_Pad_C">();
+		BP_STATIC_CLASS_IMPL("Trap_Floor_Player_Jump_Free_Direction_Pad_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Trap_Floor_Player_Jump_Free_Direction_Pad_C")
 	}
 	static class ATrap_Floor_Player_Jump_Free_Direction_Pad_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrap_Floor_Player_Jump_Free_Direction_Pad_C>();
 	}
 };
-static_assert(alignof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C) == 0x000008, "Wrong alignment on ATrap_Floor_Player_Jump_Free_Direction_Pad_C");
-static_assert(sizeof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C) == 0x000D30, "Wrong size on ATrap_Floor_Player_Jump_Free_Direction_Pad_C");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, UberGraphFrame) == 0x000CD8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trigger) == 0x000CE0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trigger' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpParticleSystem) == 0x000CE8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpParticleSystem' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Scene1) == 0x000CF0, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Scene1' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Placed_Sound) == 0x000CF8, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Placed_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Active_Sound) == 0x000D00, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Active_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Fire_Sound) == 0x000D08, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Fire_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Reload_Sound) == 0x000D10, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Reload_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, Trap_Explode_Sound) == 0x000D18, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::Trap_Explode_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, JumpMaterial) == 0x000D20, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::JumpMaterial' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, LaunchStrength) == 0x000D28, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::LaunchStrength' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Jump_Free_Direction_Pad_C, LaunchPitch) == 0x000D2C, "Member 'ATrap_Floor_Player_Jump_Free_Direction_Pad_C::LaunchPitch' has a wrong offset!");
 
 }
 

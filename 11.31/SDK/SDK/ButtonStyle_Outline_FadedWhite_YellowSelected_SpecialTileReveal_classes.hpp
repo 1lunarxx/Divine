@@ -23,15 +23,17 @@ class UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C final :
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Outline-FadedWhite-YellowSelected-SpecialTileReveal_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Outline-FadedWhite-YellowSelected-SpecialTileReveal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Outline-FadedWhite-YellowSelected-SpecialTileReveal_C")
 	}
 	static class UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C) == 0x000008, "Wrong alignment on UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C");
-static_assert(sizeof(UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C) == 0x000570, "Wrong size on UButtonStyle_Outline_FadedWhite_YellowSelected_SpecialTileReveal_C");
 
 }
 

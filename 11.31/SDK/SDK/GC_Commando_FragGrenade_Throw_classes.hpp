@@ -23,15 +23,17 @@ class UGC_Commando_FragGrenade_Throw_C final : public UFortGameplayCueNotify_Bur
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Commando_FragGrenade_Throw_C">();
+		BP_STATIC_CLASS_IMPL("GC_Commando_FragGrenade_Throw_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Commando_FragGrenade_Throw_C")
 	}
 	static class UGC_Commando_FragGrenade_Throw_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGC_Commando_FragGrenade_Throw_C>();
 	}
 };
-static_assert(alignof(UGC_Commando_FragGrenade_Throw_C) == 0x000008, "Wrong alignment on UGC_Commando_FragGrenade_Throw_C");
-static_assert(sizeof(UGC_Commando_FragGrenade_Throw_C) == 0x0001B0, "Wrong size on UGC_Commando_FragGrenade_Throw_C");
 
 }
 

@@ -21,9 +21,6 @@ struct ChallengeScreen_C_HandleReplayCinematic final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeScreen_C_HandleReplayCinematic) == 0x000001, "Wrong alignment on ChallengeScreen_C_HandleReplayCinematic");
-static_assert(sizeof(ChallengeScreen_C_HandleReplayCinematic) == 0x000001, "Wrong size on ChallengeScreen_C_HandleReplayCinematic");
-static_assert(offsetof(ChallengeScreen_C_HandleReplayCinematic, PassThrough) == 0x000000, "Member 'ChallengeScreen_C_HandleReplayCinematic::PassThrough' has a wrong offset!");
 
 // Function ChallengeScreen.ChallengeScreen_C.PlayHolidayCinematic
 // 0x0030 (0x0030 - 0x0000)
@@ -38,14 +35,6 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortStreamMediaSource*                 CallFunc_LoadStreamingVideo_MediaSource;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeScreen_C_PlayHolidayCinematic) == 0x000008, "Wrong alignment on ChallengeScreen_C_PlayHolidayCinematic");
-static_assert(sizeof(ChallengeScreen_C_PlayHolidayCinematic) == 0x000030, "Wrong size on ChallengeScreen_C_PlayHolidayCinematic");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000000, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_GetRuntimeOptions_ReturnValue_1) == 0x000008, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_GetRuntimeOptions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_GetOwningPlayer_ReturnValue) == 0x000010, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_Create_ReturnValue) == 0x000018, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_LoadStreamingVideo_NoAutoPlay) == 0x000020, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_LoadStreamingVideo_NoAutoPlay' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_PlayHolidayCinematic, CallFunc_LoadStreamingVideo_MediaSource) == 0x000028, "Member 'ChallengeScreen_C_PlayHolidayCinematic::CallFunc_LoadStreamingVideo_MediaSource' has a wrong offset!");
 
 // Function ChallengeScreen.ChallengeScreen_C.ExecuteUbergraph_ChallengeScreen
 // 0x0048 (0x0048 - 0x0000)
@@ -63,15 +52,6 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen) == 0x000008, "Wrong alignment on ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen");
-static_assert(sizeof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen) == 0x000048, "Wrong size on ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, EntryPoint) == 0x000000, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, CallFunc_PlayAnimationForward_ReturnValue) == 0x000020, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, CallFunc_IsPartyAssistedChallengeSet_ReturnValue) == 0x000028, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::CallFunc_IsPartyAssistedChallengeSet_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x00002C, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000040, "Member 'ChallengeScreen_C_ExecuteUbergraph_ChallengeScreen::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
 
 }
 

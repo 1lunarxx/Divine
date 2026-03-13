@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "HeroLoadoutActiveAbilitiesDetailLayoutStyle_structs.hpp"
 #include "FortniteUI_classes.hpp"
 #include "Engine_structs.hpp"
+#include "HeroLoadoutActiveAbilitiesDetailLayoutStyle_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -52,29 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroLoadoutActiveAbilitiesDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("HeroLoadoutActiveAbilitiesDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroLoadoutActiveAbilitiesDetailWidget_C")
 	}
 	static class UHeroLoadoutActiveAbilitiesDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroLoadoutActiveAbilitiesDetailWidget_C>();
 	}
 };
-static_assert(alignof(UHeroLoadoutActiveAbilitiesDetailWidget_C) == 0x000008, "Wrong alignment on UHeroLoadoutActiveAbilitiesDetailWidget_C");
-static_assert(sizeof(UHeroLoadoutActiveAbilitiesDetailWidget_C) == 0x000308, "Wrong size on UHeroLoadoutActiveAbilitiesDetailWidget_C");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, UberGraphFrame) == 0x0002B8, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, ColumnContainer) == 0x0002C0, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::ColumnContainer' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, CommonBorderHeading) == 0x0002C8, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::CommonBorderHeading' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, HorizontalLayoutBox) == 0x0002D0, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::HorizontalLayoutBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, LayoutSwitcher) == 0x0002D8, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::LayoutSwitcher' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, RootBox) == 0x0002E0, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::RootBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, RowContainer) == 0x0002E8, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::RowContainer' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, SizeBoxHorizontalLayout) == 0x0002F0, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::SizeBoxHorizontalLayout' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, VerticalLayoutBox) == 0x0002F8, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::VerticalLayoutBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, LayoutStyle) == 0x000300, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::LayoutStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, ShouldShowAbilityDescriptions) == 0x000301, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::ShouldShowAbilityDescriptions' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, IsHeroLoadOut_Tooltip) == 0x000302, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::IsHeroLoadOut_Tooltip' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, ShowDescription) == 0x000303, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::ShowDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilitiesDetailWidget_C, UseVerboseDescription) == 0x000304, "Member 'UHeroLoadoutActiveAbilitiesDetailWidget_C::UseVerboseDescription' has a wrong offset!");
 
 }
 

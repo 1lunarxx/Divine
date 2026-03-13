@@ -23,15 +23,17 @@ class UUIManager_Startup_C final : public UFortUIManager_Startup
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIManager_Startup_C">();
+		BP_STATIC_CLASS_IMPL("UIManager_Startup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIManager_Startup_C")
 	}
 	static class UUIManager_Startup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIManager_Startup_C>();
 	}
 };
-static_assert(alignof(UUIManager_Startup_C) == 0x000008, "Wrong alignment on UUIManager_Startup_C");
-static_assert(sizeof(UUIManager_Startup_C) == 0x000120, "Wrong size on UUIManager_Startup_C");
 
 }
 

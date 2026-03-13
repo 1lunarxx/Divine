@@ -52,34 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonPaginationPips_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonPaginationPips_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonPaginationPips_C")
 	}
 	static class UAthenaSeasonPaginationPips_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonPaginationPips_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonPaginationPips_C) == 0x000008, "Wrong alignment on UAthenaSeasonPaginationPips_C");
-static_assert(sizeof(UAthenaSeasonPaginationPips_C) == 0x000298, "Wrong size on UAthenaSeasonPaginationPips_C");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, UberGraphFrame) == 0x000230, "Member 'UAthenaSeasonPaginationPips_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, Deselected) == 0x000238, "Member 'UAthenaSeasonPaginationPips_C::Deselected' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, Selected) == 0x000240, "Member 'UAthenaSeasonPaginationPips_C::Selected' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, PIP) == 0x000248, "Member 'UAthenaSeasonPaginationPips_C::PIP' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, Spring_ShapeChange_NewVal) == 0x000250, "Member 'UAthenaSeasonPaginationPips_C::Spring_ShapeChange_NewVal' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, Spring_ShapeChange_Target) == 0x000254, "Member 'UAthenaSeasonPaginationPips_C::Spring_ShapeChange_Target' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, SpringState_ShapeChange) == 0x000258, "Member 'UAthenaSeasonPaginationPips_C::SpringState_ShapeChange' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, SS_0_Stiffness) == 0x000260, "Member 'UAthenaSeasonPaginationPips_C::SS_0_Stiffness' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, StiffnessMultiply) == 0x000264, "Member 'UAthenaSeasonPaginationPips_C::StiffnessMultiply' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, SS_0_Damping) == 0x000268, "Member 'UAthenaSeasonPaginationPips_C::SS_0_Damping' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, DampenMultiply) == 0x00026C, "Member 'UAthenaSeasonPaginationPips_C::DampenMultiply' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, SS_0_Mass) == 0x000270, "Member 'UAthenaSeasonPaginationPips_C::SS_0_Mass' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, MassMultiply) == 0x000274, "Member 'UAthenaSeasonPaginationPips_C::MassMultiply' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, RandomFloat_Top) == 0x000278, "Member 'UAthenaSeasonPaginationPips_C::RandomFloat_Top' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, RandomFloat_Left) == 0x00027C, "Member 'UAthenaSeasonPaginationPips_C::RandomFloat_Left' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, RandomFloat_Right) == 0x000280, "Member 'UAthenaSeasonPaginationPips_C::RandomFloat_Right' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, RandomFloat_Bottom) == 0x000284, "Member 'UAthenaSeasonPaginationPips_C::RandomFloat_Bottom' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, SpringState_Scale) == 0x000288, "Member 'UAthenaSeasonPaginationPips_C::SpringState_Scale' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPaginationPips_C, Spring_Scale_Target) == 0x000290, "Member 'UAthenaSeasonPaginationPips_C::Spring_Scale_Target' has a wrong offset!");
 
 }
 

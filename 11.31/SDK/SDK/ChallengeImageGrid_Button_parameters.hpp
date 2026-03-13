@@ -25,10 +25,6 @@ public:
 	bool                                          bIsComplete;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bIsLocked;                                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeImageGrid_Button_C_OnChallengeSet) == 0x000001, "Wrong alignment on ChallengeImageGrid_Button_C_OnChallengeSet");
-static_assert(sizeof(ChallengeImageGrid_Button_C_OnChallengeSet) == 0x000002, "Wrong size on ChallengeImageGrid_Button_C_OnChallengeSet");
-static_assert(offsetof(ChallengeImageGrid_Button_C_OnChallengeSet, bIsComplete) == 0x000000, "Member 'ChallengeImageGrid_Button_C_OnChallengeSet::bIsComplete' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_OnChallengeSet, bIsLocked) == 0x000001, "Member 'ChallengeImageGrid_Button_C_OnChallengeSet::bIsLocked' has a wrong offset!");
 
 // Function ChallengeImageGrid_Button.ChallengeImageGrid_Button_C.ExecuteUbergraph_ChallengeImageGrid_Button
 // 0x00F0 (0x00F0 - 0x0000)
@@ -65,33 +61,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x00E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button) == 0x000008, "Wrong alignment on ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button");
-static_assert(sizeof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button) == 0x0000F0, "Wrong size on ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, EntryPoint) == 0x000000, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, Temp_bool_Variable) == 0x000004, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, Temp_byte_Variable) == 0x000005, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, Temp_byte_Variable_1) == 0x000006, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, K2Node_Event_bIsComplete) == 0x000007, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::K2Node_Event_bIsComplete' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, K2Node_Event_bIsLocked) == 0x000008, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::K2Node_Event_bIsLocked' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, K2Node_Select_Default) == 0x000028, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Less_IntInt_ReturnValue) == 0x000070, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, K2Node_MakeArray_Array) == 0x000078, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Format_ReturnValue) == 0x000088, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_BooleanOR_ReturnValue) == 0x0000A0, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue) == 0x0000A8, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000B0, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000B8, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue_3) == 0x0000C0, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Multiply_IntInt_ReturnValue) == 0x0000C8, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Divide_IntInt_ReturnValue) == 0x0000CC, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Divide_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000D0, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Percent_IntInt_ReturnValue) == 0x0000D8, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000DC, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue_4) == 0x0000E0, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button, CallFunc_PlayAnimation_ReturnValue_5) == 0x0000E8, "Member 'ChallengeImageGrid_Button_C_ExecuteUbergraph_ChallengeImageGrid_Button::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
 
 }
 

@@ -32,14 +32,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_GetShortDisplayName_ReturnValue;          // 0x0048(0x0018)()
 };
-static_assert(alignof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName) == 0x000008, "Wrong alignment on ItemDetailsHeaderItemDisplayText_C_GetDisplayName");
-static_assert(sizeof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName) == 0x000060, "Wrong size on ItemDetailsHeaderItemDisplayText_C_GetDisplayName");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, DisplayName) == 0x000000, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::DisplayName' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, CallFunc_GetDisplayName_ReturnValue) == 0x000020, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, CallFunc_GetSchematicCraftingResultOrCraftedWeaponBP_ReturnValue) == 0x000038, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::CallFunc_GetSchematicCraftingResultOrCraftedWeaponBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_GetDisplayName, CallFunc_GetShortDisplayName_ReturnValue) == 0x000048, "Member 'ItemDetailsHeaderItemDisplayText_C_GetDisplayName::CallFunc_GetShortDisplayName_ReturnValue' has a wrong offset!");
 
 // Function ItemDetailsHeaderItemDisplayText.ItemDetailsHeaderItemDisplayText_C.ExecuteUbergraph_ItemDetailsHeaderItemDisplayText
 // 0x0108 (0x0108 - 0x0000)
@@ -64,23 +56,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0103(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x000008, "Wrong alignment on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
-static_assert(sizeof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText) == 0x000108, "Wrong size on ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, EntryPoint) == 0x000000, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, Temp_byte_Variable) == 0x000004, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_GetSchematicCraftingResultBP_ReturnValue) == 0x000008, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_GetSchematicCraftingResultBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, K2Node_DynamicCast_AsFort_Weapon_Item_Definition) == 0x000010, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::K2Node_DynamicCast_AsFort_Weapon_Item_Definition' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, Temp_byte_Variable_1) == 0x000019, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_GetItemDefinitionBP_ReturnValue) == 0x000020, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_GetItemDefinitionBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_GetDisplayName_DisplayName) == 0x000028, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_GetDisplayName_DisplayName' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_BPGetRarityDataForItemDef_ReturnValue) == 0x000040, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_BPGetRarityDataForItemDef_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_TextToUpper_ReturnValue) == 0x0000C0, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, K2Node_MakeStruct_SlateColor) == 0x0000D8, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_TextIsEmpty_ReturnValue) == 0x000100, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, CallFunc_IsValid_ReturnValue) == 0x000101, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, Temp_bool_Variable) == 0x000102, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText, K2Node_Select_Default) == 0x000103, "Member 'ItemDetailsHeaderItemDisplayText_C_ExecuteUbergraph_ItemDetailsHeaderItemDisplayText::K2Node_Select_Default' has a wrong offset!");
 
 }
 

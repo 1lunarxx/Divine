@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventPlayerStatProfileSelectorEntry_C">();
+		BP_STATIC_CLASS_IMPL("EventPlayerStatProfileSelectorEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventPlayerStatProfileSelectorEntry_C")
 	}
 	static class UEventPlayerStatProfileSelectorEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventPlayerStatProfileSelectorEntry_C>();
 	}
 };
-static_assert(alignof(UEventPlayerStatProfileSelectorEntry_C) == 0x000008, "Wrong alignment on UEventPlayerStatProfileSelectorEntry_C");
-static_assert(sizeof(UEventPlayerStatProfileSelectorEntry_C) == 0x000BD0, "Wrong size on UEventPlayerStatProfileSelectorEntry_C");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, UberGraphFrame) == 0x000B90, "Member 'UEventPlayerStatProfileSelectorEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, Selected) == 0x000B98, "Member 'UEventPlayerStatProfileSelectorEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, Image_SelectedBG) == 0x000BA0, "Member 'UEventPlayerStatProfileSelectorEntry_C::Image_SelectedBG' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, ProfileStatSelector) == 0x000BA8, "Member 'UEventPlayerStatProfileSelectorEntry_C::ProfileStatSelector' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, Hovered) == 0x000BB0, "Member 'UEventPlayerStatProfileSelectorEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UEventPlayerStatProfileSelectorEntry_C, Unhovered) == 0x000BC0, "Member 'UEventPlayerStatProfileSelectorEntry_C::Unhovered' has a wrong offset!");
 
 }
 

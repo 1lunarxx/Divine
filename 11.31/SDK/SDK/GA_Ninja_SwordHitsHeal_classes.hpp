@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Ninja_SwordHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("GA_Ninja_SwordHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Ninja_SwordHitsHeal_C")
 	}
 	static class UGA_Ninja_SwordHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Ninja_SwordHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGA_Ninja_SwordHitsHeal_C) == 0x000008, "Wrong alignment on UGA_Ninja_SwordHitsHeal_C");
-static_assert(sizeof(UGA_Ninja_SwordHitsHeal_C) == 0x000B90, "Wrong size on UGA_Ninja_SwordHitsHeal_C");
-static_assert(offsetof(UGA_Ninja_SwordHitsHeal_C, UberGraphFrame_GA_Ninja_SwordHitsHeal_C) == 0x000B68, "Member 'UGA_Ninja_SwordHitsHeal_C::UberGraphFrame_GA_Ninja_SwordHitsHeal_C' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_SwordHitsHeal_C, TC_RequiredTags) == 0x000B70, "Member 'UGA_Ninja_SwordHitsHeal_C::TC_RequiredTags' has a wrong offset!");
 
 }
 

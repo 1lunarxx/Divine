@@ -23,15 +23,17 @@ class UBlueprintContextBase : public USubsystem
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlueprintContextBase">();
+		STATIC_CLASS_IMPL("BlueprintContextBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlueprintContextBase")
 	}
 	static class UBlueprintContextBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlueprintContextBase>();
 	}
 };
-static_assert(alignof(UBlueprintContextBase) == 0x000008, "Wrong alignment on UBlueprintContextBase");
-static_assert(sizeof(UBlueprintContextBase) == 0x000030, "Wrong size on UBlueprintContextBase");
 
 // Class BlueprintContext.BlueprintContextLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -43,15 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"BlueprintContextLibrary">();
+		STATIC_CLASS_IMPL("BlueprintContextLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BlueprintContextLibrary")
 	}
 	static class UBlueprintContextLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBlueprintContextLibrary>();
 	}
 };
-static_assert(alignof(UBlueprintContextLibrary) == 0x000008, "Wrong alignment on UBlueprintContextLibrary");
-static_assert(sizeof(UBlueprintContextLibrary) == 0x000028, "Wrong size on UBlueprintContextLibrary");
 
 }
 

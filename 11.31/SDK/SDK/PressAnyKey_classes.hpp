@@ -23,15 +23,17 @@ class UPressAnyKey_C final : public UFortSettingsPressAnyKey
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PressAnyKey_C">();
+		BP_STATIC_CLASS_IMPL("PressAnyKey_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PressAnyKey_C")
 	}
 	static class UPressAnyKey_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPressAnyKey_C>();
 	}
 };
-static_assert(alignof(UPressAnyKey_C) == 0x000008, "Wrong alignment on UPressAnyKey_C");
-static_assert(sizeof(UPressAnyKey_C) == 0x000480, "Wrong size on UPressAnyKey_C");
 
 }
 

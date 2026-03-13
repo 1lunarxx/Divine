@@ -23,15 +23,17 @@ class UTeamID_PvP_03_C final : public UFortTeamIdentification
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamID_PvP_03_C">();
+		BP_STATIC_CLASS_IMPL("TeamID_PvP_03_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamID_PvP_03_C")
 	}
 	static class UTeamID_PvP_03_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamID_PvP_03_C>();
 	}
 };
-static_assert(alignof(UTeamID_PvP_03_C) == 0x000008, "Wrong alignment on UTeamID_PvP_03_C");
-static_assert(sizeof(UTeamID_PvP_03_C) == 0x000038, "Wrong size on UTeamID_PvP_03_C");
 
 }
 

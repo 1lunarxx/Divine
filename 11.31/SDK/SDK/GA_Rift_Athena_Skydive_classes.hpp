@@ -60,31 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Rift_Athena_Skydive_C">();
+		BP_STATIC_CLASS_IMPL("GA_Rift_Athena_Skydive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Rift_Athena_Skydive_C")
 	}
 	static class UGA_Rift_Athena_Skydive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Rift_Athena_Skydive_C>();
 	}
 };
-static_assert(alignof(UGA_Rift_Athena_Skydive_C) == 0x000008, "Wrong alignment on UGA_Rift_Athena_Skydive_C");
-static_assert(sizeof(UGA_Rift_Athena_Skydive_C) == 0x000AE8, "Wrong size on UGA_Rift_Athena_Skydive_C");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Rift_Athena_Skydive_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, FallingAnimation) == 0x000A38, "Member 'UGA_Rift_Athena_Skydive_C::FallingAnimation' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, Hangtimee) == 0x000A40, "Member 'UGA_Rift_Athena_Skydive_C::Hangtimee' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, VehicleSkelMesh) == 0x000A48, "Member 'UGA_Rift_Athena_Skydive_C::VehicleSkelMesh' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, HangTime) == 0x000A50, "Member 'UGA_Rift_Athena_Skydive_C::HangTime' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, EventTag) == 0x000A70, "Member 'UGA_Rift_Athena_Skydive_C::EventTag' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, KickFromVehicle_) == 0x000A78, "Member 'UGA_Rift_Athena_Skydive_C::KickFromVehicle_' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, LocalPlayerSound) == 0x000A98, "Member 'UGA_Rift_Athena_Skydive_C::LocalPlayerSound' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, GameplayCueGE) == 0x000AA0, "Member 'UGA_Rift_Athena_Skydive_C::GameplayCueGE' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, PlayerPawn) == 0x000AA8, "Member 'UGA_Rift_Athena_Skydive_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, bHolstered) == 0x000AB0, "Member 'UGA_Rift_Athena_Skydive_C::bHolstered' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, RiftSkydiveHolster) == 0x000AB4, "Member 'UGA_Rift_Athena_Skydive_C::RiftSkydiveHolster' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, ImpulseStrength) == 0x000ABC, "Member 'UGA_Rift_Athena_Skydive_C::ImpulseStrength' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, bNeedsInputEnable) == 0x000AC8, "Member 'UGA_Rift_Athena_Skydive_C::bNeedsInputEnable' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, SafetyTimer) == 0x000AD0, "Member 'UGA_Rift_Athena_Skydive_C::SafetyTimer' has a wrong offset!");
-static_assert(offsetof(UGA_Rift_Athena_Skydive_C, NewVar_0) == 0x000AD8, "Member 'UGA_Rift_Athena_Skydive_C::NewVar_0' has a wrong offset!");
 
 }
 

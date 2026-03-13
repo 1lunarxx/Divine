@@ -28,7 +28,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0630(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UCommonBorder*                          AffilateInfo;                                      // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       AffiliateName;                                     // 0x0640(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* AthenaDirectAcquisitonDetails_RefundDisclaimer;    // 0x0648(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* AthenaDirectAcquisitonDetails_RefundDisclaimer; // 0x0648(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UPanelButton_C*                         BacchusCloseButton;                                // 0x0650(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BaseColor;                                         // 0x0658(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BaseColorDetails;                                  // 0x0660(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -64,68 +64,33 @@ public:
 	bool                                          IsBattlepass;                                      // 0x0751(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void HandlePurchaseComplete(bool bSuccess, const TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId);
-	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BP_OnActivated();
-	void ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails(int32 EntryPoint);
 	void InitAffiliateInfo();
 	class UWidget* GetWidgetForFramingViewedItem();
 	void InitPurchaseButton();
 	void PopDetails();
 	void Init();
 	void HandleBack(bool* PassThrough);
+	void HandlePurchaseComplete(bool bSuccess, const TArray<struct FPurchasedItemInfo>& PurchasedItems, const class FString& OfferId);
+	void BndEvt__PanelButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__PurchaseButton_K2Node_ComponentBoundEvent_16_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__GiftButton_K2Node_ComponentBoundEvent_7_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BP_OnActivated();
+	void ExecuteUbergraph_AthenaDirectAcquisitionMTXDetails(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionMTXDetails_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionMTXDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionMTXDetails_C")
 	}
 	static class UAthenaDirectAcquisitionMTXDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionMTXDetails_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionMTXDetails_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionMTXDetails_C");
-static_assert(sizeof(UAthenaDirectAcquisitionMTXDetails_C) == 0x000758, "Wrong size on UAthenaDirectAcquisitionMTXDetails_C");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, UberGraphFrame) == 0x000630, "Member 'UAthenaDirectAcquisitionMTXDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, AffilateInfo) == 0x000638, "Member 'UAthenaDirectAcquisitionMTXDetails_C::AffilateInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, AffiliateName) == 0x000640, "Member 'UAthenaDirectAcquisitionMTXDetails_C::AffiliateName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, AthenaDirectAcquisitonDetails_RefundDisclaimer) == 0x000648, "Member 'UAthenaDirectAcquisitionMTXDetails_C::AthenaDirectAcquisitonDetails_RefundDisclaimer' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, BacchusCloseButton) == 0x000650, "Member 'UAthenaDirectAcquisitionMTXDetails_C::BacchusCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, BaseColor) == 0x000658, "Member 'UAthenaDirectAcquisitionMTXDetails_C::BaseColor' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, BaseColorDetails) == 0x000660, "Member 'UAthenaDirectAcquisitionMTXDetails_C::BaseColorDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, BonusCurrencySB) == 0x000668, "Member 'UAthenaDirectAcquisitionMTXDetails_C::BonusCurrencySB' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, BPImage) == 0x000670, "Member 'UAthenaDirectAcquisitionMTXDetails_C::BPImage' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, CommonBorder_4) == 0x000678, "Member 'UAthenaDirectAcquisitionMTXDetails_C::CommonBorder_4' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, CommonText_BaseQuantity) == 0x000680, "Member 'UAthenaDirectAcquisitionMTXDetails_C::CommonText_BaseQuantity' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, CommonText_BonusQuantity) == 0x000688, "Member 'UAthenaDirectAcquisitionMTXDetails_C::CommonText_BonusQuantity' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, DescriptionBox) == 0x000690, "Member 'UAthenaDirectAcquisitionMTXDetails_C::DescriptionBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, GiftButton) == 0x000698, "Member 'UAthenaDirectAcquisitionMTXDetails_C::GiftButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, KeyArt) == 0x0006A0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::KeyArt' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, MTXButton) == 0x0006A8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, MTXButtonBox) == 0x0006B0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::MTXButtonBox' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, MTXCurrency) == 0x0006B8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::MTXCurrency' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, OverlayGradient) == 0x0006C0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::OverlayGradient' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, OverlayGradientDetails) == 0x0006C8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::OverlayGradientDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, OverlaySalePrice) == 0x0006D0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::OverlaySalePrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, PurchaseButton) == 0x0006D8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::PurchaseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, SafeZone_0) == 0x0006E0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, ScrollBoxDetails) == 0x0006E8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::ScrollBoxDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, SeasonNumberLarge) == 0x0006F0, "Member 'UAthenaDirectAcquisitionMTXDetails_C::SeasonNumberLarge' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, StoreMain_OfferDetailsAttribute) == 0x0006F8, "Member 'UAthenaDirectAcquisitionMTXDetails_C::StoreMain_OfferDetailsAttribute' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, StoreMain_OfferDetailsAttribute_C_0) == 0x000700, "Member 'UAthenaDirectAcquisitionMTXDetails_C::StoreMain_OfferDetailsAttribute_C_0' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, Text_ChapterName) == 0x000708, "Member 'UAthenaDirectAcquisitionMTXDetails_C::Text_ChapterName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, Text_SeasonName) == 0x000710, "Member 'UAthenaDirectAcquisitionMTXDetails_C::Text_SeasonName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, TextDescription) == 0x000718, "Member 'UAthenaDirectAcquisitionMTXDetails_C::TextDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, TextName) == 0x000720, "Member 'UAthenaDirectAcquisitionMTXDetails_C::TextName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, TextOfferDisplayPrice) == 0x000728, "Member 'UAthenaDirectAcquisitionMTXDetails_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, TextOriginalPrice) == 0x000730, "Member 'UAthenaDirectAcquisitionMTXDetails_C::TextOriginalPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, VBoxOfferInfo) == 0x000738, "Member 'UAthenaDirectAcquisitionMTXDetails_C::VBoxOfferInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, PlaceholderVariable) == 0x000740, "Member 'UAthenaDirectAcquisitionMTXDetails_C::PlaceholderVariable' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, IsItemCompletelyFree) == 0x000750, "Member 'UAthenaDirectAcquisitionMTXDetails_C::IsItemCompletelyFree' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionMTXDetails_C, IsBattlepass) == 0x000751, "Member 'UAthenaDirectAcquisitionMTXDetails_C::IsBattlepass' has a wrong offset!");
 
 }
 

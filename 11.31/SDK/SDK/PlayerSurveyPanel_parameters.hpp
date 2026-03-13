@@ -32,18 +32,6 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         K2Node_Select_Default;                             // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel) == 0x000008, "Wrong alignment on PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel");
-static_assert(sizeof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel) == 0x000048, "Wrong size on PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, EntryPoint) == 0x000000, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, Temp_bool_Variable) == 0x000024, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, Temp_float_Variable) == 0x000028, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, Temp_float_Variable_1) == 0x00002C, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, CallFunc_PlayAnimation_ReturnValue_1) == 0x000038, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, CallFunc_IsMobilePlatform_ReturnValue) == 0x000040, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel, K2Node_Select_Default) == 0x000044, "Member 'PlayerSurveyPanel_C_ExecuteUbergraph_PlayerSurveyPanel::K2Node_Select_Default' has a wrong offset!");
 
 }
 

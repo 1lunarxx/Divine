@@ -81,66 +81,13 @@ public:
 	uint8                                         Pad_275[0x3];                                      // 0x0275(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_3;            // 0x0278(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x0288(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0298(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AActor* DamagedActor, float Damage, class AController* InstigatedBy, class AActor* DamageCauser, const struct FVector& HitLocation, class UPrimitiveComponent* FHitComponent, class FName BoneName, const struct FVector& Momentum)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0298(0x0010)(ZeroConstructor, NoDestructor)
 	EMovementMode                                 K2Node_CustomEvent_NewMovementMode;                // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A9[0x3];                                      // 0x02A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_6;            // 0x02AC(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x02BC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate_7;           // 0x02BC(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void(const struct FHitResult& Hit)> K2Node_CreateDelegate_OutputDelegate_8;            // 0x02CC(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash) == 0x0002E0, "Wrong size on GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, EntryPoint) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_Event_EventData) == 0x000010, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_AsBP_Athena_Environmental_Zip_Line) == 0x0000C0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_AsBP_Athena_Environmental_Zip_Line' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess) == 0x0000C9, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::GameplayTagsK2Node_SwitchGameplayTag_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue) == 0x0000CA, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetVehicleUInterface_ReturnValue) == 0x0000D0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetVehicleUInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_Conv_InterfaceToObject_ReturnValue) == 0x0000E0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_Conv_InterfaceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetMovementComponent_ReturnValue) == 0x0000E8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetMovementComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_1) == 0x0000F0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_AsCharacter_Movement_Component) == 0x0000F8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_AsCharacter_Movement_Component' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_bSuccess_1) == 0x000100, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetValidValue_ReturnValue) == 0x000101, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000102, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_2) == 0x000103, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_3) == 0x000104, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetVehicleUInterface_ReturnValue_1) == 0x000108, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetVehicleUInterface_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_Conv_InterfaceToObject_ReturnValue_1) == 0x000118, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_Conv_InterfaceToObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_4) == 0x000120, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_5) == 0x000121, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_Hit) == 0x000124, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_Hit' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x0001B0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_CreateWaitMovementModeChange_ReturnValue) == 0x0001B8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_CreateWaitMovementModeChange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0001C0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_DynamicCast_bSuccess_2) == 0x0001C8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_IsValid_ReturnValue_6) == 0x0001C9, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0001D0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x0001D8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue_1) == 0x0001E0, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_bIsZiplining) == 0x0001E8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_bIsZiplining' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate) == 0x0001EC, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001FC, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_2) == 0x00020C, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, CallFunc_K2_SetTimer_ReturnValue) == 0x000220, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam) == 0x000228, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam2) == 0x000230, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam3) == 0x000238, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam4) == 0x000240, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam5) == 0x000248, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam6) == 0x000258, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam7) == 0x000260, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam7' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewParam8) == 0x000268, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewParam8' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, Temp_byte_Variable) == 0x000274, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_3) == 0x000278, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_4) == 0x000288, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_5) == 0x000298, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CustomEvent_NewMovementMode) == 0x0002A8, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CustomEvent_NewMovementMode' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_6) == 0x0002AC, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_7) == 0x0002BC, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash, K2Node_CreateDelegate_OutputDelegate_8) == 0x0002CC, "Member 'GA_Athena_ZipLine_Smash_C_ExecuteUbergraph_GA_Athena_ZipLine_Smash::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.OnPawnDied_Bind
 // 0x0050 (0x0050 - 0x0000)
@@ -158,16 +105,6 @@ public:
 	class FName                                   NewParam7;                                         // 0x0038(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                NewParam8;                                         // 0x0040(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind) == 0x000050, "Wrong size on GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam2) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam3) == 0x000010, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam4) == 0x000018, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam5) == 0x000020, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam6) == 0x000030, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam7) == 0x000038, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam7' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind, NewParam8) == 0x000040, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnDied_Bind::NewParam8' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.HandleZiplineStateChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -176,9 +113,6 @@ struct GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged final
 public:
 	bool                                          bIsZiplining;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged) == 0x000001, "Wrong alignment on GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged) == 0x000001, "Wrong size on GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged, bIsZiplining) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_HandleZiplineStateChanged::bIsZiplining' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.OnPawnLanded_Bind
 // 0x0088 (0x0088 - 0x0000)
@@ -187,9 +121,6 @@ struct GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind) == 0x000004, "Wrong alignment on GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind) == 0x000088, "Wrong size on GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind, Hit) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_OnPawnLanded_Bind::Hit' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -198,9 +129,6 @@ struct GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.OnChange_BF54003849C4B2FC73936CB3158F0A16
 // 0x0001 (0x0001 - 0x0000)
@@ -209,9 +137,6 @@ struct GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16 final
 public:
 	EMovementMode                                 NewMovementMode;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16) == 0x000001, "Wrong alignment on GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16) == 0x000001, "Wrong size on GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16, NewMovementMode) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_OnChange_BF54003849C4B2FC73936CB3158F0A16::NewMovementMode' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.BreakNearbyStructures
 // 0x0118 (0x0118 - 0x0000)
@@ -258,39 +183,6 @@ public:
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0108(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_BreakNearbyStructures");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures) == 0x000118, "Wrong size on GA_Athena_ZipLine_Smash_C_BreakNearbyStructures");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, PlayerPawn_0) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::PlayerPawn_0' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, Temp_int_Array_Index_Variable) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_MakeArray_Array) == 0x000010, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BreakVector_X) == 0x00002C, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BreakVector_Y) == 0x000030, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BreakVector_Z) == 0x000034, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_Add_FloatFloat_ReturnValue) == 0x000038, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_MakeVector_ReturnValue) == 0x00003C, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, Temp_int_Loop_Counter_Variable) == 0x000048, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_Add_IntInt_ReturnValue) == 0x00004C, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_IsValid_ReturnValue_1) == 0x000051, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_MakeArray_Array_1) == 0x000058, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BoxOverlapActors_OutActors) == 0x000068, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BoxOverlapActors_OutActors' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BoxOverlapActors_ReturnValue) == 0x000078, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BoxOverlapActors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_Array_Length_ReturnValue) == 0x00007C, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_Array_Get_Item) == 0x000080, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_Less_IntInt_ReturnValue) == 0x000088, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_AsBuilding_Actor) == 0x000090, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x0000A0, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_AsFort_Athena_Supply_Drop_Balloon) == 0x0000C8, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_AsFort_Athena_Supply_Drop_Balloon' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_bSuccess_1) == 0x0000D0, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x0000D8, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_AsBuilding_Prop) == 0x0000E8, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_AsBuilding_Prop' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_bSuccess_2) == 0x0000F0, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_GetComponentByClass_ReturnValue) == 0x0000F8, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, CallFunc_IsValid_ReturnValue_2) == 0x000100, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000108, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_BreakNearbyStructures, K2Node_DynamicCast_bSuccess_3) == 0x000110, "Member 'GA_Athena_ZipLine_Smash_C_BreakNearbyStructures::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.SpawnMotor
 // 0x0270 (0x0270 - 0x0000)
@@ -323,30 +215,6 @@ public:
 	class ABP_ZipLine_Athena_Harness_Yellow_C*    CallFunc_FinishSpawningActor_ReturnValue;          // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             CallFunc_K2_SetWorldRotation_SweepHitResult;       // 0x01E0(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_SpawnMotor) == 0x000010, "Wrong alignment on GA_Athena_ZipLine_Smash_C_SpawnMotor");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_SpawnMotor) == 0x000270, "Wrong size on GA_Athena_ZipLine_Smash_C_SpawnMotor");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, PlayerPawn_0) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::PlayerPawn_0' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_HasAuthority_ReturnValue) == 0x000018, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x00001C, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Add_VectorVector_ReturnValue) == 0x0000A4, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_K2_AddRelativeLocation_SweepHitResult) == 0x0000B0, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_K2_AddRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_GetActorForwardVector_ReturnValue) == 0x000138, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000144, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000150, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Normal_ReturnValue) == 0x00015C, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_BreakRotator_Roll) == 0x000168, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_BreakRotator_Pitch) == 0x00016C, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_BreakRotator_Yaw) == 0x000170, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Dot_VectorVector_ReturnValue) == 0x000174, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000178, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_Greater_FloatFloat_ReturnValue) == 0x00017C, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_MakeRotator_ReturnValue) == 0x000180, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00018C, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_MakeTransform_ReturnValue) == 0x0001A0, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0001D0, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_FinishSpawningActor_ReturnValue) == 0x0001D8, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_SpawnMotor, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x0001E0, "Member 'GA_Athena_ZipLine_Smash_C_SpawnMotor::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.CheckMotor
 // 0x0050 (0x0050 - 0x0000)
@@ -372,21 +240,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_CheckMotor) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_CheckMotor");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_CheckMotor) == 0x000050, "Wrong size on GA_Athena_ZipLine_Smash_C_CheckMotor");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, HasHarness) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::HasHarness' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, Temp_bool_True_if_break_was_hit_Variable) == 0x000001, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, Temp_int_Array_Index_Variable) == 0x000004, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_Not_PreBool_ReturnValue) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_GetAttachedActors_OutActors) == 0x000018, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_GetAttachedActors_OutActors' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_Array_Get_Item) == 0x000030, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, K2Node_DynamicCast_AsBP_Zip_Line_Athena_Harness) == 0x000040, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::K2Node_DynamicCast_AsBP_Zip_Line_Athena_Harness' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckMotor, CallFunc_BooleanAND_ReturnValue) == 0x000049, "Member 'GA_Athena_ZipLine_Smash_C_CheckMotor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_ZipLine_Smash.GA_Athena_ZipLine_Smash_C.CheckForQuestProgress
 // 0x0020 (0x0020 - 0x0000)
@@ -400,13 +253,6 @@ public:
 	bool                                          CallFunc_SendComplexCustomStatEvent_QuestActive;   // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SendComplexCustomStatEvent_QuestCompleted; // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress) == 0x000008, "Wrong alignment on GA_Athena_ZipLine_Smash_C_CheckForQuestProgress");
-static_assert(sizeof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress) == 0x000020, "Wrong size on GA_Athena_ZipLine_Smash_C_CheckForQuestProgress");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000000, "Member 'GA_Athena_ZipLine_Smash_C_CheckForQuestProgress::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'GA_Athena_ZipLine_Smash_C_CheckForQuestProgress::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress, CallFunc_GetQuestManager_ReturnValue) == 0x000010, "Member 'GA_Athena_ZipLine_Smash_C_CheckForQuestProgress::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress, CallFunc_SendComplexCustomStatEvent_QuestActive) == 0x000018, "Member 'GA_Athena_ZipLine_Smash_C_CheckForQuestProgress::CallFunc_SendComplexCustomStatEvent_QuestActive' has a wrong offset!");
-static_assert(offsetof(GA_Athena_ZipLine_Smash_C_CheckForQuestProgress, CallFunc_SendComplexCustomStatEvent_QuestCompleted) == 0x000019, "Member 'GA_Athena_ZipLine_Smash_C_CheckForQuestProgress::CallFunc_SendComplexCustomStatEvent_QuestCompleted' has a wrong offset!");
 
 }
 

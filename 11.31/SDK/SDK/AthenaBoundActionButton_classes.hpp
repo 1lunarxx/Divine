@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaBoundActionButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaBoundActionButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaBoundActionButton_C")
 	}
 	static class UAthenaBoundActionButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaBoundActionButton_C>();
 	}
 };
-static_assert(alignof(UAthenaBoundActionButton_C) == 0x000008, "Wrong alignment on UAthenaBoundActionButton_C");
-static_assert(sizeof(UAthenaBoundActionButton_C) == 0x000BB8, "Wrong size on UAthenaBoundActionButton_C");
-static_assert(offsetof(UAthenaBoundActionButton_C, UberGraphFrame) == 0x000BA0, "Member 'UAthenaBoundActionButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaBoundActionButton_C, ContentBorder) == 0x000BA8, "Member 'UAthenaBoundActionButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaBoundActionButton_C, InputActionIconScale) == 0x000BB0, "Member 'UAthenaBoundActionButton_C::InputActionIconScale' has a wrong offset!");
 
 }
 

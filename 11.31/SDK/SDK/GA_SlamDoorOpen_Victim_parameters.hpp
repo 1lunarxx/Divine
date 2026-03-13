@@ -42,24 +42,6 @@ public:
 	float                                         CallFunc_BreakVector_Z;                            // 0x0120(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0124(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim) == 0x000008, "Wrong alignment on GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim");
-static_assert(sizeof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim) == 0x000130, "Wrong size on GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, EntryPoint) == 0x000000, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, K2Node_Event_EventData) == 0x000008, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x0000B8, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000C0, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, K2Node_DynamicCast_bSuccess) == 0x0000C8, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, K2Node_DynamicCast_AsBuilding_Wall) == 0x0000D0, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::K2Node_DynamicCast_AsBuilding_Wall' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, K2Node_DynamicCast_bSuccess_1) == 0x0000D8, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000DC, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000E8, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000F4, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_Normal_ReturnValue) == 0x000100, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00010C, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_BreakVector_X) == 0x000118, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_BreakVector_Y) == 0x00011C, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_BreakVector_Z) == 0x000120, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim, CallFunc_MakeVector_ReturnValue) == 0x000124, "Member 'GA_SlamDoorOpen_Victim_C_ExecuteUbergraph_GA_SlamDoorOpen_Victim::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 // Function GA_SlamDoorOpen_Victim.GA_SlamDoorOpen_Victim_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -68,9 +50,6 @@ struct GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_SlamDoorOpen_Victim_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 }
 

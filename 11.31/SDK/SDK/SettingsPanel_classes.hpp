@@ -23,15 +23,17 @@ class USettingsPanel_C final : public UFortSettingsPanel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsPanel_C">();
+		BP_STATIC_CLASS_IMPL("SettingsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsPanel_C")
 	}
 	static class USettingsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsPanel_C>();
 	}
 };
-static_assert(alignof(USettingsPanel_C) == 0x000008, "Wrong alignment on USettingsPanel_C");
-static_assert(sizeof(USettingsPanel_C) == 0x000670, "Wrong size on USettingsPanel_C");
 
 }
 

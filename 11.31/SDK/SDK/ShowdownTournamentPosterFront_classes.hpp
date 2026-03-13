@@ -58,35 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownTournamentPosterFront_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownTournamentPosterFront_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownTournamentPosterFront_C")
 	}
 	static class UShowdownTournamentPosterFront_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownTournamentPosterFront_C>();
 	}
 };
-static_assert(alignof(UShowdownTournamentPosterFront_C) == 0x000008, "Wrong alignment on UShowdownTournamentPosterFront_C");
-static_assert(sizeof(UShowdownTournamentPosterFront_C) == 0x0006F0, "Wrong size on UShowdownTournamentPosterFront_C");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, UberGraphFrame) == 0x000610, "Member 'UShowdownTournamentPosterFront_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, Image_LockIcon) == 0x000618, "Member 'UShowdownTournamentPosterFront_C::Image_LockIcon' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, Image_LockIconWorldCup) == 0x000620, "Member 'UShowdownTournamentPosterFront_C::Image_LockIconWorldCup' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, Image_PosterShadow) == 0x000628, "Member 'UShowdownTournamentPosterFront_C::Image_PosterShadow' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, OverlayEventLocked) == 0x000630, "Member 'UShowdownTournamentPosterFront_C::OverlayEventLocked' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, OverlayEventLockedWorldCup) == 0x000638, "Member 'UShowdownTournamentPosterFront_C::OverlayEventLockedWorldCup' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, ShowdownPin) == 0x000640, "Member 'UShowdownTournamentPosterFront_C::ShowdownPin' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, StandardLayout) == 0x000648, "Member 'UShowdownTournamentPosterFront_C::StandardLayout' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, Switcher_PosterTextLayout) == 0x000650, "Member 'UShowdownTournamentPosterFront_C::Switcher_PosterTextLayout' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentDateText) == 0x000658, "Member 'UShowdownTournamentPosterFront_C::TournamentDateText' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentDateTextWorldCup) == 0x000660, "Member 'UShowdownTournamentPosterFront_C::TournamentDateTextWorldCup' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentTitle1) == 0x000668, "Member 'UShowdownTournamentPosterFront_C::TournamentTitle1' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentTitle1WorldCup) == 0x000670, "Member 'UShowdownTournamentPosterFront_C::TournamentTitle1WorldCup' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentTitle2) == 0x000678, "Member 'UShowdownTournamentPosterFront_C::TournamentTitle2' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TournamentTitle2WorldCup) == 0x000680, "Member 'UShowdownTournamentPosterFront_C::TournamentTitle2WorldCup' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, WorldCupLayout) == 0x000688, "Member 'UShowdownTournamentPosterFront_C::WorldCupLayout' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, TitleColor) == 0x000690, "Member 'UShowdownTournamentPosterFront_C::TitleColor' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, HiddenWhileLoading) == 0x0006B8, "Member 'UShowdownTournamentPosterFront_C::HiddenWhileLoading' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, SubColor) == 0x0006C0, "Member 'UShowdownTournamentPosterFront_C::SubColor' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterFront_C, HidePin) == 0x0006E8, "Member 'UShowdownTournamentPosterFront_C::HidePin' has a wrong offset!");
 
 }
 

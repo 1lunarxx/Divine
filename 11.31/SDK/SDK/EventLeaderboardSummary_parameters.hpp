@@ -18,50 +18,6 @@
 namespace SDK::Params
 {
 
-// Function EventLeaderboardSummary.EventLeaderboardSummary_C.EventColorize
-// 0x0170 (0x0170 - 0x0000)
-struct EventLeaderboardSummary_C_EventColorize final
-{
-public:
-	struct FFortTournamentDisplayInfo             TournamentDisplayInfo_0;                           // 0x0000(0x0170)(BlueprintVisible, BlueprintReadOnly, Parm)
-};
-static_assert(alignof(EventLeaderboardSummary_C_EventColorize) == 0x000008, "Wrong alignment on EventLeaderboardSummary_C_EventColorize");
-static_assert(sizeof(EventLeaderboardSummary_C_EventColorize) == 0x000170, "Wrong size on EventLeaderboardSummary_C_EventColorize");
-static_assert(offsetof(EventLeaderboardSummary_C_EventColorize, TournamentDisplayInfo_0) == 0x000000, "Member 'EventLeaderboardSummary_C_EventColorize::TournamentDisplayInfo_0' has a wrong offset!");
-
-// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature final
-{
-public:
-	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
-
-// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature final
-{
-public:
-	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
-
-// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-// 0x0008 (0x0008 - 0x0000)
-struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
-{
-public:
-	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
-
 // Function EventLeaderboardSummary.EventLeaderboardSummary_C.ExecuteUbergraph_EventLeaderboardSummary
 // 0x0258 (0x0258 - 0x0000)
 struct EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary final
@@ -107,42 +63,38 @@ public:
 	float                                         K2Node_Select_Default_1;                           // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0250(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary) == 0x000008, "Wrong alignment on EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary");
-static_assert(sizeof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary) == 0x000258, "Wrong size on EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, EntryPoint) == 0x000000, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, Temp_bool_Variable) == 0x000004, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_ComponentBoundEvent_Button_2) == 0x000008, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_CustomEvent_TournamentDisplayInfo) == 0x000010, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_CustomEvent_TournamentDisplayInfo' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_MakeStruct_SlateColor) == 0x000180, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_MakeStruct_LinearColor) == 0x0001A8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, Temp_float_Variable) == 0x0001B8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_ComponentBoundEvent_Button_1) == 0x0001C0, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_ComponentBoundEvent_Button) == 0x0001C8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PauseAnimation_ReturnValue) == 0x0001D0, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetStartTime_ReturnValue) == 0x0001D4, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetStartTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PauseAnimation_ReturnValue_1) == 0x0001D8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x0001DC, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_Add_FloatFloat_ReturnValue) == 0x0001E0, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetEndTime_ReturnValue) == 0x0001E4, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PlayAnimation_ReturnValue) == 0x0001E8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0001F0, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PauseAnimation_ReturnValue_2) == 0x0001F4, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PauseAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetStartTime_ReturnValue_1) == 0x0001F8, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetStartTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PauseAnimation_ReturnValue_3) == 0x0001FC, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PauseAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x000200, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000204, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PlayAnimation_ReturnValue_1) == 0x000208, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetEndTime_ReturnValue_1) == 0x000210, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetEndTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000214, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, Temp_bool_Variable_1) == 0x000218, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_IsEventLeaderboardAvailable_ReturnValue) == 0x000219, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_IsEventLeaderboardAvailable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_Select_Default) == 0x00021C, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetTournamentId_ReturnValue) == 0x000220, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PlayAnimation_ReturnValue_2) == 0x000230, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_GetEventId_ReturnValue) == 0x000238, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_GetEventId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, Temp_float_Variable_1) == 0x000248, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, K2Node_Select_Default_1) == 0x00024C, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary, CallFunc_PlayAnimation_ReturnValue_3) == 0x000250, "Member 'EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
+
+// Function EventLeaderboardSummary.EventLeaderboardSummary_C.EventColorize
+// 0x0170 (0x0170 - 0x0000)
+struct EventLeaderboardSummary_C_EventColorize final
+{
+public:
+	struct FFortTournamentDisplayInfo             TournamentDisplayInfo_0;                           // 0x0000(0x0170)(BlueprintVisible, BlueprintReadOnly, Parm)
+};
+
+// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function EventLeaderboardSummary.EventLeaderboardSummary_C.BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature final
+{
+public:
+	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
 
 }
 

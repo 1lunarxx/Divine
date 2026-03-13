@@ -41,23 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HelpListItem_C">();
+		BP_STATIC_CLASS_IMPL("HelpListItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HelpListItem_C")
 	}
 	static class UHelpListItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHelpListItem_C>();
 	}
 };
-static_assert(alignof(UHelpListItem_C) == 0x000008, "Wrong alignment on UHelpListItem_C");
-static_assert(sizeof(UHelpListItem_C) == 0x000BC8, "Wrong size on UHelpListItem_C");
-static_assert(offsetof(UHelpListItem_C, UberGraphFrame) == 0x000B80, "Member 'UHelpListItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, Arrow) == 0x000B88, "Member 'UHelpListItem_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, EntryHBox) == 0x000B90, "Member 'UHelpListItem_C::EntryHBox' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, EntryHeaderName) == 0x000B98, "Member 'UHelpListItem_C::EntryHeaderName' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, HeaderHBox) == 0x000BA0, "Member 'UHelpListItem_C::HeaderHBox' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, HeaderText) == 0x000BA8, "Member 'UHelpListItem_C::HeaderText' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, PlayerHeaderSwitcher) == 0x000BB0, "Member 'UHelpListItem_C::PlayerHeaderSwitcher' has a wrong offset!");
-static_assert(offsetof(UHelpListItem_C, InviteJoinChanged) == 0x000BB8, "Member 'UHelpListItem_C::InviteJoinChanged' has a wrong offset!");
 
 }
 

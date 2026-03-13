@@ -37,20 +37,6 @@ public:
 	float                                         CallFunc_VSize_ReturnValue;                        // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick) == 0x000008, "Wrong alignment on AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick");
-static_assert(sizeof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick) == 0x000050, "Wrong size on AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, MeshComp) == 0x000000, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, Animation) == 0x000008, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::Animation' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, FrameDeltaTime) == 0x000010, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::FrameDeltaTime' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, ReturnValue) == 0x000014, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, K2Node_DynamicCast_AsAnim_Montage) == 0x000018, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::K2Node_DynamicCast_AsAnim_Montage' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, CallFunc_GetAnimInstance_ReturnValue) == 0x000028, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::CallFunc_GetAnimInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, K2Node_DynamicCast_AsFortnite_M_Avg_Player_Anim_Blueprint) == 0x000030, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::K2Node_DynamicCast_AsFortnite_M_Avg_Player_Anim_Blueprint' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, CallFunc_GetCurrentAcceleration_ReturnValue) == 0x00003C, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::CallFunc_GetCurrentAcceleration_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, CallFunc_VSize_ReturnValue) == 0x000048, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00004C, "Member 'AnimNotifyState_StopMontagePlayInPlace_C_Received_NotifyTick::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

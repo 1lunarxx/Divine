@@ -113,39 +113,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_BoostJumpPack_C">();
+		BP_STATIC_CLASS_IMPL("GA_BoostJumpPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_BoostJumpPack_C")
 	}
 	static class UGA_BoostJumpPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_BoostJumpPack_C>();
 	}
 };
-static_assert(alignof(UGA_BoostJumpPack_C) == 0x000008, "Wrong alignment on UGA_BoostJumpPack_C");
-static_assert(sizeof(UGA_BoostJumpPack_C) == 0x000BD0, "Wrong size on UGA_BoostJumpPack_C");
-static_assert(offsetof(UGA_BoostJumpPack_C, UberGraphFrame) == 0x000A50, "Member 'UGA_BoostJumpPack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, Jump_Multiple) == 0x000A58, "Member 'UGA_BoostJumpPack_C::Jump_Multiple' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, Basic_Jump_Z_Adjust) == 0x000A5C, "Member 'UGA_BoostJumpPack_C::Basic_Jump_Z_Adjust' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, FinalJumpHeight) == 0x000A68, "Member 'UGA_BoostJumpPack_C::FinalJumpHeight' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, EventTriggerData) == 0x000A78, "Member 'UGA_BoostJumpPack_C::EventTriggerData' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, bJumpButtonHeld) == 0x000B28, "Member 'UGA_BoostJumpPack_C::bJumpButtonHeld' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, bAtApex) == 0x000B29, "Member 'UGA_BoostJumpPack_C::bAtApex' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, JetpackEffectHandle) == 0x000B2C, "Member 'UGA_BoostJumpPack_C::JetpackEffectHandle' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, FortPlayerPawn) == 0x000B38, "Member 'UGA_BoostJumpPack_C::FortPlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, bBoundToPawnLanded) == 0x000B40, "Member 'UGA_BoostJumpPack_C::bBoundToPawnLanded' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, FuelFudge) == 0x000B44, "Member 'UGA_BoostJumpPack_C::FuelFudge' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, RegenEffectHandle) == 0x000B48, "Member 'UGA_BoostJumpPack_C::RegenEffectHandle' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, bRegenEffectActive) == 0x000B50, "Member 'UGA_BoostJumpPack_C::bRegenEffectActive' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, ExecuteTags) == 0x000B58, "Member 'UGA_BoostJumpPack_C::ExecuteTags' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, JumpButtonHeldCount) == 0x000B78, "Member 'UGA_BoostJumpPack_C::JumpButtonHeldCount' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, ReleaseTags) == 0x000B80, "Member 'UGA_BoostJumpPack_C::ReleaseTags' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, TimeStartedHovering) == 0x000BA0, "Member 'UGA_BoostJumpPack_C::TimeStartedHovering' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, TimeStartedFalling) == 0x000BA4, "Member 'UGA_BoostJumpPack_C::TimeStartedFalling' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, EndHoverDelay) == 0x000BA8, "Member 'UGA_BoostJumpPack_C::EndHoverDelay' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, EndFallingDelay) == 0x000BAC, "Member 'UGA_BoostJumpPack_C::EndFallingDelay' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, bHasDied) == 0x000BB0, "Member 'UGA_BoostJumpPack_C::bHasDied' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, BoostCue) == 0x000BB4, "Member 'UGA_BoostJumpPack_C::BoostCue' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, BoostJumpPackCue) == 0x000BBC, "Member 'UGA_BoostJumpPack_C::BoostJumpPackCue' has a wrong offset!");
-static_assert(offsetof(UGA_BoostJumpPack_C, JetpackInUseEffect) == 0x000BC8, "Member 'UGA_BoostJumpPack_C::JetpackInUseEffect' has a wrong offset!");
 
 }
 

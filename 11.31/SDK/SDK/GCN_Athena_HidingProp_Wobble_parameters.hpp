@@ -53,35 +53,6 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x01BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x01C8(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_Athena_HidingProp_Wobble_C_OnBurst) == 0x000008, "Wrong alignment on GCN_Athena_HidingProp_Wobble_C_OnBurst");
-static_assert(sizeof(GCN_Athena_HidingProp_Wobble_C_OnBurst) == 0x0001D8, "Wrong size on GCN_Athena_HidingProp_Wobble_C_OnBurst");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_NormalizedMagnitude) == 0x0000F0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_NormalizedMagnitude' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_RawMagnitude) == 0x0000F4, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_RawMagnitude' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_EffectContext) == 0x0000F8, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_EffectContext' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_MatchedTagName) == 0x000110, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_MatchedTagName' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_OriginalTag) == 0x000118, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_OriginalTag' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_AggregatedSourceTags) == 0x000120, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_AggregatedSourceTags' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_AggregatedTargetTags) == 0x000140, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_AggregatedTargetTags' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_Location) == 0x000160, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_Location' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_Normal) == 0x00016C, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_Normal' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_Instigator) == 0x000178, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_Instigator' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_EffectCauser) == 0x000180, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_EffectCauser' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_SourceObject) == 0x000188, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_SourceObject' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_PhysicalMaterial) == 0x000190, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_GameplayEffectLevel) == 0x000198, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_GameplayEffectLevel' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_AbilityLevel) == 0x00019C, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_AbilityLevel' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_BreakGameplayCueParameters_TargetAttachComponent) == 0x0001A0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_BreakGameplayCueParameters_TargetAttachComponent' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_GetTimeSeconds_ReturnValue) == 0x0001A8, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_GetTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, K2Node_DynamicCast_AsBuilding_SMActor) == 0x0001B0, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::K2Node_DynamicCast_AsBuilding_SMActor' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0001BC, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_HidingProp_Wobble_C_OnBurst, CallFunc_Add_VectorVector_ReturnValue) == 0x0001C8, "Member 'GCN_Athena_HidingProp_Wobble_C_OnBurst::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 
 }
 

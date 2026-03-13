@@ -42,24 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeCountdown_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeCountdown_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeCountdown_C")
 	}
 	static class UChallengeCountdown_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeCountdown_C>();
 	}
 };
-static_assert(alignof(UChallengeCountdown_C) == 0x000008, "Wrong alignment on UChallengeCountdown_C");
-static_assert(sizeof(UChallengeCountdown_C) == 0x000358, "Wrong size on UChallengeCountdown_C");
-static_assert(offsetof(UChallengeCountdown_C, UberGraphFrame) == 0x000318, "Member 'UChallengeCountdown_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, Clock) == 0x000320, "Member 'UChallengeCountdown_C::Clock' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, PaddingHB) == 0x000328, "Member 'UChallengeCountdown_C::PaddingHB' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, RedBoxBorder) == 0x000330, "Member 'UChallengeCountdown_C::RedBoxBorder' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, Text_TimeRemainingTag) == 0x000338, "Member 'UChallengeCountdown_C::Text_TimeRemainingTag' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, TextScale) == 0x000340, "Member 'UChallengeCountdown_C::TextScale' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, TransformOvr) == 0x000348, "Member 'UChallengeCountdown_C::TransformOvr' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, IsLargeDisplay) == 0x000350, "Member 'UChallengeCountdown_C::IsLargeDisplay' has a wrong offset!");
-static_assert(offsetof(UChallengeCountdown_C, bIsMinimalDisplay) == 0x000351, "Member 'UChallengeCountdown_C::bIsMinimalDisplay' has a wrong offset!");
 
 }
 

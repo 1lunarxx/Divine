@@ -25,12 +25,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu) == 0x000008, "Wrong alignment on JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu");
-static_assert(sizeof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu) == 0x000018, "Wrong size on JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu");
-static_assert(offsetof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu, EntryPoint) == 0x000000, "Member 'JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu, K2Node_Event_bIsVisible) == 0x000004, "Member 'JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu::K2Node_Event_bIsVisible' has a wrong offset!");
-static_assert(offsetof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'JoinablePartyActionMenu_C_ExecuteUbergraph_JoinablePartyActionMenu::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 // Function JoinablePartyActionMenu.JoinablePartyActionMenu_C.OnToggleConfirmation
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +33,6 @@ struct JoinablePartyActionMenu_C_OnToggleConfirmation final
 public:
 	bool                                          bIsVisible;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinablePartyActionMenu_C_OnToggleConfirmation) == 0x000001, "Wrong alignment on JoinablePartyActionMenu_C_OnToggleConfirmation");
-static_assert(sizeof(JoinablePartyActionMenu_C_OnToggleConfirmation) == 0x000001, "Wrong size on JoinablePartyActionMenu_C_OnToggleConfirmation");
-static_assert(offsetof(JoinablePartyActionMenu_C_OnToggleConfirmation, bIsVisible) == 0x000000, "Member 'JoinablePartyActionMenu_C_OnToggleConfirmation::bIsVisible' has a wrong offset!");
 
 }
 

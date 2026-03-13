@@ -59,36 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZipLine_Athena_Harness_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZipLine_Athena_Harness_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZipLine_Athena_Harness_C")
 	}
 	static class ABP_ZipLine_Athena_Harness_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ZipLine_Athena_Harness_C>();
 	}
 };
-static_assert(alignof(ABP_ZipLine_Athena_Harness_C) == 0x000008, "Wrong alignment on ABP_ZipLine_Athena_Harness_C");
-static_assert(sizeof(ABP_ZipLine_Athena_Harness_C) == 0x0002C0, "Wrong size on ABP_ZipLine_Athena_Harness_C");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, UberGraphFrame) == 0x000218, "Member 'ABP_ZipLine_Athena_Harness_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, TravelAudio) == 0x000220, "Member 'ABP_ZipLine_Athena_Harness_C::TravelAudio' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, P_Zipline_AttachedToPlayer) == 0x000228, "Member 'ABP_ZipLine_Athena_Harness_C::P_Zipline_AttachedToPlayer' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, SM_Zipline_Magnet) == 0x000230, "Member 'ABP_ZipLine_Athena_Harness_C::SM_Zipline_Magnet' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, Arrow) == 0x000238, "Member 'ABP_ZipLine_Athena_Harness_C::Arrow' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, P_Zipline_Pulley_SpeedLines) == 0x000240, "Member 'ABP_ZipLine_Athena_Harness_C::P_Zipline_Pulley_SpeedLines' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, SM_Zipline_Motor) == 0x000248, "Member 'ABP_ZipLine_Athena_Harness_C::SM_Zipline_Motor' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, Scene) == 0x000250, "Member 'ABP_ZipLine_Athena_Harness_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, SpawnFX) == 0x000258, "Member 'ABP_ZipLine_Athena_Harness_C::SpawnFX' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, DestroyFX) == 0x000260, "Member 'ABP_ZipLine_Athena_Harness_C::DestroyFX' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, CollideDestroyVFX) == 0x000268, "Member 'ABP_ZipLine_Athena_Harness_C::CollideDestroyVFX' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, DegreesPerUpdate) == 0x000270, "Member 'ABP_ZipLine_Athena_Harness_C::DegreesPerUpdate' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, SpawnSound) == 0x000278, "Member 'ABP_ZipLine_Athena_Harness_C::SpawnSound' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, UnSpawnSound) == 0x000280, "Member 'ABP_ZipLine_Athena_Harness_C::UnSpawnSound' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, CurrentAttachDetachSound) == 0x000288, "Member 'ABP_ZipLine_Athena_Harness_C::CurrentAttachDetachSound' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, AttachedPlayer) == 0x000290, "Member 'ABP_ZipLine_Athena_Harness_C::AttachedPlayer' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, OtherMotors) == 0x000298, "Member 'ABP_ZipLine_Athena_Harness_C::OtherMotors' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, DestroySound) == 0x0002A8, "Member 'ABP_ZipLine_Athena_Harness_C::DestroySound' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, HasHitAnotherPlayer) == 0x0002B0, "Member 'ABP_ZipLine_Athena_Harness_C::HasHitAnotherPlayer' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, ZiplineChimeVisualUpdate) == 0x0002B4, "Member 'ABP_ZipLine_Athena_Harness_C::ZiplineChimeVisualUpdate' has a wrong offset!");
-static_assert(offsetof(ABP_ZipLine_Athena_Harness_C, ChimeTimer) == 0x0002B8, "Member 'ABP_ZipLine_Athena_Harness_C::ChimeTimer' has a wrong offset!");
 
 }
 

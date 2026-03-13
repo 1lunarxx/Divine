@@ -21,9 +21,6 @@ struct Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted final
 public:
 	class AFortPawn*                              PlayerEmoting;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted) == 0x000008, "Wrong alignment on Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted");
-static_assert(sizeof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted) == 0x000008, "Wrong size on Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted");
-static_assert(offsetof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted, PlayerEmoting) == 0x000000, "Member 'Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted::PlayerEmoting' has a wrong offset!");
 
 // Function Creative_Listener_PlayerEmote_Interface.Creative_Listener_PlayerEmote_Interface_C.OnPlayerEmoteEnded
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded final
 public:
 	class AFortPawn*                              PlayerEmoting;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded) == 0x000008, "Wrong alignment on Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded");
-static_assert(sizeof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded) == 0x000008, "Wrong size on Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded");
-static_assert(offsetof(Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded, PlayerEmoting) == 0x000000, "Member 'Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded::PlayerEmoting' has a wrong offset!");
 
 }
 

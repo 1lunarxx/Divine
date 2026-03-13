@@ -26,9 +26,6 @@ struct ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowdownScreen_C_BndEvt__CircleArrowButton_Right_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +34,6 @@ struct ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowdownScreen_C_BndEvt__CircleArrowButton_Left_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -48,9 +42,6 @@ struct ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEv
 public:
 	float                                         CurrentOffset;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature) == 0x000004, "Wrong alignment on ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature");
-static_assert(sizeof(ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature) == 0x000004, "Wrong size on ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature");
-static_assert(offsetof(ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature, CurrentOffset) == 0x000000, "Member 'ShowdownScreen_C_BndEvt__ScrollBox_TournamentList_K2Node_ComponentBoundEvent_2_OnUserScrolledEvent__DelegateSignature::CurrentOffset' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +50,6 @@ struct ShowdownScreen_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownScreen_C_PreConstruct) == 0x000001, "Wrong alignment on ShowdownScreen_C_PreConstruct");
-static_assert(sizeof(ShowdownScreen_C_PreConstruct) == 0x000001, "Wrong size on ShowdownScreen_C_PreConstruct");
-static_assert(offsetof(ShowdownScreen_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ShowdownScreen_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.OnInputModeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -70,9 +58,6 @@ struct ShowdownScreen_C_OnInputModeChanged final
 public:
 	bool                                          bUsingGamepad;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownScreen_C_OnInputModeChanged) == 0x000001, "Wrong alignment on ShowdownScreen_C_OnInputModeChanged");
-static_assert(sizeof(ShowdownScreen_C_OnInputModeChanged) == 0x000001, "Wrong size on ShowdownScreen_C_OnInputModeChanged");
-static_assert(offsetof(ShowdownScreen_C_OnInputModeChanged, bUsingGamepad) == 0x000000, "Member 'ShowdownScreen_C_OnInputModeChanged::bUsingGamepad' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.TournamentListSelect
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +66,6 @@ struct ShowdownScreen_C_TournamentListSelect final
 public:
 	class UWidget*                                CurrentWidget;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownScreen_C_TournamentListSelect) == 0x000008, "Wrong alignment on ShowdownScreen_C_TournamentListSelect");
-static_assert(sizeof(ShowdownScreen_C_TournamentListSelect) == 0x000008, "Wrong size on ShowdownScreen_C_TournamentListSelect");
-static_assert(offsetof(ShowdownScreen_C_TournamentListSelect, CurrentWidget) == 0x000000, "Member 'ShowdownScreen_C_TournamentListSelect::CurrentWidget' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.Tick
 // 0x003C (0x003C - 0x0000)
@@ -93,10 +75,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownScreen_C_Tick) == 0x000004, "Wrong alignment on ShowdownScreen_C_Tick");
-static_assert(sizeof(ShowdownScreen_C_Tick) == 0x00003C, "Wrong size on ShowdownScreen_C_Tick");
-static_assert(offsetof(ShowdownScreen_C_Tick, MyGeometry) == 0x000000, "Member 'ShowdownScreen_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_Tick, InDeltaTime) == 0x000038, "Member 'ShowdownScreen_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.SelectedFrontTournament
 // 0x0001 (0x0001 - 0x0000)
@@ -105,9 +83,6 @@ struct ShowdownScreen_C_SelectedFrontTournament final
 public:
 	bool                                          bFrontIsSelected;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownScreen_C_SelectedFrontTournament) == 0x000001, "Wrong alignment on ShowdownScreen_C_SelectedFrontTournament");
-static_assert(sizeof(ShowdownScreen_C_SelectedFrontTournament) == 0x000001, "Wrong size on ShowdownScreen_C_SelectedFrontTournament");
-static_assert(offsetof(ShowdownScreen_C_SelectedFrontTournament, bFrontIsSelected) == 0x000000, "Member 'ShowdownScreen_C_SelectedFrontTournament::bFrontIsSelected' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.SelectedEndTournament
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +91,6 @@ struct ShowdownScreen_C_SelectedEndTournament final
 public:
 	bool                                          bEndIsSelected;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownScreen_C_SelectedEndTournament) == 0x000001, "Wrong alignment on ShowdownScreen_C_SelectedEndTournament");
-static_assert(sizeof(ShowdownScreen_C_SelectedEndTournament) == 0x000001, "Wrong size on ShowdownScreen_C_SelectedEndTournament");
-static_assert(offsetof(ShowdownScreen_C_SelectedEndTournament, bEndIsSelected) == 0x000000, "Member 'ShowdownScreen_C_SelectedEndTournament::bEndIsSelected' has a wrong offset!");
 
 // Function ShowdownScreen.ShowdownScreen_C.ExecuteUbergraph_ShowdownScreen
 // 0x0170 (0x0170 - 0x0000)
@@ -188,57 +160,6 @@ public:
 	uint8                                         Pad_159[0x7];                                      // 0x0159(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle_1;            // 0x0160(0x0010)(NoDestructor)
 };
-static_assert(alignof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen) == 0x000010, "Wrong alignment on ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen");
-static_assert(sizeof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen) == 0x000170, "Wrong size on ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, EntryPoint) == 0x000000, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_MakeStruct_DataTableRowHandle) == 0x000008, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetChildrenCount_ReturnValue) == 0x000018, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Greater_IntInt_ReturnValue) == 0x00001C, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_ComponentBoundEvent_CurrentOffset) == 0x000020, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_ComponentBoundEvent_CurrentOffset' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_IsDesignTime) == 0x000030, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, Temp_int_Variable) == 0x000034, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, Temp_bool_Variable) == 0x000044, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Select_Default) == 0x000048, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_bUsingGamepad) == 0x000050, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetSafeZonePadding_SafePadding) == 0x000060, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetSafeZonePadding_SafePadding' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetSafeZonePadding_SafePaddingScale) == 0x000070, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetSafeZonePadding_SafePaddingScale' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetSafeZonePadding_SpillOverPadding) == 0x000080, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetSafeZonePadding_SpillOverPadding' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x000090, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_ComponentBoundEvent_Button) == 0x000098, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_ComponentBoundEvent_Button_1) == 0x0000A0, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000A8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000AC, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_FloatFloat_ReturnValue_2) == 0x0000B0, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_FloatFloat_ReturnValue_3) == 0x0000B4, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_MakeStruct_Margin) == 0x0000B8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_CustomEvent_CurrentWidget) == 0x0000C8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_CustomEvent_CurrentWidget' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, Temp_byte_Variable) == 0x0000D0, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetChildAt_ReturnValue) == 0x0000D8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_DynamicCast_AsShowdown_Tournament_Tile) == 0x0000E0, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_DynamicCast_AsShowdown_Tournament_Tile' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_DynamicCast_AsShowdown_Tournament_Tile_1) == 0x0000F0, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_DynamicCast_AsShowdown_Tournament_Tile_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_DynamicCast_bSuccess_1) == 0x0000F8, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetChildIndex_ReturnValue) == 0x0000FC, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetChildIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_GetChildrenCount_ReturnValue_1) == 0x000100, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_GetChildrenCount_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_IntInt_ReturnValue) == 0x000104, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x000108, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Less_IntInt_ReturnValue) == 0x00010C, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_LessEqual_IntInt_ReturnValue) == 0x00010D, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Add_IntInt_ReturnValue_1) == 0x000110, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000114, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, Temp_byte_Variable_1) == 0x000115, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_BooleanOR_ReturnValue) == 0x000116, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_MyGeometry) == 0x000118, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_InDeltaTime) == 0x000150, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, Temp_bool_Variable_1) == 0x000154, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, CallFunc_IsValid_ReturnValue) == 0x000155, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Select_Default_1) == 0x000156, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_bFrontIsSelected) == 0x000157, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_bFrontIsSelected' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_Event_bEndIsSelected) == 0x000158, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_Event_bEndIsSelected' has a wrong offset!");
-static_assert(offsetof(ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen, K2Node_MakeStruct_DataTableRowHandle_1) == 0x000160, "Member 'ShowdownScreen_C_ExecuteUbergraph_ShowdownScreen::K2Node_MakeStruct_DataTableRowHandle_1' has a wrong offset!");
 
 }
 

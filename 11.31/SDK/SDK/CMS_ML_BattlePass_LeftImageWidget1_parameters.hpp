@@ -24,11 +24,6 @@ public:
 	class UAthenaAccountContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetCurrentChapterAndSeasonText_ReturnValue; // 0x0010(0x0018)()
 };
-static_assert(alignof(CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1) == 0x000008, "Wrong alignment on CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1");
-static_assert(sizeof(CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1) == 0x000028, "Wrong size on CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1");
-static_assert(offsetof(CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1, EntryPoint) == 0x000000, "Member 'CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1, CallFunc_GetCurrentChapterAndSeasonText_ReturnValue) == 0x000010, "Member 'CMS_ML_BattlePass_LeftImageWidget1_C_ExecuteUbergraph_CMS_ML_BattlePass_LeftImageWidget1::CallFunc_GetCurrentChapterAndSeasonText_ReturnValue' has a wrong offset!");
 
 }
 

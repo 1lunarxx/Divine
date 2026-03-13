@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_ActiveAbility_Hero_C">();
+		BP_STATIC_CLASS_IMPL("GAT_ActiveAbility_Hero_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_ActiveAbility_Hero_C")
 	}
 	static class UGAT_ActiveAbility_Hero_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_ActiveAbility_Hero_C>();
 	}
 };
-static_assert(alignof(UGAT_ActiveAbility_Hero_C) == 0x000008, "Wrong alignment on UGAT_ActiveAbility_Hero_C");
-static_assert(sizeof(UGAT_ActiveAbility_Hero_C) == 0x000A70, "Wrong size on UGAT_ActiveAbility_Hero_C");
-static_assert(offsetof(UGAT_ActiveAbility_Hero_C, UberGraphFrame_GAT_ActiveAbility_Hero_C) == 0x000A60, "Member 'UGAT_ActiveAbility_Hero_C::UberGraphFrame_GAT_ActiveAbility_Hero_C' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_Hero_C, UseHeroLoadoutSystem) == 0x000A68, "Member 'UGAT_ActiveAbility_Hero_C::UseHeroLoadoutSystem' has a wrong offset!");
 
 }
 

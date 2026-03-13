@@ -84,55 +84,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DBNO_Carried_C">();
+		BP_STATIC_CLASS_IMPL("DBNO_Carried_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DBNO_Carried_C")
 	}
 	static class UDBNO_Carried_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDBNO_Carried_C>();
 	}
 };
-static_assert(alignof(UDBNO_Carried_C) == 0x000010, "Wrong alignment on UDBNO_Carried_C");
-static_assert(sizeof(UDBNO_Carried_C) == 0x00BD80, "Wrong size on UDBNO_Carried_C");
-static_assert(offsetof(UDBNO_Carried_C, UberGraphFrame) == 0x00B250, "Member 'UDBNO_Carried_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_Root_6FDF76E049A24B1EF9D7DEBBD91751CF) == 0x00B258, "Member 'UDBNO_Carried_C::AnimGraphNode_Root_6FDF76E049A24B1EF9D7DEBBD91751CF' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_LocalToComponentSpace_647109C14F48E941AEF9E486BCFFCB5B) == 0x00B288, "Member 'UDBNO_Carried_C::AnimGraphNode_LocalToComponentSpace_647109C14F48E941AEF9E486BCFFCB5B' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F) == 0x00B2A8, "Member 'UDBNO_Carried_C::AnimGraphNode_ModifyBone_59E069244645BEF22808AB9196186F3F' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_ModifyBone_32956B0E479193012ACF3FB15ECAFEE6) == 0x00B3B0, "Member 'UDBNO_Carried_C::AnimGraphNode_ModifyBone_32956B0E479193012ACF3FB15ECAFEE6' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SequencePlayer_80446D5E4D39FC4DB897698A65CD29AC) == 0x00B4B8, "Member 'UDBNO_Carried_C::AnimGraphNode_SequencePlayer_80446D5E4D39FC4DB897698A65CD29AC' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9) == 0x00B530, "Member 'UDBNO_Carried_C::AnimGraphNode_ApplyAdditive_56B19EE040BEEBC25D674F8DC99831B9' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_TwoBoneIK_A2B587A34E6D45FD2755F6A163B2A7AD) == 0x00B600, "Member 'UDBNO_Carried_C::AnimGraphNode_TwoBoneIK_A2B587A34E6D45FD2755F6A163B2A7AD' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, __CustomProperty_my_animbodytype_BC9172D64300E6A13C48509FE2988A40) == 0x00B7E0, "Member 'UDBNO_Carried_C::__CustomProperty_my_animbodytype_BC9172D64300E6A13C48509FE2988A40' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, __CustomProperty_my_gender_BC9172D64300E6A13C48509FE2988A40) == 0x00B7E1, "Member 'UDBNO_Carried_C::__CustomProperty_my_gender_BC9172D64300E6A13C48509FE2988A40' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SubInstance_BC9172D64300E6A13C48509FE2988A40) == 0x00B7E8, "Member 'UDBNO_Carried_C::AnimGraphNode_SubInstance_BC9172D64300E6A13C48509FE2988A40' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_ComponentToLocalSpace_2362F79B4764FBA8C8FEEDA5DC88C3B1) == 0x00B878, "Member 'UDBNO_Carried_C::AnimGraphNode_ComponentToLocalSpace_2362F79B4764FBA8C8FEEDA5DC88C3B1' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_TransitionResult_AC1F897843DFD7A8178B8A82E3A790EE) == 0x00B898, "Member 'UDBNO_Carried_C::AnimGraphNode_TransitionResult_AC1F897843DFD7A8178B8A82E3A790EE' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_TransitionResult_2DF19C19483B180CCD9B0395F0443067) == 0x00B8C0, "Member 'UDBNO_Carried_C::AnimGraphNode_TransitionResult_2DF19C19483B180CCD9B0395F0443067' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SequenceEvaluator_78D4698F4DBD0C20473F7A9407EBB46C) == 0x00B8E8, "Member 'UDBNO_Carried_C::AnimGraphNode_SequenceEvaluator_78D4698F4DBD0C20473F7A9407EBB46C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_StateResult_A08B893F416A2C075FC4E584C74BAC5C) == 0x00B930, "Member 'UDBNO_Carried_C::AnimGraphNode_StateResult_A08B893F416A2C075FC4E584C74BAC5C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SequencePlayer_339D53304C96E6E9CA54849FD42463D2) == 0x00B960, "Member 'UDBNO_Carried_C::AnimGraphNode_SequencePlayer_339D53304C96E6E9CA54849FD42463D2' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_StateResult_2845F0614F1F506F5C75FEB6DB44688C) == 0x00B9D8, "Member 'UDBNO_Carried_C::AnimGraphNode_StateResult_2845F0614F1F506F5C75FEB6DB44688C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SequenceEvaluator_F7E4CA4748A4826364AE6EAADE5CBA3C) == 0x00BA08, "Member 'UDBNO_Carried_C::AnimGraphNode_SequenceEvaluator_F7E4CA4748A4826364AE6EAADE5CBA3C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_StateResult_0DF022F34E2D19939A036B970D6F6AFA) == 0x00BA50, "Member 'UDBNO_Carried_C::AnimGraphNode_StateResult_0DF022F34E2D19939A036B970D6F6AFA' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_StateMachine_928ECAB14B37D35EE66BE6A15B810F70) == 0x00BA80, "Member 'UDBNO_Carried_C::AnimGraphNode_StateMachine_928ECAB14B37D35EE66BE6A15B810F70' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_TwoWayBlend_AA9C546E4B1C5BEF0332B08ECB6BFC83) == 0x00BB30, "Member 'UDBNO_Carried_C::AnimGraphNode_TwoWayBlend_AA9C546E4B1C5BEF0332B08ECB6BFC83' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_SaveCachedPose_DB53A2DF4CAE9120C146E49AC957D990) == 0x00BBF8, "Member 'UDBNO_Carried_C::AnimGraphNode_SaveCachedPose_DB53A2DF4CAE9120C146E49AC957D990' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_UseCachedPose_88EB1D724EB384A84A32F184D445B4B9) == 0x00BCB0, "Member 'UDBNO_Carried_C::AnimGraphNode_UseCachedPose_88EB1D724EB384A84A32F184D445B4B9' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, AnimGraphNode_UseCachedPose_0634F0B8457CE9932959C29729FE76F9) == 0x00BCD8, "Member 'UDBNO_Carried_C::AnimGraphNode_UseCachedPose_0634F0B8457CE9932959C29729FE76F9' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, Carried) == 0x00BD00, "Member 'UDBNO_Carried_C::Carried' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, CarrierPawn) == 0x00BD08, "Member 'UDBNO_Carried_C::CarrierPawn' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, CarrierAnimBP) == 0x00BD10, "Member 'UDBNO_Carried_C::CarrierAnimBP' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, LHandIKLocation) == 0x00BD18, "Member 'UDBNO_Carried_C::LHandIKLocation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, LHandIKRotation) == 0x00BD24, "Member 'UDBNO_Carried_C::LHandIKRotation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, TempAttachLocation) == 0x00BD30, "Member 'UDBNO_Carried_C::TempAttachLocation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, TempAttachRotation) == 0x00BD3C, "Member 'UDBNO_Carried_C::TempAttachRotation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, SubAnimPhysicsWeight) == 0x00BD48, "Member 'UDBNO_Carried_C::SubAnimPhysicsWeight' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, IsBeingDropped) == 0x00BD4C, "Member 'UDBNO_Carried_C::IsBeingDropped' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, DropMontagePosition) == 0x00BD50, "Member 'UDBNO_Carried_C::DropMontagePosition' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, CarrierDropMontage) == 0x00BD58, "Member 'UDBNO_Carried_C::CarrierDropMontage' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, CarrierPickupMontage) == 0x00BD60, "Member 'UDBNO_Carried_C::CarrierPickupMontage' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, IsBeingPickedUp) == 0x00BD68, "Member 'UDBNO_Carried_C::IsBeingPickedUp' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, PickupMontagePosition) == 0x00BD6C, "Member 'UDBNO_Carried_C::PickupMontagePosition' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_C, TransitionFromPickupToIdle) == 0x00BD70, "Member 'UDBNO_Carried_C::TransitionFromPickupToIdle' has a wrong offset!");
 
 }
 

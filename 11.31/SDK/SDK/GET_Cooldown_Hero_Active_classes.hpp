@@ -23,15 +23,17 @@ class UGET_Cooldown_Hero_Active_C : public UGET_Cooldown_Hero_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_Cooldown_Hero_Active_C">();
+		BP_STATIC_CLASS_IMPL("GET_Cooldown_Hero_Active_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_Cooldown_Hero_Active_C")
 	}
 	static class UGET_Cooldown_Hero_Active_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_Cooldown_Hero_Active_C>();
 	}
 };
-static_assert(alignof(UGET_Cooldown_Hero_Active_C) == 0x000008, "Wrong alignment on UGET_Cooldown_Hero_Active_C");
-static_assert(sizeof(UGET_Cooldown_Hero_Active_C) == 0x000770, "Wrong size on UGET_Cooldown_Hero_Active_C");
 
 }
 

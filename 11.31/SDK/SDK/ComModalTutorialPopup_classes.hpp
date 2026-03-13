@@ -54,36 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComModalTutorialPopup_C">();
+		BP_STATIC_CLASS_IMPL("ComModalTutorialPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComModalTutorialPopup_C")
 	}
 	static class UComModalTutorialPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComModalTutorialPopup_C>();
 	}
 };
-static_assert(alignof(UComModalTutorialPopup_C) == 0x000008, "Wrong alignment on UComModalTutorialPopup_C");
-static_assert(sizeof(UComModalTutorialPopup_C) == 0x000550, "Wrong size on UComModalTutorialPopup_C");
-static_assert(offsetof(UComModalTutorialPopup_C, UberGraphFrame) == 0x0004A8, "Member 'UComModalTutorialPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide3Out) == 0x0004B0, "Member 'UComModalTutorialPopup_C::TutorialSlide3Out' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide2Out) == 0x0004B8, "Member 'UComModalTutorialPopup_C::TutorialSlide2Out' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide1Out) == 0x0004C0, "Member 'UComModalTutorialPopup_C::TutorialSlide1Out' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, FadeIn) == 0x0004C8, "Member 'UComModalTutorialPopup_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide3In) == 0x0004D0, "Member 'UComModalTutorialPopup_C::TutorialSlide3In' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide2In) == 0x0004D8, "Member 'UComModalTutorialPopup_C::TutorialSlide2In' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, TutorialSlide1In) == 0x0004E0, "Member 'UComModalTutorialPopup_C::TutorialSlide1In' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, Border_TapToCloseZone) == 0x0004E8, "Member 'UComModalTutorialPopup_C::Border_TapToCloseZone' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, CircleArrowButtonComTutorial_Next) == 0x0004F0, "Member 'UComModalTutorialPopup_C::CircleArrowButtonComTutorial_Next' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, CircleArrowButtonComTutorial_Previous) == 0x0004F8, "Member 'UComModalTutorialPopup_C::CircleArrowButtonComTutorial_Previous' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, comTutorialImage_1) == 0x000500, "Member 'UComModalTutorialPopup_C::comTutorialImage_1' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, comTutorialImage_4) == 0x000508, "Member 'UComModalTutorialPopup_C::comTutorialImage_4' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, Comtutorialtext1) == 0x000510, "Member 'UComModalTutorialPopup_C::Comtutorialtext1' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, Comtutorialtext2) == 0x000518, "Member 'UComModalTutorialPopup_C::Comtutorialtext2' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, Comtutorialtext3) == 0x000520, "Member 'UComModalTutorialPopup_C::Comtutorialtext3' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, Darken) == 0x000528, "Member 'UComModalTutorialPopup_C::Darken' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, DoT_1) == 0x000530, "Member 'UComModalTutorialPopup_C::DoT_1' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, DoT_2) == 0x000538, "Member 'UComModalTutorialPopup_C::DoT_2' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, DoT_3) == 0x000540, "Member 'UComModalTutorialPopup_C::DoT_3' has a wrong offset!");
-static_assert(offsetof(UComModalTutorialPopup_C, flametuto) == 0x000548, "Member 'UComModalTutorialPopup_C::flametuto' has a wrong offset!");
 
 }
 

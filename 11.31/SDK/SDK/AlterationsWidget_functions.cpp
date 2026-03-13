@@ -17,198 +17,6 @@
 namespace SDK
 {
 
-// Function AlterationsWidget.AlterationsWidget_C.Clear
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationsWidget_C::Clear()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Clear");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.ClearAndInitialize
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IntroAlterations                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
-
-	Params::AlterationsWidget_C_ClearAndInitialize Parms{};
-
-	Parms.IntroAlterations = IntroAlterations;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.Reset
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationsWidget_C::Reset()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "Reset");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.CreateAnimations
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    IntroAnims                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAlterationsWidget_C::CreateAnimations(bool IntroAnims)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
-
-	Params::AlterationsWidget_C_CreateAnimations Parms{};
-
-	Parms.IntroAnims = IntroAnims;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.IntroAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationsWidget_C::IntroAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.CenterWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationsWidget_C::CenterWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.SetupBorders
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationsWidget_C::SetupBorders()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.TriggerModificationAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   ModifiedSlotIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
-
-	Params::AlterationsWidget_C_TriggerModificationAnim Parms{};
-
-	Parms.ModifiedSlotIndex = ModifiedSlotIndex;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.SetupAlteration
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonUserWidget*                Alteration                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortAlterationInfo*              AlterationInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
-
-	Params::AlterationsWidget_C_SetupAlteration Parms{};
-
-	Parms.Alteration = Alteration;
-	Parms.AlterationInfo = AlterationInfo;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.CreateAlterationWidget
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UCommonUserWidget*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
-
-	Params::AlterationsWidget_C_CreateAlterationWidget Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AlterationsWidget.AlterationsWidget_C.GenerateAlteration
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortAlterationInfo*              AlterationInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* AlterationInfo)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
-
-	Params::AlterationsWidget_C_GenerateAlteration Parms{};
-
-	Parms.AlterationInfo = AlterationInfo;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function AlterationsWidget.AlterationsWidget_C.AddAlterationToVerticalbox
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -410,6 +218,198 @@ void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint)
 	Params::AlterationsWidget_C_ExecuteUbergraph_AlterationsWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.Clear
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationsWidget_C::Clear()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "Clear");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.ClearAndInitialize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IntroAlterations                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
+
+	Params::AlterationsWidget_C_ClearAndInitialize Parms{};
+
+	Parms.IntroAlterations = IntroAlterations;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationsWidget_C::Reset()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "Reset");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.CreateAnimations
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    IntroAnims                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::CreateAnimations(bool IntroAnims)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
+
+	Params::AlterationsWidget_C_CreateAnimations Parms{};
+
+	Parms.IntroAnims = IntroAnims;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.IntroAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationsWidget_C::IntroAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.CenterWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationsWidget_C::CenterWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.SetupBorders
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationsWidget_C::SetupBorders()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.TriggerModificationAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   ModifiedSlotIndex                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
+
+	Params::AlterationsWidget_C_TriggerModificationAnim Parms{};
+
+	Parms.ModifiedSlotIndex = ModifiedSlotIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.SetupAlteration
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonUserWidget*                Alteration                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortAlterationInfo*              AlterationInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "SetupAlteration");
+
+	Params::AlterationsWidget_C_SetupAlteration Parms{};
+
+	Parms.Alteration = Alteration;
+	Parms.AlterationInfo = AlterationInfo;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.CreateAlterationWidget
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UCommonUserWidget*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UCommonUserWidget* UAlterationsWidget_C::CreateAlterationWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "CreateAlterationWidget");
+
+	Params::AlterationsWidget_C_CreateAlterationWidget Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.GenerateAlteration
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortAlterationInfo*              AlterationInfo                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* AlterationInfo)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationsWidget_C", "GenerateAlteration");
+
+	Params::AlterationsWidget_C_GenerateAlteration Parms{};
+
+	Parms.AlterationInfo = AlterationInfo;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

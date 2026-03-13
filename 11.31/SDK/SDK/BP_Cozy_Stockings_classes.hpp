@@ -57,28 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Cozy_Stockings_C">();
+		BP_STATIC_CLASS_IMPL("BP_Cozy_Stockings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Cozy_Stockings_C")
 	}
 	static class ABP_Cozy_Stockings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Cozy_Stockings_C>();
 	}
 };
-static_assert(alignof(ABP_Cozy_Stockings_C) == 0x000008, "Wrong alignment on ABP_Cozy_Stockings_C");
-static_assert(sizeof(ABP_Cozy_Stockings_C) == 0x0004D0, "Wrong size on ABP_Cozy_Stockings_C");
-static_assert(offsetof(ABP_Cozy_Stockings_C, UberGraphFrame) == 0x000468, "Member 'ABP_Cozy_Stockings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, FXLoc) == 0x000470, "Member 'ABP_Cozy_Stockings_C::FXLoc' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, Timeline_0_ProgressJiggle_43ACA2B24424D191A05A13A532DABCFF) == 0x000478, "Member 'ABP_Cozy_Stockings_C::Timeline_0_ProgressJiggle_43ACA2B24424D191A05A13A532DABCFF' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, Timeline_0__Direction_43ACA2B24424D191A05A13A532DABCFF) == 0x00047C, "Member 'ABP_Cozy_Stockings_C::Timeline_0__Direction_43ACA2B24424D191A05A13A532DABCFF' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, Timeline_0) == 0x000480, "Member 'ABP_Cozy_Stockings_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, Mid) == 0x000488, "Member 'ABP_Cozy_Stockings_C::Mid' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, MID_Highlightmesh) == 0x000490, "Member 'ABP_Cozy_Stockings_C::MID_Highlightmesh' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, PossibleStockingQuests) == 0x000498, "Member 'ABP_Cozy_Stockings_C::PossibleStockingQuests' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, bHasStockingQuestActive) == 0x0004A8, "Member 'ABP_Cozy_Stockings_C::bHasStockingQuestActive' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, SM_EmptyStocking) == 0x0004B0, "Member 'ABP_Cozy_Stockings_C::SM_EmptyStocking' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, SM_FullStocking) == 0x0004B8, "Member 'ABP_Cozy_Stockings_C::SM_FullStocking' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, FirstStockingQuest) == 0x0004C0, "Member 'ABP_Cozy_Stockings_C::FirstStockingQuest' has a wrong offset!");
-static_assert(offsetof(ABP_Cozy_Stockings_C, JiggleIntensity) == 0x0004C8, "Member 'ABP_Cozy_Stockings_C::JiggleIntensity' has a wrong offset!");
 
 }
 

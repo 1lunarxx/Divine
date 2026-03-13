@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInfoPresentationWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemInfoPresentationWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInfoPresentationWidget_C")
 	}
 	static class UItemInfoPresentationWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInfoPresentationWidget_C>();
 	}
 };
-static_assert(alignof(UItemInfoPresentationWidget_C) == 0x000008, "Wrong alignment on UItemInfoPresentationWidget_C");
-static_assert(sizeof(UItemInfoPresentationWidget_C) == 0x0002A0, "Wrong size on UItemInfoPresentationWidget_C");
-static_assert(offsetof(UItemInfoPresentationWidget_C, FadeAnim) == 0x000288, "Member 'UItemInfoPresentationWidget_C::FadeAnim' has a wrong offset!");
-static_assert(offsetof(UItemInfoPresentationWidget_C, InitialState) == 0x000290, "Member 'UItemInfoPresentationWidget_C::InitialState' has a wrong offset!");
-static_assert(offsetof(UItemInfoPresentationWidget_C, IntroAnim) == 0x000298, "Member 'UItemInfoPresentationWidget_C::IntroAnim' has a wrong offset!");
 
 }
 

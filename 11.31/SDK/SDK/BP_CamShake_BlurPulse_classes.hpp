@@ -23,15 +23,17 @@ class UBP_CamShake_BlurPulse_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CamShake_BlurPulse_C">();
+		BP_STATIC_CLASS_IMPL("BP_CamShake_BlurPulse_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CamShake_BlurPulse_C")
 	}
 	static class UBP_CamShake_BlurPulse_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_CamShake_BlurPulse_C>();
 	}
 };
-static_assert(alignof(UBP_CamShake_BlurPulse_C) == 0x000010, "Wrong alignment on UBP_CamShake_BlurPulse_C");
-static_assert(sizeof(UBP_CamShake_BlurPulse_C) == 0x000160, "Wrong size on UBP_CamShake_BlurPulse_C");
 
 }
 

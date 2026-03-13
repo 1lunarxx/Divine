@@ -23,9 +23,6 @@ struct AthenaSeasonBPTrackerWidget_C_ShowHowToMission final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonBPTrackerWidget_C_ShowHowToMission) == 0x000008, "Wrong alignment on AthenaSeasonBPTrackerWidget_C_ShowHowToMission");
-static_assert(sizeof(AthenaSeasonBPTrackerWidget_C_ShowHowToMission) == 0x000008, "Wrong size on AthenaSeasonBPTrackerWidget_C_ShowHowToMission");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ShowHowToMission, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'AthenaSeasonBPTrackerWidget_C_ShowHowToMission::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonBPTrackerWidget.AthenaSeasonBPTrackerWidget_C.OnAccountInfoChanged
 // 0x0034 (0x0034 - 0x0000)
@@ -34,9 +31,6 @@ struct AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged final
 public:
 	struct FFortPublicAccountInfo                 Result;                                            // 0x0000(0x0034)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged) == 0x000004, "Wrong alignment on AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged");
-static_assert(sizeof(AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged) == 0x000034, "Wrong size on AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged, Result) == 0x000000, "Member 'AthenaSeasonBPTrackerWidget_C_OnAccountInfoChanged::Result' has a wrong offset!");
 
 // Function AthenaSeasonBPTrackerWidget.AthenaSeasonBPTrackerWidget_C.FadOutHowToMission
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +39,6 @@ struct AthenaSeasonBPTrackerWidget_C_FadOutHowToMission final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonBPTrackerWidget_C_FadOutHowToMission) == 0x000008, "Wrong alignment on AthenaSeasonBPTrackerWidget_C_FadOutHowToMission");
-static_assert(sizeof(AthenaSeasonBPTrackerWidget_C_FadOutHowToMission) == 0x000008, "Wrong size on AthenaSeasonBPTrackerWidget_C_FadOutHowToMission");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_FadOutHowToMission, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'AthenaSeasonBPTrackerWidget_C_FadOutHowToMission::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonBPTrackerWidget.AthenaSeasonBPTrackerWidget_C.ExecuteUbergraph_AthenaSeasonBPTrackerWidget
 // 0x0098 (0x0098 - 0x0000)
@@ -70,20 +61,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue;               // 0x0068(0x0018)()
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0080(0x0018)()
 };
-static_assert(alignof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget) == 0x000008, "Wrong alignment on AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget");
-static_assert(sizeof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget) == 0x000098, "Wrong size on AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, EntryPoint) == 0x000000, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, K2Node_Event_Result) == 0x000004, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::K2Node_Event_Result' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000038, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000040, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000048, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Clamp_ReturnValue) == 0x000050, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Clamp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000054, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000058, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00005C, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Add_IntInt_ReturnValue) == 0x000060, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000068, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000080, "Member 'AthenaSeasonBPTrackerWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerWidget::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
 
 }
 

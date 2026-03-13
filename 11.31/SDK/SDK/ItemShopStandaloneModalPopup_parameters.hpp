@@ -38,20 +38,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(ItemShopStandaloneModalPopup_C_TapToClose) == 0x000008, "Wrong alignment on ItemShopStandaloneModalPopup_C_TapToClose");
-static_assert(sizeof(ItemShopStandaloneModalPopup_C_TapToClose) == 0x0003B0, "Wrong size on ItemShopStandaloneModalPopup_C_TapToClose");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, MyGeometry) == 0x000000, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, Mouse_Event) == 0x000038, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::Mouse_Event' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'ItemShopStandaloneModalPopup_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function ItemShopStandaloneModalPopup.ItemShopStandaloneModalPopup_C.BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -60,9 +46,6 @@ struct ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ItemShopStandaloneModalPopup_C_BndEvt__Button_ItemShop_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ItemShopStandaloneModalPopup.ItemShopStandaloneModalPopup_C.ExecuteUbergraph_ItemShopStandaloneModalPopup
 // 0x0020 (0x0020 - 0x0000)
@@ -75,12 +58,6 @@ public:
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup) == 0x000008, "Wrong alignment on ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup");
-static_assert(sizeof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup) == 0x000020, "Wrong size on ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup, EntryPoint) == 0x000000, "Member 'ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'ItemShopStandaloneModalPopup_C_ExecuteUbergraph_ItemShopStandaloneModalPopup::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 }
 

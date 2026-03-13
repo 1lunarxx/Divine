@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InScreenWidget_C">();
+		BP_STATIC_CLASS_IMPL("InScreenWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InScreenWidget_C")
 	}
 	static class UInScreenWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInScreenWidget_C>();
 	}
 };
-static_assert(alignof(UInScreenWidget_C) == 0x000008, "Wrong alignment on UInScreenWidget_C");
-static_assert(sizeof(UInScreenWidget_C) == 0x000238, "Wrong size on UInScreenWidget_C");
-static_assert(offsetof(UInScreenWidget_C, InScreenMedia) == 0x000230, "Member 'UInScreenWidget_C::InScreenMedia' has a wrong offset!");
 
 }
 

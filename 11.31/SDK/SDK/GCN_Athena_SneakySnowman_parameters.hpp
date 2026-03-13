@@ -18,27 +18,6 @@
 namespace SDK::Params
 {
 
-// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnRemoval
-// 0x00F0 (0x00F0 - 0x0000)
-struct GCN_Athena_SneakySnowman_C_OnRemoval final
-{
-public:
-	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(GCN_Athena_SneakySnowman_C_OnRemoval) == 0x000008, "Wrong alignment on GCN_Athena_SneakySnowman_C_OnRemoval");
-static_assert(sizeof(GCN_Athena_SneakySnowman_C_OnRemoval) == 0x0000F0, "Wrong size on GCN_Athena_SneakySnowman_C_OnRemoval");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, MyTarget) == 0x000000, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, Parameters) == 0x000008, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, ParticleComponents) == 0x0000C0, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, AudioComponents) == 0x0000D0, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnRemoval, BurstDecalInstance) == 0x0000E8, "Member 'GCN_Athena_SneakySnowman_C_OnRemoval::BurstDecalInstance' has a wrong offset!");
-
 // Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnLoopingStart
 // 0x00E0 (0x00E0 - 0x0000)
 struct GCN_Athena_SneakySnowman_C_OnLoopingStart final
@@ -49,12 +28,6 @@ public:
 	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCN_Athena_SneakySnowman_C_OnLoopingStart) == 0x000008, "Wrong alignment on GCN_Athena_SneakySnowman_C_OnLoopingStart");
-static_assert(sizeof(GCN_Athena_SneakySnowman_C_OnLoopingStart) == 0x0000E0, "Wrong size on GCN_Athena_SneakySnowman_C_OnLoopingStart");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GCN_Athena_SneakySnowman_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GCN_Athena_SneakySnowman_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GCN_Athena_SneakySnowman_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GCN_Athena_SneakySnowman_C_OnLoopingStart::AudioComponents' has a wrong offset!");
 
 // Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.ExecuteUbergraph_GCN_Athena_SneakySnowman
 // 0x04A0 (0x04A0 - 0x0000)
@@ -105,44 +78,19 @@ public:
 	struct FHitResult                             CallFunc_K2_SetActorLocation_SweepHitResult;       // 0x040C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_K2_SetActorLocation_ReturnValue;          // 0x0494(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman) == 0x000010, "Wrong alignment on GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman");
-static_assert(sizeof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman) == 0x0004A0, "Wrong size on GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, EntryPoint) == 0x000000, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_MyTarget_1) == 0x000010, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_MyTarget_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_Parameters_1) == 0x000018, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_Parameters_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_ParticleComponents_1) == 0x0000D0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_ParticleComponents_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_AudioComponents_1) == 0x0000E0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_AudioComponents_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_BurstCameraShakeInstance) == 0x0000F0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_BurstDecalInstance) == 0x0000F8, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_CreateDelegate_OutputDelegate) == 0x000100, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_MyTarget) == 0x000110, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_Parameters) == 0x000118, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_ParticleComponents) == 0x0001D0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_Event_AudioComponents) == 0x0001E0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001F0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000200, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_bSuccess) == 0x000208, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x00020C, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000294, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_GetTransform_ReturnValue) == 0x0002A0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_BreakTransform_Location) == 0x0002D0, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_BreakTransform_Location' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_BreakTransform_Rotation) == 0x0002DC, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_BreakTransform_Rotation' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_BreakTransform_Scale) == 0x0002E8, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_BreakTransform_Scale' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_Add_VectorVector_ReturnValue) == 0x0002F4, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000300, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_MakeTransform_ReturnValue) == 0x000310, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000340, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000350, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_IsValid_ReturnValue) == 0x000358, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1) == 0x000360, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_AsFort_Player_Pawn_Athena_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_bSuccess_1) == 0x000368, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_FinishSpawningActor_ReturnValue) == 0x000370, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_SetActorRelativeRotation_SweepHitResult) == 0x000378, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_SetActorRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_AsFort_Player_Pawn_Athena_2) == 0x000400, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_AsFort_Player_Pawn_Athena_2' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, K2Node_DynamicCast_bSuccess_2) == 0x000408, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x00040C, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman, CallFunc_K2_SetActorLocation_ReturnValue) == 0x000494, "Member 'GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
+
+// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnRemoval
+// 0x00F0 (0x00F0 - 0x0000)
+struct GCN_Athena_SneakySnowman_C_OnRemoval final
+{
+public:
+	class AActor*                                 MyTarget;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
 
 }
 

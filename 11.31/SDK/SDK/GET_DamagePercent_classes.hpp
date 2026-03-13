@@ -23,15 +23,17 @@ class UGET_DamagePercent_C : public UGET_DamageParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_DamagePercent_C">();
+		BP_STATIC_CLASS_IMPL("GET_DamagePercent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_DamagePercent_C")
 	}
 	static class UGET_DamagePercent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_DamagePercent_C>();
 	}
 };
-static_assert(alignof(UGET_DamagePercent_C) == 0x000008, "Wrong alignment on UGET_DamagePercent_C");
-static_assert(sizeof(UGET_DamagePercent_C) == 0x000770, "Wrong size on UGET_DamagePercent_C");
 
 }
 

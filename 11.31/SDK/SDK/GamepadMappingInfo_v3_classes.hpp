@@ -144,7 +144,7 @@ public:
 	class UGamepadKeyTextButton_C*                LastClickedButton;                                 // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortInputActionGroup                         CurrentInputActionGroup;                           // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_639[0x7];                                      // 0x0639(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FKey& Key)> CustomKeySelected;                                 // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FKey& Key)> CustomKeySelected;                        // 0x0640(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TArray<class UGamepadKeyTextButton_C*>        CustomKeyButtons;                                  // 0x0650(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
 	TMulticastInlineDelegate<void()>              Image_LightboxClicked;                             // 0x0660(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                   CombatModeIdName;                                  // 0x0670(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -194,141 +194,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GamepadMappingInfo_v3_C">();
+		BP_STATIC_CLASS_IMPL("GamepadMappingInfo_v3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GamepadMappingInfo_v3_C")
 	}
 	static class UGamepadMappingInfo_v3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGamepadMappingInfo_v3_C>();
 	}
 };
-static_assert(alignof(UGamepadMappingInfo_v3_C) == 0x000008, "Wrong alignment on UGamepadMappingInfo_v3_C");
-static_assert(sizeof(UGamepadMappingInfo_v3_C) == 0x0006B0, "Wrong size on UGamepadMappingInfo_v3_C");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, UberGraphFrame) == 0x000258, "Member 'UGamepadMappingInfo_v3_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CommonBorder_LeftBumperSeparator) == 0x000260, "Member 'UGamepadMappingInfo_v3_C::CommonBorder_LeftBumperSeparator' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CommonBorder_RightBumperSeparator) == 0x000268, "Member 'UGamepadMappingInfo_v3_C::CommonBorder_RightBumperSeparator' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CommonBorder_Legend) == 0x000270, "Member 'UGamepadMappingInfo_v3_C::CommonBorder_Legend' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DeadzoneAdjustment_Look) == 0x000278, "Member 'UGamepadMappingInfo_v3_C::DeadzoneAdjustment_Look' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DeadzoneAdjustment_Move) == 0x000280, "Member 'UGamepadMappingInfo_v3_C::DeadzoneAdjustment_Move' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DPadDown) == 0x000288, "Member 'UGamepadMappingInfo_v3_C::DPadDown' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadDown2) == 0x000290, "Member 'UGamepadMappingInfo_v3_C::DpadDown2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadDown_Custom) == 0x000298, "Member 'UGamepadMappingInfo_v3_C::DpadDown_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DPadLeft) == 0x0002A0, "Member 'UGamepadMappingInfo_v3_C::DPadLeft' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadLeft2) == 0x0002A8, "Member 'UGamepadMappingInfo_v3_C::DpadLeft2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadLeft_Custom) == 0x0002B0, "Member 'UGamepadMappingInfo_v3_C::DpadLeft_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DPadRight) == 0x0002B8, "Member 'UGamepadMappingInfo_v3_C::DPadRight' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadRight2) == 0x0002C0, "Member 'UGamepadMappingInfo_v3_C::DpadRight2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadRight_Custom) == 0x0002C8, "Member 'UGamepadMappingInfo_v3_C::DpadRight_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DPadUp) == 0x0002D0, "Member 'UGamepadMappingInfo_v3_C::DPadUp' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadUp2) == 0x0002D8, "Member 'UGamepadMappingInfo_v3_C::DpadUp2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DpadUp_Custom) == 0x0002E0, "Member 'UGamepadMappingInfo_v3_C::DpadUp_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceBottom_Custom) == 0x0002E8, "Member 'UGamepadMappingInfo_v3_C::FaceBottom_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceButtonBot) == 0x0002F0, "Member 'UGamepadMappingInfo_v3_C::FaceButtonBot' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceButtonLeft) == 0x0002F8, "Member 'UGamepadMappingInfo_v3_C::FaceButtonLeft' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceButtonRight) == 0x000300, "Member 'UGamepadMappingInfo_v3_C::FaceButtonRight' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceButtonTop) == 0x000308, "Member 'UGamepadMappingInfo_v3_C::FaceButtonTop' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceLeft_Custom) == 0x000310, "Member 'UGamepadMappingInfo_v3_C::FaceLeft_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceRight_Custom) == 0x000318, "Member 'UGamepadMappingInfo_v3_C::FaceRight_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FaceTop_Custom) == 0x000320, "Member 'UGamepadMappingInfo_v3_C::FaceTop_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FortRichTextBlock_DeadzoneWarning) == 0x000328, "Member 'UGamepadMappingInfo_v3_C::FortRichTextBlock_DeadzoneWarning' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FortRichTextBlock_DoubleTap) == 0x000330, "Member 'UGamepadMappingInfo_v3_C::FortRichTextBlock_DoubleTap' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, FortRichTextBlock_Hold) == 0x000338, "Member 'UGamepadMappingInfo_v3_C::FortRichTextBlock_Hold' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, GamepadCustomActionSelectorPanel_v3) == 0x000340, "Member 'UGamepadMappingInfo_v3_C::GamepadCustomActionSelectorPanel_v3' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalBox_LB_RB) == 0x000348, "Member 'UGamepadMappingInfo_v3_C::HorizontalBox_LB_RB' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalBox_LB_RT) == 0x000350, "Member 'UGamepadMappingInfo_v3_C::HorizontalBox_LB_RT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalBox_RB_LT) == 0x000358, "Member 'UGamepadMappingInfo_v3_C::HorizontalBox_RB_LT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalBox_AllText) == 0x000360, "Member 'UGamepadMappingInfo_v3_C::HorizontalBox_AllText' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalBox_CustomButtons) == 0x000368, "Member 'UGamepadMappingInfo_v3_C::HorizontalBox_CustomButtons' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, HorizontalTabList_CustomModes) == 0x000370, "Member 'UGamepadMappingInfo_v3_C::HorizontalTabList_CustomModes' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Image_DoubleTap) == 0x000378, "Member 'UGamepadMappingInfo_v3_C::Image_DoubleTap' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Image_Gamepad) == 0x000380, "Member 'UGamepadMappingInfo_v3_C::Image_Gamepad' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Image_Hold) == 0x000388, "Member 'UGamepadMappingInfo_v3_C::Image_Hold' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Image_LightBox) == 0x000390, "Member 'UGamepadMappingInfo_v3_C::Image_LightBox' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LB_RBAction) == 0x000398, "Member 'UGamepadMappingInfo_v3_C::LB_RBAction' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LB_RTAction) == 0x0003A0, "Member 'UGamepadMappingInfo_v3_C::LB_RTAction' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LB_Custom) == 0x0003A8, "Member 'UGamepadMappingInfo_v3_C::LB_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LS) == 0x0003B0, "Member 'UGamepadMappingInfo_v3_C::LS' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LS_Click_Custom) == 0x0003B8, "Member 'UGamepadMappingInfo_v3_C::LS_Click_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LSCombo1) == 0x0003C0, "Member 'UGamepadMappingInfo_v3_C::LSCombo1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LSCombo2) == 0x0003C8, "Member 'UGamepadMappingInfo_v3_C::LSCombo2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LStick) == 0x0003D0, "Member 'UGamepadMappingInfo_v3_C::LStick' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LStick2) == 0x0003D8, "Member 'UGamepadMappingInfo_v3_C::LStick2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LStickClick) == 0x0003E0, "Member 'UGamepadMappingInfo_v3_C::LStickClick' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LStickClick2) == 0x0003E8, "Member 'UGamepadMappingInfo_v3_C::LStickClick2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LT) == 0x0003F0, "Member 'UGamepadMappingInfo_v3_C::LT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LT_Custom) == 0x0003F8, "Member 'UGamepadMappingInfo_v3_C::LT_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LTCombo) == 0x000400, "Member 'UGamepadMappingInfo_v3_C::LTCombo' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Overlay_DeadzoneAdjustment) == 0x000408, "Member 'UGamepadMappingInfo_v3_C::Overlay_DeadzoneAdjustment' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RB_LTAction) == 0x000410, "Member 'UGamepadMappingInfo_v3_C::RB_LTAction' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RB_Custom) == 0x000418, "Member 'UGamepadMappingInfo_v3_C::RB_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RS) == 0x000420, "Member 'UGamepadMappingInfo_v3_C::RS' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RS_Click_Custom) == 0x000428, "Member 'UGamepadMappingInfo_v3_C::RS_Click_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RSCombo) == 0x000430, "Member 'UGamepadMappingInfo_v3_C::RSCombo' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RSCombo2) == 0x000438, "Member 'UGamepadMappingInfo_v3_C::RSCombo2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RStick) == 0x000440, "Member 'UGamepadMappingInfo_v3_C::RStick' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RStickClick) == 0x000448, "Member 'UGamepadMappingInfo_v3_C::RStickClick' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, rt) == 0x000450, "Member 'UGamepadMappingInfo_v3_C::rt' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RT_Custom) == 0x000458, "Member 'UGamepadMappingInfo_v3_C::RT_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, RTCombo) == 0x000460, "Member 'UGamepadMappingInfo_v3_C::RTCombo' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Select_Custom) == 0x000468, "Member 'UGamepadMappingInfo_v3_C::Select_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Separator_LB_RBfromLB_RT) == 0x000470, "Member 'UGamepadMappingInfo_v3_C::Separator_LB_RBfromLB_RT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, SpecialLeft) == 0x000478, "Member 'UGamepadMappingInfo_v3_C::SpecialLeft' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, SpecialRight) == 0x000480, "Member 'UGamepadMappingInfo_v3_C::SpecialRight' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Start_Custom) == 0x000488, "Member 'UGamepadMappingInfo_v3_C::Start_Custom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Bottom) == 0x000490, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Bottom' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Left_1) == 0x000498, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Left_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Left_2) == 0x0004A0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Left_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Left_3) == 0x0004A8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Left_3' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Right_1) == 0x0004B0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Right_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Right_2) == 0x0004B8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Right_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Right_3) == 0x0004C0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Right_3' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Top_1) == 0x0004C8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Top_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Face_Button_Top_2) == 0x0004D0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Face_Button_Top_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_LB) == 0x0004D8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_LB' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_LT) == 0x0004E0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_LT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_RB) == 0x0004E8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_RB' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_RS) == 0x0004F0, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_RS' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_RS_Click_1) == 0x0004F8, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_RS_Click_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_RS_Click_2) == 0x000500, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_RS_Click_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_RT) == 0x000508, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_RT' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Select_1) == 0x000510, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Select_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Select_2) == 0x000518, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Select_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Gamepad_Start) == 0x000520, "Member 'UGamepadMappingInfo_v3_C::Text_Gamepad_Start' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Mode) == 0x000528, "Member 'UGamepadMappingInfo_v3_C::Text_Mode' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_Dpad_Down) == 0x000530, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_Dpad_Down' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_Dpad_Left) == 0x000538, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_Dpad_Left' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_Dpad_Right) == 0x000540, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_Dpad_Right' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_Dpad_Up) == 0x000548, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_Dpad_Up' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_LS) == 0x000550, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_LS' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_LS_Click_1) == 0x000558, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_LS_Click_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_PS4_LS_Click_2) == 0x000560, "Member 'UGamepadMappingInfo_v3_C::Text_PS4_LS_Click_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_Dpad_Down) == 0x000568, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_Dpad_Down' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_Dpad_Left) == 0x000570, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_Dpad_Left' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_Dpad_Right) == 0x000578, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_Dpad_Right' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_Dpad_Up) == 0x000580, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_Dpad_Up' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_LS) == 0x000588, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_LS' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_LS_Click_1) == 0x000590, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_LS_Click_1' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Text_Xbox_LS_Click_2) == 0x000598, "Member 'UGamepadMappingInfo_v3_C::Text_Xbox_LS_Click_2' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, VerticalBox_PS4_LS_And_Dpad) == 0x0005A0, "Member 'UGamepadMappingInfo_v3_C::VerticalBox_PS4_LS_And_Dpad' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, VerticalBox_Xbox_LS_And_Dpad) == 0x0005A8, "Member 'UGamepadMappingInfo_v3_C::VerticalBox_Xbox_LS_And_Dpad' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, XB1_Images) == 0x0005B0, "Member 'UGamepadMappingInfo_v3_C::XB1_Images' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, PS4_Images) == 0x0005C0, "Member 'UGamepadMappingInfo_v3_C::PS4_Images' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Appropriate_Platform_Images) == 0x0005D0, "Member 'UGamepadMappingInfo_v3_C::Appropriate_Platform_Images' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, GamepadConfigTextWidgets) == 0x0005E0, "Member 'UGamepadMappingInfo_v3_C::GamepadConfigTextWidgets' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, ButtonTextLabels_STW_CombatPro_Build) == 0x0005F0, "Member 'UGamepadMappingInfo_v3_C::ButtonTextLabels_STW_CombatPro_Build' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, ButtonTextLabels_STW_CombatPro_Combat) == 0x000600, "Member 'UGamepadMappingInfo_v3_C::ButtonTextLabels_STW_CombatPro_Combat' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Erebus_Images) == 0x000610, "Member 'UGamepadMappingInfo_v3_C::Erebus_Images' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, ButtonTextLabels_STW_BuilderPro_Build) == 0x000620, "Member 'UGamepadMappingInfo_v3_C::ButtonTextLabels_STW_BuilderPro_Build' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, LastClickedButton) == 0x000630, "Member 'UGamepadMappingInfo_v3_C::LastClickedButton' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CurrentInputActionGroup) == 0x000638, "Member 'UGamepadMappingInfo_v3_C::CurrentInputActionGroup' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CustomKeySelected) == 0x000640, "Member 'UGamepadMappingInfo_v3_C::CustomKeySelected' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CustomKeyButtons) == 0x000650, "Member 'UGamepadMappingInfo_v3_C::CustomKeyButtons' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Image_LightboxClicked) == 0x000660, "Member 'UGamepadMappingInfo_v3_C::Image_LightboxClicked' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CombatModeIdName) == 0x000670, "Member 'UGamepadMappingInfo_v3_C::CombatModeIdName' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, BuildModeIdName) == 0x000678, "Member 'UGamepadMappingInfo_v3_C::BuildModeIdName' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, EditModeIdName) == 0x000680, "Member 'UGamepadMappingInfo_v3_C::EditModeIdName' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, CustomButtonNavLeft) == 0x000688, "Member 'UGamepadMappingInfo_v3_C::CustomButtonNavLeft' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, Generic_Images) == 0x000698, "Member 'UGamepadMappingInfo_v3_C::Generic_Images' has a wrong offset!");
-static_assert(offsetof(UGamepadMappingInfo_v3_C, DeadZoneMoveIdName) == 0x0006A8, "Member 'UGamepadMappingInfo_v3_C::DeadZoneMoveIdName' has a wrong offset!");
 
 }
 

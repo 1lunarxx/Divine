@@ -52,22 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelContentsAnswerFreeFormTextWidget_C")
 	}
 	static class UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C");
-static_assert(sizeof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C) == 0x0002C0, "Wrong size on UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, UberGraphFrame) == 0x000278, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, EntryTextBox) == 0x000280, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::EntryTextBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, LimitsTextBlock) == 0x000288, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::LimitsTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, bIgnoreAnswerChange) == 0x000290, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::bIgnoreAnswerChange' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, Text_Subtitle) == 0x000298, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::Text_Subtitle' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, LimitsStyle_Normal) == 0x0002B0, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::LimitsStyle_Normal' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C, LimitsStyle_Overflow) == 0x0002B8, "Member 'UPlayerSurveyPanelContentsAnswerFreeFormTextWidget_C::LimitsStyle_Overflow' has a wrong offset!");
 
 }
 

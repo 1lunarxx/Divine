@@ -31,20 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SignInWidget_C">();
+		BP_STATIC_CLASS_IMPL("SignInWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SignInWidget_C")
 	}
 	static class USignInWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USignInWidget_C>();
 	}
 };
-static_assert(alignof(USignInWidget_C) == 0x000008, "Wrong alignment on USignInWidget_C");
-static_assert(sizeof(USignInWidget_C) == 0x0004A8, "Wrong size on USignInWidget_C");
-static_assert(offsetof(USignInWidget_C, ButtonSlot) == 0x000478, "Member 'USignInWidget_C::ButtonSlot' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, CommonLazyImage_0) == 0x000480, "Member 'USignInWidget_C::CommonLazyImage_0' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, ContentBox) == 0x000488, "Member 'USignInWidget_C::ContentBox' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, EmergencyNoticeWidget) == 0x000490, "Member 'USignInWidget_C::EmergencyNoticeWidget' has a wrong offset!");
-static_assert(offsetof(USignInWidget_C, LoginInputAction) == 0x000498, "Member 'USignInWidget_C::LoginInputAction' has a wrong offset!");
 
 }
 

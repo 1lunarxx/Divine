@@ -41,19 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventStoreHostPanels_C">();
+		BP_STATIC_CLASS_IMPL("EventStoreHostPanels_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventStoreHostPanels_C")
 	}
 	static class UEventStoreHostPanels_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventStoreHostPanels_C>();
 	}
 };
-static_assert(alignof(UEventStoreHostPanels_C) == 0x000008, "Wrong alignment on UEventStoreHostPanels_C");
-static_assert(sizeof(UEventStoreHostPanels_C) == 0x000340, "Wrong size on UEventStoreHostPanels_C");
-static_assert(offsetof(UEventStoreHostPanels_C, UberGraphFrame) == 0x000320, "Member 'UEventStoreHostPanels_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventStoreHostPanels_C, DetailPanelTabList) == 0x000328, "Member 'UEventStoreHostPanels_C::DetailPanelTabList' has a wrong offset!");
-static_assert(offsetof(UEventStoreHostPanels_C, DetailPanelWidgetSwitcher) == 0x000330, "Member 'UEventStoreHostPanels_C::DetailPanelWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UEventStoreHostPanels_C, ItemSelected) == 0x000338, "Member 'UEventStoreHostPanels_C::ItemSelected' has a wrong offset!");
 
 }
 

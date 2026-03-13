@@ -56,29 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TutorialToastWidget_C">();
+		BP_STATIC_CLASS_IMPL("TutorialToastWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TutorialToastWidget_C")
 	}
 	static class UTutorialToastWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTutorialToastWidget_C>();
 	}
 };
-static_assert(alignof(UTutorialToastWidget_C) == 0x000008, "Wrong alignment on UTutorialToastWidget_C");
-static_assert(sizeof(UTutorialToastWidget_C) == 0x0002F8, "Wrong size on UTutorialToastWidget_C");
-static_assert(offsetof(UTutorialToastWidget_C, UberGraphFrame) == 0x000258, "Member 'UTutorialToastWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Outro) == 0x000260, "Member 'UTutorialToastWidget_C::Outro' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Intro) == 0x000268, "Member 'UTutorialToastWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Bolt) == 0x000270, "Member 'UTutorialToastWidget_C::Bolt' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Description) == 0x000278, "Member 'UTutorialToastWidget_C::Description' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, FlashingBang) == 0x000280, "Member 'UTutorialToastWidget_C::FlashingBang' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, SmallPreviewImageSB) == 0x000288, "Member 'UTutorialToastWidget_C::SmallPreviewImageSB' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, SmallPreviewPortrait) == 0x000290, "Member 'UTutorialToastWidget_C::SmallPreviewPortrait' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, SpecialToast) == 0x000298, "Member 'UTutorialToastWidget_C::SpecialToast' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Title) == 0x0002A0, "Member 'UTutorialToastWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, OnFinishedToast) == 0x0002A8, "Member 'UTutorialToastWidget_C::OnFinishedToast' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, Dev_TestImage) == 0x0002B8, "Member 'UTutorialToastWidget_C::Dev_TestImage' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, OnToastClicked) == 0x0002E0, "Member 'UTutorialToastWidget_C::OnToastClicked' has a wrong offset!");
-static_assert(offsetof(UTutorialToastWidget_C, DoNotUseTimerToDismiss) == 0x0002F0, "Member 'UTutorialToastWidget_C::DoNotUseTimerToDismiss' has a wrong offset!");
 
 }
 

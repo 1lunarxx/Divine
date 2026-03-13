@@ -56,29 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDTeaserWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDTeaserWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDTeaserWidget_C")
 	}
 	static class UAthenaMOTDTeaserWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDTeaserWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDTeaserWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDTeaserWidget_C");
-static_assert(sizeof(UAthenaMOTDTeaserWidget_C) == 0x0004B0, "Wrong size on UAthenaMOTDTeaserWidget_C");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, UberGraphFrame) == 0x000440, "Member 'UAthenaMOTDTeaserWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, OnHovered) == 0x000448, "Member 'UAthenaMOTDTeaserWidget_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, Border_Details) == 0x000450, "Member 'UAthenaMOTDTeaserWidget_C::Border_Details' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, Border_PipDisplay) == 0x000458, "Member 'UAthenaMOTDTeaserWidget_C::Border_PipDisplay' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, InputActionWidget) == 0x000460, "Member 'UAthenaMOTDTeaserWidget_C::InputActionWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, RichTextBlock_NewsTitle) == 0x000468, "Member 'UAthenaMOTDTeaserWidget_C::RichTextBlock_NewsTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, SimpleCommonButton) == 0x000470, "Member 'UAthenaMOTDTeaserWidget_C::SimpleCommonButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, PerItemDisplayTime) == 0x000478, "Member 'UAthenaMOTDTeaserWidget_C::PerItemDisplayTime' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, NumItems) == 0x00047C, "Member 'UAthenaMOTDTeaserWidget_C::NumItems' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, CurDisplayedItemIndex) == 0x000480, "Member 'UAthenaMOTDTeaserWidget_C::CurDisplayedItemIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, ScrollToNextItemTimerHandle) == 0x000488, "Member 'UAthenaMOTDTeaserWidget_C::ScrollToNextItemTimerHandle' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, DesignTime) == 0x000490, "Member 'UAthenaMOTDTeaserWidget_C::DesignTime' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, MIDFont) == 0x000498, "Member 'UAthenaMOTDTeaserWidget_C::MIDFont' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTeaserWidget_C, DefaultColor) == 0x0004A0, "Member 'UAthenaMOTDTeaserWidget_C::DefaultColor' has a wrong offset!");
 
 }
 

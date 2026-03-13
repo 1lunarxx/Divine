@@ -25,9 +25,6 @@ struct MissionInfoPanel_C_SetMissionStyle final
 public:
 	struct FFortChallengeSetStyle                 Style;                                             // 0x0000(0x00A0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(MissionInfoPanel_C_SetMissionStyle) == 0x000008, "Wrong alignment on MissionInfoPanel_C_SetMissionStyle");
-static_assert(sizeof(MissionInfoPanel_C_SetMissionStyle) == 0x0000A0, "Wrong size on MissionInfoPanel_C_SetMissionStyle");
-static_assert(offsetof(MissionInfoPanel_C_SetMissionStyle, Style) == 0x000000, "Member 'MissionInfoPanel_C_SetMissionStyle::Style' has a wrong offset!");
 
 // Function MissionInfoPanel.MissionInfoPanel_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,6 @@ struct MissionInfoPanel_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MissionInfoPanel_C_PreConstruct) == 0x000001, "Wrong alignment on MissionInfoPanel_C_PreConstruct");
-static_assert(sizeof(MissionInfoPanel_C_PreConstruct) == 0x000001, "Wrong size on MissionInfoPanel_C_PreConstruct");
-static_assert(offsetof(MissionInfoPanel_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'MissionInfoPanel_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function MissionInfoPanel.MissionInfoPanel_C.ExecuteUbergraph_MissionInfoPanel
 // 0x0108 (0x0108 - 0x0000)
@@ -68,26 +62,6 @@ public:
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel) == 0x000008, "Wrong alignment on MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel");
-static_assert(sizeof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel) == 0x000108, "Wrong size on MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, EntryPoint) == 0x000000, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_byte_Variable) == 0x000004, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_bool_Variable) == 0x000005, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_byte_Variable_1) == 0x000006, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_byte_Variable_2) == 0x000007, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_bool_Variable_1) == 0x000008, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_float_Variable) == 0x00000C, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_float_Variable_1) == 0x000010, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_Select_Default) == 0x000020, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_byte_Variable_3) == 0x000024, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000028, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, Temp_bool_Variable_2) == 0x000030, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_Select_Default_1) == 0x000031, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_Event_Style) == 0x000038, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_Event_Style' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_MakeStruct_SlateColor) == 0x0000D8, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_Event_IsDesignTime) == 0x000100, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel, K2Node_Select_Default_2) == 0x000101, "Member 'MissionInfoPanel_C_ExecuteUbergraph_MissionInfoPanel::K2Node_Select_Default_2' has a wrong offset!");
 
 }
 

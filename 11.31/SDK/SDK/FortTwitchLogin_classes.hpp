@@ -31,7 +31,7 @@ public:
 	class UIconTextButton_C*                      SignOutButton;                                     // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TwitchIdEntry;                                     // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   NoLinkedAccountText;                               // 0x02E0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(class FText NewTooltipText)> OnRequestToolTipChange;                            // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FText NewTooltipText)> OnRequestToolTipChange;               // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bShowingError;                                     // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
@@ -60,25 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortTwitchLogin_C">();
+		BP_STATIC_CLASS_IMPL("FortTwitchLogin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortTwitchLogin_C")
 	}
 	static class UFortTwitchLogin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortTwitchLogin_C>();
 	}
 };
-static_assert(alignof(UFortTwitchLogin_C) == 0x000008, "Wrong alignment on UFortTwitchLogin_C");
-static_assert(sizeof(UFortTwitchLogin_C) == 0x000310, "Wrong size on UFortTwitchLogin_C");
-static_assert(offsetof(UFortTwitchLogin_C, UberGraphFrame) == 0x0002A8, "Member 'UFortTwitchLogin_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, NotSignedInBox) == 0x0002B0, "Member 'UFortTwitchLogin_C::NotSignedInBox' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignedInBox) == 0x0002B8, "Member 'UFortTwitchLogin_C::SignedInBox' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignInButton) == 0x0002C0, "Member 'UFortTwitchLogin_C::SignInButton' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignInStatusSwitcher) == 0x0002C8, "Member 'UFortTwitchLogin_C::SignInStatusSwitcher' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, SignOutButton) == 0x0002D0, "Member 'UFortTwitchLogin_C::SignOutButton' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, TwitchIdEntry) == 0x0002D8, "Member 'UFortTwitchLogin_C::TwitchIdEntry' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, NoLinkedAccountText) == 0x0002E0, "Member 'UFortTwitchLogin_C::NoLinkedAccountText' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, OnRequestToolTipChange) == 0x0002F8, "Member 'UFortTwitchLogin_C::OnRequestToolTipChange' has a wrong offset!");
-static_assert(offsetof(UFortTwitchLogin_C, bShowingError) == 0x000308, "Member 'UFortTwitchLogin_C::bShowingError' has a wrong offset!");
 
 }
 

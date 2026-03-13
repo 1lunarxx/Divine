@@ -69,40 +69,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Frontend_ShopBG_C">();
+		BP_STATIC_CLASS_IMPL("BP_Frontend_ShopBG_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Frontend_ShopBG_C")
 	}
 	static class ABP_Frontend_ShopBG_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Frontend_ShopBG_C>();
 	}
 };
-static_assert(alignof(ABP_Frontend_ShopBG_C) == 0x000008, "Wrong alignment on ABP_Frontend_ShopBG_C");
-static_assert(sizeof(ABP_Frontend_ShopBG_C) == 0x0002D8, "Wrong size on ABP_Frontend_ShopBG_C");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, UberGraphFrame) == 0x000218, "Member 'ABP_Frontend_ShopBG_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, StandardBackgroundPlane) == 0x000220, "Member 'ABP_Frontend_ShopBG_C::StandardBackgroundPlane' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Cone) == 0x000228, "Member 'ABP_Frontend_ShopBG_C::Cone' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Plane) == 0x000230, "Member 'ABP_Frontend_ShopBG_C::Plane' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Scene) == 0x000238, "Member 'ABP_Frontend_ShopBG_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, BackgroundTexturePlane) == 0x000240, "Member 'ABP_Frontend_ShopBG_C::BackgroundTexturePlane' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, VeryLargeBackgroundPlane) == 0x000248, "Member 'ABP_Frontend_ShopBG_C::VeryLargeBackgroundPlane' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Scene_Signal) == 0x000250, "Member 'ABP_Frontend_ShopBG_C::Scene_Signal' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, DefaultSceneRoot) == 0x000258, "Member 'ABP_Frontend_ShopBG_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, BlackMondayRotation_NewTrack_0_31B6A38F4ACA527A883B3EBC702A1D11) == 0x000260, "Member 'ABP_Frontend_ShopBG_C::BlackMondayRotation_NewTrack_0_31B6A38F4ACA527A883B3EBC702A1D11' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, BlackMondayRotation__Direction_31B6A38F4ACA527A883B3EBC702A1D11) == 0x000264, "Member 'ABP_Frontend_ShopBG_C::BlackMondayRotation__Direction_31B6A38F4ACA527A883B3EBC702A1D11' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, BlackMondayRotation) == 0x000268, "Member 'ABP_Frontend_ShopBG_C::BlackMondayRotation' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalIntro_NewTrack_0_CB796D694FE88CB3D9AEFFB3C7CA6D41) == 0x000270, "Member 'ABP_Frontend_ShopBG_C::SignalIntro_NewTrack_0_CB796D694FE88CB3D9AEFFB3C7CA6D41' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalIntro__Direction_CB796D694FE88CB3D9AEFFB3C7CA6D41) == 0x000274, "Member 'ABP_Frontend_ShopBG_C::SignalIntro__Direction_CB796D694FE88CB3D9AEFFB3C7CA6D41' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalIntro) == 0x000278, "Member 'ABP_Frontend_ShopBG_C::SignalIntro' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalAmbientMovement_Float_0C7FC81E45F7A9B3A9FA3E93878D5F70) == 0x000280, "Member 'ABP_Frontend_ShopBG_C::SignalAmbientMovement_Float_0C7FC81E45F7A9B3A9FA3E93878D5F70' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalAmbientMovement__Direction_0C7FC81E45F7A9B3A9FA3E93878D5F70) == 0x000284, "Member 'ABP_Frontend_ShopBG_C::SignalAmbientMovement__Direction_0C7FC81E45F7A9B3A9FA3E93878D5F70' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, SignalAmbientMovement) == 0x000288, "Member 'ABP_Frontend_ShopBG_C::SignalAmbientMovement' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Rot_Intro) == 0x000290, "Member 'ABP_Frontend_ShopBG_C::Rot_Intro' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, NextRot) == 0x00029C, "Member 'ABP_Frontend_ShopBG_C::NextRot' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Rot_0) == 0x0002A8, "Member 'ABP_Frontend_ShopBG_C::Rot_0' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Rot_2) == 0x0002B4, "Member 'ABP_Frontend_ShopBG_C::Rot_2' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, PlayRate) == 0x0002C0, "Member 'ABP_Frontend_ShopBG_C::PlayRate' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, Rot_IntroStart) == 0x0002C4, "Member 'ABP_Frontend_ShopBG_C::Rot_IntroStart' has a wrong offset!");
-static_assert(offsetof(ABP_Frontend_ShopBG_C, bHasEvent) == 0x0002D0, "Member 'ABP_Frontend_ShopBG_C::bHasEvent' has a wrong offset!");
 
 }
 

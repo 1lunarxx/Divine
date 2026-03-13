@@ -4717,12 +4717,12 @@ void ICommonPoolableWidgetInterface::OnAcquireFromPool()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPoolableWidgetInterface", "OnAcquireFromPool");
+		Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnAcquireFromPool");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -4736,12 +4736,12 @@ void ICommonPoolableWidgetInterface::OnReleaseToPool()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CommonPoolableWidgetInterface", "OnReleaseToPool");
+		Func = AsUObject()->Class->GetFunction("CommonPoolableWidgetInterface", "OnReleaseToPool");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

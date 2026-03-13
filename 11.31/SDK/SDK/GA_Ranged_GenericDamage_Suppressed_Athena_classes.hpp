@@ -23,15 +23,17 @@ class UGA_Ranged_GenericDamage_Suppressed_Athena_C final : public UGA_Ranged_Gen
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Ranged_GenericDamage_Suppressed_Athena_C">();
+		BP_STATIC_CLASS_IMPL("GA_Ranged_GenericDamage_Suppressed_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Ranged_GenericDamage_Suppressed_Athena_C")
 	}
 	static class UGA_Ranged_GenericDamage_Suppressed_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Ranged_GenericDamage_Suppressed_Athena_C>();
 	}
 };
-static_assert(alignof(UGA_Ranged_GenericDamage_Suppressed_Athena_C) == 0x000008, "Wrong alignment on UGA_Ranged_GenericDamage_Suppressed_Athena_C");
-static_assert(sizeof(UGA_Ranged_GenericDamage_Suppressed_Athena_C) == 0x000A78, "Wrong size on UGA_Ranged_GenericDamage_Suppressed_Athena_C");
 
 }
 

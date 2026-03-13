@@ -23,9 +23,6 @@ struct ChallengeListEntry_Header_C_OnSectionTypeSet final
 public:
 	EChallengeListSection                         SectionType;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ChallengeListEntry_Header_C_OnSectionTypeSet) == 0x000001, "Wrong alignment on ChallengeListEntry_Header_C_OnSectionTypeSet");
-static_assert(sizeof(ChallengeListEntry_Header_C_OnSectionTypeSet) == 0x000001, "Wrong size on ChallengeListEntry_Header_C_OnSectionTypeSet");
-static_assert(offsetof(ChallengeListEntry_Header_C_OnSectionTypeSet, SectionType) == 0x000000, "Member 'ChallengeListEntry_Header_C_OnSectionTypeSet::SectionType' has a wrong offset!");
 
 // Function ChallengeListEntry_Header.ChallengeListEntry_Header_C.ExecuteUbergraph_ChallengeListEntry_Header
 // 0x0008 (0x0008 - 0x0000)
@@ -36,11 +33,6 @@ public:
 	EChallengeListSection                         K2Node_Event_SectionType;                          // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header) == 0x000004, "Wrong alignment on ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header");
-static_assert(sizeof(ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header) == 0x000008, "Wrong size on ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header");
-static_assert(offsetof(ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header, EntryPoint) == 0x000000, "Member 'ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header, K2Node_Event_SectionType) == 0x000004, "Member 'ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header::K2Node_Event_SectionType' has a wrong offset!");
-static_assert(offsetof(ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header, K2Node_SwitchEnum_CmpSuccess) == 0x000005, "Member 'ChallengeListEntry_Header_C_ExecuteUbergraph_ChallengeListEntry_Header::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 }
 

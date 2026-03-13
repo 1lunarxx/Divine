@@ -29,14 +29,14 @@ void IVehicleAnimLayerInterface_C::VehicleFullBodyOverride(const struct FPoseLin
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
+		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleFullBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleFullBodyOverride Parms{};
 
 	Parms.InPoseFullBody = std::move(InPoseFullBody);
 	Parms.InPoseUpperAndLowerCachePose = std::move(InPoseUpperAndLowerCachePose);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (VehicleFullBodyOverride_0 != nullptr)
 		*VehicleFullBodyOverride_0 = std::move(Parms.VehicleFullBodyOverride_0);
@@ -55,14 +55,14 @@ void IVehicleAnimLayerInterface_C::VehicleLowerBodyOverride(const struct FPoseLi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
+		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleLowerBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleLowerBodyOverride Parms{};
 
 	Parms.InPoseLowerBodyDefault = std::move(InPoseLowerBodyDefault);
 	Parms.InPoseUpperBody = std::move(InPoseUpperBody);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (VehicleLowerBodyOverride_0 != nullptr)
 		*VehicleLowerBodyOverride_0 = std::move(Parms.VehicleLowerBodyOverride_0);
@@ -82,7 +82,7 @@ void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
+		Func = AsUObject()->Class->GetFunction("VehicleAnimLayerInterface_C", "VehicleSplitBodyOverride");
 
 	Params::VehicleAnimLayerInterface_C_VehicleSplitBodyOverride Parms{};
 
@@ -90,7 +90,7 @@ void IVehicleAnimLayerInterface_C::VehicleSplitBodyOverride(const struct FPoseLi
 	Parms.InPoseInPoseUpperAndLowerBody = std::move(InPoseInPoseUpperAndLowerBody);
 	Parms.TurnInPlace = std::move(TurnInPlace);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (VehicleSplitBodyOverride_0 != nullptr)
 		*VehicleSplitBodyOverride_0 = std::move(Parms.VehicleSplitBodyOverride_0);

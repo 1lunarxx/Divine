@@ -43,24 +43,6 @@ public:
 	uint8                                         Pad_1A9[0x3];                                      // 0x01A9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x01AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_EnvCampFire_StokeBurst_C_OnBurst) == 0x000008, "Wrong alignment on GCN_EnvCampFire_StokeBurst_C_OnBurst");
-static_assert(sizeof(GCN_EnvCampFire_StokeBurst_C_OnBurst) == 0x0001B0, "Wrong size on GCN_EnvCampFire_StokeBurst_C_OnBurst");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_Array_Length_ReturnValue) == 0x0000F0, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire) == 0x0000F8, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, Temp_int_Array_Index_Variable) == 0x000104, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_Array_Get_Item) == 0x000108, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000110, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00011C, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, Temp_int_Loop_Counter_Variable) == 0x0001A4, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_Less_IntInt_ReturnValue) == 0x0001A8, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_EnvCampFire_StokeBurst_C_OnBurst, CallFunc_Add_IntInt_ReturnValue) == 0x0001AC, "Member 'GCN_EnvCampFire_StokeBurst_C_OnBurst::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

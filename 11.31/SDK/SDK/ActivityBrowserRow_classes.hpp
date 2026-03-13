@@ -23,15 +23,17 @@ class UActivityBrowserRow_C final : public UFortActivityBrowserRow
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityBrowserRow_C">();
+		BP_STATIC_CLASS_IMPL("ActivityBrowserRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityBrowserRow_C")
 	}
 	static class UActivityBrowserRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityBrowserRow_C>();
 	}
 };
-static_assert(alignof(UActivityBrowserRow_C) == 0x000008, "Wrong alignment on UActivityBrowserRow_C");
-static_assert(sizeof(UActivityBrowserRow_C) == 0x0002E0, "Wrong size on UActivityBrowserRow_C");
 
 }
 

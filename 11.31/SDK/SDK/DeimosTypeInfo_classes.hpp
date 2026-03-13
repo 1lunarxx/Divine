@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass DeimosTypeInfo.DeimosTypeInfo_C
-// 0x0000 (0x0028 - 0x0028)
-class IDeimosTypeInfo_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IDeimosTypeInfo_C final
 {
 public:
 	void GetEnemyColor(struct FLinearColor* Color) const;
@@ -26,15 +26,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DeimosTypeInfo_C">();
+		BP_STATIC_CLASS_IMPL("DeimosTypeInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeimosTypeInfo_C")
 	}
 	static class IDeimosTypeInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IDeimosTypeInfo_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IDeimosTypeInfo_C) == 0x000008, "Wrong alignment on IDeimosTypeInfo_C");
-static_assert(sizeof(IDeimosTypeInfo_C) == 0x000028, "Wrong size on IDeimosTypeInfo_C");
 
 }
 

@@ -23,15 +23,17 @@ class UTextStyle_Header_L_BrightYellow_C final : public UTextStyle_HeaderParent_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Header-L-BrightYellow_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Header-L-BrightYellow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Header-L-BrightYellow_C")
 	}
 	static class UTextStyle_Header_L_BrightYellow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Header_L_BrightYellow_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Header_L_BrightYellow_C) == 0x000008, "Wrong alignment on UTextStyle_Header_L_BrightYellow_C");
-static_assert(sizeof(UTextStyle_Header_L_BrightYellow_C) == 0x000148, "Wrong size on UTextStyle_Header_L_BrightYellow_C");
 
 }
 

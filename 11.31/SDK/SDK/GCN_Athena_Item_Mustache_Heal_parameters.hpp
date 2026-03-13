@@ -32,17 +32,6 @@ public:
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_Athena_Item_Mustache_Heal_C_OnBurst) == 0x000008, "Wrong alignment on GCN_Athena_Item_Mustache_Heal_C_OnBurst");
-static_assert(sizeof(GCN_Athena_Item_Mustache_Heal_C_OnBurst) == 0x000108, "Wrong size on GCN_Athena_Item_Mustache_Heal_C_OnBurst");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0000F0, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_Item_Mustache_Heal_C_OnBurst, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000100, "Member 'GCN_Athena_Item_Mustache_Heal_C_OnBurst::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
 
 }
 

@@ -38,20 +38,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(ComModalTutorialPopup_C_TapToClose) == 0x000008, "Wrong alignment on ComModalTutorialPopup_C_TapToClose");
-static_assert(sizeof(ComModalTutorialPopup_C_TapToClose) == 0x0003B0, "Wrong size on ComModalTutorialPopup_C_TapToClose");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, MyGeometry) == 0x000000, "Member 'ComModalTutorialPopup_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, Mouse_Event) == 0x000038, "Member 'ComModalTutorialPopup_C_TapToClose::Mouse_Event' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'ComModalTutorialPopup_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'ComModalTutorialPopup_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'ComModalTutorialPopup_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'ComModalTutorialPopup_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function ComModalTutorialPopup.ComModalTutorialPopup_C.PlayInSlideAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +46,6 @@ struct ComModalTutorialPopup_C_PlayInSlideAnimation final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComModalTutorialPopup_C_PlayInSlideAnimation) == 0x000004, "Wrong alignment on ComModalTutorialPopup_C_PlayInSlideAnimation");
-static_assert(sizeof(ComModalTutorialPopup_C_PlayInSlideAnimation) == 0x000004, "Wrong size on ComModalTutorialPopup_C_PlayInSlideAnimation");
-static_assert(offsetof(ComModalTutorialPopup_C_PlayInSlideAnimation, Index_0) == 0x000000, "Member 'ComModalTutorialPopup_C_PlayInSlideAnimation::Index_0' has a wrong offset!");
 
 // Function ComModalTutorialPopup.ComModalTutorialPopup_C.PlayOutSlideAnimation
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +54,6 @@ struct ComModalTutorialPopup_C_PlayOutSlideAnimation final
 public:
 	int32                                         Index_0;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComModalTutorialPopup_C_PlayOutSlideAnimation) == 0x000004, "Wrong alignment on ComModalTutorialPopup_C_PlayOutSlideAnimation");
-static_assert(sizeof(ComModalTutorialPopup_C_PlayOutSlideAnimation) == 0x000004, "Wrong size on ComModalTutorialPopup_C_PlayOutSlideAnimation");
-static_assert(offsetof(ComModalTutorialPopup_C_PlayOutSlideAnimation, Index_0) == 0x000000, "Member 'ComModalTutorialPopup_C_PlayOutSlideAnimation::Index_0' has a wrong offset!");
 
 // Function ComModalTutorialPopup.ComModalTutorialPopup_C.ExecuteUbergraph_ComModalTutorialPopup
 // 0x0080 (0x0080 - 0x0000)
@@ -98,23 +78,6 @@ public:
 	int32                                         K2Node_Event_Index_1;                              // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchInteger_CmpSuccess_1;                 // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup) == 0x000008, "Wrong alignment on ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup");
-static_assert(sizeof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup) == 0x000080, "Wrong size on ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, EntryPoint) == 0x000000, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000010, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_2) == 0x000018, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_3) == 0x000020, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_4) == 0x000028, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_5) == 0x000030, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, CallFunc_PlayAnimationForward_ReturnValue_6) == 0x000038, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::CallFunc_PlayAnimationForward_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_Event_Index) == 0x000040, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_Event_Index' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_SwitchInteger_CmpSuccess) == 0x000054, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000058, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_CreateDelegate_OutputDelegate_2) == 0x000068, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_Event_Index_1) == 0x000078, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_Event_Index_1' has a wrong offset!");
-static_assert(offsetof(ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup, K2Node_SwitchInteger_CmpSuccess_1) == 0x00007C, "Member 'ComModalTutorialPopup_C_ExecuteUbergraph_ComModalTutorialPopup::K2Node_SwitchInteger_CmpSuccess_1' has a wrong offset!");
 
 }
 

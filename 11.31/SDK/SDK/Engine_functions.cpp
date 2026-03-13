@@ -64484,14 +64484,14 @@ class FName ICurveSourceInterface::GetBindingName() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CurveSourceInterface", "GetBindingName");
+		Func = AsUObject()->Class->GetFunction("CurveSourceInterface", "GetBindingName");
 
 	Params::CurveSourceInterface_GetBindingName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -64509,14 +64509,14 @@ void ICurveSourceInterface::GetCurves(TArray<struct FNamedCurveValue>* OutValues
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CurveSourceInterface", "GetCurves");
+		Func = AsUObject()->Class->GetFunction("CurveSourceInterface", "GetCurves");
 
 	Params::CurveSourceInterface_GetCurves Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -64536,7 +64536,7 @@ float ICurveSourceInterface::GetCurveValue(class FName CurveName) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CurveSourceInterface", "GetCurveValue");
+		Func = AsUObject()->Class->GetFunction("CurveSourceInterface", "GetCurveValue");
 
 	Params::CurveSourceInterface_GetCurveValue Parms{};
 
@@ -64545,7 +64545,7 @@ float ICurveSourceInterface::GetCurveValue(class FName CurveName) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

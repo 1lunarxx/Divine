@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_VictoryDrone_RiftDisolve_C">();
+		BP_STATIC_CLASS_IMPL("BP_VictoryDrone_RiftDisolve_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_VictoryDrone_RiftDisolve_C")
 	}
 	static class ABP_VictoryDrone_RiftDisolve_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_VictoryDrone_RiftDisolve_C>();
 	}
 };
-static_assert(alignof(ABP_VictoryDrone_RiftDisolve_C) == 0x000008, "Wrong alignment on ABP_VictoryDrone_RiftDisolve_C");
-static_assert(sizeof(ABP_VictoryDrone_RiftDisolve_C) == 0x000248, "Wrong size on ABP_VictoryDrone_RiftDisolve_C");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, UberGraphFrame) == 0x000218, "Member 'ABP_VictoryDrone_RiftDisolve_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, DefaultSceneRoot) == 0x000220, "Member 'ABP_VictoryDrone_RiftDisolve_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, TeleportIn) == 0x000228, "Member 'ABP_VictoryDrone_RiftDisolve_C::TeleportIn' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, IsAthena) == 0x000229, "Member 'ABP_VictoryDrone_RiftDisolve_C::IsAthena' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, TargetPlayer) == 0x000230, "Member 'ABP_VictoryDrone_RiftDisolve_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, CharacterAttached) == 0x000238, "Member 'ABP_VictoryDrone_RiftDisolve_C::CharacterAttached' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_RiftDisolve_C, InLobby) == 0x000240, "Member 'ABP_VictoryDrone_RiftDisolve_C::InLobby' has a wrong offset!");
 
 }
 

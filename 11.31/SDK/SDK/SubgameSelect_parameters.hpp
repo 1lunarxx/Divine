@@ -33,18 +33,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelect_C_UpdateHeaderAndFooter) == 0x000001, "Wrong alignment on SubgameSelect_C_UpdateHeaderAndFooter");
-static_assert(sizeof(SubgameSelect_C_UpdateHeaderAndFooter) == 0x00000A, "Wrong size on SubgameSelect_C_UpdateHeaderAndFooter");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, HideHeader) == 0x000000, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::HideHeader' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, HideFooter) == 0x000001, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::HideFooter' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_bool_Variable) == 0x000002, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_byte_Variable) == 0x000003, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_byte_Variable_1) == 0x000004, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_bool_Variable_1) == 0x000005, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, K2Node_Select_Default) == 0x000006, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_byte_Variable_2) == 0x000007, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, Temp_byte_Variable_3) == 0x000008, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_UpdateHeaderAndFooter, K2Node_Select_Default_1) == 0x000009, "Member 'SubgameSelect_C_UpdateHeaderAndFooter::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function SubgameSelect.SubgameSelect_C.PopContentWidgetInternal
 // 0x0018 (0x0018 - 0x0000)
@@ -56,11 +44,6 @@ public:
 	class UWidget*                                ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                                CallFunc_PopWidget_ReturnValue;                    // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelect_C_PopContentWidgetInternal) == 0x000008, "Wrong alignment on SubgameSelect_C_PopContentWidgetInternal");
-static_assert(sizeof(SubgameSelect_C_PopContentWidgetInternal) == 0x000018, "Wrong size on SubgameSelect_C_PopContentWidgetInternal");
-static_assert(offsetof(SubgameSelect_C_PopContentWidgetInternal, State) == 0x000000, "Member 'SubgameSelect_C_PopContentWidgetInternal::State' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_PopContentWidgetInternal, ReturnValue) == 0x000008, "Member 'SubgameSelect_C_PopContentWidgetInternal::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_PopContentWidgetInternal, CallFunc_PopWidget_ReturnValue) == 0x000010, "Member 'SubgameSelect_C_PopContentWidgetInternal::CallFunc_PopWidget_ReturnValue' has a wrong offset!");
 
 // Function SubgameSelect.SubgameSelect_C.OnEnterState
 // 0x0001 (0x0001 - 0x0000)
@@ -69,9 +52,6 @@ struct SubgameSelect_C_OnEnterState final
 public:
 	EFortUIState                                  PreviousUIState;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SubgameSelect_C_OnEnterState) == 0x000001, "Wrong alignment on SubgameSelect_C_OnEnterState");
-static_assert(sizeof(SubgameSelect_C_OnEnterState) == 0x000001, "Wrong size on SubgameSelect_C_OnEnterState");
-static_assert(offsetof(SubgameSelect_C_OnEnterState, PreviousUIState) == 0x000000, "Member 'SubgameSelect_C_OnEnterState::PreviousUIState' has a wrong offset!");
 
 // Function SubgameSelect.SubgameSelect_C.PushContentWidgetInternal
 // 0x0010 (0x0010 - 0x0000)
@@ -81,10 +61,6 @@ public:
 	class UWidget*                                Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FContentPushState                      State;                                             // 0x0008(0x0003)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(SubgameSelect_C_PushContentWidgetInternal) == 0x000008, "Wrong alignment on SubgameSelect_C_PushContentWidgetInternal");
-static_assert(sizeof(SubgameSelect_C_PushContentWidgetInternal) == 0x000010, "Wrong size on SubgameSelect_C_PushContentWidgetInternal");
-static_assert(offsetof(SubgameSelect_C_PushContentWidgetInternal, Widget) == 0x000000, "Member 'SubgameSelect_C_PushContentWidgetInternal::Widget' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_PushContentWidgetInternal, State) == 0x000008, "Member 'SubgameSelect_C_PushContentWidgetInternal::State' has a wrong offset!");
 
 // Function SubgameSelect.SubgameSelect_C.ExecuteUbergraph_SubgameSelect
 // 0x0038 (0x0038 - 0x0000)
@@ -101,15 +77,6 @@ public:
 	class UWidget*                                K2Node_Event_Widget;                               // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FContentPushState                      K2Node_Event_State;                                // 0x0030(0x0003)(NoDestructor)
 };
-static_assert(alignof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect) == 0x000008, "Wrong alignment on SubgameSelect_C_ExecuteUbergraph_SubgameSelect");
-static_assert(sizeof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect) == 0x000038, "Wrong size on SubgameSelect_C_ExecuteUbergraph_SubgameSelect");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, EntryPoint) == 0x000000, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, CallFunc_GetCachedWidget_ReturnValue) == 0x000008, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::CallFunc_GetCachedWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, K2Node_Event_PreviousUIState) == 0x000010, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::K2Node_Event_PreviousUIState' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, CallFunc_GetContext_ReturnValue) == 0x000018, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, CallFunc_GetContext_ReturnValue_1) == 0x000020, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, K2Node_Event_Widget) == 0x000028, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::K2Node_Event_Widget' has a wrong offset!");
-static_assert(offsetof(SubgameSelect_C_ExecuteUbergraph_SubgameSelect, K2Node_Event_State) == 0x000030, "Member 'SubgameSelect_C_ExecuteUbergraph_SubgameSelect::K2Node_Event_State' has a wrong offset!");
 
 }
 

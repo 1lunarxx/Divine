@@ -63,40 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultCharacterLightingBP_C">();
+		BP_STATIC_CLASS_IMPL("VaultCharacterLightingBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultCharacterLightingBP_C")
 	}
 	static class AVaultCharacterLightingBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultCharacterLightingBP_C>();
 	}
 };
-static_assert(alignof(AVaultCharacterLightingBP_C) == 0x000008, "Wrong alignment on AVaultCharacterLightingBP_C");
-static_assert(sizeof(AVaultCharacterLightingBP_C) == 0x0002C0, "Wrong size on AVaultCharacterLightingBP_C");
-static_assert(offsetof(AVaultCharacterLightingBP_C, UberGraphFrame) == 0x000218, "Member 'AVaultCharacterLightingBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, KeyLight4) == 0x000220, "Member 'AVaultCharacterLightingBP_C::KeyLight4' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, KeyLight3) == 0x000228, "Member 'AVaultCharacterLightingBP_C::KeyLight3' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, KeyLigh2) == 0x000230, "Member 'AVaultCharacterLightingBP_C::KeyLigh2' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, PostProcess_Mobile) == 0x000238, "Member 'AVaultCharacterLightingBP_C::PostProcess_Mobile' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, PostProcess_LOWPC) == 0x000240, "Member 'AVaultCharacterLightingBP_C::PostProcess_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SkyLight_LOWPC) == 0x000248, "Member 'AVaultCharacterLightingBP_C::SkyLight_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, DirectionalLight_LOWPC) == 0x000250, "Member 'AVaultCharacterLightingBP_C::DirectionalLight_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, Arrow) == 0x000258, "Member 'AVaultCharacterLightingBP_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, DirectionalLightMobile) == 0x000260, "Member 'AVaultCharacterLightingBP_C::DirectionalLightMobile' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SkyLightLowMobil) == 0x000268, "Member 'AVaultCharacterLightingBP_C::SkyLightLowMobil' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SkyLight) == 0x000270, "Member 'AVaultCharacterLightingBP_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, RimLowerRight) == 0x000278, "Member 'AVaultCharacterLightingBP_C::RimLowerRight' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, RimLeft) == 0x000280, "Member 'AVaultCharacterLightingBP_C::RimLeft' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, RimTopRight) == 0x000288, "Member 'AVaultCharacterLightingBP_C::RimTopRight' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, RimBottomLeft) == 0x000290, "Member 'AVaultCharacterLightingBP_C::RimBottomLeft' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, KeyLight) == 0x000298, "Member 'AVaultCharacterLightingBP_C::KeyLight' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, Bounce) == 0x0002A0, "Member 'AVaultCharacterLightingBP_C::Bounce' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, BounceRear) == 0x0002A8, "Member 'AVaultCharacterLightingBP_C::BounceRear' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, SharedRoot) == 0x0002B0, "Member 'AVaultCharacterLightingBP_C::SharedRoot' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, DebugMobile_Lighting) == 0x0002B8, "Member 'AVaultCharacterLightingBP_C::DebugMobile_Lighting' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, DebugLightingPC) == 0x0002B9, "Member 'AVaultCharacterLightingBP_C::DebugLightingPC' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, IsActive) == 0x0002BA, "Member 'AVaultCharacterLightingBP_C::IsActive' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, AlwaysOn) == 0x0002BB, "Member 'AVaultCharacterLightingBP_C::AlwaysOn' has a wrong offset!");
-static_assert(offsetof(AVaultCharacterLightingBP_C, DebugLighting_LOWDetailPC) == 0x0002BC, "Member 'AVaultCharacterLightingBP_C::DebugLighting_LOWDetailPC' has a wrong offset!");
 
 }
 

@@ -83,53 +83,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownDivisionLobbyPanel_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownDivisionLobbyPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownDivisionLobbyPanel_C")
 	}
 	static class UShowdownDivisionLobbyPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownDivisionLobbyPanel_C>();
 	}
 };
-static_assert(alignof(UShowdownDivisionLobbyPanel_C) == 0x000008, "Wrong alignment on UShowdownDivisionLobbyPanel_C");
-static_assert(sizeof(UShowdownDivisionLobbyPanel_C) == 0x0007D0, "Wrong size on UShowdownDivisionLobbyPanel_C");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, UberGraphFrame) == 0x000640, "Member 'UShowdownDivisionLobbyPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, EventButtonHover) == 0x000648, "Member 'UShowdownDivisionLobbyPanel_C::EventButtonHover' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Intro) == 0x000650, "Member 'UShowdownDivisionLobbyPanel_C::Intro' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Bar_DivisionProgress) == 0x000658, "Member 'UShowdownDivisionLobbyPanel_C::Bar_DivisionProgress' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, BorderTimeRemaining) == 0x000660, "Member 'UShowdownDivisionLobbyPanel_C::BorderTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, CentralContentSwitcher) == 0x000668, "Member 'UShowdownDivisionLobbyPanel_C::CentralContentSwitcher' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, CommonTextBlock_1) == 0x000670, "Member 'UShowdownDivisionLobbyPanel_C::CommonTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, CommonTextBlock_EarnAPin) == 0x000678, "Member 'UShowdownDivisionLobbyPanel_C::CommonTextBlock_EarnAPin' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, CommonWidgetSwitcher_TournamentWarnings) == 0x000680, "Member 'UShowdownDivisionLobbyPanel_C::CommonWidgetSwitcher_TournamentWarnings' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, EarnPinContent) == 0x000688, "Member 'UShowdownDivisionLobbyPanel_C::EarnPinContent' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, EarnPinMessage) == 0x000690, "Member 'UShowdownDivisionLobbyPanel_C::EarnPinMessage' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, HorizontalBox_DivisionProgress) == 0x000698, "Member 'UShowdownDivisionLobbyPanel_C::HorizontalBox_DivisionProgress' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, HorizontalBoxJustHYpe) == 0x0006A0, "Member 'UShowdownDivisionLobbyPanel_C::HorizontalBoxJustHYpe' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, HypeIcon) == 0x0006A8, "Member 'UShowdownDivisionLobbyPanel_C::HypeIcon' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_4) == 0x0006B0, "Member 'UShowdownDivisionLobbyPanel_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_35) == 0x0006B8, "Member 'UShowdownDivisionLobbyPanel_C::Image_35' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_DetailsButtonBG) == 0x0006C0, "Member 'UShowdownDivisionLobbyPanel_C::Image_DetailsButtonBG' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_ErrorBG) == 0x0006C8, "Member 'UShowdownDivisionLobbyPanel_C::Image_ErrorBG' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_PanelBG) == 0x0006D0, "Member 'UShowdownDivisionLobbyPanel_C::Image_PanelBG' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Image_PanelBorder) == 0x0006D8, "Member 'UShowdownDivisionLobbyPanel_C::Image_PanelBorder' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, MFA_WarningText) == 0x0006E0, "Member 'UShowdownDivisionLobbyPanel_C::MFA_WarningText' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, NoMessage) == 0x0006E8, "Member 'UShowdownDivisionLobbyPanel_C::NoMessage' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, ScaleBox_DetailsText) == 0x0006F0, "Member 'UShowdownDivisionLobbyPanel_C::ScaleBox_DetailsText' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_CrossplayWarning) == 0x0006F8, "Member 'UShowdownDivisionLobbyPanel_C::Text_CrossplayWarning' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_CurrentHype) == 0x000700, "Member 'UShowdownDivisionLobbyPanel_C::Text_CurrentHype' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_DetailsButton) == 0x000708, "Member 'UShowdownDivisionLobbyPanel_C::Text_DetailsButton' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_DivsionProgress) == 0x000710, "Member 'UShowdownDivisionLobbyPanel_C::Text_DivsionProgress' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_DivsionRank) == 0x000718, "Member 'UShowdownDivisionLobbyPanel_C::Text_DivsionRank' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_MatchCapWarning) == 0x000720, "Member 'UShowdownDivisionLobbyPanel_C::Text_MatchCapWarning' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, Text_Remaining) == 0x000728, "Member 'UShowdownDivisionLobbyPanel_C::Text_Remaining' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, TournamentTitle) == 0x000730, "Member 'UShowdownDivisionLobbyPanel_C::TournamentTitle' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, TournamentTitle2) == 0x000738, "Member 'UShowdownDivisionLobbyPanel_C::TournamentTitle2' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, TournamentTitleInfo) == 0x000740, "Member 'UShowdownDivisionLobbyPanel_C::TournamentTitleInfo' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, WarningMessage) == 0x000748, "Member 'UShowdownDivisionLobbyPanel_C::WarningMessage' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, WidgetSwitcher_Progress) == 0x000750, "Member 'UShowdownDivisionLobbyPanel_C::WidgetSwitcher_Progress' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, PrimaryColor) == 0x000758, "Member 'UShowdownDivisionLobbyPanel_C::PrimaryColor' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, ShadowColor) == 0x000780, "Member 'UShowdownDivisionLobbyPanel_C::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UShowdownDivisionLobbyPanel_C, HighlightColor) == 0x0007A8, "Member 'UShowdownDivisionLobbyPanel_C::HighlightColor' has a wrong offset!");
 
 }
 

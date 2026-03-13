@@ -65,41 +65,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PunchCard_C">();
+		BP_STATIC_CLASS_IMPL("PunchCard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PunchCard_C")
 	}
 	static class UPunchCard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPunchCard_C>();
 	}
 };
-static_assert(alignof(UPunchCard_C) == 0x000008, "Wrong alignment on UPunchCard_C");
-static_assert(sizeof(UPunchCard_C) == 0x000440, "Wrong size on UPunchCard_C");
-static_assert(offsetof(UPunchCard_C, UberGraphFrame) == 0x000378, "Member 'UPunchCard_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Outro) == 0x000380, "Member 'UPunchCard_C::Outro' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Intro) == 0x000388, "Member 'UPunchCard_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, CommonWidgetSwitcher_Complete) == 0x000390, "Member 'UPunchCard_C::CommonWidgetSwitcher_Complete' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, GridScale) == 0x000398, "Member 'UPunchCard_C::GridScale' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, HorizontalBox_Header) == 0x0003A0, "Member 'UPunchCard_C::HorizontalBox_Header' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Image_FlatBG) == 0x0003A8, "Member 'UPunchCard_C::Image_FlatBG' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Image_NoBG) == 0x0003B0, "Member 'UPunchCard_C::Image_NoBG' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Image_SuperBorder) == 0x0003B8, "Member 'UPunchCard_C::Image_SuperBorder' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, ImageBackground) == 0x0003C0, "Member 'UPunchCard_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_0) == 0x0003C8, "Member 'UPunchCard_C::PunchCardEntry_0' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_1) == 0x0003D0, "Member 'UPunchCard_C::PunchCardEntry_1' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_2) == 0x0003D8, "Member 'UPunchCard_C::PunchCardEntry_2' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_3) == 0x0003E0, "Member 'UPunchCard_C::PunchCardEntry_3' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_4) == 0x0003E8, "Member 'UPunchCard_C::PunchCardEntry_4' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_5) == 0x0003F0, "Member 'UPunchCard_C::PunchCardEntry_5' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_6) == 0x0003F8, "Member 'UPunchCard_C::PunchCardEntry_6' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_7) == 0x000400, "Member 'UPunchCard_C::PunchCardEntry_7' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_8) == 0x000408, "Member 'UPunchCard_C::PunchCardEntry_8' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, PunchCardEntry_9) == 0x000410, "Member 'UPunchCard_C::PunchCardEntry_9' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, SizeBox_0) == 0x000418, "Member 'UPunchCard_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, Text_ChallengeName) == 0x000420, "Member 'UPunchCard_C::Text_ChallengeName' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, WidgetSwitcher_BackgroundType) == 0x000428, "Member 'UPunchCard_C::WidgetSwitcher_BackgroundType' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, WidgetSwitcher_Header) == 0x000430, "Member 'UPunchCard_C::WidgetSwitcher_Header' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, LocationType) == 0x000438, "Member 'UPunchCard_C::LocationType' has a wrong offset!");
-static_assert(offsetof(UPunchCard_C, isSuper) == 0x00043C, "Member 'UPunchCard_C::isSuper' has a wrong offset!");
 
 }
 

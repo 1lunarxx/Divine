@@ -23,15 +23,17 @@ class UBP_GrapplingHook_Travel_Up_Camera_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_GrapplingHook_Travel_Up_Camera_C">();
+		BP_STATIC_CLASS_IMPL("BP_GrapplingHook_Travel_Up_Camera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_GrapplingHook_Travel_Up_Camera_C")
 	}
 	static class UBP_GrapplingHook_Travel_Up_Camera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_GrapplingHook_Travel_Up_Camera_C>();
 	}
 };
-static_assert(alignof(UBP_GrapplingHook_Travel_Up_Camera_C) == 0x000010, "Wrong alignment on UBP_GrapplingHook_Travel_Up_Camera_C");
-static_assert(sizeof(UBP_GrapplingHook_Travel_Up_Camera_C) == 0x000160, "Wrong size on UBP_GrapplingHook_Travel_Up_Camera_C");
 
 }
 

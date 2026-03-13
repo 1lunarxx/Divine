@@ -23,15 +23,17 @@ class UDefault3PCamera_C final : public UFort3PCam_Default
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Default3PCamera_C">();
+		BP_STATIC_CLASS_IMPL("Default3PCamera_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Default3PCamera_C")
 	}
 	static class UDefault3PCamera_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDefault3PCamera_C>();
 	}
 };
-static_assert(alignof(UDefault3PCamera_C) == 0x000008, "Wrong alignment on UDefault3PCamera_C");
-static_assert(sizeof(UDefault3PCamera_C) == 0x000138, "Wrong size on UDefault3PCamera_C");
 
 }
 

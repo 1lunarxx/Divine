@@ -29,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMainStatTile_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMainStatTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMainStatTile_C")
 	}
 	static class UAthenaMainStatTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMainStatTile_C>();
 	}
 };
-static_assert(alignof(UAthenaMainStatTile_C) == 0x000008, "Wrong alignment on UAthenaMainStatTile_C");
-static_assert(sizeof(UAthenaMainStatTile_C) == 0x000278, "Wrong size on UAthenaMainStatTile_C");
-static_assert(offsetof(UAthenaMainStatTile_C, Glow) == 0x000270, "Member 'UAthenaMainStatTile_C::Glow' has a wrong offset!");
 
 }
 

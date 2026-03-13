@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RPG_Skeleton_AnimBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("RPG_Skeleton_AnimBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RPG_Skeleton_AnimBlueprint_C")
 	}
 	static class URPG_Skeleton_AnimBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URPG_Skeleton_AnimBlueprint_C>();
 	}
 };
-static_assert(alignof(URPG_Skeleton_AnimBlueprint_C) == 0x000010, "Wrong alignment on URPG_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(URPG_Skeleton_AnimBlueprint_C) == 0x000310, "Wrong size on URPG_Skeleton_AnimBlueprint_C");
-static_assert(offsetof(URPG_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000270, "Member 'URPG_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URPG_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_F7E820434538DD4C6AD2A1B5BCE33A39) == 0x000278, "Member 'URPG_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_F7E820434538DD4C6AD2A1B5BCE33A39' has a wrong offset!");
-static_assert(offsetof(URPG_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_782D94BD4EFDE1439B44CB93C212AD03) == 0x0002A8, "Member 'URPG_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_782D94BD4EFDE1439B44CB93C212AD03' has a wrong offset!");
-static_assert(offsetof(URPG_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalRefPose_829520A14F89D74E64C7AEBBB88029DD) == 0x0002F0, "Member 'URPG_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalRefPose_829520A14F89D74E64C7AEBBB88029DD' has a wrong offset!");
 
 }
 

@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeDetailsRewardTrack_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeDetailsRewardTrack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeDetailsRewardTrack_C")
 	}
 	static class UChallengeDetailsRewardTrack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeDetailsRewardTrack_C>();
 	}
 };
-static_assert(alignof(UChallengeDetailsRewardTrack_C) == 0x000008, "Wrong alignment on UChallengeDetailsRewardTrack_C");
-static_assert(sizeof(UChallengeDetailsRewardTrack_C) == 0x0002B0, "Wrong size on UChallengeDetailsRewardTrack_C");
-static_assert(offsetof(UChallengeDetailsRewardTrack_C, CommonActionWidget_0) == 0x0002A0, "Member 'UChallengeDetailsRewardTrack_C::CommonActionWidget_0' has a wrong offset!");
-static_assert(offsetof(UChallengeDetailsRewardTrack_C, CommonActionWidget_1) == 0x0002A8, "Member 'UChallengeDetailsRewardTrack_C::CommonActionWidget_1' has a wrong offset!");
 
 }
 

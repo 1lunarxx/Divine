@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BundleItemMiniCardWidget_C">();
+		BP_STATIC_CLASS_IMPL("BundleItemMiniCardWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BundleItemMiniCardWidget_C")
 	}
 	static class UBundleItemMiniCardWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBundleItemMiniCardWidget_C>();
 	}
 };
-static_assert(alignof(UBundleItemMiniCardWidget_C) == 0x000008, "Wrong alignment on UBundleItemMiniCardWidget_C");
-static_assert(sizeof(UBundleItemMiniCardWidget_C) == 0x000268, "Wrong size on UBundleItemMiniCardWidget_C");
-static_assert(offsetof(UBundleItemMiniCardWidget_C, UberGraphFrame) == 0x000240, "Member 'UBundleItemMiniCardWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBundleItemMiniCardWidget_C, Show) == 0x000248, "Member 'UBundleItemMiniCardWidget_C::Show' has a wrong offset!");
-static_assert(offsetof(UBundleItemMiniCardWidget_C, ItemCard) == 0x000250, "Member 'UBundleItemMiniCardWidget_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UBundleItemMiniCardWidget_C, SoundOnItemCardShow) == 0x000258, "Member 'UBundleItemMiniCardWidget_C::SoundOnItemCardShow' has a wrong offset!");
-static_assert(offsetof(UBundleItemMiniCardWidget_C, Fort_Item) == 0x000260, "Member 'UBundleItemMiniCardWidget_C::Fort_Item' has a wrong offset!");
 
 }
 

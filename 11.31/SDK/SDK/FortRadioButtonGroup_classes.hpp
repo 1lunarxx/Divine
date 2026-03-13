@@ -28,7 +28,7 @@ public:
 	class UVerticalBox*                           VerticalBox_Buttons;                               // 0x0240(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<struct FFortRadioButtonItemStruct>     Buttons;                                           // 0x0248(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ContainsInstancedReference)
 	TArray<class UIconTextButton_C*>              CreatedButtons;                                    // 0x0258(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
-	TMulticastInlineDelegate<void(int32 SelectedIndex)> RadioButtonClicked_Event;                          // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 SelectedIndex)> RadioButtonClicked_Event;                    // 0x0268(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         WidthOverride;                                     // 0x0278(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_27C[0x4];                                      // 0x027C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButtonGroup*                     CreatedButtonsGroup;                               // 0x0280(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortRadioButtonGroup_C">();
+		BP_STATIC_CLASS_IMPL("FortRadioButtonGroup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortRadioButtonGroup_C")
 	}
 	static class UFortRadioButtonGroup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortRadioButtonGroup_C>();
 	}
 };
-static_assert(alignof(UFortRadioButtonGroup_C) == 0x000008, "Wrong alignment on UFortRadioButtonGroup_C");
-static_assert(sizeof(UFortRadioButtonGroup_C) == 0x000298, "Wrong size on UFortRadioButtonGroup_C");
-static_assert(offsetof(UFortRadioButtonGroup_C, UberGraphFrame) == 0x000230, "Member 'UFortRadioButtonGroup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, SizeBox_Buttons) == 0x000238, "Member 'UFortRadioButtonGroup_C::SizeBox_Buttons' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, VerticalBox_Buttons) == 0x000240, "Member 'UFortRadioButtonGroup_C::VerticalBox_Buttons' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, Buttons) == 0x000248, "Member 'UFortRadioButtonGroup_C::Buttons' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, CreatedButtons) == 0x000258, "Member 'UFortRadioButtonGroup_C::CreatedButtons' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, RadioButtonClicked_Event) == 0x000268, "Member 'UFortRadioButtonGroup_C::RadioButtonClicked_Event' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, WidthOverride) == 0x000278, "Member 'UFortRadioButtonGroup_C::WidthOverride' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, CreatedButtonsGroup) == 0x000280, "Member 'UFortRadioButtonGroup_C::CreatedButtonsGroup' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, CommonButtonGroup) == 0x000288, "Member 'UFortRadioButtonGroup_C::CommonButtonGroup' has a wrong offset!");
-static_assert(offsetof(UFortRadioButtonGroup_C, HeightOverride) == 0x000290, "Member 'UFortRadioButtonGroup_C::HeightOverride' has a wrong offset!");
 
 }
 

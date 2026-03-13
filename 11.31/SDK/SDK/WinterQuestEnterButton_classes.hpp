@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestEnterButton_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestEnterButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestEnterButton_C")
 	}
 	static class UWinterQuestEnterButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestEnterButton_C>();
 	}
 };
-static_assert(alignof(UWinterQuestEnterButton_C) == 0x000008, "Wrong alignment on UWinterQuestEnterButton_C");
-static_assert(sizeof(UWinterQuestEnterButton_C) == 0x000B88, "Wrong size on UWinterQuestEnterButton_C");
-static_assert(offsetof(UWinterQuestEnterButton_C, UberGraphFrame) == 0x000B70, "Member 'UWinterQuestEnterButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestEnterButton_C, OnHover) == 0x000B78, "Member 'UWinterQuestEnterButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UWinterQuestEnterButton_C, TextPrompt) == 0x000B80, "Member 'UWinterQuestEnterButton_C::TextPrompt' has a wrong offset!");
 
 }
 

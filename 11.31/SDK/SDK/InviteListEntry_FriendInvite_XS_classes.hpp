@@ -44,25 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InviteListEntry_FriendInvite_XS_C">();
+		BP_STATIC_CLASS_IMPL("InviteListEntry_FriendInvite_XS_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InviteListEntry_FriendInvite_XS_C")
 	}
 	static class UInviteListEntry_FriendInvite_XS_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInviteListEntry_FriendInvite_XS_C>();
 	}
 };
-static_assert(alignof(UInviteListEntry_FriendInvite_XS_C) == 0x000008, "Wrong alignment on UInviteListEntry_FriendInvite_XS_C");
-static_assert(sizeof(UInviteListEntry_FriendInvite_XS_C) == 0x000C20, "Wrong size on UInviteListEntry_FriendInvite_XS_C");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, UberGraphFrame) == 0x000BB8, "Member 'UInviteListEntry_FriendInvite_XS_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Selected) == 0x000BC0, "Member 'UInviteListEntry_FriendInvite_XS_C::Selected' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Hovered) == 0x000BC8, "Member 'UInviteListEntry_FriendInvite_XS_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Arrow) == 0x000BD0, "Member 'UInviteListEntry_FriendInvite_XS_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Border_OnlineStatusIndicator) == 0x000BD8, "Member 'UInviteListEntry_FriendInvite_XS_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, EmptyButtonToEatOneMouseUpEvent) == 0x000BE0, "Member 'UInviteListEntry_FriendInvite_XS_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, EntryBorder) == 0x000BE8, "Member 'UInviteListEntry_FriendInvite_XS_C::EntryBorder' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Online) == 0x000BF0, "Member 'UInviteListEntry_FriendInvite_XS_C::Online' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Offline) == 0x000C00, "Member 'UInviteListEntry_FriendInvite_XS_C::Offline' has a wrong offset!");
-static_assert(offsetof(UInviteListEntry_FriendInvite_XS_C, Away) == 0x000C10, "Member 'UInviteListEntry_FriendInvite_XS_C::Away' has a wrong offset!");
 
 }
 

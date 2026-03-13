@@ -19,6 +19,70 @@
 namespace SDK::Params
 {
 
+// Function AthenaNewsModal.AthenaNewsModal_C.UpdateExternalNewsWidgets
+// 0x0098 (0x0098 - 0x0000)
+struct AthenaNewsModal_C_UpdateExternalNewsWidgets final
+{
+public:
+	ENewsExternalURLMode                          Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
+	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
+	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_GetExternalNewsURL_bHasValidExternalURL;  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_GetExternalNewsURL_ExternalURL;           // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	ENewsExternalURLMode                          CallFunc_GetExternalNewsURL_ButtonMode;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_1;                           // 0x0080(0x0018)()
+};
+
+// Function AthenaNewsModal.AthenaNewsModal_C.ShouldShowSTWUpsellInBR
+// 0x0038 (0x0038 - 0x0000)
+struct AthenaNewsModal_C_ShouldShowSTWUpsellInBR final
+{
+public:
+	bool                                          ShouldShow;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   CallFunc_CanPlay_DenialReason;                     // 0x0018(0x0018)()
+	bool                                          CallFunc_CanPlay_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function AthenaNewsModal.AthenaNewsModal_C.OnMouseButtonDown_0
+// 0x0218 (0x0218 - 0x0000)
+struct AthenaNewsModal_C_OnMouseButtonDown_0 final
+{
+public:
+	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
+	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
+};
+
+// Function AthenaNewsModal.AthenaNewsModal_C.DialogResult_3BE479B64CDE5378C77A8DA453770A3B
+// 0x000C (0x000C - 0x0000)
+struct AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B final
+{
+public:
+	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
 struct AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature final
@@ -26,9 +90,6 @@ struct AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_Commo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -37,9 +98,6 @@ struct AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__IconTextButton_C_0_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -48,9 +106,6 @@ struct AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__STW_CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +114,6 @@ struct AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateS
 public:
 	EAthenaNewsStyle                              NewStyle;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature) == 0x000001, "Wrong alignment on AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature) == 0x000001, "Wrong size on AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature, NewStyle) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__AthenaNews_K2Node_ComponentBoundEvent_2_UpdateStyle__DelegateSignature::NewStyle' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -70,9 +122,6 @@ struct AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__STWFounderPackButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +130,6 @@ struct AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaNewsModal_C_BndEvt__STWUpdateButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaNewsModal.AthenaNewsModal_C.ExecuteUbergraph_AthenaNewsModal
 // 0x0140 (0x0140 - 0x0000)
@@ -91,7 +137,7 @@ struct AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -143,7 +189,7 @@ public:
 	class FString                                 CallFunc_GetExternalNewsURL_ExternalURL;           // 0x00E8(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	ENewsExternalURLMode                          CallFunc_GetExternalNewsURL_ButtonMode;            // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_F9[0x7];                                       // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class AFort_Entry_Music_Controller_BP_C*> CallFunc_GetAllActorsOfClass_OutActors;            // 0x0100(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class AFort_Entry_Music_Controller_BP_C*> CallFunc_GetAllActorsOfClass_OutActors;         // 0x0100(0x0010)(ZeroConstructor, ReferenceParm)
 	class AFort_Entry_Music_Controller_BP_C*      CallFunc_Array_Get_Item;                           // 0x0110(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue_3;                 // 0x0118(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue_1;                 // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -156,162 +202,6 @@ public:
 	class UAthenaNews_C*                          K2Node_DynamicCast_AsAthena_News;                  // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal) == 0x000008, "Wrong alignment on AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal");
-static_assert(sizeof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal) == 0x000140, "Wrong size on AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, EntryPoint) == 0x000000, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_CustomEvent_Result) == 0x000014, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_CustomEvent_ResultName) == 0x000018, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_name_Variable) == 0x000020, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable) == 0x000028, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_SwitchEnum_CmpSuccess) == 0x000029, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_bool_Variable) == 0x000038, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetNumPlayersInLocalParty_ReturnValue) == 0x00003C, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetNumPlayersInLocalParty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable_1) == 0x000040, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_Greater_IntInt_ReturnValue) == 0x000041, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable_2) == 0x000042, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_bool_Variable_1) == 0x000043, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable_3) == 0x000044, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable_4) == 0x000045, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetContext_ReturnValue_1) == 0x000048, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_Button_4) == 0x000050, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_Button_4' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_int_Variable) == 0x000058, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_PlayAnimation_ReturnValue) == 0x000060, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_Button_3) == 0x000068, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_int_Variable_1) == 0x000070, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_Button_2) == 0x000078, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_NewStyle) == 0x000080, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_NewStyle' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_SwitchEnum_CmpSuccess_1) == 0x000081, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_Button_1) == 0x000088, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetContext_ReturnValue_2) == 0x000090, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_MakeLiteralText_ReturnValue) == 0x000098, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x0000B0, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_int_Variable_2) == 0x0000B8, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_IsValid_ReturnValue) == 0x0000BC, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_ShouldShowSTWUpsellInBR_ShouldShow) == 0x0000BD, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_ShouldShowSTWUpsellInBR_ShouldShow' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_Not_PreBool_ReturnValue) == 0x0000BE, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_Select_Default) == 0x0000BF, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_int_Variable_3) == 0x0000C0, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_ComponentBoundEvent_Button) == 0x0000C8, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetSubGame_ReturnValue) == 0x0000D0, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetRuntimeOptions_ReturnValue) == 0x0000D8, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, Temp_byte_Variable_5) == 0x0000E0, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetExternalNewsURL_bHasValidExternalURL) == 0x0000E1, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetExternalNewsURL_bHasValidExternalURL' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetExternalNewsURL_ExternalURL) == 0x0000E8, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetExternalNewsURL_ExternalURL' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetExternalNewsURL_ButtonMode) == 0x0000F8, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetExternalNewsURL_ButtonMode' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetAllActorsOfClass_OutActors) == 0x000100, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_Array_Get_Item) == 0x000110, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetContext_ReturnValue_3) == 0x000118, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_GetSubGame_ReturnValue_1) == 0x000120, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_GetSubGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000121, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_Select_Default_1) == 0x000124, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, CallFunc_BooleanAND_ReturnValue) == 0x000128, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_Select_Default_2) == 0x000129, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_DynamicCast_AsAthena_News) == 0x000130, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_DynamicCast_AsAthena_News' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-
-// Function AthenaNewsModal.AthenaNewsModal_C.UpdateExternalNewsWidgets
-// 0x0098 (0x0098 - 0x0000)
-struct AthenaNewsModal_C_UpdateExternalNewsWidgets final
-{
-public:
-	ENewsExternalURLMode                          Temp_byte_Variable;                                // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
-	class FText                                   Temp_text_Variable_2;                              // 0x0038(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetExternalNewsURL_bHasValidExternalURL;  // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FString                                 CallFunc_GetExternalNewsURL_ExternalURL;           // 0x0068(0x0010)(ZeroConstructor, HasGetValueTypeHash)
-	ENewsExternalURLMode                          CallFunc_GetExternalNewsURL_ButtonMode;            // 0x0078(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_7A[0x6];                                       // 0x007A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default_1;                           // 0x0080(0x0018)()
-};
-static_assert(alignof(AthenaNewsModal_C_UpdateExternalNewsWidgets) == 0x000008, "Wrong alignment on AthenaNewsModal_C_UpdateExternalNewsWidgets");
-static_assert(sizeof(AthenaNewsModal_C_UpdateExternalNewsWidgets) == 0x000098, "Wrong size on AthenaNewsModal_C_UpdateExternalNewsWidgets");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_byte_Variable) == 0x000000, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_text_Variable) == 0x000008, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_text_Variable_1) == 0x000020, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_text_Variable_2) == 0x000038, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_bool_Variable) == 0x000050, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_byte_Variable_1) == 0x000051, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, Temp_byte_Variable_2) == 0x000052, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000058, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, CallFunc_GetSubGame_ReturnValue) == 0x000060, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, CallFunc_GetExternalNewsURL_bHasValidExternalURL) == 0x000061, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::CallFunc_GetExternalNewsURL_bHasValidExternalURL' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, CallFunc_GetExternalNewsURL_ExternalURL) == 0x000068, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::CallFunc_GetExternalNewsURL_ExternalURL' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, CallFunc_GetExternalNewsURL_ButtonMode) == 0x000078, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::CallFunc_GetExternalNewsURL_ButtonMode' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, K2Node_Select_Default) == 0x000079, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_UpdateExternalNewsWidgets, K2Node_Select_Default_1) == 0x000080, "Member 'AthenaNewsModal_C_UpdateExternalNewsWidgets::K2Node_Select_Default_1' has a wrong offset!");
-
-// Function AthenaNewsModal.AthenaNewsModal_C.ShouldShowSTWUpsellInBR
-// 0x0038 (0x0038 - 0x0000)
-struct AthenaNewsModal_C_ShouldShowSTWUpsellInBR final
-{
-public:
-	bool                                          ShouldShow;                                        // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortRuntimeOptions*                    CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   CallFunc_CanPlay_DenialReason;                     // 0x0018(0x0018)()
-	bool                                          CallFunc_CanPlay_ReturnValue;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue_1;                 // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR) == 0x000008, "Wrong alignment on AthenaNewsModal_C_ShouldShowSTWUpsellInBR");
-static_assert(sizeof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR) == 0x000038, "Wrong size on AthenaNewsModal_C_ShouldShowSTWUpsellInBR");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, ShouldShow) == 0x000000, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::ShouldShow' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000008, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_CanPlay_DenialReason) == 0x000018, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_CanPlay_DenialReason' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_CanPlay_ReturnValue) == 0x000030, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_CanPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_GetSubGame_ReturnValue) == 0x000031, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_Not_PreBool_ReturnValue) == 0x000032, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000033, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_BooleanAND_ReturnValue) == 0x000034, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_ShouldShowSTWUpsellInBR, CallFunc_BooleanAND_ReturnValue_1) == 0x000035, "Member 'AthenaNewsModal_C_ShouldShowSTWUpsellInBR::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-
-// Function AthenaNewsModal.AthenaNewsModal_C.OnMouseButtonDown_0
-// 0x0218 (0x0218 - 0x0000)
-struct AthenaNewsModal_C_OnMouseButtonDown_0 final
-{
-public:
-	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
-	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
-};
-static_assert(alignof(AthenaNewsModal_C_OnMouseButtonDown_0) == 0x000008, "Wrong alignment on AthenaNewsModal_C_OnMouseButtonDown_0");
-static_assert(sizeof(AthenaNewsModal_C_OnMouseButtonDown_0) == 0x000218, "Wrong size on AthenaNewsModal_C_OnMouseButtonDown_0");
-static_assert(offsetof(AthenaNewsModal_C_OnMouseButtonDown_0, MyGeometry) == 0x000000, "Member 'AthenaNewsModal_C_OnMouseButtonDown_0::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_OnMouseButtonDown_0, MouseEvent) == 0x000038, "Member 'AthenaNewsModal_C_OnMouseButtonDown_0::MouseEvent' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_OnMouseButtonDown_0, ReturnValue) == 0x0000A8, "Member 'AthenaNewsModal_C_OnMouseButtonDown_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_OnMouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'AthenaNewsModal_C_OnMouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
-
-// Function AthenaNewsModal.AthenaNewsModal_C.DialogResult_3BE479B64CDE5378C77A8DA453770A3B
-// 0x000C (0x000C - 0x0000)
-struct AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B final
-{
-public:
-	EFortDialogResult                             Result;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B) == 0x000004, "Wrong alignment on AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
-static_assert(sizeof(AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B) == 0x00000C, "Wrong size on AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
-static_assert(offsetof(AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B, Result) == 0x000000, "Member 'AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B::Result' has a wrong offset!");
-static_assert(offsetof(AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B, ResultName) == 0x000004, "Member 'AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B::ResultName' has a wrong offset!");
 
 }
 

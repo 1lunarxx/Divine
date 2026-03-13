@@ -38,22 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuest_MoreInfo_DetailsScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuest_MoreInfo_DetailsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuest_MoreInfo_DetailsScreen_C")
 	}
 	static class UWinterQuest_MoreInfo_DetailsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuest_MoreInfo_DetailsScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuest_MoreInfo_DetailsScreen_C) == 0x000008, "Wrong alignment on UWinterQuest_MoreInfo_DetailsScreen_C");
-static_assert(sizeof(UWinterQuest_MoreInfo_DetailsScreen_C) == 0x000308, "Wrong size on UWinterQuest_MoreInfo_DetailsScreen_C");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, UberGraphFrame) == 0x0002D0, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, Intro) == 0x0002D8, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, CommonRichTextBlock_22) == 0x0002E0, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::CommonRichTextBlock_22' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, Image_150) == 0x0002E8, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::Image_150' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, Image_209) == 0x0002F0, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::Image_209' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, SoloButton_WinterFest) == 0x0002F8, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::SoloButton_WinterFest' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_MoreInfo_DetailsScreen_C, Winterfest_CabinLogo) == 0x000300, "Member 'UWinterQuest_MoreInfo_DetailsScreen_C::Winterfest_CabinLogo' has a wrong offset!");
 
 }
 

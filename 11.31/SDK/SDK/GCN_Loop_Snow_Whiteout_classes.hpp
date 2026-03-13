@@ -33,33 +33,27 @@ public:
 	class USoundBase*                             SoundOnFadeOut;                                    // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ReceiveDestroyed();
-	void FadeinOut__UpdateFunc();
-	void FadeinOut__FinishedFunc();
 	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 EntryPoint);
+	void ReceiveDestroyed();
+	void FadeinOut__UpdateFunc();
+	void FadeinOut__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_Snow_Whiteout_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_Snow_Whiteout_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_Snow_Whiteout_C")
 	}
 	static class AGCN_Loop_Snow_Whiteout_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_Snow_Whiteout_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_Snow_Whiteout_C) == 0x000008, "Wrong alignment on AGCN_Loop_Snow_Whiteout_C");
-static_assert(sizeof(AGCN_Loop_Snow_Whiteout_C) == 0x0007C0, "Wrong size on AGCN_Loop_Snow_Whiteout_C");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_Snow_Whiteout_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, PostProcess) == 0x000790, "Member 'AGCN_Loop_Snow_Whiteout_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, FadeinOut_Post_BDCA5FC943E3CD00D42B59A9A0D1C530) == 0x000798, "Member 'AGCN_Loop_Snow_Whiteout_C::FadeinOut_Post_BDCA5FC943E3CD00D42B59A9A0D1C530' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, FadeinOut_Fade_BDCA5FC943E3CD00D42B59A9A0D1C530) == 0x00079C, "Member 'AGCN_Loop_Snow_Whiteout_C::FadeinOut_Fade_BDCA5FC943E3CD00D42B59A9A0D1C530' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, FadeinOut__Direction_BDCA5FC943E3CD00D42B59A9A0D1C530) == 0x0007A0, "Member 'AGCN_Loop_Snow_Whiteout_C::FadeinOut__Direction_BDCA5FC943E3CD00D42B59A9A0D1C530' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, FadeinOut) == 0x0007A8, "Member 'AGCN_Loop_Snow_Whiteout_C::FadeinOut' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, SoundOnFadeIn) == 0x0007B0, "Member 'AGCN_Loop_Snow_Whiteout_C::SoundOnFadeIn' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Snow_Whiteout_C, SoundOnFadeOut) == 0x0007B8, "Member 'AGCN_Loop_Snow_Whiteout_C::SoundOnFadeOut' has a wrong offset!");
 
 }
 

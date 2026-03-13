@@ -29,19 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"comLogoTitle_C">();
+		BP_STATIC_CLASS_IMPL("comLogoTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"comLogoTitle_C")
 	}
 	static class UcomLogoTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UcomLogoTitle_C>();
 	}
 };
-static_assert(alignof(UcomLogoTitle_C) == 0x000008, "Wrong alignment on UcomLogoTitle_C");
-static_assert(sizeof(UcomLogoTitle_C) == 0x000250, "Wrong size on UcomLogoTitle_C");
-static_assert(offsetof(UcomLogoTitle_C, Image_59) == 0x000230, "Member 'UcomLogoTitle_C::Image_59' has a wrong offset!");
-static_assert(offsetof(UcomLogoTitle_C, RichTextBlock_Choice) == 0x000238, "Member 'UcomLogoTitle_C::RichTextBlock_Choice' has a wrong offset!");
-static_assert(offsetof(UcomLogoTitle_C, RichTextBlock_Community) == 0x000240, "Member 'UcomLogoTitle_C::RichTextBlock_Community' has a wrong offset!");
-static_assert(offsetof(UcomLogoTitle_C, VoteImage) == 0x000248, "Member 'UcomLogoTitle_C::VoteImage' has a wrong offset!");
 
 }
 

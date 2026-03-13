@@ -64,27 +64,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerBanner_C">();
+		BP_STATIC_CLASS_IMPL("PlayerBanner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerBanner_C")
 	}
 	static class UPlayerBanner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerBanner_C>();
 	}
 };
-static_assert(alignof(UPlayerBanner_C) == 0x000008, "Wrong alignment on UPlayerBanner_C");
-static_assert(sizeof(UPlayerBanner_C) == 0x000310, "Wrong size on UPlayerBanner_C");
-static_assert(offsetof(UPlayerBanner_C, UberGraphFrame) == 0x000290, "Member 'UPlayerBanner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, BannerImage) == 0x000298, "Member 'UPlayerBanner_C::BannerImage' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, LoadGuard) == 0x0002A0, "Member 'UPlayerBanner_C::LoadGuard' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundImage) == 0x0002A8, "Member 'UPlayerBanner_C::SurroundImage' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundLoadGuard) == 0x0002B0, "Member 'UPlayerBanner_C::SurroundLoadGuard' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bUseLargeTexture) == 0x0002B8, "Member 'UPlayerBanner_C::bUseLargeTexture' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, OwnerNetId) == 0x0002C0, "Member 'UPlayerBanner_C::OwnerNetId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerColorId) == 0x0002E8, "Member 'UPlayerBanner_C::CurrentBannerColorId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, bShouldUseIconRepresentation) == 0x0002F0, "Member 'UPlayerBanner_C::bShouldUseIconRepresentation' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, CurrentBannerIconId) == 0x0002F4, "Member 'UPlayerBanner_C::CurrentBannerIconId' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, SurroundEnabled) == 0x0002FC, "Member 'UPlayerBanner_C::SurroundEnabled' has a wrong offset!");
-static_assert(offsetof(UPlayerBanner_C, BannerSurroundMats) == 0x000300, "Member 'UPlayerBanner_C::BannerSurroundMats' has a wrong offset!");
 
 }
 

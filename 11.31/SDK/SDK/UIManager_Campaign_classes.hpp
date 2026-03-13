@@ -23,15 +23,17 @@ class UUIManager_Campaign_C final : public UFortUIManager_Campaign
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIManager_Campaign_C">();
+		BP_STATIC_CLASS_IMPL("UIManager_Campaign_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIManager_Campaign_C")
 	}
 	static class UUIManager_Campaign_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIManager_Campaign_C>();
 	}
 };
-static_assert(alignof(UUIManager_Campaign_C) == 0x000008, "Wrong alignment on UUIManager_Campaign_C");
-static_assert(sizeof(UUIManager_Campaign_C) == 0x0000F8, "Wrong size on UUIManager_Campaign_C");
 
 }
 

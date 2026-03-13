@@ -43,7 +43,7 @@ public:
 	TArray<class UParticleSystemComponent*>       WaterRingArray;                                    // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	int32                                         Current_Characters_Personal_Water_Counter;         // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FListOfWaterComponentsThatTheCharactersInteractingWithByIndex> ArrayOfCollisionComponentsPerActor;                // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TArray<struct FListOfWaterComponentsThatTheCharactersInteractingWithByIndex> ArrayOfCollisionComponentsPerActor; // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 	bool                                          Water_Interactions;                                // 0x02B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Entering_True_Exiting_False;                       // 0x02B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2BA[0x6];                                      // 0x02BA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -77,7 +77,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"_WaterMeshBlueprintMaster_C">();
+		BP_STATIC_CLASS_IMPL("_WaterMeshBlueprintMaster_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"_WaterMeshBlueprintMaster_C")
 	}
 	static class A_WaterMeshBlueprintMaster_C* GetDefaultObj()
 	{
@@ -85,34 +89,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(A_WaterMeshBlueprintMaster_C) == 0x000008, "Wrong alignment on A_WaterMeshBlueprintMaster_C");
-static_assert(sizeof(A_WaterMeshBlueprintMaster_C) == 0x0002E0, "Wrong size on A_WaterMeshBlueprintMaster_C");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, UberGraphFrame) == 0x000218, "Member 'A_WaterMeshBlueprintMaster_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh1) == 0x000220, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh1' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh2) == 0x000228, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh2' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh4) == 0x000230, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh4' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, CollisionMesh3) == 0x000238, "Member 'A_WaterMeshBlueprintMaster_C::CollisionMesh3' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, StaticMesh1) == 0x000240, "Member 'A_WaterMeshBlueprintMaster_C::StaticMesh1' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Number_of_Collision_Meshes) == 0x000248, "Member 'A_WaterMeshBlueprintMaster_C::Number_of_Collision_Meshes' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, EnterExitWaterSplash_Ripple_Texture_Particle) == 0x000250, "Member 'A_WaterMeshBlueprintMaster_C::EnterExitWaterSplash_Ripple_Texture_Particle' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, EnterExitWaterSplash_Visual_Particle) == 0x000258, "Member 'A_WaterMeshBlueprintMaster_C::EnterExitWaterSplash_Visual_Particle' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, FlipFlow) == 0x000260, "Member 'A_WaterMeshBlueprintMaster_C::FlipFlow' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, NoFlow) == 0x000261, "Member 'A_WaterMeshBlueprintMaster_C::NoFlow' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, FlippedMaterial) == 0x000268, "Member 'A_WaterMeshBlueprintMaster_C::FlippedMaterial' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Internal_volume_penetration_Counter) == 0x000270, "Member 'A_WaterMeshBlueprintMaster_C::Internal_volume_penetration_Counter' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, PlayerGenericArray) == 0x000280, "Member 'A_WaterMeshBlueprintMaster_C::PlayerGenericArray' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, WaterRingArray) == 0x000290, "Member 'A_WaterMeshBlueprintMaster_C::WaterRingArray' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Current_Characters_Personal_Water_Counter) == 0x0002A0, "Member 'A_WaterMeshBlueprintMaster_C::Current_Characters_Personal_Water_Counter' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, ArrayOfCollisionComponentsPerActor) == 0x0002A8, "Member 'A_WaterMeshBlueprintMaster_C::ArrayOfCollisionComponentsPerActor' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Water_Interactions) == 0x0002B8, "Member 'A_WaterMeshBlueprintMaster_C::Water_Interactions' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Entering_True_Exiting_False) == 0x0002B9, "Member 'A_WaterMeshBlueprintMaster_C::Entering_True_Exiting_False' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, ExternalActor) == 0x0002C0, "Member 'A_WaterMeshBlueprintMaster_C::ExternalActor' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Internal_Mesh) == 0x0002C8, "Member 'A_WaterMeshBlueprintMaster_C::Internal_Mesh' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Continue) == 0x0002D0, "Member 'A_WaterMeshBlueprintMaster_C::Continue' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Minimum_time_between_splashes) == 0x0002D4, "Member 'A_WaterMeshBlueprintMaster_C::Minimum_time_between_splashes' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, ShowTestMesh) == 0x0002D8, "Member 'A_WaterMeshBlueprintMaster_C::ShowTestMesh' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, HasExecutedConstuctionScript) == 0x0002D9, "Member 'A_WaterMeshBlueprintMaster_C::HasExecutedConstuctionScript' has a wrong offset!");
-static_assert(offsetof(A_WaterMeshBlueprintMaster_C, Is_Deep_Water_Asset_) == 0x0002DA, "Member 'A_WaterMeshBlueprintMaster_C::Is_Deep_Water_Asset_' has a wrong offset!");
 
 }
 

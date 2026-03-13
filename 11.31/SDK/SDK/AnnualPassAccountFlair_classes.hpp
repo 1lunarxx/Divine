@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnnualPassAccountFlair_C">();
+		BP_STATIC_CLASS_IMPL("AnnualPassAccountFlair_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnnualPassAccountFlair_C")
 	}
 	static class UAnnualPassAccountFlair_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnnualPassAccountFlair_C>();
 	}
 };
-static_assert(alignof(UAnnualPassAccountFlair_C) == 0x000008, "Wrong alignment on UAnnualPassAccountFlair_C");
-static_assert(sizeof(UAnnualPassAccountFlair_C) == 0x000258, "Wrong size on UAnnualPassAccountFlair_C");
-static_assert(offsetof(UAnnualPassAccountFlair_C, UberGraphFrame) == 0x000230, "Member 'UAnnualPassAccountFlair_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAnnualPassAccountFlair_C, Image_Left) == 0x000238, "Member 'UAnnualPassAccountFlair_C::Image_Left' has a wrong offset!");
-static_assert(offsetof(UAnnualPassAccountFlair_C, Image_RIght) == 0x000240, "Member 'UAnnualPassAccountFlair_C::Image_RIght' has a wrong offset!");
-static_assert(offsetof(UAnnualPassAccountFlair_C, Messaging) == 0x000248, "Member 'UAnnualPassAccountFlair_C::Messaging' has a wrong offset!");
-static_assert(offsetof(UAnnualPassAccountFlair_C, Show_Left_Image) == 0x000250, "Member 'UAnnualPassAccountFlair_C::Show_Left_Image' has a wrong offset!");
 
 }
 

@@ -40,22 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FeaturedCreativeContent_C">();
+		BP_STATIC_CLASS_IMPL("FeaturedCreativeContent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FeaturedCreativeContent_C")
 	}
 	static class UFeaturedCreativeContent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFeaturedCreativeContent_C>();
 	}
 };
-static_assert(alignof(UFeaturedCreativeContent_C) == 0x000008, "Wrong alignment on UFeaturedCreativeContent_C");
-static_assert(sizeof(UFeaturedCreativeContent_C) == 0x000270, "Wrong size on UFeaturedCreativeContent_C");
-static_assert(offsetof(UFeaturedCreativeContent_C, UberGraphFrame) == 0x000230, "Member 'UFeaturedCreativeContent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, Base) == 0x000238, "Member 'UFeaturedCreativeContent_C::Base' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, CMSImageSlideShow) == 0x000240, "Member 'UFeaturedCreativeContent_C::CMSImageSlideShow' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, IslandCreator) == 0x000248, "Member 'UFeaturedCreativeContent_C::IslandCreator' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, IslandDetails) == 0x000250, "Member 'UFeaturedCreativeContent_C::IslandDetails' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, IslandName) == 0x000258, "Member 'UFeaturedCreativeContent_C::IslandName' has a wrong offset!");
-static_assert(offsetof(UFeaturedCreativeContent_C, CurrentAds) == 0x000260, "Member 'UFeaturedCreativeContent_C::CurrentAds' has a wrong offset!");
 
 }
 

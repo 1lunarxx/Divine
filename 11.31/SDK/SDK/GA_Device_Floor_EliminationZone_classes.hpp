@@ -54,26 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Device_Floor_EliminationZone_C">();
+		BP_STATIC_CLASS_IMPL("GA_Device_Floor_EliminationZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Device_Floor_EliminationZone_C")
 	}
 	static class UGA_Device_Floor_EliminationZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Device_Floor_EliminationZone_C>();
 	}
 };
-static_assert(alignof(UGA_Device_Floor_EliminationZone_C) == 0x000008, "Wrong alignment on UGA_Device_Floor_EliminationZone_C");
-static_assert(sizeof(UGA_Device_Floor_EliminationZone_C) == 0x000AE0, "Wrong size on UGA_Device_Floor_EliminationZone_C");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, UberGraphFrame_GA_Device_Floor_EliminationZone_C) == 0x000A60, "Member 'UGA_Device_Floor_EliminationZone_C::UberGraphFrame_GA_Device_Floor_EliminationZone_C' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, CheckActivationHandle) == 0x000A68, "Member 'UGA_Device_Floor_EliminationZone_C::CheckActivationHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, OwningTrap) == 0x000A70, "Member 'UGA_Device_Floor_EliminationZone_C::OwningTrap' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, UpdatedSpecHandle) == 0x000A78, "Member 'UGA_Device_Floor_EliminationZone_C::UpdatedSpecHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, GameplayEffectDamageClass) == 0x000A88, "Member 'UGA_Device_Floor_EliminationZone_C::GameplayEffectDamageClass' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, bDOTBased) == 0x000A90, "Member 'UGA_Device_Floor_EliminationZone_C::bDOTBased' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, GameplayEffectTrueDamageClass) == 0x000A98, "Member 'UGA_Device_Floor_EliminationZone_C::GameplayEffectTrueDamageClass' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, PlayersInVehicle) == 0x000AA0, "Member 'UGA_Device_Floor_EliminationZone_C::PlayersInVehicle' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, ActivateTrapCue) == 0x000AB0, "Member 'UGA_Device_Floor_EliminationZone_C::ActivateTrapCue' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, DOTCue) == 0x000AB8, "Member 'UGA_Device_Floor_EliminationZone_C::DOTCue' has a wrong offset!");
-static_assert(offsetof(UGA_Device_Floor_EliminationZone_C, TC_DamageDotApplied) == 0x000AC0, "Member 'UGA_Device_Floor_EliminationZone_C::TC_DamageDotApplied' has a wrong offset!");
 
 }
 

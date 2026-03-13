@@ -31,7 +31,6 @@ public:
 	int32                                         Quantity;                                          // 0x0304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void RefreshItemToRepresent();
 	void SetItemQuantity(int32 ItemQuantity);
 	void Bind_Delegates();
 	void UnbindDelegates();
@@ -48,24 +47,22 @@ public:
 	void Destruct();
 	void Construct();
 	void ExecuteUbergraph_ItemCraftingIngredientList(int32 EntryPoint);
+	void RefreshItemToRepresent();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCraftingIngredientList_C">();
+		BP_STATIC_CLASS_IMPL("ItemCraftingIngredientList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCraftingIngredientList_C")
 	}
 	static class UItemCraftingIngredientList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCraftingIngredientList_C>();
 	}
 };
-static_assert(alignof(UItemCraftingIngredientList_C) == 0x000008, "Wrong alignment on UItemCraftingIngredientList_C");
-static_assert(sizeof(UItemCraftingIngredientList_C) == 0x000308, "Wrong size on UItemCraftingIngredientList_C");
-static_assert(offsetof(UItemCraftingIngredientList_C, UberGraphFrame) == 0x0002E8, "Member 'UItemCraftingIngredientList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientList_C, IngredientsList) == 0x0002F0, "Member 'UItemCraftingIngredientList_C::IngredientsList' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientList_C, ItemRepresented) == 0x0002F8, "Member 'UItemCraftingIngredientList_C::ItemRepresented' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientList_C, IconSize) == 0x000300, "Member 'UItemCraftingIngredientList_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UItemCraftingIngredientList_C, Quantity) == 0x000304, "Member 'UItemCraftingIngredientList_C::Quantity' has a wrong offset!");
 
 }
 

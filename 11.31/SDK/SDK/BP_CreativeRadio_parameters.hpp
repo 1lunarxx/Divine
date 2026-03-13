@@ -33,16 +33,6 @@ public:
 	EFortMinigameState                            K2Node_ComponentBoundEvent_NewMinigameState;       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio");
-static_assert(sizeof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio) == 0x000040, "Wrong size on BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, EntryPoint) == 0x000000, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, K2Node_Event_EndPlayReason) == 0x000028, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, K2Node_ComponentBoundEvent_Minigame) == 0x000030, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::K2Node_ComponentBoundEvent_Minigame' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, K2Node_ComponentBoundEvent_NewMinigameState) == 0x000038, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::K2Node_ComponentBoundEvent_NewMinigameState' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'BP_CreativeRadio_C_ExecuteUbergraph_BP_CreativeRadio::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -52,10 +42,6 @@ public:
 	class AFortMinigame*                          Minigame;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortMinigameState                            NewMinigameState;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature");
-static_assert(sizeof(BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature) == 0x000010, "Wrong size on BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature");
-static_assert(offsetof(BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature, Minigame) == 0x000000, "Member 'BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature::Minigame' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature, NewMinigameState) == 0x000008, "Member 'BP_CreativeRadio_C_BndEvt__FortMinigameProgress_K2Node_ComponentBoundEvent_3_OnMinigameStateChanged__DelegateSignature::NewMinigameState' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -64,9 +50,6 @@ struct BP_CreativeRadio_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CreativeRadio_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_CreativeRadio_C_ReceiveEndPlay");
-static_assert(sizeof(BP_CreativeRadio_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_CreativeRadio_C_ReceiveEndPlay");
-static_assert(offsetof(BP_CreativeRadio_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_CreativeRadio_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.OnPropertyChanged
 // 0x0018 (0x0018 - 0x0000)
@@ -81,14 +64,6 @@ public:
 	EVolumeValidityResult                         CallFunc_GetVolumeManager_OutIsValid;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_OnPropertyChanged) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_OnPropertyChanged");
-static_assert(sizeof(BP_CreativeRadio_C_OnPropertyChanged) == 0x000018, "Wrong size on BP_CreativeRadio_C_OnPropertyChanged");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_OnPropertyChanged::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000001, "Member 'BP_CreativeRadio_C_OnPropertyChanged::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000002, "Member 'BP_CreativeRadio_C_OnPropertyChanged::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, CallFunc_GetVolumeManager_OutVolumeManager) == 0x000008, "Member 'BP_CreativeRadio_C_OnPropertyChanged::CallFunc_GetVolumeManager_OutVolumeManager' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, CallFunc_GetVolumeManager_OutIsValid) == 0x000010, "Member 'BP_CreativeRadio_C_OnPropertyChanged::CallFunc_GetVolumeManager_OutIsValid' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_OnPropertyChanged, K2Node_SwitchEnum_CmpSuccess) == 0x000011, "Member 'BP_CreativeRadio_C_OnPropertyChanged::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.OnRep_CachedVolumeMultiplier
 // 0x0001 (0x0001 - 0x0000)
@@ -97,9 +72,6 @@ struct BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier final
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier) == 0x000001, "Wrong alignment on BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier");
-static_assert(sizeof(BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier) == 0x000001, "Wrong size on BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier");
-static_assert(offsetof(BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_OnRep_CachedVolumeMultiplier::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.OnRep_CachedShouldDriveVisualization
 // 0x0001 (0x0001 - 0x0000)
@@ -108,9 +80,6 @@ struct BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization final
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization) == 0x000001, "Wrong alignment on BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization");
-static_assert(sizeof(BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization) == 0x000001, "Wrong size on BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization");
-static_assert(offsetof(BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_OnRep_CachedShouldDriveVisualization::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.SetAttenuationDistance
 // 0x0001 (0x0001 - 0x0000)
@@ -119,9 +88,6 @@ struct BP_CreativeRadio_C_SetAttenuationDistance final
 public:
 	bool                                          CallFunc_NotEqual_FloatFloat_ReturnValue;          // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_SetAttenuationDistance) == 0x000001, "Wrong alignment on BP_CreativeRadio_C_SetAttenuationDistance");
-static_assert(sizeof(BP_CreativeRadio_C_SetAttenuationDistance) == 0x000001, "Wrong size on BP_CreativeRadio_C_SetAttenuationDistance");
-static_assert(offsetof(BP_CreativeRadio_C_SetAttenuationDistance, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_SetAttenuationDistance::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.UpdateCachedAttenuationSettings
 // 0x000C (0x000C - 0x0000)
@@ -133,11 +99,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_UpdateCachedAttenuationSettings) == 0x000004, "Wrong alignment on BP_CreativeRadio_C_UpdateCachedAttenuationSettings");
-static_assert(sizeof(BP_CreativeRadio_C_UpdateCachedAttenuationSettings) == 0x00000C, "Wrong size on BP_CreativeRadio_C_UpdateCachedAttenuationSettings");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateCachedAttenuationSettings, CallFunc_Less_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_UpdateCachedAttenuationSettings::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateCachedAttenuationSettings, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'BP_CreativeRadio_C_UpdateCachedAttenuationSettings::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateCachedAttenuationSettings, CallFunc_IsDedicatedServer_ReturnValue) == 0x000008, "Member 'BP_CreativeRadio_C_UpdateCachedAttenuationSettings::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.UpdateMinigameVisuals
 // 0x0040 (0x0040 - 0x0000)
@@ -160,19 +121,6 @@ public:
 	class USceneComponent*                        CallFunc_Array_Get_Item;                           // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_UpdateMinigameVisuals) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_UpdateMinigameVisuals");
-static_assert(sizeof(BP_CreativeRadio_C_UpdateMinigameVisuals) == 0x000040, "Wrong size on BP_CreativeRadio_C_UpdateMinigameVisuals");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, MinigameState) == 0x000000, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::MinigameState' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, bShouldBeVisible) == 0x000001, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::bShouldBeVisible' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_IsDedicatedServer_ReturnValue) == 0x000008, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000018, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_Array_Get_Item) == 0x000030, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_UpdateMinigameVisuals, CallFunc_Less_IntInt_ReturnValue) == 0x000038, "Member 'BP_CreativeRadio_C_UpdateMinigameVisuals::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.PlaybackTypeUpgradePath
 // 0x0120 (0x0120 - 0x0000)
@@ -196,21 +144,6 @@ public:
 	TMap<class FString, class FString>            K2Node_MakeMap_Map;                                // 0x00C8(0x0050)(ConstParm, ZeroConstructor)
 	bool                                          CallFunc_SetPropertyOverrides_ReturnValue;         // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_PlaybackTypeUpgradePath) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_PlaybackTypeUpgradePath");
-static_assert(sizeof(BP_CreativeRadio_C_PlaybackTypeUpgradePath) == 0x000120, "Wrong size on BP_CreativeRadio_C_PlaybackTypeUpgradePath");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, Temp_bool_Variable) == 0x000000, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, Temp_string_Variable) == 0x000008, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, Temp_string_Variable_1) == 0x000018, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::Temp_string_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, Temp_string_Variable_2) == 0x000028, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::Temp_string_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, K2Node_MakeArray_Array) == 0x000038, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_GetPropertyOverrides_CurrentOptions) == 0x000048, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_GetPropertyOverrides_CurrentOptions' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_GetPropertyOverrides_ReturnValue) == 0x000098, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_GetPropertyOverrides_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_Map_Find_Value) == 0x0000A0, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_Map_Find_ReturnValue) == 0x0000B0, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_EqualEqual_StriStri_ReturnValue) == 0x0000B1, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_EqualEqual_StriStri_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, K2Node_Select_Default) == 0x0000B8, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, K2Node_MakeMap_Map) == 0x0000C8, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_PlaybackTypeUpgradePath, CallFunc_SetPropertyOverrides_ReturnValue) == 0x000118, "Member 'BP_CreativeRadio_C_PlaybackTypeUpgradePath::CallFunc_SetPropertyOverrides_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.CheckMinigameStateOnPropertyChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -219,9 +152,6 @@ struct BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged) == 0x000001, "Wrong alignment on BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged");
-static_assert(sizeof(BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged) == 0x000001, "Wrong size on BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged");
-static_assert(offsetof(BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_CreativeRadio_C_CheckMinigameStateOnPropertyChanged::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.BlueprintGetInteractionString
 // 0x0028 (0x0028 - 0x0000)
@@ -233,11 +163,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BP_CreativeRadio_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_BlueprintGetInteractionString");
-static_assert(sizeof(BP_CreativeRadio_C_BlueprintGetInteractionString) == 0x000028, "Wrong size on BP_CreativeRadio_C_BlueprintGetInteractionString");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintGetInteractionString, InteractingPawn) == 0x000000, "Member 'BP_CreativeRadio_C_BlueprintGetInteractionString::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintGetInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'BP_CreativeRadio_C_BlueprintGetInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintGetInteractionString, ReturnValue) == 0x000010, "Member 'BP_CreativeRadio_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
 
 // Function BP_CreativeRadio.BP_CreativeRadio_C.BlueprintCanInteract
 // 0x0038 (0x0038 - 0x0000)
@@ -262,23 +187,6 @@ public:
 	bool                                          CallFunc_HasStarted_ReturnValue;                   // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CreativeRadio_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on BP_CreativeRadio_C_BlueprintCanInteract");
-static_assert(sizeof(BP_CreativeRadio_C_BlueprintCanInteract) == 0x000038, "Wrong size on BP_CreativeRadio_C_BlueprintCanInteract");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, InteractingPawn) == 0x000000, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, InteractionBeingAttempted) == 0x000008, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, ReturnValue) == 0x000009, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, InteractSuccess) == 0x00000A, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::InteractSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue) == 0x00000B, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_GetController_ReturnValue) == 0x000010, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000018, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue_1) == 0x000021, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume) == 0x000028, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue) == 0x000030, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue_2) == 0x000031, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue_3) == 0x000032, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_HasStarted_ReturnValue) == 0x000033, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_HasStarted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CreativeRadio_C_BlueprintCanInteract, CallFunc_Not_PreBool_ReturnValue) == 0x000034, "Member 'BP_CreativeRadio_C_BlueprintCanInteract::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 }
 

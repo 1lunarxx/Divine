@@ -153,87 +153,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Athena_Generic_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Athena_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Athena_Generic_C")
 	}
 	static class APlayerPawn_Athena_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerPawn_Athena_Generic_C>();
 	}
 };
-static_assert(alignof(APlayerPawn_Athena_Generic_C) == 0x000010, "Wrong alignment on APlayerPawn_Athena_Generic_C");
-static_assert(sizeof(APlayerPawn_Athena_Generic_C) == 0x0033F0, "Wrong size on APlayerPawn_Athena_Generic_C");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, UberGraphFrame_PlayerPawn_Athena_Generic_C) == 0x0030F0, "Member 'APlayerPawn_Athena_Generic_C::UberGraphFrame_PlayerPawn_Athena_Generic_C' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Effect_WaterInteraction_FX) == 0x0030F8, "Member 'APlayerPawn_Athena_Generic_C::Effect_WaterInteraction_FX' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, AnimTrailPS) == 0x003100, "Member 'APlayerPawn_Athena_Generic_C::AnimTrailPS' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, HitDamageParticles) == 0x003108, "Member 'APlayerPawn_Athena_Generic_C::HitDamageParticles' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, ScreenEffect_PlayerHealthDamageDirection) == 0x003110, "Member 'APlayerPawn_Athena_Generic_C::ScreenEffect_PlayerHealthDamageDirection' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, ScreenEffect_PlayerHealthDamage) == 0x003118, "Member 'APlayerPawn_Athena_Generic_C::ScreenEffect_PlayerHealthDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, ScreenEffect_PlayerShieldDamageDirection) == 0x003120, "Member 'APlayerPawn_Athena_Generic_C::ScreenEffect_PlayerShieldDamageDirection' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, ScreenEffect_PlayerShieldDamage) == 0x003128, "Member 'APlayerPawn_Athena_Generic_C::ScreenEffect_PlayerShieldDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, CanSpawnDustLandFX_) == 0x003130, "Member 'APlayerPawn_Athena_Generic_C::CanSpawnDustLandFX_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, IsInWater) == 0x003131, "Member 'APlayerPawn_Athena_Generic_C::IsInWater' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, RunWalkParticleRotation) == 0x003134, "Member 'APlayerPawn_Athena_Generic_C::RunWalkParticleRotation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, GameplayTagsForHitByHuskMeleeSound) == 0x003140, "Member 'APlayerPawn_Athena_Generic_C::GameplayTagsForHitByHuskMeleeSound' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WaterCounter) == 0x003160, "Member 'APlayerPawn_Athena_Generic_C::WaterCounter' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Tick_Delta_Seconds) == 0x003164, "Member 'APlayerPawn_Athena_Generic_C::Tick_Delta_Seconds' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_Impact) == 0x003168, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_Impact' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_Destroyed) == 0x003170, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_Destroyed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_FullyCharged) == 0x003178, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_FullyCharged' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_StartRecharge) == 0x003180, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_StartRecharge' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, TC_GameplayCueDamageShielded) == 0x003188, "Member 'APlayerPawn_Athena_Generic_C::TC_GameplayCueDamageShielded' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, LatestDamageIsShieldDamage) == 0x0031A8, "Member 'APlayerPawn_Athena_Generic_C::LatestDamageIsShieldDamage' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Damage_Taken) == 0x0031AC, "Member 'APlayerPawn_Athena_Generic_C::Damage_Taken' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Last_Shield_Damage_Time) == 0x0031B0, "Member 'APlayerPawn_Athena_Generic_C::Last_Shield_Damage_Time' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, BodyValid) == 0x0031B4, "Member 'APlayerPawn_Athena_Generic_C::BodyValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, BackpackValid) == 0x0031B5, "Member 'APlayerPawn_Athena_Generic_C::BackpackValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, HatValid) == 0x0031B6, "Member 'APlayerPawn_Athena_Generic_C::HatValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, FaceValid) == 0x0031B7, "Member 'APlayerPawn_Athena_Generic_C::FaceValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, CharmValid) == 0x0031B8, "Member 'APlayerPawn_Athena_Generic_C::CharmValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, HeadValid) == 0x0031B9, "Member 'APlayerPawn_Athena_Generic_C::HeadValid' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Effect_Player_LandedDust) == 0x0031C0, "Member 'APlayerPawn_Athena_Generic_C::Effect_Player_LandedDust' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, TempArray) == 0x0031C8, "Member 'APlayerPawn_Athena_Generic_C::TempArray' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Player_Hit) == 0x0031D8, "Member 'APlayerPawn_Athena_Generic_C::Sound_Player_Hit' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, DamageForceFeedback) == 0x0031E0, "Member 'APlayerPawn_Athena_Generic_C::DamageForceFeedback' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Effect_Player_Landed_WindVector_P) == 0x0031E8, "Member 'APlayerPawn_Athena_Generic_C::Effect_Player_Landed_WindVector_P' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, SpeechBubbleWidgetClass) == 0x0031F0, "Member 'APlayerPawn_Athena_Generic_C::SpeechBubbleWidgetClass' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, LastSpeechText) == 0x0031F8, "Member 'APlayerPawn_Athena_Generic_C::LastSpeechText' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, DamageCameraShake) == 0x003210, "Member 'APlayerPawn_Athena_Generic_C::DamageCameraShake' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, UseAnimTrailsNotifies) == 0x003218, "Member 'APlayerPawn_Athena_Generic_C::UseAnimTrailsNotifies' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Time_when_you_ll_be_able_to_splash_again) == 0x00321C, "Member 'APlayerPawn_Athena_Generic_C::Time_when_you_ll_be_able_to_splash_again' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, CurrentWaterMeshActor) == 0x003220, "Member 'APlayerPawn_Athena_Generic_C::CurrentWaterMeshActor' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WaterTraceHitLocation) == 0x003228, "Member 'APlayerPawn_Athena_Generic_C::WaterTraceHitLocation' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, StableVelocityVector) == 0x0032B0, "Member 'APlayerPawn_Athena_Generic_C::StableVelocityVector' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, PlayerRunTemplate_Ground) == 0x0032C0, "Member 'APlayerPawn_Athena_Generic_C::PlayerRunTemplate_Ground' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, PlayerWalkTemplate_Ground) == 0x0032C8, "Member 'APlayerPawn_Athena_Generic_C::PlayerWalkTemplate_Ground' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, PlayerRunTemplate_Water) == 0x0032D0, "Member 'APlayerPawn_Athena_Generic_C::PlayerRunTemplate_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, PlayerWalkTemplate_Water) == 0x0032D8, "Member 'APlayerPawn_Athena_Generic_C::PlayerWalkTemplate_Water' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Pawn_Charm_Skeletal_Mesh) == 0x0032E0, "Member 'APlayerPawn_Athena_Generic_C::Pawn_Charm_Skeletal_Mesh' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, AnimTrailsPS_Ref) == 0x0032E8, "Member 'APlayerPawn_Athena_Generic_C::AnimTrailsPS_Ref' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WeaponMaterialOverride) == 0x0032F0, "Member 'APlayerPawn_Athena_Generic_C::WeaponMaterialOverride' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, TickWaterLevel) == 0x0032F8, "Member 'APlayerPawn_Athena_Generic_C::TickWaterLevel' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WetnessDepthTexture) == 0x003300, "Member 'APlayerPawn_Athena_Generic_C::WetnessDepthTexture' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WaterLevelMID) == 0x003308, "Member 'APlayerPawn_Athena_Generic_C::WaterLevelMID' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, WaterDecayMID) == 0x003310, "Member 'APlayerPawn_Athena_Generic_C::WaterDecayMID' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Was_RTT_Enabled_Var_Set) == 0x003318, "Member 'APlayerPawn_Athena_Generic_C::Was_RTT_Enabled_Var_Set' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Is_RTT_Enabled) == 0x003319, "Member 'APlayerPawn_Athena_Generic_C::Is_RTT_Enabled' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, StartingMinCapsuleShadowVis) == 0x00331C, "Member 'APlayerPawn_Athena_Generic_C::StartingMinCapsuleShadowVis' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, IsShielded) == 0x003320, "Member 'APlayerPawn_Athena_Generic_C::IsShielded' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, InstigatorCheckDistanceSqrd) == 0x003324, "Member 'APlayerPawn_Athena_Generic_C::InstigatorCheckDistanceSqrd' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, SlideDustActivateSpeed) == 0x003328, "Member 'APlayerPawn_Athena_Generic_C::SlideDustActivateSpeed' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, CanSpawnSlideKickupFX_) == 0x00332C, "Member 'APlayerPawn_Athena_Generic_C::CanSpawnSlideKickupFX_' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Effect_Player_ShieldActivate) == 0x003330, "Member 'APlayerPawn_Athena_Generic_C::Effect_Player_ShieldActivate' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Effect_PLayer_ShieldBreak) == 0x003338, "Member 'APlayerPawn_Athena_Generic_C::Effect_PLayer_ShieldBreak' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, GhostMode) == 0x003340, "Member 'APlayerPawn_Athena_Generic_C::GhostMode' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, OverrideAnimTrail) == 0x003348, "Member 'APlayerPawn_Athena_Generic_C::OverrideAnimTrail' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, AnimNotify_Begin) == 0x003350, "Member 'APlayerPawn_Athena_Generic_C::AnimNotify_Begin' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, AnimNotify_End) == 0x003360, "Member 'APlayerPawn_Athena_Generic_C::AnimNotify_End' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, bIsInFrontendHologram) == 0x003370, "Member 'APlayerPawn_Athena_Generic_C::bIsInFrontendHologram' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_Destroyed_2D) == 0x003378, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_Destroyed_2D' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, PoisonDartGETag) == 0x003380, "Member 'APlayerPawn_Athena_Generic_C::PoisonDartGETag' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, Sound_Shield_Destroyed_Crit_2D) == 0x0033A0, "Member 'APlayerPawn_Athena_Generic_C::Sound_Shield_Destroyed_Crit_2D' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, DogSweaterDamageGETag) == 0x0033A8, "Member 'APlayerPawn_Athena_Generic_C::DogSweaterDamageGETag' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, AnimTrailFx) == 0x0033C8, "Member 'APlayerPawn_Athena_Generic_C::AnimTrailFx' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Athena_Generic_C, TC_IgnorePawnDamageFX) == 0x0033D0, "Member 'APlayerPawn_Athena_Generic_C::TC_IgnorePawnDamageFX' has a wrong offset!");
 
 }
 

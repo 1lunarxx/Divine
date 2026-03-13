@@ -33,17 +33,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors) == 0x000008, "Wrong alignment on AthenaMOTDSimpleNewsWidget_C_SetDynamicColors");
-static_assert(sizeof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors) == 0x000078, "Wrong size on AthenaMOTDSimpleNewsWidget_C_SetDynamicColors");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, Dark) == 0x000000, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::Dark' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, Light) == 0x000004, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::Light' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x000008, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000018, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, K2Node_MakeStruct_SlateColor) == 0x000020, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_Conv_ColorToLinearColor_ReturnValue_1) == 0x000048, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_Conv_ColorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_Multiply_LinearColorFloat_ReturnValue) == 0x000058, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_Multiply_LinearColorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000068, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_SetDynamicColors, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000070, "Member 'AthenaMOTDSimpleNewsWidget_C_SetDynamicColors::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
 
 // Function AthenaMOTDSimpleNewsWidget.AthenaMOTDSimpleNewsWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +41,6 @@ struct AthenaMOTDSimpleNewsWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDSimpleNewsWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaMOTDSimpleNewsWidget_C_PreConstruct");
-static_assert(sizeof(AthenaMOTDSimpleNewsWidget_C_PreConstruct) == 0x000001, "Wrong size on AthenaMOTDSimpleNewsWidget_C_PreConstruct");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaMOTDSimpleNewsWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaMOTDSimpleNewsWidget.AthenaMOTDSimpleNewsWidget_C.OnPopulateNews
 // 0x0180 (0x0180 - 0x0000)
@@ -63,9 +49,6 @@ struct AthenaMOTDSimpleNewsWidget_C_OnPopulateNews final
 public:
 	struct FAthenaNewsEntry                       NewsEntry;                                         // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaMOTDSimpleNewsWidget_C_OnPopulateNews) == 0x000008, "Wrong alignment on AthenaMOTDSimpleNewsWidget_C_OnPopulateNews");
-static_assert(sizeof(AthenaMOTDSimpleNewsWidget_C_OnPopulateNews) == 0x000180, "Wrong size on AthenaMOTDSimpleNewsWidget_C_OnPopulateNews");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_OnPopulateNews, NewsEntry) == 0x000000, "Member 'AthenaMOTDSimpleNewsWidget_C_OnPopulateNews::NewsEntry' has a wrong offset!");
 
 // Function AthenaMOTDSimpleNewsWidget.AthenaMOTDSimpleNewsWidget_C.ExecuteUbergraph_AthenaMOTDSimpleNewsWidget
 // 0x01A8 (0x01A8 - 0x0000)
@@ -86,20 +69,6 @@ public:
 	struct FColor                                 K2Node_Select_Default_2;                           // 0x019C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FColor                                 K2Node_Select_Default_3;                           // 0x01A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget) == 0x000008, "Wrong alignment on AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
-static_assert(sizeof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget) == 0x0001A8, "Wrong size on AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, EntryPoint) == 0x000000, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, Temp_bool_Variable) == 0x000004, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, Temp_bool_Variable_1) == 0x000010, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, Temp_bool_Variable_2) == 0x000011, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, Temp_bool_Variable_3) == 0x000012, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Event_IsDesignTime) == 0x000013, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Select_Default) == 0x000014, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Event_NewsEntry) == 0x000018, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Event_NewsEntry' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Select_Default_1) == 0x000198, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Select_Default_2) == 0x00019C, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget, K2Node_Select_Default_3) == 0x0001A0, "Member 'AthenaMOTDSimpleNewsWidget_C_ExecuteUbergraph_AthenaMOTDSimpleNewsWidget::K2Node_Select_Default_3' has a wrong offset!");
 
 }
 

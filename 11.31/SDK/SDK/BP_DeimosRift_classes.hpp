@@ -84,51 +84,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DeimosRift_C">();
+		BP_STATIC_CLASS_IMPL("BP_DeimosRift_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DeimosRift_C")
 	}
 	static class ABP_DeimosRift_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DeimosRift_C>();
 	}
 };
-static_assert(alignof(ABP_DeimosRift_C) == 0x000008, "Wrong alignment on ABP_DeimosRift_C");
-static_assert(sizeof(ABP_DeimosRift_C) == 0x000C98, "Wrong size on ABP_DeimosRift_C");
-static_assert(offsetof(ABP_DeimosRift_C, UberGraphFrame) == 0x0008C0, "Member 'ABP_DeimosRift_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, P_Rift_IdleFog) == 0x0008C8, "Member 'ABP_DeimosRift_C::P_Rift_IdleFog' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, SM_CubeRunes) == 0x0008D0, "Member 'ABP_DeimosRift_C::SM_CubeRunes' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, Deimos_Spawner_Loop_Sound) == 0x0008D8, "Member 'ABP_DeimosRift_C::Deimos_Spawner_Loop_Sound' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, FogMesh) == 0x0008E0, "Member 'ABP_DeimosRift_C::FogMesh' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, NoBuildZone) == 0x0008E8, "Member 'ABP_DeimosRift_C::NoBuildZone' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, P_Deimos_Rift_Dying) == 0x0008F0, "Member 'ABP_DeimosRift_C::P_Deimos_Rift_Dying' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CosmeticBaseMesh) == 0x0008F8, "Member 'ABP_DeimosRift_C::CosmeticBaseMesh' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, P_Deimos_RiftSpawn_DamageState) == 0x000900, "Member 'ABP_DeimosRift_C::P_Deimos_RiftSpawn_DamageState' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CubeMesh) == 0x000908, "Member 'ABP_DeimosRift_C::CubeMesh' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, PointLight) == 0x000910, "Member 'ABP_DeimosRift_C::PointLight' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, MaskedMID) == 0x000918, "Member 'ABP_DeimosRift_C::MaskedMID' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, OpaqueMID) == 0x000920, "Member 'ABP_DeimosRift_C::OpaqueMID' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CubeMat) == 0x000928, "Member 'ABP_DeimosRift_C::CubeMat' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CubeMatLOD1) == 0x000930, "Member 'ABP_DeimosRift_C::CubeMatLOD1' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, BaseMaterial) == 0x000938, "Member 'ABP_DeimosRift_C::BaseMaterial' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, GE_Destroyed) == 0x000940, "Member 'ABP_DeimosRift_C::GE_Destroyed' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CueParamsCreate) == 0x000948, "Member 'ABP_DeimosRift_C::CueParamsCreate' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CueParamsChargeUp) == 0x000A00, "Member 'ABP_DeimosRift_C::CueParamsChargeUp' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CueParamsSpawnFiend) == 0x000AB8, "Member 'ABP_DeimosRift_C::CueParamsSpawnFiend' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, CueParamsRiftSpawn) == 0x000B70, "Member 'ABP_DeimosRift_C::CueParamsRiftSpawn' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, DamageState) == 0x000C28, "Member 'ABP_DeimosRift_C::DamageState' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, BaseLODMaterial) == 0x000C30, "Member 'ABP_DeimosRift_C::BaseLODMaterial' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, BaseMeshMat) == 0x000C38, "Member 'ABP_DeimosRift_C::BaseMeshMat' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, Sound_StageOneExplode) == 0x000C40, "Member 'ABP_DeimosRift_C::Sound_StageOneExplode' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, Sound_StageTwoExplode) == 0x000C48, "Member 'ABP_DeimosRift_C::Sound_StageTwoExplode' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, Sound_DeimosSpawnerLoop) == 0x000C50, "Member 'ABP_DeimosRift_C::Sound_DeimosSpawnerLoop' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, Sound_StageThreeBuildup) == 0x000C58, "Member 'ABP_DeimosRift_C::Sound_StageThreeBuildup' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, GE_DamagePerSpawn) == 0x000C60, "Member 'ABP_DeimosRift_C::GE_DamagePerSpawn' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, GE_DamageReduction) == 0x000C68, "Member 'ABP_DeimosRift_C::GE_DamageReduction' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, DoSpawnEffects) == 0x000C70, "Member 'ABP_DeimosRift_C::DoSpawnEffects' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, SpawnAnimDuration) == 0x000C74, "Member 'ABP_DeimosRift_C::SpawnAnimDuration' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, FiendSpawnFXGC) == 0x000C78, "Member 'ABP_DeimosRift_C::FiendSpawnFXGC' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, ChargeUpFXGC) == 0x000C80, "Member 'ABP_DeimosRift_C::ChargeUpFXGC' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, SpawnFXGC) == 0x000C88, "Member 'ABP_DeimosRift_C::SpawnFXGC' has a wrong offset!");
-static_assert(offsetof(ABP_DeimosRift_C, HitAnimLength) == 0x000C90, "Member 'ABP_DeimosRift_C::HitAnimLength' has a wrong offset!");
 
 }
 

@@ -25,7 +25,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0278(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USkeletalMeshComponentBudgeted*         SkeletalMeshComponentBudgeted;                     // 0x0280(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   StaticMesh;                                        // 0x0288(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(class ABP_VictoryDrone_C* Drone)> SpawnOutAnimEndedDispatcher;                       // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class ABP_VictoryDrone_C* Drone)> SpawnOutAnimEndedDispatcher;     // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         AnimPlayRate;                                      // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               StaticMeshMID;                                     // 0x02A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -48,26 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_VictoryDrone_C">();
+		BP_STATIC_CLASS_IMPL("BP_VictoryDrone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_VictoryDrone_C")
 	}
 	static class ABP_VictoryDrone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_VictoryDrone_C>();
 	}
 };
-static_assert(alignof(ABP_VictoryDrone_C) == 0x000008, "Wrong alignment on ABP_VictoryDrone_C");
-static_assert(sizeof(ABP_VictoryDrone_C) == 0x0002D0, "Wrong size on ABP_VictoryDrone_C");
-static_assert(offsetof(ABP_VictoryDrone_C, UberGraphFrame) == 0x000278, "Member 'ABP_VictoryDrone_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, SkeletalMeshComponentBudgeted) == 0x000280, "Member 'ABP_VictoryDrone_C::SkeletalMeshComponentBudgeted' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, StaticMesh) == 0x000288, "Member 'ABP_VictoryDrone_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, SpawnOutAnimEndedDispatcher) == 0x000290, "Member 'ABP_VictoryDrone_C::SpawnOutAnimEndedDispatcher' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, AnimPlayRate) == 0x0002A0, "Member 'ABP_VictoryDrone_C::AnimPlayRate' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, StaticMeshMID) == 0x0002A8, "Member 'ABP_VictoryDrone_C::StaticMeshMID' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, TeleportIn) == 0x0002B0, "Member 'ABP_VictoryDrone_C::TeleportIn' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, IsAthena) == 0x0002B1, "Member 'ABP_VictoryDrone_C::IsAthena' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, TargetPlayer) == 0x0002B8, "Member 'ABP_VictoryDrone_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, CharacterAttached) == 0x0002C0, "Member 'ABP_VictoryDrone_C::CharacterAttached' has a wrong offset!");
-static_assert(offsetof(ABP_VictoryDrone_C, InLobby) == 0x0002C8, "Member 'ABP_VictoryDrone_C::InLobby' has a wrong offset!");
 
 }
 

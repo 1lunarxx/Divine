@@ -21,9 +21,6 @@ struct ComOptionTileCandidate_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComOptionTileCandidate_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on ComOptionTileCandidate_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(ComOptionTileCandidate_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on ComOptionTileCandidate_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(ComOptionTileCandidate_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'ComOptionTileCandidate_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function ComOptionTileCandidate.ComOptionTileCandidate_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -32,9 +29,6 @@ struct ComOptionTileCandidate_C_BP_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComOptionTileCandidate_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on ComOptionTileCandidate_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(ComOptionTileCandidate_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on ComOptionTileCandidate_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(ComOptionTileCandidate_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'ComOptionTileCandidate_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
 // Function ComOptionTileCandidate.ComOptionTileCandidate_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +37,6 @@ struct ComOptionTileCandidate_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComOptionTileCandidate_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on ComOptionTileCandidate_C_OnListItemObjectSet");
-static_assert(sizeof(ComOptionTileCandidate_C_OnListItemObjectSet) == 0x000008, "Wrong size on ComOptionTileCandidate_C_OnListItemObjectSet");
-static_assert(offsetof(ComOptionTileCandidate_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'ComOptionTileCandidate_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function ComOptionTileCandidate.ComOptionTileCandidate_C.ExecuteUbergraph_ComOptionTileCandidate
 // 0x0030 (0x0030 - 0x0000)
@@ -61,14 +52,6 @@ public:
 	class UObject*                                K2Node_Event_ListItemObject;                       // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate) == 0x000008, "Wrong alignment on ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate");
-static_assert(sizeof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate) == 0x000030, "Wrong size on ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, EntryPoint) == 0x000000, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, K2Node_Event_bIsExpanded) == 0x000010, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, K2Node_Event_bIsSelected) == 0x000011, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, K2Node_Event_ListItemObject) == 0x000018, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'ComOptionTileCandidate_C_ExecuteUbergraph_ComOptionTileCandidate::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 }
 

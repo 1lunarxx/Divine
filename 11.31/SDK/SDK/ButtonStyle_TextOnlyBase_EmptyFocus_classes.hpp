@@ -23,15 +23,17 @@ class UButtonStyle_TextOnlyBase_EmptyFocus_C final : public UButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-TextOnlyBase_EmptyFocus_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-TextOnlyBase_EmptyFocus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-TextOnlyBase_EmptyFocus_C")
 	}
 	static class UButtonStyle_TextOnlyBase_EmptyFocus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_TextOnlyBase_EmptyFocus_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_TextOnlyBase_EmptyFocus_C) == 0x000008, "Wrong alignment on UButtonStyle_TextOnlyBase_EmptyFocus_C");
-static_assert(sizeof(UButtonStyle_TextOnlyBase_EmptyFocus_C) == 0x000570, "Wrong size on UButtonStyle_TextOnlyBase_EmptyFocus_C");
 
 }
 

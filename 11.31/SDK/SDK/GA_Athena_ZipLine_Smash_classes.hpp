@@ -59,25 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_ZipLine_Smash_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_ZipLine_Smash_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_ZipLine_Smash_C")
 	}
 	static class UGA_Athena_ZipLine_Smash_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_ZipLine_Smash_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_ZipLine_Smash_C) == 0x000008, "Wrong alignment on UGA_Athena_ZipLine_Smash_C");
-static_assert(sizeof(UGA_Athena_ZipLine_Smash_C) == 0x000A80, "Wrong size on UGA_Athena_ZipLine_Smash_C");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_ZipLine_Smash_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_ZipLine_Smash_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, UpdateIntervalForSmashVolume) == 0x000A40, "Member 'UGA_Athena_ZipLine_Smash_C::UpdateIntervalForSmashVolume' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, StructureDamageGE) == 0x000A48, "Member 'UGA_Athena_ZipLine_Smash_C::StructureDamageGE' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, ZiplineHarness) == 0x000A50, "Member 'UGA_Athena_ZipLine_Smash_C::ZiplineHarness' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, Zipline) == 0x000A58, "Member 'UGA_Athena_ZipLine_Smash_C::Zipline' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, DrivingCustomMovementMode) == 0x000A60, "Member 'UGA_Athena_ZipLine_Smash_C::DrivingCustomMovementMode' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, FallImmunityGEFX) == 0x000A64, "Member 'UGA_Athena_ZipLine_Smash_C::FallImmunityGEFX' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, AttachVFXCue) == 0x000A6C, "Member 'UGA_Athena_ZipLine_Smash_C::AttachVFXCue' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_ZipLine_Smash_C, SmashCue) == 0x000A74, "Member 'UGA_Athena_ZipLine_Smash_C::SmashCue' has a wrong offset!");
 
 }
 

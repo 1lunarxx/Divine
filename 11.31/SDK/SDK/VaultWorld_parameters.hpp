@@ -25,12 +25,6 @@ public:
 	class AFortStaticMeshActor*                   K2Node_DynamicCast_AsFort_Static_Mesh_Actor;       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(VaultWorld_C_ExecuteUbergraph_VaultWorld) == 0x000008, "Wrong alignment on VaultWorld_C_ExecuteUbergraph_VaultWorld");
-static_assert(sizeof(VaultWorld_C_ExecuteUbergraph_VaultWorld) == 0x000020, "Wrong size on VaultWorld_C_ExecuteUbergraph_VaultWorld");
-static_assert(offsetof(VaultWorld_C_ExecuteUbergraph_VaultWorld, EntryPoint) == 0x000000, "Member 'VaultWorld_C_ExecuteUbergraph_VaultWorld::EntryPoint' has a wrong offset!");
-static_assert(offsetof(VaultWorld_C_ExecuteUbergraph_VaultWorld, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'VaultWorld_C_ExecuteUbergraph_VaultWorld::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VaultWorld_C_ExecuteUbergraph_VaultWorld, K2Node_DynamicCast_AsFort_Static_Mesh_Actor) == 0x000010, "Member 'VaultWorld_C_ExecuteUbergraph_VaultWorld::K2Node_DynamicCast_AsFort_Static_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(VaultWorld_C_ExecuteUbergraph_VaultWorld, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'VaultWorld_C_ExecuteUbergraph_VaultWorld::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function VaultWorld.VaultWorld_C.GetVaultRotator
 // 0x0018 (0x0018 - 0x0000)
@@ -41,11 +35,6 @@ public:
 	class AVaultRotator_C*                        K2Node_DynamicCast_AsVault_Rotator;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(VaultWorld_C_GetVaultRotator) == 0x000008, "Wrong alignment on VaultWorld_C_GetVaultRotator");
-static_assert(sizeof(VaultWorld_C_GetVaultRotator) == 0x000018, "Wrong size on VaultWorld_C_GetVaultRotator");
-static_assert(offsetof(VaultWorld_C_GetVaultRotator, VaultRotator_0) == 0x000000, "Member 'VaultWorld_C_GetVaultRotator::VaultRotator_0' has a wrong offset!");
-static_assert(offsetof(VaultWorld_C_GetVaultRotator, K2Node_DynamicCast_AsVault_Rotator) == 0x000008, "Member 'VaultWorld_C_GetVaultRotator::K2Node_DynamicCast_AsVault_Rotator' has a wrong offset!");
-static_assert(offsetof(VaultWorld_C_GetVaultRotator, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'VaultWorld_C_GetVaultRotator::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

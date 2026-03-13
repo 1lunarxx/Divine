@@ -23,15 +23,17 @@ class UNavLink_FloorI_C final : public UFortNavLinkDefinition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NavLink_FloorI_C">();
+		BP_STATIC_CLASS_IMPL("NavLink_FloorI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLink_FloorI_C")
 	}
 	static class UNavLink_FloorI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLink_FloorI_C>();
 	}
 };
-static_assert(alignof(UNavLink_FloorI_C) == 0x000008, "Wrong alignment on UNavLink_FloorI_C");
-static_assert(sizeof(UNavLink_FloorI_C) == 0x000080, "Wrong size on UNavLink_FloorI_C");
 
 }
 

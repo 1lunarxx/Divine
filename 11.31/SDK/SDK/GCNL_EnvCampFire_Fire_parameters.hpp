@@ -28,12 +28,6 @@ public:
 	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCNL_EnvCampFire_Fire_C_OnLoopingStart) == 0x000008, "Wrong alignment on GCNL_EnvCampFire_Fire_C_OnLoopingStart");
-static_assert(sizeof(GCNL_EnvCampFire_Fire_C_OnLoopingStart) == 0x0000E0, "Wrong size on GCNL_EnvCampFire_Fire_C_OnLoopingStart");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GCNL_EnvCampFire_Fire_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GCNL_EnvCampFire_Fire_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GCNL_EnvCampFire_Fire_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GCNL_EnvCampFire_Fire_C_OnLoopingStart::AudioComponents' has a wrong offset!");
 
 // Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.OnRemoval
 // 0x00F0 (0x00F0 - 0x0000)
@@ -47,14 +41,6 @@ public:
 	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNL_EnvCampFire_Fire_C_OnRemoval) == 0x000008, "Wrong alignment on GCNL_EnvCampFire_Fire_C_OnRemoval");
-static_assert(sizeof(GCNL_EnvCampFire_Fire_C_OnRemoval) == 0x0000F0, "Wrong size on GCNL_EnvCampFire_Fire_C_OnRemoval");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, MyTarget) == 0x000000, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, Parameters) == 0x000008, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, ParticleComponents) == 0x0000C0, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, AudioComponents) == 0x0000D0, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_OnRemoval, BurstDecalInstance) == 0x0000E8, "Member 'GCNL_EnvCampFire_Fire_C_OnRemoval::BurstDecalInstance' has a wrong offset!");
 
 // Function GCNL_EnvCampFire_Fire.GCNL_EnvCampFire_Fire_C.ExecuteUbergraph_GCNL_EnvCampFire_Fire
 // 0x0388 (0x0388 - 0x0000)
@@ -107,46 +93,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x037C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0380(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire) == 0x000008, "Wrong alignment on GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire");
-static_assert(sizeof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire) == 0x000388, "Wrong size on GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, EntryPoint) == 0x000000, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_GetValueAtLevel_ReturnValue) == 0x000004, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, Temp_int_Array_Index_Variable) == 0x000010, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_MyTarget_1) == 0x000018, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_MyTarget_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_Parameters_1) == 0x000020, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_Parameters_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_ParticleComponents_1) == 0x0000D8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_ParticleComponents_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_AudioComponents_1) == 0x0000E8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_AudioComponents_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, Temp_int_Array_Index_Variable_1) == 0x0000F8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Array_Get_Item) == 0x000100, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Array_Get_Item_1) == 0x000108, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Array_Length_ReturnValue) == 0x000110, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire) == 0x000118, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_MyTarget) == 0x000128, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_Parameters) == 0x000130, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_ParticleComponents) == 0x0001E8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_AudioComponents) == 0x0001F8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_BurstCameraShakeInstance) == 0x000208, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_Event_BurstDecalInstance) == 0x000210, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_Event_BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Array_Get_Item_2) == 0x000218, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Array_Length_ReturnValue_1) == 0x000220, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_1) == 0x000228, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, K2Node_DynamicCast_bSuccess_1) == 0x000230, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Less_IntInt_ReturnValue) == 0x000231, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_K2_GetComponentRotation_ReturnValue) == 0x000234, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_K2_GetComponentRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_K2_SetWorldRotation_SweepHitResult) == 0x000240, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_K2_SetWorldRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0002C8, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x0002D4, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, Temp_int_Loop_Counter_Variable_1) == 0x00035C, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Less_IntInt_ReturnValue_1) == 0x000360, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Add_IntInt_ReturnValue_1) == 0x000364, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Lerp_ReturnValue) == 0x000368, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_VLerp_ReturnValue) == 0x00036C, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000378, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00037C, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000380, "Member 'GCNL_EnvCampFire_Fire_C_ExecuteUbergraph_GCNL_EnvCampFire_Fire::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

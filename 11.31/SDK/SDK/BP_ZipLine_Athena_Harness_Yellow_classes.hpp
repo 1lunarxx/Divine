@@ -23,15 +23,17 @@ class ABP_ZipLine_Athena_Harness_Yellow_C final : public ABP_ZipLine_Athena_Harn
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ZipLine_Athena_Harness_Yellow_C">();
+		BP_STATIC_CLASS_IMPL("BP_ZipLine_Athena_Harness_Yellow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ZipLine_Athena_Harness_Yellow_C")
 	}
 	static class ABP_ZipLine_Athena_Harness_Yellow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ZipLine_Athena_Harness_Yellow_C>();
 	}
 };
-static_assert(alignof(ABP_ZipLine_Athena_Harness_Yellow_C) == 0x000008, "Wrong alignment on ABP_ZipLine_Athena_Harness_Yellow_C");
-static_assert(sizeof(ABP_ZipLine_Athena_Harness_Yellow_C) == 0x0002C0, "Wrong size on ABP_ZipLine_Athena_Harness_Yellow_C");
 
 }
 

@@ -52,21 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuildingToy_C">();
+		BP_STATIC_CLASS_IMPL("BuildingToy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildingToy_C")
 	}
 	static class ABuildingToy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABuildingToy_C>();
 	}
 };
-static_assert(alignof(ABuildingToy_C) == 0x000008, "Wrong alignment on ABuildingToy_C");
-static_assert(sizeof(ABuildingToy_C) == 0x000C98, "Wrong size on ABuildingToy_C");
-static_assert(offsetof(ABuildingToy_C, UberGraphFrame) == 0x000C78, "Member 'ABuildingToy_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABuildingToy_C, FortMinigameProgress) == 0x000C80, "Member 'ABuildingToy_C::FortMinigameProgress' has a wrong offset!");
-static_assert(offsetof(ABuildingToy_C, ToyOptionsComponent) == 0x000C88, "Member 'ABuildingToy_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(ABuildingToy_C, bIsInvulnerableDuringMinigamePlay) == 0x000C90, "Member 'ABuildingToy_C::bIsInvulnerableDuringMinigamePlay' has a wrong offset!");
-static_assert(offsetof(ABuildingToy_C, bPreviousInvulnerable) == 0x000C91, "Member 'ABuildingToy_C::bPreviousInvulnerable' has a wrong offset!");
-static_assert(offsetof(ABuildingToy_C, bIsVisibleDuringMinigame) == 0x000C92, "Member 'ABuildingToy_C::bIsVisibleDuringMinigame' has a wrong offset!");
 
 }
 

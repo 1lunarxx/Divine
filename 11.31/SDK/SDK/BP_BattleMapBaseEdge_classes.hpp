@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BattleMapBaseEdge_C">();
+		BP_STATIC_CLASS_IMPL("BP_BattleMapBaseEdge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BattleMapBaseEdge_C")
 	}
 	static class ABP_BattleMapBaseEdge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BattleMapBaseEdge_C>();
 	}
 };
-static_assert(alignof(ABP_BattleMapBaseEdge_C) == 0x000008, "Wrong alignment on ABP_BattleMapBaseEdge_C");
-static_assert(sizeof(ABP_BattleMapBaseEdge_C) == 0x000280, "Wrong size on ABP_BattleMapBaseEdge_C");
-static_assert(offsetof(ABP_BattleMapBaseEdge_C, SplineMesh) == 0x000270, "Member 'ABP_BattleMapBaseEdge_C::SplineMesh' has a wrong offset!");
-static_assert(offsetof(ABP_BattleMapBaseEdge_C, DefaultSceneRoot) == 0x000278, "Member 'ABP_BattleMapBaseEdge_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

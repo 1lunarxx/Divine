@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortVoiceChannelSpeakerContainer_C">();
+		BP_STATIC_CLASS_IMPL("FortVoiceChannelSpeakerContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortVoiceChannelSpeakerContainer_C")
 	}
 	static class UFortVoiceChannelSpeakerContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortVoiceChannelSpeakerContainer_C>();
 	}
 };
-static_assert(alignof(UFortVoiceChannelSpeakerContainer_C) == 0x000010, "Wrong alignment on UFortVoiceChannelSpeakerContainer_C");
-static_assert(sizeof(UFortVoiceChannelSpeakerContainer_C) == 0x000300, "Wrong size on UFortVoiceChannelSpeakerContainer_C");
-static_assert(offsetof(UFortVoiceChannelSpeakerContainer_C, SpeakerIcon) == 0x0002F0, "Member 'UFortVoiceChannelSpeakerContainer_C::SpeakerIcon' has a wrong offset!");
 
 }
 

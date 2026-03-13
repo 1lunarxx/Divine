@@ -32,18 +32,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst) == 0x000008, "Wrong alignment on GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst");
-static_assert(sizeof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst) == 0x000108, "Wrong size on GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, K2Node_DynamicCast_AsPrj_Athena_French_Yedoc_JWUnfriendly) == 0x0000F8, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::K2Node_DynamicCast_AsPrj_Athena_French_Yedoc_JWUnfriendly' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst, CallFunc_IsValid_ReturnValue) == 0x000101, "Member 'GCN_BattleLab_FrenchYedoc_Hit_C_OnBurst::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

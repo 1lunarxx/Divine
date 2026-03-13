@@ -71,35 +71,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuFireModeButton_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuFireModeButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuFireModeButton_C")
 	}
 	static class UOptionsMenuFireModeButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuFireModeButton_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuFireModeButton_C) == 0x000008, "Wrong alignment on UOptionsMenuFireModeButton_C");
-static_assert(sizeof(UOptionsMenuFireModeButton_C) == 0x000380, "Wrong size on UOptionsMenuFireModeButton_C");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, UberGraphFrame) == 0x000288, "Member 'UOptionsMenuFireModeButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, ButtonTouchTooltip) == 0x000290, "Member 'UOptionsMenuFireModeButton_C::ButtonTouchTooltip' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, ChangeFireModeButton) == 0x000298, "Member 'UOptionsMenuFireModeButton_C::ChangeFireModeButton' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, ChangeFireModeTitle) == 0x0002A0, "Member 'UOptionsMenuFireModeButton_C::ChangeFireModeTitle' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, HorizontalBox_Right) == 0x0002A8, "Member 'UOptionsMenuFireModeButton_C::HorizontalBox_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, MenuAnchorSettingDescription) == 0x0002B0, "Member 'UOptionsMenuFireModeButton_C::MenuAnchorSettingDescription' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, SizeBoxLabel) == 0x0002B8, "Member 'UOptionsMenuFireModeButton_C::SizeBoxLabel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, Spacer_Bottom) == 0x0002C0, "Member 'UOptionsMenuFireModeButton_C::Spacer_Bottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, Spacer_Right) == 0x0002C8, "Member 'UOptionsMenuFireModeButton_C::Spacer_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, FontSizeMobile) == 0x0002D0, "Member 'UOptionsMenuFireModeButton_C::FontSizeMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, Hover_Text) == 0x0002D8, "Member 'UOptionsMenuFireModeButton_C::Hover_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, ToolTipSizeMobile) == 0x0002F0, "Member 'UOptionsMenuFireModeButton_C::ToolTipSizeMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, HeightDefault) == 0x0002F8, "Member 'UOptionsMenuFireModeButton_C::HeightDefault' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, HeightMobile) == 0x0002FC, "Member 'UOptionsMenuFireModeButton_C::HeightMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, TooltipTimer) == 0x000300, "Member 'UOptionsMenuFireModeButton_C::TooltipTimer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, AutoFireText) == 0x000308, "Member 'UOptionsMenuFireModeButton_C::AutoFireText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, TapToShootText) == 0x000320, "Member 'UOptionsMenuFireModeButton_C::TapToShootText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, DedicatedButtonText) == 0x000338, "Member 'UOptionsMenuFireModeButton_C::DedicatedButtonText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, CustomText) == 0x000350, "Member 'UOptionsMenuFireModeButton_C::CustomText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuFireModeButton_C, ThreeDTouchText) == 0x000368, "Member 'UOptionsMenuFireModeButton_C::ThreeDTouchText' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UGameSettingsDetailView_C final : public UFortSettingDetailView
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GameSettingsDetailView_C">();
+		BP_STATIC_CLASS_IMPL("GameSettingsDetailView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GameSettingsDetailView_C")
 	}
 	static class UGameSettingsDetailView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGameSettingsDetailView_C>();
 	}
 };
-static_assert(alignof(UGameSettingsDetailView_C) == 0x000008, "Wrong alignment on UGameSettingsDetailView_C");
-static_assert(sizeof(UGameSettingsDetailView_C) == 0x0002F8, "Wrong size on UGameSettingsDetailView_C");
 
 }
 

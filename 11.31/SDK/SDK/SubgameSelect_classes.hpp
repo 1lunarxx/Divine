@@ -42,20 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelect_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelect_C")
 	}
 	static class USubgameSelect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelect_C>();
 	}
 };
-static_assert(alignof(USubgameSelect_C) == 0x000008, "Wrong alignment on USubgameSelect_C");
-static_assert(sizeof(USubgameSelect_C) == 0x000480, "Wrong size on USubgameSelect_C");
-static_assert(offsetof(USubgameSelect_C, UberGraphFrame) == 0x000458, "Member 'USubgameSelect_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BottomBar) == 0x000460, "Member 'USubgameSelect_C::BottomBar' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, BuildWatermark) == 0x000468, "Member 'USubgameSelect_C::BuildWatermark' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, MainContentStack) == 0x000470, "Member 'USubgameSelect_C::MainContentStack' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_C, TopBar) == 0x000478, "Member 'USubgameSelect_C::TopBar' has a wrong offset!");
 
 }
 

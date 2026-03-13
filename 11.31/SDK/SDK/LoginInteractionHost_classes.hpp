@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginInteractionHost_C">();
+		BP_STATIC_CLASS_IMPL("LoginInteractionHost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginInteractionHost_C")
 	}
 	static class ULoginInteractionHost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginInteractionHost_C>();
 	}
 };
-static_assert(alignof(ULoginInteractionHost_C) == 0x000008, "Wrong alignment on ULoginInteractionHost_C");
-static_assert(sizeof(ULoginInteractionHost_C) == 0x000558, "Wrong size on ULoginInteractionHost_C");
-static_assert(offsetof(ULoginInteractionHost_C, SafeZone_0) == 0x000550, "Member 'ULoginInteractionHost_C::SafeZone_0' has a wrong offset!");
 
 }
 

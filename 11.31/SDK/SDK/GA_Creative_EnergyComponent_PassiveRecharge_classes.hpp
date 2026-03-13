@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Creative_EnergyComponent_PassiveRecharge_C">();
+		BP_STATIC_CLASS_IMPL("GA_Creative_EnergyComponent_PassiveRecharge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Creative_EnergyComponent_PassiveRecharge_C")
 	}
 	static class UGA_Creative_EnergyComponent_PassiveRecharge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Creative_EnergyComponent_PassiveRecharge_C>();
 	}
 };
-static_assert(alignof(UGA_Creative_EnergyComponent_PassiveRecharge_C) == 0x000008, "Wrong alignment on UGA_Creative_EnergyComponent_PassiveRecharge_C");
-static_assert(sizeof(UGA_Creative_EnergyComponent_PassiveRecharge_C) == 0x000A90, "Wrong size on UGA_Creative_EnergyComponent_PassiveRecharge_C");
-static_assert(offsetof(UGA_Creative_EnergyComponent_PassiveRecharge_C, UberGraphFrame_GA_Creative_EnergyComponent_PassiveRecharge_C) == 0x000A88, "Member 'UGA_Creative_EnergyComponent_PassiveRecharge_C::UberGraphFrame_GA_Creative_EnergyComponent_PassiveRecharge_C' has a wrong offset!");
 
 }
 

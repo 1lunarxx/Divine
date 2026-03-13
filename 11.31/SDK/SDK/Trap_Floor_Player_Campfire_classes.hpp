@@ -99,57 +99,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Trap_Floor_Player_Campfire_C">();
+		BP_STATIC_CLASS_IMPL("Trap_Floor_Player_Campfire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Trap_Floor_Player_Campfire_C")
 	}
 	static class ATrap_Floor_Player_Campfire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrap_Floor_Player_Campfire_C>();
 	}
 };
-static_assert(alignof(ATrap_Floor_Player_Campfire_C) == 0x000008, "Wrong alignment on ATrap_Floor_Player_Campfire_C");
-static_assert(sizeof(ATrap_Floor_Player_Campfire_C) == 0x000E30, "Wrong size on ATrap_Floor_Player_Campfire_C");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, UberGraphFrame) == 0x000C78, "Member 'ATrap_Floor_Player_Campfire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, P_Smoke) == 0x000C80, "Member 'ATrap_Floor_Player_Campfire_C::P_Smoke' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Wood) == 0x000C88, "Member 'ATrap_Floor_Player_Campfire_C::Wood' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, CampfirePit) == 0x000C90, "Member 'ATrap_Floor_Player_Campfire_C::CampfirePit' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Master) == 0x000C98, "Member 'ATrap_Floor_Player_Campfire_C::Master' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, P_Athena_Campfire_Doused) == 0x000CA0, "Member 'ATrap_Floor_Player_Campfire_C::P_Athena_Campfire_Doused' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Audio) == 0x000CA8, "Member 'ATrap_Floor_Player_Campfire_C::Audio' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, P_Athena_Campfire) == 0x000CB0, "Member 'ATrap_Floor_Player_Campfire_C::P_Athena_Campfire' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, PlacementSoundLocation) == 0x000CB8, "Member 'ATrap_Floor_Player_Campfire_C::PlacementSoundLocation' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, ProximityTraceOrigin) == 0x000CC0, "Member 'ATrap_Floor_Player_Campfire_C::ProximityTraceOrigin' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, DarkenLogs_Lerp_2F1CB1BF43762B3942D07DA06E56DCA6) == 0x000CC8, "Member 'ATrap_Floor_Player_Campfire_C::DarkenLogs_Lerp_2F1CB1BF43762B3942D07DA06E56DCA6' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, DarkenLogs__Direction_2F1CB1BF43762B3942D07DA06E56DCA6) == 0x000CCC, "Member 'ATrap_Floor_Player_Campfire_C::DarkenLogs__Direction_2F1CB1BF43762B3942D07DA06E56DCA6' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, DarkenLogs) == 0x000CD0, "Member 'ATrap_Floor_Player_Campfire_C::DarkenLogs' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, FadeDoused_Fade_87602AFE48A3F8C64AA9BD9884FBF57E) == 0x000CD8, "Member 'ATrap_Floor_Player_Campfire_C::FadeDoused_Fade_87602AFE48A3F8C64AA9BD9884FBF57E' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, FadeDoused__Direction_87602AFE48A3F8C64AA9BD9884FBF57E) == 0x000CDC, "Member 'ATrap_Floor_Player_Campfire_C::FadeDoused__Direction_87602AFE48A3F8C64AA9BD9884FBF57E' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, FadeDoused) == 0x000CE0, "Member 'ATrap_Floor_Player_Campfire_C::FadeDoused' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Trap_Placed_Sound) == 0x000CE8, "Member 'ATrap_Floor_Player_Campfire_C::Trap_Placed_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Trap_Active_Sound) == 0x000CF0, "Member 'ATrap_Floor_Player_Campfire_C::Trap_Active_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Trap_Fire_Sound) == 0x000CF8, "Member 'ATrap_Floor_Player_Campfire_C::Trap_Fire_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Trap_Reload_Sound) == 0x000D00, "Member 'ATrap_Floor_Player_Campfire_C::Trap_Reload_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Trap_Explode_Sound) == 0x000D08, "Member 'ATrap_Floor_Player_Campfire_C::Trap_Explode_Sound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, IsActive) == 0x000D10, "Member 'ATrap_Floor_Player_Campfire_C::IsActive' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, NumTicks) == 0x000D14, "Member 'ATrap_Floor_Player_Campfire_C::NumTicks' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, MaxTicks) == 0x000D18, "Member 'ATrap_Floor_Player_Campfire_C::MaxTicks' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, AOE_Radius) == 0x000D1C, "Member 'ATrap_Floor_Player_Campfire_C::AOE_Radius' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, OverlapObjectTypes) == 0x000D20, "Member 'ATrap_Floor_Player_Campfire_C::OverlapObjectTypes' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, AOE_BoxExtents) == 0x000D30, "Member 'ATrap_Floor_Player_Campfire_C::AOE_BoxExtents' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, AOE_FireDamageBoxExtents) == 0x000D3C, "Member 'ATrap_Floor_Player_Campfire_C::AOE_FireDamageBoxExtents' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, CampfireDousedSound) == 0x000D48, "Member 'ATrap_Floor_Player_Campfire_C::CampfireDousedSound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, WoodRemovalSound) == 0x000D50, "Member 'ATrap_Floor_Player_Campfire_C::WoodRemovalSound' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, WoodRemovalFX) == 0x000D58, "Member 'ATrap_Floor_Player_Campfire_C::WoodRemovalFX' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Row_MaxHeals) == 0x000D60, "Member 'ATrap_Floor_Player_Campfire_C::Row_MaxHeals' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Row_DousedDuration) == 0x000D80, "Member 'ATrap_Floor_Player_Campfire_C::Row_DousedDuration' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Row_TickInterval) == 0x000DA0, "Member 'ATrap_Floor_Player_Campfire_C::Row_TickInterval' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Row_ShouldStack) == 0x000DC0, "Member 'ATrap_Floor_Player_Campfire_C::Row_ShouldStack' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Play_Rate) == 0x000DE0, "Member 'ATrap_Floor_Player_Campfire_C::Play_Rate' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, HitPlayerPawn) == 0x000DE8, "Member 'ATrap_Floor_Player_Campfire_C::HitPlayerPawn' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Owning_Player_Quest_Manager) == 0x000DF0, "Member 'ATrap_Floor_Player_Campfire_C::Owning_Player_Quest_Manager' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Quest_TC) == 0x000DF8, "Member 'ATrap_Floor_Player_Campfire_C::Quest_TC' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, HasFiredQuest) == 0x000E18, "Member 'ATrap_Floor_Player_Campfire_C::HasFiredQuest' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, Owning_Player_PC) == 0x000E20, "Member 'ATrap_Floor_Player_Campfire_C::Owning_Player_PC' has a wrong offset!");
-static_assert(offsetof(ATrap_Floor_Player_Campfire_C, CampFire_BGA) == 0x000E28, "Member 'ATrap_Floor_Player_Campfire_C::CampFire_BGA' has a wrong offset!");
 
 }
 

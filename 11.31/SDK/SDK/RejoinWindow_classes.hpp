@@ -35,23 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RejoinWindow_C">();
+		BP_STATIC_CLASS_IMPL("RejoinWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RejoinWindow_C")
 	}
 	static class URejoinWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URejoinWindow_C>();
 	}
 };
-static_assert(alignof(URejoinWindow_C) == 0x000008, "Wrong alignment on URejoinWindow_C");
-static_assert(sizeof(URejoinWindow_C) == 0x0004E0, "Wrong size on URejoinWindow_C");
-static_assert(offsetof(URejoinWindow_C, AutorejoinText) == 0x000480, "Member 'URejoinWindow_C::AutorejoinText' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, ButtonBox) == 0x000488, "Member 'URejoinWindow_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, Title) == 0x000490, "Member 'URejoinWindow_C::Title' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, OnRequestAbandon) == 0x000498, "Member 'URejoinWindow_C::OnRequestAbandon' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, OnRequestRejoinRetry) == 0x0004A8, "Member 'URejoinWindow_C::OnRequestRejoinRetry' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, Buttons) == 0x0004B8, "Member 'URejoinWindow_C::Buttons' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, ButtonPadding) == 0x0004C8, "Member 'URejoinWindow_C::ButtonPadding' has a wrong offset!");
-static_assert(offsetof(URejoinWindow_C, InitialScreen) == 0x0004D8, "Member 'URejoinWindow_C::InitialScreen' has a wrong offset!");
 
 }
 

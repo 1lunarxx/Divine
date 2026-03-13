@@ -164,82 +164,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonTab_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonTab_C")
 	}
 	static class UAthenaSeasonTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonTab_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonTab_C) == 0x000008, "Wrong alignment on UAthenaSeasonTab_C");
-static_assert(sizeof(UAthenaSeasonTab_C) == 0x000828, "Wrong size on UAthenaSeasonTab_C");
-static_assert(offsetof(UAthenaSeasonTab_C, UberGraphFrame) == 0x0005F0, "Member 'UAthenaSeasonTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, FadeRightArrow) == 0x0005F8, "Member 'UAthenaSeasonTab_C::FadeRightArrow' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, FadeLeftArrow) == 0x000600, "Member 'UAthenaSeasonTab_C::FadeLeftArrow' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Intro) == 0x000608, "Member 'UAthenaSeasonTab_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, ItemInfoHeaderFade) == 0x000610, "Member 'UAthenaSeasonTab_C::ItemInfoHeaderFade' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, AthenaSeasonBPTrackerSimpleWidget) == 0x000618, "Member 'UAthenaSeasonTab_C::AthenaSeasonBPTrackerSimpleWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, AthenaSeasonBPTrackerWidget) == 0x000620, "Member 'UAthenaSeasonTab_C::AthenaSeasonBPTrackerWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, AthenaSeasonPassLabels) == 0x000628, "Member 'UAthenaSeasonTab_C::AthenaSeasonPassLabels' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Border_SaleInfo) == 0x000630, "Member 'UAthenaSeasonTab_C::Border_SaleInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, BottomButtonAreaText) == 0x000638, "Member 'UAthenaSeasonTab_C::BottomButtonAreaText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, ClaimFreeSeasonBtn) == 0x000640, "Member 'UAthenaSeasonTab_C::ClaimFreeSeasonBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, CurrentPageNumber) == 0x000648, "Member 'UAthenaSeasonTab_C::CurrentPageNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, CurrentTier) == 0x000650, "Member 'UAthenaSeasonTab_C::CurrentTier' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DescriptionText) == 0x000658, "Member 'UAthenaSeasonTab_C::DescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DescriptionTextType) == 0x000660, "Member 'UAthenaSeasonTab_C::DescriptionTextType' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DynamicPips) == 0x000668, "Member 'UAthenaSeasonTab_C::DynamicPips' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, FancyToastWidget) == 0x000670, "Member 'UAthenaSeasonTab_C::FancyToastWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, FramingWidget) == 0x000678, "Member 'UAthenaSeasonTab_C::FramingWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Gift_Button) == 0x000680, "Member 'UAthenaSeasonTab_C::Gift_Button' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, GiftSeasonPass) == 0x000688, "Member 'UAthenaSeasonTab_C::GiftSeasonPass' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, HasPassDiscountToken) == 0x000690, "Member 'UAthenaSeasonTab_C::HasPassDiscountToken' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Image_379) == 0x000698, "Member 'UAthenaSeasonTab_C::Image_379' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, ItemInfoHeaderWidget) == 0x0006A0, "Member 'UAthenaSeasonTab_C::ItemInfoHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, LevelPageWidgetSwitcher) == 0x0006A8, "Member 'UAthenaSeasonTab_C::LevelPageWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, MainViewItemInfoOverlay) == 0x0006B0, "Member 'UAthenaSeasonTab_C::MainViewItemInfoOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, MaxedOutText) == 0x0006B8, "Member 'UAthenaSeasonTab_C::MaxedOutText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, OutOfSeasonSwitcher) == 0x0006C0, "Member 'UAthenaSeasonTab_C::OutOfSeasonSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PageLeftBtn) == 0x0006C8, "Member 'UAthenaSeasonTab_C::PageLeftBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PageRightBtn) == 0x0006D0, "Member 'UAthenaSeasonTab_C::PageRightBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PassCompleted) == 0x0006D8, "Member 'UAthenaSeasonTab_C::PassCompleted' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PassNotOwned) == 0x0006E0, "Member 'UAthenaSeasonTab_C::PassNotOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PassOwned) == 0x0006E8, "Member 'UAthenaSeasonTab_C::PassOwned' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PurchaseLevelBtn) == 0x0006F0, "Member 'UAthenaSeasonTab_C::PurchaseLevelBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PurchaseSeasonBtn) == 0x0006F8, "Member 'UAthenaSeasonTab_C::PurchaseSeasonBtn' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonCountdown) == 0x000700, "Member 'UAthenaSeasonTab_C::SeasonCountdown' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonHeadingTextLabel) == 0x000708, "Member 'UAthenaSeasonTab_C::SeasonHeadingTextLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonNameSmall) == 0x000710, "Member 'UAthenaSeasonTab_C::SeasonNameSmall' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonPanel) == 0x000718, "Member 'UAthenaSeasonTab_C::SeasonPanel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonPassOwnedSwitcher) == 0x000720, "Member 'UAthenaSeasonTab_C::SeasonPassOwnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SeasonVariantUnlockCondition) == 0x000728, "Member 'UAthenaSeasonTab_C::SeasonVariantUnlockCondition' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, SwipePanel) == 0x000730, "Member 'UAthenaSeasonTab_C::SwipePanel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, T_ExclusiveText) == 0x000738, "Member 'UAthenaSeasonTab_C::T_ExclusiveText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, TimerIcon) == 0x000740, "Member 'UAthenaSeasonTab_C::TimerIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, TotalPageNumber) == 0x000748, "Member 'UAthenaSeasonTab_C::TotalPageNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, VariantSetInfoBlock) == 0x000750, "Member 'UAthenaSeasonTab_C::VariantSetInfoBlock' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, VariantUnlockPreviewSet) == 0x000758, "Member 'UAthenaSeasonTab_C::VariantUnlockPreviewSet' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, CurrentPage) == 0x000760, "Member 'UAthenaSeasonTab_C::CurrentPage' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DoNotNavigateToFirstLevel) == 0x000768, "Member 'UAthenaSeasonTab_C::DoNotNavigateToFirstLevel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Input_ShowAbout) == 0x000770, "Member 'UAthenaSeasonTab_C::Input_ShowAbout' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Input_GiftBattlePass) == 0x000780, "Member 'UAthenaSeasonTab_C::Input_GiftBattlePass' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, CurrentInputType) == 0x000790, "Member 'UAthenaSeasonTab_C::CurrentInputType' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, MaxTranslationAmount) == 0x000794, "Member 'UAthenaSeasonTab_C::MaxTranslationAmount' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, TouchTranslationPercent) == 0x000798, "Member 'UAthenaSeasonTab_C::TouchTranslationPercent' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, TranslationDecayRate) == 0x00079C, "Member 'UAthenaSeasonTab_C::TranslationDecayRate' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Input_ReplayCinematic) == 0x0007A0, "Member 'UAthenaSeasonTab_C::Input_ReplayCinematic' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DetailsTimer) == 0x0007B0, "Member 'UAthenaSeasonTab_C::DetailsTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, LastViewVaultItem) == 0x0007B8, "Member 'UAthenaSeasonTab_C::LastViewVaultItem' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, StreamedVideoOpeningTimer) == 0x0007C0, "Member 'UAthenaSeasonTab_C::StreamedVideoOpeningTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, StreamedVideoPlayingTimer) == 0x0007C8, "Member 'UAthenaSeasonTab_C::StreamedVideoPlayingTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, StreamedMediaPlayer) == 0x0007D0, "Member 'UAthenaSeasonTab_C::StreamedMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, ElectraMediaSource) == 0x0007D8, "Member 'UAthenaSeasonTab_C::ElectraMediaSource' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, ActivatableMovieWidget) == 0x0007E0, "Member 'UAthenaSeasonTab_C::ActivatableMovieWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, PaginationArray) == 0x0007E8, "Member 'UAthenaSeasonTab_C::PaginationArray' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, IsLabelVisible) == 0x0007F8, "Member 'UAthenaSeasonTab_C::IsLabelVisible' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, DyamicPipArray) == 0x000800, "Member 'UAthenaSeasonTab_C::DyamicPipArray' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, Input_ShowFAQ) == 0x000810, "Member 'UAthenaSeasonTab_C::Input_ShowFAQ' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonTab_C, HasDisplayedUpsell) == 0x000820, "Member 'UAthenaSeasonTab_C::HasDisplayedUpsell' has a wrong offset!");
 
 }
 

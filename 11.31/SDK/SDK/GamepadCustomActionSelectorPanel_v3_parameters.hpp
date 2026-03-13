@@ -24,9 +24,6 @@ struct GamepadCustomActionSelectorPanel_v3_C_HandleClear final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_HandleClear) == 0x000001, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_HandleClear");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_HandleClear) == 0x000001, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_HandleClear");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_HandleClear, PassThrough) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_HandleClear::PassThrough' has a wrong offset!");
 
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.CreateCustomListItem
 // 0x00B8 (0x00B8 - 0x0000)
@@ -57,26 +54,6 @@ public:
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue_2;                 // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   CallFunc_GetKeyForAction_ReturnValue;              // 0x00A0(0x0018)(HasGetValueTypeHash)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem) == 0x000008, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem) == 0x0000B8, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, ActionName) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::ActionName' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, InputActionGroup) == 0x000008, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::InputActionGroup' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, ReturnItem) == 0x000010, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::ReturnItem' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, ActionName_Local) == 0x000018, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::ActionName_Local' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, InputActionGroup_Local) == 0x000020, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::InputActionGroup_Local' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CustomPresetName_Local) == 0x000024, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CustomPresetName_Local' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, ReturnItem_Local) == 0x000030, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::ReturnItem_Local' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, K2Node_SwitchEnum_CmpSuccess) == 0x000038, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetContext_ReturnValue) == 0x000040, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetContext_ReturnValue_1) == 0x000048, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetCustomGamepadInputPresetName_ReturnValue) == 0x000058, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetCustomGamepadInputPresetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_Conv_StringToName_ReturnValue) == 0x000068, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetFortInputDataForBlueprint_ReturnValue) == 0x000070, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetFortInputDataForBlueprint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_Create_ReturnValue) == 0x000078, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetScreenLabel_ReturnValue) == 0x000080, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetScreenLabel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetContext_ReturnValue_2) == 0x000098, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem, CallFunc_GetKeyForAction_ReturnValue) == 0x0000A0, "Member 'GamepadCustomActionSelectorPanel_v3_C_CreateCustomListItem::CallFunc_GetKeyForAction_ReturnValue' has a wrong offset!");
 
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.HandleBack
 // 0x0001 (0x0001 - 0x0000)
@@ -85,9 +62,6 @@ struct GamepadCustomActionSelectorPanel_v3_C_HandleBack final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_HandleBack) == 0x000001, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_HandleBack");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_HandleBack) == 0x000001, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_HandleBack");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_HandleBack, PassThrough) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_HandleBack::PassThrough' has a wrong offset!");
 
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.UpdatePanel
 // 0x0010 (0x0010 - 0x0000)
@@ -96,9 +70,6 @@ struct GamepadCustomActionSelectorPanel_v3_C_UpdatePanel final
 public:
 	TArray<class UFortOptionsMenuInputData*>      InputData;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_UpdatePanel) == 0x000008, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_UpdatePanel");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_UpdatePanel) == 0x000010, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_UpdatePanel");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_UpdatePanel, InputData) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_UpdatePanel::InputData' has a wrong offset!");
 
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.BP_OnItemClicked_Bind
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +78,6 @@ struct GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind final
 public:
 	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind) == 0x000008, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind) == 0x000008, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind, Item) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_BP_OnItemClicked_Bind::Item' has a wrong offset!");
 
 // Function GamepadCustomActionSelectorPanel_v3.GamepadCustomActionSelectorPanel_v3_C.ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3
 // 0x0098 (0x0098 - 0x0000)
@@ -141,27 +109,6 @@ public:
 	uint8                                         Pad_81[0x3];                                       // 0x0081(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate_2;            // 0x0084(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3) == 0x000008, "Wrong alignment on GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3");
-static_assert(sizeof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3) == 0x000098, "Wrong size on GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, EntryPoint) == 0x000000, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_CustomEvent_InputData) == 0x000008, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_CustomEvent_InputData' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_CustomEvent_Item) == 0x000018, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_CustomEvent_Item' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate) == 0x000020, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_DynamicCast_AsGamepad_Key_Text_Button) == 0x000030, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_DynamicCast_AsGamepad_Key_Text_Button' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, Temp_int_Loop_Counter_Variable) == 0x00003C, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate_1) == 0x000040, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_Add_IntInt_ReturnValue) == 0x000054, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, Temp_int_Array_Index_Variable) == 0x000058, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_BP_GetSelectedItem_ReturnValue) == 0x000060, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_BP_GetSelectedItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_Array_Get_Item) == 0x000068, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_GetIndexForItem_ReturnValue) == 0x000070, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_GetIndexForItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_GetInputActionGroup_ReturnValue) == 0x000074, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_GetInputActionGroup_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_CreateCustomListItem_ReturnItem) == 0x000078, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_CreateCustomListItem_ReturnItem' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate_2) == 0x000084, "Member 'GamepadCustomActionSelectorPanel_v3_C_ExecuteUbergraph_GamepadCustomActionSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 }
 

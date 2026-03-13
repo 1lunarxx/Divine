@@ -52,27 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PunchCardEntry_C">();
+		BP_STATIC_CLASS_IMPL("PunchCardEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PunchCardEntry_C")
 	}
 	static class UPunchCardEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPunchCardEntry_C>();
 	}
 };
-static_assert(alignof(UPunchCardEntry_C) == 0x000008, "Wrong alignment on UPunchCardEntry_C");
-static_assert(sizeof(UPunchCardEntry_C) == 0x0002E8, "Wrong size on UPunchCardEntry_C");
-static_assert(offsetof(UPunchCardEntry_C, UberGraphFrame) == 0x000288, "Member 'UPunchCardEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, SocketXP) == 0x000290, "Member 'UPunchCardEntry_C::SocketXP' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, AccoladeImageWidget) == 0x000298, "Member 'UPunchCardEntry_C::AccoladeImageWidget' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, FortLazyImage_Socketed) == 0x0002A0, "Member 'UPunchCardEntry_C::FortLazyImage_Socketed' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Image_EmptySocket) == 0x0002A8, "Member 'UPunchCardEntry_C::Image_EmptySocket' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Image_FillingSocket) == 0x0002B0, "Member 'UPunchCardEntry_C::Image_FillingSocket' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Image_SocketOutline) == 0x0002B8, "Member 'UPunchCardEntry_C::Image_SocketOutline' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Image_SocketOutline_2) == 0x0002C0, "Member 'UPunchCardEntry_C::Image_SocketOutline_2' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Switcher_Placed) == 0x0002C8, "Member 'UPunchCardEntry_C::Switcher_Placed' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Text_FrontendXPLabel) == 0x0002D0, "Member 'UPunchCardEntry_C::Text_FrontendXPLabel' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, bAlreadyPunched) == 0x0002D8, "Member 'UPunchCardEntry_C::bAlreadyPunched' has a wrong offset!");
-static_assert(offsetof(UPunchCardEntry_C, Temp_Accolade) == 0x0002E0, "Member 'UPunchCardEntry_C::Temp_Accolade' has a wrong offset!");
 
 }
 

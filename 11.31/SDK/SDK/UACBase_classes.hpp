@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UACNetworkComponent">();
+		STATIC_CLASS_IMPL("UACNetworkComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UACNetworkComponent")
 	}
 	static class UUACNetworkComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUACNetworkComponent>();
 	}
 };
-static_assert(alignof(UUACNetworkComponent) == 0x000008, "Wrong alignment on UUACNetworkComponent");
-static_assert(sizeof(UUACNetworkComponent) == 0x0001B0, "Wrong size on UUACNetworkComponent");
-static_assert(offsetof(UUACNetworkComponent, PlayerID) == 0x0000B0, "Member 'UUACNetworkComponent::PlayerID' has a wrong offset!");
 
 }
 

@@ -69,46 +69,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccoladeImageWidget_C">();
+		BP_STATIC_CLASS_IMPL("AccoladeImageWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccoladeImageWidget_C")
 	}
 	static class UAccoladeImageWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccoladeImageWidget_C>();
 	}
 };
-static_assert(alignof(UAccoladeImageWidget_C) == 0x000008, "Wrong alignment on UAccoladeImageWidget_C");
-static_assert(sizeof(UAccoladeImageWidget_C) == 0x000328, "Wrong size on UAccoladeImageWidget_C");
-static_assert(offsetof(UAccoladeImageWidget_C, UberGraphFrame) == 0x000230, "Member 'UAccoladeImageWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Socket_VisualState) == 0x000238, "Member 'UAccoladeImageWidget_C::Socket_VisualState' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Socket) == 0x000240, "Member 'UAccoladeImageWidget_C::Socket' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Upgrade) == 0x000248, "Member 'UAccoladeImageWidget_C::Upgrade' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Intro) == 0x000250, "Member 'UAccoladeImageWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, CommonBorder_WingsLeft) == 0x000258, "Member 'UAccoladeImageWidget_C::CommonBorder_WingsLeft' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, CommonBorder_WingsRight) == 0x000260, "Member 'UAccoladeImageWidget_C::CommonBorder_WingsRight' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_AnimatedCorona) == 0x000268, "Member 'UAccoladeImageWidget_C::Image_AnimatedCorona' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_FXParticles) == 0x000270, "Member 'UAccoladeImageWidget_C::Image_FXParticles' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_HaloCorona) == 0x000278, "Member 'UAccoladeImageWidget_C::Image_HaloCorona' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_largeglow) == 0x000280, "Member 'UAccoladeImageWidget_C::Image_largeglow' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Left_Wing1) == 0x000288, "Member 'UAccoladeImageWidget_C::Image_Left_Wing1' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Left_Wing2) == 0x000290, "Member 'UAccoladeImageWidget_C::Image_Left_Wing2' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Left_Wing3) == 0x000298, "Member 'UAccoladeImageWidget_C::Image_Left_Wing3' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_PulseRingImage) == 0x0002A0, "Member 'UAccoladeImageWidget_C::Image_PulseRingImage' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Right_Wing1) == 0x0002A8, "Member 'UAccoladeImageWidget_C::Image_Right_Wing1' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Right_Wing2) == 0x0002B0, "Member 'UAccoladeImageWidget_C::Image_Right_Wing2' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_Right_Wing3) == 0x0002B8, "Member 'UAccoladeImageWidget_C::Image_Right_Wing3' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_spike_LeftBottom) == 0x0002C0, "Member 'UAccoladeImageWidget_C::Image_spike_LeftBottom' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_spike_LeftTop) == 0x0002C8, "Member 'UAccoladeImageWidget_C::Image_spike_LeftTop' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_spike_RightBottom) == 0x0002D0, "Member 'UAccoladeImageWidget_C::Image_spike_RightBottom' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Image_spike_RightTop) == 0x0002D8, "Member 'UAccoladeImageWidget_C::Image_spike_RightTop' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, LazyImage_MedalIcon) == 0x0002E0, "Member 'UAccoladeImageWidget_C::LazyImage_MedalIcon' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Overlay_Medal) == 0x0002E8, "Member 'UAccoladeImageWidget_C::Overlay_Medal' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, Overlay_Spikes) == 0x0002F0, "Member 'UAccoladeImageWidget_C::Overlay_Spikes' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, UIEmitter) == 0x0002F8, "Member 'UAccoladeImageWidget_C::UIEmitter' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, MedalLevel) == 0x000300, "Member 'UAccoladeImageWidget_C::MedalLevel' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, ShowSocketed) == 0x000304, "Member 'UAccoladeImageWidget_C::ShowSocketed' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, SocketSmash) == 0x000308, "Member 'UAccoladeImageWidget_C::SocketSmash' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, OnSocketSound) == 0x000318, "Member 'UAccoladeImageWidget_C::OnSocketSound' has a wrong offset!");
-static_assert(offsetof(UAccoladeImageWidget_C, OnUpgradeSound) == 0x000320, "Member 'UAccoladeImageWidget_C::OnUpgradeSound' has a wrong offset!");
 
 }
 

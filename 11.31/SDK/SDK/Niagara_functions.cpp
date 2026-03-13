@@ -1307,7 +1307,7 @@ void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FB
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
+		Func = AsUObject()->Class->GetFunction("NiagaraParticleCallbackHandler", "ReceiveParticleData");
 
 	Params::NiagaraParticleCallbackHandler_ReceiveParticleData Parms{};
 
@@ -1317,7 +1317,7 @@ void INiagaraParticleCallbackHandler::ReceiveParticleData(const TArray<struct FB
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }

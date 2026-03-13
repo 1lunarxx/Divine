@@ -23,15 +23,17 @@ class UChallengeCategoryTab_C final : public UChallengeScreenCategoryTab
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeCategoryTab_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeCategoryTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeCategoryTab_C")
 	}
 	static class UChallengeCategoryTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeCategoryTab_C>();
 	}
 };
-static_assert(alignof(UChallengeCategoryTab_C) == 0x000008, "Wrong alignment on UChallengeCategoryTab_C");
-static_assert(sizeof(UChallengeCategoryTab_C) == 0x000B80, "Wrong size on UChallengeCategoryTab_C");
 
 }
 

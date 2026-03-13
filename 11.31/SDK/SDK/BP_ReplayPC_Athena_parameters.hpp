@@ -77,7 +77,7 @@ public:
 	uint8                                         Pad_D9[0x7];                                       // 0x00D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue_3;               // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSound2D_ReturnValue_4;               // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const EHudVisibilityState IsVisible)> K2Node_CreateDelegate_OutputDelegate;              // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const EHudVisibilityState IsVisible)> K2Node_CreateDelegate_OutputDelegate;       // 0x00F0(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0101(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0102(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -116,85 +116,6 @@ public:
 	bool                                          CallFunc_IsGameplayCamera_IsGameplayCamera_3;      // 0x0186(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x0187(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena) == 0x000010, "Wrong alignment on BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena");
-static_assert(sizeof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena) == 0x000190, "Wrong size on BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, EntryPoint) == 0x000000, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetIsPlayingReplay_ReturnValue) == 0x000004, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetIsPlayingReplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_byte_Variable) == 0x000005, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_bool_Variable) == 0x000006, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_bool_Variable_1) == 0x000007, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_bool_Variable_2) == 0x000008, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_bool_Variable_3) == 0x000009, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue) == 0x00000A, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_1) == 0x00000B, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_2) == 0x00000C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetContext_ReturnValue) == 0x000010, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_SpawnSound2D_ReturnValue) == 0x000018, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_int_Array_Index_Variable) == 0x000020, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsLocalPlayerController_ReturnValue) == 0x000024, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsLocalPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_Event_NewMultiplier) == 0x000028, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_Event_NewMultiplier' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_BooleanAND_ReturnValue) == 0x00002C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Map_Find_Value) == 0x000030, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Map_Find_ReturnValue) == 0x000038, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Map_Values_Values) == 0x000040, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Map_Values_Values' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Array_Get_Item) == 0x000050, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Array_Length_ReturnValue) == 0x000058, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x00005C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CustomEvent_Playback_Multiplier) == 0x000060, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CustomEvent_Playback_Multiplier' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Less_FloatFloat_ReturnValue) == 0x000064, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000065, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_SpawnSound2D_ReturnValue_1) == 0x000068, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_SpawnSound2D_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_object_Variable) == 0x000070, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetContext_ReturnValue_1) == 0x000078, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_MapRangeClamped_ReturnValue) == 0x000080, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_MapRangeClamped_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_3) == 0x000084, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x000085, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_SpawnSound2D_ReturnValue_2) == 0x000088, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_SpawnSound2D_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_bool_Variable_4) == 0x000090, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_4) == 0x000091, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_MapRangeClamped_ReturnValue_1) == 0x000094, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_MapRangeClamped_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000098, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_5) == 0x00009C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_NotEqual_FloatFloat_ReturnValue) == 0x00009D, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_NotEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CustomEvent_IsVisible) == 0x00009E, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CustomEvent_IsVisible' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_struct_Variable) == 0x0000A0, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_AddComponent_ReturnValue) == 0x0000D0, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_Select_Default) == 0x0000D8, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_SpawnSound2D_ReturnValue_3) == 0x0000E0, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_SpawnSound2D_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_SpawnSound2D_ReturnValue_4) == 0x0000E8, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_SpawnSound2D_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CreateDelegate_OutputDelegate) == 0x0000F0, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000100, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000101, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_BooleanOR_ReturnValue) == 0x000102, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_6) == 0x000103, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_BooleanOR_ReturnValue_1) == 0x000104, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_BooleanAND_ReturnValue_1) == 0x000105, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetSkydivingSound_ReturnValue) == 0x000108, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetSkydivingSound_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetSkydivingSound_ReturnValue_1) == 0x000110, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetSkydivingSound_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_NotEqual_ObjectObject_ReturnValue_1) == 0x000118, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_NotEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_7) == 0x000119, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsValid_ReturnValue_8) == 0x00011A, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsValid_ReturnValue_8' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_GetViewTarget_ReturnValue) == 0x000120, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CustomEvent_bPaused) == 0x000128, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CustomEvent_bPaused' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000130, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsParachuteOpen_ReturnValue) == 0x000139, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsParachuteOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsSkydiving_ReturnValue) == 0x00013A, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsSkydiving_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Not_PreBool_ReturnValue) == 0x00013B, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CreateDelegate_OutputDelegate_1) == 0x00013C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_BooleanAND_ReturnValue_2) == 0x00014C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_object_Variable_1) == 0x000150, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_CreateDelegate_OutputDelegate_2) == 0x000158, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, K2Node_Select_Default_1) == 0x000168, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000170, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, Temp_int_Loop_Counter_Variable) == 0x000178, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsGameplayCamera_IsGameplayCamera) == 0x00017C, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsGameplayCamera_IsGameplayCamera' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Less_IntInt_ReturnValue) == 0x00017D, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_Add_IntInt_ReturnValue) == 0x000180, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsGameplayCamera_IsGameplayCamera_1) == 0x000184, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsGameplayCamera_IsGameplayCamera_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsGameplayCamera_IsGameplayCamera_2) == 0x000185, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsGameplayCamera_IsGameplayCamera_2' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_IsGameplayCamera_IsGameplayCamera_3) == 0x000186, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_IsGameplayCamera_IsGameplayCamera_3' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000187, "Member 'BP_ReplayPC_Athena_C_ExecuteUbergraph_BP_ReplayPC_Athena::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.On Pause State Changed
 // 0x0001 (0x0001 - 0x0000)
@@ -203,9 +124,6 @@ struct BP_ReplayPC_Athena_C_On_Pause_State_Changed final
 public:
 	bool                                          bPaused;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_On_Pause_State_Changed) == 0x000001, "Wrong alignment on BP_ReplayPC_Athena_C_On_Pause_State_Changed");
-static_assert(sizeof(BP_ReplayPC_Athena_C_On_Pause_State_Changed) == 0x000001, "Wrong size on BP_ReplayPC_Athena_C_On_Pause_State_Changed");
-static_assert(offsetof(BP_ReplayPC_Athena_C_On_Pause_State_Changed, bPaused) == 0x000000, "Member 'BP_ReplayPC_Athena_C_On_Pause_State_Changed::bPaused' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.OnReplayHudVisibilityChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -214,9 +132,6 @@ struct BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged final
 public:
 	EHudVisibilityState                           IsVisible;                                         // 0x0000(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged) == 0x000001, "Wrong alignment on BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged");
-static_assert(sizeof(BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged) == 0x000001, "Wrong size on BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged");
-static_assert(offsetof(BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged, IsVisible) == 0x000000, "Member 'BP_ReplayPC_Athena_C_OnReplayHudVisibilityChanged::IsVisible' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C. Speedup Loops
 // 0x0004 (0x0004 - 0x0000)
@@ -225,9 +140,6 @@ struct BP_ReplayPC_Athena_C__Speedup_Loops final
 public:
 	float                                         Playback_Multiplier;                               // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C__Speedup_Loops) == 0x000004, "Wrong alignment on BP_ReplayPC_Athena_C__Speedup_Loops");
-static_assert(sizeof(BP_ReplayPC_Athena_C__Speedup_Loops) == 0x000004, "Wrong size on BP_ReplayPC_Athena_C__Speedup_Loops");
-static_assert(offsetof(BP_ReplayPC_Athena_C__Speedup_Loops, Playback_Multiplier) == 0x000000, "Member 'BP_ReplayPC_Athena_C__Speedup_Loops::Playback_Multiplier' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.OnNotifyNewPlaybackMultiplier
 // 0x0004 (0x0004 - 0x0000)
@@ -236,9 +148,6 @@ struct BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier final
 public:
 	float                                         NewMultiplier;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier) == 0x000004, "Wrong alignment on BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier");
-static_assert(sizeof(BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier) == 0x000004, "Wrong size on BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier");
-static_assert(offsetof(BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier, NewMultiplier) == 0x000000, "Member 'BP_ReplayPC_Athena_C_OnNotifyNewPlaybackMultiplier::NewMultiplier' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
@@ -247,9 +156,6 @@ struct BP_ReplayPC_Athena_C_UserConstructionScript final
 public:
 	class UAthenaMarkerComponent*                 CallFunc_GetMarkerComponent_ReturnValue;           // 0x0000(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_ReplayPC_Athena_C_UserConstructionScript");
-static_assert(sizeof(BP_ReplayPC_Athena_C_UserConstructionScript) == 0x000008, "Wrong size on BP_ReplayPC_Athena_C_UserConstructionScript");
-static_assert(offsetof(BP_ReplayPC_Athena_C_UserConstructionScript, CallFunc_GetMarkerComponent_ReturnValue) == 0x000000, "Member 'BP_ReplayPC_Athena_C_UserConstructionScript::CallFunc_GetMarkerComponent_ReturnValue' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.GetSkydivingSound
 // 0x0028 (0x0028 - 0x0000)
@@ -263,13 +169,6 @@ public:
 	class USoundBase*                             Temp_object_Variable_1;                            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_GetSkydivingSound) == 0x000008, "Wrong alignment on BP_ReplayPC_Athena_C_GetSkydivingSound");
-static_assert(sizeof(BP_ReplayPC_Athena_C_GetSkydivingSound) == 0x000028, "Wrong size on BP_ReplayPC_Athena_C_GetSkydivingSound");
-static_assert(offsetof(BP_ReplayPC_Athena_C_GetSkydivingSound, ReturnValue) == 0x000000, "Member 'BP_ReplayPC_Athena_C_GetSkydivingSound::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_GetSkydivingSound, Temp_bool_Variable) == 0x000008, "Member 'BP_ReplayPC_Athena_C_GetSkydivingSound::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_GetSkydivingSound, Temp_object_Variable) == 0x000010, "Member 'BP_ReplayPC_Athena_C_GetSkydivingSound::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_GetSkydivingSound, Temp_object_Variable_1) == 0x000018, "Member 'BP_ReplayPC_Athena_C_GetSkydivingSound::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_GetSkydivingSound, K2Node_Select_Default) == 0x000020, "Member 'BP_ReplayPC_Athena_C_GetSkydivingSound::K2Node_Select_Default' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.SetSkydivingAudioEnabled
 // 0x0020 (0x0020 - 0x0000)
@@ -283,12 +182,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             CallFunc_GetSkydivingSound_ReturnValue;            // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled) == 0x000008, "Wrong alignment on BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled");
-static_assert(sizeof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled) == 0x000020, "Wrong size on BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled");
-static_assert(offsetof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled, Enabled) == 0x000000, "Member 'BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled::Enabled' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled, CallFunc_SpawnSound2D_ReturnValue) == 0x000008, "Member 'BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled, CallFunc_GetSkydivingSound_ReturnValue) == 0x000018, "Member 'BP_ReplayPC_Athena_C_SetSkydivingAudioEnabled::CallFunc_GetSkydivingSound_ReturnValue' has a wrong offset!");
 
 // Function BP_ReplayPC_Athena.BP_ReplayPC_Athena_C.IsGameplayCamera
 // 0x0003 (0x0003 - 0x0000)
@@ -299,11 +192,6 @@ public:
 	bool                                          NewLocalVar_0;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ReplayPC_Athena_C_IsGameplayCamera) == 0x000001, "Wrong alignment on BP_ReplayPC_Athena_C_IsGameplayCamera");
-static_assert(sizeof(BP_ReplayPC_Athena_C_IsGameplayCamera) == 0x000003, "Wrong size on BP_ReplayPC_Athena_C_IsGameplayCamera");
-static_assert(offsetof(BP_ReplayPC_Athena_C_IsGameplayCamera, IsGameplayCamera_0) == 0x000000, "Member 'BP_ReplayPC_Athena_C_IsGameplayCamera::IsGameplayCamera_0' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_IsGameplayCamera, NewLocalVar_0) == 0x000001, "Member 'BP_ReplayPC_Athena_C_IsGameplayCamera::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(BP_ReplayPC_Athena_C_IsGameplayCamera, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BP_ReplayPC_Athena_C_IsGameplayCamera::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 }
 

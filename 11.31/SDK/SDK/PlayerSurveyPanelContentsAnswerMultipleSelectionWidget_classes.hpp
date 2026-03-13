@@ -68,33 +68,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C")
 	}
 	static class UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C");
-static_assert(sizeof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C) == 0x0003B0, "Wrong size on UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, UberGraphFrame) == 0x0002B8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Action_ActionDisplay) == 0x0002C0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Action_ActionDisplay' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, ChoicesEntryBox) == 0x0002C8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::ChoicesEntryBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, ChoicesScrollBox) == 0x0002D0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::ChoicesScrollBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, DummyButton) == 0x0002D8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::DummyButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, SelectionCountTextBlock) == 0x0002E0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::SelectionCountTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_ActionDisplay) == 0x0002E8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_ActionDisplay' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, ChoiceButtons) == 0x0002F0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::ChoiceButtons' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_Subtitle) == 0x000300, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_Subtitle' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_SelectionCount_NoLimit) == 0x000318, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_SelectionCount_NoLimit' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_SelectionCount_MinLimit) == 0x000330, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_SelectionCount_MinLimit' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_SelectionCount_MaxLimit) == 0x000348, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_SelectionCount_MaxLimit' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, SelectionCountStyle_Valid) == 0x000360, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::SelectionCountStyle_Valid' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, SelectionCountStyle_Invalid) == 0x000368, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::SelectionCountStyle_Invalid' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_ActionDisplay_ToggleOff) == 0x000370, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_ActionDisplay_ToggleOff' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, Text_ActionDisplay_ToggleOn) == 0x000388, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::Text_ActionDisplay_ToggleOn' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, ActionDisplayStyle_CannotToggle) == 0x0003A0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::ActionDisplayStyle_CannotToggle' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C, ActionDisplayStyle_CanToggle) == 0x0003A8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleSelectionWidget_C::ActionDisplayStyle_CanToggle' has a wrong offset!");
 
 }
 

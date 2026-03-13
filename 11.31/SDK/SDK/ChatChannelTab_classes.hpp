@@ -23,15 +23,17 @@ class UChatChannelTab_C final : public USocialChatChannelTab
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatChannelTab_C">();
+		BP_STATIC_CLASS_IMPL("ChatChannelTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatChannelTab_C")
 	}
 	static class UChatChannelTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatChannelTab_C>();
 	}
 };
-static_assert(alignof(UChatChannelTab_C) == 0x000008, "Wrong alignment on UChatChannelTab_C");
-static_assert(sizeof(UChatChannelTab_C) == 0x000B80, "Wrong size on UChatChannelTab_C");
 
 }
 

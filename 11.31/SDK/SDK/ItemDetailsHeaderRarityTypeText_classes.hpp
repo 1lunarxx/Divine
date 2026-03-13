@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDetailsHeaderRarityTypeText_C">();
+		BP_STATIC_CLASS_IMPL("ItemDetailsHeaderRarityTypeText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDetailsHeaderRarityTypeText_C")
 	}
 	static class UItemDetailsHeaderRarityTypeText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDetailsHeaderRarityTypeText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderRarityTypeText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderRarityTypeText_C");
-static_assert(sizeof(UItemDetailsHeaderRarityTypeText_C) == 0x0002C8, "Wrong size on UItemDetailsHeaderRarityTypeText_C");
-static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, UberGraphFrame) == 0x0002B0, "Member 'UItemDetailsHeaderRarityTypeText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, RarityTextBlock) == 0x0002B8, "Member 'UItemDetailsHeaderRarityTypeText_C::RarityTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeaderRarityTypeText_C, TypeTextBlock) == 0x0002C0, "Member 'UItemDetailsHeaderRarityTypeText_C::TypeTextBlock' has a wrong offset!");
 
 }
 

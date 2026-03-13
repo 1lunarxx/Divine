@@ -25,9 +25,6 @@ struct WinterQuestTreeScreen_C_OnInputMethodChanged final
 public:
 	ECommonInputType                              NewMethod;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestTreeScreen_C_OnInputMethodChanged) == 0x000001, "Wrong alignment on WinterQuestTreeScreen_C_OnInputMethodChanged");
-static_assert(sizeof(WinterQuestTreeScreen_C_OnInputMethodChanged) == 0x000001, "Wrong size on WinterQuestTreeScreen_C_OnInputMethodChanged");
-static_assert(offsetof(WinterQuestTreeScreen_C_OnInputMethodChanged, NewMethod) == 0x000000, "Member 'WinterQuestTreeScreen_C_OnInputMethodChanged::NewMethod' has a wrong offset!");
 
 // Function WinterQuestTreeScreen.WinterQuestTreeScreen_C.ExecuteUbergraph_WinterQuestTreeScreen
 // 0x00D8 (0x00D8 - 0x0000)
@@ -64,7 +61,7 @@ public:
 	class UGSC_DynamicLevelStreaming_C*           CallFunc_Array_Get_Item;                           // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_7C[0x4];                                       // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<class ABP_CozyLodge_SelectablePresent_Tree_C*> CallFunc_GetAllActorsOfClass_OutActors;            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
+	TArray<class ABP_CozyLodge_SelectablePresent_Tree_C*> CallFunc_GetAllActorsOfClass_OutActors;    // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
 	class ABP_CozyLodge_SelectablePresent_Tree_C* CallFunc_Array_Get_Item_1;                         // 0x0090(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0098(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           CallFunc_GetNodeTag_ReturnValue;                   // 0x009C(0x0008)(NoDestructor, HasGetValueTypeHash)
@@ -81,45 +78,6 @@ public:
 	ECommonInputType                              K2Node_Event_NewMethod;                            // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen) == 0x000008, "Wrong alignment on WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen");
-static_assert(sizeof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen) == 0x0000D8, "Wrong size on WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, EntryPoint) == 0x000000, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_IsValid_ReturnValue) == 0x000004, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_IsValid_ReturnValue_1) == 0x000005, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_byte_Variable) == 0x000006, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_byte_Variable_1) == 0x000007, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_byte_Variable_2) == 0x000008, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_byte_Variable_3) == 0x000009, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_byte_Variable_4) == 0x00000A, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_int_Loop_Counter_Variable) == 0x000010, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000014, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_int_Array_Index_Variable_1) == 0x000018, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_AsWinter_Quest_Open_Prompt) == 0x000020, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_AsWinter_Quest_Open_Prompt' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_IsValid_ReturnValue_2) == 0x000029, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1) == 0x000030, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_IsValid_ReturnValue_3) == 0x00004C, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_GetGameState_ReturnValue) == 0x000050, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_SpawnSound2D_ReturnValue) == 0x000058, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_SpawnSound2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000060, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Array_Get_Item) == 0x000070, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_GetAllActorsOfClass_OutActors) == 0x000080, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Array_Get_Item_1) == 0x000090, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Array_Length_ReturnValue_1) == 0x000098, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_GetNodeTag_ReturnValue) == 0x00009C, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_GetNodeTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Less_IntInt_ReturnValue) == 0x0000A4, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_2) == 0x0000A8, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_AsWinter_Quest_Open_Prompt_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_DynamicCast_bSuccess_2) == 0x0000B0, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000B4, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, Temp_int_Loop_Counter_Variable_1) == 0x0000C4, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000C8, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000CC, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_Event_NewMethod) == 0x0000D0, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_Event_NewMethod' has a wrong offset!");
-static_assert(offsetof(WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen, K2Node_Select_Default) == 0x0000D1, "Member 'WinterQuestTreeScreen_C_ExecuteUbergraph_WinterQuestTreeScreen::K2Node_Select_Default' has a wrong offset!");
 
 }
 

@@ -27,13 +27,13 @@ void ITurnBasedMatchInterface::OnMatchEnded(const class FString& Match)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchEnded");
+		Func = AsUObject()->Class->GetFunction("TurnBasedMatchInterface", "OnMatchEnded");
 
 	Params::TurnBasedMatchInterface_OnMatchEnded Parms{};
 
 	Parms.Match = std::move(Match);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -48,14 +48,14 @@ void ITurnBasedMatchInterface::OnMatchReceivedTurn(const class FString& Match, b
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("TurnBasedMatchInterface", "OnMatchReceivedTurn");
+		Func = AsUObject()->Class->GetFunction("TurnBasedMatchInterface", "OnMatchReceivedTurn");
 
 	Params::TurnBasedMatchInterface_OnMatchReceivedTurn Parms{};
 
 	Parms.Match = std::move(Match);
 	Parms.bDidBecomeActive = bDidBecomeActive;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 }

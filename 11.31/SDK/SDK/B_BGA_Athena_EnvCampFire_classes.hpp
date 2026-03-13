@@ -104,52 +104,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_BGA_Athena_EnvCampFire_C">();
+		BP_STATIC_CLASS_IMPL("B_BGA_Athena_EnvCampFire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_BGA_Athena_EnvCampFire_C")
 	}
 	static class AB_BGA_Athena_EnvCampFire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_BGA_Athena_EnvCampFire_C>();
 	}
 };
-static_assert(alignof(AB_BGA_Athena_EnvCampFire_C) == 0x000008, "Wrong alignment on AB_BGA_Athena_EnvCampFire_C");
-static_assert(sizeof(AB_BGA_Athena_EnvCampFire_C) == 0x000960, "Wrong size on AB_BGA_Athena_EnvCampFire_C");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, UberGraphFrame) == 0x000788, "Member 'AB_BGA_Athena_EnvCampFire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Cylinder) == 0x000790, "Member 'AB_BGA_Athena_EnvCampFire_C::Cylinder' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, FireLoc) == 0x000798, "Member 'AB_BGA_Athena_EnvCampFire_C::FireLoc' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Wood) == 0x0007A0, "Member 'AB_BGA_Athena_EnvCampFire_C::Wood' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, FirePitEmpty) == 0x0007A8, "Member 'AB_BGA_Athena_EnvCampFire_C::FirePitEmpty' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DefaultSceneRoot) == 0x0007B0, "Member 'AB_BGA_Athena_EnvCampFire_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, InteractingPawn) == 0x0007B8, "Member 'AB_BGA_Athena_EnvCampFire_C::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, BeenUsed) == 0x0007C0, "Member 'AB_BGA_Athena_EnvCampFire_C::BeenUsed' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DousedSmokeLife) == 0x0007C4, "Member 'AB_BGA_Athena_EnvCampFire_C::DousedSmokeLife' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Row_DousedSmokeLife) == 0x0007C8, "Member 'AB_BGA_Athena_EnvCampFire_C::Row_DousedSmokeLife' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, HotfixedEnabled) == 0x0007E8, "Member 'AB_BGA_Athena_EnvCampFire_C::HotfixedEnabled' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DestroyIfDisabled) == 0x0007E9, "Member 'AB_BGA_Athena_EnvCampFire_C::DestroyIfDisabled' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Destroyed) == 0x0007EA, "Member 'AB_BGA_Athena_EnvCampFire_C::Destroyed' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Row_HotfixEnabled) == 0x0007F0, "Member 'AB_BGA_Athena_EnvCampFire_C::Row_HotfixEnabled' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, TraceOffset) == 0x000810, "Member 'AB_BGA_Athena_EnvCampFire_C::TraceOffset' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Season7Campfire) == 0x00081C, "Member 'AB_BGA_Athena_EnvCampFire_C::Season7Campfire' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, CustomSpecialS7Tags) == 0x000820, "Member 'AB_BGA_Athena_EnvCampFire_C::CustomSpecialS7Tags' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, SpecialS7FireTime) == 0x000840, "Member 'AB_BGA_Athena_EnvCampFire_C::SpecialS7FireTime' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DousedSmokeWispTimer) == 0x000848, "Member 'AB_BGA_Athena_EnvCampFire_C::DousedSmokeWispTimer' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, S7SuccessEmitter) == 0x000850, "Member 'AB_BGA_Athena_EnvCampFire_C::S7SuccessEmitter' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, S7SuccessSound) == 0x000858, "Member 'AB_BGA_Athena_EnvCampFire_C::S7SuccessSound' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, BlockInteraction) == 0x000860, "Member 'AB_BGA_Athena_EnvCampFire_C::BlockInteraction' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, LitRepBool) == 0x000864, "Member 'AB_BGA_Athena_EnvCampFire_C::LitRepBool' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DousedCue) == 0x000868, "Member 'AB_BGA_Athena_EnvCampFire_C::DousedCue' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, FireCue) == 0x000870, "Member 'AB_BGA_Athena_EnvCampFire_C::FireCue' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, DeathCue) == 0x000878, "Member 'AB_BGA_Athena_EnvCampFire_C::DeathCue' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Row_Light_Cost) == 0x000880, "Member 'AB_BGA_Athena_EnvCampFire_C::Row_Light_Cost' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Text_Light) == 0x0008A0, "Member 'AB_BGA_Athena_EnvCampFire_C::Text_Light' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Text_LightCost) == 0x0008B8, "Member 'AB_BGA_Athena_EnvCampFire_C::Text_LightCost' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Text_LightCostNeedMore) == 0x0008D0, "Member 'AB_BGA_Athena_EnvCampFire_C::Text_LightCostNeedMore' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Item_Wood) == 0x0008E8, "Member 'AB_BGA_Athena_EnvCampFire_C::Item_Wood' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Stoked) == 0x0008F0, "Member 'AB_BGA_Athena_EnvCampFire_C::Stoked' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, StokedCue) == 0x0008F4, "Member 'AB_BGA_Athena_EnvCampFire_C::StokedCue' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Row_Stoke_Cost) == 0x000900, "Member 'AB_BGA_Athena_EnvCampFire_C::Row_Stoke_Cost' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Row_HotfixStokeEnabled) == 0x000920, "Member 'AB_BGA_Athena_EnvCampFire_C::Row_HotfixStokeEnabled' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, Text_StokeCostNeedMore) == 0x000940, "Member 'AB_BGA_Athena_EnvCampFire_C::Text_StokeCostNeedMore' has a wrong offset!");
-static_assert(offsetof(AB_BGA_Athena_EnvCampFire_C, HasBeenLit) == 0x000958, "Member 'AB_BGA_Athena_EnvCampFire_C::HasBeenLit' has a wrong offset!");
 
 }
 

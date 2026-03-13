@@ -69,19 +69,8 @@ public:
 	bool                                          bSupportsTouch;                                    // 0x0006(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_7[0x1];                                        // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TSoftClassPtr<class UClass>>           ControllerData;                                    // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
-	TArray<TSubclassOf<class UCommonInputControllerData>> ControllerDataClasses;                             // 0x0018(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<TSubclassOf<class UCommonInputControllerData>> ControllerDataClasses;                     // 0x0018(0x0010)(ZeroConstructor, Transient, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FCommonInputPlatformData) == 0x000008, "Wrong alignment on FCommonInputPlatformData");
-static_assert(sizeof(FCommonInputPlatformData) == 0x000028, "Wrong size on FCommonInputPlatformData");
-static_assert(offsetof(FCommonInputPlatformData, bSupported) == 0x000000, "Member 'FCommonInputPlatformData::bSupported' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, DefaultInputType) == 0x000001, "Member 'FCommonInputPlatformData::DefaultInputType' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, bSupportsMouseAndKeyboard) == 0x000002, "Member 'FCommonInputPlatformData::bSupportsMouseAndKeyboard' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, bSupportsGamepad) == 0x000003, "Member 'FCommonInputPlatformData::bSupportsGamepad' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, DefaultGamepadType) == 0x000004, "Member 'FCommonInputPlatformData::DefaultGamepadType' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, bCanChangeGamepadType) == 0x000005, "Member 'FCommonInputPlatformData::bCanChangeGamepadType' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, bSupportsTouch) == 0x000006, "Member 'FCommonInputPlatformData::bSupportsTouch' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, ControllerData) == 0x000008, "Member 'FCommonInputPlatformData::ControllerData' has a wrong offset!");
-static_assert(offsetof(FCommonInputPlatformData, ControllerDataClasses) == 0x000018, "Member 'FCommonInputPlatformData::ControllerDataClasses' has a wrong offset!");
 
 // ScriptStruct CommonInput.CommonInputKeySetBrushConfiguration
 // 0x0098 (0x0098 - 0x0000)
@@ -91,10 +80,6 @@ public:
 	TArray<struct FKey>                           Keys;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            KeyBrush;                                          // 0x0010(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeySetBrushConfiguration) == 0x000008, "Wrong alignment on FCommonInputKeySetBrushConfiguration");
-static_assert(sizeof(FCommonInputKeySetBrushConfiguration) == 0x000098, "Wrong size on FCommonInputKeySetBrushConfiguration");
-static_assert(offsetof(FCommonInputKeySetBrushConfiguration, Keys) == 0x000000, "Member 'FCommonInputKeySetBrushConfiguration::Keys' has a wrong offset!");
-static_assert(offsetof(FCommonInputKeySetBrushConfiguration, KeyBrush) == 0x000010, "Member 'FCommonInputKeySetBrushConfiguration::KeyBrush' has a wrong offset!");
 
 // ScriptStruct CommonInput.CommonInputKeyBrushConfiguration
 // 0x00A0 (0x00A0 - 0x0000)
@@ -104,10 +89,6 @@ public:
 	struct FKey                                   Key;                                               // 0x0000(0x0018)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                            KeyBrush;                                          // 0x0018(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FCommonInputKeyBrushConfiguration) == 0x000008, "Wrong alignment on FCommonInputKeyBrushConfiguration");
-static_assert(sizeof(FCommonInputKeyBrushConfiguration) == 0x0000A0, "Wrong size on FCommonInputKeyBrushConfiguration");
-static_assert(offsetof(FCommonInputKeyBrushConfiguration, Key) == 0x000000, "Member 'FCommonInputKeyBrushConfiguration::Key' has a wrong offset!");
-static_assert(offsetof(FCommonInputKeyBrushConfiguration, KeyBrush) == 0x000018, "Member 'FCommonInputKeyBrushConfiguration::KeyBrush' has a wrong offset!");
 
 }
 

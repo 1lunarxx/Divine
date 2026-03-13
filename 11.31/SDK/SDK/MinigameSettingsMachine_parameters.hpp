@@ -45,7 +45,7 @@ public:
 	class AFortPlayerControllerAthena*            K2Node_DynamicCast_AsFort_Player_Controller_Athena_1; // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_91[0x3];                                       // 0x0091(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UUserWidget* UserWidget)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0094(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UUserWidget* UserWidget)> K2Node_CreateDelegate_OutputDelegate_1;           // 0x0094(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x00A4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x00A5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue_1;            // 0x00A6(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -77,49 +77,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0184(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         K2Node_Select_Default;                             // 0x0194(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine");
-static_assert(sizeof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine) == 0x000198, "Wrong size on MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, EntryPoint) == 0x000000, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_CustomEvent_UserWidget) == 0x000018, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_CustomEvent_UserWidget' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, Temp_object_Variable) == 0x000020, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_AsCommon_Activatable_Panel) == 0x000028, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_AsCommon_Activatable_Panel' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, Temp_bool_Has_Been_Initd_Variable) == 0x000031, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_HasAuthority_ReturnValue) == 0x000032, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_Conv_IntToString_ReturnValue) == 0x000038, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000048, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetLocalFortPlayerControllers_ReturnValue_1) == 0x000058, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetLocalFortPlayerControllers_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_Array_Get_Item) == 0x000068, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_Array_Get_Item_1) == 0x000070, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000078, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_AsFort_Player_Controller_Athena_1) == 0x000088, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_AsFort_Player_Controller_Athena_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_DynamicCast_bSuccess_2) == 0x000090, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_CreateDelegate_OutputDelegate_1) == 0x000094, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A4, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_NotEqual_IntInt_ReturnValue) == 0x0000A5, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_NotEqual_IntInt_ReturnValue_1) == 0x0000A6, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_NotEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_MakeArray_Array) == 0x0000A8, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetOptionValueNameFromValue_ReturnValue) == 0x0000B8, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetOptionValueNameFromValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetOptionKey_ReturnValue) == 0x0000C8, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetOptionKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, Temp_bool_IsClosed_Variable) == 0x0000D8, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_MakeMap_Map) == 0x0000E0, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_SetPropertyOverrides_ReturnValue) == 0x000130, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_SetPropertyOverrides_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetLocalFortPlayerControllers_ReturnValue_2) == 0x000138, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetLocalFortPlayerControllers_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, Temp_int_Variable) == 0x000148, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_Array_Get_Item_2) == 0x000150, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_CreateWidgetAsync_ReturnValue) == 0x000158, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_CreateWidgetAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_IsValid_ReturnValue) == 0x000160, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetVolumeManager_OutVolumeManager) == 0x000168, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetVolumeManager_OutVolumeManager' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetVolumeManager_OutIsValid) == 0x000170, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetVolumeManager_OutIsValid' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_SwitchEnum_CmpSuccess) == 0x000171, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_GetRuntimeOptions_ReturnValue) == 0x000178, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_Event_bShouldUse) == 0x000180, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_Event_bShouldUse' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, CallFunc_BooleanAND_ReturnValue) == 0x000181, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, Temp_bool_Variable) == 0x000182, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_CreateDelegate_OutputDelegate_2) == 0x000184, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine, K2Node_Select_Default) == 0x000194, "Member 'MinigameSettingsMachine_C_ExecuteUbergraph_MinigameSettingsMachine::K2Node_Select_Default' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UseSolaris
 // 0x0001 (0x0001 - 0x0000)
@@ -128,9 +85,6 @@ struct MinigameSettingsMachine_C_UseSolaris final
 public:
 	bool                                          bShouldUse;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UseSolaris) == 0x000001, "Wrong alignment on MinigameSettingsMachine_C_UseSolaris");
-static_assert(sizeof(MinigameSettingsMachine_C_UseSolaris) == 0x000001, "Wrong size on MinigameSettingsMachine_C_UseSolaris");
-static_assert(offsetof(MinigameSettingsMachine_C_UseSolaris, bShouldUse) == 0x000000, "Member 'MinigameSettingsMachine_C_UseSolaris::bShouldUse' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.OnComplete_C895978B4EDC5073967F23BED63E6DB5
 // 0x0008 (0x0008 - 0x0000)
@@ -139,9 +93,6 @@ struct MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5 fin
 public:
 	class UUserWidget*                            UserWidget;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5");
-static_assert(sizeof(MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5) == 0x000008, "Wrong size on MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5");
-static_assert(offsetof(MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5, UserWidget) == 0x000000, "Member 'MinigameSettingsMachine_C_OnComplete_C895978B4EDC5073967F23BED63E6DB5::UserWidget' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetPickupSpawnLocation
 // 0x0058 (0x0058 - 0x0000)
@@ -157,15 +108,6 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x003C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_1;           // 0x0048(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_GetPickupSpawnLocation) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_GetPickupSpawnLocation");
-static_assert(sizeof(MinigameSettingsMachine_C_GetPickupSpawnLocation) == 0x000058, "Wrong size on MinigameSettingsMachine_C_GetPickupSpawnLocation");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, SpawnLocation) == 0x000000, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::SpawnLocation' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_GetOwner_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_GetActorForwardVector_ReturnValue) == 0x000024, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_Multiply_VectorInt_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_Multiply_VectorInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_Add_VectorVector_ReturnValue) == 0x00003C, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetPickupSpawnLocation, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000048, "Member 'MinigameSettingsMachine_C_GetPickupSpawnLocation::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.HasMinigameStarted
 // 0x0018 (0x0018 - 0x0000)
@@ -178,12 +120,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasStarted_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_HasMinigameStarted) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_HasMinigameStarted");
-static_assert(sizeof(MinigameSettingsMachine_C_HasMinigameStarted) == 0x000018, "Wrong size on MinigameSettingsMachine_C_HasMinigameStarted");
-static_assert(offsetof(MinigameSettingsMachine_C_HasMinigameStarted, bHasStarted) == 0x000000, "Member 'MinigameSettingsMachine_C_HasMinigameStarted::bHasStarted' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_HasMinigameStarted, CallFunc_GetCurrentMinigame_Minigame) == 0x000008, "Member 'MinigameSettingsMachine_C_HasMinigameStarted::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_HasMinigameStarted, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_HasMinigameStarted::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_HasMinigameStarted, CallFunc_HasStarted_ReturnValue) == 0x000011, "Member 'MinigameSettingsMachine_C_HasMinigameStarted::CallFunc_HasStarted_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateGameMode
 // 0x0058 (0x0058 - 0x0000)
@@ -202,17 +138,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateGameMode) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateGameMode");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateGameMode) == 0x000058, "Wrong size on MinigameSettingsMachine_C_UpdateGameMode");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_Conv_IntToBool_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_Conv_IntToBool_ReturnValue_1) == 0x000009, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_Conv_IntToBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_Conv_IntToBool_ReturnValue_2) == 0x00000A, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_Conv_IntToBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_GetUIExtensions_Return_Value) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_GetUIExtensions_Return_Value' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_GetScoreboardStatsArray_ScoreboardStats) == 0x000030, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_GetScoreboardStatsArray_ScoreboardStats' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_Conv_IntToBool_ReturnValue_3) == 0x000040, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_Conv_IntToBool_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_GetCurrentMinigame_Minigame) == 0x000048, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameMode, CallFunc_IsValid_ReturnValue) == 0x000050, "Member 'MinigameSettingsMachine_C_UpdateGameMode::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateTimeLimit
 // 0x0020 (0x0020 - 0x0000)
@@ -226,13 +151,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateTimeLimit) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateTimeLimit");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateTimeLimit) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateTimeLimit");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTimeLimit, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateTimeLimit::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTimeLimit, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateTimeLimit::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTimeLimit, CallFunc_HasAuthority_ReturnValue) == 0x000009, "Member 'MinigameSettingsMachine_C_UpdateTimeLimit::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTimeLimit, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateTimeLimit::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTimeLimit, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateTimeLimit::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetCurrentMinigame
 // 0x0020 (0x0020 - 0x0000)
@@ -245,12 +163,6 @@ public:
 	class UFortMinigameVolumeComponent*           CallFunc_GetComponentByClass_ReturnValue;          // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_GetCurrentMinigame) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_GetCurrentMinigame");
-static_assert(sizeof(MinigameSettingsMachine_C_GetCurrentMinigame) == 0x000020, "Wrong size on MinigameSettingsMachine_C_GetCurrentMinigame");
-static_assert(offsetof(MinigameSettingsMachine_C_GetCurrentMinigame, Minigame) == 0x000000, "Member 'MinigameSettingsMachine_C_GetCurrentMinigame::Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetCurrentMinigame, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_GetCurrentMinigame::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetCurrentMinigame, CallFunc_GetComponentByClass_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_GetCurrentMinigame::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetCurrentMinigame, CallFunc_IsValid_ReturnValue_1) == 0x000018, "Member 'MinigameSettingsMachine_C_GetCurrentMinigame::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateSpawnLocationSetting
 // 0x0020 (0x0020 - 0x0000)
@@ -263,12 +175,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateSpawnLocationSetting");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateSpawnLocationSetting");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateSpawnLocationSetting::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateSpawnLocationSetting::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateSpawnLocationSetting::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateSpawnLocationSetting, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateSpawnLocationSetting::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateTeamSetting
 // 0x0018 (0x0018 - 0x0000)
@@ -280,11 +186,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateTeamSetting) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateTeamSetting");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateTeamSetting) == 0x000018, "Wrong size on MinigameSettingsMachine_C_UpdateTeamSetting");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamSetting, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateTeamSetting::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamSetting, CallFunc_GetCurrentMinigame_Minigame) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateTeamSetting::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamSetting, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateTeamSetting::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdatePostGameSpawnLocationSetting
 // 0x0020 (0x0020 - 0x0000)
@@ -297,12 +198,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdatePostGameSpawnLocationSetting::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdatePlayerLives
 // 0x0020 (0x0020 - 0x0000)
@@ -315,12 +210,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdatePlayerLives) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdatePlayerLives");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdatePlayerLives) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdatePlayerLives");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerLives, NewLocalVar_0) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdatePlayerLives::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerLives, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdatePlayerLives::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerLives, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdatePlayerLives::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerLives, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdatePlayerLives::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateAutoEndTeamThreshold
 // 0x0020 (0x0020 - 0x0000)
@@ -333,12 +222,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold, Minigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold::Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateAutoEndTeamThreshold::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateTeamToMoveToWhenOutOfSpawns
 // 0x0018 (0x0018 - 0x0000)
@@ -355,16 +238,6 @@ public:
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns) == 0x000018, "Wrong size on MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, Minigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_Conv_IntToByte_ReturnValue) == 0x000009, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, K2Node_SwitchInteger_CmpSuccess) == 0x00000A, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_MakeLiteralByte_ReturnValue) == 0x00000B, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_Add_ByteByte_ReturnValue) == 0x00000C, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_Add_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_IsValid_ReturnValue) == 0x00000D, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateTeamToMoveToWhenOutOfSpawns::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateEndConditions
 // 0x0098 (0x0098 - 0x0000)
@@ -393,24 +266,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0088(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateEndConditions) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateEndConditions");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateEndConditions) == 0x000098, "Wrong size on MinigameSettingsMachine_C_UpdateEndConditions");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, EndConditions) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::EndConditions' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_HasAuthority_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, K2Node_MakeStruct_FortMinigameStatQuery) == 0x000020, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::K2Node_MakeStruct_FortMinigameStatQuery' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Greater_IntInt_ReturnValue) == 0x000038, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, K2Node_MakeStruct_FortMinigameStatQuery_1) == 0x000040, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::K2Node_MakeStruct_FortMinigameStatQuery_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000058, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_TryAddEndCondition_DestroyObjects_bResult) == 0x000059, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_TryAddEndCondition_DestroyObjects_bResult' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_TryAddEndCondition_CollectItems_bResult) == 0x00005A, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_TryAddEndCondition_CollectItems_bResult' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Array_Add_ReturnValue) == 0x00005C, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Array_Add_ReturnValue_1) == 0x000060, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, K2Node_MakeStruct_FortMinigameStatQuery_2) == 0x000068, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::K2Node_MakeStruct_FortMinigameStatQuery_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000080, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_Array_Add_ReturnValue_2) == 0x000084, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_GetCurrentMinigame_Minigame) == 0x000088, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateEndConditions, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'MinigameSettingsMachine_C_UpdateEndConditions::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateAutoStart
 // 0x0020 (0x0020 - 0x0000)
@@ -423,12 +278,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateAutoStart) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateAutoStart");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateAutoStart) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateAutoStart");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoStart, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateAutoStart::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoStart, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateAutoStart::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoStart, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateAutoStart::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateAutoStart, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateAutoStart::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.TryAddEndCondition_CollectItems
 // 0x0038 (0x0038 - 0x0000)
@@ -444,15 +293,6 @@ public:
 	struct FFortMinigameStatQuery                 K2Node_MakeStruct_FortMinigameStatQuery;           // 0x0018(0x0018)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_TryAddEndCondition_CollectItems");
-static_assert(sizeof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems) == 0x000038, "Wrong size on MinigameSettingsMachine_C_TryAddEndCondition_CollectItems");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, EndConditions) == 0x000000, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::EndConditions' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, bResult) == 0x000010, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::bResult' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, bAdded) == 0x000011, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::bAdded' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000012, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, CallFunc_Greater_IntInt_ReturnValue) == 0x000013, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, K2Node_MakeStruct_FortMinigameStatQuery) == 0x000018, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::K2Node_MakeStruct_FortMinigameStatQuery' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_CollectItems, CallFunc_Array_Add_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_CollectItems::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateJoinInProgress
 // 0x0020 (0x0020 - 0x0000)
@@ -466,13 +306,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateJoinInProgress) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateJoinInProgress");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateJoinInProgress) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateJoinInProgress");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateJoinInProgress, NewLocalVar_1) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateJoinInProgress::NewLocalVar_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateJoinInProgress, CallFunc_HasAuthority_ReturnValue) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateJoinInProgress::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateJoinInProgress, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000009, "Member 'MinigameSettingsMachine_C_UpdateJoinInProgress::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateJoinInProgress, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateJoinInProgress::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateJoinInProgress, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateJoinInProgress::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateMinigameMutators
 // 0x0080 (0x0080 - 0x0000)
@@ -490,16 +323,6 @@ public:
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateMinigameMutators) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateMinigameMutators");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateMinigameMutators) == 0x000080, "Wrong size on MinigameSettingsMachine_C_UpdateMinigameMutators");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, MutatorList) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::MutatorList' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CurrentMinigame) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_HasAuthority_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_GetComponentByClass_ReturnValue) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_GetComponentByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_GetPropertyOverrides_CurrentOptions) == 0x000020, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_GetPropertyOverrides_CurrentOptions' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_GetPropertyOverrides_ReturnValue) == 0x000070, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_GetPropertyOverrides_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateMinigameMutators, CallFunc_GetCurrentMinigame_Minigame) == 0x000078, "Member 'MinigameSettingsMachine_C_UpdateMinigameMutators::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateTotalRounds
 // 0x0018 (0x0018 - 0x0000)
@@ -512,12 +335,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateTotalRounds) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateTotalRounds");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateTotalRounds) == 0x000018, "Wrong size on MinigameSettingsMachine_C_UpdateTotalRounds");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTotalRounds, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateTotalRounds::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTotalRounds, CallFunc_GetCurrentMinigame_Minigame) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateTotalRounds::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTotalRounds, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateTotalRounds::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateTotalRounds, CallFunc_Greater_IntInt_ReturnValue) == 0x000011, "Member 'MinigameSettingsMachine_C_UpdateTotalRounds::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.TryAddEndCondition_DestroyObjects
 // 0x0038 (0x0038 - 0x0000)
@@ -533,15 +350,6 @@ public:
 	struct FFortMinigameStatQuery                 K2Node_MakeStruct_FortMinigameStatQuery;           // 0x0018(0x0018)(NoDestructor)
 	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects");
-static_assert(sizeof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects) == 0x000038, "Wrong size on MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, EndConditions) == 0x000000, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::EndConditions' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, bResult) == 0x000010, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::bResult' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, bAdded) == 0x000011, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::bAdded' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, CallFunc_Greater_IntInt_ReturnValue) == 0x000012, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000013, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, K2Node_MakeStruct_FortMinigameStatQuery) == 0x000018, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::K2Node_MakeStruct_FortMinigameStatQuery' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects, CallFunc_Array_Add_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_TryAddEndCondition_DestroyObjects::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.ToggleScriptedGameRules
 // 0x0180 (0x0180 - 0x0000)
@@ -556,14 +364,6 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	struct FSolarisPrototype                      K2Node_MakeStruct_SolarisPrototype;                // 0x0030(0x0150)()
 };
-static_assert(alignof(MinigameSettingsMachine_C_ToggleScriptedGameRules) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_ToggleScriptedGameRules");
-static_assert(sizeof(MinigameSettingsMachine_C_ToggleScriptedGameRules) == 0x000180, "Wrong size on MinigameSettingsMachine_C_ToggleScriptedGameRules");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, bIsScriptedGame) == 0x000000, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::bIsScriptedGame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, Temp_bool_Variable) == 0x000001, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, Temp_string_Variable) == 0x000008, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::Temp_string_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, CallFunc_GetCurrentMinigame_Minigame) == 0x000018, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, K2Node_Select_Default) == 0x000020, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_ToggleScriptedGameRules, K2Node_MakeStruct_SolarisPrototype) == 0x000030, "Member 'MinigameSettingsMachine_C_ToggleScriptedGameRules::K2Node_MakeStruct_SolarisPrototype' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.FillTrackedStats
 // 0x0010 (0x0010 - 0x0000)
@@ -572,9 +372,6 @@ struct MinigameSettingsMachine_C_FillTrackedStats final
 public:
 	TArray<int32>                                 K2Node_MakeArray_Array;                            // 0x0000(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(MinigameSettingsMachine_C_FillTrackedStats) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_FillTrackedStats");
-static_assert(sizeof(MinigameSettingsMachine_C_FillTrackedStats) == 0x000010, "Wrong size on MinigameSettingsMachine_C_FillTrackedStats");
-static_assert(offsetof(MinigameSettingsMachine_C_FillTrackedStats, K2Node_MakeArray_Array) == 0x000000, "Member 'MinigameSettingsMachine_C_FillTrackedStats::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetScoreboardStatsArray
 // 0x0050 (0x0050 - 0x0000)
@@ -595,19 +392,6 @@ public:
 	int32                                         CallFunc_Array_AddUnique_ReturnValue;              // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_GetScoreboardStatsArray) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_GetScoreboardStatsArray");
-static_assert(sizeof(MinigameSettingsMachine_C_GetScoreboardStatsArray) == 0x000050, "Wrong size on MinigameSettingsMachine_C_GetScoreboardStatsArray");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, ScoreboardStats) == 0x000000, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::ScoreboardStats' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, TrackedScoreboardStats) == 0x000010, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::TrackedScoreboardStats' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, Temp_int_Array_Index_Variable) == 0x000020, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, Temp_int_Loop_Counter_Variable) == 0x000024, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Add_IntInt_ReturnValue) == 0x000028, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Array_Get_Item) == 0x00002C, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Array_Length_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Array_AddUnique_ReturnValue) == 0x000044, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Array_AddUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetScoreboardStatsArray, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000048, "Member 'MinigameSettingsMachine_C_GetScoreboardStatsArray::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.Game Mode Preset Upgrade Path
 // 0x0208 (0x0208 - 0x0000)
@@ -656,47 +440,6 @@ public:
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_4;         // 0x0202(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue_5;         // 0x0203(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path");
-static_assert(sizeof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path) == 0x000208, "Wrong size on MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, K2Node_MakeArray_Array) == 0x000000, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue) == 0x000020, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000040, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue_2) == 0x000050, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue_3) == 0x000060, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue_4) == 0x000070, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Conv_IntToString_ReturnValue_5) == 0x000080, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Conv_IntToString_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue_1) == 0x000090, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue_1) == 0x0000A0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue_2) == 0x0000B0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue_3) == 0x0000C0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue_2) == 0x0000D0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue_3) == 0x0000E0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue_4) == 0x0000F0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionValueNameFromValue_ReturnValue_5) == 0x000100, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionValueNameFromValue_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue_4) == 0x000110, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_GetOptionKey_ReturnValue_5) == 0x000120, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_GetOptionKey_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, K2Node_MakeMap_Map) == 0x000130, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item) == 0x000180, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_SetPropertyOverrides_ReturnValue) == 0x0001B8, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_SetPropertyOverrides_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0001B9, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue) == 0x0001BC, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item_1) == 0x0001C0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item_2) == 0x0001C8, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue_1) == 0x0001D0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue_2) == 0x0001D4, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item_3) == 0x0001D8, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item_4) == 0x0001E0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue_3) == 0x0001E8, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue_4) == 0x0001EC, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Get_Item_5) == 0x0001F0, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x0001F8, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_Find_ReturnValue_5) == 0x0001FC, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_Find_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue_2) == 0x000200, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue_3) == 0x000201, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue_4) == 0x000202, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path, CallFunc_Array_IsValidIndex_ReturnValue_5) == 0x000203, "Member 'MinigameSettingsMachine_C_Game_Mode_Preset_Upgrade_Path::CallFunc_Array_IsValidIndex_ReturnValue_5' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetUIExtensions
 // 0x0068 (0x0068 - 0x0000)
@@ -708,12 +451,6 @@ public:
 	struct FGameplayTagContainer                  CallFunc_Array_Get_Item;                           // 0x0040(0x0020)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_GetUIExtensions) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_GetUIExtensions");
-static_assert(sizeof(MinigameSettingsMachine_C_GetUIExtensions) == 0x000068, "Wrong size on MinigameSettingsMachine_C_GetUIExtensions");
-static_assert(offsetof(MinigameSettingsMachine_C_GetUIExtensions, Return_Value) == 0x000000, "Member 'MinigameSettingsMachine_C_GetUIExtensions::Return_Value' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetUIExtensions, Final_UI_Extensions) == 0x000020, "Member 'MinigameSettingsMachine_C_GetUIExtensions::Final_UI_Extensions' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetUIExtensions, CallFunc_Array_Get_Item) == 0x000040, "Member 'MinigameSettingsMachine_C_GetUIExtensions::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_GetUIExtensions, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000060, "Member 'MinigameSettingsMachine_C_GetUIExtensions::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateClassSettings
 // 0x0020 (0x0020 - 0x0000)
@@ -730,16 +467,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         K2Node_Select_Default;                             // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateClassSettings) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateClassSettings");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateClassSettings) == 0x000020, "Wrong size on MinigameSettingsMachine_C_UpdateClassSettings");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, Temp_bool_Variable) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CallFunc_MakeLiteralByte_ReturnValue) == 0x00000A, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CallFunc_Conv_IntToByte_ReturnValue) == 0x00000B, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CallFunc_Conv_IntToByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, CallFunc_GetCurrentMinigame_Minigame) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateClassSettings, K2Node_Select_Default) == 0x000018, "Member 'MinigameSettingsMachine_C_UpdateClassSettings::K2Node_Select_Default' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdatePlayerPersistence
 // 0x0018 (0x0018 - 0x0000)
@@ -751,11 +478,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdatePlayerPersistence) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdatePlayerPersistence");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdatePlayerPersistence) == 0x000018, "Wrong size on MinigameSettingsMachine_C_UpdatePlayerPersistence");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerPersistence, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdatePlayerPersistence::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerPersistence, CallFunc_GetCurrentMinigame_Minigame) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdatePlayerPersistence::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdatePlayerPersistence, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdatePlayerPersistence::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.UpdateGameSettings
 // 0x0018 (0x0018 - 0x0000)
@@ -766,11 +488,6 @@ public:
 	class AFortMinigame*                          CallFunc_GetCurrentMinigame_Minigame;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_UpdateGameSettings) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_UpdateGameSettings");
-static_assert(sizeof(MinigameSettingsMachine_C_UpdateGameSettings) == 0x000018, "Wrong size on MinigameSettingsMachine_C_UpdateGameSettings");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameSettings, CurrentMinigame) == 0x000000, "Member 'MinigameSettingsMachine_C_UpdateGameSettings::CurrentMinigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameSettings, CallFunc_GetCurrentMinigame_Minigame) == 0x000008, "Member 'MinigameSettingsMachine_C_UpdateGameSettings::CallFunc_GetCurrentMinigame_Minigame' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_UpdateGameSettings, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_UpdateGameSettings::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.BlueprintCanInteract
 // 0x0038 (0x0038 - 0x0000)
@@ -791,19 +508,6 @@ public:
 	class AFortVolume*                            CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue; // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameSettingsMachine_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_BlueprintCanInteract");
-static_assert(sizeof(MinigameSettingsMachine_C_BlueprintCanInteract) == 0x000038, "Wrong size on MinigameSettingsMachine_C_BlueprintCanInteract");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, InteractingPawn) == 0x000000, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, InteractionBeingAttempted) == 0x000008, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, ReturnValue) == 0x000009, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CanInteract) == 0x00000A, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CanInteract' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue) == 0x00000B, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CallFunc_GetController_ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x000018, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CallFunc_IsValid_ReturnValue_1) == 0x000021, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume) == 0x000028, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CallFunc_CanPlayerCreateInCurrentVolume_OutCurrentVolume' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintCanInteract, CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue) == 0x000030, "Member 'MinigameSettingsMachine_C_BlueprintCanInteract::CallFunc_CanPlayerCreateInCurrentVolume_ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.BlueprintGetInteractionString
 // 0x0028 (0x0028 - 0x0000)
@@ -815,11 +519,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(MinigameSettingsMachine_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_BlueprintGetInteractionString");
-static_assert(sizeof(MinigameSettingsMachine_C_BlueprintGetInteractionString) == 0x000028, "Wrong size on MinigameSettingsMachine_C_BlueprintGetInteractionString");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetInteractionString, InteractingPawn) == 0x000000, "Member 'MinigameSettingsMachine_C_BlueprintGetInteractionString::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'MinigameSettingsMachine_C_BlueprintGetInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetInteractionString, ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.BlueprintGetFailedInteractionString
 // 0x0028 (0x0028 - 0x0000)
@@ -831,11 +530,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(MinigameSettingsMachine_C_BlueprintGetFailedInteractionString) == 0x000008, "Wrong alignment on MinigameSettingsMachine_C_BlueprintGetFailedInteractionString");
-static_assert(sizeof(MinigameSettingsMachine_C_BlueprintGetFailedInteractionString) == 0x000028, "Wrong size on MinigameSettingsMachine_C_BlueprintGetFailedInteractionString");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetFailedInteractionString, InteractingPawn) == 0x000000, "Member 'MinigameSettingsMachine_C_BlueprintGetFailedInteractionString::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetFailedInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'MinigameSettingsMachine_C_BlueprintGetFailedInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(MinigameSettingsMachine_C_BlueprintGetFailedInteractionString, ReturnValue) == 0x000010, "Member 'MinigameSettingsMachine_C_BlueprintGetFailedInteractionString::ReturnValue' has a wrong offset!");
 
 // Function MinigameSettingsMachine.MinigameSettingsMachine_C.GetTeamSetting
 // 0x0004 (0x0004 - 0x0000)
@@ -844,9 +538,6 @@ struct MinigameSettingsMachine_C_GetTeamSetting final
 public:
 	int32                                         ReturnValue;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameSettingsMachine_C_GetTeamSetting) == 0x000004, "Wrong alignment on MinigameSettingsMachine_C_GetTeamSetting");
-static_assert(sizeof(MinigameSettingsMachine_C_GetTeamSetting) == 0x000004, "Wrong size on MinigameSettingsMachine_C_GetTeamSetting");
-static_assert(offsetof(MinigameSettingsMachine_C_GetTeamSetting, ReturnValue) == 0x000000, "Member 'MinigameSettingsMachine_C_GetTeamSetting::ReturnValue' has a wrong offset!");
 
 }
 

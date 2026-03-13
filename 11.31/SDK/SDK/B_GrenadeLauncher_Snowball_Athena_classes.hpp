@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_GrenadeLauncher_Snowball_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_GrenadeLauncher_Snowball_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_GrenadeLauncher_Snowball_Athena_C")
 	}
 	static class AB_GrenadeLauncher_Snowball_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_GrenadeLauncher_Snowball_Athena_C>();
 	}
 };
-static_assert(alignof(AB_GrenadeLauncher_Snowball_Athena_C) == 0x000008, "Wrong alignment on AB_GrenadeLauncher_Snowball_Athena_C");
-static_assert(sizeof(AB_GrenadeLauncher_Snowball_Athena_C) == 0x000FC8, "Wrong size on AB_GrenadeLauncher_Snowball_Athena_C");
-static_assert(offsetof(AB_GrenadeLauncher_Snowball_Athena_C, Reload_MagazineReload) == 0x000FB8, "Member 'AB_GrenadeLauncher_Snowball_Athena_C::Reload_MagazineReload' has a wrong offset!");
-static_assert(offsetof(AB_GrenadeLauncher_Snowball_Athena_C, Reload_Ammo) == 0x000FC0, "Member 'AB_GrenadeLauncher_Snowball_Athena_C::Reload_Ammo' has a wrong offset!");
 
 }
 

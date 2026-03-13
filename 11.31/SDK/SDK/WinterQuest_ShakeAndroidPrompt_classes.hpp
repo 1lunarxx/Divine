@@ -31,21 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuest_ShakeAndroidPrompt_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuest_ShakeAndroidPrompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuest_ShakeAndroidPrompt_C")
 	}
 	static class UWinterQuest_ShakeAndroidPrompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuest_ShakeAndroidPrompt_C>();
 	}
 };
-static_assert(alignof(UWinterQuest_ShakeAndroidPrompt_C) == 0x000008, "Wrong alignment on UWinterQuest_ShakeAndroidPrompt_C");
-static_assert(sizeof(UWinterQuest_ShakeAndroidPrompt_C) == 0x000BF0, "Wrong size on UWinterQuest_ShakeAndroidPrompt_C");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, UsingResource_Example) == 0x000BC0, "Member 'UWinterQuest_ShakeAndroidPrompt_C::UsingResource_Example' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, UsingResource) == 0x000BC8, "Member 'UWinterQuest_ShakeAndroidPrompt_C::UsingResource' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, IntroAnim) == 0x000BD0, "Member 'UWinterQuest_ShakeAndroidPrompt_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, PointerArrow_Left) == 0x000BD8, "Member 'UWinterQuest_ShakeAndroidPrompt_C::PointerArrow_Left' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, SoloButton_WinterFest) == 0x000BE0, "Member 'UWinterQuest_ShakeAndroidPrompt_C::SoloButton_WinterFest' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_ShakeAndroidPrompt_C, HoldProgressOffset) == 0x000BE8, "Member 'UWinterQuest_ShakeAndroidPrompt_C::HoldProgressOffset' has a wrong offset!");
 
 }
 

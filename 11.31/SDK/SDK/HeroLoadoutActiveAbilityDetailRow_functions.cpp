@@ -17,41 +17,6 @@
 namespace SDK
 {
 
-// Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.SetBorderVisibility
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UHeroLoadoutActiveAbilityDetailRow_C::SetBorderVisibility()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetBorderVisibility");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.GetTierImage
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// TSoftObjectPtr<class UTexture2D>*       NewParam                                               (Parm, OutParm, HasGetValueTypeHash)
-
-void UHeroLoadoutActiveAbilityDetailRow_C::GetTierImage(TSoftObjectPtr<class UTexture2D>* NewParam)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetTierImage");
-
-	Params::HeroLoadoutActiveAbilityDetailRow_C_GetTierImage Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (NewParam != nullptr)
-		*NewParam = Parms.NewParam;
-}
-
-
 // Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.SetDisplayState
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -249,6 +214,41 @@ void UHeroLoadoutActiveAbilityDetailRow_C::ExecuteUbergraph_HeroLoadoutActiveAbi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.SetBorderVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroLoadoutActiveAbilityDetailRow_C::SetBorderVisibility()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "SetBorderVisibility");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroLoadoutActiveAbilityDetailRow.HeroLoadoutActiveAbilityDetailRow_C.GetTierImage
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// TSoftObjectPtr<class UTexture2D>*       NewParam                                               (Parm, OutParm, HasGetValueTypeHash)
+
+void UHeroLoadoutActiveAbilityDetailRow_C::GetTierImage(TSoftObjectPtr<class UTexture2D>* NewParam)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutActiveAbilityDetailRow_C", "GetTierImage");
+
+	Params::HeroLoadoutActiveAbilityDetailRow_C_GetTierImage Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (NewParam != nullptr)
+		*NewParam = Parms.NewParam;
 }
 
 }

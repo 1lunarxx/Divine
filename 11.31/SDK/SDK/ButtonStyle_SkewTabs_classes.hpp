@@ -23,15 +23,17 @@ class UButtonStyle_SkewTabs_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-SkewTabs_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-SkewTabs_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-SkewTabs_C")
 	}
 	static class UButtonStyle_SkewTabs_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_SkewTabs_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_SkewTabs_C) == 0x000008, "Wrong alignment on UButtonStyle_SkewTabs_C");
-static_assert(sizeof(UButtonStyle_SkewTabs_C) == 0x000570, "Wrong size on UButtonStyle_SkewTabs_C");
 
 }
 

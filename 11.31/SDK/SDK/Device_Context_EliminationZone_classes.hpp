@@ -23,15 +23,17 @@ class ADevice_Context_EliminationZone_C final : public ABuildingTrap
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Context_EliminationZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Context_EliminationZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Context_EliminationZone_C")
 	}
 	static class ADevice_Context_EliminationZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Context_EliminationZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Context_EliminationZone_C) == 0x000008, "Wrong alignment on ADevice_Context_EliminationZone_C");
-static_assert(sizeof(ADevice_Context_EliminationZone_C) == 0x000C78, "Wrong size on ADevice_Context_EliminationZone_C");
 
 }
 

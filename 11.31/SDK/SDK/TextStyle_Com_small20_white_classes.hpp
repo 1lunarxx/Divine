@@ -23,15 +23,17 @@ class UTextStyle_Com_small20_white_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Com-small20-white_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Com-small20-white_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Com-small20-white_C")
 	}
 	static class UTextStyle_Com_small20_white_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Com_small20_white_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Com_small20_white_C) == 0x000008, "Wrong alignment on UTextStyle_Com_small20_white_C");
-static_assert(sizeof(UTextStyle_Com_small20_white_C) == 0x000148, "Wrong size on UTextStyle_Com_small20_white_C");
 
 }
 

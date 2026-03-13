@@ -138,106 +138,6 @@ public:
 	int32                                         CallFunc_GetWaterSurfaceInfo_WaterBodyIdx;         // 0x0440(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetWaterSurfaceInfo_WaterVelocity;        // 0x0444(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper) == 0x000008, "Wrong alignment on B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper) == 0x000450, "Wrong size on B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, EntryPoint) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetInstigator_ReturnValue) == 0x000008, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsLocallyControlled_ReturnValue) == 0x000010, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsDedicatedServer_ReturnValue) == 0x000011, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsMobilePlatform_ReturnValue) == 0x000012, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_Hit) == 0x000014, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bBlockingHit) == 0x00009C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bInitialOverlap) == 0x00009D, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Time) == 0x0000A0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Distance) == 0x0000A4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Location) == 0x0000A8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactPoint) == 0x0000B4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Normal) == 0x0000C0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactNormal) == 0x0000CC, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_PhysMat) == 0x0000D8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitActor) == 0x0000E0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitComponent) == 0x0000E8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitBoneName) == 0x0000F0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitItem) == 0x0000F8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_FaceIndex) == 0x0000FC, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceStart) == 0x000100, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceEnd) == 0x00010C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_AsFort_Pawn) == 0x000118, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_bSuccess) == 0x000120, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000124, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Conv_VectorToRotator_ReturnValue) == 0x000130, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Conv_VectorToRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BooleanOR_ReturnValue) == 0x00013C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_SpawnDecalAtLocation_ReturnValue) == 0x000140, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_SpawnDecalAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000148, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000150, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_DynamicCast_bSuccess_1) == 0x000158, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetMuzzleLocation_ReturnValue) == 0x00015C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetMuzzleLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000168, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsValid_ReturnValue) == 0x00016C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00016D, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_OtherActor) == 0x000170, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_OtherActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_OtherComp) == 0x000178, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_HitResult) == 0x000180, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_HitResult' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_bIsOverlap) == 0x000208, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_bIsOverlap' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_WaterHit) == 0x00020C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_WaterHit' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, K2Node_Event_WaterBody) == 0x000298, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::K2Node_Event_WaterBody' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0002A0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0002A1, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Time_1) == 0x0002A4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Distance_1) == 0x0002A8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Location_1) == 0x0002AC, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0002B8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Normal_1) == 0x0002C4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactNormal_1) == 0x0002D0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_PhysMat_1) == 0x0002E0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitActor_1) == 0x0002E8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitComponent_1) == 0x0002F0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitBoneName_1) == 0x0002F8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitItem_1) == 0x000300, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_FaceIndex_1) == 0x000304, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceStart_1) == 0x000308, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceEnd_1) == 0x000314, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation) == 0x000320, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterPlaneLocation' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal) == 0x00032C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterPlaneNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition) == 0x000338, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterSurfacePosition' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterDepth) == 0x000344, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterDepth' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx) == 0x000348, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterBodyIdx' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetLastWaterSurfaceInfo_WaterVelocity) == 0x00034C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetLastWaterSurfaceInfo_WaterVelocity' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsDedicatedServer_ReturnValue_2) == 0x000358, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsDedicatedServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Conv_IntToFloat_ReturnValue) == 0x00035C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Conv_VectorToRotator_ReturnValue_1) == 0x000360, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Conv_VectorToRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, Temp_bool_Has_Been_Initd_Variable) == 0x00036C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, Temp_bool_IsClosed_Variable) == 0x00036D, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsDedicatedServer_ReturnValue_3) == 0x00036E, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsDedicatedServer_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bBlockingHit_2) == 0x00036F, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x000370, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Time_2) == 0x000374, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Distance_2) == 0x000378, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Location_2) == 0x00037C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000388, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_Normal_2) == 0x000394, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_ImpactNormal_2) == 0x0003A0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_PhysMat_2) == 0x0003B0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitActor_2) == 0x0003B8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitComponent_2) == 0x0003C0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitBoneName_2) == 0x0003C8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_HitItem_2) == 0x0003D0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_FaceIndex_2) == 0x0003D4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceStart_2) == 0x0003D8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BreakHitResult_TraceEnd_2) == 0x0003E4, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x0003F0, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_IsValid_ReturnValue_1) == 0x0003F8, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0003F9, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_BooleanAND_ReturnValue) == 0x0003FA, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0003FC, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_MakeRotFromX_ReturnValue) == 0x000400, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_MakeRotFromX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_SpawnEmitterAtLocation_ReturnValue_1) == 0x000410, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_SpawnEmitterAtLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterPlaneLocation) == 0x000418, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterPlaneLocation' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterPlaneNormal) == 0x000424, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterPlaneNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterSurfacePosition) == 0x000430, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterSurfacePosition' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterDepth) == 0x00043C, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterDepth' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterBodyIdx) == 0x000440, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterBodyIdx' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper, CallFunc_GetWaterSurfaceInfo_WaterVelocity) == 0x000444, "Member 'B_Prj_Bullet_Sniper_C_ExecuteUbergraph_B_Prj_Bullet_Sniper::CallFunc_GetWaterSurfaceInfo_WaterVelocity' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.OnSniperTraceWaterHit
 // 0x0090 (0x0090 - 0x0000)
@@ -247,10 +147,6 @@ public:
 	struct FHitResult                             WaterHit_0;                                        // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	class AFortWaterBodyActor*                    WaterBody;                                         // 0x0088(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit) == 0x000008, "Wrong alignment on B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit) == 0x000090, "Wrong size on B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit, WaterHit_0) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit::WaterHit_0' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit, WaterBody) == 0x000088, "Member 'B_Prj_Bullet_Sniper_C_OnSniperTraceWaterHit::WaterBody' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.OnTouched
 // 0x00A0 (0x00A0 - 0x0000)
@@ -262,12 +158,6 @@ public:
 	struct FHitResult                             HitResult;                                         // 0x0010(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          bIsOverlap;                                        // 0x0098(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_OnTouched) == 0x000008, "Wrong alignment on B_Prj_Bullet_Sniper_C_OnTouched");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_OnTouched) == 0x0000A0, "Wrong size on B_Prj_Bullet_Sniper_C_OnTouched");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnTouched, OtherActor) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_OnTouched::OtherActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnTouched, OtherComp) == 0x000008, "Member 'B_Prj_Bullet_Sniper_C_OnTouched::OtherComp' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnTouched, HitResult) == 0x000010, "Member 'B_Prj_Bullet_Sniper_C_OnTouched::HitResult' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnTouched, bIsOverlap) == 0x000098, "Member 'B_Prj_Bullet_Sniper_C_OnTouched::bIsOverlap' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.OnStop
 // 0x0088 (0x0088 - 0x0000)
@@ -276,9 +166,6 @@ struct B_Prj_Bullet_Sniper_C_OnStop final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_OnStop) == 0x000004, "Wrong alignment on B_Prj_Bullet_Sniper_C_OnStop");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_OnStop) == 0x000088, "Wrong size on B_Prj_Bullet_Sniper_C_OnStop");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_OnStop, Hit) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_OnStop::Hit' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.UserConstructionScript
 // 0x0004 (0x0004 - 0x0000)
@@ -287,9 +174,6 @@ struct B_Prj_Bullet_Sniper_C_UserConstructionScript final
 public:
 	float                                         CallFunc_GetValueAtLevel_ReturnValue;              // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_UserConstructionScript) == 0x000004, "Wrong alignment on B_Prj_Bullet_Sniper_C_UserConstructionScript");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_UserConstructionScript) == 0x000004, "Wrong size on B_Prj_Bullet_Sniper_C_UserConstructionScript");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_UserConstructionScript, CallFunc_GetValueAtLevel_ReturnValue) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_UserConstructionScript::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
 
 // Function B_Prj_Bullet_Sniper.B_Prj_Bullet_Sniper_C.PlayImpactSFX
 // 0x0018 (0x0018 - 0x0000)
@@ -303,13 +187,6 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             K2Node_Select_Default;                             // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Prj_Bullet_Sniper_C_PlayImpactSFX) == 0x000008, "Wrong alignment on B_Prj_Bullet_Sniper_C_PlayImpactSFX");
-static_assert(sizeof(B_Prj_Bullet_Sniper_C_PlayImpactSFX) == 0x000018, "Wrong size on B_Prj_Bullet_Sniper_C_PlayImpactSFX");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_PlayImpactSFX, IsPlayer) == 0x000000, "Member 'B_Prj_Bullet_Sniper_C_PlayImpactSFX::IsPlayer' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_PlayImpactSFX, IsWater) == 0x000001, "Member 'B_Prj_Bullet_Sniper_C_PlayImpactSFX::IsWater' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_PlayImpactSFX, Temp_bool_Variable) == 0x000002, "Member 'B_Prj_Bullet_Sniper_C_PlayImpactSFX::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_PlayImpactSFX, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000004, "Member 'B_Prj_Bullet_Sniper_C_PlayImpactSFX::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_Bullet_Sniper_C_PlayImpactSFX, K2Node_Select_Default) == 0x000010, "Member 'B_Prj_Bullet_Sniper_C_PlayImpactSFX::K2Node_Select_Default' has a wrong offset!");
 
 }
 

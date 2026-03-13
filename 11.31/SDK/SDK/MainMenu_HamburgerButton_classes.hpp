@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainMenu_HamburgerButton_C">();
+		BP_STATIC_CLASS_IMPL("MainMenu_HamburgerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainMenu_HamburgerButton_C")
 	}
 	static class UMainMenu_HamburgerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainMenu_HamburgerButton_C>();
 	}
 };
-static_assert(alignof(UMainMenu_HamburgerButton_C) == 0x000008, "Wrong alignment on UMainMenu_HamburgerButton_C");
-static_assert(sizeof(UMainMenu_HamburgerButton_C) == 0x000BA8, "Wrong size on UMainMenu_HamburgerButton_C");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, UberGraphFrame) == 0x000B70, "Member 'UMainMenu_HamburgerButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, Hover_Grow) == 0x000B78, "Member 'UMainMenu_HamburgerButton_C::Hover_Grow' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, Hover_Bounce) == 0x000B80, "Member 'UMainMenu_HamburgerButton_C::Hover_Bounce' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, Hover) == 0x000B88, "Member 'UMainMenu_HamburgerButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, ButtonBacking) == 0x000B90, "Member 'UMainMenu_HamburgerButton_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, Icon) == 0x000B98, "Member 'UMainMenu_HamburgerButton_C::Icon' has a wrong offset!");
-static_assert(offsetof(UMainMenu_HamburgerButton_C, VariableSize) == 0x000BA0, "Member 'UMainMenu_HamburgerButton_C::VariableSize' has a wrong offset!");
 
 }
 

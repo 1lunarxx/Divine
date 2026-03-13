@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Winterfest_CustomTab_C">();
+		BP_STATIC_CLASS_IMPL("Winterfest_CustomTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Winterfest_CustomTab_C")
 	}
 	static class UWinterfest_CustomTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterfest_CustomTab_C>();
 	}
 };
-static_assert(alignof(UWinterfest_CustomTab_C) == 0x000008, "Wrong alignment on UWinterfest_CustomTab_C");
-static_assert(sizeof(UWinterfest_CustomTab_C) == 0x000320, "Wrong size on UWinterfest_CustomTab_C");
-static_assert(offsetof(UWinterfest_CustomTab_C, UberGraphFrame) == 0x000300, "Member 'UWinterfest_CustomTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CustomTab_C, OnHover) == 0x000308, "Member 'UWinterfest_CustomTab_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CustomTab_C, PresentJump) == 0x000310, "Member 'UWinterfest_CustomTab_C::PresentJump' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CustomTab_C, Exclamation) == 0x000318, "Member 'UWinterfest_CustomTab_C::Exclamation' has a wrong offset!");
 
 }
 

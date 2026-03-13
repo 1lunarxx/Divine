@@ -23,15 +23,17 @@ class UTextStyle_HUD_MapScreen_Title_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-HUD-MapScreen_Title_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-HUD-MapScreen_Title_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-HUD-MapScreen_Title_C")
 	}
 	static class UTextStyle_HUD_MapScreen_Title_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_HUD_MapScreen_Title_C>();
 	}
 };
-static_assert(alignof(UTextStyle_HUD_MapScreen_Title_C) == 0x000008, "Wrong alignment on UTextStyle_HUD_MapScreen_Title_C");
-static_assert(sizeof(UTextStyle_HUD_MapScreen_Title_C) == 0x000148, "Wrong size on UTextStyle_HUD_MapScreen_Title_C");
 
 }
 

@@ -74,31 +74,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_Pickaxe_Generic_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_Pickaxe_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_Pickaxe_Generic_C")
 	}
 	static class AB_Athena_Pickaxe_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_Pickaxe_Generic_C>();
 	}
 };
-static_assert(alignof(AB_Athena_Pickaxe_Generic_C) == 0x000008, "Wrong alignment on AB_Athena_Pickaxe_Generic_C");
-static_assert(sizeof(AB_Athena_Pickaxe_Generic_C) == 0x000B08, "Wrong size on AB_Athena_Pickaxe_Generic_C");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, UberGraphFrame) == 0x000AA8, "Member 'AB_Athena_Pickaxe_Generic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, MeleeHeavy_PSC) == 0x000AB0, "Member 'AB_Athena_Pickaxe_Generic_C::MeleeHeavy_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, IdleFX_Location_Rule) == 0x000AB8, "Member 'AB_Athena_Pickaxe_Generic_C::IdleFX_Location_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Idle_FX_Rotation_Rule) == 0x000AB9, "Member 'AB_Athena_Pickaxe_Generic_C::Idle_FX_Rotation_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Idle_FX_Scale_Rule) == 0x000ABA, "Member 'AB_Athena_Pickaxe_Generic_C::Idle_FX_Scale_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, SwingFX_Location_Rule) == 0x000ABB, "Member 'AB_Athena_Pickaxe_Generic_C::SwingFX_Location_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Swing_FX_Rotation_Rule) == 0x000ABC, "Member 'AB_Athena_Pickaxe_Generic_C::Swing_FX_Rotation_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Swing_FX_Scale_Rule) == 0x000ABD, "Member 'AB_Athena_Pickaxe_Generic_C::Swing_FX_Scale_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, MeleeHeavy_ParticleSystem) == 0x000AC0, "Member 'AB_Athena_Pickaxe_Generic_C::MeleeHeavy_ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, WeaponDurabilityDestroyEffect) == 0x000AC8, "Member 'AB_Athena_Pickaxe_Generic_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, WeaponDurabilityDestroyEffectIcon) == 0x000AD0, "Member 'AB_Athena_Pickaxe_Generic_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, UseDestroyEffect) == 0x000AD8, "Member 'AB_Athena_Pickaxe_Generic_C::UseDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, PokeAnimations) == 0x000AE0, "Member 'AB_Athena_Pickaxe_Generic_C::PokeAnimations' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Alteration_Ambient_PS) == 0x000AF0, "Member 'AB_Athena_Pickaxe_Generic_C::Alteration_Ambient_PS' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Effects_Color_Level) == 0x000AF8, "Member 'AB_Athena_Pickaxe_Generic_C::Effects_Color_Level' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Pickaxe_Generic_C, Equipped) == 0x000B04, "Member 'AB_Athena_Pickaxe_Generic_C::Equipped' has a wrong offset!");
 
 }
 

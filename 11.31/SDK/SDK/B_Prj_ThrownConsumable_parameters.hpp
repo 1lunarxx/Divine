@@ -75,51 +75,6 @@ public:
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x0258(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_2;          // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable) == 0x000008, "Wrong alignment on B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable");
-static_assert(sizeof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable) == 0x000268, "Wrong size on B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, EntryPoint) == 0x000000, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000008, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00000C, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000018, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000024, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000030, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x00003C, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_MakeArray_Array) == 0x000048, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_GetActorTeam_ReturnValue) == 0x000058, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsValid_ReturnValue) == 0x000059, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_Event_Hit_1) == 0x00005C, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_Event_Hit_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_bBlockingHit) == 0x0000E4, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000E5, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_Time) == 0x0000E8, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_Distance) == 0x0000EC, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_Location) == 0x0000F0, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_ImpactPoint) == 0x0000FC, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_Normal) == 0x000108, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_ImpactNormal) == 0x000114, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_PhysMat) == 0x000120, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_HitActor) == 0x000128, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_HitComponent) == 0x000130, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_HitBoneName) == 0x000138, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_HitItem) == 0x000140, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_FaceIndex) == 0x000144, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_TraceStart) == 0x000148, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_BreakHitResult_TraceEnd) == 0x000154, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsValid_ReturnValue_1) == 0x000160, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_MakeArray_Array_1) == 0x000168, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_GetActorTeam_ReturnValue_1) == 0x000178, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_GetActorTeam_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_GetInstigator_ReturnValue) == 0x000180, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsLocallyControlled_ReturnValue) == 0x000188, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_Multiply_VectorVector_ReturnValue) == 0x00018C, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_MakeRotator_ReturnValue) == 0x000198, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_Event_HitActors) == 0x0001A8, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_Event_HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_Event_HitResults) == 0x0001B8, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_Event_HitResults' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, K2Node_Event_Hit) == 0x0001C8, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000250, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_OnCollision_OutResult) == 0x000251, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_OnCollision_OutResult' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_OnCollision_OutMagnitude) == 0x000254, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_OnCollision_OutMagnitude' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000258, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable, CallFunc_IsDedicatedServer_ReturnValue_2) == 0x000260, "Member 'B_Prj_ThrownConsumable_C_ExecuteUbergraph_B_Prj_ThrownConsumable::CallFunc_IsDedicatedServer_ReturnValue_2' has a wrong offset!");
 
 // Function B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C.OnStop
 // 0x0088 (0x0088 - 0x0000)
@@ -128,9 +83,6 @@ struct B_Prj_ThrownConsumable_C_OnStop final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_ThrownConsumable_C_OnStop) == 0x000004, "Wrong alignment on B_Prj_ThrownConsumable_C_OnStop");
-static_assert(sizeof(B_Prj_ThrownConsumable_C_OnStop) == 0x000088, "Wrong size on B_Prj_ThrownConsumable_C_OnStop");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_OnStop, Hit) == 0x000000, "Member 'B_Prj_ThrownConsumable_C_OnStop::Hit' has a wrong offset!");
 
 // Function B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C.UserConstructionScript
 // 0x0001 (0x0001 - 0x0000)
@@ -139,9 +91,6 @@ struct B_Prj_ThrownConsumable_C_UserConstructionScript final
 public:
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Prj_ThrownConsumable_C_UserConstructionScript) == 0x000001, "Wrong alignment on B_Prj_ThrownConsumable_C_UserConstructionScript");
-static_assert(sizeof(B_Prj_ThrownConsumable_C_UserConstructionScript) == 0x000001, "Wrong size on B_Prj_ThrownConsumable_C_UserConstructionScript");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'B_Prj_ThrownConsumable_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 // Function B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C.OnBounce
 // 0x0088 (0x0088 - 0x0000)
@@ -150,9 +99,6 @@ struct B_Prj_ThrownConsumable_C_OnBounce final
 public:
 	struct FHitResult                             Hit;                                               // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_ThrownConsumable_C_OnBounce) == 0x000004, "Wrong alignment on B_Prj_ThrownConsumable_C_OnBounce");
-static_assert(sizeof(B_Prj_ThrownConsumable_C_OnBounce) == 0x000088, "Wrong size on B_Prj_ThrownConsumable_C_OnBounce");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_OnBounce, Hit) == 0x000000, "Member 'B_Prj_ThrownConsumable_C_OnBounce::Hit' has a wrong offset!");
 
 // Function B_Prj_ThrownConsumable.B_Prj_ThrownConsumable_C.OnExploded
 // 0x0020 (0x0020 - 0x0000)
@@ -162,10 +108,6 @@ public:
 	TArray<class AActor*>                         HitActors;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(B_Prj_ThrownConsumable_C_OnExploded) == 0x000008, "Wrong alignment on B_Prj_ThrownConsumable_C_OnExploded");
-static_assert(sizeof(B_Prj_ThrownConsumable_C_OnExploded) == 0x000020, "Wrong size on B_Prj_ThrownConsumable_C_OnExploded");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_OnExploded, HitActors) == 0x000000, "Member 'B_Prj_ThrownConsumable_C_OnExploded::HitActors' has a wrong offset!");
-static_assert(offsetof(B_Prj_ThrownConsumable_C_OnExploded, HitResults) == 0x000010, "Member 'B_Prj_ThrownConsumable_C_OnExploded::HitResults' has a wrong offset!");
 
 }
 

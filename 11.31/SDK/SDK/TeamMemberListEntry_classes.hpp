@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamMemberListEntry_C">();
+		BP_STATIC_CLASS_IMPL("TeamMemberListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamMemberListEntry_C")
 	}
 	static class UTeamMemberListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamMemberListEntry_C>();
 	}
 };
-static_assert(alignof(UTeamMemberListEntry_C) == 0x000008, "Wrong alignment on UTeamMemberListEntry_C");
-static_assert(sizeof(UTeamMemberListEntry_C) == 0x000C40, "Wrong size on UTeamMemberListEntry_C");
-static_assert(offsetof(UTeamMemberListEntry_C, UberGraphFrame) == 0x000BE8, "Member 'UTeamMemberListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, Selected) == 0x000BF0, "Member 'UTeamMemberListEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, Hovered) == 0x000BF8, "Member 'UTeamMemberListEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, Arrow) == 0x000C00, "Member 'UTeamMemberListEntry_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, EmptyButtonToEatOneMouseUpEvent) == 0x000C08, "Member 'UTeamMemberListEntry_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, UserActionMenuInputButton) == 0x000C10, "Member 'UTeamMemberListEntry_C::UserActionMenuInputButton' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, Encourage) == 0x000C18, "Member 'UTeamMemberListEntry_C::Encourage' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, EncourageEpicFriend_IdleColor) == 0x000C1C, "Member 'UTeamMemberListEntry_C::EncourageEpicFriend_IdleColor' has a wrong offset!");
-static_assert(offsetof(UTeamMemberListEntry_C, EncourageEpicFriend_HoveredColor) == 0x000C2C, "Member 'UTeamMemberListEntry_C::EncourageEpicFriend_HoveredColor' has a wrong offset!");
 
 }
 

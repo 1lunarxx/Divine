@@ -40,23 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GiftReceivedPrompt_C">();
+		BP_STATIC_CLASS_IMPL("GiftReceivedPrompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GiftReceivedPrompt_C")
 	}
 	static class UGiftReceivedPrompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGiftReceivedPrompt_C>();
 	}
 };
-static_assert(alignof(UGiftReceivedPrompt_C) == 0x000008, "Wrong alignment on UGiftReceivedPrompt_C");
-static_assert(sizeof(UGiftReceivedPrompt_C) == 0x0004F8, "Wrong size on UGiftReceivedPrompt_C");
-static_assert(offsetof(UGiftReceivedPrompt_C, UberGraphFrame) == 0x0004B8, "Member 'UGiftReceivedPrompt_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, Attention) == 0x0004C0, "Member 'UGiftReceivedPrompt_C::Attention' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, InitialState) == 0x0004C8, "Member 'UGiftReceivedPrompt_C::InitialState' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, Dismiss) == 0x0004D0, "Member 'UGiftReceivedPrompt_C::Dismiss' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, Intro) == 0x0004D8, "Member 'UGiftReceivedPrompt_C::Intro' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, Backing) == 0x0004E0, "Member 'UGiftReceivedPrompt_C::Backing' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, ImageRarityFlare) == 0x0004E8, "Member 'UGiftReceivedPrompt_C::ImageRarityFlare' has a wrong offset!");
-static_assert(offsetof(UGiftReceivedPrompt_C, SafeZone_49) == 0x0004F0, "Member 'UGiftReceivedPrompt_C::SafeZone_49' has a wrong offset!");
 
 }
 

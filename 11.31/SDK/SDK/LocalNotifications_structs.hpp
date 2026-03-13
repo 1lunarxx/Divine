@@ -60,16 +60,6 @@ public:
 	class FString                                 BodyKey;                                           // 0x0070(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ActivationEvent;                                   // 0x0080(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FLocalNotificationData) == 0x000008, "Wrong alignment on FLocalNotificationData");
-static_assert(sizeof(FLocalNotificationData) == 0x000090, "Wrong size on FLocalNotificationData");
-static_assert(offsetof(FLocalNotificationData, Enable) == 0x000000, "Member 'FLocalNotificationData::Enable' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, Type) == 0x000001, "Member 'FLocalNotificationData::Type' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, EventType) == 0x000002, "Member 'FLocalNotificationData::EventType' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, ParamsByName) == 0x000008, "Member 'FLocalNotificationData::ParamsByName' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, LocalTime) == 0x000058, "Member 'FLocalNotificationData::LocalTime' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, TitleKey) == 0x000060, "Member 'FLocalNotificationData::TitleKey' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, BodyKey) == 0x000070, "Member 'FLocalNotificationData::BodyKey' has a wrong offset!");
-static_assert(offsetof(FLocalNotificationData, ActivationEvent) == 0x000080, "Member 'FLocalNotificationData::ActivationEvent' has a wrong offset!");
 
 }
 

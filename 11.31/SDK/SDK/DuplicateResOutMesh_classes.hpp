@@ -88,51 +88,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DuplicateResOutMesh_C">();
+		BP_STATIC_CLASS_IMPL("DuplicateResOutMesh_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DuplicateResOutMesh_C")
 	}
 	static class ADuplicateResOutMesh_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADuplicateResOutMesh_C>();
 	}
 };
-static_assert(alignof(ADuplicateResOutMesh_C) == 0x000010, "Wrong alignment on ADuplicateResOutMesh_C");
-static_assert(sizeof(ADuplicateResOutMesh_C) == 0x000370, "Wrong size on ADuplicateResOutMesh_C");
-static_assert(offsetof(ADuplicateResOutMesh_C, UberGraphFrame) == 0x000218, "Member 'ADuplicateResOutMesh_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, DefaultSceneRoot) == 0x000220, "Member 'ADuplicateResOutMesh_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline_FirstPassComplete_2AB89084476E64255664E9B2D45E14C1) == 0x000228, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline_FirstPassComplete_2AB89084476E64255664E9B2D45E14C1' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline_LightIntensity_2AB89084476E64255664E9B2D45E14C1) == 0x00022C, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline_LightIntensity_2AB89084476E64255664E9B2D45E14C1' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline_zHieght_2AB89084476E64255664E9B2D45E14C1) == 0x000230, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline_zHieght_2AB89084476E64255664E9B2D45E14C1' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline__Direction_2AB89084476E64255664E9B2D45E14C1) == 0x000234, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline__Direction_2AB89084476E64255664E9B2D45E14C1' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CharacterSpawnInTimeline) == 0x000238, "Member 'ADuplicateResOutMesh_C::CharacterSpawnInTimeline' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Skeletal_Mesh_Duplicate) == 0x000240, "Member 'ADuplicateResOutMesh_C::Skeletal_Mesh_Duplicate' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Gun_True) == 0x000248, "Member 'ADuplicateResOutMesh_C::Gun_True' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, BoundsRadius) == 0x00024C, "Member 'ADuplicateResOutMesh_C::BoundsRadius' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, NewVar_0) == 0x000250, "Member 'ADuplicateResOutMesh_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, midArray) == 0x000258, "Member 'ADuplicateResOutMesh_C::midArray' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, World_location_for_the_dissolve_location) == 0x000268, "Member 'ADuplicateResOutMesh_C::World_location_for_the_dissolve_location' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Current_MID) == 0x000278, "Member 'ADuplicateResOutMesh_C::Current_MID' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Head_Space) == 0x000280, "Member 'ADuplicateResOutMesh_C::Head_Space' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Leg_Space) == 0x000284, "Member 'ADuplicateResOutMesh_C::Leg_Space' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Spawn_Light) == 0x000288, "Member 'ADuplicateResOutMesh_C::Spawn_Light' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, light_intensity) == 0x000290, "Member 'ADuplicateResOutMesh_C::light_intensity' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Number_of_Base_skeletal_mesh_materials) == 0x000294, "Member 'ADuplicateResOutMesh_C::Number_of_Base_skeletal_mesh_materials' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, FirstPassComplete) == 0x000298, "Member 'ADuplicateResOutMesh_C::FirstPassComplete' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, ExternalSkeletalMeshComponent) == 0x0002A0, "Member 'ADuplicateResOutMesh_C::ExternalSkeletalMeshComponent' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Box_Local_Transform) == 0x0002B0, "Member 'ADuplicateResOutMesh_C::Box_Local_Transform' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Timeline_Play_Length) == 0x0002E0, "Member 'ADuplicateResOutMesh_C::Timeline_Play_Length' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, TeleportOut_) == 0x0002E4, "Member 'ADuplicateResOutMesh_C::TeleportOut_' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, ExternalActor) == 0x0002E8, "Member 'ADuplicateResOutMesh_C::ExternalActor' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, InternalSkeletalMeshComponents) == 0x0002F0, "Member 'ADuplicateResOutMesh_C::InternalSkeletalMeshComponents' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CurrentMeshMidIndex) == 0x000300, "Member 'ADuplicateResOutMesh_C::CurrentMeshMidIndex' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, External_Base_Mesh_Component) == 0x000308, "Member 'ADuplicateResOutMesh_C::External_Base_Mesh_Component' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, ExternalMidArray) == 0x000310, "Member 'ADuplicateResOutMesh_C::ExternalMidArray' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, ExternalRootMeshComponent) == 0x000320, "Member 'ADuplicateResOutMesh_C::ExternalRootMeshComponent' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, ListOfMaterialsExemptFromReparenting) == 0x000328, "Member 'ADuplicateResOutMesh_C::ListOfMaterialsExemptFromReparenting' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, MaterialParentIsValid) == 0x000338, "Member 'ADuplicateResOutMesh_C::MaterialParentIsValid' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CurrentParentMaterial) == 0x000340, "Member 'ADuplicateResOutMesh_C::CurrentParentMaterial' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, CurrentMaterial) == 0x000348, "Member 'ADuplicateResOutMesh_C::CurrentMaterial' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Original_MIDs) == 0x000350, "Member 'ADuplicateResOutMesh_C::Original_MIDs' has a wrong offset!");
-static_assert(offsetof(ADuplicateResOutMesh_C, Increment_End) == 0x000360, "Member 'ADuplicateResOutMesh_C::Increment_End' has a wrong offset!");
 
 }
 

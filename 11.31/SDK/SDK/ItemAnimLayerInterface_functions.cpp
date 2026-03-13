@@ -29,14 +29,14 @@ void IItemAnimLayerInterface_C::ItemUpperBody(const struct FPoseLink& InPoseUppe
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemUpperBody");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemUpperBody");
 
 	Params::ItemAnimLayerInterface_C_ItemUpperBody Parms{};
 
 	Parms.InPoseUpperBody = std::move(InPoseUpperBody);
 	Parms.InputParam = std::move(InputParam);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemUpperBody_0 != nullptr)
 		*ItemUpperBody_0 = std::move(Parms.ItemUpperBody_0);
@@ -54,13 +54,13 @@ void IItemAnimLayerInterface_C::ItemFullBodySprint(const struct FPoseLink& InPos
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodySprint");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFullBodySprint");
 
 	Params::ItemAnimLayerInterface_C_ItemFullBodySprint Parms{};
 
 	Parms.InPoseSprint = std::move(InPoseSprint);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemFullBodySprint_0 != nullptr)
 		*ItemFullBodySprint_0 = std::move(Parms.ItemFullBodySprint_0);
@@ -78,13 +78,13 @@ void IItemAnimLayerInterface_C::ItemIdleAdditive(const struct FPoseLink& InPoseI
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemIdleAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemIdleAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemIdleAdditive Parms{};
 
 	Parms.InPoseIdleAdditive = std::move(InPoseIdleAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemIdleAdditive_0 != nullptr)
 		*ItemIdleAdditive_0 = std::move(Parms.ItemIdleAdditive_0);
@@ -101,11 +101,11 @@ void IItemAnimLayerInterface_C::ItemCrouchTurningAdditive(struct FPoseLink* Item
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemCrouchTurningAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemCrouchTurningAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemCrouchTurningAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemCrouchTurningAdditive_0 != nullptr)
 		*ItemCrouchTurningAdditive_0 = std::move(Parms.ItemCrouchTurningAdditive_0);
@@ -122,11 +122,11 @@ void IItemAnimLayerInterface_C::ItemSlopeSliding(struct FPoseLink* ItemSlopeSlid
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSlopeSliding");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSlopeSliding");
 
 	Params::ItemAnimLayerInterface_C_ItemSlopeSliding Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSlopeSliding_0 != nullptr)
 		*ItemSlopeSliding_0 = std::move(Parms.ItemSlopeSliding_0);
@@ -143,11 +143,11 @@ void IItemAnimLayerInterface_C::ItemJumpUpAdditive(struct FPoseLink* ItemJumpUpA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpUpAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpUpAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJumpUpAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJumpUpAdditive_0 != nullptr)
 		*ItemJumpUpAdditive_0 = std::move(Parms.ItemJumpUpAdditive_0);
@@ -164,11 +164,11 @@ void IItemAnimLayerInterface_C::ItemJumpLoopAdditive(struct FPoseLink* ItemJumpL
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpLoopAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJumpLoopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJumpLoopAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJumpLoopAdditive_0 != nullptr)
 		*ItemJumpLoopAdditive_0 = std::move(Parms.ItemJumpLoopAdditive_0);
@@ -185,11 +185,11 @@ void IItemAnimLayerInterface_C::ItemFallAdditive(struct FPoseLink* ItemFallAddit
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFallAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemFallAdditive_0 != nullptr)
 		*ItemFallAdditive_0 = std::move(Parms.ItemFallAdditive_0);
@@ -206,11 +206,11 @@ void IItemAnimLayerInterface_C::ItemFallLandAdditive(struct FPoseLink* ItemFallL
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallLandAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFallLandAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFallLandAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemFallLandAdditive_0 != nullptr)
 		*ItemFallLandAdditive_0 = std::move(Parms.ItemFallLandAdditive_0);
@@ -227,11 +227,11 @@ void IItemAnimLayerInterface_C::ItemJetPackStartAdditive(struct FPoseLink* ItemJ
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackStartAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJetPackStartAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJetPackStartAdditive_0 != nullptr)
 		*ItemJetPackStartAdditive_0 = std::move(Parms.ItemJetPackStartAdditive_0);
@@ -248,11 +248,11 @@ void IItemAnimLayerInterface_C::ItemJetPackJumpAdditive(struct FPoseLink* ItemJe
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackJumpAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJetPackJumpAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJetPackJumpAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJetPackJumpAdditive_0 != nullptr)
 		*ItemJetPackJumpAdditive_0 = std::move(Parms.ItemJetPackJumpAdditive_0);
@@ -269,11 +269,11 @@ void IItemAnimLayerInterface_C::ItemZipLineStartAdditive(struct FPoseLink* ItemZ
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemZipLineStartAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemZipLineStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemZipLineStartAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemZipLineStartAdditive_0 != nullptr)
 		*ItemZipLineStartAdditive_0 = std::move(Parms.ItemZipLineStartAdditive_0);
@@ -290,11 +290,11 @@ void IItemAnimLayerInterface_C::ItemFlyModeStartAdditive(struct FPoseLink* ItemF
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeStartAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFlyModeStartAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemFlyModeStartAdditive_0 != nullptr)
 		*ItemFlyModeStartAdditive_0 = std::move(Parms.ItemFlyModeStartAdditive_0);
@@ -311,11 +311,11 @@ void IItemAnimLayerInterface_C::ItemFlyModeLoopAdditive(struct FPoseLink* ItemFl
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeLoopAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemFlyModeLoopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemFlyModeLoopAdditive Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemFlyModeLoopAdditive_0 != nullptr)
 		*ItemFlyModeLoopAdditive_0 = std::move(Parms.ItemFlyModeLoopAdditive_0);
@@ -333,13 +333,13 @@ void IItemAnimLayerInterface_C::ItemJogStartAdditive(const struct FPoseLink& InP
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStartAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStartAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogStartAdditive Parms{};
 
 	Parms.InPoseJogStartAdditive = std::move(InPoseJogStartAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJogStartAdditive_0 != nullptr)
 		*ItemJogStartAdditive_0 = std::move(Parms.ItemJogStartAdditive_0);
@@ -357,13 +357,13 @@ void IItemAnimLayerInterface_C::ItemJogStopAdditive(const struct FPoseLink& InPo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStopAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogStopAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogStopAdditive Parms{};
 
 	Parms.InPoseJogStopAdditive = std::move(InPoseJogStopAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJogStopAdditive_0 != nullptr)
 		*ItemJogStopAdditive_0 = std::move(Parms.ItemJogStopAdditive_0);
@@ -381,13 +381,13 @@ void IItemAnimLayerInterface_C::ItemJogPrePivotAdditive(const struct FPoseLink& 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPrePivotAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPrePivotAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogPrePivotAdditive Parms{};
 
 	Parms.InPosePrePivotAdditive = std::move(InPosePrePivotAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJogPrePivotAdditive_0 != nullptr)
 		*ItemJogPrePivotAdditive_0 = std::move(Parms.ItemJogPrePivotAdditive_0);
@@ -405,13 +405,13 @@ void IItemAnimLayerInterface_C::ItemJogPostPivotAdditive(const struct FPoseLink&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPostPivotAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemJogPostPivotAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemJogPostPivotAdditive Parms{};
 
 	Parms.InPosePostPivotAdditive = std::move(InPosePostPivotAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemJogPostPivotAdditive_0 != nullptr)
 		*ItemJogPostPivotAdditive_0 = std::move(Parms.ItemJogPostPivotAdditive_0);
@@ -429,13 +429,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyMovement(const struct FPoseLink& In
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyMovement");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyMovement");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyMovement Parms{};
 
 	Parms.InPoseLowerBodyMovement = std::move(InPoseLowerBodyMovement);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyMovement_0 != nullptr)
 		*ItemLowerBodyMovement_0 = std::move(Parms.ItemLowerBodyMovement_0);
@@ -453,13 +453,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyLeanAdditive(const struct FPoseLink
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyLeanAdditive");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyLeanAdditive");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyLeanAdditive Parms{};
 
 	Parms.InPoseLowerBodyLeanAdditive = std::move(InPoseLowerBodyLeanAdditive);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyLeanAdditive_0 != nullptr)
 		*ItemLowerBodyLeanAdditive_0 = std::move(Parms.ItemLowerBodyLeanAdditive_0);
@@ -477,13 +477,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogStart(const struct FPoseLink& In
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStart");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStart");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogStart Parms{};
 
 	Parms.InPoseLowerBodyJogStart = std::move(InPoseLowerBodyJogStart);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogStart_0 != nullptr)
 		*ItemLowerBodyJogStart_0 = std::move(Parms.ItemLowerBodyJogStart_0);
@@ -501,13 +501,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogStop(const struct FPoseLink& InP
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStop");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogStop");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogStop Parms{};
 
 	Parms.InPoseLowerBodyJogStop = std::move(InPoseLowerBodyJogStop);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogStop_0 != nullptr)
 		*ItemLowerBodyJogStop_0 = std::move(Parms.ItemLowerBodyJogStop_0);
@@ -525,13 +525,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogPrePivot(const struct FPoseLink&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPrePivot");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPrePivot");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogPrePivot Parms{};
 
 	Parms.InPoseLowerBodyJogPrePivot = std::move(InPoseLowerBodyJogPrePivot);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogPrePivot_0 != nullptr)
 		*ItemLowerBodyJogPrePivot_0 = std::move(Parms.ItemLowerBodyJogPrePivot_0);
@@ -549,13 +549,13 @@ void IItemAnimLayerInterface_C::ItemLowerBodyJogPostPivot(const struct FPoseLink
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPostPivot");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemLowerBodyJogPostPivot");
 
 	Params::ItemAnimLayerInterface_C_ItemLowerBodyJogPostPivot Parms{};
 
 	Parms.InPoseLowerBodyJogPostPivot = std::move(InPoseLowerBodyJogPostPivot);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemLowerBodyJogPostPivot_0 != nullptr)
 		*ItemLowerBodyJogPostPivot_0 = std::move(Parms.ItemLowerBodyJogPostPivot_0);
@@ -573,13 +573,13 @@ void IItemAnimLayerInterface_C::ItemRelaxedEntry(const struct FPoseLink& InPoseR
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemRelaxedEntry");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemRelaxedEntry");
 
 	Params::ItemAnimLayerInterface_C_ItemRelaxedEntry Parms{};
 
 	Parms.InPoseRelaxedEntry = std::move(InPoseRelaxedEntry);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemRelaxedEntry_0 != nullptr)
 		*ItemRelaxedEntry_0 = std::move(Parms.ItemRelaxedEntry_0);
@@ -596,11 +596,11 @@ void IItemAnimLayerInterface_C::ItemSwimJumpStart(struct FPoseLink* ItemSwimJump
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStart");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStart");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpStart Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpStart_0 != nullptr)
 		*ItemSwimJumpStart_0 = std::move(Parms.ItemSwimJumpStart_0);
@@ -617,11 +617,11 @@ void IItemAnimLayerInterface_C::ItemSwimJumpStartLoop(struct FPoseLink* ItemSwim
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStartLoop");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpStartLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpStartLoop Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpStartLoop_0 != nullptr)
 		*ItemSwimJumpStartLoop_0 = std::move(Parms.ItemSwimJumpStartLoop_0);
@@ -638,11 +638,11 @@ void IItemAnimLayerInterface_C::ItemSwimJumpFallLoop(struct FPoseLink* ItemSwimJ
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpFallLoop");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpFallLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpFallLoop Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpFallLoop_0 != nullptr)
 		*ItemSwimJumpFallLoop_0 = std::move(Parms.ItemSwimJumpFallLoop_0);
@@ -659,11 +659,11 @@ void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceLoop(struct FPoseLink* ItemSw
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceLoop");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceLoop");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpSurfaceLoop Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpSurfaceLoop_0 != nullptr)
 		*ItemSwimJumpSurfaceLoop_0 = std::move(Parms.ItemSwimJumpSurfaceLoop_0);
@@ -680,11 +680,11 @@ void IItemAnimLayerInterface_C::ItemSwimJumpSurfaceEnd(struct FPoseLink* ItemSwi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceEnd");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSwimJumpSurfaceEnd");
 
 	Params::ItemAnimLayerInterface_C_ItemSwimJumpSurfaceEnd Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSwimJumpSurfaceEnd_0 != nullptr)
 		*ItemSwimJumpSurfaceEnd_0 = std::move(Parms.ItemSwimJumpSurfaceEnd_0);
@@ -702,13 +702,13 @@ void IItemAnimLayerInterface_C::ItemSkeletalControl(const struct FPoseLink& InPo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemSkeletalControl");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemSkeletalControl");
 
 	Params::ItemAnimLayerInterface_C_ItemSkeletalControl Parms{};
 
 	Parms.InPose = std::move(InPose);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemSkeletalControl_0 != nullptr)
 		*ItemSkeletalControl_0 = std::move(Parms.ItemSkeletalControl_0);
@@ -730,7 +730,7 @@ void IItemAnimLayerInterface_C::ItemAimOffset(const struct FPoseLink& InPose_Aim
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("ItemAnimLayerInterface_C", "ItemAimOffset");
+		Func = AsUObject()->Class->GetFunction("ItemAnimLayerInterface_C", "ItemAimOffset");
 
 	Params::ItemAnimLayerInterface_C_ItemAimOffset Parms{};
 
@@ -740,7 +740,7 @@ void IItemAnimLayerInterface_C::ItemAimOffset(const struct FPoseLink& InPose_Aim
 	Parms.Pitch = Pitch;
 	Parms.InPose_UpperLowerPreMeleeAO = std::move(InPose_UpperLowerPreMeleeAO);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (ItemAimOffset_0 != nullptr)
 		*ItemAimOffset_0 = std::move(Parms.ItemAimOffset_0);

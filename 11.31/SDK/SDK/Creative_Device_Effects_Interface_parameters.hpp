@@ -25,10 +25,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Color_Index;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Creative_Device_Effects_Interface_C_Get_Effect_Color_Index) == 0x000004, "Wrong alignment on Creative_Device_Effects_Interface_C_Get_Effect_Color_Index");
-static_assert(sizeof(Creative_Device_Effects_Interface_C_Get_Effect_Color_Index) == 0x000008, "Wrong size on Creative_Device_Effects_Interface_C_Get_Effect_Color_Index");
-static_assert(offsetof(Creative_Device_Effects_Interface_C_Get_Effect_Color_Index, Color_Type) == 0x000000, "Member 'Creative_Device_Effects_Interface_C_Get_Effect_Color_Index::Color_Type' has a wrong offset!");
-static_assert(offsetof(Creative_Device_Effects_Interface_C_Get_Effect_Color_Index, Color_Index) == 0x000004, "Member 'Creative_Device_Effects_Interface_C_Get_Effect_Color_Index::Color_Index' has a wrong offset!");
 
 }
 

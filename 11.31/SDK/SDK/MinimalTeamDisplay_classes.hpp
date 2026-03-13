@@ -23,15 +23,17 @@ class UMinimalTeamDisplay_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinimalTeamDisplay_C">();
+		BP_STATIC_CLASS_IMPL("MinimalTeamDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinimalTeamDisplay_C")
 	}
 	static class UMinimalTeamDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinimalTeamDisplay_C>();
 	}
 };
-static_assert(alignof(UMinimalTeamDisplay_C) == 0x000008, "Wrong alignment on UMinimalTeamDisplay_C");
-static_assert(sizeof(UMinimalTeamDisplay_C) == 0x000230, "Wrong size on UMinimalTeamDisplay_C");
 
 }
 

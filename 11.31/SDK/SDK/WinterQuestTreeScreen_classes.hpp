@@ -31,8 +31,6 @@ public:
 	bool                                          bCanClick;                                         // 0x04D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnInputMethodChanged(ECommonInputType NewMethod);
-	void ExecuteUbergraph_WinterQuestTreeScreen(int32 EntryPoint);
 	void Stop_Opening_Audio();
 	void Play_Opening_Audio();
 	void OnStopInteraction();
@@ -41,24 +39,23 @@ public:
 	void Construct();
 	void BP_OnDeactivated();
 	void BP_OnActivated();
+	void OnInputMethodChanged(ECommonInputType NewMethod);
+	void ExecuteUbergraph_WinterQuestTreeScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestTreeScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestTreeScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestTreeScreen_C")
 	}
 	static class UWinterQuestTreeScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestTreeScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestTreeScreen_C) == 0x000008, "Wrong alignment on UWinterQuestTreeScreen_C");
-static_assert(sizeof(UWinterQuestTreeScreen_C) == 0x0004E0, "Wrong size on UWinterQuestTreeScreen_C");
-static_assert(offsetof(UWinterQuestTreeScreen_C, UberGraphFrame) == 0x0004B8, "Member 'UWinterQuestTreeScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTreeScreen_C, RootOverlay) == 0x0004C0, "Member 'UWinterQuestTreeScreen_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTreeScreen_C, Opening_Sound_Component) == 0x0004C8, "Member 'UWinterQuestTreeScreen_C::Opening_Sound_Component' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTreeScreen_C, Play_Opening_Sound) == 0x0004D0, "Member 'UWinterQuestTreeScreen_C::Play_Opening_Sound' has a wrong offset!");
-static_assert(offsetof(UWinterQuestTreeScreen_C, bCanClick) == 0x0004D8, "Member 'UWinterQuestTreeScreen_C::bCanClick' has a wrong offset!");
 
 }
 

@@ -27,22 +27,23 @@ namespace SDK
 class UEnvelopeFollowerListener final : public UActorComponent
 {
 public:
-	TMulticastInlineDelegate<void(float EnvelopeValue)> OnEnvelopeFollowerUpdate;                          // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float EnvelopeValue)> OnEnvelopeFollowerUpdate;                    // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C0[0x10];                                      // 0x00C0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"EnvelopeFollowerListener">();
+		STATIC_CLASS_IMPL("EnvelopeFollowerListener")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnvelopeFollowerListener")
 	}
 	static class UEnvelopeFollowerListener* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEnvelopeFollowerListener>();
 	}
 };
-static_assert(alignof(UEnvelopeFollowerListener) == 0x000008, "Wrong alignment on UEnvelopeFollowerListener");
-static_assert(sizeof(UEnvelopeFollowerListener) == 0x0000D0, "Wrong size on UEnvelopeFollowerListener");
-static_assert(offsetof(UEnvelopeFollowerListener, OnEnvelopeFollowerUpdate) == 0x0000B0, "Member 'UEnvelopeFollowerListener::OnEnvelopeFollowerUpdate' has a wrong offset!");
 
 // Class Synthesis.ModularSynthPresetBank
 // 0x0010 (0x0038 - 0x0028)
@@ -54,16 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModularSynthPresetBank">();
+		STATIC_CLASS_IMPL("ModularSynthPresetBank")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModularSynthPresetBank")
 	}
 	static class UModularSynthPresetBank* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModularSynthPresetBank>();
 	}
 };
-static_assert(alignof(UModularSynthPresetBank) == 0x000008, "Wrong alignment on UModularSynthPresetBank");
-static_assert(sizeof(UModularSynthPresetBank) == 0x000038, "Wrong size on UModularSynthPresetBank");
-static_assert(offsetof(UModularSynthPresetBank, Presets) == 0x000028, "Member 'UModularSynthPresetBank::Presets' has a wrong offset!");
 
 // Class Synthesis.SourceEffectEnvelopeFollowerPreset
 // 0x0040 (0x0080 - 0x0040)
@@ -81,16 +83,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectEnvelopeFollowerPreset">();
+		STATIC_CLASS_IMPL("SourceEffectEnvelopeFollowerPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectEnvelopeFollowerPreset")
 	}
 	static class USourceEffectEnvelopeFollowerPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectEnvelopeFollowerPreset>();
 	}
 };
-static_assert(alignof(USourceEffectEnvelopeFollowerPreset) == 0x000008, "Wrong alignment on USourceEffectEnvelopeFollowerPreset");
-static_assert(sizeof(USourceEffectEnvelopeFollowerPreset) == 0x000080, "Wrong size on USourceEffectEnvelopeFollowerPreset");
-static_assert(offsetof(USourceEffectEnvelopeFollowerPreset, Settings) == 0x000074, "Member 'USourceEffectEnvelopeFollowerPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.ModularSynthLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -102,15 +105,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModularSynthLibrary">();
+		STATIC_CLASS_IMPL("ModularSynthLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModularSynthLibrary")
 	}
 	static class UModularSynthLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModularSynthLibrary>();
 	}
 };
-static_assert(alignof(UModularSynthLibrary) == 0x000008, "Wrong alignment on UModularSynthLibrary");
-static_assert(sizeof(UModularSynthLibrary) == 0x000028, "Wrong size on UModularSynthLibrary");
 
 // Class Synthesis.ModularSynthComponent
 // 0x06A0 (0x0CC0 - 0x0620)
@@ -184,16 +189,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ModularSynthComponent">();
+		STATIC_CLASS_IMPL("ModularSynthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ModularSynthComponent")
 	}
 	static class UModularSynthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UModularSynthComponent>();
 	}
 };
-static_assert(alignof(UModularSynthComponent) == 0x000010, "Wrong alignment on UModularSynthComponent");
-static_assert(sizeof(UModularSynthComponent) == 0x000CC0, "Wrong size on UModularSynthComponent");
-static_assert(offsetof(UModularSynthComponent, VoiceCount) == 0x000620, "Member 'UModularSynthComponent::VoiceCount' has a wrong offset!");
 
 // Class Synthesis.SourceEffectBitCrusherPreset
 // 0x0038 (0x0078 - 0x0040)
@@ -209,16 +215,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectBitCrusherPreset">();
+		STATIC_CLASS_IMPL("SourceEffectBitCrusherPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectBitCrusherPreset")
 	}
 	static class USourceEffectBitCrusherPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectBitCrusherPreset>();
 	}
 };
-static_assert(alignof(USourceEffectBitCrusherPreset) == 0x000008, "Wrong alignment on USourceEffectBitCrusherPreset");
-static_assert(sizeof(USourceEffectBitCrusherPreset) == 0x000078, "Wrong size on USourceEffectBitCrusherPreset");
-static_assert(offsetof(USourceEffectBitCrusherPreset, Settings) == 0x000070, "Member 'USourceEffectBitCrusherPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectChorusPreset
 // 0x0058 (0x0098 - 0x0040)
@@ -234,16 +241,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectChorusPreset">();
+		STATIC_CLASS_IMPL("SourceEffectChorusPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectChorusPreset")
 	}
 	static class USourceEffectChorusPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectChorusPreset>();
 	}
 };
-static_assert(alignof(USourceEffectChorusPreset) == 0x000008, "Wrong alignment on USourceEffectChorusPreset");
-static_assert(sizeof(USourceEffectChorusPreset) == 0x000098, "Wrong size on USourceEffectChorusPreset");
-static_assert(offsetof(USourceEffectChorusPreset, Settings) == 0x000080, "Member 'USourceEffectChorusPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectDynamicsProcessorPreset
 // 0x0078 (0x00B8 - 0x0040)
@@ -259,16 +267,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectDynamicsProcessorPreset">();
+		STATIC_CLASS_IMPL("SourceEffectDynamicsProcessorPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectDynamicsProcessorPreset")
 	}
 	static class USourceEffectDynamicsProcessorPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectDynamicsProcessorPreset>();
 	}
 };
-static_assert(alignof(USourceEffectDynamicsProcessorPreset) == 0x000008, "Wrong alignment on USourceEffectDynamicsProcessorPreset");
-static_assert(sizeof(USourceEffectDynamicsProcessorPreset) == 0x0000B8, "Wrong size on USourceEffectDynamicsProcessorPreset");
-static_assert(offsetof(USourceEffectDynamicsProcessorPreset, Settings) == 0x000090, "Member 'USourceEffectDynamicsProcessorPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectEQPreset
 // 0x0048 (0x0088 - 0x0040)
@@ -284,16 +293,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectEQPreset">();
+		STATIC_CLASS_IMPL("SourceEffectEQPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectEQPreset")
 	}
 	static class USourceEffectEQPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectEQPreset>();
 	}
 };
-static_assert(alignof(USourceEffectEQPreset) == 0x000008, "Wrong alignment on USourceEffectEQPreset");
-static_assert(sizeof(USourceEffectEQPreset) == 0x000088, "Wrong size on USourceEffectEQPreset");
-static_assert(offsetof(USourceEffectEQPreset, Settings) == 0x000078, "Member 'USourceEffectEQPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectFilterPreset
 // 0x0040 (0x0080 - 0x0040)
@@ -309,16 +319,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectFilterPreset">();
+		STATIC_CLASS_IMPL("SourceEffectFilterPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectFilterPreset")
 	}
 	static class USourceEffectFilterPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectFilterPreset>();
 	}
 };
-static_assert(alignof(USourceEffectFilterPreset) == 0x000008, "Wrong alignment on USourceEffectFilterPreset");
-static_assert(sizeof(USourceEffectFilterPreset) == 0x000080, "Wrong size on USourceEffectFilterPreset");
-static_assert(offsetof(USourceEffectFilterPreset, Settings) == 0x000074, "Member 'USourceEffectFilterPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectFoldbackDistortionPreset
 // 0x0040 (0x0080 - 0x0040)
@@ -326,7 +337,7 @@ class USourceEffectFoldbackDistortionPreset final : public USoundEffectSourcePre
 {
 public:
 	uint8                                         Pad_40[0x34];                                      // 0x0040(0x0034)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSourceEffectFoldbackDistortionSettings Settings;                                          // 0x0074(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSourceEffectFoldbackDistortionSettings Settings;                                         // 0x0074(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 
 public:
 	void SetSettings(const struct FSourceEffectFoldbackDistortionSettings& InSettings);
@@ -334,16 +345,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectFoldbackDistortionPreset">();
+		STATIC_CLASS_IMPL("SourceEffectFoldbackDistortionPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectFoldbackDistortionPreset")
 	}
 	static class USourceEffectFoldbackDistortionPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectFoldbackDistortionPreset>();
 	}
 };
-static_assert(alignof(USourceEffectFoldbackDistortionPreset) == 0x000008, "Wrong alignment on USourceEffectFoldbackDistortionPreset");
-static_assert(sizeof(USourceEffectFoldbackDistortionPreset) == 0x000080, "Wrong size on USourceEffectFoldbackDistortionPreset");
-static_assert(offsetof(USourceEffectFoldbackDistortionPreset, Settings) == 0x000074, "Member 'USourceEffectFoldbackDistortionPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectMidSideSpreaderPreset
 // 0x0040 (0x0080 - 0x0040)
@@ -359,16 +371,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectMidSideSpreaderPreset">();
+		STATIC_CLASS_IMPL("SourceEffectMidSideSpreaderPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectMidSideSpreaderPreset")
 	}
 	static class USourceEffectMidSideSpreaderPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectMidSideSpreaderPreset>();
 	}
 };
-static_assert(alignof(USourceEffectMidSideSpreaderPreset) == 0x000008, "Wrong alignment on USourceEffectMidSideSpreaderPreset");
-static_assert(sizeof(USourceEffectMidSideSpreaderPreset) == 0x000080, "Wrong size on USourceEffectMidSideSpreaderPreset");
-static_assert(offsetof(USourceEffectMidSideSpreaderPreset, Settings) == 0x000074, "Member 'USourceEffectMidSideSpreaderPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectPannerPreset
 // 0x0038 (0x0078 - 0x0040)
@@ -384,16 +397,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectPannerPreset">();
+		STATIC_CLASS_IMPL("SourceEffectPannerPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectPannerPreset")
 	}
 	static class USourceEffectPannerPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectPannerPreset>();
 	}
 };
-static_assert(alignof(USourceEffectPannerPreset) == 0x000008, "Wrong alignment on USourceEffectPannerPreset");
-static_assert(sizeof(USourceEffectPannerPreset) == 0x000078, "Wrong size on USourceEffectPannerPreset");
-static_assert(offsetof(USourceEffectPannerPreset, Settings) == 0x000070, "Member 'USourceEffectPannerPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectPhaserPreset
 // 0x0048 (0x0088 - 0x0040)
@@ -409,16 +423,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectPhaserPreset">();
+		STATIC_CLASS_IMPL("SourceEffectPhaserPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectPhaserPreset")
 	}
 	static class USourceEffectPhaserPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectPhaserPreset>();
 	}
 };
-static_assert(alignof(USourceEffectPhaserPreset) == 0x000008, "Wrong alignment on USourceEffectPhaserPreset");
-static_assert(sizeof(USourceEffectPhaserPreset) == 0x000088, "Wrong size on USourceEffectPhaserPreset");
-static_assert(offsetof(USourceEffectPhaserPreset, Settings) == 0x000078, "Member 'USourceEffectPhaserPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectRingModulationPreset
 // 0x0050 (0x0090 - 0x0040)
@@ -434,16 +449,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectRingModulationPreset">();
+		STATIC_CLASS_IMPL("SourceEffectRingModulationPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectRingModulationPreset")
 	}
 	static class USourceEffectRingModulationPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectRingModulationPreset>();
 	}
 };
-static_assert(alignof(USourceEffectRingModulationPreset) == 0x000008, "Wrong alignment on USourceEffectRingModulationPreset");
-static_assert(sizeof(USourceEffectRingModulationPreset) == 0x000090, "Wrong size on USourceEffectRingModulationPreset");
-static_assert(offsetof(USourceEffectRingModulationPreset, Settings) == 0x00007C, "Member 'USourceEffectRingModulationPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectSimpleDelayPreset
 // 0x0058 (0x0098 - 0x0040)
@@ -459,16 +475,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectSimpleDelayPreset">();
+		STATIC_CLASS_IMPL("SourceEffectSimpleDelayPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectSimpleDelayPreset")
 	}
 	static class USourceEffectSimpleDelayPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectSimpleDelayPreset>();
 	}
 };
-static_assert(alignof(USourceEffectSimpleDelayPreset) == 0x000008, "Wrong alignment on USourceEffectSimpleDelayPreset");
-static_assert(sizeof(USourceEffectSimpleDelayPreset) == 0x000098, "Wrong size on USourceEffectSimpleDelayPreset");
-static_assert(offsetof(USourceEffectSimpleDelayPreset, Settings) == 0x000080, "Member 'USourceEffectSimpleDelayPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectStereoDelayPreset
 // 0x0050 (0x0090 - 0x0040)
@@ -484,16 +501,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectStereoDelayPreset">();
+		STATIC_CLASS_IMPL("SourceEffectStereoDelayPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectStereoDelayPreset")
 	}
 	static class USourceEffectStereoDelayPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectStereoDelayPreset>();
 	}
 };
-static_assert(alignof(USourceEffectStereoDelayPreset) == 0x000008, "Wrong alignment on USourceEffectStereoDelayPreset");
-static_assert(sizeof(USourceEffectStereoDelayPreset) == 0x000090, "Wrong size on USourceEffectStereoDelayPreset");
-static_assert(offsetof(USourceEffectStereoDelayPreset, Settings) == 0x00007C, "Member 'USourceEffectStereoDelayPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SourceEffectWaveShaperPreset
 // 0x0038 (0x0078 - 0x0040)
@@ -509,16 +527,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SourceEffectWaveShaperPreset">();
+		STATIC_CLASS_IMPL("SourceEffectWaveShaperPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SourceEffectWaveShaperPreset")
 	}
 	static class USourceEffectWaveShaperPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USourceEffectWaveShaperPreset>();
 	}
 };
-static_assert(alignof(USourceEffectWaveShaperPreset) == 0x000008, "Wrong alignment on USourceEffectWaveShaperPreset");
-static_assert(sizeof(USourceEffectWaveShaperPreset) == 0x000078, "Wrong size on USourceEffectWaveShaperPreset");
-static_assert(offsetof(USourceEffectWaveShaperPreset, Settings) == 0x000070, "Member 'USourceEffectWaveShaperPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SubmixEffectDelayPreset
 // 0x0050 (0x0090 - 0x0040)
@@ -539,17 +558,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectDelayPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectDelayPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectDelayPreset")
 	}
 	static class USubmixEffectDelayPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectDelayPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectDelayPreset) == 0x000008, "Wrong alignment on USubmixEffectDelayPreset");
-static_assert(sizeof(USubmixEffectDelayPreset) == 0x000090, "Wrong size on USubmixEffectDelayPreset");
-static_assert(offsetof(USubmixEffectDelayPreset, Settings) == 0x000074, "Member 'USubmixEffectDelayPreset::Settings' has a wrong offset!");
-static_assert(offsetof(USubmixEffectDelayPreset, DynamicSettings) == 0x000080, "Member 'USubmixEffectDelayPreset::DynamicSettings' has a wrong offset!");
 
 // Class Synthesis.SubmixEffectFilterPreset
 // 0x0040 (0x0080 - 0x0040)
@@ -571,16 +590,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectFilterPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectFilterPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectFilterPreset")
 	}
 	static class USubmixEffectFilterPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectFilterPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectFilterPreset) == 0x000008, "Wrong alignment on USubmixEffectFilterPreset");
-static_assert(sizeof(USubmixEffectFilterPreset) == 0x000080, "Wrong size on USubmixEffectFilterPreset");
-static_assert(offsetof(USubmixEffectFilterPreset, Settings) == 0x000074, "Member 'USubmixEffectFilterPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SubmixEffectFlexiverbPreset
 // 0x0048 (0x0088 - 0x0040)
@@ -596,16 +616,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectFlexiverbPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectFlexiverbPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectFlexiverbPreset")
 	}
 	static class USubmixEffectFlexiverbPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectFlexiverbPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectFlexiverbPreset) == 0x000008, "Wrong alignment on USubmixEffectFlexiverbPreset");
-static_assert(sizeof(USubmixEffectFlexiverbPreset) == 0x000088, "Wrong size on USubmixEffectFlexiverbPreset");
-static_assert(offsetof(USubmixEffectFlexiverbPreset, Settings) == 0x000078, "Member 'USubmixEffectFlexiverbPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.SubmixEffectTapDelayPreset
 // 0x0070 (0x00B0 - 0x0040)
@@ -629,16 +650,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubmixEffectTapDelayPreset">();
+		STATIC_CLASS_IMPL("SubmixEffectTapDelayPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubmixEffectTapDelayPreset")
 	}
 	static class USubmixEffectTapDelayPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubmixEffectTapDelayPreset>();
 	}
 };
-static_assert(alignof(USubmixEffectTapDelayPreset) == 0x000008, "Wrong alignment on USubmixEffectTapDelayPreset");
-static_assert(sizeof(USubmixEffectTapDelayPreset) == 0x0000B0, "Wrong size on USubmixEffectTapDelayPreset");
-static_assert(offsetof(USubmixEffectTapDelayPreset, Settings) == 0x000080, "Member 'USubmixEffectTapDelayPreset::Settings' has a wrong offset!");
 
 // Class Synthesis.Synth2DSlider
 // 0x0370 (0x0478 - 0x0108)
@@ -677,31 +699,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"Synth2DSlider">();
+		STATIC_CLASS_IMPL("Synth2DSlider")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Synth2DSlider")
 	}
 	static class USynth2DSlider* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynth2DSlider>();
 	}
 };
-static_assert(alignof(USynth2DSlider) == 0x000008, "Wrong alignment on USynth2DSlider");
-static_assert(sizeof(USynth2DSlider) == 0x000478, "Wrong size on USynth2DSlider");
-static_assert(offsetof(USynth2DSlider, ValueX) == 0x000108, "Member 'USynth2DSlider::ValueX' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, ValueY) == 0x00010C, "Member 'USynth2DSlider::ValueY' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, ValueXDelegate) == 0x000110, "Member 'USynth2DSlider::ValueXDelegate' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, ValueYDelegate) == 0x000120, "Member 'USynth2DSlider::ValueYDelegate' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, WidgetStyle) == 0x000130, "Member 'USynth2DSlider::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, SliderHandleColor) == 0x0003E8, "Member 'USynth2DSlider::SliderHandleColor' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, IndentHandle) == 0x0003F8, "Member 'USynth2DSlider::IndentHandle' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, Locked) == 0x0003F9, "Member 'USynth2DSlider::Locked' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, StepSize) == 0x0003FC, "Member 'USynth2DSlider::StepSize' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, IsFocusable) == 0x000400, "Member 'USynth2DSlider::IsFocusable' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnMouseCaptureBegin) == 0x000408, "Member 'USynth2DSlider::OnMouseCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnMouseCaptureEnd) == 0x000418, "Member 'USynth2DSlider::OnMouseCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnControllerCaptureBegin) == 0x000428, "Member 'USynth2DSlider::OnControllerCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnControllerCaptureEnd) == 0x000438, "Member 'USynth2DSlider::OnControllerCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnValueChangedX) == 0x000448, "Member 'USynth2DSlider::OnValueChangedX' has a wrong offset!");
-static_assert(offsetof(USynth2DSlider, OnValueChangedY) == 0x000458, "Member 'USynth2DSlider::OnValueChangedY' has a wrong offset!");
 
 // Class Synthesis.GranularSynth
 // 0x0350 (0x0970 - 0x0620)
@@ -737,16 +745,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"GranularSynth">();
+		STATIC_CLASS_IMPL("GranularSynth")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GranularSynth")
 	}
 	static class UGranularSynth* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGranularSynth>();
 	}
 };
-static_assert(alignof(UGranularSynth) == 0x000010, "Wrong alignment on UGranularSynth");
-static_assert(sizeof(UGranularSynth) == 0x000970, "Wrong size on UGranularSynth");
-static_assert(offsetof(UGranularSynth, GranulatedSoundWave) == 0x000620, "Member 'UGranularSynth::GranulatedSoundWave' has a wrong offset!");
 
 // Class Synthesis.MonoWaveTableSynthPreset
 // 0x0148 (0x0170 - 0x0028)
@@ -766,26 +775,24 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"MonoWaveTableSynthPreset">();
+		STATIC_CLASS_IMPL("MonoWaveTableSynthPreset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MonoWaveTableSynthPreset")
 	}
 	static class UMonoWaveTableSynthPreset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMonoWaveTableSynthPreset>();
 	}
 };
-static_assert(alignof(UMonoWaveTableSynthPreset) == 0x000008, "Wrong alignment on UMonoWaveTableSynthPreset");
-static_assert(sizeof(UMonoWaveTableSynthPreset) == 0x000170, "Wrong size on UMonoWaveTableSynthPreset");
-static_assert(offsetof(UMonoWaveTableSynthPreset, PresetName) == 0x000028, "Member 'UMonoWaveTableSynthPreset::PresetName' has a wrong offset!");
-static_assert(offsetof(UMonoWaveTableSynthPreset, LockKeyframesToGrid) == 0x00003C, "Member 'UMonoWaveTableSynthPreset::LockKeyframesToGrid' has a wrong offset!");
-static_assert(offsetof(UMonoWaveTableSynthPreset, WaveTableResolution) == 0x000040, "Member 'UMonoWaveTableSynthPreset::WaveTableResolution' has a wrong offset!");
-static_assert(offsetof(UMonoWaveTableSynthPreset, WaveTable) == 0x000048, "Member 'UMonoWaveTableSynthPreset::WaveTable' has a wrong offset!");
 
 // Class Synthesis.SynthComponentMonoWaveTable
 // 0x0740 (0x0D60 - 0x0620)
 class USynthComponentMonoWaveTable final : public USynthComponent
 {
 public:
-	TMulticastInlineDelegate<void(int32 TableIndex)> OnTableAltered;                                    // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(int32 TableIndex)> OnTableAltered;                                 // 0x0620(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnNumTablesChanged;                                // 0x0630(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class UMonoWaveTableSynthPreset*              CurrentPreset;                                     // 0x0640(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_648[0x718];                                    // 0x0648(0x0718)(Fixing Struct Size After Last Property [ Dumper-7 ])
@@ -841,18 +848,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthComponentMonoWaveTable">();
+		STATIC_CLASS_IMPL("SynthComponentMonoWaveTable")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthComponentMonoWaveTable")
 	}
 	static class USynthComponentMonoWaveTable* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthComponentMonoWaveTable>();
 	}
 };
-static_assert(alignof(USynthComponentMonoWaveTable) == 0x000010, "Wrong alignment on USynthComponentMonoWaveTable");
-static_assert(sizeof(USynthComponentMonoWaveTable) == 0x000D60, "Wrong size on USynthComponentMonoWaveTable");
-static_assert(offsetof(USynthComponentMonoWaveTable, OnTableAltered) == 0x000620, "Member 'USynthComponentMonoWaveTable::OnTableAltered' has a wrong offset!");
-static_assert(offsetof(USynthComponentMonoWaveTable, OnNumTablesChanged) == 0x000630, "Member 'USynthComponentMonoWaveTable::OnNumTablesChanged' has a wrong offset!");
-static_assert(offsetof(USynthComponentMonoWaveTable, CurrentPreset) == 0x000640, "Member 'USynthComponentMonoWaveTable::CurrentPreset' has a wrong offset!");
 
 // Class Synthesis.SynthSamplePlayer
 // 0x0130 (0x0750 - 0x0620)
@@ -861,7 +867,7 @@ class USynthSamplePlayer final : public USynthComponent
 public:
 	class USoundWave*                             SoundWave;                                         // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnSampleLoaded;                                    // 0x0628(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	TMulticastInlineDelegate<void(float ProgressPercent, float ProgressTimeSeconds)> OnSamplePlaybackProgress;                          // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float ProgressPercent, float ProgressTimeSeconds)> OnSamplePlaybackProgress; // 0x0638(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_648[0x108];                                    // 0x0648(0x0108)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
@@ -879,18 +885,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthSamplePlayer">();
+		STATIC_CLASS_IMPL("SynthSamplePlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthSamplePlayer")
 	}
 	static class USynthSamplePlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthSamplePlayer>();
 	}
 };
-static_assert(alignof(USynthSamplePlayer) == 0x000010, "Wrong alignment on USynthSamplePlayer");
-static_assert(sizeof(USynthSamplePlayer) == 0x000750, "Wrong size on USynthSamplePlayer");
-static_assert(offsetof(USynthSamplePlayer, SoundWave) == 0x000620, "Member 'USynthSamplePlayer::SoundWave' has a wrong offset!");
-static_assert(offsetof(USynthSamplePlayer, OnSampleLoaded) == 0x000628, "Member 'USynthSamplePlayer::OnSampleLoaded' has a wrong offset!");
-static_assert(offsetof(USynthSamplePlayer, OnSamplePlaybackProgress) == 0x000638, "Member 'USynthSamplePlayer::OnSamplePlaybackProgress' has a wrong offset!");
 
 // Class Synthesis.SynthKnob
 // 0x02F8 (0x0400 - 0x0108)
@@ -927,30 +932,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SynthKnob">();
+		STATIC_CLASS_IMPL("SynthKnob")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SynthKnob")
 	}
 	static class USynthKnob* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USynthKnob>();
 	}
 };
-static_assert(alignof(USynthKnob) == 0x000008, "Wrong alignment on USynthKnob");
-static_assert(sizeof(USynthKnob) == 0x000400, "Wrong size on USynthKnob");
-static_assert(offsetof(USynthKnob, Value) == 0x000108, "Member 'USynthKnob::Value' has a wrong offset!");
-static_assert(offsetof(USynthKnob, StepSize) == 0x00010C, "Member 'USynthKnob::StepSize' has a wrong offset!");
-static_assert(offsetof(USynthKnob, MouseSpeed) == 0x000110, "Member 'USynthKnob::MouseSpeed' has a wrong offset!");
-static_assert(offsetof(USynthKnob, MouseFineTuneSpeed) == 0x000114, "Member 'USynthKnob::MouseFineTuneSpeed' has a wrong offset!");
-static_assert(offsetof(USynthKnob, ParameterName) == 0x000120, "Member 'USynthKnob::ParameterName' has a wrong offset!");
-static_assert(offsetof(USynthKnob, ParameterUnits) == 0x000138, "Member 'USynthKnob::ParameterUnits' has a wrong offset!");
-static_assert(offsetof(USynthKnob, ValueDelegate) == 0x000150, "Member 'USynthKnob::ValueDelegate' has a wrong offset!");
-static_assert(offsetof(USynthKnob, WidgetStyle) == 0x000160, "Member 'USynthKnob::WidgetStyle' has a wrong offset!");
-static_assert(offsetof(USynthKnob, Locked) == 0x000398, "Member 'USynthKnob::Locked' has a wrong offset!");
-static_assert(offsetof(USynthKnob, IsFocusable) == 0x000399, "Member 'USynthKnob::IsFocusable' has a wrong offset!");
-static_assert(offsetof(USynthKnob, OnMouseCaptureBegin) == 0x0003A0, "Member 'USynthKnob::OnMouseCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USynthKnob, OnMouseCaptureEnd) == 0x0003B0, "Member 'USynthKnob::OnMouseCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USynthKnob, OnControllerCaptureBegin) == 0x0003C0, "Member 'USynthKnob::OnControllerCaptureBegin' has a wrong offset!");
-static_assert(offsetof(USynthKnob, OnControllerCaptureEnd) == 0x0003D0, "Member 'USynthKnob::OnControllerCaptureEnd' has a wrong offset!");
-static_assert(offsetof(USynthKnob, OnValueChanged) == 0x0003E0, "Member 'USynthKnob::OnValueChanged' has a wrong offset!");
 
 }
 

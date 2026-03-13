@@ -32,8 +32,8 @@ public:
 	class FText                                   BannerDisplayName;                                 // 0x0268(0x0018)(Edit, BlueprintVisible)
 	EAthenaCustomizationCategory                  CustomizationType;                                 // 0x0280(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_281[0x7];                                      // 0x0281(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UCommonButton* Button, const struct FAthenaCustomizationParams& CustomizationParams)> OnSlotClicked;                                     // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UAthenaCustomizationSlotButtonWrapper_C* ButtonWrapper, EAthenaCustomizationCategory CustomizationType, class FText BannerLabel, class FText CustomizationDescription, int32 SubslotIndex)> OnSlotHovered;                                     // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UCommonButton* Button, const struct FAthenaCustomizationParams& CustomizationParams)> OnSlotClicked; // 0x0288(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UAthenaCustomizationSlotButtonWrapper_C* ButtonWrapper, EAthenaCustomizationCategory CustomizationType, class FText BannerLabel, class FText CustomizationDescription, int32 SubslotIndex)> OnSlotHovered; // 0x0298(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FText                                   CategoryDescription;                               // 0x02A8(0x0018)(Edit, BlueprintVisible)
 	TMulticastInlineDelegate<void()>              OnSlotUnhovered;                                   // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         SubslotIndex;                                      // 0x02D0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,33 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaCustomizationSlotButtonWrapper_C">();
+		BP_STATIC_CLASS_IMPL("AthenaCustomizationSlotButtonWrapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaCustomizationSlotButtonWrapper_C")
 	}
 	static class UAthenaCustomizationSlotButtonWrapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaCustomizationSlotButtonWrapper_C>();
 	}
 };
-static_assert(alignof(UAthenaCustomizationSlotButtonWrapper_C) == 0x000008, "Wrong alignment on UAthenaCustomizationSlotButtonWrapper_C");
-static_assert(sizeof(UAthenaCustomizationSlotButtonWrapper_C) == 0x0003A8, "Wrong size on UAthenaCustomizationSlotButtonWrapper_C");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, UberGraphFrame) == 0x000258, "Member 'UAthenaCustomizationSlotButtonWrapper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, SlotButton) == 0x000260, "Member 'UAthenaCustomizationSlotButtonWrapper_C::SlotButton' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, BannerDisplayName) == 0x000268, "Member 'UAthenaCustomizationSlotButtonWrapper_C::BannerDisplayName' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, CustomizationType) == 0x000280, "Member 'UAthenaCustomizationSlotButtonWrapper_C::CustomizationType' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, OnSlotClicked) == 0x000288, "Member 'UAthenaCustomizationSlotButtonWrapper_C::OnSlotClicked' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, OnSlotHovered) == 0x000298, "Member 'UAthenaCustomizationSlotButtonWrapper_C::OnSlotHovered' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, CategoryDescription) == 0x0002A8, "Member 'UAthenaCustomizationSlotButtonWrapper_C::CategoryDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, OnSlotUnhovered) == 0x0002C0, "Member 'UAthenaCustomizationSlotButtonWrapper_C::OnSlotUnhovered' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, SubslotIndex) == 0x0002D0, "Member 'UAthenaCustomizationSlotButtonWrapper_C::SubslotIndex' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, BangType) == 0x0002D4, "Member 'UAthenaCustomizationSlotButtonWrapper_C::BangType' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, SlottedItemCardSize) == 0x0002D5, "Member 'UAthenaCustomizationSlotButtonWrapper_C::SlottedItemCardSize' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, SlotImage) == 0x0002D8, "Member 'UAthenaCustomizationSlotButtonWrapper_C::SlotImage' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, bAllowUnownedItems) == 0x000360, "Member 'UAthenaCustomizationSlotButtonWrapper_C::bAllowUnownedItems' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, bOneItemPerSlot) == 0x000361, "Member 'UAthenaCustomizationSlotButtonWrapper_C::bOneItemPerSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, OverrideSlotImage) == 0x000368, "Member 'UAthenaCustomizationSlotButtonWrapper_C::OverrideSlotImage' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, RequiredSlotTag) == 0x000370, "Member 'UAthenaCustomizationSlotButtonWrapper_C::RequiredSlotTag' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, NoCosmeticWarning) == 0x000378, "Member 'UAthenaCustomizationSlotButtonWrapper_C::NoCosmeticWarning' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButtonWrapper_C, SlotInactiveWarning) == 0x000390, "Member 'UAthenaCustomizationSlotButtonWrapper_C::SlotInactiveWarning' has a wrong offset!");
 
 }
 

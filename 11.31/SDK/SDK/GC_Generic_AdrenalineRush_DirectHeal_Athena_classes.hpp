@@ -23,15 +23,17 @@ class UGC_Generic_AdrenalineRush_DirectHeal_Athena_C final : public UFortGamepla
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Generic_AdrenalineRush_DirectHeal_Athena_C">();
+		BP_STATIC_CLASS_IMPL("GC_Generic_AdrenalineRush_DirectHeal_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Generic_AdrenalineRush_DirectHeal_Athena_C")
 	}
 	static class UGC_Generic_AdrenalineRush_DirectHeal_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGC_Generic_AdrenalineRush_DirectHeal_Athena_C>();
 	}
 };
-static_assert(alignof(UGC_Generic_AdrenalineRush_DirectHeal_Athena_C) == 0x000008, "Wrong alignment on UGC_Generic_AdrenalineRush_DirectHeal_Athena_C");
-static_assert(sizeof(UGC_Generic_AdrenalineRush_DirectHeal_Athena_C) == 0x0001B0, "Wrong size on UGC_Generic_AdrenalineRush_DirectHeal_Athena_C");
 
 }
 

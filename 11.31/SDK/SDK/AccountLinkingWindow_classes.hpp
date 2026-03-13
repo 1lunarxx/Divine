@@ -23,15 +23,17 @@ class UAccountLinkingWindow_C final : public UFortAccountLinkingWindow
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccountLinkingWindow_C">();
+		BP_STATIC_CLASS_IMPL("AccountLinkingWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccountLinkingWindow_C")
 	}
 	static class UAccountLinkingWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccountLinkingWindow_C>();
 	}
 };
-static_assert(alignof(UAccountLinkingWindow_C) == 0x000008, "Wrong alignment on UAccountLinkingWindow_C");
-static_assert(sizeof(UAccountLinkingWindow_C) == 0x000500, "Wrong size on UAccountLinkingWindow_C");
 
 }
 

@@ -48,17 +48,6 @@ public:
 	struct FMargin                                RowPadding2;                                       // 0x0344(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
-	void Clear();
-	void ClearAndInitialize(bool IntroAlterations);
-	void Reset();
-	void CreateAnimations(bool IntroAnims);
-	void IntroAnim();
-	void CenterWidget();
-	void SetupBorders();
-	void TriggerModificationAnim(int32 ModifiedSlotIndex);
-	void SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo);
-	class UCommonUserWidget* CreateAlterationWidget();
-	void GenerateAlteration(class UFortAlterationInfo* AlterationInfo);
 	void AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked);
 	void UpdatePerksMessage();
 	void Construct();
@@ -71,38 +60,32 @@ public:
 	void Destruct();
 	void PreConstruct(bool IsDesignTime);
 	void ExecuteUbergraph_AlterationsWidget(int32 EntryPoint);
+	void Clear();
+	void ClearAndInitialize(bool IntroAlterations);
+	void Reset();
+	void CreateAnimations(bool IntroAnims);
+	void IntroAnim();
+	void CenterWidget();
+	void SetupBorders();
+	void TriggerModificationAnim(int32 ModifiedSlotIndex);
+	void SetupAlteration(class UCommonUserWidget* Alteration, class UFortAlterationInfo* AlterationInfo);
+	class UCommonUserWidget* CreateAlterationWidget();
+	void GenerateAlteration(class UFortAlterationInfo* AlterationInfo);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlterationsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AlterationsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlterationsWidget_C")
 	}
 	static class UAlterationsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlterationsWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationsWidget_C) == 0x000008, "Wrong alignment on UAlterationsWidget_C");
-static_assert(sizeof(UAlterationsWidget_C) == 0x000358, "Wrong size on UAlterationsWidget_C");
-static_assert(offsetof(UAlterationsWidget_C, UberGraphFrame) == 0x0002D0, "Member 'UAlterationsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, Border_PerksMessage) == 0x0002D8, "Member 'UAlterationsWidget_C::Border_PerksMessage' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderLocked) == 0x0002E0, "Member 'UAlterationsWidget_C::BorderLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, BorderUnlocked) == 0x0002E8, "Member 'UAlterationsWidget_C::BorderUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, LockedUnlockedDivider) == 0x0002F0, "Member 'UAlterationsWidget_C::LockedUnlockedDivider' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsLocked) == 0x0002F8, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, VerticalBoxAlterationsUnlocked) == 0x000300, "Member 'UAlterationsWidget_C::VerticalBoxAlterationsUnlocked' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeName) == 0x000308, "Member 'UAlterationsWidget_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeDescription) == 0x000309, "Member 'UAlterationsWidget_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bIncludeShortDescription) == 0x00030A, "Member 'UAlterationsWidget_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstAlterationComplete) == 0x00030B, "Member 'UAlterationsWidget_C::FirstAlterationComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, FirstLockedComplete) == 0x00030C, "Member 'UAlterationsWidget_C::FirstLockedComplete' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, IconSize) == 0x00030D, "Member 'UAlterationsWidget_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, RowPadding) == 0x000310, "Member 'UAlterationsWidget_C::RowPadding' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, bUseLargeFormatNameOnly) == 0x000320, "Member 'UAlterationsWidget_C::bUseLargeFormatNameOnly' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, Description_Padding) == 0x000324, "Member 'UAlterationsWidget_C::Description_Padding' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, PerkAnimIntroTimer) == 0x000338, "Member 'UAlterationsWidget_C::PerkAnimIntroTimer' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, NextAnimToPlay) == 0x000340, "Member 'UAlterationsWidget_C::NextAnimToPlay' has a wrong offset!");
-static_assert(offsetof(UAlterationsWidget_C, RowPadding2) == 0x000344, "Member 'UAlterationsWidget_C::RowPadding2' has a wrong offset!");
 
 }
 

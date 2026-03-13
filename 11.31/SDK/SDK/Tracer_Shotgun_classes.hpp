@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Tracer_Shotgun_C">();
+		BP_STATIC_CLASS_IMPL("Tracer_Shotgun_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Tracer_Shotgun_C")
 	}
 	static class ATracer_Shotgun_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATracer_Shotgun_C>();
 	}
 };
-static_assert(alignof(ATracer_Shotgun_C) == 0x000008, "Wrong alignment on ATracer_Shotgun_C");
-static_assert(sizeof(ATracer_Shotgun_C) == 0x0002B8, "Wrong size on ATracer_Shotgun_C");
-static_assert(offsetof(ATracer_Shotgun_C, UberGraphFrame) == 0x0002B0, "Member 'ATracer_Shotgun_C::UberGraphFrame' has a wrong offset!");
 
 }
 

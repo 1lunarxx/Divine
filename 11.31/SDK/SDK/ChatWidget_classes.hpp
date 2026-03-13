@@ -35,7 +35,7 @@ public:
 	struct FDataTableRowHandle                    CurrentUserListAction;                             // 0x0490(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	bool                                          bEnteringChat;                                     // 0x04A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4A1[0x7];                                      // 0x04A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool EnteredChat)> OnEnteredChat;                                     // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool EnteredChat)> OnEnteredChat;                                  // 0x04A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void HandlePreShowConfirmationDialog(class UFortUIManagerWidget_NUI* Source, struct FFortDialogDescription_NUI& DialogDescription);
@@ -63,25 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatWidget_C">();
+		BP_STATIC_CLASS_IMPL("ChatWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatWidget_C")
 	}
 	static class UChatWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatWidget_C>();
 	}
 };
-static_assert(alignof(UChatWidget_C) == 0x000008, "Wrong alignment on UChatWidget_C");
-static_assert(sizeof(UChatWidget_C) == 0x0004B8, "Wrong size on UChatWidget_C");
-static_assert(offsetof(UChatWidget_C, UberGraphFrame) == 0x000448, "Member 'UChatWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, ConsoleChatShortcut) == 0x000450, "Member 'UChatWidget_C::ConsoleChatShortcut' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, DEPRECATED_CursorModeSwitcher) == 0x000458, "Member 'UChatWidget_C::DEPRECATED_CursorModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, HudContentHBox) == 0x000460, "Member 'UChatWidget_C::HudContentHBox' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, KeybindWidget) == 0x000468, "Member 'UChatWidget_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CloseUserListAction) == 0x000470, "Member 'UChatWidget_C::CloseUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, OpenUserListAction) == 0x000480, "Member 'UChatWidget_C::OpenUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, CurrentUserListAction) == 0x000490, "Member 'UChatWidget_C::CurrentUserListAction' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, bEnteringChat) == 0x0004A0, "Member 'UChatWidget_C::bEnteringChat' has a wrong offset!");
-static_assert(offsetof(UChatWidget_C, OnEnteredChat) == 0x0004A8, "Member 'UChatWidget_C::OnEnteredChat' has a wrong offset!");
 
 }
 

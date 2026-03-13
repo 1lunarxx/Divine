@@ -78,56 +78,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DBNO_Carried_Simulation_C">();
+		BP_STATIC_CLASS_IMPL("DBNO_Carried_Simulation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DBNO_Carried_Simulation_C")
 	}
 	static class UDBNO_Carried_Simulation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDBNO_Carried_Simulation_C>();
 	}
 };
-static_assert(alignof(UDBNO_Carried_Simulation_C) == 0x000010, "Wrong alignment on UDBNO_Carried_Simulation_C");
-static_assert(sizeof(UDBNO_Carried_Simulation_C) == 0x000A30, "Wrong size on UDBNO_Carried_Simulation_C");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, UberGraphFrame) == 0x000270, "Member 'UDBNO_Carried_Simulation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_Root_28E45FF44D8BF61DA494DBA7D66A0D6A) == 0x000278, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_Root_28E45FF44D8BF61DA494DBA7D66A0D6A' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_16F0D71242962BA41A4E8DA0FBE31217) == 0x0002A8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_16F0D71242962BA41A4E8DA0FBE31217' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_SubInput_8105BF9F4246C108EEF5D0BE17BA6260) == 0x0002C8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_SubInput_8105BF9F4246C108EEF5D0BE17BA6260' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_911D06AA453F82A06838A3B01BA36346) == 0x000338, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_911D06AA453F82A06838A3B01BA36346' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_BlendListByBool_A839712A4F77C9A091B5898491ED30B1) == 0x000358, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_BlendListByBool_A839712A4F77C9A091B5898491ED30B1' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_SaveCachedPose_DB63BAC845C20CEECA1475B9C028BF5C) == 0x0003F8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_SaveCachedPose_DB63BAC845C20CEECA1475B9C028BF5C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_B04070EF4760B8638410698DD53C2704) == 0x0004B0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_B04070EF4760B8638410698DD53C2704' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_SaveCachedPose_7C62ED904EF68BB85FC230AE57D89A95) == 0x0004D8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_SaveCachedPose_7C62ED904EF68BB85FC230AE57D89A95' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_019CF00C4D1070A1EE1697A3376DD29E) == 0x000590, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_019CF00C4D1070A1EE1697A3376DD29E' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_2CA065634A3A49B36403D1A73C0B5401) == 0x0005B0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_2CA065634A3A49B36403D1A73C0B5401' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_7F7F292A43A7EA4DAD65F790695B35F4) == 0x0005D0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_7F7F292A43A7EA4DAD65F790695B35F4' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_08303037454CDE3D947ABFACA06F69BD) == 0x0005F8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_08303037454CDE3D947ABFACA06F69BD' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_BC91F25D4799510301E487827C4F1379) == 0x000618, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_BC91F25D4799510301E487827C4F1379' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_7D1497CF4903FB778A3D18A74E43EA77) == 0x000638, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_7D1497CF4903FB778A3D18A74E43EA77' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_E00433784936F3679C3289940B3E3BB0) == 0x000660, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_E00433784936F3679C3289940B3E3BB0' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_59F85E5E4A80235915E0D7B14A12BD94) == 0x000688, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_59F85E5E4A80235915E0D7B14A12BD94' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_CB97DFC14FAF14D2E0BABF9B8D876667) == 0x0006A8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_CB97DFC14FAF14D2E0BABF9B8D876667' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_14583F6C487B34BE87E088BD67C3AB47) == 0x0006C8, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_14583F6C487B34BE87E088BD67C3AB47' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_D7941F3949F9037E5D62D49C7C6E4CD2) == 0x0006F0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_D7941F3949F9037E5D62D49C7C6E4CD2' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_5ADE980D4BDD02AC44BE0CBBA8D74EB6) == 0x000710, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_5ADE980D4BDD02AC44BE0CBBA8D74EB6' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_4D4977BD4BF39D6B75481D9F5CC33FAD) == 0x000730, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_4D4977BD4BF39D6B75481D9F5CC33FAD' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_ComponentToLocalSpace_234A11F847B7E10EF6F74B86A77A193C) == 0x000758, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_ComponentToLocalSpace_234A11F847B7E10EF6F74B86A77A193C' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_LocalToComponentSpace_2C47E3B7444B46A7A63974A0B514BDE4) == 0x000778, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_LocalToComponentSpace_2C47E3B7444B46A7A63974A0B514BDE4' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_83FA301D471DA3A9B99C1A8226DA2826) == 0x000798, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_83FA301D471DA3A9B99C1A8226DA2826' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_SaveCachedPose_6731E6EC42EDC8C26F2A758FD25E692A) == 0x0007C0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_SaveCachedPose_6731E6EC42EDC8C26F2A758FD25E692A' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_UseCachedPose_54BE2F104F9150A0D1402E8C84CAE1CB) == 0x000878, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_UseCachedPose_54BE2F104F9150A0D1402E8C84CAE1CB' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_BlendListByInt_A6D39FDA48EF8ED3A07975B91335D3F7) == 0x0008A0, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_BlendListByInt_A6D39FDA48EF8ED3A07975B91335D3F7' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, AnimGraphNode_BlendListByInt_5E6D490E447E29C2AFCCF2862C318AF9) == 0x000940, "Member 'UDBNO_Carried_Simulation_C::AnimGraphNode_BlendListByInt_5E6D490E447E29C2AFCCF2862C318AF9' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, Carried) == 0x0009E0, "Member 'UDBNO_Carried_Simulation_C::Carried' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, CarrierPawn) == 0x0009E8, "Member 'UDBNO_Carried_Simulation_C::CarrierPawn' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, CarrierAnimBP) == 0x0009F0, "Member 'UDBNO_Carried_Simulation_C::CarrierAnimBP' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, LHandIKLocation) == 0x0009F8, "Member 'UDBNO_Carried_Simulation_C::LHandIKLocation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, LHandIKRotation) == 0x000A04, "Member 'UDBNO_Carried_Simulation_C::LHandIKRotation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, TempAttachLocation) == 0x000A10, "Member 'UDBNO_Carried_Simulation_C::TempAttachLocation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, TempAttachRotation) == 0x000A1C, "Member 'UDBNO_Carried_Simulation_C::TempAttachRotation' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, my_bodytype) == 0x000A28, "Member 'UDBNO_Carried_Simulation_C::my_bodytype' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, my_gender) == 0x000A29, "Member 'UDBNO_Carried_Simulation_C::my_gender' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, IsMale) == 0x000A2A, "Member 'UDBNO_Carried_Simulation_C::IsMale' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, my_animbodytype) == 0x000A2B, "Member 'UDBNO_Carried_Simulation_C::my_animbodytype' has a wrong offset!");
-static_assert(offsetof(UDBNO_Carried_Simulation_C, bodytype_int) == 0x000A2C, "Member 'UDBNO_Carried_Simulation_C::bodytype_int' has a wrong offset!");
 
 }
 

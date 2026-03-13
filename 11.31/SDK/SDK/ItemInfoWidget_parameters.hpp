@@ -23,9 +23,6 @@ struct ItemInfoWidget_C_SetRarityMaterialValues final
 public:
 	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInfoWidget_C_SetRarityMaterialValues) == 0x000008, "Wrong alignment on ItemInfoWidget_C_SetRarityMaterialValues");
-static_assert(sizeof(ItemInfoWidget_C_SetRarityMaterialValues) == 0x000008, "Wrong size on ItemInfoWidget_C_SetRarityMaterialValues");
-static_assert(offsetof(ItemInfoWidget_C_SetRarityMaterialValues, ItemDefinition) == 0x000000, "Member 'ItemInfoWidget_C_SetRarityMaterialValues::ItemDefinition' has a wrong offset!");
 
 // Function ItemInfoWidget.ItemInfoWidget_C.ExecuteUbergraph_ItemInfoWidget
 // 0x00C0 (0x00C0 - 0x0000)
@@ -44,17 +41,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   CallFunc_MakeLiteralName_ReturnValue_2;            // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget) == 0x000008, "Wrong alignment on ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget");
-static_assert(sizeof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget) == 0x0000C0, "Wrong size on ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, EntryPoint) == 0x000000, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_MakeLiteralName_ReturnValue) == 0x000004, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_MakeLiteralName_ReturnValue_1) == 0x00000C, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_MakeLiteralName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, K2Node_Event_ItemDefinition) == 0x000018, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::K2Node_Event_ItemDefinition' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000020, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_GetRarity_ReturnValue) == 0x000028, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_BPGetRarityData_ReturnValue) == 0x000030, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_BPGetRarityData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000B0, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget, CallFunc_MakeLiteralName_ReturnValue_2) == 0x0000B8, "Member 'ItemInfoWidget_C_ExecuteUbergraph_ItemInfoWidget::CallFunc_MakeLiteralName_ReturnValue_2' has a wrong offset!");
 
 }
 

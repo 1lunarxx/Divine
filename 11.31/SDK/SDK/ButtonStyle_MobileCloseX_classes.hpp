@@ -23,15 +23,17 @@ class UButtonStyle_MobileCloseX_C final : public UButtonStyle_MediumTransparentN
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle_MobileCloseX_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle_MobileCloseX_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle_MobileCloseX_C")
 	}
 	static class UButtonStyle_MobileCloseX_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_MobileCloseX_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_MobileCloseX_C) == 0x000008, "Wrong alignment on UButtonStyle_MobileCloseX_C");
-static_assert(sizeof(UButtonStyle_MobileCloseX_C) == 0x000570, "Wrong size on UButtonStyle_MobileCloseX_C");
 
 }
 

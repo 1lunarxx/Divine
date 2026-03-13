@@ -34,16 +34,6 @@ public:
 	class AActor*                                 K2Node_Event_DamageCauser;                         // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           K2Node_Event_EffectContext;                        // 0x00D0(0x0018)()
 };
-static_assert(alignof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades) == 0x000008, "Wrong alignment on FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
-static_assert(sizeof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades) == 0x0000E8, "Wrong size on FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, EntryPoint) == 0x000000, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_Damage) == 0x000004, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_DamageTags) == 0x000008, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_Momentum) == 0x000028, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_HitInfo) == 0x000034, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_InstigatedBy) == 0x0000C0, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_DamageCauser) == 0x0000C8, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades, K2Node_Event_EffectContext) == 0x0000D0, "Member 'FortVolumeActor_PrefabGrenades_C_ExecuteUbergraph_FortVolumeActor_PrefabGrenades::K2Node_Event_EffectContext' has a wrong offset!");
 
 // Function FortVolumeActor_PrefabGrenades.FortVolumeActor_PrefabGrenades_C.OnDeathPlayEffects
 // 0x00E8 (0x00E8 - 0x0000)
@@ -60,15 +50,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects) == 0x000008, "Wrong alignment on FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects");
-static_assert(sizeof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects) == 0x0000E8, "Wrong size on FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, Damage) == 0x000000, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::Damage' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, DamageTags) == 0x000008, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::DamageTags' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, Momentum) == 0x000028, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::Momentum' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, HitInfo) == 0x000034, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::HitInfo' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, InstigatedBy) == 0x0000C0, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, DamageCauser) == 0x0000C8, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::DamageCauser' has a wrong offset!");
-static_assert(offsetof(FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects, EffectContext) == 0x0000D0, "Member 'FortVolumeActor_PrefabGrenades_C_OnDeathPlayEffects::EffectContext' has a wrong offset!");
 
 }
 

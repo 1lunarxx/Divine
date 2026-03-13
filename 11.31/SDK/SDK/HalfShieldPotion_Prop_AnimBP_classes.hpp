@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HalfShieldPotion_Prop_AnimBP_C">();
+		BP_STATIC_CLASS_IMPL("HalfShieldPotion_Prop_AnimBP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HalfShieldPotion_Prop_AnimBP_C")
 	}
 	static class UHalfShieldPotion_Prop_AnimBP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHalfShieldPotion_Prop_AnimBP_C>();
 	}
 };
-static_assert(alignof(UHalfShieldPotion_Prop_AnimBP_C) == 0x000010, "Wrong alignment on UHalfShieldPotion_Prop_AnimBP_C");
-static_assert(sizeof(UHalfShieldPotion_Prop_AnimBP_C) == 0x000370, "Wrong size on UHalfShieldPotion_Prop_AnimBP_C");
-static_assert(offsetof(UHalfShieldPotion_Prop_AnimBP_C, UberGraphFrame) == 0x000270, "Member 'UHalfShieldPotion_Prop_AnimBP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHalfShieldPotion_Prop_AnimBP_C, AnimGraphNode_Root_D18361C34D981BDD1A63009152AAF787) == 0x000278, "Member 'UHalfShieldPotion_Prop_AnimBP_C::AnimGraphNode_Root_D18361C34D981BDD1A63009152AAF787' has a wrong offset!");
-static_assert(offsetof(UHalfShieldPotion_Prop_AnimBP_C, AnimGraphNode_Slot_4E170F124EACAF56EFA1518CC3C8608F) == 0x0002A8, "Member 'UHalfShieldPotion_Prop_AnimBP_C::AnimGraphNode_Slot_4E170F124EACAF56EFA1518CC3C8608F' has a wrong offset!");
-static_assert(offsetof(UHalfShieldPotion_Prop_AnimBP_C, AnimGraphNode_SequencePlayer_1388951E4BA0BDBA8187FB9DC79ADE82) == 0x0002F0, "Member 'UHalfShieldPotion_Prop_AnimBP_C::AnimGraphNode_SequencePlayer_1388951E4BA0BDBA8187FB9DC79ADE82' has a wrong offset!");
 
 }
 

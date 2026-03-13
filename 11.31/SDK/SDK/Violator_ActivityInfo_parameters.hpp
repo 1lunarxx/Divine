@@ -25,11 +25,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_1; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Violator_ActivityInfo_C_Create_Backplate_MIDs) == 0x000008, "Wrong alignment on Violator_ActivityInfo_C_Create_Backplate_MIDs");
-static_assert(sizeof(Violator_ActivityInfo_C_Create_Backplate_MIDs) == 0x000018, "Wrong size on Violator_ActivityInfo_C_Create_Backplate_MIDs");
-static_assert(offsetof(Violator_ActivityInfo_C_Create_Backplate_MIDs, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'Violator_ActivityInfo_C_Create_Backplate_MIDs::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_Create_Backplate_MIDs, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'Violator_ActivityInfo_C_Create_Backplate_MIDs::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_Create_Backplate_MIDs, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000010, "Member 'Violator_ActivityInfo_C_Create_Backplate_MIDs::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.HandleStyling-TextCallout
 // 0x0014 (0x0014 - 0x0000)
@@ -43,13 +38,6 @@ public:
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue_2;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Violator_ActivityInfo_C_HandleStyling_TextCallout) == 0x000004, "Wrong alignment on Violator_ActivityInfo_C_HandleStyling_TextCallout");
-static_assert(sizeof(Violator_ActivityInfo_C_HandleStyling_TextCallout) == 0x000014, "Wrong size on Violator_ActivityInfo_C_HandleStyling_TextCallout");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_TextCallout, Is_Large_Display) == 0x000000, "Member 'Violator_ActivityInfo_C_HandleStyling_TextCallout::Is_Large_Display' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_TextCallout, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'Violator_ActivityInfo_C_HandleStyling_TextCallout::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_TextCallout, CallFunc_MakeLiteralFloat_ReturnValue_1) == 0x000008, "Member 'Violator_ActivityInfo_C_HandleStyling_TextCallout::CallFunc_MakeLiteralFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_TextCallout, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'Violator_ActivityInfo_C_HandleStyling_TextCallout::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_TextCallout, CallFunc_MakeLiteralFloat_ReturnValue_2) == 0x000010, "Member 'Violator_ActivityInfo_C_HandleStyling_TextCallout::CallFunc_MakeLiteralFloat_ReturnValue_2' has a wrong offset!");
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.HandleStyling-Timer
 // 0x0014 (0x0014 - 0x0000)
@@ -63,13 +51,6 @@ public:
 	float                                         CallFunc_MakeLiteralFloat_ReturnValue_2;           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Violator_ActivityInfo_C_HandleStyling_Timer) == 0x000004, "Wrong alignment on Violator_ActivityInfo_C_HandleStyling_Timer");
-static_assert(sizeof(Violator_ActivityInfo_C_HandleStyling_Timer) == 0x000014, "Wrong size on Violator_ActivityInfo_C_HandleStyling_Timer");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_Timer, Is_Large_Display) == 0x000000, "Member 'Violator_ActivityInfo_C_HandleStyling_Timer::Is_Large_Display' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_Timer, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000004, "Member 'Violator_ActivityInfo_C_HandleStyling_Timer::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_Timer, CallFunc_MakeLiteralFloat_ReturnValue_1) == 0x000008, "Member 'Violator_ActivityInfo_C_HandleStyling_Timer::CallFunc_MakeLiteralFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_Timer, CallFunc_MakeLiteralFloat_ReturnValue_2) == 0x00000C, "Member 'Violator_ActivityInfo_C_HandleStyling_Timer::CallFunc_MakeLiteralFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_HandleStyling_Timer, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000010, "Member 'Violator_ActivityInfo_C_HandleStyling_Timer::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.OnChallengeSet
 // 0x0038 (0x0038 - 0x0000)
@@ -78,9 +59,6 @@ struct Violator_ActivityInfo_C_OnChallengeSet final
 public:
 	struct FTimerDisplayData                      DisplayStyle;                                      // 0x0000(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(Violator_ActivityInfo_C_OnChallengeSet) == 0x000008, "Wrong alignment on Violator_ActivityInfo_C_OnChallengeSet");
-static_assert(sizeof(Violator_ActivityInfo_C_OnChallengeSet) == 0x000038, "Wrong size on Violator_ActivityInfo_C_OnChallengeSet");
-static_assert(offsetof(Violator_ActivityInfo_C_OnChallengeSet, DisplayStyle) == 0x000000, "Member 'Violator_ActivityInfo_C_OnChallengeSet::DisplayStyle' has a wrong offset!");
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +67,6 @@ struct Violator_ActivityInfo_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Violator_ActivityInfo_C_PreConstruct) == 0x000001, "Wrong alignment on Violator_ActivityInfo_C_PreConstruct");
-static_assert(sizeof(Violator_ActivityInfo_C_PreConstruct) == 0x000001, "Wrong size on Violator_ActivityInfo_C_PreConstruct");
-static_assert(offsetof(Violator_ActivityInfo_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'Violator_ActivityInfo_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function Violator_ActivityInfo.Violator_ActivityInfo_C.ExecuteUbergraph_Violator_ActivityInfo
 // 0x0040 (0x0040 - 0x0000)
@@ -103,11 +78,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerDisplayData                      K2Node_Event_DisplayStyle;                         // 0x0008(0x0038)(ConstParm)
 };
-static_assert(alignof(Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo) == 0x000008, "Wrong alignment on Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo");
-static_assert(sizeof(Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo) == 0x000040, "Wrong size on Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo");
-static_assert(offsetof(Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo, EntryPoint) == 0x000000, "Member 'Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo, K2Node_Event_IsDesignTime) == 0x000004, "Member 'Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo, K2Node_Event_DisplayStyle) == 0x000008, "Member 'Violator_ActivityInfo_C_ExecuteUbergraph_Violator_ActivityInfo::K2Node_Event_DisplayStyle' has a wrong offset!");
 
 }
 

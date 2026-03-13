@@ -40,22 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FlameCounter_C">();
+		BP_STATIC_CLASS_IMPL("FlameCounter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlameCounter_C")
 	}
 	static class UFlameCounter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlameCounter_C>();
 	}
 };
-static_assert(alignof(UFlameCounter_C) == 0x000008, "Wrong alignment on UFlameCounter_C");
-static_assert(sizeof(UFlameCounter_C) == 0x0002C8, "Wrong size on UFlameCounter_C");
-static_assert(offsetof(UFlameCounter_C, UberGraphFrame) == 0x000290, "Member 'UFlameCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, Fade) == 0x000298, "Member 'UFlameCounter_C::Fade' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, FadeIn) == 0x0002A0, "Member 'UFlameCounter_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, FadeOut) == 0x0002A8, "Member 'UFlameCounter_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, Increment) == 0x0002B0, "Member 'UFlameCounter_C::Increment' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, Idle) == 0x0002B8, "Member 'UFlameCounter_C::Idle' has a wrong offset!");
-static_assert(offsetof(UFlameCounter_C, Com_LlamaLikeIcon_1) == 0x0002C0, "Member 'UFlameCounter_C::Com_LlamaLikeIcon_1' has a wrong offset!");
 
 }
 

@@ -45,24 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BannerEditorTile_C">();
+		BP_STATIC_CLASS_IMPL("BP_BannerEditorTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BannerEditorTile_C")
 	}
 	static class UBP_BannerEditorTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_BannerEditorTile_C>();
 	}
 };
-static_assert(alignof(UBP_BannerEditorTile_C) == 0x000008, "Wrong alignment on UBP_BannerEditorTile_C");
-static_assert(sizeof(UBP_BannerEditorTile_C) == 0x000BD0, "Wrong size on UBP_BannerEditorTile_C");
-static_assert(offsetof(UBP_BannerEditorTile_C, UberGraphFrame) == 0x000B80, "Member 'UBP_BannerEditorTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, ColorImage) == 0x000B88, "Member 'UBP_BannerEditorTile_C::ColorImage' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, CommonWidgetSwitcher_0) == 0x000B90, "Member 'UBP_BannerEditorTile_C::CommonWidgetSwitcher_0' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, IconImage) == 0x000B98, "Member 'UBP_BannerEditorTile_C::IconImage' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, IconLoadGuard) == 0x000BA0, "Member 'UBP_BannerEditorTile_C::IconLoadGuard' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, Image_BannerEditBorder) == 0x000BA8, "Member 'UBP_BannerEditorTile_C::Image_BannerEditBorder' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, NormalBangWrapper) == 0x000BB0, "Member 'UBP_BannerEditorTile_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, ColorMID) == 0x000BB8, "Member 'UBP_BannerEditorTile_C::ColorMID' has a wrong offset!");
-static_assert(offsetof(UBP_BannerEditorTile_C, BannerTileBangUpdated) == 0x000BC0, "Member 'UBP_BannerEditorTile_C::BannerTileBangUpdated' has a wrong offset!");
 
 }
 

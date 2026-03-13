@@ -39,17 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToastDisplayArea_C">();
+		BP_STATIC_CLASS_IMPL("ToastDisplayArea_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToastDisplayArea_C")
 	}
 	static class UToastDisplayArea_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToastDisplayArea_C>();
 	}
 };
-static_assert(alignof(UToastDisplayArea_C) == 0x000008, "Wrong alignment on UToastDisplayArea_C");
-static_assert(sizeof(UToastDisplayArea_C) == 0x0002A0, "Wrong size on UToastDisplayArea_C");
-static_assert(offsetof(UToastDisplayArea_C, UberGraphFrame) == 0x000290, "Member 'UToastDisplayArea_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToastDisplayArea_C, SafeZone_0) == 0x000298, "Member 'UToastDisplayArea_C::SafeZone_0' has a wrong offset!");
 
 }
 

@@ -51,13 +51,13 @@ public:
 	class USoundBase*                             Death_Normal_Sound;                                // 0x2248(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class USoundBase*                             Elemental_Audio_Layer_Sound;                       // 0x2250(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   Headshot_FX_Socket;                                // 0x2258(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class USkeletalMeshComponent*, class UFXSkeletonMeshComponent_C*> AwakenFXSkeletalMeshes;                            // 0x2260(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
-	TMap<class UStaticMeshComponent*, class UFXStaticMeshComponent_C*> AwakenFXStaticMeshes;                              // 0x22B0(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<class USkeletalMeshComponent*, class UFXSkeletonMeshComponent_C*> AwakenFXSkeletalMeshes;   // 0x2260(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<class UStaticMeshComponent*, class UFXStaticMeshComponent_C*> AwakenFXStaticMeshes;         // 0x22B0(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	float                                         AwokenMaxDistance;                                 // 0x2300(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AwakenDuration;                                    // 0x2304(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           DestroyAwakenFXTimer;                              // 0x2308(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMap<class USkeletalMeshComponent*, class UFXSkeletonMeshComponent_C*> BuildingHitFXSkeletalMeshes;                       // 0x2310(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
-	TMap<class UStaticMeshComponent*, class UFXStaticMeshComponent_C*> BuildingHitFXStaticMeshes;                         // 0x2360(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<class USkeletalMeshComponent*, class UFXSkeletonMeshComponent_C*> BuildingHitFXSkeletalMeshes; // 0x2310(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<class UStaticMeshComponent*, class UFXStaticMeshComponent_C*> BuildingHitFXStaticMeshes;    // 0x2360(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 	float                                         BuildingHitDuration;                               // 0x23B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_23B4[0x4];                                     // 0x23B4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           DestroyBuildingHitFXTimer;                         // 0x23B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -128,66 +128,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EnemyPawn_Parent_Deimos_C">();
+		BP_STATIC_CLASS_IMPL("EnemyPawn_Parent_Deimos_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EnemyPawn_Parent_Deimos_C")
 	}
 	static class AEnemyPawn_Parent_Deimos_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AEnemyPawn_Parent_Deimos_C>();
 	}
 };
-static_assert(alignof(AEnemyPawn_Parent_Deimos_C) == 0x000010, "Wrong alignment on AEnemyPawn_Parent_Deimos_C");
-static_assert(sizeof(AEnemyPawn_Parent_Deimos_C) == 0x002490, "Wrong size on AEnemyPawn_Parent_Deimos_C");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, UberGraphFrame) == 0x002180, "Member 'AEnemyPawn_Parent_Deimos_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, WeaponCapsuleCollision) == 0x002188, "Member 'AEnemyPawn_Parent_Deimos_C::WeaponCapsuleCollision' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Elemental_Layer_Audio_Loop) == 0x002190, "Member 'AEnemyPawn_Parent_Deimos_C::Elemental_Layer_Audio_Loop' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Enemy_Spawn_Out_TL_ColorFadeOutTrack_37A083E44F5772C5FFF36680D2AD7D94) == 0x002198, "Member 'AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL_ColorFadeOutTrack_37A083E44F5772C5FFF36680D2AD7D94' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Enemy_Spawn_Out_TL_FadeInTrack_37A083E44F5772C5FFF36680D2AD7D94) == 0x00219C, "Member 'AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL_FadeInTrack_37A083E44F5772C5FFF36680D2AD7D94' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Enemy_Spawn_Out_TL__Direction_37A083E44F5772C5FFF36680D2AD7D94) == 0x0021A0, "Member 'AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL__Direction_37A083E44F5772C5FFF36680D2AD7D94' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Enemy_Spawn_Out_TL) == 0x0021A8, "Member 'AEnemyPawn_Parent_Deimos_C::Enemy_Spawn_Out_TL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, EnemySpawnInTL_ColorFadeOutTrack_515E6B424789F427A1B9ACAD857FFF5D) == 0x0021B0, "Member 'AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL_ColorFadeOutTrack_515E6B424789F427A1B9ACAD857FFF5D' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, EnemySpawnInTL_FadeInTrack_515E6B424789F427A1B9ACAD857FFF5D) == 0x0021B4, "Member 'AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL_FadeInTrack_515E6B424789F427A1B9ACAD857FFF5D' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, EnemySpawnInTL__Direction_515E6B424789F427A1B9ACAD857FFF5D) == 0x0021B8, "Member 'AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL__Direction_515E6B424789F427A1B9ACAD857FFF5D' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, EnemySpawnInTL) == 0x0021C0, "Member 'AEnemyPawn_Parent_Deimos_C::EnemySpawnInTL' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, SpawnParticlesTransform) == 0x0021D0, "Member 'AEnemyPawn_Parent_Deimos_C::SpawnParticlesTransform' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, SpawnParticles) == 0x002200, "Member 'AEnemyPawn_Parent_Deimos_C::SpawnParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, CharacterElementalParticles) == 0x002208, "Member 'AEnemyPawn_Parent_Deimos_C::CharacterElementalParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, AllowHeadshot) == 0x002210, "Member 'AEnemyPawn_Parent_Deimos_C::AllowHeadshot' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, TC_RangedWeapon) == 0x002218, "Member 'AEnemyPawn_Parent_Deimos_C::TC_RangedWeapon' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, HeadshotParticleSystemComp) == 0x002238, "Member 'AEnemyPawn_Parent_Deimos_C::HeadshotParticleSystemComp' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Additive_Hit_React_Montage) == 0x002240, "Member 'AEnemyPawn_Parent_Deimos_C::Additive_Hit_React_Montage' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Death_Normal_Sound) == 0x002248, "Member 'AEnemyPawn_Parent_Deimos_C::Death_Normal_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Elemental_Audio_Layer_Sound) == 0x002250, "Member 'AEnemyPawn_Parent_Deimos_C::Elemental_Audio_Layer_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Headshot_FX_Socket) == 0x002258, "Member 'AEnemyPawn_Parent_Deimos_C::Headshot_FX_Socket' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, AwakenFXSkeletalMeshes) == 0x002260, "Member 'AEnemyPawn_Parent_Deimos_C::AwakenFXSkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, AwakenFXStaticMeshes) == 0x0022B0, "Member 'AEnemyPawn_Parent_Deimos_C::AwakenFXStaticMeshes' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, AwokenMaxDistance) == 0x002300, "Member 'AEnemyPawn_Parent_Deimos_C::AwokenMaxDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, AwakenDuration) == 0x002304, "Member 'AEnemyPawn_Parent_Deimos_C::AwakenDuration' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, DestroyAwakenFXTimer) == 0x002308, "Member 'AEnemyPawn_Parent_Deimos_C::DestroyAwakenFXTimer' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, BuildingHitFXSkeletalMeshes) == 0x002310, "Member 'AEnemyPawn_Parent_Deimos_C::BuildingHitFXSkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, BuildingHitFXStaticMeshes) == 0x002360, "Member 'AEnemyPawn_Parent_Deimos_C::BuildingHitFXStaticMeshes' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, BuildingHitDuration) == 0x0023B0, "Member 'AEnemyPawn_Parent_Deimos_C::BuildingHitDuration' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, DestroyBuildingHitFXTimer) == 0x0023B8, "Member 'AEnemyPawn_Parent_Deimos_C::DestroyBuildingHitFXTimer' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, TempFXSkeletalMesh) == 0x0023C0, "Member 'AEnemyPawn_Parent_Deimos_C::TempFXSkeletalMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, RegisteredSkeletalMeshesForEffects) == 0x0023C8, "Member 'AEnemyPawn_Parent_Deimos_C::RegisteredSkeletalMeshesForEffects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, RegisteredStaticMeshesForEffects) == 0x0023D8, "Member 'AEnemyPawn_Parent_Deimos_C::RegisteredStaticMeshesForEffects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, HasGlowColorsAssigned) == 0x0023E8, "Member 'AEnemyPawn_Parent_Deimos_C::HasGlowColorsAssigned' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, SpawnInTimelineCompletedSuccessfully) == 0x0023E9, "Member 'AEnemyPawn_Parent_Deimos_C::SpawnInTimelineCompletedSuccessfully' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, CharacterSpawnInSafetyCheckHandle) == 0x0023F0, "Member 'AEnemyPawn_Parent_Deimos_C::CharacterSpawnInSafetyCheckHandle' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Previous_MID) == 0x0023F8, "Member 'AEnemyPawn_Parent_Deimos_C::Previous_MID' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, CharacterAmbientParticlesTemplate) == 0x002408, "Member 'AEnemyPawn_Parent_Deimos_C::CharacterAmbientParticlesTemplate' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, CharacterAmbientParticles) == 0x002410, "Member 'AEnemyPawn_Parent_Deimos_C::CharacterAmbientParticles' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, DuplicateCharacterMesh) == 0x002418, "Member 'AEnemyPawn_Parent_Deimos_C::DuplicateCharacterMesh' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, DuplicateCharacterMID) == 0x002420, "Member 'AEnemyPawn_Parent_Deimos_C::DuplicateCharacterMID' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Auxillary_Objects) == 0x002428, "Member 'AEnemyPawn_Parent_Deimos_C::Auxillary_Objects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Duplicate_Auxillary_Objects) == 0x002438, "Member 'AEnemyPawn_Parent_Deimos_C::Duplicate_Auxillary_Objects' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, MinibossPSComponent) == 0x002448, "Member 'AEnemyPawn_Parent_Deimos_C::MinibossPSComponent' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, CharacterParticlesMaxDrawDistance) == 0x002450, "Member 'AEnemyPawn_Parent_Deimos_C::CharacterParticlesMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Original_Phys_Material) == 0x002458, "Member 'AEnemyPawn_Parent_Deimos_C::Original_Phys_Material' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Previous_MID_AuxObjs) == 0x002468, "Member 'AEnemyPawn_Parent_Deimos_C::Previous_MID_AuxObjs' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Restoring_Array_Index) == 0x002478, "Member 'AEnemyPawn_Parent_Deimos_C::Restoring_Array_Index' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, UseHeadShotFX) == 0x00247C, "Member 'AEnemyPawn_Parent_Deimos_C::UseHeadShotFX' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, Death_Dematerialize_Sound) == 0x002480, "Member 'AEnemyPawn_Parent_Deimos_C::Death_Dematerialize_Sound' has a wrong offset!");
-static_assert(offsetof(AEnemyPawn_Parent_Deimos_C, HeadShot_Sound) == 0x002488, "Member 'AEnemyPawn_Parent_Deimos_C::HeadShot_Sound' has a wrong offset!");
 
 }
 

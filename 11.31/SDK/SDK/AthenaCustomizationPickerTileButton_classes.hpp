@@ -33,7 +33,7 @@ public:
 	class UImage*                                 UnownedDampen;                                     // 0x0BE8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	bool                                          IsSlottedSomewhere;                                // 0x0BF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_BF1[0x7];                                      // 0x0BF1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class UWidgetSwitcher* WidgetSwitcher)> PickedButtonHovered;                               // 0x0BF8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UWidgetSwitcher* WidgetSwitcher)> PickedButtonHovered;       // 0x0BF8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void HandleEquippedStateChanged(bool bEquipped, bool bOnDifferentSlot);
@@ -49,24 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaCustomizationPickerTileButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaCustomizationPickerTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaCustomizationPickerTileButton_C")
 	}
 	static class UAthenaCustomizationPickerTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaCustomizationPickerTileButton_C>();
 	}
 };
-static_assert(alignof(UAthenaCustomizationPickerTileButton_C) == 0x000008, "Wrong alignment on UAthenaCustomizationPickerTileButton_C");
-static_assert(sizeof(UAthenaCustomizationPickerTileButton_C) == 0x000C08, "Wrong size on UAthenaCustomizationPickerTileButton_C");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, UberGraphFrame) == 0x000BB8, "Member 'UAthenaCustomizationPickerTileButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, OnHover) == 0x000BC0, "Member 'UAthenaCustomizationPickerTileButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, Border_item) == 0x000BC8, "Member 'UAthenaCustomizationPickerTileButton_C::Border_item' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, Image_Equipped) == 0x000BD0, "Member 'UAthenaCustomizationPickerTileButton_C::Image_Equipped' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, NullItemOverlay) == 0x000BD8, "Member 'UAthenaCustomizationPickerTileButton_C::NullItemOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, RootWidgetSwitcher) == 0x000BE0, "Member 'UAthenaCustomizationPickerTileButton_C::RootWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, UnownedDampen) == 0x000BE8, "Member 'UAthenaCustomizationPickerTileButton_C::UnownedDampen' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, IsSlottedSomewhere) == 0x000BF0, "Member 'UAthenaCustomizationPickerTileButton_C::IsSlottedSomewhere' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationPickerTileButton_C, PickedButtonHovered) == 0x000BF8, "Member 'UAthenaCustomizationPickerTileButton_C::PickedButtonHovered' has a wrong offset!");
 
 }
 

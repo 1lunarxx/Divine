@@ -63,38 +63,6 @@ public:
 	class UAbilityTask_PlayMontageAndWait*        CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue; // 0x01C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO) == 0x000008, "Wrong alignment on GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO");
-static_assert(sizeof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO) == 0x0001D8, "Wrong size on GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, EntryPoint) == 0x000000, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_2) == 0x000024, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_3) == 0x000034, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_StartAbilityState_ReturnValue) == 0x000048, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_StartAbilityState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_4) == 0x000050, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_WaitDelay_ReturnValue) == 0x000068, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_WaitDelay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_5) == 0x000070, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_IsValid_ReturnValue_1) == 0x000080, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000088, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000090, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_CreateDelegate_OutputDelegate_6) == 0x00009C, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0000B0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_bSuccess_1) == 0x0000B8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x0000BC, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x0000C8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_GetInitialHealAmount_Health) == 0x0000D8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_GetInitialHealAmount_Health' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_Event_bWasCancelled) == 0x0000DC, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_AssignSetByCallerMagnitude_ReturnValue) == 0x0000E0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_AssignSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue) == 0x0000F0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_K2_ApplyGameplayEffectSpecToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1) == 0x0000F8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_Event_EventData) == 0x000100, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_AsFort_Player_Pawn_1) == 0x0001B0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_AsFort_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, K2Node_DynamicCast_bSuccess_2) == 0x0001B8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_Get_DBNO_Montage_ReturnValue) == 0x0001C0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_Get_DBNO_Montage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x0001C8, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO, CallFunc_IsValid_ReturnValue_2) == 0x0001D0, "Member 'GAB_AthenaDBNO_C_ExecuteUbergraph_GAB_AthenaDBNO::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -103,9 +71,6 @@ struct GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_AthenaDBNO_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -114,9 +79,6 @@ struct GAB_AthenaDBNO_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GAB_AthenaDBNO_C_K2_OnEndAbility");
-static_assert(sizeof(GAB_AthenaDBNO_C_K2_OnEndAbility) == 0x000001, "Wrong size on GAB_AthenaDBNO_C_K2_OnEndAbility");
-static_assert(offsetof(GAB_AthenaDBNO_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GAB_AthenaDBNO_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.InitializeDeathHitDirection
 // 0x0158 (0x0158 - 0x0000)
@@ -130,14 +92,6 @@ public:
 	struct FHitResult                             CallFunc_EffectContextGetHitResult_ReturnValue;    // 0x00C4(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x014C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_InitializeDeathHitDirection) == 0x000008, "Wrong alignment on GAB_AthenaDBNO_C_InitializeDeathHitDirection");
-static_assert(sizeof(GAB_AthenaDBNO_C_InitializeDeathHitDirection) == 0x000158, "Wrong size on GAB_AthenaDBNO_C_InitializeDeathHitDirection");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, EventHitData) == 0x000000, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::EventHitData' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, CallFunc_GetImpulseData_ImpulseDirection) == 0x0000B0, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::CallFunc_GetImpulseData_ImpulseDirection' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, CallFunc_GetImpulseData_KnockbackMagnitude) == 0x0000BC, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::CallFunc_GetImpulseData_KnockbackMagnitude' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, CallFunc_GetImpulseData_KnockbackZAngle) == 0x0000C0, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::CallFunc_GetImpulseData_KnockbackZAngle' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, CallFunc_EffectContextGetHitResult_ReturnValue) == 0x0000C4, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::CallFunc_EffectContextGetHitResult_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_InitializeDeathHitDirection, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00014C, "Member 'GAB_AthenaDBNO_C_InitializeDeathHitDirection::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.GetInitialHealAmount
 // 0x0048 (0x0048 - 0x0000)
@@ -158,17 +112,6 @@ public:
 	uint8                                         Pad_41[0x3];                                       // 0x0041(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_GetInitialHealAmount) == 0x000008, "Wrong alignment on GAB_AthenaDBNO_C_GetInitialHealAmount");
-static_assert(sizeof(GAB_AthenaDBNO_C_GetInitialHealAmount) == 0x000048, "Wrong size on GAB_AthenaDBNO_C_GetInitialHealAmount");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, Health) == 0x000000, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::Health' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, FortHealthSet_Health) == 0x000008, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::FortHealthSet_Health' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_EvaluateCurveTableRow_OutResult) == 0x000028, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_EvaluateCurveTableRow_OutResult' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_EvaluateCurveTableRow_OutXY) == 0x00002C, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000030, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute) == 0x000038, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_GetFloatAttribute_bSuccessfullyFoundAttribute' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_GetFloatAttribute_ReturnValue) == 0x00003C, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_GetFloatAttribute_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, K2Node_SwitchEnum_CmpSuccess) == 0x000040, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_GetInitialHealAmount, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000044, "Member 'GAB_AthenaDBNO_C_GetInitialHealAmount::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function GAB_AthenaDBNO.GAB_AthenaDBNO_C.Get DBNO Montage
 // 0x0010 (0x0010 - 0x0000)
@@ -179,11 +122,6 @@ public:
 	bool                                          CallFunc_IsSurfaceSwimming_ReturnValue;            // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsSkydiving_ReturnValue;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_AthenaDBNO_C_Get_DBNO_Montage) == 0x000008, "Wrong alignment on GAB_AthenaDBNO_C_Get_DBNO_Montage");
-static_assert(sizeof(GAB_AthenaDBNO_C_Get_DBNO_Montage) == 0x000010, "Wrong size on GAB_AthenaDBNO_C_Get_DBNO_Montage");
-static_assert(offsetof(GAB_AthenaDBNO_C_Get_DBNO_Montage, ReturnValue) == 0x000000, "Member 'GAB_AthenaDBNO_C_Get_DBNO_Montage::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_Get_DBNO_Montage, CallFunc_IsSurfaceSwimming_ReturnValue) == 0x000008, "Member 'GAB_AthenaDBNO_C_Get_DBNO_Montage::CallFunc_IsSurfaceSwimming_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_AthenaDBNO_C_Get_DBNO_Montage, CallFunc_IsSkydiving_ReturnValue) == 0x000009, "Member 'GAB_AthenaDBNO_C_Get_DBNO_Montage::CallFunc_IsSkydiving_ReturnValue' has a wrong offset!");
 
 }
 

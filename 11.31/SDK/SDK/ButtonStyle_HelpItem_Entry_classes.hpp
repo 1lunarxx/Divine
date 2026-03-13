@@ -23,15 +23,17 @@ class UButtonStyle_HelpItem_Entry_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-HelpItem-Entry_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-HelpItem-Entry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-HelpItem-Entry_C")
 	}
 	static class UButtonStyle_HelpItem_Entry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_HelpItem_Entry_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_HelpItem_Entry_C) == 0x000008, "Wrong alignment on UButtonStyle_HelpItem_Entry_C");
-static_assert(sizeof(UButtonStyle_HelpItem_Entry_C) == 0x000570, "Wrong size on UButtonStyle_HelpItem_Entry_C");
 
 }
 

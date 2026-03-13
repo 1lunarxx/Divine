@@ -23,15 +23,17 @@ class UGA_Athena_Shields_C final : public UGA_Athena_MedConsumable_Parent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_Shields_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_Shields_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_Shields_C")
 	}
 	static class UGA_Athena_Shields_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_Shields_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_Shields_C) == 0x000008, "Wrong alignment on UGA_Athena_Shields_C");
-static_assert(sizeof(UGA_Athena_Shields_C) == 0x000B30, "Wrong size on UGA_Athena_Shields_C");
 
 }
 

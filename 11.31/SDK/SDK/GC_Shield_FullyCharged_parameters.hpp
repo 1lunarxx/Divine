@@ -35,19 +35,6 @@ public:
 	uint8                                         Pad_FB[0x5];                                       // 0x00FB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0100(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GC_Shield_FullyCharged_C_OnBurst) == 0x000008, "Wrong alignment on GC_Shield_FullyCharged_C_OnBurst");
-static_assert(sizeof(GC_Shield_FullyCharged_C_OnBurst) == 0x000108, "Wrong size on GC_Shield_FullyCharged_C_OnBurst");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, MyTarget) == 0x000000, "Member 'GC_Shield_FullyCharged_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, Parameters) == 0x000008, "Member 'GC_Shield_FullyCharged_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GC_Shield_FullyCharged_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GC_Shield_FullyCharged_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GC_Shield_FullyCharged_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GC_Shield_FullyCharged_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, K2Node_DynamicCast_AsFort_Pawn) == 0x0000F0, "Member 'GC_Shield_FullyCharged_C_OnBurst::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'GC_Shield_FullyCharged_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, CallFunc_GetSubGame_ReturnValue) == 0x0000F9, "Member 'GC_Shield_FullyCharged_C_OnBurst::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, K2Node_SwitchEnum_CmpSuccess) == 0x0000FA, "Member 'GC_Shield_FullyCharged_C_OnBurst::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(GC_Shield_FullyCharged_C_OnBurst, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000100, "Member 'GC_Shield_FullyCharged_C_OnBurst::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 
 }
 

@@ -23,9 +23,6 @@ struct FeatTimelineListEntry_C_OnTimespanInfoSet final
 public:
 	int32                                         NumDays;                                           // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FeatTimelineListEntry_C_OnTimespanInfoSet) == 0x000004, "Wrong alignment on FeatTimelineListEntry_C_OnTimespanInfoSet");
-static_assert(sizeof(FeatTimelineListEntry_C_OnTimespanInfoSet) == 0x000004, "Wrong size on FeatTimelineListEntry_C_OnTimespanInfoSet");
-static_assert(offsetof(FeatTimelineListEntry_C_OnTimespanInfoSet, NumDays) == 0x000000, "Member 'FeatTimelineListEntry_C_OnTimespanInfoSet::NumDays' has a wrong offset!");
 
 // Function FeatTimelineListEntry.FeatTimelineListEntry_C.OnFeatInfoSet
 // 0x0008 (0x0008 - 0x0000)
@@ -35,10 +32,6 @@ public:
 	int32                                         NumFeatsOnDay;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         IdxOnDay;                                          // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FeatTimelineListEntry_C_OnFeatInfoSet) == 0x000004, "Wrong alignment on FeatTimelineListEntry_C_OnFeatInfoSet");
-static_assert(sizeof(FeatTimelineListEntry_C_OnFeatInfoSet) == 0x000008, "Wrong size on FeatTimelineListEntry_C_OnFeatInfoSet");
-static_assert(offsetof(FeatTimelineListEntry_C_OnFeatInfoSet, NumFeatsOnDay) == 0x000000, "Member 'FeatTimelineListEntry_C_OnFeatInfoSet::NumFeatsOnDay' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_OnFeatInfoSet, IdxOnDay) == 0x000004, "Member 'FeatTimelineListEntry_C_OnFeatInfoSet::IdxOnDay' has a wrong offset!");
 
 // Function FeatTimelineListEntry.FeatTimelineListEntry_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -47,9 +40,6 @@ struct FeatTimelineListEntry_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FeatTimelineListEntry_C_PreConstruct) == 0x000001, "Wrong alignment on FeatTimelineListEntry_C_PreConstruct");
-static_assert(sizeof(FeatTimelineListEntry_C_PreConstruct) == 0x000001, "Wrong size on FeatTimelineListEntry_C_PreConstruct");
-static_assert(offsetof(FeatTimelineListEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'FeatTimelineListEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function FeatTimelineListEntry.FeatTimelineListEntry_C.ExecuteUbergraph_FeatTimelineListEntry
 // 0x0090 (0x0090 - 0x0000)
@@ -82,29 +72,6 @@ public:
 	bool                                          CallFunc_IsHovered_ReturnValue;                    // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry) == 0x000008, "Wrong alignment on FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry");
-static_assert(sizeof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry) == 0x000090, "Wrong size on FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, EntryPoint) == 0x000000, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_Event_NumFeatsOnDay) == 0x000018, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_Event_NumFeatsOnDay' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_Event_IdxOnDay) == 0x00001C, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_Event_IdxOnDay' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000020, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000024, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_MakeStruct_Margin) == 0x000028, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_MakeStruct_Margin_1) == 0x000038, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x000048, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_Event_NumDays) == 0x00004C, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_Event_NumDays' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, K2Node_Event_IsDesignTime) == 0x000050, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_Multiply_IntFloat_ReturnValue_2) == 0x000054, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_Multiply_IntFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_IsVisible_ReturnValue) == 0x000058, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_PlayAnimation_ReturnValue_2) == 0x000060, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000068, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1) == 0x000070, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000078, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_PlayAnimation_ReturnValue_3) == 0x000080, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_IsHovered_ReturnValue) == 0x000088, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_IsHovered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry, CallFunc_BooleanOR_ReturnValue) == 0x000089, "Member 'FeatTimelineListEntry_C_ExecuteUbergraph_FeatTimelineListEntry::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 }
 

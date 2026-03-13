@@ -18,20 +18,22 @@ namespace SDK
 
 // BlueprintGeneratedClass AI_skill_phoebe_bot_movement.AI_skill_phoebe_bot_movement_C
 // 0x0000 (0x0368 - 0x0368)
-class UAI_skill_phoebe_bot_movement_C : public UFortAthenaAIBotMovementSkillSet
+class UAI_skill_phoebe_bot_movement_C final : public UFortAthenaAIBotMovementSkillSet
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_skill_phoebe_bot_movement_C">();
+		BP_STATIC_CLASS_IMPL("AI_skill_phoebe_bot_movement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_skill_phoebe_bot_movement_C")
 	}
 	static class UAI_skill_phoebe_bot_movement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_skill_phoebe_bot_movement_C>();
 	}
 };
-static_assert(alignof(UAI_skill_phoebe_bot_movement_C) == 0x000008, "Wrong alignment on UAI_skill_phoebe_bot_movement_C");
-static_assert(sizeof(UAI_skill_phoebe_bot_movement_C) == 0x000368, "Wrong size on UAI_skill_phoebe_bot_movement_C");
 
 }
 

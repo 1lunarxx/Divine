@@ -17,6 +17,118 @@
 namespace SDK
 {
 
+// Function AthenaStatsTab.AthenaStatsTab_C.GetFriendMatchXpBoostText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            Result                                                 (Parm, OutParm)
+
+void UAthenaStatsTab_C::GetFriendMatchXpBoostText(class FText* Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
+
+	Params::AthenaStatsTab_C_GetFriendMatchXpBoostText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = std::move(Parms.Result);
+}
+
+
+// Function AthenaStatsTab.AthenaStatsTab_C.GetAccountLevelText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+class FText UAthenaStatsTab_C::GetAccountLevelText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
+
+	Params::AthenaStatsTab_C_GetAccountLevelText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaStatsTab.AthenaStatsTab_C.Init Back Action
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaStatsTab_C::Init_Back_Action()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaStatsTab.AthenaStatsTab_C.HandleBack
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
+
+	Params::AthenaStatsTab_C_HandleBack Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
+}
+
+
+// Function AthenaStatsTab.AthenaStatsTab_C.BP_OnActivated
+// (Event, Protected, BlueprintEvent)
+
+void UAthenaStatsTab_C::BP_OnActivated()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaStatsTab.AthenaStatsTab_C.OnQueryFinished
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    bHasStatsToDisplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
+
+	Params::AthenaStatsTab_C_OnQueryFinished Parms{};
+
+	Parms.bWasSuccessful = bWasSuccessful;
+	Parms.bHasStatsToDisplay = bHasStatsToDisplay;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaStatsTab.AthenaStatsTab_C.BndEvt__StatsTabList_K2Node_ComponentBoundEvent_0_OnTabSelected__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -180,118 +292,6 @@ void UAthenaStatsTab_C::ExecuteUbergraph_AthenaStatsTab(int32 EntryPoint)
 	Params::AthenaStatsTab_C_ExecuteUbergraph_AthenaStatsTab Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.GetFriendMatchXpBoostText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            Result                                                 (Parm, OutParm)
-
-void UAthenaStatsTab_C::GetFriendMatchXpBoostText(class FText* Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "GetFriendMatchXpBoostText");
-
-	Params::AthenaStatsTab_C_GetFriendMatchXpBoostText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = std::move(Parms.Result);
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.GetAccountLevelText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText                             ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-class FText UAthenaStatsTab_C::GetAccountLevelText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "GetAccountLevelText");
-
-	Params::AthenaStatsTab_C_GetAccountLevelText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.Init Back Action
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaStatsTab_C::Init_Back_Action()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "Init Back Action");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.HandleBack
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   PassThrough                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaStatsTab_C::HandleBack(bool* PassThrough)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "HandleBack");
-
-	Params::AthenaStatsTab_C_HandleBack Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (PassThrough != nullptr)
-		*PassThrough = Parms.PassThrough;
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.BP_OnActivated
-// (Event, Protected, BlueprintEvent)
-
-void UAthenaStatsTab_C::BP_OnActivated()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "BP_OnActivated");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaStatsTab.AthenaStatsTab_C.OnQueryFinished
-// (Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    bWasSuccessful                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    bHasStatsToDisplay                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaStatsTab_C::OnQueryFinished(bool bWasSuccessful, bool bHasStatsToDisplay)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStatsTab_C", "OnQueryFinished");
-
-	Params::AthenaStatsTab_C_OnQueryFinished Parms{};
-
-	Parms.bWasSuccessful = bWasSuccessful;
-	Parms.bHasStatsToDisplay = bHasStatsToDisplay;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

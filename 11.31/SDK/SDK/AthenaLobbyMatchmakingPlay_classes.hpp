@@ -40,7 +40,7 @@ public:
 	class UWidgetSwitcher*                        ViolatorSwitcher;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              PlaylistsUpdated;                                  // 0x05C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTimerHandle                           ShowNewPlaylistTimer;                              // 0x05D8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const struct FPlaylistFrontEndData& Playlist_Data, class FText Playlist_CMS_Override, EFortLobbyType Lobby_Type)> OnPlaylistChanged;                                 // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FPlaylistFrontEndData& Playlist_Data, class FText Playlist_CMS_Override, EFortLobbyType Lobby_Type)> OnPlaylistChanged; // 0x05E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class USoundBase*                             MatchmakingSucceededSound;                         // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   CreativeOptionsSoftClass;                          // 0x05F8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UClass*                                 CreativeOptionsClass;                              // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -50,6 +50,7 @@ public:
 	bool                                          IsShowingMatchmakingDetails;                       // 0x0638(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
+	void ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint);
 	void SetBasePanelColor(const struct FLinearColor& NewColor);
 	void RefreshFillText();
 	void OnLoaded_7F9C59BE40E65C1C31B0EB98786CDA43(class UClass* Loaded);
@@ -68,43 +69,21 @@ public:
 	void OnInitialized();
 	void OnCrossplayPreferencesChanged(bool IsCrossplayEnabled);
 	void ShouldShowMatchmakingDetails(bool bShow);
-	void ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobbyMatchmakingPlay_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobbyMatchmakingPlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobbyMatchmakingPlay_C")
 	}
 	static class UAthenaLobbyMatchmakingPlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobbyMatchmakingPlay_C>();
 	}
 };
-static_assert(alignof(UAthenaLobbyMatchmakingPlay_C) == 0x000008, "Wrong alignment on UAthenaLobbyMatchmakingPlay_C");
-static_assert(sizeof(UAthenaLobbyMatchmakingPlay_C) == 0x000640, "Wrong size on UAthenaLobbyMatchmakingPlay_C");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, UberGraphFrame) == 0x000558, "Member 'UAthenaLobbyMatchmakingPlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, ShowMatchmakingDetails) == 0x000560, "Member 'UAthenaLobbyMatchmakingPlay_C::ShowMatchmakingDetails' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, NewModeViolation) == 0x000568, "Member 'UAthenaLobbyMatchmakingPlay_C::NewModeViolation' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, AthenaGenericLobbyViolator) == 0x000570, "Member 'UAthenaLobbyMatchmakingPlay_C::AthenaGenericLobbyViolator' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, Border_BasePanel) == 0x000578, "Member 'UAthenaLobbyMatchmakingPlay_C::Border_BasePanel' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, Box_LimitedMatchmaking) == 0x000580, "Member 'UAthenaLobbyMatchmakingPlay_C::Box_LimitedMatchmaking' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, DebugCreativeServerSelect) == 0x000588, "Member 'UAthenaLobbyMatchmakingPlay_C::DebugCreativeServerSelect' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, MatchmakingSpinner) == 0x000590, "Member 'UAthenaLobbyMatchmakingPlay_C::MatchmakingSpinner' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, NewModeBorder) == 0x000598, "Member 'UAthenaLobbyMatchmakingPlay_C::NewModeBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, ShowdownLobbyViolator) == 0x0005A0, "Member 'UAthenaLobbyMatchmakingPlay_C::ShowdownLobbyViolator' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, Text_FillStatus) == 0x0005A8, "Member 'UAthenaLobbyMatchmakingPlay_C::Text_FillStatus' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, Text_ModeTitle) == 0x0005B0, "Member 'UAthenaLobbyMatchmakingPlay_C::Text_ModeTitle' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, ViolatorContent) == 0x0005B8, "Member 'UAthenaLobbyMatchmakingPlay_C::ViolatorContent' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, ViolatorSwitcher) == 0x0005C0, "Member 'UAthenaLobbyMatchmakingPlay_C::ViolatorSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, PlaylistsUpdated) == 0x0005C8, "Member 'UAthenaLobbyMatchmakingPlay_C::PlaylistsUpdated' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, ShowNewPlaylistTimer) == 0x0005D8, "Member 'UAthenaLobbyMatchmakingPlay_C::ShowNewPlaylistTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, OnPlaylistChanged) == 0x0005E0, "Member 'UAthenaLobbyMatchmakingPlay_C::OnPlaylistChanged' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, MatchmakingSucceededSound) == 0x0005F0, "Member 'UAthenaLobbyMatchmakingPlay_C::MatchmakingSucceededSound' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, CreativeOptionsSoftClass) == 0x0005F8, "Member 'UAthenaLobbyMatchmakingPlay_C::CreativeOptionsSoftClass' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, CreativeOptionsClass) == 0x000620, "Member 'UAthenaLobbyMatchmakingPlay_C::CreativeOptionsClass' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, SquadFill) == 0x000628, "Member 'UAthenaLobbyMatchmakingPlay_C::SquadFill' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, PlaylistData) == 0x000630, "Member 'UAthenaLobbyMatchmakingPlay_C::PlaylistData' has a wrong offset!");
-static_assert(offsetof(UAthenaLobbyMatchmakingPlay_C, IsShowingMatchmakingDetails) == 0x000638, "Member 'UAthenaLobbyMatchmakingPlay_C::IsShowingMatchmakingDetails' has a wrong offset!");
 
 }
 

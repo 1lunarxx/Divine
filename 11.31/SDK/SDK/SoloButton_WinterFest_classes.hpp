@@ -52,28 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SoloButton_WinterFest_C">();
+		BP_STATIC_CLASS_IMPL("SoloButton_WinterFest_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SoloButton_WinterFest_C")
 	}
 	static class USoloButton_WinterFest_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USoloButton_WinterFest_C>();
 	}
 };
-static_assert(alignof(USoloButton_WinterFest_C) == 0x000008, "Wrong alignment on USoloButton_WinterFest_C");
-static_assert(sizeof(USoloButton_WinterFest_C) == 0x000BE8, "Wrong size on USoloButton_WinterFest_C");
-static_assert(offsetof(USoloButton_WinterFest_C, UberGraphFrame) == 0x000B70, "Member 'USoloButton_WinterFest_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Pressed) == 0x000B78, "Member 'USoloButton_WinterFest_C::Pressed' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Hover) == 0x000B80, "Member 'USoloButton_WinterFest_C::Hover' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Border_Container) == 0x000B88, "Member 'USoloButton_WinterFest_C::Border_Container' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, ButtonBacking) == 0x000B90, "Member 'USoloButton_WinterFest_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, ScaleBox_0) == 0x000B98, "Member 'USoloButton_WinterFest_C::ScaleBox_0' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, SizeBox_Control) == 0x000BA0, "Member 'USoloButton_WinterFest_C::SizeBox_Control' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Text_ButtonAction) == 0x000BA8, "Member 'USoloButton_WinterFest_C::Text_ButtonAction' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Button_Description) == 0x000BB0, "Member 'USoloButton_WinterFest_C::Button_Description' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, FontSizeOveride) == 0x000BC8, "Member 'USoloButton_WinterFest_C::FontSizeOveride' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, FontSize) == 0x000BCC, "Member 'USoloButton_WinterFest_C::FontSize' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, Padding_Overide) == 0x000BD0, "Member 'USoloButton_WinterFest_C::Padding_Overide' has a wrong offset!");
-static_assert(offsetof(USoloButton_WinterFest_C, PaddingOveride) == 0x000BE0, "Member 'USoloButton_WinterFest_C::PaddingOveride' has a wrong offset!");
 
 }
 

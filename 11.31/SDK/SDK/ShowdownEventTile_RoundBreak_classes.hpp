@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownEventTile_RoundBreak_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownEventTile_RoundBreak_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownEventTile_RoundBreak_C")
 	}
 	static class UShowdownEventTile_RoundBreak_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownEventTile_RoundBreak_C>();
 	}
 };
-static_assert(alignof(UShowdownEventTile_RoundBreak_C) == 0x000008, "Wrong alignment on UShowdownEventTile_RoundBreak_C");
-static_assert(sizeof(UShowdownEventTile_RoundBreak_C) == 0x000240, "Wrong size on UShowdownEventTile_RoundBreak_C");
-static_assert(offsetof(UShowdownEventTile_RoundBreak_C, TransitionSize) == 0x000230, "Member 'UShowdownEventTile_RoundBreak_C::TransitionSize' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTile_RoundBreak_C, Image_BG) == 0x000238, "Member 'UShowdownEventTile_RoundBreak_C::Image_BG' has a wrong offset!");
 
 }
 

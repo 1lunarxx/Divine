@@ -54,28 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkewButton_C">();
+		BP_STATIC_CLASS_IMPL("SkewButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkewButton_C")
 	}
 	static class USkewButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkewButton_C>();
 	}
 };
-static_assert(alignof(USkewButton_C) == 0x000008, "Wrong alignment on USkewButton_C");
-static_assert(sizeof(USkewButton_C) == 0x000BD8, "Wrong size on USkewButton_C");
-static_assert(offsetof(USkewButton_C, UberGraphFrame) == 0x000B70, "Member 'USkewButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Released) == 0x000B78, "Member 'USkewButton_C::Released' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Pressed) == 0x000B80, "Member 'USkewButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Hover) == 0x000B88, "Member 'USkewButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ImageButtonFill) == 0x000B90, "Member 'USkewButton_C::ImageButtonFill' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ImageShadow) == 0x000B98, "Member 'USkewButton_C::ImageShadow' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, NamedSlot_ButtonContent) == 0x000BA0, "Member 'USkewButton_C::NamedSlot_ButtonContent' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Overlay_SkewBrushes) == 0x000BA8, "Member 'USkewButton_C::Overlay_SkewBrushes' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, ButtonColor) == 0x000BB0, "Member 'USkewButton_C::ButtonColor' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, HoverColor) == 0x000BC0, "Member 'USkewButton_C::HoverColor' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Chip) == 0x000BD0, "Member 'USkewButton_C::Chip' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, Skew) == 0x000BD1, "Member 'USkewButton_C::Skew' has a wrong offset!");
-static_assert(offsetof(USkewButton_C, NoHoverColor) == 0x000BD2, "Member 'USkewButton_C::NoHoverColor' has a wrong offset!");
 
 }
 

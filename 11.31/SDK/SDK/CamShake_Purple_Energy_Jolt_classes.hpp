@@ -23,15 +23,17 @@ class UCamShake_Purple_Energy_Jolt_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CamShake_Purple_Energy_Jolt_C">();
+		BP_STATIC_CLASS_IMPL("CamShake_Purple_Energy_Jolt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CamShake_Purple_Energy_Jolt_C")
 	}
 	static class UCamShake_Purple_Energy_Jolt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCamShake_Purple_Energy_Jolt_C>();
 	}
 };
-static_assert(alignof(UCamShake_Purple_Energy_Jolt_C) == 0x000010, "Wrong alignment on UCamShake_Purple_Energy_Jolt_C");
-static_assert(sizeof(UCamShake_Purple_Energy_Jolt_C) == 0x000160, "Wrong size on UCamShake_Purple_Energy_Jolt_C");
 
 }
 

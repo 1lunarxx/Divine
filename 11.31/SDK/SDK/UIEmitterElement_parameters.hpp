@@ -32,19 +32,6 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_5;              // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement) == 0x000008, "Wrong alignment on UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement");
-static_assert(sizeof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement) == 0x000060, "Wrong size on UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, EntryPoint) == 0x000000, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::EntryPoint' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, K2Node_CreateDelegate_OutputDelegate_1) == 0x000028, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue_2) == 0x000038, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue_3) == 0x000040, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue_4) == 0x000048, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000050, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_RandomFloatInRange_ReturnValue) == 0x000054, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement, CallFunc_PlayAnimation_ReturnValue_5) == 0x000058, "Member 'UIEmitterElement_C_ExecuteUbergraph_UIEmitterElement::CallFunc_PlayAnimation_ReturnValue_5' has a wrong offset!");
 
 }
 

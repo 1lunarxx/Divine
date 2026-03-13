@@ -23,15 +23,17 @@ class UMelee_CameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Melee_CameraShake_C">();
+		BP_STATIC_CLASS_IMPL("Melee_CameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Melee_CameraShake_C")
 	}
 	static class UMelee_CameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMelee_CameraShake_C>();
 	}
 };
-static_assert(alignof(UMelee_CameraShake_C) == 0x000010, "Wrong alignment on UMelee_CameraShake_C");
-static_assert(sizeof(UMelee_CameraShake_C) == 0x000160, "Wrong size on UMelee_CameraShake_C");
 
 }
 

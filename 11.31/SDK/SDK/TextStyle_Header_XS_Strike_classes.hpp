@@ -23,15 +23,17 @@ class UTextStyle_Header_XS_Strike_C final : public UTextStyle_Header_XS_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Header-XS-Strike_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Header-XS-Strike_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Header-XS-Strike_C")
 	}
 	static class UTextStyle_Header_XS_Strike_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Header_XS_Strike_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Header_XS_Strike_C) == 0x000008, "Wrong alignment on UTextStyle_Header_XS_Strike_C");
-static_assert(sizeof(UTextStyle_Header_XS_Strike_C) == 0x000148, "Wrong size on UTextStyle_Header_XS_Strike_C");
 
 }
 

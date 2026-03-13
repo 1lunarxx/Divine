@@ -56,34 +56,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x0188(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Divide_FloatFloat_ReturnValue;            // 0x018C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_RefreshDivisionData");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData) == 0x000190, "Wrong size on ShowdownDivisionLobbyPanel_C_RefreshDivisionData");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, TotalHypeForNextDivision) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::TotalHypeForNextDivision' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, TotalHype) == 0x000004, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::TotalHype' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, TotalNumberDivisions) == 0x000008, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::TotalNumberDivisions' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, DivsionRank) == 0x00000C, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::DivsionRank' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetAmountEarnedWithinDivision_ReturnValue) == 0x000010, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetAmountEarnedWithinDivision_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, K2Node_MakeStruct_FormatArgumentData) == 0x000018, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetTotalDivisionPoints_ReturnValue) == 0x000058, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetTotalDivisionPoints_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, K2Node_MakeStruct_FormatArgumentData_1) == 0x000060, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, K2Node_MakeArray_Array) == 0x0000A0, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Subtract_IntInt_ReturnValue) == 0x0000B0, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Format_ReturnValue) == 0x0000B8, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Conv_IntToText_ReturnValue) == 0x0000D0, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Conv_IntToText_ReturnValue_1) == 0x0000E8, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetNumericalDisplayAmountForNextDivision_ReturnValue) == 0x000100, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetNumericalDisplayAmountForNextDivision_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Add_IntInt_ReturnValue) == 0x000104, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000108, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetTotalNumberOfDivisions_ReturnValue) == 0x00010C, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetTotalNumberOfDivisions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Add_IntInt_ReturnValue_1) == 0x000110, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetDivisionRank_ReturnValue) == 0x000114, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetDivisionRank_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, K2Node_MakeStruct_FormatArgumentData_2) == 0x000118, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, K2Node_MakeArray_Array_1) == 0x000158, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_GetRequiredAmountToAdvanceDivision_ReturnValue) == 0x000168, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_GetRequiredAmountToAdvanceDivision_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Format_ReturnValue_1) == 0x000170, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000188, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_RefreshDivisionData, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00018C, "Member 'ShowdownDivisionLobbyPanel_C_RefreshDivisionData::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.InputTypeChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +64,6 @@ struct ShowdownDivisionLobbyPanel_C_InputTypeChanged final
 public:
 	bool                                          isGamepad;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_InputTypeChanged) == 0x000001, "Wrong alignment on ShowdownDivisionLobbyPanel_C_InputTypeChanged");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_InputTypeChanged) == 0x000001, "Wrong size on ShowdownDivisionLobbyPanel_C_InputTypeChanged");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_InputTypeChanged, isGamepad) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_InputTypeChanged::isGamepad' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.Refresh
 // 0x0278 (0x0278 - 0x0000)
@@ -170,65 +139,6 @@ public:
 	class FString                                 CallFunc_GetEventId_ReturnValue;                   // 0x0260(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0270(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_Refresh) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_Refresh");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_Refresh) == 0x000278, "Wrong size on ShowdownDivisionLobbyPanel_C_Refresh");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_byte_Variable) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable) == 0x000008, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable_1) == 0x000020, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable_2) == 0x000038, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable_3) == 0x000050, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable_4) == 0x000068, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_text_Variable_5) == 0x000080, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_text_Variable_5' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_bool_Variable) == 0x000098, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_float_Variable) == 0x00009C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_float_Variable_1) == 0x0000A0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_byte_Variable_1) == 0x0000A4, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_Select_Default) == 0x0000A8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetLeagueSuffixDisplayName_ReturnValue) == 0x0000B0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetLeagueSuffixDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetLeaguePrefixDisplayName_ReturnValue) == 0x0000C8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetLeaguePrefixDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_TextToUpper_ReturnValue) == 0x0000E0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_TextToUpper_ReturnValue_1) == 0x0000F8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_MakeLiteralText_ReturnValue) == 0x000110, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_IsDivisionEvent_ReturnValue) == 0x000128, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_IsDivisionEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetEventTimeState_ReturnValue) == 0x000129, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetEventTimeState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_DoCalloutMFARequirement_ReturnValue) == 0x00012A, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_DoCalloutMFARequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_DoCalloutMFARequirement_ReturnValue_1) == 0x00012B, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_DoCalloutMFARequirement_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetTournamentMatchCap_ReturnValue) == 0x00012C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetTournamentMatchCap_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Greater_IntInt_ReturnValue) == 0x000130, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue) == 0x000134, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetTournamentMatchCap_ReturnValue_1) == 0x000138, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetTournamentMatchCap_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_byte_Variable_2) == 0x00013C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Subtract_IntInt_ReturnValue) == 0x000140, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_MakeStruct_FormatArgumentData) == 0x000148, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_MakeArray_Array) == 0x000188, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Format_ReturnValue) == 0x000198, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1) == 0x0001B0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetCurrentEventTeamNumMatchesPlayed_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetTournamentMatchCap_ReturnValue_2) == 0x0001B4, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetTournamentMatchCap_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0001B8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001BC, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_BooleanAND_ReturnValue) == 0x0001BD, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_BooleanOR_ReturnValue) == 0x0001BE, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_bool_Variable_1) == 0x0001BF, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_Select_Default_1) == 0x0001C0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_float_Variable_2) == 0x0001C4, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_MakeLiteralText_ReturnValue_1) == 0x0001C8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_MakeLiteralText_ReturnValue_2) == 0x0001E0, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_MakeLiteralText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_Select_Default_2) == 0x0001F8, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x000210, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_PauseAnimation_ReturnValue) == 0x000218, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_MakeStruct_Margin) == 0x00021C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetStartTime_ReturnValue) == 0x00022C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetStartTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000230, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_PauseAnimation_ReturnValue_1) == 0x000234, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetEndTime_ReturnValue) == 0x000238, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Add_FloatFloat_ReturnValue) == 0x00023C, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000240, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_PlayAnimation_ReturnValue) == 0x000248, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, Temp_bool_Variable_2) == 0x000250, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, K2Node_Select_Default_3) == 0x000254, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_PlayAnimation_ReturnValue_1) == 0x000258, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_GetEventId_ReturnValue) == 0x000260, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_GetEventId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_Refresh, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000270, "Member 'ShowdownDivisionLobbyPanel_C_Refresh::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -237,9 +147,6 @@ struct ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -248,9 +155,6 @@ struct ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -259,9 +163,6 @@ struct ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentB
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_BndEvt__EventDetailsButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.EventSwitchUI
 // 0x0001 (0x0001 - 0x0000)
@@ -270,9 +171,6 @@ struct ShowdownDivisionLobbyPanel_C_EventSwitchUI final
 public:
 	ECommonInputType                              bNewInputType;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_EventSwitchUI) == 0x000001, "Wrong alignment on ShowdownDivisionLobbyPanel_C_EventSwitchUI");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_EventSwitchUI) == 0x000001, "Wrong size on ShowdownDivisionLobbyPanel_C_EventSwitchUI");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_EventSwitchUI, bNewInputType) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_EventSwitchUI::bNewInputType' has a wrong offset!");
 
 // Function ShowdownDivisionLobbyPanel.ShowdownDivisionLobbyPanel_C.ExecuteUbergraph_ShowdownDivisionLobbyPanel
 // 0x0140 (0x0140 - 0x0000)
@@ -282,7 +180,7 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Temp_float_Variable;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputSubsystem*                  CallFunc_GetLocalPlayerSubsystem_ReturnValue;      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(ECommonInputType bNewInputType)> K2Node_CreateDelegate_OutputDelegate;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUsingGamepad_ReturnValue;               // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_29[0x3];                                       // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -335,54 +233,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0130(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ECommonInputType                              K2Node_CustomEvent_bNewInputType;                  // 0x0138(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel) == 0x000008, "Wrong alignment on ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel");
-static_assert(sizeof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel) == 0x000140, "Wrong size on ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, EntryPoint) == 0x000000, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_float_Variable) == 0x000004, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000008, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_IsUsingGamepad_ReturnValue) == 0x000028, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_IsUsingGamepad_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_float_Variable_1) == 0x00002C, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_float_Variable_2) == 0x000030, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_bool_Variable) == 0x000034, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_Select_Default) == 0x000038, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_MakeStruct_Margin) == 0x00003C, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_ComponentBoundEvent_Button_2) == 0x000050, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_ComponentBoundEvent_Button_1) == 0x000058, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetStartTime_ReturnValue) == 0x000060, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetStartTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetEndTime_ReturnValue) == 0x000064, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetStartTime_ReturnValue_1) == 0x000068, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetStartTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetEndTime_ReturnValue_1) == 0x00006C, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetEndTime_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_bool_Variable_1) == 0x000070, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetContext_ReturnValue_1) == 0x000078, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PauseAnimation_ReturnValue) == 0x000080, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PauseAnimation_ReturnValue_1) == 0x000084, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000088, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_Add_FloatFloat_ReturnValue) == 0x00008C, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PlayAnimation_ReturnValue) == 0x000090, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000098, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PauseAnimation_ReturnValue_2) == 0x00009C, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PauseAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_Select_Default_1) == 0x0000A0, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_LessEqual_FloatFloat_ReturnValue_1) == 0x0000A4, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_LessEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000A8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0000B0, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PauseAnimation_ReturnValue_3) == 0x0000B4, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PauseAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000B8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x0000C8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PlayAnimation_ReturnValue_2) == 0x0000D0, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_SlotAsOverlaySlot_ReturnValue) == 0x0000E0, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_SlotAsOverlaySlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_Create_ReturnValue) == 0x0000E8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_ComponentBoundEvent_Button) == 0x0000F0, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_float_Variable_3) == 0x0000F8, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetTournamentId_ReturnValue) == 0x000100, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetTournamentId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetEventId_ReturnValue) == 0x000110, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetEventId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, Temp_bool_Variable_2) == 0x000120, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_Select_Default_2) == 0x000124, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000128, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, CallFunc_PlayAnimation_ReturnValue_3) == 0x000130, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel, K2Node_CustomEvent_bNewInputType) == 0x000138, "Member 'ShowdownDivisionLobbyPanel_C_ExecuteUbergraph_ShowdownDivisionLobbyPanel::K2Node_CustomEvent_bNewInputType' has a wrong offset!");
 
 }
 

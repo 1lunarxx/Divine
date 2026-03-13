@@ -23,15 +23,17 @@ class UMissionGen_Wax_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Wax_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Wax_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Wax_C")
 	}
 	static class UMissionGen_Wax_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Wax_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Wax_C) == 0x000008, "Wrong alignment on UMissionGen_Wax_C");
-static_assert(sizeof(UMissionGen_Wax_C) == 0x0006C0, "Wrong size on UMissionGen_Wax_C");
 
 }
 

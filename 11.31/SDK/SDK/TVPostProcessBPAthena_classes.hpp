@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "FortniteGame_structs.hpp"
 #include "TVPostProcessBP_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
@@ -42,21 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TVPostProcessBPAthena_C">();
+		BP_STATIC_CLASS_IMPL("TVPostProcessBPAthena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TVPostProcessBPAthena_C")
 	}
 	static class ATVPostProcessBPAthena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATVPostProcessBPAthena_C>();
 	}
 };
-static_assert(alignof(ATVPostProcessBPAthena_C) == 0x000008, "Wrong alignment on ATVPostProcessBPAthena_C");
-static_assert(sizeof(ATVPostProcessBPAthena_C) == 0x000260, "Wrong size on ATVPostProcessBPAthena_C");
-static_assert(offsetof(ATVPostProcessBPAthena_C, UberGraphFrame_TVPostProcessBPAthena_C) == 0x000238, "Member 'ATVPostProcessBPAthena_C::UberGraphFrame_TVPostProcessBPAthena_C' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBPAthena_C, FullScreenTVPP_OnlyMaterialModified) == 0x000240, "Member 'ATVPostProcessBPAthena_C::FullScreenTVPP_OnlyMaterialModified' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBPAthena_C, FrontEndCameraSwitchFadeAthena_SwipeLines_Animation_8828A7EA43DFA9153F986F805918F9F7) == 0x000248, "Member 'ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena_SwipeLines_Animation_8828A7EA43DFA9153F986F805918F9F7' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBPAthena_C, FrontEndCameraSwitchFadeAthena_PostProcessVisibility_8828A7EA43DFA9153F986F805918F9F7) == 0x00024C, "Member 'ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena_PostProcessVisibility_8828A7EA43DFA9153F986F805918F9F7' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBPAthena_C, FrontEndCameraSwitchFadeAthena__Direction_8828A7EA43DFA9153F986F805918F9F7) == 0x000250, "Member 'ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena__Direction_8828A7EA43DFA9153F986F805918F9F7' has a wrong offset!");
-static_assert(offsetof(ATVPostProcessBPAthena_C, FrontEndCameraSwitchFadeAthena) == 0x000258, "Member 'ATVPostProcessBPAthena_C::FrontEndCameraSwitchFadeAthena' has a wrong offset!");
 
 }
 

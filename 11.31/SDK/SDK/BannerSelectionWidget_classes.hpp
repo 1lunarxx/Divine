@@ -52,28 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BannerSelectionWidget_C">();
+		BP_STATIC_CLASS_IMPL("BannerSelectionWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BannerSelectionWidget_C")
 	}
 	static class UBannerSelectionWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBannerSelectionWidget_C>();
 	}
 };
-static_assert(alignof(UBannerSelectionWidget_C) == 0x000008, "Wrong alignment on UBannerSelectionWidget_C");
-static_assert(sizeof(UBannerSelectionWidget_C) == 0x0004E8, "Wrong size on UBannerSelectionWidget_C");
-static_assert(offsetof(UBannerSelectionWidget_C, UberGraphFrame) == 0x000478, "Member 'UBannerSelectionWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, BP_LocalPlayerBannerEditor) == 0x000480, "Member 'UBannerSelectionWidget_C::BP_LocalPlayerBannerEditor' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, ConfirmHomebaseNameButton) == 0x000488, "Member 'UBannerSelectionWidget_C::ConfirmHomebaseNameButton' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, EntryVbox) == 0x000490, "Member 'UBannerSelectionWidget_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, Image_0) == 0x000498, "Member 'UBannerSelectionWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, Lightbox) == 0x0004A0, "Member 'UBannerSelectionWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, MainIcon) == 0x0004A8, "Member 'UBannerSelectionWidget_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, ProgressSizeBox) == 0x0004B0, "Member 'UBannerSelectionWidget_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, ProgressText) == 0x0004B8, "Member 'UBannerSelectionWidget_C::ProgressText' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, ProgressVBox) == 0x0004C0, "Member 'UBannerSelectionWidget_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, Switcher) == 0x0004C8, "Member 'UBannerSelectionWidget_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, Title) == 0x0004D0, "Member 'UBannerSelectionWidget_C::Title' has a wrong offset!");
-static_assert(offsetof(UBannerSelectionWidget_C, PatternPadding) == 0x0004D8, "Member 'UBannerSelectionWidget_C::PatternPadding' has a wrong offset!");
 
 }
 

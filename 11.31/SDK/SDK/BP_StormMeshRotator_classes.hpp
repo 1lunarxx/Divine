@@ -39,23 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_StormMeshRotator_C">();
+		BP_STATIC_CLASS_IMPL("BP_StormMeshRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_StormMeshRotator_C")
 	}
 	static class ABP_StormMeshRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_StormMeshRotator_C>();
 	}
 };
-static_assert(alignof(ABP_StormMeshRotator_C) == 0x000008, "Wrong alignment on ABP_StormMeshRotator_C");
-static_assert(sizeof(ABP_StormMeshRotator_C) == 0x000250, "Wrong size on ABP_StormMeshRotator_C");
-static_assert(offsetof(ABP_StormMeshRotator_C, UberGraphFrame) == 0x000218, "Member 'ABP_StormMeshRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, stormCircleLowerSheet) == 0x000220, "Member 'ABP_StormMeshRotator_C::stormCircleLowerSheet' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, SM_stormCircleTopRim) == 0x000228, "Member 'ABP_StormMeshRotator_C::SM_stormCircleTopRim' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, RotatingMovement) == 0x000230, "Member 'ABP_StormMeshRotator_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, SM_stormCircleNew) == 0x000238, "Member 'ABP_StormMeshRotator_C::SM_stormCircleNew' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, DefaultSceneRoot) == 0x000240, "Member 'ABP_StormMeshRotator_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, RotationSpeed) == 0x000248, "Member 'ABP_StormMeshRotator_C::RotationSpeed' has a wrong offset!");
-static_assert(offsetof(ABP_StormMeshRotator_C, BoundsScale) == 0x00024C, "Member 'ABP_StormMeshRotator_C::BoundsScale' has a wrong offset!");
 
 }
 

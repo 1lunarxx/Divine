@@ -23,15 +23,17 @@ class UTextStyle_Button_BottomBar_S_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Button-BottomBar-S_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Button-BottomBar-S_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Button-BottomBar-S_C")
 	}
 	static class UTextStyle_Button_BottomBar_S_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Button_BottomBar_S_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Button_BottomBar_S_C) == 0x000008, "Wrong alignment on UTextStyle_Button_BottomBar_S_C");
-static_assert(sizeof(UTextStyle_Button_BottomBar_S_C) == 0x000148, "Wrong size on UTextStyle_Button_BottomBar_S_C");
 
 }
 

@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeListEntry_Header_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeListEntry_Header_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeListEntry_Header_C")
 	}
 	static class UChallengeListEntry_Header_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeListEntry_Header_C>();
 	}
 };
-static_assert(alignof(UChallengeListEntry_Header_C) == 0x000008, "Wrong alignment on UChallengeListEntry_Header_C");
-static_assert(sizeof(UChallengeListEntry_Header_C) == 0x000278, "Wrong size on UChallengeListEntry_Header_C");
-static_assert(offsetof(UChallengeListEntry_Header_C, UberGraphFrame) == 0x000268, "Member 'UChallengeListEntry_Header_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Header_C, SwitcherPaidFreeIcon) == 0x000270, "Member 'UChallengeListEntry_Header_C::SwitcherPaidFreeIcon' has a wrong offset!");
 
 }
 

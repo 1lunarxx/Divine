@@ -23,9 +23,6 @@ struct SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget) == 0x000008, "Wrong alignment on SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget");
-static_assert(sizeof(SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget) == 0x000008, "Wrong size on SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget");
-static_assert(offsetof(SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget, ReturnValue) == 0x000000, "Member 'SettingsListEntry_Scalar_C_GetPrimaryGamepadFocusWidget::ReturnValue' has a wrong offset!");
 
 // Function SettingsListEntry_Scalar.SettingsListEntry_Scalar_C.OnValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,6 @@ struct SettingsListEntry_Scalar_C_OnValueChanged final
 public:
 	float                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_OnValueChanged) == 0x000004, "Wrong alignment on SettingsListEntry_Scalar_C_OnValueChanged");
-static_assert(sizeof(SettingsListEntry_Scalar_C_OnValueChanged) == 0x000004, "Wrong size on SettingsListEntry_Scalar_C_OnValueChanged");
-static_assert(offsetof(SettingsListEntry_Scalar_C_OnValueChanged, Value) == 0x000000, "Member 'SettingsListEntry_Scalar_C_OnValueChanged::Value' has a wrong offset!");
 
 // Function SettingsListEntry_Scalar.SettingsListEntry_Scalar_C.OnDefaultValueChanged
 // 0x0004 (0x0004 - 0x0000)
@@ -45,9 +39,6 @@ struct SettingsListEntry_Scalar_C_OnDefaultValueChanged final
 public:
 	float                                         DefaultValue;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_OnDefaultValueChanged) == 0x000004, "Wrong alignment on SettingsListEntry_Scalar_C_OnDefaultValueChanged");
-static_assert(sizeof(SettingsListEntry_Scalar_C_OnDefaultValueChanged) == 0x000004, "Wrong size on SettingsListEntry_Scalar_C_OnDefaultValueChanged");
-static_assert(offsetof(SettingsListEntry_Scalar_C_OnDefaultValueChanged, DefaultValue) == 0x000000, "Member 'SettingsListEntry_Scalar_C_OnDefaultValueChanged::DefaultValue' has a wrong offset!");
 
 // Function SettingsListEntry_Scalar.SettingsListEntry_Scalar_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -57,10 +48,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_OnMouseEnter) == 0x000008, "Wrong alignment on SettingsListEntry_Scalar_C_OnMouseEnter");
-static_assert(sizeof(SettingsListEntry_Scalar_C_OnMouseEnter) == 0x0000A8, "Wrong size on SettingsListEntry_Scalar_C_OnMouseEnter");
-static_assert(offsetof(SettingsListEntry_Scalar_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'SettingsListEntry_Scalar_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'SettingsListEntry_Scalar_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function SettingsListEntry_Scalar.SettingsListEntry_Scalar_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -69,9 +56,6 @@ struct SettingsListEntry_Scalar_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_OnMouseLeave) == 0x000008, "Wrong alignment on SettingsListEntry_Scalar_C_OnMouseLeave");
-static_assert(sizeof(SettingsListEntry_Scalar_C_OnMouseLeave) == 0x000070, "Wrong size on SettingsListEntry_Scalar_C_OnMouseLeave");
-static_assert(offsetof(SettingsListEntry_Scalar_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'SettingsListEntry_Scalar_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function SettingsListEntry_Scalar.SettingsListEntry_Scalar_C.ExecuteUbergraph_SettingsListEntry_Scalar
 // 0x0148 (0x0148 - 0x0000)
@@ -91,17 +75,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0140(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar) == 0x000008, "Wrong alignment on SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar");
-static_assert(sizeof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar) == 0x000148, "Wrong size on SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, EntryPoint) == 0x000000, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, K2Node_Event_MouseEvent) == 0x000008, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, K2Node_Event_Value) == 0x000078, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::K2Node_Event_Value' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000080, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, K2Node_Event_DefaultValue) == 0x000088, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::K2Node_Event_DefaultValue' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, K2Node_Event_MyGeometry) == 0x00008C, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, K2Node_Event_MouseEvent_1) == 0x0000C8, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000138, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar, CallFunc_PlayAnimationForward_ReturnValue) == 0x000140, "Member 'SettingsListEntry_Scalar_C_ExecuteUbergraph_SettingsListEntry_Scalar::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

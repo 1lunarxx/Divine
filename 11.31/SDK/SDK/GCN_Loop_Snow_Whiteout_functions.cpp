@@ -17,48 +17,6 @@
 namespace SDK
 {
 
-// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.ReceiveDestroyed
-// (Event, Public, BlueprintEvent)
-
-void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.FadeinOut__UpdateFunc
-// (BlueprintEvent)
-
-void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.FadeinOut__FinishedFunc
-// (BlueprintEvent)
-
-void AGCN_Loop_Snow_Whiteout_C::FadeinOut__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.OnRemoval
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -132,6 +90,48 @@ void AGCN_Loop_Snow_Whiteout_C::ExecuteUbergraph_GCN_Loop_Snow_Whiteout(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.ReceiveDestroyed
+// (Event, Public, BlueprintEvent)
+
+void AGCN_Loop_Snow_Whiteout_C::ReceiveDestroyed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "ReceiveDestroyed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.FadeinOut__UpdateFunc
+// (BlueprintEvent)
+
+void AGCN_Loop_Snow_Whiteout_C::FadeinOut__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GCN_Loop_Snow_Whiteout.GCN_Loop_Snow_Whiteout_C.FadeinOut__FinishedFunc
+// (BlueprintEvent)
+
+void AGCN_Loop_Snow_Whiteout_C::FadeinOut__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_Snow_Whiteout_C", "FadeinOut__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

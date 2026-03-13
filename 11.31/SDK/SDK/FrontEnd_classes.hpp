@@ -6,50 +6,79 @@
 * https://github.com/Encryqed/Dumper-7
 */
 
-// Package: Frontend
+// Package: FrontEnd
 
 #include "Basic.hpp"
 
+#include "FortniteUI_structs.hpp"
+#include "FortniteUI_classes.hpp"
 #include "Engine_structs.hpp"
-#include "FortniteGame_classes.hpp"
+#include "FortniteGame_structs.hpp"
+#include "UMG_structs.hpp"
 
 
 namespace SDK
 {
 
-// BlueprintGeneratedClass Frontend.FrontEnd_C
-// 0x0018 (0x0248 - 0x0230)
-class AFrontEnd_C final : public AFortLevelScriptActor
+// WidgetBlueprintGeneratedClass FrontEnd.FrontEnd_C
+// 0x0068 (0x05C8 - 0x0560)
+class UFrontEnd_C final : public UFortUIStateWidget_Frontend
 {
 public:
-	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0230(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	bool                                          NewLobby;                                          // 0x0238(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                          NewVar_0;                                          // 0x0239(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_23A[0x6];                                      // 0x023A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class AHBOnboardingFlow_C*                    HBOnboardingFlow_ExecuteUbergraph_Frontend_RefProperty; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0560(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAthenaFPSTicker_C*                     AthenaFPSTicker;                                   // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaTemperature_C*                   AthenaTemperature;                                 // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBuildWatermark_C*                      BuildWatermark;                                    // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UButton*                                Button_PTT;                                        // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UIconTextButton_C*                      ButtonToggleChat;                                  // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortVoiceChannelSpeakerContainer_C*    FortVoiceChannelSpeakerContainer;                  // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 PTT_Image;                                         // 0x0598(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_1;                                        // 0x05A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USafeZone*                              SafeZone_2;                                        // 0x05A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                               SizeBoxPTT;                                        // 0x05B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	bool                                          StartedPlayingVideo;                               // 0x05B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5B9[0x3];                                      // 0x05B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   AthenaEventVideoID;                                // 0x05BC(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void PlaySpeech(const class FString& Filename, int32 SampleRate, class USoundWave* AssetFile);
-	void OnMatchStarted();
-	void EnableTutorial();
+	void BndEvt__ButtonToggleChat_K2Node_ComponentBoundEvent_39_CommonSelectedStateChanged__DelegateSignature(class UCommonButton* Button, bool Selected);
+	void On_Can_PTT();
+	void OnEnterState(EFortUIState PreviousUIState);
+	void On_Social_Import_Closed();
+	void OnMovieFinished();
+	void BndEvt__Button_PTT_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature();
+	void On_Crossplay_Widget_Closed_1();
+	void RevisitStartupFlow();
 	void ExecuteUbergraph_FrontEnd(int32 EntryPoint);
+	void Loading_Screen_Changed(bool IsVisible_0);
+	void Construct();
+	void OnFrontEndVisibilityUpdated(bool bHideHeader, bool bHideFooter, bool bHideChatWidget);
+	void PushContentWidgetInternal(class UWidget* Widget, const struct FContentPushState& State);
+	void Finished_10D32F9F43CC39E50616E5BD00C13DDE();
+	void Finished_74C01B50486C9D234AEBBB83F5C50040();
+	void HandleEnterFrontend(EFortUIState UIState);
+	class UWidget* PopContentWidgetInternal(const struct FContentPushState& State);
+	void SetChatWidgetVisibility(bool Visible);
+	void SetOverlayTitleBarVisibility(bool Visible);
+	void UpdatePttVisibility(EPTTState PTTState);
+	void InitChatVisibilityButton();
+	void PlayTrailer(int32 VideoIndex);
+	void LoadTrailer(class UActivatableMovieWidget_Frontend_C* ActivatableMovieWidget, int32 VideoIndex, bool* Return_Value);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontEnd_C">();
+		BP_STATIC_CLASS_IMPL("FrontEnd_C")
 	}
-	static class AFrontEnd_C* GetDefaultObj()
+	static const class FName& StaticName()
 	{
-		return GetDefaultObjImpl<AFrontEnd_C>();
+		STATIC_NAME_IMPL(L"FrontEnd_C")
+	}
+	static class UFrontEnd_C* GetDefaultObj()
+	{
+		return GetDefaultObjImpl<UFrontEnd_C>();
 	}
 };
-static_assert(alignof(AFrontEnd_C) == 0x000008, "Wrong alignment on AFrontEnd_C");
-static_assert(sizeof(AFrontEnd_C) == 0x000248, "Wrong size on AFrontEnd_C");
-static_assert(offsetof(AFrontEnd_C, UberGraphFrame) == 0x000230, "Member 'AFrontEnd_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontEnd_C, NewLobby) == 0x000238, "Member 'AFrontEnd_C::NewLobby' has a wrong offset!");
-static_assert(offsetof(AFrontEnd_C, NewVar_0) == 0x000239, "Member 'AFrontEnd_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AFrontEnd_C, HBOnboardingFlow_ExecuteUbergraph_Frontend_RefProperty) == 0x000240, "Member 'AFrontEnd_C::HBOnboardingFlow_ExecuteUbergraph_Frontend_RefProperty' has a wrong offset!");
 
 }
 

@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Winterfest_OutsideCabinLogo_C">();
+		BP_STATIC_CLASS_IMPL("Winterfest_OutsideCabinLogo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Winterfest_OutsideCabinLogo_C")
 	}
 	static class UWinterfest_OutsideCabinLogo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterfest_OutsideCabinLogo_C>();
 	}
 };
-static_assert(alignof(UWinterfest_OutsideCabinLogo_C) == 0x000008, "Wrong alignment on UWinterfest_OutsideCabinLogo_C");
-static_assert(sizeof(UWinterfest_OutsideCabinLogo_C) == 0x000258, "Wrong size on UWinterfest_OutsideCabinLogo_C");
-static_assert(offsetof(UWinterfest_OutsideCabinLogo_C, UberGraphFrame) == 0x000230, "Member 'UWinterfest_OutsideCabinLogo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterfest_OutsideCabinLogo_C, Intro) == 0x000238, "Member 'UWinterfest_OutsideCabinLogo_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWinterfest_OutsideCabinLogo_C, CommonRichTextBlock_0) == 0x000240, "Member 'UWinterfest_OutsideCabinLogo_C::CommonRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UWinterfest_OutsideCabinLogo_C, Image_51) == 0x000248, "Member 'UWinterfest_OutsideCabinLogo_C::Image_51' has a wrong offset!");
-static_assert(offsetof(UWinterfest_OutsideCabinLogo_C, PerspectiveSkew) == 0x000250, "Member 'UWinterfest_OutsideCabinLogo_C::PerspectiveSkew' has a wrong offset!");
 
 }
 

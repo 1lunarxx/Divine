@@ -37,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BladeMenu_SocialPanel_C">();
+		BP_STATIC_CLASS_IMPL("BladeMenu_SocialPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BladeMenu_SocialPanel_C")
 	}
 	static class UBladeMenu_SocialPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBladeMenu_SocialPanel_C>();
 	}
 };
-static_assert(alignof(UBladeMenu_SocialPanel_C) == 0x000008, "Wrong alignment on UBladeMenu_SocialPanel_C");
-static_assert(sizeof(UBladeMenu_SocialPanel_C) == 0x000318, "Wrong size on UBladeMenu_SocialPanel_C");
-static_assert(offsetof(UBladeMenu_SocialPanel_C, UberGraphFrame) == 0x0002F8, "Member 'UBladeMenu_SocialPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_SocialPanel_C, OnClose) == 0x000300, "Member 'UBladeMenu_SocialPanel_C::OnClose' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_SocialPanel_C, OnOpen) == 0x000308, "Member 'UBladeMenu_SocialPanel_C::OnOpen' has a wrong offset!");
-static_assert(offsetof(UBladeMenu_SocialPanel_C, SafeZone_Content) == 0x000310, "Member 'UBladeMenu_SocialPanel_C::SafeZone_Content' has a wrong offset!");
 
 }
 

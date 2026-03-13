@@ -58,42 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothConfigNv">();
+		STATIC_CLASS_IMPL("ClothConfigNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothConfigNv")
 	}
 	static class UClothConfigNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothConfigNv>();
 	}
 };
-static_assert(alignof(UClothConfigNv) == 0x000008, "Wrong alignment on UClothConfigNv");
-static_assert(sizeof(UClothConfigNv) == 0x000100, "Wrong size on UClothConfigNv");
-static_assert(offsetof(UClothConfigNv, WindMethod) == 0x000028, "Member 'UClothConfigNv::WindMethod' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, VerticalConstraintConfig) == 0x00002C, "Member 'UClothConfigNv::VerticalConstraintConfig' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, HorizontalConstraintConfig) == 0x00003C, "Member 'UClothConfigNv::HorizontalConstraintConfig' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, BendConstraintConfig) == 0x00004C, "Member 'UClothConfigNv::BendConstraintConfig' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, ShearConstraintConfig) == 0x00005C, "Member 'UClothConfigNv::ShearConstraintConfig' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, SelfCollisionRadius) == 0x00006C, "Member 'UClothConfigNv::SelfCollisionRadius' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, SelfCollisionStiffness) == 0x000070, "Member 'UClothConfigNv::SelfCollisionStiffness' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, SelfCollisionCullScale) == 0x000074, "Member 'UClothConfigNv::SelfCollisionCullScale' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, Damping) == 0x000078, "Member 'UClothConfigNv::Damping' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, Friction) == 0x000084, "Member 'UClothConfigNv::Friction' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, WindDragCoefficient) == 0x000088, "Member 'UClothConfigNv::WindDragCoefficient' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, WindLiftCoefficient) == 0x00008C, "Member 'UClothConfigNv::WindLiftCoefficient' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, LinearDrag) == 0x000090, "Member 'UClothConfigNv::LinearDrag' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, AngularDrag) == 0x00009C, "Member 'UClothConfigNv::AngularDrag' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, LinearInertiaScale) == 0x0000A8, "Member 'UClothConfigNv::LinearInertiaScale' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, AngularInertiaScale) == 0x0000B4, "Member 'UClothConfigNv::AngularInertiaScale' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, CentrifugalInertiaScale) == 0x0000C0, "Member 'UClothConfigNv::CentrifugalInertiaScale' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, SolverFrequency) == 0x0000CC, "Member 'UClothConfigNv::SolverFrequency' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, StiffnessFrequency) == 0x0000D0, "Member 'UClothConfigNv::StiffnessFrequency' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, GravityScale) == 0x0000D4, "Member 'UClothConfigNv::GravityScale' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, GravityOverride) == 0x0000D8, "Member 'UClothConfigNv::GravityOverride' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, bUseGravityOverride) == 0x0000E4, "Member 'UClothConfigNv::bUseGravityOverride' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, TetherStiffness) == 0x0000E8, "Member 'UClothConfigNv::TetherStiffness' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, TetherLimit) == 0x0000EC, "Member 'UClothConfigNv::TetherLimit' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, CollisionThickness) == 0x0000F0, "Member 'UClothConfigNv::CollisionThickness' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, AnimDriveSpringStiffness) == 0x0000F4, "Member 'UClothConfigNv::AnimDriveSpringStiffness' has a wrong offset!");
-static_assert(offsetof(UClothConfigNv, AnimDriveDamperStiffness) == 0x0000F8, "Member 'UClothConfigNv::AnimDriveDamperStiffness' has a wrong offset!");
 
 // Class ClothingSystemRuntimeNv.ClothingAssetNv
 // 0x00E8 (0x01A0 - 0x00B8)
@@ -107,17 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothingAssetNv">();
+		STATIC_CLASS_IMPL("ClothingAssetNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingAssetNv")
 	}
 	static class UClothingAssetNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothingAssetNv>();
 	}
 };
-static_assert(alignof(UClothingAssetNv) == 0x000008, "Wrong alignment on UClothingAssetNv");
-static_assert(sizeof(UClothingAssetNv) == 0x0001A0, "Wrong size on UClothingAssetNv");
-static_assert(offsetof(UClothingAssetNv, ClothConfig) == 0x0000B8, "Member 'UClothingAssetNv::ClothConfig' has a wrong offset!");
-static_assert(offsetof(UClothingAssetNv, LODData) == 0x000190, "Member 'UClothingAssetNv::LODData' has a wrong offset!");
 
 // Class ClothingSystemRuntimeNv.ClothingSimulationFactoryNv
 // 0x0000 (0x0028 - 0x0028)
@@ -126,15 +101,17 @@ class UClothingSimulationFactoryNv final : public UClothingSimulationFactory
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothingSimulationFactoryNv">();
+		STATIC_CLASS_IMPL("ClothingSimulationFactoryNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingSimulationFactoryNv")
 	}
 	static class UClothingSimulationFactoryNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothingSimulationFactoryNv>();
 	}
 };
-static_assert(alignof(UClothingSimulationFactoryNv) == 0x000008, "Wrong alignment on UClothingSimulationFactoryNv");
-static_assert(sizeof(UClothingSimulationFactoryNv) == 0x000028, "Wrong size on UClothingSimulationFactoryNv");
 
 // Class ClothingSystemRuntimeNv.ClothingSimulationInteractorNv
 // 0x0010 (0x0040 - 0x0030)
@@ -152,15 +129,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothingSimulationInteractorNv">();
+		STATIC_CLASS_IMPL("ClothingSimulationInteractorNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothingSimulationInteractorNv")
 	}
 	static class UClothingSimulationInteractorNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothingSimulationInteractorNv>();
 	}
 };
-static_assert(alignof(UClothingSimulationInteractorNv) == 0x000008, "Wrong alignment on UClothingSimulationInteractorNv");
-static_assert(sizeof(UClothingSimulationInteractorNv) == 0x000040, "Wrong size on UClothingSimulationInteractorNv");
 
 // Class ClothingSystemRuntimeNv.ClothLODDataNv
 // 0x0000 (0x0090 - 0x0090)
@@ -169,15 +148,17 @@ class UClothLODDataNv final : public UClothLODDataCommon
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothLODDataNv">();
+		STATIC_CLASS_IMPL("ClothLODDataNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothLODDataNv")
 	}
 	static class UClothLODDataNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothLODDataNv>();
 	}
 };
-static_assert(alignof(UClothLODDataNv) == 0x000008, "Wrong alignment on UClothLODDataNv");
-static_assert(sizeof(UClothLODDataNv) == 0x000090, "Wrong size on UClothLODDataNv");
 
 // Class ClothingSystemRuntimeNv.ClothPhysicalMeshDataNv
 // 0x0040 (0x0120 - 0x00E0)
@@ -192,19 +173,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClothPhysicalMeshDataNv">();
+		STATIC_CLASS_IMPL("ClothPhysicalMeshDataNv")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClothPhysicalMeshDataNv")
 	}
 	static class UClothPhysicalMeshDataNv* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClothPhysicalMeshDataNv>();
 	}
 };
-static_assert(alignof(UClothPhysicalMeshDataNv) == 0x000008, "Wrong alignment on UClothPhysicalMeshDataNv");
-static_assert(sizeof(UClothPhysicalMeshDataNv) == 0x000120, "Wrong size on UClothPhysicalMeshDataNv");
-static_assert(offsetof(UClothPhysicalMeshDataNv, MaxDistances) == 0x0000E0, "Member 'UClothPhysicalMeshDataNv::MaxDistances' has a wrong offset!");
-static_assert(offsetof(UClothPhysicalMeshDataNv, BackstopDistances) == 0x0000F0, "Member 'UClothPhysicalMeshDataNv::BackstopDistances' has a wrong offset!");
-static_assert(offsetof(UClothPhysicalMeshDataNv, BackstopRadiuses) == 0x000100, "Member 'UClothPhysicalMeshDataNv::BackstopRadiuses' has a wrong offset!");
-static_assert(offsetof(UClothPhysicalMeshDataNv, AnimDriveMultipliers) == 0x000110, "Member 'UClothPhysicalMeshDataNv::AnimDriveMultipliers' has a wrong offset!");
 
 }
 

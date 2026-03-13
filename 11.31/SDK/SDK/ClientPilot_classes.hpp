@@ -23,15 +23,17 @@ class UClientPilotComponent : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClientPilotComponent">();
+		STATIC_CLASS_IMPL("ClientPilotComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClientPilotComponent")
 	}
 	static class UClientPilotComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClientPilotComponent>();
 	}
 };
-static_assert(alignof(UClientPilotComponent) == 0x000008, "Wrong alignment on UClientPilotComponent");
-static_assert(sizeof(UClientPilotComponent) == 0x000028, "Wrong size on UClientPilotComponent");
 
 // Class ClientPilot.ClientPilotBlackboard
 // 0x0050 (0x0078 - 0x0028)
@@ -43,15 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClientPilotBlackboard">();
+		STATIC_CLASS_IMPL("ClientPilotBlackboard")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClientPilotBlackboard")
 	}
 	static class UClientPilotBlackboard* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClientPilotBlackboard>();
 	}
 };
-static_assert(alignof(UClientPilotBlackboard) == 0x000008, "Wrong alignment on UClientPilotBlackboard");
-static_assert(sizeof(UClientPilotBlackboard) == 0x000078, "Wrong size on UClientPilotBlackboard");
 
 // Class ClientPilot.ClientPilotBlackboardManager
 // 0x0008 (0x0030 - 0x0028)
@@ -63,16 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"ClientPilotBlackboardManager">();
+		STATIC_CLASS_IMPL("ClientPilotBlackboardManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ClientPilotBlackboardManager")
 	}
 	static class UClientPilotBlackboardManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UClientPilotBlackboardManager>();
 	}
 };
-static_assert(alignof(UClientPilotBlackboardManager) == 0x000008, "Wrong alignment on UClientPilotBlackboardManager");
-static_assert(sizeof(UClientPilotBlackboardManager) == 0x000030, "Wrong size on UClientPilotBlackboardManager");
-static_assert(offsetof(UClientPilotBlackboardManager, PilotBlackboard) == 0x000028, "Member 'UClientPilotBlackboardManager::PilotBlackboard' has a wrong offset!");
 
 }
 

@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Vehicle_ExitHoldEvent_C">();
+		BP_STATIC_CLASS_IMPL("GA_Vehicle_ExitHoldEvent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Vehicle_ExitHoldEvent_C")
 	}
 	static class UGA_Vehicle_ExitHoldEvent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Vehicle_ExitHoldEvent_C>();
 	}
 };
-static_assert(alignof(UGA_Vehicle_ExitHoldEvent_C) == 0x000008, "Wrong alignment on UGA_Vehicle_ExitHoldEvent_C");
-static_assert(sizeof(UGA_Vehicle_ExitHoldEvent_C) == 0x000A50, "Wrong size on UGA_Vehicle_ExitHoldEvent_C");
-static_assert(offsetof(UGA_Vehicle_ExitHoldEvent_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Vehicle_ExitHoldEvent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Vehicle_ExitHoldEvent_C, PlayerPawn) == 0x000A38, "Member 'UGA_Vehicle_ExitHoldEvent_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Vehicle_ExitHoldEvent_C, TriggerDuration) == 0x000A40, "Member 'UGA_Vehicle_ExitHoldEvent_C::TriggerDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Vehicle_ExitHoldEvent_C, EquippingCue) == 0x000A44, "Member 'UGA_Vehicle_ExitHoldEvent_C::EquippingCue' has a wrong offset!");
 
 }
 

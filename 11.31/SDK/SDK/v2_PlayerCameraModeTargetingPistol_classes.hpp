@@ -23,15 +23,17 @@ class Uv2_PlayerCameraModeTargetingPistol_C final : public Uv2_PlayerCameraModeR
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v2_PlayerCameraModeTargetingPistol_C">();
+		BP_STATIC_CLASS_IMPL("v2_PlayerCameraModeTargetingPistol_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v2_PlayerCameraModeTargetingPistol_C")
 	}
 	static class Uv2_PlayerCameraModeTargetingPistol_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv2_PlayerCameraModeTargetingPistol_C>();
 	}
 };
-static_assert(alignof(Uv2_PlayerCameraModeTargetingPistol_C) == 0x000010, "Wrong alignment on Uv2_PlayerCameraModeTargetingPistol_C");
-static_assert(sizeof(Uv2_PlayerCameraModeTargetingPistol_C) == 0x000D80, "Wrong size on Uv2_PlayerCameraModeTargetingPistol_C");
 
 }
 

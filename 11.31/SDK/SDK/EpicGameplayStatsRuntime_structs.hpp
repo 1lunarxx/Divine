@@ -54,9 +54,6 @@ struct FGameplayStatTag final : public FGameplayTag
 public:
 	struct FGameplayTag                           Tag;                                               // 0x0008(0x0008)(NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
-static_assert(alignof(FGameplayStatTag) == 0x000004, "Wrong alignment on FGameplayStatTag");
-static_assert(sizeof(FGameplayStatTag) == 0x000010, "Wrong size on FGameplayStatTag");
-static_assert(offsetof(FGameplayStatTag, Tag) == 0x000008, "Member 'FGameplayStatTag::Tag' has a wrong offset!");
 
 // ScriptStruct EpicGameplayStatsRuntime.GameplayStatMetadataTableRow
 // 0x0058 (0x0060 - 0x0008)
@@ -76,18 +73,6 @@ public:
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagReferenceHelper            ReferenceHelper;                                   // 0x0050(0x0010)(Edit, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FGameplayStatMetadataTableRow) == 0x000008, "Wrong alignment on FGameplayStatMetadataTableRow");
-static_assert(sizeof(FGameplayStatMetadataTableRow) == 0x000060, "Wrong size on FGameplayStatMetadataTableRow");
-static_assert(offsetof(FGameplayStatMetadataTableRow, BackendName) == 0x000008, "Member 'FGameplayStatMetadataTableRow::BackendName' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, DisplayName) == 0x000018, "Member 'FGameplayStatMetadataTableRow::DisplayName' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, Windows) == 0x000030, "Member 'FGameplayStatMetadataTableRow::Windows' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, Metric) == 0x000040, "Member 'FGameplayStatMetadataTableRow::Metric' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, DataType) == 0x000041, "Member 'FGameplayStatMetadataTableRow::DataType' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, bPublish) == 0x000042, "Member 'FGameplayStatMetadataTableRow::bPublish' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, WeeklyRefreshInterval) == 0x000044, "Member 'FGameplayStatMetadataTableRow::WeeklyRefreshInterval' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, bExportToBackEnd) == 0x000048, "Member 'FGameplayStatMetadataTableRow::bExportToBackEnd' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, bShowInFrontEnd) == 0x000049, "Member 'FGameplayStatMetadataTableRow::bShowInFrontEnd' has a wrong offset!");
-static_assert(offsetof(FGameplayStatMetadataTableRow, ReferenceHelper) == 0x000050, "Member 'FGameplayStatMetadataTableRow::ReferenceHelper' has a wrong offset!");
 
 // ScriptStruct EpicGameplayStatsRuntime.ManagedGameplayTagDataTableItem
 // 0x0010 (0x0010 - 0x0000)
@@ -97,10 +82,6 @@ public:
 	struct FGameplayTag                           RootTag;                                           // 0x0000(0x0008)(Edit, EditConst, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UDataTable*                             DataTable;                                         // 0x0008(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FManagedGameplayTagDataTableItem) == 0x000008, "Wrong alignment on FManagedGameplayTagDataTableItem");
-static_assert(sizeof(FManagedGameplayTagDataTableItem) == 0x000010, "Wrong size on FManagedGameplayTagDataTableItem");
-static_assert(offsetof(FManagedGameplayTagDataTableItem, RootTag) == 0x000000, "Member 'FManagedGameplayTagDataTableItem::RootTag' has a wrong offset!");
-static_assert(offsetof(FManagedGameplayTagDataTableItem, DataTable) == 0x000008, "Member 'FManagedGameplayTagDataTableItem::DataTable' has a wrong offset!");
 
 // ScriptStruct EpicGameplayStatsRuntime.TagTableManagerHelper
 // 0x0001 (0x0001 - 0x0000)
@@ -109,8 +90,6 @@ struct FTagTableManagerHelper final
 public:
 	uint8                                         Pad_0[0x1];                                        // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FTagTableManagerHelper) == 0x000001, "Wrong alignment on FTagTableManagerHelper");
-static_assert(sizeof(FTagTableManagerHelper) == 0x000001, "Wrong size on FTagTableManagerHelper");
 
 }
 

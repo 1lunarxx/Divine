@@ -23,15 +23,17 @@ class UAthenaMOTDLobbyContentWidget_C final : public UFortAthenaMOTDLobbyContent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDLobbyContentWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDLobbyContentWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDLobbyContentWidget_C")
 	}
 	static class UAthenaMOTDLobbyContentWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDLobbyContentWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDLobbyContentWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDLobbyContentWidget_C");
-static_assert(sizeof(UAthenaMOTDLobbyContentWidget_C) == 0x0002E0, "Wrong size on UAthenaMOTDLobbyContentWidget_C");
 
 }
 

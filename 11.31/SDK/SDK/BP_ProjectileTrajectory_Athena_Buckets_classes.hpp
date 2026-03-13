@@ -23,15 +23,17 @@ class ABP_ProjectileTrajectory_Athena_Buckets_C final : public ABP_ProjectileTra
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ProjectileTrajectory_Athena_Buckets_C">();
+		BP_STATIC_CLASS_IMPL("BP_ProjectileTrajectory_Athena_Buckets_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ProjectileTrajectory_Athena_Buckets_C")
 	}
 	static class ABP_ProjectileTrajectory_Athena_Buckets_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ProjectileTrajectory_Athena_Buckets_C>();
 	}
 };
-static_assert(alignof(ABP_ProjectileTrajectory_Athena_Buckets_C) == 0x000008, "Wrong alignment on ABP_ProjectileTrajectory_Athena_Buckets_C");
-static_assert(sizeof(ABP_ProjectileTrajectory_Athena_Buckets_C) == 0x000270, "Wrong size on ABP_ProjectileTrajectory_Athena_Buckets_C");
 
 }
 

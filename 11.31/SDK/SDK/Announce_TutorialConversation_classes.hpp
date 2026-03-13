@@ -40,17 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_TutorialConversation_C">();
+		BP_STATIC_CLASS_IMPL("Announce_TutorialConversation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_TutorialConversation_C")
 	}
 	static class AAnnounce_TutorialConversation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_TutorialConversation_C>();
 	}
 };
-static_assert(alignof(AAnnounce_TutorialConversation_C) == 0x000008, "Wrong alignment on AAnnounce_TutorialConversation_C");
-static_assert(sizeof(AAnnounce_TutorialConversation_C) == 0x000470, "Wrong size on AAnnounce_TutorialConversation_C");
-static_assert(offsetof(AAnnounce_TutorialConversation_C, UberGraphFrame) == 0x000458, "Member 'AAnnounce_TutorialConversation_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAnnounce_TutorialConversation_C, SentencedIndexedTutorialData) == 0x000460, "Member 'AAnnounce_TutorialConversation_C::SentencedIndexedTutorialData' has a wrong offset!");
 
 }
 

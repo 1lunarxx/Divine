@@ -26,11 +26,6 @@ public:
 	class UObject*                                EventFocus;                                        // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortClientEvent                       ClientEvent;                                       // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying) == 0x000008, "Wrong alignment on Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying");
-static_assert(sizeof(Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying) == 0x000030, "Wrong size on Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying");
-static_assert(offsetof(Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying, EventSource) == 0x000000, "Member 'Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying::EventSource' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying, EventFocus) == 0x000008, "Member 'Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying::EventFocus' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying, ClientEvent) == 0x000010, "Member 'Announce_EventCine_C_HandleClientEvent_CinematicFinishedPlaying::ClientEvent' has a wrong offset!");
 
 // Function Announce_EventCine.Announce_EventCine_C.ExecuteUbergraph_Announce_EventCine
 // 0x0060 (0x0060 - 0x0000)
@@ -50,17 +45,6 @@ public:
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0050(0x0008)(NoDestructor, HasGetValueTypeHash)
 	class UFortMediaInfo*                         CallFunc_SpawnObject_ReturnValue;                  // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine) == 0x000008, "Wrong alignment on Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine");
-static_assert(sizeof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine) == 0x000060, "Wrong size on Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, EntryPoint) == 0x000000, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, Temp_bool_IsClosed_Variable) == 0x000004, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_EventSource) == 0x000008, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_EventSource' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_EventFocus) == 0x000010, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_EventFocus' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_HandleClientEvent_ClientEvent) == 0x000018, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_HandleClientEvent_ClientEvent' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, Temp_bool_Has_Been_Initd_Variable) == 0x000038, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000050, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine, CallFunc_SpawnObject_ReturnValue) == 0x000058, "Member 'Announce_EventCine_C_ExecuteUbergraph_Announce_EventCine::CallFunc_SpawnObject_ReturnValue' has a wrong offset!");
 
 }
 

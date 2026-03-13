@@ -56,35 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LandingPageTile_C">();
+		BP_STATIC_CLASS_IMPL("LandingPageTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LandingPageTile_C")
 	}
 	static class ULandingPageTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULandingPageTile_C>();
 	}
 };
-static_assert(alignof(ULandingPageTile_C) == 0x000008, "Wrong alignment on ULandingPageTile_C");
-static_assert(sizeof(ULandingPageTile_C) == 0x000C18, "Wrong size on ULandingPageTile_C");
-static_assert(offsetof(ULandingPageTile_C, UberGraphFrame) == 0x000B70, "Member 'ULandingPageTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, IntroAndOutro) == 0x000B78, "Member 'ULandingPageTile_C::IntroAndOutro' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, ConfirmSelection) == 0x000B80, "Member 'ULandingPageTile_C::ConfirmSelection' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, GameModeSelection) == 0x000B88, "Member 'ULandingPageTile_C::GameModeSelection' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, CenterTileIcon) == 0x000B90, "Member 'ULandingPageTile_C::CenterTileIcon' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, ConfirmSelectionFlash) == 0x000B98, "Member 'ULandingPageTile_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, ConfirmSelectionShine) == 0x000BA0, "Member 'ULandingPageTile_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, DisabledGray) == 0x000BA8, "Member 'ULandingPageTile_C::DisabledGray' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, SizeBox_Tile) == 0x000BB0, "Member 'ULandingPageTile_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileIconGlow) == 0x000BB8, "Member 'ULandingPageTile_C::TileIconGlow' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileImage) == 0x000BC0, "Member 'ULandingPageTile_C::TileImage' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileImageScaleBox) == 0x000BC8, "Member 'ULandingPageTile_C::TileImageScaleBox' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileName) == 0x000BD0, "Member 'ULandingPageTile_C::TileName' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, UnhoveredVignette) == 0x000BD8, "Member 'ULandingPageTile_C::UnhoveredVignette' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, MyPlaylist) == 0x000BE0, "Member 'ULandingPageTile_C::MyPlaylist' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileNameText) == 0x000BE8, "Member 'ULandingPageTile_C::TileNameText' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileTexture) == 0x000C00, "Member 'ULandingPageTile_C::TileTexture' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, IconTexture) == 0x000C08, "Member 'ULandingPageTile_C::IconTexture' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileHeight) == 0x000C10, "Member 'ULandingPageTile_C::TileHeight' has a wrong offset!");
-static_assert(offsetof(ULandingPageTile_C, TileWidth) == 0x000C14, "Member 'ULandingPageTile_C::TileWidth' has a wrong offset!");
 
 }
 

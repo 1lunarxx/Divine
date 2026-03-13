@@ -74,47 +74,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_GenericDeath_C">();
+		BP_STATIC_CLASS_IMPL("GAB_GenericDeath_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_GenericDeath_C")
 	}
 	static class UGAB_GenericDeath_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_GenericDeath_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericDeath_C) == 0x000008, "Wrong alignment on UGAB_GenericDeath_C");
-static_assert(sizeof(UGAB_GenericDeath_C) == 0x000BC8, "Wrong size on UGAB_GenericDeath_C");
-static_assert(offsetof(UGAB_GenericDeath_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_GenericDeath_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, DeathMontage) == 0x000A38, "Member 'UGAB_GenericDeath_C::DeathMontage' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, DeathMontageSectionName) == 0x000A40, "Member 'UGAB_GenericDeath_C::DeathMontageSectionName' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, DeathHitDirection) == 0x000A48, "Member 'UGAB_GenericDeath_C::DeathHitDirection' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, DeathHitResult) == 0x000A54, "Member 'UGAB_GenericDeath_C::DeathHitResult' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, DamageTags) == 0x000AE0, "Member 'UGAB_GenericDeath_C::DamageTags' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, SpawnDroneTags) == 0x000B00, "Member 'UGAB_GenericDeath_C::SpawnDroneTags' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Front) == 0x000B20, "Member 'UGAB_GenericDeath_C::Front' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Left) == 0x000B28, "Member 'UGAB_GenericDeath_C::Left' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Right) == 0x000B30, "Member 'UGAB_GenericDeath_C::Right' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Back) == 0x000B38, "Member 'UGAB_GenericDeath_C::Back' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_Front) == 0x000B40, "Member 'UGAB_GenericDeath_C::Head_Front' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_Left) == 0x000B48, "Member 'UGAB_GenericDeath_C::Head_Left' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_Right) == 0x000B50, "Member 'UGAB_GenericDeath_C::Head_Right' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_Back) == 0x000B58, "Member 'UGAB_GenericDeath_C::Head_Back' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, FrontSectionNameCount) == 0x000B60, "Member 'UGAB_GenericDeath_C::FrontSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, LeftSectionNameCount) == 0x000B64, "Member 'UGAB_GenericDeath_C::LeftSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, RightSectionNameCount) == 0x000B68, "Member 'UGAB_GenericDeath_C::RightSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, BackSectionNameCount) == 0x000B6C, "Member 'UGAB_GenericDeath_C::BackSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_FrontSectionNameCount) == 0x000B70, "Member 'UGAB_GenericDeath_C::Head_FrontSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_LeftSectionNameCount) == 0x000B74, "Member 'UGAB_GenericDeath_C::Head_LeftSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_RightSectionNameCount) == 0x000B78, "Member 'UGAB_GenericDeath_C::Head_RightSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, Head_BackSectionNameCount) == 0x000B7C, "Member 'UGAB_GenericDeath_C::Head_BackSectionNameCount' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, FrontMontageSectionPrefix) == 0x000B80, "Member 'UGAB_GenericDeath_C::FrontMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, BackMontageSectionPrefix) == 0x000B88, "Member 'UGAB_GenericDeath_C::BackMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, LeftMontageSectionPrefix) == 0x000B90, "Member 'UGAB_GenericDeath_C::LeftMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, RightMontageSectionPrefix) == 0x000B98, "Member 'UGAB_GenericDeath_C::RightMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, HeadFrontMontageSectionPrefix) == 0x000BA0, "Member 'UGAB_GenericDeath_C::HeadFrontMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, HeadBackMontageSectionPrefix) == 0x000BA8, "Member 'UGAB_GenericDeath_C::HeadBackMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, HeadLeftMontageSectionPrefix) == 0x000BB0, "Member 'UGAB_GenericDeath_C::HeadLeftMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, HeadRightMontageSectionPrefix) == 0x000BB8, "Member 'UGAB_GenericDeath_C::HeadRightMontageSectionPrefix' has a wrong offset!");
-static_assert(offsetof(UGAB_GenericDeath_C, TeleportOutCue) == 0x000BC0, "Member 'UGAB_GenericDeath_C::TeleportOutCue' has a wrong offset!");
 
 }
 

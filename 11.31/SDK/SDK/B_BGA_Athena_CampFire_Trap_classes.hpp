@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_BGA_Athena_CampFire_Trap_C">();
+		BP_STATIC_CLASS_IMPL("B_BGA_Athena_CampFire_Trap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_BGA_Athena_CampFire_Trap_C")
 	}
 	static class AB_BGA_Athena_CampFire_Trap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_BGA_Athena_CampFire_Trap_C>();
 	}
 };
-static_assert(alignof(AB_BGA_Athena_CampFire_Trap_C) == 0x000008, "Wrong alignment on AB_BGA_Athena_CampFire_Trap_C");
-static_assert(sizeof(AB_BGA_Athena_CampFire_Trap_C) == 0x000968, "Wrong size on AB_BGA_Athena_CampFire_Trap_C");
-static_assert(offsetof(AB_BGA_Athena_CampFire_Trap_C, UberGraphFrame_B_BGA_Athena_CampFire_Trap_C) == 0x000960, "Member 'AB_BGA_Athena_CampFire_Trap_C::UberGraphFrame_B_BGA_Athena_CampFire_Trap_C' has a wrong offset!");
 
 }
 

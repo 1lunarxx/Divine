@@ -39,23 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventTeamMatchHistoryModal_C">();
+		BP_STATIC_CLASS_IMPL("EventTeamMatchHistoryModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventTeamMatchHistoryModal_C")
 	}
 	static class UEventTeamMatchHistoryModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventTeamMatchHistoryModal_C>();
 	}
 };
-static_assert(alignof(UEventTeamMatchHistoryModal_C) == 0x000008, "Wrong alignment on UEventTeamMatchHistoryModal_C");
-static_assert(sizeof(UEventTeamMatchHistoryModal_C) == 0x0004A0, "Wrong size on UEventTeamMatchHistoryModal_C");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, UberGraphFrame) == 0x000460, "Member 'UEventTeamMatchHistoryModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, Intro) == 0x000468, "Member 'UEventTeamMatchHistoryModal_C::Intro' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, CloseMainPanel) == 0x000470, "Member 'UEventTeamMatchHistoryModal_C::CloseMainPanel' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, EventMatchHistoryTournamentInfo) == 0x000478, "Member 'UEventTeamMatchHistoryModal_C::EventMatchHistoryTournamentInfo' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, SafeZone_0) == 0x000480, "Member 'UEventTeamMatchHistoryModal_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, Switcher_Content) == 0x000488, "Member 'UEventTeamMatchHistoryModal_C::Switcher_Content' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, Text_EventLabel) == 0x000490, "Member 'UEventTeamMatchHistoryModal_C::Text_EventLabel' has a wrong offset!");
-static_assert(offsetof(UEventTeamMatchHistoryModal_C, Text_TeamLabel) == 0x000498, "Member 'UEventTeamMatchHistoryModal_C::Text_TeamLabel' has a wrong offset!");
 
 }
 

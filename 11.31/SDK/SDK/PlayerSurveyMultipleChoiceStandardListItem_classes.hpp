@@ -49,21 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyMultipleChoiceStandardListItem_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyMultipleChoiceStandardListItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyMultipleChoiceStandardListItem_C")
 	}
 	static class UPlayerSurveyMultipleChoiceStandardListItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyMultipleChoiceStandardListItem_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyMultipleChoiceStandardListItem_C) == 0x000008, "Wrong alignment on UPlayerSurveyMultipleChoiceStandardListItem_C");
-static_assert(sizeof(UPlayerSurveyMultipleChoiceStandardListItem_C) == 0x000BB0, "Wrong size on UPlayerSurveyMultipleChoiceStandardListItem_C");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, UberGraphFrame) == 0x000B70, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, CheckBox) == 0x000B78, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::CheckBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, Text_Choice) == 0x000B80, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::Text_Choice' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, Text_Number) == 0x000B88, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::Text_Number' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, ChoiceIndex) == 0x000B90, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::ChoiceIndex' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyMultipleChoiceStandardListItem_C, ChoiceData) == 0x000B98, "Member 'UPlayerSurveyMultipleChoiceStandardListItem_C::ChoiceData' has a wrong offset!");
 
 }
 

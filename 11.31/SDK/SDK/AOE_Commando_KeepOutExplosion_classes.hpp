@@ -42,23 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AOE_Commando_KeepOutExplosion_C">();
+		BP_STATIC_CLASS_IMPL("AOE_Commando_KeepOutExplosion_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AOE_Commando_KeepOutExplosion_C")
 	}
 	static class AAOE_Commando_KeepOutExplosion_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAOE_Commando_KeepOutExplosion_C>();
 	}
 };
-static_assert(alignof(AAOE_Commando_KeepOutExplosion_C) == 0x000008, "Wrong alignment on AAOE_Commando_KeepOutExplosion_C");
-static_assert(sizeof(AAOE_Commando_KeepOutExplosion_C) == 0x0008B0, "Wrong size on AAOE_Commando_KeepOutExplosion_C");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, UberGraphFrame) == 0x000588, "Member 'AAOE_Commando_KeepOutExplosion_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, AOE_Audio_Effect) == 0x000590, "Member 'AAOE_Commando_KeepOutExplosion_C::AOE_Audio_Effect' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, P_Grenade_Linger) == 0x000598, "Member 'AAOE_Commando_KeepOutExplosion_C::P_Grenade_Linger' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, DamageArea) == 0x0005A0, "Member 'AAOE_Commando_KeepOutExplosion_C::DamageArea' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, DefaultSceneRoot) == 0x0005A8, "Member 'AAOE_Commando_KeepOutExplosion_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, Radius) == 0x0005B0, "Member 'AAOE_Commando_KeepOutExplosion_C::Radius' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, AOE_Sound_Attenuation_Based_On_Radius) == 0x0005B8, "Member 'AAOE_Commando_KeepOutExplosion_C::AOE_Sound_Attenuation_Based_On_Radius' has a wrong offset!");
-static_assert(offsetof(AAOE_Commando_KeepOutExplosion_C, AOE_Electric_Sound) == 0x0008A8, "Member 'AAOE_Commando_KeepOutExplosion_C::AOE_Electric_Sound' has a wrong offset!");
 
 }
 

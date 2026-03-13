@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TracerGeneric_C">();
+		BP_STATIC_CLASS_IMPL("TracerGeneric_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TracerGeneric_C")
 	}
 	static class ATracerGeneric_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATracerGeneric_C>();
 	}
 };
-static_assert(alignof(ATracerGeneric_C) == 0x000008, "Wrong alignment on ATracerGeneric_C");
-static_assert(sizeof(ATracerGeneric_C) == 0x0002B0, "Wrong size on ATracerGeneric_C");
 
 }
 

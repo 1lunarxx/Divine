@@ -23,15 +23,17 @@ class UItemShopSectionTab_C final : public UAthenaItemShopSectionTab
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemShopSectionTab_C">();
+		BP_STATIC_CLASS_IMPL("ItemShopSectionTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemShopSectionTab_C")
 	}
 	static class UItemShopSectionTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemShopSectionTab_C>();
 	}
 };
-static_assert(alignof(UItemShopSectionTab_C) == 0x000008, "Wrong alignment on UItemShopSectionTab_C");
-static_assert(sizeof(UItemShopSectionTab_C) == 0x000B88, "Wrong size on UItemShopSectionTab_C");
 
 }
 

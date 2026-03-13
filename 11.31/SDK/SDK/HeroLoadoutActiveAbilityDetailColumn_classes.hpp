@@ -47,22 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroLoadoutActiveAbilityDetailColumn_C">();
+		BP_STATIC_CLASS_IMPL("HeroLoadoutActiveAbilityDetailColumn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroLoadoutActiveAbilityDetailColumn_C")
 	}
 	static class UHeroLoadoutActiveAbilityDetailColumn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroLoadoutActiveAbilityDetailColumn_C>();
 	}
 };
-static_assert(alignof(UHeroLoadoutActiveAbilityDetailColumn_C) == 0x000008, "Wrong alignment on UHeroLoadoutActiveAbilityDetailColumn_C");
-static_assert(sizeof(UHeroLoadoutActiveAbilityDetailColumn_C) == 0x000290, "Wrong size on UHeroLoadoutActiveAbilityDetailColumn_C");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, UberGraphFrame) == 0x000258, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, ImageLockPerk) == 0x000260, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, ImagePerkIcon) == 0x000268, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, PerkIconSizeBox) == 0x000270, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::PerkIconSizeBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, Icon_Size) == 0x000278, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::Icon_Size' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, Host_Hero) == 0x000280, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::Host_Hero' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailColumn_C, AbilityKit) == 0x000288, "Member 'UHeroLoadoutActiveAbilityDetailColumn_C::AbilityKit' has a wrong offset!");
 
 }
 

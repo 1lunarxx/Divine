@@ -23,15 +23,17 @@ class UAthena_PlayerCameraModeSkydiveParachute_C final : public UAthena_PlayerCa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeSkydiveParachute_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeSkydiveParachute_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeSkydiveParachute_C")
 	}
 	static class UAthena_PlayerCameraModeSkydiveParachute_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeSkydiveParachute_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeSkydiveParachute_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeSkydiveParachute_C");
-static_assert(sizeof(UAthena_PlayerCameraModeSkydiveParachute_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraModeSkydiveParachute_C");
 
 }
 

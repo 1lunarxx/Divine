@@ -23,15 +23,17 @@ class UButtonStyle_Radial_C final : public UButtonStyle_MediumTransparentNoCues_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle_Radial_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle_Radial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle_Radial_C")
 	}
 	static class UButtonStyle_Radial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Radial_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Radial_C) == 0x000008, "Wrong alignment on UButtonStyle_Radial_C");
-static_assert(sizeof(UButtonStyle_Radial_C) == 0x000570, "Wrong size on UButtonStyle_Radial_C");
 
 }
 

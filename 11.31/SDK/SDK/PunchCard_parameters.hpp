@@ -23,9 +23,6 @@ struct PunchCard_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PunchCard_C_PreConstruct) == 0x000001, "Wrong alignment on PunchCard_C_PreConstruct");
-static_assert(sizeof(PunchCard_C_PreConstruct) == 0x000001, "Wrong size on PunchCard_C_PreConstruct");
-static_assert(offsetof(PunchCard_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PunchCard_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PunchCard.PunchCard_C.FinishedPlacingMedals
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,6 @@ struct PunchCard_C_FinishedPlacingMedals final
 public:
 	bool                                          bPlayOutro;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PunchCard_C_FinishedPlacingMedals) == 0x000001, "Wrong alignment on PunchCard_C_FinishedPlacingMedals");
-static_assert(sizeof(PunchCard_C_FinishedPlacingMedals) == 0x000001, "Wrong size on PunchCard_C_FinishedPlacingMedals");
-static_assert(offsetof(PunchCard_C_FinishedPlacingMedals, bPlayOutro) == 0x000000, "Member 'PunchCard_C_FinishedPlacingMedals::bPlayOutro' has a wrong offset!");
 
 // Function PunchCard.PunchCard_C.UpdateCardCompleted
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +39,6 @@ struct PunchCard_C_UpdateCardCompleted final
 public:
 	bool                                          bCompleted;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PunchCard_C_UpdateCardCompleted) == 0x000001, "Wrong alignment on PunchCard_C_UpdateCardCompleted");
-static_assert(sizeof(PunchCard_C_UpdateCardCompleted) == 0x000001, "Wrong size on PunchCard_C_UpdateCardCompleted");
-static_assert(offsetof(PunchCard_C_UpdateCardCompleted, bCompleted) == 0x000000, "Member 'PunchCard_C_UpdateCardCompleted::bCompleted' has a wrong offset!");
 
 // Function PunchCard.PunchCard_C.SetSuperStyle
 // 0x0001 (0x0001 - 0x0000)
@@ -56,9 +47,6 @@ struct PunchCard_C_SetSuperStyle final
 public:
 	bool                                          isSuper_0;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PunchCard_C_SetSuperStyle) == 0x000001, "Wrong alignment on PunchCard_C_SetSuperStyle");
-static_assert(sizeof(PunchCard_C_SetSuperStyle) == 0x000001, "Wrong size on PunchCard_C_SetSuperStyle");
-static_assert(offsetof(PunchCard_C_SetSuperStyle, isSuper_0) == 0x000000, "Member 'PunchCard_C_SetSuperStyle::isSuper_0' has a wrong offset!");
 
 // Function PunchCard.PunchCard_C.ExecuteUbergraph_PunchCard
 // 0x00D8 (0x00D8 - 0x0000)
@@ -121,55 +109,6 @@ public:
 	int32                                         Temp_int_Variable_8;                               // 0x00CC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default_7;                           // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PunchCard_C_ExecuteUbergraph_PunchCard) == 0x000008, "Wrong alignment on PunchCard_C_ExecuteUbergraph_PunchCard");
-static_assert(sizeof(PunchCard_C_ExecuteUbergraph_PunchCard) == 0x0000D8, "Wrong size on PunchCard_C_ExecuteUbergraph_PunchCard");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, EntryPoint) == 0x000000, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable) == 0x000004, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_1) == 0x000008, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_2) == 0x00000C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_3) == 0x000010, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_4) == 0x000014, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable) == 0x000018, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_1) == 0x00001C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_2) == 0x000020, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_5) == 0x000024, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable) == 0x000028, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_1) == 0x000029, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_2) == 0x00002A, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_6) == 0x00002C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_3) == 0x000030, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_4) == 0x000034, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_4' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_5) == 0x000038, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_5' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_CreateDelegate_OutputDelegate) == 0x00003C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_7) == 0x00004C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_CreateDelegate_OutputDelegate_1) == 0x000050, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_3) == 0x000060, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_4) == 0x000061, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_5) == 0x000062, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_bool_Variable) == 0x000063, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_class_Variable) == 0x000068, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_class_Variable_1) == 0x000070, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_bool_Variable_1) == 0x000078, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_6) == 0x00007C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_6' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_float_Variable_7) == 0x000080, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_float_Variable_7' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Event_IsDesignTime) == 0x000084, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default) == 0x000088, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_1) == 0x00008C, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_2) == 0x000090, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_3) == 0x000094, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_4) == 0x000098, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_6) == 0x000099, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_7) == 0x00009A, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_byte_Variable_8) == 0x00009B, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_byte_Variable_8' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, CallFunc_PlayAnimation_ReturnValue) == 0x0000A0, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Event_bPlayOutro) == 0x0000A8, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Event_bPlayOutro' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, CallFunc_PlayAnimation_ReturnValue_1) == 0x0000B0, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Event_bCompleted) == 0x0000B8, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Event_bCompleted' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_CustomEvent_isSuper) == 0x0000B9, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_CustomEvent_isSuper' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_5) == 0x0000C0, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_6) == 0x0000C8, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, Temp_int_Variable_8) == 0x0000CC, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::Temp_int_Variable_8' has a wrong offset!");
-static_assert(offsetof(PunchCard_C_ExecuteUbergraph_PunchCard, K2Node_Select_Default_7) == 0x0000D0, "Member 'PunchCard_C_ExecuteUbergraph_PunchCard::K2Node_Select_Default_7' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UAthena_PlayerCameraModeTargetingScope_C final : public UAthena_PlayerCame
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeTargetingScope_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeTargetingScope_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeTargetingScope_C")
 	}
 	static class UAthena_PlayerCameraModeTargetingScope_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeTargetingScope_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeTargetingScope_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeTargetingScope_C");
-static_assert(sizeof(UAthena_PlayerCameraModeTargetingScope_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraModeTargetingScope_C");
 
 }
 

@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Ceiling_NoWeaponZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Ceiling_NoWeaponZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Ceiling_NoWeaponZone_C")
 	}
 	static class ADevice_Ceiling_NoWeaponZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Ceiling_NoWeaponZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Ceiling_NoWeaponZone_C) == 0x000008, "Wrong alignment on ADevice_Ceiling_NoWeaponZone_C");
-static_assert(sizeof(ADevice_Ceiling_NoWeaponZone_C) == 0x000DD8, "Wrong size on ADevice_Ceiling_NoWeaponZone_C");
 
 }
 

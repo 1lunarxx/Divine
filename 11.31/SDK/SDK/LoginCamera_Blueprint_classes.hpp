@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginCamera_Blueprint_C">();
+		BP_STATIC_CLASS_IMPL("LoginCamera_Blueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginCamera_Blueprint_C")
 	}
 	static class ALoginCamera_Blueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALoginCamera_Blueprint_C>();
 	}
 };
-static_assert(alignof(ALoginCamera_Blueprint_C) == 0x000010, "Wrong alignment on ALoginCamera_Blueprint_C");
-static_assert(sizeof(ALoginCamera_Blueprint_C) == 0x0007E0, "Wrong size on ALoginCamera_Blueprint_C");
-static_assert(offsetof(ALoginCamera_Blueprint_C, UberGraphFrame) == 0x0007C0, "Member 'ALoginCamera_Blueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ALoginCamera_Blueprint_C, StaticMesh) == 0x0007C8, "Member 'ALoginCamera_Blueprint_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ALoginCamera_Blueprint_C, LoginCamera_0) == 0x0007D0, "Member 'ALoginCamera_Blueprint_C::LoginCamera_0' has a wrong offset!");
 
 }
 

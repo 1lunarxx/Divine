@@ -23,15 +23,17 @@ class UPlayerTrapBaseDamageModCalculation_C final : public UPlayerTrapBonusModMa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapBaseDamageModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapBaseDamageModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapBaseDamageModCalculation_C")
 	}
 	static class UPlayerTrapBaseDamageModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapBaseDamageModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapBaseDamageModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapBaseDamageModCalculation_C");
-static_assert(sizeof(UPlayerTrapBaseDamageModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapBaseDamageModCalculation_C");
 
 }
 

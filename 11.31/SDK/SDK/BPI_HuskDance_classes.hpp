@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BPI_HuskDance.BPI_HuskDance_C
-// 0x0000 (0x0028 - 0x0028)
-class IBPI_HuskDance_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IBPI_HuskDance_C final
 {
 public:
 	void OnBeginDance();
@@ -27,15 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BPI_HuskDance_C">();
+		BP_STATIC_CLASS_IMPL("BPI_HuskDance_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BPI_HuskDance_C")
 	}
 	static class IBPI_HuskDance_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IBPI_HuskDance_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IBPI_HuskDance_C) == 0x000008, "Wrong alignment on IBPI_HuskDance_C");
-static_assert(sizeof(IBPI_HuskDance_C) == 0x000028, "Wrong size on IBPI_HuskDance_C");
 
 }
 

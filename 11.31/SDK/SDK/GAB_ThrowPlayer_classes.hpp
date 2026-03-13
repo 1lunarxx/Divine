@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_ThrowPlayer_C">();
+		BP_STATIC_CLASS_IMPL("GAB_ThrowPlayer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_ThrowPlayer_C")
 	}
 	static class UGAB_ThrowPlayer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_ThrowPlayer_C>();
 	}
 };
-static_assert(alignof(UGAB_ThrowPlayer_C) == 0x000008, "Wrong alignment on UGAB_ThrowPlayer_C");
-static_assert(sizeof(UGAB_ThrowPlayer_C) == 0x000A68, "Wrong size on UGAB_ThrowPlayer_C");
-static_assert(offsetof(UGAB_ThrowPlayer_C, UberGraphFrame) == 0x000A58, "Member 'UGAB_ThrowPlayer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_ThrowPlayer_C, PlayerPawn) == 0x000A60, "Member 'UGAB_ThrowPlayer_C::PlayerPawn' has a wrong offset!");
 
 }
 

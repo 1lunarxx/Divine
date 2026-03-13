@@ -57,39 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanelView_UserLists_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanelView_UserLists_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanelView_UserLists_C")
 	}
 	static class USocialPanelView_UserLists_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanelView_UserLists_C>();
 	}
 };
-static_assert(alignof(USocialPanelView_UserLists_C) == 0x000008, "Wrong alignment on USocialPanelView_UserLists_C");
-static_assert(sizeof(USocialPanelView_UserLists_C) == 0x0004E8, "Wrong size on USocialPanelView_UserLists_C");
-static_assert(offsetof(USocialPanelView_UserLists_C, UberGraphFrame) == 0x000428, "Member 'USocialPanelView_UserLists_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, WeGameButtonHovered) == 0x000430, "Member 'USocialPanelView_UserLists_C::WeGameButtonHovered' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, SwitcherTransition) == 0x000438, "Member 'USocialPanelView_UserLists_C::SwitcherTransition' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, NoFriendsArrowBounce) == 0x000440, "Member 'USocialPanelView_UserLists_C::NoFriendsArrowBounce' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, MenuAnchorItemOpen) == 0x000448, "Member 'USocialPanelView_UserLists_C::MenuAnchorItemOpen' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Open_0) == 0x000450, "Member 'USocialPanelView_UserLists_C::Open_0' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Open) == 0x000458, "Member 'USocialPanelView_UserLists_C::Open' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, bckgrnd) == 0x000460, "Member 'USocialPanelView_UserLists_C::bckgrnd' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, CommonRichTextBlock_97) == 0x000468, "Member 'USocialPanelView_UserLists_C::CommonRichTextBlock_97' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, FortMobileImage_127) == 0x000470, "Member 'USocialPanelView_UserLists_C::FortMobileImage_127' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_MicDisabled) == 0x000478, "Member 'USocialPanelView_UserLists_C::Image_MicDisabled' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_MicIcon) == 0x000480, "Member 'USocialPanelView_UserLists_C::Image_MicIcon' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_MicIcon_1) == 0x000488, "Member 'USocialPanelView_UserLists_C::Image_MicIcon_1' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_MicIcon_2) == 0x000490, "Member 'USocialPanelView_UserLists_C::Image_MicIcon_2' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_MicIcon_3) == 0x000498, "Member 'USocialPanelView_UserLists_C::Image_MicIcon_3' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Image_TitleIcon) == 0x0004A0, "Member 'USocialPanelView_UserLists_C::Image_TitleIcon' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, RichText_LeavePlatformPartyTitle) == 0x0004A8, "Member 'USocialPanelView_UserLists_C::RichText_LeavePlatformPartyTitle' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, RichText_VoiceChatDisabled) == 0x0004B0, "Member 'USocialPanelView_UserLists_C::RichText_VoiceChatDisabled' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, RichText_VoiceChatDisabledHeader) == 0x0004B8, "Member 'USocialPanelView_UserLists_C::RichText_VoiceChatDisabledHeader' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, RichText_VoiceChatDisabledWarningMessage) == 0x0004C0, "Member 'USocialPanelView_UserLists_C::RichText_VoiceChatDisabledWarningMessage' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, RichTextBlock_0) == 0x0004C8, "Member 'USocialPanelView_UserLists_C::RichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, SocialPanel_FriendLinkButton) == 0x0004D0, "Member 'USocialPanelView_UserLists_C::SocialPanel_FriendLinkButton' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, Text_LowPowerMode) == 0x0004D8, "Member 'USocialPanelView_UserLists_C::Text_LowPowerMode' has a wrong offset!");
-static_assert(offsetof(USocialPanelView_UserLists_C, VoiceChannelSettings) == 0x0004E0, "Member 'USocialPanelView_UserLists_C::VoiceChannelSettings' has a wrong offset!");
 
 }
 

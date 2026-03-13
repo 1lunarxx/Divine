@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"windowchromebuttons_C">();
+		BP_STATIC_CLASS_IMPL("windowchromebuttons_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"windowchromebuttons_C")
 	}
 	static class Uwindowchromebuttons_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uwindowchromebuttons_C>();
 	}
 };
-static_assert(alignof(Uwindowchromebuttons_C) == 0x000008, "Wrong alignment on Uwindowchromebuttons_C");
-static_assert(sizeof(Uwindowchromebuttons_C) == 0x000278, "Wrong size on Uwindowchromebuttons_C");
-static_assert(offsetof(Uwindowchromebuttons_C, UberGraphFrame) == 0x000258, "Member 'Uwindowchromebuttons_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(Uwindowchromebuttons_C, FadeOut) == 0x000260, "Member 'Uwindowchromebuttons_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(Uwindowchromebuttons_C, FadeIn) == 0x000268, "Member 'Uwindowchromebuttons_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(Uwindowchromebuttons_C, WindowTitleBarArea_107) == 0x000270, "Member 'Uwindowchromebuttons_C::WindowTitleBarArea_107' has a wrong offset!");
 
 }
 

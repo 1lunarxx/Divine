@@ -30,10 +30,6 @@ public:
 	class FName                                   Tab;                                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_SelectTabByID_ReturnValue;                // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_RequestTab) == 0x000004, "Wrong alignment on OptionsMenu_C_RequestTab");
-static_assert(sizeof(OptionsMenu_C_RequestTab) == 0x00000C, "Wrong size on OptionsMenu_C_RequestTab");
-static_assert(offsetof(OptionsMenu_C_RequestTab, Tab) == 0x000000, "Member 'OptionsMenu_C_RequestTab::Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_RequestTab, CallFunc_SelectTabByID_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_RequestTab::CallFunc_SelectTabByID_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.CreateMobileBackButton
 // 0x0005 (0x0005 - 0x0000)
@@ -46,13 +42,6 @@ public:
 	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_CreateMobileBackButton) == 0x000001, "Wrong alignment on OptionsMenu_C_CreateMobileBackButton");
-static_assert(sizeof(OptionsMenu_C_CreateMobileBackButton) == 0x000005, "Wrong size on OptionsMenu_C_CreateMobileBackButton");
-static_assert(offsetof(OptionsMenu_C_CreateMobileBackButton, Temp_bool_Variable) == 0x000000, "Member 'OptionsMenu_C_CreateMobileBackButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateMobileBackButton, Temp_byte_Variable) == 0x000001, "Member 'OptionsMenu_C_CreateMobileBackButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateMobileBackButton, Temp_byte_Variable_1) == 0x000002, "Member 'OptionsMenu_C_CreateMobileBackButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateMobileBackButton, CallFunc_IsMobileGame_ReturnValue) == 0x000003, "Member 'OptionsMenu_C_CreateMobileBackButton::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CreateMobileBackButton, K2Node_Select_Default) == 0x000004, "Member 'OptionsMenu_C_CreateMobileBackButton::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.NotifyTabsOfActivationState
 // 0x0028 (0x0028 - 0x0000)
@@ -68,16 +57,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_ObjectObject_ReturnValue;        // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_NotifyTabsOfActivationState) == 0x000008, "Wrong alignment on OptionsMenu_C_NotifyTabsOfActivationState");
-static_assert(sizeof(OptionsMenu_C_NotifyTabsOfActivationState) == 0x000028, "Wrong size on OptionsMenu_C_NotifyTabsOfActivationState");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, ActivatedTab) == 0x000000, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::ActivatedTab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, Temp_int_Array_Index_Variable) == 0x000008, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, Temp_int_Loop_Counter_Variable) == 0x00000C, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, CallFunc_Add_IntInt_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, CallFunc_Array_Length_ReturnValue) == 0x000014, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, CallFunc_Array_Get_Item) == 0x000018, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, CallFunc_Less_IntInt_ReturnValue) == 0x000020, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_NotifyTabsOfActivationState, CallFunc_NotEqual_ObjectObject_ReturnValue) == 0x000021, "Member 'OptionsMenu_C_NotifyTabsOfActivationState::CallFunc_NotEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleResetAvailableActionHandlerStates
 // 0x0004 (0x0004 - 0x0000)
@@ -89,12 +68,6 @@ public:
 	EInputActionState                             Temp_byte_Variable_1;                              // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_HandleResetAvailableActionHandlerStates) == 0x000001, "Wrong alignment on OptionsMenu_C_HandleResetAvailableActionHandlerStates");
-static_assert(sizeof(OptionsMenu_C_HandleResetAvailableActionHandlerStates) == 0x000004, "Wrong size on OptionsMenu_C_HandleResetAvailableActionHandlerStates");
-static_assert(offsetof(OptionsMenu_C_HandleResetAvailableActionHandlerStates, Temp_bool_Variable) == 0x000000, "Member 'OptionsMenu_C_HandleResetAvailableActionHandlerStates::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetAvailableActionHandlerStates, Temp_byte_Variable) == 0x000001, "Member 'OptionsMenu_C_HandleResetAvailableActionHandlerStates::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetAvailableActionHandlerStates, Temp_byte_Variable_1) == 0x000002, "Member 'OptionsMenu_C_HandleResetAvailableActionHandlerStates::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetAvailableActionHandlerStates, K2Node_Select_Default) == 0x000003, "Member 'OptionsMenu_C_HandleResetAvailableActionHandlerStates::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Update Header Text by Tab ID
 // 0x0010 (0x0010 - 0x0000)
@@ -105,11 +78,6 @@ public:
 	int32                                         CallFunc_Array_Find_ReturnValue;                   // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Update_Header_Text_by_Tab_ID) == 0x000004, "Wrong alignment on OptionsMenu_C_Update_Header_Text_by_Tab_ID");
-static_assert(sizeof(OptionsMenu_C_Update_Header_Text_by_Tab_ID) == 0x000010, "Wrong size on OptionsMenu_C_Update_Header_Text_by_Tab_ID");
-static_assert(offsetof(OptionsMenu_C_Update_Header_Text_by_Tab_ID, TabId) == 0x000000, "Member 'OptionsMenu_C_Update_Header_Text_by_Tab_ID::TabId' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Update_Header_Text_by_Tab_ID, CallFunc_Array_Find_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_Update_Header_Text_by_Tab_ID::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Update_Header_Text_by_Tab_ID, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00000C, "Member 'OptionsMenu_C_Update_Header_Text_by_Tab_ID::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DoResetKBMToDefault
 // 0x0004 (0x0004 - 0x0000)
@@ -118,9 +86,6 @@ struct OptionsMenu_C_DoResetKBMToDefault final
 public:
 	int32                                         Preset_To_Set;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DoResetKBMToDefault) == 0x000004, "Wrong alignment on OptionsMenu_C_DoResetKBMToDefault");
-static_assert(sizeof(OptionsMenu_C_DoResetKBMToDefault) == 0x000004, "Wrong size on OptionsMenu_C_DoResetKBMToDefault");
-static_assert(offsetof(OptionsMenu_C_DoResetKBMToDefault, Preset_To_Set) == 0x000000, "Member 'OptionsMenu_C_DoResetKBMToDefault::Preset_To_Set' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.UpdateAllOptionsTabs
 // 0x0020 (0x0020 - 0x0000)
@@ -134,14 +99,6 @@ public:
 	class UFortOptionsTab*                        CallFunc_Array_Get_Item;                           // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_UpdateAllOptionsTabs) == 0x000008, "Wrong alignment on OptionsMenu_C_UpdateAllOptionsTabs");
-static_assert(sizeof(OptionsMenu_C_UpdateAllOptionsTabs) == 0x000020, "Wrong size on OptionsMenu_C_UpdateAllOptionsTabs");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, Temp_int_Array_Index_Variable) == 0x000000, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, CallFunc_Array_Length_ReturnValue) == 0x00000C, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, CallFunc_Array_Get_Item) == 0x000010, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateAllOptionsTabs, CallFunc_Less_IntInt_ReturnValue) == 0x000018, "Member 'OptionsMenu_C_UpdateAllOptionsTabs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.UpdateBasedOnActiveWidget
 // 0x0080 (0x0080 - 0x0000)
@@ -172,25 +129,6 @@ public:
 	bool                                          CallFunc_ClassIsChildOf_ReturnValue_1;             // 0x0079(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ClassIsChildOf_ReturnValue_2;             // 0x007A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_UpdateBasedOnActiveWidget) == 0x000008, "Wrong alignment on OptionsMenu_C_UpdateBasedOnActiveWidget");
-static_assert(sizeof(OptionsMenu_C_UpdateBasedOnActiveWidget) == 0x000080, "Wrong size on OptionsMenu_C_UpdateBasedOnActiveWidget");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, ActiveWidget) == 0x000000, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, ShouldCenterOnTab) == 0x000008, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::ShouldCenterOnTab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_AsTab_Account) == 0x000010, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_AsTab_Account' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_AsFort_Options_Tab) == 0x000020, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_AsFort_Options_Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_AsTab_Input_Options) == 0x000040, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_AsTab_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_bSuccess_2) == 0x000048, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_AsTab_Game_Options) == 0x000050, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_AsTab_Game_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, K2Node_DynamicCast_bSuccess_3) == 0x000058, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_GetObjectClass_ReturnValue) == 0x000060, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_GetObjectClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_GetObjectClass_ReturnValue_1) == 0x000068, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_GetObjectClass_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_GetObjectClass_ReturnValue_2) == 0x000070, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_GetObjectClass_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_ClassIsChildOf_ReturnValue) == 0x000078, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_ClassIsChildOf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_ClassIsChildOf_ReturnValue_1) == 0x000079, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_ClassIsChildOf_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_UpdateBasedOnActiveWidget, CallFunc_ClassIsChildOf_ReturnValue_2) == 0x00007A, "Member 'OptionsMenu_C_UpdateBasedOnActiveWidget::CallFunc_ClassIsChildOf_ReturnValue_2' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.ApplySettings
 // 0x0018 (0x0018 - 0x0000)
@@ -201,11 +139,6 @@ public:
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonInputManager*                    CallFunc_GetInputManager_ReturnValue;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_ApplySettings) == 0x000008, "Wrong alignment on OptionsMenu_C_ApplySettings");
-static_assert(sizeof(OptionsMenu_C_ApplySettings) == 0x000018, "Wrong size on OptionsMenu_C_ApplySettings");
-static_assert(offsetof(OptionsMenu_C_ApplySettings, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'OptionsMenu_C_ApplySettings::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ApplySettings, CallFunc_AddChild_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_ApplySettings::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ApplySettings, CallFunc_GetInputManager_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_ApplySettings::CallFunc_GetInputManager_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DoResetGameOptionsToDefault
 // 0x0008 (0x0008 - 0x0000)
@@ -214,9 +147,6 @@ struct OptionsMenu_C_DoResetGameOptionsToDefault final
 public:
 	class UFortOptionsTab*                        Tab_To_Reset;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DoResetGameOptionsToDefault) == 0x000008, "Wrong alignment on OptionsMenu_C_DoResetGameOptionsToDefault");
-static_assert(sizeof(OptionsMenu_C_DoResetGameOptionsToDefault) == 0x000008, "Wrong size on OptionsMenu_C_DoResetGameOptionsToDefault");
-static_assert(offsetof(OptionsMenu_C_DoResetGameOptionsToDefault, Tab_To_Reset) == 0x000000, "Member 'OptionsMenu_C_DoResetGameOptionsToDefault::Tab_To_Reset' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleTabGamepadConfigActionHandlerStates
 // 0x0028 (0x0028 - 0x0000)
@@ -234,16 +164,6 @@ public:
 	class UTabGamePadConfig_v3_C*                 K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3;      // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates) == 0x000008, "Wrong alignment on OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates");
-static_assert(sizeof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates) == 0x000028, "Wrong size on OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, Temp_bool_Variable) == 0x000000, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, Temp_byte_Variable) == 0x000001, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, Temp_byte_Variable_1) == 0x000002, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000004, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, K2Node_Select_Default) == 0x000008, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3) == 0x000018, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'OptionsMenu_C_HandleTabGamepadConfigActionHandlerStates::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleResetUnavailableActionHandlerStates
 // 0x0006 (0x0006 - 0x0000)
@@ -257,14 +177,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates) == 0x000001, "Wrong alignment on OptionsMenu_C_HandleResetUnavailableActionHandlerStates");
-static_assert(sizeof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates) == 0x000006, "Wrong size on OptionsMenu_C_HandleResetUnavailableActionHandlerStates");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, ShouldShowApply) == 0x000000, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::ShouldShowApply' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, Temp_bool_Variable) == 0x000001, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, Temp_byte_Variable) == 0x000002, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, Temp_byte_Variable_1) == 0x000003, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, CallFunc_BooleanAND_ReturnValue) == 0x000004, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleResetUnavailableActionHandlerStates, K2Node_Select_Default) == 0x000005, "Member 'OptionsMenu_C_HandleResetUnavailableActionHandlerStates::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleTabInputOptionsActionHandlerStates
 // 0x0008 (0x0008 - 0x0000)
@@ -273,9 +185,6 @@ struct OptionsMenu_C_HandleTabInputOptionsActionHandlerStates final
 public:
 	class UTabInputOptions_C*                     TabInputOptionsActor;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_HandleTabInputOptionsActionHandlerStates) == 0x000008, "Wrong alignment on OptionsMenu_C_HandleTabInputOptionsActionHandlerStates");
-static_assert(sizeof(OptionsMenu_C_HandleTabInputOptionsActionHandlerStates) == 0x000008, "Wrong size on OptionsMenu_C_HandleTabInputOptionsActionHandlerStates");
-static_assert(offsetof(OptionsMenu_C_HandleTabInputOptionsActionHandlerStates, TabInputOptionsActor) == 0x000000, "Member 'OptionsMenu_C_HandleTabInputOptionsActionHandlerStates::TabInputOptionsActor' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleTabGameOptionsActionHandlerStates
 // 0x0018 (0x0018 - 0x0000)
@@ -292,17 +201,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EInputActionState                             K2Node_Select_Default;                             // 0x0012(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates) == 0x000008, "Wrong alignment on OptionsMenu_C_HandleTabGameOptionsActionHandlerStates");
-static_assert(sizeof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates) == 0x000018, "Wrong size on OptionsMenu_C_HandleTabGameOptionsActionHandlerStates");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, Active_Widget_Index) == 0x000000, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::Active_Widget_Index' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, Temp_bool_Variable) == 0x000004, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000005, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, Temp_byte_Variable) == 0x000006, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, Temp_byte_Variable_1) == 0x000007, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, CallFunc_IsInZone_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, CallFunc_BooleanOR_ReturnValue) == 0x000011, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_HandleTabGameOptionsActionHandlerStates, K2Node_Select_Default) == 0x000012, "Member 'OptionsMenu_C_HandleTabGameOptionsActionHandlerStates::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.CenterOnActiveTab
 // 0x0020 (0x0020 - 0x0000)
@@ -315,12 +213,6 @@ public:
 	class UFortOptionsTab*                        K2Node_DynamicCast_AsFort_Options_Tab;             // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_CenterOnActiveTab) == 0x000008, "Wrong alignment on OptionsMenu_C_CenterOnActiveTab");
-static_assert(sizeof(OptionsMenu_C_CenterOnActiveTab) == 0x000020, "Wrong size on OptionsMenu_C_CenterOnActiveTab");
-static_assert(offsetof(OptionsMenu_C_CenterOnActiveTab, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000000, "Member 'OptionsMenu_C_CenterOnActiveTab::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CenterOnActiveTab, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_CenterOnActiveTab::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CenterOnActiveTab, K2Node_DynamicCast_AsFort_Options_Tab) == 0x000010, "Member 'OptionsMenu_C_CenterOnActiveTab::K2Node_DynamicCast_AsFort_Options_Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_CenterOnActiveTab, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'OptionsMenu_C_CenterOnActiveTab::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.SetBackground
 // 0x0020 (0x0020 - 0x0000)
@@ -339,18 +231,6 @@ public:
 	bool                                          CallFunc_IsMobileGame_ReturnValue;                 // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_SetBackground) == 0x000008, "Wrong alignment on OptionsMenu_C_SetBackground");
-static_assert(sizeof(OptionsMenu_C_SetBackground) == 0x000020, "Wrong size on OptionsMenu_C_SetBackground");
-static_assert(offsetof(OptionsMenu_C_SetBackground, Temp_bool_Variable) == 0x000000, "Member 'OptionsMenu_C_SetBackground::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, Temp_byte_Variable) == 0x000001, "Member 'OptionsMenu_C_SetBackground::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, Temp_byte_Variable_1) == 0x000002, "Member 'OptionsMenu_C_SetBackground::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OptionsMenu_C_SetBackground::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_GetContext_ReturnValue_1) == 0x000010, "Member 'OptionsMenu_C_SetBackground::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_IsInZone_ReturnValue) == 0x000018, "Member 'OptionsMenu_C_SetBackground::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_GetSubGame_ReturnValue) == 0x000019, "Member 'OptionsMenu_C_SetBackground::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00001A, "Member 'OptionsMenu_C_SetBackground::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, CallFunc_IsMobileGame_ReturnValue) == 0x00001B, "Member 'OptionsMenu_C_SetBackground::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_SetBackground, K2Node_Select_Default) == 0x00001C, "Member 'OptionsMenu_C_SetBackground::K2Node_Select_Default' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.AddTabs
 // 0x0180 (0x0180 - 0x0000)
@@ -373,21 +253,6 @@ public:
 	int32                                         CallFunc_Array_Add_ReturnValue_2;                  // 0x0174(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPanelSlot*                             CallFunc_AddChild_ReturnValue;                     // 0x0178(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_AddTabs) == 0x000008, "Wrong alignment on OptionsMenu_C_AddTabs");
-static_assert(sizeof(OptionsMenu_C_AddTabs) == 0x000180, "Wrong size on OptionsMenu_C_AddTabs");
-static_assert(offsetof(OptionsMenu_C_AddTabs, WidgetClass) == 0x000000, "Member 'OptionsMenu_C_AddTabs::WidgetClass' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, DisplayName) == 0x000008, "Member 'OptionsMenu_C_AddTabs::DisplayName' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, NameId) == 0x000020, "Member 'OptionsMenu_C_AddTabs::NameId' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, Icon) == 0x000028, "Member 'OptionsMenu_C_AddTabs::Icon' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, Tab_Type) == 0x0000B0, "Member 'OptionsMenu_C_AddTabs::Tab_Type' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, K2Node_MakeStruct_FortTabButtonLabelInfo) == 0x0000B8, "Member 'OptionsMenu_C_AddTabs::K2Node_MakeStruct_FortTabButtonLabelInfo' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_Array_Add_ReturnValue) == 0x000158, "Member 'OptionsMenu_C_AddTabs::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_Array_Add_ReturnValue_1) == 0x00015C, "Member 'OptionsMenu_C_AddTabs::CallFunc_Array_Add_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_GetOwningPlayer_ReturnValue) == 0x000160, "Member 'OptionsMenu_C_AddTabs::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_Create_ReturnValue) == 0x000168, "Member 'OptionsMenu_C_AddTabs::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_RegisterFortTab_ReturnValue) == 0x000170, "Member 'OptionsMenu_C_AddTabs::CallFunc_RegisterFortTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_Array_Add_ReturnValue_2) == 0x000174, "Member 'OptionsMenu_C_AddTabs::CallFunc_Array_Add_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_AddTabs, CallFunc_AddChild_ReturnValue) == 0x000178, "Member 'OptionsMenu_C_AddTabs::CallFunc_AddChild_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleCursorModeChanging
 // 0x0001 (0x0001 - 0x0000)
@@ -396,9 +261,6 @@ struct OptionsMenu_C_HandleCursorModeChanging final
 public:
 	bool                                          IsEnabled;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_HandleCursorModeChanging) == 0x000001, "Wrong alignment on OptionsMenu_C_HandleCursorModeChanging");
-static_assert(sizeof(OptionsMenu_C_HandleCursorModeChanging) == 0x000001, "Wrong size on OptionsMenu_C_HandleCursorModeChanging");
-static_assert(offsetof(OptionsMenu_C_HandleCursorModeChanging, IsEnabled) == 0x000000, "Member 'OptionsMenu_C_HandleCursorModeChanging::IsEnabled' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Handle Toggle Mode
 // 0x0018 (0x0018 - 0x0000)
@@ -409,11 +271,6 @@ public:
 	class UFortGamepadInputOptions*               K2Node_DynamicCast_AsFort_Gamepad_Input_Options;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Handle_Toggle_Mode) == 0x000008, "Wrong alignment on OptionsMenu_C_Handle_Toggle_Mode");
-static_assert(sizeof(OptionsMenu_C_Handle_Toggle_Mode) == 0x000018, "Wrong size on OptionsMenu_C_Handle_Toggle_Mode");
-static_assert(offsetof(OptionsMenu_C_Handle_Toggle_Mode, CallFunc_GetActiveWidget_ReturnValue) == 0x000000, "Member 'OptionsMenu_C_Handle_Toggle_Mode::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Toggle_Mode, K2Node_DynamicCast_AsFort_Gamepad_Input_Options) == 0x000008, "Member 'OptionsMenu_C_Handle_Toggle_Mode::K2Node_DynamicCast_AsFort_Gamepad_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Toggle_Mode, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'OptionsMenu_C_Handle_Toggle_Mode::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Handle Reset
 // 0x0001 (0x0001 - 0x0000)
@@ -422,9 +279,6 @@ struct OptionsMenu_C_Handle_Reset final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Handle_Reset) == 0x000001, "Wrong alignment on OptionsMenu_C_Handle_Reset");
-static_assert(sizeof(OptionsMenu_C_Handle_Reset) == 0x000001, "Wrong size on OptionsMenu_C_Handle_Reset");
-static_assert(offsetof(OptionsMenu_C_Handle_Reset, PassThrough) == 0x000000, "Member 'OptionsMenu_C_Handle_Reset::PassThrough' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Handle Apply
 // 0x0048 (0x0048 - 0x0000)
@@ -441,15 +295,6 @@ public:
 	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   CallFunc_MakeLiteralText_ReturnValue;              // 0x0030(0x0018)()
 };
-static_assert(alignof(OptionsMenu_C_Handle_Apply) == 0x000008, "Wrong alignment on OptionsMenu_C_Handle_Apply");
-static_assert(sizeof(OptionsMenu_C_Handle_Apply) == 0x000048, "Wrong size on OptionsMenu_C_Handle_Apply");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'OptionsMenu_C_Handle_Apply::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_NeedsLanguageChangeConfirmation_ReturnValue) == 0x000018, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_NeedsLanguageChangeConfirmation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_GetContext_ReturnValue) == 0x000020, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_NeedsLanguageChangeConfirmation_ReturnValue_1) == 0x000028, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_NeedsLanguageChangeConfirmation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_NeedsVideoChangeConfirmation_ReturnValue) == 0x000029, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_NeedsVideoChangeConfirmation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Handle_Apply, CallFunc_MakeLiteralText_ReturnValue) == 0x000030, "Member 'OptionsMenu_C_Handle_Apply::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnPreviewKeyDown
 // 0x02F0 (0x02F0 - 0x0000)
@@ -478,24 +323,6 @@ public:
 	uint8                                         Pad_2EA[0x2];                                      // 0x02EA(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x02EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnPreviewKeyDown) == 0x000008, "Wrong alignment on OptionsMenu_C_OnPreviewKeyDown");
-static_assert(sizeof(OptionsMenu_C_OnPreviewKeyDown) == 0x0002F0, "Wrong size on OptionsMenu_C_OnPreviewKeyDown");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnPreviewKeyDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, InKeyEvent) == 0x000038, "Member 'OptionsMenu_C_OnPreviewKeyDown::InKeyEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, ReturnValue) == 0x000070, "Member 'OptionsMenu_C_OnPreviewKeyDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_GetKey_ReturnValue) == 0x000128, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_GetKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_Key_IsGamepadKey_ReturnValue) == 0x000140, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_Key_IsGamepadKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_GetActiveWidget_ReturnValue) == 0x000148, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_Handled_ReturnValue) == 0x000150, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_IsVisible_ReturnValue) == 0x000208, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_Unhandled_ReturnValue) == 0x000210, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, Temp_int_Variable) == 0x0002C8, "Member 'OptionsMenu_C_OnPreviewKeyDown::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_GetChildAt_ReturnValue) == 0x0002D0, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_GetChildrenCount_ReturnValue) == 0x0002D8, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, K2Node_DynamicCast_AsTab_Input_Options) == 0x0002E0, "Member 'OptionsMenu_C_OnPreviewKeyDown::K2Node_DynamicCast_AsTab_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, K2Node_DynamicCast_bSuccess) == 0x0002E8, "Member 'OptionsMenu_C_OnPreviewKeyDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_LessEqual_IntInt_ReturnValue) == 0x0002E9, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewKeyDown, CallFunc_Add_IntInt_ReturnValue) == 0x0002EC, "Member 'OptionsMenu_C_OnPreviewKeyDown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnMouseWheel
 // 0x0310 (0x0310 - 0x0000)
@@ -524,24 +351,6 @@ public:
 	uint8                                         Pad_30A[0x2];                                      // 0x030A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x030C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnMouseWheel) == 0x000008, "Wrong alignment on OptionsMenu_C_OnMouseWheel");
-static_assert(sizeof(OptionsMenu_C_OnMouseWheel) == 0x000310, "Wrong size on OptionsMenu_C_OnMouseWheel");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnMouseWheel::MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, MouseEvent) == 0x000038, "Member 'OptionsMenu_C_OnMouseWheel::MouseEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, ReturnValue) == 0x0000A8, "Member 'OptionsMenu_C_OnMouseWheel::ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_PointerEvent_GetWheelDelta_ReturnValue) == 0x000160, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_PointerEvent_GetWheelDelta_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_Less_FloatFloat_ReturnValue) == 0x000164, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_GetActiveWidget_ReturnValue) == 0x000168, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_Handled_ReturnValue) == 0x000170, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_IsVisible_ReturnValue) == 0x000228, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_Unhandled_ReturnValue) == 0x000230, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, Temp_int_Variable) == 0x0002E8, "Member 'OptionsMenu_C_OnMouseWheel::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_GetChildAt_ReturnValue) == 0x0002F0, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_GetChildrenCount_ReturnValue) == 0x0002F8, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, K2Node_DynamicCast_AsTab_Input_Options) == 0x000300, "Member 'OptionsMenu_C_OnMouseWheel::K2Node_DynamicCast_AsTab_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, K2Node_DynamicCast_bSuccess) == 0x000308, "Member 'OptionsMenu_C_OnMouseWheel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000309, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnMouseWheel, CallFunc_Add_IntInt_ReturnValue) == 0x00030C, "Member 'OptionsMenu_C_OnMouseWheel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnPreviewMouseButtonDown
 // 0x0320 (0x0320 - 0x0000)
@@ -568,23 +377,6 @@ public:
 	uint8                                         Pad_31A[0x2];                                      // 0x031A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x031C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x000008, "Wrong alignment on OptionsMenu_C_OnPreviewMouseButtonDown");
-static_assert(sizeof(OptionsMenu_C_OnPreviewMouseButtonDown) == 0x000320, "Wrong size on OptionsMenu_C_OnPreviewMouseButtonDown");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, MyGeometry) == 0x000000, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, MouseEvent) == 0x000038, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::MouseEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, ReturnValue) == 0x0000A8, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_Handled_ReturnValue) == 0x000178, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_GetActiveWidget_ReturnValue) == 0x000230, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_IsVisible_ReturnValue) == 0x000238, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, Temp_int_Variable) == 0x0002F8, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_GetChildAt_ReturnValue) == 0x000300, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_GetChildrenCount_ReturnValue) == 0x000308, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, K2Node_DynamicCast_AsTab_Input_Options) == 0x000310, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::K2Node_DynamicCast_AsTab_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, K2Node_DynamicCast_bSuccess) == 0x000318, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000319, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_OnPreviewMouseButtonDown, CallFunc_Add_IntInt_ReturnValue) == 0x00031C, "Member 'OptionsMenu_C_OnPreviewMouseButtonDown::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Initialize
 // 0x06E8 (0x06E8 - 0x0000)
@@ -639,47 +431,6 @@ public:
 	class FText                                   Temp_text_Variable_3;                              // 0x06C8(0x0018)(ConstParm)
 	bool                                          CallFunc_ShowVideoOptions_ReturnValue;             // 0x06E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Initialize) == 0x000008, "Wrong alignment on OptionsMenu_C_Initialize");
-static_assert(sizeof(OptionsMenu_C_Initialize) == 0x0006E8, "Wrong size on OptionsMenu_C_Initialize");
-static_assert(offsetof(OptionsMenu_C_Initialize, TouchIcon) == 0x000000, "Member 'OptionsMenu_C_Initialize::TouchIcon' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, MKB_Icon) == 0x000088, "Member 'OptionsMenu_C_Initialize::MKB_Icon' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, HUD_Icon) == 0x000110, "Member 'OptionsMenu_C_Initialize::HUD_Icon' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Game_Normal) == 0x000198, "Member 'OptionsMenu_C_Initialize::Game_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Accounts_Normal) == 0x000220, "Member 'OptionsMenu_C_Initialize::Accounts_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Keys_Normal) == 0x0002A8, "Member 'OptionsMenu_C_Initialize::Keys_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Controller_Normal) == 0x000330, "Member 'OptionsMenu_C_Initialize::Controller_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Color_Normal) == 0x0003B8, "Member 'OptionsMenu_C_Initialize::Color_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Brightness_Normal) == 0x000440, "Member 'OptionsMenu_C_Initialize::Brightness_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Audio_Normal) == 0x0004C8, "Member 'OptionsMenu_C_Initialize::Audio_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Video_Normal) == 0x000550, "Member 'OptionsMenu_C_Initialize::Video_Normal' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowTouchAndMotionOptions_ReturnValue) == 0x0005D8, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowTouchAndMotionOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowInputOptions_ReturnValue) == 0x0005D9, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowInputOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetRuntimeOptions_ReturnValue) == 0x0005E0, "Member 'OptionsMenu_C_Initialize::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowNewControllerSenseOptions_ReturnValue) == 0x0005E8, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowNewControllerSenseOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Temp_text_Variable) == 0x0005F0, "Member 'OptionsMenu_C_Initialize::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Temp_text_Variable_1) == 0x000608, "Member 'OptionsMenu_C_Initialize::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetTabIdAtIndex_ReturnValue) == 0x000620, "Member 'OptionsMenu_C_Initialize::CallFunc_GetTabIdAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Temp_bool_Variable) == 0x000628, "Member 'OptionsMenu_C_Initialize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowBrightnessOptions_ReturnValue) == 0x000629, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowBrightnessOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowAccessibilityOptions_ReturnValue) == 0x00062A, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowAccessibilityOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetActiveWidget_ReturnValue) == 0x000630, "Member 'OptionsMenu_C_Initialize::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowAccountOptions_ReturnValue) == 0x000638, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowAccountOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetOwningPlayer_ReturnValue) == 0x000640, "Member 'OptionsMenu_C_Initialize::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_Create_ReturnValue) == 0x000648, "Member 'OptionsMenu_C_Initialize::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowControllerOptions_ReturnValue) == 0x000650, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowControllerOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetPlatformName_ReturnValue) == 0x000658, "Member 'OptionsMenu_C_Initialize::CallFunc_GetPlatformName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000668, "Member 'OptionsMenu_C_Initialize::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_HasWidgets_ReturnValue) == 0x000669, "Member 'OptionsMenu_C_Initialize::CallFunc_HasWidgets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, K2Node_Select_Default) == 0x000670, "Member 'OptionsMenu_C_Initialize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000688, "Member 'OptionsMenu_C_Initialize::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, K2Node_DynamicCast_AsFort_Options_Tab) == 0x000690, "Member 'OptionsMenu_C_Initialize::K2Node_DynamicCast_AsFort_Options_Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, K2Node_DynamicCast_bSuccess) == 0x000698, "Member 'OptionsMenu_C_Initialize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x0006A0, "Member 'OptionsMenu_C_Initialize::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Temp_text_Variable_2) == 0x0006A8, "Member 'OptionsMenu_C_Initialize::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_IsInZone_ReturnValue) == 0x0006C0, "Member 'OptionsMenu_C_Initialize::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowInputOptions_ReturnValue_1) == 0x0006C1, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowInputOptions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, Temp_text_Variable_3) == 0x0006C8, "Member 'OptionsMenu_C_Initialize::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Initialize, CallFunc_ShowVideoOptions_ReturnValue) == 0x0006E0, "Member 'OptionsMenu_C_Initialize::CallFunc_ShowVideoOptions_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426
 // 0x0008 (0x0008 - 0x0000)
@@ -688,9 +439,6 @@ struct OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426 final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_FF56A1B94C8CEF8FA4611BB655D07426::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_56F757014AB176CE2140009FB54D0D23
 // 0x0008 (0x0008 - 0x0000)
@@ -699,9 +447,6 @@ struct OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23 final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_56F757014AB176CE2140009FB54D0D23::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_488EE90943BFF7AA4DB2049A7D72238C
 // 0x0008 (0x0008 - 0x0000)
@@ -710,9 +455,6 @@ struct OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_488EE90943BFF7AA4DB2049A7D72238C::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_598823E641B8288CD371F0B50BE07C91
 // 0x0008 (0x0008 - 0x0000)
@@ -721,9 +463,6 @@ struct OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91 final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_598823E641B8288CD371F0B50BE07C91::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD
 // 0x0008 (0x0008 - 0x0000)
@@ -732,9 +471,6 @@ struct OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_B8BA00A14ACF4BA8F4B657B2B247D3CD::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_EF0A182C49925D83A3E55080FA222F7D
 // 0x0008 (0x0008 - 0x0000)
@@ -743,9 +479,6 @@ struct OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_EF0A182C49925D83A3E55080FA222F7D::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1
 // 0x000C (0x000C - 0x0000)
@@ -756,10 +489,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
-static_assert(sizeof(OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1");
-static_assert(offsetof(OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_F3FA83AA4F97C266A3A1C9BB3F66C1C1::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_865D48E84DB087F08A2C9797E6CB619E
 // 0x000C (0x000C - 0x0000)
@@ -770,10 +499,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E");
-static_assert(sizeof(OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E");
-static_assert(offsetof(OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_865D48E84DB087F08A2C9797E6CB619E::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_505313CB4EC9E510DD07E6B544334958
 // 0x000C (0x000C - 0x0000)
@@ -784,10 +509,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958");
-static_assert(sizeof(OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958");
-static_assert(offsetof(OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_505313CB4EC9E510DD07E6B544334958::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A
 // 0x000C (0x000C - 0x0000)
@@ -798,10 +519,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A");
-static_assert(sizeof(OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A");
-static_assert(offsetof(OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_BC062FC047B05F5EE0C6A09D64BFEB2A::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_826C59EC4C294BC872A644878B35A13B
 // 0x000C (0x000C - 0x0000)
@@ -812,10 +529,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B");
-static_assert(sizeof(OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B");
-static_assert(offsetof(OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_826C59EC4C294BC872A644878B35A13B::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.DialogResult_B31FF5BD4C0772716F27509EA83B418E
 // 0x000C (0x000C - 0x0000)
@@ -826,10 +539,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   ResultName;                                        // 0x0004(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E) == 0x000004, "Wrong alignment on OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E");
-static_assert(sizeof(OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E) == 0x00000C, "Wrong size on OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E");
-static_assert(offsetof(OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E, Result) == 0x000000, "Member 'OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E::Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E, ResultName) == 0x000004, "Member 'OptionsMenu_C_DialogResult_B31FF5BD4C0772716F27509EA83B418E::ResultName' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE
 // 0x0008 (0x0008 - 0x0000)
@@ -838,9 +547,6 @@ struct OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE final
 public:
 	class UClass*                                 Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE) == 0x000008, "Wrong alignment on OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
-static_assert(sizeof(OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE) == 0x000008, "Wrong size on OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE");
-static_assert(offsetof(OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE, Loaded) == 0x000000, "Member 'OptionsMenu_C_OnLoaded_8C5A9E8C42027607DE7ED0B10409E5CE::Loaded' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Enable Overlay Input
 // 0x0020 (0x0020 - 0x0000)
@@ -851,10 +557,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Overlay_Text;                                      // 0x0008(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(OptionsMenu_C_Enable_Overlay_Input) == 0x000008, "Wrong alignment on OptionsMenu_C_Enable_Overlay_Input");
-static_assert(sizeof(OptionsMenu_C_Enable_Overlay_Input) == 0x000020, "Wrong size on OptionsMenu_C_Enable_Overlay_Input");
-static_assert(offsetof(OptionsMenu_C_Enable_Overlay_Input, Accept_Input_0) == 0x000000, "Member 'OptionsMenu_C_Enable_Overlay_Input::Accept_Input_0' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_Enable_Overlay_Input, Overlay_Text) == 0x000008, "Member 'OptionsMenu_C_Enable_Overlay_Input::Overlay_Text' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Enable Overlay Video
 // 0x0001 (0x0001 - 0x0000)
@@ -863,9 +565,6 @@ struct OptionsMenu_C_Enable_Overlay_Video final
 public:
 	bool                                          Accept_Input_0;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Enable_Overlay_Video) == 0x000001, "Wrong alignment on OptionsMenu_C_Enable_Overlay_Video");
-static_assert(sizeof(OptionsMenu_C_Enable_Overlay_Video) == 0x000001, "Wrong size on OptionsMenu_C_Enable_Overlay_Video");
-static_assert(offsetof(OptionsMenu_C_Enable_Overlay_Video, Accept_Input_0) == 0x000000, "Member 'OptionsMenu_C_Enable_Overlay_Video::Accept_Input_0' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -874,9 +573,6 @@ struct OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenu_C_BndEvt__VideoSettingsAccept_K2Node_ComponentBoundEvent_22_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -885,9 +581,6 @@ struct OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenu_C_BndEvt__VideoSettingsCancel_K2Node_ComponentBoundEvent_43_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.Gamepad Changed
 // 0x0001 (0x0001 - 0x0000)
@@ -896,9 +589,6 @@ struct OptionsMenu_C_Gamepad_Changed final
 public:
 	bool                                          Gamepad_Enabled;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenu_C_Gamepad_Changed) == 0x000001, "Wrong alignment on OptionsMenu_C_Gamepad_Changed");
-static_assert(sizeof(OptionsMenu_C_Gamepad_Changed) == 0x000001, "Wrong size on OptionsMenu_C_Gamepad_Changed");
-static_assert(offsetof(OptionsMenu_C_Gamepad_Changed, Gamepad_Enabled) == 0x000000, "Member 'OptionsMenu_C_Gamepad_Changed::Gamepad_Enabled' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -908,10 +598,6 @@ public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          TabButton;                                         // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature) == 0x000010, "Wrong size on OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature, TabId) == 0x000000, "Member 'OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature::TabId' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature, TabButton) == 0x000008, "Member 'OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_95_OnTabButtonCreated__DelegateSignature::TabButton' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -920,9 +606,6 @@ struct OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonBut
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenu_C_BndEvt__LanguageOk_K2Node_ComponentBoundEvent_112_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -932,10 +615,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'OptionsMenu_C_BndEvt__CurrentTabSwitcher_K2Node_ComponentBoundEvent_13_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.TabGameOptions_OnActiveWidgetChanged_Bind
 // 0x0010 (0x0010 - 0x0000)
@@ -945,10 +624,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind) == 0x000008, "Wrong alignment on OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind");
-static_assert(sizeof(OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind) == 0x000010, "Wrong size on OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind");
-static_assert(offsetof(OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind, ActiveWidget) == 0x000000, "Member 'OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind, ActiveWidgetIndex) == 0x000008, "Member 'OptionsMenu_C_TabGameOptions_OnActiveWidgetChanged_Bind::ActiveWidgetIndex' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -957,9 +632,6 @@ struct OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSel
 public:
 	class FName                                   TabId;                                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature) == 0x000008, "Wrong size on OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature, TabId) == 0x000000, "Member 'OptionsMenu_C_BndEvt__SettingsTabs_K2Node_ComponentBoundEvent_20_OnTabSelected__DelegateSignature::TabId' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.HandleTabGamePadActionsNeedBinds
 // 0x0010 (0x0010 - 0x0000)
@@ -968,9 +640,6 @@ struct OptionsMenu_C_HandleTabGamePadActionsNeedBinds final
 public:
 	TArray<class FText>                           ScreenLabels;                                      // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(OptionsMenu_C_HandleTabGamePadActionsNeedBinds) == 0x000008, "Wrong alignment on OptionsMenu_C_HandleTabGamePadActionsNeedBinds");
-static_assert(sizeof(OptionsMenu_C_HandleTabGamePadActionsNeedBinds) == 0x000010, "Wrong size on OptionsMenu_C_HandleTabGamePadActionsNeedBinds");
-static_assert(offsetof(OptionsMenu_C_HandleTabGamePadActionsNeedBinds, ScreenLabels) == 0x000000, "Member 'OptionsMenu_C_HandleTabGamePadActionsNeedBinds::ScreenLabels' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -979,9 +648,6 @@ struct OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenu_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenu.OptionsMenu_C.ExecuteUbergraph_OptionsMenu
 // 0x0760 (0x0760 - 0x0000)
@@ -998,7 +664,7 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result_4;                       // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   K2Node_CustomEvent_ResultName_4;                   // 0x001C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate;              // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate; // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	class FName                                   Temp_name_Variable_1;                              // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortDialogResult                             Temp_byte_Variable_1;                              // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1006,7 +672,7 @@ public:
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_1; // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x004C(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_1; // 0x004C(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result_3;                       // 0x005C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_5D[0x3];                                       // 0x005D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName_3;                   // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1014,7 +680,7 @@ public:
 	EFortDialogResult                             Temp_byte_Variable_2;                              // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue; // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0080(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result_2;                       // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_92[0x2];                                       // 0x0092(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1027,7 +693,7 @@ public:
 	class UFortAsyncAction_ShowConfirmation_NUI*  CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_2; // 0x00B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_B9[0x3];                                       // 0x00B9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x00BC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_3; // 0x00BC(0x0010)(ZeroConstructor, NoDestructor)
 	EFortDialogResult                             K2Node_CustomEvent_Result_1;                       // 0x00CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_CD[0x3];                                       // 0x00CD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName_1;                   // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1036,7 +702,7 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result;                         // 0x00E1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_E2[0x2];                                       // 0x00E2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName;                     // 0x00E4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_4;            // 0x00EC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_4; // 0x00EC(0x0010)(ZeroConstructor, NoDestructor)
 	class FName                                   Temp_name_Variable_5;                              // 0x00FC(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortDialogResult                             Temp_byte_Variable_5;                              // 0x0104(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0105(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1069,7 +735,7 @@ public:
 	EFortDialogResult                             K2Node_CustomEvent_Result_5;                       // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_1A2[0x2];                                      // 0x01A2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_CustomEvent_ResultName_5;                   // 0x01A4(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x01AC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EFortDialogResult Result, class FName ResultName)> K2Node_CreateDelegate_OutputDelegate_5; // 0x01AC(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          K2Node_CustomEvent_Gamepad_Enabled;                // 0x01BC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_1BD[0x3];                                      // 0x01BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   K2Node_ComponentBoundEvent_TabId_1;                // 0x01C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1122,11 +788,11 @@ public:
 	class UClass*                                 K2Node_ClassDynamicCast_AsFort_Options_Tab_2;      // 0x02E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess_2;                // 0x02F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2F1[0x3];                                      // 0x02F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(bool Accept_Input, class FText Overlay_Text)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x02F4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool Accept_Input, class FText Overlay_Text)> K2Node_CreateDelegate_OutputDelegate_6; // 0x02F4(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_ShowVideoOptions_ReturnValue;             // 0x0304(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShowAccountOptions_ReturnValue;           // 0x0305(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_306[0x2];                                      // 0x0306(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0308(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_7;       // 0x0308(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_ShowControllerOptions_ReturnValue;        // 0x0318(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShowInputOptions_ReturnValue;             // 0x0319(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_31A[0x6];                                      // 0x031A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1139,7 +805,7 @@ public:
 	uint8                                         Pad_342[0x6];                                      // 0x0342(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetActiveWidget_ReturnValue;              // 0x0348(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                 Temp_class_Variable_4;                             // 0x0350(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_8;            // 0x0358(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_8;       // 0x0358(0x0010)(ZeroConstructor, NoDestructor)
 	class UClass*                                 K2Node_ClassDynamicCast_AsFort_Options_Tab_4;      // 0x0368(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess_4;                // 0x0370(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_ShowAccessibilityOptions_ReturnValue;     // 0x0371(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1150,7 +816,7 @@ public:
 	class FName                                   K2Node_ComponentBoundEvent_TabId;                  // 0x0384(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_38C[0x4];                                      // 0x038C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 Temp_class_Variable_5;                             // 0x0390(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_9;            // 0x0398(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_9;       // 0x0398(0x0010)(ZeroConstructor, NoDestructor)
 	class UClass*                                 K2Node_ClassDynamicCast_AsFort_Options_Tab_5;      // 0x03A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_ClassDynamicCast_bSuccess_5;                // 0x03B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3B1[0x7];                                      // 0x03B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1166,7 +832,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_9;                     // 0x03F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_3F1[0x3];                                      // 0x03F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue_1;       // 0x03F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_10;           // 0x03F8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_10;      // 0x03F8(0x0010)(ZeroConstructor, NoDestructor)
 	class UWidget*                                CallFunc_GetWidgetAtIndex_ReturnValue_1;           // 0x0408(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTabGameOptionsHud_C*                   K2Node_DynamicCast_AsTab_Game_Options_Hud;         // 0x0410(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x0418(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1176,7 +842,7 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_11;                    // 0x0430(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_431[0x7];                                      // 0x0431(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                CallFunc_GetActiveWidget_ReturnValue_3;            // 0x0438(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_11;           // 0x0440(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_11;      // 0x0440(0x0010)(ZeroConstructor, NoDestructor)
 	class UTabInputOptions_C*                     K2Node_DynamicCast_AsTab_Input_Options_1;          // 0x0450(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_12;                    // 0x0458(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -1194,7 +860,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_14;           // 0x04A8(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x04B8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x04BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(TArray<class FText>& ScreenLabels)> K2Node_CreateDelegate_OutputDelegate_15;           // 0x04C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TArray<class FText>& ScreenLabels)> K2Node_CreateDelegate_OutputDelegate_15;      // 0x04C0(0x0010)(ZeroConstructor, NoDestructor)
 	TArray<class FText>                           K2Node_CustomEvent_ScreenLabels;                   // 0x04D0(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Array_Get_Item;                           // 0x04E0(0x0018)()
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x04F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1217,7 +883,7 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x05F4(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x05F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_5F9[0x3];                                      // 0x05F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_16;           // 0x05FC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_16;      // 0x05FC(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Variable_3;                              // 0x060C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_60D[0x3];                                      // 0x060D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_GetActiveWidgetIndex_ReturnValue_2;       // 0x0610(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1228,8 +894,8 @@ public:
 	class UTabGamePadConfig_v3_C*                 K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3_1;    // 0x0628(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_13;                    // 0x0630(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_631[0x3];                                      // 0x0631(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_17;           // 0x0634(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)> K2Node_CreateDelegate_OutputDelegate_18;           // 0x0644(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(TSubclassOf<class UObject> Loaded)> K2Node_CreateDelegate_OutputDelegate_17;      // 0x0634(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UWidget* ActiveWidget, int32 ActiveWidgetIndex)> K2Node_CreateDelegate_OutputDelegate_18; // 0x0644(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_654[0x4];                                      // 0x0654(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortHUDContext*                        CallFunc_GetContext_ReturnValue_2;                 // 0x0658(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortGlobalUIContext*                   CallFunc_GetContext_ReturnValue_3;                 // 0x0660(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1252,213 +918,6 @@ public:
 	TSoftClassPtr<class UClass>                   K2Node_Select_Default_2;                           // 0x0710(0x0028)(HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   K2Node_Select_Default_3;                           // 0x0738(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu) == 0x000008, "Wrong alignment on OptionsMenu_C_ExecuteUbergraph_OptionsMenu");
-static_assert(sizeof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu) == 0x000760, "Wrong size on OptionsMenu_C_ExecuteUbergraph_OptionsMenu");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, EntryPoint) == 0x000000, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable) == 0x000004, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable) == 0x00000C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue) == 0x000010, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000018, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue) == 0x000019, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00001A, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result_4) == 0x00001B, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName_4) == 0x00001C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable_1) == 0x000034, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_1) == 0x00003C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x00003D, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_1) == 0x000040, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue_1) == 0x000048, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_1) == 0x00004C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result_3) == 0x00005C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName_3) == 0x000060, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable_2) == 0x000068, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_2) == 0x000070, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue) == 0x000078, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_2) == 0x000080, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue_2) == 0x000090, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result_2) == 0x000091, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName_2) == 0x000094, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable_3) == 0x00009C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_3) == 0x0000A4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_ByteByte_ReturnValue_3) == 0x0000A5, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_ByteByte_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Create_ReturnValue) == 0x0000A8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_2) == 0x0000B0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_CustomInput_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue_3) == 0x0000B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000BC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result_1) == 0x0000CC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName_1) == 0x0000D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable_4) == 0x0000D8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_4) == 0x0000E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result) == 0x0000E1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName) == 0x0000E4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000EC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_name_Variable_5) == 0x0000FC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_name_Variable_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_5) == 0x000104, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_SwitchEnum_CmpSuccess) == 0x000105, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded) == 0x000108, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable) == 0x000110, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab) == 0x000118, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess) == 0x000120, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetContext_ReturnValue) == 0x000128, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetContext_ReturnValue_1) == 0x000130, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetSubGame_ReturnValue) == 0x000138, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_bool_Variable) == 0x000139, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_ByteByte_ReturnValue_4) == 0x00013A, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_ByteByte_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_bool_Variable_1) == 0x00013B, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_bool_Variable_2) == 0x00013C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Accept_Input_1) == 0x00013D, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Accept_Input_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Overlay_Text) == 0x000140, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Overlay_Text' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Accept_Input) == 0x000158, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Accept_Input' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_MakeLiteralText_ReturnValue) == 0x000160, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_Button_3) == 0x000178, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_Button_2) == 0x000180, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidgetIndex_ReturnValue) == 0x000188, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidgetIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetWidgetAtIndex_ReturnValue) == 0x000190, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetWidgetAtIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Video_Options_New) == 0x000198, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Video_Options_New' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess) == 0x0001A0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Result_5) == 0x0001A1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Result_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ResultName_5) == 0x0001A4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ResultName_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_5) == 0x0001AC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Gamepad_Enabled) == 0x0001BC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Gamepad_Enabled' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_TabId_1) == 0x0001C0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_TabId_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_TabButton) == 0x0001C8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_TabButton' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveTab_ReturnValue) == 0x0001D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveTab_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsIcon_Tab_Button) == 0x0001D8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsIcon_Tab_Button' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_1) == 0x0001E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_NameName_ReturnValue) == 0x0001E1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_Button_1) == 0x0001E8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsVisible_ReturnValue) == 0x0001F0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Not_PreBool_ReturnValue) == 0x0001F1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Handle_Reset_PassThrough) == 0x0001F2, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Handle_Reset_PassThrough' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_int_Variable) == 0x0001F4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetChildAt_ReturnValue) == 0x0001F8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetChildAt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsFort_Options_Tab) == 0x000200, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsFort_Options_Tab' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_2) == 0x000208, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Add_IntInt_ReturnValue) == 0x00020C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3) == 0x000210, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_3) == 0x000218, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Options) == 0x000220, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_4) == 0x000228, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Video_Options) == 0x000230, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Video_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_5) == 0x000238, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Input_Options) == 0x000240, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Input_Options' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_6) == 0x000248, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000250, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000258, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetChildrenCount_ReturnValue) == 0x00025C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetChildrenCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000260, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_1) == 0x000268, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_1) == 0x000270, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_1) == 0x000278, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_1) == 0x000280, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ActiveWidget) == 0x000288, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ActiveWidgetIndex) == 0x000290, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_int_Array_Index_Variable) == 0x000294, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Add_IntInt_ReturnValue_1) == 0x000298, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_MakeStruct_FormatArgumentData) == 0x0002A0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_2) == 0x0002E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_2) == 0x0002E8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_2) == 0x0002F0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_6) == 0x0002F4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowVideoOptions_ReturnValue) == 0x000304, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowVideoOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowAccountOptions_ReturnValue) == 0x000305, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowAccountOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_7) == 0x000308, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowControllerOptions_ReturnValue) == 0x000318, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowControllerOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowInputOptions_ReturnValue) == 0x000319, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowInputOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_2) == 0x000320, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_3) == 0x000328, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_3) == 0x000330, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_3) == 0x000338, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_3) == 0x000340, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsVisible_ReturnValue_1) == 0x000341, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidget_ReturnValue) == 0x000348, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_4) == 0x000350, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_8) == 0x000358, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_8' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_4) == 0x000368, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_4) == 0x000370, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowAccessibilityOptions_ReturnValue) == 0x000371, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowAccessibilityOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_4) == 0x000378, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowBrightnessOptions_ReturnValue) == 0x000380, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowBrightnessOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_TabId) == 0x000384, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_TabId' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_5) == 0x000390, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_9) == 0x000398, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_9' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_5) == 0x0003A8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_5) == 0x0003B0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidget_ReturnValue_1) == 0x0003B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_5) == 0x0003C0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_New_Controller_Settings) == 0x0003C8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_New_Controller_Settings' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_7) == 0x0003D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsFort_Options_Tab_1) == 0x0003D8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsFort_Options_Tab_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_8) == 0x0003E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Options_1) == 0x0003E8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Options_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_9) == 0x0003F0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidgetIndex_ReturnValue_1) == 0x0003F4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidgetIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_10) == 0x0003F8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_10' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetWidgetAtIndex_ReturnValue_1) == 0x000408, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetWidgetAtIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Options_Hud) == 0x000410, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Options_Hud' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_10) == 0x000418, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidget_ReturnValue_2) == 0x000420, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidget_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Options_Main) == 0x000428, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Options_Main' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_11) == 0x000430, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidget_ReturnValue_3) == 0x000438, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidget_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_11) == 0x000440, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_11' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Input_Options_1) == 0x000450, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Input_Options_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_12) == 0x000458, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_class_Variable_6) == 0x000460, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_class_Variable_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_AsFort_Options_Tab_6) == 0x000468, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_AsFort_Options_Tab_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ClassDynamicCast_bSuccess_6) == 0x000470, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ClassDynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_Loaded_6) == 0x000478, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_Loaded_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_12) == 0x000480, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_12' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_6) == 0x000490, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_13) == 0x000494, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_13' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_byte_Variable_7) == 0x0004A4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_14) == 0x0004A8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_14' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_int_Loop_Counter_Variable) == 0x0004B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Add_IntInt_ReturnValue_2) == 0x0004BC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_15) == 0x0004C0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_15' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CustomEvent_ScreenLabels) == 0x0004D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CustomEvent_ScreenLabels' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Array_Get_Item) == 0x0004E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Array_Length_ReturnValue) == 0x0004F8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_MakeStruct_FormatArgumentData_1) == 0x000500, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_MakeStruct_FormatArgumentData_2) == 0x000540, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_MakeArray_Array) == 0x000580, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_MakeArray_Array_1) == 0x000590, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Format_ReturnValue) == 0x0005A0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Format_ReturnValue_1) == 0x0005B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Subtract_IntInt_ReturnValue) == 0x0005D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_1) == 0x0005D8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0005E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue_4) == 0x0005E1, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_2) == 0x0005E8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsValid_ReturnValue_5) == 0x0005F0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsValid_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Array_Length_ReturnValue_1) == 0x0005F4, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_Less_IntInt_ReturnValue) == 0x0005F8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_16) == 0x0005FC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_16' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, Temp_bool_Variable_3) == 0x00060C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetActiveWidgetIndex_ReturnValue_2) == 0x000610, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetActiveWidgetIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetWidgetAtIndex_ReturnValue_2) == 0x000618, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetWidgetAtIndex_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_Select_Default) == 0x000620, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3_1) == 0x000628, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_AsTab_Game_Pad_Config_V_3_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_DynamicCast_bSuccess_13) == 0x000630, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_17) == 0x000634, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_17' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_18) == 0x000644, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_18' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetContext_ReturnValue_2) == 0x000658, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetContext_ReturnValue_3) == 0x000660, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_IsInZone_ReturnValue) == 0x000668, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_IsInZone_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_19) == 0x00066C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_19' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_20) == 0x00067C, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_20' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_ComponentBoundEvent_Button) == 0x000690, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_21) == 0x000698, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_21' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_22) == 0x0006A8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_22' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_ShowNewControllerSenseOptions_ReturnValue) == 0x0006B8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_ShowNewControllerSenseOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_CreateDelegate_OutputDelegate_23) == 0x0006BC, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_CreateDelegate_OutputDelegate_23' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetRuntimeOptions_ReturnValue) == 0x0006D0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetRuntimeOptions_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetRuntimeOptions_ReturnValue_1) == 0x0006D8, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetRuntimeOptions_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_Select_Default_1) == 0x0006E0, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, CallFunc_GetRuntimeOptions_ReturnValue_2) == 0x000708, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::CallFunc_GetRuntimeOptions_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_Select_Default_2) == 0x000710, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenu_C_ExecuteUbergraph_OptionsMenu, K2Node_Select_Default_3) == 0x000738, "Member 'OptionsMenu_C_ExecuteUbergraph_OptionsMenu::K2Node_Select_Default_3' has a wrong offset!");
 
 }
 

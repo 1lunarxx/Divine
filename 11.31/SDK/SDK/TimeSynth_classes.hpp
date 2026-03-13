@@ -30,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeSynthVolumeGroup">();
+		STATIC_CLASS_IMPL("TimeSynthVolumeGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeSynthVolumeGroup")
 	}
 	static class UTimeSynthVolumeGroup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeSynthVolumeGroup>();
 	}
 };
-static_assert(alignof(UTimeSynthVolumeGroup) == 0x000008, "Wrong alignment on UTimeSynthVolumeGroup");
-static_assert(sizeof(UTimeSynthVolumeGroup) == 0x000030, "Wrong size on UTimeSynthVolumeGroup");
-static_assert(offsetof(UTimeSynthVolumeGroup, DefaultVolume) == 0x000028, "Member 'UTimeSynthVolumeGroup::DefaultVolume' has a wrong offset!");
 
 // Class TimeSynth.TimeSynthClip
 // 0x0040 (0x0068 - 0x0028)
@@ -60,23 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeSynthClip">();
+		STATIC_CLASS_IMPL("TimeSynthClip")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeSynthClip")
 	}
 	static class UTimeSynthClip* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeSynthClip>();
 	}
 };
-static_assert(alignof(UTimeSynthClip) == 0x000008, "Wrong alignment on UTimeSynthClip");
-static_assert(sizeof(UTimeSynthClip) == 0x000068, "Wrong size on UTimeSynthClip");
-static_assert(offsetof(UTimeSynthClip, Sounds) == 0x000028, "Member 'UTimeSynthClip::Sounds' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, VolumeScaleDb) == 0x000038, "Member 'UTimeSynthClip::VolumeScaleDb' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, PitchScaleSemitones) == 0x000040, "Member 'UTimeSynthClip::PitchScaleSemitones' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, FadeInTime) == 0x000048, "Member 'UTimeSynthClip::FadeInTime' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, bApplyFadeOut) == 0x000050, "Member 'UTimeSynthClip::bApplyFadeOut' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, FadeOutTime) == 0x000054, "Member 'UTimeSynthClip::FadeOutTime' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, ClipDuration) == 0x00005C, "Member 'UTimeSynthClip::ClipDuration' has a wrong offset!");
-static_assert(offsetof(UTimeSynthClip, ClipQuantization) == 0x000064, "Member 'UTimeSynthClip::ClipQuantization' has a wrong offset!");
 
 // Class TimeSynth.TimeSynthComponent
 // 0x09A0 (0x0FC0 - 0x0620)
@@ -89,7 +84,7 @@ public:
 	TArray<float>                                 FrequenciesToAnalyze;                              // 0x0638(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 	ETimeSynthFFTSize                             FFTSize;                                           // 0x0648(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_649[0x7];                                      // 0x0649(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(float SynthPlaybackTimeSeconds)> OnPlaybackTime;                                    // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(float SynthPlaybackTimeSeconds)> OnPlaybackTime;                   // 0x0650(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         bIsFilterAEnabled : 1;                             // 0x0660(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bIsFilterBEnabled : 1;                             // 0x0660(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_661[0x3];                                      // 0x0661(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
@@ -126,23 +121,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeSynthComponent">();
+		STATIC_CLASS_IMPL("TimeSynthComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeSynthComponent")
 	}
 	static class UTimeSynthComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeSynthComponent>();
 	}
 };
-static_assert(alignof(UTimeSynthComponent) == 0x000010, "Wrong alignment on UTimeSynthComponent");
-static_assert(sizeof(UTimeSynthComponent) == 0x000FC0, "Wrong size on UTimeSynthComponent");
-static_assert(offsetof(UTimeSynthComponent, QuantizationSettings) == 0x000620, "Member 'UTimeSynthComponent::QuantizationSettings' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, FrequenciesToAnalyze) == 0x000638, "Member 'UTimeSynthComponent::FrequenciesToAnalyze' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, FFTSize) == 0x000648, "Member 'UTimeSynthComponent::FFTSize' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, OnPlaybackTime) == 0x000650, "Member 'UTimeSynthComponent::OnPlaybackTime' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, FilterASettings) == 0x000664, "Member 'UTimeSynthComponent::FilterASettings' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, FilterBSettings) == 0x000670, "Member 'UTimeSynthComponent::FilterBSettings' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, EnvelopeFollowerSettings) == 0x000680, "Member 'UTimeSynthComponent::EnvelopeFollowerSettings' has a wrong offset!");
-static_assert(offsetof(UTimeSynthComponent, MaxPoolSize) == 0x00068C, "Member 'UTimeSynthComponent::MaxPoolSize' has a wrong offset!");
 
 }
 

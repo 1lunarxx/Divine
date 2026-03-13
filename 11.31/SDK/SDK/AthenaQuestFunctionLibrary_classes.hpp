@@ -35,15 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaQuestFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("AthenaQuestFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaQuestFunctionLibrary_C")
 	}
 	static class UAthenaQuestFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaQuestFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(UAthenaQuestFunctionLibrary_C) == 0x000008, "Wrong alignment on UAthenaQuestFunctionLibrary_C");
-static_assert(sizeof(UAthenaQuestFunctionLibrary_C) == 0x000028, "Wrong size on UAthenaQuestFunctionLibrary_C");
 
 }
 

@@ -23,15 +23,17 @@ class UGCN_Athena_Item_FloppingRabbit_Hit_C final : public UFortGameplayCueNotif
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_Item_FloppingRabbit_Hit_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_Item_FloppingRabbit_Hit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_Item_FloppingRabbit_Hit_C")
 	}
 	static class UGCN_Athena_Item_FloppingRabbit_Hit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_Athena_Item_FloppingRabbit_Hit_C>();
 	}
 };
-static_assert(alignof(UGCN_Athena_Item_FloppingRabbit_Hit_C) == 0x000008, "Wrong alignment on UGCN_Athena_Item_FloppingRabbit_Hit_C");
-static_assert(sizeof(UGCN_Athena_Item_FloppingRabbit_Hit_C) == 0x0001B0, "Wrong size on UGCN_Athena_Item_FloppingRabbit_Hit_C");
 
 }
 

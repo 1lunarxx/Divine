@@ -33,7 +33,7 @@ public:
 	EFortItemType                                 InteractingItemType;                               // 0x34A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34A9[0x7];                                     // 0x34A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  InteractionTags;                                   // 0x34B0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(class APawn* PossessedPawn)> PawnPossessedDispatcher;                           // 0x34D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class APawn* PossessedPawn)> PawnPossessedDispatcher;              // 0x34D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	float                                         PermissionRecheckTime;                             // 0x34E0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_34E4[0x4];                                     // 0x34E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           PermissionsRecheckTimerHandle;                     // 0x34E8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -74,32 +74,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerController_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerController_C")
 	}
 	static class AAthena_PlayerController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_PlayerController_C>();
 	}
 };
-static_assert(alignof(AAthena_PlayerController_C) == 0x000010, "Wrong alignment on AAthena_PlayerController_C");
-static_assert(sizeof(AAthena_PlayerController_C) == 0x003520, "Wrong size on AAthena_PlayerController_C");
-static_assert(offsetof(AAthena_PlayerController_C, UberGraphFrame) == 0x003460, "Member 'AAthena_PlayerController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, ListenerOverride) == 0x003468, "Member 'AAthena_PlayerController_C::ListenerOverride' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, VictoryRoyaleAudio) == 0x003470, "Member 'AAthena_PlayerController_C::VictoryRoyaleAudio' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, VictoryRoyaleMusic) == 0x003478, "Member 'AAthena_PlayerController_C::VictoryRoyaleMusic' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, VictoryRoyaleMenuMusicAsset) == 0x003480, "Member 'AAthena_PlayerController_C::VictoryRoyaleMenuMusicAsset' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, BladeWielderTag) == 0x003488, "Member 'AAthena_PlayerController_C::BladeWielderTag' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, InteractingItemType) == 0x0034A8, "Member 'AAthena_PlayerController_C::InteractingItemType' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, InteractionTags) == 0x0034B0, "Member 'AAthena_PlayerController_C::InteractionTags' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, PawnPossessedDispatcher) == 0x0034D0, "Member 'AAthena_PlayerController_C::PawnPossessedDispatcher' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, PermissionRecheckTime) == 0x0034E0, "Member 'AAthena_PlayerController_C::PermissionRecheckTime' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, PermissionsRecheckTimerHandle) == 0x0034E8, "Member 'AAthena_PlayerController_C::PermissionsRecheckTimerHandle' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, LobbyMusicOnVictoryDelayTime) == 0x0034F0, "Member 'AAthena_PlayerController_C::LobbyMusicOnVictoryDelayTime' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, CamUnderwaterSoundMix) == 0x0034F8, "Member 'AAthena_PlayerController_C::CamUnderwaterSoundMix' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, CamUnderwaterLoopSound) == 0x003500, "Member 'AAthena_PlayerController_C::CamUnderwaterLoopSound' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, CamUnderwaterAudio) == 0x003508, "Member 'AAthena_PlayerController_C::CamUnderwaterAudio' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, CamUnderwaterStartSound) == 0x003510, "Member 'AAthena_PlayerController_C::CamUnderwaterStartSound' has a wrong offset!");
-static_assert(offsetof(AAthena_PlayerController_C, CamUnderwaterStopSound) == 0x003518, "Member 'AAthena_PlayerController_C::CamUnderwaterStopSound' has a wrong offset!");
 
 }
 

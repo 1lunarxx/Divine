@@ -81,46 +81,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Feedback_C">();
+		BP_STATIC_CLASS_IMPL("Feedback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Feedback_C")
 	}
 	static class UFeedback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFeedback_C>();
 	}
 };
-static_assert(alignof(UFeedback_C) == 0x000008, "Wrong alignment on UFeedback_C");
-static_assert(sizeof(UFeedback_C) == 0x000640, "Wrong size on UFeedback_C");
-static_assert(offsetof(UFeedback_C, UberGraphFrame) == 0x000528, "Member 'UFeedback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, BugCreationChooseComponentVBox) == 0x000530, "Member 'UFeedback_C::BugCreationChooseComponentVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, BugCreationSignInVBox) == 0x000538, "Member 'UFeedback_C::BugCreationSignInVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CancelBug) == 0x000540, "Member 'UFeedback_C::CancelBug' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CancelSignIn_Feedback_C) == 0x000548, "Member 'UFeedback_C::CancelSignIn_Feedback_C' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CloseIcon) == 0x000550, "Member 'UFeedback_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CommentButton) == 0x000558, "Member 'UFeedback_C::CommentButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, CommonTextBlock_0) == 0x000560, "Member 'UFeedback_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, ContentButton) == 0x000568, "Member 'UFeedback_C::ContentButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, EntryProgressSwitcher) == 0x000570, "Member 'UFeedback_C::EntryProgressSwitcher' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, EntryVbox) == 0x000578, "Member 'UFeedback_C::EntryVbox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, EpicQABugButton) == 0x000580, "Member 'UFeedback_C::EpicQABugButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Image_0) == 0x000588, "Member 'UFeedback_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, InteractableVBox) == 0x000590, "Member 'UFeedback_C::InteractableVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Lightbox) == 0x000598, "Member 'UFeedback_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, MainIcon) == 0x0005A0, "Member 'UFeedback_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, MobileCloseButton) == 0x0005A8, "Member 'UFeedback_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, OverlayCloseButton) == 0x0005B0, "Member 'UFeedback_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, ProgressSizeBox) == 0x0005B8, "Member 'UFeedback_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, ProgressVBox) == 0x0005C0, "Member 'UFeedback_C::ProgressVBox' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, RootBorder) == 0x0005C8, "Member 'UFeedback_C::RootBorder' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, RootOverlay) == 0x0005D0, "Member 'UFeedback_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SendButton) == 0x0005D8, "Member 'UFeedback_C::SendButton' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SubjectContainer) == 0x0005E0, "Member 'UFeedback_C::SubjectContainer' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SubmitBug) == 0x0005E8, "Member 'UFeedback_C::SubmitBug' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SubmitSignIn) == 0x0005F0, "Member 'UFeedback_C::SubmitSignIn' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, Title) == 0x0005F8, "Member 'UFeedback_C::Title' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, TouchToCloseZone) == 0x000600, "Member 'UFeedback_C::TouchToCloseZone' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, KillersName) == 0x000608, "Member 'UFeedback_C::KillersName' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, SpectatingName) == 0x000620, "Member 'UFeedback_C::SpectatingName' has a wrong offset!");
-static_assert(offsetof(UFeedback_C, FeedBackType) == 0x000638, "Member 'UFeedback_C::FeedBackType' has a wrong offset!");
 
 }
 

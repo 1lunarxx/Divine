@@ -49,19 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_FiendMelee_C">();
+		BP_STATIC_CLASS_IMPL("GAB_FiendMelee_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_FiendMelee_C")
 	}
 	static class UGAB_FiendMelee_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_FiendMelee_C>();
 	}
 };
-static_assert(alignof(UGAB_FiendMelee_C) == 0x000008, "Wrong alignment on UGAB_FiendMelee_C");
-static_assert(sizeof(UGAB_FiendMelee_C) == 0x000A68, "Wrong size on UGAB_FiendMelee_C");
-static_assert(offsetof(UGAB_FiendMelee_C, UberGraphFrame_GAB_FiendMelee_C) == 0x000A40, "Member 'UGAB_FiendMelee_C::UberGraphFrame_GAB_FiendMelee_C' has a wrong offset!");
-static_assert(offsetof(UGAB_FiendMelee_C, FiendMove) == 0x000A48, "Member 'UGAB_FiendMelee_C::FiendMove' has a wrong offset!");
-static_assert(offsetof(UGAB_FiendMelee_C, HitActors) == 0x000A50, "Member 'UGAB_FiendMelee_C::HitActors' has a wrong offset!");
-static_assert(offsetof(UGAB_FiendMelee_C, GE_AIBaseMeleeFrustration_Reset) == 0x000A60, "Member 'UGAB_FiendMelee_C::GE_AIBaseMeleeFrustration_Reset' has a wrong offset!");
 
 }
 

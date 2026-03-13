@@ -29,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_Item_JollyRascal_Main_Destroy_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_Item_JollyRascal_Main_Destroy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_Item_JollyRascal_Main_Destroy_C")
 	}
 	static class UGCN_Athena_Item_JollyRascal_Main_Destroy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_Athena_Item_JollyRascal_Main_Destroy_C>();
 	}
 };
-static_assert(alignof(UGCN_Athena_Item_JollyRascal_Main_Destroy_C) == 0x000008, "Wrong alignment on UGCN_Athena_Item_JollyRascal_Main_Destroy_C");
-static_assert(sizeof(UGCN_Athena_Item_JollyRascal_Main_Destroy_C) == 0x000200, "Wrong size on UGCN_Athena_Item_JollyRascal_Main_Destroy_C");
-static_assert(offsetof(UGCN_Athena_Item_JollyRascal_Main_Destroy_C, MapSound) == 0x0001B0, "Member 'UGCN_Athena_Item_JollyRascal_Main_Destroy_C::MapSound' has a wrong offset!");
 
 }
 

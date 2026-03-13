@@ -23,15 +23,17 @@ class UChallengeDetailsListView_C final : public UAthenaChallengeDetailList
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeDetailsListView_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeDetailsListView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeDetailsListView_C")
 	}
 	static class UChallengeDetailsListView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeDetailsListView_C>();
 	}
 };
-static_assert(alignof(UChallengeDetailsListView_C) == 0x000008, "Wrong alignment on UChallengeDetailsListView_C");
-static_assert(sizeof(UChallengeDetailsListView_C) == 0x000288, "Wrong size on UChallengeDetailsListView_C");
 
 }
 

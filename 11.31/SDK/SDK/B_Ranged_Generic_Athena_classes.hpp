@@ -12,10 +12,10 @@
 
 #include "CoreUObject_structs.hpp"
 #include "GameplayTags_structs.hpp"
-#include "Engine_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
 #include "En_ShellTypes_01_structs.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -142,70 +142,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Ranged_Generic_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Ranged_Generic_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Ranged_Generic_Athena_C")
 	}
 	static class AB_Ranged_Generic_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Ranged_Generic_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Ranged_Generic_Athena_C) == 0x000008, "Wrong alignment on AB_Ranged_Generic_Athena_C");
-static_assert(sizeof(AB_Ranged_Generic_Athena_C) == 0x000F08, "Wrong size on AB_Ranged_Generic_Athena_C");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, UberGraphFrame) == 0x000D98, "Member 'AB_Ranged_Generic_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Muzzle1P_Empty_) == 0x000DA0, "Member 'AB_Ranged_Generic_Athena_C::Muzzle1P_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, IronSightsMesh1P) == 0x000DA8, "Member 'AB_Ranged_Generic_Athena_C::IronSightsMesh1P' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MuzzleWindParticle_Empty_) == 0x000DB0, "Member 'AB_Ranged_Generic_Athena_C::MuzzleWindParticle_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Reload_Empty_) == 0x000DB8, "Member 'AB_Ranged_Generic_Athena_C::Reload_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_empty_) == 0x000DC0, "Member 'AB_Ranged_Generic_Athena_C::Shells_empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ScopeMesh1P) == 0x000DC8, "Member 'AB_Ranged_Generic_Athena_C::ScopeMesh1P' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Muzzle_Empty_) == 0x000DD0, "Member 'AB_Ranged_Generic_Athena_C::Muzzle_Empty_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, AnimateScopePostProcess_DownSightPostProcessAmount_8E980769412DEF67B9B63CAE644DA93B) == 0x000DD8, "Member 'AB_Ranged_Generic_Athena_C::AnimateScopePostProcess_DownSightPostProcessAmount_8E980769412DEF67B9B63CAE644DA93B' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, AnimateScopePostProcess__Direction_8E980769412DEF67B9B63CAE644DA93B) == 0x000DDC, "Member 'AB_Ranged_Generic_Athena_C::AnimateScopePostProcess__Direction_8E980769412DEF67B9B63CAE644DA93B' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, AnimateScopePostProcess) == 0x000DE0, "Member 'AB_Ranged_Generic_Athena_C::AnimateScopePostProcess' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MuzzleParticleSystem) == 0x000DE8, "Member 'AB_Ranged_Generic_Athena_C::MuzzleParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, WeaponDurabilityDestroyEffect) == 0x000DF0, "Member 'AB_Ranged_Generic_Athena_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, WeaponDurabilityDestroyEffectIcon) == 0x000DF8, "Member 'AB_Ranged_Generic_Athena_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, UseDestroyEffect) == 0x000E00, "Member 'AB_Ranged_Generic_Athena_C::UseDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, RandomMuzzleFlashScaling) == 0x000E01, "Member 'AB_Ranged_Generic_Athena_C::RandomMuzzleFlashScaling' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Use_Reload_Particles) == 0x000E02, "Member 'AB_Ranged_Generic_Athena_C::Use_Reload_Particles' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Reload_ParticleSystem) == 0x000E08, "Member 'AB_Ranged_Generic_Athena_C::Reload_ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, LastPlayFXTime) == 0x000E10, "Member 'AB_Ranged_Generic_Athena_C::LastPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MinPlayFXTime) == 0x000E14, "Member 'AB_Ranged_Generic_Athena_C::MinPlayFXTime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, UseShellsOnFire_) == 0x000E18, "Member 'AB_Ranged_Generic_Athena_C::UseShellsOnFire_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, UseShellsOnReload_) == 0x000E19, "Member 'AB_Ranged_Generic_Athena_C::UseShellsOnReload_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, UseShellsOnPump_) == 0x000E1A, "Member 'AB_Ranged_Generic_Athena_C::UseShellsOnPump_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ShellsParticleSystemTemplate) == 0x000E20, "Member 'AB_Ranged_Generic_Athena_C::ShellsParticleSystemTemplate' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ReloadSocketName) == 0x000E28, "Member 'AB_Ranged_Generic_Athena_C::ReloadSocketName' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Array_Of_Active_Enemy_AI) == 0x000E30, "Member 'AB_Ranged_Generic_Athena_C::Array_Of_Active_Enemy_AI' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Scope___Render_Enemies_To_Custom_Depth_Buffer) == 0x000E40, "Member 'AB_Ranged_Generic_Athena_C::Scope___Render_Enemies_To_Custom_Depth_Buffer' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Socket_Name) == 0x000E44, "Member 'AB_Ranged_Generic_Athena_C::Shells_Socket_Name' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ShellTypeSelect) == 0x000E4C, "Member 'AB_Ranged_Generic_Athena_C::ShellTypeSelect' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Spawn_Rate_Scale) == 0x000E50, "Member 'AB_Ranged_Generic_Athena_C::Shells_Spawn_Rate_Scale' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ShellsRotationRate) == 0x000E54, "Member 'AB_Ranged_Generic_Athena_C::ShellsRotationRate' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Velocity) == 0x000E60, "Member 'AB_Ranged_Generic_Athena_C::Shells_Velocity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Gravity) == 0x000E6C, "Member 'AB_Ranged_Generic_Athena_C::Shells_Gravity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Lifetime) == 0x000E78, "Member 'AB_Ranged_Generic_Athena_C::Shells_Lifetime' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Size) == 0x000E7C, "Member 'AB_Ranged_Generic_Athena_C::Shells_Size' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Shells_Time_Dilation) == 0x000E88, "Member 'AB_Ranged_Generic_Athena_C::Shells_Time_Dilation' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Target_Scope_Vignette_Blur_Screen_Percentage) == 0x000E8C, "Member 'AB_Ranged_Generic_Athena_C::Target_Scope_Vignette_Blur_Screen_Percentage' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Scope_Camera_Offset_Amount) == 0x000E90, "Member 'AB_Ranged_Generic_Athena_C::Scope_Camera_Offset_Amount' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, SmallShells) == 0x000E94, "Member 'AB_Ranged_Generic_Athena_C::SmallShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MediumShells) == 0x000E95, "Member 'AB_Ranged_Generic_Athena_C::MediumShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, LargeShells) == 0x000E96, "Member 'AB_Ranged_Generic_Athena_C::LargeShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ShotgunShells) == 0x000E97, "Member 'AB_Ranged_Generic_Athena_C::ShotgunShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, EnergyShells) == 0x000E98, "Member 'AB_Ranged_Generic_Athena_C::EnergyShells' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Inherit_Parent_Velocity) == 0x000E9C, "Member 'AB_Ranged_Generic_Athena_C::Inherit_Parent_Velocity' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Cylindrical_Radius) == 0x000EA0, "Member 'AB_Ranged_Generic_Athena_C::Cylindrical_Radius' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Cylindrical_Height) == 0x000EA4, "Member 'AB_Ranged_Generic_Athena_C::Cylindrical_Height' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, DebugShellsSocket_) == 0x000EA8, "Member 'AB_Ranged_Generic_Athena_C::DebugShellsSocket_' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Sound_ScopeZoomIn) == 0x000EB0, "Member 'AB_Ranged_Generic_Athena_C::Sound_ScopeZoomIn' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Sound_ScopeZoomOut) == 0x000EB8, "Member 'AB_Ranged_Generic_Athena_C::Sound_ScopeZoomOut' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Alteration_Ambient_PS) == 0x000EC0, "Member 'AB_Ranged_Generic_Athena_C::Alteration_Ambient_PS' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ReticleHUDElementTags) == 0x000EC8, "Member 'AB_Ranged_Generic_Athena_C::ReticleHUDElementTags' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, Is_Wind_Enabled) == 0x000EE8, "Member 'AB_Ranged_Generic_Athena_C::Is_Wind_Enabled' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MuzzleWindParticleSystem) == 0x000EF0, "Member 'AB_Ranged_Generic_Athena_C::MuzzleWindParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, MuzzleParticleSystem1P) == 0x000EF8, "Member 'AB_Ranged_Generic_Athena_C::MuzzleParticleSystem1P' has a wrong offset!");
-static_assert(offsetof(AB_Ranged_Generic_Athena_C, ShouldHideReticleAfterDelay) == 0x000F00, "Member 'AB_Ranged_Generic_Athena_C::ShouldHideReticleAfterDelay' has a wrong offset!");
 
 }
 

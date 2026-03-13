@@ -30,7 +30,7 @@ public:
 	class AFortGameStateAthena*                   K2Node_CustomEvent_GameState;                      // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	const class UFortPlaylist*                    K2Node_CustomEvent_Playlist;                       // 0x0010(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  K2Node_CustomEvent_PlaylistContextTags;            // 0x0018(0x0020)(ConstParm)
-	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class AFortGameStateAthena* GameState, const class UFortPlaylist* Playlist, const struct FGameplayTagContainer& PlaylistContextTags)> K2Node_CreateDelegate_OutputDelegate; // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayTagContainer                  Temp_struct_Variable;                              // 0x0048(0x0020)()
 	class UFortPlaylist*                          Temp_object_Variable;                              // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortGameStateAthena*                   Temp_object_Variable_1;                            // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -106,74 +106,6 @@ public:
 	float                                         CallFunc_GetValueAtLevel_ReturnValue_1;            // 0x02BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_FTrunc_ReturnValue;                       // 0x02C0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine) == 0x000008, "Wrong alignment on B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine");
-static_assert(sizeof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine) == 0x0002C8, "Wrong size on B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, EntryPoint) == 0x000000, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_bool_Variable) == 0x000004, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_CustomEvent_GameState) == 0x000008, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_CustomEvent_GameState' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_CustomEvent_Playlist) == 0x000010, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_CustomEvent_Playlist' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_CustomEvent_PlaylistContextTags) == 0x000018, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_CustomEvent_PlaylistContextTags' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_struct_Variable) == 0x000048, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_object_Variable) == 0x000068, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_object_Variable_1) == 0x000070, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_PlaylistDataReadyAsync_ReturnValue) == 0x000078, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_PlaylistDataReadyAsync_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_IsValid_ReturnValue) == 0x000080, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Not_PreBool_ReturnValue) == 0x000081, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_name_Variable) == 0x000084, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_name_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x00008C, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_StartingSeedValue) == 0x000090, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_StartingSeedValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_InputItem) == 0x000098, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_InputItem' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_InputTexture) == 0x0000A0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_InputTexture' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_CurrentGoal) == 0x0000A8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_CurrentGoal' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_CurrentCollectedAmount) == 0x0000AC, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_CurrentCollectedAmount' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_CurrentCaptureCount) == 0x0000B0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_CurrentCaptureCount' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_OutputTexture) == 0x0000B8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_OutputTexture' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_IsValid_ReturnValue_1) == 0x0000C0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Add_IntInt_ReturnValue) == 0x0000C4, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Conv_IntToFloat_ReturnValue) == 0x0000C8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_name_Variable_1) == 0x0000CC, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_name_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_bool_Variable_1) == 0x0000D4, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_InteractingPawn) == 0x0000D8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Event_InteractionBeingAttempted) == 0x0000E0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Event_InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000E8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x0000F0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_HasAuthority_ReturnValue) == 0x0000F8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000FC, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000108, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x000114, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000120, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EqualEqual_ObjectObject_ReturnValue_1) == 0x000121, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EqualEqual_ObjectObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, Temp_int_Variable) == 0x000124, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x000128, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_RLerp_ReturnValue) == 0x000134, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_RLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Select_Default) == 0x000140, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000148, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_SelectFloat_ReturnValue) == 0x0001D0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_MakeRotator_ReturnValue) == 0x0001D4, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_SetRelativeRotation_SweepHitResult_1) == 0x0001E0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_SetRelativeRotation_SweepHitResult_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GetTimeSeconds_ReturnValue) == 0x000268, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GetTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EvaluateCurveTableRow_OutXY) == 0x00026C, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EvaluateCurveTableRow_ReturnValue) == 0x000270, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EvaluateCurveTableRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_SelectFloat_ReturnValue_1) == 0x000274, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_SelectFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GetOverrideRarity_Rarity) == 0x000278, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GetOverrideRarity_Rarity' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GetOverrideRarity_ReturnValue) == 0x000279, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GetOverrideRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00027C, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_Select_Default_1) == 0x000280, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_SwitchInteger_CmpSuccess) == 0x000284, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, K2Node_CreateDelegate_OutputDelegate_1) == 0x000288, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x000298, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EvaluateCurveTableRow_OutXY_1) == 0x0002A4, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EvaluateCurveTableRow_OutXY_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EvaluateCurveTableRow_ReturnValue_1) == 0x0002A8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EvaluateCurveTableRow_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0002A9, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GetValueAtLevel_ReturnValue) == 0x0002AC, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_EqualEqual_FloatFloat_ReturnValue_1) == 0x0002B0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_EqualEqual_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Add_IntInt_ReturnValue_1) == 0x0002B4, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_Greater_IntInt_ReturnValue) == 0x0002B8, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0002B9, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_BooleanAND_ReturnValue) == 0x0002BA, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x0002BC, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine, CallFunc_FTrunc_ReturnValue) == 0x0002C0, "Member 'B_Athena_VendingMachine_C_ExecuteUbergraph_B_Athena_VendingMachine::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.BlueprintOnInteract
 // 0x0010 (0x0010 - 0x0000)
@@ -183,10 +115,6 @@ public:
 	const class AFortPawn*                        InteractingPawn;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInteractionBeingAttempted                    InteractionBeingAttempted;                         // 0x0008(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_BlueprintOnInteract) == 0x000008, "Wrong alignment on B_Athena_VendingMachine_C_BlueprintOnInteract");
-static_assert(sizeof(B_Athena_VendingMachine_C_BlueprintOnInteract) == 0x000010, "Wrong size on B_Athena_VendingMachine_C_BlueprintOnInteract");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintOnInteract, InteractingPawn) == 0x000000, "Member 'B_Athena_VendingMachine_C_BlueprintOnInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintOnInteract, InteractionBeingAttempted) == 0x000008, "Member 'B_Athena_VendingMachine_C_BlueprintOnInteract::InteractionBeingAttempted' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.UpdateCollectorsActiveItem
 // 0x0030 (0x0030 - 0x0000)
@@ -203,15 +131,6 @@ public:
 	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTexture*                               OutputTexture;                                     // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem) == 0x000008, "Wrong alignment on B_Athena_VendingMachine_C_UpdateCollectorsActiveItem");
-static_assert(sizeof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem) == 0x000030, "Wrong size on B_Athena_VendingMachine_C_UpdateCollectorsActiveItem");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, StartingSeedValue) == 0x000000, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::StartingSeedValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, InputItem) == 0x000008, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::InputItem' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, InputTexture) == 0x000010, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::InputTexture' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, CurrentGoal) == 0x000018, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::CurrentGoal' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, CurrentCollectedAmount) == 0x00001C, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::CurrentCollectedAmount' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, CurrentCaptureCount_0) == 0x000020, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::CurrentCaptureCount_0' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_UpdateCollectorsActiveItem, OutputTexture) == 0x000028, "Member 'B_Athena_VendingMachine_C_UpdateCollectorsActiveItem::OutputTexture' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.OnReady_21959F7346995C2CA1D67DB9455B627D
 // 0x0030 (0x0030 - 0x0000)
@@ -222,11 +141,6 @@ public:
 	const class UFortPlaylist*                    Playlist;                                          // 0x0008(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                  PlaylistContextTags;                               // 0x0010(0x0020)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D) == 0x000008, "Wrong alignment on B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D");
-static_assert(sizeof(B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D) == 0x000030, "Wrong size on B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D");
-static_assert(offsetof(B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D, GameState) == 0x000000, "Member 'B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D::GameState' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D, Playlist) == 0x000008, "Member 'B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D::Playlist' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D, PlaylistContextTags) == 0x000010, "Member 'B_Athena_VendingMachine_C_OnReady_21959F7346995C2CA1D67DB9455B627D::PlaylistContextTags' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.SetRarityColors
 // 0x0010 (0x0010 - 0x0000)
@@ -235,9 +149,6 @@ struct B_Athena_VendingMachine_C_SetRarityColors final
 public:
 	struct FLinearColor                           Color;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_SetRarityColors) == 0x000004, "Wrong alignment on B_Athena_VendingMachine_C_SetRarityColors");
-static_assert(sizeof(B_Athena_VendingMachine_C_SetRarityColors) == 0x000010, "Wrong size on B_Athena_VendingMachine_C_SetRarityColors");
-static_assert(offsetof(B_Athena_VendingMachine_C_SetRarityColors, Color) == 0x000000, "Member 'B_Athena_VendingMachine_C_SetRarityColors::Color' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.BlueprintGetInteractionString
 // 0x00C0 (0x00C0 - 0x0000)
@@ -261,21 +172,6 @@ public:
 	class FString                                 K2Node_Select_Default;                             // 0x0098(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x00A8(0x0018)()
 };
-static_assert(alignof(B_Athena_VendingMachine_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on B_Athena_VendingMachine_C_BlueprintGetInteractionString");
-static_assert(sizeof(B_Athena_VendingMachine_C_BlueprintGetInteractionString) == 0x0000C0, "Wrong size on B_Athena_VendingMachine_C_BlueprintGetInteractionString");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, InteractingPawn) == 0x000000, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, ReturnValue) == 0x000010, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, Temp_bool_Variable) == 0x000028, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Conv_TextToString_ReturnValue) == 0x000030, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Greater_IntInt_ReturnValue) == 0x000040, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Conv_IntToString_ReturnValue) == 0x000048, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000058, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue) == 0x000068, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000078, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000088, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, K2Node_Select_Default) == 0x000098, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_BlueprintGetInteractionString, CallFunc_Conv_StringToText_ReturnValue) == 0x0000A8, "Member 'B_Athena_VendingMachine_C_BlueprintGetInteractionString::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
 
 // Function B_Athena_VendingMachine.B_Athena_VendingMachine_C.GetOverrideRarity
 // 0x0006 (0x0006 - 0x0000)
@@ -289,14 +185,6 @@ public:
 	EFortRarity                                   CallFunc_GetOverrideRarity_Rarity;                 // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GetOverrideRarity_ReturnValue;            // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Athena_VendingMachine_C_GetOverrideRarity) == 0x000001, "Wrong alignment on B_Athena_VendingMachine_C_GetOverrideRarity");
-static_assert(sizeof(B_Athena_VendingMachine_C_GetOverrideRarity) == 0x000006, "Wrong size on B_Athena_VendingMachine_C_GetOverrideRarity");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, Rarity) == 0x000000, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::Rarity' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, ReturnValue) == 0x000001, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, bHasOverride) == 0x000002, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::bHasOverride' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, NewRarity) == 0x000003, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::NewRarity' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, CallFunc_GetOverrideRarity_Rarity) == 0x000004, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::CallFunc_GetOverrideRarity_Rarity' has a wrong offset!");
-static_assert(offsetof(B_Athena_VendingMachine_C_GetOverrideRarity, CallFunc_GetOverrideRarity_ReturnValue) == 0x000005, "Member 'B_Athena_VendingMachine_C_GetOverrideRarity::CallFunc_GetOverrideRarity_ReturnValue' has a wrong offset!");
 
 }
 

@@ -44,24 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DA_AshtonPack_C">();
+		BP_STATIC_CLASS_IMPL("DA_AshtonPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DA_AshtonPack_C")
 	}
 	static class ADA_AshtonPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADA_AshtonPack_C>();
 	}
 };
-static_assert(alignof(ADA_AshtonPack_C) == 0x000008, "Wrong alignment on ADA_AshtonPack_C");
-static_assert(sizeof(ADA_AshtonPack_C) == 0x000B48, "Wrong size on ADA_AshtonPack_C");
-static_assert(offsetof(ADA_AshtonPack_C, UberGraphFrame) == 0x000AC0, "Member 'ADA_AshtonPack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, TimePressed) == 0x000AC8, "Member 'ADA_AshtonPack_C::TimePressed' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, PunchPicker) == 0x000ACC, "Member 'ADA_AshtonPack_C::PunchPicker' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, HasLanded) == 0x000AD0, "Member 'ADA_AshtonPack_C::HasLanded' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, AshtonAbilityTags) == 0x000AD8, "Member 'ADA_AshtonPack_C::AshtonAbilityTags' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, GC_JumpTrails) == 0x000AF8, "Member 'ADA_AshtonPack_C::GC_JumpTrails' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, GC_SkydiveTrails) == 0x000B18, "Member 'ADA_AshtonPack_C::GC_SkydiveTrails' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, PrimaryFireEventTag) == 0x000B38, "Member 'ADA_AshtonPack_C::PrimaryFireEventTag' has a wrong offset!");
-static_assert(offsetof(ADA_AshtonPack_C, SecondaryFireEventTag) == 0x000B40, "Member 'ADA_AshtonPack_C::SecondaryFireEventTag' has a wrong offset!");
 
 }
 

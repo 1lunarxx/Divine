@@ -55,35 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassPurchaseButton_Preview_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassPurchaseButton_Preview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassPurchaseButton_Preview_C")
 	}
 	static class UBattlePassPurchaseButton_Preview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassPurchaseButton_Preview_C>();
 	}
 };
-static_assert(alignof(UBattlePassPurchaseButton_Preview_C) == 0x000008, "Wrong alignment on UBattlePassPurchaseButton_Preview_C");
-static_assert(sizeof(UBattlePassPurchaseButton_Preview_C) == 0x000C40, "Wrong size on UBattlePassPurchaseButton_Preview_C");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, UberGraphFrame) == 0x000BA8, "Member 'UBattlePassPurchaseButton_Preview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, BackingSelectedAnim) == 0x000BB0, "Member 'UBattlePassPurchaseButton_Preview_C::BackingSelectedAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, TextBounce) == 0x000BB8, "Member 'UBattlePassPurchaseButton_Preview_C::TextBounce' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, ResetTrianglesAnim) == 0x000BC0, "Member 'UBattlePassPurchaseButton_Preview_C::ResetTrianglesAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, HoverTrianglesAnim) == 0x000BC8, "Member 'UBattlePassPurchaseButton_Preview_C::HoverTrianglesAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, GlowBurst) == 0x000BD0, "Member 'UBattlePassPurchaseButton_Preview_C::GlowBurst' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, LoopingButtonGlow) == 0x000BD8, "Member 'UBattlePassPurchaseButton_Preview_C::LoopingButtonGlow' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, Selected) == 0x000BE0, "Member 'UBattlePassPurchaseButton_Preview_C::Selected' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, Backing) == 0x000BE8, "Member 'UBattlePassPurchaseButton_Preview_C::Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, Border) == 0x000BF0, "Member 'UBattlePassPurchaseButton_Preview_C::Border' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, ButtonBacking) == 0x000BF8, "Member 'UBattlePassPurchaseButton_Preview_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, DiscountContainer) == 0x000C00, "Member 'UBattlePassPurchaseButton_Preview_C::DiscountContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, Glow) == 0x000C08, "Member 'UBattlePassPurchaseButton_Preview_C::Glow' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, HoverTriangles) == 0x000C10, "Member 'UBattlePassPurchaseButton_Preview_C::HoverTriangles' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, OriginalCostContainer) == 0x000C18, "Member 'UBattlePassPurchaseButton_Preview_C::OriginalCostContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, StrikeThrough) == 0x000C20, "Member 'UBattlePassPurchaseButton_Preview_C::StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, SubtitleContainer) == 0x000C28, "Member 'UBattlePassPurchaseButton_Preview_C::SubtitleContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, VBuck) == 0x000C30, "Member 'UBattlePassPurchaseButton_Preview_C::VBuck' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, IsBundle) == 0x000C38, "Member 'UBattlePassPurchaseButton_Preview_C::IsBundle' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Preview_C, DelayCycle) == 0x000C3C, "Member 'UBattlePassPurchaseButton_Preview_C::DelayCycle' has a wrong offset!");
 
 }
 

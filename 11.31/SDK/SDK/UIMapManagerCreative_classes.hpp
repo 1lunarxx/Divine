@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIMapManagerCreative_C">();
+		BP_STATIC_CLASS_IMPL("UIMapManagerCreative_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIMapManagerCreative_C")
 	}
 	static class AUIMapManagerCreative_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUIMapManagerCreative_C>();
 	}
 };
-static_assert(alignof(AUIMapManagerCreative_C) == 0x000010, "Wrong alignment on AUIMapManagerCreative_C");
-static_assert(sizeof(AUIMapManagerCreative_C) == 0x0006D0, "Wrong size on AUIMapManagerCreative_C");
-static_assert(offsetof(AUIMapManagerCreative_C, DefaultSceneRoot) == 0x0006C0, "Member 'AUIMapManagerCreative_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

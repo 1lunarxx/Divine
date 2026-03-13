@@ -48,20 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_ThrownConsumable_Parent_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_ThrownConsumable_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_ThrownConsumable_Parent_C")
 	}
 	static class AB_Prj_ThrownConsumable_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_ThrownConsumable_Parent_C>();
 	}
 };
-static_assert(alignof(AB_Prj_ThrownConsumable_Parent_C) == 0x000008, "Wrong alignment on AB_Prj_ThrownConsumable_Parent_C");
-static_assert(sizeof(AB_Prj_ThrownConsumable_Parent_C) == 0x000850, "Wrong size on AB_Prj_ThrownConsumable_Parent_C");
-static_assert(offsetof(AB_Prj_ThrownConsumable_Parent_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_ThrownConsumable_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_Parent_C, BouncePawnAgainstPawnGravityScale) == 0x000840, "Member 'AB_Prj_ThrownConsumable_Parent_C::BouncePawnAgainstPawnGravityScale' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_Parent_C, FuseTime) == 0x000844, "Member 'AB_Prj_ThrownConsumable_Parent_C::FuseTime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_Parent_C, bSimulationRunning) == 0x000848, "Member 'AB_Prj_ThrownConsumable_Parent_C::bSimulationRunning' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_Parent_C, bShouldRestartSimulating) == 0x000849, "Member 'AB_Prj_ThrownConsumable_Parent_C::bShouldRestartSimulating' has a wrong offset!");
 
 }
 

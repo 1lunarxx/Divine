@@ -63,43 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownTournamentPosterBack_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownTournamentPosterBack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownTournamentPosterBack_C")
 	}
 	static class UShowdownTournamentPosterBack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownTournamentPosterBack_C>();
 	}
 };
-static_assert(alignof(UShowdownTournamentPosterBack_C) == 0x000008, "Wrong alignment on UShowdownTournamentPosterBack_C");
-static_assert(sizeof(UShowdownTournamentPosterBack_C) == 0x0006F0, "Wrong size on UShowdownTournamentPosterBack_C");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, UberGraphFrame) == 0x000610, "Member 'UShowdownTournamentPosterBack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, CommonTextBlock_EventDates) == 0x000618, "Member 'UShowdownTournamentPosterBack_C::CommonTextBlock_EventDates' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, CommonTextBlock_MetaDate) == 0x000620, "Member 'UShowdownTournamentPosterBack_C::CommonTextBlock_MetaDate' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, CommonTextBlock_MetaTitle) == 0x000628, "Member 'UShowdownTournamentPosterBack_C::CommonTextBlock_MetaTitle' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, DateText) == 0x000630, "Member 'UShowdownTournamentPosterBack_C::DateText' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, FlavorText) == 0x000638, "Member 'UShowdownTournamentPosterBack_C::FlavorText' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, Image_FooterWatermark) == 0x000640, "Member 'UShowdownTournamentPosterBack_C::Image_FooterWatermark' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, ScaleBoxTournamentTitle) == 0x000648, "Member 'UShowdownTournamentPosterBack_C::ScaleBoxTournamentTitle' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, ShowdownPin) == 0x000650, "Member 'UShowdownTournamentPosterBack_C::ShowdownPin' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, SizeBox_Pin) == 0x000658, "Member 'UShowdownTournamentPosterBack_C::SizeBox_Pin' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TitleLine1) == 0x000660, "Member 'UShowdownTournamentPosterBack_C::TitleLine1' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TitleLine2) == 0x000668, "Member 'UShowdownTournamentPosterBack_C::TitleLine2' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry) == 0x000670, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_0) == 0x000678, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_0' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_1) == 0x000680, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_1' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_2) == 0x000688, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_2' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_3) == 0x000690, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_3' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_4) == 0x000698, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_4' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_5) == 0x0006A0, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_5' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_6) == 0x0006A8, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_6' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_7) == 0x0006B0, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_7' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_8) == 0x0006B8, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_8' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_9) == 0x0006C0, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_9' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_10) == 0x0006C8, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_10' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_11) == 0x0006D0, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_11' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, TournamentDateEntry_C_12) == 0x0006D8, "Member 'UShowdownTournamentPosterBack_C::TournamentDateEntry_C_12' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, UniformGridPanel_DateGrid) == 0x0006E0, "Member 'UShowdownTournamentPosterBack_C::UniformGridPanel_DateGrid' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentPosterBack_C, DateRowMax) == 0x0006E8, "Member 'UShowdownTournamentPosterBack_C::DateRowMax' has a wrong offset!");
 
 }
 

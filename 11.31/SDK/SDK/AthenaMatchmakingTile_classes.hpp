@@ -89,56 +89,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingTile_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingTile_C")
 	}
 	static class UAthenaMatchmakingTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingTile_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingTile_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingTile_C");
-static_assert(sizeof(UAthenaMatchmakingTile_C) == 0x000DB8, "Wrong size on UAthenaMatchmakingTile_C");
-static_assert(offsetof(UAthenaMatchmakingTile_C, UberGraphFrame) == 0x000C50, "Member 'UAthenaMatchmakingTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, FlareName) == 0x000C58, "Member 'UAthenaMatchmakingTile_C::FlareName' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, NewModeIntro_1_Setup) == 0x000C60, "Member 'UAthenaMatchmakingTile_C::NewModeIntro_1_Setup' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, NewModeIntro_0) == 0x000C68, "Member 'UAthenaMatchmakingTile_C::NewModeIntro_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, NewModeSetup) == 0x000C70, "Member 'UAthenaMatchmakingTile_C::NewModeSetup' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, NewModeIntro) == 0x000C78, "Member 'UAthenaMatchmakingTile_C::NewModeIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeSelection_NoOpacity) == 0x000C80, "Member 'UAthenaMatchmakingTile_C::GameModeSelection_NoOpacity' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, IntroAndOutro) == 0x000C88, "Member 'UAthenaMatchmakingTile_C::IntroAndOutro' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, ConfirmSelection) == 0x000C90, "Member 'UAthenaMatchmakingTile_C::ConfirmSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeSelection) == 0x000C98, "Member 'UAthenaMatchmakingTile_C::GameModeSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, AdSpaceSwitcher) == 0x000CA0, "Member 'UAthenaMatchmakingTile_C::AdSpaceSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, ConfirmSelectionFlash) == 0x000CA8, "Member 'UAthenaMatchmakingTile_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, ConfirmSelectionShine) == 0x000CB0, "Member 'UAthenaMatchmakingTile_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, DisabledGray) == 0x000CB8, "Member 'UAthenaMatchmakingTile_C::DisabledGray' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, Fill) == 0x000CC0, "Member 'UAthenaMatchmakingTile_C::Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeGlow) == 0x000CC8, "Member 'UAthenaMatchmakingTile_C::GameModeGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeIcon) == 0x000CD0, "Member 'UAthenaMatchmakingTile_C::GameModeIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeImageScale) == 0x000CD8, "Member 'UAthenaMatchmakingTile_C::GameModeImageScale' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, GameModeSB) == 0x000CE0, "Member 'UAthenaMatchmakingTile_C::GameModeSB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, HeistLTMTileBacking) == 0x000CE8, "Member 'UAthenaMatchmakingTile_C::HeistLTMTileBacking' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, IconSpacer) == 0x000CF0, "Member 'UAthenaMatchmakingTile_C::IconSpacer' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, Image_4) == 0x000CF8, "Member 'UAthenaMatchmakingTile_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, Image_Flare_Btm) == 0x000D00, "Member 'UAthenaMatchmakingTile_C::Image_Flare_Btm' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, LoadingImage) == 0x000D08, "Member 'UAthenaMatchmakingTile_C::LoadingImage' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, LoadingImageOvr) == 0x000D10, "Member 'UAthenaMatchmakingTile_C::LoadingImageOvr' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, LoadSwitcher) == 0x000D18, "Member 'UAthenaMatchmakingTile_C::LoadSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, LTMModeSubIcon) == 0x000D20, "Member 'UAthenaMatchmakingTile_C::LTMModeSubIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, SizeBox_Tile) == 0x000D28, "Member 'UAthenaMatchmakingTile_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, SpecialAdSpace) == 0x000D30, "Member 'UAthenaMatchmakingTile_C::SpecialAdSpace' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, SpecialLTMUnderlay) == 0x000D38, "Member 'UAthenaMatchmakingTile_C::SpecialLTMUnderlay' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, SubGameModeNameHB) == 0x000D40, "Member 'UAthenaMatchmakingTile_C::SubGameModeNameHB' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, Text_TimeRemaining) == 0x000D48, "Member 'UAthenaMatchmakingTile_C::Text_TimeRemaining' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, TileReveal) == 0x000D50, "Member 'UAthenaMatchmakingTile_C::TileReveal' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, TimeRemainingBoarder) == 0x000D58, "Member 'UAthenaMatchmakingTile_C::TimeRemainingBoarder' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, TimeRemainingBox) == 0x000D60, "Member 'UAthenaMatchmakingTile_C::TimeRemainingBox' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, UnhoveredVignette) == 0x000D68, "Member 'UAthenaMatchmakingTile_C::UnhoveredVignette' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, MyPlaylist) == 0x000D70, "Member 'UAthenaMatchmakingTile_C::MyPlaylist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, bHasTileReveal) == 0x000D78, "Member 'UAthenaMatchmakingTile_C::bHasTileReveal' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, RepresentedPlaylist) == 0x000D80, "Member 'UAthenaMatchmakingTile_C::RepresentedPlaylist' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, NumTilesInRow) == 0x000DA8, "Member 'UAthenaMatchmakingTile_C::NumTilesInRow' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingTile_C, CountdownTimer) == 0x000DB0, "Member 'UAthenaMatchmakingTile_C::CountdownTimer' has a wrong offset!");
 
 }
 

@@ -17,6 +17,96 @@
 namespace SDK
 {
 
+// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.OnStopCallout
+// (Event, Protected, BlueprintEvent)
+
+void UMainTabTutorialBangWrapper_C::OnStopCallout()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.OnStartCallout
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             TutorialObjectiveName                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// ETutorialType                           TutorialType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, ETutorialType TutorialType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
+
+	Params::MainTabTutorialBangWrapper_C_OnStartCallout Parms{};
+
+	Parms.TutorialObjectiveName = TutorialObjectiveName;
+	Parms.TutorialType = TutorialType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
+
+	Params::MainTabTutorialBangWrapper_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.Tab Reveal Message Closed
+// (BlueprintCallable, BlueprintEvent)
+
+void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.ExecuteUbergraph_MainTabTutorialBangWrapper
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabTutorialBangWrapper_C::ExecuteUbergraph_MainTabTutorialBangWrapper(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
+
+	Params::MainTabTutorialBangWrapper_C_ExecuteUbergraph_MainTabTutorialBangWrapper Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.SetShouldSuppressBang
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -136,96 +226,6 @@ void UMainTabTutorialBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Coun
 
 	Parms.bEnabled = bEnabled;
 	Parms.Count_0 = Count_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.OnStopCallout
-// (Event, Protected, BlueprintEvent)
-
-void UMainTabTutorialBangWrapper_C::OnStopCallout()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStopCallout");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.OnStartCallout
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class FName                             TutorialObjectiveName                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// ETutorialType                           TutorialType                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabTutorialBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, ETutorialType TutorialType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "OnStartCallout");
-
-	Params::MainTabTutorialBangWrapper_C_OnStartCallout Parms{};
-
-	Parms.TutorialObjectiveName = TutorialObjectiveName;
-	Parms.TutorialType = TutorialType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UMainTabTutorialBangWrapper_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "PreConstruct");
-
-	Params::MainTabTutorialBangWrapper_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.Tab Reveal Message Closed
-// (BlueprintCallable, BlueprintEvent)
-
-void UMainTabTutorialBangWrapper_C::Tab_Reveal_Message_Closed()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "Tab Reveal Message Closed");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MainTabTutorialBangWrapper.MainTabTutorialBangWrapper_C.ExecuteUbergraph_MainTabTutorialBangWrapper
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UMainTabTutorialBangWrapper_C::ExecuteUbergraph_MainTabTutorialBangWrapper(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MainTabTutorialBangWrapper_C", "ExecuteUbergraph_MainTabTutorialBangWrapper");
-
-	Params::MainTabTutorialBangWrapper_C_ExecuteUbergraph_MainTabTutorialBangWrapper Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

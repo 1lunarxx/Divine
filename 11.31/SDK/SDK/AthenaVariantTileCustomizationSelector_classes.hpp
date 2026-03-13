@@ -23,15 +23,17 @@ class UAthenaVariantTileCustomizationSelector_C final : public UFortVariantSelec
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaVariantTileCustomizationSelector_C">();
+		BP_STATIC_CLASS_IMPL("AthenaVariantTileCustomizationSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaVariantTileCustomizationSelector_C")
 	}
 	static class UAthenaVariantTileCustomizationSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaVariantTileCustomizationSelector_C>();
 	}
 };
-static_assert(alignof(UAthenaVariantTileCustomizationSelector_C) == 0x000008, "Wrong alignment on UAthenaVariantTileCustomizationSelector_C");
-static_assert(sizeof(UAthenaVariantTileCustomizationSelector_C) == 0x000360, "Wrong size on UAthenaVariantTileCustomizationSelector_C");
 
 }
 

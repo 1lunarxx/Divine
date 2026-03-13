@@ -75,40 +75,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonAboutWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonAboutWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonAboutWidget_C")
 	}
 	static class UAthenaSeasonAboutWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonAboutWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonAboutWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonAboutWidget_C");
-static_assert(sizeof(UAthenaSeasonAboutWidget_C) == 0x000598, "Wrong size on UAthenaSeasonAboutWidget_C");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, UberGraphFrame) == 0x0004C0, "Member 'UAthenaSeasonAboutWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, RewardGridIntro) == 0x0004C8, "Member 'UAthenaSeasonAboutWidget_C::RewardGridIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, CarouselIntro) == 0x0004D0, "Member 'UAthenaSeasonAboutWidget_C::CarouselIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, AthenaBattlePassAnimatedLogo) == 0x0004D8, "Member 'UAthenaSeasonAboutWidget_C::AthenaBattlePassAnimatedLogo' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, BackButton) == 0x0004E0, "Member 'UAthenaSeasonAboutWidget_C::BackButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, BattlePassOverviewVideo) == 0x0004E8, "Member 'UAthenaSeasonAboutWidget_C::BattlePassOverviewVideo' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, BreadCrumbsNavHB) == 0x0004F0, "Member 'UAthenaSeasonAboutWidget_C::BreadCrumbsNavHB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, CloseIcon) == 0x0004F8, "Member 'UAthenaSeasonAboutWidget_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, FAQButton) == 0x000500, "Member 'UAthenaSeasonAboutWidget_C::FAQButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, LeftAction) == 0x000508, "Member 'UAthenaSeasonAboutWidget_C::LeftAction' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, Lightbox) == 0x000510, "Member 'UAthenaSeasonAboutWidget_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, MobileCloseButton) == 0x000518, "Member 'UAthenaSeasonAboutWidget_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, MobileCloseOverlay) == 0x000520, "Member 'UAthenaSeasonAboutWidget_C::MobileCloseOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, PageActionsHB) == 0x000528, "Member 'UAthenaSeasonAboutWidget_C::PageActionsHB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, RewardsGrid) == 0x000530, "Member 'UAthenaSeasonAboutWidget_C::RewardsGrid' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, RightAction) == 0x000538, "Member 'UAthenaSeasonAboutWidget_C::RightAction' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, SwipePanel) == 0x000540, "Member 'UAthenaSeasonAboutWidget_C::SwipePanel' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, WatchVideoButton) == 0x000548, "Member 'UAthenaSeasonAboutWidget_C::WatchVideoButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, LeftInputAction) == 0x000550, "Member 'UAthenaSeasonAboutWidget_C::LeftInputAction' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, RightInputAction) == 0x000560, "Member 'UAthenaSeasonAboutWidget_C::RightInputAction' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, About_Sound) == 0x000570, "Member 'UAthenaSeasonAboutWidget_C::About_Sound' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, AboutSoundAudioComponent) == 0x000578, "Member 'UAthenaSeasonAboutWidget_C::AboutSoundAudioComponent' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, ElectraMediaSource) == 0x000580, "Member 'UAthenaSeasonAboutWidget_C::ElectraMediaSource' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, ElectraVideoID) == 0x000588, "Member 'UAthenaSeasonAboutWidget_C::ElectraVideoID' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonAboutWidget_C, StreamedVideoOpeningTimer) == 0x000590, "Member 'UAthenaSeasonAboutWidget_C::StreamedVideoOpeningTimer' has a wrong offset!");
 
 }
 

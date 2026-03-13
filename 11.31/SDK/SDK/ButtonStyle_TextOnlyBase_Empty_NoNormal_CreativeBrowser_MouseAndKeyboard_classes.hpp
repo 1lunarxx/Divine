@@ -23,15 +23,17 @@ class UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C")
 	}
 	static class UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C) == 0x000008, "Wrong alignment on UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C");
-static_assert(sizeof(UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C) == 0x000570, "Wrong size on UButtonStyle_TextOnlyBase_Empty_NoNormal_CreativeBrowser_MouseAndKeyboard_C");
 
 }
 

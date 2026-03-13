@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoinVoiceChannelButton_C">();
+		BP_STATIC_CLASS_IMPL("JoinVoiceChannelButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinVoiceChannelButton_C")
 	}
 	static class UJoinVoiceChannelButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinVoiceChannelButton_C>();
 	}
 };
-static_assert(alignof(UJoinVoiceChannelButton_C) == 0x000008, "Wrong alignment on UJoinVoiceChannelButton_C");
-static_assert(sizeof(UJoinVoiceChannelButton_C) == 0x000B80, "Wrong size on UJoinVoiceChannelButton_C");
-static_assert(offsetof(UJoinVoiceChannelButton_C, UberGraphFrame) == 0x000B70, "Member 'UJoinVoiceChannelButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoinVoiceChannelButton_C, OnHover) == 0x000B78, "Member 'UJoinVoiceChannelButton_C::OnHover' has a wrong offset!");
 
 }
 

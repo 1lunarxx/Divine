@@ -29,19 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AgeGateFlow_C">();
+		BP_STATIC_CLASS_IMPL("AgeGateFlow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AgeGateFlow_C")
 	}
 	static class UAgeGateFlow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAgeGateFlow_C>();
 	}
 };
-static_assert(alignof(UAgeGateFlow_C) == 0x000008, "Wrong alignment on UAgeGateFlow_C");
-static_assert(sizeof(UAgeGateFlow_C) == 0x0004F8, "Wrong size on UAgeGateFlow_C");
-static_assert(offsetof(UAgeGateFlow_C, CommonActionWidget_794) == 0x0004D8, "Member 'UAgeGateFlow_C::CommonActionWidget_794' has a wrong offset!");
-static_assert(offsetof(UAgeGateFlow_C, Image) == 0x0004E0, "Member 'UAgeGateFlow_C::Image' has a wrong offset!");
-static_assert(offsetof(UAgeGateFlow_C, Image_1) == 0x0004E8, "Member 'UAgeGateFlow_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UAgeGateFlow_C, Image_255) == 0x0004F0, "Member 'UAgeGateFlow_C::Image_255' has a wrong offset!");
 
 }
 

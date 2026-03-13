@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Pawn_FrenchYedoc_C">();
+		BP_STATIC_CLASS_IMPL("BP_Pawn_FrenchYedoc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Pawn_FrenchYedoc_C")
 	}
 	static class ABP_Pawn_FrenchYedoc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Pawn_FrenchYedoc_C>();
 	}
 };
-static_assert(alignof(ABP_Pawn_FrenchYedoc_C) == 0x000010, "Wrong alignment on ABP_Pawn_FrenchYedoc_C");
-static_assert(sizeof(ABP_Pawn_FrenchYedoc_C) == 0x003990, "Wrong size on ABP_Pawn_FrenchYedoc_C");
-static_assert(offsetof(ABP_Pawn_FrenchYedoc_C, UberGraphFrame_BP_Pawn_FrenchYedoc_C) == 0x003988, "Member 'ABP_Pawn_FrenchYedoc_C::UberGraphFrame_BP_Pawn_FrenchYedoc_C' has a wrong offset!");
 
 }
 

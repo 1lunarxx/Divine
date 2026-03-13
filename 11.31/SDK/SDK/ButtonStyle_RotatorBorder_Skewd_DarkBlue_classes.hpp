@@ -23,15 +23,17 @@ class UButtonStyle_RotatorBorder_Skewd_DarkBlue_C final : public UCommonButtonSt
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-RotatorBorder_Skewd_DarkBlue_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-RotatorBorder_Skewd_DarkBlue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-RotatorBorder_Skewd_DarkBlue_C")
 	}
 	static class UButtonStyle_RotatorBorder_Skewd_DarkBlue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_RotatorBorder_Skewd_DarkBlue_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_RotatorBorder_Skewd_DarkBlue_C) == 0x000008, "Wrong alignment on UButtonStyle_RotatorBorder_Skewd_DarkBlue_C");
-static_assert(sizeof(UButtonStyle_RotatorBorder_Skewd_DarkBlue_C) == 0x000570, "Wrong size on UButtonStyle_RotatorBorder_Skewd_DarkBlue_C");
 
 }
 

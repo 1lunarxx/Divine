@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function ChallengeImageGridTreeEntry_Challenge.ChallengeImageGridTreeEntry_Challenge_C.BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UChallengeImageGridTreeEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeImageGridTreeEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
+
+	Params::ChallengeImageGridTreeEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
+
+	Parms.Button = Button;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function ChallengeImageGridTreeEntry_Challenge.ChallengeImageGridTreeEntry_Challenge_C.OnPartyAssistEnabledChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -162,26 +182,6 @@ void UChallengeImageGridTreeEntry_Challenge_C::ExecuteUbergraph_ChallengeImageGr
 	Params::ChallengeImageGridTreeEntry_Challenge_C_ExecuteUbergraph_ChallengeImageGridTreeEntry_Challenge Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ChallengeImageGridTreeEntry_Challenge.ChallengeImageGridTreeEntry_Challenge_C.BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*                    Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UChallengeImageGridTreeEntry_Challenge_C::BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeImageGridTreeEntry_Challenge_C", "BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-
-	Params::ChallengeImageGridTreeEntry_Challenge_C_BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature Parms{};
-
-	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

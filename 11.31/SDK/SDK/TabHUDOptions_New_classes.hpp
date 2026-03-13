@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabHUDOptions_New_C">();
+		BP_STATIC_CLASS_IMPL("TabHUDOptions_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabHUDOptions_New_C")
 	}
 	static class UTabHUDOptions_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabHUDOptions_New_C>();
 	}
 };
-static_assert(alignof(UTabHUDOptions_New_C) == 0x000008, "Wrong alignment on UTabHUDOptions_New_C");
-static_assert(sizeof(UTabHUDOptions_New_C) == 0x000338, "Wrong size on UTabHUDOptions_New_C");
-static_assert(offsetof(UTabHUDOptions_New_C, UberGraphFrame) == 0x000330, "Member 'UTabHUDOptions_New_C::UberGraphFrame' has a wrong offset!");
 
 }
 

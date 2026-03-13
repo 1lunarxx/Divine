@@ -59,34 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardEntry_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardEntry_C")
 	}
 	static class UEventLeaderboardEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardEntry_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardEntry_C) == 0x000008, "Wrong alignment on UEventLeaderboardEntry_C");
-static_assert(sizeof(UEventLeaderboardEntry_C) == 0x000C30, "Wrong size on UEventLeaderboardEntry_C");
-static_assert(offsetof(UEventLeaderboardEntry_C, UberGraphFrame) == 0x000B80, "Member 'UEventLeaderboardEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Selected) == 0x000B88, "Member 'UEventLeaderboardEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonBorder_IsPlayer) == 0x000B90, "Member 'UEventLeaderboardEntry_C::CommonBorder_IsPlayer' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonBorder_Zebra) == 0x000B98, "Member 'UEventLeaderboardEntry_C::CommonBorder_Zebra' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonTextBlock_TeamLine1) == 0x000BA0, "Member 'UEventLeaderboardEntry_C::CommonTextBlock_TeamLine1' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonTextBlock_TeamLine2) == 0x000BA8, "Member 'UEventLeaderboardEntry_C::CommonTextBlock_TeamLine2' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonWidgetSwitcher_Rank) == 0x000BB0, "Member 'UEventLeaderboardEntry_C::CommonWidgetSwitcher_Rank' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, CommonWidgetSwitcher_TeamSize) == 0x000BB8, "Member 'UEventLeaderboardEntry_C::CommonWidgetSwitcher_TeamSize' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Image_OnlineStatus) == 0x000BC0, "Member 'UEventLeaderboardEntry_C::Image_OnlineStatus' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Image_Qualified) == 0x000BC8, "Member 'UEventLeaderboardEntry_C::Image_Qualified' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Image_SelectedBG) == 0x000BD0, "Member 'UEventLeaderboardEntry_C::Image_SelectedBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Overlay_OnlineStatus) == 0x000BD8, "Member 'UEventLeaderboardEntry_C::Overlay_OnlineStatus' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Overlay_QualifiedContent) == 0x000BE0, "Member 'UEventLeaderboardEntry_C::Overlay_QualifiedContent' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Text_Rank) == 0x000BE8, "Member 'UEventLeaderboardEntry_C::Text_Rank' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Text_Score) == 0x000BF0, "Member 'UEventLeaderboardEntry_C::Text_Score' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, Text_Team) == 0x000BF8, "Member 'UEventLeaderboardEntry_C::Text_Team' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, isZebra) == 0x000C00, "Member 'UEventLeaderboardEntry_C::isZebra' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, IsPlayer) == 0x000C01, "Member 'UEventLeaderboardEntry_C::IsPlayer' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEntry_C, TEMPDatatableIdentities) == 0x000C08, "Member 'UEventLeaderboardEntry_C::TEMPDatatableIdentities' has a wrong offset!");
 
 }
 

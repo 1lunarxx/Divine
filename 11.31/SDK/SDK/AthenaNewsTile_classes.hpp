@@ -44,28 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaNewsTile_C">();
+		BP_STATIC_CLASS_IMPL("AthenaNewsTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaNewsTile_C")
 	}
 	static class UAthenaNewsTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaNewsTile_C>();
 	}
 };
-static_assert(alignof(UAthenaNewsTile_C) == 0x000008, "Wrong alignment on UAthenaNewsTile_C");
-static_assert(sizeof(UAthenaNewsTile_C) == 0x0002E8, "Wrong size on UAthenaNewsTile_C");
-static_assert(offsetof(UAthenaNewsTile_C, UberGraphFrame) == 0x000280, "Member 'UAthenaNewsTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, Intro) == 0x000288, "Member 'UAthenaNewsTile_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, Button_Action) == 0x000290, "Member 'UAthenaNewsTile_C::Button_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, CommonLoadGuard_0) == 0x000298, "Member 'UAthenaNewsTile_C::CommonLoadGuard_0' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, ConfirmSelectionFlash) == 0x0002A0, "Member 'UAthenaNewsTile_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, Fill) == 0x0002A8, "Member 'UAthenaNewsTile_C::Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, GameModeSB) == 0x0002B0, "Member 'UAthenaNewsTile_C::GameModeSB' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, LoadingImage) == 0x0002B8, "Member 'UAthenaNewsTile_C::LoadingImage' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, LoadingImageOvr) == 0x0002C0, "Member 'UAthenaNewsTile_C::LoadingImageOvr' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, LoadSwitcher) == 0x0002C8, "Member 'UAthenaNewsTile_C::LoadSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, NewsItemScale) == 0x0002D0, "Member 'UAthenaNewsTile_C::NewsItemScale' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, SizeBox_Tile) == 0x0002D8, "Member 'UAthenaNewsTile_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTile_C, VisibilityBox) == 0x0002E0, "Member 'UAthenaNewsTile_C::VisibilityBox' has a wrong offset!");
 
 }
 

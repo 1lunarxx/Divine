@@ -23,15 +23,17 @@ class UBorder_AthenaStore_OfferHeader_C final : public UBorder_TabM_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_AthenaStore_OfferHeader_C">();
+		BP_STATIC_CLASS_IMPL("Border_AthenaStore_OfferHeader_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_AthenaStore_OfferHeader_C")
 	}
 	static class UBorder_AthenaStore_OfferHeader_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_AthenaStore_OfferHeader_C>();
 	}
 };
-static_assert(alignof(UBorder_AthenaStore_OfferHeader_C) == 0x000008, "Wrong alignment on UBorder_AthenaStore_OfferHeader_C");
-static_assert(sizeof(UBorder_AthenaStore_OfferHeader_C) == 0x0000B0, "Wrong size on UBorder_AthenaStore_OfferHeader_C");
 
 }
 

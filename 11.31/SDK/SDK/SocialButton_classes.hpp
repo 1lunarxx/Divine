@@ -44,27 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialButton_C">();
+		BP_STATIC_CLASS_IMPL("SocialButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialButton_C")
 	}
 	static class USocialButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialButton_C>();
 	}
 };
-static_assert(alignof(USocialButton_C) == 0x000008, "Wrong alignment on USocialButton_C");
-static_assert(sizeof(USocialButton_C) == 0x000BE0, "Wrong size on USocialButton_C");
-static_assert(offsetof(USocialButton_C, UberGraphFrame) == 0x000B80, "Member 'USocialButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Indentifier_Outro) == 0x000B88, "Member 'USocialButton_C::Indentifier_Outro' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Indentifier_Intro) == 0x000B90, "Member 'USocialButton_C::Indentifier_Intro' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Hover_Grow) == 0x000B98, "Member 'USocialButton_C::Hover_Grow' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Hover_Bounce) == 0x000BA0, "Member 'USocialButton_C::Hover_Bounce' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Hover) == 0x000BA8, "Member 'USocialButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Banner_MemberBanner) == 0x000BB0, "Member 'USocialButton_C::Banner_MemberBanner' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, ButtonBacking) == 0x000BB8, "Member 'USocialButton_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Image_FriendIcon) == 0x000BC0, "Member 'USocialButton_C::Image_FriendIcon' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, Image_LeaderIcon) == 0x000BC8, "Member 'USocialButton_C::Image_LeaderIcon' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, PlayerIdentifier_Bkg) == 0x000BD0, "Member 'USocialButton_C::PlayerIdentifier_Bkg' has a wrong offset!");
-static_assert(offsetof(USocialButton_C, VariableSize) == 0x000BD8, "Member 'USocialButton_C::VariableSize' has a wrong offset!");
 
 }
 

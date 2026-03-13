@@ -36,20 +36,6 @@ public:
 	float                                         K2Node_Select_Default;                             // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default_1;                           // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialButton_C_ExecuteUbergraph_SocialButton) == 0x000008, "Wrong alignment on SocialButton_C_ExecuteUbergraph_SocialButton");
-static_assert(sizeof(SocialButton_C_ExecuteUbergraph_SocialButton) == 0x000040, "Wrong size on SocialButton_C_ExecuteUbergraph_SocialButton");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, EntryPoint) == 0x000000, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_bool_Variable) == 0x000004, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_float_Variable) == 0x000008, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_float_Variable_1) == 0x00000C, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_bool_Variable_1) == 0x000010, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_float_Variable_2) == 0x000014, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, Temp_float_Variable_3) == 0x000018, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000020, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, CallFunc_PlayAnimationForward_ReturnValue) == 0x000028, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, CallFunc_IsMobileGame_ReturnValue) == 0x000030, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, K2Node_Select_Default) == 0x000034, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SocialButton_C_ExecuteUbergraph_SocialButton, K2Node_Select_Default_1) == 0x000038, "Member 'SocialButton_C_ExecuteUbergraph_SocialButton::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

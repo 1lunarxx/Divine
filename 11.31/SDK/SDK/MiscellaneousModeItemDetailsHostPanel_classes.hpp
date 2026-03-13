@@ -38,22 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiscellaneousModeItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("MiscellaneousModeItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiscellaneousModeItemDetailsHostPanel_C")
 	}
 	static class UMiscellaneousModeItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiscellaneousModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UMiscellaneousModeItemDetailsHostPanel_C");
-static_assert(sizeof(UMiscellaneousModeItemDetailsHostPanel_C) == 0x000378, "Wrong size on UMiscellaneousModeItemDetailsHostPanel_C");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, UberGraphFrame) == 0x000340, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeaderWidget) == 0x000348, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, HeroLoadoutPerksDetailWidget) == 0x000350, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::HeroLoadoutPerksDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, ItemCraftingIngredientsDetailWidget) == 0x000358, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::ItemCraftingIngredientsDetailWidget' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, MarkedForMulchingBackgroundImage) == 0x000360, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::MarkedForMulchingBackgroundImage' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, MarkedForMulchingIndicatorImage) == 0x000368, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::MarkedForMulchingIndicatorImage' has a wrong offset!");
-static_assert(offsetof(UMiscellaneousModeItemDetailsHostPanel_C, SurvivorTraitsDetailWidget) == 0x000370, "Member 'UMiscellaneousModeItemDetailsHostPanel_C::SurvivorTraitsDetailWidget' has a wrong offset!");
 
 }
 

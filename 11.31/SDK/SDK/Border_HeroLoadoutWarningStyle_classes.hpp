@@ -23,15 +23,17 @@ class UBorder_HeroLoadoutWarningStyle_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-HeroLoadoutWarningStyle_C">();
+		BP_STATIC_CLASS_IMPL("Border-HeroLoadoutWarningStyle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-HeroLoadoutWarningStyle_C")
 	}
 	static class UBorder_HeroLoadoutWarningStyle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_HeroLoadoutWarningStyle_C>();
 	}
 };
-static_assert(alignof(UBorder_HeroLoadoutWarningStyle_C) == 0x000008, "Wrong alignment on UBorder_HeroLoadoutWarningStyle_C");
-static_assert(sizeof(UBorder_HeroLoadoutWarningStyle_C) == 0x0000B0, "Wrong size on UBorder_HeroLoadoutWarningStyle_C");
 
 }
 

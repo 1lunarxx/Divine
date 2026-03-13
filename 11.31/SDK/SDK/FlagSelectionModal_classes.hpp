@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FlagSelectionModal_C">();
+		BP_STATIC_CLASS_IMPL("FlagSelectionModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlagSelectionModal_C")
 	}
 	static class UFlagSelectionModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlagSelectionModal_C>();
 	}
 };
-static_assert(alignof(UFlagSelectionModal_C) == 0x000008, "Wrong alignment on UFlagSelectionModal_C");
-static_assert(sizeof(UFlagSelectionModal_C) == 0x000560, "Wrong size on UFlagSelectionModal_C");
-static_assert(offsetof(UFlagSelectionModal_C, UberGraphFrame) == 0x000538, "Member 'UFlagSelectionModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFlagSelectionModal_C, FlagConfirmation) == 0x000540, "Member 'UFlagSelectionModal_C::FlagConfirmation' has a wrong offset!");
-static_assert(offsetof(UFlagSelectionModal_C, FlagSelection) == 0x000548, "Member 'UFlagSelectionModal_C::FlagSelection' has a wrong offset!");
-static_assert(offsetof(UFlagSelectionModal_C, SafeZone_0) == 0x000550, "Member 'UFlagSelectionModal_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UFlagSelectionModal_C, Switcher_Confirmation) == 0x000558, "Member 'UFlagSelectionModal_C::Switcher_Confirmation' has a wrong offset!");
 
 }
 

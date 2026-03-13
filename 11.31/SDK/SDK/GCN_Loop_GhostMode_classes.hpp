@@ -37,38 +37,29 @@ public:
 	float                                         Glow_Priority;                                     // 0x07D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Highlight_Lerp(float Alpha, struct FPawnHighlight* Highlight);
-	void FadeMaterialsTL__FinishedFunc();
-	void FadeMaterialsTL__UpdateFunc();
 	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void FadeMaterialsIn();
 	void FadeMaterialsOut();
 	void ExecuteUbergraph_GCN_Loop_GhostMode(int32 EntryPoint);
+	void Highlight_Lerp(float Alpha, struct FPawnHighlight* Highlight);
+	void FadeMaterialsTL__FinishedFunc();
+	void FadeMaterialsTL__UpdateFunc();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_GhostMode_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_GhostMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_GhostMode_C")
 	}
 	static class AGCN_Loop_GhostMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_GhostMode_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_GhostMode_C) == 0x000008, "Wrong alignment on AGCN_Loop_GhostMode_C");
-static_assert(sizeof(AGCN_Loop_GhostMode_C) == 0x0007D8, "Wrong size on AGCN_Loop_GhostMode_C");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_GhostMode_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, FadeMaterialsTL_Lerp_D7B0BAAD47F48403BE23B98F38D8CA3E) == 0x000790, "Member 'AGCN_Loop_GhostMode_C::FadeMaterialsTL_Lerp_D7B0BAAD47F48403BE23B98F38D8CA3E' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, FadeMaterialsTL__Direction_D7B0BAAD47F48403BE23B98F38D8CA3E) == 0x000794, "Member 'AGCN_Loop_GhostMode_C::FadeMaterialsTL__Direction_D7B0BAAD47F48403BE23B98F38D8CA3E' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, FadeMaterialsTL) == 0x000798, "Member 'AGCN_Loop_GhostMode_C::FadeMaterialsTL' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, HitGlowColor) == 0x0007A0, "Member 'AGCN_Loop_GhostMode_C::HitGlowColor' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, HotGlowOuterColor) == 0x0007B0, "Member 'AGCN_Loop_GhostMode_C::HotGlowOuterColor' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, HitGlowFresnelBrightness) == 0x0007C0, "Member 'AGCN_Loop_GhostMode_C::HitGlowFresnelBrightness' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, HitGlowFresnelExponent) == 0x0007C4, "Member 'AGCN_Loop_GhostMode_C::HitGlowFresnelExponent' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, Target_Player) == 0x0007C8, "Member 'AGCN_Loop_GhostMode_C::Target_Player' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, Glow__) == 0x0007D0, "Member 'AGCN_Loop_GhostMode_C::Glow__' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_GhostMode_C, Glow_Priority) == 0x0007D4, "Member 'AGCN_Loop_GhostMode_C::Glow_Priority' has a wrong offset!");
 
 }
 

@@ -36,18 +36,6 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEventData                     K2Node_Event_EventData;                            // 0x0068(0x00B0)(ConstParm)
 };
-static_assert(alignof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage) == 0x000008, "Wrong alignment on GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage");
-static_assert(sizeof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage) == 0x000118, "Wrong size on GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, EntryPoint) == 0x000000, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue) == 0x000008, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::CallFunc_CreatePlayAnimAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_CreateDelegate_OutputDelegate_2) == 0x000034, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_CreateDelegate_OutputDelegate_3) == 0x000044, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, CallFunc_GetActivatingPawn_ReturnValue) == 0x000058, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_Event_bWasCancelled) == 0x000060, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage, K2Node_Event_EventData) == 0x000068, "Member 'GAB_GenericDeath_NoMontage_C_ExecuteUbergraph_GAB_GenericDeath_NoMontage::K2Node_Event_EventData' has a wrong offset!");
 
 // Function GAB_GenericDeath_NoMontage.GAB_GenericDeath_NoMontage_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -56,9 +44,6 @@ struct GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GAB_GenericDeath_NoMontage_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GAB_GenericDeath_NoMontage.GAB_GenericDeath_NoMontage_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -67,9 +52,6 @@ struct GAB_GenericDeath_NoMontage_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_GenericDeath_NoMontage_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GAB_GenericDeath_NoMontage_C_K2_OnEndAbility");
-static_assert(sizeof(GAB_GenericDeath_NoMontage_C_K2_OnEndAbility) == 0x000001, "Wrong size on GAB_GenericDeath_NoMontage_C_K2_OnEndAbility");
-static_assert(offsetof(GAB_GenericDeath_NoMontage_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GAB_GenericDeath_NoMontage_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

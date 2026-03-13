@@ -27,16 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LocalNotificationsSettings">();
+		STATIC_CLASS_IMPL("LocalNotificationsSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalNotificationsSettings")
 	}
 	static class ULocalNotificationsSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalNotificationsSettings>();
 	}
 };
-static_assert(alignof(ULocalNotificationsSettings) == 0x000008, "Wrong alignment on ULocalNotificationsSettings");
-static_assert(sizeof(ULocalNotificationsSettings) == 0x000050, "Wrong size on ULocalNotificationsSettings");
-static_assert(offsetof(ULocalNotificationsSettings, StringTableLocalNotifications) == 0x000038, "Member 'ULocalNotificationsSettings::StringTableLocalNotifications' has a wrong offset!");
 
 }
 

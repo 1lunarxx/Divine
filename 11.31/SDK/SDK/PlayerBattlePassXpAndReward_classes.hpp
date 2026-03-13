@@ -40,21 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerBattlePassXpAndReward_C">();
+		BP_STATIC_CLASS_IMPL("PlayerBattlePassXpAndReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerBattlePassXpAndReward_C")
 	}
 	static class UPlayerBattlePassXpAndReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerBattlePassXpAndReward_C>();
 	}
 };
-static_assert(alignof(UPlayerBattlePassXpAndReward_C) == 0x000008, "Wrong alignment on UPlayerBattlePassXpAndReward_C");
-static_assert(sizeof(UPlayerBattlePassXpAndReward_C) == 0x0002B8, "Wrong size on UPlayerBattlePassXpAndReward_C");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, UberGraphFrame) == 0x000290, "Member 'UPlayerBattlePassXpAndReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, AthenaPlayerLevel) == 0x000298, "Member 'UPlayerBattlePassXpAndReward_C::AthenaPlayerLevel' has a wrong offset!");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, SeasonNameLabel) == 0x0002A0, "Member 'UPlayerBattlePassXpAndReward_C::SeasonNameLabel' has a wrong offset!");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, Text_SeasonNumber) == 0x0002A8, "Member 'UPlayerBattlePassXpAndReward_C::Text_SeasonNumber' has a wrong offset!");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, ShowSeasonText) == 0x0002B0, "Member 'UPlayerBattlePassXpAndReward_C::ShowSeasonText' has a wrong offset!");
-static_assert(offsetof(UPlayerBattlePassXpAndReward_C, bShowSeasonNumberText) == 0x0002B1, "Member 'UPlayerBattlePassXpAndReward_C::bShowSeasonNumberText' has a wrong offset!");
 
 }
 

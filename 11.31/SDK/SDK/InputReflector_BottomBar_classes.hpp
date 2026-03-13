@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputReflector_BottomBar_C">();
+		BP_STATIC_CLASS_IMPL("InputReflector_BottomBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputReflector_BottomBar_C")
 	}
 	static class UInputReflector_BottomBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputReflector_BottomBar_C>();
 	}
 };
-static_assert(alignof(UInputReflector_BottomBar_C) == 0x000008, "Wrong alignment on UInputReflector_BottomBar_C");
-static_assert(sizeof(UInputReflector_BottomBar_C) == 0x0002B8, "Wrong size on UInputReflector_BottomBar_C");
-static_assert(offsetof(UInputReflector_BottomBar_C, UberGraphFrame) == 0x000288, "Member 'UInputReflector_BottomBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputReflector_BottomBar_C, ButtonBox) == 0x000290, "Member 'UInputReflector_BottomBar_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UInputReflector_BottomBar_C, SizeBoxShell) == 0x000298, "Member 'UInputReflector_BottomBar_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UInputReflector_BottomBar_C, DefaultButtonMargin) == 0x0002A0, "Member 'UInputReflector_BottomBar_C::DefaultButtonMargin' has a wrong offset!");
-static_assert(offsetof(UInputReflector_BottomBar_C, BottomBar_ReflectorButton) == 0x0002B0, "Member 'UInputReflector_BottomBar_C::BottomBar_ReflectorButton' has a wrong offset!");
 
 }
 

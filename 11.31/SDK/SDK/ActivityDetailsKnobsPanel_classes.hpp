@@ -23,15 +23,17 @@ class UActivityDetailsKnobsPanel_C final : public UFortActivityDetailsKnobsPanel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityDetailsKnobsPanel_C">();
+		BP_STATIC_CLASS_IMPL("ActivityDetailsKnobsPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityDetailsKnobsPanel_C")
 	}
 	static class UActivityDetailsKnobsPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityDetailsKnobsPanel_C>();
 	}
 };
-static_assert(alignof(UActivityDetailsKnobsPanel_C) == 0x000008, "Wrong alignment on UActivityDetailsKnobsPanel_C");
-static_assert(sizeof(UActivityDetailsKnobsPanel_C) == 0x000458, "Wrong size on UActivityDetailsKnobsPanel_C");
 
 }
 

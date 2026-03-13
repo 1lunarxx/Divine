@@ -21,9 +21,6 @@ struct ComOptionVote_C_PlayFadeOut final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComOptionVote_C_PlayFadeOut) == 0x000008, "Wrong alignment on ComOptionVote_C_PlayFadeOut");
-static_assert(sizeof(ComOptionVote_C_PlayFadeOut) == 0x000008, "Wrong size on ComOptionVote_C_PlayFadeOut");
-static_assert(offsetof(ComOptionVote_C_PlayFadeOut, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'ComOptionVote_C_PlayFadeOut::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 // Function ComOptionVote.ComOptionVote_C.PlayFadeIn
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct ComOptionVote_C_PlayFadeIn final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComOptionVote_C_PlayFadeIn) == 0x000008, "Wrong alignment on ComOptionVote_C_PlayFadeIn");
-static_assert(sizeof(ComOptionVote_C_PlayFadeIn) == 0x000008, "Wrong size on ComOptionVote_C_PlayFadeIn");
-static_assert(offsetof(ComOptionVote_C_PlayFadeIn, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'ComOptionVote_C_PlayFadeIn::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 // Function ComOptionVote.ComOptionVote_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -43,9 +37,6 @@ struct ComOptionVote_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComOptionVote_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on ComOptionVote_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(ComOptionVote_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on ComOptionVote_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(ComOptionVote_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'ComOptionVote_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function ComOptionVote.ComOptionVote_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -54,9 +45,6 @@ struct ComOptionVote_C_BP_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComOptionVote_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on ComOptionVote_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(ComOptionVote_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on ComOptionVote_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(ComOptionVote_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'ComOptionVote_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
 // Function ComOptionVote.ComOptionVote_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -65,9 +53,6 @@ struct ComOptionVote_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComOptionVote_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on ComOptionVote_C_OnListItemObjectSet");
-static_assert(sizeof(ComOptionVote_C_OnListItemObjectSet) == 0x000008, "Wrong size on ComOptionVote_C_OnListItemObjectSet");
-static_assert(offsetof(ComOptionVote_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'ComOptionVote_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function ComOptionVote.ComOptionVote_C.ExecuteUbergraph_ComOptionVote
 // 0x0020 (0x0020 - 0x0000)
@@ -81,13 +66,6 @@ public:
 	class UObject*                                K2Node_Event_ListItemObject;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote) == 0x000008, "Wrong alignment on ComOptionVote_C_ExecuteUbergraph_ComOptionVote");
-static_assert(sizeof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote) == 0x000020, "Wrong size on ComOptionVote_C_ExecuteUbergraph_ComOptionVote");
-static_assert(offsetof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote, EntryPoint) == 0x000000, "Member 'ComOptionVote_C_ExecuteUbergraph_ComOptionVote::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote, K2Node_Event_bIsExpanded) == 0x000004, "Member 'ComOptionVote_C_ExecuteUbergraph_ComOptionVote::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote, K2Node_Event_bIsSelected) == 0x000005, "Member 'ComOptionVote_C_ExecuteUbergraph_ComOptionVote::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote, K2Node_Event_ListItemObject) == 0x000008, "Member 'ComOptionVote_C_ExecuteUbergraph_ComOptionVote::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(ComOptionVote_C_ExecuteUbergraph_ComOptionVote, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'ComOptionVote_C_ExecuteUbergraph_ComOptionVote::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
 
 }
 

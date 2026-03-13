@@ -29,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HuntingGeneratorLocationContext_C">();
+		BP_STATIC_CLASS_IMPL("HuntingGeneratorLocationContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HuntingGeneratorLocationContext_C")
 	}
 	static class UHuntingGeneratorLocationContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHuntingGeneratorLocationContext_C>();
 	}
 };
-static_assert(alignof(UHuntingGeneratorLocationContext_C) == 0x000008, "Wrong alignment on UHuntingGeneratorLocationContext_C");
-static_assert(sizeof(UHuntingGeneratorLocationContext_C) == 0x000038, "Wrong size on UHuntingGeneratorLocationContext_C");
-static_assert(offsetof(UHuntingGeneratorLocationContext_C, Debug) == 0x000030, "Member 'UHuntingGeneratorLocationContext_C::Debug' has a wrong offset!");
 
 }
 

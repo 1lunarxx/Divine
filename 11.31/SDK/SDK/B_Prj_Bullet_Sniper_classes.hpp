@@ -54,31 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Bullet_Sniper_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Bullet_Sniper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Bullet_Sniper_C")
 	}
 	static class AB_Prj_Bullet_Sniper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Bullet_Sniper_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Bullet_Sniper_C) == 0x000008, "Wrong alignment on AB_Prj_Bullet_Sniper_C");
-static_assert(sizeof(AB_Prj_Bullet_Sniper_C) == 0x000A60, "Wrong size on AB_Prj_Bullet_Sniper_C");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, UberGraphFrame) == 0x000940, "Member 'AB_Prj_Bullet_Sniper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, TracerMesh) == 0x000948, "Member 'AB_Prj_Bullet_Sniper_C::TracerMesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, P_Sniper_Bullet_Trail) == 0x000950, "Member 'AB_Prj_Bullet_Sniper_C::P_Sniper_Bullet_Trail' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, Sniper_Rifle_SurfaceImpactSound) == 0x000958, "Member 'AB_Prj_Bullet_Sniper_C::Sniper_Rifle_SurfaceImpactSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, Sniper_Rifle_PlayerImpactSound) == 0x000960, "Member 'AB_Prj_Bullet_Sniper_C::Sniper_Rifle_PlayerImpactSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, DecalSize) == 0x000968, "Member 'AB_Prj_Bullet_Sniper_C::DecalSize' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, ProjectileGravityScale) == 0x000978, "Member 'AB_Prj_Bullet_Sniper_C::ProjectileGravityScale' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, WaterImpactFX) == 0x000998, "Member 'AB_Prj_Bullet_Sniper_C::WaterImpactFX' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, WaterHit) == 0x0009A0, "Member 'AB_Prj_Bullet_Sniper_C::WaterHit' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, WaterHitMat) == 0x000A28, "Member 'AB_Prj_Bullet_Sniper_C::WaterHitMat' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, WaterDepthTrace) == 0x000A30, "Member 'AB_Prj_Bullet_Sniper_C::WaterDepthTrace' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, WaterIndexTrace) == 0x000A34, "Member 'AB_Prj_Bullet_Sniper_C::WaterIndexTrace' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, TraceImpactLocation) == 0x000A38, "Member 'AB_Prj_Bullet_Sniper_C::TraceImpactLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, TraceImpactNormal) == 0x000A44, "Member 'AB_Prj_Bullet_Sniper_C::TraceImpactNormal' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, Sniper_Rifle_WaterImpactSound) == 0x000A50, "Member 'AB_Prj_Bullet_Sniper_C::Sniper_Rifle_WaterImpactSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Bullet_Sniper_C, bHasPlayedWaterSound) == 0x000A58, "Member 'AB_Prj_Bullet_Sniper_C::bHasPlayedWaterSound' has a wrong offset!");
 
 }
 

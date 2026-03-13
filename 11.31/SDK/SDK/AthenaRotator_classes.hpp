@@ -48,24 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaRotator_C">();
+		BP_STATIC_CLASS_IMPL("AthenaRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaRotator_C")
 	}
 	static class UAthenaRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaRotator_C>();
 	}
 };
-static_assert(alignof(UAthenaRotator_C) == 0x000008, "Wrong alignment on UAthenaRotator_C");
-static_assert(sizeof(UAthenaRotator_C) == 0x000C18, "Wrong size on UAthenaRotator_C");
-static_assert(offsetof(UAthenaRotator_C, UberGraphFrame) == 0x000BC8, "Member 'UAthenaRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ButtonLeft) == 0x000BD0, "Member 'UAthenaRotator_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ButtonRight) == 0x000BD8, "Member 'UAthenaRotator_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, MainBorder) == 0x000BE0, "Member 'UAthenaRotator_C::MainBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Left_Triggering_Input_Action) == 0x000BE8, "Member 'UAthenaRotator_C::Left_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, Right_Triggering_Input_Action) == 0x000BF8, "Member 'UAthenaRotator_C::Right_Triggering_Input_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, TextStyle) == 0x000C08, "Member 'UAthenaRotator_C::TextStyle' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, ShowGamepadButtonOnlyWhenFocused) == 0x000C10, "Member 'UAthenaRotator_C::ShowGamepadButtonOnlyWhenFocused' has a wrong offset!");
-static_assert(offsetof(UAthenaRotator_C, OneDirectionalModeActive) == 0x000C11, "Member 'UAthenaRotator_C::OneDirectionalModeActive' has a wrong offset!");
 
 }
 

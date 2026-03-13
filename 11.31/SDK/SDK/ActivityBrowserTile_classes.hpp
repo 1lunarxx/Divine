@@ -43,21 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityBrowserTile_C">();
+		BP_STATIC_CLASS_IMPL("ActivityBrowserTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityBrowserTile_C")
 	}
 	static class UActivityBrowserTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityBrowserTile_C>();
 	}
 };
-static_assert(alignof(UActivityBrowserTile_C) == 0x000008, "Wrong alignment on UActivityBrowserTile_C");
-static_assert(sizeof(UActivityBrowserTile_C) == 0x000C20, "Wrong size on UActivityBrowserTile_C");
-static_assert(offsetof(UActivityBrowserTile_C, UberGraphFrame) == 0x000BF0, "Member 'UActivityBrowserTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTile_C, Intro) == 0x000BF8, "Member 'UActivityBrowserTile_C::Intro' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTile_C, SetDisabled) == 0x000C00, "Member 'UActivityBrowserTile_C::SetDisabled' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTile_C, SetEnabled) == 0x000C08, "Member 'UActivityBrowserTile_C::SetEnabled' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTile_C, OnHover) == 0x000C10, "Member 'UActivityBrowserTile_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UActivityBrowserTile_C, NewVar_0) == 0x000C18, "Member 'UActivityBrowserTile_C::NewVar_0' has a wrong offset!");
 
 }
 

@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitonDetails_RefundDisclaimer_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitonDetails_RefundDisclaimer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitonDetails_RefundDisclaimer_C")
 	}
 	static class UAthenaDirectAcquisitonDetails_RefundDisclaimer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitonDetails_RefundDisclaimer_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitonDetails_RefundDisclaimer_C");
-static_assert(sizeof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C) == 0x000260, "Wrong size on UAthenaDirectAcquisitonDetails_RefundDisclaimer_C");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, UberGraphFrame) == 0x000230, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, DisclaimerText) == 0x000238, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::DisclaimerText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, HorizontalBoxDisclaimer) == 0x000240, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::HorizontalBoxDisclaimer' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitonDetails_RefundDisclaimer_C, OverrideText) == 0x000248, "Member 'UAthenaDirectAcquisitonDetails_RefundDisclaimer_C::OverrideText' has a wrong offset!");
 
 }
 

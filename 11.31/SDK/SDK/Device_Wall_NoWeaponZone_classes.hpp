@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Wall_NoWeaponZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Wall_NoWeaponZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Wall_NoWeaponZone_C")
 	}
 	static class ADevice_Wall_NoWeaponZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Wall_NoWeaponZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Wall_NoWeaponZone_C) == 0x000008, "Wrong alignment on ADevice_Wall_NoWeaponZone_C");
-static_assert(sizeof(ADevice_Wall_NoWeaponZone_C) == 0x000DE0, "Wrong size on ADevice_Wall_NoWeaponZone_C");
-static_assert(offsetof(ADevice_Wall_NoWeaponZone_C, UberGraphFrame_Device_Wall_NoWeaponZone_C) == 0x000DD8, "Member 'ADevice_Wall_NoWeaponZone_C::UberGraphFrame_Device_Wall_NoWeaponZone_C' has a wrong offset!");
 
 }
 

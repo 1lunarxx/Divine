@@ -37,7 +37,7 @@ public:
 	struct FDataTableRowHandle                    ButtonClickAction;                                 // 0x0C50(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 	EHorizontalAlignment                          ContentAlignment;                                  // 0x0C60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_C61[0x7];                                      // 0x0C61(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(class FName ActionName, const struct FKey& Key)> ChangeTheBinding_Button;                           // 0x0C68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FName ActionName, const struct FKey& Key)> ChangeTheBinding_Button; // 0x0C68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class FName                                   ActionNameData;                                    // 0x0C78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FKey                                   KeyData;                                           // 0x0C80(0x0018)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	class FText                                   TextData;                                          // 0x0C98(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -58,31 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GamepadKeyTextButton_C">();
+		BP_STATIC_CLASS_IMPL("GamepadKeyTextButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GamepadKeyTextButton_C")
 	}
 	static class UGamepadKeyTextButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGamepadKeyTextButton_C>();
 	}
 };
-static_assert(alignof(UGamepadKeyTextButton_C) == 0x000008, "Wrong alignment on UGamepadKeyTextButton_C");
-static_assert(sizeof(UGamepadKeyTextButton_C) == 0x000CC8, "Wrong size on UGamepadKeyTextButton_C");
-static_assert(offsetof(UGamepadKeyTextButton_C, UberGraphFrame) == 0x000B78, "Member 'UGamepadKeyTextButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, BoundKey) == 0x000B80, "Member 'UGamepadKeyTextButton_C::BoundKey' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ContentBorder) == 0x000B88, "Member 'UGamepadKeyTextButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, FortRichTextBlock_Desc) == 0x000B90, "Member 'UGamepadKeyTextButton_C::FortRichTextBlock_Desc' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, FortRichTextBlock_NoKey) == 0x000B98, "Member 'UGamepadKeyTextButton_C::FortRichTextBlock_NoKey' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, SizeBox_Nokey) == 0x000BA0, "Member 'UGamepadKeyTextButton_C::SizeBox_Nokey' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ButtonText) == 0x000BA8, "Member 'UGamepadKeyTextButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, IconBrush) == 0x000BC0, "Member 'UGamepadKeyTextButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ControllerInputStyle) == 0x000C48, "Member 'UGamepadKeyTextButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ButtonClickAction) == 0x000C50, "Member 'UGamepadKeyTextButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ContentAlignment) == 0x000C60, "Member 'UGamepadKeyTextButton_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ChangeTheBinding_Button) == 0x000C68, "Member 'UGamepadKeyTextButton_C::ChangeTheBinding_Button' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, ActionNameData) == 0x000C78, "Member 'UGamepadKeyTextButton_C::ActionNameData' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, KeyData) == 0x000C80, "Member 'UGamepadKeyTextButton_C::KeyData' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, TextData) == 0x000C98, "Member 'UGamepadKeyTextButton_C::TextData' has a wrong offset!");
-static_assert(offsetof(UGamepadKeyTextButton_C, KeyNone) == 0x000CB0, "Member 'UGamepadKeyTextButton_C::KeyNone' has a wrong offset!");
 
 }
 

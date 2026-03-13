@@ -23,15 +23,17 @@ class UUIManager_Athena_C final : public UFortUIManager_Athena
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIManager_Athena_C">();
+		BP_STATIC_CLASS_IMPL("UIManager_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIManager_Athena_C")
 	}
 	static class UUIManager_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIManager_Athena_C>();
 	}
 };
-static_assert(alignof(UUIManager_Athena_C) == 0x000008, "Wrong alignment on UUIManager_Athena_C");
-static_assert(sizeof(UUIManager_Athena_C) == 0x000120, "Wrong size on UUIManager_Athena_C");
 
 }
 

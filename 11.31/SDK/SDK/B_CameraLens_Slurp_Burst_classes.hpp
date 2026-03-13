@@ -23,15 +23,17 @@ class AB_CameraLens_Slurp_Burst_C final : public AEmitterCameraLensEffectBase
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_CameraLens_Slurp_Burst_C">();
+		BP_STATIC_CLASS_IMPL("B_CameraLens_Slurp_Burst_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_CameraLens_Slurp_Burst_C")
 	}
 	static class AB_CameraLens_Slurp_Burst_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_CameraLens_Slurp_Burst_C>();
 	}
 };
-static_assert(alignof(AB_CameraLens_Slurp_Burst_C) == 0x000010, "Wrong alignment on AB_CameraLens_Slurp_Burst_C");
-static_assert(sizeof(AB_CameraLens_Slurp_Burst_C) == 0x0002D0, "Wrong size on AB_CameraLens_Slurp_Burst_C");
 
 }
 

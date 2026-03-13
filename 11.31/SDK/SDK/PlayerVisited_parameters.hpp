@@ -34,19 +34,6 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited) == 0x000008, "Wrong alignment on PlayerVisited_C_ExecuteUbergraph_PlayerVisited");
-static_assert(sizeof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited) == 0x000058, "Wrong size on PlayerVisited_C_ExecuteUbergraph_PlayerVisited");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, EntryPoint) == 0x000000, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, Temp_int_Variable) == 0x000004, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, Temp_int_Variable_1) == 0x000008, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, K2Node_Event_LocalizedLocationName) == 0x000010, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::K2Node_Event_LocalizedLocationName' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, K2Node_Event_bIsNamedLocation) == 0x000028, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::K2Node_Event_bIsNamedLocation' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, Temp_bool_Variable) == 0x000048, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000049, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, K2Node_Select_Default) == 0x00004C, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_ExecuteUbergraph_PlayerVisited, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000050, "Member 'PlayerVisited_C_ExecuteUbergraph_PlayerVisited::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
 
 // Function PlayerVisited.PlayerVisited_C.OnNewVisited
 // 0x0020 (0x0020 - 0x0000)
@@ -56,10 +43,6 @@ public:
 	class FText                                   LocalizedLocationName;                             // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bIsNamedLocation;                                  // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerVisited_C_OnNewVisited) == 0x000008, "Wrong alignment on PlayerVisited_C_OnNewVisited");
-static_assert(sizeof(PlayerVisited_C_OnNewVisited) == 0x000020, "Wrong size on PlayerVisited_C_OnNewVisited");
-static_assert(offsetof(PlayerVisited_C_OnNewVisited, LocalizedLocationName) == 0x000000, "Member 'PlayerVisited_C_OnNewVisited::LocalizedLocationName' has a wrong offset!");
-static_assert(offsetof(PlayerVisited_C_OnNewVisited, bIsNamedLocation) == 0x000018, "Member 'PlayerVisited_C_OnNewVisited::bIsNamedLocation' has a wrong offset!");
 
 }
 

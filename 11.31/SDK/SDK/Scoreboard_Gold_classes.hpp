@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Scoreboard_Gold_C">();
+		BP_STATIC_CLASS_IMPL("Scoreboard_Gold_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Scoreboard_Gold_C")
 	}
 	static class UScoreboard_Gold_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UScoreboard_Gold_C>();
 	}
 };
-static_assert(alignof(UScoreboard_Gold_C) == 0x000008, "Wrong alignment on UScoreboard_Gold_C");
-static_assert(sizeof(UScoreboard_Gold_C) == 0x000248, "Wrong size on UScoreboard_Gold_C");
-static_assert(offsetof(UScoreboard_Gold_C, Image_47) == 0x000230, "Member 'UScoreboard_Gold_C::Image_47' has a wrong offset!");
-static_assert(offsetof(UScoreboard_Gold_C, Image_96) == 0x000238, "Member 'UScoreboard_Gold_C::Image_96' has a wrong offset!");
-static_assert(offsetof(UScoreboard_Gold_C, Image_167) == 0x000240, "Member 'UScoreboard_Gold_C::Image_167' has a wrong offset!");
 
 }
 

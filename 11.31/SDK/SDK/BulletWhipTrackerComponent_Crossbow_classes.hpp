@@ -23,15 +23,17 @@ class UBulletWhipTrackerComponent_Crossbow_C final : public UBulletWhipTrackerCo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BulletWhipTrackerComponent_Crossbow_C">();
+		BP_STATIC_CLASS_IMPL("BulletWhipTrackerComponent_Crossbow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BulletWhipTrackerComponent_Crossbow_C")
 	}
 	static class UBulletWhipTrackerComponent_Crossbow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBulletWhipTrackerComponent_Crossbow_C>();
 	}
 };
-static_assert(alignof(UBulletWhipTrackerComponent_Crossbow_C) == 0x000008, "Wrong alignment on UBulletWhipTrackerComponent_Crossbow_C");
-static_assert(sizeof(UBulletWhipTrackerComponent_Crossbow_C) == 0x0000E8, "Wrong size on UBulletWhipTrackerComponent_Crossbow_C");
 
 }
 

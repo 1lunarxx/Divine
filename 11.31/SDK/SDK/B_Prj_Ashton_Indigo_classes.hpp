@@ -55,29 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Ashton_Indigo_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Ashton_Indigo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Ashton_Indigo_C")
 	}
 	static class AB_Prj_Ashton_Indigo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Ashton_Indigo_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Ashton_Indigo_C) == 0x000008, "Wrong alignment on AB_Prj_Ashton_Indigo_C");
-static_assert(sizeof(AB_Prj_Ashton_Indigo_C) == 0x000A28, "Wrong size on AB_Prj_Ashton_Indigo_C");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, UberGraphFrame) == 0x000940, "Member 'AB_Prj_Ashton_Indigo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, TracerMesh_Outer) == 0x000948, "Member 'AB_Prj_Ashton_Indigo_C::TracerMesh_Outer' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, TracerMesh) == 0x000950, "Member 'AB_Prj_Ashton_Indigo_C::TracerMesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, TracerBody) == 0x000958, "Member 'AB_Prj_Ashton_Indigo_C::TracerBody' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Projectile_Max_Lifetime) == 0x000960, "Member 'AB_Prj_Ashton_Indigo_C::Projectile_Max_Lifetime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, bHasExploded_) == 0x000964, "Member 'AB_Prj_Ashton_Indigo_C::bHasExploded_' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Impact_Location) == 0x000968, "Member 'AB_Prj_Ashton_Indigo_C::Impact_Location' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, HitResult) == 0x000974, "Member 'AB_Prj_Ashton_Indigo_C::HitResult' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, FX_Linger_Time) == 0x0009FC, "Member 'AB_Prj_Ashton_Indigo_C::FX_Linger_Time' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Lifespan_Timer) == 0x000A00, "Member 'AB_Prj_Ashton_Indigo_C::Lifespan_Timer' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, InterpSpeed) == 0x000A08, "Member 'AB_Prj_Ashton_Indigo_C::InterpSpeed' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Max_Projectile_Size) == 0x000A0C, "Member 'AB_Prj_Ashton_Indigo_C::Max_Projectile_Size' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Proj_MID) == 0x000A18, "Member 'AB_Prj_Ashton_Indigo_C::Proj_MID' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ashton_Indigo_C, Tracer_Lifetime) == 0x000A20, "Member 'AB_Prj_Ashton_Indigo_C::Tracer_Lifetime' has a wrong offset!");
 
 }
 

@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCL_BoostJumpPack_FuelRegen_C">();
+		BP_STATIC_CLASS_IMPL("GCL_BoostJumpPack_FuelRegen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCL_BoostJumpPack_FuelRegen_C")
 	}
 	static class AGCL_BoostJumpPack_FuelRegen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCL_BoostJumpPack_FuelRegen_C>();
 	}
 };
-static_assert(alignof(AGCL_BoostJumpPack_FuelRegen_C) == 0x000008, "Wrong alignment on AGCL_BoostJumpPack_FuelRegen_C");
-static_assert(sizeof(AGCL_BoostJumpPack_FuelRegen_C) == 0x000410, "Wrong size on AGCL_BoostJumpPack_FuelRegen_C");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, UberGraphFrame) == 0x0003D0, "Member 'AGCL_BoostJumpPack_FuelRegen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, FullBlinkTimeline_Blink_108772B949790E60DC9BE1BAC70C2EA1) == 0x0003D8, "Member 'AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline_Blink_108772B949790E60DC9BE1BAC70C2EA1' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, FullBlinkTimeline__Direction_108772B949790E60DC9BE1BAC70C2EA1) == 0x0003DC, "Member 'AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline__Direction_108772B949790E60DC9BE1BAC70C2EA1' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, FullBlinkTimeline) == 0x0003E0, "Member 'AGCL_BoostJumpPack_FuelRegen_C::FullBlinkTimeline' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, SpawnedParticleEmitter) == 0x0003E8, "Member 'AGCL_BoostJumpPack_FuelRegen_C::SpawnedParticleEmitter' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, PlayerPawn) == 0x0003F0, "Member 'AGCL_BoostJumpPack_FuelRegen_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, FuelMax) == 0x0003F8, "Member 'AGCL_BoostJumpPack_FuelRegen_C::FuelMax' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, OnFuelRechargeRamp_Comp) == 0x000400, "Member 'AGCL_BoostJumpPack_FuelRegen_C::OnFuelRechargeRamp_Comp' has a wrong offset!");
-static_assert(offsetof(AGCL_BoostJumpPack_FuelRegen_C, ReserveFuelMax) == 0x000408, "Member 'AGCL_BoostJumpPack_FuelRegen_C::ReserveFuelMax' has a wrong offset!");
 
 }
 

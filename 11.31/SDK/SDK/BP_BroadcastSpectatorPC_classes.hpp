@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BroadcastSpectatorPC_C">();
+		BP_STATIC_CLASS_IMPL("BP_BroadcastSpectatorPC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BroadcastSpectatorPC_C")
 	}
 	static class ABP_BroadcastSpectatorPC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_BroadcastSpectatorPC_C>();
 	}
 };
-static_assert(alignof(ABP_BroadcastSpectatorPC_C) == 0x000010, "Wrong alignment on ABP_BroadcastSpectatorPC_C");
-static_assert(sizeof(ABP_BroadcastSpectatorPC_C) == 0x002CD0, "Wrong size on ABP_BroadcastSpectatorPC_C");
 
 }
 

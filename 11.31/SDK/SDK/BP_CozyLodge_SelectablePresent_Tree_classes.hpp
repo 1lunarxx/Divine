@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CozyLodge_SelectablePresent_Tree_C">();
+		BP_STATIC_CLASS_IMPL("BP_CozyLodge_SelectablePresent_Tree_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CozyLodge_SelectablePresent_Tree_C")
 	}
 	static class ABP_CozyLodge_SelectablePresent_Tree_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CozyLodge_SelectablePresent_Tree_C>();
 	}
 };
-static_assert(alignof(ABP_CozyLodge_SelectablePresent_Tree_C) == 0x000008, "Wrong alignment on ABP_CozyLodge_SelectablePresent_Tree_C");
-static_assert(sizeof(ABP_CozyLodge_SelectablePresent_Tree_C) == 0x000550, "Wrong size on ABP_CozyLodge_SelectablePresent_Tree_C");
-static_assert(offsetof(ABP_CozyLodge_SelectablePresent_Tree_C, UberGraphFrame_BP_CozyLodge_SelectablePresent_Tree_C) == 0x000548, "Member 'ABP_CozyLodge_SelectablePresent_Tree_C::UberGraphFrame_BP_CozyLodge_SelectablePresent_Tree_C' has a wrong offset!");
 
 }
 

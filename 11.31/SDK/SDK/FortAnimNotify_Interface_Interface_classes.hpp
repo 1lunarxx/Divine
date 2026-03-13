@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass FortAnimNotify_Interface_Interface.FortAnimNotify_Interface_Interface_C
-// 0x0000 (0x0028 - 0x0028)
-class IFortAnimNotify_Interface_Interface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IFortAnimNotify_Interface_Interface_C final
 {
 public:
 	void TrailOff();
@@ -27,15 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortAnimNotify_Interface_Interface_C">();
+		BP_STATIC_CLASS_IMPL("FortAnimNotify_Interface_Interface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortAnimNotify_Interface_Interface_C")
 	}
 	static class IFortAnimNotify_Interface_Interface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IFortAnimNotify_Interface_Interface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IFortAnimNotify_Interface_Interface_C) == 0x000008, "Wrong alignment on IFortAnimNotify_Interface_Interface_C");
-static_assert(sizeof(IFortAnimNotify_Interface_Interface_C) == 0x000028, "Wrong size on IFortAnimNotify_Interface_Interface_C");
 
 }
 

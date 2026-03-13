@@ -21,9 +21,6 @@ struct WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator final
 public:
 	class AItemPreviewVaultRotator*               ItemPreviewVaultRotator;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator) == 0x000008, "Wrong alignment on WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator");
-static_assert(sizeof(WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator) == 0x000008, "Wrong size on WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator");
-static_assert(offsetof(WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator, ItemPreviewVaultRotator) == 0x000000, "Member 'WinterQuestDetailsScreen_C_OnSetRewardsVaultRotator::ItemPreviewVaultRotator' has a wrong offset!");
 
 // Function WinterQuestDetailsScreen.WinterQuestDetailsScreen_C.OnResetVaultRotator
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct WinterQuestDetailsScreen_C_OnResetVaultRotator final
 public:
 	class AItemPreviewVaultRotator*               ItemPreviewVaultRotator;                           // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestDetailsScreen_C_OnResetVaultRotator) == 0x000008, "Wrong alignment on WinterQuestDetailsScreen_C_OnResetVaultRotator");
-static_assert(sizeof(WinterQuestDetailsScreen_C_OnResetVaultRotator) == 0x000008, "Wrong size on WinterQuestDetailsScreen_C_OnResetVaultRotator");
-static_assert(offsetof(WinterQuestDetailsScreen_C_OnResetVaultRotator, ItemPreviewVaultRotator) == 0x000000, "Member 'WinterQuestDetailsScreen_C_OnResetVaultRotator::ItemPreviewVaultRotator' has a wrong offset!");
 
 // Function WinterQuestDetailsScreen.WinterQuestDetailsScreen_C.ExecuteUbergraph_WinterQuestDetailsScreen
 // 0x00B0 (0x00B0 - 0x0000)
@@ -77,34 +71,6 @@ public:
 	class AFrontendCamera_VaultRotator_C*         CallFunc_Array_Get_Item_1;                         // 0x00A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_ActorHasTag_ReturnValue;                  // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen) == 0x000008, "Wrong alignment on WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen");
-static_assert(sizeof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen) == 0x0000B0, "Wrong size on WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, EntryPoint) == 0x000000, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_K2_GetComponentsByClass_ReturnValue) == 0x000018, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_K2_GetComponentsByClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Not_PreBool_ReturnValue) == 0x00002C, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Less_IntInt_ReturnValue) == 0x000034, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000038, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Array_Get_Item) == 0x000040, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_GetAllActorsOfClass_OutActors) == 0x000048, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_Event_ItemPreviewVaultRotator_1) == 0x000058, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_Event_ItemPreviewVaultRotator_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Array_Length_ReturnValue_1) == 0x000060, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_DynamicCast_AsVault_Rotator) == 0x000068, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_DynamicCast_AsVault_Rotator' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_Event_ItemPreviewVaultRotator) == 0x000078, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_Event_ItemPreviewVaultRotator' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_DynamicCast_AsVault_Rotator_1) == 0x000080, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_DynamicCast_AsVault_Rotator_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, K2Node_DynamicCast_bSuccess_1) == 0x000088, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, Temp_int_Loop_Counter_Variable_1) == 0x00008C, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Less_IntInt_ReturnValue_1) == 0x000090, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Add_IntInt_ReturnValue_1) == 0x000094, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_BooleanAND_ReturnValue) == 0x000098, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, Temp_int_Array_Index_Variable_1) == 0x00009C, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_Array_Get_Item_1) == 0x0000A0, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen, CallFunc_ActorHasTag_ReturnValue) == 0x0000A8, "Member 'WinterQuestDetailsScreen_C_ExecuteUbergraph_WinterQuestDetailsScreen::CallFunc_ActorHasTag_ReturnValue' has a wrong offset!");
 
 }
 

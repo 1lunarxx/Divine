@@ -34,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SettingsRotator_C">();
+		BP_STATIC_CLASS_IMPL("SettingsRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SettingsRotator_C")
 	}
 	static class USettingsRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USettingsRotator_C>();
 	}
 };
-static_assert(alignof(USettingsRotator_C) == 0x000008, "Wrong alignment on USettingsRotator_C");
-static_assert(sizeof(USettingsRotator_C) == 0x000BD8, "Wrong size on USettingsRotator_C");
-static_assert(offsetof(USettingsRotator_C, UberGraphFrame) == 0x000BC8, "Member 'USettingsRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USettingsRotator_C, Background) == 0x000BD0, "Member 'USettingsRotator_C::Background' has a wrong offset!");
 
 }
 

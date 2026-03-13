@@ -68,40 +68,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestScreen_C")
 	}
 	static class UWinterQuestScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestScreen_C) == 0x000008, "Wrong alignment on UWinterQuestScreen_C");
-static_assert(sizeof(UWinterQuestScreen_C) == 0x000640, "Wrong size on UWinterQuestScreen_C");
-static_assert(offsetof(UWinterQuestScreen_C, UberGraphFrame) == 0x000578, "Member 'UWinterQuestScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, WelcomeIntro) == 0x000580, "Member 'UWinterQuestScreen_C::WelcomeIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, MoreInforButtonIntro) == 0x000588, "Member 'UWinterQuestScreen_C::MoreInforButtonIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, LeaveCabinIntro) == 0x000590, "Member 'UWinterQuestScreen_C::LeaveCabinIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, BackButtonFadeOffAnim) == 0x000598, "Member 'UWinterQuestScreen_C::BackButtonFadeOffAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, BackButtonFadeOnAnim) == 0x0005A0, "Member 'UWinterQuestScreen_C::BackButtonFadeOnAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, LeaveCabinButtonIntro) == 0x0005A8, "Member 'UWinterQuestScreen_C::LeaveCabinButtonIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, FadeTransitionOut) == 0x0005B0, "Member 'UWinterQuestScreen_C::FadeTransitionOut' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, ResetOpacity) == 0x0005B8, "Member 'UWinterQuestScreen_C::ResetOpacity' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, FadeForFireplace) == 0x0005C0, "Member 'UWinterQuestScreen_C::FadeForFireplace' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Image_FadeFX) == 0x0005C8, "Member 'UWinterQuestScreen_C::Image_FadeFX' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, SafeZone_0) == 0x0005D0, "Member 'UWinterQuestScreen_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_01) == 0x0005D8, "Member 'UWinterQuestScreen_C::Snowflake_01' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_02) == 0x0005E0, "Member 'UWinterQuestScreen_C::Snowflake_02' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_03) == 0x0005E8, "Member 'UWinterQuestScreen_C::Snowflake_03' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_04) == 0x0005F0, "Member 'UWinterQuestScreen_C::Snowflake_04' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_05) == 0x0005F8, "Member 'UWinterQuestScreen_C::Snowflake_05' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Snowflake_06) == 0x000600, "Member 'UWinterQuestScreen_C::Snowflake_06' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, WelcomeOverlay) == 0x000608, "Member 'UWinterQuestScreen_C::WelcomeOverlay' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, WelcomeText) == 0x000610, "Member 'UWinterQuestScreen_C::WelcomeText' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, IntroJustFinished) == 0x000618, "Member 'UWinterQuestScreen_C::IntroJustFinished' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Music_Entry) == 0x000620, "Member 'UWinterQuestScreen_C::Music_Entry' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, bHasBeenToLobby) == 0x000628, "Member 'UWinterQuestScreen_C::bHasBeenToLobby' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, Ambient_Audio) == 0x000630, "Member 'UWinterQuestScreen_C::Ambient_Audio' has a wrong offset!");
-static_assert(offsetof(UWinterQuestScreen_C, bEnteredCabin) == 0x000638, "Member 'UWinterQuestScreen_C::bEnteredCabin' has a wrong offset!");
 
 }
 

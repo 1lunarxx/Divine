@@ -39,17 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MiniCraftingIngredientListEntry_C">();
+		BP_STATIC_CLASS_IMPL("MiniCraftingIngredientListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MiniCraftingIngredientListEntry_C")
 	}
 	static class UMiniCraftingIngredientListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMiniCraftingIngredientListEntry_C>();
 	}
 };
-static_assert(alignof(UMiniCraftingIngredientListEntry_C) == 0x000008, "Wrong alignment on UMiniCraftingIngredientListEntry_C");
-static_assert(sizeof(UMiniCraftingIngredientListEntry_C) == 0x000290, "Wrong size on UMiniCraftingIngredientListEntry_C");
-static_assert(offsetof(UMiniCraftingIngredientListEntry_C, UberGraphFrame) == 0x000280, "Member 'UMiniCraftingIngredientListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMiniCraftingIngredientListEntry_C, ItemCountWidget) == 0x000288, "Member 'UMiniCraftingIngredientListEntry_C::ItemCountWidget' has a wrong offset!");
 
 }
 

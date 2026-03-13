@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolUserWidget">();
+		STATIC_CLASS_IMPL("SolUserWidget")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolUserWidget")
 	}
 	static class USolUserWidget* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolUserWidget>();
 	}
 };
-static_assert(alignof(USolUserWidget) == 0x000008, "Wrong alignment on USolUserWidget");
-static_assert(sizeof(USolUserWidget) == 0x000250, "Wrong size on USolUserWidget");
 
 }
 

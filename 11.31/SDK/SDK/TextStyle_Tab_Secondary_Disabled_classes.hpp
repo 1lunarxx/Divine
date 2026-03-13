@@ -23,15 +23,17 @@ class UTextStyle_Tab_Secondary_Disabled_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Tab-Secondary-Disabled_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Tab-Secondary-Disabled_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Tab-Secondary-Disabled_C")
 	}
 	static class UTextStyle_Tab_Secondary_Disabled_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Tab_Secondary_Disabled_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Tab_Secondary_Disabled_C) == 0x000008, "Wrong alignment on UTextStyle_Tab_Secondary_Disabled_C");
-static_assert(sizeof(UTextStyle_Tab_Secondary_Disabled_C) == 0x000148, "Wrong size on UTextStyle_Tab_Secondary_Disabled_C");
 
 }
 

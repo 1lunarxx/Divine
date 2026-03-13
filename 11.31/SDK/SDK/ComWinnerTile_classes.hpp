@@ -23,15 +23,17 @@ class UComWinnerTile_C final : public UAthenaDirectAcquisitionOfferWidget_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComWinnerTile_C">();
+		BP_STATIC_CLASS_IMPL("ComWinnerTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComWinnerTile_C")
 	}
 	static class UComWinnerTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComWinnerTile_C>();
 	}
 };
-static_assert(alignof(UComWinnerTile_C) == 0x000008, "Wrong alignment on UComWinnerTile_C");
-static_assert(sizeof(UComWinnerTile_C) == 0x000DC8, "Wrong size on UComWinnerTile_C");
 
 }
 

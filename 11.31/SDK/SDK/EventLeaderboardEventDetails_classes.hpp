@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardEventDetails_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardEventDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardEventDetails_C")
 	}
 	static class UEventLeaderboardEventDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardEventDetails_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardEventDetails_C) == 0x000008, "Wrong alignment on UEventLeaderboardEventDetails_C");
-static_assert(sizeof(UEventLeaderboardEventDetails_C) == 0x000630, "Wrong size on UEventLeaderboardEventDetails_C");
-static_assert(offsetof(UEventLeaderboardEventDetails_C, UberGraphFrame) == 0x000610, "Member 'UEventLeaderboardEventDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEventDetails_C, Text_EventName) == 0x000618, "Member 'UEventLeaderboardEventDetails_C::Text_EventName' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEventDetails_C, Text_RegionName) == 0x000620, "Member 'UEventLeaderboardEventDetails_C::Text_RegionName' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardEventDetails_C, Text_SessionName) == 0x000628, "Member 'UEventLeaderboardEventDetails_C::Text_SessionName' has a wrong offset!");
 
 }
 

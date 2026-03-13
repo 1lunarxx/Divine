@@ -23,15 +23,17 @@ class ULeagueImageDecorator_C final : public URichTextBlockImageDecorator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeagueImageDecorator_C">();
+		BP_STATIC_CLASS_IMPL("LeagueImageDecorator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeagueImageDecorator_C")
 	}
 	static class ULeagueImageDecorator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeagueImageDecorator_C>();
 	}
 };
-static_assert(alignof(ULeagueImageDecorator_C) == 0x000008, "Wrong alignment on ULeagueImageDecorator_C");
-static_assert(sizeof(ULeagueImageDecorator_C) == 0x000030, "Wrong size on ULeagueImageDecorator_C");
 
 }
 

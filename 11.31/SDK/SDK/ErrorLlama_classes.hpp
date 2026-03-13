@@ -46,23 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ErrorLlama_C">();
+		BP_STATIC_CLASS_IMPL("ErrorLlama_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ErrorLlama_C")
 	}
 	static class UErrorLlama_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UErrorLlama_C>();
 	}
 };
-static_assert(alignof(UErrorLlama_C) == 0x000008, "Wrong alignment on UErrorLlama_C");
-static_assert(sizeof(UErrorLlama_C) == 0x000260, "Wrong size on UErrorLlama_C");
-static_assert(offsetof(UErrorLlama_C, UberGraphFrame) == 0x000230, "Member 'UErrorLlama_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, Image_0) == 0x000238, "Member 'UErrorLlama_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, MID_Llama) == 0x000240, "Member 'UErrorLlama_C::MID_Llama' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, bFlippedTexture) == 0x000248, "Member 'UErrorLlama_C::bFlippedTexture' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, CurLookAt2D) == 0x00024C, "Member 'UErrorLlama_C::CurLookAt2D' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, CurInputType) == 0x000254, "Member 'UErrorLlama_C::CurInputType' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, EyeInterpSpeed) == 0x000258, "Member 'UErrorLlama_C::EyeInterpSpeed' has a wrong offset!");
-static_assert(offsetof(UErrorLlama_C, MaterialInputScale) == 0x00025C, "Member 'UErrorLlama_C::MaterialInputScale' has a wrong offset!");
 
 }
 

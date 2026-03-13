@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MTXButton_C">();
+		BP_STATIC_CLASS_IMPL("MTXButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MTXButton_C")
 	}
 	static class UMTXButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMTXButton_C>();
 	}
 };
-static_assert(alignof(UMTXButton_C) == 0x000008, "Wrong alignment on UMTXButton_C");
-static_assert(sizeof(UMTXButton_C) == 0x000BB0, "Wrong size on UMTXButton_C");
-static_assert(offsetof(UMTXButton_C, UberGraphFrame) == 0x000B78, "Member 'UMTXButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Hover_Grow) == 0x000B80, "Member 'UMTXButton_C::Hover_Grow' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Hover_Bounce) == 0x000B88, "Member 'UMTXButton_C::Hover_Bounce' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Hover) == 0x000B90, "Member 'UMTXButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, ButtonBacking) == 0x000B98, "Member 'UMTXButton_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, Image_Vbucks) == 0x000BA0, "Member 'UMTXButton_C::Image_Vbucks' has a wrong offset!");
-static_assert(offsetof(UMTXButton_C, VariableSize) == 0x000BA8, "Member 'UMTXButton_C::VariableSize' has a wrong offset!");
 
 }
 

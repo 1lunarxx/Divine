@@ -81,48 +81,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionSetDetails_C">();
+		BP_STATIC_CLASS_IMPL("MissionSetDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionSetDetails_C")
 	}
 	static class UMissionSetDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionSetDetails_C>();
 	}
 };
-static_assert(alignof(UMissionSetDetails_C) == 0x000008, "Wrong alignment on UMissionSetDetails_C");
-static_assert(sizeof(UMissionSetDetails_C) == 0x0007A0, "Wrong size on UMissionSetDetails_C");
-static_assert(offsetof(UMissionSetDetails_C, UberGraphFrame) == 0x000668, "Member 'UMissionSetDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, BacktoNormalTimeline) == 0x000670, "Member 'UMissionSetDetails_C::BacktoNormalTimeline' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, NewPrestigeTimeline) == 0x000678, "Member 'UMissionSetDetails_C::NewPrestigeTimeline' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, PrestigeFX_Off) == 0x000680, "Member 'UMissionSetDetails_C::PrestigeFX_Off' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, PrestigeFX) == 0x000688, "Member 'UMissionSetDetails_C::PrestigeFX' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, ItemInfoIntroOutro) == 0x000690, "Member 'UMissionSetDetails_C::ItemInfoIntroOutro' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Intro) == 0x000698, "Member 'UMissionSetDetails_C::Intro' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CameraFramingWidget) == 0x0006A0, "Member 'UMissionSetDetails_C::CameraFramingWidget' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CloseIcon) == 0x0006A8, "Member 'UMissionSetDetails_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CommonRichTextBlock) == 0x0006B0, "Member 'UMissionSetDetails_C::CommonRichTextBlock' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CommonRichTextBlock_95) == 0x0006B8, "Member 'UMissionSetDetails_C::CommonRichTextBlock_95' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CompletionCheck) == 0x0006C0, "Member 'UMissionSetDetails_C::CompletionCheck' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, CompletionCheck_1) == 0x0006C8, "Member 'UMissionSetDetails_C::CompletionCheck_1' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, HeaderBase) == 0x0006D0, "Member 'UMissionSetDetails_C::HeaderBase' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Icon_BattlePass) == 0x0006D8, "Member 'UMissionSetDetails_C::Icon_BattlePass' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Icon_LimitedTime) == 0x0006E0, "Member 'UMissionSetDetails_C::Icon_LimitedTime' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Icon_Prestige) == 0x0006E8, "Member 'UMissionSetDetails_C::Icon_Prestige' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, ItemInfo) == 0x0006F0, "Member 'UMissionSetDetails_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, LazyImage_Background) == 0x0006F8, "Member 'UMissionSetDetails_C::LazyImage_Background' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, LazyImage_MaterChase) == 0x000700, "Member 'UMissionSetDetails_C::LazyImage_MaterChase' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, MobileCloseButton) == 0x000708, "Member 'UMissionSetDetails_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, OverlayCloseButton) == 0x000710, "Member 'UMissionSetDetails_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Prestige_Shimmer) == 0x000718, "Member 'UMissionSetDetails_C::Prestige_Shimmer' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, Prestige_Shine_Header) == 0x000720, "Member 'UMissionSetDetails_C::Prestige_Shine_Header' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, PrestigeBorder) == 0x000728, "Member 'UMissionSetDetails_C::PrestigeBorder' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, PrestigeIcon_1) == 0x000730, "Member 'UMissionSetDetails_C::PrestigeIcon_1' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, SafeZone_0) == 0x000738, "Member 'UMissionSetDetails_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, ScaleBoxTextScale) == 0x000740, "Member 'UMissionSetDetails_C::ScaleBoxTextScale' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, TextDisplay) == 0x000748, "Member 'UMissionSetDetails_C::TextDisplay' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, PrestigeBundleText) == 0x000750, "Member 'UMissionSetDetails_C::PrestigeBundleText' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, ViewPrestigeMissions) == 0x000768, "Member 'UMissionSetDetails_C::ViewPrestigeMissions' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, ViewNormalMissions) == 0x000780, "Member 'UMissionSetDetails_C::ViewNormalMissions' has a wrong offset!");
-static_assert(offsetof(UMissionSetDetails_C, FXRenderOpacity) == 0x000798, "Member 'UMissionSetDetails_C::FXRenderOpacity' has a wrong offset!");
 
 }
 

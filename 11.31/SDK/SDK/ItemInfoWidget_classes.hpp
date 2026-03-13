@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemInfoWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemInfoWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemInfoWidget_C")
 	}
 	static class UItemInfoWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemInfoWidget_C>();
 	}
 };
-static_assert(alignof(UItemInfoWidget_C) == 0x000008, "Wrong alignment on UItemInfoWidget_C");
-static_assert(sizeof(UItemInfoWidget_C) == 0x000288, "Wrong size on UItemInfoWidget_C");
-static_assert(offsetof(UItemInfoWidget_C, UberGraphFrame) == 0x000278, "Member 'UItemInfoWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemInfoWidget_C, RarityGlow) == 0x000280, "Member 'UItemInfoWidget_C::RarityGlow' has a wrong offset!");
 
 }
 

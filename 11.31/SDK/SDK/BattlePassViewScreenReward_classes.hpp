@@ -50,29 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassViewScreenReward_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassViewScreenReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassViewScreenReward_C")
 	}
 	static class UBattlePassViewScreenReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassViewScreenReward_C>();
 	}
 };
-static_assert(alignof(UBattlePassViewScreenReward_C) == 0x000008, "Wrong alignment on UBattlePassViewScreenReward_C");
-static_assert(sizeof(UBattlePassViewScreenReward_C) == 0x0002E8, "Wrong size on UBattlePassViewScreenReward_C");
-static_assert(offsetof(UBattlePassViewScreenReward_C, UberGraphFrame) == 0x000278, "Member 'UBattlePassViewScreenReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, Intro) == 0x000280, "Member 'UBattlePassViewScreenReward_C::Intro' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, Selection) == 0x000288, "Member 'UBattlePassViewScreenReward_C::Selection' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, FreeBox) == 0x000290, "Member 'UBattlePassViewScreenReward_C::FreeBox' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, FreeIcon) == 0x000298, "Member 'UBattlePassViewScreenReward_C::FreeIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, HeaderBacking) == 0x0002A0, "Member 'UBattlePassViewScreenReward_C::HeaderBacking' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, ItemCard) == 0x0002A8, "Member 'UBattlePassViewScreenReward_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, LockedImage) == 0x0002B0, "Member 'UBattlePassViewScreenReward_C::LockedImage' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, OwnedImage) == 0x0002B8, "Member 'UBattlePassViewScreenReward_C::OwnedImage' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, OwnedSwitcher) == 0x0002C0, "Member 'UBattlePassViewScreenReward_C::OwnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, SelectionBorder) == 0x0002C8, "Member 'UBattlePassViewScreenReward_C::SelectionBorder' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, TierLevelNumber_Color) == 0x0002D0, "Member 'UBattlePassViewScreenReward_C::TierLevelNumber_Color' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, Unlockable_Via_Type) == 0x0002D8, "Member 'UBattlePassViewScreenReward_C::Unlockable_Via_Type' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewScreenReward_C, UnlockableIconType) == 0x0002E0, "Member 'UBattlePassViewScreenReward_C::UnlockableIconType' has a wrong offset!");
 
 }
 

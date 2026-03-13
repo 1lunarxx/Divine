@@ -23,15 +23,17 @@ class UAthenaMinimapTeamIndicators_C final : public UFortMiniMapTeamIndicators
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMinimapTeamIndicators_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMinimapTeamIndicators_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMinimapTeamIndicators_C")
 	}
 	static class UAthenaMinimapTeamIndicators_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMinimapTeamIndicators_C>();
 	}
 };
-static_assert(alignof(UAthenaMinimapTeamIndicators_C) == 0x000008, "Wrong alignment on UAthenaMinimapTeamIndicators_C");
-static_assert(sizeof(UAthenaMinimapTeamIndicators_C) == 0x000588, "Wrong size on UAthenaMinimapTeamIndicators_C");
 
 }
 

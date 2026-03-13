@@ -37,18 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Frontend_BG_Main_C">();
+		BP_STATIC_CLASS_IMPL("Frontend_BG_Main_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Frontend_BG_Main_C")
 	}
 	static class AFrontend_BG_Main_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontend_BG_Main_C>();
 	}
 };
-static_assert(alignof(AFrontend_BG_Main_C) == 0x000008, "Wrong alignment on AFrontend_BG_Main_C");
-static_assert(sizeof(AFrontend_BG_Main_C) == 0x000248, "Wrong size on AFrontend_BG_Main_C");
-static_assert(offsetof(AFrontend_BG_Main_C, UberGraphFrame) == 0x000230, "Member 'AFrontend_BG_Main_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontend_BG_Main_C, S_UI_FrontendInspect_HexDonut_ExecuteUbergraph_Frontend_BG_Main_RefProperty) == 0x000238, "Member 'AFrontend_BG_Main_C::S_UI_FrontendInspect_HexDonut_ExecuteUbergraph_Frontend_BG_Main_RefProperty' has a wrong offset!");
-static_assert(offsetof(AFrontend_BG_Main_C, BP_Frontend_ShopBG_9_ExecuteUbergraph_Frontend_BG_Main_RefProperty) == 0x000240, "Member 'AFrontend_BG_Main_C::BP_Frontend_ShopBG_9_ExecuteUbergraph_Frontend_BG_Main_RefProperty' has a wrong offset!");
 
 }
 

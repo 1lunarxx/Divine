@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_Time_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_Time_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_Time_C")
 	}
 	static class UMinigameStat_Time_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_Time_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_Time_C) == 0x000008, "Wrong alignment on UMinigameStat_Time_C");
-static_assert(sizeof(UMinigameStat_Time_C) == 0x000198, "Wrong size on UMinigameStat_Time_C");
-static_assert(offsetof(UMinigameStat_Time_C, NewVar_0) == 0x000190, "Member 'UMinigameStat_Time_C::NewVar_0' has a wrong offset!");
 
 }
 

@@ -17,100 +17,6 @@
 namespace SDK
 {
 
-// Function IconTabButton.IconTabButton_C.Play Hover Sound
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UIconTabButton_C::Play_Hover_Sound()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Play Hover Sound");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function IconTabButton.IconTabButton_C.SetChangeIconColorWhenSelected
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ChangeColorWhenSelected                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// const struct FSlateColor&               SelectedColor                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-// const struct FSlateColor&               UnselectedColor                                        (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UIconTabButton_C::SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "SetChangeIconColorWhenSelected");
-
-	Params::IconTabButton_C_SetChangeIconColorWhenSelected Parms{};
-
-	Parms.ChangeColorWhenSelected = ChangeColorWhenSelected;
-	Parms.SelectedColor = std::move(SelectedColor);
-	Parms.UnselectedColor = std::move(UnselectedColor);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function IconTabButton.IconTabButton_C.Update Bang State
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    bBangEnabled_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UIconTabButton_C::Update_Bang_State(bool bBangEnabled_0, int32 Count)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "Update Bang State");
-
-	Params::IconTabButton_C_Update_Bang_State Parms{};
-
-	Parms.bBangEnabled_0 = bBangEnabled_0;
-	Parms.Count = Count;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function IconTabButton.IconTabButton_C.SetTutorialBorderStyle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UClass*                           BorderStyle                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "SetTutorialBorderStyle");
-
-	Params::IconTabButton_C_SetTutorialBorderStyle Parms{};
-
-	Parms.BorderStyle = BorderStyle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function IconTabButton.IconTabButton_C.ShowText
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UIconTabButton_C::ShowText()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("IconTabButton_C", "ShowText");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function IconTabButton.IconTabButton_C.Set Icon
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -320,6 +226,100 @@ void UIconTabButton_C::ExecuteUbergraph_IconTabButton(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function IconTabButton.IconTabButton_C.Play Hover Sound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UIconTabButton_C::Play_Hover_Sound()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTabButton_C", "Play Hover Sound");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function IconTabButton.IconTabButton_C.SetChangeIconColorWhenSelected
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ChangeColorWhenSelected                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FSlateColor&               SelectedColor                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// const struct FSlateColor&               UnselectedColor                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UIconTabButton_C::SetChangeIconColorWhenSelected(bool ChangeColorWhenSelected, const struct FSlateColor& SelectedColor, const struct FSlateColor& UnselectedColor)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTabButton_C", "SetChangeIconColorWhenSelected");
+
+	Params::IconTabButton_C_SetChangeIconColorWhenSelected Parms{};
+
+	Parms.ChangeColorWhenSelected = ChangeColorWhenSelected;
+	Parms.SelectedColor = std::move(SelectedColor);
+	Parms.UnselectedColor = std::move(UnselectedColor);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function IconTabButton.IconTabButton_C.Update Bang State
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    bBangEnabled_0                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                                   Count                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UIconTabButton_C::Update_Bang_State(bool bBangEnabled_0, int32 Count)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTabButton_C", "Update Bang State");
+
+	Params::IconTabButton_C_Update_Bang_State Parms{};
+
+	Parms.bBangEnabled_0 = bBangEnabled_0;
+	Parms.Count = Count;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function IconTabButton.IconTabButton_C.SetTutorialBorderStyle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UClass*                           BorderStyle                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UIconTabButton_C::SetTutorialBorderStyle(class UClass* BorderStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTabButton_C", "SetTutorialBorderStyle");
+
+	Params::IconTabButton_C_SetTutorialBorderStyle Parms{};
+
+	Parms.BorderStyle = BorderStyle;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function IconTabButton.IconTabButton_C.ShowText
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UIconTabButton_C::ShowText()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("IconTabButton_C", "ShowText");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

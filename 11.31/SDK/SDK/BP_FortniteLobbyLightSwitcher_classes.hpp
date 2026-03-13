@@ -51,29 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_FortniteLobbyLightSwitcher_C">();
+		BP_STATIC_CLASS_IMPL("BP_FortniteLobbyLightSwitcher_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_FortniteLobbyLightSwitcher_C")
 	}
 	static class ABP_FortniteLobbyLightSwitcher_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_FortniteLobbyLightSwitcher_C>();
 	}
 };
-static_assert(alignof(ABP_FortniteLobbyLightSwitcher_C) == 0x000008, "Wrong alignment on ABP_FortniteLobbyLightSwitcher_C");
-static_assert(sizeof(ABP_FortniteLobbyLightSwitcher_C) == 0x000288, "Wrong size on ABP_FortniteLobbyLightSwitcher_C");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, UberGraphFrame) == 0x000218, "Member 'ABP_FortniteLobbyLightSwitcher_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, DefaultSceneRoot) == 0x000220, "Member 'ABP_FortniteLobbyLightSwitcher_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, DirectionLight) == 0x000228, "Member 'ABP_FortniteLobbyLightSwitcher_C::DirectionLight' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, SkyLight) == 0x000230, "Member 'ABP_FortniteLobbyLightSwitcher_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, Pointlights) == 0x000238, "Member 'ABP_FortniteLobbyLightSwitcher_C::Pointlights' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, ExponentialHeightFog) == 0x000248, "Member 'ABP_FortniteLobbyLightSwitcher_C::ExponentialHeightFog' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, DirectionalLight_LowDetailMode) == 0x000250, "Member 'ABP_FortniteLobbyLightSwitcher_C::DirectionalLight_LowDetailMode' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, ParticleSystems) == 0x000258, "Member 'ABP_FortniteLobbyLightSwitcher_C::ParticleSystems' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, IsActive) == 0x000268, "Member 'ABP_FortniteLobbyLightSwitcher_C::IsActive' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, DebugLOWQualityLighting) == 0x000269, "Member 'ABP_FortniteLobbyLightSwitcher_C::DebugLOWQualityLighting' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, SkyLight_LowDetailMode) == 0x000270, "Member 'ABP_FortniteLobbyLightSwitcher_C::SkyLight_LowDetailMode' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, ExponentialHeightfog_LowDetailMode) == 0x000278, "Member 'ABP_FortniteLobbyLightSwitcher_C::ExponentialHeightfog_LowDetailMode' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, LOW_FX_Setting_Use_MobileLighting) == 0x000280, "Member 'ABP_FortniteLobbyLightSwitcher_C::LOW_FX_Setting_Use_MobileLighting' has a wrong offset!");
-static_assert(offsetof(ABP_FortniteLobbyLightSwitcher_C, IsLightalreadyActive) == 0x000281, "Member 'ABP_FortniteLobbyLightSwitcher_C::IsLightalreadyActive' has a wrong offset!");
 
 }
 

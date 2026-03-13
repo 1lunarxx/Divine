@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C")
 	}
 	static class UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C");
-static_assert(sizeof(UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C) == 0x000E20, "Wrong size on UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C");
-static_assert(offsetof(UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C, UberGraphFrame_GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C) == 0x000E10, "Member 'UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::UberGraphFrame_GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C, Throw_Loop_Sound) == 0x000E18, "Member 'UGA_Athena_Instance_PlaysetGrenadeWithTrajectory_C::Throw_Loop_Sound' has a wrong offset!");
 
 }
 

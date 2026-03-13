@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_GameMode_C">();
+		BP_STATIC_CLASS_IMPL("Athena_GameMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_GameMode_C")
 	}
 	static class AAthena_GameMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_GameMode_C>();
 	}
 };
-static_assert(alignof(AAthena_GameMode_C) == 0x000008, "Wrong alignment on AAthena_GameMode_C");
-static_assert(sizeof(AAthena_GameMode_C) == 0x0015A0, "Wrong size on AAthena_GameMode_C");
-static_assert(offsetof(AAthena_GameMode_C, DefaultSceneRoot) == 0x001598, "Member 'AAthena_GameMode_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

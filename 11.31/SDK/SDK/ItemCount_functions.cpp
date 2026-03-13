@@ -17,28 +17,6 @@
 namespace SDK
 {
 
-// Function ItemCount.ItemCount_C.SetBrushAndTextStyle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EFortBrushSize                          InBrushSize                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                           InStyle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemCount_C::SetBrushAndTextStyle(EFortBrushSize InBrushSize, class UClass* InStyle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
-
-	Params::ItemCount_C_SetBrushAndTextStyle Parms{};
-
-	Parms.InBrushSize = InBrushSize;
-	Parms.InStyle = InStyle;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemCount.ItemCount_C.UpdateOverrideState
 // (Private, BlueprintCallable, BlueprintEvent)
 
@@ -162,6 +140,28 @@ void UItemCount_C::ExecuteUbergraph_ItemCount(int32 EntryPoint)
 	Params::ItemCount_C_ExecuteUbergraph_ItemCount Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemCount.ItemCount_C.SetBrushAndTextStyle
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortBrushSize                          InBrushSize                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                           InStyle                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UItemCount_C::SetBrushAndTextStyle(EFortBrushSize InBrushSize, class UClass* InStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemCount_C", "SetBrushAndTextStyle");
+
+	Params::ItemCount_C_SetBrushAndTextStyle Parms{};
+
+	Parms.InBrushSize = InBrushSize;
+	Parms.InStyle = InStyle;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -31,17 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNS_GM_OnPreviewEmoji_C">();
+		BP_STATIC_CLASS_IMPL("GCNS_GM_OnPreviewEmoji_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNS_GM_OnPreviewEmoji_C")
 	}
 	static class UGCNS_GM_OnPreviewEmoji_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCNS_GM_OnPreviewEmoji_C>();
 	}
 };
-static_assert(alignof(UGCNS_GM_OnPreviewEmoji_C) == 0x000008, "Wrong alignment on UGCNS_GM_OnPreviewEmoji_C");
-static_assert(sizeof(UGCNS_GM_OnPreviewEmoji_C) == 0x000098, "Wrong size on UGCNS_GM_OnPreviewEmoji_C");
-static_assert(offsetof(UGCNS_GM_OnPreviewEmoji_C, InitialVelocity) == 0x000080, "Member 'UGCNS_GM_OnPreviewEmoji_C::InitialVelocity' has a wrong offset!");
-static_assert(offsetof(UGCNS_GM_OnPreviewEmoji_C, Offset) == 0x00008C, "Member 'UGCNS_GM_OnPreviewEmoji_C::Offset' has a wrong offset!");
 
 }
 

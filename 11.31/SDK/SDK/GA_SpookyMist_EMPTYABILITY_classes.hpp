@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_SpookyMist_EMPTYABILITY_C">();
+		BP_STATIC_CLASS_IMPL("GA_SpookyMist_EMPTYABILITY_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_SpookyMist_EMPTYABILITY_C")
 	}
 	static class UGA_SpookyMist_EMPTYABILITY_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_SpookyMist_EMPTYABILITY_C>();
 	}
 };
-static_assert(alignof(UGA_SpookyMist_EMPTYABILITY_C) == 0x000008, "Wrong alignment on UGA_SpookyMist_EMPTYABILITY_C");
-static_assert(sizeof(UGA_SpookyMist_EMPTYABILITY_C) == 0x000A38, "Wrong size on UGA_SpookyMist_EMPTYABILITY_C");
-static_assert(offsetof(UGA_SpookyMist_EMPTYABILITY_C, UberGraphFrame) == 0x000A30, "Member 'UGA_SpookyMist_EMPTYABILITY_C::UberGraphFrame' has a wrong offset!");
 
 }
 

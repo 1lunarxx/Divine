@@ -74,39 +74,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BGA_Athena_SCMachine_Pickup_C">();
+		BP_STATIC_CLASS_IMPL("BGA_Athena_SCMachine_Pickup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BGA_Athena_SCMachine_Pickup_C")
 	}
 	static class ABGA_Athena_SCMachine_Pickup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABGA_Athena_SCMachine_Pickup_C>();
 	}
 };
-static_assert(alignof(ABGA_Athena_SCMachine_Pickup_C) == 0x000008, "Wrong alignment on ABGA_Athena_SCMachine_Pickup_C");
-static_assert(sizeof(ABGA_Athena_SCMachine_Pickup_C) == 0x000930, "Wrong size on ABGA_Athena_SCMachine_Pickup_C");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, UberGraphFrame) == 0x000840, "Member 'ABGA_Athena_SCMachine_Pickup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SC_Machine_Memory_Card_Loop_Cue) == 0x000848, "Member 'ABGA_Athena_SCMachine_Pickup_C::SC_Machine_Memory_Card_Loop_Cue' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SpawnInEffect) == 0x000850, "Member 'ABGA_Athena_SCMachine_Pickup_C::SpawnInEffect' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, Collision) == 0x000858, "Member 'ABGA_Athena_SCMachine_Pickup_C::Collision' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, BackgroundGlow) == 0x000860, "Member 'ABGA_Athena_SCMachine_Pickup_C::BackgroundGlow' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, RotatingMovement) == 0x000868, "Member 'ABGA_Athena_SCMachine_Pickup_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, Card) == 0x000870, "Member 'ABGA_Athena_SCMachine_Pickup_C::Card' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, UnHide) == 0x000878, "Member 'ABGA_Athena_SCMachine_Pickup_C::UnHide' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, DelayBeforeUnhide) == 0x00087C, "Member 'ABGA_Athena_SCMachine_Pickup_C::DelayBeforeUnhide' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, OwnerTeam) == 0x000880, "Member 'ABGA_Athena_SCMachine_Pickup_C::OwnerTeam' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, FoundBuildingOnDied) == 0x000888, "Member 'ABGA_Athena_SCMachine_Pickup_C::FoundBuildingOnDied' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, Impact_Loc) == 0x000898, "Member 'ABGA_Athena_SCMachine_Pickup_C::Impact_Loc' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, HitNormal) == 0x0008A4, "Member 'ABGA_Athena_SCMachine_Pickup_C::HitNormal' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, MaxSlope) == 0x0008B0, "Member 'ABGA_Athena_SCMachine_Pickup_C::MaxSlope' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, Timer_DestroyPickup) == 0x0008B8, "Member 'ABGA_Athena_SCMachine_Pickup_C::Timer_DestroyPickup' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, Row_PickupLife) == 0x0008C0, "Member 'ABGA_Athena_SCMachine_Pickup_C::Row_PickupLife' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, InteractText) == 0x0008E0, "Member 'ABGA_Athena_SCMachine_Pickup_C::InteractText' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SpawnOutParticle) == 0x0008F8, "Member 'ABGA_Athena_SCMachine_Pickup_C::SpawnOutParticle' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, PickupSound) == 0x000900, "Member 'ABGA_Athena_SCMachine_Pickup_C::PickupSound' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SpawnFX) == 0x000908, "Member 'ABGA_Athena_SCMachine_Pickup_C::SpawnFX' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SpawnSoundPlayed) == 0x000910, "Member 'ABGA_Athena_SCMachine_Pickup_C::SpawnSoundPlayed' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, SpawnInSound) == 0x000918, "Member 'ABGA_Athena_SCMachine_Pickup_C::SpawnInSound' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, IsPendingKill) == 0x000920, "Member 'ABGA_Athena_SCMachine_Pickup_C::IsPendingKill' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_SCMachine_Pickup_C, StopLocation) == 0x000924, "Member 'ABGA_Athena_SCMachine_Pickup_C::StopLocation' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UButtonStyle_BreadCrumbs_C final : public UButtonStyle_MediumTransparentNo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle_BreadCrumbs_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle_BreadCrumbs_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle_BreadCrumbs_C")
 	}
 	static class UButtonStyle_BreadCrumbs_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_BreadCrumbs_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_BreadCrumbs_C) == 0x000008, "Wrong alignment on UButtonStyle_BreadCrumbs_C");
-static_assert(sizeof(UButtonStyle_BreadCrumbs_C) == 0x000570, "Wrong size on UButtonStyle_BreadCrumbs_C");
 
 }
 

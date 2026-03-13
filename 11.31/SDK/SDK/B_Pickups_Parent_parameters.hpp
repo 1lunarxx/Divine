@@ -105,71 +105,6 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_2;             // 0x024C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_3;             // 0x0250(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent");
-static_assert(sizeof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent) == 0x000258, "Wrong size on B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, EntryPoint) == 0x000000, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_float_Variable) == 0x000004, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsValid_ReturnValue_1) == 0x000009, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetSubGame_ReturnValue) == 0x00000A, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_SwitchEnum_CmpSuccess) == 0x00000B, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetSubGame_ReturnValue_1) == 0x00000C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetSubGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000010, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000020, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_float_Variable_1) == 0x000028, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00002C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_float_Variable_2) == 0x000030, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x000034, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetAttachParentActor_ReturnValue) == 0x0000C0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetAttachParentActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x0000C8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_AsFort_Pickup) == 0x0000D8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_AsFort_Pickup' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_bSuccess) == 0x0000E0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_X) == 0x0000E4, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_Y) == 0x0000E8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_Z) == 0x0000EC, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetMovementCapsuleHalfHeight_ReturnValue) == 0x0000F0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetMovementCapsuleHalfHeight_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetComponentBounds_Origin) == 0x0000F4, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetComponentBounds_BoxExtent) == 0x000100, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetComponentBounds_SphereRadius) == 0x00010C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_X_1) == 0x000110, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_Y_1) == 0x000114, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BreakVector_Z_1) == 0x000118, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x00011C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000120, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Add_FloatFloat_ReturnValue) == 0x000124, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_MakeVector_ReturnValue) == 0x000128, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000134, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_Event_DeltaSeconds) == 0x0001BC, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsDedicatedServer_ReturnValue) == 0x0001C0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_Event_PickupTarget) == 0x0001C8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_Event_PickupTarget' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsLocallyControlled_ReturnValue) == 0x0001D0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Array_LastIndex_ReturnValue) == 0x0001D4, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_BooleanAND_ReturnValue) == 0x0001D8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetController_ReturnValue) == 0x0001E0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_AsFort_Player_Controller) == 0x0001E8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_bSuccess_1) == 0x0001F0, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsValid_ReturnValue_2) == 0x0001F1, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_AsFort_Ingredient_Item_Definition) == 0x0001F8, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_AsFort_Ingredient_Item_Definition' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_bSuccess_2) == 0x000200, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_AsFort_Resource_Item_Definition) == 0x000208, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_AsFort_Resource_Item_Definition' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_DynamicCast_bSuccess_3) == 0x000210, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000211, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_int_Variable) == 0x000214, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Array_Get_Item) == 0x000218, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000220, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Add_IntInt_ReturnValue) == 0x000224, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_IsDedicatedServer_ReturnValue_2) == 0x000228, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_IsDedicatedServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_float_Variable_3) == 0x00022C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, Temp_byte_Variable) == 0x000230, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_SwitchEnum_CmpSuccess_1) == 0x000231, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_SwitchEnum_CmpSuccess_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_Select_Default) == 0x000234, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_GetSubGame_ReturnValue_2) == 0x000238, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_GetSubGame_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, K2Node_SwitchEnum_CmpSuccess_2) == 0x000239, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::K2Node_SwitchEnum_CmpSuccess_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00023A, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Conv_FloatToVector_ReturnValue) == 0x00023C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Conv_FloatToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000248, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Add_FloatFloat_ReturnValue_2) == 0x00024C, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Add_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent, CallFunc_Add_FloatFloat_ReturnValue_3) == 0x000250, "Member 'B_Pickups_Parent_C_ExecuteUbergraph_B_Pickups_Parent::CallFunc_Add_FloatFloat_ReturnValue_3' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.OnAboutToEnterBackpack
 // 0x0008 (0x0008 - 0x0000)
@@ -178,9 +113,6 @@ struct B_Pickups_Parent_C_OnAboutToEnterBackpack final
 public:
 	class AFortPawn*                              PickupTarget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_OnAboutToEnterBackpack) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_OnAboutToEnterBackpack");
-static_assert(sizeof(B_Pickups_Parent_C_OnAboutToEnterBackpack) == 0x000008, "Wrong size on B_Pickups_Parent_C_OnAboutToEnterBackpack");
-static_assert(offsetof(B_Pickups_Parent_C_OnAboutToEnterBackpack, PickupTarget) == 0x000000, "Member 'B_Pickups_Parent_C_OnAboutToEnterBackpack::PickupTarget' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -189,9 +121,6 @@ struct B_Pickups_Parent_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_ReceiveTick) == 0x000004, "Wrong alignment on B_Pickups_Parent_C_ReceiveTick");
-static_assert(sizeof(B_Pickups_Parent_C_ReceiveTick) == 0x000004, "Wrong size on B_Pickups_Parent_C_ReceiveTick");
-static_assert(offsetof(B_Pickups_Parent_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'B_Pickups_Parent_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.UserConstructionScript
 // 0x00B0 (0x00B0 - 0x0000)
@@ -213,20 +142,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_SetStaticMesh_ReturnValue;                // 0x00A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_UserConstructionScript) == 0x000010, "Wrong alignment on B_Pickups_Parent_C_UserConstructionScript");
-static_assert(sizeof(B_Pickups_Parent_C_UserConstructionScript) == 0x0000B0, "Wrong size on B_Pickups_Parent_C_UserConstructionScript");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, Temp_struct_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_UserConstructionScript::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, Temp_struct_Variable_1) == 0x000030, "Member 'B_Pickups_Parent_C_UserConstructionScript::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue) == 0x000060, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_AddComponent_ReturnValue_1) == 0x000068, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_AddComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, Temp_bool_Variable) == 0x000070, "Member 'B_Pickups_Parent_C_UserConstructionScript::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_GetComponentBounds_Origin) == 0x000074, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_GetComponentBounds_BoxExtent) == 0x000080, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_GetComponentBounds_SphereRadius) == 0x00008C, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000090, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, K2Node_Select_Default) == 0x000098, "Member 'B_Pickups_Parent_C_UserConstructionScript::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x0000A0, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_UserConstructionScript, CallFunc_SetStaticMesh_ReturnValue) == 0x0000A1, "Member 'B_Pickups_Parent_C_UserConstructionScript::CallFunc_SetStaticMesh_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetRarityColor
 // 0x0070 (0x0070 - 0x0000)
@@ -256,25 +171,6 @@ public:
 	uint8                                         Pad_69[0x3];                                       // 0x0069(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x006C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetRarityColor) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SetRarityColor");
-static_assert(sizeof(B_Pickups_Parent_C_SetRarityColor) == 0x000070, "Wrong size on B_Pickups_Parent_C_SetRarityColor");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_byte_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable) == 0x000004, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_1) == 0x000008, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_2) == 0x00000C, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_3) == 0x000010, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_4) == 0x000014, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_5) == 0x000018, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_6) == 0x00001C, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, Temp_int_Variable_7) == 0x000020, "Member 'B_Pickups_Parent_C_SetRarityColor::Temp_int_Variable_7' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_IsValid_ReturnValue) == 0x000024, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_Array_Get_Item) == 0x000028, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000048, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_SelectColor_ReturnValue) == 0x00004C, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_SelectColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_CreateTemporaryItemInstanceBP_ReturnValue) == 0x000060, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_CreateTemporaryItemInstanceBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, CallFunc_GetRarity_ReturnValue) == 0x000068, "Member 'B_Pickups_Parent_C_SetRarityColor::CallFunc_GetRarity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetRarityColor, K2Node_Select_Default) == 0x00006C, "Member 'B_Pickups_Parent_C_SetRarityColor::K2Node_Select_Default' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SpawnPickedUpTrailPS
 // 0x0028 (0x0028 - 0x0000)
@@ -288,13 +184,6 @@ public:
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UParticleSystemComponent*               CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SpawnPickedUpTrailPS) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SpawnPickedUpTrailPS");
-static_assert(sizeof(B_Pickups_Parent_C_SpawnPickedUpTrailPS) == 0x000028, "Wrong size on B_Pickups_Parent_C_SpawnPickedUpTrailPS");
-static_assert(offsetof(B_Pickups_Parent_C_SpawnPickedUpTrailPS, TrailPS) == 0x000000, "Member 'B_Pickups_Parent_C_SpawnPickedUpTrailPS::TrailPS' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SpawnPickedUpTrailPS, CallFunc_Array_Get_Item) == 0x000008, "Member 'B_Pickups_Parent_C_SpawnPickedUpTrailPS::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SpawnPickedUpTrailPS, CallFunc_Array_Get_Item_1) == 0x00000C, "Member 'B_Pickups_Parent_C_SpawnPickedUpTrailPS::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SpawnPickedUpTrailPS, CallFunc_Conv_LinearColorToVector_ReturnValue) == 0x000010, "Member 'B_Pickups_Parent_C_SpawnPickedUpTrailPS::CallFunc_Conv_LinearColorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SpawnPickedUpTrailPS, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000020, "Member 'B_Pickups_Parent_C_SpawnPickedUpTrailPS::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetHologramPickedUpParams
 // 0x0068 (0x0068 - 0x0000)
@@ -331,33 +220,6 @@ public:
 	float                                         CallFunc_Add_FloatFloat_ReturnValue_1;             // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue_3;       // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetHologramPickedUpParams) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SetHologramPickedUpParams");
-static_assert(sizeof(B_Pickups_Parent_C_SetHologramPickedUpParams) == 0x000068, "Wrong size on B_Pickups_Parent_C_SetHologramPickedUpParams");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, Tier_0) == 0x000000, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::Tier_0' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, Temp_int_Array_Index_Variable) == 0x000004, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, Temp_int_Loop_Counter_Variable_1) == 0x000010, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Add_IntInt_ReturnValue_1) == 0x000014, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, Temp_int_Array_Index_Variable_1) == 0x000018, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Array_Get_Item) == 0x000020, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Array_Get_Item_1) == 0x000028, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_IsValid_ReturnValue) == 0x000030, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_IsValid_ReturnValue_1) == 0x000031, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Array_Length_ReturnValue) == 0x000034, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Array_Length_ReturnValue_1) == 0x000038, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Less_IntInt_ReturnValue) == 0x00003C, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Less_IntInt_ReturnValue_1) == 0x00003D, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000040, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Fraction_ReturnValue) == 0x000044, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Fraction_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000048, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_GetGameTimeInSeconds_ReturnValue_1) == 0x00004C, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_GetGameTimeInSeconds_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Fraction_ReturnValue_1) == 0x000050, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Fraction_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000054, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_GetGameTimeInSeconds_ReturnValue_2) == 0x000058, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_GetGameTimeInSeconds_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Add_FloatFloat_ReturnValue) == 0x00005C, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_Add_FloatFloat_ReturnValue_1) == 0x000060, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_Add_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetHologramPickedUpParams, CallFunc_GetGameTimeInSeconds_ReturnValue_3) == 0x000064, "Member 'B_Pickups_Parent_C_SetHologramPickedUpParams::CallFunc_GetGameTimeInSeconds_ReturnValue_3' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.ScaleHologramTimingsForPvP
 // 0x001C (0x001C - 0x0000)
@@ -374,16 +236,6 @@ public:
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue_4;        // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP) == 0x000004, "Wrong alignment on B_Pickups_Parent_C_ScaleHologramTimingsForPvP");
-static_assert(sizeof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP) == 0x00001C, "Wrong size on B_Pickups_Parent_C_ScaleHologramTimingsForPvP");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, PVP_TimeScale) == 0x000000, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::PVP_TimeScale' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x000008, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x00000C, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_Multiply_FloatFloat_ReturnValue_3) == 0x000010, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_Multiply_FloatFloat_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_GetSubGame_ReturnValue) == 0x000014, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, K2Node_SwitchEnum_CmpSuccess) == 0x000015, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ScaleHologramTimingsForPvP, CallFunc_Multiply_FloatFloat_ReturnValue_4) == 0x000018, "Member 'B_Pickups_Parent_C_ScaleHologramTimingsForPvP::CallFunc_Multiply_FloatFloat_ReturnValue_4' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.ReleaseStretchMIDs
 // 0x0018 (0x0018 - 0x0000)
@@ -397,14 +249,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_ReleaseStretchMIDs) == 0x000004, "Wrong alignment on B_Pickups_Parent_C_ReleaseStretchMIDs");
-static_assert(sizeof(B_Pickups_Parent_C_ReleaseStretchMIDs) == 0x000018, "Wrong size on B_Pickups_Parent_C_ReleaseStretchMIDs");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, Temp_int_Array_Index_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, CallFunc_Array_Get_Item) == 0x00000C, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_ReleaseStretchMIDs, CallFunc_Less_IntInt_ReturnValue) == 0x000014, "Member 'B_Pickups_Parent_C_ReleaseStretchMIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetHiddenBackgroundVisualComponents
 // 0x0001 (0x0001 - 0x0000)
@@ -413,9 +257,6 @@ struct B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents final
 public:
 	bool                                          Hidden;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents) == 0x000001, "Wrong alignment on B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents");
-static_assert(sizeof(B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents) == 0x000001, "Wrong size on B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents");
-static_assert(offsetof(B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents, Hidden) == 0x000000, "Member 'B_Pickups_Parent_C_SetHiddenBackgroundVisualComponents::Hidden' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetupBaseMIDs
 // 0x0030 (0x0030 - 0x0000)
@@ -434,18 +275,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x002C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetupBaseMIDs) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SetupBaseMIDs");
-static_assert(sizeof(B_Pickups_Parent_C_SetupBaseMIDs) == 0x000030, "Wrong size on B_Pickups_Parent_C_SetupBaseMIDs");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, Temp_int_Array_Index_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_BooleanOR_ReturnValue) == 0x00000C, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_BooleanOR_ReturnValue_1) == 0x00000D, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_Array_Get_Item) == 0x000010, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_GetBaseMaterial_ReturnValue) == 0x000018, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_GetBaseMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_GetMaterial_ReturnValue) == 0x000020, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_GetMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupBaseMIDs, CallFunc_Less_IntInt_ReturnValue) == 0x00002C, "Member 'B_Pickups_Parent_C_SetupBaseMIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetupStretchMIDs
 // 0x00A8 (0x00A8 - 0x0000)
@@ -479,28 +308,6 @@ public:
 	uint8                                         Pad_9D[0x3];                                       // 0x009D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x00A0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetupStretchMIDs) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SetupStretchMIDs");
-static_assert(sizeof(B_Pickups_Parent_C_SetupStretchMIDs) == 0x0000A8, "Wrong size on B_Pickups_Parent_C_SetupStretchMIDs");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, NewLocalVar_0) == 0x000000, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item) == 0x000028, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, Temp_object_Variable) == 0x000030, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000038, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, Temp_int_Array_Index_Variable) == 0x00003C, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, Temp_bool_Variable) == 0x000040, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, K2Node_Select_Default) == 0x000048, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_GetPickupStretchMIDFromPool_bNeedsToBeInitialized) == 0x000050, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_GetPickupStretchMIDFromPool_bNeedsToBeInitialized' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_GetPickupStretchMIDFromPool_ReturnValue) == 0x000058, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_GetPickupStretchMIDFromPool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item_1) == 0x000060, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item_2) == 0x000070, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item_3) == 0x000078, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000080, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item_4) == 0x000088, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Array_Get_Item_5) == 0x000090, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, Temp_int_Loop_Counter_Variable) == 0x000098, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Less_IntInt_ReturnValue) == 0x00009C, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetupStretchMIDs, CallFunc_Add_IntInt_ReturnValue) == 0x0000A0, "Member 'B_Pickups_Parent_C_SetupStretchMIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Unique Material MIDs
 // 0x0050 (0x0050 - 0x0000)
@@ -524,20 +331,6 @@ public:
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0048(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_Unique_Material_MIDs) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_Unique_Material_MIDs");
-static_assert(sizeof(B_Pickups_Parent_C_Unique_Material_MIDs) == 0x000050, "Wrong size on B_Pickups_Parent_C_Unique_Material_MIDs");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, AppendedMaterialsArray) == 0x000000, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::AppendedMaterialsArray' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, Temp_bool_True_if_break_was_hit_Variable) == 0x000010, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, Temp_int_Array_Index_Variable) == 0x000014, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Not_PreBool_ReturnValue) == 0x000018, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Array_Get_Item) == 0x000020, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_GetObjectName_ReturnValue) == 0x000030, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_GetObjectName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, Temp_int_Loop_Counter_Variable) == 0x000040, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Array_Contains_ReturnValue) == 0x000044, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Less_IntInt_ReturnValue) == 0x000045, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Unique_Material_MIDs, CallFunc_BooleanAND_ReturnValue) == 0x00004C, "Member 'B_Pickups_Parent_C_Unique_Material_MIDs::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetInitialHologramParams
 // 0x0018 (0x0018 - 0x0000)
@@ -549,12 +342,6 @@ public:
 	float                                         CallFunc_Array_Get_Item;                           // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Array_Get_Item_1;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetInitialHologramParams) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_SetInitialHologramParams");
-static_assert(sizeof(B_Pickups_Parent_C_SetInitialHologramParams) == 0x000018, "Wrong size on B_Pickups_Parent_C_SetInitialHologramParams");
-static_assert(offsetof(B_Pickups_Parent_C_SetInitialHologramParams, Mid) == 0x000000, "Member 'B_Pickups_Parent_C_SetInitialHologramParams::Mid' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetInitialHologramParams, CallFunc_RandomFloatInRange_ReturnValue) == 0x000008, "Member 'B_Pickups_Parent_C_SetInitialHologramParams::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetInitialHologramParams, CallFunc_Array_Get_Item) == 0x00000C, "Member 'B_Pickups_Parent_C_SetInitialHologramParams::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetInitialHologramParams, CallFunc_Array_Get_Item_1) == 0x000010, "Member 'B_Pickups_Parent_C_SetInitialHologramParams::CallFunc_Array_Get_Item_1' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetActiveBackgroundParticleSystem
 // 0x0003 (0x0003 - 0x0000)
@@ -565,11 +352,6 @@ public:
 	bool                                          Reset;                                             // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetActiveBackgroundParticleSystem) == 0x000001, "Wrong alignment on B_Pickups_Parent_C_SetActiveBackgroundParticleSystem");
-static_assert(sizeof(B_Pickups_Parent_C_SetActiveBackgroundParticleSystem) == 0x000003, "Wrong size on B_Pickups_Parent_C_SetActiveBackgroundParticleSystem");
-static_assert(offsetof(B_Pickups_Parent_C_SetActiveBackgroundParticleSystem, Active) == 0x000000, "Member 'B_Pickups_Parent_C_SetActiveBackgroundParticleSystem::Active' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetActiveBackgroundParticleSystem, Reset) == 0x000001, "Member 'B_Pickups_Parent_C_SetActiveBackgroundParticleSystem::Reset' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetActiveBackgroundParticleSystem, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'B_Pickups_Parent_C_SetActiveBackgroundParticleSystem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.SetVisibleMobileInteractIcon
 // 0x0060 (0x0060 - 0x0000)
@@ -588,16 +370,6 @@ public:
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0020(0x0030)(IsPlainOldData, NoDestructor)
 	class UStaticMeshComponent*                   CallFunc_AddComponent_ReturnValue;                 // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon) == 0x000010, "Wrong alignment on B_Pickups_Parent_C_SetVisibleMobileInteractIcon");
-static_assert(sizeof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon) == 0x000060, "Wrong size on B_Pickups_Parent_C_SetVisibleMobileInteractIcon");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, Visible) == 0x000000, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::Visible' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_IsValid_ReturnValue_1) == 0x000002, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000004, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_IsValid_ReturnValue_2) == 0x000008, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_MakeRotator_ReturnValue) == 0x00000C, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_MakeTransform_ReturnValue) == 0x000020, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_SetVisibleMobileInteractIcon, CallFunc_AddComponent_ReturnValue) == 0x000050, "Member 'B_Pickups_Parent_C_SetVisibleMobileInteractIcon::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Set Draw Distance
 // 0x0038 (0x0038 - 0x0000)
@@ -623,22 +395,6 @@ public:
 	float                                         K2Node_Select_Default_1;                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_Set_Draw_Distance) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_Set_Draw_Distance");
-static_assert(sizeof(B_Pickups_Parent_C_Set_Draw_Distance) == 0x000038, "Wrong size on B_Pickups_Parent_C_Set_Draw_Distance");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, Temp_bool_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, Temp_bool_Variable_1) == 0x000001, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_IsValid_ReturnValue) == 0x000002, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_GetNumericCVar_OutValue) == 0x000004, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_GetNumericCVar_OutValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_GetNumericCVar_ReturnValue) == 0x000008, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_GetNumericCVar_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_FMax_ReturnValue) == 0x00000C, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000010, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_IsMobilePlatform_ReturnValue) == 0x000014, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_GetGameState_ReturnValue) == 0x000018, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, K2Node_DynamicCast_AsFort_Game_State_Athena) == 0x000020, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::K2Node_DynamicCast_AsFort_Game_State_Athena' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, K2Node_Select_Default) == 0x00002C, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, K2Node_Select_Default_1) == 0x000030, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Set_Draw_Distance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000034, "Member 'B_Pickups_Parent_C_Set_Draw_Distance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Randomize Mesh Rotation for BR
 // 0x0018 (0x0018 - 0x0000)
@@ -652,13 +408,6 @@ public:
 	float                                         CallFunc_RandomFloatInRange_ReturnValue;           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR) == 0x000004, "Wrong alignment on B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR");
-static_assert(sizeof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR) == 0x000018, "Wrong size on B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR");
-static_assert(offsetof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR, CallFunc_MakeRotator_ReturnValue) == 0x000000, "Member 'B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR, CallFunc_K2_SetActorRotation_ReturnValue) == 0x00000C, "Member 'B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR::CallFunc_K2_SetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR, CallFunc_GetSubGame_ReturnValue) == 0x00000D, "Member 'B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR, CallFunc_RandomFloatInRange_ReturnValue) == 0x000010, "Member 'B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR, K2Node_SwitchEnum_CmpSuccess) == 0x000014, "Member 'B_Pickups_Parent_C_Randomize_Mesh_Rotation_for_BR::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Mobile Interation Icon Setup
 // 0x0038 (0x0038 - 0x0000)
@@ -674,15 +423,6 @@ public:
 	class UMaterialInterface*                     Temp_object_Variable_4;                            // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInterface*                     K2Node_Select_Default;                             // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup) == 0x000008, "Wrong alignment on B_Pickups_Parent_C_Mobile_Interation_Icon_Setup");
-static_assert(sizeof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup) == 0x000038, "Wrong size on B_Pickups_Parent_C_Mobile_Interation_Icon_Setup");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_int_Variable) == 0x000000, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_object_Variable) == 0x000008, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_object_Variable_1) == 0x000010, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_object_Variable_2) == 0x000018, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_object_Variable_3) == 0x000020, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, Temp_object_Variable_4) == 0x000028, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::Temp_object_Variable_4' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Mobile_Interation_Icon_Setup, K2Node_Select_Default) == 0x000030, "Member 'B_Pickups_Parent_C_Mobile_Interation_Icon_Setup::K2Node_Select_Default' has a wrong offset!");
 
 // Function B_Pickups_Parent.B_Pickups_Parent_C.Initial Parenting Setup
 // 0x0284 (0x0284 - 0x0000)
@@ -707,23 +447,6 @@ public:
 	uint8                                         Pad_1F9[0x3];                                      // 0x01F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x01FC(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(B_Pickups_Parent_C_Initial_Parenting_Setup) == 0x000004, "Wrong alignment on B_Pickups_Parent_C_Initial_Parenting_Setup");
-static_assert(sizeof(B_Pickups_Parent_C_Initial_Parenting_Setup) == 0x000284, "Wrong size on B_Pickups_Parent_C_Initial_Parenting_Setup");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_SelectRotator_ReturnValue) == 0x000000, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_SelectRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_SetRelativeLocation_SweepHitResult) == 0x00000C, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_SetRelativeLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000094, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00011C, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_AttachToComponent_ReturnValue) == 0x000128, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_AttachToComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00012C, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_GetComponentBounds_Origin) == 0x000138, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_GetComponentBounds_Origin' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_GetComponentBounds_BoxExtent) == 0x000144, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_GetComponentBounds_BoxExtent' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_GetComponentBounds_SphereRadius) == 0x000150, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_GetComponentBounds_SphereRadius' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000154, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_GetNumMaterials_ReturnValue) == 0x000160, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_GetNumMaterials_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_Add_VectorVector_ReturnValue) == 0x000164, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000170, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_IsValid_ReturnValue) == 0x0001F8, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_Pickups_Parent_C_Initial_Parenting_Setup, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x0001FC, "Member 'B_Pickups_Parent_C_Initial_Parenting_Setup::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
 
 }
 

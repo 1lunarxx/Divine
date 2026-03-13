@@ -38,23 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RebootVanIndicator_C">();
+		BP_STATIC_CLASS_IMPL("RebootVanIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RebootVanIndicator_C")
 	}
 	static class URebootVanIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URebootVanIndicator_C>();
 	}
 };
-static_assert(alignof(URebootVanIndicator_C) == 0x000008, "Wrong alignment on URebootVanIndicator_C");
-static_assert(sizeof(URebootVanIndicator_C) == 0x0004D0, "Wrong size on URebootVanIndicator_C");
-static_assert(offsetof(URebootVanIndicator_C, UberGraphFrame) == 0x000490, "Member 'URebootVanIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Intro) == 0x000498, "Member 'URebootVanIndicator_C::Intro' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Border_Nameplate) == 0x0004A0, "Member 'URebootVanIndicator_C::Border_Nameplate' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Icon) == 0x0004A8, "Member 'URebootVanIndicator_C::Icon' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Image_RebootIcon) == 0x0004B0, "Member 'URebootVanIndicator_C::Image_RebootIcon' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Image_SmallIndicator) == 0x0004B8, "Member 'URebootVanIndicator_C::Image_SmallIndicator' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, Image_Van) == 0x0004C0, "Member 'URebootVanIndicator_C::Image_Van' has a wrong offset!");
-static_assert(offsetof(URebootVanIndicator_C, IndicatorSpacer) == 0x0004C8, "Member 'URebootVanIndicator_C::IndicatorSpacer' has a wrong offset!");
 
 }
 

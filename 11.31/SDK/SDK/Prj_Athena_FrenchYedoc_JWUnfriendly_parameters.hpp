@@ -22,10 +22,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly) == 0x000004, "Wrong alignment on Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly");
-static_assert(sizeof(Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly) == 0x000008, "Wrong size on Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly, EntryPoint) == 0x000000, "Member 'Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly, CallFunc_IsDedicatedServer_ReturnValue) == 0x000004, "Member 'Prj_Athena_FrenchYedoc_JWUnfriendly_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc_JWUnfriendly::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
 
 }
 

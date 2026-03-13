@@ -25,9 +25,6 @@ struct EventLeaderboardScreen_C_ShowMyStats final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_ShowMyStats) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_ShowMyStats");
-static_assert(sizeof(EventLeaderboardScreen_C_ShowMyStats) == 0x000008, "Wrong size on EventLeaderboardScreen_C_ShowMyStats");
-static_assert(offsetof(EventLeaderboardScreen_C_ShowMyStats, Button) == 0x000000, "Member 'EventLeaderboardScreen_C_ShowMyStats::Button' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.OnLeaderboardPageRequestComplete
 // 0x0004 (0x0004 - 0x0000)
@@ -36,9 +33,6 @@ struct EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete final
 public:
 	int32                                         EntryCount;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete) == 0x000004, "Wrong alignment on EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete");
-static_assert(sizeof(EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete) == 0x000004, "Wrong size on EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete");
-static_assert(offsetof(EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete, EntryCount) == 0x000000, "Member 'EventLeaderboardScreen_C_OnLeaderboardPageRequestComplete::EntryCount' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.OnLeaderboardEntrySelected
 // 0x0008 (0x0008 - 0x0000)
@@ -47,9 +41,6 @@ struct EventLeaderboardScreen_C_OnLeaderboardEntrySelected final
 public:
 	const class UFortEventLeaderboardEntryData*   EntryData;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_OnLeaderboardEntrySelected) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_OnLeaderboardEntrySelected");
-static_assert(sizeof(EventLeaderboardScreen_C_OnLeaderboardEntrySelected) == 0x000008, "Wrong size on EventLeaderboardScreen_C_OnLeaderboardEntrySelected");
-static_assert(offsetof(EventLeaderboardScreen_C_OnLeaderboardEntrySelected, EntryData) == 0x000000, "Member 'EventLeaderboardScreen_C_OnLeaderboardEntrySelected::EntryData' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.Init
 // 0x0020 (0x0020 - 0x0000)
@@ -59,10 +50,6 @@ public:
 	class FString                                 EventWindowId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 TournamentSeriesId;                                // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_Init) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_Init");
-static_assert(sizeof(EventLeaderboardScreen_C_Init) == 0x000020, "Wrong size on EventLeaderboardScreen_C_Init");
-static_assert(offsetof(EventLeaderboardScreen_C_Init, EventWindowId) == 0x000000, "Member 'EventLeaderboardScreen_C_Init::EventWindowId' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_Init, TournamentSeriesId) == 0x000010, "Member 'EventLeaderboardScreen_C_Init::TournamentSeriesId' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.EventColorize
 // 0x0170 (0x0170 - 0x0000)
@@ -71,9 +58,6 @@ struct EventLeaderboardScreen_C_EventColorize final
 public:
 	struct FFortTournamentDisplayInfo             TournamentDisplayInfo;                             // 0x0000(0x0170)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(EventLeaderboardScreen_C_EventColorize) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_EventColorize");
-static_assert(sizeof(EventLeaderboardScreen_C_EventColorize) == 0x000170, "Wrong size on EventLeaderboardScreen_C_EventColorize");
-static_assert(offsetof(EventLeaderboardScreen_C_EventColorize, TournamentDisplayInfo) == 0x000000, "Member 'EventLeaderboardScreen_C_EventColorize::TournamentDisplayInfo' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -82,9 +66,6 @@ struct EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundE
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardScreen_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -93,9 +74,6 @@ struct EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardScreen_C_BndEvt__LiveGames_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -104,9 +82,6 @@ struct EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_Compo
 public:
 	class UObject*                                Item;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature");
-static_assert(sizeof(EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature");
-static_assert(offsetof(EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature, Item) == 0x000000, "Member 'EventLeaderboardScreen_C_BndEvt__ListView_LeaderboardEntries_K2Node_ComponentBoundEvent_2_SimpleListItemEventDynamic__DelegateSignature::Item' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -115,9 +90,6 @@ struct EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'EventLeaderboardScreen_C_BndEvt__Button_Back2_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function EventLeaderboardScreen.EventLeaderboardScreen_C.ExecuteUbergraph_EventLeaderboardScreen
 // 0x0208 (0x0208 - 0x0000)
@@ -155,32 +127,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0202(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x0203(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen) == 0x000008, "Wrong alignment on EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen");
-static_assert(sizeof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen) == 0x000208, "Wrong size on EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, EntryPoint) == 0x000000, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, Temp_byte_Variable) == 0x000010, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, Temp_byte_Variable_1) == 0x000011, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_ComponentBoundEvent_Button_2) == 0x000018, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_CustomEvent_TournamentDisplayInfo) == 0x000020, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_CustomEvent_TournamentDisplayInfo' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_MakeStruct_LinearColor) == 0x000190, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, Temp_bool_Variable) == 0x0001A0, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_CreateDelegate_OutputDelegate) == 0x0001A4, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_Event_EntryData) == 0x0001B8, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_Event_EntryData' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_Event_EntryCount) == 0x0001C0, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_Event_EntryCount' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, CallFunc_Greater_IntInt_ReturnValue) == 0x0001C4, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_ComponentBoundEvent_Item) == 0x0001C8, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_ComponentBoundEvent_Item' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_DynamicCast_AsFort_Event_Leaderboard_Entry_Data) == 0x0001D0, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_DynamicCast_AsFort_Event_Leaderboard_Entry_Data' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_DynamicCast_bSuccess) == 0x0001D8, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, Temp_bool_Variable_1) == 0x0001D9, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_Select_Default) == 0x0001E0, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_CustomEvent_Button) == 0x0001E8, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_CustomEvent_Button' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, CallFunc_GetMyLeaderboardEntry_ReturnValue) == 0x0001F0, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::CallFunc_GetMyLeaderboardEntry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_ComponentBoundEvent_Button_1) == 0x0001F8, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, CallFunc_IsMobileGame_ReturnValue) == 0x000200, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, CallFunc_IsUsingTouch_ReturnValue) == 0x000201, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::CallFunc_IsUsingTouch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, CallFunc_BooleanAND_ReturnValue) == 0x000202, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen, K2Node_Select_Default_1) == 0x000203, "Member 'EventLeaderboardScreen_C_ExecuteUbergraph_EventLeaderboardScreen::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

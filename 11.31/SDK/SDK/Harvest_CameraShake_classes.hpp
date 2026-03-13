@@ -23,15 +23,17 @@ class UHarvest_CameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Harvest_CameraShake_C">();
+		BP_STATIC_CLASS_IMPL("Harvest_CameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Harvest_CameraShake_C")
 	}
 	static class UHarvest_CameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHarvest_CameraShake_C>();
 	}
 };
-static_assert(alignof(UHarvest_CameraShake_C) == 0x000010, "Wrong alignment on UHarvest_CameraShake_C");
-static_assert(sizeof(UHarvest_CameraShake_C) == 0x000160, "Wrong size on UHarvest_CameraShake_C");
 
 }
 

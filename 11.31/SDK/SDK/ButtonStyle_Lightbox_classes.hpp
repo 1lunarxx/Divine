@@ -23,15 +23,17 @@ class UButtonStyle_Lightbox_C final : public UButtonStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Lightbox_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Lightbox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Lightbox_C")
 	}
 	static class UButtonStyle_Lightbox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Lightbox_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Lightbox_C) == 0x000008, "Wrong alignment on UButtonStyle_Lightbox_C");
-static_assert(sizeof(UButtonStyle_Lightbox_C) == 0x000570, "Wrong size on UButtonStyle_Lightbox_C");
 
 }
 

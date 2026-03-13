@@ -43,42 +43,28 @@ public:
 	float                                         Adrenaline_Rush_WPO_Offset;                        // 0x0810(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Toggle_Mesh_Visibility(bool Visibility);
 	void Duplicate_Meshes(class AFortPlayerPawn* Player_Pawn);
 	void Set_Adrenaline_Rush_Visibility(bool Visible, class AFortPlayerPawn* Player_Pawn);
 	void HealthSweep__FinishedFunc();
 	void HealthSweep__UpdateFunc();
 	void K2_HandleGameplayCue(class AActor* MyTarget, EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters);
 	void ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent(int32 EntryPoint);
+	void Toggle_Mesh_Visibility(bool Visibility);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Generic_AdrenalineRush_DirectHeal_Latent_C">();
+		BP_STATIC_CLASS_IMPL("GC_Generic_AdrenalineRush_DirectHeal_Latent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Generic_AdrenalineRush_DirectHeal_Latent_C")
 	}
 	static class AGC_Generic_AdrenalineRush_DirectHeal_Latent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_Generic_AdrenalineRush_DirectHeal_Latent_C>();
 	}
 };
-static_assert(alignof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C) == 0x000008, "Wrong alignment on AGC_Generic_AdrenalineRush_DirectHeal_Latent_C");
-static_assert(sizeof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C) == 0x000818, "Wrong size on AGC_Generic_AdrenalineRush_DirectHeal_Latent_C");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, UberGraphFrame) == 0x000788, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, HealthSweep_SafetyOpacity_AEAC519D4817261537105281CD9192C7) == 0x000790, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep_SafetyOpacity_AEAC519D4817261537105281CD9192C7' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, HealthSweep_Sweep_AEAC519D4817261537105281CD9192C7) == 0x000794, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep_Sweep_AEAC519D4817261537105281CD9192C7' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, HealthSweep__Direction_AEAC519D4817261537105281CD9192C7) == 0x000798, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep__Direction_AEAC519D4817261537105281CD9192C7' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, HealthSweep) == 0x0007A0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::HealthSweep' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, My_Target) == 0x0007A8, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::My_Target' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_MIDs) == 0x0007B0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_MIDs' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Head) == 0x0007C0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Head' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Body) == 0x0007C8, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Body' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Hat) == 0x0007D0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Hat' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Backpack) == 0x0007D8, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Backpack' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Charm) == 0x0007E0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Charm' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Duplicate_Face) == 0x0007E8, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Duplicate_Face' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Adrenaline_Rush_Color_Outer_Direct) == 0x0007F0, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Adrenaline_Rush_Color_Outer_Direct' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Adrenaline_Rush_Color_Inner_Direct) == 0x000800, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Adrenaline_Rush_Color_Inner_Direct' has a wrong offset!");
-static_assert(offsetof(AGC_Generic_AdrenalineRush_DirectHeal_Latent_C, Adrenaline_Rush_WPO_Offset) == 0x000810, "Member 'AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Adrenaline_Rush_WPO_Offset' has a wrong offset!");
 
 }
 

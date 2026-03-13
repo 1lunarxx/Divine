@@ -27,12 +27,6 @@ public:
 	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCNL_Athena_SnowSurface_C_OnLoopingStart) == 0x000008, "Wrong alignment on GCNL_Athena_SnowSurface_C_OnLoopingStart");
-static_assert(sizeof(GCNL_Athena_SnowSurface_C_OnLoopingStart) == 0x0000E0, "Wrong size on GCNL_Athena_SnowSurface_C_OnLoopingStart");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GCNL_Athena_SnowSurface_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GCNL_Athena_SnowSurface_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GCNL_Athena_SnowSurface_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GCNL_Athena_SnowSurface_C_OnLoopingStart::AudioComponents' has a wrong offset!");
 
 // Function GCNL_Athena_SnowSurface.GCNL_Athena_SnowSurface_C.OnRemoval
 // 0x00F0 (0x00F0 - 0x0000)
@@ -46,14 +40,6 @@ public:
 	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNL_Athena_SnowSurface_C_OnRemoval) == 0x000008, "Wrong alignment on GCNL_Athena_SnowSurface_C_OnRemoval");
-static_assert(sizeof(GCNL_Athena_SnowSurface_C_OnRemoval) == 0x0000F0, "Wrong size on GCNL_Athena_SnowSurface_C_OnRemoval");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, MyTarget) == 0x000000, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, Parameters) == 0x000008, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, ParticleComponents) == 0x0000C0, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, AudioComponents) == 0x0000D0, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_OnRemoval, BurstDecalInstance) == 0x0000E8, "Member 'GCNL_Athena_SnowSurface_C_OnRemoval::BurstDecalInstance' has a wrong offset!");
 
 // Function GCNL_Athena_SnowSurface.GCNL_Athena_SnowSurface_C.ExecuteUbergraph_GCNL_Athena_SnowSurface
 // 0x0210 (0x0210 - 0x0000)
@@ -83,27 +69,6 @@ public:
 	struct FTimespan                              CallFunc_GetCalendarEventInformation_TimeUntilEnd; // 0x0200(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetCalendarEventInformation_TimeSpanRatio; // 0x0208(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface) == 0x000008, "Wrong alignment on GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface");
-static_assert(sizeof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface) == 0x000210, "Wrong size on GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, EntryPoint) == 0x000000, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_MyTarget) == 0x000008, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_Parameters) == 0x000010, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_ParticleComponents) == 0x0000C8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_AudioComponents) == 0x0000D8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_BurstCameraShakeInstance) == 0x0000E8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_BurstDecalInstance) == 0x0000F0, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_MyTarget_1) == 0x0000F8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_MyTarget_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_Parameters_1) == 0x000100, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_Parameters_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_ParticleComponents_1) == 0x0001B8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_ParticleComponents_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_Event_AudioComponents_1) == 0x0001C8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_Event_AudioComponents_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic) == 0x0001D8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_DynamicCast_bSuccess) == 0x0001E0, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_1) == 0x0001E8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_DynamicCast_AsPlayer_Pawn_Athena_Generic_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, K2Node_DynamicCast_bSuccess_1) == 0x0001F0, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, CallFunc_GetCalendarEventInformation_bIsEventActive) == 0x0001F1, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::CallFunc_GetCalendarEventInformation_bIsEventActive' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, CallFunc_GetCalendarEventInformation_TimeSinceBegin) == 0x0001F8, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::CallFunc_GetCalendarEventInformation_TimeSinceBegin' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, CallFunc_GetCalendarEventInformation_TimeUntilEnd) == 0x000200, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::CallFunc_GetCalendarEventInformation_TimeUntilEnd' has a wrong offset!");
-static_assert(offsetof(GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface, CallFunc_GetCalendarEventInformation_TimeSpanRatio) == 0x000208, "Member 'GCNL_Athena_SnowSurface_C_ExecuteUbergraph_GCNL_Athena_SnowSurface::CallFunc_GetCalendarEventInformation_TimeSpanRatio' has a wrong offset!");
 
 }
 

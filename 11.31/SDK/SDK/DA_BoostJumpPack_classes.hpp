@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DA_BoostJumpPack_C">();
+		BP_STATIC_CLASS_IMPL("DA_BoostJumpPack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DA_BoostJumpPack_C")
 	}
 	static class ADA_BoostJumpPack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADA_BoostJumpPack_C>();
 	}
 };
-static_assert(alignof(ADA_BoostJumpPack_C) == 0x000008, "Wrong alignment on ADA_BoostJumpPack_C");
-static_assert(sizeof(ADA_BoostJumpPack_C) == 0x000B28, "Wrong size on ADA_BoostJumpPack_C");
-static_assert(offsetof(ADA_BoostJumpPack_C, UberGraphFrame) == 0x000AC0, "Member 'ADA_BoostJumpPack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReason) == 0x000AC8, "Member 'ADA_BoostJumpPack_C::ErrorReason' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorReasonGamepad) == 0x000AE8, "Member 'ADA_BoostJumpPack_C::ErrorReasonGamepad' has a wrong offset!");
-static_assert(offsetof(ADA_BoostJumpPack_C, ErrorCannotUse) == 0x000B08, "Member 'ADA_BoostJumpPack_C::ErrorCannotUse' has a wrong offset!");
 
 }
 

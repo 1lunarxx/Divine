@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LakeCollisionComponent">();
+		STATIC_CLASS_IMPL("LakeCollisionComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LakeCollisionComponent")
 	}
 	static class ULakeCollisionComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULakeCollisionComponent>();
 	}
 };
-static_assert(alignof(ULakeCollisionComponent) == 0x000010, "Wrong alignment on ULakeCollisionComponent");
-static_assert(sizeof(ULakeCollisionComponent) == 0x0003F0, "Wrong size on ULakeCollisionComponent");
-static_assert(offsetof(ULakeCollisionComponent, CachedBodySetup) == 0x0003D8, "Member 'ULakeCollisionComponent::CachedBodySetup' has a wrong offset!");
-static_assert(offsetof(ULakeCollisionComponent, BoxExtent) == 0x0003E0, "Member 'ULakeCollisionComponent::BoxExtent' has a wrong offset!");
 
 // Class Water.NiagaraDataInterfaceWater
 // 0x0008 (0x0040 - 0x0038)
@@ -55,16 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraDataInterfaceWater">();
+		STATIC_CLASS_IMPL("NiagaraDataInterfaceWater")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraDataInterfaceWater")
 	}
 	static class UNiagaraDataInterfaceWater* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraDataInterfaceWater>();
 	}
 };
-static_assert(alignof(UNiagaraDataInterfaceWater) == 0x000008, "Wrong alignment on UNiagaraDataInterfaceWater");
-static_assert(sizeof(UNiagaraDataInterfaceWater) == 0x000040, "Wrong size on UNiagaraDataInterfaceWater");
-static_assert(offsetof(UNiagaraDataInterfaceWater, SourceBody) == 0x000038, "Member 'UNiagaraDataInterfaceWater::SourceBody' has a wrong offset!");
 
 // Class Water.NiagaraWaterFunctionLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -76,15 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"NiagaraWaterFunctionLibrary">();
+		STATIC_CLASS_IMPL("NiagaraWaterFunctionLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NiagaraWaterFunctionLibrary")
 	}
 	static class UNiagaraWaterFunctionLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNiagaraWaterFunctionLibrary>();
 	}
 };
-static_assert(alignof(UNiagaraWaterFunctionLibrary) == 0x000008, "Wrong alignment on UNiagaraWaterFunctionLibrary");
-static_assert(sizeof(UNiagaraWaterFunctionLibrary) == 0x000028, "Wrong size on UNiagaraWaterFunctionLibrary");
 
 // Class Water.WaterBodyGenerator
 // 0x0000 (0x0028 - 0x0028)
@@ -93,15 +96,17 @@ class UWaterBodyGenerator : public UObject
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterBodyGenerator">();
+		STATIC_CLASS_IMPL("WaterBodyGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterBodyGenerator")
 	}
 	static class UWaterBodyGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterBodyGenerator>();
 	}
 };
-static_assert(alignof(UWaterBodyGenerator) == 0x000008, "Wrong alignment on UWaterBodyGenerator");
-static_assert(sizeof(UWaterBodyGenerator) == 0x000028, "Wrong size on UWaterBodyGenerator");
 
 // Class Water.RiverGenerator
 // 0x0028 (0x0050 - 0x0028)
@@ -113,16 +118,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"RiverGenerator">();
+		STATIC_CLASS_IMPL("RiverGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RiverGenerator")
 	}
 	static class URiverGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URiverGenerator>();
 	}
 };
-static_assert(alignof(URiverGenerator) == 0x000008, "Wrong alignment on URiverGenerator");
-static_assert(sizeof(URiverGenerator) == 0x000050, "Wrong size on URiverGenerator");
-static_assert(offsetof(URiverGenerator, RiverMesh) == 0x000028, "Member 'URiverGenerator::RiverMesh' has a wrong offset!");
 
 // Class Water.LakeGenerator
 // 0x0040 (0x0068 - 0x0028)
@@ -137,19 +143,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LakeGenerator">();
+		STATIC_CLASS_IMPL("LakeGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LakeGenerator")
 	}
 	static class ULakeGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULakeGenerator>();
 	}
 };
-static_assert(alignof(ULakeGenerator) == 0x000008, "Wrong alignment on ULakeGenerator");
-static_assert(sizeof(ULakeGenerator) == 0x000068, "Wrong size on ULakeGenerator");
-static_assert(offsetof(ULakeGenerator, LakeMeshComp) == 0x000028, "Member 'ULakeGenerator::LakeMeshComp' has a wrong offset!");
-static_assert(offsetof(ULakeGenerator, LakeCollisionComp) == 0x000030, "Member 'ULakeGenerator::LakeCollisionComp' has a wrong offset!");
-static_assert(offsetof(ULakeGenerator, LakeCollision) == 0x000038, "Member 'ULakeGenerator::LakeCollision' has a wrong offset!");
-static_assert(offsetof(ULakeGenerator, LakeMesh) == 0x000040, "Member 'ULakeGenerator::LakeMesh' has a wrong offset!");
 
 // Class Water.OceanGenerator
 // 0x0008 (0x0030 - 0x0028)
@@ -161,16 +165,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OceanGenerator">();
+		STATIC_CLASS_IMPL("OceanGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OceanGenerator")
 	}
 	static class UOceanGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOceanGenerator>();
 	}
 };
-static_assert(alignof(UOceanGenerator) == 0x000008, "Wrong alignment on UOceanGenerator");
-static_assert(sizeof(UOceanGenerator) == 0x000030, "Wrong size on UOceanGenerator");
-static_assert(offsetof(UOceanGenerator, OceanCollision) == 0x000028, "Member 'UOceanGenerator::OceanCollision' has a wrong offset!");
 
 // Class Water.CustomMeshGenerator
 // 0x0008 (0x0030 - 0x0028)
@@ -182,16 +187,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"CustomMeshGenerator">();
+		STATIC_CLASS_IMPL("CustomMeshGenerator")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CustomMeshGenerator")
 	}
 	static class UCustomMeshGenerator* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCustomMeshGenerator>();
 	}
 };
-static_assert(alignof(UCustomMeshGenerator) == 0x000008, "Wrong alignment on UCustomMeshGenerator");
-static_assert(sizeof(UCustomMeshGenerator) == 0x000030, "Wrong size on UCustomMeshGenerator");
-static_assert(offsetof(UCustomMeshGenerator, MeshComp) == 0x000028, "Member 'UCustomMeshGenerator::MeshComp' has a wrong offset!");
 
 // Class Water.WaterBody
 // 0x0648 (0x0860 - 0x0218)
@@ -227,7 +233,7 @@ public:
 	class UMaterialInstanceDynamic*               WaterMaterialInstance;                             // 0x0820(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInstanceDynamic*               RiverToLakeTransitionMID;                          // 0x0828(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UMaterialInstanceDynamic*               RiverToOceanTransitionMID;                         // 0x0830(0x0008)(Edit, ZeroConstructor, Transient, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	TArray<TLazyObjectPtr<class AWaterBodyIsland>> Islands;                                           // 0x0838(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
+	TArray<TLazyObjectPtr<class AWaterBodyIsland>> Islands;                                          // 0x0838(0x0010)(Edit, ZeroConstructor, DisableEditOnTemplate, AdvancedDisplay, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TWeakObjectPtr<class ALandscapeProxy>         Landscape;                                         // 0x0848(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCanAffectNavigation;                              // 0x0850(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	uint8                                         Pad_851[0x7];                                      // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
@@ -247,44 +253,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterBody">();
+		STATIC_CLASS_IMPL("WaterBody")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterBody")
 	}
 	static class AWaterBody* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWaterBody>();
 	}
 };
-static_assert(alignof(AWaterBody) == 0x000010, "Wrong alignment on AWaterBody");
-static_assert(sizeof(AWaterBody) == 0x000860, "Wrong size on AWaterBody");
-static_assert(offsetof(AWaterBody, CollisionComponents) == 0x000220, "Member 'AWaterBody::CollisionComponents' has a wrong offset!");
-static_assert(offsetof(AWaterBody, PhysicalMaterial) == 0x000230, "Member 'AWaterBody::PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaveParams) == 0x000238, "Member 'AWaterBody::WaveParams' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaveSpeedFactor) == 0x000248, "Member 'AWaterBody::WaveSpeedFactor' has a wrong offset!");
-static_assert(offsetof(AWaterBody, TargetWaveMaskDepth) == 0x00024C, "Member 'AWaterBody::TargetWaveMaskDepth' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaveParamTextureOffset) == 0x000250, "Member 'AWaterBody::WaveParamTextureOffset' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterBodyType) == 0x000254, "Member 'AWaterBody::WaterBodyType' has a wrong offset!");
-static_assert(offsetof(AWaterBody, bOverrideWaterMesh) == 0x000255, "Member 'AWaterBody::bOverrideWaterMesh' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterMeshOverride) == 0x000258, "Member 'AWaterBody::WaterMeshOverride' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterMaterial) == 0x000260, "Member 'AWaterBody::WaterMaterial' has a wrong offset!");
-static_assert(offsetof(AWaterBody, RiverToLakeTransitionMat) == 0x000268, "Member 'AWaterBody::RiverToLakeTransitionMat' has a wrong offset!");
-static_assert(offsetof(AWaterBody, RiverToOceanTransitionMat) == 0x000270, "Member 'AWaterBody::RiverToOceanTransitionMat' has a wrong offset!");
-static_assert(offsetof(AWaterBody, OverlapMaterialPriority) == 0x000278, "Member 'AWaterBody::OverlapMaterialPriority' has a wrong offset!");
-static_assert(offsetof(AWaterBody, CollisionProfileName) == 0x00027C, "Member 'AWaterBody::CollisionProfileName' has a wrong offset!");
-static_assert(offsetof(AWaterBody, OceanCollisionExtents) == 0x000284, "Member 'AWaterBody::OceanCollisionExtents' has a wrong offset!");
-static_assert(offsetof(AWaterBody, MaxWaveHeight) == 0x000290, "Member 'AWaterBody::MaxWaveHeight' has a wrong offset!");
-static_assert(offsetof(AWaterBody, UnderwaterPostProcessSettings) == 0x0002A0, "Member 'AWaterBody::UnderwaterPostProcessSettings' has a wrong offset!");
-static_assert(offsetof(AWaterBody, SplineComp) == 0x0007E0, "Member 'AWaterBody::SplineComp' has a wrong offset!");
-static_assert(offsetof(AWaterBody, CurveSettings) == 0x0007E8, "Member 'AWaterBody::CurveSettings' has a wrong offset!");
-static_assert(offsetof(AWaterBody, bAffectsLandscape) == 0x000808, "Member 'AWaterBody::bAffectsLandscape' has a wrong offset!");
-static_assert(offsetof(AWaterBody, Generator) == 0x000810, "Member 'AWaterBody::Generator' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterSplineMetadata) == 0x000818, "Member 'AWaterBody::WaterSplineMetadata' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterMaterialInstance) == 0x000820, "Member 'AWaterBody::WaterMaterialInstance' has a wrong offset!");
-static_assert(offsetof(AWaterBody, RiverToLakeTransitionMID) == 0x000828, "Member 'AWaterBody::RiverToLakeTransitionMID' has a wrong offset!");
-static_assert(offsetof(AWaterBody, RiverToOceanTransitionMID) == 0x000830, "Member 'AWaterBody::RiverToOceanTransitionMID' has a wrong offset!");
-static_assert(offsetof(AWaterBody, Islands) == 0x000838, "Member 'AWaterBody::Islands' has a wrong offset!");
-static_assert(offsetof(AWaterBody, Landscape) == 0x000848, "Member 'AWaterBody::Landscape' has a wrong offset!");
-static_assert(offsetof(AWaterBody, bCanAffectNavigation) == 0x000850, "Member 'AWaterBody::bCanAffectNavigation' has a wrong offset!");
-static_assert(offsetof(AWaterBody, WaterNavAreaClass) == 0x000858, "Member 'AWaterBody::WaterNavAreaClass' has a wrong offset!");
 
 // Class Water.WaterBodyIsland
 // 0x0008 (0x0220 - 0x0218)
@@ -299,16 +278,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterBodyIsland">();
+		STATIC_CLASS_IMPL("WaterBodyIsland")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterBodyIsland")
 	}
 	static class AWaterBodyIsland* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWaterBodyIsland>();
 	}
 };
-static_assert(alignof(AWaterBodyIsland) == 0x000008, "Wrong alignment on AWaterBodyIsland");
-static_assert(sizeof(AWaterBodyIsland) == 0x000220, "Wrong size on AWaterBodyIsland");
-static_assert(offsetof(AWaterBodyIsland, SplineComp) == 0x000218, "Member 'AWaterBodyIsland::SplineComp' has a wrong offset!");
 
 // Class Water.WaterBodyProxy
 // 0x0000 (0x0218 - 0x0218)
@@ -317,15 +297,17 @@ class AWaterBodyProxy final : public AActor
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterBodyProxy">();
+		STATIC_CLASS_IMPL("WaterBodyProxy")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterBodyProxy")
 	}
 	static class AWaterBodyProxy* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWaterBodyProxy>();
 	}
 };
-static_assert(alignof(AWaterBodyProxy) == 0x000008, "Wrong alignment on AWaterBodyProxy");
-static_assert(sizeof(AWaterBodyProxy) == 0x000218, "Wrong size on AWaterBodyProxy");
 
 // Class Water.WaterMeshActor
 // 0x0010 (0x0228 - 0x0218)
@@ -338,17 +320,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterMeshActor">();
+		STATIC_CLASS_IMPL("WaterMeshActor")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterMeshActor")
 	}
 	static class AWaterMeshActor* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWaterMeshActor>();
 	}
 };
-static_assert(alignof(AWaterMeshActor) == 0x000008, "Wrong alignment on AWaterMeshActor");
-static_assert(sizeof(AWaterMeshActor) == 0x000228, "Wrong size on AWaterMeshActor");
-static_assert(offsetof(AWaterMeshActor, WaterVelocityTexture) == 0x000218, "Member 'AWaterMeshActor::WaterVelocityTexture' has a wrong offset!");
-static_assert(offsetof(AWaterMeshActor, WaterMesh) == 0x000220, "Member 'AWaterMeshActor::WaterMesh' has a wrong offset!");
 
 // Class Water.WaterMeshComponent
 // 0x0100 (0x0500 - 0x0400)
@@ -371,22 +353,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterMeshComponent">();
+		STATIC_CLASS_IMPL("WaterMeshComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterMeshComponent")
 	}
 	static class UWaterMeshComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterMeshComponent>();
 	}
 };
-static_assert(alignof(UWaterMeshComponent) == 0x000010, "Wrong alignment on UWaterMeshComponent");
-static_assert(sizeof(UWaterMeshComponent) == 0x000500, "Wrong size on UWaterMeshComponent");
-static_assert(offsetof(UWaterMeshComponent, ForceCollapseDensityLevel) == 0x000400, "Member 'UWaterMeshComponent::ForceCollapseDensityLevel' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, TileSize) == 0x000404, "Member 'UWaterMeshComponent::TileSize' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, ExtentInTiles) == 0x000408, "Member 'UWaterMeshComponent::ExtentInTiles' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, FarDistanceMaterial) == 0x000410, "Member 'UWaterMeshComponent::FarDistanceMaterial' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, FarDistanceMeshExtent) == 0x000418, "Member 'UWaterMeshComponent::FarDistanceMeshExtent' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, TessellationFactor) == 0x0004F0, "Member 'UWaterMeshComponent::TessellationFactor' has a wrong offset!");
-static_assert(offsetof(UWaterMeshComponent, LODScale) == 0x0004F4, "Member 'UWaterMeshComponent::LODScale' has a wrong offset!");
 
 // Class Water.WaterRuntimeSettings
 // 0x0008 (0x0040 - 0x0038)
@@ -399,16 +376,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterRuntimeSettings">();
+		STATIC_CLASS_IMPL("WaterRuntimeSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterRuntimeSettings")
 	}
 	static class UWaterRuntimeSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterRuntimeSettings>();
 	}
 };
-static_assert(alignof(UWaterRuntimeSettings) == 0x000008, "Wrong alignment on UWaterRuntimeSettings");
-static_assert(sizeof(UWaterRuntimeSettings) == 0x000040, "Wrong size on UWaterRuntimeSettings");
-static_assert(offsetof(UWaterRuntimeSettings, CollisionChannelForWaterTraces) == 0x000038, "Member 'UWaterRuntimeSettings::CollisionChannelForWaterTraces' has a wrong offset!");
 
 // Class Water.WaterSplineComponent
 // 0x0020 (0x04F0 - 0x04D0)
@@ -421,17 +399,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterSplineComponent">();
+		STATIC_CLASS_IMPL("WaterSplineComponent")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterSplineComponent")
 	}
 	static class UWaterSplineComponent* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterSplineComponent>();
 	}
 };
-static_assert(alignof(UWaterSplineComponent) == 0x000010, "Wrong alignment on UWaterSplineComponent");
-static_assert(sizeof(UWaterSplineComponent) == 0x0004F0, "Wrong size on UWaterSplineComponent");
-static_assert(offsetof(UWaterSplineComponent, WaterSplineDefaults) == 0x0004C8, "Member 'UWaterSplineComponent::WaterSplineDefaults' has a wrong offset!");
-static_assert(offsetof(UWaterSplineComponent, PreviousWaterSplineDefaults) == 0x0004DC, "Member 'UWaterSplineComponent::PreviousWaterSplineDefaults' has a wrong offset!");
 
 // Class Water.WaterSplineMetadata
 // 0x0090 (0x00B8 - 0x0028)
@@ -448,21 +426,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterSplineMetadata">();
+		STATIC_CLASS_IMPL("WaterSplineMetadata")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterSplineMetadata")
 	}
 	static class UWaterSplineMetadata* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterSplineMetadata>();
 	}
 };
-static_assert(alignof(UWaterSplineMetadata) == 0x000008, "Wrong alignment on UWaterSplineMetadata");
-static_assert(sizeof(UWaterSplineMetadata) == 0x0000B8, "Wrong size on UWaterSplineMetadata");
-static_assert(offsetof(UWaterSplineMetadata, Depth) == 0x000028, "Member 'UWaterSplineMetadata::Depth' has a wrong offset!");
-static_assert(offsetof(UWaterSplineMetadata, WaterVelocityScalar) == 0x000040, "Member 'UWaterSplineMetadata::WaterVelocityScalar' has a wrong offset!");
-static_assert(offsetof(UWaterSplineMetadata, ShorelineWidth) == 0x000058, "Member 'UWaterSplineMetadata::ShorelineWidth' has a wrong offset!");
-static_assert(offsetof(UWaterSplineMetadata, RiverWidth) == 0x000070, "Member 'UWaterSplineMetadata::RiverWidth' has a wrong offset!");
-static_assert(offsetof(UWaterSplineMetadata, AudioIntensity) == 0x000088, "Member 'UWaterSplineMetadata::AudioIntensity' has a wrong offset!");
-static_assert(offsetof(UWaterSplineMetadata, WaterVelocity) == 0x0000A0, "Member 'UWaterSplineMetadata::WaterVelocity' has a wrong offset!");
 
 // Class Water.WaterSubsystem
 // 0x0070 (0x00A0 - 0x0030)
@@ -470,7 +444,7 @@ class UWaterSubsystem final : public UWorldSubsystem
 {
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(bool bIsUnderWater, float DepthUnderwater)> OnCameraUnderwaterStateChanged;                    // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(bool bIsUnderWater, float DepthUnderwater)> OnCameraUnderwaterStateChanged; // 0x0038(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TMulticastInlineDelegate<void()>              OnWaterScalabilityChanged;                         // 0x0048(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	class AWaterMeshActor*                        WaterMeshActor;                                    // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_60[0x18];                                      // 0x0060(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
@@ -493,19 +467,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"WaterSubsystem">();
+		STATIC_CLASS_IMPL("WaterSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WaterSubsystem")
 	}
 	static class UWaterSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWaterSubsystem>();
 	}
 };
-static_assert(alignof(UWaterSubsystem) == 0x000008, "Wrong alignment on UWaterSubsystem");
-static_assert(sizeof(UWaterSubsystem) == 0x0000A0, "Wrong size on UWaterSubsystem");
-static_assert(offsetof(UWaterSubsystem, OnCameraUnderwaterStateChanged) == 0x000038, "Member 'UWaterSubsystem::OnCameraUnderwaterStateChanged' has a wrong offset!");
-static_assert(offsetof(UWaterSubsystem, OnWaterScalabilityChanged) == 0x000048, "Member 'UWaterSubsystem::OnWaterScalabilityChanged' has a wrong offset!");
-static_assert(offsetof(UWaterSubsystem, WaterMeshActor) == 0x000058, "Member 'UWaterSubsystem::WaterMeshActor' has a wrong offset!");
-static_assert(offsetof(UWaterSubsystem, MaterialParameterCollection) == 0x000078, "Member 'UWaterSubsystem::MaterialParameterCollection' has a wrong offset!");
 
 }
 

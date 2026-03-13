@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentLiveGamesEntry_C">();
+		BP_STATIC_CLASS_IMPL("TournamentLiveGamesEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentLiveGamesEntry_C")
 	}
 	static class UTournamentLiveGamesEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentLiveGamesEntry_C>();
 	}
 };
-static_assert(alignof(UTournamentLiveGamesEntry_C) == 0x000008, "Wrong alignment on UTournamentLiveGamesEntry_C");
-static_assert(sizeof(UTournamentLiveGamesEntry_C) == 0x000BB0, "Wrong size on UTournamentLiveGamesEntry_C");
-static_assert(offsetof(UTournamentLiveGamesEntry_C, UberGraphFrame) == 0x000B88, "Member 'UTournamentLiveGamesEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGamesEntry_C, Selected) == 0x000B90, "Member 'UTournamentLiveGamesEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGamesEntry_C, CommonBorder_IsPlayer) == 0x000B98, "Member 'UTournamentLiveGamesEntry_C::CommonBorder_IsPlayer' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGamesEntry_C, CommonBorder_Selected) == 0x000BA0, "Member 'UTournamentLiveGamesEntry_C::CommonBorder_Selected' has a wrong offset!");
-static_assert(offsetof(UTournamentLiveGamesEntry_C, CommonBorder_Zebra) == 0x000BA8, "Member 'UTournamentLiveGamesEntry_C::CommonBorder_Zebra' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UMissionGen_Sword_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Sword_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Sword_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Sword_C")
 	}
 	static class UMissionGen_Sword_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Sword_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Sword_C) == 0x000008, "Wrong alignment on UMissionGen_Sword_C");
-static_assert(sizeof(UMissionGen_Sword_C) == 0x0006C0, "Wrong size on UMissionGen_Sword_C");
 
 }
 

@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EulaWidget_C">();
+		BP_STATIC_CLASS_IMPL("EulaWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EulaWidget_C")
 	}
 	static class UEulaWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEulaWidget_C>();
 	}
 };
-static_assert(alignof(UEulaWidget_C) == 0x000008, "Wrong alignment on UEulaWidget_C");
-static_assert(sizeof(UEulaWidget_C) == 0x000458, "Wrong size on UEulaWidget_C");
-static_assert(offsetof(UEulaWidget_C, OnEulaResponse) == 0x000448, "Member 'UEulaWidget_C::OnEulaResponse' has a wrong offset!");
 
 }
 

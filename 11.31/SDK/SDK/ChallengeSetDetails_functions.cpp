@@ -17,6 +17,48 @@
 namespace SDK
 {
 
+// Function ChallengeSetDetails.ChallengeSetDetails_C.SetDynamicColors
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UImage*                           DetailsDynamicMaterialTarget                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FFortChallengeSetStyle&    FortChallengeSetStyle                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UChallengeSetDetails_C::SetDynamicColors(class UImage* DetailsDynamicMaterialTarget, const struct FFortChallengeSetStyle& FortChallengeSetStyle)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "SetDynamicColors");
+
+	Params::ChallengeSetDetails_C_SetDynamicColors Parms{};
+
+	Parms.DetailsDynamicMaterialTarget = DetailsDynamicMaterialTarget;
+	Parms.FortChallengeSetStyle = std::move(FortChallengeSetStyle);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ChallengeSetDetails.ChallengeSetDetails_C.GetWidgetForFramingViewedItem
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UWidget* UChallengeSetDetails_C::GetWidgetForFramingViewedItem()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ChallengeSetDetails_C", "GetWidgetForFramingViewedItem");
+
+	Params::ChallengeSetDetails_C_GetWidgetForFramingViewedItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
 // Function ChallengeSetDetails.ChallengeSetDetails_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -111,48 +153,6 @@ void UChallengeSetDetails_C::ExecuteUbergraph_ChallengeSetDetails(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ChallengeSetDetails.ChallengeSetDetails_C.SetDynamicColors
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UImage*                           DetailsDynamicMaterialTarget                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FFortChallengeSetStyle&    FortChallengeSetStyle                                  (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-
-void UChallengeSetDetails_C::SetDynamicColors(class UImage* DetailsDynamicMaterialTarget, const struct FFortChallengeSetStyle& FortChallengeSetStyle)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeSetDetails_C", "SetDynamicColors");
-
-	Params::ChallengeSetDetails_C_SetDynamicColors Parms{};
-
-	Parms.DetailsDynamicMaterialTarget = DetailsDynamicMaterialTarget;
-	Parms.FortChallengeSetStyle = std::move(FortChallengeSetStyle);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function ChallengeSetDetails.ChallengeSetDetails_C.GetWidgetForFramingViewedItem
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UWidget*                          ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UWidget* UChallengeSetDetails_C::GetWidgetForFramingViewedItem()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ChallengeSetDetails_C", "GetWidgetForFramingViewedItem");
-
-	Params::ChallengeSetDetails_C_GetWidgetForFramingViewedItem Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 }
 
 }

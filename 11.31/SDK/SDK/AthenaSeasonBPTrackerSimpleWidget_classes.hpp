@@ -55,34 +55,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonBPTrackerSimpleWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonBPTrackerSimpleWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonBPTrackerSimpleWidget_C")
 	}
 	static class UAthenaSeasonBPTrackerSimpleWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonBPTrackerSimpleWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonBPTrackerSimpleWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonBPTrackerSimpleWidget_C");
-static_assert(sizeof(UAthenaSeasonBPTrackerSimpleWidget_C) == 0x000310, "Wrong size on UAthenaSeasonBPTrackerSimpleWidget_C");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, UberGraphFrame) == 0x000290, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, Border_Backing) == 0x000298, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::Border_Backing' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, CompleteSwitcher) == 0x0002A0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::CompleteSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, CurrentText) == 0x0002A8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::CurrentText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, DividerText) == 0x0002B0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::DividerText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, IconMaxed) == 0x0002B8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::IconMaxed' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, IconNotMaxed) == 0x0002C0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::IconNotMaxed' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, ItemIcon) == 0x0002C8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::ItemIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, ItemIconMax) == 0x0002D0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::ItemIconMax' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, MaxHB) == 0x0002D8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::MaxHB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, MaxTextBlock) == 0x0002E0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::MaxTextBlock' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, ProgressHB) == 0x0002E8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::ProgressHB' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, TextColorBorder) == 0x0002F0, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::TextColorBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, TotalText) == 0x0002F8, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::TotalText' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, LastBookXP) == 0x000300, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::LastBookXP' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, UseBacking) == 0x000304, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::UseBacking' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, Large) == 0x000305, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::Large' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, FontSize) == 0x000308, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::FontSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonBPTrackerSimpleWidget_C, FontSizeOveride) == 0x00030C, "Member 'UAthenaSeasonBPTrackerSimpleWidget_C::FontSizeOveride' has a wrong offset!");
 
 }
 

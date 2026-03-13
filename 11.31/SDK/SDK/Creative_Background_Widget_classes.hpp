@@ -39,18 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_Background_Widget_C">();
+		BP_STATIC_CLASS_IMPL("Creative_Background_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_Background_Widget_C")
 	}
 	static class UCreative_Background_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreative_Background_Widget_C>();
 	}
 };
-static_assert(alignof(UCreative_Background_Widget_C) == 0x000008, "Wrong alignment on UCreative_Background_Widget_C");
-static_assert(sizeof(UCreative_Background_Widget_C) == 0x000248, "Wrong size on UCreative_Background_Widget_C");
-static_assert(offsetof(UCreative_Background_Widget_C, UberGraphFrame) == 0x000230, "Member 'UCreative_Background_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCreative_Background_Widget_C, Border_0) == 0x000238, "Member 'UCreative_Background_Widget_C::Border_0' has a wrong offset!");
-static_assert(offsetof(UCreative_Background_Widget_C, UserText) == 0x000240, "Member 'UCreative_Background_Widget_C::UserText' has a wrong offset!");
 
 }
 

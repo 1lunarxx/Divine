@@ -62,41 +62,6 @@ public:
 	bool                                          CallFunc_IsBROnly_ReturnValue;                     // 0x00AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x00AD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController) == 0x000008, "Wrong alignment on BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController");
-static_assert(sizeof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController) == 0x0000B0, "Wrong size on BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, EntryPoint) == 0x000000, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsMobileGame_ReturnValue) == 0x000004, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsValid_ReturnValue) == 0x000005, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, K2Node_Event_EndPlayReason) == 0x000006, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::K2Node_Event_EndPlayReason' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, K2Node_CreateDelegate_OutputDelegate) == 0x000008, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x000020, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsDedicatedServer_ReturnValue) == 0x000021, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsValid_ReturnValue_1) == 0x000022, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetViewTarget_ReturnValue) == 0x000028, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetViewTarget_ReturnValue_1) == 0x000030, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetViewTarget_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsValid_ReturnValue_2) == 0x000038, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetActorUpVector_ReturnValue) == 0x00003C, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetActorUpVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetActorRightVector_ReturnValue) == 0x000048, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetActorRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetActorForwardVector_ReturnValue) == 0x000054, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000060, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x00006C, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000078, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Trace_ReturnValue) == 0x000084, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Trace_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Trace_ReturnValue_1) == 0x000085, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Trace_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Trace_ReturnValue_2) == 0x000086, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Trace_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Trace_ReturnValue_3) == 0x000087, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Trace_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Trace_ReturnValue_4) == 0x000088, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Trace_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, K2Node_Event_DeltaSeconds) == 0x00008C, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Conv_BoolToFloat_ReturnValue) == 0x000090, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Conv_BoolToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000094, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Conv_BoolToFloat_ReturnValue_1) == 0x000098, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Conv_BoolToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_GetWorldDeltaSeconds_ReturnValue) == 0x00009C, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_GetWorldDeltaSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_FInterpTo_ReturnValue) == 0x0000A0, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_FInterpTo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsValid_ReturnValue_3) == 0x0000A4, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_Conv_BoolToFloat_ReturnValue_2) == 0x0000A8, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_Conv_BoolToFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_IsBROnly_ReturnValue) == 0x0000AC, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_IsBROnly_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController, CallFunc_BooleanAND_ReturnValue) == 0x0000AD, "Member 'BP_AmbientAudioController_C_ExecuteUbergraph_BP_AmbientAudioController::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -105,9 +70,6 @@ struct BP_AmbientAudioController_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AmbientAudioController_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_AmbientAudioController_C_ReceiveTick");
-static_assert(sizeof(BP_AmbientAudioController_C_ReceiveTick) == 0x000004, "Wrong size on BP_AmbientAudioController_C_ReceiveTick");
-static_assert(offsetof(BP_AmbientAudioController_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_AmbientAudioController_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.ReceiveEndPlay
 // 0x0001 (0x0001 - 0x0000)
@@ -116,9 +78,6 @@ struct BP_AmbientAudioController_C_ReceiveEndPlay final
 public:
 	EEndPlayReason                                EndPlayReason;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AmbientAudioController_C_ReceiveEndPlay) == 0x000001, "Wrong alignment on BP_AmbientAudioController_C_ReceiveEndPlay");
-static_assert(sizeof(BP_AmbientAudioController_C_ReceiveEndPlay) == 0x000001, "Wrong size on BP_AmbientAudioController_C_ReceiveEndPlay");
-static_assert(offsetof(BP_AmbientAudioController_C_ReceiveEndPlay, EndPlayReason) == 0x000000, "Member 'BP_AmbientAudioController_C_ReceiveEndPlay::EndPlayReason' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.Trace
 // 0x0160 (0x0160 - 0x0000)
@@ -156,35 +115,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_AmbientAudioController_C_Trace) == 0x000008, "Wrong alignment on BP_AmbientAudioController_C_Trace");
-static_assert(sizeof(BP_AmbientAudioController_C_Trace) == 0x000160, "Wrong size on BP_AmbientAudioController_C_Trace");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, Start) == 0x000000, "Member 'BP_AmbientAudioController_C_Trace::Start' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, Direction) == 0x00000C, "Member 'BP_AmbientAudioController_C_Trace::Direction' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, ReturnValue) == 0x000018, "Member 'BP_AmbientAudioController_C_Trace::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, Temp_object_Variable) == 0x000020, "Member 'BP_AmbientAudioController_C_Trace::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000030, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_Add_VectorVector_ReturnValue) == 0x00003C, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_LineTraceSingle_OutHit) == 0x000048, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_LineTraceSingle_ReturnValue) == 0x0000D0, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_bBlockingHit) == 0x0000D1, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000D2, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_Time) == 0x0000D4, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_Distance) == 0x0000D8, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_Location) == 0x0000DC, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_ImpactPoint) == 0x0000E8, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_Normal) == 0x0000F4, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_ImpactNormal) == 0x000100, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_PhysMat) == 0x000110, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_HitActor) == 0x000118, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_HitComponent) == 0x000120, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_HitBoneName) == 0x000128, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_HitItem) == 0x000130, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_FaceIndex) == 0x000134, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_TraceStart) == 0x000138, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BreakHitResult_TraceEnd) == 0x000144, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, K2Node_DynamicCast_AsBuilding_Actor) == 0x000150, "Member 'BP_AmbientAudioController_C_Trace::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'BP_AmbientAudioController_C_Trace::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_Trace, CallFunc_BooleanAND_ReturnValue) == 0x000159, "Member 'BP_AmbientAudioController_C_Trace::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.SetIndoorMixEnabled
 // 0x0010 (0x0010 - 0x0000)
@@ -196,11 +126,6 @@ public:
 	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAudioComponent*                        CallFunc_SpawnSoundAtLocation_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AmbientAudioController_C_SetIndoorMixEnabled) == 0x000008, "Wrong alignment on BP_AmbientAudioController_C_SetIndoorMixEnabled");
-static_assert(sizeof(BP_AmbientAudioController_C_SetIndoorMixEnabled) == 0x000010, "Wrong size on BP_AmbientAudioController_C_SetIndoorMixEnabled");
-static_assert(offsetof(BP_AmbientAudioController_C_SetIndoorMixEnabled, Enabled) == 0x000000, "Member 'BP_AmbientAudioController_C_SetIndoorMixEnabled::Enabled' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_SetIndoorMixEnabled, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BP_AmbientAudioController_C_SetIndoorMixEnabled::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_SetIndoorMixEnabled, CallFunc_SpawnSoundAtLocation_ReturnValue) == 0x000008, "Member 'BP_AmbientAudioController_C_SetIndoorMixEnabled::CallFunc_SpawnSoundAtLocation_ReturnValue' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.SetTargetLPFFreq
 // 0x0004 (0x0004 - 0x0000)
@@ -209,9 +134,6 @@ struct BP_AmbientAudioController_C_SetTargetLPFFreq final
 public:
 	float                                         Target;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_AmbientAudioController_C_SetTargetLPFFreq) == 0x000004, "Wrong alignment on BP_AmbientAudioController_C_SetTargetLPFFreq");
-static_assert(sizeof(BP_AmbientAudioController_C_SetTargetLPFFreq) == 0x000004, "Wrong size on BP_AmbientAudioController_C_SetTargetLPFFreq");
-static_assert(offsetof(BP_AmbientAudioController_C_SetTargetLPFFreq, Target) == 0x000000, "Member 'BP_AmbientAudioController_C_SetTargetLPFFreq::Target' has a wrong offset!");
 
 // Function BP_AmbientAudioController.BP_AmbientAudioController_C.UpdateSnowSetupBP
 // 0x0040 (0x0040 - 0x0000)
@@ -232,19 +154,6 @@ public:
 	bool                                          CallFunc_GreaterEqual_FloatFloat_ReturnValue;      // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_NotEqual_BoolBool_ReturnValue;            // 0x003D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_AmbientAudioController_C_UpdateSnowSetupBP) == 0x000008, "Wrong alignment on BP_AmbientAudioController_C_UpdateSnowSetupBP");
-static_assert(sizeof(BP_AmbientAudioController_C_UpdateSnowSetupBP) == 0x000040, "Wrong size on BP_AmbientAudioController_C_UpdateSnowSetupBP");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_GetGlobalSnowAltitude_ReturnValue) == 0x000000, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_GetGlobalSnowAltitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_GetFirstLocalFortPlayerController_ReturnValue) == 0x000008, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_GetFirstLocalFortPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_GetViewTarget_ReturnValue) == 0x000018, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_GetViewTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000020, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_BreakVector_X) == 0x00002C, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_BreakVector_Y) == 0x000030, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_BreakVector_Z) == 0x000034, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_Add_FloatFloat_ReturnValue) == 0x000038, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_GreaterEqual_FloatFloat_ReturnValue) == 0x00003C, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_GreaterEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_AmbientAudioController_C_UpdateSnowSetupBP, CallFunc_NotEqual_BoolBool_ReturnValue) == 0x00003D, "Member 'BP_AmbientAudioController_C_UpdateSnowSetupBP::CallFunc_NotEqual_BoolBool_ReturnValue' has a wrong offset!");
 
 }
 

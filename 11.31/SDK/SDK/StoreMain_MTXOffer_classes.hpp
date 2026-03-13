@@ -30,7 +30,7 @@ public:
 	class UWidgetAnimation*                       HoverNew;                                          // 0x0C18(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       Intro;                                             // 0x0C20(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       OnHover;                                           // 0x0C28(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UAthenaDirectAcquisitionOffer_SpecialBanner_C* AthenaDirectAcquisitionOffer_SpecialBanner;        // 0x0C30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UAthenaDirectAcquisitionOffer_SpecialBanner_C* AthenaDirectAcquisitionOffer_SpecialBanner; // 0x0C30(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UImage*                                 BaseColor;                                         // 0x0C38(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UBorder*                                BonusTag;                                          // 0x0C40(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       BonusText;                                         // 0x0C48(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -78,49 +78,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_MTXOffer_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_MTXOffer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_MTXOffer_C")
 	}
 	static class UStoreMain_MTXOffer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_MTXOffer_C>();
 	}
 };
-static_assert(alignof(UStoreMain_MTXOffer_C) == 0x000008, "Wrong alignment on UStoreMain_MTXOffer_C");
-static_assert(sizeof(UStoreMain_MTXOffer_C) == 0x000D18, "Wrong size on UStoreMain_MTXOffer_C");
-static_assert(offsetof(UStoreMain_MTXOffer_C, UberGraphFrame) == 0x000C00, "Member 'UStoreMain_MTXOffer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Hover_Linear) == 0x000C08, "Member 'UStoreMain_MTXOffer_C::Hover_Linear' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, UnhoverNew) == 0x000C10, "Member 'UStoreMain_MTXOffer_C::UnhoverNew' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, HoverNew) == 0x000C18, "Member 'UStoreMain_MTXOffer_C::HoverNew' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Intro) == 0x000C20, "Member 'UStoreMain_MTXOffer_C::Intro' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, OnHover) == 0x000C28, "Member 'UStoreMain_MTXOffer_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, AthenaDirectAcquisitionOffer_SpecialBanner) == 0x000C30, "Member 'UStoreMain_MTXOffer_C::AthenaDirectAcquisitionOffer_SpecialBanner' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BaseColor) == 0x000C38, "Member 'UStoreMain_MTXOffer_C::BaseColor' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BonusTag) == 0x000C40, "Member 'UStoreMain_MTXOffer_C::BonusTag' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BonusText) == 0x000C48, "Member 'UStoreMain_MTXOffer_C::BonusText' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Border_Footer) == 0x000C50, "Member 'UStoreMain_MTXOffer_C::Border_Footer' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BorderAll) == 0x000C58, "Member 'UStoreMain_MTXOffer_C::BorderAll' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BundleTotalQuantity) == 0x000C60, "Member 'UStoreMain_MTXOffer_C::BundleTotalQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, BundleVBucksText) == 0x000C68, "Member 'UStoreMain_MTXOffer_C::BundleVBucksText' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, CurrencyTotalQuantity) == 0x000C70, "Member 'UStoreMain_MTXOffer_C::CurrencyTotalQuantity' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, HBox_Price) == 0x000C78, "Member 'UStoreMain_MTXOffer_C::HBox_Price' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, HoverBorder) == 0x000C80, "Member 'UStoreMain_MTXOffer_C::HoverBorder' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, KeyArt) == 0x000C88, "Member 'UStoreMain_MTXOffer_C::KeyArt' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, OverlayGradient) == 0x000C90, "Member 'UStoreMain_MTXOffer_C::OverlayGradient' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, OverlaySalePrice) == 0x000C98, "Member 'UStoreMain_MTXOffer_C::OverlaySalePrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Plus) == 0x000CA0, "Member 'UStoreMain_MTXOffer_C::Plus' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, RMTBundle) == 0x000CA8, "Member 'UStoreMain_MTXOffer_C::RMTBundle' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, RMTCurrency) == 0x000CB0, "Member 'UStoreMain_MTXOffer_C::RMTCurrency' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, RMTTypeSwitcher) == 0x000CB8, "Member 'UStoreMain_MTXOffer_C::RMTTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, RMTVBucksHB) == 0x000CC0, "Member 'UStoreMain_MTXOffer_C::RMTVBucksHB' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, ScaleBoxKeyArt) == 0x000CC8, "Member 'UStoreMain_MTXOffer_C::ScaleBoxKeyArt' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, Switcher_Price) == 0x000CD0, "Member 'UStoreMain_MTXOffer_C::Switcher_Price' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOfferDisplayPrice) == 0x000CD8, "Member 'UStoreMain_MTXOffer_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOfferName) == 0x000CE0, "Member 'UStoreMain_MTXOffer_C::TextOfferName' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOfferPurchaseUnvailable) == 0x000CE8, "Member 'UStoreMain_MTXOffer_C::TextOfferPurchaseUnvailable' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TextOriginalPrice) == 0x000CF0, "Member 'UStoreMain_MTXOffer_C::TextOriginalPrice' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, TileSize) == 0x000CF8, "Member 'UStoreMain_MTXOffer_C::TileSize' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, VBucksText) == 0x000D00, "Member 'UStoreMain_MTXOffer_C::VBucksText' has a wrong offset!");
-static_assert(offsetof(UStoreMain_MTXOffer_C, AboutToShowDetails) == 0x000D08, "Member 'UStoreMain_MTXOffer_C::AboutToShowDetails' has a wrong offset!");
 
 }
 

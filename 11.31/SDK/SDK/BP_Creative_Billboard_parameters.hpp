@@ -39,22 +39,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ECollisionResponse                            K2Node_Select_Default_1;                           // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard");
-static_assert(sizeof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard) == 0x000030, "Wrong size on BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, EntryPoint) == 0x000000, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, CallFunc_NearlyEqual_FloatFloat_ReturnValue) == 0x000004, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::CallFunc_NearlyEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, Temp_bool_Variable) == 0x000005, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, Temp_byte_Variable) == 0x000006, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, Temp_bool_Variable_1) == 0x000007, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, Temp_byte_Variable_1) == 0x000008, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, Temp_byte_Variable_2) == 0x000009, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_Select_Default) == 0x00000A, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_ComponentBoundEvent_TriggerInstigator_1) == 0x000010, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_ComponentBoundEvent_TriggerInstigator_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_ComponentBoundEvent_TriggerInstigator) == 0x000018, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_ComponentBoundEvent_TriggerInstigator' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_ComponentBoundEvent_Minigame) == 0x000020, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_ComponentBoundEvent_Minigame' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_ComponentBoundEvent_NewMinigameState) == 0x000028, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_ComponentBoundEvent_NewMinigameState' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000029, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard, K2Node_Select_Default_1) == 0x00002A, "Member 'BP_Creative_Billboard_C_ExecuteUbergraph_BP_Creative_Billboard::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +48,6 @@ public:
 	class AFortMinigame*                          Minigame;                                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortMinigameState                            NewMinigameState;                                  // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
-static_assert(sizeof(BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature) == 0x000010, "Wrong size on BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature");
-static_assert(offsetof(BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature, Minigame) == 0x000000, "Member 'BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature::Minigame' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature, NewMinigameState) == 0x000008, "Member 'BP_Creative_Billboard_C_BndEvt__FortMinigameLogic_K2Node_ComponentBoundEvent_4_OnMinigameStateChanged__DelegateSignature::NewMinigameState' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -76,9 +56,6 @@ struct BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_Componen
 public:
 	class AController*                            TriggerInstigator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
-static_assert(sizeof(BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong size on BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature");
-static_assert(offsetof(BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature, TriggerInstigator) == 0x000000, "Member 'BP_Creative_Billboard_C_BndEvt__HideTextReceiverComponent_K2Node_ComponentBoundEvent_3_OnGameplayMessageReceived__DelegateSignature::TriggerInstigator' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -87,9 +64,6 @@ struct BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_Componen
 public:
 	class AController*                            TriggerInstigator;                                 // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
-static_assert(sizeof(BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature) == 0x000008, "Wrong size on BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature");
-static_assert(offsetof(BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature, TriggerInstigator) == 0x000000, "Member 'BP_Creative_Billboard_C_BndEvt__ShowTextReceiverComponent_K2Node_ComponentBoundEvent_2_OnGameplayMessageReceived__DelegateSignature::TriggerInstigator' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetBackgroundColor
 // 0x0030 (0x0030 - 0x0000)
@@ -104,14 +78,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget_1; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetBackgroundColor) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetBackgroundColor");
-static_assert(sizeof(BP_Creative_Billboard_C_SetBackgroundColor) == 0x000030, "Wrong size on BP_Creative_Billboard_C_SetBackgroundColor");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, CallFunc_GetUserWidgetObject_ReturnValue_1) == 0x000018, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::CallFunc_GetUserWidgetObject_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, K2Node_DynamicCast_AsCreative_Background_Widget_1) == 0x000020, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::K2Node_DynamicCast_AsCreative_Background_Widget_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetBackgroundColor, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'BP_Creative_Billboard_C_SetBackgroundColor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetDisplayText
 // 0x0018 (0x0018 - 0x0000)
@@ -122,11 +88,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetDisplayText) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetDisplayText");
-static_assert(sizeof(BP_Creative_Billboard_C_SetDisplayText) == 0x000018, "Wrong size on BP_Creative_Billboard_C_SetDisplayText");
-static_assert(offsetof(BP_Creative_Billboard_C_SetDisplayText, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetDisplayText::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetDisplayText, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetDisplayText::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetDisplayText, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetDisplayText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetTextSize
 // 0x0018 (0x0018 - 0x0000)
@@ -137,11 +98,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetTextSize) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetTextSize");
-static_assert(sizeof(BP_Creative_Billboard_C_SetTextSize) == 0x000018, "Wrong size on BP_Creative_Billboard_C_SetTextSize");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextSize, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetTextSize::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextSize, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetTextSize::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextSize, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetTextSize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.ShowBorder
 // 0x0120 (0x0120 - 0x0000)
@@ -161,18 +117,6 @@ public:
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0108(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_ShowBorder) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_ShowBorder");
-static_assert(sizeof(BP_Creative_Billboard_C_ShowBorder) == 0x000120, "Wrong size on BP_Creative_Billboard_C_ShowBorder");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CollisionSetting) == 0x000000, "Member 'BP_Creative_Billboard_C_ShowBorder::CollisionSetting' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, Temp_bool_Variable) == 0x000001, "Member 'BP_Creative_Billboard_C_ShowBorder::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, K2Node_Select_Default) == 0x000004, "Member 'BP_Creative_Billboard_C_ShowBorder::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CallFunc_K2_SetRelativeRotation_SweepHitResult) == 0x000010, "Member 'BP_Creative_Billboard_C_ShowBorder::CallFunc_K2_SetRelativeRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CallFunc_Conv_ByteToInt_ReturnValue) == 0x000098, "Member 'BP_Creative_Billboard_C_ShowBorder::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, K2Node_MakeStruct_FormatArgumentData) == 0x0000A0, "Member 'BP_Creative_Billboard_C_ShowBorder::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, K2Node_MakeArray_Array) == 0x0000E0, "Member 'BP_Creative_Billboard_C_ShowBorder::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CallFunc_Format_ReturnValue) == 0x0000F0, "Member 'BP_Creative_Billboard_C_ShowBorder::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CallFunc_Conv_TextToString_ReturnValue) == 0x000108, "Member 'BP_Creative_Billboard_C_ShowBorder::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_ShowBorder, CallFunc_Not_PreBool_ReturnValue) == 0x000118, "Member 'BP_Creative_Billboard_C_ShowBorder::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetTextAlignment
 // 0x0018 (0x0018 - 0x0000)
@@ -183,11 +127,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetTextAlignment) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetTextAlignment");
-static_assert(sizeof(BP_Creative_Billboard_C_SetTextAlignment) == 0x000018, "Wrong size on BP_Creative_Billboard_C_SetTextAlignment");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextAlignment, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetTextAlignment::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextAlignment, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetTextAlignment::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextAlignment, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetTextAlignment::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.UpdateProperties
 // 0x0288 (0x0288 - 0x0000)
@@ -214,26 +153,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0260(0x0018)()
 	class FString                                 CallFunc_Conv_TextToString_ReturnValue;            // 0x0278(0x0010)(ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_UpdateProperties) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_UpdateProperties");
-static_assert(sizeof(BP_Creative_Billboard_C_UpdateProperties) == 0x000288, "Wrong size on BP_Creative_Billboard_C_UpdateProperties");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_IsValid_ReturnValue) == 0x000001, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData) == 0x000008, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_1) == 0x000048, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_ColorToText_ReturnValue) == 0x000088, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_ColorToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_ByteToString_ReturnValue) == 0x0000A0, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_ByteToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000B0, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_StringToText_ReturnValue) == 0x0000F0, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_3) == 0x000108, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_ColorToText_ReturnValue_1) == 0x000148, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_ColorToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_4) == 0x000160, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_BoolToText_ReturnValue) == 0x0001A0, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_BoolToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_5) == 0x0001B8, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_StringToText_ReturnValue_1) == 0x0001F8, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeStruct_FormatArgumentData_6) == 0x000210, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeStruct_FormatArgumentData_6' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, K2Node_MakeArray_Array) == 0x000250, "Member 'BP_Creative_Billboard_C_UpdateProperties::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Format_ReturnValue) == 0x000260, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_UpdateProperties, CallFunc_Conv_TextToString_ReturnValue) == 0x000278, "Member 'BP_Creative_Billboard_C_UpdateProperties::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetTextColor
 // 0x0018 (0x0018 - 0x0000)
@@ -244,11 +163,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetTextColor) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetTextColor");
-static_assert(sizeof(BP_Creative_Billboard_C_SetTextColor) == 0x000018, "Wrong size on BP_Creative_Billboard_C_SetTextColor");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextColor, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetTextColor::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextColor, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetTextColor::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextColor, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetTextColor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetViewDistance
 // 0x0008 (0x0008 - 0x0000)
@@ -258,10 +172,6 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetViewDistance) == 0x000004, "Wrong alignment on BP_Creative_Billboard_C_SetViewDistance");
-static_assert(sizeof(BP_Creative_Billboard_C_SetViewDistance) == 0x000008, "Wrong size on BP_Creative_Billboard_C_SetViewDistance");
-static_assert(offsetof(BP_Creative_Billboard_C_SetViewDistance, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetViewDistance::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetViewDistance, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000004, "Member 'BP_Creative_Billboard_C_SetViewDistance::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetTextVisibility
 // 0x0020 (0x0020 - 0x0000)
@@ -274,12 +184,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetTextVisibility) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetTextVisibility");
-static_assert(sizeof(BP_Creative_Billboard_C_SetTextVisibility) == 0x000020, "Wrong size on BP_Creative_Billboard_C_SetTextVisibility");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextVisibility, Visible) == 0x000000, "Member 'BP_Creative_Billboard_C_SetTextVisibility::Visible' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextVisibility, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000008, "Member 'BP_Creative_Billboard_C_SetTextVisibility::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextVisibility, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000010, "Member 'BP_Creative_Billboard_C_SetTextVisibility::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextVisibility, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'BP_Creative_Billboard_C_SetTextVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetVisibilityBasedOnState
 // 0x0006 (0x0006 - 0x0000)
@@ -293,14 +197,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_SwitchInteger_CmpSuccess;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetVisibilityBasedOnState) == 0x000001, "Wrong alignment on BP_Creative_Billboard_C_SetVisibilityBasedOnState");
-static_assert(sizeof(BP_Creative_Billboard_C_SetVisibilityBasedOnState) == 0x000006, "Wrong size on BP_Creative_Billboard_C_SetVisibilityBasedOnState");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, MinigameState) == 0x000000, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::MinigameState' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, CachedMinigameState) == 0x000001, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::CachedMinigameState' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000002, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x000003, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000004, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetVisibilityBasedOnState, K2Node_SwitchInteger_CmpSuccess) == 0x000005, "Member 'BP_Creative_Billboard_C_SetVisibilityBasedOnState::K2Node_SwitchInteger_CmpSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.SetTextFont
 // 0x0018 (0x0018 - 0x0000)
@@ -311,11 +207,6 @@ public:
 	class UCreative_Background_Widget_C*          K2Node_DynamicCast_AsCreative_Background_Widget;   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_Creative_Billboard_C_SetTextFont) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_SetTextFont");
-static_assert(sizeof(BP_Creative_Billboard_C_SetTextFont) == 0x000018, "Wrong size on BP_Creative_Billboard_C_SetTextFont");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextFont, CallFunc_GetUserWidgetObject_ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_SetTextFont::CallFunc_GetUserWidgetObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextFont, K2Node_DynamicCast_AsCreative_Background_Widget) == 0x000008, "Member 'BP_Creative_Billboard_C_SetTextFont::K2Node_DynamicCast_AsCreative_Background_Widget' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_SetTextFont, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_Creative_Billboard_C_SetTextFont::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.GetMeshComponents
 // 0x0020 (0x0020 - 0x0000)
@@ -325,10 +216,6 @@ public:
 	TArray<class UMeshComponent*>                 ReturnValue;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference)
 	TArray<class UMeshComponent*>                 K2Node_MakeArray_Array;                            // 0x0010(0x0010)(ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(BP_Creative_Billboard_C_GetMeshComponents) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_GetMeshComponents");
-static_assert(sizeof(BP_Creative_Billboard_C_GetMeshComponents) == 0x000020, "Wrong size on BP_Creative_Billboard_C_GetMeshComponents");
-static_assert(offsetof(BP_Creative_Billboard_C_GetMeshComponents, ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_GetMeshComponents::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_Creative_Billboard_C_GetMeshComponents, K2Node_MakeArray_Array) == 0x000010, "Member 'BP_Creative_Billboard_C_GetMeshComponents::K2Node_MakeArray_Array' has a wrong offset!");
 
 // Function BP_Creative_Billboard.BP_Creative_Billboard_C.GetCollisionStaticMesh
 // 0x0008 (0x0008 - 0x0000)
@@ -337,9 +224,6 @@ struct BP_Creative_Billboard_C_GetCollisionStaticMesh final
 public:
 	class UStaticMesh*                            ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_Creative_Billboard_C_GetCollisionStaticMesh) == 0x000008, "Wrong alignment on BP_Creative_Billboard_C_GetCollisionStaticMesh");
-static_assert(sizeof(BP_Creative_Billboard_C_GetCollisionStaticMesh) == 0x000008, "Wrong size on BP_Creative_Billboard_C_GetCollisionStaticMesh");
-static_assert(offsetof(BP_Creative_Billboard_C_GetCollisionStaticMesh, ReturnValue) == 0x000000, "Member 'BP_Creative_Billboard_C_GetCollisionStaticMesh::ReturnValue' has a wrong offset!");
 
 }
 

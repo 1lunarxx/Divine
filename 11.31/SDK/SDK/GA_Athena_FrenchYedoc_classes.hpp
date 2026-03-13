@@ -31,17 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_FrenchYedoc_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_FrenchYedoc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_FrenchYedoc_C")
 	}
 	static class UGA_Athena_FrenchYedoc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_FrenchYedoc_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_FrenchYedoc_C) == 0x000008, "Wrong alignment on UGA_Athena_FrenchYedoc_C");
-static_assert(sizeof(UGA_Athena_FrenchYedoc_C) == 0x000DC8, "Wrong size on UGA_Athena_FrenchYedoc_C");
-static_assert(offsetof(UGA_Athena_FrenchYedoc_C, ClassToSpawnCheck) == 0x000DA0, "Member 'UGA_Athena_FrenchYedoc_C::ClassToSpawnCheck' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FrenchYedoc_C, T_FailedTags) == 0x000DA8, "Member 'UGA_Athena_FrenchYedoc_C::T_FailedTags' has a wrong offset!");
 
 }
 

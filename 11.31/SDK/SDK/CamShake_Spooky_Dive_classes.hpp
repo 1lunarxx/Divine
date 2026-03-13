@@ -23,15 +23,17 @@ class UCamShake_Spooky_Dive_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CamShake_Spooky_Dive_C">();
+		BP_STATIC_CLASS_IMPL("CamShake_Spooky_Dive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CamShake_Spooky_Dive_C")
 	}
 	static class UCamShake_Spooky_Dive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCamShake_Spooky_Dive_C>();
 	}
 };
-static_assert(alignof(UCamShake_Spooky_Dive_C) == 0x000010, "Wrong alignment on UCamShake_Spooky_Dive_C");
-static_assert(sizeof(UCamShake_Spooky_Dive_C) == 0x000160, "Wrong size on UCamShake_Spooky_Dive_C");
 
 }
 

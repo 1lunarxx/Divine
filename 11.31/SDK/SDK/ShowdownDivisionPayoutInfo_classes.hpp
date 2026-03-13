@@ -23,15 +23,17 @@ class UShowdownDivisionPayoutInfo_C final : public UFortDivisionPayoutInfo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownDivisionPayoutInfo_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownDivisionPayoutInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownDivisionPayoutInfo_C")
 	}
 	static class UShowdownDivisionPayoutInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownDivisionPayoutInfo_C>();
 	}
 };
-static_assert(alignof(UShowdownDivisionPayoutInfo_C) == 0x000008, "Wrong alignment on UShowdownDivisionPayoutInfo_C");
-static_assert(sizeof(UShowdownDivisionPayoutInfo_C) == 0x000650, "Wrong size on UShowdownDivisionPayoutInfo_C");
 
 }
 

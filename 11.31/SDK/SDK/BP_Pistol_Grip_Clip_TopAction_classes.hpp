@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Pistol_Grip_Clip_TopAction_C">();
+		BP_STATIC_CLASS_IMPL("BP_Pistol_Grip_Clip_TopAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Pistol_Grip_Clip_TopAction_C")
 	}
 	static class UBP_Pistol_Grip_Clip_TopAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_Pistol_Grip_Clip_TopAction_C>();
 	}
 };
-static_assert(alignof(UBP_Pistol_Grip_Clip_TopAction_C) == 0x000010, "Wrong alignment on UBP_Pistol_Grip_Clip_TopAction_C");
-static_assert(sizeof(UBP_Pistol_Grip_Clip_TopAction_C) == 0x000310, "Wrong size on UBP_Pistol_Grip_Clip_TopAction_C");
-static_assert(offsetof(UBP_Pistol_Grip_Clip_TopAction_C, UberGraphFrame) == 0x000270, "Member 'UBP_Pistol_Grip_Clip_TopAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_Grip_Clip_TopAction_C, AnimGraphNode_Root_6047A5F5443C843C1EB16F90E772A9EC) == 0x000278, "Member 'UBP_Pistol_Grip_Clip_TopAction_C::AnimGraphNode_Root_6047A5F5443C843C1EB16F90E772A9EC' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_Grip_Clip_TopAction_C, AnimGraphNode_Slot_1C444D924AC74067230DFA9A23E9CEE2) == 0x0002A8, "Member 'UBP_Pistol_Grip_Clip_TopAction_C::AnimGraphNode_Slot_1C444D924AC74067230DFA9A23E9CEE2' has a wrong offset!");
-static_assert(offsetof(UBP_Pistol_Grip_Clip_TopAction_C, AnimGraphNode_LocalRefPose_FE7CFCE944C6521565A6F7AC0C7064A1) == 0x0002F0, "Member 'UBP_Pistol_Grip_Clip_TopAction_C::AnimGraphNode_LocalRefPose_FE7CFCE944C6521565A6F7AC0C7064A1' has a wrong offset!");
 
 }
 

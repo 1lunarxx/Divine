@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ProjectileTrajectory_AthenaRed_Playset_C">();
+		BP_STATIC_CLASS_IMPL("BP_ProjectileTrajectory_AthenaRed_Playset_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ProjectileTrajectory_AthenaRed_Playset_C")
 	}
 	static class ABP_ProjectileTrajectory_AthenaRed_Playset_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ProjectileTrajectory_AthenaRed_Playset_C>();
 	}
 };
-static_assert(alignof(ABP_ProjectileTrajectory_AthenaRed_Playset_C) == 0x000008, "Wrong alignment on ABP_ProjectileTrajectory_AthenaRed_Playset_C");
-static_assert(sizeof(ABP_ProjectileTrajectory_AthenaRed_Playset_C) == 0x000308, "Wrong size on ABP_ProjectileTrajectory_AthenaRed_Playset_C");
-static_assert(offsetof(ABP_ProjectileTrajectory_AthenaRed_Playset_C, UberGraphFrame_BP_ProjectileTrajectory_AthenaRed_Playset_C) == 0x0002F8, "Member 'ABP_ProjectileTrajectory_AthenaRed_Playset_C::UberGraphFrame_BP_ProjectileTrajectory_AthenaRed_Playset_C' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_AthenaRed_Playset_C, Creative_Grenade_LoopRed_Cue) == 0x000300, "Member 'ABP_ProjectileTrajectory_AthenaRed_Playset_C::Creative_Grenade_LoopRed_Cue' has a wrong offset!");
 
 }
 

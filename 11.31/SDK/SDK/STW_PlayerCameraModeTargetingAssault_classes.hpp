@@ -23,15 +23,17 @@ class USTW_PlayerCameraModeTargetingAssault_C final : public UAthena_PlayerCamer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"STW_PlayerCameraModeTargetingAssault_C">();
+		BP_STATIC_CLASS_IMPL("STW_PlayerCameraModeTargetingAssault_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"STW_PlayerCameraModeTargetingAssault_C")
 	}
 	static class USTW_PlayerCameraModeTargetingAssault_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USTW_PlayerCameraModeTargetingAssault_C>();
 	}
 };
-static_assert(alignof(USTW_PlayerCameraModeTargetingAssault_C) == 0x000010, "Wrong alignment on USTW_PlayerCameraModeTargetingAssault_C");
-static_assert(sizeof(USTW_PlayerCameraModeTargetingAssault_C) == 0x000D80, "Wrong size on USTW_PlayerCameraModeTargetingAssault_C");
 
 }
 

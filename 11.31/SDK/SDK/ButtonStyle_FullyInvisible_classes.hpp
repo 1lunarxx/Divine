@@ -23,15 +23,17 @@ class UButtonStyle_FullyInvisible_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-FullyInvisible_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-FullyInvisible_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-FullyInvisible_C")
 	}
 	static class UButtonStyle_FullyInvisible_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_FullyInvisible_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_FullyInvisible_C) == 0x000008, "Wrong alignment on UButtonStyle_FullyInvisible_C");
-static_assert(sizeof(UButtonStyle_FullyInvisible_C) == 0x000570, "Wrong size on UButtonStyle_FullyInvisible_C");
 
 }
 

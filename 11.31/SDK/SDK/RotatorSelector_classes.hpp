@@ -35,7 +35,7 @@ public:
 	int32                                         SelectedIndex;                                     // 0x02A0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A4[0x4];                                      // 0x02A4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   HoverText;                                         // 0x02A8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(int32 Selected_Index)> Selection_Changed;                                 // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 Selected_Index)> Selection_Changed;                          // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x02D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Spacer_Width;                                      // 0x02D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         Width_Min;                                         // 0x02DC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -61,31 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RotatorSelector_C">();
+		BP_STATIC_CLASS_IMPL("RotatorSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RotatorSelector_C")
 	}
 	static class URotatorSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URotatorSelector_C>();
 	}
 };
-static_assert(alignof(URotatorSelector_C) == 0x000008, "Wrong alignment on URotatorSelector_C");
-static_assert(sizeof(URotatorSelector_C) == 0x0002E8, "Wrong size on URotatorSelector_C");
-static_assert(offsetof(URotatorSelector_C, UberGraphFrame) == 0x000258, "Member 'URotatorSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, ButtonLeft) == 0x000260, "Member 'URotatorSelector_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, ButtonRight) == 0x000268, "Member 'URotatorSelector_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, DisplayText) == 0x000270, "Member 'URotatorSelector_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, HorizontalBox_Selector) == 0x000278, "Member 'URotatorSelector_C::HorizontalBox_Selector' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, NameBox) == 0x000280, "Member 'URotatorSelector_C::NameBox' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, SizeBox_0) == 0x000288, "Member 'URotatorSelector_C::SizeBox_0' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Spacer_0) == 0x000290, "Member 'URotatorSelector_C::Spacer_0' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, TextRotator) == 0x000298, "Member 'URotatorSelector_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, SelectedIndex) == 0x0002A0, "Member 'URotatorSelector_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, HoverText) == 0x0002A8, "Member 'URotatorSelector_C::HoverText' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Selection_Changed) == 0x0002C0, "Member 'URotatorSelector_C::Selection_Changed' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Tab_Tooltip_Text) == 0x0002D0, "Member 'URotatorSelector_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Spacer_Width) == 0x0002D8, "Member 'URotatorSelector_C::Spacer_Width' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, Width_Min) == 0x0002DC, "Member 'URotatorSelector_C::Width_Min' has a wrong offset!");
-static_assert(offsetof(URotatorSelector_C, HideNameParam) == 0x0002E0, "Member 'URotatorSelector_C::HideNameParam' has a wrong offset!");
 
 }
 

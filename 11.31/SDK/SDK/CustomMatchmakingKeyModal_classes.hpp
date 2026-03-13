@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CustomMatchmakingKeyModal_C">();
+		BP_STATIC_CLASS_IMPL("CustomMatchmakingKeyModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CustomMatchmakingKeyModal_C")
 	}
 	static class UCustomMatchmakingKeyModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCustomMatchmakingKeyModal_C>();
 	}
 };
-static_assert(alignof(UCustomMatchmakingKeyModal_C) == 0x000008, "Wrong alignment on UCustomMatchmakingKeyModal_C");
-static_assert(sizeof(UCustomMatchmakingKeyModal_C) == 0x000478, "Wrong size on UCustomMatchmakingKeyModal_C");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, UberGraphFrame) == 0x000440, "Member 'UCustomMatchmakingKeyModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, AcceptButton) == 0x000448, "Member 'UCustomMatchmakingKeyModal_C::AcceptButton' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, CloseButton) == 0x000450, "Member 'UCustomMatchmakingKeyModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, EditTextActionWidget) == 0x000458, "Member 'UCustomMatchmakingKeyModal_C::EditTextActionWidget' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, Lightbox) == 0x000460, "Member 'UCustomMatchmakingKeyModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, MainIcon) == 0x000468, "Member 'UCustomMatchmakingKeyModal_C::MainIcon' has a wrong offset!");
-static_assert(offsetof(UCustomMatchmakingKeyModal_C, Title) == 0x000470, "Member 'UCustomMatchmakingKeyModal_C::Title' has a wrong offset!");
 
 }
 

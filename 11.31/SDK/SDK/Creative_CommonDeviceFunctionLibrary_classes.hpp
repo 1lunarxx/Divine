@@ -46,15 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_CommonDeviceFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("Creative_CommonDeviceFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_CommonDeviceFunctionLibrary_C")
 	}
 	static class UCreative_CommonDeviceFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreative_CommonDeviceFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(UCreative_CommonDeviceFunctionLibrary_C) == 0x000008, "Wrong alignment on UCreative_CommonDeviceFunctionLibrary_C");
-static_assert(sizeof(UCreative_CommonDeviceFunctionLibrary_C) == 0x000028, "Wrong size on UCreative_CommonDeviceFunctionLibrary_C");
 
 }
 

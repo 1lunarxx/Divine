@@ -61,23 +61,7 @@ namespace InSDKUtils
 }
 
 
-template<int32 Len>
-struct StringLiteral
-{
-	char Chars[Len];
-
-	consteval StringLiteral(const char(&String)[Len])
-	{
-		std::copy_n(String, Len, Chars);
-	}
-
-	operator std::string() const
-	{
-		return static_cast<const char*>(Chars);
-	}
-};
-
-// Forward declarations because in-line forward declarations make the compiler think 'StaticClassImpl()' is a class template
+// Forward declarations because in-line forward declarations make the compiler think 'GetStaticClass()' is a class template
 class UClass;
 class UObject;
 class UFunction;
@@ -86,8 +70,8 @@ class FName;
 
 namespace BasicFilesImpleUtils
 {
-	// Helper functions for StaticClassImpl and StaticBPGeneratedClassImpl
-	UClass* FindClassByName(const std::string& Name);
+	// Helper functions for GetStaticClass and GetStaticBPGeneratedClass
+	UClass* FindClassByName(const std::string& Name, bool bByFullName = false);
 	UClass* FindClassByFullName(const std::string& Name);
 
 	std::string GetObjectName(class UClass* Class);
@@ -99,68 +83,67 @@ namespace BasicFilesImpleUtils
 	UObject* GetObjectByIndex(int32 Index);
 
 	UFunction* FindFunctionByFName(const FName* Name);
+
+	FName StringToName(const wchar_t* Name);
 }
 
-template<StringLiteral Name, bool bIsFullName = false>
-class UClass* StaticClassImpl()
-{
-	static class UClass* Clss = nullptr;
+const FName& GetStaticName(const wchar_t* Name, FName& StaticName);
 
-	if (Clss == nullptr)
+template<bool bIsFullName = false>
+class UClass* GetStaticClassImpl(const char* Name, class UClass*& StaticClass)
+{
+	if (StaticClass == nullptr)
 	{
 		if constexpr (bIsFullName) {
-			Clss = BasicFilesImpleUtils::FindClassByFullName(Name);
+			StaticClass = BasicFilesImpleUtils::FindClassByFullName(Name);
 		}
 		else /* default */ {
-			Clss = BasicFilesImpleUtils::FindClassByName(Name);
+			StaticClass = BasicFilesImpleUtils::FindClassByName(Name);
 		}
 	}
 
-	return Clss;
+	return StaticClass;
 }
 
-template<StringLiteral Name, bool bIsFullName = false, StringLiteral NonFullName = "">
-class UClass* StaticBPGeneratedClassImpl()
+template<bool bIsFullName = false>
+class UClass* GetStaticBPGeneratedClass(const char* Name, int32& ClassIdx, uint64& ClassNameIdx)
 {
 	/* Could be external function, not really unique to this StaticClass functon */
 	static auto SetClassIndex = [](UClass* Class, int32& Index, uint64& ClassName) -> UClass*
-	{
-		if (Class)
 		{
-			Index = BasicFilesImpleUtils::GetObjectIndex(Class);
-			ClassName = BasicFilesImpleUtils::GetObjFNameAsUInt64(Class);
-		}
+			if (Class)
+			{
+				Index = BasicFilesImpleUtils::GetObjectIndex(Class);
+				ClassName = BasicFilesImpleUtils::GetObjFNameAsUInt64(Class);
+			}
 
-		return Class;
-	};
-
-	static int32 ClassIdx = 0x0;
-	static uint64 ClassName = 0x0;
+			return Class;
+		};
 
 	/* Use the full name to find an object */
 	if constexpr (bIsFullName)
 	{
 		if (ClassIdx == 0x0) [[unlikely]]
-			return SetClassIndex(BasicFilesImpleUtils::FindClassByFullName(Name), ClassIdx, ClassName);
+			return SetClassIndex(BasicFilesImpleUtils::FindClassByFullName(Name), ClassIdx, ClassNameIdx);
 
 		UClass* ClassObj = static_cast<UClass*>(BasicFilesImpleUtils::GetObjectByIndex(ClassIdx));
 
 		/* Could use cast flags too to save some string comparisons */
-		if (!ClassObj || BasicFilesImpleUtils::GetObjFNameAsUInt64(ClassObj) != ClassName)
-			return SetClassIndex(BasicFilesImpleUtils::FindClassByFullName(Name), ClassIdx, ClassName);
+		if (!ClassObj || BasicFilesImpleUtils::GetObjFNameAsUInt64(ClassObj) != ClassNameIdx)
+			return SetClassIndex(BasicFilesImpleUtils::FindClassByFullName(Name), ClassIdx, ClassNameIdx);
 
 		return ClassObj;
 	}
 	else /* Default, use just the name to find an object*/
 	{
 		if (ClassIdx == 0x0) [[unlikely]]
-			return SetClassIndex(BasicFilesImpleUtils::FindClassByName(Name), ClassIdx, ClassName);
+			return SetClassIndex(BasicFilesImpleUtils::FindClassByName(Name), ClassIdx, ClassNameIdx);
 
 		UClass* ClassObj = static_cast<UClass*>(BasicFilesImpleUtils::GetObjectByIndex(ClassIdx));
 
 		/* Could use cast flags too to save some string comparisons */
-		if (!ClassObj || BasicFilesImpleUtils::GetObjFNameAsUInt64(ClassObj) != ClassName)
-			return SetClassIndex(BasicFilesImpleUtils::FindClassByName(Name), ClassIdx, ClassName);
+		if (!ClassObj || BasicFilesImpleUtils::GetObjFNameAsUInt64(ClassObj) != ClassNameIdx)
+			return SetClassIndex(BasicFilesImpleUtils::FindClassByName(Name), ClassIdx, ClassNameIdx);
 
 		return ClassObj;
 	}
@@ -169,9 +152,47 @@ class UClass* StaticBPGeneratedClassImpl()
 template<class ClassType>
 ClassType* GetDefaultObjImpl()
 {
-	return static_cast<ClassType*>(ClassType::StaticClass()->DefaultObject);
+	UClass* StaticClass = ClassType::StaticClass();
+
+	if (StaticClass)
+	{
+		return reinterpret_cast<ClassType*>(StaticClass->ClassDefaultObject);
+	}
+
+	return nullptr;
 }
 
+#define STATIC_CLASS_IMPL(NameString) \
+{ \
+    static UClass* Clss = nullptr; \
+    return GetStaticClassImpl(NameString, Clss); \
+}
+
+#define STATIC_CLASS_IMPL_FULLNAME(FullNameString) \
+{ \
+    static UClass* Clss = nullptr; \
+    return GetStaticClassImpl<true>(FullNameString, Clss); \
+}
+
+#define BP_STATIC_CLASS_IMPL(NameString) \
+{ \
+    static int32 ClassIdx = 0;   \
+    static uint64 ClassName = 0; \
+    return GetStaticBPGeneratedClass(NameString, ClassIdx, ClassName); \
+}
+
+#define BP_STATIC_CLASS_IMPL_FULLNAME(FullNameString) \
+{ \
+    static int32 ClassIdx = 0;   \
+    static uint64 ClassName = 0; \
+    return GetStaticBPGeneratedClass<true>(FullNameString, ClassIdx, ClassName); \
+}
+
+#define STATIC_NAME_IMPL(NameString) \
+{ \
+    static FName Name = FName(); \
+    return GetStaticName(NameString, Name); \
+}
 
 // Predefined struct FUObjectItem
 // 0x0018 (0x0018 - 0x0000)
@@ -181,9 +202,6 @@ public:
 	class UObject*                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	uint8                                         Pad_8[0x10];                                       // 0x0008(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FUObjectItem) == 0x000008, "Wrong alignment on FUObjectItem");
-static_assert(sizeof(FUObjectItem) == 0x000018, "Wrong size on FUObjectItem");
-static_assert(offsetof(FUObjectItem, Object) == 0x000000, "Member 'FUObjectItem::Object' has a wrong offset!");
 
 // Predefined struct TUObjectArray
 // 0x0020 (0x0020 - 0x0000)
@@ -229,13 +247,6 @@ public:
 		return ChunkPtr[InChunkIdx].Object;
 	}
 };
-static_assert(alignof(TUObjectArray) == 0x000008, "Wrong alignment on TUObjectArray");
-static_assert(sizeof(TUObjectArray) == 0x000020, "Wrong size on TUObjectArray");
-static_assert(offsetof(TUObjectArray, Objects) == 0x000000, "Member 'TUObjectArray::Objects' has a wrong offset!");
-static_assert(offsetof(TUObjectArray, MaxElements) == 0x000010, "Member 'TUObjectArray::MaxElements' has a wrong offset!");
-static_assert(offsetof(TUObjectArray, NumElements) == 0x000014, "Member 'TUObjectArray::NumElements' has a wrong offset!");
-static_assert(offsetof(TUObjectArray, MaxChunks) == 0x000018, "Member 'TUObjectArray::MaxChunks' has a wrong offset!");
-static_assert(offsetof(TUObjectArray, NumChunks) == 0x00001C, "Member 'TUObjectArray::NumChunks' has a wrong offset!");
 
 class TUObjectArrayWrapper
 {
@@ -304,19 +315,41 @@ class FName final
 public:
 	static inline void*                           AppendString = nullptr;                            // 0x0000(0x0004)(NOT AUTO-GENERATED PROPERTY)
 
-	int32                                         ComparisonIndex;                                   // 0x0000(0x0004)(NOT AUTO-GENERATED PROPERTY)
-	uint32                                        Number;                                            // 0x0004(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         ComparisonIndex = 0x0;                             // 0x0000(0x0004)(NOT AUTO-GENERATED PROPERTY)
+	uint32                                        Number = 0x0;                                      // 0x0004(0x0004)(NOT AUTO-GENERATED PROPERTY)
 
 public:
-	static void InitInternal()
+	constexpr explicit FName(int32 ComparisonIndex, uint32 Number = 0)
+		: ComparisonIndex(ComparisonIndex), Number(Number)
 	{
-		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString);
 	}
+
 	static void InitManually(void* Location)
 	{
 		AppendString = reinterpret_cast<void*>(Location);
 	}
 
+	constexpr FName() = default;
+	
+	constexpr FName(const FName&) = default;
+	
+	constexpr FName(FName&&) = default;
+	
+	constexpr FName& operator=(const FName&) = default;
+	
+	constexpr  FName& operator=(FName&&) = default;
+	
+
+	static void InitInternal()
+	{
+		AppendString = reinterpret_cast<void*>(InSDKUtils::GetImageBase() + Offsets::AppendString);
+	}
+
+	bool IsNone() const
+	{
+		return !ComparisonIndex&& !Number;
+	}
+	
 	int32 GetDisplayIndex() const
 	{
 		return ComparisonIndex;
@@ -324,17 +357,15 @@ public:
 	
 	std::string GetRawString() const
 	{
-		thread_local FAllocatedString TempString(1024);
+		wchar_t buffer[1024];
+	    FString TempString(buffer, 0, 1024);
 	
 		if (!AppendString)
 			InitInternal();
 	
 		InSDKUtils::CallGameFunction(reinterpret_cast<void(*)(const FName*, FString&)>(AppendString), this, TempString);
 	
-		std::string OutputString = TempString.ToString();
-		TempString.Clear();
-	
-		return OutputString;
+		return TempString.ToString();
 	}
 	
 	std::string ToString() const
@@ -358,10 +389,6 @@ public:
 		return ComparisonIndex != Other.ComparisonIndex || Number != Other.Number;
 	}
 };
-static_assert(alignof(FName) == 0x000004, "Wrong alignment on FName");
-static_assert(sizeof(FName) == 0x000008, "Wrong size on FName");
-static_assert(offsetof(FName, ComparisonIndex) == 0x000000, "Member 'FName::ComparisonIndex' has a wrong offset!");
-static_assert(offsetof(FName, Number) == 0x000004, "Member 'FName::Number' has a wrong offset!");
 
 template<typename ClassType>
 class TSubclassOf
@@ -424,6 +451,16 @@ public:
 		return ClassPtr != Other;
 	}
 };
+
+// Predefined struct FStructBaseChain
+// 0x0010 (0x0010 - 0x0000)
+struct FStructBaseChain
+{
+public:
+	FStructBaseChain**                            StructBaseChainArray;                              // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
+	int32                                         NumStructBasesInChainMinusOne;                     // 0x0008(0x0004)(NOT AUTO-GENERATED PROPERTY)
+};
+
 namespace FTextImpl
 {
 // Predefined struct FTextData
@@ -434,9 +471,6 @@ public:
 	uint8                                         Pad_0[0x28];                                       // 0x0000(0x0028)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 TextSource;                                        // 0x0028(0x0010)(NOT AUTO-GENERATED PROPERTY)
 };
-static_assert(alignof(FTextData) == 0x000008, "Wrong alignment on FTextData");
-static_assert(sizeof(FTextData) == 0x000038, "Wrong size on FTextData");
-static_assert(offsetof(FTextData, TextSource) == 0x000028, "Member 'FTextData::TextSource' has a wrong offset!");
 }
 
 // Predefined struct FText
@@ -457,9 +491,6 @@ public:
 		return TextData->TextSource.ToString();
 	}
 };
-static_assert(alignof(FText) == 0x000008, "Wrong alignment on FText");
-static_assert(sizeof(FText) == 0x000018, "Wrong size on FText");
-static_assert(offsetof(FText, TextData) == 0x000000, "Member 'FText::TextData' has a wrong offset!");
 
 // Predefined struct FWeakObjectPtr
 // 0x0008 (0x0008 - 0x0000)
@@ -477,10 +508,6 @@ public:
 	bool operator==(const class UObject* Other) const;
 	bool operator!=(const class UObject* Other) const;
 };
-static_assert(alignof(FWeakObjectPtr) == 0x000004, "Wrong alignment on FWeakObjectPtr");
-static_assert(sizeof(FWeakObjectPtr) == 0x000008, "Wrong size on FWeakObjectPtr");
-static_assert(offsetof(FWeakObjectPtr, ObjectIndex) == 0x000000, "Member 'FWeakObjectPtr::ObjectIndex' has a wrong offset!");
-static_assert(offsetof(FWeakObjectPtr, ObjectSerialNumber) == 0x000004, "Member 'FWeakObjectPtr::ObjectSerialNumber' has a wrong offset!");
 
 template<typename UEType>
 class TWeakObjectPtr : public FWeakObjectPtr
@@ -507,12 +534,6 @@ public:
 	uint32                                        C;                                                 // 0x0008(0x0004)(NOT AUTO-GENERATED PROPERTY)
 	uint32                                        D;                                                 // 0x000C(0x0004)(NOT AUTO-GENERATED PROPERTY)
 };
-static_assert(alignof(FUniqueObjectGuid) == 0x000004, "Wrong alignment on FUniqueObjectGuid");
-static_assert(sizeof(FUniqueObjectGuid) == 0x000010, "Wrong size on FUniqueObjectGuid");
-static_assert(offsetof(FUniqueObjectGuid, A) == 0x000000, "Member 'FUniqueObjectGuid::A' has a wrong offset!");
-static_assert(offsetof(FUniqueObjectGuid, B) == 0x000004, "Member 'FUniqueObjectGuid::B' has a wrong offset!");
-static_assert(offsetof(FUniqueObjectGuid, C) == 0x000008, "Member 'FUniqueObjectGuid::C' has a wrong offset!");
-static_assert(offsetof(FUniqueObjectGuid, D) == 0x00000C, "Member 'FUniqueObjectGuid::D' has a wrong offset!");
 
 // Predefined struct TPersistentObjectPtr
 // 0x0000 (0x0000 - 0x0000)
@@ -560,10 +581,6 @@ public:
 	class FName                                   AssetPathName;                                     // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 SubPathString;                                     // 0x0008(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSoftObjectPath) == 0x000008, "Wrong alignment on FSoftObjectPath");
-static_assert(sizeof(FSoftObjectPath) == 0x000018, "Wrong size on FSoftObjectPath");
-static_assert(offsetof(FSoftObjectPath, AssetPathName) == 0x000000, "Member 'FSoftObjectPath::AssetPathName' has a wrong offset!");
-static_assert(offsetof(FSoftObjectPath, SubPathString) == 0x000008, "Member 'FSoftObjectPath::SubPathString' has a wrong offset!");
 
 }
 
@@ -619,10 +636,6 @@ public:
 	}
 	
 };
-static_assert(alignof(FScriptInterface) == 0x000008, "Wrong alignment on FScriptInterface");
-static_assert(sizeof(FScriptInterface) == 0x000010, "Wrong size on FScriptInterface");
-static_assert(offsetof(FScriptInterface, ObjectPointer) == 0x000000, "Member 'FScriptInterface::ObjectPointer' has a wrong offset!");
-static_assert(offsetof(FScriptInterface, InterfacePointer) == 0x000008, "Member 'FScriptInterface::InterfacePointer' has a wrong offset!");
 
 // Predefined struct TScriptInterface
 // 0x0000 (0x0010 - 0x0010)
@@ -639,10 +652,6 @@ public:
 	FWeakObjectPtr                                Object;                                            // 0x0000(0x0008)(NOT AUTO-GENERATED PROPERTY)
 	FName                                         FunctionName;                                      // 0x0008(0x0008)(NOT AUTO-GENERATED PROPERTY)
 };
-static_assert(alignof(FScriptDelegate) == 0x000004, "Wrong alignment on FScriptDelegate");
-static_assert(sizeof(FScriptDelegate) == 0x000010, "Wrong size on FScriptDelegate");
-static_assert(offsetof(FScriptDelegate, Object) == 0x000000, "Member 'FScriptDelegate::Object' has a wrong offset!");
-static_assert(offsetof(FScriptDelegate, FunctionName) == 0x000008, "Member 'FScriptDelegate::FunctionName' has a wrong offset!");
 
 // Predefined struct TDelegate
 // 0x0010 (0x0010 - 0x0000)
@@ -874,8 +883,11 @@ enum class EClassCastFlags : uint64
 	LargeWorldCoordinatesRealProperty	= 0x0080000000000000,
 	OptionalProperty					= 0x0100000000000000,
 	VValueProperty						= 0x0200000000000000,
-	UVerseVMClass						= 0x0400000000000000,
+	VerseVMClass						= 0x0400000000000000,
 	VRestValueProperty					= 0x0800000000000000,
+	Utf8StrProperty						= 0x1000000000000000,
+	AnsiStrProperty						= 0x2000000000000000,
+	VCellProperty						= 0x4000000000000000,
 };
 
 enum class EPropertyFlags : uint64

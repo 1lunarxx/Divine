@@ -28,15 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TT_Commando_FragGrenade_C">();
+		BP_STATIC_CLASS_IMPL("TT_Commando_FragGrenade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TT_Commando_FragGrenade_C")
 	}
 	static class UTT_Commando_FragGrenade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTT_Commando_FragGrenade_C>();
 	}
 };
-static_assert(alignof(UTT_Commando_FragGrenade_C) == 0x000008, "Wrong alignment on UTT_Commando_FragGrenade_C");
-static_assert(sizeof(UTT_Commando_FragGrenade_C) == 0x000168, "Wrong size on UTT_Commando_FragGrenade_C");
 
 }
 

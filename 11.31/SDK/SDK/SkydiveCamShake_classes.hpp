@@ -23,15 +23,17 @@ class USkydiveCamShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SkydiveCamShake_C">();
+		BP_STATIC_CLASS_IMPL("SkydiveCamShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SkydiveCamShake_C")
 	}
 	static class USkydiveCamShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USkydiveCamShake_C>();
 	}
 };
-static_assert(alignof(USkydiveCamShake_C) == 0x000010, "Wrong alignment on USkydiveCamShake_C");
-static_assert(sizeof(USkydiveCamShake_C) == 0x000160, "Wrong size on USkydiveCamShake_C");
 
 }
 

@@ -49,26 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassViewRewardsScreen_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassViewRewardsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassViewRewardsScreen_C")
 	}
 	static class UBattlePassViewRewardsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassViewRewardsScreen_C>();
 	}
 };
-static_assert(alignof(UBattlePassViewRewardsScreen_C) == 0x000008, "Wrong alignment on UBattlePassViewRewardsScreen_C");
-static_assert(sizeof(UBattlePassViewRewardsScreen_C) == 0x000610, "Wrong size on UBattlePassViewRewardsScreen_C");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, UberGraphFrame) == 0x0005B8, "Member 'UBattlePassViewRewardsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, PageIntro) == 0x0005C0, "Member 'UBattlePassViewRewardsScreen_C::PageIntro' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, SortIntro) == 0x0005C8, "Member 'UBattlePassViewRewardsScreen_C::SortIntro' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, AthenaLockedStyleNotification) == 0x0005D0, "Member 'UBattlePassViewRewardsScreen_C::AthenaLockedStyleNotification' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, CloseIcon) == 0x0005D8, "Member 'UBattlePassViewRewardsScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, ItemInfoHeaderWidget) == 0x0005E0, "Member 'UBattlePassViewRewardsScreen_C::ItemInfoHeaderWidget' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, MobileCloseButton) == 0x0005E8, "Member 'UBattlePassViewRewardsScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, OverlayCloseButton) == 0x0005F0, "Member 'UBattlePassViewRewardsScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, PreviewItemArea) == 0x0005F8, "Member 'UBattlePassViewRewardsScreen_C::PreviewItemArea' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, SafeZone_108) == 0x000600, "Member 'UBattlePassViewRewardsScreen_C::SafeZone_108' has a wrong offset!");
-static_assert(offsetof(UBattlePassViewRewardsScreen_C, Subheader) == 0x000608, "Member 'UBattlePassViewRewardsScreen_C::Subheader' has a wrong offset!");
 
 }
 

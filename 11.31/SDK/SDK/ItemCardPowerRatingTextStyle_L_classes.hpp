@@ -23,15 +23,17 @@ class UItemCardPowerRatingTextStyle_L_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemCardPowerRatingTextStyle_L_C">();
+		BP_STATIC_CLASS_IMPL("ItemCardPowerRatingTextStyle_L_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemCardPowerRatingTextStyle_L_C")
 	}
 	static class UItemCardPowerRatingTextStyle_L_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemCardPowerRatingTextStyle_L_C>();
 	}
 };
-static_assert(alignof(UItemCardPowerRatingTextStyle_L_C) == 0x000008, "Wrong alignment on UItemCardPowerRatingTextStyle_L_C");
-static_assert(sizeof(UItemCardPowerRatingTextStyle_L_C) == 0x000148, "Wrong size on UItemCardPowerRatingTextStyle_L_C");
 
 }
 

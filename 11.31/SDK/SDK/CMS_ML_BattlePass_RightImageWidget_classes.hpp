@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CMS_ML_BattlePass_RightImageWidget_C">();
+		BP_STATIC_CLASS_IMPL("CMS_ML_BattlePass_RightImageWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CMS_ML_BattlePass_RightImageWidget_C")
 	}
 	static class UCMS_ML_BattlePass_RightImageWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCMS_ML_BattlePass_RightImageWidget_C>();
 	}
 };
-static_assert(alignof(UCMS_ML_BattlePass_RightImageWidget_C) == 0x000008, "Wrong alignment on UCMS_ML_BattlePass_RightImageWidget_C");
-static_assert(sizeof(UCMS_ML_BattlePass_RightImageWidget_C) == 0x000290, "Wrong size on UCMS_ML_BattlePass_RightImageWidget_C");
-static_assert(offsetof(UCMS_ML_BattlePass_RightImageWidget_C, UberGraphFrame) == 0x000270, "Member 'UCMS_ML_BattlePass_RightImageWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCMS_ML_BattlePass_RightImageWidget_C, SeasonName) == 0x000278, "Member 'UCMS_ML_BattlePass_RightImageWidget_C::SeasonName' has a wrong offset!");
-static_assert(offsetof(UCMS_ML_BattlePass_RightImageWidget_C, SoftGlow) == 0x000280, "Member 'UCMS_ML_BattlePass_RightImageWidget_C::SoftGlow' has a wrong offset!");
-static_assert(offsetof(UCMS_ML_BattlePass_RightImageWidget_C, SoftTextShadow) == 0x000288, "Member 'UCMS_ML_BattlePass_RightImageWidget_C::SoftTextShadow' has a wrong offset!");
 
 }
 

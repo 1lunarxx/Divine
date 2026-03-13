@@ -67,27 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputReflectorButton_C">();
+		BP_STATIC_CLASS_IMPL("InputReflectorButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputReflectorButton_C")
 	}
 	static class UInputReflectorButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputReflectorButton_C>();
 	}
 };
-static_assert(alignof(UInputReflectorButton_C) == 0x000008, "Wrong alignment on UInputReflectorButton_C");
-static_assert(sizeof(UInputReflectorButton_C) == 0x000C78, "Wrong size on UInputReflectorButton_C");
-static_assert(offsetof(UInputReflectorButton_C, UberGraphFrame) == 0x000B80, "Member 'UInputReflectorButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, CenterButtonTextWidget) == 0x000B88, "Member 'UInputReflectorButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, ContentBorder) == 0x000B90, "Member 'UInputReflectorButton_C::ContentBorder' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, LeftSideImage) == 0x000B98, "Member 'UInputReflectorButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, RightExtraContentSlot) == 0x000BA0, "Member 'UInputReflectorButton_C::RightExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, ButtonText) == 0x000BA8, "Member 'UInputReflectorButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, IconBrush) == 0x000BC0, "Member 'UInputReflectorButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, ControllerInputStyle) == 0x000C48, "Member 'UInputReflectorButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, MouseKeyboardStyle) == 0x000C50, "Member 'UInputReflectorButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, ContentAlignment) == 0x000C58, "Member 'UInputReflectorButton_C::ContentAlignment' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, bMouseKeyboardStyleSet) == 0x000C59, "Member 'UInputReflectorButton_C::bMouseKeyboardStyleSet' has a wrong offset!");
-static_assert(offsetof(UInputReflectorButton_C, OverrideButtonText) == 0x000C60, "Member 'UInputReflectorButton_C::OverrideButtonText' has a wrong offset!");
 
 }
 

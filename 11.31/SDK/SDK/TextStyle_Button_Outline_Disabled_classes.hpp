@@ -23,15 +23,17 @@ class UTextStyle_Button_Outline_Disabled_C final : public UCommonTextStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Button-Outline-Disabled_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Button-Outline-Disabled_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Button-Outline-Disabled_C")
 	}
 	static class UTextStyle_Button_Outline_Disabled_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Button_Outline_Disabled_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Button_Outline_Disabled_C) == 0x000008, "Wrong alignment on UTextStyle_Button_Outline_Disabled_C");
-static_assert(sizeof(UTextStyle_Button_Outline_Disabled_C) == 0x000148, "Wrong size on UTextStyle_Button_Outline_Disabled_C");
 
 }
 

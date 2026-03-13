@@ -23,15 +23,17 @@ class UBorder_1pxOutline_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-1pxOutline_C">();
+		BP_STATIC_CLASS_IMPL("Border-1pxOutline_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-1pxOutline_C")
 	}
 	static class UBorder_1pxOutline_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_1pxOutline_C>();
 	}
 };
-static_assert(alignof(UBorder_1pxOutline_C) == 0x000008, "Wrong alignment on UBorder_1pxOutline_C");
-static_assert(sizeof(UBorder_1pxOutline_C) == 0x0000B0, "Wrong size on UBorder_1pxOutline_C");
 
 }
 

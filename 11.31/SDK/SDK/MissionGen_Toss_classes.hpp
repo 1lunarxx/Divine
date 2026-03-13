@@ -23,15 +23,17 @@ class UMissionGen_Toss_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Toss_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Toss_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Toss_C")
 	}
 	static class UMissionGen_Toss_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Toss_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Toss_C) == 0x000008, "Wrong alignment on UMissionGen_Toss_C");
-static_assert(sizeof(UMissionGen_Toss_C) == 0x0006C0, "Wrong size on UMissionGen_Toss_C");
 
 }
 

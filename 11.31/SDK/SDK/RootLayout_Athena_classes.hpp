@@ -42,21 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RootLayout_Athena_C">();
+		BP_STATIC_CLASS_IMPL("RootLayout_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RootLayout_Athena_C")
 	}
 	static class URootLayout_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URootLayout_Athena_C>();
 	}
 };
-static_assert(alignof(URootLayout_Athena_C) == 0x000008, "Wrong alignment on URootLayout_Athena_C");
-static_assert(sizeof(URootLayout_Athena_C) == 0x000398, "Wrong size on URootLayout_Athena_C");
-static_assert(offsetof(URootLayout_Athena_C, UberGraphFrame) == 0x000348, "Member 'URootLayout_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URootLayout_Athena_C, ConfirmationWindow) == 0x000350, "Member 'URootLayout_Athena_C::ConfirmationWindow' has a wrong offset!");
-static_assert(offsetof(URootLayout_Athena_C, ControllerDisconnectedModal) == 0x000358, "Member 'URootLayout_Athena_C::ControllerDisconnectedModal' has a wrong offset!");
-static_assert(offsetof(URootLayout_Athena_C, bClosingErrorDialog) == 0x000360, "Member 'URootLayout_Athena_C::bClosingErrorDialog' has a wrong offset!");
-static_assert(offsetof(URootLayout_Athena_C, QuitTitle) == 0x000368, "Member 'URootLayout_Athena_C::QuitTitle' has a wrong offset!");
-static_assert(offsetof(URootLayout_Athena_C, QuitMessage) == 0x000380, "Member 'URootLayout_Athena_C::QuitMessage' has a wrong offset!");
 
 }
 

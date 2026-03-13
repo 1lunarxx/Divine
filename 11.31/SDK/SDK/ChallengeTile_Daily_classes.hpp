@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeTile_Daily_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeTile_Daily_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeTile_Daily_C")
 	}
 	static class UChallengeTile_Daily_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeTile_Daily_C>();
 	}
 };
-static_assert(alignof(UChallengeTile_Daily_C) == 0x000008, "Wrong alignment on UChallengeTile_Daily_C");
-static_assert(sizeof(UChallengeTile_Daily_C) == 0x000BD0, "Wrong size on UChallengeTile_Daily_C");
-static_assert(offsetof(UChallengeTile_Daily_C, UberGraphFrame) == 0x000B98, "Member 'UChallengeTile_Daily_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, AmbientPartyAssistAttention) == 0x000BA0, "Member 'UChallengeTile_Daily_C::AmbientPartyAssistAttention' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, Outro) == 0x000BA8, "Member 'UChallengeTile_Daily_C::Outro' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, OnHover) == 0x000BB0, "Member 'UChallengeTile_Daily_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, ImageBackground) == 0x000BB8, "Member 'UChallengeTile_Daily_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, OverlayPartyAssist) == 0x000BC0, "Member 'UChallengeTile_Daily_C::OverlayPartyAssist' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Daily_C, Text_ChallengeContext) == 0x000BC8, "Member 'UChallengeTile_Daily_C::Text_ChallengeContext' has a wrong offset!");
 
 }
 

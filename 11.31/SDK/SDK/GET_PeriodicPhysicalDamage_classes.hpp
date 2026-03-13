@@ -23,15 +23,17 @@ class UGET_PeriodicPhysicalDamage_C : public UGET_PeriodicDamageParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_PeriodicPhysicalDamage_C">();
+		BP_STATIC_CLASS_IMPL("GET_PeriodicPhysicalDamage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_PeriodicPhysicalDamage_C")
 	}
 	static class UGET_PeriodicPhysicalDamage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_PeriodicPhysicalDamage_C>();
 	}
 };
-static_assert(alignof(UGET_PeriodicPhysicalDamage_C) == 0x000008, "Wrong alignment on UGET_PeriodicPhysicalDamage_C");
-static_assert(sizeof(UGET_PeriodicPhysicalDamage_C) == 0x000770, "Wrong size on UGET_PeriodicPhysicalDamage_C");
 
 }
 

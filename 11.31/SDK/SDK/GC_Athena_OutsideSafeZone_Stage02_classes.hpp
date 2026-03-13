@@ -23,15 +23,17 @@ class AGC_Athena_OutsideSafeZone_Stage02_C final : public AGC_Athena_OutsideSafe
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Athena_OutsideSafeZone_Stage02_C">();
+		BP_STATIC_CLASS_IMPL("GC_Athena_OutsideSafeZone_Stage02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Athena_OutsideSafeZone_Stage02_C")
 	}
 	static class AGC_Athena_OutsideSafeZone_Stage02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_Athena_OutsideSafeZone_Stage02_C>();
 	}
 };
-static_assert(alignof(AGC_Athena_OutsideSafeZone_Stage02_C) == 0x000008, "Wrong alignment on AGC_Athena_OutsideSafeZone_Stage02_C");
-static_assert(sizeof(AGC_Athena_OutsideSafeZone_Stage02_C) == 0x000800, "Wrong size on AGC_Athena_OutsideSafeZone_Stage02_C");
 
 }
 

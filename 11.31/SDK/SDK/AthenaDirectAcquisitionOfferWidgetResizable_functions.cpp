@@ -17,6 +17,122 @@
 namespace SDK
 {
 
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateSeriesBlock
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSeriesBlock()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSeriesBlock");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.Bundle Short Text
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            Text                                                   (Parm, OutParm)
+
+void UAthenaDirectAcquisitionOfferWidgetResizable_C::Bundle_Short_Text(class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Bundle Short Text");
+
+	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_Bundle_Short_Text Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.TryToResetCarouselTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidgetResizable_C::TryToResetCarouselTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "TryToResetCarouselTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.HasGroupedOffers
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
+
+bool UAthenaDirectAcquisitionOfferWidgetResizable_C::HasGroupedOffers()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HasGroupedOffers");
+
+	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_HasGroupedOffers Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.GetOfferIndexAndCountText
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32*                                  OfferIndex                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            OfferDisplayCount                                      (Parm, OutParm)
+// int32*                                  NextOfferIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FText*                            NextOfferDisplayCount                                  (Parm, OutParm)
+
+void UAthenaDirectAcquisitionOfferWidgetResizable_C::GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "GetOfferIndexAndCountText");
+
+	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_GetOfferIndexAndCountText Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (OfferIndex != nullptr)
+		*OfferIndex = Parms.OfferIndex;
+
+	if (OfferDisplayCount != nullptr)
+		*OfferDisplayCount = std::move(Parms.OfferDisplayCount);
+
+	if (NextOfferIndex != nullptr)
+		*NextOfferIndex = Parms.NextOfferIndex;
+
+	if (NextOfferDisplayCount != nullptr)
+		*NextOfferDisplayCount = std::move(Parms.NextOfferDisplayCount);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateBadge
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateBadge()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateBadge");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateStyle_Sizing
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -494,122 +610,6 @@ void UAthenaDirectAcquisitionOfferWidgetResizable_C::ExecuteUbergraph_AthenaDire
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateSeriesBlock
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateSeriesBlock()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateSeriesBlock");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.Bundle Short Text
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            Text                                                   (Parm, OutParm)
-
-void UAthenaDirectAcquisitionOfferWidgetResizable_C::Bundle_Short_Text(class FText* Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "Bundle Short Text");
-
-	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_Bundle_Short_Text Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.TryToResetCarouselTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidgetResizable_C::TryToResetCarouselTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "TryToResetCarouselTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.HasGroupedOffers
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UAthenaDirectAcquisitionOfferWidgetResizable_C::HasGroupedOffers()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "HasGroupedOffers");
-
-	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_HasGroupedOffers Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.GetOfferIndexAndCountText
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32*                                  OfferIndex                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            OfferDisplayCount                                      (Parm, OutParm)
-// int32*                                  NextOfferIndex                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText*                            NextOfferDisplayCount                                  (Parm, OutParm)
-
-void UAthenaDirectAcquisitionOfferWidgetResizable_C::GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "GetOfferIndexAndCountText");
-
-	Params::AthenaDirectAcquisitionOfferWidgetResizable_C_GetOfferIndexAndCountText Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (OfferIndex != nullptr)
-		*OfferIndex = Parms.OfferIndex;
-
-	if (OfferDisplayCount != nullptr)
-		*OfferDisplayCount = std::move(Parms.OfferDisplayCount);
-
-	if (NextOfferIndex != nullptr)
-		*NextOfferIndex = Parms.NextOfferIndex;
-
-	if (NextOfferDisplayCount != nullptr)
-		*NextOfferDisplayCount = std::move(Parms.NextOfferDisplayCount);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetResizable.AthenaDirectAcquisitionOfferWidgetResizable_C.UpdateBadge
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidgetResizable_C::UpdateBadge()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetResizable_C", "UpdateBadge");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

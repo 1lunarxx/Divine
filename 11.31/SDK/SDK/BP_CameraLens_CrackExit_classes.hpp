@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CameraLens_CrackExit_C">();
+		BP_STATIC_CLASS_IMPL("BP_CameraLens_CrackExit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CameraLens_CrackExit_C")
 	}
 	static class ABP_CameraLens_CrackExit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CameraLens_CrackExit_C>();
 	}
 };
-static_assert(alignof(ABP_CameraLens_CrackExit_C) == 0x000010, "Wrong alignment on ABP_CameraLens_CrackExit_C");
-static_assert(sizeof(ABP_CameraLens_CrackExit_C) == 0x0002E0, "Wrong size on ABP_CameraLens_CrackExit_C");
-static_assert(offsetof(ABP_CameraLens_CrackExit_C, Portal) == 0x0002D0, "Member 'ABP_CameraLens_CrackExit_C::Portal' has a wrong offset!");
 
 }
 

@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BundleProgressDisplay_C">();
+		BP_STATIC_CLASS_IMPL("BundleProgressDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BundleProgressDisplay_C")
 	}
 	static class UBundleProgressDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBundleProgressDisplay_C>();
 	}
 };
-static_assert(alignof(UBundleProgressDisplay_C) == 0x000008, "Wrong alignment on UBundleProgressDisplay_C");
-static_assert(sizeof(UBundleProgressDisplay_C) == 0x000260, "Wrong size on UBundleProgressDisplay_C");
-static_assert(offsetof(UBundleProgressDisplay_C, UberGraphFrame) == 0x000240, "Member 'UBundleProgressDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBundleProgressDisplay_C, ProgressBarSize) == 0x000248, "Member 'UBundleProgressDisplay_C::ProgressBarSize' has a wrong offset!");
-static_assert(offsetof(UBundleProgressDisplay_C, ScaleBoxTextScale) == 0x000250, "Member 'UBundleProgressDisplay_C::ScaleBoxTextScale' has a wrong offset!");
-static_assert(offsetof(UBundleProgressDisplay_C, IsLargeDisplay) == 0x000258, "Member 'UBundleProgressDisplay_C::IsLargeDisplay' has a wrong offset!");
 
 }
 

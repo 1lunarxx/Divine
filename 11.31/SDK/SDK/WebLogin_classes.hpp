@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WebLogin_C">();
+		BP_STATIC_CLASS_IMPL("WebLogin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebLogin_C")
 	}
 	static class UWebLogin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebLogin_C>();
 	}
 };
-static_assert(alignof(UWebLogin_C) == 0x000008, "Wrong alignment on UWebLogin_C");
-static_assert(sizeof(UWebLogin_C) == 0x000438, "Wrong size on UWebLogin_C");
-static_assert(offsetof(UWebLogin_C, UberGraphFrame) == 0x000410, "Member 'UWebLogin_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, Throbber) == 0x000418, "Member 'UWebLogin_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, WebContent) == 0x000420, "Member 'UWebLogin_C::WebContent' has a wrong offset!");
-static_assert(offsetof(UWebLogin_C, BackAction) == 0x000428, "Member 'UWebLogin_C::BackAction' has a wrong offset!");
 
 }
 

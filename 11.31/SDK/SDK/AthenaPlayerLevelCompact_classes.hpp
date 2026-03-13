@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaPlayerLevelCompact_C">();
+		BP_STATIC_CLASS_IMPL("AthenaPlayerLevelCompact_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaPlayerLevelCompact_C")
 	}
 	static class UAthenaPlayerLevelCompact_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaPlayerLevelCompact_C>();
 	}
 };
-static_assert(alignof(UAthenaPlayerLevelCompact_C) == 0x000008, "Wrong alignment on UAthenaPlayerLevelCompact_C");
-static_assert(sizeof(UAthenaPlayerLevelCompact_C) == 0x0002C0, "Wrong size on UAthenaPlayerLevelCompact_C");
-static_assert(offsetof(UAthenaPlayerLevelCompact_C, UberGraphFrame) == 0x0002A0, "Member 'UAthenaPlayerLevelCompact_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevelCompact_C, Image_ProgressBar) == 0x0002A8, "Member 'UAthenaPlayerLevelCompact_C::Image_ProgressBar' has a wrong offset!");
-static_assert(offsetof(UAthenaPlayerLevelCompact_C, LevelChanged) == 0x0002B0, "Member 'UAthenaPlayerLevelCompact_C::LevelChanged' has a wrong offset!");
 
 }
 

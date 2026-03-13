@@ -128,64 +128,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_Grenade_WithTrajectory_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_Grenade_WithTrajectory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_Grenade_WithTrajectory_C")
 	}
 	static class UGA_Athena_Grenade_WithTrajectory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_Grenade_WithTrajectory_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_Grenade_WithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Athena_Grenade_WithTrajectory_C");
-static_assert(sizeof(UGA_Athena_Grenade_WithTrajectory_C) == 0x000DE8, "Wrong size on UGA_Athena_Grenade_WithTrajectory_C");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_Grenade_WithTrajectory_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, EventActivation) == 0x000A38, "Member 'UGA_Athena_Grenade_WithTrajectory_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, EventComplete) == 0x000A40, "Member 'UGA_Athena_Grenade_WithTrajectory_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, Prj_Grenade) == 0x000A48, "Member 'UGA_Athena_Grenade_WithTrajectory_C::Prj_Grenade' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeSpeedMin) == 0x000A50, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeSpeedMin' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeSpeedMax) == 0x000A54, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeSpeedMax' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GravityScale) == 0x000A58, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GravityScale' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeSound) == 0x000A60, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeSound' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, EC_DefaultExplosion) == 0x000A68, "Member 'UGA_Athena_Grenade_WithTrajectory_C::EC_DefaultExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, EC_ReturnedEffect) == 0x000A70, "Member 'UGA_Athena_Grenade_WithTrajectory_C::EC_ReturnedEffect' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, EC_AdditionalReturnedEffect) == 0x000B28, "Member 'UGA_Athena_Grenade_WithTrajectory_C::EC_AdditionalReturnedEffect' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, ExplosionRadius) == 0x000BE0, "Member 'UGA_Athena_Grenade_WithTrajectory_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, AdditionalThrowAngle) == 0x000BE4, "Member 'UGA_Athena_Grenade_WithTrajectory_C::AdditionalThrowAngle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeDialogFeedback) == 0x000BE8, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeDialogFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeAmmo) == 0x000C00, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeAmmo' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, PlasmaGrenades) == 0x000C01, "Member 'UGA_Athena_Grenade_WithTrajectory_C::PlasmaGrenades' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, Flashbang) == 0x000C02, "Member 'UGA_Athena_Grenade_WithTrajectory_C::Flashbang' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeTargetingOriginOffset) == 0x000C04, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeTargetingOriginOffset' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyProjectile) == 0x000C10, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyShouldBounce) == 0x000C18, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyShouldBounce' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyBounciness) == 0x000C1C, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyBounciness' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyFriction) == 0x000C20, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyFriction' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyMaxSpeed) == 0x000C24, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyMaxSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyGravity) == 0x000C28, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyGravity' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyTimeStep) == 0x000C2C, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyTimeStep' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyExtent) == 0x000C30, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyExtent' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeTargetingOriginOffset_Crouched) == 0x000C34, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeTargetingOriginOffset_Crouched' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, InThrowWindup) == 0x000C40, "Member 'UGA_Athena_Grenade_WithTrajectory_C::InThrowWindup' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, TrajectoryIndicator) == 0x000C48, "Member 'UGA_Athena_Grenade_WithTrajectory_C::TrajectoryIndicator' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, TrajectoryIndicatorClass) == 0x000C50, "Member 'UGA_Athena_Grenade_WithTrajectory_C::TrajectoryIndicatorClass' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, ThrowWindupMontage) == 0x000C58, "Member 'UGA_Athena_Grenade_WithTrajectory_C::ThrowWindupMontage' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, AbilityKeyPressed) == 0x000CB0, "Member 'UGA_Athena_Grenade_WithTrajectory_C::AbilityKeyPressed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, MaxSpeedPitch) == 0x000CB4, "Member 'UGA_Athena_Grenade_WithTrajectory_C::MaxSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, MinSpeedPitch) == 0x000CB8, "Member 'UGA_Athena_Grenade_WithTrajectory_C::MinSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, Event_Data) == 0x000CC0, "Member 'UGA_Athena_Grenade_WithTrajectory_C::Event_Data' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, PlayerPawn) == 0x000D70, "Member 'UGA_Athena_Grenade_WithTrajectory_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, MaxTossPitch) == 0x000D78, "Member 'UGA_Athena_Grenade_WithTrajectory_C::MaxTossPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, MaxTrajectoryBounces) == 0x000D7C, "Member 'UGA_Athena_Grenade_WithTrajectory_C::MaxTrajectoryBounces' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, PostThrowCancelDelay) == 0x000D80, "Member 'UGA_Athena_Grenade_WithTrajectory_C::PostThrowCancelDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, PostThrowEndDelay) == 0x000D84, "Member 'UGA_Athena_Grenade_WithTrajectory_C::PostThrowEndDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, ProjectileReference) == 0x000D88, "Member 'UGA_Athena_Grenade_WithTrajectory_C::ProjectileReference' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DistanceFromInstigatorCheck) == 0x000D90, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DistanceFromInstigatorCheck' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, UpdateTrajectoryTimerHandle) == 0x000D98, "Member 'UGA_Athena_Grenade_WithTrajectory_C::UpdateTrajectoryTimerHandle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, Spawned_On_Equip) == 0x000DA0, "Member 'UGA_Athena_Grenade_WithTrajectory_C::Spawned_On_Equip' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, DummyCollisionChannel) == 0x000DA1, "Member 'UGA_Athena_Grenade_WithTrajectory_C::DummyCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeDecoHelper) == 0x000DA8, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeDecoHelper' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, GrenadeDecoTool) == 0x000DB0, "Member 'UGA_Athena_Grenade_WithTrajectory_C::GrenadeDecoTool' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, OnProjectileSpawn) == 0x000DB8, "Member 'UGA_Athena_Grenade_WithTrajectory_C::OnProjectileSpawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Grenade_WithTrajectory_C, QuestCreditTargetTag) == 0x000DC8, "Member 'UGA_Athena_Grenade_WithTrajectory_C::QuestCreditTargetTag' has a wrong offset!");
 
 }
 

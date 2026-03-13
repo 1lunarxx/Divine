@@ -23,15 +23,17 @@ class Uv2_PlayerCameraModeTargetingVeryShortRange_C final : public Uv2_PlayerCam
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v2_PlayerCameraModeTargetingVeryShortRange_C">();
+		BP_STATIC_CLASS_IMPL("v2_PlayerCameraModeTargetingVeryShortRange_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v2_PlayerCameraModeTargetingVeryShortRange_C")
 	}
 	static class Uv2_PlayerCameraModeTargetingVeryShortRange_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv2_PlayerCameraModeTargetingVeryShortRange_C>();
 	}
 };
-static_assert(alignof(Uv2_PlayerCameraModeTargetingVeryShortRange_C) == 0x000010, "Wrong alignment on Uv2_PlayerCameraModeTargetingVeryShortRange_C");
-static_assert(sizeof(Uv2_PlayerCameraModeTargetingVeryShortRange_C) == 0x000D80, "Wrong size on Uv2_PlayerCameraModeTargetingVeryShortRange_C");
 
 }
 

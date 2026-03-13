@@ -40,23 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComModalPopup_C">();
+		BP_STATIC_CLASS_IMPL("ComModalPopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComModalPopup_C")
 	}
 	static class UComModalPopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComModalPopup_C>();
 	}
 };
-static_assert(alignof(UComModalPopup_C) == 0x000008, "Wrong alignment on UComModalPopup_C");
-static_assert(sizeof(UComModalPopup_C) == 0x0004D0, "Wrong size on UComModalPopup_C");
-static_assert(offsetof(UComModalPopup_C, UberGraphFrame) == 0x000490, "Member 'UComModalPopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, FadeOut) == 0x000498, "Member 'UComModalPopup_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, comArrowsIn) == 0x0004A0, "Member 'UComModalPopup_C::comArrowsIn' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, comLogoTitle) == 0x0004A8, "Member 'UComModalPopup_C::comLogoTitle' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, ComPopUpBgarrows) == 0x0004B0, "Member 'UComModalPopup_C::ComPopUpBgarrows' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, comPopUpWhiteBorder) == 0x0004B8, "Member 'UComModalPopup_C::comPopUpWhiteBorder' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, Darken_1) == 0x0004C0, "Member 'UComModalPopup_C::Darken_1' has a wrong offset!");
-static_assert(offsetof(UComModalPopup_C, poUpHeader) == 0x0004C8, "Member 'UComModalPopup_C::poUpHeader' has a wrong offset!");
 
 }
 

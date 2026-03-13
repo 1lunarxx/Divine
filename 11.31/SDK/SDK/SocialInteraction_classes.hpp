@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialInteraction_C">();
+		BP_STATIC_CLASS_IMPL("SocialInteraction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialInteraction_C")
 	}
 	static class USocialInteraction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialInteraction_C>();
 	}
 };
-static_assert(alignof(USocialInteraction_C) == 0x000008, "Wrong alignment on USocialInteraction_C");
-static_assert(sizeof(USocialInteraction_C) == 0x000C18, "Wrong size on USocialInteraction_C");
-static_assert(offsetof(USocialInteraction_C, UberGraphFrame) == 0x000BD0, "Member 'USocialInteraction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, OnHover) == 0x000BD8, "Member 'USocialInteraction_C::OnHover' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, EncourageEpicFriend) == 0x000BE0, "Member 'USocialInteraction_C::EncourageEpicFriend' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, InteractionIcon) == 0x000BE8, "Member 'USocialInteraction_C::InteractionIcon' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, MenuAnchor_Actions) == 0x000BF0, "Member 'USocialInteraction_C::MenuAnchor_Actions' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, EncourageEpicFriend_IdleColor) == 0x000BF8, "Member 'USocialInteraction_C::EncourageEpicFriend_IdleColor' has a wrong offset!");
-static_assert(offsetof(USocialInteraction_C, EncourageEpicFriend_HoveredColor) == 0x000C08, "Member 'USocialInteraction_C::EncourageEpicFriend_HoveredColor' has a wrong offset!");
 
 }
 

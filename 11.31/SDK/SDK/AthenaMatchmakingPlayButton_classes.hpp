@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingPlayButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingPlayButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingPlayButton_C")
 	}
 	static class UAthenaMatchmakingPlayButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingPlayButton_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingPlayButton_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingPlayButton_C");
-static_assert(sizeof(UAthenaMatchmakingPlayButton_C) == 0x000BA0, "Wrong size on UAthenaMatchmakingPlayButton_C");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, UberGraphFrame) == 0x000B70, "Member 'UAthenaMatchmakingPlayButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, Disabled) == 0x000B78, "Member 'UAthenaMatchmakingPlayButton_C::Disabled' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, PlayShine) == 0x000B80, "Member 'UAthenaMatchmakingPlayButton_C::PlayShine' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, OnHovered) == 0x000B88, "Member 'UAthenaMatchmakingPlayButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, CenterButtonTextWidget) == 0x000B90, "Member 'UAthenaMatchmakingPlayButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingPlayButton_C, MatchmakingInputIndicator) == 0x000B98, "Member 'UAthenaMatchmakingPlayButton_C::MatchmakingInputIndicator' has a wrong offset!");
 
 }
 

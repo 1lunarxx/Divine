@@ -33,15 +33,6 @@ public:
 	bool                                          CallFunc_HasTag_ReturnValue_1;                     // 0x0013(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_) == 0x000008, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_) == 0x000018, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, ReturnValue) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_GetWeaponData_ReturnValue) == 0x000008, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_GetWeaponData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_IsValid_ReturnValue_1) == 0x000011, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_HasTag_ReturnValue) == 0x000012, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_HasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_HasTag_ReturnValue_1) == 0x000013, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_HasTag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_, CallFunc_BooleanOR_ReturnValue) == 0x000014, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_HasVehicleWeapon_::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0
 // 0x0030 (0x0030 - 0x0000)
@@ -51,10 +42,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000008, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000030, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0, TargetData) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0, ApplicationTag) == 0x000028, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Completed_1521DF0D4D64DB4FF1C1D6BB8B5153B0::ApplicationTag' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0
 // 0x0030 (0x0030 - 0x0000)
@@ -64,10 +51,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000008, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000030, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0, TargetData) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0, ApplicationTag) == 0x000028, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Cancelled_1521DF0D4D64DB4FF1C1D6BB8B5153B0::ApplicationTag' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0
 // 0x0030 (0x0030 - 0x0000)
@@ -77,10 +60,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000008, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0) == 0x000030, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0, TargetData) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0, ApplicationTag) == 0x000028, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_Triggered_1521DF0D4D64DB4FF1C1D6BB8B5153B0::ApplicationTag' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD
 // 0x00B0 (0x00B0 - 0x0000)
@@ -89,9 +68,6 @@ struct GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2
 public:
 	struct FGameplayEventData                     Payload;                                           // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD) == 0x000008, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD) == 0x0000B0, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD, Payload) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_EventReceived_1D1745F441AF12F5AE3A2498A31BC2AD::Payload' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -100,9 +76,6 @@ struct GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_Athena_Enemy_Apply_SneakySnowman.GA_Athena_Enemy_Apply_SneakySnowman_C.ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman
 // 0x04D0 (0x04D0 - 0x0000)
@@ -114,7 +87,7 @@ public:
 	uint8                                         Pad_C[0x4];                                        // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable_1;                            // 0x0010(0x0028)()
 	struct FGameplayEventData                     K2Node_CustomEvent_Payload;                        // 0x0038(0x00B0)()
-	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate;              // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate;  // 0x00E8(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayEventData                     Temp_struct_Variable_2;                            // 0x00F8(0x00B0)()
 	class UAbilityTask_WaitGameplayEvent*         CallFunc_WaitGameplayEvent_ReturnValue;            // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -132,7 +105,7 @@ public:
 	uint8                                         Pad_251[0x7];                                      // 0x0251(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0258(0x0028)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue; // 0x0280(0x0010)(ZeroConstructor, ReferenceParm)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0290(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2; // 0x0290(0x0010)(ZeroConstructor, NoDestructor)
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue; // 0x02A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x02A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x02A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -144,7 +117,7 @@ public:
 	float                                         CallFunc_BreakVector_X;                            // 0x02F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Y;                            // 0x02FC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_BreakVector_Z;                            // 0x0300(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0304(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0304(0x0010)(ZeroConstructor, NoDestructor)
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x0314(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0318(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_324[0xC];                                      // 0x0324(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
@@ -158,7 +131,7 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0431(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_432[0x2];                                      // 0x0432(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_GetValueAtLevel_ReturnValue_1;            // 0x0434(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput;    // 0x0438(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	TScriptInterface<class IGameplayTagAssetInterface> CallFunc_HasMatchingGameplayTag_self_CastInput; // 0x0438(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x0448(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0449(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_44A[0x2];                                      // 0x044A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -173,67 +146,10 @@ public:
 	bool                                          CallFunc_IsWeaponHolstered_ReturnValue;            // 0x04B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_4;                    // 0x04B2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_4B3[0x1];                                      // 0x04B3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x04B4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6; // 0x04B4(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          CallFunc_HasVehicleWeapon__ReturnValue;            // 0x04C4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_HasVehicleWeapon__ReturnValue_1;          // 0x04C5(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman) == 0x000010, "Wrong alignment on GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman");
-static_assert(sizeof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman) == 0x0004D0, "Wrong size on GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, EntryPoint) == 0x000000, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, Temp_struct_Variable) == 0x000004, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, Temp_struct_Variable_1) == 0x000010, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_Payload) == 0x000038, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_Payload' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate) == 0x0000E8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, Temp_struct_Variable_2) == 0x0000F8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_WaitGameplayEvent_ReturnValue) == 0x0001A8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_WaitGameplayEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsValid_ReturnValue) == 0x0001B0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_1) == 0x0001B4, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0001C8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsDedicatedServer_ReturnValue) == 0x0001D0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_TargetData_2) == 0x0001D8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_TargetData_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_ApplicationTag_2) == 0x000200, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_ApplicationTag_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_GetActorInfo_ReturnValue) == 0x000208, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000248, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_DynamicCast_bSuccess) == 0x000250, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000258, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue) == 0x000280, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_2) == 0x000290, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue) == 0x0002A0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_PlayMontageInfoAndWaitForTrigger_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsValid_ReturnValue_1) == 0x0002A8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsValid_ReturnValue_2) == 0x0002A9, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_TargetData) == 0x0002B0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_ApplicationTag) == 0x0002D8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0002E0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0002EC, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_BreakVector_X) == 0x0002F8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_BreakVector_Y) == 0x0002FC, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_BreakVector_Z) == 0x000300, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_3) == 0x000304, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000314, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_MakeVector_ReturnValue) == 0x000318, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_MakeTransform_ReturnValue) == 0x000330, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000360, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_FinishSpawningActor_ReturnValue) == 0x000368, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_GetValueAtLevel_ReturnValue) == 0x000370, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_MakeGameplayCueParameters_ReturnValue) == 0x000378, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_MakeGameplayCueParameters_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_CommitAbility_ReturnValue) == 0x000430, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsValid_ReturnValue_3) == 0x000431, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000434, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_HasMatchingGameplayTag_self_CastInput) == 0x000438, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_HasMatchingGameplayTag_self_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_HasMatchingGameplayTag_ReturnValue) == 0x000448, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_HasMatchingGameplayTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_Not_PreBool_ReturnValue) == 0x000449, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_4) == 0x00044C, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000460, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_TargetData_1) == 0x000468, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_TargetData_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CustomEvent_ApplicationTag_1) == 0x000490, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CustomEvent_ApplicationTag_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_5) == 0x000498, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x0004A8, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_Event_bWasCancelled) == 0x0004B0, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsWeaponHolstered_ReturnValue) == 0x0004B1, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsWeaponHolstered_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_IsValid_ReturnValue_4) == 0x0004B2, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, K2Node_CreateDelegate_OutputDelegate_6) == 0x0004B4, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_HasVehicleWeapon__ReturnValue) == 0x0004C4, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_HasVehicleWeapon__ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman, CallFunc_HasVehicleWeapon__ReturnValue_1) == 0x0004C5, "Member 'GA_Athena_Enemy_Apply_SneakySnowman_C_ExecuteUbergraph_GA_Athena_Enemy_Apply_SneakySnowman::CallFunc_HasVehicleWeapon__ReturnValue_1' has a wrong offset!");
 
 }
 

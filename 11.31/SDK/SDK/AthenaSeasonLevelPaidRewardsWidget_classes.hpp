@@ -36,37 +36,28 @@ public:
 	TArray<class UAthenaSeasonReward_C*>          RewardWidgets;                                     // 0x02C0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
+	void PopulateAnim();
+	void UpdateStyling();
+	void OnSetup();
 	void OnLockedStatusChanged(bool FreeUnlocked, bool PaidUnlocked);
 	void OnNavigateTo();
 	void PlayIntro();
 	void ExecuteUbergraph_AthenaSeasonLevelPaidRewardsWidget(int32 EntryPoint);
-	void PopulateAnim();
-	void UpdateStyling();
-	void OnSetup();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonLevelPaidRewardsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonLevelPaidRewardsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonLevelPaidRewardsWidget_C")
 	}
 	static class UAthenaSeasonLevelPaidRewardsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonLevelPaidRewardsWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonLevelPaidRewardsWidget_C) == 0x000008, "Wrong alignment on UAthenaSeasonLevelPaidRewardsWidget_C");
-static_assert(sizeof(UAthenaSeasonLevelPaidRewardsWidget_C) == 0x0002D0, "Wrong size on UAthenaSeasonLevelPaidRewardsWidget_C");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, UberGraphFrame) == 0x000270, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, Populate) == 0x000278, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::Populate' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, Backing) == 0x000280, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::Backing' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, BackingArea) == 0x000288, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::BackingArea' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, ContainerSize) == 0x000290, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::ContainerSize' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, Image_59) == 0x000298, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::Image_59' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, Left_Backing_Hack) == 0x0002A0, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::Left_Backing_Hack' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, PaidRewardsBorder) == 0x0002A8, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::PaidRewardsBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, PaidRewardsGrid) == 0x0002B0, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::PaidRewardsGrid' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, UnEarned_OverlayTint) == 0x0002B8, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::UnEarned_OverlayTint' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonLevelPaidRewardsWidget_C, RewardWidgets) == 0x0002C0, "Member 'UAthenaSeasonLevelPaidRewardsWidget_C::RewardWidgets' has a wrong offset!");
 
 }
 

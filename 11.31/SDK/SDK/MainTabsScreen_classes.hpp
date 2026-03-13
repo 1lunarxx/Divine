@@ -31,22 +31,6 @@ public:
 	struct FTimerHandle                           UnclaimedResearchPointsHandle;                     // 0x0490(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang);
-	void CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria);
-	void GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, EStoreOfferCosts* OutCustomStoreOfferCost);
-	void CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer);
-	void Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers);
-	bool Is_Transform_Feature_Unlocked();
-	void HandleCardPackStore(class FName TabId);
-	void HandleMtxStore(class FName Tab_Id);
-	void Handle_Unclaimed_Resources_Updated();
-	void Toggle_Unclaimed_Research_Timer(bool Enable);
-	void Determine_Unclaimed_Resources_at_Threshold(bool* Result);
-	void Update_Store_Tab_Button_Bang(class FName Tab);
-	void Are_Any_Inventory_Items_Unseen(bool* Unseen);
-	void Are_Any_Transform_Keys_Unseen(bool* Unseen);
-	void Get_FortPC(class AFortPlayerController** FortPC);
-	void Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem);
 	void Update_Quest_Tab_Button_Bang(class FName Tab);
 	void Update_Tab_Button_Bangs(class FName InTab);
 	void Update_Hero_Tab_Button_Bang(class FName Tab);
@@ -64,24 +48,37 @@ public:
 	void HandleMainTabCreated(class FName TabNameID, class UCommonButton* TabButton);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void ExecuteUbergraph_MainTabsScreen(int32 EntryPoint);
+	void Determine_If_Any_non_MTX_offers_are_purchasable(bool* ShowBang);
+	void CheckDisplayCriteria(EStoreOfferCosts InCustomStoreOfferCost, const struct FCardPackOffer& InCardPackOffer, bool* bPassedDisplayCriteria);
+	void GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, EStoreOfferCosts* OutCustomStoreOfferCost);
+	void CheckHighestPriorityOffer(TArray<struct FCardPackOffer>& inOfferArray, struct FCardPackOffer* outPriorityOffer, bool* FoundOffer);
+	void Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers);
+	bool Is_Transform_Feature_Unlocked();
+	void HandleCardPackStore(class FName TabId);
+	void HandleMtxStore(class FName Tab_Id);
+	void Handle_Unclaimed_Resources_Updated();
+	void Toggle_Unclaimed_Research_Timer(bool Enable);
+	void Determine_Unclaimed_Resources_at_Threshold(bool* Result);
+	void Update_Store_Tab_Button_Bang(class FName Tab);
+	void Are_Any_Inventory_Items_Unseen(bool* Unseen);
+	void Are_Any_Transform_Keys_Unseen(bool* Unseen);
+	void Get_FortPC(class AFortPlayerController** FortPC);
+	void Get_Item_from_Transform_Seen_State(class UFortAccountItem* TransformKey, class UFortAccountItem** OutItem);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainTabsScreen_C">();
+		BP_STATIC_CLASS_IMPL("MainTabsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainTabsScreen_C")
 	}
 	static class UMainTabsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainTabsScreen_C>();
 	}
 };
-static_assert(alignof(UMainTabsScreen_C) == 0x000008, "Wrong alignment on UMainTabsScreen_C");
-static_assert(sizeof(UMainTabsScreen_C) == 0x000498, "Wrong size on UMainTabsScreen_C");
-static_assert(offsetof(UMainTabsScreen_C, UberGraphFrame) == 0x000470, "Member 'UMainTabsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, TopTabContentWidgetSwitcher) == 0x000478, "Member 'UMainTabsScreen_C::TopTabContentWidgetSwitcher' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, LastActiveTabId) == 0x000480, "Member 'UMainTabsScreen_C::LastActiveTabId' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchBangThreshold) == 0x000488, "Member 'UMainTabsScreen_C::UnclaimedResearchBangThreshold' has a wrong offset!");
-static_assert(offsetof(UMainTabsScreen_C, UnclaimedResearchPointsHandle) == 0x000490, "Member 'UMainTabsScreen_C::UnclaimedResearchPointsHandle' has a wrong offset!");
 
 }
 

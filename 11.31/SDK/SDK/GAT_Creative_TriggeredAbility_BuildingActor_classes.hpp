@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_Creative_TriggeredAbility_BuildingActor_C">();
+		BP_STATIC_CLASS_IMPL("GAT_Creative_TriggeredAbility_BuildingActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_Creative_TriggeredAbility_BuildingActor_C")
 	}
 	static class UGAT_Creative_TriggeredAbility_BuildingActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_Creative_TriggeredAbility_BuildingActor_C>();
 	}
 };
-static_assert(alignof(UGAT_Creative_TriggeredAbility_BuildingActor_C) == 0x000008, "Wrong alignment on UGAT_Creative_TriggeredAbility_BuildingActor_C");
-static_assert(sizeof(UGAT_Creative_TriggeredAbility_BuildingActor_C) == 0x000A70, "Wrong size on UGAT_Creative_TriggeredAbility_BuildingActor_C");
-static_assert(offsetof(UGAT_Creative_TriggeredAbility_BuildingActor_C, UberGraphFrame_GAT_Creative_TriggeredAbility_BuildingActor_C) == 0x000A60, "Member 'UGAT_Creative_TriggeredAbility_BuildingActor_C::UberGraphFrame_GAT_Creative_TriggeredAbility_BuildingActor_C' has a wrong offset!");
-static_assert(offsetof(UGAT_Creative_TriggeredAbility_BuildingActor_C, AbilityOwner) == 0x000A68, "Member 'UGAT_Creative_TriggeredAbility_BuildingActor_C::AbilityOwner' has a wrong offset!");
 
 }
 

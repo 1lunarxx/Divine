@@ -39,21 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_SnowFlakes_CameraAttached_Niagara_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_SnowFlakes_CameraAttached_Niagara_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_SnowFlakes_CameraAttached_Niagara_C")
 	}
 	static class AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C) == 0x000008, "Wrong alignment on AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C");
-static_assert(sizeof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C) == 0x0007B8, "Wrong size on AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, Snow_Niagara) == 0x000790, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::Snow_Niagara' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, LoopingCheckTime) == 0x000798, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::LoopingCheckTime' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, My_Target) == 0x0007A0, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::My_Target' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, ReturnValue) == 0x0007A8, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C, Timer) == 0x0007B0, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_Niagara_C::Timer' has a wrong offset!");
 
 }
 

@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "GameplayTags_structs.hpp"
-#include "GAT_GenericTriggeredAbility_classes.hpp"
 #include "Engine_structs.hpp"
+#include "GAT_GenericTriggeredAbility_classes.hpp"
 
 
 namespace SDK
@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Ninja_Tactical_MeleeHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("GA_Ninja_Tactical_MeleeHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Ninja_Tactical_MeleeHitsHeal_C")
 	}
 	static class UGA_Ninja_Tactical_MeleeHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Ninja_Tactical_MeleeHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGA_Ninja_Tactical_MeleeHitsHeal_C) == 0x000008, "Wrong alignment on UGA_Ninja_Tactical_MeleeHitsHeal_C");
-static_assert(sizeof(UGA_Ninja_Tactical_MeleeHitsHeal_C) == 0x000B68, "Wrong size on UGA_Ninja_Tactical_MeleeHitsHeal_C");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, UberGraphFrame_GA_Ninja_Tactical_MeleeHitsHeal_C) == 0x000B10, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::UberGraphFrame_GA_Ninja_Tactical_MeleeHitsHeal_C' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, EventActivation) == 0x000B18, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::EventActivation' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, EventComplete) == 0x000B20, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::EventComplete' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, GE_Ninja_Tactical_MeleeHitsHeal) == 0x000B28, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::GE_Ninja_Tactical_MeleeHitsHeal' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, TC_Melee) == 0x000B30, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::TC_Melee' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, MeleeCount) == 0x000B50, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::MeleeCount' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, LastHitSwingTime) == 0x000B54, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::LastHitSwingTime' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, BaseHealValue) == 0x000B58, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::BaseHealValue' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, FinalHealValue) == 0x000B5C, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::FinalHealValue' has a wrong offset!");
-static_assert(offsetof(UGA_Ninja_Tactical_MeleeHitsHeal_C, DataRowName) == 0x000B60, "Member 'UGA_Ninja_Tactical_MeleeHitsHeal_C::DataRowName' has a wrong offset!");
 
 }
 

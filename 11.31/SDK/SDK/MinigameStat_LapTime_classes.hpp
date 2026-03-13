@@ -23,15 +23,17 @@ class UMinigameStat_LapTime_C final : public UMinigameStat_Time_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_LapTime_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_LapTime_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_LapTime_C")
 	}
 	static class UMinigameStat_LapTime_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_LapTime_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_LapTime_C) == 0x000008, "Wrong alignment on UMinigameStat_LapTime_C");
-static_assert(sizeof(UMinigameStat_LapTime_C) == 0x000198, "Wrong size on UMinigameStat_LapTime_C");
 
 }
 

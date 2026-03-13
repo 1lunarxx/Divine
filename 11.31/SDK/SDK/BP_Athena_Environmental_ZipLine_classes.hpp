@@ -72,43 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Athena_Environmental_ZipLine_C">();
+		BP_STATIC_CLASS_IMPL("BP_Athena_Environmental_ZipLine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Athena_Environmental_ZipLine_C")
 	}
 	static class ABP_Athena_Environmental_ZipLine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Athena_Environmental_ZipLine_C>();
 	}
 };
-static_assert(alignof(ABP_Athena_Environmental_ZipLine_C) == 0x000008, "Wrong alignment on ABP_Athena_Environmental_ZipLine_C");
-static_assert(sizeof(ABP_Athena_Environmental_ZipLine_C) == 0x000918, "Wrong size on ABP_Athena_Environmental_ZipLine_C");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, UberGraphFrame) == 0x0007F8, "Member 'ABP_Athena_Environmental_ZipLine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, InteractCapsule) == 0x000800, "Member 'ABP_Athena_Environmental_ZipLine_C::InteractCapsule' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, SM_Line) == 0x000808, "Member 'ABP_Athena_Environmental_ZipLine_C::SM_Line' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, OverlapCapsule) == 0x000810, "Member 'ABP_Athena_Environmental_ZipLine_C::OverlapCapsule' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, Zipline) == 0x000818, "Member 'ABP_Athena_Environmental_ZipLine_C::Zipline' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, Scene) == 0x000820, "Member 'ABP_Athena_Environmental_ZipLine_C::Scene' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, StartLocation) == 0x000828, "Member 'ABP_Athena_Environmental_ZipLine_C::StartLocation' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, TargetLocation) == 0x000834, "Member 'ABP_Athena_Environmental_ZipLine_C::TargetLocation' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, MotorOffset) == 0x000840, "Member 'ABP_Athena_Environmental_ZipLine_C::MotorOffset' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, LineThickness) == 0x00084C, "Member 'ABP_Athena_Environmental_ZipLine_C::LineThickness' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, LineCollisionThickness) == 0x000850, "Member 'ABP_Athena_Environmental_ZipLine_C::LineCollisionThickness' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PlayerOffsetToLine) == 0x000854, "Member 'ABP_Athena_Environmental_ZipLine_C::PlayerOffsetToLine' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PoleA) == 0x000860, "Member 'ABP_Athena_Environmental_ZipLine_C::PoleA' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PoleB) == 0x000868, "Member 'ABP_Athena_Environmental_ZipLine_C::PoleB' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, SpeedCTHandle) == 0x000870, "Member 'ABP_Athena_Environmental_ZipLine_C::SpeedCTHandle' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, ZipLineEnabledCTHandle) == 0x000880, "Member 'ABP_Athena_Environmental_ZipLine_C::ZipLineEnabledCTHandle' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, LineCollisionRadiusCTHandle) == 0x000890, "Member 'ABP_Athena_Environmental_ZipLine_C::LineCollisionRadiusCTHandle' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, BuildingCheckBoxExtentsCTHandle) == 0x0008A0, "Member 'ABP_Athena_Environmental_ZipLine_C::BuildingCheckBoxExtentsCTHandle' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, BackendName) == 0x0008B0, "Member 'ABP_Athena_Environmental_ZipLine_C::BackendName' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, QuestItem) == 0x0008B8, "Member 'ABP_Athena_Environmental_ZipLine_C::QuestItem' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, ObjStat) == 0x0008C0, "Member 'ABP_Athena_Environmental_ZipLine_C::ObjStat' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, LineExtendBeyondPoleLength) == 0x0008D0, "Member 'ABP_Athena_Environmental_ZipLine_C::LineExtendBeyondPoleLength' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PoleASocketLocation) == 0x0008D4, "Member 'ABP_Athena_Environmental_ZipLine_C::PoleASocketLocation' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PoleBSocketLocation) == 0x0008E0, "Member 'ABP_Athena_Environmental_ZipLine_C::PoleBSocketLocation' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PlayerPawn) == 0x0008F0, "Member 'ABP_Athena_Environmental_ZipLine_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PlayersPendingMovementModeChange) == 0x0008F8, "Member 'ABP_Athena_Environmental_ZipLine_C::PlayersPendingMovementModeChange' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, CollisionHeightAboveLine) == 0x000908, "Member 'ABP_Athena_Environmental_ZipLine_C::CollisionHeightAboveLine' has a wrong offset!");
-static_assert(offsetof(ABP_Athena_Environmental_ZipLine_C, PlayerOffsetToLine_Hoverboard) == 0x00090C, "Member 'ABP_Athena_Environmental_ZipLine_C::PlayerOffsetToLine_Hoverboard' has a wrong offset!");
 
 }
 

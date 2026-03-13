@@ -45,24 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinimalSquadMember_C">();
+		BP_STATIC_CLASS_IMPL("MinimalSquadMember_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinimalSquadMember_C")
 	}
 	static class UMinimalSquadMember_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinimalSquadMember_C>();
 	}
 };
-static_assert(alignof(UMinimalSquadMember_C) == 0x000008, "Wrong alignment on UMinimalSquadMember_C");
-static_assert(sizeof(UMinimalSquadMember_C) == 0x000BE8, "Wrong size on UMinimalSquadMember_C");
-static_assert(offsetof(UMinimalSquadMember_C, UberGraphFrame) == 0x000BA0, "Member 'UMinimalSquadMember_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, StyleNotReady) == 0x000BA8, "Member 'UMinimalSquadMember_C::StyleNotReady' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, StyleSitOut) == 0x000BB0, "Member 'UMinimalSquadMember_C::StyleSitOut' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, StyleEmpty) == 0x000BB8, "Member 'UMinimalSquadMember_C::StyleEmpty' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, OnReady) == 0x000BC0, "Member 'UMinimalSquadMember_C::OnReady' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, Image_Meeple) == 0x000BC8, "Member 'UMinimalSquadMember_C::Image_Meeple' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, LocalUserIndicator) == 0x000BD0, "Member 'UMinimalSquadMember_C::LocalUserIndicator' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, MeepleContainer) == 0x000BD8, "Member 'UMinimalSquadMember_C::MeepleContainer' has a wrong offset!");
-static_assert(offsetof(UMinimalSquadMember_C, ReadyFlash) == 0x000BE0, "Member 'UMinimalSquadMember_C::ReadyFlash' has a wrong offset!");
 
 }
 

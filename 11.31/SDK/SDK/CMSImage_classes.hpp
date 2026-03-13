@@ -29,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CMSImage_C">();
+		BP_STATIC_CLASS_IMPL("CMSImage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CMSImage_C")
 	}
 	static class UCMSImage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCMSImage_C>();
 	}
 };
-static_assert(alignof(UCMSImage_C) == 0x000008, "Wrong alignment on UCMSImage_C");
-static_assert(sizeof(UCMSImage_C) == 0x000238, "Wrong size on UCMSImage_C");
-static_assert(offsetof(UCMSImage_C, Image) == 0x000230, "Member 'UCMSImage_C::Image' has a wrong offset!");
 
 }
 

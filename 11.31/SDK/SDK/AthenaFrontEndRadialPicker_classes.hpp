@@ -75,6 +75,17 @@ public:
 	bool                                          bIsUsingTouch;                                     // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 
 public:
+	void BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
+	void ExecuteUbergraph_AthenaFrontEndRadialPicker(int32 EntryPoint);
 	struct FEventReply OnMouseWheel(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	struct FEventReply OnTouchEnded(const struct FGeometry& MyGeometry, const struct FPointerEvent& InTouchEvent);
@@ -98,77 +109,23 @@ public:
 	void AcceptChosenOption(int32 PickerOption);
 	void OnPickerRefreshItems();
 	void BndEvt__PickerOption0_K2Node_ComponentBoundEvent_2_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption1_K2Node_ComponentBoundEvent_8_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption2_K2Node_ComponentBoundEvent_9_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption3_K2Node_ComponentBoundEvent_12_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption4_K2Node_ComponentBoundEvent_16_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption5_K2Node_ComponentBoundEvent_21_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption6_K2Node_ComponentBoundEvent_27_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void BndEvt__PickerOption7_K2Node_ComponentBoundEvent_34_On_Item_Touched__DelegateSignature(class URadialPickerItem_C* Picked_Option);
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void BndEvt__NextWheelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void BndEvt__PreviousWheelButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void ExecuteUbergraph_AthenaFrontEndRadialPicker(int32 EntryPoint);
 
 	void IsGamepadInPickerDeadZone(bool* bIsInDeadZone) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaFrontEndRadialPicker_C">();
+		BP_STATIC_CLASS_IMPL("AthenaFrontEndRadialPicker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaFrontEndRadialPicker_C")
 	}
 	static class UAthenaFrontEndRadialPicker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaFrontEndRadialPicker_C>();
 	}
 };
-static_assert(alignof(UAthenaFrontEndRadialPicker_C) == 0x000008, "Wrong alignment on UAthenaFrontEndRadialPicker_C");
-static_assert(sizeof(UAthenaFrontEndRadialPicker_C) == 0x000428, "Wrong size on UAthenaFrontEndRadialPicker_C");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, UberGraphFrame) == 0x0002E8, "Member 'UAthenaFrontEndRadialPicker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, CanvasPanel_0) == 0x0002F0, "Member 'UAthenaFrontEndRadialPicker_C::CanvasPanel_0' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, CenterBox) == 0x0002F8, "Member 'UAthenaFrontEndRadialPicker_C::CenterBox' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, ClickCatcher) == 0x000300, "Member 'UAthenaFrontEndRadialPicker_C::ClickCatcher' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, CurrentWheelDisplayLabel) == 0x000308, "Member 'UAthenaFrontEndRadialPicker_C::CurrentWheelDisplayLabel' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, Image_0) == 0x000310, "Member 'UAthenaFrontEndRadialPicker_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, ImageRadialPointer) == 0x000318, "Member 'UAthenaFrontEndRadialPicker_C::ImageRadialPointer' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, KeybindPickerConfirm) == 0x000320, "Member 'UAthenaFrontEndRadialPicker_C::KeybindPickerConfirm' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, NextPageKeyBind) == 0x000328, "Member 'UAthenaFrontEndRadialPicker_C::NextPageKeyBind' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, NextPageSwitcher) == 0x000330, "Member 'UAthenaFrontEndRadialPicker_C::NextPageSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, NextSizeBox) == 0x000338, "Member 'UAthenaFrontEndRadialPicker_C::NextSizeBox' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, NextWheelButton) == 0x000340, "Member 'UAthenaFrontEndRadialPicker_C::NextWheelButton' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption0) == 0x000348, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption0' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption1) == 0x000350, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption1' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption2) == 0x000358, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption2' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption3) == 0x000360, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption3' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption4) == 0x000368, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption4' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption5) == 0x000370, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption5' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption6) == 0x000378, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption6' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOption7) == 0x000380, "Member 'UAthenaFrontEndRadialPicker_C::PickerOption7' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PreviousWheelButton) == 0x000388, "Member 'UAthenaFrontEndRadialPicker_C::PreviousWheelButton' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PrevPageKeyBind) == 0x000390, "Member 'UAthenaFrontEndRadialPicker_C::PrevPageKeyBind' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PrevPageSwitcher) == 0x000398, "Member 'UAthenaFrontEndRadialPicker_C::PrevPageSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PrevSizeBox) == 0x0003A0, "Member 'UAthenaFrontEndRadialPicker_C::PrevSizeBox' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, SizeBoxNextWheelButton) == 0x0003A8, "Member 'UAthenaFrontEndRadialPicker_C::SizeBoxNextWheelButton' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, SizeBoxPreviousWheelButton) == 0x0003B0, "Member 'UAthenaFrontEndRadialPicker_C::SizeBoxPreviousWheelButton' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, Text_OK) == 0x0003B8, "Member 'UAthenaFrontEndRadialPicker_C::Text_OK' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, WheelTitleBar) == 0x0003C0, "Member 'UAthenaFrontEndRadialPicker_C::WheelTitleBar' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, ActiveOption) == 0x0003C8, "Member 'UAthenaFrontEndRadialPicker_C::ActiveOption' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, NumOptions) == 0x0003CC, "Member 'UAthenaFrontEndRadialPicker_C::NumOptions' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, YAxisMultiplier) == 0x0003D0, "Member 'UAthenaFrontEndRadialPicker_C::YAxisMultiplier' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerClosing) == 0x0003D4, "Member 'UAthenaFrontEndRadialPicker_C::PickerClosing' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerMode) == 0x0003D5, "Member 'UAthenaFrontEndRadialPicker_C::PickerMode' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, Thumbstick) == 0x0003D6, "Member 'UAthenaFrontEndRadialPicker_C::Thumbstick' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, SoundOnAccept) == 0x0003D8, "Member 'UAthenaFrontEndRadialPicker_C::SoundOnAccept' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, SoundOnCancel) == 0x0003E0, "Member 'UAthenaFrontEndRadialPicker_C::SoundOnCancel' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, SoundOnSelect) == 0x0003E8, "Member 'UAthenaFrontEndRadialPicker_C::SoundOnSelect' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, PickerOptions) == 0x0003F0, "Member 'UAthenaFrontEndRadialPicker_C::PickerOptions' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, bUsingGamepad) == 0x000400, "Member 'UAthenaFrontEndRadialPicker_C::bUsingGamepad' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, bIgnoringMoveInput) == 0x000401, "Member 'UAthenaFrontEndRadialPicker_C::bIgnoringMoveInput' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, bIgnoringLookInput) == 0x000402, "Member 'UAthenaFrontEndRadialPicker_C::bIgnoringLookInput' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, CurrentPointerAngle) == 0x000404, "Member 'UAthenaFrontEndRadialPicker_C::CurrentPointerAngle' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, bShowingMouseCursor) == 0x000408, "Member 'UAthenaFrontEndRadialPicker_C::bShowingMouseCursor' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, Picker_Closing) == 0x000410, "Member 'UAthenaFrontEndRadialPicker_C::Picker_Closing' has a wrong offset!");
-static_assert(offsetof(UAthenaFrontEndRadialPicker_C, bIsUsingTouch) == 0x000420, "Member 'UAthenaFrontEndRadialPicker_C::bIsUsingTouch' has a wrong offset!");
 
 }
 

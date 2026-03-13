@@ -42,26 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Winterfest_CabinLogo_C">();
+		BP_STATIC_CLASS_IMPL("Winterfest_CabinLogo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Winterfest_CabinLogo_C")
 	}
 	static class UWinterfest_CabinLogo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterfest_CabinLogo_C>();
 	}
 };
-static_assert(alignof(UWinterfest_CabinLogo_C) == 0x000008, "Wrong alignment on UWinterfest_CabinLogo_C");
-static_assert(sizeof(UWinterfest_CabinLogo_C) == 0x000288, "Wrong size on UWinterfest_CabinLogo_C");
-static_assert(offsetof(UWinterfest_CabinLogo_C, UberGraphFrame) == 0x000230, "Member 'UWinterfest_CabinLogo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Intro) == 0x000238, "Member 'UWinterfest_CabinLogo_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, CommonRichTextBlock_0) == 0x000240, "Member 'UWinterfest_CabinLogo_C::CommonRichTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Image_51) == 0x000248, "Member 'UWinterfest_CabinLogo_C::Image_51' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, PerspectiveSkew) == 0x000250, "Member 'UWinterfest_CabinLogo_C::PerspectiveSkew' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_01) == 0x000258, "Member 'UWinterfest_CabinLogo_C::Snowflake_01' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_02) == 0x000260, "Member 'UWinterfest_CabinLogo_C::Snowflake_02' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_03) == 0x000268, "Member 'UWinterfest_CabinLogo_C::Snowflake_03' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_04) == 0x000270, "Member 'UWinterfest_CabinLogo_C::Snowflake_04' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_05) == 0x000278, "Member 'UWinterfest_CabinLogo_C::Snowflake_05' has a wrong offset!");
-static_assert(offsetof(UWinterfest_CabinLogo_C, Snowflake_06) == 0x000280, "Member 'UWinterfest_CabinLogo_C::Snowflake_06' has a wrong offset!");
 
 }
 

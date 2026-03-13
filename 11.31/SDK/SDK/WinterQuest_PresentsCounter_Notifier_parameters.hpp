@@ -22,10 +22,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification) == 0x000008, "Wrong alignment on WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification");
-static_assert(sizeof(WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification) == 0x000010, "Wrong size on WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification, CallFunc_PlayAnimation_ReturnValue_1) == 0x000008, "Member 'WinterQuest_PresentsCounter_Notifier_C_ShowPresentNotification::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 // Function WinterQuest_PresentsCounter_Notifier.WinterQuest_PresentsCounter_Notifier_C.OnShowCountdown
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +30,6 @@ struct WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown final
 public:
 	bool                                          bShowCountDown;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown) == 0x000001, "Wrong alignment on WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown");
-static_assert(sizeof(WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown) == 0x000001, "Wrong size on WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown, bShowCountDown) == 0x000000, "Member 'WinterQuest_PresentsCounter_Notifier_C_OnShowCountdown::bShowCountDown' has a wrong offset!");
 
 // Function WinterQuest_PresentsCounter_Notifier.WinterQuest_PresentsCounter_Notifier_C.ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier
 // 0x0018 (0x0018 - 0x0000)
@@ -48,11 +41,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bShowCountdown;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier) == 0x000008, "Wrong alignment on WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier");
-static_assert(sizeof(WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier) == 0x000018, "Wrong size on WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier, EntryPoint) == 0x000000, "Member 'WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier, K2Node_Event_bShowCountdown) == 0x000010, "Member 'WinterQuest_PresentsCounter_Notifier_C_ExecuteUbergraph_WinterQuest_PresentsCounter_Notifier::K2Node_Event_bShowCountdown' has a wrong offset!");
 
 }
 

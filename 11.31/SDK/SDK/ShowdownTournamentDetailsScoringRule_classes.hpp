@@ -34,21 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownTournamentDetailsScoringRule_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownTournamentDetailsScoringRule_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownTournamentDetailsScoringRule_C")
 	}
 	static class UShowdownTournamentDetailsScoringRule_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownTournamentDetailsScoringRule_C>();
 	}
 };
-static_assert(alignof(UShowdownTournamentDetailsScoringRule_C) == 0x000008, "Wrong alignment on UShowdownTournamentDetailsScoringRule_C");
-static_assert(sizeof(UShowdownTournamentDetailsScoringRule_C) == 0x000288, "Wrong size on UShowdownTournamentDetailsScoringRule_C");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, CommonBorder_BG) == 0x000258, "Member 'UShowdownTournamentDetailsScoringRule_C::CommonBorder_BG' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, CommonBorder_TextContainer) == 0x000260, "Member 'UShowdownTournamentDetailsScoringRule_C::CommonBorder_TextContainer' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, RuleIcon) == 0x000268, "Member 'UShowdownTournamentDetailsScoringRule_C::RuleIcon' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, RuleNameText) == 0x000270, "Member 'UShowdownTournamentDetailsScoringRule_C::RuleNameText' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, RuleValueText) == 0x000278, "Member 'UShowdownTournamentDetailsScoringRule_C::RuleValueText' has a wrong offset!");
-static_assert(offsetof(UShowdownTournamentDetailsScoringRule_C, ScoringRuleDisplayData) == 0x000280, "Member 'UShowdownTournamentDetailsScoringRule_C::ScoringRuleDisplayData' has a wrong offset!");
 
 }
 

@@ -37,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortVoiceChannelSpeaker_C">();
+		BP_STATIC_CLASS_IMPL("FortVoiceChannelSpeaker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortVoiceChannelSpeaker_C")
 	}
 	static class UFortVoiceChannelSpeaker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortVoiceChannelSpeaker_C>();
 	}
 };
-static_assert(alignof(UFortVoiceChannelSpeaker_C) == 0x000008, "Wrong alignment on UFortVoiceChannelSpeaker_C");
-static_assert(sizeof(UFortVoiceChannelSpeaker_C) == 0x0002F0, "Wrong size on UFortVoiceChannelSpeaker_C");
-static_assert(offsetof(UFortVoiceChannelSpeaker_C, UberGraphFrame) == 0x0002D0, "Member 'UFortVoiceChannelSpeaker_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortVoiceChannelSpeaker_C, AnimateVoice) == 0x0002D8, "Member 'UFortVoiceChannelSpeaker_C::AnimateVoice' has a wrong offset!");
-static_assert(offsetof(UFortVoiceChannelSpeaker_C, Border_OnlineStatusIndicator) == 0x0002E0, "Member 'UFortVoiceChannelSpeaker_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(UFortVoiceChannelSpeaker_C, Content) == 0x0002E8, "Member 'UFortVoiceChannelSpeaker_C::Content' has a wrong offset!");
 
 }
 

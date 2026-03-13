@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RedirectToEpicAccount_C">();
+		BP_STATIC_CLASS_IMPL("RedirectToEpicAccount_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RedirectToEpicAccount_C")
 	}
 	static class URedirectToEpicAccount_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URedirectToEpicAccount_C>();
 	}
 };
-static_assert(alignof(URedirectToEpicAccount_C) == 0x000008, "Wrong alignment on URedirectToEpicAccount_C");
-static_assert(sizeof(URedirectToEpicAccount_C) == 0x000458, "Wrong size on URedirectToEpicAccount_C");
-static_assert(offsetof(URedirectToEpicAccount_C, Image_4) == 0x000450, "Member 'URedirectToEpicAccount_C::Image_4' has a wrong offset!");
 
 }
 

@@ -48,12 +48,6 @@ public:
 	bool                                          bShowingCampaignUpsell;                            // 0x0570(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam);
-	void HandleAllOffersGenerated();
-	void HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo);
-	void PlayEquippedLockerMusic();
-	void HandleBack(bool* PassThrough);
-	void HandleRedeem(bool* bPassThrough);
 	void SetupForCampaignUpsell();
 	void SetupFirstFocusableTile();
 	void LayoutVBuckTiles();
@@ -74,43 +68,29 @@ public:
 	void OnStartReadingOffers();
 	void OnTransitionedBySwitcher();
 	void ExecuteUbergraph_StoreMain_Root(int32 EntryPoint);
+	void GetVisibilityByChildrenPresence(class UPanelWidget* Panel, ESlateVisibility* NewParam);
+	void HandleAllOffersGenerated();
+	void HandleGenerateOffer(class UFortStoreFrontOfferInfo* OfferInfo);
+	void PlayEquippedLockerMusic();
+	void HandleBack(bool* PassThrough);
+	void HandleRedeem(bool* bPassThrough);
 
 	class UWidget* BP_GetDesiredFocusTarget() const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StoreMain_Root_C">();
+		BP_STATIC_CLASS_IMPL("StoreMain_Root_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StoreMain_Root_C")
 	}
 	static class UStoreMain_Root_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStoreMain_Root_C>();
 	}
 };
-static_assert(alignof(UStoreMain_Root_C) == 0x000008, "Wrong alignment on UStoreMain_Root_C");
-static_assert(sizeof(UStoreMain_Root_C) == 0x000578, "Wrong size on UStoreMain_Root_C");
-static_assert(offsetof(UStoreMain_Root_C, UberGraphFrame) == 0x0004C8, "Member 'UStoreMain_Root_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, Intro) == 0x0004D0, "Member 'UStoreMain_Root_C::Intro' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, CommonBorder_0) == 0x0004D8, "Member 'UStoreMain_Root_C::CommonBorder_0' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, CommonTextBlock_3) == 0x0004E0, "Member 'UStoreMain_Root_C::CommonTextBlock_3' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, CurrencyNotificationBorder) == 0x0004E8, "Member 'UStoreMain_Root_C::CurrencyNotificationBorder' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, CurrencyNotificationText) == 0x0004F0, "Member 'UStoreMain_Root_C::CurrencyNotificationText' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, HorizontalBox_0) == 0x0004F8, "Member 'UStoreMain_Root_C::HorizontalBox_0' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, Image_142) == 0x000500, "Member 'UStoreMain_Root_C::Image_142' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewLTMGrid) == 0x000508, "Member 'UStoreMain_Root_C::NewLTMGrid' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NEWLTMOfferSection) == 0x000510, "Member 'UStoreMain_Root_C::NEWLTMOfferSection' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewNoOffersBox) == 0x000518, "Member 'UStoreMain_Root_C::NewNoOffersBox' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewPurchasingDisabledBox) == 0x000520, "Member 'UStoreMain_Root_C::NewPurchasingDisabledBox' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewSpinner) == 0x000528, "Member 'UStoreMain_Root_C::NewSpinner' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewSwitcherItemsProgress) == 0x000530, "Member 'UStoreMain_Root_C::NewSwitcherItemsProgress' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewVBuckGrid) == 0x000538, "Member 'UStoreMain_Root_C::NewVBuckGrid' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewVbuckOffers) == 0x000540, "Member 'UStoreMain_Root_C::NewVbuckOffers' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, NewVBuckSection) == 0x000548, "Member 'UStoreMain_Root_C::NewVBuckSection' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, OfferScaleBoxRoot) == 0x000550, "Member 'UStoreMain_Root_C::OfferScaleBoxRoot' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, Overlay_0) == 0x000558, "Member 'UStoreMain_Root_C::Overlay_0' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, Ambient_Sound) == 0x000560, "Member 'UStoreMain_Root_C::Ambient_Sound' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, InitiallyFocusedOffer) == 0x000568, "Member 'UStoreMain_Root_C::InitiallyFocusedOffer' has a wrong offset!");
-static_assert(offsetof(UStoreMain_Root_C, bShowingCampaignUpsell) == 0x000570, "Member 'UStoreMain_Root_C::bShowingCampaignUpsell' has a wrong offset!");
 
 }
 

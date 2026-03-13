@@ -21,9 +21,6 @@ struct AthenaLockedStyleNotification_C_OnUnlockingInfoSet final
 public:
 	bool                                          bShowProgression;                                  // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaLockedStyleNotification_C_OnUnlockingInfoSet) == 0x000001, "Wrong alignment on AthenaLockedStyleNotification_C_OnUnlockingInfoSet");
-static_assert(sizeof(AthenaLockedStyleNotification_C_OnUnlockingInfoSet) == 0x000001, "Wrong size on AthenaLockedStyleNotification_C_OnUnlockingInfoSet");
-static_assert(offsetof(AthenaLockedStyleNotification_C_OnUnlockingInfoSet, bShowProgression) == 0x000000, "Member 'AthenaLockedStyleNotification_C_OnUnlockingInfoSet::bShowProgression' has a wrong offset!");
 
 // Function AthenaLockedStyleNotification.AthenaLockedStyleNotification_C.ExecuteUbergraph_AthenaLockedStyleNotification
 // 0x0048 (0x0048 - 0x0000)
@@ -41,17 +38,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0030(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification) == 0x000008, "Wrong alignment on AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification");
-static_assert(sizeof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification) == 0x000048, "Wrong size on AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, EntryPoint) == 0x000000, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, K2Node_Event_bShowProgression) == 0x000014, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::K2Node_Event_bShowProgression' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, Temp_bool_Variable) == 0x000015, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, K2Node_Select_Default) == 0x000018, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, CallFunc_PlayAnimation_ReturnValue) == 0x000020, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, CallFunc_PlayAnimation_ReturnValue_1) == 0x000028, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, K2Node_CreateDelegate_OutputDelegate_1) == 0x000030, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification, CallFunc_PlayAnimation_ReturnValue_2) == 0x000040, "Member 'AthenaLockedStyleNotification_C_ExecuteUbergraph_AthenaLockedStyleNotification::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 
 }
 

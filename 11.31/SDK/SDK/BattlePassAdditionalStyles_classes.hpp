@@ -23,15 +23,17 @@ class UBattlePassAdditionalStyles_C final : public UBattlePassScreenTierListAddi
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassAdditionalStyles_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassAdditionalStyles_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassAdditionalStyles_C")
 	}
 	static class UBattlePassAdditionalStyles_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassAdditionalStyles_C>();
 	}
 };
-static_assert(alignof(UBattlePassAdditionalStyles_C) == 0x000008, "Wrong alignment on UBattlePassAdditionalStyles_C");
-static_assert(sizeof(UBattlePassAdditionalStyles_C) == 0x000268, "Wrong size on UBattlePassAdditionalStyles_C");
 
 }
 

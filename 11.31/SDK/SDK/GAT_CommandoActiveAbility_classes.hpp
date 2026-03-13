@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_CommandoActiveAbility_C">();
+		BP_STATIC_CLASS_IMPL("GAT_CommandoActiveAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_CommandoActiveAbility_C")
 	}
 	static class UGAT_CommandoActiveAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_CommandoActiveAbility_C>();
 	}
 };
-static_assert(alignof(UGAT_CommandoActiveAbility_C) == 0x000008, "Wrong alignment on UGAT_CommandoActiveAbility_C");
-static_assert(sizeof(UGAT_CommandoActiveAbility_C) == 0x000B38, "Wrong size on UGAT_CommandoActiveAbility_C");
-static_assert(offsetof(UGAT_CommandoActiveAbility_C, UberGraphFrame_GAT_CommandoActiveAbility_C) == 0x000A70, "Member 'UGAT_CommandoActiveAbility_C::UberGraphFrame_GAT_CommandoActiveAbility_C' has a wrong offset!");
-static_assert(offsetof(UGAT_CommandoActiveAbility_C, Event_Data) == 0x000A78, "Member 'UGAT_CommandoActiveAbility_C::Event_Data' has a wrong offset!");
-static_assert(offsetof(UGAT_CommandoActiveAbility_C, CommandoPlayerPawn) == 0x000B28, "Member 'UGAT_CommandoActiveAbility_C::CommandoPlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAT_CommandoActiveAbility_C, isAutoCommitted) == 0x000B30, "Member 'UGAT_CommandoActiveAbility_C::isAutoCommitted' has a wrong offset!");
-static_assert(offsetof(UGAT_CommandoActiveAbility_C, isStaminaLockedOut) == 0x000B31, "Member 'UGAT_CommandoActiveAbility_C::isStaminaLockedOut' has a wrong offset!");
 
 }
 

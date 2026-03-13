@@ -38,20 +38,6 @@ public:
 	EFortShowdownPinState                         CallFunc_GetTournamentBestPinState_ReturnValue;    // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFortShowdownPinState                         K2Node_Select_Default_2;                           // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownPin_C_Refresh) == 0x000008, "Wrong alignment on ShowdownPin_C_Refresh");
-static_assert(sizeof(ShowdownPin_C_Refresh) == 0x000040, "Wrong size on ShowdownPin_C_Refresh");
-static_assert(offsetof(ShowdownPin_C_Refresh, PinState) == 0x000000, "Member 'ShowdownPin_C_Refresh::PinState' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, Temp_byte_Variable) == 0x000001, "Member 'ShowdownPin_C_Refresh::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, Temp_bool_Variable) == 0x000002, "Member 'ShowdownPin_C_Refresh::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, Temp_byte_Variable_1) == 0x000003, "Member 'ShowdownPin_C_Refresh::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, CallFunc_GetScoreToDisplay_ReturnValue) == 0x000004, "Member 'ShowdownPin_C_Refresh::CallFunc_GetScoreToDisplay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000008, "Member 'ShowdownPin_C_Refresh::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, CallFunc_Conv_IntToText_ReturnValue) == 0x000010, "Member 'ShowdownPin_C_Refresh::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, K2Node_Select_Default) == 0x000028, "Member 'ShowdownPin_C_Refresh::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, K2Node_Select_Default_1) == 0x000030, "Member 'ShowdownPin_C_Refresh::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, CallFunc_GetEventPinState_ReturnValue) == 0x000038, "Member 'ShowdownPin_C_Refresh::CallFunc_GetEventPinState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, CallFunc_GetTournamentBestPinState_ReturnValue) == 0x000039, "Member 'ShowdownPin_C_Refresh::CallFunc_GetTournamentBestPinState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_Refresh, K2Node_Select_Default_2) == 0x00003A, "Member 'ShowdownPin_C_Refresh::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function ShowdownPin.ShowdownPin_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -60,9 +46,6 @@ struct ShowdownPin_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ShowdownPin_C_PreConstruct) == 0x000001, "Wrong alignment on ShowdownPin_C_PreConstruct");
-static_assert(sizeof(ShowdownPin_C_PreConstruct) == 0x000001, "Wrong size on ShowdownPin_C_PreConstruct");
-static_assert(offsetof(ShowdownPin_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ShowdownPin_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ShowdownPin.ShowdownPin_C.EventSetTier
 // 0x0004 (0x0004 - 0x0000)
@@ -71,9 +54,6 @@ struct ShowdownPin_C_EventSetTier final
 public:
 	int32                                         Score;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownPin_C_EventSetTier) == 0x000004, "Wrong alignment on ShowdownPin_C_EventSetTier");
-static_assert(sizeof(ShowdownPin_C_EventSetTier) == 0x000004, "Wrong size on ShowdownPin_C_EventSetTier");
-static_assert(offsetof(ShowdownPin_C_EventSetTier, Score) == 0x000000, "Member 'ShowdownPin_C_EventSetTier::Score' has a wrong offset!");
 
 // Function ShowdownPin.ShowdownPin_C.EventFixPts
 // 0x0004 (0x0004 - 0x0000)
@@ -82,9 +62,6 @@ struct ShowdownPin_C_EventFixPts final
 public:
 	int32                                         Points;                                            // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownPin_C_EventFixPts) == 0x000004, "Wrong alignment on ShowdownPin_C_EventFixPts");
-static_assert(sizeof(ShowdownPin_C_EventFixPts) == 0x000004, "Wrong size on ShowdownPin_C_EventFixPts");
-static_assert(offsetof(ShowdownPin_C_EventFixPts, Points) == 0x000000, "Member 'ShowdownPin_C_EventFixPts::Points' has a wrong offset!");
 
 // Function ShowdownPin.ShowdownPin_C.ExecuteUbergraph_ShowdownPin
 // 0x0190 (0x0190 - 0x0000)
@@ -166,66 +143,6 @@ public:
 	uint8                                         Pad_181[0x7];                                      // 0x0181(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInterface*                     K2Node_Select_Default_7;                           // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin) == 0x000008, "Wrong alignment on ShowdownPin_C_ExecuteUbergraph_ShowdownPin");
-static_assert(sizeof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin) == 0x000190, "Wrong size on ShowdownPin_C_ExecuteUbergraph_ShowdownPin");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, EntryPoint) == 0x000000, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable) == 0x000004, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable) == 0x000008, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_1) == 0x00000C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_1) == 0x000010, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_2) == 0x000014, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_2) == 0x000018, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_3) == 0x00001C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_3) == 0x000020, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_float_Variable) == 0x000024, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_4) == 0x000028, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_byte_Variable) == 0x000029, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_byte_Variable_1) == 0x00002A, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_object_Variable) == 0x000030, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_object_Variable_1) == 0x000038, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_object_Variable_2) == 0x000040, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_object_Variable_3) == 0x000048, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_object_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Event_IsDesignTime) == 0x000050, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_CustomEvent_Score) == 0x000054, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_CustomEvent_Score' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000058, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_4) == 0x00005C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_4' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Conv_IntToText_ReturnValue) == 0x000060, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_CustomEvent_Points) == 0x000078, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_CustomEvent_Points' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_MakeStruct_FormatArgumentData) == 0x000080, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_MakeArray_Array) == 0x0000C0, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Format_ReturnValue) == 0x0000D0, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_byte_Variable_2) == 0x0000E8, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000F0, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_MakeColor_ReturnValue) == 0x0000F8, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_MakeColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_byte_Variable_3) == 0x000108, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000110, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_5) == 0x000118, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default) == 0x000119, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_5) == 0x00011C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_5' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_PauseAnimation_ReturnValue) == 0x000120, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_PauseAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_GetStartTime_ReturnValue) == 0x000124, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_GetStartTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_PauseAnimation_ReturnValue_1) == 0x000128, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_PauseAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x00012C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Add_FloatFloat_ReturnValue) == 0x000130, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_PlayAnimation_ReturnValue) == 0x000138, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_GetEndTime_ReturnValue) == 0x000140, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_GetEndTime_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_int_Variable_6) == 0x000144, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_int_Variable_6' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000148, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_1) == 0x00014C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_PlayAnimation_ReturnValue_1) == 0x000150, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, Temp_bool_Variable_6) == 0x000158, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_GetTournamentPinUnlockScore_ReturnValue) == 0x00015C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_GetTournamentPinUnlockScore_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000160, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_2) == 0x000164, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000168, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Less_FloatFloat_ReturnValue) == 0x00016C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Less_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Less_FloatFloat_ReturnValue_1) == 0x00016D, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Less_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_3) == 0x000170, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, CallFunc_Less_FloatFloat_ReturnValue_2) == 0x000174, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::CallFunc_Less_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_4) == 0x000178, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_5) == 0x00017C, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_6) == 0x000180, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(ShowdownPin_C_ExecuteUbergraph_ShowdownPin, K2Node_Select_Default_7) == 0x000188, "Member 'ShowdownPin_C_ExecuteUbergraph_ShowdownPin::K2Node_Select_Default_7' has a wrong offset!");
 
 }
 

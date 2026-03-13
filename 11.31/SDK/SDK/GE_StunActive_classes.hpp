@@ -23,15 +23,17 @@ class UGE_StunActive_C final : public UGET_TagContainer_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_StunActive_C">();
+		BP_STATIC_CLASS_IMPL("GE_StunActive_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_StunActive_C")
 	}
 	static class UGE_StunActive_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_StunActive_C>();
 	}
 };
-static_assert(alignof(UGE_StunActive_C) == 0x000008, "Wrong alignment on UGE_StunActive_C");
-static_assert(sizeof(UGE_StunActive_C) == 0x000770, "Wrong size on UGE_StunActive_C");
 
 }
 

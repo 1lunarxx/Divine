@@ -40,22 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_Mustache_LockOnWidget_C">();
+		BP_STATIC_CLASS_IMPL("Athena_Mustache_LockOnWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_Mustache_LockOnWidget_C")
 	}
 	static class UAthena_Mustache_LockOnWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_Mustache_LockOnWidget_C>();
 	}
 };
-static_assert(alignof(UAthena_Mustache_LockOnWidget_C) == 0x000008, "Wrong alignment on UAthena_Mustache_LockOnWidget_C");
-static_assert(sizeof(UAthena_Mustache_LockOnWidget_C) == 0x000268, "Wrong size on UAthena_Mustache_LockOnWidget_C");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, UberGraphFrame) == 0x000230, "Member 'UAthena_Mustache_LockOnWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, Flash) == 0x000238, "Member 'UAthena_Mustache_LockOnWidget_C::Flash' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, Scale) == 0x000240, "Member 'UAthena_Mustache_LockOnWidget_C::Scale' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, Image_83) == 0x000248, "Member 'UAthena_Mustache_LockOnWidget_C::Image_83' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, Target) == 0x000250, "Member 'UAthena_Mustache_LockOnWidget_C::Target' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, LockinOnSound) == 0x000258, "Member 'UAthena_Mustache_LockOnWidget_C::LockinOnSound' has a wrong offset!");
-static_assert(offsetof(UAthena_Mustache_LockOnWidget_C, LockinOffSound) == 0x000260, "Member 'UAthena_Mustache_LockOnWidget_C::LockinOffSound' has a wrong offset!");
 
 }
 

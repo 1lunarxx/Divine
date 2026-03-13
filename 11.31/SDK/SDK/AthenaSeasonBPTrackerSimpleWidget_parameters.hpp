@@ -25,9 +25,6 @@ struct AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged final
 public:
 	struct FFortPublicAccountInfo                 Result;                                            // 0x0000(0x0034)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged) == 0x000004, "Wrong alignment on AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged");
-static_assert(sizeof(AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged) == 0x000034, "Wrong size on AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged, Result) == 0x000000, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_OnAccountInfoChanged::Result' has a wrong offset!");
 
 // Function AthenaSeasonBPTrackerSimpleWidget.AthenaSeasonBPTrackerSimpleWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -36,9 +33,6 @@ struct AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct");
-static_assert(sizeof(AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct) == 0x000001, "Wrong size on AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaSeasonBPTrackerSimpleWidget.AthenaSeasonBPTrackerSimpleWidget_C.ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget
 // 0x0110 (0x0110 - 0x0000)
@@ -76,31 +70,6 @@ public:
 	uint8                                         Pad_BC[0x4];                                       // 0x00BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x00C0(0x0050)(HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget) == 0x000008, "Wrong alignment on AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget");
-static_assert(sizeof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget) == 0x000110, "Wrong size on AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, EntryPoint) == 0x000000, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_bool_Variable) == 0x000004, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_int_Variable) == 0x000008, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_bool_Variable_1) == 0x00000C, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_struct_Variable) == 0x000010, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_struct_Variable_1) == 0x000020, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_float_Variable) == 0x000030, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_float_Variable_1) == 0x000034, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Event_Result) == 0x000038, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Event_Result' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_bool_Variable_2) == 0x00006C, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000070, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000088, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00008C, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, CallFunc_GreaterEqual_IntInt_ReturnValue_1) == 0x00008D, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::CallFunc_GreaterEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_float_Variable_2) == 0x000090, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_float_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Event_IsDesignTime) == 0x000094, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Select_Default) == 0x000098, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Select_Default_1) == 0x0000A8, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_float_Variable_3) == 0x0000AC, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_float_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, Temp_bool_Variable_3) == 0x0000B0, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Select_Default_2) == 0x0000B4, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_Select_Default_3) == 0x0000B8, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget, K2Node_MakeStruct_SlateFontInfo) == 0x0000C0, "Member 'AthenaSeasonBPTrackerSimpleWidget_C_ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
 
 }
 

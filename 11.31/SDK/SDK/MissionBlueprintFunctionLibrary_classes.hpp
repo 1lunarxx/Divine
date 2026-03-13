@@ -67,15 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionBlueprintFunctionLibrary_C">();
+		BP_STATIC_CLASS_IMPL("MissionBlueprintFunctionLibrary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionBlueprintFunctionLibrary_C")
 	}
 	static class UMissionBlueprintFunctionLibrary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionBlueprintFunctionLibrary_C>();
 	}
 };
-static_assert(alignof(UMissionBlueprintFunctionLibrary_C) == 0x000008, "Wrong alignment on UMissionBlueprintFunctionLibrary_C");
-static_assert(sizeof(UMissionBlueprintFunctionLibrary_C) == 0x000028, "Wrong size on UMissionBlueprintFunctionLibrary_C");
 
 }
 

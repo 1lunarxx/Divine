@@ -24,10 +24,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(IntroRotatingText_C_Tick) == 0x000004, "Wrong alignment on IntroRotatingText_C_Tick");
-static_assert(sizeof(IntroRotatingText_C_Tick) == 0x00003C, "Wrong size on IntroRotatingText_C_Tick");
-static_assert(offsetof(IntroRotatingText_C_Tick, MyGeometry) == 0x000000, "Member 'IntroRotatingText_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_Tick, InDeltaTime) == 0x000038, "Member 'IntroRotatingText_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function IntroRotatingText.IntroRotatingText_C.ExecuteUbergraph_IntroRotatingText
 // 0x0058 (0x0058 - 0x0000)
@@ -45,17 +41,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_1;               // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Percent_IntInt_ReturnValue;               // 0x0054(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText) == 0x000004, "Wrong alignment on IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText");
-static_assert(sizeof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText) == 0x000058, "Wrong size on IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, EntryPoint) == 0x000000, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::EntryPoint' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, K2Node_Event_MyGeometry) == 0x000004, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, CallFunc_Array_Length_ReturnValue) == 0x000040, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, CallFunc_Greater_IntInt_ReturnValue) == 0x000044, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, CallFunc_Add_IntInt_ReturnValue) == 0x000048, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, Temp_int_Variable) == 0x00004C, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, CallFunc_Array_Length_ReturnValue_1) == 0x000050, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText, CallFunc_Percent_IntInt_ReturnValue) == 0x000054, "Member 'IntroRotatingText_C_ExecuteUbergraph_IntroRotatingText::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
 
 }
 

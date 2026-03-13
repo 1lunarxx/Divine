@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PP_Crazy_C">();
+		BP_STATIC_CLASS_IMPL("PP_Crazy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PP_Crazy_C")
 	}
 	static class APP_Crazy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APP_Crazy_C>();
 	}
 };
-static_assert(alignof(APP_Crazy_C) == 0x000008, "Wrong alignment on APP_Crazy_C");
-static_assert(sizeof(APP_Crazy_C) == 0x000230, "Wrong size on APP_Crazy_C");
-static_assert(offsetof(APP_Crazy_C, PostProcess) == 0x000218, "Member 'APP_Crazy_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(APP_Crazy_C, Box) == 0x000220, "Member 'APP_Crazy_C::Box' has a wrong offset!");
-static_assert(offsetof(APP_Crazy_C, DefaultSceneRoot) == 0x000228, "Member 'APP_Crazy_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

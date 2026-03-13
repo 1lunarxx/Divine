@@ -43,26 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Arrow_DemonHunter_Crossbow_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Arrow_DemonHunter_Crossbow_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Arrow_DemonHunter_Crossbow_Athena_C")
 	}
 	static class AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C) == 0x000008, "Wrong alignment on AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C");
-static_assert(sizeof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C) == 0x000A18, "Wrong size on AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, UberGraphFrame) == 0x000940, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, BulletWhipTrackerComponent_Crossbow) == 0x000948, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::BulletWhipTrackerComponent_Crossbow' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, P_Crossbow_Projectile) == 0x000950, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::P_Crossbow_Projectile' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, HitDeimosEffect) == 0x000958, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::HitDeimosEffect' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, HitPlayerEffect) == 0x000960, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::HitPlayerEffect' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, NewVar_0) == 0x000968, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, BoltStuck) == 0x000970, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::BoltStuck' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, BoltBreak) == 0x000978, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::BoltBreak' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, Bolt_Surface_Impact) == 0x000980, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::Bolt_Surface_Impact' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, HitResult) == 0x000988, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::HitResult' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C, WaterImpactFX) == 0x000A10, "Member 'AB_Prj_Arrow_DemonHunter_Crossbow_Athena_C::WaterImpactFX' has a wrong offset!");
 
 }
 

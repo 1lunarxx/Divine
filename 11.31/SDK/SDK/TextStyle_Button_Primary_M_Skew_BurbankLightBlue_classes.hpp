@@ -23,15 +23,17 @@ class UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C final : public UCommon
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Button-Primary-M_Skew_BurbankLightBlue_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Button-Primary-M_Skew_BurbankLightBlue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Button-Primary-M_Skew_BurbankLightBlue_C")
 	}
 	static class UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C) == 0x000008, "Wrong alignment on UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C");
-static_assert(sizeof(UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C) == 0x000148, "Wrong size on UTextStyle_Button_Primary_M_Skew_BurbankLightBlue_C");
 
 }
 

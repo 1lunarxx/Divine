@@ -75,8 +75,6 @@ public:
 	bool                                          bShowBadges;                                       // 0x04F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
-	void SetDescriptionWraptTextAt(float WrapTextAt);
-	void UpdatePerk();
 	class UWidget* Get_OverlayAbilityPerk_ToolTipWidget();
 	void InitializeSettings(bool bIncludeName_0, bool bIncludeDescription_0, bool bUseLegacyFixedSizeIcons_0, EFortBrushSize IconSize_0, bool bUseLargeFormatName_0, const struct FFortUIPerk& Perk_0, bool ShowMouseTooltips, bool bInShowBadges, float WrapTextAt);
 	void HighlightBadge();
@@ -93,63 +91,23 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void OnCombinedTooltipDescriptionReady(const class FText& Description);
 	void ExecuteUbergraph_PerkWidgetNew(int32 EntryPoint);
+	void SetDescriptionWraptTextAt(float WrapTextAt);
+	void UpdatePerk();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PerkWidgetNew_C">();
+		BP_STATIC_CLASS_IMPL("PerkWidgetNew_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PerkWidgetNew_C")
 	}
 	static class UPerkWidgetNew_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPerkWidgetNew_C>();
 	}
 };
-static_assert(alignof(UPerkWidgetNew_C) == 0x000008, "Wrong alignment on UPerkWidgetNew_C");
-static_assert(sizeof(UPerkWidgetNew_C) == 0x000500, "Wrong size on UPerkWidgetNew_C");
-static_assert(offsetof(UPerkWidgetNew_C, UberGraphFrame) == 0x000320, "Member 'UPerkWidgetNew_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Intro) == 0x000328, "Member 'UPerkWidgetNew_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, AbilityIconSizeBox) == 0x000330, "Member 'UPerkWidgetNew_C::AbilityIconSizeBox' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, BorderAbility) == 0x000338, "Member 'UPerkWidgetNew_C::BorderAbility' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, BorderHighlightBorder) == 0x000340, "Member 'UPerkWidgetNew_C::BorderHighlightBorder' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, BorderHightlightBackground) == 0x000348, "Member 'UPerkWidgetNew_C::BorderHightlightBackground' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Divider) == 0x000350, "Member 'UPerkWidgetNew_C::Divider' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, EvolutionBorder) == 0x000358, "Member 'UPerkWidgetNew_C::EvolutionBorder' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, HorizontalBox_1) == 0x000360, "Member 'UPerkWidgetNew_C::HorizontalBox_1' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImageAbilityIcon) == 0x000368, "Member 'UPerkWidgetNew_C::ImageAbilityIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImageHeroBonusIcon) == 0x000370, "Member 'UPerkWidgetNew_C::ImageHeroBonusIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImageLockAbility) == 0x000378, "Member 'UPerkWidgetNew_C::ImageLockAbility' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImageLockPerk) == 0x000380, "Member 'UPerkWidgetNew_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImagePerkIcon) == 0x000388, "Member 'UPerkWidgetNew_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ImageTier) == 0x000390, "Member 'UPerkWidgetNew_C::ImageTier' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, InfoSwitcher) == 0x000398, "Member 'UPerkWidgetNew_C::InfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, LargeInfo) == 0x0003A0, "Member 'UPerkWidgetNew_C::LargeInfo' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, LevelTextNew) == 0x0003A8, "Member 'UPerkWidgetNew_C::LevelTextNew' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, OverlayAbilityPerk) == 0x0003B0, "Member 'UPerkWidgetNew_C::OverlayAbilityPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, OverlayBadge) == 0x0003B8, "Member 'UPerkWidgetNew_C::OverlayBadge' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, OverlayBasicPerk) == 0x0003C0, "Member 'UPerkWidgetNew_C::OverlayBasicPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, OverlayImagePerk) == 0x0003C8, "Member 'UPerkWidgetNew_C::OverlayImagePerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, OverlayLevel) == 0x0003D0, "Member 'UPerkWidgetNew_C::OverlayLevel' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, PerkIconSizeBox) == 0x0003D8, "Member 'UPerkWidgetNew_C::PerkIconSizeBox' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, SkillDescription) == 0x0003E0, "Member 'UPerkWidgetNew_C::SkillDescription' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, SkillName) == 0x0003E8, "Member 'UPerkWidgetNew_C::SkillName' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, SmallInfo) == 0x0003F0, "Member 'UPerkWidgetNew_C::SmallInfo' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, WidgetSwitcherBasicPerkOrAbilityPerk) == 0x0003F8, "Member 'UPerkWidgetNew_C::WidgetSwitcherBasicPerkOrAbilityPerk' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, WidgetSwitcherTierOrLevel) == 0x000400, "Member 'UPerkWidgetNew_C::WidgetSwitcherTierOrLevel' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, DemoImage) == 0x000408, "Member 'UPerkWidgetNew_C::DemoImage' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bIncludeName) == 0x000490, "Member 'UPerkWidgetNew_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bIncludeDescription) == 0x000491, "Member 'UPerkWidgetNew_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, LevelText_0) == 0x000498, "Member 'UPerkWidgetNew_C::LevelText_0' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bUseLegacyFixedSizeIcons) == 0x0004A0, "Member 'UPerkWidgetNew_C::bUseLegacyFixedSizeIcons' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, IconSize) == 0x0004A1, "Member 'UPerkWidgetNew_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bUseLargeFormatName) == 0x0004A2, "Member 'UPerkWidgetNew_C::bUseLargeFormatName' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Locked_Text_Style) == 0x0004A8, "Member 'UPerkWidgetNew_C::Locked_Text_Style' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Locked_Description_Style) == 0x0004B0, "Member 'UPerkWidgetNew_C::Locked_Description_Style' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, ListPadding) == 0x0004B8, "Member 'UPerkWidgetNew_C::ListPadding' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Default_Description_Style) == 0x0004C8, "Member 'UPerkWidgetNew_C::Default_Description_Style' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, Default_Text_Style) == 0x0004D0, "Member 'UPerkWidgetNew_C::Default_Text_Style' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bEnableMouseTooltips) == 0x0004D8, "Member 'UPerkWidgetNew_C::bEnableMouseTooltips' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, CachedTooltipDescription) == 0x0004E0, "Member 'UPerkWidgetNew_C::CachedTooltipDescription' has a wrong offset!");
-static_assert(offsetof(UPerkWidgetNew_C, bShowBadges) == 0x0004F8, "Member 'UPerkWidgetNew_C::bShowBadges' has a wrong offset!");
 
 }
 

@@ -45,25 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LocalUserEntry_C">();
+		BP_STATIC_CLASS_IMPL("LocalUserEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LocalUserEntry_C")
 	}
 	static class ULocalUserEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULocalUserEntry_C>();
 	}
 };
-static_assert(alignof(ULocalUserEntry_C) == 0x000008, "Wrong alignment on ULocalUserEntry_C");
-static_assert(sizeof(ULocalUserEntry_C) == 0x000C28, "Wrong size on ULocalUserEntry_C");
-static_assert(offsetof(ULocalUserEntry_C, UberGraphFrame) == 0x000BC0, "Member 'ULocalUserEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Hovered) == 0x000BC8, "Member 'ULocalUserEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Border_OnlineStatusIndicator) == 0x000BD0, "Member 'ULocalUserEntry_C::Border_OnlineStatusIndicator' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, FortMobileImage_enforzer) == 0x000BD8, "Member 'ULocalUserEntry_C::FortMobileImage_enforzer' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Image_MicIcon) == 0x000BE0, "Member 'ULocalUserEntry_C::Image_MicIcon' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, LocalUserEntryBorder) == 0x000BE8, "Member 'ULocalUserEntry_C::LocalUserEntryBorder' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, SettingsIcon) == 0x000BF0, "Member 'ULocalUserEntry_C::SettingsIcon' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Online) == 0x000BF8, "Member 'ULocalUserEntry_C::Online' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Offline) == 0x000C08, "Member 'ULocalUserEntry_C::Offline' has a wrong offset!");
-static_assert(offsetof(ULocalUserEntry_C, Away) == 0x000C18, "Member 'ULocalUserEntry_C::Away' has a wrong offset!");
 
 }
 

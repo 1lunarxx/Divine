@@ -30,15 +30,6 @@ public:
 	bool                                          CallFunc_HasSubtitles_ReturnValue;                 // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000008, "Wrong alignment on Subtitles_C_ExecuteUbergraph_Subtitles");
-static_assert(sizeof(Subtitles_C_ExecuteUbergraph_Subtitles) == 0x000028, "Wrong size on Subtitles_C_ExecuteUbergraph_Subtitles");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, EntryPoint) == 0x000000, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, Temp_bool_Variable) == 0x000004, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, Temp_byte_Variable) == 0x000005, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, Temp_byte_Variable_1) == 0x000006, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, K2Node_ComponentBoundEvent_Subtitle) == 0x000008, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::K2Node_ComponentBoundEvent_Subtitle' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, CallFunc_HasSubtitles_ReturnValue) == 0x000020, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::CallFunc_HasSubtitles_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Subtitles_C_ExecuteUbergraph_Subtitles, K2Node_Select_Default) == 0x000021, "Member 'Subtitles_C_ExecuteUbergraph_Subtitles::K2Node_Select_Default' has a wrong offset!");
 
 // Function Subtitles.Subtitles_C.BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -47,9 +38,6 @@ struct Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtit
 public:
 	class FText                                   Subtitle;                                          // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature) == 0x000008, "Wrong alignment on Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature");
-static_assert(sizeof(Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature) == 0x000018, "Wrong size on Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature");
-static_assert(offsetof(Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature, Subtitle) == 0x000000, "Member 'Subtitles_C_BndEvt__SubtitleDisplay_K2Node_ComponentBoundEvent_0_OnSubtitleChanged__DelegateSignature::Subtitle' has a wrong offset!");
 
 }
 

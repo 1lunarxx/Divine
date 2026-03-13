@@ -29,14 +29,6 @@ public:
 	class FText                                   CallFunc_Conv_StringToText_ReturnValue_2;          // 0x00A0(0x0018)()
 	bool                                          CallFunc_Array_IsValidIndex_ReturnValue;           // 0x00B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(FeaturedCreativeContent_C_SetFeaturedContentDetails) == 0x000008, "Wrong alignment on FeaturedCreativeContent_C_SetFeaturedContentDetails");
-static_assert(sizeof(FeaturedCreativeContent_C_SetFeaturedContentDetails) == 0x0000C0, "Wrong size on FeaturedCreativeContent_C_SetFeaturedContentDetails");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, Index_0) == 0x000000, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::Index_0' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, CurrentAd) == 0x000008, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::CurrentAd' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, CallFunc_Conv_StringToText_ReturnValue) == 0x000070, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000088, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, CallFunc_Conv_StringToText_ReturnValue_2) == 0x0000A0, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::CallFunc_Conv_StringToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_SetFeaturedContentDetails, CallFunc_Array_IsValidIndex_ReturnValue) == 0x0000B8, "Member 'FeaturedCreativeContent_C_SetFeaturedContentDetails::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
 
 // Function FeaturedCreativeContent.FeaturedCreativeContent_C.OnSetupAds
 // 0x0020 (0x0020 - 0x0000)
@@ -46,10 +38,6 @@ public:
 	TArray<class FString>                         MediaURLs;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FCreativeAdData>                AdMetadata;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(FeaturedCreativeContent_C_OnSetupAds) == 0x000008, "Wrong alignment on FeaturedCreativeContent_C_OnSetupAds");
-static_assert(sizeof(FeaturedCreativeContent_C_OnSetupAds) == 0x000020, "Wrong size on FeaturedCreativeContent_C_OnSetupAds");
-static_assert(offsetof(FeaturedCreativeContent_C_OnSetupAds, MediaURLs) == 0x000000, "Member 'FeaturedCreativeContent_C_OnSetupAds::MediaURLs' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_OnSetupAds, AdMetadata) == 0x000010, "Member 'FeaturedCreativeContent_C_OnSetupAds::AdMetadata' has a wrong offset!");
 
 // Function FeaturedCreativeContent.FeaturedCreativeContent_C.BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -58,9 +46,6 @@ struct FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBound
 public:
 	int32                                         CurrentPageIndex;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature");
-static_assert(sizeof(FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature) == 0x000004, "Wrong size on FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature");
-static_assert(offsetof(FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature, CurrentPageIndex) == 0x000000, "Member 'FeaturedCreativeContent_C_BndEvt__CMSImageSlideShow_K2Node_ComponentBoundEvent_0_CarouselIndexChanged__DelegateSignature::CurrentPageIndex' has a wrong offset!");
 
 // Function FeaturedCreativeContent.FeaturedCreativeContent_C.ExecuteUbergraph_FeaturedCreativeContent
 // 0x0030 (0x0030 - 0x0000)
@@ -73,12 +58,6 @@ public:
 	TArray<struct FCreativeAdData>                K2Node_Event_AdMetadata;                           // 0x0018(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	int32                                         K2Node_ComponentBoundEvent_CurrentPageIndex;       // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent) == 0x000008, "Wrong alignment on FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent");
-static_assert(sizeof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent) == 0x000030, "Wrong size on FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent");
-static_assert(offsetof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent, EntryPoint) == 0x000000, "Member 'FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent, K2Node_Event_MediaURLs) == 0x000008, "Member 'FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent::K2Node_Event_MediaURLs' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent, K2Node_Event_AdMetadata) == 0x000018, "Member 'FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent::K2Node_Event_AdMetadata' has a wrong offset!");
-static_assert(offsetof(FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent, K2Node_ComponentBoundEvent_CurrentPageIndex) == 0x000028, "Member 'FeaturedCreativeContent_C_ExecuteUbergraph_FeaturedCreativeContent::K2Node_ComponentBoundEvent_CurrentPageIndex' has a wrong offset!");
 
 }
 

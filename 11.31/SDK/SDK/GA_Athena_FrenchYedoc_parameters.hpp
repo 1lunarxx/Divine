@@ -41,20 +41,6 @@ public:
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue;          // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FEvaluationResult                      CallFunc_CanSpawnActorOfClass_ReturnValue;         // 0x00C8(0x0030)()
 };
-static_assert(alignof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility) == 0x000008, "Wrong alignment on GA_Athena_FrenchYedoc_C_K2_CanActivateAbility");
-static_assert(sizeof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility) == 0x0000F8, "Wrong size on GA_Athena_FrenchYedoc_C_K2_CanActivateAbility");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, ActorInfo) == 0x000000, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::ActorInfo' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, RelevantTags) == 0x000040, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::RelevantTags' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, ReturnValue) == 0x000060, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_K2_CanActivateAbility_RelevantTags) == 0x000068, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_K2_CanActivateAbility_RelevantTags' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_K2_CanActivateAbility_ReturnValue) == 0x000088, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_K2_CanActivateAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000090, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_GetGameState_ReturnValue) == 0x000098, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000A0, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, K2Node_DynamicCast_AsAthena_Game_State) == 0x0000B0, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::K2Node_DynamicCast_AsAthena_Game_State' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, K2Node_DynamicCast_bSuccess) == 0x0000B8, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000BC, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FrenchYedoc_C_K2_CanActivateAbility, CallFunc_CanSpawnActorOfClass_ReturnValue) == 0x0000C8, "Member 'GA_Athena_FrenchYedoc_C_K2_CanActivateAbility::CallFunc_CanSpawnActorOfClass_ReturnValue' has a wrong offset!");
 
 }
 

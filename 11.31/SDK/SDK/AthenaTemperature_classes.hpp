@@ -33,16 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTemperature_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTemperature_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTemperature_C")
 	}
 	static class UAthenaTemperature_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTemperature_C>();
 	}
 };
-static_assert(alignof(UAthenaTemperature_C) == 0x000008, "Wrong alignment on UAthenaTemperature_C");
-static_assert(sizeof(UAthenaTemperature_C) == 0x000270, "Wrong size on UAthenaTemperature_C");
-static_assert(offsetof(UAthenaTemperature_C, UberGraphFrame) == 0x000268, "Member 'UAthenaTemperature_C::UberGraphFrame' has a wrong offset!");
 
 }
 

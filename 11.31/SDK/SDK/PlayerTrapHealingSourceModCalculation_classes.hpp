@@ -23,15 +23,17 @@ class UPlayerTrapHealingSourceModCalculation_C final : public UPlayerTrapBonusMo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapHealingSourceModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapHealingSourceModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapHealingSourceModCalculation_C")
 	}
 	static class UPlayerTrapHealingSourceModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapHealingSourceModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapHealingSourceModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapHealingSourceModCalculation_C");
-static_assert(sizeof(UPlayerTrapHealingSourceModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapHealingSourceModCalculation_C");
 
 }
 

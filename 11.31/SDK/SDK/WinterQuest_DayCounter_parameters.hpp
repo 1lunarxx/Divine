@@ -21,9 +21,6 @@ struct WinterQuest_DayCounter_C_HandleDayCounterIntro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuest_DayCounter_C_HandleDayCounterIntro) == 0x000008, "Wrong alignment on WinterQuest_DayCounter_C_HandleDayCounterIntro");
-static_assert(sizeof(WinterQuest_DayCounter_C_HandleDayCounterIntro) == 0x000008, "Wrong size on WinterQuest_DayCounter_C_HandleDayCounterIntro");
-static_assert(offsetof(WinterQuest_DayCounter_C_HandleDayCounterIntro, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WinterQuest_DayCounter_C_HandleDayCounterIntro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

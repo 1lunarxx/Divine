@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_Radio_AudioToMPC_C">();
+		BP_STATIC_CLASS_IMPL("Creative_Radio_AudioToMPC_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_Radio_AudioToMPC_C")
 	}
 	static class UCreative_Radio_AudioToMPC_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreative_Radio_AudioToMPC_C>();
 	}
 };
-static_assert(alignof(UCreative_Radio_AudioToMPC_C) == 0x000008, "Wrong alignment on UCreative_Radio_AudioToMPC_C");
-static_assert(sizeof(UCreative_Radio_AudioToMPC_C) == 0x000100, "Wrong size on UCreative_Radio_AudioToMPC_C");
 
 }
 

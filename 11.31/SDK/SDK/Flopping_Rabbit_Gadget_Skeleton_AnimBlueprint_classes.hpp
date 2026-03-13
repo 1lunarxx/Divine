@@ -60,38 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Flopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C">();
+		BP_STATIC_CLASS_IMPL("Flopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Flopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C")
 	}
 	static class UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C>();
 	}
 };
-static_assert(alignof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C) == 0x000010, "Wrong alignment on UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C");
-static_assert(sizeof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C) == 0x000F40, "Wrong size on UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, UberGraphFrame) == 0x000270, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_SubInput_9F03130D41190B9467505BBF6A58F63F) == 0x000278, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_SubInput_9F03130D41190B9467505BBF6A58F63F' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_RigidBody_EBD1134E472D714272509DB06222D85B) == 0x0002F0, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_RigidBody_EBD1134E472D714272509DB06222D85B' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalToComponentSpace_58CAB8BF4596861E8101E6A8C8A4854A) == 0x000850, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalToComponentSpace_58CAB8BF4596861E8101E6A8C8A4854A' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_ComponentToLocalSpace_C29FDA5F41AF0CC6D1C988ABF6DECDAC) == 0x000870, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_ComponentToLocalSpace_C29FDA5F41AF0CC6D1C988ABF6DECDAC' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_TransitionResult_8AD4E991416C83F13C8A7B99D2BDF356) == 0x000890, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_TransitionResult_8AD4E991416C83F13C8A7B99D2BDF356' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_TransitionResult_8DA89CB94777D4717B955994589D5E49) == 0x0008B8, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_TransitionResult_8DA89CB94777D4717B955994589D5E49' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_SequencePlayer_F20BF14C458F7DE303D2EE9E19D54E92) == 0x0008E0, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_SequencePlayer_F20BF14C458F7DE303D2EE9E19D54E92' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_StateResult_2003D69B4262076F5089C99BD8B507B1) == 0x000958, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_StateResult_2003D69B4262076F5089C99BD8B507B1' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_SequencePlayer_F02A90674C5FEBFC2015D997A270DDDA) == 0x000988, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_SequencePlayer_F02A90674C5FEBFC2015D997A270DDDA' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_StateResult_93B0B14F4D5594FCE0AE2FA7AE7ED972) == 0x000A00, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_StateResult_93B0B14F4D5594FCE0AE2FA7AE7ED972' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_StateMachine_6B0FE2534593A81B3DF477B5A6599BA5) == 0x000A30, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_StateMachine_6B0FE2534593A81B3DF477B5A6599BA5' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_ModifyBone_8F1D46EB4F37E514903D9AA16CCBF804) == 0x000AE0, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_ModifyBone_8F1D46EB4F37E514903D9AA16CCBF804' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_Trail_F7EF4520434183E62FB46EA388A486EA) == 0x000BF0, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_Trail_F7EF4520434183E62FB46EA388A486EA' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_Slot_ED996A454E2BF7096BFC0181EE251F89) == 0x000E60, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_Slot_ED996A454E2BF7096BFC0181EE251F89' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_Root_4D1E1D8D41EA517B10E682A4653DC378) == 0x000EA8, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_Root_4D1E1D8D41EA517B10E682A4653DC378' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_LocalToComponentSpace_DC4E95444A0BCBCB2B7434A2200CE6DA) == 0x000ED8, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_LocalToComponentSpace_DC4E95444A0BCBCB2B7434A2200CE6DA' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, AnimGraphNode_ComponentToLocalSpace_C46FCBD9462B5B7F2CDEAC9960096AB6) == 0x000EF8, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::AnimGraphNode_ComponentToLocalSpace_C46FCBD9462B5B7F2CDEAC9960096AB6' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, GripOffset) == 0x000F18, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::GripOffset' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, OneHandGrip) == 0x000F24, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::OneHandGrip' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, Trail_Alpha) == 0x000F28, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::Trail_Alpha' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, Trail_RelaxScale) == 0x000F2C, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::Trail_RelaxScale' has a wrong offset!");
-static_assert(offsetof(UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C, GripRotation) == 0x000F30, "Member 'UFlopping_Rabbit_Gadget_Skeleton_AnimBlueprint_C::GripRotation' has a wrong offset!");
 
 }
 

@@ -49,21 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConfirmationWindow_C">();
+		BP_STATIC_CLASS_IMPL("ConfirmationWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConfirmationWindow_C")
 	}
 	static class UConfirmationWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfirmationWindow_C>();
 	}
 };
-static_assert(alignof(UConfirmationWindow_C) == 0x000008, "Wrong alignment on UConfirmationWindow_C");
-static_assert(sizeof(UConfirmationWindow_C) == 0x000608, "Wrong size on UConfirmationWindow_C");
-static_assert(offsetof(UConfirmationWindow_C, UberGraphFrame) == 0x0005D0, "Member 'UConfirmationWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, CloseIcon) == 0x0005D8, "Member 'UConfirmationWindow_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, MobileCloseButton) == 0x0005E0, "Member 'UConfirmationWindow_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, MobileCloseOverlay) == 0x0005E8, "Member 'UConfirmationWindow_C::MobileCloseOverlay' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, TapToCloseZone) == 0x0005F0, "Member 'UConfirmationWindow_C::TapToCloseZone' has a wrong offset!");
-static_assert(offsetof(UConfirmationWindow_C, ButtonIconColor) == 0x0005F8, "Member 'UConfirmationWindow_C::ButtonIconColor' has a wrong offset!");
 
 }
 

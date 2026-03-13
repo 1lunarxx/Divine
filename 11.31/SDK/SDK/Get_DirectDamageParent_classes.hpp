@@ -23,15 +23,17 @@ class UGet_DirectDamageParent_C : public UGET_DamageParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Get_DirectDamageParent_C">();
+		BP_STATIC_CLASS_IMPL("Get_DirectDamageParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Get_DirectDamageParent_C")
 	}
 	static class UGet_DirectDamageParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGet_DirectDamageParent_C>();
 	}
 };
-static_assert(alignof(UGet_DirectDamageParent_C) == 0x000008, "Wrong alignment on UGet_DirectDamageParent_C");
-static_assert(sizeof(UGet_DirectDamageParent_C) == 0x000770, "Wrong size on UGet_DirectDamageParent_C");
 
 }
 

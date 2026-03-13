@@ -51,32 +51,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0194(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0195(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase) == 0x000008, "Wrong alignment on B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase");
-static_assert(sizeof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase) == 0x000198, "Wrong size on B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, EntryPoint) == 0x000000, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::EntryPoint' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_bool_Variable) == 0x000004, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_bool_Variable_1) == 0x000005, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_bool_Variable_2) == 0x000006, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_bool_Variable_3) == 0x000007, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, K2Node_Event_MarkerData) == 0x000008, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::K2Node_Event_MarkerData' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000110, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000114, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x000120, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_bool_Variable_4) == 0x000130, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, Temp_byte_Variable) == 0x000131, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, K2Node_Select_Default) == 0x000132, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Lerp_ReturnValue) == 0x000134, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Lerp_ReturnValue_1) == 0x000138, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Lerp_ReturnValue_2) == 0x00013C, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000140, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_K2_GetComponentLocation_ReturnValue_1) == 0x000148, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_K2_GetComponentLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Conv_VectorToLinearColor_ReturnValue_1) == 0x000154, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Conv_VectorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000168, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_IsValid_ReturnValue) == 0x000170, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, K2Node_Event_InColor) == 0x000174, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::K2Node_Event_InColor' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_Multiply_LinearColorFloat_ReturnValue) == 0x000184, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_Multiply_LinearColorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_IsValid_ReturnValue_1) == 0x000194, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000195, "Member 'B_AthenaMapMarkerBase_C_ExecuteUbergraph_B_AthenaMapMarkerBase::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 
 // Function B_AthenaMapMarkerBase.B_AthenaMapMarkerBase_C.OnMarkerColorChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -85,9 +59,6 @@ struct B_AthenaMapMarkerBase_C_OnMarkerColorChanged final
 public:
 	struct FLinearColor                           InColor;                                           // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_AthenaMapMarkerBase_C_OnMarkerColorChanged) == 0x000004, "Wrong alignment on B_AthenaMapMarkerBase_C_OnMarkerColorChanged");
-static_assert(sizeof(B_AthenaMapMarkerBase_C_OnMarkerColorChanged) == 0x000010, "Wrong size on B_AthenaMapMarkerBase_C_OnMarkerColorChanged");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_OnMarkerColorChanged, InColor) == 0x000000, "Member 'B_AthenaMapMarkerBase_C_OnMarkerColorChanged::InColor' has a wrong offset!");
 
 // Function B_AthenaMapMarkerBase.B_AthenaMapMarkerBase_C.OnSetupMarker
 // 0x0108 (0x0108 - 0x0000)
@@ -96,9 +67,6 @@ struct B_AthenaMapMarkerBase_C_OnSetupMarker final
 public:
 	struct FFortWorldMarkerData                   MarkerData_0;                                      // 0x0000(0x0108)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(B_AthenaMapMarkerBase_C_OnSetupMarker) == 0x000008, "Wrong alignment on B_AthenaMapMarkerBase_C_OnSetupMarker");
-static_assert(sizeof(B_AthenaMapMarkerBase_C_OnSetupMarker) == 0x000108, "Wrong size on B_AthenaMapMarkerBase_C_OnSetupMarker");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_OnSetupMarker, MarkerData_0) == 0x000000, "Member 'B_AthenaMapMarkerBase_C_OnSetupMarker::MarkerData_0' has a wrong offset!");
 
 // Function B_AthenaMapMarkerBase.B_AthenaMapMarkerBase_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
@@ -107,9 +75,6 @@ struct B_AthenaMapMarkerBase_C_UserConstructionScript final
 public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(B_AthenaMapMarkerBase_C_UserConstructionScript) == 0x000008, "Wrong alignment on B_AthenaMapMarkerBase_C_UserConstructionScript");
-static_assert(sizeof(B_AthenaMapMarkerBase_C_UserConstructionScript) == 0x000008, "Wrong size on B_AthenaMapMarkerBase_C_UserConstructionScript");
-static_assert(offsetof(B_AthenaMapMarkerBase_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'B_AthenaMapMarkerBase_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 }
 

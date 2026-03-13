@@ -31,15 +31,6 @@ public:
 	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialSettingToggle_C_SetFontSize) == 0x000008, "Wrong alignment on SocialSettingToggle_C_SetFontSize");
-static_assert(sizeof(SocialSettingToggle_C_SetFontSize) == 0x000068, "Wrong size on SocialSettingToggle_C_SetFontSize");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, Text) == 0x000000, "Member 'SocialSettingToggle_C_SetFontSize::Text' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, DefaultSize) == 0x000008, "Member 'SocialSettingToggle_C_SetFontSize::DefaultSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, MobileSize) == 0x00000C, "Member 'SocialSettingToggle_C_SetFontSize::MobileSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, TempFont) == 0x000010, "Member 'SocialSettingToggle_C_SetFontSize::TempFont' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, Temp_bool_Variable) == 0x000060, "Member 'SocialSettingToggle_C_SetFontSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, CallFunc_IsMobileGame_ReturnValue) == 0x000061, "Member 'SocialSettingToggle_C_SetFontSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_SetFontSize, K2Node_Select_Default) == 0x000064, "Member 'SocialSettingToggle_C_SetFontSize::K2Node_Select_Default' has a wrong offset!");
 
 // Function SocialSettingToggle.SocialSettingToggle_C.UpdateSize
 // 0x0098 (0x0098 - 0x0000)
@@ -83,38 +74,6 @@ public:
 	float                                         K2Node_Select_Default_4;                           // 0x0084(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMargin                                K2Node_MakeStruct_Margin;                          // 0x0088(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SocialSettingToggle_C_UpdateSize) == 0x000008, "Wrong alignment on SocialSettingToggle_C_UpdateSize");
-static_assert(sizeof(SocialSettingToggle_C_UpdateSize) == 0x000098, "Wrong size on SocialSettingToggle_C_UpdateSize");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, HeightMobile) == 0x000000, "Member 'SocialSettingToggle_C_UpdateSize::HeightMobile' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, HeightDefault) == 0x000004, "Member 'SocialSettingToggle_C_UpdateSize::HeightDefault' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, LeftPaddingMobile) == 0x000008, "Member 'SocialSettingToggle_C_UpdateSize::LeftPaddingMobile' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, TempPadding) == 0x00000C, "Member 'SocialSettingToggle_C_UpdateSize::TempPadding' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, MobileNameBoxSize) == 0x00001C, "Member 'SocialSettingToggle_C_UpdateSize::MobileNameBoxSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, DefaultNameBoxSize) == 0x000020, "Member 'SocialSettingToggle_C_UpdateSize::DefaultNameBoxSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, LargeSize) == 0x000024, "Member 'SocialSettingToggle_C_UpdateSize::LargeSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, SmallSize) == 0x00002C, "Member 'SocialSettingToggle_C_UpdateSize::SmallSize' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, Temp_bool_Variable) == 0x000034, "Member 'SocialSettingToggle_C_UpdateSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, Temp_bool_Variable_1) == 0x000035, "Member 'SocialSettingToggle_C_UpdateSize::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue) == 0x000036, "Member 'SocialSettingToggle_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_AsSize_Box_Slot) == 0x000038, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_AsSize_Box_Slot' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, Temp_bool_Variable_2) == 0x000041, "Member 'SocialSettingToggle_C_UpdateSize::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_1) == 0x000042, "Member 'SocialSettingToggle_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000048, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_bSuccess_1) == 0x000050, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_AsIcon_Text_Button_1) == 0x000058, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_AsIcon_Text_Button_1' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_DynamicCast_bSuccess_2) == 0x000060, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_2) == 0x000061, "Member 'SocialSettingToggle_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_3) == 0x000062, "Member 'SocialSettingToggle_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_Select_Default) == 0x000064, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_Select_Default_1) == 0x00006C, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_4) == 0x000070, "Member 'SocialSettingToggle_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, Temp_bool_Variable_3) == 0x000071, "Member 'SocialSettingToggle_C_UpdateSize::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_Select_Default_2) == 0x000074, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_Select_Default_3) == 0x00007C, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, Temp_bool_Variable_4) == 0x000080, "Member 'SocialSettingToggle_C_UpdateSize::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_Select_Default_4) == 0x000084, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(SocialSettingToggle_C_UpdateSize, K2Node_MakeStruct_Margin) == 0x000088, "Member 'SocialSettingToggle_C_UpdateSize::K2Node_MakeStruct_Margin' has a wrong offset!");
 
 // Function SocialSettingToggle.SocialSettingToggle_C.ExecuteUbergraph_SocialSettingToggle
 // 0x0004 (0x0004 - 0x0000)
@@ -123,9 +82,6 @@ struct SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle) == 0x000004, "Wrong alignment on SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle");
-static_assert(sizeof(SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle) == 0x000004, "Wrong size on SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle");
-static_assert(offsetof(SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle, EntryPoint) == 0x000000, "Member 'SocialSettingToggle_C_ExecuteUbergraph_SocialSettingToggle::EntryPoint' has a wrong offset!");
 
 }
 

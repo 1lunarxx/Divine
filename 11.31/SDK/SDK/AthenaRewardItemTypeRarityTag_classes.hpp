@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaRewardItemTypeRarityTag_C">();
+		BP_STATIC_CLASS_IMPL("AthenaRewardItemTypeRarityTag_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaRewardItemTypeRarityTag_C")
 	}
 	static class UAthenaRewardItemTypeRarityTag_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaRewardItemTypeRarityTag_C>();
 	}
 };
-static_assert(alignof(UAthenaRewardItemTypeRarityTag_C) == 0x000008, "Wrong alignment on UAthenaRewardItemTypeRarityTag_C");
-static_assert(sizeof(UAthenaRewardItemTypeRarityTag_C) == 0x000288, "Wrong size on UAthenaRewardItemTypeRarityTag_C");
-static_assert(offsetof(UAthenaRewardItemTypeRarityTag_C, UberGraphFrame) == 0x000278, "Member 'UAthenaRewardItemTypeRarityTag_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaRewardItemTypeRarityTag_C, Divider) == 0x000280, "Member 'UAthenaRewardItemTypeRarityTag_C::Divider' has a wrong offset!");
 
 }
 

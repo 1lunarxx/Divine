@@ -33,7 +33,7 @@ void IInterfaceAIStates_C::MantleStart(const struct FVector& StartPos, const str
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "MantleStart");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "MantleStart");
 
 	Params::InterfaceAIStates_C_MantleStart Parms{};
 
@@ -45,7 +45,7 @@ void IInterfaceAIStates_C::MantleStart(const struct FVector& StartPos, const str
 	Parms.FullWall = FullWall;
 	Parms.WindowWall = WindowWall;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -57,9 +57,9 @@ void IInterfaceAIStates_C::MantleEnd()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "MantleEnd");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "MantleEnd");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -71,9 +71,9 @@ void IInterfaceAIStates_C::HuskEvadeStart()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "HuskEvadeStart");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "HuskEvadeStart");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -90,7 +90,7 @@ void IInterfaceAIStates_C::VerifyTakerAttack(bool SpecialAttack, bool Swoop, boo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "VerifyTakerAttack");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "VerifyTakerAttack");
 
 	Params::InterfaceAIStates_C_VerifyTakerAttack Parms{};
 
@@ -99,7 +99,7 @@ void IInterfaceAIStates_C::VerifyTakerAttack(bool SpecialAttack, bool Swoop, boo
 	Parms.Soul_Suck = Soul_Suck;
 	Parms.Portal = Portal;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -115,7 +115,7 @@ void IInterfaceAIStates_C::ResetTakerSpecialAttackTimer(bool Swoop, bool SoulSuc
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "ResetTakerSpecialAttackTimer");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "ResetTakerSpecialAttackTimer");
 
 	Params::InterfaceAIStates_C_ResetTakerSpecialAttackTimer Parms{};
 
@@ -123,7 +123,7 @@ void IInterfaceAIStates_C::ResetTakerSpecialAttackTimer(bool Swoop, bool SoulSuc
 	Parms.SoulSuckMelee = SoulSuckMelee;
 	Parms.Portal = Portal;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -135,9 +135,9 @@ void IInterfaceAIStates_C::BeginTakerSwoopAttack()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "BeginTakerSwoopAttack");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "BeginTakerSwoopAttack");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -149,9 +149,9 @@ void IInterfaceAIStates_C::EndTakerSwoopAttack()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "EndTakerSwoopAttack");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "EndTakerSwoopAttack");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -168,7 +168,7 @@ void IInterfaceAIStates_C::TakerWallPortalBehavior(class AActor* BuildingPart, c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "TakerWallPortalBehavior");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "TakerWallPortalBehavior");
 
 	Params::InterfaceAIStates_C_TakerWallPortalBehavior Parms{};
 
@@ -177,7 +177,7 @@ void IInterfaceAIStates_C::TakerWallPortalBehavior(class AActor* BuildingPart, c
 	Parms.DesiredMoveLocation = std::move(DesiredMoveLocation);
 	Parms.Debug = Debug;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -191,13 +191,13 @@ void IInterfaceAIStates_C::IsTakerWallPortalAvailable(bool Portal_Available_)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "IsTakerWallPortalAvailable");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "IsTakerWallPortalAvailable");
 
 	Params::InterfaceAIStates_C_IsTakerWallPortalAvailable Parms{};
 
 	Parms.Portal_Available_ = Portal_Available_;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -211,13 +211,13 @@ void IInterfaceAIStates_C::TakerAttackFSM(bool SuccessfulHit)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "TakerAttackFSM");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "TakerAttackFSM");
 
 	Params::InterfaceAIStates_C_TakerAttackFSM Parms{};
 
 	Parms.SuccessfulHit = SuccessfulHit;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -231,13 +231,13 @@ void IInterfaceAIStates_C::TakerSoulSuckSoundBegin(bool Success)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckSoundBegin");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckSoundBegin");
 
 	Params::InterfaceAIStates_C_TakerSoulSuckSoundBegin Parms{};
 
 	Parms.Success = Success;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -249,9 +249,9 @@ void IInterfaceAIStates_C::TakerSoulSuckSoundEnd()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckSoundEnd");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckSoundEnd");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -266,14 +266,14 @@ void IInterfaceAIStates_C::PortalAdd(class ABuildingActor* BuildingActor, const 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "PortalAdd");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "PortalAdd");
 
 	Params::InterfaceAIStates_C_PortalAdd Parms{};
 
 	Parms.BuildingActor = BuildingActor;
 	Parms.BuildingActorList = std::move(BuildingActorList);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -285,9 +285,9 @@ void IInterfaceAIStates_C::PortalClear()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "PortalClear");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "PortalClear");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -299,9 +299,9 @@ void IInterfaceAIStates_C::TakerSoulSuckInterrupted()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckInterrupted");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "TakerSoulSuckInterrupted");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -317,7 +317,7 @@ void IInterfaceAIStates_C::PortalGet(class ABuildingActor* BuildingActor, const 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "PortalGet");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "PortalGet");
 
 	Params::InterfaceAIStates_C_PortalGet Parms{};
 
@@ -325,7 +325,7 @@ void IInterfaceAIStates_C::PortalGet(class ABuildingActor* BuildingActor, const 
 	Parms.BuildingActorList = std::move(BuildingActorList);
 	Parms.BT = BT;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -337,9 +337,9 @@ void IInterfaceAIStates_C::PortalFX()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "PortalFX");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "PortalFX");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -353,13 +353,13 @@ void IInterfaceAIStates_C::PortalCollision(bool Collide_)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("InterfaceAIStates_C", "PortalCollision");
+		Func = AsUObject()->Class->GetFunction("InterfaceAIStates_C", "PortalCollision");
 
 	Params::InterfaceAIStates_C_PortalCollision Parms{};
 
 	Parms.Collide_ = Collide_;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 }

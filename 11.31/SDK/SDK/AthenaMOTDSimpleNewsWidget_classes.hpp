@@ -48,28 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDSimpleNewsWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDSimpleNewsWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDSimpleNewsWidget_C")
 	}
 	static class UAthenaMOTDSimpleNewsWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDSimpleNewsWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDSimpleNewsWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDSimpleNewsWidget_C");
-static_assert(sizeof(UAthenaMOTDSimpleNewsWidget_C) == 0x000360, "Wrong size on UAthenaMOTDSimpleNewsWidget_C");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, UberGraphFrame) == 0x000308, "Member 'UAthenaMOTDSimpleNewsWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, Intro) == 0x000310, "Member 'UAthenaMOTDSimpleNewsWidget_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, Backplate) == 0x000318, "Member 'UAthenaMOTDSimpleNewsWidget_C::Backplate' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, GlowBackground) == 0x000320, "Member 'UAthenaMOTDSimpleNewsWidget_C::GlowBackground' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, Image_Background) == 0x000328, "Member 'UAthenaMOTDSimpleNewsWidget_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, Image_Border) == 0x000330, "Member 'UAthenaMOTDSimpleNewsWidget_C::Image_Border' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, Image_ColorFade) == 0x000338, "Member 'UAthenaMOTDSimpleNewsWidget_C::Image_ColorFade' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, SizeBoxButtonSize) == 0x000340, "Member 'UAthenaMOTDSimpleNewsWidget_C::SizeBoxButtonSize' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, DarkDefaultColor) == 0x000348, "Member 'UAthenaMOTDSimpleNewsWidget_C::DarkDefaultColor' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, LightDefaultColor) == 0x00034C, "Member 'UAthenaMOTDSimpleNewsWidget_C::LightDefaultColor' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, PreviewDarkColor) == 0x000350, "Member 'UAthenaMOTDSimpleNewsWidget_C::PreviewDarkColor' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, TestPreviewColors) == 0x000354, "Member 'UAthenaMOTDSimpleNewsWidget_C::TestPreviewColors' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDSimpleNewsWidget_C, PreviewLightColor) == 0x000358, "Member 'UAthenaMOTDSimpleNewsWidget_C::PreviewLightColor' has a wrong offset!");
 
 }
 

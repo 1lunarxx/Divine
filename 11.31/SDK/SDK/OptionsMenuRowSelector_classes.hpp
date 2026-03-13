@@ -77,37 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuRowSelector_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuRowSelector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuRowSelector_C")
 	}
 	static class UOptionsMenuRowSelector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuRowSelector_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuRowSelector_C) == 0x000008, "Wrong alignment on UOptionsMenuRowSelector_C");
-static_assert(sizeof(UOptionsMenuRowSelector_C) == 0x000348, "Wrong size on UOptionsMenuRowSelector_C");
-static_assert(offsetof(UOptionsMenuRowSelector_C, UberGraphFrame) == 0x000288, "Member 'UOptionsMenuRowSelector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, ButtonTouchTooltip) == 0x000290, "Member 'UOptionsMenuRowSelector_C::ButtonTouchTooltip' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, HorizontalBox_Right) == 0x000298, "Member 'UOptionsMenuRowSelector_C::HorizontalBox_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, MenuAnchorSettingDescription) == 0x0002A0, "Member 'UOptionsMenuRowSelector_C::MenuAnchorSettingDescription' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, RowSelectorText) == 0x0002A8, "Member 'UOptionsMenuRowSelector_C::RowSelectorText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, SelectorButtonsBox) == 0x0002B0, "Member 'UOptionsMenuRowSelector_C::SelectorButtonsBox' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, SizeBoxLabel) == 0x0002B8, "Member 'UOptionsMenuRowSelector_C::SizeBoxLabel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Spacer_Bottom) == 0x0002C0, "Member 'UOptionsMenuRowSelector_C::Spacer_Bottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Spacer_Right) == 0x0002C8, "Member 'UOptionsMenuRowSelector_C::Spacer_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Selector_Button_Selected) == 0x0002D0, "Member 'UOptionsMenuRowSelector_C::Selector_Button_Selected' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Hover_Texts) == 0x0002E0, "Member 'UOptionsMenuRowSelector_C::Hover_Texts' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Selector_Buttons) == 0x0002F0, "Member 'UOptionsMenuRowSelector_C::Selector_Buttons' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Common_Button_Group_Type) == 0x0002F8, "Member 'UOptionsMenuRowSelector_C::Common_Button_Group_Type' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Tab_Tooltip_Text) == 0x000300, "Member 'UOptionsMenuRowSelector_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, ButtonStyle) == 0x000308, "Member 'UOptionsMenuRowSelector_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Tooltip_Timer) == 0x000310, "Member 'UOptionsMenuRowSelector_C::Tooltip_Timer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, Hover_Text) == 0x000318, "Member 'UOptionsMenuRowSelector_C::Hover_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, PreviousValue) == 0x000330, "Member 'UOptionsMenuRowSelector_C::PreviousValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, HeightDefault) == 0x000334, "Member 'UOptionsMenuRowSelector_C::HeightDefault' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, HeightMobile) == 0x000338, "Member 'UOptionsMenuRowSelector_C::HeightMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, FontSizeMobile) == 0x00033C, "Member 'UOptionsMenuRowSelector_C::FontSizeMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRowSelector_C, ToolTipSizeMobile) == 0x000340, "Member 'UOptionsMenuRowSelector_C::ToolTipSizeMobile' has a wrong offset!");
 
 }
 

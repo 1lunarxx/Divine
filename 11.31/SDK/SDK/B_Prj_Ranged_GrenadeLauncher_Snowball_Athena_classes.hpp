@@ -80,49 +80,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C")
 	}
 	static class AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C) == 0x000008, "Wrong alignment on AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C");
-static_assert(sizeof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C) == 0x0009D0, "Wrong size on AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Snowball_Loop) == 0x000840, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Snowball_Loop' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, RotatingMovement) == 0x000848, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Mesh) == 0x000850, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, RibbonTrail_PS) == 0x000858, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::RibbonTrail_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, RibbonTrail_PSC) == 0x000860, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::RibbonTrail_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, TrailLifetime) == 0x000868, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::TrailLifetime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, WaterPhysMat) == 0x00086C, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::WaterPhysMat' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Bounce_WaterSplash_PS) == 0x000870, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Bounce_WaterSplash_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, WaterSplash_PSC) == 0x000878, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::WaterSplash_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Bounce_Generic_PSC) == 0x000880, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Bounce_Generic_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Bounce_Generic_PS) == 0x000888, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Bounce_Generic_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_PS) == 0x000890, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_PSC) == 0x000898, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, StopLocation) == 0x0008A0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StopLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, ObjectsToTraceAgainst) == 0x0008B0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::ObjectsToTraceAgainst' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, StopRotX) == 0x0008C0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StopRotX' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Grenade_Explosion_Sound) == 0x0008D0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Grenade_Explosion_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_Flesh_Damage_PS) == 0x0008D8, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_Flesh_Damage_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_Water_PSC) == 0x0008E0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_Water_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, SpawnBounceFXHitActor) == 0x0008E8, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::SpawnBounceFXHitActor' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, OnBounceHitResult) == 0x0008F0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::OnBounceHitResult' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, FuseTimer_Spawn) == 0x000978, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::FuseTimer_Spawn' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, FuseTimerAfterBounce) == 0x00097C, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::FuseTimerAfterBounce' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, WaterLandDelayRipplePSC) == 0x000980, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::WaterLandDelayRipplePSC' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, WaterLandDelayPS) == 0x000988, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::WaterLandDelayPS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, GrenadeInWaterLocation) == 0x000990, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::GrenadeInWaterLocation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Grenade_Explosion_Water_Sound) == 0x000998, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Grenade_Explosion_Water_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, StopSurfaceType) == 0x0009A0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StopSurfaceType' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, StopRotZ) == 0x0009A4, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::StopRotZ' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, HasStopped) == 0x0009B0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::HasStopped' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_InAir_PS) == 0x0009B8, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_InAir_PS' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, FeedbackCue) == 0x0009C0, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::FeedbackCue' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C, Explosion_FX_Water) == 0x0009C8, "Member 'AB_Prj_Ranged_GrenadeLauncher_Snowball_Athena_C::Explosion_FX_Water' has a wrong offset!");
 
 }
 

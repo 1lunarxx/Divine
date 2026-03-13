@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function EventLeaderboardSummary.EventLeaderboardSummary_C.ExecuteUbergraph_EventLeaderboardSummary
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UEventLeaderboardSummary_C::ExecuteUbergraph_EventLeaderboardSummary(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EventLeaderboardSummary_C", "ExecuteUbergraph_EventLeaderboardSummary");
+
+	Params::EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function EventLeaderboardSummary.EventLeaderboardSummary_C.RefreshDataBP
 // (Event, Protected, BlueprintEvent)
 
@@ -106,26 +126,6 @@ void UEventLeaderboardSummary_C::BndEvt__Button_ViewAll_K2Node_ComponentBoundEve
 	Params::EventLeaderboardSummary_C_BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature Parms{};
 
 	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function EventLeaderboardSummary.EventLeaderboardSummary_C.ExecuteUbergraph_EventLeaderboardSummary
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UEventLeaderboardSummary_C::ExecuteUbergraph_EventLeaderboardSummary(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EventLeaderboardSummary_C", "ExecuteUbergraph_EventLeaderboardSummary");
-
-	Params::EventLeaderboardSummary_C_ExecuteUbergraph_EventLeaderboardSummary Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

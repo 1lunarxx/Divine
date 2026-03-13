@@ -40,19 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_AthenaPlayerMarker_WithCustomization_C">();
+		BP_STATIC_CLASS_IMPL("B_AthenaPlayerMarker_WithCustomization_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_AthenaPlayerMarker_WithCustomization_C")
 	}
 	static class AB_AthenaPlayerMarker_WithCustomization_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_AthenaPlayerMarker_WithCustomization_C>();
 	}
 };
-static_assert(alignof(AB_AthenaPlayerMarker_WithCustomization_C) == 0x000010, "Wrong alignment on AB_AthenaPlayerMarker_WithCustomization_C");
-static_assert(sizeof(AB_AthenaPlayerMarker_WithCustomization_C) == 0x000510, "Wrong size on AB_AthenaPlayerMarker_WithCustomization_C");
-static_assert(offsetof(AB_AthenaPlayerMarker_WithCustomization_C, UberGraphFrame_B_AthenaPlayerMarker_WithCustomization_C) == 0x0004C0, "Member 'AB_AthenaPlayerMarker_WithCustomization_C::UberGraphFrame_B_AthenaPlayerMarker_WithCustomization_C' has a wrong offset!");
-static_assert(offsetof(AB_AthenaPlayerMarker_WithCustomization_C, TopperClass) == 0x0004C8, "Member 'AB_AthenaPlayerMarker_WithCustomization_C::TopperClass' has a wrong offset!");
-static_assert(offsetof(AB_AthenaPlayerMarker_WithCustomization_C, TopperInstance) == 0x0004D0, "Member 'AB_AthenaPlayerMarker_WithCustomization_C::TopperInstance' has a wrong offset!");
-static_assert(offsetof(AB_AthenaPlayerMarker_WithCustomization_C, TopperTransform) == 0x0004E0, "Member 'AB_AthenaPlayerMarker_WithCustomization_C::TopperTransform' has a wrong offset!");
 
 }
 

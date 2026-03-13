@@ -46,20 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainTabTutorialWrapper_C">();
+		BP_STATIC_CLASS_IMPL("MainTabTutorialWrapper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainTabTutorialWrapper_C")
 	}
 	static class UMainTabTutorialWrapper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainTabTutorialWrapper_C>();
 	}
 };
-static_assert(alignof(UMainTabTutorialWrapper_C) == 0x000008, "Wrong alignment on UMainTabTutorialWrapper_C");
-static_assert(sizeof(UMainTabTutorialWrapper_C) == 0x0002A0, "Wrong size on UMainTabTutorialWrapper_C");
-static_assert(offsetof(UMainTabTutorialWrapper_C, UberGraphFrame) == 0x000278, "Member 'UMainTabTutorialWrapper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainTabTutorialWrapper_C, TutorialGlow) == 0x000280, "Member 'UMainTabTutorialWrapper_C::TutorialGlow' has a wrong offset!");
-static_assert(offsetof(UMainTabTutorialWrapper_C, TutorialToastWidget) == 0x000288, "Member 'UMainTabTutorialWrapper_C::TutorialToastWidget' has a wrong offset!");
-static_assert(offsetof(UMainTabTutorialWrapper_C, Play_Callout_Sound) == 0x000290, "Member 'UMainTabTutorialWrapper_C::Play_Callout_Sound' has a wrong offset!");
-static_assert(offsetof(UMainTabTutorialWrapper_C, ParentButton) == 0x000298, "Member 'UMainTabTutorialWrapper_C::ParentButton' has a wrong offset!");
 
 }
 

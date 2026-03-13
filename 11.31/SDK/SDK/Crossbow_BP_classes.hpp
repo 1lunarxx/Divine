@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Crossbow_BP_C">();
+		BP_STATIC_CLASS_IMPL("Crossbow_BP_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Crossbow_BP_C")
 	}
 	static class UCrossbow_BP_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCrossbow_BP_C>();
 	}
 };
-static_assert(alignof(UCrossbow_BP_C) == 0x000010, "Wrong alignment on UCrossbow_BP_C");
-static_assert(sizeof(UCrossbow_BP_C) == 0x000370, "Wrong size on UCrossbow_BP_C");
-static_assert(offsetof(UCrossbow_BP_C, UberGraphFrame) == 0x000270, "Member 'UCrossbow_BP_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCrossbow_BP_C, AnimGraphNode_Slot_C2CE56F348B7595774725785CADC3973) == 0x000278, "Member 'UCrossbow_BP_C::AnimGraphNode_Slot_C2CE56F348B7595774725785CADC3973' has a wrong offset!");
-static_assert(offsetof(UCrossbow_BP_C, AnimGraphNode_Root_F1B1D70144C41EE177919293C033515D) == 0x0002C0, "Member 'UCrossbow_BP_C::AnimGraphNode_Root_F1B1D70144C41EE177919293C033515D' has a wrong offset!");
-static_assert(offsetof(UCrossbow_BP_C, AnimGraphNode_SequencePlayer_DB6FD6CD480FD66D7D67B3BB318137F7) == 0x0002F0, "Member 'UCrossbow_BP_C::AnimGraphNode_SequencePlayer_DB6FD6CD480FD66D7D67B3BB318137F7' has a wrong offset!");
 
 }
 

@@ -70,44 +70,6 @@ public:
 	bool                                          Temp_bool_Variable_1;                              // 0x01CC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01CD(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator");
-static_assert(sizeof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator) == 0x0001D0, "Wrong size on OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, EntryPoint) == 0x000000, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_byte_Variable) == 0x000004, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_byte_Variable_1) == 0x000005, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_GetContext_ReturnValue_1) == 0x000010, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_bIsExpanded) == 0x000018, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_bIsSelected) == 0x000019, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_MouseEvent_1) == 0x000020, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_MyGeometry) == 0x000090, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_MouseEvent) == 0x0000C8, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_ComponentBoundEvent_Value) == 0x000138, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_ListItemObject) == 0x000140, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000148, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_DynamicCast_AsFort_Setting_Info) == 0x000150, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_DynamicCast_AsFort_Setting_Info' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_Not_PreBool_ReturnValue) == 0x000159, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_ComponentBoundEvent_Button_2) == 0x000160, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_ComponentBoundEvent_Button_1) == 0x000168, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_ComponentBoundEvent_bIsOpen) == 0x000170, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_ComponentBoundEvent_bIsOpen' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_K2_SetTimer_ReturnValue) == 0x000178, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_K2_SetTimer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_IsMobileGame_ReturnValue) == 0x000180, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_TextIsEmpty_ReturnValue) == 0x000181, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_ComponentBoundEvent_Button) == 0x000188, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_TextIsEmpty_ReturnValue_1) == 0x000190, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_TextIsEmpty_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_IsMobileGame_ReturnValue_1) == 0x000191, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_TooltipTextBlock) == 0x000198, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_TooltipTextBlock' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_GetUINavigationManager_ReturnValue) == 0x0001A0, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_bool_Variable) == 0x0001A8, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Select_Default) == 0x0001A9, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_byte_Variable_2) == 0x0001AA, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_byte_Variable_3) == 0x0001AB, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_bEnabled) == 0x0001AC, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_bEnabled' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Event_DisabledReason) == 0x0001B0, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Event_DisabledReason' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, CallFunc_GetRotatorSettingValue_ReturnValue) == 0x0001C8, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::CallFunc_GetRotatorSettingValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, Temp_bool_Variable_1) == 0x0001CC, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator, K2Node_Select_Default_1) == 0x0001CD, "Member 'OptionsMenuRotator_C_ExecuteUbergraph_OptionsMenuRotator::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.SetControlsEnabled
 // 0x0020 (0x0020 - 0x0000)
@@ -118,10 +80,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DisabledReason;                                    // 0x0008(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRotator_C_SetControlsEnabled) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_SetControlsEnabled");
-static_assert(sizeof(OptionsMenuRotator_C_SetControlsEnabled) == 0x000020, "Wrong size on OptionsMenuRotator_C_SetControlsEnabled");
-static_assert(offsetof(OptionsMenuRotator_C_SetControlsEnabled, bEnabled) == 0x000000, "Member 'OptionsMenuRotator_C_SetControlsEnabled::bEnabled' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetControlsEnabled, DisabledReason) == 0x000008, "Member 'OptionsMenuRotator_C_SetControlsEnabled::DisabledReason' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.UpdateSetting
 // 0x0008 (0x0008 - 0x0000)
@@ -130,9 +88,6 @@ struct OptionsMenuRotator_C_UpdateSetting final
 public:
 	class UCommonTextBlock*                       TooltipTextBlock;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_UpdateSetting) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_UpdateSetting");
-static_assert(sizeof(OptionsMenuRotator_C_UpdateSetting) == 0x000008, "Wrong size on OptionsMenuRotator_C_UpdateSetting");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSetting, TooltipTextBlock) == 0x000000, "Member 'OptionsMenuRotator_C_UpdateSetting::TooltipTextBlock' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -141,9 +96,6 @@ struct OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuRotator_C_BndEvt__ButtonTouchTooltip_K2Node_ComponentBoundEvent_69_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -152,9 +104,6 @@ struct OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_Componen
 public:
 	bool                                          bIsOpen;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong alignment on OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(sizeof(OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong size on OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(offsetof(OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature, bIsOpen) == 0x000000, "Member 'OptionsMenuRotator_C_BndEvt__MenuAnchorSettingDescription_K2Node_ComponentBoundEvent_22_OnMenuOpenChangedEvent__DelegateSignature::bIsOpen' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -163,9 +112,6 @@ struct OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_Co
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -174,9 +120,6 @@ struct OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'OptionsMenuRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -185,9 +128,6 @@ struct OptionsMenuRotator_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_OnListItemObjectSet");
-static_assert(sizeof(OptionsMenuRotator_C_OnListItemObjectSet) == 0x000008, "Wrong size on OptionsMenuRotator_C_OnListItemObjectSet");
-static_assert(offsetof(OptionsMenuRotator_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'OptionsMenuRotator_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -196,9 +136,6 @@ struct OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_On
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature) == 0x000004, "Wrong alignment on OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature");
-static_assert(sizeof(OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature) == 0x000004, "Wrong size on OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature");
-static_assert(offsetof(OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'OptionsMenuRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_20_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -208,10 +145,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRotator_C_OnMouseEnter) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_OnMouseEnter");
-static_assert(sizeof(OptionsMenuRotator_C_OnMouseEnter) == 0x0000A8, "Wrong size on OptionsMenuRotator_C_OnMouseEnter");
-static_assert(offsetof(OptionsMenuRotator_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'OptionsMenuRotator_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'OptionsMenuRotator_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -220,9 +153,6 @@ struct OptionsMenuRotator_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRotator_C_OnMouseLeave) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_OnMouseLeave");
-static_assert(sizeof(OptionsMenuRotator_C_OnMouseLeave) == 0x000070, "Wrong size on OptionsMenuRotator_C_OnMouseLeave");
-static_assert(offsetof(OptionsMenuRotator_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'OptionsMenuRotator_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -231,9 +161,6 @@ struct OptionsMenuRotator_C_BP_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRotator_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on OptionsMenuRotator_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(OptionsMenuRotator_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on OptionsMenuRotator_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(OptionsMenuRotator_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'OptionsMenuRotator_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -242,9 +169,6 @@ struct OptionsMenuRotator_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRotator_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on OptionsMenuRotator_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(OptionsMenuRotator_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on OptionsMenuRotator_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(OptionsMenuRotator_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'OptionsMenuRotator_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.UpdateSize
 // 0x0080 (0x0080 - 0x0000)
@@ -293,43 +217,6 @@ public:
 	struct FVector2D                              K2Node_Select_Default_6;                           // 0x0070(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              K2Node_Select_Default_7;                           // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_UpdateSize) == 0x000004, "Wrong alignment on OptionsMenuRotator_C_UpdateSize");
-static_assert(sizeof(OptionsMenuRotator_C_UpdateSize) == 0x000080, "Wrong size on OptionsMenuRotator_C_UpdateSize");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, ToolTipSizeMobile) == 0x000000, "Member 'OptionsMenuRotator_C_UpdateSize::ToolTipSizeMobile' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, HeightMobile) == 0x000008, "Member 'OptionsMenuRotator_C_UpdateSize::HeightMobile' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, HeightDefault) == 0x00000C, "Member 'OptionsMenuRotator_C_UpdateSize::HeightDefault' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, LargeSize) == 0x000010, "Member 'OptionsMenuRotator_C_UpdateSize::LargeSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, SmallSize) == 0x000018, "Member 'OptionsMenuRotator_C_UpdateSize::SmallSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable) == 0x000020, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_struct_Variable) == 0x000024, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_struct_Variable_1) == 0x00002C, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_1) == 0x000034, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_2) == 0x000035, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_3) == 0x000036, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue) == 0x000037, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_4) == 0x000038, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_byte_Variable) == 0x000039, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_byte_Variable_1) == 0x00003A, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_5) == 0x00003B, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_byte_Variable_2) == 0x00003C, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000040, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000044, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_1) == 0x000048, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_2) == 0x000049, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default) == 0x00004C, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_1) == 0x000050, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_3) == 0x000054, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_4) == 0x000055, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_2) == 0x000056, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_3) == 0x000058, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, CallFunc_IsMobileGame_ReturnValue_5) == 0x000060, "Member 'OptionsMenuRotator_C_UpdateSize::CallFunc_IsMobileGame_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_byte_Variable_3) == 0x000061, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_6) == 0x000062, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_4) == 0x000064, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_4' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_5) == 0x00006C, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_5' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, Temp_bool_Variable_7) == 0x00006D, "Member 'OptionsMenuRotator_C_UpdateSize::Temp_bool_Variable_7' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_6) == 0x000070, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_6' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_UpdateSize, K2Node_Select_Default_7) == 0x000078, "Member 'OptionsMenuRotator_C_UpdateSize::K2Node_Select_Default_7' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.HandlePawnSet
 // 0x0028 (0x0028 - 0x0000)
@@ -345,15 +232,6 @@ public:
 	class AFortRemoteControlledPawnAthena*        K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(OptionsMenuRotator_C_HandlePawnSet) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_HandlePawnSet");
-static_assert(sizeof(OptionsMenuRotator_C_HandlePawnSet) == 0x000028, "Wrong size on OptionsMenuRotator_C_HandlePawnSet");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, bRCPawn) == 0x000000, "Member 'OptionsMenuRotator_C_HandlePawnSet::bRCPawn' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'OptionsMenuRotator_C_HandlePawnSet::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, CallFunc_Not_PreBool_ReturnValue) == 0x000002, "Member 'OptionsMenuRotator_C_HandlePawnSet::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OptionsMenuRotator_C_HandlePawnSet::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, CallFunc_K2_GetPawn_ReturnValue) == 0x000010, "Member 'OptionsMenuRotator_C_HandlePawnSet::CallFunc_K2_GetPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena) == 0x000018, "Member 'OptionsMenuRotator_C_HandlePawnSet::K2Node_DynamicCast_AsFort_Remote_Controlled_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_HandlePawnSet, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'OptionsMenuRotator_C_HandlePawnSet::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.OnGetMenuContent
 // 0x0018 (0x0018 - 0x0000)
@@ -364,11 +242,6 @@ public:
 	class APlayerController*                      CallFunc_GetOwningPlayer_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTooltip_Basic_S_C*                     CallFunc_Create_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_OnGetMenuContent) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_OnGetMenuContent");
-static_assert(sizeof(OptionsMenuRotator_C_OnGetMenuContent) == 0x000018, "Wrong size on OptionsMenuRotator_C_OnGetMenuContent");
-static_assert(offsetof(OptionsMenuRotator_C_OnGetMenuContent, ReturnValue) == 0x000000, "Member 'OptionsMenuRotator_C_OnGetMenuContent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_OnGetMenuContent, CallFunc_GetOwningPlayer_ReturnValue) == 0x000008, "Member 'OptionsMenuRotator_C_OnGetMenuContent::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_OnGetMenuContent, CallFunc_Create_ReturnValue) == 0x000010, "Member 'OptionsMenuRotator_C_OnGetMenuContent::CallFunc_Create_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.Update Display Names
 // 0x0018 (0x0018 - 0x0000)
@@ -378,10 +251,6 @@ public:
 	class UFortSettingsContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<class FText>                           CallFunc_GetSettingDisplayNames_ReturnValue;       // 0x0008(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(OptionsMenuRotator_C_Update_Display_Names) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_Update_Display_Names");
-static_assert(sizeof(OptionsMenuRotator_C_Update_Display_Names) == 0x000018, "Wrong size on OptionsMenuRotator_C_Update_Display_Names");
-static_assert(offsetof(OptionsMenuRotator_C_Update_Display_Names, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'OptionsMenuRotator_C_Update_Display_Names::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_Update_Display_Names, CallFunc_GetSettingDisplayNames_ReturnValue) == 0x000008, "Member 'OptionsMenuRotator_C_Update_Display_Names::CallFunc_GetSettingDisplayNames_ReturnValue' has a wrong offset!");
 
 // Function OptionsMenuRotator.OptionsMenuRotator_C.SetFontSize
 // 0x0068 (0x0068 - 0x0000)
@@ -397,15 +266,6 @@ public:
 	uint8                                         Pad_62[0x2];                                       // 0x0062(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0064(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(OptionsMenuRotator_C_SetFontSize) == 0x000008, "Wrong alignment on OptionsMenuRotator_C_SetFontSize");
-static_assert(sizeof(OptionsMenuRotator_C_SetFontSize) == 0x000068, "Wrong size on OptionsMenuRotator_C_SetFontSize");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, Text) == 0x000000, "Member 'OptionsMenuRotator_C_SetFontSize::Text' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, DefaultSize) == 0x000008, "Member 'OptionsMenuRotator_C_SetFontSize::DefaultSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, MobileSize) == 0x00000C, "Member 'OptionsMenuRotator_C_SetFontSize::MobileSize' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, TempFont) == 0x000010, "Member 'OptionsMenuRotator_C_SetFontSize::TempFont' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, Temp_bool_Variable) == 0x000060, "Member 'OptionsMenuRotator_C_SetFontSize::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, CallFunc_IsMobileGame_ReturnValue) == 0x000061, "Member 'OptionsMenuRotator_C_SetFontSize::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(OptionsMenuRotator_C_SetFontSize, K2Node_Select_Default) == 0x000064, "Member 'OptionsMenuRotator_C_SetFontSize::K2Node_Select_Default' has a wrong offset!");
 
 }
 

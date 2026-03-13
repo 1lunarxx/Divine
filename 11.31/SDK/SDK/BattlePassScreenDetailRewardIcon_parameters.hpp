@@ -21,9 +21,6 @@ struct BattlePassScreenDetailRewardIcon_C_BPSetup final
 public:
 	const class UFortItem*                        InReward;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenDetailRewardIcon_C_BPSetup) == 0x000008, "Wrong alignment on BattlePassScreenDetailRewardIcon_C_BPSetup");
-static_assert(sizeof(BattlePassScreenDetailRewardIcon_C_BPSetup) == 0x000008, "Wrong size on BattlePassScreenDetailRewardIcon_C_BPSetup");
-static_assert(offsetof(BattlePassScreenDetailRewardIcon_C_BPSetup, InReward) == 0x000000, "Member 'BattlePassScreenDetailRewardIcon_C_BPSetup::InReward' has a wrong offset!");
 
 // Function BattlePassScreenDetailRewardIcon.BattlePassScreenDetailRewardIcon_C.ExecuteUbergraph_BattlePassScreenDetailRewardIcon
 // 0x0010 (0x0010 - 0x0000)
@@ -34,10 +31,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class UFortItem*                        K2Node_Event_InReward;                             // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon) == 0x000008, "Wrong alignment on BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon");
-static_assert(sizeof(BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon) == 0x000010, "Wrong size on BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon");
-static_assert(offsetof(BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon, EntryPoint) == 0x000000, "Member 'BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon, K2Node_Event_InReward) == 0x000008, "Member 'BattlePassScreenDetailRewardIcon_C_ExecuteUbergraph_BattlePassScreenDetailRewardIcon::K2Node_Event_InReward' has a wrong offset!");
 
 }
 

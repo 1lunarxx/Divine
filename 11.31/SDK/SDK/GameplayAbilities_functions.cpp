@@ -8502,14 +8502,14 @@ void IGameplayCueInterface::BlueprintCustomHandler(EGameplayCueEvent EventType, 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayCueInterface", "BlueprintCustomHandler");
+		Func = AsUObject()->Class->GetFunction("GameplayCueInterface", "BlueprintCustomHandler");
 
 	Params::GameplayCueInterface_BlueprintCustomHandler Parms{};
 
 	Parms.EventType = EventType;
 	Parms.Parameters = std::move(Parameters);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -8521,12 +8521,12 @@ void IGameplayCueInterface::ForwardGameplayCueToParent()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayCueInterface", "ForwardGameplayCueToParent");
+		Func = AsUObject()->Class->GetFunction("GameplayCueInterface", "ForwardGameplayCueToParent");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }

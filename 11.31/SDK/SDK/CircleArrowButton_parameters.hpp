@@ -40,23 +40,6 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              K2Node_Select_Default_1;                           // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton) == 0x000008, "Wrong alignment on CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton");
-static_assert(sizeof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton) == 0x000058, "Wrong size on CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, EntryPoint) == 0x000000, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_struct_Variable) == 0x000004, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_struct_Variable_1) == 0x00000C, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_bool_Variable) == 0x000014, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_byte_Variable) == 0x000015, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_byte_Variable_1) == 0x000016, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, K2Node_Event_IsDesignTime) == 0x000017, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, K2Node_Select_Default) == 0x000018, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000028, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, CallFunc_PlayAnimation_ReturnValue_1) == 0x000038, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, CallFunc_PlayAnimation_ReturnValue_2) == 0x000040, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, Temp_bool_Variable_1) == 0x000048, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton, K2Node_Select_Default_1) == 0x00004C, "Member 'CircleArrowButton_C_ExecuteUbergraph_CircleArrowButton::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function CircleArrowButton.CircleArrowButton_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -65,9 +48,6 @@ struct CircleArrowButton_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CircleArrowButton_C_PreConstruct) == 0x000001, "Wrong alignment on CircleArrowButton_C_PreConstruct");
-static_assert(sizeof(CircleArrowButton_C_PreConstruct) == 0x000001, "Wrong size on CircleArrowButton_C_PreConstruct");
-static_assert(offsetof(CircleArrowButton_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'CircleArrowButton_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function CircleArrowButton.CircleArrowButton_C.UpdateArrowColor
 // 0x0028 (0x0028 - 0x0000)
@@ -78,11 +58,6 @@ public:
 	struct FLinearColor                           HoverColor_0;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CircleArrowButton_C_UpdateArrowColor) == 0x000008, "Wrong alignment on CircleArrowButton_C_UpdateArrowColor");
-static_assert(sizeof(CircleArrowButton_C_UpdateArrowColor) == 0x000028, "Wrong size on CircleArrowButton_C_UpdateArrowColor");
-static_assert(offsetof(CircleArrowButton_C_UpdateArrowColor, Color) == 0x000000, "Member 'CircleArrowButton_C_UpdateArrowColor::Color' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_UpdateArrowColor, HoverColor_0) == 0x000010, "Member 'CircleArrowButton_C_UpdateArrowColor::HoverColor_0' has a wrong offset!");
-static_assert(offsetof(CircleArrowButton_C_UpdateArrowColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'CircleArrowButton_C_UpdateArrowColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 }
 

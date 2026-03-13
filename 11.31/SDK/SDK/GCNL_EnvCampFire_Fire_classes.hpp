@@ -32,30 +32,26 @@ public:
 	struct FScalableFloat                         Row_MaxHeals;                                      // 0x07C0(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
-	void Darken_Logs__UpdateFunc();
-	void Darken_Logs__FinishedFunc();
 	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void ExecuteUbergraph_GCNL_EnvCampFire_Fire(int32 EntryPoint);
+	void Darken_Logs__UpdateFunc();
+	void Darken_Logs__FinishedFunc();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_EnvCampFire_Fire_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_EnvCampFire_Fire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_EnvCampFire_Fire_C")
 	}
 	static class AGCNL_EnvCampFire_Fire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_EnvCampFire_Fire_C>();
 	}
 };
-static_assert(alignof(AGCNL_EnvCampFire_Fire_C) == 0x000008, "Wrong alignment on AGCNL_EnvCampFire_Fire_C");
-static_assert(sizeof(AGCNL_EnvCampFire_Fire_C) == 0x0007E0, "Wrong size on AGCNL_EnvCampFire_Fire_C");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_EnvCampFire_Fire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, Darken_Logs_Lerp_Control_8B15C9BD454B1B355EEA4D88228A7E96) == 0x000790, "Member 'AGCNL_EnvCampFire_Fire_C::Darken_Logs_Lerp_Control_8B15C9BD454B1B355EEA4D88228A7E96' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, Darken_Logs__Direction_8B15C9BD454B1B355EEA4D88228A7E96) == 0x000794, "Member 'AGCNL_EnvCampFire_Fire_C::Darken_Logs__Direction_8B15C9BD454B1B355EEA4D88228A7E96' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, Darken_Logs) == 0x000798, "Member 'AGCNL_EnvCampFire_Fire_C::Darken_Logs' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, Row_TickInterval) == 0x0007A0, "Member 'AGCNL_EnvCampFire_Fire_C::Row_TickInterval' has a wrong offset!");
-static_assert(offsetof(AGCNL_EnvCampFire_Fire_C, Row_MaxHeals) == 0x0007C0, "Member 'AGCNL_EnvCampFire_Fire_C::Row_MaxHeals' has a wrong offset!");
 
 }
 

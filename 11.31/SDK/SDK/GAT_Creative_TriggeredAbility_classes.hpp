@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_Creative_TriggeredAbility_C">();
+		BP_STATIC_CLASS_IMPL("GAT_Creative_TriggeredAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_Creative_TriggeredAbility_C")
 	}
 	static class UGAT_Creative_TriggeredAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_Creative_TriggeredAbility_C>();
 	}
 };
-static_assert(alignof(UGAT_Creative_TriggeredAbility_C) == 0x000008, "Wrong alignment on UGAT_Creative_TriggeredAbility_C");
-static_assert(sizeof(UGAT_Creative_TriggeredAbility_C) == 0x000A60, "Wrong size on UGAT_Creative_TriggeredAbility_C");
-static_assert(offsetof(UGAT_Creative_TriggeredAbility_C, UberGraphFrame_GAT_Creative_TriggeredAbility_C) == 0x000A48, "Member 'UGAT_Creative_TriggeredAbility_C::UberGraphFrame_GAT_Creative_TriggeredAbility_C' has a wrong offset!");
-static_assert(offsetof(UGAT_Creative_TriggeredAbility_C, OverriddenPropertyNames) == 0x000A50, "Member 'UGAT_Creative_TriggeredAbility_C::OverriddenPropertyNames' has a wrong offset!");
 
 }
 

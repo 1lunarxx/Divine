@@ -46,28 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionInfoPanel_C">();
+		BP_STATIC_CLASS_IMPL("MissionInfoPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionInfoPanel_C")
 	}
 	static class UMissionInfoPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionInfoPanel_C>();
 	}
 };
-static_assert(alignof(UMissionInfoPanel_C) == 0x000008, "Wrong alignment on UMissionInfoPanel_C");
-static_assert(sizeof(UMissionInfoPanel_C) == 0x000330, "Wrong size on UMissionInfoPanel_C");
-static_assert(offsetof(UMissionInfoPanel_C, UberGraphFrame) == 0x0002D8, "Member 'UMissionInfoPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, ChallengeCountdown) == 0x0002E0, "Member 'UMissionInfoPanel_C::ChallengeCountdown' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, Icon_BattlePass) == 0x0002E8, "Member 'UMissionInfoPanel_C::Icon_BattlePass' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, Icon_LimitedTime) == 0x0002F0, "Member 'UMissionInfoPanel_C::Icon_LimitedTime' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, Icon_Prestige) == 0x0002F8, "Member 'UMissionInfoPanel_C::Icon_Prestige' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, Mission_Header) == 0x000300, "Member 'UMissionInfoPanel_C::Mission_Header' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, SB_MissionIcoHeader) == 0x000308, "Member 'UMissionInfoPanel_C::SB_MissionIcoHeader' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, SB_MissionInfo) == 0x000310, "Member 'UMissionInfoPanel_C::SB_MissionInfo' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, SB_RewardImage) == 0x000318, "Member 'UMissionInfoPanel_C::SB_RewardImage' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, SecondaryHeaderBorder) == 0x000320, "Member 'UMissionInfoPanel_C::SecondaryHeaderBorder' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, OverrideMissionStyleUpdate) == 0x000328, "Member 'UMissionInfoPanel_C::OverrideMissionStyleUpdate' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, CollapseMissionIconHeader) == 0x000329, "Member 'UMissionInfoPanel_C::CollapseMissionIconHeader' has a wrong offset!");
-static_assert(offsetof(UMissionInfoPanel_C, CollapseChaseRewardImage) == 0x00032A, "Member 'UMissionInfoPanel_C::CollapseChaseRewardImage' has a wrong offset!");
 
 }
 

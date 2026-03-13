@@ -93,45 +93,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuIntegerSlider_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuIntegerSlider_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuIntegerSlider_C")
 	}
 	static class UOptionsMenuIntegerSlider_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuIntegerSlider_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuIntegerSlider_C) == 0x000008, "Wrong alignment on UOptionsMenuIntegerSlider_C");
-static_assert(sizeof(UOptionsMenuIntegerSlider_C) == 0x000360, "Wrong size on UOptionsMenuIntegerSlider_C");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, UberGraphFrame) == 0x000288, "Member 'UOptionsMenuIntegerSlider_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Button_0) == 0x000290, "Member 'UOptionsMenuIntegerSlider_C::Button_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, ButtonTouchTooltip) == 0x000298, "Member 'UOptionsMenuIntegerSlider_C::ButtonTouchTooltip' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, HorizontalBox_Right) == 0x0002A0, "Member 'UOptionsMenuIntegerSlider_C::HorizontalBox_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MenuAnchorSettingDescription) == 0x0002A8, "Member 'UOptionsMenuIntegerSlider_C::MenuAnchorSettingDescription' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MenuSlider) == 0x0002B0, "Member 'UOptionsMenuIntegerSlider_C::MenuSlider' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SizeBoxContainer) == 0x0002B8, "Member 'UOptionsMenuIntegerSlider_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SizeBoxLabel) == 0x0002C0, "Member 'UOptionsMenuIntegerSlider_C::SizeBoxLabel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SliderBackground) == 0x0002C8, "Member 'UOptionsMenuIntegerSlider_C::SliderBackground' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SliderText) == 0x0002D0, "Member 'UOptionsMenuIntegerSlider_C::SliderText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SliderValue) == 0x0002D8, "Member 'UOptionsMenuIntegerSlider_C::SliderValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Spacer_Right) == 0x0002E0, "Member 'UOptionsMenuIntegerSlider_C::Spacer_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, SpacerBottom) == 0x0002E8, "Member 'UOptionsMenuIntegerSlider_C::SpacerBottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Total_Width) == 0x0002F0, "Member 'UOptionsMenuIntegerSlider_C::Total_Width' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Slider_Texture) == 0x0002F8, "Member 'UOptionsMenuIntegerSlider_C::Slider_Texture' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Tab_Tooltip_Text) == 0x000300, "Member 'UOptionsMenuIntegerSlider_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Hover_Text) == 0x000308, "Member 'UOptionsMenuIntegerSlider_C::Hover_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MinIntegralDigits) == 0x000320, "Member 'UOptionsMenuIntegerSlider_C::MinIntegralDigits' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MaxIntegralDigits) == 0x000324, "Member 'UOptionsMenuIntegerSlider_C::MaxIntegralDigits' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MinFractionalDigits) == 0x000328, "Member 'UOptionsMenuIntegerSlider_C::MinFractionalDigits' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MaxFractionalDigits) == 0x00032C, "Member 'UOptionsMenuIntegerSlider_C::MaxFractionalDigits' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MaxSensitivityValue) == 0x000330, "Member 'UOptionsMenuIntegerSlider_C::MaxSensitivityValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, MinSensitivityValue) == 0x000334, "Member 'UOptionsMenuIntegerSlider_C::MinSensitivityValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, RoundingMode) == 0x000338, "Member 'UOptionsMenuIntegerSlider_C::RoundingMode' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, Tooltip_Timer) == 0x000340, "Member 'UOptionsMenuIntegerSlider_C::Tooltip_Timer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, DisplayRenderScale) == 0x000348, "Member 'UOptionsMenuIntegerSlider_C::DisplayRenderScale' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, PreviousValue) == 0x00034C, "Member 'UOptionsMenuIntegerSlider_C::PreviousValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, HideLabelText) == 0x000350, "Member 'UOptionsMenuIntegerSlider_C::HideLabelText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, ToolTipSizeMobile) == 0x000354, "Member 'UOptionsMenuIntegerSlider_C::ToolTipSizeMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuIntegerSlider_C, HideSpaceRight) == 0x00035C, "Member 'UOptionsMenuIntegerSlider_C::HideSpaceRight' has a wrong offset!");
 
 }
 

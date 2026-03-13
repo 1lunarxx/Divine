@@ -47,22 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatsListWidget_C">();
+		BP_STATIC_CLASS_IMPL("StatsListWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatsListWidget_C")
 	}
 	static class UStatsListWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatsListWidget_C>();
 	}
 };
-static_assert(alignof(UStatsListWidget_C) == 0x000008, "Wrong alignment on UStatsListWidget_C");
-static_assert(sizeof(UStatsListWidget_C) == 0x0002C8, "Wrong size on UStatsListWidget_C");
-static_assert(offsetof(UStatsListWidget_C, UberGraphFrame) == 0x000288, "Member 'UStatsListWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, HBoxCapMessage) == 0x000290, "Member 'UStatsListWidget_C::HBoxCapMessage' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, ScrollBox_0) == 0x000298, "Member 'UStatsListWidget_C::ScrollBox_0' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, StatsList) == 0x0002A0, "Member 'UStatsListWidget_C::StatsList' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, RowMargin) == 0x0002A8, "Member 'UStatsListWidget_C::RowMargin' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, ClampedAttributeCount) == 0x0002B8, "Member 'UStatsListWidget_C::ClampedAttributeCount' has a wrong offset!");
-static_assert(offsetof(UStatsListWidget_C, List_Item_Time_Handle) == 0x0002C0, "Member 'UStatsListWidget_C::List_Item_Time_Handle' has a wrong offset!");
 
 }
 

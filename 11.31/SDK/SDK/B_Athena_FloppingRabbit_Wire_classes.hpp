@@ -82,45 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_FloppingRabbit_Wire_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_FloppingRabbit_Wire_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_FloppingRabbit_Wire_C")
 	}
 	static class AB_Athena_FloppingRabbit_Wire_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_FloppingRabbit_Wire_C>();
 	}
 };
-static_assert(alignof(AB_Athena_FloppingRabbit_Wire_C) == 0x000008, "Wrong alignment on AB_Athena_FloppingRabbit_Wire_C");
-static_assert(sizeof(AB_Athena_FloppingRabbit_Wire_C) == 0x0003A0, "Wrong size on AB_Athena_FloppingRabbit_Wire_C");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, UberGraphFrame) == 0x000288, "Member 'AB_Athena_FloppingRabbit_Wire_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, HookOffset) == 0x000290, "Member 'AB_Athena_FloppingRabbit_Wire_C::HookOffset' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ParticleSystem) == 0x000298, "Member 'AB_Athena_FloppingRabbit_Wire_C::ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Hook) == 0x0002A0, "Member 'AB_Athena_FloppingRabbit_Wire_C::Hook' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ItemSocket) == 0x0002A8, "Member 'AB_Athena_FloppingRabbit_Wire_C::ItemSocket' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Tight_NewTrack_0_2BE8D2B34AFDAA1683CD80A41CD171EB) == 0x0002B0, "Member 'AB_Athena_FloppingRabbit_Wire_C::Tight_NewTrack_0_2BE8D2B34AFDAA1683CD80A41CD171EB' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Tight__Direction_2BE8D2B34AFDAA1683CD80A41CD171EB) == 0x0002B4, "Member 'AB_Athena_FloppingRabbit_Wire_C::Tight__Direction_2BE8D2B34AFDAA1683CD80A41CD171EB' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Tight) == 0x0002B8, "Member 'AB_Athena_FloppingRabbit_Wire_C::Tight' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Reel_In_Tighten_1E0649734E07457DB41A579E4AB855B8) == 0x0002C0, "Member 'AB_Athena_FloppingRabbit_Wire_C::Reel_In_Tighten_1E0649734E07457DB41A579E4AB855B8' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Reel_In_Reel_Lerp_Controller_1E0649734E07457DB41A579E4AB855B8) == 0x0002C4, "Member 'AB_Athena_FloppingRabbit_Wire_C::Reel_In_Reel_Lerp_Controller_1E0649734E07457DB41A579E4AB855B8' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Reel_In__Direction_1E0649734E07457DB41A579E4AB855B8) == 0x0002C8, "Member 'AB_Athena_FloppingRabbit_Wire_C::Reel_In__Direction_1E0649734E07457DB41A579E4AB855B8' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Reel_In) == 0x0002D0, "Member 'AB_Athena_FloppingRabbit_Wire_C::Reel_In' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Projectile_Actor) == 0x0002D8, "Member 'AB_Athena_FloppingRabbit_Wire_C::Projectile_Actor' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, PlayerPawn) == 0x0002E0, "Member 'AB_Athena_FloppingRabbit_Wire_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ReelSound) == 0x0002E8, "Member 'AB_Athena_FloppingRabbit_Wire_C::ReelSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ReattachSound) == 0x0002F0, "Member 'AB_Athena_FloppingRabbit_Wire_C::ReattachSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, RopeActiveTag) == 0x0002F8, "Member 'AB_Athena_FloppingRabbit_Wire_C::RopeActiveTag' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, BlockIncomingPickups) == 0x000300, "Member 'AB_Athena_FloppingRabbit_Wire_C::BlockIncomingPickups' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Change_Equipment_Tag) == 0x000308, "Member 'AB_Athena_FloppingRabbit_Wire_C::Change_Equipment_Tag' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ReelinPlayRate) == 0x000328, "Member 'AB_Athena_FloppingRabbit_Wire_C::ReelinPlayRate' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, T_Stop) == 0x00032C, "Member 'AB_Athena_FloppingRabbit_Wire_C::T_Stop' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ReelMontage) == 0x000338, "Member 'AB_Athena_FloppingRabbit_Wire_C::ReelMontage' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Toss) == 0x000340, "Member 'AB_Athena_FloppingRabbit_Wire_C::Toss' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, HookRelativeStartingLoc) == 0x000344, "Member 'AB_Athena_FloppingRabbit_Wire_C::HookRelativeStartingLoc' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, HookRelativeStartingRot) == 0x000350, "Member 'AB_Athena_FloppingRabbit_Wire_C::HookRelativeStartingRot' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, CatchParticleOn) == 0x00035C, "Member 'AB_Athena_FloppingRabbit_Wire_C::CatchParticleOn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, ReelWeaponMontage) == 0x000360, "Member 'AB_Athena_FloppingRabbit_Wire_C::ReelWeaponMontage' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, T_FlopperSpawn) == 0x000368, "Member 'AB_Athena_FloppingRabbit_Wire_C::T_FlopperSpawn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, Sound_Pickup) == 0x000388, "Member 'AB_Athena_FloppingRabbit_Wire_C::Sound_Pickup' has a wrong offset!");
-static_assert(offsetof(AB_Athena_FloppingRabbit_Wire_C, PickedUpPickups) == 0x000390, "Member 'AB_Athena_FloppingRabbit_Wire_C::PickedUpPickups' has a wrong offset!");
 
 }
 

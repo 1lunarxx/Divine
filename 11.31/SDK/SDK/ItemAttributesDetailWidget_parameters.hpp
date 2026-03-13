@@ -32,17 +32,6 @@ public:
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetTooltipStats_ReturnValue;              // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortDisplayAttribute>          CallFunc_GetComparisonStats_ReturnValue;           // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets) == 0x000008, "Wrong alignment on ItemAttributesDetailWidget_C_UpdateItemsForWidgets");
-static_assert(sizeof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets) == 0x000060, "Wrong size on ItemAttributesDetailWidget_C_UpdateItemsForWidgets");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetContext_ReturnValue_1) == 0x000010, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetOwningPlayer_ReturnValue) == 0x000018, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetContext_ReturnValue_2) == 0x000020, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_SpawnTooltipContextWithSource_ReturnValue) == 0x000028, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_SpawnTooltipContextWithSource_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetUpgradeStats_ReturnValue) == 0x000030, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetUpgradeStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetTooltipStats_ReturnValue) == 0x000040, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetTooltipStats_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemAttributesDetailWidget_C_UpdateItemsForWidgets, CallFunc_GetComparisonStats_ReturnValue) == 0x000050, "Member 'ItemAttributesDetailWidget_C_UpdateItemsForWidgets::CallFunc_GetComparisonStats_ReturnValue' has a wrong offset!");
 
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.ExecuteUbergraph_ItemAttributesDetailWidget
 // 0x0004 (0x0004 - 0x0000)
@@ -51,9 +40,6 @@ struct ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x000004, "Wrong alignment on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
-static_assert(sizeof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget) == 0x000004, "Wrong size on ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget");
-static_assert(offsetof(ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget, EntryPoint) == 0x000000, "Member 'ItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget::EntryPoint' has a wrong offset!");
 
 }
 

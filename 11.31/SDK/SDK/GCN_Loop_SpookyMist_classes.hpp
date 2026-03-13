@@ -71,40 +71,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_SpookyMist_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_SpookyMist_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_SpookyMist_C")
 	}
 	static class AGCN_Loop_SpookyMist_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_SpookyMist_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_SpookyMist_C) == 0x000008, "Wrong alignment on AGCN_Loop_SpookyMist_C");
-static_assert(sizeof(AGCN_Loop_SpookyMist_C) == 0x0008D0, "Wrong size on AGCN_Loop_SpookyMist_C");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_SpookyMist_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, PostProcess) == 0x000790, "Member 'AGCN_Loop_SpookyMist_C::PostProcess' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, FadeInOut_Visbility_642089304BE20EFA276DDA9C98DD3C71) == 0x000798, "Member 'AGCN_Loop_SpookyMist_C::FadeInOut_Visbility_642089304BE20EFA276DDA9C98DD3C71' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, FadeInOut__Direction_642089304BE20EFA276DDA9C98DD3C71) == 0x00079C, "Member 'AGCN_Loop_SpookyMist_C::FadeInOut__Direction_642089304BE20EFA276DDA9C98DD3C71' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, FadeinOut) == 0x0007A0, "Member 'AGCN_Loop_SpookyMist_C::FadeinOut' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, TargetPlayer) == 0x0007A8, "Member 'AGCN_Loop_SpookyMist_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, ExpirationSoundPeriod) == 0x0007B0, "Member 'AGCN_Loop_SpookyMist_C::ExpirationSoundPeriod' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, VelocityInterp) == 0x0007B4, "Member 'AGCN_Loop_SpookyMist_C::VelocityInterp' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, AttachedFX) == 0x0007B8, "Member 'AGCN_Loop_SpookyMist_C::AttachedFX' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, PlayerSkeletalMeshes) == 0x0007C8, "Member 'AGCN_Loop_SpookyMist_C::PlayerSkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, FriendlyPlayer) == 0x0007D8, "Member 'AGCN_Loop_SpookyMist_C::FriendlyPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, ExpireTellDelayTimer) == 0x0007E0, "Member 'AGCN_Loop_SpookyMist_C::ExpireTellDelayTimer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, ExpirationSoundTimer) == 0x0007E8, "Member 'AGCN_Loop_SpookyMist_C::ExpirationSoundTimer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, VisbilityLevel) == 0x0007F0, "Member 'AGCN_Loop_SpookyMist_C::VisbilityLevel' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, WalkVisMultiplier) == 0x0007F4, "Member 'AGCN_Loop_SpookyMist_C::WalkVisMultiplier' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, SprintVisMultiplier) == 0x0007F8, "Member 'AGCN_Loop_SpookyMist_C::SprintVisMultiplier' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, MinFriendlyOpacity) == 0x0007FC, "Member 'AGCN_Loop_SpookyMist_C::MinFriendlyOpacity' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, InteractVisibility) == 0x000800, "Member 'AGCN_Loop_SpookyMist_C::InteractVisibility' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataDuration) == 0x000808, "Member 'AGCN_Loop_SpookyMist_C::DataDuration' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataTellDuration) == 0x000828, "Member 'AGCN_Loop_SpookyMist_C::DataTellDuration' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataWalkVisMult) == 0x000848, "Member 'AGCN_Loop_SpookyMist_C::DataWalkVisMult' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataSprintVisMult) == 0x000868, "Member 'AGCN_Loop_SpookyMist_C::DataSprintVisMult' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataFriendlyVisMult) == 0x000888, "Member 'AGCN_Loop_SpookyMist_C::DataFriendlyVisMult' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, DataShadowPlaneOpacity) == 0x0008A8, "Member 'AGCN_Loop_SpookyMist_C::DataShadowPlaneOpacity' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_SpookyMist_C, bShowExpireTell) == 0x0008C8, "Member 'AGCN_Loop_SpookyMist_C::bShowExpireTell' has a wrong offset!");
 
 }
 

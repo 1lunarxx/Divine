@@ -23,15 +23,17 @@ class Uv1_PlayerCameraModeTargetingScope_C final : public Uv1_PlayerCameraModeBa
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v1_PlayerCameraModeTargetingScope_C">();
+		BP_STATIC_CLASS_IMPL("v1_PlayerCameraModeTargetingScope_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v1_PlayerCameraModeTargetingScope_C")
 	}
 	static class Uv1_PlayerCameraModeTargetingScope_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv1_PlayerCameraModeTargetingScope_C>();
 	}
 };
-static_assert(alignof(Uv1_PlayerCameraModeTargetingScope_C) == 0x000010, "Wrong alignment on Uv1_PlayerCameraModeTargetingScope_C");
-static_assert(sizeof(Uv1_PlayerCameraModeTargetingScope_C) == 0x000D80, "Wrong size on Uv1_PlayerCameraModeTargetingScope_C");
 
 }
 

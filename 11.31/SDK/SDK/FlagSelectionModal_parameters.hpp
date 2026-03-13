@@ -21,9 +21,6 @@ struct FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBo
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FlagSelectionModal_C_BndEvt__Button_ConfirmationCancel_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FlagSelectionModal.FlagSelectionModal_C.BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FlagSelectionModal_C_BndEvt__Button_Change_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FlagSelectionModal.FlagSelectionModal_C.ExecuteUbergraph_FlagSelectionModal
 // 0x0020 (0x0020 - 0x0000)
@@ -48,12 +42,6 @@ public:
 	uint8                                         Pad_11[0x7];                                       // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal) == 0x000008, "Wrong alignment on FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal");
-static_assert(sizeof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal) == 0x000020, "Wrong size on FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal");
-static_assert(offsetof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal, EntryPoint) == 0x000000, "Member 'FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal, K2Node_ComponentBoundEvent_Button_1) == 0x000008, "Member 'FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'FlagSelectionModal_C_ExecuteUbergraph_FlagSelectionModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 }
 

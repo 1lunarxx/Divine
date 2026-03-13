@@ -23,15 +23,17 @@ class AItemPreviewPedestal_C final : public AFortCameraTargetPedestal
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemPreviewPedestal_C">();
+		BP_STATIC_CLASS_IMPL("ItemPreviewPedestal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemPreviewPedestal_C")
 	}
 	static class AItemPreviewPedestal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AItemPreviewPedestal_C>();
 	}
 };
-static_assert(alignof(AItemPreviewPedestal_C) == 0x000008, "Wrong alignment on AItemPreviewPedestal_C");
-static_assert(sizeof(AItemPreviewPedestal_C) == 0x0002D0, "Wrong size on AItemPreviewPedestal_C");
 
 }
 

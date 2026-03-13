@@ -42,23 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChatMemberListEntry_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChatMemberListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChatMemberListEntry_C")
 	}
 	static class UVoiceChatMemberListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChatMemberListEntry_C>();
 	}
 };
-static_assert(alignof(UVoiceChatMemberListEntry_C) == 0x000008, "Wrong alignment on UVoiceChatMemberListEntry_C");
-static_assert(sizeof(UVoiceChatMemberListEntry_C) == 0x000C30, "Wrong size on UVoiceChatMemberListEntry_C");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, UberGraphFrame) == 0x000BE0, "Member 'UVoiceChatMemberListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, Selected) == 0x000BE8, "Member 'UVoiceChatMemberListEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, Hovered) == 0x000BF0, "Member 'UVoiceChatMemberListEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, Arrow) == 0x000BF8, "Member 'UVoiceChatMemberListEntry_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, EmptyButtonToEatOneMouseUpEvent) == 0x000C00, "Member 'UVoiceChatMemberListEntry_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, Encourage) == 0x000C08, "Member 'UVoiceChatMemberListEntry_C::Encourage' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, EncourageEpicFriend_IdleColor) == 0x000C0C, "Member 'UVoiceChatMemberListEntry_C::EncourageEpicFriend_IdleColor' has a wrong offset!");
-static_assert(offsetof(UVoiceChatMemberListEntry_C, EncourageEpicFriend_HoveredColor) == 0x000C1C, "Member 'UVoiceChatMemberListEntry_C::EncourageEpicFriend_HoveredColor' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UPlayerTrapMaxDurabilityModCalculation_C final : public UPlayerTrapBonusMo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerTrapMaxDurabilityModCalculation_C">();
+		BP_STATIC_CLASS_IMPL("PlayerTrapMaxDurabilityModCalculation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerTrapMaxDurabilityModCalculation_C")
 	}
 	static class UPlayerTrapMaxDurabilityModCalculation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerTrapMaxDurabilityModCalculation_C>();
 	}
 };
-static_assert(alignof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x000008, "Wrong alignment on UPlayerTrapMaxDurabilityModCalculation_C");
-static_assert(sizeof(UPlayerTrapMaxDurabilityModCalculation_C) == 0x000068, "Wrong size on UPlayerTrapMaxDurabilityModCalculation_C");
 
 }
 

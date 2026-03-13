@@ -30,13 +30,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Show_Param_Name) == 0x000001, "Wrong alignment on InputPresetConfirmationRotator_C_Show_Param_Name");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Show_Param_Name) == 0x000005, "Wrong size on InputPresetConfirmationRotator_C_Show_Param_Name");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Show_Param_Name, Show) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Show_Param_Name::Show' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Show_Param_Name, Temp_bool_Variable) == 0x000001, "Member 'InputPresetConfirmationRotator_C_Show_Param_Name::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Show_Param_Name, Temp_byte_Variable) == 0x000002, "Member 'InputPresetConfirmationRotator_C_Show_Param_Name::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Show_Param_Name, Temp_byte_Variable_1) == 0x000003, "Member 'InputPresetConfirmationRotator_C_Show_Param_Name::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Show_Param_Name, K2Node_Select_Default) == 0x000004, "Member 'InputPresetConfirmationRotator_C_Show_Param_Name::K2Node_Select_Default' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.Update Size
 // 0x0038 (0x0038 - 0x0000)
@@ -59,21 +52,6 @@ public:
 	struct FVector2D                              K2Node_Select_Default_1;                           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              K2Node_Select_Default_2;                           // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Update_Size) == 0x000004, "Wrong alignment on InputPresetConfirmationRotator_C_Update_Size");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Update_Size) == 0x000038, "Wrong size on InputPresetConfirmationRotator_C_Update_Size");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, LargeSize) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Update_Size::LargeSize' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, SmallSize) == 0x000008, "Member 'InputPresetConfirmationRotator_C_Update_Size::SmallSize' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, Temp_int_Variable) == 0x000010, "Member 'InputPresetConfirmationRotator_C_Update_Size::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, Temp_bool_Variable) == 0x000014, "Member 'InputPresetConfirmationRotator_C_Update_Size::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, CallFunc_IsMobileGame_ReturnValue) == 0x000015, "Member 'InputPresetConfirmationRotator_C_Update_Size::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, CallFunc_IsMobileGame_ReturnValue_1) == 0x000016, "Member 'InputPresetConfirmationRotator_C_Update_Size::CallFunc_IsMobileGame_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, CallFunc_IsMobileGame_ReturnValue_2) == 0x000017, "Member 'InputPresetConfirmationRotator_C_Update_Size::CallFunc_IsMobileGame_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, Temp_int_Variable_1) == 0x000018, "Member 'InputPresetConfirmationRotator_C_Update_Size::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, Temp_bool_Variable_1) == 0x00001C, "Member 'InputPresetConfirmationRotator_C_Update_Size::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, K2Node_Select_Default) == 0x000020, "Member 'InputPresetConfirmationRotator_C_Update_Size::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, Temp_bool_Variable_2) == 0x000024, "Member 'InputPresetConfirmationRotator_C_Update_Size::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, K2Node_Select_Default_1) == 0x000028, "Member 'InputPresetConfirmationRotator_C_Update_Size::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Size, K2Node_Select_Default_2) == 0x000030, "Member 'InputPresetConfirmationRotator_C_Update_Size::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.OnFocusReceived
 // 0x01B0 (0x01B0 - 0x0000)
@@ -85,12 +63,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x0040(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x00F8(0x00B8)()
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_OnFocusReceived) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_OnFocusReceived");
-static_assert(sizeof(InputPresetConfirmationRotator_C_OnFocusReceived) == 0x0001B0, "Wrong size on InputPresetConfirmationRotator_C_OnFocusReceived");
-static_assert(offsetof(InputPresetConfirmationRotator_C_OnFocusReceived, MyGeometry) == 0x000000, "Member 'InputPresetConfirmationRotator_C_OnFocusReceived::MyGeometry' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_OnFocusReceived, InFocusEvent) == 0x000038, "Member 'InputPresetConfirmationRotator_C_OnFocusReceived::InFocusEvent' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_OnFocusReceived, ReturnValue) == 0x000040, "Member 'InputPresetConfirmationRotator_C_OnFocusReceived::ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_OnFocusReceived, CallFunc_Unhandled_ReturnValue) == 0x0000F8, "Member 'InputPresetConfirmationRotator_C_OnFocusReceived::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.Update Options
 // 0x0010 (0x0010 - 0x0000)
@@ -99,9 +71,6 @@ struct InputPresetConfirmationRotator_C_Update_Options final
 public:
 	TArray<class FText>                           NewParam;                                          // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Update_Options) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_Update_Options");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Update_Options) == 0x000010, "Wrong size on InputPresetConfirmationRotator_C_Update_Options");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Options, NewParam) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Update_Options::NewParam' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.Center On Widget
 // 0x0008 (0x0008 - 0x0000)
@@ -110,9 +79,6 @@ struct InputPresetConfirmationRotator_C_Center_On_Widget final
 public:
 	class UFortUINavigationManager*               CallFunc_GetUINavigationManager_ReturnValue;       // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Center_On_Widget) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_Center_On_Widget");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Center_On_Widget) == 0x000008, "Wrong size on InputPresetConfirmationRotator_C_Center_On_Widget");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Center_On_Widget, CallFunc_GetUINavigationManager_ReturnValue) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Center_On_Widget::CallFunc_GetUINavigationManager_ReturnValue' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.Initialize
 // 0x0060 (0x0060 - 0x0000)
@@ -127,14 +93,6 @@ public:
 	TArray<class FString>                         CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetNames; // 0x0040(0x0010)(ZeroConstructor, ReferenceParm)
 	TArray<class FText>                           CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames; // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Initialize) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_Initialize");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Initialize) == 0x000060, "Wrong size on InputPresetConfirmationRotator_C_Initialize");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription) == 0x000008, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription) == 0x000020, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetSubGame_ReturnValue) == 0x000038, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetNames) == 0x000040, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetNames' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Initialize, CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames) == 0x000050, "Member 'InputPresetConfirmationRotator_C_Initialize::CallFunc_GetKBMPlayerInputPresetNamesForSubGame_InputPresetFriendlyNames' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.Update Row Selector
 // 0x0004 (0x0004 - 0x0000)
@@ -143,9 +101,6 @@ struct InputPresetConfirmationRotator_C_Update_Row_Selector final
 public:
 	int32                                         Currently_Selected;                                // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_Update_Row_Selector) == 0x000004, "Wrong alignment on InputPresetConfirmationRotator_C_Update_Row_Selector");
-static_assert(sizeof(InputPresetConfirmationRotator_C_Update_Row_Selector) == 0x000004, "Wrong size on InputPresetConfirmationRotator_C_Update_Row_Selector");
-static_assert(offsetof(InputPresetConfirmationRotator_C_Update_Row_Selector, Currently_Selected) == 0x000000, "Member 'InputPresetConfirmationRotator_C_Update_Row_Selector::Currently_Selected' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)
@@ -154,9 +109,6 @@ struct InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoun
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong alignment on InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(sizeof(InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature) == 0x000004, "Wrong size on InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature");
-static_assert(offsetof(InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature, Value) == 0x000000, "Member 'InputPresetConfirmationRotator_C_BndEvt__TextRotator_K2Node_ComponentBoundEvent_5_OnRotated__DelegateSignature::Value' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -165,9 +117,6 @@ struct InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBound
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'InputPresetConfirmationRotator_C_BndEvt__ButtonLeft_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -176,9 +125,6 @@ struct InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoun
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'InputPresetConfirmationRotator_C_BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -187,9 +133,6 @@ struct InputPresetConfirmationRotator_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_PreConstruct) == 0x000001, "Wrong alignment on InputPresetConfirmationRotator_C_PreConstruct");
-static_assert(sizeof(InputPresetConfirmationRotator_C_PreConstruct) == 0x000001, "Wrong size on InputPresetConfirmationRotator_C_PreConstruct");
-static_assert(offsetof(InputPresetConfirmationRotator_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'InputPresetConfirmationRotator_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function InputPresetConfirmationRotator.InputPresetConfirmationRotator_C.ExecuteUbergraph_InputPresetConfirmationRotator
 // 0x0060 (0x0060 - 0x0000)
@@ -208,17 +151,6 @@ public:
 	class FText                                   CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription; // 0x0030(0x0018)()
 	class FText                                   CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription; // 0x0048(0x0018)()
 };
-static_assert(alignof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator) == 0x000008, "Wrong alignment on InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator");
-static_assert(sizeof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator) == 0x000060, "Wrong size on InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, EntryPoint) == 0x000000, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, K2Node_ComponentBoundEvent_Value) == 0x000004, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::K2Node_ComponentBoundEvent_Value' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, K2Node_ComponentBoundEvent_Button_1) == 0x000008, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, K2Node_ComponentBoundEvent_Button) == 0x000010, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, K2Node_Event_IsDesignTime) == 0x000018, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, CallFunc_MakeVector2D_ReturnValue) == 0x00001C, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, CallFunc_GetContext_ReturnValue) == 0x000028, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription) == 0x000030, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetDescription' has a wrong offset!");
-static_assert(offsetof(InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator, CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription) == 0x000048, "Member 'InputPresetConfirmationRotator_C_ExecuteUbergraph_InputPresetConfirmationRotator::CallFunc_GetKBMPlayerInputPresetDescriptionForSubGame_InputPresetSubDescription' has a wrong offset!");
 
 }
 

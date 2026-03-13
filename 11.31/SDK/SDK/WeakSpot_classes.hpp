@@ -61,37 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WeakSpot_C">();
+		BP_STATIC_CLASS_IMPL("WeakSpot_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WeakSpot_C")
 	}
 	static class AWeakSpot_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWeakSpot_C>();
 	}
 };
-static_assert(alignof(AWeakSpot_C) == 0x000008, "Wrong alignment on AWeakSpot_C");
-static_assert(sizeof(AWeakSpot_C) == 0x0002F8, "Wrong size on AWeakSpot_C");
-static_assert(offsetof(AWeakSpot_C, UberGraphFrame) == 0x000260, "Member 'AWeakSpot_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsComponent) == 0x000268, "Member 'AWeakSpot_C::ConnectTheDotsComponent' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ParticleComponent) == 0x000270, "Member 'AWeakSpot_C::ParticleComponent' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, CollisionComponent) == 0x000278, "Member 'AWeakSpot_C::CollisionComponent' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL_ScaleDown_544AE05F40294D09C3C361AB7BCF6C4E) == 0x000280, "Member 'AWeakSpot_C::ScaleDownParticleTL_ScaleDown_544AE05F40294D09C3C361AB7BCF6C4E' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL__Direction_544AE05F40294D09C3C361AB7BCF6C4E) == 0x000284, "Member 'AWeakSpot_C::ScaleDownParticleTL__Direction_544AE05F40294D09C3C361AB7BCF6C4E' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ScaleDownParticleTL) == 0x000288, "Member 'AWeakSpot_C::ScaleDownParticleTL' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, SpawnSound) == 0x000290, "Member 'AWeakSpot_C::SpawnSound' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, Particle_Location) == 0x000298, "Member 'AWeakSpot_C::Particle_Location' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, Crack_sounds) == 0x0002A8, "Member 'AWeakSpot_C::Crack_sounds' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsWidth) == 0x0002B8, "Member 'AWeakSpot_C::ConnectTheDotsWidth' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsDuration) == 0x0002BC, "Member 'AWeakSpot_C::ConnectTheDotsDuration' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsTimeoutFromPreviousHit) == 0x0002C0, "Member 'AWeakSpot_C::ConnectTheDotsTimeoutFromPreviousHit' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsDurationScale) == 0x0002C4, "Member 'AWeakSpot_C::ConnectTheDotsDurationScale' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMaxDuration) == 0x0002C8, "Member 'AWeakSpot_C::ConnectTheDotsMaxDuration' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsTileScale) == 0x0002CC, "Member 'AWeakSpot_C::ConnectTheDotsTileScale' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMinLength) == 0x0002D0, "Member 'AWeakSpot_C::ConnectTheDotsMinLength' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectTheDotsMaxLength) == 0x0002D4, "Member 'AWeakSpot_C::ConnectTheDotsMaxLength' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, DamageTemplate) == 0x0002D8, "Member 'AWeakSpot_C::DamageTemplate' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, IdleTemplate) == 0x0002E0, "Member 'AWeakSpot_C::IdleTemplate' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, ConnectMID) == 0x0002E8, "Member 'AWeakSpot_C::ConnectMID' has a wrong offset!");
-static_assert(offsetof(AWeakSpot_C, HideMeshTimer) == 0x0002F0, "Member 'AWeakSpot_C::HideMeshTimer' has a wrong offset!");
 
 }
 

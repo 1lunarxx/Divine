@@ -21,9 +21,6 @@ struct SettingsListEntry_ControllerButton_C_OnSettingAssigned final
 public:
 	class FText                                   ActionText;                                        // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_ControllerButton_C_OnSettingAssigned) == 0x000008, "Wrong alignment on SettingsListEntry_ControllerButton_C_OnSettingAssigned");
-static_assert(sizeof(SettingsListEntry_ControllerButton_C_OnSettingAssigned) == 0x000018, "Wrong size on SettingsListEntry_ControllerButton_C_OnSettingAssigned");
-static_assert(offsetof(SettingsListEntry_ControllerButton_C_OnSettingAssigned, ActionText) == 0x000000, "Member 'SettingsListEntry_ControllerButton_C_OnSettingAssigned::ActionText' has a wrong offset!");
 
 // Function SettingsListEntry_ControllerButton.SettingsListEntry_ControllerButton_C.ExecuteUbergraph_SettingsListEntry_ControllerButton
 // 0x0020 (0x0020 - 0x0000)
@@ -34,10 +31,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Event_ActionText;                           // 0x0008(0x0018)(ConstParm)
 };
-static_assert(alignof(SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton) == 0x000008, "Wrong alignment on SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton");
-static_assert(sizeof(SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton) == 0x000020, "Wrong size on SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton");
-static_assert(offsetof(SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton, EntryPoint) == 0x000000, "Member 'SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton, K2Node_Event_ActionText) == 0x000008, "Member 'SettingsListEntry_ControllerButton_C_ExecuteUbergraph_SettingsListEntry_ControllerButton::K2Node_Event_ActionText' has a wrong offset!");
 
 }
 

@@ -102,50 +102,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Deimos_Fiend_C">();
+		BP_STATIC_CLASS_IMPL("Deimos_Fiend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Deimos_Fiend_C")
 	}
 	static class ADeimos_Fiend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADeimos_Fiend_C>();
 	}
 };
-static_assert(alignof(ADeimos_Fiend_C) == 0x000010, "Wrong alignment on ADeimos_Fiend_C");
-static_assert(sizeof(ADeimos_Fiend_C) == 0x0026F0, "Wrong size on ADeimos_Fiend_C");
-static_assert(offsetof(ADeimos_Fiend_C, UberGraphFrame_Deimos_Fiend_C) == 0x002490, "Member 'ADeimos_Fiend_C::UberGraphFrame_Deimos_Fiend_C' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, HitCount) == 0x002498, "Member 'ADeimos_Fiend_C::HitCount' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, LastTakeHitTime) == 0x00249C, "Member 'ADeimos_Fiend_C::LastTakeHitTime' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionAdditiveSingleOneShot) == 0x0024A0, "Member 'ADeimos_Fiend_C::TC_HitReactionAdditiveSingleOneShot' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionAdditiveLoop) == 0x0024C0, "Member 'ADeimos_Fiend_C::TC_HitReactionAdditiveLoop' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionFullBody) == 0x0024E0, "Member 'ADeimos_Fiend_C::TC_HitReactionFullBody' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionBlockAll) == 0x002500, "Member 'ADeimos_Fiend_C::TC_HitReactionBlockAll' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionBlockMelee) == 0x002520, "Member 'ADeimos_Fiend_C::TC_HitReactionBlockMelee' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, TC_HitReactionBlockRanged) == 0x002540, "Member 'ADeimos_Fiend_C::TC_HitReactionBlockRanged' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, HitReactForMelee) == 0x002560, "Member 'ADeimos_Fiend_C::HitReactForMelee' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, ImpactParticles_Default) == 0x002568, "Member 'ADeimos_Fiend_C::ImpactParticles_Default' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, ImpactParticles_HumanFlesh) == 0x002570, "Member 'ADeimos_Fiend_C::ImpactParticles_HumanFlesh' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, ImpactParticles_Wood) == 0x002578, "Member 'ADeimos_Fiend_C::ImpactParticles_Wood' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, ImpactParticles_Stone) == 0x002580, "Member 'ADeimos_Fiend_C::ImpactParticles_Stone' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, ImpactParticles_Metal) == 0x002588, "Member 'ADeimos_Fiend_C::ImpactParticles_Metal' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, MeleeImpact_UseSocketTransforms) == 0x002590, "Member 'ADeimos_Fiend_C::MeleeImpact_UseSocketTransforms' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, Impact_MeleeSocket) == 0x002594, "Member 'ADeimos_Fiend_C::Impact_MeleeSocket' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, IsHeadshot_HideHead) == 0x00259C, "Member 'ADeimos_Fiend_C::IsHeadshot_HideHead' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, PreviousLargestDeathRadius) == 0x0025A0, "Member 'ADeimos_Fiend_C::PreviousLargestDeathRadius' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, Death_Normal_Sound_Deimos_Fiend_C) == 0x0025A8, "Member 'ADeimos_Fiend_C::Death_Normal_Sound_Deimos_Fiend_C' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, Death_RedLaser_Sound) == 0x0025B0, "Member 'ADeimos_Fiend_C::Death_RedLaser_Sound' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, Spawn_Dust_Particles) == 0x0025B8, "Member 'ADeimos_Fiend_C::Spawn_Dust_Particles' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, SafetyTimerDuration) == 0x0025C0, "Member 'ADeimos_Fiend_C::SafetyTimerDuration' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, DeathFX_HQ) == 0x0025C4, "Member 'ADeimos_Fiend_C::DeathFX_HQ' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, Diffuse_Texture) == 0x0025C8, "Member 'ADeimos_Fiend_C::Diffuse_Texture' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, DeimosKnockBackValue) == 0x0025D0, "Member 'ADeimos_Fiend_C::DeimosKnockBackValue' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, MonsterType) == 0x0025D4, "Member 'ADeimos_Fiend_C::MonsterType' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, CueParamsSpawnFiend) == 0x0025D8, "Member 'ADeimos_Fiend_C::CueParamsSpawnFiend' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, MaskedDeathMaterial) == 0x002690, "Member 'ADeimos_Fiend_C::MaskedDeathMaterial' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, MID_MaskedDeathMaterial) == 0x002698, "Member 'ADeimos_Fiend_C::MID_MaskedDeathMaterial' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, MID_MonsterMaterial) == 0x0026A0, "Member 'ADeimos_Fiend_C::MID_MonsterMaterial' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, EnemyColor) == 0x0026A8, "Member 'ADeimos_Fiend_C::EnemyColor' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, GE_DeimosShieldOnFiendKill) == 0x0026B8, "Member 'ADeimos_Fiend_C::GE_DeimosShieldOnFiendKill' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, FreezeDuration) == 0x0026C0, "Member 'ADeimos_Fiend_C::FreezeDuration' has a wrong offset!");
-static_assert(offsetof(ADeimos_Fiend_C, SpawnFXGC) == 0x0026E0, "Member 'ADeimos_Fiend_C::SpawnFXGC' has a wrong offset!");
 
 }
 

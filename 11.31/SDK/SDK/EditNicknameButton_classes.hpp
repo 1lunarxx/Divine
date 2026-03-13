@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EditNicknameButton_C">();
+		BP_STATIC_CLASS_IMPL("EditNicknameButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EditNicknameButton_C")
 	}
 	static class UEditNicknameButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEditNicknameButton_C>();
 	}
 };
-static_assert(alignof(UEditNicknameButton_C) == 0x000008, "Wrong alignment on UEditNicknameButton_C");
-static_assert(sizeof(UEditNicknameButton_C) == 0x000BC0, "Wrong size on UEditNicknameButton_C");
-static_assert(offsetof(UEditNicknameButton_C, UberGraphFrame) == 0x000BA8, "Member 'UEditNicknameButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEditNicknameButton_C, OnHovered) == 0x000BB0, "Member 'UEditNicknameButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(UEditNicknameButton_C, ClickCapture) == 0x000BB8, "Member 'UEditNicknameButton_C::ClickCapture' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UCameraShake_ZipLineAttach_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraShake_ZipLineAttach_C">();
+		BP_STATIC_CLASS_IMPL("CameraShake_ZipLineAttach_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraShake_ZipLineAttach_C")
 	}
 	static class UCameraShake_ZipLineAttach_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCameraShake_ZipLineAttach_C>();
 	}
 };
-static_assert(alignof(UCameraShake_ZipLineAttach_C) == 0x000010, "Wrong alignment on UCameraShake_ZipLineAttach_C");
-static_assert(sizeof(UCameraShake_ZipLineAttach_C) == 0x000160, "Wrong size on UCameraShake_ZipLineAttach_C");
 
 }
 

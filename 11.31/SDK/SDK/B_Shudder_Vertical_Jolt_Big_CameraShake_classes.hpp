@@ -23,15 +23,17 @@ class UB_Shudder_Vertical_Jolt_Big_CameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Shudder_Vertical_Jolt_Big_CameraShake_C">();
+		BP_STATIC_CLASS_IMPL("B_Shudder_Vertical_Jolt_Big_CameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Shudder_Vertical_Jolt_Big_CameraShake_C")
 	}
 	static class UB_Shudder_Vertical_Jolt_Big_CameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UB_Shudder_Vertical_Jolt_Big_CameraShake_C>();
 	}
 };
-static_assert(alignof(UB_Shudder_Vertical_Jolt_Big_CameraShake_C) == 0x000010, "Wrong alignment on UB_Shudder_Vertical_Jolt_Big_CameraShake_C");
-static_assert(sizeof(UB_Shudder_Vertical_Jolt_Big_CameraShake_C) == 0x000160, "Wrong size on UB_Shudder_Vertical_Jolt_Big_CameraShake_C");
 
 }
 

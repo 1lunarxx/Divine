@@ -25,9 +25,6 @@ struct GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSaf
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage) == 0x000004, "Wrong alignment on GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
-static_assert(sizeof(GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage) == 0x000004, "Wrong size on GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage, EntryPoint) == 0x000000, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ExecuteUbergraph_GCN_Athena_OutsideSafeZoneDamage::EntryPoint' has a wrong offset!");
 
 // Function GCN_Athena_OutsideSafeZoneDamage.GCN_Athena_OutsideSafeZoneDamage_C.ZapFX
 // 0x0018 (0x0018 - 0x0000)
@@ -41,13 +38,6 @@ public:
 	bool                                          CallFunc_IsActive_ReturnValue;                     // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX) == 0x000008, "Wrong alignment on GCN_Athena_OutsideSafeZoneDamage_C_ZapFX");
-static_assert(sizeof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX) == 0x000018, "Wrong size on GCN_Athena_OutsideSafeZoneDamage_C_ZapFX");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX, ZapCount) == 0x000000, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ZapFX::ZapCount' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX, PlayerPawnAthena) == 0x000008, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ZapFX::PlayerPawnAthena' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000010, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ZapFX::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX, CallFunc_IsActive_ReturnValue) == 0x000014, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ZapFX::CallFunc_IsActive_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_ZapFX, CallFunc_IsValid_ReturnValue) == 0x000015, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_ZapFX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function GCN_Athena_OutsideSafeZoneDamage.GCN_Athena_OutsideSafeZoneDamage_C.OnBurst
 // 0x01D0 (0x01D0 - 0x0000)
@@ -88,38 +78,6 @@ public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01CB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst) == 0x000008, "Wrong alignment on GCN_Athena_OutsideSafeZoneDamage_C_OnBurst");
-static_assert(sizeof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst) == 0x0001D0, "Wrong size on GCN_Athena_OutsideSafeZoneDamage_C_OnBurst");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, MyTarget) == 0x000000, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, Parameters) == 0x000008, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::BurstDecalInstance' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_IsDedicatedServer_ReturnValue) == 0x0000F0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_NormalizedMagnitude) == 0x0000F4, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_NormalizedMagnitude' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_RawMagnitude) == 0x0000F8, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_RawMagnitude' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_EffectContext) == 0x000100, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_EffectContext' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_MatchedTagName) == 0x000118, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_MatchedTagName' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_OriginalTag) == 0x000120, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_OriginalTag' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_AggregatedSourceTags) == 0x000128, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_AggregatedSourceTags' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_AggregatedTargetTags) == 0x000148, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_AggregatedTargetTags' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_Location) == 0x000168, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_Location' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_Normal) == 0x000174, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_Normal' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_Instigator) == 0x000180, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_Instigator' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_EffectCauser) == 0x000188, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_EffectCauser' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_SourceObject) == 0x000190, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_SourceObject' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_PhysicalMaterial) == 0x000198, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_PhysicalMaterial' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_GameplayEffectLevel) == 0x0001A0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_GameplayEffectLevel' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_AbilityLevel) == 0x0001A4, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_AbilityLevel' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BreakGameplayCueParameters_TargetAttachComponent) == 0x0001A8, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BreakGameplayCueParameters_TargetAttachComponent' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, K2Node_DynamicCast_AsPlayer_Pawn_Athena) == 0x0001B0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::K2Node_DynamicCast_AsPlayer_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, K2Node_DynamicCast_bSuccess) == 0x0001B8, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_GetLocalViewingPlayerController_ReturnValue) == 0x0001C0, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_GetLocalViewingPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_IsValid_ReturnValue) == 0x0001C8, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_InWarmup_InWarmUp) == 0x0001C9, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_InWarmup_InWarmUp' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_Not_PreBool_ReturnValue) == 0x0001CA, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCN_Athena_OutsideSafeZoneDamage_C_OnBurst, CallFunc_BooleanAND_ReturnValue) == 0x0001CB, "Member 'GCN_Athena_OutsideSafeZoneDamage_C_OnBurst::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

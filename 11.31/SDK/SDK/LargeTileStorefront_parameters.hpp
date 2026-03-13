@@ -21,9 +21,6 @@ struct LargeTileStorefront_C_OnSectionEstablished final
 public:
 	bool                                          bEmptySection;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LargeTileStorefront_C_OnSectionEstablished) == 0x000001, "Wrong alignment on LargeTileStorefront_C_OnSectionEstablished");
-static_assert(sizeof(LargeTileStorefront_C_OnSectionEstablished) == 0x000001, "Wrong size on LargeTileStorefront_C_OnSectionEstablished");
-static_assert(offsetof(LargeTileStorefront_C_OnSectionEstablished, bEmptySection) == 0x000000, "Member 'LargeTileStorefront_C_OnSectionEstablished::bEmptySection' has a wrong offset!");
 
 // Function LargeTileStorefront.LargeTileStorefront_C.ExecuteUbergraph_LargeTileStorefront
 // 0x0010 (0x0010 - 0x0000)
@@ -36,12 +33,6 @@ public:
 	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront) == 0x000008, "Wrong alignment on LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront");
-static_assert(sizeof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront) == 0x000010, "Wrong size on LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront");
-static_assert(offsetof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront, EntryPoint) == 0x000000, "Member 'LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront, K2Node_Event_bEmptySection) == 0x000004, "Member 'LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront::K2Node_Event_bEmptySection' has a wrong offset!");
-static_assert(offsetof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront, Temp_bool_Variable) == 0x000005, "Member 'LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront, K2Node_Select_Default) == 0x000008, "Member 'LargeTileStorefront_C_ExecuteUbergraph_LargeTileStorefront::K2Node_Select_Default' has a wrong offset!");
 
 }
 

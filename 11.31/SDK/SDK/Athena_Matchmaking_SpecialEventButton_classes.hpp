@@ -46,24 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_Matchmaking_SpecialEventButton_C">();
+		BP_STATIC_CLASS_IMPL("Athena_Matchmaking_SpecialEventButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_Matchmaking_SpecialEventButton_C")
 	}
 	static class UAthena_Matchmaking_SpecialEventButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_Matchmaking_SpecialEventButton_C>();
 	}
 };
-static_assert(alignof(UAthena_Matchmaking_SpecialEventButton_C) == 0x000008, "Wrong alignment on UAthena_Matchmaking_SpecialEventButton_C");
-static_assert(sizeof(UAthena_Matchmaking_SpecialEventButton_C) == 0x000278, "Wrong size on UAthena_Matchmaking_SpecialEventButton_C");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, UberGraphFrame) == 0x000238, "Member 'UAthena_Matchmaking_SpecialEventButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, NewBang_OnOpen) == 0x000240, "Member 'UAthena_Matchmaking_SpecialEventButton_C::NewBang_OnOpen' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, CLI_LTM_SplashArt) == 0x000248, "Member 'UAthena_Matchmaking_SpecialEventButton_C::CLI_LTM_SplashArt' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, CTB_LTM_PanelHeaderText) == 0x000250, "Member 'UAthena_Matchmaking_SpecialEventButton_C::CTB_LTM_PanelHeaderText' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, SB_Bang) == 0x000258, "Member 'UAthena_Matchmaking_SpecialEventButton_C::SB_Bang' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, Title1) == 0x000260, "Member 'UAthena_Matchmaking_SpecialEventButton_C::Title1' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, bHasNewBang) == 0x000268, "Member 'UAthena_Matchmaking_SpecialEventButton_C::bHasNewBang' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, bModeHasExtraInfo) == 0x000269, "Member 'UAthena_Matchmaking_SpecialEventButton_C::bModeHasExtraInfo' has a wrong offset!");
-static_assert(offsetof(UAthena_Matchmaking_SpecialEventButton_C, LTM_SplashArt) == 0x000270, "Member 'UAthena_Matchmaking_SpecialEventButton_C::LTM_SplashArt' has a wrong offset!");
 
 }
 

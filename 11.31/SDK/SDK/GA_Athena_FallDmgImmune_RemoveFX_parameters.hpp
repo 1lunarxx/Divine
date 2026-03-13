@@ -22,14 +22,14 @@ struct GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmu
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate;              // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate;             // 0x0004(0x0010)(ZeroConstructor, NoDestructor)
 	EMovementMode                                 K2Node_CustomEvent_NewMovementMode_1;              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMovementMode                                 Temp_byte_Variable;                                // 0x0015(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_16[0x2];                                       // 0x0016(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilityTask_WaitMovementModeChange*    CallFunc_CreateWaitMovementModeChange_ReturnValue; // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x3];                                       // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(EMovementMode NewMovementMode)> K2Node_CreateDelegate_OutputDelegate_1;           // 0x0024(0x0010)(ZeroConstructor, NoDestructor)
 	EMovementMode                                 K2Node_CustomEvent_NewMovementMode;                // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMovementMode                                 Temp_byte_Variable_1;                              // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_36[0x2];                                       // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
@@ -52,30 +52,6 @@ public:
 	uint8                                         Pad_94[0x4];                                       // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0098(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX) == 0x000008, "Wrong alignment on GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX");
-static_assert(sizeof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX) == 0x0000A0, "Wrong size on GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, EntryPoint) == 0x000000, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_CustomEvent_NewMovementMode_1) == 0x000014, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_CustomEvent_NewMovementMode_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, Temp_byte_Variable) == 0x000015, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_CreateWaitMovementModeChange_ReturnValue) == 0x000018, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_CreateWaitMovementModeChange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_CreateDelegate_OutputDelegate_1) == 0x000024, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_CustomEvent_NewMovementMode) == 0x000034, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_CustomEvent_NewMovementMode' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, Temp_byte_Variable_1) == 0x000035, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_CreateWaitMovementModeChange_ReturnValue_1) == 0x000038, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_CreateWaitMovementModeChange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_IsValid_ReturnValue_1) == 0x000040, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000048, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000050, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_GetVehicleUInterface_ReturnValue) == 0x000060, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_GetVehicleUInterface_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_IsInVehicle_ReturnValue) == 0x000070, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_IsInVehicle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_Conv_InterfaceToObject_ReturnValue) == 0x000078, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_Conv_InterfaceToObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_IsTouchingGround_ReturnValue) == 0x000080, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_IsTouchingGround_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_IsValid_ReturnValue_2) == 0x000081, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_BooleanAND_ReturnValue) == 0x000082, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, K2Node_CreateDelegate_OutputDelegate_2) == 0x000084, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000098, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_ExecuteUbergraph_GA_Athena_FallDmgImmune_RemoveFX::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_FallDmgImmune_RemoveFX.GA_Athena_FallDmgImmune_RemoveFX_C.OnChange_E07DC5494A7BED888E9B24AA514662A5
 // 0x0001 (0x0001 - 0x0000)
@@ -84,9 +60,6 @@ struct GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA51466
 public:
 	EMovementMode                                 NewMovementMode;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5) == 0x000001, "Wrong alignment on GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5");
-static_assert(sizeof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5) == 0x000001, "Wrong size on GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5, NewMovementMode) == 0x000000, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_E07DC5494A7BED888E9B24AA514662A5::NewMovementMode' has a wrong offset!");
 
 // Function GA_Athena_FallDmgImmune_RemoveFX.GA_Athena_FallDmgImmune_RemoveFX_C.OnChange_FD84FE4040E65CB60551DE8433D51332
 // 0x0001 (0x0001 - 0x0000)
@@ -95,9 +68,6 @@ struct GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51
 public:
 	EMovementMode                                 NewMovementMode;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332) == 0x000001, "Wrong alignment on GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332");
-static_assert(sizeof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332) == 0x000001, "Wrong size on GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332");
-static_assert(offsetof(GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332, NewMovementMode) == 0x000000, "Member 'GA_Athena_FallDmgImmune_RemoveFX_C_OnChange_FD84FE4040E65CB60551DE8433D51332::NewMovementMode' has a wrong offset!");
 
 }
 

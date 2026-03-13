@@ -28,13 +28,13 @@ void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOCarriedLeansOverride(const str
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
+		Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOCarriedLeansOverride");
 
 	Params::VehicleDNBOAnimLayerInterface_C_VehicleDBNOCarriedLeansOverride Parms{};
 
 	Parms.InPoseDBNOCarried = std::move(InPoseDBNOCarried);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (VehicleDBNOCarriedLeansOverride_0 != nullptr)
 		*VehicleDBNOCarriedLeansOverride_0 = std::move(Parms.VehicleDBNOCarriedLeansOverride_0);
@@ -51,11 +51,11 @@ void IVehicleDNBOAnimLayerInterface_C::VehicleDBNOJoggingOverride(struct FPoseLi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
+		Func = AsUObject()->Class->GetFunction("VehicleDNBOAnimLayerInterface_C", "VehicleDBNOJoggingOverride");
 
 	Params::VehicleDNBOAnimLayerInterface_C_VehicleDBNOJoggingOverride Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (VehicleDBNOJoggingOverride_0 != nullptr)
 		*VehicleDBNOJoggingOverride_0 = std::move(Parms.VehicleDBNOJoggingOverride_0);

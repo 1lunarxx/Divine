@@ -51,29 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChannelChangePopup_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChannelChangePopup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChannelChangePopup_C")
 	}
 	static class UVoiceChannelChangePopup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChannelChangePopup_C>();
 	}
 };
-static_assert(alignof(UVoiceChannelChangePopup_C) == 0x000008, "Wrong alignment on UVoiceChannelChangePopup_C");
-static_assert(sizeof(UVoiceChannelChangePopup_C) == 0x0003E8, "Wrong size on UVoiceChannelChangePopup_C");
-static_assert(offsetof(UVoiceChannelChangePopup_C, UberGraphFrame) == 0x000368, "Member 'UVoiceChannelChangePopup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, AmbientIconPulse) == 0x000370, "Member 'UVoiceChannelChangePopup_C::AmbientIconPulse' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, GamepadKeybindWrapper) == 0x000378, "Member 'UVoiceChannelChangePopup_C::GamepadKeybindWrapper' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, Image_Mic) == 0x000380, "Member 'UVoiceChannelChangePopup_C::Image_Mic' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, KBKeybindWrapper) == 0x000388, "Member 'UVoiceChannelChangePopup_C::KBKeybindWrapper' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, MicPulse) == 0x000390, "Member 'UVoiceChannelChangePopup_C::MicPulse' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, Switcher_KeybindWidgets) == 0x000398, "Member 'UVoiceChannelChangePopup_C::Switcher_KeybindWidgets' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, Text_Hold) == 0x0003A0, "Member 'UVoiceChannelChangePopup_C::Text_Hold' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, M_Param_ColorA) == 0x0003A8, "Member 'UVoiceChannelChangePopup_C::M_Param_ColorA' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, M_Param_ColorB) == 0x0003B0, "Member 'UVoiceChannelChangePopup_C::M_Param_ColorB' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, M_Param_Progress) == 0x0003B8, "Member 'UVoiceChannelChangePopup_C::M_Param_Progress' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, ColorB) == 0x0003C0, "Member 'UVoiceChannelChangePopup_C::ColorB' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, ColorA) == 0x0003D0, "Member 'UVoiceChannelChangePopup_C::ColorA' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelChangePopup_C, CollapseOnAnimationFinish) == 0x0003E0, "Member 'UVoiceChannelChangePopup_C::CollapseOnAnimationFinish' has a wrong offset!");
 
 }
 

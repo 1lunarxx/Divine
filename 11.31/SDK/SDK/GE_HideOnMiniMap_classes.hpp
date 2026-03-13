@@ -23,15 +23,17 @@ class UGE_HideOnMiniMap_C final : public UGET_TagContainer_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_HideOnMiniMap_C">();
+		BP_STATIC_CLASS_IMPL("GE_HideOnMiniMap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_HideOnMiniMap_C")
 	}
 	static class UGE_HideOnMiniMap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_HideOnMiniMap_C>();
 	}
 };
-static_assert(alignof(UGE_HideOnMiniMap_C) == 0x000008, "Wrong alignment on UGE_HideOnMiniMap_C");
-static_assert(sizeof(UGE_HideOnMiniMap_C) == 0x000770, "Wrong size on UGE_HideOnMiniMap_C");
 
 }
 

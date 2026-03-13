@@ -40,22 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HelpEntryBodyWidget_C">();
+		BP_STATIC_CLASS_IMPL("HelpEntryBodyWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HelpEntryBodyWidget_C")
 	}
 	static class UHelpEntryBodyWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHelpEntryBodyWidget_C>();
 	}
 };
-static_assert(alignof(UHelpEntryBodyWidget_C) == 0x000008, "Wrong alignment on UHelpEntryBodyWidget_C");
-static_assert(sizeof(UHelpEntryBodyWidget_C) == 0x000290, "Wrong size on UHelpEntryBodyWidget_C");
-static_assert(offsetof(UHelpEntryBodyWidget_C, BottomContentBorder) == 0x000258, "Member 'UHelpEntryBodyWidget_C::BottomContentBorder' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, BottomImage) == 0x000260, "Member 'UHelpEntryBodyWidget_C::BottomImage' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, EntryBody) == 0x000268, "Member 'UHelpEntryBodyWidget_C::EntryBody' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, RootVerticalBox) == 0x000270, "Member 'UHelpEntryBodyWidget_C::RootVerticalBox' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, TopContentBorder) == 0x000278, "Member 'UHelpEntryBodyWidget_C::TopContentBorder' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, TopImage) == 0x000280, "Member 'UHelpEntryBodyWidget_C::TopImage' has a wrong offset!");
-static_assert(offsetof(UHelpEntryBodyWidget_C, ActiveHelpItem) == 0x000288, "Member 'UHelpEntryBodyWidget_C::ActiveHelpItem' has a wrong offset!");
 
 }
 

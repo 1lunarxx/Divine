@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventRegionLockMessage_C">();
+		BP_STATIC_CLASS_IMPL("EventRegionLockMessage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventRegionLockMessage_C")
 	}
 	static class UEventRegionLockMessage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventRegionLockMessage_C>();
 	}
 };
-static_assert(alignof(UEventRegionLockMessage_C) == 0x000008, "Wrong alignment on UEventRegionLockMessage_C");
-static_assert(sizeof(UEventRegionLockMessage_C) == 0x000620, "Wrong size on UEventRegionLockMessage_C");
-static_assert(offsetof(UEventRegionLockMessage_C, UberGraphFrame) == 0x000610, "Member 'UEventRegionLockMessage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventRegionLockMessage_C, RichTextBlock_RegionLockMessage) == 0x000618, "Member 'UEventRegionLockMessage_C::RichTextBlock_RegionLockMessage' has a wrong offset!");
 
 }
 

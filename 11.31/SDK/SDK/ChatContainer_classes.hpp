@@ -60,33 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChatContainer_C">();
+		BP_STATIC_CLASS_IMPL("ChatContainer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChatContainer_C")
 	}
 	static class UChatContainer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChatContainer_C>();
 	}
 };
-static_assert(alignof(UChatContainer_C) == 0x000008, "Wrong alignment on UChatContainer_C");
-static_assert(sizeof(UChatContainer_C) == 0x000350, "Wrong size on UChatContainer_C");
-static_assert(offsetof(UChatContainer_C, UberGraphFrame) == 0x0002D0, "Member 'UChatContainer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, SizeAnimation) == 0x0002D8, "Member 'UChatContainer_C::SizeAnimation' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, FadeAnimation) == 0x0002E0, "Member 'UChatContainer_C::FadeAnimation' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, ChatBorder) == 0x0002E8, "Member 'UChatContainer_C::ChatBorder' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, CommonBorderBackground) == 0x0002F0, "Member 'UChatContainer_C::CommonBorderBackground' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, ConsoleChatShortcut) == 0x0002F8, "Member 'UChatContainer_C::ConsoleChatShortcut' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, CursorModeSwitcher) == 0x000300, "Member 'UChatContainer_C::CursorModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, HBox_Messages) == 0x000308, "Member 'UChatContainer_C::HBox_Messages' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, HBox_Tabs) == 0x000310, "Member 'UChatContainer_C::HBox_Tabs' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, HudContentHBox) == 0x000318, "Member 'UChatContainer_C::HudContentHBox' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, KeybindWidget) == 0x000320, "Member 'UChatContainer_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, SizeBox_ChatSize) == 0x000328, "Member 'UChatContainer_C::SizeBox_ChatSize' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, SizeBox_ConsoleButtonSpaceProvider) == 0x000330, "Member 'UChatContainer_C::SizeBox_ConsoleButtonSpaceProvider' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, Switcher_SendButton) == 0x000338, "Member 'UChatContainer_C::Switcher_SendButton' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, Text_Disabled) == 0x000340, "Member 'UChatContainer_C::Text_Disabled' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, NewVar_0) == 0x000348, "Member 'UChatContainer_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, CurrentlyUsingGamepad) == 0x000349, "Member 'UChatContainer_C::CurrentlyUsingGamepad' has a wrong offset!");
-static_assert(offsetof(UChatContainer_C, AnimationClosing) == 0x00034A, "Member 'UChatContainer_C::AnimationClosing' has a wrong offset!");
 
 }
 

@@ -79,44 +79,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatsListItemWIdget_C">();
+		BP_STATIC_CLASS_IMPL("StatsListItemWIdget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatsListItemWIdget_C")
 	}
 	static class UStatsListItemWIdget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatsListItemWIdget_C>();
 	}
 };
-static_assert(alignof(UStatsListItemWIdget_C) == 0x000008, "Wrong alignment on UStatsListItemWIdget_C");
-static_assert(sizeof(UStatsListItemWIdget_C) == 0x000548, "Wrong size on UStatsListItemWIdget_C");
-static_assert(offsetof(UStatsListItemWIdget_C, UberGraphFrame) == 0x000350, "Member 'UStatsListItemWIdget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Populate_0) == 0x000358, "Member 'UStatsListItemWIdget_C::Populate_0' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Populate) == 0x000360, "Member 'UStatsListItemWIdget_C::Populate' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicPairBuffArrow) == 0x000368, "Member 'UStatsListItemWIdget_C::BasicPairBuffArrow' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicPairIcon) == 0x000370, "Member 'UStatsListItemWIdget_C::BasicPairIcon' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicPairLabel) == 0x000378, "Member 'UStatsListItemWIdget_C::BasicPairLabel' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicPairValue) == 0x000380, "Member 'UStatsListItemWIdget_C::BasicPairValue' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicSingleBuffArrow) == 0x000388, "Member 'UStatsListItemWIdget_C::BasicSingleBuffArrow' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, BasicSingleValue) == 0x000390, "Member 'UStatsListItemWIdget_C::BasicSingleValue' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Border_StatDeltaPositive) == 0x000398, "Member 'UStatsListItemWIdget_C::Border_StatDeltaPositive' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, ClampedValuePaired) == 0x0003A0, "Member 'UStatsListItemWIdget_C::ClampedValuePaired' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, ClampedValueSingle) == 0x0003A8, "Member 'UStatsListItemWIdget_C::ClampedValueSingle' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, PairedBackgroundBorder) == 0x0003B0, "Member 'UStatsListItemWIdget_C::PairedBackgroundBorder' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, PairedHbox) == 0x0003B8, "Member 'UStatsListItemWIdget_C::PairedHbox' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Single) == 0x0003C0, "Member 'UStatsListItemWIdget_C::Single' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, SingleBackgroundBorder) == 0x0003C8, "Member 'UStatsListItemWIdget_C::SingleBackgroundBorder' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Spacer_0) == 0x0003D0, "Member 'UStatsListItemWIdget_C::Spacer_0' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, StatBorder) == 0x0003D8, "Member 'UStatsListItemWIdget_C::StatBorder' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, SwitcherPairedBasic) == 0x0003E0, "Member 'UStatsListItemWIdget_C::SwitcherPairedBasic' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, VBStatHeader) == 0x0003E8, "Member 'UStatsListItemWIdget_C::VBStatHeader' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, StatIcon) == 0x0003F0, "Member 'UStatsListItemWIdget_C::StatIcon' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, NormalBorderStyle) == 0x000478, "Member 'UStatsListItemWIdget_C::NormalBorderStyle' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, Indent) == 0x000500, "Member 'UStatsListItemWIdget_C::Indent' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, OverrideStateName) == 0x000508, "Member 'UStatsListItemWIdget_C::OverrideStateName' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, StatBGBorderStyle) == 0x000520, "Member 'UStatsListItemWIdget_C::StatBGBorderStyle' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, StatValueTextStyle) == 0x000528, "Member 'UStatsListItemWIdget_C::StatValueTextStyle' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, LabelTextStyleNormal) == 0x000530, "Member 'UStatsListItemWIdget_C::LabelTextStyleNormal' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, LabelTextStyleHighlighted) == 0x000538, "Member 'UStatsListItemWIdget_C::LabelTextStyleHighlighted' has a wrong offset!");
-static_assert(offsetof(UStatsListItemWIdget_C, StatBGBorderStyleHighlight) == 0x000540, "Member 'UStatsListItemWIdget_C::StatBGBorderStyleHighlight' has a wrong offset!");
 
 }
 

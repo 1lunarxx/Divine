@@ -26,15 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Wall_EliminationZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Wall_EliminationZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Wall_EliminationZone_C")
 	}
 	static class ADevice_Wall_EliminationZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Wall_EliminationZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Wall_EliminationZone_C) == 0x000008, "Wrong alignment on ADevice_Wall_EliminationZone_C");
-static_assert(sizeof(ADevice_Wall_EliminationZone_C) == 0x000D90, "Wrong size on ADevice_Wall_EliminationZone_C");
 
 }
 

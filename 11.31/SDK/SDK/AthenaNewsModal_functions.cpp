@@ -17,6 +17,90 @@
 namespace SDK
 {
 
+// Function AthenaNewsModal.AthenaNewsModal_C.UpdateExternalNewsWidgets
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UAthenaNewsModal_C::UpdateExternalNewsWidgets()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNewsModal_C", "UpdateExternalNewsWidgets");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaNewsModal.AthenaNewsModal_C.ShouldShowSTWUpsellInBR
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool*                                   ShouldShow                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaNewsModal_C::ShouldShowSTWUpsellInBR(bool* ShouldShow)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNewsModal_C", "ShouldShowSTWUpsellInBR");
+
+	Params::AthenaNewsModal_C_ShouldShowSTWUpsellInBR Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (ShouldShow != nullptr)
+		*ShouldShow = Parms.ShouldShow;
+}
+
+
+// Function AthenaNewsModal.AthenaNewsModal_C.OnMouseButtonDown_0
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FPointerEvent&                   MouseEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
+
+struct FEventReply UAthenaNewsModal_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNewsModal_C", "OnMouseButtonDown_0");
+
+	Params::AthenaNewsModal_C_OnMouseButtonDown_0 Parms{};
+
+	Parms.MyGeometry = std::move(MyGeometry);
+	Parms.MouseEvent = std::move(MouseEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	MouseEvent = std::move(Parms.MouseEvent);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaNewsModal.AthenaNewsModal_C.DialogResult_3BE479B64CDE5378C77A8DA453770A3B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaNewsModal_C::DialogResult_3BE479B64CDE5378C77A8DA453770A3B(EFortDialogResult Result, class FName ResultName)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaNewsModal_C", "DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
+
+	Params::AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B Parms{};
+
+	Parms.Result = Result;
+	Parms.ResultName = ResultName;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaNewsModal.AthenaNewsModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -180,90 +264,6 @@ void UAthenaNewsModal_C::ExecuteUbergraph_AthenaNewsModal(int32 EntryPoint)
 	Params::AthenaNewsModal_C_ExecuteUbergraph_AthenaNewsModal Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaNewsModal.AthenaNewsModal_C.UpdateExternalNewsWidgets
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UAthenaNewsModal_C::UpdateExternalNewsWidgets()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaNewsModal_C", "UpdateExternalNewsWidgets");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaNewsModal.AthenaNewsModal_C.ShouldShowSTWUpsellInBR
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool*                                   ShouldShow                                             (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UAthenaNewsModal_C::ShouldShowSTWUpsellInBR(bool* ShouldShow)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaNewsModal_C", "ShouldShowSTWUpsellInBR");
-
-	Params::AthenaNewsModal_C_ShouldShowSTWUpsellInBR Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (ShouldShow != nullptr)
-		*ShouldShow = Parms.ShouldShow;
-}
-
-
-// Function AthenaNewsModal.AthenaNewsModal_C.OnMouseButtonDown_0
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FGeometry&                 MyGeometry                                             (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent&                   MouseEvent                                             (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                      ReturnValue                                            (Parm, OutParm, ReturnParm)
-
-struct FEventReply UAthenaNewsModal_C::OnMouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaNewsModal_C", "OnMouseButtonDown_0");
-
-	Params::AthenaNewsModal_C_OnMouseButtonDown_0 Parms{};
-
-	Parms.MyGeometry = std::move(MyGeometry);
-	Parms.MouseEvent = std::move(MouseEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	MouseEvent = std::move(Parms.MouseEvent);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AthenaNewsModal.AthenaNewsModal_C.DialogResult_3BE479B64CDE5378C77A8DA453770A3B
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EFortDialogResult                       Result                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                             ResultName                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaNewsModal_C::DialogResult_3BE479B64CDE5378C77A8DA453770A3B(EFortDialogResult Result, class FName ResultName)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaNewsModal_C", "DialogResult_3BE479B64CDE5378C77A8DA453770A3B");
-
-	Params::AthenaNewsModal_C_DialogResult_3BE479B64CDE5378C77A8DA453770A3B Parms{};
-
-	Parms.Result = Result;
-	Parms.ResultName = ResultName;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

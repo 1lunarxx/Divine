@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GSC_DynamicLevelStreaming_C">();
+		BP_STATIC_CLASS_IMPL("GSC_DynamicLevelStreaming_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GSC_DynamicLevelStreaming_C")
 	}
 	static class UGSC_DynamicLevelStreaming_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGSC_DynamicLevelStreaming_C>();
 	}
 };
-static_assert(alignof(UGSC_DynamicLevelStreaming_C) == 0x000008, "Wrong alignment on UGSC_DynamicLevelStreaming_C");
-static_assert(sizeof(UGSC_DynamicLevelStreaming_C) == 0x000248, "Wrong size on UGSC_DynamicLevelStreaming_C");
-static_assert(offsetof(UGSC_DynamicLevelStreaming_C, UberGraphFrame) == 0x000240, "Member 'UGSC_DynamicLevelStreaming_C::UberGraphFrame' has a wrong offset!");
 
 }
 

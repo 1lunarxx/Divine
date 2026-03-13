@@ -17,6 +17,68 @@
 namespace SDK
 {
 
+// Function HorizontalTabList.HorizontalTabList_C.HandleTabRemoved
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
+
+	Params::HorizontalTabList_C_HandleTabRemoved Parms{};
+
+	Parms.TabNameID = TabNameID;
+	Parms.TabButton = TabButton;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HorizontalTabList.HorizontalTabList_C.HandleOnInputMethodChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        bNewInputType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHorizontalTabList_C::HandleOnInputMethodChanged(ECommonInputType bNewInputType)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
+
+	Params::HorizontalTabList_C_HandleOnInputMethodChanged Parms{};
+
+	Parms.bNewInputType = bNewInputType;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HorizontalTabList.HorizontalTabList_C.ExecuteUbergraph_HorizontalTabList
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
+
+	Params::HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HorizontalTabList.HorizontalTabList_C.SetVerticalAlignment
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -159,68 +221,6 @@ void UHorizontalTabList_C::HandleTabCreated(class FName TabNameID, class UCommon
 
 	Parms.TabNameID = TabNameID;
 	Parms.TabButton = TabButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HorizontalTabList.HorizontalTabList_C.HandleTabRemoved
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// class FName                             TabNameID                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*                    TabButton                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHorizontalTabList_C::HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "HandleTabRemoved");
-
-	Params::HorizontalTabList_C_HandleTabRemoved Parms{};
-
-	Parms.TabNameID = TabNameID;
-	Parms.TabButton = TabButton;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HorizontalTabList.HorizontalTabList_C.HandleOnInputMethodChanged
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// ECommonInputType                        bNewInputType                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHorizontalTabList_C::HandleOnInputMethodChanged(ECommonInputType bNewInputType)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "HandleOnInputMethodChanged");
-
-	Params::HorizontalTabList_C_HandleOnInputMethodChanged Parms{};
-
-	Parms.bNewInputType = bNewInputType;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HorizontalTabList.HorizontalTabList_C.ExecuteUbergraph_HorizontalTabList
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHorizontalTabList_C::ExecuteUbergraph_HorizontalTabList(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HorizontalTabList_C", "ExecuteUbergraph_HorizontalTabList");
-
-	Params::HorizontalTabList_C_ExecuteUbergraph_HorizontalTabList Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

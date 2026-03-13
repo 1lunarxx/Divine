@@ -23,15 +23,17 @@ class UUsedPrimaryMissionPlacementActorsContext_C final : public UUsedPlacementA
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UsedPrimaryMissionPlacementActorsContext_C">();
+		BP_STATIC_CLASS_IMPL("UsedPrimaryMissionPlacementActorsContext_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UsedPrimaryMissionPlacementActorsContext_C")
 	}
 	static class UUsedPrimaryMissionPlacementActorsContext_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUsedPrimaryMissionPlacementActorsContext_C>();
 	}
 };
-static_assert(alignof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x000008, "Wrong alignment on UUsedPrimaryMissionPlacementActorsContext_C");
-static_assert(sizeof(UUsedPrimaryMissionPlacementActorsContext_C) == 0x000078, "Wrong size on UUsedPrimaryMissionPlacementActorsContext_C");
 
 }
 

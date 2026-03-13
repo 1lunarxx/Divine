@@ -44,23 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TeamMemberBanner_C">();
+		BP_STATIC_CLASS_IMPL("TeamMemberBanner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TeamMemberBanner_C")
 	}
 	static class UTeamMemberBanner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTeamMemberBanner_C>();
 	}
 };
-static_assert(alignof(UTeamMemberBanner_C) == 0x000008, "Wrong alignment on UTeamMemberBanner_C");
-static_assert(sizeof(UTeamMemberBanner_C) == 0x000BF0, "Wrong size on UTeamMemberBanner_C");
-static_assert(offsetof(UTeamMemberBanner_C, UberGraphFrame) == 0x000BB0, "Member 'UTeamMemberBanner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, ButtonPartyFinder) == 0x000BB8, "Member 'UTeamMemberBanner_C::ButtonPartyFinder' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, Connected) == 0x000BC0, "Member 'UTeamMemberBanner_C::Connected' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, Connecting) == 0x000BC8, "Member 'UTeamMemberBanner_C::Connecting' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, Image_571) == 0x000BD0, "Member 'UTeamMemberBanner_C::Image_571' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, Open) == 0x000BD8, "Member 'UTeamMemberBanner_C::Open' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, OpenImage) == 0x000BE0, "Member 'UTeamMemberBanner_C::OpenImage' has a wrong offset!");
-static_assert(offsetof(UTeamMemberBanner_C, Switcher_MemberState) == 0x000BE8, "Member 'UTeamMemberBanner_C::Switcher_MemberState' has a wrong offset!");
 
 }
 

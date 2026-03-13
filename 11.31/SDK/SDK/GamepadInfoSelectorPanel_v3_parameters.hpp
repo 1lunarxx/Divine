@@ -23,9 +23,6 @@ struct GamepadInfoSelectorPanel_v3_C_HandleReset final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadInfoSelectorPanel_v3_C_HandleReset) == 0x000001, "Wrong alignment on GamepadInfoSelectorPanel_v3_C_HandleReset");
-static_assert(sizeof(GamepadInfoSelectorPanel_v3_C_HandleReset) == 0x000001, "Wrong size on GamepadInfoSelectorPanel_v3_C_HandleReset");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_HandleReset, PassThrough) == 0x000000, "Member 'GamepadInfoSelectorPanel_v3_C_HandleReset::PassThrough' has a wrong offset!");
 
 // Function GamepadInfoSelectorPanel_v3.GamepadInfoSelectorPanel_v3_C.HandleApply
 // 0x0001 (0x0001 - 0x0000)
@@ -34,9 +31,6 @@ struct GamepadInfoSelectorPanel_v3_C_HandleApply final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadInfoSelectorPanel_v3_C_HandleApply) == 0x000001, "Wrong alignment on GamepadInfoSelectorPanel_v3_C_HandleApply");
-static_assert(sizeof(GamepadInfoSelectorPanel_v3_C_HandleApply) == 0x000001, "Wrong size on GamepadInfoSelectorPanel_v3_C_HandleApply");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_HandleApply, PassThrough) == 0x000000, "Member 'GamepadInfoSelectorPanel_v3_C_HandleApply::PassThrough' has a wrong offset!");
 
 // Function GamepadInfoSelectorPanel_v3.GamepadInfoSelectorPanel_v3_C.HandleBack
 // 0x0001 (0x0001 - 0x0000)
@@ -45,9 +39,6 @@ struct GamepadInfoSelectorPanel_v3_C_HandleBack final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadInfoSelectorPanel_v3_C_HandleBack) == 0x000001, "Wrong alignment on GamepadInfoSelectorPanel_v3_C_HandleBack");
-static_assert(sizeof(GamepadInfoSelectorPanel_v3_C_HandleBack) == 0x000001, "Wrong size on GamepadInfoSelectorPanel_v3_C_HandleBack");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_HandleBack, PassThrough) == 0x000000, "Member 'GamepadInfoSelectorPanel_v3_C_HandleBack::PassThrough' has a wrong offset!");
 
 // Function GamepadInfoSelectorPanel_v3.GamepadInfoSelectorPanel_v3_C.OnAddedToFocusPath
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +47,6 @@ struct GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath final
 public:
 	struct FFocusEvent                            InFocusEvent;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 };
-static_assert(alignof(GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath) == 0x000004, "Wrong alignment on GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath");
-static_assert(sizeof(GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath) == 0x000008, "Wrong size on GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath, InFocusEvent) == 0x000000, "Member 'GamepadInfoSelectorPanel_v3_C_OnAddedToFocusPath::InFocusEvent' has a wrong offset!");
 
 // Function GamepadInfoSelectorPanel_v3.GamepadInfoSelectorPanel_v3_C.ExecuteUbergraph_GamepadInfoSelectorPanel_v3
 // 0x0044 (0x0044 - 0x0000)
@@ -75,16 +63,6 @@ public:
 	struct FFocusEvent                            K2Node_Event_InFocusEvent;                         // 0x0038(0x0008)(NoDestructor)
 	bool                                          CallFunc_HasInputActionHandler_ReturnValue_2;      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3) == 0x000004, "Wrong alignment on GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3");
-static_assert(sizeof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3) == 0x000044, "Wrong size on GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, EntryPoint) == 0x000000, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, CallFunc_HasInputActionHandler_ReturnValue) == 0x000014, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::CallFunc_HasInputActionHandler_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, CallFunc_HasInputActionHandler_ReturnValue_1) == 0x000015, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::CallFunc_HasInputActionHandler_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate_1) == 0x000018, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, K2Node_CreateDelegate_OutputDelegate_2) == 0x000028, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, K2Node_Event_InFocusEvent) == 0x000038, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::K2Node_Event_InFocusEvent' has a wrong offset!");
-static_assert(offsetof(GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3, CallFunc_HasInputActionHandler_ReturnValue_2) == 0x000040, "Member 'GamepadInfoSelectorPanel_v3_C_ExecuteUbergraph_GamepadInfoSelectorPanel_v3::CallFunc_HasInputActionHandler_ReturnValue_2' has a wrong offset!");
 
 }
 

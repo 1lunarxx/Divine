@@ -48,29 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComScreenTile_C">();
+		BP_STATIC_CLASS_IMPL("ComScreenTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComScreenTile_C")
 	}
 	static class UComScreenTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComScreenTile_C>();
 	}
 };
-static_assert(alignof(UComScreenTile_C) == 0x000008, "Wrong alignment on UComScreenTile_C");
-static_assert(sizeof(UComScreenTile_C) == 0x000D08, "Wrong size on UComScreenTile_C");
-static_assert(offsetof(UComScreenTile_C, UberGraphFrame) == 0x000C00, "Member 'UComScreenTile_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, CallToAction) == 0x000C08, "Member 'UComScreenTile_C::CallToAction' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, CarouselTransition) == 0x000C10, "Member 'UComScreenTile_C::CarouselTransition' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, Hover) == 0x000C18, "Member 'UComScreenTile_C::Hover' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, comLogoTitle) == 0x000C20, "Member 'UComScreenTile_C::comLogoTitle' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, poUpHeader) == 0x000C28, "Member 'UComScreenTile_C::poUpHeader' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, MID_StrikeThrough) == 0x000C30, "Member 'UComScreenTile_C::MID_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, MID_CarouselTimerProgressBar) == 0x000C38, "Member 'UComScreenTile_C::MID_CarouselTimerProgressBar' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, Carousel_NextItemImage) == 0x000C40, "Member 'UComScreenTile_C::Carousel_NextItemImage' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, CarouselLoopTimeRemaining) == 0x000CC8, "Member 'UComScreenTile_C::CarouselLoopTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, CarouselLoopTimer) == 0x000CCC, "Member 'UComScreenTile_C::CarouselLoopTimer' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, LargeSoftImage) == 0x000CD0, "Member 'UComScreenTile_C::LargeSoftImage' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, Carousel_NextLargeTexture) == 0x000CF8, "Member 'UComScreenTile_C::Carousel_NextLargeTexture' has a wrong offset!");
-static_assert(offsetof(UComScreenTile_C, BattleStarTemplate) == 0x000D00, "Member 'UComScreenTile_C::BattleStarTemplate' has a wrong offset!");
 
 }
 

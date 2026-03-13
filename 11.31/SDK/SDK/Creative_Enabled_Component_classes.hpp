@@ -48,23 +48,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_Enabled_Component_C">();
+		BP_STATIC_CLASS_IMPL("Creative_Enabled_Component_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_Enabled_Component_C")
 	}
 	static class UCreative_Enabled_Component_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreative_Enabled_Component_C>();
 	}
 };
-static_assert(alignof(UCreative_Enabled_Component_C) == 0x000008, "Wrong alignment on UCreative_Enabled_Component_C");
-static_assert(sizeof(UCreative_Enabled_Component_C) == 0x000140, "Wrong size on UCreative_Enabled_Component_C");
-static_assert(offsetof(UCreative_Enabled_Component_C, EnabledState) == 0x0000B0, "Member 'UCreative_Enabled_Component_C::EnabledState' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, On_Enabled_State_Changed) == 0x0000B8, "Member 'UCreative_Enabled_Component_C::On_Enabled_State_Changed' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, EnabledDuringPlayMode) == 0x0000C8, "Member 'UCreative_Enabled_Component_C::EnabledDuringPlayMode' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, EnabledDuringEditMode) == 0x0000C9, "Member 'UCreative_Enabled_Component_C::EnabledDuringEditMode' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, On_Reset_Complete) == 0x0000D0, "Member 'UCreative_Enabled_Component_C::On_Reset_Complete' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, Reset_Timer) == 0x0000E0, "Member 'UCreative_Enabled_Component_C::Reset_Timer' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, IgnorePhases) == 0x0000E8, "Member 'UCreative_Enabled_Component_C::IgnorePhases' has a wrong offset!");
-static_assert(offsetof(UCreative_Enabled_Component_C, ResetDelay) == 0x000138, "Member 'UCreative_Enabled_Component_C::ResetDelay' has a wrong offset!");
 
 }
 

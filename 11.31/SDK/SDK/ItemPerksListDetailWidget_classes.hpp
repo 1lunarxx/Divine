@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemPerksListDetailWidget_C">();
+		BP_STATIC_CLASS_IMPL("ItemPerksListDetailWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemPerksListDetailWidget_C")
 	}
 	static class UItemPerksListDetailWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemPerksListDetailWidget_C>();
 	}
 };
-static_assert(alignof(UItemPerksListDetailWidget_C) == 0x000008, "Wrong alignment on UItemPerksListDetailWidget_C");
-static_assert(sizeof(UItemPerksListDetailWidget_C) == 0x0002D0, "Wrong size on UItemPerksListDetailWidget_C");
-static_assert(offsetof(UItemPerksListDetailWidget_C, UberGraphFrame) == 0x0002B0, "Member 'UItemPerksListDetailWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, PerksList) == 0x0002B8, "Member 'UItemPerksListDetailWidget_C::PerksList' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, RootBox) == 0x0002C0, "Member 'UItemPerksListDetailWidget_C::RootBox' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, ShowActiveAbilitiesOnly) == 0x0002C8, "Member 'UItemPerksListDetailWidget_C::ShowActiveAbilitiesOnly' has a wrong offset!");
-static_assert(offsetof(UItemPerksListDetailWidget_C, WrapPerkTextAt) == 0x0002CC, "Member 'UItemPerksListDetailWidget_C::WrapPerkTextAt' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UHoverboardCameraMode_C final : public UFortHoverboardCameraMode
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HoverboardCameraMode_C">();
+		BP_STATIC_CLASS_IMPL("HoverboardCameraMode_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HoverboardCameraMode_C")
 	}
 	static class UHoverboardCameraMode_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHoverboardCameraMode_C>();
 	}
 };
-static_assert(alignof(UHoverboardCameraMode_C) == 0x000010, "Wrong alignment on UHoverboardCameraMode_C");
-static_assert(sizeof(UHoverboardCameraMode_C) == 0x000D80, "Wrong size on UHoverboardCameraMode_C");
 
 }
 

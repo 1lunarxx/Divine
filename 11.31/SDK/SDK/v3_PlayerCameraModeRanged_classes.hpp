@@ -23,15 +23,17 @@ class Uv3_PlayerCameraModeRanged_C : public Uv3_PlayerCameraModeBase_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"v3_PlayerCameraModeRanged_C">();
+		BP_STATIC_CLASS_IMPL("v3_PlayerCameraModeRanged_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"v3_PlayerCameraModeRanged_C")
 	}
 	static class Uv3_PlayerCameraModeRanged_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Uv3_PlayerCameraModeRanged_C>();
 	}
 };
-static_assert(alignof(Uv3_PlayerCameraModeRanged_C) == 0x000010, "Wrong alignment on Uv3_PlayerCameraModeRanged_C");
-static_assert(sizeof(Uv3_PlayerCameraModeRanged_C) == 0x000D80, "Wrong size on Uv3_PlayerCameraModeRanged_C");
 
 }
 

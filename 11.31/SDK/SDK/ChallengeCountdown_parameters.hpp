@@ -25,9 +25,6 @@ struct ChallengeCountdown_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ChallengeCountdown_C_PreConstruct) == 0x000001, "Wrong alignment on ChallengeCountdown_C_PreConstruct");
-static_assert(sizeof(ChallengeCountdown_C_PreConstruct) == 0x000001, "Wrong size on ChallengeCountdown_C_PreConstruct");
-static_assert(offsetof(ChallengeCountdown_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ChallengeCountdown_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ChallengeCountdown.ChallengeCountdown_C.OnChallengeSet
 // 0x0038 (0x0038 - 0x0000)
@@ -36,9 +33,6 @@ struct ChallengeCountdown_C_OnChallengeSet final
 public:
 	struct FTimerDisplayData                      DisplayStyle;                                      // 0x0000(0x0038)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ChallengeCountdown_C_OnChallengeSet) == 0x000008, "Wrong alignment on ChallengeCountdown_C_OnChallengeSet");
-static_assert(sizeof(ChallengeCountdown_C_OnChallengeSet) == 0x000038, "Wrong size on ChallengeCountdown_C_OnChallengeSet");
-static_assert(offsetof(ChallengeCountdown_C_OnChallengeSet, DisplayStyle) == 0x000000, "Member 'ChallengeCountdown_C_OnChallengeSet::DisplayStyle' has a wrong offset!");
 
 // Function ChallengeCountdown.ChallengeCountdown_C.ExecuteUbergraph_ChallengeCountdown
 // 0x0118 (0x0118 - 0x0000)
@@ -68,26 +62,6 @@ public:
 	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateColor                            K2Node_Select_Default_1;                           // 0x00F0(0x0028)()
 };
-static_assert(alignof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown) == 0x000008, "Wrong alignment on ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown");
-static_assert(sizeof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown) == 0x000118, "Wrong size on ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, EntryPoint) == 0x000000, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, Temp_bool_Variable) == 0x000004, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, Temp_byte_Variable) == 0x000005, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, Temp_byte_Variable_1) == 0x000006, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_Event_IsDesignTime) == 0x000007, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_MakeLiteralFloat_ReturnValue) == 0x000008, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_MakeLiteralFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_MakeLiteralFloat_ReturnValue_1) == 0x00000C, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_MakeLiteralFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_Event_DisplayStyle) == 0x000010, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_Event_DisplayStyle' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000048, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_MakeStruct_SlateColor) == 0x000050, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, Temp_bool_Variable_1) == 0x000078, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000080, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000088, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, CallFunc_IsValid_ReturnValue) == 0x000090, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_MakeStruct_SlateColor_1) == 0x000098, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_MakeStruct_SlateColor_2) == 0x0000C0, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_Select_Default) == 0x0000E8, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown, K2Node_Select_Default_1) == 0x0000F0, "Member 'ChallengeCountdown_C_ExecuteUbergraph_ChallengeCountdown::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

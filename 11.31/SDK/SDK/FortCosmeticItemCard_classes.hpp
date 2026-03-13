@@ -33,16 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortCosmeticItemCard_C">();
+		BP_STATIC_CLASS_IMPL("FortCosmeticItemCard_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortCosmeticItemCard_C")
 	}
 	static class UFortCosmeticItemCard_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortCosmeticItemCard_C>();
 	}
 };
-static_assert(alignof(UFortCosmeticItemCard_C) == 0x000008, "Wrong alignment on UFortCosmeticItemCard_C");
-static_assert(sizeof(UFortCosmeticItemCard_C) == 0x0002A0, "Wrong size on UFortCosmeticItemCard_C");
-static_assert(offsetof(UFortCosmeticItemCard_C, UberGraphFrame) == 0x000298, "Member 'UFortCosmeticItemCard_C::UberGraphFrame' has a wrong offset!");
 
 }
 

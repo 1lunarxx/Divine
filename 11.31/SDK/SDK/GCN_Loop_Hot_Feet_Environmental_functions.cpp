@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function GCN_Loop_Hot_Feet_Environmental.GCN_Loop_Hot_Feet_Environmental_C.On Player Step
-// (BlueprintCallable, BlueprintEvent)
-
-void AGCN_Loop_Hot_Feet_Environmental_C::On_Player_Step()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_Hot_Feet_Environmental_C", "On Player Step");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GCN_Loop_Hot_Feet_Environmental.GCN_Loop_Hot_Feet_Environmental_C.OnRemoval
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -228,6 +214,20 @@ void AGCN_Loop_Hot_Feet_Environmental_C::ExecuteUbergraph_GCN_Loop_Hot_Feet_Envi
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCN_Loop_Hot_Feet_Environmental.GCN_Loop_Hot_Feet_Environmental_C.On Player Step
+// (BlueprintCallable, BlueprintEvent)
+
+void AGCN_Loop_Hot_Feet_Environmental_C::On_Player_Step()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_Hot_Feet_Environmental_C", "On Player Step");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

@@ -23,15 +23,17 @@ class UMissionGen_Heavy_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Heavy_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Heavy_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Heavy_C")
 	}
 	static class UMissionGen_Heavy_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Heavy_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Heavy_C) == 0x000008, "Wrong alignment on UMissionGen_Heavy_C");
-static_assert(sizeof(UMissionGen_Heavy_C) == 0x0006C0, "Wrong size on UMissionGen_Heavy_C");
 
 }
 

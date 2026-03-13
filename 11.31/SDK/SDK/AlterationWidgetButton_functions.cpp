@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function AlterationWidgetButton.AlterationWidgetButton_C.Setup Triangles
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAlterationWidgetButton_C::Setup_Triangles()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AlterationWidgetButton_C", "Setup Triangles");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function AlterationWidgetButton.AlterationWidgetButton_C.Update Colors
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -132,6 +118,20 @@ void UAlterationWidgetButton_C::ExecuteUbergraph_AlterationWidgetButton(int32 En
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AlterationWidgetButton.AlterationWidgetButton_C.Setup Triangles
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAlterationWidgetButton_C::Setup_Triangles()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AlterationWidgetButton_C", "Setup Triangles");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

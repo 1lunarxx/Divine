@@ -23,15 +23,17 @@ class UAthena_PlayerCameraModeRanged_Lotus_Mustache_C final : public UAthena_Pla
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraModeRanged_Lotus_Mustache_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraModeRanged_Lotus_Mustache_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraModeRanged_Lotus_Mustache_C")
 	}
 	static class UAthena_PlayerCameraModeRanged_Lotus_Mustache_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraModeRanged_Lotus_Mustache_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraModeRanged_Lotus_Mustache_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraModeRanged_Lotus_Mustache_C");
-static_assert(sizeof(UAthena_PlayerCameraModeRanged_Lotus_Mustache_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraModeRanged_Lotus_Mustache_C");
 
 }
 

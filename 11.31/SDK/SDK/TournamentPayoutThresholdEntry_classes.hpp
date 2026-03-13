@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TournamentPayoutThresholdEntry_C">();
+		BP_STATIC_CLASS_IMPL("TournamentPayoutThresholdEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TournamentPayoutThresholdEntry_C")
 	}
 	static class UTournamentPayoutThresholdEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTournamentPayoutThresholdEntry_C>();
 	}
 };
-static_assert(alignof(UTournamentPayoutThresholdEntry_C) == 0x000008, "Wrong alignment on UTournamentPayoutThresholdEntry_C");
-static_assert(sizeof(UTournamentPayoutThresholdEntry_C) == 0x000290, "Wrong size on UTournamentPayoutThresholdEntry_C");
-static_assert(offsetof(UTournamentPayoutThresholdEntry_C, UberGraphFrame) == 0x000268, "Member 'UTournamentPayoutThresholdEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutThresholdEntry_C, Selected) == 0x000270, "Member 'UTournamentPayoutThresholdEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutThresholdEntry_C, CommonBorder_IsPlayer) == 0x000278, "Member 'UTournamentPayoutThresholdEntry_C::CommonBorder_IsPlayer' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutThresholdEntry_C, CommonBorder_Selected) == 0x000280, "Member 'UTournamentPayoutThresholdEntry_C::CommonBorder_Selected' has a wrong offset!");
-static_assert(offsetof(UTournamentPayoutThresholdEntry_C, CommonBorder_Zebra) == 0x000288, "Member 'UTournamentPayoutThresholdEntry_C::CommonBorder_Zebra' has a wrong offset!");
 
 }
 

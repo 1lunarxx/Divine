@@ -72,40 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GiftingScreen_C">();
+		BP_STATIC_CLASS_IMPL("GiftingScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GiftingScreen_C")
 	}
 	static class UGiftingScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGiftingScreen_C>();
 	}
 };
-static_assert(alignof(UGiftingScreen_C) == 0x000008, "Wrong alignment on UGiftingScreen_C");
-static_assert(sizeof(UGiftingScreen_C) == 0x0007D8, "Wrong size on UGiftingScreen_C");
-static_assert(offsetof(UGiftingScreen_C, UberGraphFrame) == 0x000700, "Member 'UGiftingScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, ReportSent) == 0x000708, "Member 'UGiftingScreen_C::ReportSent' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Intro) == 0x000710, "Member 'UGiftingScreen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Border_Summary) == 0x000718, "Member 'UGiftingScreen_C::Border_Summary' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, CircularThrobber_0) == 0x000720, "Member 'UGiftingScreen_C::CircularThrobber_0' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, CloseIcon) == 0x000728, "Member 'UGiftingScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, EditableText_ReasonField) == 0x000730, "Member 'UGiftingScreen_C::EditableText_ReasonField' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, FramingWidget) == 0x000738, "Member 'UGiftingScreen_C::FramingWidget' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, HBox_Price) == 0x000740, "Member 'UGiftingScreen_C::HBox_Price' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Image_4) == 0x000748, "Member 'UGiftingScreen_C::Image_4' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, MobileCloseButton) == 0x000750, "Member 'UGiftingScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, OverlayCloseButton) == 0x000758, "Member 'UGiftingScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, SafeZone_0) == 0x000760, "Member 'UGiftingScreen_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, SB_StackingEntry) == 0x000768, "Member 'UGiftingScreen_C::SB_StackingEntry' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, SizeBox_GiftBoxes) == 0x000770, "Member 'UGiftingScreen_C::SizeBox_GiftBoxes' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Switcher_Button) == 0x000778, "Member 'UGiftingScreen_C::Switcher_Button' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Switcher_MainPanelContent) == 0x000780, "Member 'UGiftingScreen_C::Switcher_MainPanelContent' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Tab_GiftWrap) == 0x000788, "Member 'UGiftingScreen_C::Tab_GiftWrap' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Tab_Recipients) == 0x000790, "Member 'UGiftingScreen_C::Tab_Recipients' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, Text_RefundNote) == 0x000798, "Member 'UGiftingScreen_C::Text_RefundNote' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, VBox_ChosenItem) == 0x0007A0, "Member 'UGiftingScreen_C::VBox_ChosenItem' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, VBox_Recipients) == 0x0007A8, "Member 'UGiftingScreen_C::VBox_Recipients' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, MoreInfoAction) == 0x0007B0, "Member 'UGiftingScreen_C::MoreInfoAction' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, IsCurrentStepGiftWrap) == 0x0007C0, "Member 'UGiftingScreen_C::IsCurrentStepGiftWrap' has a wrong offset!");
-static_assert(offsetof(UGiftingScreen_C, BackAction) == 0x0007C8, "Member 'UGiftingScreen_C::BackAction' has a wrong offset!");
 
 }
 

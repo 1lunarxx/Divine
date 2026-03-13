@@ -77,11 +77,11 @@ struct FTransform IMovieSceneTransformOrigin::BP_GetTransformOrigin() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
+		Func = AsUObject()->Class->GetFunction("MovieSceneTransformOrigin", "BP_GetTransformOrigin");
 
 	Params::MovieSceneTransformOrigin_BP_GetTransformOrigin Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }

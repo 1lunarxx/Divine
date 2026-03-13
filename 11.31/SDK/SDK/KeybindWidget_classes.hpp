@@ -23,15 +23,17 @@ class UKeybindWidget_C final : public UFortKeybindWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"KeybindWidget_C">();
+		BP_STATIC_CLASS_IMPL("KeybindWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"KeybindWidget_C")
 	}
 	static class UKeybindWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UKeybindWidget_C>();
 	}
 };
-static_assert(alignof(UKeybindWidget_C) == 0x000008, "Wrong alignment on UKeybindWidget_C");
-static_assert(sizeof(UKeybindWidget_C) == 0x0008B8, "Wrong size on UKeybindWidget_C");
 
 }
 

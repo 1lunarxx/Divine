@@ -23,15 +23,17 @@ class UGE_Ninja_Tactical_MeleeHitsHeal_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Ninja_Tactical_MeleeHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("GE_Ninja_Tactical_MeleeHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Ninja_Tactical_MeleeHitsHeal_C")
 	}
 	static class UGE_Ninja_Tactical_MeleeHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Ninja_Tactical_MeleeHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000008, "Wrong alignment on UGE_Ninja_Tactical_MeleeHitsHeal_C");
-static_assert(sizeof(UGE_Ninja_Tactical_MeleeHitsHeal_C) == 0x000770, "Wrong size on UGE_Ninja_Tactical_MeleeHitsHeal_C");
 
 }
 

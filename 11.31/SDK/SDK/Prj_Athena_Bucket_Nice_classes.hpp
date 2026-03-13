@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Prj_Athena_Bucket_Nice_C">();
+		BP_STATIC_CLASS_IMPL("Prj_Athena_Bucket_Nice_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Prj_Athena_Bucket_Nice_C")
 	}
 	static class APrj_Athena_Bucket_Nice_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APrj_Athena_Bucket_Nice_C>();
 	}
 };
-static_assert(alignof(APrj_Athena_Bucket_Nice_C) == 0x000008, "Wrong alignment on APrj_Athena_Bucket_Nice_C");
-static_assert(sizeof(APrj_Athena_Bucket_Nice_C) == 0x000910, "Wrong size on APrj_Athena_Bucket_Nice_C");
-static_assert(offsetof(APrj_Athena_Bucket_Nice_C, UberGraphFrame_Prj_Athena_Bucket_Nice_C) == 0x0008F8, "Member 'APrj_Athena_Bucket_Nice_C::UberGraphFrame_Prj_Athena_Bucket_Nice_C' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Nice_C, Trail) == 0x000900, "Member 'APrj_Athena_Bucket_Nice_C::Trail' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Nice_C, TurnOffTrail) == 0x000908, "Member 'APrj_Athena_Bucket_Nice_C::TurnOffTrail' has a wrong offset!");
 
 }
 

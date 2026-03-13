@@ -23,15 +23,17 @@ class UPhoebe_Evaluator_Storm_C final : public UFortAthenaAIBotEvaluator_Storm
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_Evaluator_Storm_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_Evaluator_Storm_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_Evaluator_Storm_C")
 	}
 	static class UPhoebe_Evaluator_Storm_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_Evaluator_Storm_C>();
 	}
 };
-static_assert(alignof(UPhoebe_Evaluator_Storm_C) == 0x000008, "Wrong alignment on UPhoebe_Evaluator_Storm_C");
-static_assert(sizeof(UPhoebe_Evaluator_Storm_C) == 0x000178, "Wrong size on UPhoebe_Evaluator_Storm_C");
 
 }
 

@@ -21,9 +21,6 @@ struct TicketCounter_C_InitializeTickets final
 public:
 	int32                                         NumTicketsAvailableToUse;                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TicketCounter_C_InitializeTickets) == 0x000004, "Wrong alignment on TicketCounter_C_InitializeTickets");
-static_assert(sizeof(TicketCounter_C_InitializeTickets) == 0x000004, "Wrong size on TicketCounter_C_InitializeTickets");
-static_assert(offsetof(TicketCounter_C_InitializeTickets, NumTicketsAvailableToUse) == 0x000000, "Member 'TicketCounter_C_InitializeTickets::NumTicketsAvailableToUse' has a wrong offset!");
 
 // Function TicketCounter.TicketCounter_C.ConsumeTicket
 // 0x0004 (0x0004 - 0x0000)
@@ -32,9 +29,6 @@ struct TicketCounter_C_ConsumeTicket final
 public:
 	int32                                         TicketIndex;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TicketCounter_C_ConsumeTicket) == 0x000004, "Wrong alignment on TicketCounter_C_ConsumeTicket");
-static_assert(sizeof(TicketCounter_C_ConsumeTicket) == 0x000004, "Wrong size on TicketCounter_C_ConsumeTicket");
-static_assert(offsetof(TicketCounter_C_ConsumeTicket, TicketIndex) == 0x000000, "Member 'TicketCounter_C_ConsumeTicket::TicketIndex' has a wrong offset!");
 
 // Function TicketCounter.TicketCounter_C.ExecuteUbergraph_TicketCounter
 // 0x0088 (0x0088 - 0x0000)
@@ -70,31 +64,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TicketCounter_C_ExecuteUbergraph_TicketCounter) == 0x000008, "Wrong alignment on TicketCounter_C_ExecuteUbergraph_TicketCounter");
-static_assert(sizeof(TicketCounter_C_ExecuteUbergraph_TicketCounter) == 0x000088, "Wrong size on TicketCounter_C_ExecuteUbergraph_TicketCounter");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, EntryPoint) == 0x000000, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, Temp_int_Array_Index_Variable) == 0x000004, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_MakeArray_Array) == 0x000010, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Array_Get_Item) == 0x000020, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_AsRefund_Ticket) == 0x000028, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_AsRefund_Ticket' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Array_Get_Item_1) == 0x000038, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_AsRefund_Ticket_1) == 0x000040, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_AsRefund_Ticket_1' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Less_IntInt_ReturnValue) == 0x000050, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Array_Length_ReturnValue_1) == 0x000054, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_CustomEvent_NumTicketsAvailableToUse) == 0x000058, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_CustomEvent_NumTicketsAvailableToUse' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_CustomEvent_TicketIndex) == 0x00005C, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_CustomEvent_TicketIndex' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Subtract_IntInt_ReturnValue) == 0x000060, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Array_Get_Item_2) == 0x000068, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000070, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_AsRefund_Ticket_2) == 0x000078, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_AsRefund_Ticket_2' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, K2Node_DynamicCast_bSuccess_2) == 0x000080, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_BooleanAND_ReturnValue) == 0x000081, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TicketCounter_C_ExecuteUbergraph_TicketCounter, CallFunc_Less_IntInt_ReturnValue_1) == 0x000082, "Member 'TicketCounter_C_ExecuteUbergraph_TicketCounter::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 }
 

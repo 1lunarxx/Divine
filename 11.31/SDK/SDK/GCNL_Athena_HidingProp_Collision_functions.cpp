@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function GCNL_Athena_HidingProp_Collision.GCNL_Athena_HidingProp_Collision_C.ExecuteUbergraph_GCNL_Athena_HidingProp_Collision
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGCNL_Athena_HidingProp_Collision_C::ExecuteUbergraph_GCNL_Athena_HidingProp_Collision(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Collision");
+
+	Params::GCNL_Athena_HidingProp_Collision_C_ExecuteUbergraph_GCNL_Athena_HidingProp_Collision Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function GCNL_Athena_HidingProp_Collision.GCNL_Athena_HidingProp_Collision_C.OnLoopingStart
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -68,26 +88,6 @@ void AGCNL_Athena_HidingProp_Collision_C::OnRemoval(class AActor* MyTarget, cons
 	Parms.AudioComponents = std::move(AudioComponents);
 	Parms.BurstCameraShakeInstance = BurstCameraShakeInstance;
 	Parms.BurstDecalInstance = BurstDecalInstance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function GCNL_Athena_HidingProp_Collision.GCNL_Athena_HidingProp_Collision_C.ExecuteUbergraph_GCNL_Athena_HidingProp_Collision
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGCNL_Athena_HidingProp_Collision_C::ExecuteUbergraph_GCNL_Athena_HidingProp_Collision(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCNL_Athena_HidingProp_Collision_C", "ExecuteUbergraph_GCNL_Athena_HidingProp_Collision");
-
-	Params::GCNL_Athena_HidingProp_Collision_C_ExecuteUbergraph_GCNL_Athena_HidingProp_Collision Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

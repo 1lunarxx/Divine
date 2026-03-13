@@ -86,49 +86,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultRotator_C">();
+		BP_STATIC_CLASS_IMPL("VaultRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultRotator_C")
 	}
 	static class AVaultRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultRotator_C>();
 	}
 };
-static_assert(alignof(AVaultRotator_C) == 0x000010, "Wrong alignment on AVaultRotator_C");
-static_assert(sizeof(AVaultRotator_C) == 0x000420, "Wrong size on AVaultRotator_C");
-static_assert(offsetof(AVaultRotator_C, UberGraphFrame) == 0x000300, "Member 'AVaultRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DirectionalLightMobile) == 0x000308, "Member 'AVaultRotator_C::DirectionalLightMobile' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DirectionalLight_LOWPC) == 0x000310, "Member 'AVaultRotator_C::DirectionalLight_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DirectionalLights) == 0x000318, "Member 'AVaultRotator_C::DirectionalLights' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, SkyLightLowMobile) == 0x000320, "Member 'AVaultRotator_C::SkyLightLowMobile' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, SkyLight) == 0x000328, "Member 'AVaultRotator_C::SkyLight' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, SkyLight_LOWPC) == 0x000330, "Member 'AVaultRotator_C::SkyLight_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, Arrow) == 0x000338, "Member 'AVaultRotator_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, PostProcess_Mobile) == 0x000340, "Member 'AVaultRotator_C::PostProcess_Mobile' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, PostProcess_LOWPC) == 0x000348, "Member 'AVaultRotator_C::PostProcess_LOWPC' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, GenericLighting) == 0x000350, "Member 'AVaultRotator_C::GenericLighting' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, Timeline_Zoom_CurrentZoomLevel_6FFD6729471BD965D850258DA1C0AF39) == 0x000358, "Member 'AVaultRotator_C::Timeline_Zoom_CurrentZoomLevel_6FFD6729471BD965D850258DA1C0AF39' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, Timeline_Zoom__Direction_6FFD6729471BD965D850258DA1C0AF39) == 0x00035C, "Member 'AVaultRotator_C::Timeline_Zoom__Direction_6FFD6729471BD965D850258DA1C0AF39' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, Timeline_Zoom) == 0x000360, "Member 'AVaultRotator_C::Timeline_Zoom' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360_CameraRotationOffset_DF51680448A0BDB5D459C9BB5786D714) == 0x000368, "Member 'AVaultRotator_C::CameraTurn_180_to_360_CameraRotationOffset_DF51680448A0BDB5D459C9BB5786D714' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360_CameraPositionOffset_DF51680448A0BDB5D459C9BB5786D714) == 0x000374, "Member 'AVaultRotator_C::CameraTurn_180_to_360_CameraPositionOffset_DF51680448A0BDB5D459C9BB5786D714' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360_DirectionRotation_DF51680448A0BDB5D459C9BB5786D714) == 0x000380, "Member 'AVaultRotator_C::CameraTurn_180_to_360_DirectionRotation_DF51680448A0BDB5D459C9BB5786D714' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360_FoV_DF51680448A0BDB5D459C9BB5786D714) == 0x000384, "Member 'AVaultRotator_C::CameraTurn_180_to_360_FoV_DF51680448A0BDB5D459C9BB5786D714' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360__Direction_DF51680448A0BDB5D459C9BB5786D714) == 0x000388, "Member 'AVaultRotator_C::CameraTurn_180_to_360__Direction_DF51680448A0BDB5D459C9BB5786D714' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_180_to_360) == 0x000390, "Member 'AVaultRotator_C::CameraTurn_180_to_360' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180_CameraRotationOffset_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0) == 0x000398, "Member 'AVaultRotator_C::CameraTurn_0_to_180_CameraRotationOffset_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180_CameraPositionOffset_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0) == 0x0003A4, "Member 'AVaultRotator_C::CameraTurn_0_to_180_CameraPositionOffset_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180_DirectionalRotation_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0) == 0x0003B0, "Member 'AVaultRotator_C::CameraTurn_0_to_180_DirectionalRotation_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180_FoV_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0) == 0x0003B4, "Member 'AVaultRotator_C::CameraTurn_0_to_180_FoV_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180__Direction_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0) == 0x0003B8, "Member 'AVaultRotator_C::CameraTurn_0_to_180__Direction_EEFFCB9D4EE2DC181BC00CBD7C0E7EF0' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CameraTurn_0_to_180) == 0x0003C0, "Member 'AVaultRotator_C::CameraTurn_0_to_180' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, InitialCameraTransform) == 0x0003D0, "Member 'AVaultRotator_C::InitialCameraTransform' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, ClockwiseSound) == 0x000400, "Member 'AVaultRotator_C::ClockwiseSound' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, CounterClockwiseSound) == 0x000408, "Member 'AVaultRotator_C::CounterClockwiseSound' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DebugMobile_Lighting) == 0x000410, "Member 'AVaultRotator_C::DebugMobile_Lighting' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DebugLightingPC) == 0x000411, "Member 'AVaultRotator_C::DebugLightingPC' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, IsActive) == 0x000412, "Member 'AVaultRotator_C::IsActive' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, AlwaysOn) == 0x000413, "Member 'AVaultRotator_C::AlwaysOn' has a wrong offset!");
-static_assert(offsetof(AVaultRotator_C, DebugLighting_LOWDetailPC) == 0x000414, "Member 'AVaultRotator_C::DebugLighting_LOWDetailPC' has a wrong offset!");
 
 }
 

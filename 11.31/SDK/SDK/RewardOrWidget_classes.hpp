@@ -23,15 +23,17 @@ class URewardOrWidget_C final : public UFortRewardInfoButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardOrWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardOrWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardOrWidget_C")
 	}
 	static class URewardOrWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardOrWidget_C>();
 	}
 };
-static_assert(alignof(URewardOrWidget_C) == 0x000008, "Wrong alignment on URewardOrWidget_C");
-static_assert(sizeof(URewardOrWidget_C) == 0x000B90, "Wrong size on URewardOrWidget_C");
 
 }
 

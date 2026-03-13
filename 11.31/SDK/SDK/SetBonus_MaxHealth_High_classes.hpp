@@ -23,15 +23,17 @@ class USetBonus_MaxHealth_High_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SetBonus_MaxHealth_High_C">();
+		BP_STATIC_CLASS_IMPL("SetBonus_MaxHealth_High_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SetBonus_MaxHealth_High_C")
 	}
 	static class USetBonus_MaxHealth_High_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USetBonus_MaxHealth_High_C>();
 	}
 };
-static_assert(alignof(USetBonus_MaxHealth_High_C) == 0x000008, "Wrong alignment on USetBonus_MaxHealth_High_C");
-static_assert(sizeof(USetBonus_MaxHealth_High_C) == 0x000770, "Wrong size on USetBonus_MaxHealth_High_C");
 
 }
 

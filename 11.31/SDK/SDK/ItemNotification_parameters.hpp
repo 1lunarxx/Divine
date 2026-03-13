@@ -31,17 +31,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_4;              // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bCanCloseWidget;                      // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemNotification_C_ExecuteUbergraph_ItemNotification) == 0x000008, "Wrong alignment on ItemNotification_C_ExecuteUbergraph_ItemNotification");
-static_assert(sizeof(ItemNotification_C_ExecuteUbergraph_ItemNotification) == 0x000048, "Wrong size on ItemNotification_C_ExecuteUbergraph_ItemNotification");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, EntryPoint) == 0x000000, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, K2Node_DynamicCast_AsSolo_Button) == 0x000008, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::K2Node_DynamicCast_AsSolo_Button' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, CallFunc_PlayAnimation_ReturnValue_3) == 0x000030, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, CallFunc_PlayAnimation_ReturnValue_4) == 0x000038, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::CallFunc_PlayAnimation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(ItemNotification_C_ExecuteUbergraph_ItemNotification, K2Node_Event_bCanCloseWidget) == 0x000040, "Member 'ItemNotification_C_ExecuteUbergraph_ItemNotification::K2Node_Event_bCanCloseWidget' has a wrong offset!");
 
 // Function ItemNotification.ItemNotification_C.OnSetButtonText
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +39,6 @@ struct ItemNotification_C_OnSetButtonText final
 public:
 	bool                                          bCanCloseWidget;                                   // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemNotification_C_OnSetButtonText) == 0x000001, "Wrong alignment on ItemNotification_C_OnSetButtonText");
-static_assert(sizeof(ItemNotification_C_OnSetButtonText) == 0x000001, "Wrong size on ItemNotification_C_OnSetButtonText");
-static_assert(offsetof(ItemNotification_C_OnSetButtonText, bCanCloseWidget) == 0x000000, "Member 'ItemNotification_C_OnSetButtonText::bCanCloseWidget' has a wrong offset!");
 
 // Function ItemNotification.ItemNotification_C.HandleFade
 // 0x0008 (0x0008 - 0x0000)
@@ -61,9 +47,6 @@ struct ItemNotification_C_HandleFade final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemNotification_C_HandleFade) == 0x000008, "Wrong alignment on ItemNotification_C_HandleFade");
-static_assert(sizeof(ItemNotification_C_HandleFade) == 0x000008, "Wrong size on ItemNotification_C_HandleFade");
-static_assert(offsetof(ItemNotification_C_HandleFade, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'ItemNotification_C_HandleFade::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 // Function ItemNotification.ItemNotification_C.HandleInitialState
 // 0x0008 (0x0008 - 0x0000)
@@ -72,9 +55,6 @@ struct ItemNotification_C_HandleInitialState final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemNotification_C_HandleInitialState) == 0x000008, "Wrong alignment on ItemNotification_C_HandleInitialState");
-static_assert(sizeof(ItemNotification_C_HandleInitialState) == 0x000008, "Wrong size on ItemNotification_C_HandleInitialState");
-static_assert(offsetof(ItemNotification_C_HandleInitialState, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'ItemNotification_C_HandleInitialState::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 // Function ItemNotification.ItemNotification_C.HandleIntro
 // 0x0008 (0x0008 - 0x0000)
@@ -83,9 +63,6 @@ struct ItemNotification_C_HandleIntro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemNotification_C_HandleIntro) == 0x000008, "Wrong alignment on ItemNotification_C_HandleIntro");
-static_assert(sizeof(ItemNotification_C_HandleIntro) == 0x000008, "Wrong size on ItemNotification_C_HandleIntro");
-static_assert(offsetof(ItemNotification_C_HandleIntro, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'ItemNotification_C_HandleIntro::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

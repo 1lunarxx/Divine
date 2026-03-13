@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DivisionInfoPayoutEntry_C">();
+		BP_STATIC_CLASS_IMPL("DivisionInfoPayoutEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DivisionInfoPayoutEntry_C")
 	}
 	static class UDivisionInfoPayoutEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDivisionInfoPayoutEntry_C>();
 	}
 };
-static_assert(alignof(UDivisionInfoPayoutEntry_C) == 0x000008, "Wrong alignment on UDivisionInfoPayoutEntry_C");
-static_assert(sizeof(UDivisionInfoPayoutEntry_C) == 0x000278, "Wrong size on UDivisionInfoPayoutEntry_C");
-static_assert(offsetof(UDivisionInfoPayoutEntry_C, HypeIcon) == 0x000268, "Member 'UDivisionInfoPayoutEntry_C::HypeIcon' has a wrong offset!");
-static_assert(offsetof(UDivisionInfoPayoutEntry_C, Image_PointBG) == 0x000270, "Member 'UDivisionInfoPayoutEntry_C::Image_PointBG' has a wrong offset!");
 
 }
 

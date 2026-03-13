@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DeadzoneAdjustment_C">();
+		BP_STATIC_CLASS_IMPL("DeadzoneAdjustment_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DeadzoneAdjustment_C")
 	}
 	static class UDeadzoneAdjustment_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDeadzoneAdjustment_C>();
 	}
 };
-static_assert(alignof(UDeadzoneAdjustment_C) == 0x000008, "Wrong alignment on UDeadzoneAdjustment_C");
-static_assert(sizeof(UDeadzoneAdjustment_C) == 0x000268, "Wrong size on UDeadzoneAdjustment_C");
-static_assert(offsetof(UDeadzoneAdjustment_C, UberGraphFrame) == 0x000230, "Member 'UDeadzoneAdjustment_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, Deadzone_Adjustment) == 0x000238, "Member 'UDeadzoneAdjustment_C::Deadzone_Adjustment' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, Deadzone_Adjustment_Slider) == 0x000240, "Member 'UDeadzoneAdjustment_C::Deadzone_Adjustment_Slider' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, Deadzone_Max) == 0x000248, "Member 'UDeadzoneAdjustment_C::Deadzone_Max' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, ResetButton) == 0x000250, "Member 'UDeadzoneAdjustment_C::ResetButton' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, ScaleValue) == 0x000258, "Member 'UDeadzoneAdjustment_C::ScaleValue' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, MaxValue) == 0x00025C, "Member 'UDeadzoneAdjustment_C::MaxValue' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, MinValue) == 0x000260, "Member 'UDeadzoneAdjustment_C::MinValue' has a wrong offset!");
-static_assert(offsetof(UDeadzoneAdjustment_C, SettingType) == 0x000264, "Member 'UDeadzoneAdjustment_C::SettingType' has a wrong offset!");
 
 }
 

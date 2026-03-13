@@ -80,56 +80,6 @@ public:
 	bool                                          CallFunc_IsServer_ReturnValue_2;                   // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          Temp_bool_IsClosed_Variable_1;                     // 0x01F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old");
-static_assert(sizeof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old) == 0x0001F8, "Wrong size on Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, EntryPoint) == 0x000000, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_IsServer_ReturnValue) == 0x000004, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_MyComp) == 0x000008, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_Other) == 0x000010, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_OtherComp) == 0x000018, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_bSelfMoved) == 0x000020, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_HitLocation) == 0x000024, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_HitNormal) == 0x000030, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_NormalImpulse) == 0x00003C, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_Hit) == 0x000048, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, Temp_bool_Has_Been_Initd_Variable) == 0x0000D0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_bBlockingHit) == 0x0000D1, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000D2, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_Time) == 0x0000D4, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_Distance) == 0x0000D8, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_Location) == 0x0000DC, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_ImpactPoint) == 0x0000E8, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_Normal) == 0x0000F4, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_ImpactNormal) == 0x000100, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_PhysMat) == 0x000110, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_HitActor) == 0x000118, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_HitComponent) == 0x000120, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_HitBoneName) == 0x000128, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_HitItem) == 0x000130, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_FaceIndex) == 0x000134, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_TraceStart) == 0x000138, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_BreakHitResult_TraceEnd) == 0x000144, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_DynamicCast_AsFort_Pawn) == 0x000150, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_DynamicCast_bSuccess) == 0x000158, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_IsServer_ReturnValue_1) == 0x000159, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_IsServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00015C, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, Temp_bool_Has_Been_Initd_Variable_1) == 0x000168, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::Temp_bool_Has_Been_Initd_Variable_1' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, Temp_bool_IsClosed_Variable) == 0x000169, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_HitActors) == 0x000170, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_HitActors' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_Event_HitResults) == 0x000180, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_Event_HitResults' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_ComponentBoundEvent_WaterBody) == 0x000190, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_ComponentBoundEvent_WaterBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_ComponentBoundEvent_WaterInteractionComponent) == 0x000198, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_ComponentBoundEvent_WaterInteractionComponent' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_ComponentBoundEvent_bIsFirstBody) == 0x0001A0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_ComponentBoundEvent_bIsFirstBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_GetActorForwardVector_ReturnValue) == 0x0001A4, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_K2_SpawnPickupInWorld_ReturnValue) == 0x0001B0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_K2_SpawnPickupInWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0001B8, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0001C4, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, K2Node_MakeArray_Array) == 0x0001D0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_GetActorTeam_ReturnValue) == 0x0001E0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_Not_PreBool_ReturnValue) == 0x0001E1, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_GetInstigator_ReturnValue) == 0x0001E8, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, CallFunc_IsServer_ReturnValue_2) == 0x0001F0, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::CallFunc_IsServer_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old, Temp_bool_IsClosed_Variable_1) == 0x0001F1, "Member 'Prj_Athena_Bucket_Old_C_ExecuteUbergraph_Prj_Athena_Bucket_Old::Temp_bool_IsClosed_Variable_1' has a wrong offset!");
 
 // Function Prj_Athena_Bucket_Old.Prj_Athena_Bucket_Old_C.BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -140,11 +90,6 @@ public:
 	class UFortWaterInteractionComponent*         WaterInteractionComponent_0;                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsFirstBody;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
-static_assert(sizeof(Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature) == 0x000018, "Wrong size on Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature, WaterBody) == 0x000000, "Member 'Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature::WaterBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature, WaterInteractionComponent_0) == 0x000008, "Member 'Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature::WaterInteractionComponent_0' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature, bIsFirstBody) == 0x000010, "Member 'Prj_Athena_Bucket_Old_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_2_WaterInteractionOnEnterWater__DelegateSignature::bIsFirstBody' has a wrong offset!");
 
 // Function Prj_Athena_Bucket_Old.Prj_Athena_Bucket_Old_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -161,16 +106,6 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_Bucket_Old_C_ReceiveHit) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Old_C_ReceiveHit");
-static_assert(sizeof(Prj_Athena_Bucket_Old_C_ReceiveHit) == 0x0000C8, "Wrong size on Prj_Athena_Bucket_Old_C_ReceiveHit");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, MyComp) == 0x000000, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, Other) == 0x000008, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, OtherComp) == 0x000010, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, bSelfMoved) == 0x000018, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, HitLocation) == 0x00001C, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, HitNormal) == 0x000028, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, NormalImpulse) == 0x000034, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_ReceiveHit, Hit) == 0x000040, "Member 'Prj_Athena_Bucket_Old_C_ReceiveHit::Hit' has a wrong offset!");
 
 // Function Prj_Athena_Bucket_Old.Prj_Athena_Bucket_Old_C.OnExploded
 // 0x0020 (0x0020 - 0x0000)
@@ -180,10 +115,6 @@ public:
 	TArray<class AActor*>                         HitActors;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FHitResult>                     HitResults;                                        // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_Bucket_Old_C_OnExploded) == 0x000008, "Wrong alignment on Prj_Athena_Bucket_Old_C_OnExploded");
-static_assert(sizeof(Prj_Athena_Bucket_Old_C_OnExploded) == 0x000020, "Wrong size on Prj_Athena_Bucket_Old_C_OnExploded");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_OnExploded, HitActors) == 0x000000, "Member 'Prj_Athena_Bucket_Old_C_OnExploded::HitActors' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_Bucket_Old_C_OnExploded, HitResults) == 0x000010, "Member 'Prj_Athena_Bucket_Old_C_OnExploded::HitResults' has a wrong offset!");
 
 }
 

@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComOption_C">();
+		BP_STATIC_CLASS_IMPL("ComOption_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComOption_C")
 	}
 	static class UComOption_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComOption_C>();
 	}
 };
-static_assert(alignof(UComOption_C) == 0x000008, "Wrong alignment on UComOption_C");
-static_assert(sizeof(UComOption_C) == 0x000C20, "Wrong size on UComOption_C");
-static_assert(offsetof(UComOption_C, UberGraphFrame) == 0x000BF8, "Member 'UComOption_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComOption_C, ComDivider_option) == 0x000C00, "Member 'UComOption_C::ComDivider_option' has a wrong offset!");
-static_assert(offsetof(UComOption_C, ComRightImageBackground) == 0x000C08, "Member 'UComOption_C::ComRightImageBackground' has a wrong offset!");
-static_assert(offsetof(UComOption_C, Overlay_ComOptionButtonsContainer) == 0x000C10, "Member 'UComOption_C::Overlay_ComOptionButtonsContainer' has a wrong offset!");
-static_assert(offsetof(UComOption_C, VFXVOTING) == 0x000C18, "Member 'UComOption_C::VFXVOTING' has a wrong offset!");
 
 }
 

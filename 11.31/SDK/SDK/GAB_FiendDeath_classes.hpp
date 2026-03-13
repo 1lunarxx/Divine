@@ -23,15 +23,17 @@ class UGAB_FiendDeath_C final : public UGAB_GenericDeath_NoMontage_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_FiendDeath_C">();
+		BP_STATIC_CLASS_IMPL("GAB_FiendDeath_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_FiendDeath_C")
 	}
 	static class UGAB_FiendDeath_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_FiendDeath_C>();
 	}
 };
-static_assert(alignof(UGAB_FiendDeath_C) == 0x000008, "Wrong alignment on UGAB_FiendDeath_C");
-static_assert(sizeof(UGAB_FiendDeath_C) == 0x000A38, "Wrong size on UGAB_FiendDeath_C");
 
 }
 

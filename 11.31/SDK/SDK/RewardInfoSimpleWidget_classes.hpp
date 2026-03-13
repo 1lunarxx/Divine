@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RewardInfoSimpleWidget_C">();
+		BP_STATIC_CLASS_IMPL("RewardInfoSimpleWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RewardInfoSimpleWidget_C")
 	}
 	static class URewardInfoSimpleWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URewardInfoSimpleWidget_C>();
 	}
 };
-static_assert(alignof(URewardInfoSimpleWidget_C) == 0x000008, "Wrong alignment on URewardInfoSimpleWidget_C");
-static_assert(sizeof(URewardInfoSimpleWidget_C) == 0x000BA8, "Wrong size on URewardInfoSimpleWidget_C");
-static_assert(offsetof(URewardInfoSimpleWidget_C, UberGraphFrame) == 0x000B90, "Member 'URewardInfoSimpleWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URewardInfoSimpleWidget_C, ItemCount) == 0x000B98, "Member 'URewardInfoSimpleWidget_C::ItemCount' has a wrong offset!");
-static_assert(offsetof(URewardInfoSimpleWidget_C, ItemIcon) == 0x000BA0, "Member 'URewardInfoSimpleWidget_C::ItemIcon' has a wrong offset!");
 
 }
 

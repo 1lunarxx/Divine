@@ -64,30 +64,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ReplayPC_Athena_C">();
+		BP_STATIC_CLASS_IMPL("BP_ReplayPC_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ReplayPC_Athena_C")
 	}
 	static class ABP_ReplayPC_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ReplayPC_Athena_C>();
 	}
 };
-static_assert(alignof(ABP_ReplayPC_Athena_C) == 0x000010, "Wrong alignment on ABP_ReplayPC_Athena_C");
-static_assert(sizeof(ABP_ReplayPC_Athena_C) == 0x003560, "Wrong size on ABP_ReplayPC_Athena_C");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, UberGraphFrame) == 0x0034B0, "Member 'ABP_ReplayPC_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, PlaybackRateMap) == 0x0034B8, "Member 'ABP_ReplayPC_Athena_C::PlaybackRateMap' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, CurrentPlayRate) == 0x003508, "Member 'ABP_ReplayPC_Athena_C::CurrentPlayRate' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsFast) == 0x00350C, "Member 'ABP_ReplayPC_Athena_C::bIsFast' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, SpeedupLoop) == 0x003510, "Member 'ABP_ReplayPC_Athena_C::SpeedupLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, SlowdownLoop) == 0x003518, "Member 'ABP_ReplayPC_Athena_C::SlowdownLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsHudVisible) == 0x003520, "Member 'ABP_ReplayPC_Athena_C::bIsHudVisible' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, ZoomOutLoop) == 0x003528, "Member 'ABP_ReplayPC_Athena_C::ZoomOutLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, ZoomInLoop) == 0x003530, "Member 'ABP_ReplayPC_Athena_C::ZoomInLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsSkydivingAudioEnabled) == 0x003538, "Member 'ABP_ReplayPC_Athena_C::bIsSkydivingAudioEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsTargetParachuting) == 0x003539, "Member 'ABP_ReplayPC_Athena_C::bIsTargetParachuting' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsTargetSkydiving) == 0x00353A, "Member 'ABP_ReplayPC_Athena_C::bIsTargetSkydiving' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, SkydivingAudioLoop) == 0x003540, "Member 'ABP_ReplayPC_Athena_C::SkydivingAudioLoop' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, bIsPaused) == 0x003548, "Member 'ABP_ReplayPC_Athena_C::bIsPaused' has a wrong offset!");
-static_assert(offsetof(ABP_ReplayPC_Athena_C, CurrentSkydivingSound) == 0x003550, "Member 'ABP_ReplayPC_Athena_C::CurrentSkydivingSound' has a wrong offset!");
 
 }
 

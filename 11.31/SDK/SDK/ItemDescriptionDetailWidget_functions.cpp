@@ -17,30 +17,6 @@
 namespace SDK
 {
 
-// Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandleItemChanged
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    ItemChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    AmmoChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                                    IngredientsChanged                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UItemDescriptionDetailWidget_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleItemChanged");
-
-	Params::ItemDescriptionDetailWidget_C_HandleItemChanged Parms{};
-
-	Parms.ItemChanged = ItemChanged;
-	Parms.AmmoChanged = AmmoChanged;
-	Parms.IngredientsChanged = IngredientsChanged;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.UpdateQuantityTextBlock
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -133,6 +109,30 @@ void UItemDescriptionDetailWidget_C::ExecuteUbergraph_ItemDescriptionDetailWidge
 	Params::ItemDescriptionDetailWidget_C_ExecuteUbergraph_ItemDescriptionDetailWidget Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemDescriptionDetailWidget.ItemDescriptionDetailWidget_C.HandleItemChanged
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    ItemChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    AmmoChanged                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                                    IngredientsChanged                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemDescriptionDetailWidget_C::HandleItemChanged(bool ItemChanged, bool AmmoChanged, bool IngredientsChanged)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemDescriptionDetailWidget_C", "HandleItemChanged");
+
+	Params::ItemDescriptionDetailWidget_C_HandleItemChanged Parms{};
+
+	Parms.ItemChanged = ItemChanged;
+	Parms.AmmoChanged = AmmoChanged;
+	Parms.IngredientsChanged = IngredientsChanged;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

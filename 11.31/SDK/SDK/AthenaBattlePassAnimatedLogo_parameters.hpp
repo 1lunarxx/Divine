@@ -21,9 +21,6 @@ struct AthenaBattlePassAnimatedLogo_C_OnAnimationFinished final
 public:
 	const class UWidgetAnimation*                 Animation;                                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaBattlePassAnimatedLogo_C_OnAnimationFinished) == 0x000008, "Wrong alignment on AthenaBattlePassAnimatedLogo_C_OnAnimationFinished");
-static_assert(sizeof(AthenaBattlePassAnimatedLogo_C_OnAnimationFinished) == 0x000008, "Wrong size on AthenaBattlePassAnimatedLogo_C_OnAnimationFinished");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_OnAnimationFinished, Animation) == 0x000000, "Member 'AthenaBattlePassAnimatedLogo_C_OnAnimationFinished::Animation' has a wrong offset!");
 
 // Function AthenaBattlePassAnimatedLogo.AthenaBattlePassAnimatedLogo_C.ExecuteUbergraph_AthenaBattlePassAnimatedLogo
 // 0x0050 (0x0050 - 0x0000)
@@ -41,16 +38,6 @@ public:
 	class UAthenaAccountContext*                  CallFunc_GetContext_ReturnValue;                   // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetCurrentChapterAndSeasonText_ReturnValue; // 0x0038(0x0018)()
 };
-static_assert(alignof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo) == 0x000008, "Wrong alignment on AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo");
-static_assert(sizeof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo) == 0x000050, "Wrong size on AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, EntryPoint) == 0x000000, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, K2Node_Event_Animation) == 0x000008, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_GetContext_ReturnValue) == 0x000030, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo, CallFunc_GetCurrentChapterAndSeasonText_ReturnValue) == 0x000038, "Member 'AthenaBattlePassAnimatedLogo_C_ExecuteUbergraph_AthenaBattlePassAnimatedLogo::CallFunc_GetCurrentChapterAndSeasonText_ReturnValue' has a wrong offset!");
 
 }
 

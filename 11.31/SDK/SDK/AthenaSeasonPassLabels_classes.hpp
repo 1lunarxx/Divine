@@ -33,19 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSeasonPassLabels_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSeasonPassLabels_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSeasonPassLabels_C")
 	}
 	static class UAthenaSeasonPassLabels_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSeasonPassLabels_C>();
 	}
 };
-static_assert(alignof(UAthenaSeasonPassLabels_C) == 0x000008, "Wrong alignment on UAthenaSeasonPassLabels_C");
-static_assert(sizeof(UAthenaSeasonPassLabels_C) == 0x000250, "Wrong size on UAthenaSeasonPassLabels_C");
-static_assert(offsetof(UAthenaSeasonPassLabels_C, ShowLabels) == 0x000230, "Member 'UAthenaSeasonPassLabels_C::ShowLabels' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPassLabels_C, Image) == 0x000238, "Member 'UAthenaSeasonPassLabels_C::Image' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPassLabels_C, Image_219) == 0x000240, "Member 'UAthenaSeasonPassLabels_C::Image_219' has a wrong offset!");
-static_assert(offsetof(UAthenaSeasonPassLabels_C, SizeBox_66) == 0x000248, "Member 'UAthenaSeasonPassLabels_C::SizeBox_66' has a wrong offset!");
 
 }
 

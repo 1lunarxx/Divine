@@ -62,32 +62,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivatableMovieWidget_Monolithic_C">();
+		BP_STATIC_CLASS_IMPL("ActivatableMovieWidget_Monolithic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivatableMovieWidget_Monolithic_C")
 	}
 	static class UActivatableMovieWidget_Monolithic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivatableMovieWidget_Monolithic_C>();
 	}
 };
-static_assert(alignof(UActivatableMovieWidget_Monolithic_C) == 0x000008, "Wrong alignment on UActivatableMovieWidget_Monolithic_C");
-static_assert(sizeof(UActivatableMovieWidget_Monolithic_C) == 0x000568, "Wrong size on UActivatableMovieWidget_Monolithic_C");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, MainSafeZone) == 0x0004C8, "Member 'UActivatableMovieWidget_Monolithic_C::MainSafeZone' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, IsAutoplay) == 0x0004D0, "Member 'UActivatableMovieWidget_Monolithic_C::IsAutoplay' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, StreamedVideoError) == 0x0004D8, "Member 'UActivatableMovieWidget_Monolithic_C::StreamedVideoError' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, StreamedVideoOpenError) == 0x0004E8, "Member 'UActivatableMovieWidget_Monolithic_C::StreamedVideoOpenError' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, ElectraMediaSource) == 0x0004F0, "Member 'UActivatableMovieWidget_Monolithic_C::ElectraMediaSource' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, StreamedMediaPlayer) == 0x0004F8, "Member 'UActivatableMovieWidget_Monolithic_C::StreamedMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, StreamedVideoOpeningTimer) == 0x000500, "Member 'UActivatableMovieWidget_Monolithic_C::StreamedVideoOpeningTimer' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, StreamingVideoID) == 0x000508, "Member 'UActivatableMovieWidget_Monolithic_C::StreamingVideoID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, FallbackVideoID) == 0x000510, "Member 'UActivatableMovieWidget_Monolithic_C::FallbackVideoID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, FallbackExists) == 0x000518, "Member 'UActivatableMovieWidget_Monolithic_C::FallbackExists' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, ProdLinkID) == 0x000520, "Member 'UActivatableMovieWidget_Monolithic_C::ProdLinkID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, GameDevLinkID) == 0x000530, "Member 'UActivatableMovieWidget_Monolithic_C::GameDevLinkID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, UseLinkIDs) == 0x000540, "Member 'UActivatableMovieWidget_Monolithic_C::UseLinkIDs' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, VideoString) == 0x000544, "Member 'UActivatableMovieWidget_Monolithic_C::VideoString' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, UseFlatMetadataByUID) == 0x00054C, "Member 'UActivatableMovieWidget_Monolithic_C::UseFlatMetadataByUID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, VideoUID) == 0x000550, "Member 'UActivatableMovieWidget_Monolithic_C::VideoUID' has a wrong offset!");
-static_assert(offsetof(UActivatableMovieWidget_Monolithic_C, bShouldBeModal) == 0x000560, "Member 'UActivatableMovieWidget_Monolithic_C::bShouldBeModal' has a wrong offset!");
 
 }
 

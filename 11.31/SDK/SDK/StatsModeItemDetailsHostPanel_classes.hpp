@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatsModeItemDetailsHostPanel_C">();
+		BP_STATIC_CLASS_IMPL("StatsModeItemDetailsHostPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatsModeItemDetailsHostPanel_C")
 	}
 	static class UStatsModeItemDetailsHostPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatsModeItemDetailsHostPanel_C>();
 	}
 };
-static_assert(alignof(UStatsModeItemDetailsHostPanel_C) == 0x000008, "Wrong alignment on UStatsModeItemDetailsHostPanel_C");
-static_assert(sizeof(UStatsModeItemDetailsHostPanel_C) == 0x000368, "Wrong size on UStatsModeItemDetailsHostPanel_C");
-static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, UberGraphFrame) == 0x000340, "Member 'UStatsModeItemDetailsHostPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, HeaderWidget) == 0x000348, "Member 'UStatsModeItemDetailsHostPanel_C::HeaderWidget' has a wrong offset!");
-static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, ItemAttributesDetailWidget) == 0x000350, "Member 'UStatsModeItemDetailsHostPanel_C::ItemAttributesDetailWidget' has a wrong offset!");
-static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, MarkedForMulchingBackgroundImage) == 0x000358, "Member 'UStatsModeItemDetailsHostPanel_C::MarkedForMulchingBackgroundImage' has a wrong offset!");
-static_assert(offsetof(UStatsModeItemDetailsHostPanel_C, MarkedForMulchingIndicatorImage) == 0x000360, "Member 'UStatsModeItemDetailsHostPanel_C::MarkedForMulchingIndicatorImage' has a wrong offset!");
 
 }
 

@@ -47,26 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_ProjectileTrajectory_C">();
+		BP_STATIC_CLASS_IMPL("BP_ProjectileTrajectory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_ProjectileTrajectory_C")
 	}
 	static class ABP_ProjectileTrajectory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_ProjectileTrajectory_C>();
 	}
 };
-static_assert(alignof(ABP_ProjectileTrajectory_C) == 0x000008, "Wrong alignment on ABP_ProjectileTrajectory_C");
-static_assert(sizeof(ABP_ProjectileTrajectory_C) == 0x000270, "Wrong size on ABP_ProjectileTrajectory_C");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, UberGraphFrame) == 0x000218, "Member 'ABP_ProjectileTrajectory_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, Target) == 0x000220, "Member 'ABP_ProjectileTrajectory_C::Target' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, Spline) == 0x000228, "Member 'ABP_ProjectileTrajectory_C::Spline' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, DefaultSceneRoot) == 0x000230, "Member 'ABP_ProjectileTrajectory_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, MaxMeshCount) == 0x000238, "Member 'ABP_ProjectileTrajectory_C::MaxMeshCount' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, SplineMeshComponents) == 0x000240, "Member 'ABP_ProjectileTrajectory_C::SplineMeshComponents' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, SplineMID) == 0x000250, "Member 'ABP_ProjectileTrajectory_C::SplineMID' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, SplineFadeDistance) == 0x000258, "Member 'ABP_ProjectileTrajectory_C::SplineFadeDistance' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, SplineFadeStartDistance) == 0x00025C, "Member 'ABP_ProjectileTrajectory_C::SplineFadeStartDistance' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, Trajectory_Owner) == 0x000260, "Member 'ABP_ProjectileTrajectory_C::Trajectory_Owner' has a wrong offset!");
-static_assert(offsetof(ABP_ProjectileTrajectory_C, ShouldUpdate) == 0x000268, "Member 'ABP_ProjectileTrajectory_C::ShouldUpdate' has a wrong offset!");
 
 }
 

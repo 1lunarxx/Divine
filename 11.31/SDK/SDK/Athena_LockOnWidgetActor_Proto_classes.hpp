@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_LockOnWidgetActor_Proto_C">();
+		BP_STATIC_CLASS_IMPL("Athena_LockOnWidgetActor_Proto_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_LockOnWidgetActor_Proto_C")
 	}
 	static class AAthena_LockOnWidgetActor_Proto_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAthena_LockOnWidgetActor_Proto_C>();
 	}
 };
-static_assert(alignof(AAthena_LockOnWidgetActor_Proto_C) == 0x000008, "Wrong alignment on AAthena_LockOnWidgetActor_Proto_C");
-static_assert(sizeof(AAthena_LockOnWidgetActor_Proto_C) == 0x000230, "Wrong size on AAthena_LockOnWidgetActor_Proto_C");
-static_assert(offsetof(AAthena_LockOnWidgetActor_Proto_C, LockOnWidget) == 0x000218, "Member 'AAthena_LockOnWidgetActor_Proto_C::LockOnWidget' has a wrong offset!");
-static_assert(offsetof(AAthena_LockOnWidgetActor_Proto_C, HealthBar) == 0x000220, "Member 'AAthena_LockOnWidgetActor_Proto_C::HealthBar' has a wrong offset!");
-static_assert(offsetof(AAthena_LockOnWidgetActor_Proto_C, DefaultSceneRoot) == 0x000228, "Member 'AAthena_LockOnWidgetActor_Proto_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

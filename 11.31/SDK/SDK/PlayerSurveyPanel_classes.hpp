@@ -41,20 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanel_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanel_C")
 	}
 	static class UPlayerSurveyPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanel_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanel_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanel_C");
-static_assert(sizeof(UPlayerSurveyPanel_C) == 0x000480, "Wrong size on UPlayerSurveyPanel_C");
-static_assert(offsetof(UPlayerSurveyPanel_C, UberGraphFrame) == 0x000458, "Member 'UPlayerSurveyPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanel_C, Outro) == 0x000460, "Member 'UPlayerSurveyPanel_C::Outro' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanel_C, Intro) == 0x000468, "Member 'UPlayerSurveyPanel_C::Intro' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanel_C, PanelScale) == 0x000470, "Member 'UPlayerSurveyPanel_C::PanelScale' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanel_C, PlayerSurveyPanelContents) == 0x000478, "Member 'UPlayerSurveyPanel_C::PlayerSurveyPanelContents' has a wrong offset!");
 
 }
 

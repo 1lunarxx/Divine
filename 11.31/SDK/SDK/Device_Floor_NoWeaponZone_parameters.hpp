@@ -77,66 +77,13 @@ public:
 	bool                                          CallFunc_IsPregame_ReturnValue;                    // 0x017D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x017E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_17F[0x1];                                      // 0x017F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn)> K2Node_CreateDelegate_OutputDelegate;              // 0x0180(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFortAbilitySystemComponent* AbilitySystemComponent, class AFortPlayerPawn* AffectedPawn)> K2Node_CreateDelegate_OutputDelegate; // 0x0180(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPawn*                              K2Node_Event_PlayerEmoting_1;                      // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPawn*                              K2Node_Event_PlayerEmoting;                        // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Transmit_if_Valid_Actor_Valid_1;          // 0x01A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x01A1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Transmit_if_Valid_Actor_Valid_2;          // 0x01A2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone) == 0x0001A8, "Wrong size on Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, EntryPoint) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OverlappedComponent_1) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OverlappedComponent_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherActor_1) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherActor_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherComp_1) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherComp_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherBodyIndex_1) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherBodyIndex_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_bFromSweep) == 0x000024, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_bFromSweep' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_SweepResult) == 0x000028, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_SweepResult' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OverlappedComponent) == 0x0000B0, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherActor) == 0x0000B8, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherActor' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherComp) == 0x0000C0, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherComp' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_ComponentBoundEvent_OtherBodyIndex) == 0x0000C8, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_ComponentBoundEvent_OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x0000D0, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000D8, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_DynamicCast_bSuccess) == 0x0000E0, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsValid_ReturnValue) == 0x0000E1, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_ShouldAffectTarget_ShouldAffect) == 0x0000E2, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_ShouldAffectTarget_ShouldAffect' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_VFXParameters_Array) == 0x0000E8, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_VFXParameters_Array' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000F8, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0000FC, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_FMax_ReturnValue) == 0x000100, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Multiply_FloatFloat_ReturnValue_2) == 0x000104, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Multiply_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_FMax_ReturnValue_1) == 0x000108, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_FMax_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_MakeVector_ReturnValue) == 0x00010C, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_FMax_ReturnValue_2) == 0x000118, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_FMax_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Multiply_VectorVector_ReturnValue) == 0x00011C, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Subtract_VectorFloat_ReturnValue) == 0x000128, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Subtract_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_CustomEvent_Overlapped_Pawn) == 0x000138, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_CustomEvent_Overlapped_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000140, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_CustomEvent_AbilitySystemComponent) == 0x000148, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_CustomEvent_AbilitySystemComponent' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_CustomEvent_AffectedPawn) == 0x000150, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_CustomEvent_AffectedPawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsValid_ReturnValue_1) == 0x000158, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsOverlappingActor_ReturnValue) == 0x000159, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsOverlappingActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_BooleanAND_ReturnValue) == 0x00015A, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsDedicatedServer_ReturnValue) == 0x00015B, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_ApplyEffects_AbilitySystemComponentValid) == 0x00015C, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_ApplyEffects_AbilitySystemComponentValid' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_ApplyEffects_As_Fort_Pawn) == 0x000160, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_ApplyEffects_As_Fort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_ApplyEffects_IsValidTarget) == 0x000168, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_ApplyEffects_IsValidTarget' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_DynamicCast_AsFort_Player_Pawn_1) == 0x000170, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_DynamicCast_AsFort_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_DynamicCast_bSuccess_1) == 0x000178, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_HasAuthority_ReturnValue) == 0x000179, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Transmit_if_Valid_Actor_Valid) == 0x00017A, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Transmit_if_Valid_Actor_Valid' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_HasAuthority_ReturnValue_1) == 0x00017B, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_HasAuthority_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsValid_ReturnValue_2) == 0x00017C, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsPregame_ReturnValue) == 0x00017D, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsPregame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_BooleanOR_ReturnValue) == 0x00017E, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_CreateDelegate_OutputDelegate) == 0x000180, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_Event_PlayerEmoting_1) == 0x000190, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_Event_PlayerEmoting_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, K2Node_Event_PlayerEmoting) == 0x000198, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::K2Node_Event_PlayerEmoting' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Transmit_if_Valid_Actor_Valid_1) == 0x0001A0, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Transmit_if_Valid_Actor_Valid_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x0001A1, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone, CallFunc_Transmit_if_Valid_Actor_Valid_2) == 0x0001A2, "Member 'Device_Floor_NoWeaponZone_C_ExecuteUbergraph_Device_Floor_NoWeaponZone::CallFunc_Transmit_if_Valid_Actor_Valid_2' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.OnPlayerEmoteStarted
 // 0x0008 (0x0008 - 0x0000)
@@ -145,9 +92,6 @@ struct Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted final
 public:
 	class AFortPawn*                              PlayerEmoting;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted) == 0x000008, "Wrong size on Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted, PlayerEmoting) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_OnPlayerEmoteStarted::PlayerEmoting' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.OnPlayerEmoteEnded
 // 0x0008 (0x0008 - 0x0000)
@@ -156,9 +100,6 @@ struct Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded final
 public:
 	class AFortPawn*                              PlayerEmoting;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded) == 0x000008, "Wrong size on Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded, PlayerEmoting) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_OnPlayerEmoteEnded::PlayerEmoting' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.OnAbilitySystemComponentInitialized
 // 0x0010 (0x0010 - 0x0000)
@@ -168,10 +109,6 @@ public:
 	class UFortAbilitySystemComponent*            AbilitySystemComponent_0;                          // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerPawn*                        AffectedPawn;                                      // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized) == 0x000010, "Wrong size on Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized, AbilitySystemComponent_0) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized::AbilitySystemComponent_0' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized, AffectedPawn) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_OnAbilitySystemComponentInitialized::AffectedPawn' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.PlayFX
 // 0x0008 (0x0008 - 0x0000)
@@ -180,9 +117,6 @@ struct Device_Floor_NoWeaponZone_C_PlayFX final
 public:
 	class AFortPawn*                              Overlapped_Pawn;                                   // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_PlayFX) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_PlayFX");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_PlayFX) == 0x000008, "Wrong size on Device_Floor_NoWeaponZone_C_PlayFX");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_PlayFX, Overlapped_Pawn) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_PlayFX::Overlapped_Pawn' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -194,12 +128,6 @@ public:
 	class UPrimitiveComponent*                    OtherComp;                                         // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         OtherBodyIndex;                                    // 0x0018(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature) == 0x000020, "Wrong size on Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_3_ComponentEndOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature
 // 0x00A8 (0x00A8 - 0x0000)
@@ -214,14 +142,6 @@ public:
 	uint8                                         Pad_1D[0x3];                                       // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             SweepResult;                                       // 0x0020(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature) == 0x0000A8, "Wrong size on Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OverlappedComponent) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OverlappedComponent' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherActor) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherActor' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherComp) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherComp' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, OtherBodyIndex) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::OtherBodyIndex' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, bFromSweep) == 0x00001C, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::bFromSweep' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature, SweepResult) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_BndEvt__Trigger_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature::SweepResult' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.GetAbilitySystemComponentAndPawn
 // 0x0040 (0x0040 - 0x0000)
@@ -239,17 +159,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn) == 0x000040, "Wrong size on Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, Object) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::Object' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, AsFort_Ability_System_Component) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::AsFort_Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, AsFort_Pawn) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, K2Node_DynamicCast_AsFort_Pawn) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000028, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, K2Node_DynamicCast_AsFort_Ability_System_Component) == 0x000030, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::K2Node_DynamicCast_AsFort_Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn, CallFunc_IsValid_ReturnValue) == 0x000039, "Member 'Device_Floor_NoWeaponZone_C_GetAbilitySystemComponentAndPawn::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.ApplyEffects
 // 0x00C8 (0x00C8 - 0x0000)
@@ -280,26 +189,6 @@ public:
 	uint8                                         Pad_A2[0x6];                                       // 0x00A2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayTagContainer                  CallFunc_MakeLiteralGameplayTagContainer_ReturnValue; // 0x00A8(0x0020)()
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_ApplyEffects) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_ApplyEffects");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_ApplyEffects) == 0x0000C8, "Wrong size on Device_Floor_NoWeaponZone_C_ApplyEffects");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, Object) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::Object' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, AbilitySystemComponentValid) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::AbilitySystemComponentValid' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, As_Fort_Pawn) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::As_Fort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, IsValidTarget) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::IsValidTarget' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, Local_Effect_Context) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::Local_Effect_Context' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, Ability_System) == 0x000038, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::Ability_System' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, Pawn) == 0x000040, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_GetAbilitySystemComponentAndPawn_AsFort_Ability_System_Component) == 0x000048, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_GetAbilitySystemComponentAndPawn_AsFort_Ability_System_Component' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_GetAbilitySystemComponentAndPawn_AsFort_Pawn) == 0x000050, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_GetAbilitySystemComponentAndPawn_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_MakeEffectContext_ReturnValue) == 0x000060, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_MakeEffectContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_Setup_Effect_Data_Should_Apply) == 0x000078, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_Setup_Effect_Data_Should_Apply' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_Setup_Effect_Data_Spec_Handle) == 0x000080, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_Setup_Effect_Data_Spec_Handle' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue) == 0x000090, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000098, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_ShouldAffectTarget_ShouldAffect) == 0x0000A0, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_ShouldAffectTarget_ShouldAffect' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_Transmit_if_Valid_Actor_Valid) == 0x0000A1, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_Transmit_if_Valid_Actor_Valid' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ApplyEffects, CallFunc_MakeLiteralGameplayTagContainer_ReturnValue) == 0x0000A8, "Member 'Device_Floor_NoWeaponZone_C_ApplyEffects::CallFunc_MakeLiteralGameplayTagContainer_ReturnValue' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.ShouldAffectTarget
 // 0x0030 (0x0030 - 0x0000)
@@ -315,14 +204,6 @@ public:
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_ShouldAffectTarget");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget) == 0x000030, "Wrong size on Device_Floor_NoWeaponZone_C_ShouldAffectTarget");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, TargetActor) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::TargetActor' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, ShouldAffect) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::ShouldAffect' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, K2Node_DynamicCast_AsFort_Pawn) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_ShouldAffectTarget, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'Device_Floor_NoWeaponZone_C_ShouldAffectTarget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function Device_Floor_NoWeaponZone.Device_Floor_NoWeaponZone_C.Setup Effect Data
 // 0x0078 (0x0078 - 0x0000)
@@ -344,18 +225,6 @@ public:
 	uint8                                         Pad_61[0x7];                                       // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingSpec_ReturnValue;             // 0x0068(0x0010)()
 };
-static_assert(alignof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data) == 0x000008, "Wrong alignment on Device_Floor_NoWeaponZone_C_Setup_Effect_Data");
-static_assert(sizeof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data) == 0x000078, "Wrong size on Device_Floor_NoWeaponZone_C_Setup_Effect_Data");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, Ability_System) == 0x000000, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::Ability_System' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, Should_Apply) == 0x000008, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::Should_Apply' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, Spec_Handle) == 0x000010, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::Spec_Handle' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, Handle) == 0x000020, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::Handle' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, Apply) == 0x000030, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::Apply' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, CallFunc_AddGrantedTag_ReturnValue) == 0x000038, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::CallFunc_AddGrantedTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, CallFunc_Not_PreBool_ReturnValue) == 0x000048, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, CallFunc_AddGrantedTag_ReturnValue_1) == 0x000050, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::CallFunc_AddGrantedTag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000060, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Device_Floor_NoWeaponZone_C_Setup_Effect_Data, CallFunc_MakeOutgoingSpec_ReturnValue) == 0x000068, "Member 'Device_Floor_NoWeaponZone_C_Setup_Effect_Data::CallFunc_MakeOutgoingSpec_ReturnValue' has a wrong offset!");
 
 }
 

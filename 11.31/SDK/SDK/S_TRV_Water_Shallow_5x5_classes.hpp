@@ -23,15 +23,17 @@ class AS_TRV_Water_Shallow_5x5_C final : public A_WaterMeshBlueprintMaster_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"S_TRV_Water_Shallow_5x5_C">();
+		BP_STATIC_CLASS_IMPL("S_TRV_Water_Shallow_5x5_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"S_TRV_Water_Shallow_5x5_C")
 	}
 	static class AS_TRV_Water_Shallow_5x5_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AS_TRV_Water_Shallow_5x5_C>();
 	}
 };
-static_assert(alignof(AS_TRV_Water_Shallow_5x5_C) == 0x000008, "Wrong alignment on AS_TRV_Water_Shallow_5x5_C");
-static_assert(sizeof(AS_TRV_Water_Shallow_5x5_C) == 0x0002E0, "Wrong size on AS_TRV_Water_Shallow_5x5_C");
 
 }
 

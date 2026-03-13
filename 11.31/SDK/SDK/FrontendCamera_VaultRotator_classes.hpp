@@ -37,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontendCamera_VaultRotator_C">();
+		BP_STATIC_CLASS_IMPL("FrontendCamera_VaultRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontendCamera_VaultRotator_C")
 	}
 	static class AFrontendCamera_VaultRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFrontendCamera_VaultRotator_C>();
 	}
 };
-static_assert(alignof(AFrontendCamera_VaultRotator_C) == 0x000010, "Wrong alignment on AFrontendCamera_VaultRotator_C");
-static_assert(sizeof(AFrontendCamera_VaultRotator_C) == 0x0007E0, "Wrong size on AFrontendCamera_VaultRotator_C");
-static_assert(offsetof(AFrontendCamera_VaultRotator_C, UberGraphFrame) == 0x0007C0, "Member 'AFrontendCamera_VaultRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AFrontendCamera_VaultRotator_C, LoginCamera_0) == 0x0007C8, "Member 'AFrontendCamera_VaultRotator_C::LoginCamera_0' has a wrong offset!");
-static_assert(offsetof(AFrontendCamera_VaultRotator_C, IsBattlepass) == 0x0007D0, "Member 'AFrontendCamera_VaultRotator_C::IsBattlepass' has a wrong offset!");
-static_assert(offsetof(AFrontendCamera_VaultRotator_C, ActiveVaultRotator) == 0x0007D8, "Member 'AFrontendCamera_VaultRotator_C::ActiveVaultRotator' has a wrong offset!");
 
 }
 

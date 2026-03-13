@@ -37,20 +37,6 @@ public:
 	class UComOptionVote_C*                       K2Node_DynamicCast_AsCom_Option_Vote_1;            // 0x0050(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ComOption_C_ExecuteUbergraph_ComOption) == 0x000008, "Wrong alignment on ComOption_C_ExecuteUbergraph_ComOption");
-static_assert(sizeof(ComOption_C_ExecuteUbergraph_ComOption) == 0x000060, "Wrong size on ComOption_C_ExecuteUbergraph_ComOption");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, EntryPoint) == 0x000000, "Member 'ComOption_C_ExecuteUbergraph_ComOption::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_AsCom_Option_Details) == 0x000008, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_AsCom_Option_Details' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_AsCom_Option_Details_1) == 0x000018, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_AsCom_Option_Details_1' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_bSuccess_1) == 0x000020, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_AsCom_Option_Vote) == 0x000028, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_AsCom_Option_Vote' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_bSuccess_2) == 0x000030, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_AsFlame_Counter) == 0x000038, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_AsFlame_Counter' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_bSuccess_3) == 0x000040, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, CallFunc_PlayAnimation_ReturnValue) == 0x000048, "Member 'ComOption_C_ExecuteUbergraph_ComOption::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_AsCom_Option_Vote_1) == 0x000050, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_AsCom_Option_Vote_1' has a wrong offset!");
-static_assert(offsetof(ComOption_C_ExecuteUbergraph_ComOption, K2Node_DynamicCast_bSuccess_4) == 0x000058, "Member 'ComOption_C_ExecuteUbergraph_ComOption::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
 
 }
 

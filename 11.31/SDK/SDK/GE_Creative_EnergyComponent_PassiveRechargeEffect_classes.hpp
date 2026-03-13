@@ -23,15 +23,17 @@ class UGE_Creative_EnergyComponent_PassiveRechargeEffect_C final : public UGamep
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GE_Creative_EnergyComponent_PassiveRechargeEffect_C">();
+		BP_STATIC_CLASS_IMPL("GE_Creative_EnergyComponent_PassiveRechargeEffect_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GE_Creative_EnergyComponent_PassiveRechargeEffect_C")
 	}
 	static class UGE_Creative_EnergyComponent_PassiveRechargeEffect_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGE_Creative_EnergyComponent_PassiveRechargeEffect_C>();
 	}
 };
-static_assert(alignof(UGE_Creative_EnergyComponent_PassiveRechargeEffect_C) == 0x000008, "Wrong alignment on UGE_Creative_EnergyComponent_PassiveRechargeEffect_C");
-static_assert(sizeof(UGE_Creative_EnergyComponent_PassiveRechargeEffect_C) == 0x000770, "Wrong size on UGE_Creative_EnergyComponent_PassiveRechargeEffect_C");
 
 }
 

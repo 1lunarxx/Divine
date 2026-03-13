@@ -23,15 +23,17 @@ class UAthena_ButtonStyle_AngledBlueMenuButton_C final : public UCommonButtonSty
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_ButtonStyle_AngledBlueMenuButton_C">();
+		BP_STATIC_CLASS_IMPL("Athena_ButtonStyle_AngledBlueMenuButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_ButtonStyle_AngledBlueMenuButton_C")
 	}
 	static class UAthena_ButtonStyle_AngledBlueMenuButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_ButtonStyle_AngledBlueMenuButton_C>();
 	}
 };
-static_assert(alignof(UAthena_ButtonStyle_AngledBlueMenuButton_C) == 0x000008, "Wrong alignment on UAthena_ButtonStyle_AngledBlueMenuButton_C");
-static_assert(sizeof(UAthena_ButtonStyle_AngledBlueMenuButton_C) == 0x000570, "Wrong size on UAthena_ButtonStyle_AngledBlueMenuButton_C");
 
 }
 

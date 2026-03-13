@@ -41,48 +41,30 @@ public:
 	class UEventLeaderboardEntry_C*               EventLeaderboardEntry_8;                           // 0x0690(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UOverlay*                               Overlay_SummaryContent;                            // 0x0698(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       Text_ViewFullLeaderboard;                          // 0x06A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(const class FString& TournamentId, const class FString& EventId)> EventViewFullLeaderboard;                          // 0x06A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const class FString& TournamentId, const class FString& EventId)> EventViewFullLeaderboard; // 0x06A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void ExecuteUbergraph_EventLeaderboardSummary(int32 EntryPoint);
 	void RefreshDataBP();
 	void EventColorize(const struct FFortTournamentDisplayInfo& TournamentDisplayInfo_0);
 	void BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__Button_ViewAll_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
-	void ExecuteUbergraph_EventLeaderboardSummary(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardSummary_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardSummary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardSummary_C")
 	}
 	static class UEventLeaderboardSummary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardSummary_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardSummary_C) == 0x000008, "Wrong alignment on UEventLeaderboardSummary_C");
-static_assert(sizeof(UEventLeaderboardSummary_C) == 0x0006B8, "Wrong size on UEventLeaderboardSummary_C");
-static_assert(offsetof(UEventLeaderboardSummary_C, UberGraphFrame) == 0x000610, "Member 'UEventLeaderboardSummary_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, ViewAllHover) == 0x000618, "Member 'UEventLeaderboardSummary_C::ViewAllHover' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, Button_ViewAll) == 0x000620, "Member 'UEventLeaderboardSummary_C::Button_ViewAll' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, CommonBorder_ContainerBG) == 0x000628, "Member 'UEventLeaderboardSummary_C::CommonBorder_ContainerBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, CommonBorder_ScoringTitleBG) == 0x000630, "Member 'UEventLeaderboardSummary_C::CommonBorder_ScoringTitleBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, CommonBorder_ViewAllBG) == 0x000638, "Member 'UEventLeaderboardSummary_C::CommonBorder_ViewAllBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, CommonTextBlock_Title) == 0x000640, "Member 'UEventLeaderboardSummary_C::CommonTextBlock_Title' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry) == 0x000648, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_0) == 0x000650, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_0' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_1) == 0x000658, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_1' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_2) == 0x000660, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_2' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_3) == 0x000668, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_3' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_4) == 0x000670, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_4' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_5) == 0x000678, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_5' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_6) == 0x000680, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_6' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_7) == 0x000688, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_7' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventLeaderboardEntry_8) == 0x000690, "Member 'UEventLeaderboardSummary_C::EventLeaderboardEntry_8' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, Overlay_SummaryContent) == 0x000698, "Member 'UEventLeaderboardSummary_C::Overlay_SummaryContent' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, Text_ViewFullLeaderboard) == 0x0006A0, "Member 'UEventLeaderboardSummary_C::Text_ViewFullLeaderboard' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardSummary_C, EventViewFullLeaderboard) == 0x0006A8, "Member 'UEventLeaderboardSummary_C::EventViewFullLeaderboard' has a wrong offset!");
 
 }
 

@@ -169,117 +169,6 @@ public:
 	class USoloButton_WinterFest_C*               K2Node_DynamicCast_AsSolo_Button_Winter_Fest;      // 0x0370(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_20;                    // 0x0378(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen");
-static_assert(sizeof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen) == 0x000380, "Wrong size on ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, EntryPoint) == 0x000000, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_bool_True_if_break_was_hit_Variable) == 0x000004, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Array_Index_Variable) == 0x000008, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Not_PreBool_ReturnValue) == 0x00000C, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Info_Presentation_Widget) == 0x000010, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Info_Presentation_Widget' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Info_Presentation_Widget_1) == 0x000020, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Info_Presentation_Widget_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_1) == 0x000028, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Loop_Counter_Variable) == 0x00002C, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetDisplayedEntryWidgets_ReturnValue) == 0x000030, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetDisplayedEntryWidgets_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Add_IntInt_ReturnValue) == 0x000040, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Length_ReturnValue) == 0x000044, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Loop_Counter_Variable_1) == 0x000048, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Less_IntInt_ReturnValue) == 0x00004C, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetAllEntries_ReturnValue) == 0x000050, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetAllEntries_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Length_ReturnValue_1) == 0x000060, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Add_IntInt_ReturnValue_1) == 0x000064, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Less_IntInt_ReturnValue_1) == 0x000068, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_PlayAnimationForward_ReturnValue) == 0x000070, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header) == 0x000078, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_2) == 0x000080, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header_1) == 0x000088, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Generic_Reward_Header_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_3) == 0x000090, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetVisibility_ReturnValue) == 0x000091, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetVisibility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000092, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Loop_Counter_Variable_2) == 0x000094, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Add_IntInt_ReturnValue_2) == 0x000098, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_HeaderInformation) == 0x0000A0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_HeaderInformation' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_FortItem) == 0x000138, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_FortItem' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bShowText) == 0x000140, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bShowText' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bUsingListView) == 0x000141, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bUsingListView' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_PlayAnimation_ReturnValue) == 0x000148, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Array_Index_Variable_1) == 0x000150, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetDisplayedEntryWidgets_ReturnValue_1) == 0x000158, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetDisplayedEntryWidgets_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item) == 0x000168, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item_1) == 0x000170, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Entry) == 0x000178, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Entry' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_4) == 0x000180, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Entry_1) == 0x000188, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Entry_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_5) == 0x000190, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Multiply_IntFloat_ReturnValue) == 0x000194, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Multiply_IntFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetAllEntries_ReturnValue_1) == 0x000198, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetAllEntries_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item_2) == 0x0001A8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Entry_2) == 0x0001B0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Entry_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_6) == 0x0001B8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Array_Index_Variable_2) == 0x0001BC, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bCanEquip) == 0x0001C0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bCanEquip' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Array_Index_Variable_3) == 0x0001C4, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Array_Index_Variable_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item_3) == 0x0001C8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Multiply_IntFloat_ReturnValue_1) == 0x0001D0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Multiply_IntFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Presentation_Entry_3) == 0x0001D8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Presentation_Entry_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_7) == 0x0001E0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bShowNext) == 0x0001E1, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bShowNext' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsSolo_Button) == 0x0001E8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsSolo_Button' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_8) == 0x0001F0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bShowOtherRewards) == 0x0001F1, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bShowOtherRewards' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bCloseScreen) == 0x0001F2, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bCloseScreen' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_PlayAnimation_ReturnValue_1) == 0x0001F8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_bool_True_if_break_was_hit_Variable_1) == 0x000200, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_bool_True_if_break_was_hit_Variable_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000208, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Not_PreBool_ReturnValue_1) == 0x000210, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsSolo_Button_1) == 0x000218, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsSolo_Button_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_9) == 0x000220, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_MakeStruct_DataTableRowHandle) == 0x000228, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsItem_Info_Presentation_Widget_2) == 0x000238, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsItem_Info_Presentation_Widget_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_10) == 0x000240, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Tracker) == 0x000248, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Tracker' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_11) == 0x000250, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_11' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Tracker_1) == 0x000258, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Tracker_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_12) == 0x000260, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_12' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Item_Tracker) == 0x000268, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Item_Tracker' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_13) == 0x000270, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_13' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_1) == 0x000278, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_14) == 0x000280, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_14' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_2) == 0x000288, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_15) == 0x000290, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_15' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Tracker_2) == 0x000298, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Tracker_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_16) == 0x0002A0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_16' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Tracker_3) == 0x0002A8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Tracker_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_17) == 0x0002B0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_17' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_3) == 0x0002B8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsBattle_Pass_Item_Tracker_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_18) == 0x0002C0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_18' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_PlayAnimation_ReturnValue_2) == 0x0002C8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_FortItemPreviewVaultWorld) == 0x0002D0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_FortItemPreviewVaultWorld' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bIsSpecialEventRewards) == 0x0002D8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bIsSpecialEventRewards' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetAllActorsOfClass_OutActors) == 0x0002E0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetAllActorsOfClass_OutActors' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item_4) == 0x0002F0, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Length_ReturnValue_2) == 0x0002F8, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_ActorHasTag_ReturnValue) == 0x0002FC, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_ActorHasTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsVault_World) == 0x000300, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsVault_World' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_19) == 0x000308, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_19' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetVaultRotator_VaultRotator) == 0x000310, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetVaultRotator_VaultRotator' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, Temp_int_Loop_Counter_Variable_3) == 0x000318, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::Temp_int_Loop_Counter_Variable_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Less_IntInt_ReturnValue_2) == 0x00031C, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Add_IntInt_ReturnValue_3) == 0x000320, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_BooleanAND_ReturnValue) == 0x000324, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetLocalPlayerSubsystem_ReturnValue) == 0x000328, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetLocalPlayerSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetAllActorsOfClass_OutActors_1) == 0x000330, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetAllActorsOfClass_OutActors_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Get_Item_5) == 0x000340, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Array_Length_ReturnValue_3) == 0x000348, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Array_Length_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_Less_IntInt_ReturnValue_3) == 0x00034C, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_Less_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_ActorHasTag_ReturnValue_1) == 0x00034D, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_ActorHasTag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_BooleanAND_ReturnValue_1) == 0x00034E, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_bIsWinterfestReward) == 0x00034F, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_bIsWinterfestReward' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_Event_PresentColor) == 0x000350, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_Event_PresentColor' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000360, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000368, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_AsSolo_Button_Winter_Fest) == 0x000370, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_AsSolo_Button_Winter_Fest' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen, K2Node_DynamicCast_bSuccess_20) == 0x000378, "Member 'ItemPresentationScreen_C_ExecuteUbergraph_ItemPresentationScreen::K2Node_DynamicCast_bSuccess_20' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateGradientColor
 // 0x0014 (0x0014 - 0x0000)
@@ -290,10 +179,6 @@ public:
 	uint8                                         Pad_1[0x3];                                        // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           PresentColor;                                      // 0x0004(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateGradientColor) == 0x000004, "Wrong alignment on ItemPresentationScreen_C_OnUpdateGradientColor");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateGradientColor) == 0x000014, "Wrong size on ItemPresentationScreen_C_OnUpdateGradientColor");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateGradientColor, bIsWinterfestReward) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateGradientColor::bIsWinterfestReward' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateGradientColor, PresentColor) == 0x000004, "Member 'ItemPresentationScreen_C_OnUpdateGradientColor::PresentColor' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateVaultWorld
 // 0x0010 (0x0010 - 0x0000)
@@ -303,10 +188,6 @@ public:
 	const class AFortItemPreviewVaultWorld*       FortItemPreviewVaultWorld;                         // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsSpecialEventRewards;                            // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateVaultWorld) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_OnUpdateVaultWorld");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateVaultWorld) == 0x000010, "Wrong size on ItemPresentationScreen_C_OnUpdateVaultWorld");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateVaultWorld, FortItemPreviewVaultWorld) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateVaultWorld::FortItemPreviewVaultWorld' has a wrong offset!");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateVaultWorld, bIsSpecialEventRewards) == 0x000008, "Member 'ItemPresentationScreen_C_OnUpdateVaultWorld::bIsSpecialEventRewards' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnDisplayItemsCollectedText
 // 0x0001 (0x0001 - 0x0000)
@@ -315,9 +196,6 @@ struct ItemPresentationScreen_C_OnDisplayItemsCollectedText final
 public:
 	bool                                          bCloseScreen;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnDisplayItemsCollectedText) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnDisplayItemsCollectedText");
-static_assert(sizeof(ItemPresentationScreen_C_OnDisplayItemsCollectedText) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnDisplayItemsCollectedText");
-static_assert(offsetof(ItemPresentationScreen_C_OnDisplayItemsCollectedText, bCloseScreen) == 0x000000, "Member 'ItemPresentationScreen_C_OnDisplayItemsCollectedText::bCloseScreen' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnFinishDisplayingHotItems
 // 0x0001 (0x0001 - 0x0000)
@@ -326,9 +204,6 @@ struct ItemPresentationScreen_C_OnFinishDisplayingHotItems final
 public:
 	bool                                          bShowOtherRewards;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnFinishDisplayingHotItems) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnFinishDisplayingHotItems");
-static_assert(sizeof(ItemPresentationScreen_C_OnFinishDisplayingHotItems) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnFinishDisplayingHotItems");
-static_assert(offsetof(ItemPresentationScreen_C_OnFinishDisplayingHotItems, bShowOtherRewards) == 0x000000, "Member 'ItemPresentationScreen_C_OnFinishDisplayingHotItems::bShowOtherRewards' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateNextButtonText
 // 0x0001 (0x0001 - 0x0000)
@@ -337,9 +212,6 @@ struct ItemPresentationScreen_C_OnUpdateNextButtonText final
 public:
 	bool                                          bShowNext;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateNextButtonText) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnUpdateNextButtonText");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateNextButtonText) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnUpdateNextButtonText");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateNextButtonText, bShowNext) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateNextButtonText::bShowNext' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnDisplayEquipButton
 // 0x0001 (0x0001 - 0x0000)
@@ -348,9 +220,6 @@ struct ItemPresentationScreen_C_OnDisplayEquipButton final
 public:
 	bool                                          bCanEquip;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnDisplayEquipButton) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnDisplayEquipButton");
-static_assert(sizeof(ItemPresentationScreen_C_OnDisplayEquipButton) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnDisplayEquipButton");
-static_assert(offsetof(ItemPresentationScreen_C_OnDisplayEquipButton, bCanEquip) == 0x000000, "Member 'ItemPresentationScreen_C_OnDisplayEquipButton::bCanEquip' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnInitialIconAnimation
 // 0x0001 (0x0001 - 0x0000)
@@ -359,9 +228,6 @@ struct ItemPresentationScreen_C_OnInitialIconAnimation final
 public:
 	bool                                          bUsingListView;                                    // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnInitialIconAnimation) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnInitialIconAnimation");
-static_assert(sizeof(ItemPresentationScreen_C_OnInitialIconAnimation) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnInitialIconAnimation");
-static_assert(offsetof(ItemPresentationScreen_C_OnInitialIconAnimation, bUsingListView) == 0x000000, "Member 'ItemPresentationScreen_C_OnInitialIconAnimation::bUsingListView' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateOwnedItemText
 // 0x0001 (0x0001 - 0x0000)
@@ -370,9 +236,6 @@ struct ItemPresentationScreen_C_OnUpdateOwnedItemText final
 public:
 	bool                                          bShowText;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateOwnedItemText) == 0x000001, "Wrong alignment on ItemPresentationScreen_C_OnUpdateOwnedItemText");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateOwnedItemText) == 0x000001, "Wrong size on ItemPresentationScreen_C_OnUpdateOwnedItemText");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateOwnedItemText, bShowText) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateOwnedItemText::bShowText' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.Handle Animation InitialState
 // 0x0008 (0x0008 - 0x0000)
@@ -381,9 +244,6 @@ struct ItemPresentationScreen_C_Handle_Animation_InitialState final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_Handle_Animation_InitialState) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_Handle_Animation_InitialState");
-static_assert(sizeof(ItemPresentationScreen_C_Handle_Animation_InitialState) == 0x000008, "Wrong size on ItemPresentationScreen_C_Handle_Animation_InitialState");
-static_assert(offsetof(ItemPresentationScreen_C_Handle_Animation_InitialState, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'ItemPresentationScreen_C_Handle_Animation_InitialState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.Handle Fade
 // 0x0008 (0x0008 - 0x0000)
@@ -392,9 +252,6 @@ struct ItemPresentationScreen_C_Handle_Fade final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_Handle_Fade) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_Handle_Fade");
-static_assert(sizeof(ItemPresentationScreen_C_Handle_Fade) == 0x000008, "Wrong size on ItemPresentationScreen_C_Handle_Fade");
-static_assert(offsetof(ItemPresentationScreen_C_Handle_Fade, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'ItemPresentationScreen_C_Handle_Fade::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.Handle Intro
 // 0x0008 (0x0008 - 0x0000)
@@ -403,9 +260,6 @@ struct ItemPresentationScreen_C_Handle_Intro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_Handle_Intro) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_Handle_Intro");
-static_assert(sizeof(ItemPresentationScreen_C_Handle_Intro) == 0x000008, "Wrong size on ItemPresentationScreen_C_Handle_Intro");
-static_assert(offsetof(ItemPresentationScreen_C_Handle_Intro, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'ItemPresentationScreen_C_Handle_Intro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.Handle PaidItem Intro
 // 0x0008 (0x0008 - 0x0000)
@@ -414,9 +268,6 @@ struct ItemPresentationScreen_C_Handle_PaidItem_Intro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_Handle_PaidItem_Intro) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_Handle_PaidItem_Intro");
-static_assert(sizeof(ItemPresentationScreen_C_Handle_PaidItem_Intro) == 0x000008, "Wrong size on ItemPresentationScreen_C_Handle_PaidItem_Intro");
-static_assert(offsetof(ItemPresentationScreen_C_Handle_PaidItem_Intro, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'ItemPresentationScreen_C_Handle_PaidItem_Intro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateHeaderInformation
 // 0x0098 (0x0098 - 0x0000)
@@ -425,9 +276,6 @@ struct ItemPresentationScreen_C_OnUpdateHeaderInformation final
 public:
 	struct FFortItemHeaderInformation             HeaderInformation;                                 // 0x0000(0x0098)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateHeaderInformation) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_OnUpdateHeaderInformation");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateHeaderInformation) == 0x000098, "Wrong size on ItemPresentationScreen_C_OnUpdateHeaderInformation");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateHeaderInformation, HeaderInformation) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateHeaderInformation::HeaderInformation' has a wrong offset!");
 
 // Function ItemPresentationScreen.ItemPresentationScreen_C.OnUpdateItemInformation
 // 0x0008 (0x0008 - 0x0000)
@@ -436,9 +284,6 @@ struct ItemPresentationScreen_C_OnUpdateItemInformation final
 public:
 	const class UFortItem*                        FortItem;                                          // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ItemPresentationScreen_C_OnUpdateItemInformation) == 0x000008, "Wrong alignment on ItemPresentationScreen_C_OnUpdateItemInformation");
-static_assert(sizeof(ItemPresentationScreen_C_OnUpdateItemInformation) == 0x000008, "Wrong size on ItemPresentationScreen_C_OnUpdateItemInformation");
-static_assert(offsetof(ItemPresentationScreen_C_OnUpdateItemInformation, FortItem) == 0x000000, "Member 'ItemPresentationScreen_C_OnUpdateItemInformation::FortItem' has a wrong offset!");
 
 }
 

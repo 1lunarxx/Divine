@@ -56,27 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaSpectateMatchModal_C">();
+		BP_STATIC_CLASS_IMPL("AthenaSpectateMatchModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaSpectateMatchModal_C")
 	}
 	static class UAthenaSpectateMatchModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaSpectateMatchModal_C>();
 	}
 };
-static_assert(alignof(UAthenaSpectateMatchModal_C) == 0x000008, "Wrong alignment on UAthenaSpectateMatchModal_C");
-static_assert(sizeof(UAthenaSpectateMatchModal_C) == 0x0004E8, "Wrong size on UAthenaSpectateMatchModal_C");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, UberGraphFrame) == 0x000488, "Member 'UAthenaSpectateMatchModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, CloseButton) == 0x000490, "Member 'UAthenaSpectateMatchModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, FriendListEntryBox) == 0x000498, "Member 'UAthenaSpectateMatchModal_C::FriendListEntryBox' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, FriendSwitcher) == 0x0004A0, "Member 'UAthenaSpectateMatchModal_C::FriendSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, GameSessionSearchText) == 0x0004A8, "Member 'UAthenaSpectateMatchModal_C::GameSessionSearchText' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, GameSessionVB) == 0x0004B0, "Member 'UAthenaSpectateMatchModal_C::GameSessionVB' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, JoinButton) == 0x0004B8, "Member 'UAthenaSpectateMatchModal_C::JoinButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, JoinFriendSessionButton) == 0x0004C0, "Member 'UAthenaSpectateMatchModal_C::JoinFriendSessionButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, JoinGameSessionButton) == 0x0004C8, "Member 'UAthenaSpectateMatchModal_C::JoinGameSessionButton' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, NoFriendsPlayingText) == 0x0004D0, "Member 'UAthenaSpectateMatchModal_C::NoFriendsPlayingText' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, FriendListCooldown) == 0x0004D8, "Member 'UAthenaSpectateMatchModal_C::FriendListCooldown' has a wrong offset!");
-static_assert(offsetof(UAthenaSpectateMatchModal_C, FriendListCooldownTimer) == 0x0004E0, "Member 'UAthenaSpectateMatchModal_C::FriendListCooldownTimer' has a wrong offset!");
 
 }
 

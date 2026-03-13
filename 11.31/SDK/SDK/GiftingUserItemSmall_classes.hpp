@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GiftingUserItemSmall_C">();
+		BP_STATIC_CLASS_IMPL("GiftingUserItemSmall_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GiftingUserItemSmall_C")
 	}
 	static class UGiftingUserItemSmall_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGiftingUserItemSmall_C>();
 	}
 };
-static_assert(alignof(UGiftingUserItemSmall_C) == 0x000008, "Wrong alignment on UGiftingUserItemSmall_C");
-static_assert(sizeof(UGiftingUserItemSmall_C) == 0x000B90, "Wrong size on UGiftingUserItemSmall_C");
-static_assert(offsetof(UGiftingUserItemSmall_C, Toggle) == 0x000B88, "Member 'UGiftingUserItemSmall_C::Toggle' has a wrong offset!");
 
 }
 

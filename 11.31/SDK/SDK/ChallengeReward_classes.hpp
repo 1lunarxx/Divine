@@ -23,15 +23,17 @@ class UChallengeReward_C final : public UAthenaChallengeRewardDisplay
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeReward_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeReward_C")
 	}
 	static class UChallengeReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeReward_C>();
 	}
 };
-static_assert(alignof(UChallengeReward_C) == 0x000008, "Wrong alignment on UChallengeReward_C");
-static_assert(sizeof(UChallengeReward_C) == 0x000240, "Wrong size on UChallengeReward_C");
 
 }
 

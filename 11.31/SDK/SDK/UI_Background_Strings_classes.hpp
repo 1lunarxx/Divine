@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UI_Background_Strings_C">();
+		BP_STATIC_CLASS_IMPL("UI_Background_Strings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UI_Background_Strings_C")
 	}
 	static class UUI_Background_Strings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUI_Background_Strings_C>();
 	}
 };
-static_assert(alignof(UUI_Background_Strings_C) == 0x000008, "Wrong alignment on UUI_Background_Strings_C");
-static_assert(sizeof(UUI_Background_Strings_C) == 0x000268, "Wrong size on UUI_Background_Strings_C");
-static_assert(offsetof(UUI_Background_Strings_C, UberGraphFrame) == 0x000230, "Member 'UUI_Background_Strings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUI_Background_Strings_C, CustomString) == 0x000238, "Member 'UUI_Background_Strings_C::CustomString' has a wrong offset!");
-static_assert(offsetof(UUI_Background_Strings_C, DefaultString) == 0x000240, "Member 'UUI_Background_Strings_C::DefaultString' has a wrong offset!");
-static_assert(offsetof(UUI_Background_Strings_C, TextPropertiesSwitcher) == 0x000248, "Member 'UUI_Background_Strings_C::TextPropertiesSwitcher' has a wrong offset!");
-static_assert(offsetof(UUI_Background_Strings_C, StringArray) == 0x000250, "Member 'UUI_Background_Strings_C::StringArray' has a wrong offset!");
-static_assert(offsetof(UUI_Background_Strings_C, Index_0) == 0x000260, "Member 'UUI_Background_Strings_C::Index_0' has a wrong offset!");
 
 }
 

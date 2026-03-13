@@ -27,15 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolarisArrayLibrary">();
+		STATIC_CLASS_IMPL("SolarisArrayLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolarisArrayLibrary")
 	}
 	static class USolarisArrayLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolarisArrayLibrary>();
 	}
 };
-static_assert(alignof(USolarisArrayLibrary) == 0x000008, "Wrong alignment on USolarisArrayLibrary");
-static_assert(sizeof(USolarisArrayLibrary) == 0x000028, "Wrong size on USolarisArrayLibrary");
 
 // Class Solaris.SolarisMathLibrary_Bool
 // 0x0000 (0x0028 - 0x0028)
@@ -49,15 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolarisMathLibrary_Bool">();
+		STATIC_CLASS_IMPL("SolarisMathLibrary_Bool")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolarisMathLibrary_Bool")
 	}
 	static class USolarisMathLibrary_Bool* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolarisMathLibrary_Bool>();
 	}
 };
-static_assert(alignof(USolarisMathLibrary_Bool) == 0x000008, "Wrong alignment on USolarisMathLibrary_Bool");
-static_assert(sizeof(USolarisMathLibrary_Bool) == 0x000028, "Wrong size on USolarisMathLibrary_Bool");
 
 // Class Solaris.SolarisMathLibrary_Int
 // 0x0000 (0x0028 - 0x0028)
@@ -83,15 +87,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolarisMathLibrary_Int">();
+		STATIC_CLASS_IMPL("SolarisMathLibrary_Int")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolarisMathLibrary_Int")
 	}
 	static class USolarisMathLibrary_Int* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolarisMathLibrary_Int>();
 	}
 };
-static_assert(alignof(USolarisMathLibrary_Int) == 0x000008, "Wrong alignment on USolarisMathLibrary_Int");
-static_assert(sizeof(USolarisMathLibrary_Int) == 0x000028, "Wrong size on USolarisMathLibrary_Int");
 
 // Class Solaris.SolarisMathLibrary_Real
 // 0x0000 (0x0028 - 0x0028)
@@ -117,15 +123,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolarisMathLibrary_Real">();
+		STATIC_CLASS_IMPL("SolarisMathLibrary_Real")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolarisMathLibrary_Real")
 	}
 	static class USolarisMathLibrary_Real* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolarisMathLibrary_Real>();
 	}
 };
-static_assert(alignof(USolarisMathLibrary_Real) == 0x000008, "Wrong alignment on USolarisMathLibrary_Real");
-static_assert(sizeof(USolarisMathLibrary_Real) == 0x000028, "Wrong size on USolarisMathLibrary_Real");
 
 // Class Solaris.SolarisGameSettings
 // 0x0018 (0x0040 - 0x0028)
@@ -139,17 +147,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SolarisGameSettings">();
+		STATIC_CLASS_IMPL("SolarisGameSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SolarisGameSettings")
 	}
 	static class USolarisGameSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USolarisGameSettings>();
 	}
 };
-static_assert(alignof(USolarisGameSettings) == 0x000008, "Wrong alignment on USolarisGameSettings");
-static_assert(sizeof(USolarisGameSettings) == 0x000040, "Wrong size on USolarisGameSettings");
-static_assert(offsetof(USolarisGameSettings, Blacklist) == 0x000028, "Member 'USolarisGameSettings::Blacklist' has a wrong offset!");
-static_assert(offsetof(USolarisGameSettings, MaxAllowedSize) == 0x000038, "Member 'USolarisGameSettings::MaxAllowedSize' has a wrong offset!");
 
 }
 

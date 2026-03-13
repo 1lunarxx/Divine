@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestNewChallengeModal_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestNewChallengeModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestNewChallengeModal_C")
 	}
 	static class UWinterQuestNewChallengeModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestNewChallengeModal_C>();
 	}
 };
-static_assert(alignof(UWinterQuestNewChallengeModal_C) == 0x000008, "Wrong alignment on UWinterQuestNewChallengeModal_C");
-static_assert(sizeof(UWinterQuestNewChallengeModal_C) == 0x0002F8, "Wrong size on UWinterQuestNewChallengeModal_C");
-static_assert(offsetof(UWinterQuestNewChallengeModal_C, Image_209) == 0x0002E8, "Member 'UWinterQuestNewChallengeModal_C::Image_209' has a wrong offset!");
-static_assert(offsetof(UWinterQuestNewChallengeModal_C, Title) == 0x0002F0, "Member 'UWinterQuestNewChallengeModal_C::Title' has a wrong offset!");
 
 }
 

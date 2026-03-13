@@ -17,58 +17,6 @@
 namespace SDK
 {
 
-// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.Highlight Lerp
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                                   Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FPawnHighlight*                  Highlight                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGCN_Loop_GhostMode_C::Highlight_Lerp(float Alpha, struct FPawnHighlight* Highlight)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "Highlight Lerp");
-
-	Params::GCN_Loop_GhostMode_C_Highlight_Lerp Parms{};
-
-	Parms.Alpha = Alpha;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Highlight != nullptr)
-		*Highlight = std::move(Parms.Highlight);
-}
-
-
-// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.FadeMaterialsTL__FinishedFunc
-// (BlueprintEvent)
-
-void AGCN_Loop_GhostMode_C::FadeMaterialsTL__FinishedFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__FinishedFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.FadeMaterialsTL__UpdateFunc
-// (BlueprintEvent)
-
-void AGCN_Loop_GhostMode_C::FadeMaterialsTL__UpdateFunc()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__UpdateFunc");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.OnLoopingStart
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -170,6 +118,58 @@ void AGCN_Loop_GhostMode_C::ExecuteUbergraph_GCN_Loop_GhostMode(int32 EntryPoint
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.Highlight Lerp
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                                   Alpha                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FPawnHighlight*                  Highlight                                              (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGCN_Loop_GhostMode_C::Highlight_Lerp(float Alpha, struct FPawnHighlight* Highlight)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "Highlight Lerp");
+
+	Params::GCN_Loop_GhostMode_C_Highlight_Lerp Parms{};
+
+	Parms.Alpha = Alpha;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Highlight != nullptr)
+		*Highlight = std::move(Parms.Highlight);
+}
+
+
+// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.FadeMaterialsTL__FinishedFunc
+// (BlueprintEvent)
+
+void AGCN_Loop_GhostMode_C::FadeMaterialsTL__FinishedFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__FinishedFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GCN_Loop_GhostMode.GCN_Loop_GhostMode_C.FadeMaterialsTL__UpdateFunc
+// (BlueprintEvent)
+
+void AGCN_Loop_GhostMode_C::FadeMaterialsTL__UpdateFunc()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Loop_GhostMode_C", "FadeMaterialsTL__UpdateFunc");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

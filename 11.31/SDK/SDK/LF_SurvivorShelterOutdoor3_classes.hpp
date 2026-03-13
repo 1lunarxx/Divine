@@ -23,15 +23,17 @@ class ALF_SurvivorShelterOutdoor3_C final : public ABuildingFoundation5x5
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LF_SurvivorShelterOutdoor3_C">();
+		BP_STATIC_CLASS_IMPL("LF_SurvivorShelterOutdoor3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LF_SurvivorShelterOutdoor3_C")
 	}
 	static class ALF_SurvivorShelterOutdoor3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ALF_SurvivorShelterOutdoor3_C>();
 	}
 };
-static_assert(alignof(ALF_SurvivorShelterOutdoor3_C) == 0x000010, "Wrong alignment on ALF_SurvivorShelterOutdoor3_C");
-static_assert(sizeof(ALF_SurvivorShelterOutdoor3_C) == 0x000E30, "Wrong size on ALF_SurvivorShelterOutdoor3_C");
 
 }
 

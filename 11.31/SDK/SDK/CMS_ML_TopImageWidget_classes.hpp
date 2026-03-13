@@ -23,15 +23,17 @@ class UCMS_ML_TopImageWidget_C final : public UEpicCMSSimpleMessage
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CMS_ML_TopImageWidget_C">();
+		BP_STATIC_CLASS_IMPL("CMS_ML_TopImageWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CMS_ML_TopImageWidget_C")
 	}
 	static class UCMS_ML_TopImageWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCMS_ML_TopImageWidget_C>();
 	}
 };
-static_assert(alignof(UCMS_ML_TopImageWidget_C) == 0x000008, "Wrong alignment on UCMS_ML_TopImageWidget_C");
-static_assert(sizeof(UCMS_ML_TopImageWidget_C) == 0x000270, "Wrong size on UCMS_ML_TopImageWidget_C");
 
 }
 

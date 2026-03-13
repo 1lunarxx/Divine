@@ -57,25 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PanelButton_C">();
+		BP_STATIC_CLASS_IMPL("PanelButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PanelButton_C")
 	}
 	static class UPanelButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPanelButton_C>();
 	}
 };
-static_assert(alignof(UPanelButton_C) == 0x000008, "Wrong alignment on UPanelButton_C");
-static_assert(sizeof(UPanelButton_C) == 0x000BB8, "Wrong size on UPanelButton_C");
-static_assert(offsetof(UPanelButton_C, UberGraphFrame) == 0x000B70, "Member 'UPanelButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ContentSlot) == 0x000B78, "Member 'UPanelButton_C::ContentSlot' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ControllerInputStyle) == 0x000B80, "Member 'UPanelButton_C::ControllerInputStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, MouseKeyboardStyle) == 0x000B88, "Member 'UPanelButton_C::MouseKeyboardStyle' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, ButtonClickAction) == 0x000B90, "Member 'UPanelButton_C::ButtonClickAction' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionHorizontalAlignment) == 0x000BA0, "Member 'UPanelButton_C::InputActionHorizontalAlignment' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionVerticalAlignment) == 0x000BA1, "Member 'UPanelButton_C::InputActionVerticalAlignment' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionRenderTranslation) == 0x000BA4, "Member 'UPanelButton_C::InputActionRenderTranslation' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionUseRimBrush) == 0x000BAC, "Member 'UPanelButton_C::InputActionUseRimBrush' has a wrong offset!");
-static_assert(offsetof(UPanelButton_C, InputActionRimBrushSize) == 0x000BB0, "Member 'UPanelButton_C::InputActionRimBrushSize' has a wrong offset!");
 
 }
 

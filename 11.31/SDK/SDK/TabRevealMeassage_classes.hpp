@@ -49,28 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabRevealMeassage_C">();
+		BP_STATIC_CLASS_IMPL("TabRevealMeassage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabRevealMeassage_C")
 	}
 	static class UTabRevealMeassage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabRevealMeassage_C>();
 	}
 };
-static_assert(alignof(UTabRevealMeassage_C) == 0x000008, "Wrong alignment on UTabRevealMeassage_C");
-static_assert(sizeof(UTabRevealMeassage_C) == 0x0004C8, "Wrong size on UTabRevealMeassage_C");
-static_assert(offsetof(UTabRevealMeassage_C, UberGraphFrame) == 0x000438, "Member 'UTabRevealMeassage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, FadeOut) == 0x000440, "Member 'UTabRevealMeassage_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, FadeIn) == 0x000448, "Member 'UTabRevealMeassage_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Image_0) == 0x000450, "Member 'UTabRevealMeassage_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Image_2) == 0x000458, "Member 'UTabRevealMeassage_C::Image_2' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Image_Flare_Btm) == 0x000460, "Member 'UTabRevealMeassage_C::Image_Flare_Btm' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Image_Flare_Top) == 0x000468, "Member 'UTabRevealMeassage_C::Image_Flare_Top' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Lightbox) == 0x000470, "Member 'UTabRevealMeassage_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, TextHeader) == 0x000478, "Member 'UTabRevealMeassage_C::TextHeader' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, inHeader) == 0x000480, "Member 'UTabRevealMeassage_C::inHeader' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, inBody) == 0x000498, "Member 'UTabRevealMeassage_C::inBody' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, TabMessageClosed) == 0x0004B0, "Member 'UTabRevealMeassage_C::TabMessageClosed' has a wrong offset!");
-static_assert(offsetof(UTabRevealMeassage_C, Timer) == 0x0004C0, "Member 'UTabRevealMeassage_C::Timer' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UGCN_EnvCampFire_Death_C final : public UFortGameplayCueNotify_Burst
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_EnvCampFire_Death_C">();
+		BP_STATIC_CLASS_IMPL("GCN_EnvCampFire_Death_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_EnvCampFire_Death_C")
 	}
 	static class UGCN_EnvCampFire_Death_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_EnvCampFire_Death_C>();
 	}
 };
-static_assert(alignof(UGCN_EnvCampFire_Death_C) == 0x000008, "Wrong alignment on UGCN_EnvCampFire_Death_C");
-static_assert(sizeof(UGCN_EnvCampFire_Death_C) == 0x0001B0, "Wrong size on UGCN_EnvCampFire_Death_C");
 
 }
 

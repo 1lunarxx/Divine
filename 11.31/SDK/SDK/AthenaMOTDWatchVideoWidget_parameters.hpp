@@ -21,13 +21,9 @@ namespace SDK::Params
 struct AthenaMOTDWatchVideoWidget_C_BindVideoEvents final
 {
 public:
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate;         // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDWatchVideoWidget_C_BindVideoEvents) == 0x000004, "Wrong alignment on AthenaMOTDWatchVideoWidget_C_BindVideoEvents");
-static_assert(sizeof(AthenaMOTDWatchVideoWidget_C_BindVideoEvents) == 0x000020, "Wrong size on AthenaMOTDWatchVideoWidget_C_BindVideoEvents");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_BindVideoEvents, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'AthenaMOTDWatchVideoWidget_C_BindVideoEvents::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_BindVideoEvents, K2Node_CreateDelegate_OutputDelegate_1) == 0x000010, "Member 'AthenaMOTDWatchVideoWidget_C_BindVideoEvents::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 // Function AthenaMOTDWatchVideoWidget.AthenaMOTDWatchVideoWidget_C.CloseWidget
 // 0x0030 (0x0030 - 0x0000)
@@ -36,13 +32,8 @@ struct AthenaMOTDWatchVideoWidget_C_CloseWidget final
 public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0010(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const class FString& RetrievedUrl)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0020(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDWatchVideoWidget_C_CloseWidget) == 0x000008, "Wrong alignment on AthenaMOTDWatchVideoWidget_C_CloseWidget");
-static_assert(sizeof(AthenaMOTDWatchVideoWidget_C_CloseWidget) == 0x000030, "Wrong size on AthenaMOTDWatchVideoWidget_C_CloseWidget");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_CloseWidget, URL) == 0x000000, "Member 'AthenaMOTDWatchVideoWidget_C_CloseWidget::URL' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_CloseWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'AthenaMOTDWatchVideoWidget_C_CloseWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_CloseWidget, K2Node_CreateDelegate_OutputDelegate_1) == 0x000020, "Member 'AthenaMOTDWatchVideoWidget_C_CloseWidget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 // Function AthenaMOTDWatchVideoWidget.AthenaMOTDWatchVideoWidget_C.OnPopulateNews
 // 0x0180 (0x0180 - 0x0000)
@@ -51,9 +42,6 @@ struct AthenaMOTDWatchVideoWidget_C_OnPopulateNews final
 public:
 	struct FAthenaNewsEntry                       NewsEntry;                                         // 0x0000(0x0180)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaMOTDWatchVideoWidget_C_OnPopulateNews) == 0x000008, "Wrong alignment on AthenaMOTDWatchVideoWidget_C_OnPopulateNews");
-static_assert(sizeof(AthenaMOTDWatchVideoWidget_C_OnPopulateNews) == 0x000180, "Wrong size on AthenaMOTDWatchVideoWidget_C_OnPopulateNews");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_OnPopulateNews, NewsEntry) == 0x000000, "Member 'AthenaMOTDWatchVideoWidget_C_OnPopulateNews::NewsEntry' has a wrong offset!");
 
 // Function AthenaMOTDWatchVideoWidget.AthenaMOTDWatchVideoWidget_C.ExecuteUbergraph_AthenaMOTDWatchVideoWidget
 // 0x01C0 (0x01C0 - 0x0000)
@@ -72,17 +60,6 @@ public:
 	uint8                                         Pad_1B1[0x7];                                      // 0x01B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortStreamMediaSource*                 CallFunc_LoadStreamingVideo_MediaSource;           // 0x01B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget) == 0x000008, "Wrong alignment on AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget");
-static_assert(sizeof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget) == 0x0001C0, "Wrong size on AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, EntryPoint) == 0x000000, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, K2Node_Event_NewsEntry) == 0x000008, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::K2Node_Event_NewsEntry' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x000188, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_Create_ReturnValue) == 0x000190, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_Conv_StringToName_ReturnValue) == 0x000198, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_Conv_StringToName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_Conv_StringToName_ReturnValue_1) == 0x0001A0, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_Conv_StringToName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_Conv_StringToName_ReturnValue_2) == 0x0001A8, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_Conv_StringToName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_LoadStreamingVideo_NoAutoPlay) == 0x0001B0, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_LoadStreamingVideo_NoAutoPlay' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget, CallFunc_LoadStreamingVideo_MediaSource) == 0x0001B8, "Member 'AthenaMOTDWatchVideoWidget_C_ExecuteUbergraph_AthenaMOTDWatchVideoWidget::CallFunc_LoadStreamingVideo_MediaSource' has a wrong offset!");
 
 }
 

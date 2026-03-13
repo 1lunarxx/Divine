@@ -52,35 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuest_PresentsCounter_Notifier_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuest_PresentsCounter_Notifier_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuest_PresentsCounter_Notifier_C")
 	}
 	static class UWinterQuest_PresentsCounter_Notifier_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuest_PresentsCounter_Notifier_C>();
 	}
 };
-static_assert(alignof(UWinterQuest_PresentsCounter_Notifier_C) == 0x000008, "Wrong alignment on UWinterQuest_PresentsCounter_Notifier_C");
-static_assert(sizeof(UWinterQuest_PresentsCounter_Notifier_C) == 0x000330, "Wrong size on UWinterQuest_PresentsCounter_Notifier_C");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, UberGraphFrame) == 0x000290, "Member 'UWinterQuest_PresentsCounter_Notifier_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, OpenTimer) == 0x000298, "Member 'UWinterQuest_PresentsCounter_Notifier_C::OpenTimer' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, LoopSecondsHand) == 0x0002A0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::LoopSecondsHand' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, PresentJump) == 0x0002A8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::PresentJump' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, OpenNotification) == 0x0002B0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::OpenNotification' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, ArrowPointer) == 0x0002B8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::ArrowPointer' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Backing) == 0x0002C0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Backing' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Backing_1) == 0x0002C8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Backing_1' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Bang) == 0x0002D0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Bang' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Image_160) == 0x0002D8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Image_160' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, InnerRing) == 0x0002E0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::InnerRing' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, NoPresentsToOpen) == 0x0002E8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::NoPresentsToOpen' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, OuterBrightRing) == 0x0002F0, "Member 'UWinterQuest_PresentsCounter_Notifier_C::OuterBrightRing' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Present) == 0x0002F8, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Present' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, Present_1) == 0x000300, "Member 'UWinterQuest_PresentsCounter_Notifier_C::Present_1' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, PresentIndicator) == 0x000308, "Member 'UWinterQuest_PresentsCounter_Notifier_C::PresentIndicator' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, PresentsToOpen) == 0x000310, "Member 'UWinterQuest_PresentsCounter_Notifier_C::PresentsToOpen' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, RedBacking) == 0x000318, "Member 'UWinterQuest_PresentsCounter_Notifier_C::RedBacking' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, SecondsHand) == 0x000320, "Member 'UWinterQuest_PresentsCounter_Notifier_C::SecondsHand' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_PresentsCounter_Notifier_C, WidgetSwitcher_1) == 0x000328, "Member 'UWinterQuest_PresentsCounter_Notifier_C::WidgetSwitcher_1' has a wrong offset!");
 
 }
 

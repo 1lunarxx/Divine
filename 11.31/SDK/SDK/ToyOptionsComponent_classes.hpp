@@ -45,26 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ToyOptionsComponent_C">();
+		BP_STATIC_CLASS_IMPL("ToyOptionsComponent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ToyOptionsComponent_C")
 	}
 	static class UToyOptionsComponent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UToyOptionsComponent_C>();
 	}
 };
-static_assert(alignof(UToyOptionsComponent_C) == 0x000008, "Wrong alignment on UToyOptionsComponent_C");
-static_assert(sizeof(UToyOptionsComponent_C) == 0x0002A0, "Wrong size on UToyOptionsComponent_C");
-static_assert(offsetof(UToyOptionsComponent_C, UberGraphFrame) == 0x0001E8, "Member 'UToyOptionsComponent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, OptionsWidgetClass) == 0x0001F0, "Member 'UToyOptionsComponent_C::OptionsWidgetClass' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, MyIslandTabList) == 0x000218, "Member 'UToyOptionsComponent_C::MyIslandTabList' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, IsMachine) == 0x000240, "Member 'UToyOptionsComponent_C::IsMachine' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, InteractingPlayer) == 0x000248, "Member 'UToyOptionsComponent_C::InteractingPlayer' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, outModalWidget) == 0x000250, "Member 'UToyOptionsComponent_C::outModalWidget' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, bInteractSuccess) == 0x000258, "Member 'UToyOptionsComponent_C::bInteractSuccess' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, ClassToLoad) == 0x000260, "Member 'UToyOptionsComponent_C::ClassToLoad' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, PropertyEditorWidgetClass) == 0x000268, "Member 'UToyOptionsComponent_C::PropertyEditorWidgetClass' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, CachedDisplayWidget) == 0x000290, "Member 'UToyOptionsComponent_C::CachedDisplayWidget' has a wrong offset!");
-static_assert(offsetof(UToyOptionsComponent_C, LoadingAssets) == 0x000298, "Member 'UToyOptionsComponent_C::LoadingAssets' has a wrong offset!");
 
 }
 

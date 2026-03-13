@@ -44,21 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Prj_Athena_Bucket_Old_C">();
+		BP_STATIC_CLASS_IMPL("Prj_Athena_Bucket_Old_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Prj_Athena_Bucket_Old_C")
 	}
 	static class APrj_Athena_Bucket_Old_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APrj_Athena_Bucket_Old_C>();
 	}
 };
-static_assert(alignof(APrj_Athena_Bucket_Old_C) == 0x000008, "Wrong alignment on APrj_Athena_Bucket_Old_C");
-static_assert(sizeof(APrj_Athena_Bucket_Old_C) == 0x0008F8, "Wrong size on APrj_Athena_Bucket_Old_C");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, UberGraphFrame_Prj_Athena_Bucket_Old_C) == 0x0008C8, "Member 'APrj_Athena_Bucket_Old_C::UberGraphFrame_Prj_Athena_Bucket_Old_C' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, ItemToSpawn) == 0x0008D0, "Member 'APrj_Athena_Bucket_Old_C::ItemToSpawn' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, TurnOffFX) == 0x0008D8, "Member 'APrj_Athena_Bucket_Old_C::TurnOffFX' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, HitMarkerSound) == 0x0008E0, "Member 'APrj_Athena_Bucket_Old_C::HitMarkerSound' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, ThrowIndicator_SoundRef) == 0x0008E8, "Member 'APrj_Athena_Bucket_Old_C::ThrowIndicator_SoundRef' has a wrong offset!");
-static_assert(offsetof(APrj_Athena_Bucket_Old_C, ShouldSpawnItem) == 0x0008F0, "Member 'APrj_Athena_Bucket_Old_C::ShouldSpawnItem' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UDoorMetaObstacle_C final : public UNavAreaMeta_SwitchByAgent
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DoorMetaObstacle_C">();
+		BP_STATIC_CLASS_IMPL("DoorMetaObstacle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DoorMetaObstacle_C")
 	}
 	static class UDoorMetaObstacle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDoorMetaObstacle_C>();
 	}
 };
-static_assert(alignof(UDoorMetaObstacle_C) == 0x000008, "Wrong alignment on UDoorMetaObstacle_C");
-static_assert(sizeof(UDoorMetaObstacle_C) == 0x0000C8, "Wrong size on UDoorMetaObstacle_C");
 
 }
 

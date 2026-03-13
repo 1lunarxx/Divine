@@ -40,7 +40,7 @@ public:
 	uint8                                         Pad_A8B[0x5];                                      // 0x0A8B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UClass*                                 PromptTextStyle;                                   // 0x0A90(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class FText                                   PromptText;                                        // 0x0A98(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
-	TMulticastInlineDelegate<void(class FText Text)> OnTextChanged;                                     // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class FText Text)> OnTextChanged;                                  // 0x0AB0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bUseHintText;                                      // 0x0AC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_AC1[0x7];                                      // 0x0AC1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   HintText;                                          // 0x0AC8(0x0018)(Edit, BlueprintVisible)
@@ -59,31 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FilteredTextEntryWidget_C">();
+		BP_STATIC_CLASS_IMPL("FilteredTextEntryWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FilteredTextEntryWidget_C")
 	}
 	static class UFilteredTextEntryWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFilteredTextEntryWidget_C>();
 	}
 };
-static_assert(alignof(UFilteredTextEntryWidget_C) == 0x000008, "Wrong alignment on UFilteredTextEntryWidget_C");
-static_assert(sizeof(UFilteredTextEntryWidget_C) == 0x000AE0, "Wrong size on UFilteredTextEntryWidget_C");
-static_assert(offsetof(UFilteredTextEntryWidget_C, UberGraphFrame) == 0x000260, "Member 'UFilteredTextEntryWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, Error) == 0x000268, "Member 'UFilteredTextEntryWidget_C::Error' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, CommonTextBlock_Prompt) == 0x000270, "Member 'UFilteredTextEntryWidget_C::CommonTextBlock_Prompt' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, ErrorText) == 0x000278, "Member 'UFilteredTextEntryWidget_C::ErrorText' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, HorizontalBox_Info) == 0x000280, "Member 'UFilteredTextEntryWidget_C::HorizontalBox_Info' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, Image_Selected) == 0x000288, "Member 'UFilteredTextEntryWidget_C::Image_Selected' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, bUseOverrideStyle) == 0x000290, "Member 'UFilteredTextEntryWidget_C::bUseOverrideStyle' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, OverrideStyle) == 0x000298, "Member 'UFilteredTextEntryWidget_C::OverrideStyle' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, bHideValidationInfo) == 0x000A88, "Member 'UFilteredTextEntryWidget_C::bHideValidationInfo' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, Justification) == 0x000A89, "Member 'UFilteredTextEntryWidget_C::Justification' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, ShowTextPrompt) == 0x000A8A, "Member 'UFilteredTextEntryWidget_C::ShowTextPrompt' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, PromptTextStyle) == 0x000A90, "Member 'UFilteredTextEntryWidget_C::PromptTextStyle' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, PromptText) == 0x000A98, "Member 'UFilteredTextEntryWidget_C::PromptText' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, OnTextChanged) == 0x000AB0, "Member 'UFilteredTextEntryWidget_C::OnTextChanged' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, bUseHintText) == 0x000AC0, "Member 'UFilteredTextEntryWidget_C::bUseHintText' has a wrong offset!");
-static_assert(offsetof(UFilteredTextEntryWidget_C, HintText) == 0x000AC8, "Member 'UFilteredTextEntryWidget_C::HintText' has a wrong offset!");
 
 }
 

@@ -24,10 +24,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	float                                         InDeltaTime;                                       // 0x0038(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonPaginationPips_C_Tick) == 0x000004, "Wrong alignment on AthenaSeasonPaginationPips_C_Tick");
-static_assert(sizeof(AthenaSeasonPaginationPips_C_Tick) == 0x00003C, "Wrong size on AthenaSeasonPaginationPips_C_Tick");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_Tick, MyGeometry) == 0x000000, "Member 'AthenaSeasonPaginationPips_C_Tick::MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_Tick, InDeltaTime) == 0x000038, "Member 'AthenaSeasonPaginationPips_C_Tick::InDeltaTime' has a wrong offset!");
 
 // Function AthenaSeasonPaginationPips.AthenaSeasonPaginationPips_C.ExecuteUbergraph_AthenaSeasonPaginationPips
 // 0x0050 (0x0050 - 0x0000)
@@ -40,13 +36,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue_1;       // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips) == 0x000008, "Wrong alignment on AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips");
-static_assert(sizeof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips) == 0x000050, "Wrong size on AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips, EntryPoint) == 0x000000, "Member 'AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips, K2Node_Event_MyGeometry) == 0x000004, "Member 'AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips, K2Node_Event_InDeltaTime) == 0x00003C, "Member 'AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips, CallFunc_PlayAnimationForward_ReturnValue) == 0x000040, "Member 'AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000048, "Member 'AthenaSeasonPaginationPips_C_ExecuteUbergraph_AthenaSeasonPaginationPips::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
 
 }
 

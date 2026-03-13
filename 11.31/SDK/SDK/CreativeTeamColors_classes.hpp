@@ -28,17 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CreativeTeamColors_C">();
+		BP_STATIC_CLASS_IMPL("CreativeTeamColors_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CreativeTeamColors_C")
 	}
 	static class UCreativeTeamColors_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCreativeTeamColors_C>();
 	}
 };
-static_assert(alignof(UCreativeTeamColors_C) == 0x000010, "Wrong alignment on UCreativeTeamColors_C");
-static_assert(sizeof(UCreativeTeamColors_C) == 0x000210, "Wrong size on UCreativeTeamColors_C");
-static_assert(offsetof(UCreativeTeamColors_C, TeamLightColors) == 0x0001F0, "Member 'UCreativeTeamColors_C::TeamLightColors' has a wrong offset!");
-static_assert(offsetof(UCreativeTeamColors_C, TeamSelectorColors) == 0x000200, "Member 'UCreativeTeamColors_C::TeamSelectorColors' has a wrong offset!");
 
 }
 

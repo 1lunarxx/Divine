@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InviteEventTitle_C">();
+		BP_STATIC_CLASS_IMPL("InviteEventTitle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InviteEventTitle_C")
 	}
 	static class UInviteEventTitle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInviteEventTitle_C>();
 	}
 };
-static_assert(alignof(UInviteEventTitle_C) == 0x000008, "Wrong alignment on UInviteEventTitle_C");
-static_assert(sizeof(UInviteEventTitle_C) == 0x000248, "Wrong size on UInviteEventTitle_C");
-static_assert(offsetof(UInviteEventTitle_C, UberGraphFrame) == 0x000230, "Member 'UInviteEventTitle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInviteEventTitle_C, Text_Invite) == 0x000238, "Member 'UInviteEventTitle_C::Text_Invite' has a wrong offset!");
-static_assert(offsetof(UInviteEventTitle_C, TitleImage) == 0x000240, "Member 'UInviteEventTitle_C::TitleImage' has a wrong offset!");
 
 }
 

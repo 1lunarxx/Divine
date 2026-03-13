@@ -35,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RealMoneyStorefront_C">();
+		BP_STATIC_CLASS_IMPL("RealMoneyStorefront_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RealMoneyStorefront_C")
 	}
 	static class URealMoneyStorefront_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URealMoneyStorefront_C>();
 	}
 };
-static_assert(alignof(URealMoneyStorefront_C) == 0x000008, "Wrong alignment on URealMoneyStorefront_C");
-static_assert(sizeof(URealMoneyStorefront_C) == 0x0003B0, "Wrong size on URealMoneyStorefront_C");
-static_assert(offsetof(URealMoneyStorefront_C, UberGraphFrame) == 0x000388, "Member 'URealMoneyStorefront_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URealMoneyStorefront_C, Border_NoCV_1) == 0x000390, "Member 'URealMoneyStorefront_C::Border_NoCV_1' has a wrong offset!");
-static_assert(offsetof(URealMoneyStorefront_C, NoOffersBox) == 0x000398, "Member 'URealMoneyStorefront_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(URealMoneyStorefront_C, Overlay_EntryBox_Offers) == 0x0003A0, "Member 'URealMoneyStorefront_C::Overlay_EntryBox_Offers' has a wrong offset!");
-static_assert(offsetof(URealMoneyStorefront_C, Switcher_Offers) == 0x0003A8, "Member 'URealMoneyStorefront_C::Switcher_Offers' has a wrong offset!");
 
 }
 

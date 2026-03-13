@@ -35,16 +35,6 @@ public:
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0140(0x0010)(NoDestructor)
 	int32                                         CallFunc_GetInputPriority_ReturnValue;             // 0x0150(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConfirmationWindow_C_HandleConfigureDeclineButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_HandleConfigureDeclineButton");
-static_assert(sizeof(ConfirmationWindow_C_HandleConfigureDeclineButton) == 0x000158, "Wrong size on ConfirmationWindow_C_HandleConfigureDeclineButton");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, New_Button) == 0x000000, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::New_Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, Icon_Text_Button) == 0x000008, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::Icon_Text_Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000010, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, CallFunc_GetConfirmationDescription_ReturnValue) == 0x000020, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::CallFunc_GetConfirmationDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, CallFunc_GetContext_ReturnValue) == 0x000138, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, K2Node_MakeStruct_DataTableRowHandle) == 0x000140, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_HandleConfigureDeclineButton, CallFunc_GetInputPriority_ReturnValue) == 0x000150, "Member 'ConfirmationWindow_C_HandleConfigureDeclineButton::CallFunc_GetInputPriority_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ConfigureConfirmationButton
 // 0x00F8 (0x00F8 - 0x0000)
@@ -64,17 +54,6 @@ public:
 	uint8                                         Pad_E4[0x4];                                       // 0x00E4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDataTableRowHandle                    CallFunc_GetInputAction_ReturnValue;               // 0x00E8(0x0010)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_ConfigureConfirmationButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_ConfigureConfirmationButton");
-static_assert(sizeof(ConfirmationWindow_C_ConfigureConfirmationButton) == 0x0000F8, "Wrong size on ConfirmationWindow_C_ConfigureConfirmationButton");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, Button) == 0x000000, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, Action) == 0x000008, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::Action' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, bSimpleConfirm) == 0x0000B8, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::bSimpleConfirm' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, IconTextButton) == 0x0000C0, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::IconTextButton' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, K2Node_DynamicCast_AsIcon_Text_Button) == 0x0000C8, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, K2Node_DynamicCast_bSuccess) == 0x0000D0, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, CallFunc_GetContext_ReturnValue) == 0x0000D8, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, CallFunc_GetInputPriority_ReturnValue) == 0x0000E0, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::CallFunc_GetInputPriority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureConfirmationButton, CallFunc_GetInputAction_ReturnValue) == 0x0000E8, "Member 'ConfirmationWindow_C_ConfigureConfirmationButton::CallFunc_GetInputAction_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.PlayShowSound
 // 0x0120 (0x0120 - 0x0000)
@@ -84,10 +63,6 @@ public:
 	struct FFortDialogDescription_NUI             CallFunc_GetConfirmationDescription_ReturnValue;   // 0x0000(0x0118)(ConstParm, ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0118(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_PlayShowSound) == 0x000008, "Wrong alignment on ConfirmationWindow_C_PlayShowSound");
-static_assert(sizeof(ConfirmationWindow_C_PlayShowSound) == 0x000120, "Wrong size on ConfirmationWindow_C_PlayShowSound");
-static_assert(offsetof(ConfirmationWindow_C_PlayShowSound, CallFunc_GetConfirmationDescription_ReturnValue) == 0x000000, "Member 'ConfirmationWindow_C_PlayShowSound::CallFunc_GetConfirmationDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_PlayShowSound, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'ConfirmationWindow_C_PlayShowSound::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.TapToClose
 // 0x03B0 (0x03B0 - 0x0000)
@@ -109,20 +84,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(ConfirmationWindow_C_TapToClose) == 0x000008, "Wrong alignment on ConfirmationWindow_C_TapToClose");
-static_assert(sizeof(ConfirmationWindow_C_TapToClose) == 0x0003B0, "Wrong size on ConfirmationWindow_C_TapToClose");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, MyGeometry) == 0x000000, "Member 'ConfirmationWindow_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, MouseEvent) == 0x000038, "Member 'ConfirmationWindow_C_TapToClose::MouseEvent' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'ConfirmationWindow_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'ConfirmationWindow_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'ConfirmationWindow_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'ConfirmationWindow_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.GetInputAction
 // 0x0058 (0x0058 - 0x0000)
@@ -139,15 +100,6 @@ public:
 	struct FDataTableRowHandle                    Temp_struct_Variable;                              // 0x0038(0x0010)(NoDestructor)
 	struct FDataTableRowHandle                    K2Node_Select_Default;                             // 0x0048(0x0010)(NoDestructor)
 };
-static_assert(alignof(ConfirmationWindow_C_GetInputAction) == 0x000008, "Wrong alignment on ConfirmationWindow_C_GetInputAction");
-static_assert(sizeof(ConfirmationWindow_C_GetInputAction) == 0x000058, "Wrong size on ConfirmationWindow_C_GetInputAction");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, RowName) == 0x000000, "Member 'ConfirmationWindow_C_GetInputAction::RowName' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, UseInputAction) == 0x000008, "Member 'ConfirmationWindow_C_GetInputAction::UseInputAction' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, ReturnValue) == 0x000010, "Member 'ConfirmationWindow_C_GetInputAction::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, Temp_bool_Variable) == 0x000020, "Member 'ConfirmationWindow_C_GetInputAction::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, K2Node_MakeStruct_DataTableRowHandle) == 0x000028, "Member 'ConfirmationWindow_C_GetInputAction::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, Temp_struct_Variable) == 0x000038, "Member 'ConfirmationWindow_C_GetInputAction::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_GetInputAction, K2Node_Select_Default) == 0x000048, "Member 'ConfirmationWindow_C_GetInputAction::K2Node_Select_Default' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -156,9 +108,6 @@ struct ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'ConfirmationWindow_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ConfigureDeclineButton
 // 0x0008 (0x0008 - 0x0000)
@@ -167,9 +116,6 @@ struct ConfirmationWindow_C_ConfigureDeclineButton final
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConfirmationWindow_C_ConfigureDeclineButton) == 0x000008, "Wrong alignment on ConfirmationWindow_C_ConfigureDeclineButton");
-static_assert(sizeof(ConfirmationWindow_C_ConfigureDeclineButton) == 0x000008, "Wrong size on ConfirmationWindow_C_ConfigureDeclineButton");
-static_assert(offsetof(ConfirmationWindow_C_ConfigureDeclineButton, Button) == 0x000000, "Member 'ConfirmationWindow_C_ConfigureDeclineButton::Button' has a wrong offset!");
 
 // Function ConfirmationWindow.ConfirmationWindow_C.ExecuteUbergraph_ConfirmationWindow
 // 0x0138 (0x0138 - 0x0000)
@@ -188,17 +134,6 @@ public:
 	struct FFortDialogDescription_NUI             CallFunc_GetConfirmationDescription_ReturnValue;   // 0x0018(0x0118)(ConstParm, ContainsInstancedReference)
 	class UCommonButton*                          K2Node_Event_Button;                               // 0x0130(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow) == 0x000008, "Wrong alignment on ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow");
-static_assert(sizeof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow) == 0x000138, "Wrong size on ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, EntryPoint) == 0x000000, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, Temp_bool_Variable) == 0x000004, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, Temp_byte_Variable) == 0x000005, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, Temp_byte_Variable_1) == 0x000006, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, CallFunc_IsMobileGame_ReturnValue) == 0x000010, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_Select_Default) == 0x000011, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, CallFunc_GetConfirmationDescription_ReturnValue) == 0x000018, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::CallFunc_GetConfirmationDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow, K2Node_Event_Button) == 0x000130, "Member 'ConfirmationWindow_C_ExecuteUbergraph_ConfirmationWindow::K2Node_Event_Button' has a wrong offset!");
 
 }
 

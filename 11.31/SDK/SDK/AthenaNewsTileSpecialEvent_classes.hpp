@@ -44,28 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaNewsTileSpecialEvent_C">();
+		BP_STATIC_CLASS_IMPL("AthenaNewsTileSpecialEvent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaNewsTileSpecialEvent_C")
 	}
 	static class UAthenaNewsTileSpecialEvent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaNewsTileSpecialEvent_C>();
 	}
 };
-static_assert(alignof(UAthenaNewsTileSpecialEvent_C) == 0x000008, "Wrong alignment on UAthenaNewsTileSpecialEvent_C");
-static_assert(sizeof(UAthenaNewsTileSpecialEvent_C) == 0x0002E8, "Wrong size on UAthenaNewsTileSpecialEvent_C");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, UberGraphFrame) == 0x000280, "Member 'UAthenaNewsTileSpecialEvent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, Intro) == 0x000288, "Member 'UAthenaNewsTileSpecialEvent_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, Button_Action) == 0x000290, "Member 'UAthenaNewsTileSpecialEvent_C::Button_Action' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, CommonLoadGuard_0) == 0x000298, "Member 'UAthenaNewsTileSpecialEvent_C::CommonLoadGuard_0' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, ConfirmSelectionFlash) == 0x0002A0, "Member 'UAthenaNewsTileSpecialEvent_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, Fill) == 0x0002A8, "Member 'UAthenaNewsTileSpecialEvent_C::Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, GameModeSB) == 0x0002B0, "Member 'UAthenaNewsTileSpecialEvent_C::GameModeSB' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, LoadingImage) == 0x0002B8, "Member 'UAthenaNewsTileSpecialEvent_C::LoadingImage' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, LoadingImageOvr) == 0x0002C0, "Member 'UAthenaNewsTileSpecialEvent_C::LoadingImageOvr' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, LoadSwitcher) == 0x0002C8, "Member 'UAthenaNewsTileSpecialEvent_C::LoadSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, NewsItemScale) == 0x0002D0, "Member 'UAthenaNewsTileSpecialEvent_C::NewsItemScale' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, SizeBox_Tile) == 0x0002D8, "Member 'UAthenaNewsTileSpecialEvent_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(UAthenaNewsTileSpecialEvent_C, VisibilityBox) == 0x0002E0, "Member 'UAthenaNewsTileSpecialEvent_C::VisibilityBox' has a wrong offset!");
 
 }
 

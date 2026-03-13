@@ -17,26 +17,6 @@
 namespace SDK
 {
 
-// Function GC_Generic_AdrenalineRush_DirectHeal_Latent.GC_Generic_AdrenalineRush_DirectHeal_Latent_C.Toggle Mesh Visibility
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                                    Visibility                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Toggle_Mesh_Visibility(bool Visibility)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Toggle Mesh Visibility");
-
-	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_Toggle_Mesh_Visibility Parms{};
-
-	Parms.Visibility = Visibility;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function GC_Generic_AdrenalineRush_DirectHeal_Latent.GC_Generic_AdrenalineRush_DirectHeal_Latent_C.Duplicate Meshes
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -146,6 +126,26 @@ void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::ExecuteUbergraph_GC_Generic
 	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_ExecuteUbergraph_GC_Generic_AdrenalineRush_DirectHeal_Latent Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GC_Generic_AdrenalineRush_DirectHeal_Latent.GC_Generic_AdrenalineRush_DirectHeal_Latent_C.Toggle Mesh Visibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                                    Visibility                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGC_Generic_AdrenalineRush_DirectHeal_Latent_C::Toggle_Mesh_Visibility(bool Visibility)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GC_Generic_AdrenalineRush_DirectHeal_Latent_C", "Toggle Mesh Visibility");
+
+	Params::GC_Generic_AdrenalineRush_DirectHeal_Latent_C_Toggle_Mesh_Visibility Parms{};
+
+	Parms.Visibility = Visibility;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

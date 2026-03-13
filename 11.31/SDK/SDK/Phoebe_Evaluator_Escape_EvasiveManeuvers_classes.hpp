@@ -23,15 +23,17 @@ class UPhoebe_Evaluator_Escape_EvasiveManeuvers_C final : public UFortAthenaAIBo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_Evaluator_Escape_EvasiveManeuvers_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_Evaluator_Escape_EvasiveManeuvers_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_Evaluator_Escape_EvasiveManeuvers_C")
 	}
 	static class UPhoebe_Evaluator_Escape_EvasiveManeuvers_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_Evaluator_Escape_EvasiveManeuvers_C>();
 	}
 };
-static_assert(alignof(UPhoebe_Evaluator_Escape_EvasiveManeuvers_C) == 0x000008, "Wrong alignment on UPhoebe_Evaluator_Escape_EvasiveManeuvers_C");
-static_assert(sizeof(UPhoebe_Evaluator_Escape_EvasiveManeuvers_C) == 0x0000C8, "Wrong size on UPhoebe_Evaluator_Escape_EvasiveManeuvers_C");
 
 }
 

@@ -152,94 +152,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Commando_FragGrenade_WithTrajectory_C">();
+		BP_STATIC_CLASS_IMPL("GA_Commando_FragGrenade_WithTrajectory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Commando_FragGrenade_WithTrajectory_C")
 	}
 	static class UGA_Commando_FragGrenade_WithTrajectory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Commando_FragGrenade_WithTrajectory_C>();
 	}
 };
-static_assert(alignof(UGA_Commando_FragGrenade_WithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Commando_FragGrenade_WithTrajectory_C");
-static_assert(sizeof(UGA_Commando_FragGrenade_WithTrajectory_C) == 0x000E78, "Wrong size on UGA_Commando_FragGrenade_WithTrajectory_C");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, UberGraphFrame_GA_Commando_FragGrenade_WithTrajectory_C) == 0x000B38, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::UberGraphFrame_GA_Commando_FragGrenade_WithTrajectory_C' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, Prj_Grenade) == 0x000B40, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::Prj_Grenade' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeSpeedMin) == 0x000B48, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeSpeedMin' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeSpeedMax) == 0x000B4C, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeSpeedMax' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GravityScale) == 0x000B50, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GravityScale' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeSound) == 0x000B58, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeSound' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_ClusterBomb) == 0x000B60, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_ClusterBomb' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MaxClusterGrenades) == 0x000B80, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MaxClusterGrenades' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, Prj_Cluster) == 0x000B88, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::Prj_Cluster' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterSpeedMax) == 0x000B90, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterSpeedMax' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_BiggerIsBetter) == 0x000B98, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_BiggerIsBetter' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_GEContainer_Explosion) == 0x000BB8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_GEContainer_Explosion' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ExplosionRadius) == 0x000BC0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, AdditionalThrowAngle) == 0x000BC4, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::AdditionalThrowAngle' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterMinPitch) == 0x000BC8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterMinPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterMaxPitch) == 0x000BCC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterMaxPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, EC_ClusterExplosion) == 0x000BD0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::EC_ClusterExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterSpeedMin) == 0x000BD8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterSpeedMin' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeDialogFeedback) == 0x000BE0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeDialogFeedback' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_KeepOut) == 0x000BF8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_KeepOut' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, EC_KeepOut) == 0x000C18, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::EC_KeepOut' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, AOE_KeepOut) == 0x000C20, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::AOE_KeepOut' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, BiggerIsBetter) == 0x000C28, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::BiggerIsBetter' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterBomb) == 0x000C29, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterBomb' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, KeepOut) == 0x000C2A, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::KeepOut' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_GrenadeAmmo) == 0x000C30, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_GrenadeAmmo' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_GrenadeCost) == 0x000C50, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_GrenadeCost' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_GrenadeDamage) == 0x000C70, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_GrenadeDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeAmmo) == 0x000C90, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeAmmo' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeCost) == 0x000C91, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeCost' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeDamage) == 0x000C92, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeDamage' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeAmmoUpgrade) == 0x000C94, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeAmmoUpgrade' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeAmmoDefault) == 0x000C98, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeAmmoDefault' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MaxGrenadeAmmo) == 0x000C9C, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MaxGrenadeAmmo' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ExplosionRadiusTooltip) == 0x000CA0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ExplosionRadiusTooltip' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ExplosionRadiusDefault) == 0x000CA4, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ExplosionRadiusDefault' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ExplosionRadiusUpgrade) == 0x000CA8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ExplosionRadiusUpgrade' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_PlasmaGrenades) == 0x000CB0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_PlasmaGrenades' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, PlasmaGrenades) == 0x000CD0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::PlasmaGrenades' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_Flashbang) == 0x000CD8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_Flashbang' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, Flashbang) == 0x000CF8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::Flashbang' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, GrenadeTargetingOriginOffset) == 0x000CFC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::GrenadeTargetingOriginOffset' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyProjectile) == 0x000D08, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyShouldBounce) == 0x000D10, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyShouldBounce' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyBounciness) == 0x000D14, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyBounciness' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyFriction) == 0x000D18, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyFriction' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TrajectoryUpdateInterval) == 0x000D1C, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TrajectoryUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyMaxSpeed) == 0x000D20, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyMaxSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyGravity) == 0x000D24, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyGravity' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyTimeStep) == 0x000D28, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyTimeStep' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyExtent) == 0x000D2C, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyExtent' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, InThrowWindup) == 0x000D30, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::InThrowWindup' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TrajectoryIndicator) == 0x000D38, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TrajectoryIndicator' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TrajectoryIndicatorClass) == 0x000D40, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TrajectoryIndicatorClass' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ThrowWindupMontage) == 0x000D48, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ThrowWindupMontage' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, AbilityKeyPressed) == 0x000DA0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::AbilityKeyPressed' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MaxSpeedPitch) == 0x000DA4, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MaxSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MinSpeedPitch) == 0x000DA8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MinSpeedPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MaxTossPitch) == 0x000DAC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MaxTossPitch' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, MaxTrajectoryBounces) == 0x000DB0, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::MaxTrajectoryBounces' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, TC_Tactical_Clusterbomb) == 0x000DB8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::TC_Tactical_Clusterbomb' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, Tactical_Clusterbomb) == 0x000DD8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::Tactical_Clusterbomb' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, EC_ClusterExplosion_Tactical) == 0x000DDC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::EC_ClusterExplosion_Tactical' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, F_FrameDelay) == 0x000DE4, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::F_FrameDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, BiggerIsBetter_T01) == 0x000DE8, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::BiggerIsBetter_T01' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, BiggerIsBetter_T02) == 0x000DE9, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::BiggerIsBetter_T02' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterBomb_T01) == 0x000DEA, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterBomb_T01' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ClusterBomb_T02) == 0x000DEB, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ClusterBomb_T02' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_BiggerIsBetter_T01) == 0x000DEC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_BiggerIsBetter_T01' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_BiggerIsBetter_T02) == 0x000DF4, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_BiggerIsBetter_T02' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_ClusterBomb_T01) == 0x000DFC, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_ClusterBomb_T01' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_ClusterBomb_T02) == 0x000E04, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_ClusterBomb_T02' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, SF_BiggerIsBetterRadius_T01) == 0x000E10, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::SF_BiggerIsBetterRadius_T01' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ThrowMontage) == 0x000E30, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ThrowMontage' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_Event_Activate) == 0x000E38, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_Event_Activate' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, T_Event_Deactivate) == 0x000E40, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::T_Event_Deactivate' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, SF_BiggerIsBetterRadius_T02) == 0x000E48, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::SF_BiggerIsBetterRadius_T02' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, DummyCollisionChannel) == 0x000E68, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::DummyCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UGA_Commando_FragGrenade_WithTrajectory_C, ThrowCue) == 0x000E6C, "Member 'UGA_Commando_FragGrenade_WithTrajectory_C::ThrowCue' has a wrong offset!");
 
 }
 

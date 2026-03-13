@@ -42,24 +42,6 @@ public:
 	bool                                          Temp_bool_Variable;                                // 0x0252(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0253(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(EventScoreBigStat_C_SetData) == 0x000008, "Wrong alignment on EventScoreBigStat_C_SetData");
-static_assert(sizeof(EventScoreBigStat_C_SetData) == 0x000258, "Wrong size on EventScoreBigStat_C_SetData");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Label) == 0x000000, "Member 'EventScoreBigStat_C_SetData::Label' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Value) == 0x000018, "Member 'EventScoreBigStat_C_SetData::Value' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, ValueContext) == 0x00001C, "Member 'EventScoreBigStat_C_SetData::ValueContext' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, FormatterText) == 0x000020, "Member 'EventScoreBigStat_C_SetData::FormatterText' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Tournament_Display_Info) == 0x000038, "Member 'EventScoreBigStat_C_SetData::Tournament_Display_Info' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, CallFunc_Greater_IntInt_ReturnValue) == 0x0001A8, "Member 'EventScoreBigStat_C_SetData::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, CallFunc_Conv_IntToText_ReturnValue) == 0x0001B0, "Member 'EventScoreBigStat_C_SetData::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0001C8, "Member 'EventScoreBigStat_C_SetData::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, K2Node_MakeStruct_FormatArgumentData) == 0x0001D0, "Member 'EventScoreBigStat_C_SetData::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, K2Node_MakeArray_Array) == 0x000210, "Member 'EventScoreBigStat_C_SetData::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000220, "Member 'EventScoreBigStat_C_SetData::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, CallFunc_Format_ReturnValue) == 0x000238, "Member 'EventScoreBigStat_C_SetData::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Temp_byte_Variable) == 0x000250, "Member 'EventScoreBigStat_C_SetData::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Temp_byte_Variable_1) == 0x000251, "Member 'EventScoreBigStat_C_SetData::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, Temp_bool_Variable) == 0x000252, "Member 'EventScoreBigStat_C_SetData::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(EventScoreBigStat_C_SetData, K2Node_Select_Default) == 0x000253, "Member 'EventScoreBigStat_C_SetData::K2Node_Select_Default' has a wrong offset!");
 
 }
 

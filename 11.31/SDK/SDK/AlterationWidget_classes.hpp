@@ -63,7 +63,6 @@ public:
 	struct FLinearColor                           NewVar_0;                                          // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	TSoftObjectPtr<class UTexture2D> GetValidLazyTexture();
 	void HasValidTexture(bool* ValidBrush);
 	void IsGamplaySlot(class UFortAlterationItemDefinition* Alteration, bool* Result);
 	void TriggerTextAnimation();
@@ -77,53 +76,22 @@ public:
 	struct FLinearColor GetHighlightColor();
 	void OnSetup();
 	void ExecuteUbergraph_AlterationWidget(int32 EntryPoint);
+	TSoftObjectPtr<class UTexture2D> GetValidLazyTexture();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AlterationWidget_C">();
+		BP_STATIC_CLASS_IMPL("AlterationWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AlterationWidget_C")
 	}
 	static class UAlterationWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAlterationWidget_C>();
 	}
 };
-static_assert(alignof(UAlterationWidget_C) == 0x000008, "Wrong alignment on UAlterationWidget_C");
-static_assert(sizeof(UAlterationWidget_C) == 0x000370, "Wrong size on UAlterationWidget_C");
-static_assert(offsetof(UAlterationWidget_C, UberGraphFrame) == 0x000268, "Member 'UAlterationWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, TextFade) == 0x000270, "Member 'UAlterationWidget_C::TextFade' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationDescription) == 0x000278, "Member 'UAlterationWidget_C::AlterationDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationName) == 0x000280, "Member 'UAlterationWidget_C::AlterationName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, AlterationShortDescription) == 0x000288, "Member 'UAlterationWidget_C::AlterationShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ContentHBox) == 0x000290, "Member 'UAlterationWidget_C::ContentHBox' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, EvolutionBorder) == 0x000298, "Member 'UAlterationWidget_C::EvolutionBorder' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ExtraContentSlot) == 0x0002A0, "Member 'UAlterationWidget_C::ExtraContentSlot' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageBackground) == 0x0002A8, "Member 'UAlterationWidget_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageLocked) == 0x0002B0, "Member 'UAlterationWidget_C::ImageLocked' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ImageLockPerk) == 0x0002B8, "Member 'UAlterationWidget_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, InfoSwitcher) == 0x0002C0, "Member 'UAlterationWidget_C::InfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LargeInfo) == 0x0002C8, "Member 'UAlterationWidget_C::LargeInfo' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LazyImageAlteration) == 0x0002D0, "Member 'UAlterationWidget_C::LazyImageAlteration' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LevelRequired) == 0x0002D8, "Member 'UAlterationWidget_C::LevelRequired' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LockedBox) == 0x0002E0, "Member 'UAlterationWidget_C::LockedBox' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, PerkModeSwitcher) == 0x0002E8, "Member 'UAlterationWidget_C::PerkModeSwitcher' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, PipSizeBox) == 0x0002F0, "Member 'UAlterationWidget_C::PipSizeBox' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ScaleBoxIcon) == 0x0002F8, "Member 'UAlterationWidget_C::ScaleBoxIcon' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, SmallInfo) == 0x000300, "Member 'UAlterationWidget_C::SmallInfo' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, UpgradePips) == 0x000308, "Member 'UAlterationWidget_C::UpgradePips' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeName) == 0x000310, "Member 'UAlterationWidget_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeShortDescription) == 0x000311, "Member 'UAlterationWidget_C::bIncludeShortDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bIncludeDescription) == 0x000312, "Member 'UAlterationWidget_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, IconSize) == 0x000313, "Member 'UAlterationWidget_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, bUseLargeFormatName) == 0x000314, "Member 'UAlterationWidget_C::bUseLargeFormatName' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Locked_Description_Style) == 0x000318, "Member 'UAlterationWidget_C::Locked_Description_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, Locked_Text_Style) == 0x000320, "Member 'UAlterationWidget_C::Locked_Text_Style' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, ShouldShowRarity) == 0x000328, "Member 'UAlterationWidget_C::ShouldShowRarity' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, EvolutionHighlightStyle) == 0x000330, "Member 'UAlterationWidget_C::EvolutionHighlightStyle' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, StandardStyle) == 0x000338, "Member 'UAlterationWidget_C::StandardStyle' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, UnlockedColor) == 0x000340, "Member 'UAlterationWidget_C::UnlockedColor' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, LockedColor) == 0x000350, "Member 'UAlterationWidget_C::LockedColor' has a wrong offset!");
-static_assert(offsetof(UAlterationWidget_C, NewVar_0) == 0x000360, "Member 'UAlterationWidget_C::NewVar_0' has a wrong offset!");
 
 }
 

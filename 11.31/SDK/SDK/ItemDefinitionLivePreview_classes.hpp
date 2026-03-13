@@ -23,15 +23,17 @@ class UItemDefinitionLivePreview_C final : public UFortItemThumbnailRenderer
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDefinitionLivePreview_C">();
+		BP_STATIC_CLASS_IMPL("ItemDefinitionLivePreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDefinitionLivePreview_C")
 	}
 	static class UItemDefinitionLivePreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDefinitionLivePreview_C>();
 	}
 };
-static_assert(alignof(UItemDefinitionLivePreview_C) == 0x000008, "Wrong alignment on UItemDefinitionLivePreview_C");
-static_assert(sizeof(UItemDefinitionLivePreview_C) == 0x0000B0, "Wrong size on UItemDefinitionLivePreview_C");
 
 }
 

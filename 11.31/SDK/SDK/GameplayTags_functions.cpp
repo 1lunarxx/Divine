@@ -917,14 +917,14 @@ void IGameplayTagAssetInterface::GetOwnedGameplayTags(struct FGameplayTagContain
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTagAssetInterface", "GetOwnedGameplayTags");
+		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "GetOwnedGameplayTags");
 
 	Params::GameplayTagAssetInterface_GetOwnedGameplayTags Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -944,7 +944,7 @@ bool IGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGamepl
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTagAssetInterface", "HasAllMatchingGameplayTags");
+		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAllMatchingGameplayTags");
 
 	Params::GameplayTagAssetInterface_HasAllMatchingGameplayTags Parms{};
 
@@ -953,7 +953,7 @@ bool IGameplayTagAssetInterface::HasAllMatchingGameplayTags(const struct FGamepl
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -972,7 +972,7 @@ bool IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGamepl
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTagAssetInterface", "HasAnyMatchingGameplayTags");
+		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasAnyMatchingGameplayTags");
 
 	Params::GameplayTagAssetInterface_HasAnyMatchingGameplayTags Parms{};
 
@@ -981,7 +981,7 @@ bool IGameplayTagAssetInterface::HasAnyMatchingGameplayTags(const struct FGamepl
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -1000,7 +1000,7 @@ bool IGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTa
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("GameplayTagAssetInterface", "HasMatchingGameplayTag");
+		Func = AsUObject()->Class->GetFunction("GameplayTagAssetInterface", "HasMatchingGameplayTag");
 
 	Params::GameplayTagAssetInterface_HasMatchingGameplayTag Parms{};
 
@@ -1009,7 +1009,7 @@ bool IGameplayTagAssetInterface::HasMatchingGameplayTag(const struct FGameplayTa
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

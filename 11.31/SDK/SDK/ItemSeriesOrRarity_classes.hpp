@@ -35,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemSeriesOrRarity_C">();
+		BP_STATIC_CLASS_IMPL("ItemSeriesOrRarity_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemSeriesOrRarity_C")
 	}
 	static class UItemSeriesOrRarity_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemSeriesOrRarity_C>();
 	}
 };
-static_assert(alignof(UItemSeriesOrRarity_C) == 0x000008, "Wrong alignment on UItemSeriesOrRarity_C");
-static_assert(sizeof(UItemSeriesOrRarity_C) == 0x000258, "Wrong size on UItemSeriesOrRarity_C");
-static_assert(offsetof(UItemSeriesOrRarity_C, RarityOrSeriesSwitcher) == 0x000230, "Member 'UItemSeriesOrRarity_C::RarityOrSeriesSwitcher' has a wrong offset!");
-static_assert(offsetof(UItemSeriesOrRarity_C, RarityTextBlock) == 0x000238, "Member 'UItemSeriesOrRarity_C::RarityTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemSeriesOrRarity_C, SeriesBorder) == 0x000240, "Member 'UItemSeriesOrRarity_C::SeriesBorder' has a wrong offset!");
-static_assert(offsetof(UItemSeriesOrRarity_C, SeriesTextBlock) == 0x000248, "Member 'UItemSeriesOrRarity_C::SeriesTextBlock' has a wrong offset!");
-static_assert(offsetof(UItemSeriesOrRarity_C, OnlyShowSeries) == 0x000250, "Member 'UItemSeriesOrRarity_C::OnlyShowSeries' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class ATrapTool_C final : public AFortTrapTool
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TrapTool_C">();
+		BP_STATIC_CLASS_IMPL("TrapTool_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TrapTool_C")
 	}
 	static class ATrapTool_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrapTool_C>();
 	}
 };
-static_assert(alignof(ATrapTool_C) == 0x000008, "Wrong alignment on ATrapTool_C");
-static_assert(sizeof(ATrapTool_C) == 0x000A98, "Wrong size on ATrapTool_C");
 
 }
 

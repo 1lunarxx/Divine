@@ -57,31 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SimpleFeatured_GoldButton_C">();
+		BP_STATIC_CLASS_IMPL("SimpleFeatured_GoldButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleFeatured_GoldButton_C")
 	}
 	static class USimpleFeatured_GoldButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleFeatured_GoldButton_C>();
 	}
 };
-static_assert(alignof(USimpleFeatured_GoldButton_C) == 0x000008, "Wrong alignment on USimpleFeatured_GoldButton_C");
-static_assert(sizeof(USimpleFeatured_GoldButton_C) == 0x000BF8, "Wrong size on USimpleFeatured_GoldButton_C");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, UberGraphFrame) == 0x000B70, "Member 'USimpleFeatured_GoldButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Pressed) == 0x000B78, "Member 'USimpleFeatured_GoldButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, TextBounce) == 0x000B80, "Member 'USimpleFeatured_GoldButton_C::TextBounce' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Hover) == 0x000B88, "Member 'USimpleFeatured_GoldButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Border_Container) == 0x000B90, "Member 'USimpleFeatured_GoldButton_C::Border_Container' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, ButtonBacking) == 0x000B98, "Member 'USimpleFeatured_GoldButton_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, SizeBox_Control) == 0x000BA0, "Member 'USimpleFeatured_GoldButton_C::SizeBox_Control' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Text_ButtonAction) == 0x000BA8, "Member 'USimpleFeatured_GoldButton_C::Text_ButtonAction' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Text_SecondaryText) == 0x000BB0, "Member 'USimpleFeatured_GoldButton_C::Text_SecondaryText' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Button_Description) == 0x000BB8, "Member 'USimpleFeatured_GoldButton_C::Button_Description' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, FontSizeOveride) == 0x000BD0, "Member 'USimpleFeatured_GoldButton_C::FontSizeOveride' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, FontSize) == 0x000BD4, "Member 'USimpleFeatured_GoldButton_C::FontSize' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, Padding_Overide) == 0x000BD8, "Member 'USimpleFeatured_GoldButton_C::Padding_Overide' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, PaddingOveride) == 0x000BE8, "Member 'USimpleFeatured_GoldButton_C::PaddingOveride' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, DelayShine) == 0x000BEC, "Member 'USimpleFeatured_GoldButton_C::DelayShine' has a wrong offset!");
-static_assert(offsetof(USimpleFeatured_GoldButton_C, UseShineSwipe) == 0x000BF0, "Member 'USimpleFeatured_GoldButton_C::UseShineSwipe' has a wrong offset!");
 
 }
 

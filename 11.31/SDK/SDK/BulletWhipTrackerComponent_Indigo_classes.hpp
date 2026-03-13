@@ -23,15 +23,17 @@ class UBulletWhipTrackerComponent_Indigo_C final : public UBulletWhipTrackerComp
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BulletWhipTrackerComponent_Indigo_C">();
+		BP_STATIC_CLASS_IMPL("BulletWhipTrackerComponent_Indigo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BulletWhipTrackerComponent_Indigo_C")
 	}
 	static class UBulletWhipTrackerComponent_Indigo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBulletWhipTrackerComponent_Indigo_C>();
 	}
 };
-static_assert(alignof(UBulletWhipTrackerComponent_Indigo_C) == 0x000008, "Wrong alignment on UBulletWhipTrackerComponent_Indigo_C");
-static_assert(sizeof(UBulletWhipTrackerComponent_Indigo_C) == 0x0000E8, "Wrong size on UBulletWhipTrackerComponent_Indigo_C");
 
 }
 

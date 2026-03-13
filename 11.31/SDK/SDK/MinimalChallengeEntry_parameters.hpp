@@ -21,9 +21,6 @@ struct MinimalChallengeEntry_C_OnChallengeInfoSet final
 public:
 	bool                                          bIsInProgress;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinimalChallengeEntry_C_OnChallengeInfoSet) == 0x000001, "Wrong alignment on MinimalChallengeEntry_C_OnChallengeInfoSet");
-static_assert(sizeof(MinimalChallengeEntry_C_OnChallengeInfoSet) == 0x000001, "Wrong size on MinimalChallengeEntry_C_OnChallengeInfoSet");
-static_assert(offsetof(MinimalChallengeEntry_C_OnChallengeInfoSet, bIsInProgress) == 0x000000, "Member 'MinimalChallengeEntry_C_OnChallengeInfoSet::bIsInProgress' has a wrong offset!");
 
 // Function MinimalChallengeEntry.MinimalChallengeEntry_C.ExecuteUbergraph_MinimalChallengeEntry
 // 0x0018 (0x0018 - 0x0000)
@@ -39,14 +36,6 @@ public:
 	uint8                                         Pad_11[0x3];                                       // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Select_Default;                             // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry) == 0x000004, "Wrong alignment on MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry");
-static_assert(sizeof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry) == 0x000018, "Wrong size on MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, EntryPoint) == 0x000000, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, Temp_bool_Variable) == 0x000004, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, Temp_int_Variable) == 0x000008, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, Temp_int_Variable_1) == 0x00000C, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, K2Node_Event_bIsInProgress) == 0x000010, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::K2Node_Event_bIsInProgress' has a wrong offset!");
-static_assert(offsetof(MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry, K2Node_Select_Default) == 0x000014, "Member 'MinimalChallengeEntry_C_ExecuteUbergraph_MinimalChallengeEntry::K2Node_Select_Default' has a wrong offset!");
 
 }
 

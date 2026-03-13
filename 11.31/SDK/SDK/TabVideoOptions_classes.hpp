@@ -27,10 +27,10 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0320(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UGameFeatureStatus_C*                   GameFeatureStatus;                                 // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TooltipDisplay;                                    // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(bool Accept_Input)> Enable_Overlay;                                    // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool Accept_Input)> Enable_Overlay;                                // 0x0338(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              Disable_Overlay;                                   // 0x0348(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UFortOptionsMenuSetting*                DisplayResolutionSetting;                          // 0x0358(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<ESettingType, class UFortOptionsMenuSetting*> ForceUpdateSettings;                               // 0x0360(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<ESettingType, class UFortOptionsMenuSetting*> ForceUpdateSettings;                          // 0x0360(0x0050)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void Update_Qualities();
@@ -49,22 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabVideoOptions_C">();
+		BP_STATIC_CLASS_IMPL("TabVideoOptions_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabVideoOptions_C")
 	}
 	static class UTabVideoOptions_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabVideoOptions_C>();
 	}
 };
-static_assert(alignof(UTabVideoOptions_C) == 0x000008, "Wrong alignment on UTabVideoOptions_C");
-static_assert(sizeof(UTabVideoOptions_C) == 0x0003B0, "Wrong size on UTabVideoOptions_C");
-static_assert(offsetof(UTabVideoOptions_C, UberGraphFrame) == 0x000320, "Member 'UTabVideoOptions_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, GameFeatureStatus) == 0x000328, "Member 'UTabVideoOptions_C::GameFeatureStatus' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, TooltipDisplay) == 0x000330, "Member 'UTabVideoOptions_C::TooltipDisplay' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, Enable_Overlay) == 0x000338, "Member 'UTabVideoOptions_C::Enable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, Disable_Overlay) == 0x000348, "Member 'UTabVideoOptions_C::Disable_Overlay' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, DisplayResolutionSetting) == 0x000358, "Member 'UTabVideoOptions_C::DisplayResolutionSetting' has a wrong offset!");
-static_assert(offsetof(UTabVideoOptions_C, ForceUpdateSettings) == 0x000360, "Member 'UTabVideoOptions_C::ForceUpdateSettings' has a wrong offset!");
 
 }
 

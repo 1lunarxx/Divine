@@ -24,11 +24,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton) == 0x000008, "Wrong alignment on WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton");
-static_assert(sizeof(WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton) == 0x000018, "Wrong size on WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton");
-static_assert(offsetof(WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton, EntryPoint) == 0x000000, "Member 'WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000008, "Member 'WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton, CallFunc_PlayAnimationForward_ReturnValue) == 0x000010, "Member 'WinterQuestEnterButton_C_ExecuteUbergraph_WinterQuestEnterButton::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

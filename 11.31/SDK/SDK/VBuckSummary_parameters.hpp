@@ -23,10 +23,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(VBuckSummary_C_ExecuteUbergraph_VBuckSummary) == 0x000008, "Wrong alignment on VBuckSummary_C_ExecuteUbergraph_VBuckSummary");
-static_assert(sizeof(VBuckSummary_C_ExecuteUbergraph_VBuckSummary) == 0x000010, "Wrong size on VBuckSummary_C_ExecuteUbergraph_VBuckSummary");
-static_assert(offsetof(VBuckSummary_C_ExecuteUbergraph_VBuckSummary, EntryPoint) == 0x000000, "Member 'VBuckSummary_C_ExecuteUbergraph_VBuckSummary::EntryPoint' has a wrong offset!");
-static_assert(offsetof(VBuckSummary_C_ExecuteUbergraph_VBuckSummary, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'VBuckSummary_C_ExecuteUbergraph_VBuckSummary::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

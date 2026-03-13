@@ -73,45 +73,6 @@ public:
 	uint8                                         Pad_1A5[0x3];                                      // 0x01A5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue_1;                 // 0x01A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup) == 0x0001B0, "Wrong size on BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, EntryPoint) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, Temp_int_Array_Index_Variable_1) == 0x000010, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_InteractingPawn) == 0x000018, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_InteractionBeingAttempted) == 0x000020, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_IsVisible_ReturnValue) == 0x000021, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetValueAtLevel_ReturnValue) == 0x000024, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000038, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x000040, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_SpawnEmitterAtLocation_ReturnValue) == 0x000050, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_SpawnEmitterAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000058, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Array_Get_Item) == 0x000068, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Array_Length_ReturnValue) == 0x000070, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetPlayerPawn_ReturnValue) == 0x000078, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetActorTeam_ReturnValue) == 0x000080, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_IsValid_ReturnValue) == 0x000081, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_SpawnEmitterAttached_ReturnValue) == 0x000088, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_SpawnEmitterAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000090, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetLocalFortPlayerControllers_ReturnValue_1) == 0x000098, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetLocalFortPlayerControllers_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Array_Get_Item_1) == 0x0000A8, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Array_Length_ReturnValue_1) == 0x0000B0, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_GetActorTeam_ReturnValue_1) == 0x0000B4, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_GetActorTeam_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Less_IntInt_ReturnValue) == 0x0000B5, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000B6, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_Damage) == 0x0000B8, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_Damage' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_DamageTags) == 0x0000C0, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_DamageTags' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_Momentum) == 0x0000E0, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_Momentum' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_HitInfo) == 0x0000EC, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_HitInfo' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_InstigatedBy) == 0x000178, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_DamageCauser) == 0x000180, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_DamageCauser' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, K2Node_Event_EffectContext) == 0x000188, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::K2Node_Event_EffectContext' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, Temp_int_Loop_Counter_Variable_1) == 0x0001A0, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001A4, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup, CallFunc_Add_IntInt_ReturnValue_1) == 0x0001A8, "Member 'BGA_Athena_SCMachine_Pickup_C_ExecuteUbergraph_BGA_Athena_SCMachine_Pickup::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.OnDeathServer
 // 0x00E8 (0x00E8 - 0x0000)
@@ -128,15 +89,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x00C8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayEffectContextHandle           EffectContext;                                     // 0x00D0(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_OnDeathServer");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer) == 0x0000E8, "Wrong size on BGA_Athena_SCMachine_Pickup_C_OnDeathServer");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, Damage) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::Damage' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, DamageTags) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::DamageTags' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, Momentum) == 0x000028, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::Momentum' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, HitInfo) == 0x000034, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::HitInfo' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, InstigatedBy) == 0x0000C0, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::InstigatedBy' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, DamageCauser) == 0x0000C8, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnDeathServer, EffectContext) == 0x0000D0, "Member 'BGA_Athena_SCMachine_Pickup_C_OnDeathServer::EffectContext' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.BlueprintOnInteract
 // 0x0010 (0x0010 - 0x0000)
@@ -146,10 +98,6 @@ public:
 	const class AFortPawn*                        InteractingPawn;                                   // 0x0000(0x0008)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInteractionBeingAttempted                    InteractionBeingAttempted;                         // 0x0008(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract) == 0x000010, "Wrong size on BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract, InteractingPawn) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract, InteractionBeingAttempted) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintOnInteract::InteractionBeingAttempted' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.OnRep_UnHide
 // 0x0048 (0x0048 - 0x0000)
@@ -174,20 +122,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Conv_IntToBool_ReturnValue_1;             // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide) == 0x000048, "Wrong size on BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Conv_IntToBool_ReturnValue) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Conv_IntToBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, Temp_int_Array_Index_Variable) == 0x000004, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000010, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, Temp_int_Loop_Counter_Variable) == 0x000020, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Array_Get_Item) == 0x000028, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_GetActorTeam_ReturnValue) == 0x000030, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000038, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Array_Length_ReturnValue) == 0x00003C, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Less_IntInt_ReturnValue) == 0x000040, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide, CallFunc_Conv_IntToBool_ReturnValue_1) == 0x000041, "Member 'BGA_Athena_SCMachine_Pickup_C_OnRep_UnHide::CallFunc_Conv_IntToBool_ReturnValue_1' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.ShouldDie
 // 0x0020 (0x0020 - 0x0000)
@@ -200,12 +134,6 @@ public:
 	class AActor*                                 DamageCauser;                                      // 0x0010(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_ShouldDie) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_ShouldDie");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_ShouldDie) == 0x000020, "Wrong size on BGA_Athena_SCMachine_Pickup_C_ShouldDie");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ShouldDie, Damage) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_ShouldDie::Damage' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ShouldDie, EventInstigator) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_ShouldDie::EventInstigator' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ShouldDie, DamageCauser) == 0x000010, "Member 'BGA_Athena_SCMachine_Pickup_C_ShouldDie::DamageCauser' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ShouldDie, ReturnValue) == 0x000018, "Member 'BGA_Athena_SCMachine_Pickup_C_ShouldDie::ReturnValue' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.DetermineStopLocation
 // 0x0140 (0x0140 - 0x0000)
@@ -238,31 +166,6 @@ public:
 	struct FVector                                CallFunc_BreakHitResult_TraceStart;                // 0x0128(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_BreakHitResult_TraceEnd;                  // 0x0134(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation) == 0x000140, "Wrong size on BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, K2Node_MakeArray_Array) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000018, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000024, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000030, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_CapsuleTraceSingle_OutHit) == 0x00003C, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_CapsuleTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_CapsuleTraceSingle_ReturnValue) == 0x0000C4, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_CapsuleTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_bBlockingHit) == 0x0000C5, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_bInitialOverlap) == 0x0000C6, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_Time) == 0x0000C8, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_Distance) == 0x0000CC, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_Location) == 0x0000D0, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_ImpactPoint) == 0x0000DC, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_Normal) == 0x0000E8, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_ImpactNormal) == 0x0000F4, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_PhysMat) == 0x000100, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_HitActor) == 0x000108, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_HitComponent) == 0x000110, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_HitBoneName) == 0x000118, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_HitItem) == 0x000120, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_FaceIndex) == 0x000124, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_TraceStart) == 0x000128, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation, CallFunc_BreakHitResult_TraceEnd) == 0x000134, "Member 'BGA_Athena_SCMachine_Pickup_C_DetermineStopLocation::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.ConsiderPositionCorrection
 // 0x0150 (0x0150 - 0x0000)
@@ -283,18 +186,6 @@ public:
 	float                                         CallFunc_Vector_Distance_ReturnValue;              // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0148(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection) == 0x000150, "Wrong size on BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_HasAuthority_ReturnValue) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_HasAuthority_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000004, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_K2_SetActorLocation_ReturnValue) == 0x00008C, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, K2Node_MakeArray_Array) == 0x000090, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000A0, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x0000AC, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_LineTraceSingle_OutHit) == 0x0000B8, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_LineTraceSingle_ReturnValue) == 0x000140, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_Vector_Distance_ReturnValue) == 0x000144, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_Vector_Distance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000148, "Member 'BGA_Athena_SCMachine_Pickup_C_ConsiderPositionCorrection::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.BlueprintCanInteract
 // 0x0010 (0x0010 - 0x0000)
@@ -307,13 +198,6 @@ public:
 	uint8                                         CallFunc_GetActorTeam_ReturnValue;                 // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x000B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract) == 0x000010, "Wrong size on BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract, InteractingPawn) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract, InteractionBeingAttempted) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract, ReturnValue) == 0x000009, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract::ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract, CallFunc_GetActorTeam_ReturnValue) == 0x00000A, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x00000B, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintCanInteract::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function BGA_Athena_SCMachine_Pickup.BGA_Athena_SCMachine_Pickup_C.BlueprintGetInteractionString
 // 0x0028 (0x0028 - 0x0000)
@@ -325,11 +209,6 @@ public:
 	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0010(0x0018)(Parm, OutParm, ReturnParm)
 };
-static_assert(alignof(BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString) == 0x000008, "Wrong alignment on BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString");
-static_assert(sizeof(BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString) == 0x000028, "Wrong size on BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString, InteractingPawn) == 0x000000, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString::InteractingPawn' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString, InteractionBeingAttempted) == 0x000008, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString::InteractionBeingAttempted' has a wrong offset!");
-static_assert(offsetof(BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString, ReturnValue) == 0x000010, "Member 'BGA_Athena_SCMachine_Pickup_C_BlueprintGetInteractionString::ReturnValue' has a wrong offset!");
 
 }
 

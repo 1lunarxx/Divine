@@ -27,16 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"F5PlayerSettings">();
+		STATIC_CLASS_IMPL("F5PlayerSettings")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"F5PlayerSettings")
 	}
 	static class UF5PlayerSettings* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UF5PlayerSettings>();
 	}
 };
-static_assert(alignof(UF5PlayerSettings) == 0x000008, "Wrong alignment on UF5PlayerSettings");
-static_assert(sizeof(UF5PlayerSettings) == 0x000040, "Wrong size on UF5PlayerSettings");
-static_assert(offsetof(UF5PlayerSettings, bUseLegacyMediaSource) == 0x000038, "Member 'UF5PlayerSettings::bUseLegacyMediaSource' has a wrong offset!");
 
 }
 

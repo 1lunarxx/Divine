@@ -46,21 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemPresentationEntry_C">();
+		BP_STATIC_CLASS_IMPL("ItemPresentationEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemPresentationEntry_C")
 	}
 	static class UItemPresentationEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemPresentationEntry_C>();
 	}
 };
-static_assert(alignof(UItemPresentationEntry_C) == 0x000008, "Wrong alignment on UItemPresentationEntry_C");
-static_assert(sizeof(UItemPresentationEntry_C) == 0x000C70, "Wrong size on UItemPresentationEntry_C");
-static_assert(offsetof(UItemPresentationEntry_C, UberGraphFrame) == 0x000C48, "Member 'UItemPresentationEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemPresentationEntry_C, Intro) == 0x000C50, "Member 'UItemPresentationEntry_C::Intro' has a wrong offset!");
-static_assert(offsetof(UItemPresentationEntry_C, InitialState) == 0x000C58, "Member 'UItemPresentationEntry_C::InitialState' has a wrong offset!");
-static_assert(offsetof(UItemPresentationEntry_C, Hovered) == 0x000C60, "Member 'UItemPresentationEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UItemPresentationEntry_C, bIsSelected) == 0x000C68, "Member 'UItemPresentationEntry_C::bIsSelected' has a wrong offset!");
-static_assert(offsetof(UItemPresentationEntry_C, bCanHover) == 0x000C69, "Member 'UItemPresentationEntry_C::bCanHover' has a wrong offset!");
 
 }
 

@@ -21,9 +21,6 @@ struct RefundTicket_C_PendingEvent final
 public:
 	bool                                          isPending;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(RefundTicket_C_PendingEvent) == 0x000001, "Wrong alignment on RefundTicket_C_PendingEvent");
-static_assert(sizeof(RefundTicket_C_PendingEvent) == 0x000001, "Wrong size on RefundTicket_C_PendingEvent");
-static_assert(offsetof(RefundTicket_C_PendingEvent, isPending) == 0x000000, "Member 'RefundTicket_C_PendingEvent::isPending' has a wrong offset!");
 
 // Function RefundTicket.RefundTicket_C.ExecuteUbergraph_RefundTicket
 // 0x0028 (0x0028 - 0x0000)
@@ -38,13 +35,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(RefundTicket_C_ExecuteUbergraph_RefundTicket) == 0x000008, "Wrong alignment on RefundTicket_C_ExecuteUbergraph_RefundTicket");
-static_assert(sizeof(RefundTicket_C_ExecuteUbergraph_RefundTicket) == 0x000028, "Wrong size on RefundTicket_C_ExecuteUbergraph_RefundTicket");
-static_assert(offsetof(RefundTicket_C_ExecuteUbergraph_RefundTicket, EntryPoint) == 0x000000, "Member 'RefundTicket_C_ExecuteUbergraph_RefundTicket::EntryPoint' has a wrong offset!");
-static_assert(offsetof(RefundTicket_C_ExecuteUbergraph_RefundTicket, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'RefundTicket_C_ExecuteUbergraph_RefundTicket::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(RefundTicket_C_ExecuteUbergraph_RefundTicket, K2Node_CustomEvent_isPending) == 0x000010, "Member 'RefundTicket_C_ExecuteUbergraph_RefundTicket::K2Node_CustomEvent_isPending' has a wrong offset!");
-static_assert(offsetof(RefundTicket_C_ExecuteUbergraph_RefundTicket, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'RefundTicket_C_ExecuteUbergraph_RefundTicket::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(RefundTicket_C_ExecuteUbergraph_RefundTicket, CallFunc_PlayAnimation_ReturnValue_2) == 0x000020, "Member 'RefundTicket_C_ExecuteUbergraph_RefundTicket::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
 
 }
 

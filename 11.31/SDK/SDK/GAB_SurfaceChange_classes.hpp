@@ -62,37 +62,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_SurfaceChange_C">();
+		BP_STATIC_CLASS_IMPL("GAB_SurfaceChange_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_SurfaceChange_C")
 	}
 	static class UGAB_SurfaceChange_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_SurfaceChange_C>();
 	}
 };
-static_assert(alignof(UGAB_SurfaceChange_C) == 0x000008, "Wrong alignment on UGAB_SurfaceChange_C");
-static_assert(sizeof(UGAB_SurfaceChange_C) == 0x000BF8, "Wrong size on UGAB_SurfaceChange_C");
-static_assert(offsetof(UGAB_SurfaceChange_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_SurfaceChange_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, Debug) == 0x000A38, "Member 'UGAB_SurfaceChange_C::Debug' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, RemovalDelay) == 0x000A40, "Member 'UGAB_SurfaceChange_C::RemovalDelay' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, IcySurfacesEnabled) == 0x000A60, "Member 'UGAB_SurfaceChange_C::IcySurfacesEnabled' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, HasIce) == 0x000A80, "Member 'UGAB_SurfaceChange_C::HasIce' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, GE_SurfaceChange_Ice) == 0x000AA0, "Member 'UGAB_SurfaceChange_C::GE_SurfaceChange_Ice' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, GE_SurfaceChange_Snow) == 0x000AA8, "Member 'UGAB_SurfaceChange_C::GE_SurfaceChange_Snow' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, GE_SurfaceChange_Lava) == 0x000AB0, "Member 'UGAB_SurfaceChange_C::GE_SurfaceChange_Lava' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, PlayerPawn) == 0x000AB8, "Member 'UGAB_SurfaceChange_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, IceTags) == 0x000AC0, "Member 'UGAB_SurfaceChange_C::IceTags' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, LavaTags) == 0x000AE0, "Member 'UGAB_SurfaceChange_C::LavaTags' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, SnowTags) == 0x000B00, "Member 'UGAB_SurfaceChange_C::SnowTags' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, LavaBounceMultiplier) == 0x000B20, "Member 'UGAB_SurfaceChange_C::LavaBounceMultiplier' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, RandomAngleOffset) == 0x000B24, "Member 'UGAB_SurfaceChange_C::RandomAngleOffset' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, RandomConeAngle) == 0x000B28, "Member 'UGAB_SurfaceChange_C::RandomConeAngle' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, FacingAngleVelocityComponent) == 0x000B48, "Member 'UGAB_SurfaceChange_C::FacingAngleVelocityComponent' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, BaseVerticalBounceVelocity) == 0x000B68, "Member 'UGAB_SurfaceChange_C::BaseVerticalBounceVelocity' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, BaseLateralBounceVelocity) == 0x000B88, "Member 'UGAB_SurfaceChange_C::BaseLateralBounceVelocity' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, MaxBounceMultiplier) == 0x000BA8, "Member 'UGAB_SurfaceChange_C::MaxBounceMultiplier' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, BounceMultiplierStepAmount) == 0x000BC8, "Member 'UGAB_SurfaceChange_C::BounceMultiplierStepAmount' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, RandomAngleStream) == 0x000BE8, "Member 'UGAB_SurfaceChange_C::RandomAngleStream' has a wrong offset!");
-static_assert(offsetof(UGAB_SurfaceChange_C, LavaBounceCue) == 0x000BF0, "Member 'UGAB_SurfaceChange_C::LavaBounceCue' has a wrong offset!");
 
 }
 

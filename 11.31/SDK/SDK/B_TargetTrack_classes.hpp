@@ -102,46 +102,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_TargetTrack_C">();
+		BP_STATIC_CLASS_IMPL("B_TargetTrack_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_TargetTrack_C")
 	}
 	static class AB_TargetTrack_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_TargetTrack_C>();
 	}
 };
-static_assert(alignof(AB_TargetTrack_C) == 0x000010, "Wrong alignment on AB_TargetTrack_C");
-static_assert(sizeof(AB_TargetTrack_C) == 0x000C30, "Wrong size on AB_TargetTrack_C");
-static_assert(offsetof(AB_TargetTrack_C, UberGraphFrame) == 0x000B08, "Member 'AB_TargetTrack_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, ProximityTrigger) == 0x000B10, "Member 'AB_TargetTrack_C::ProximityTrigger' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, Target_Move_Loop_Cue) == 0x000B18, "Member 'AB_TargetTrack_C::Target_Move_Loop_Cue' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, Target_Move_Stop_Cue) == 0x000B20, "Member 'AB_TargetTrack_C::Target_Move_Stop_Cue' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, Target_Move_Start_Cue) == 0x000B28, "Member 'AB_TargetTrack_C::Target_Move_Start_Cue' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, ToyOptionsComponent) == 0x000B30, "Member 'AB_TargetTrack_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, TargetAttachPoint) == 0x000B38, "Member 'AB_TargetTrack_C::TargetAttachPoint' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, SM_Target_Track) == 0x000B40, "Member 'AB_TargetTrack_C::SM_Target_Track' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, TargetMovement_NewTrack_0_9F61BF394D22B10B7DAB4683CA4746AC) == 0x000B48, "Member 'AB_TargetTrack_C::TargetMovement_NewTrack_0_9F61BF394D22B10B7DAB4683CA4746AC' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, TargetMovement__Direction_9F61BF394D22B10B7DAB4683CA4746AC) == 0x000B4C, "Member 'AB_TargetTrack_C::TargetMovement__Direction_9F61BF394D22B10B7DAB4683CA4746AC' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, TargetMovement) == 0x000B50, "Member 'AB_TargetTrack_C::TargetMovement' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, BaseTransformForTarget) == 0x000B60, "Member 'AB_TargetTrack_C::BaseTransformForTarget' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, LengthScaleSetting) == 0x000B90, "Member 'AB_TargetTrack_C::LengthScaleSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, DelayAtEndSetting) == 0x000B94, "Member 'AB_TargetTrack_C::DelayAtEndSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, ProximityTriggerSizeSetting) == 0x000B98, "Member 'AB_TargetTrack_C::ProximityTriggerSizeSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, InitialMovementDelaySetting) == 0x000B9C, "Member 'AB_TargetTrack_C::InitialMovementDelaySetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, TrackSpeedSetting) == 0x000BA0, "Member 'AB_TargetTrack_C::TrackSpeedSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, IsCurrentlyMoving) == 0x000BA4, "Member 'AB_TargetTrack_C::IsCurrentlyMoving' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, AtStartPoint) == 0x000BA5, "Member 'AB_TargetTrack_C::AtStartPoint' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, LoopingSetting) == 0x000BA6, "Member 'AB_TargetTrack_C::LoopingSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, RotationSetting) == 0x000BA8, "Member 'AB_TargetTrack_C::RotationSetting' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, AttachedTarget) == 0x000BB0, "Member 'AB_TargetTrack_C::AttachedTarget' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, LeftRightTargetBaseMesh) == 0x000BB8, "Member 'AB_TargetTrack_C::LeftRightTargetBaseMesh' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, ForwardBackwardTargetBaseMesh) == 0x000BE0, "Member 'AB_TargetTrack_C::ForwardBackwardTargetBaseMesh' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, NewVar_0) == 0x000C08, "Member 'AB_TargetTrack_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, IsTargetUp) == 0x000C18, "Member 'AB_TargetTrack_C::IsTargetUp' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, CurrentMovementState) == 0x000C19, "Member 'AB_TargetTrack_C::CurrentMovementState' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, Audio_Speed_Parameter) == 0x000C1C, "Member 'AB_TargetTrack_C::Audio_Speed_Parameter' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, LeftToRightmovementState) == 0x000C20, "Member 'AB_TargetTrack_C::LeftToRightmovementState' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, RightToLeftMovementState) == 0x000C21, "Member 'AB_TargetTrack_C::RightToLeftMovementState' has a wrong offset!");
-static_assert(offsetof(AB_TargetTrack_C, StopMovementState) == 0x000C22, "Member 'AB_TargetTrack_C::StopMovementState' has a wrong offset!");
 
 }
 

@@ -35,17 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ItemDetailsHeaderKeywordsListText_C">();
+		BP_STATIC_CLASS_IMPL("ItemDetailsHeaderKeywordsListText_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ItemDetailsHeaderKeywordsListText_C")
 	}
 	static class UItemDetailsHeaderKeywordsListText_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UItemDetailsHeaderKeywordsListText_C>();
 	}
 };
-static_assert(alignof(UItemDetailsHeaderKeywordsListText_C) == 0x000008, "Wrong alignment on UItemDetailsHeaderKeywordsListText_C");
-static_assert(sizeof(UItemDetailsHeaderKeywordsListText_C) == 0x0002C0, "Wrong size on UItemDetailsHeaderKeywordsListText_C");
-static_assert(offsetof(UItemDetailsHeaderKeywordsListText_C, UberGraphFrame) == 0x0002B0, "Member 'UItemDetailsHeaderKeywordsListText_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UItemDetailsHeaderKeywordsListText_C, TagListTextBlock) == 0x0002B8, "Member 'UItemDetailsHeaderKeywordsListText_C::TagListTextBlock' has a wrong offset!");
 
 }
 

@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RMT_Offer_EntryRow_C">();
+		BP_STATIC_CLASS_IMPL("RMT_Offer_EntryRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RMT_Offer_EntryRow_C")
 	}
 	static class URMT_Offer_EntryRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URMT_Offer_EntryRow_C>();
 	}
 };
-static_assert(alignof(URMT_Offer_EntryRow_C) == 0x000008, "Wrong alignment on URMT_Offer_EntryRow_C");
-static_assert(sizeof(URMT_Offer_EntryRow_C) == 0x000270, "Wrong size on URMT_Offer_EntryRow_C");
-static_assert(offsetof(URMT_Offer_EntryRow_C, UberGraphFrame) == 0x000230, "Member 'URMT_Offer_EntryRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URMT_Offer_EntryRow_C, CommonRichTextBlock_96) == 0x000238, "Member 'URMT_Offer_EntryRow_C::CommonRichTextBlock_96' has a wrong offset!");
-static_assert(offsetof(URMT_Offer_EntryRow_C, Image_27) == 0x000240, "Member 'URMT_Offer_EntryRow_C::Image_27' has a wrong offset!");
-static_assert(offsetof(URMT_Offer_EntryRow_C, Linear_color) == 0x000248, "Member 'URMT_Offer_EntryRow_C::Linear_color' has a wrong offset!");
-static_assert(offsetof(URMT_Offer_EntryRow_C, Text) == 0x000258, "Member 'URMT_Offer_EntryRow_C::Text' has a wrong offset!");
 
 }
 

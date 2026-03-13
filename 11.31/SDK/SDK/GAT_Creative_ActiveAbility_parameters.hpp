@@ -33,17 +33,6 @@ public:
 	float                                         K2Node_CustomEvent_Duration;                       // 0x005C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0060(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility) == 0x000008, "Wrong alignment on GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility");
-static_assert(sizeof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility) == 0x000068, "Wrong size on GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, EntryPoint) == 0x000000, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_GetDisplayName_ReturnValue) == 0x000008, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, K2Node_CreateDelegate_OutputDelegate) == 0x000018, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_Concat_StrStr_ReturnValue) == 0x000028, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000038, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_ApplySourcePropertyOverrides_OverriddenPropertyNames) == 0x000048, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_ApplySourcePropertyOverrides_OverriddenPropertyNames' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_ApplySourcePropertyOverrides_ReturnValue) == 0x000058, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_ApplySourcePropertyOverrides_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, K2Node_CustomEvent_Duration) == 0x00005C, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::K2Node_CustomEvent_Duration' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000060, "Member 'GAT_Creative_ActiveAbility_C_ExecuteUbergraph_GAT_Creative_ActiveAbility::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function GAT_Creative_ActiveAbility.GAT_Creative_ActiveAbility_C.SetupAbilityFailsafeTimer
 // 0x0004 (0x0004 - 0x0000)
@@ -52,9 +41,6 @@ struct GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer final
 public:
 	float                                         Duration;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer) == 0x000004, "Wrong alignment on GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer");
-static_assert(sizeof(GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer) == 0x000004, "Wrong size on GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer, Duration) == 0x000000, "Member 'GAT_Creative_ActiveAbility_C_SetupAbilityFailsafeTimer::Duration' has a wrong offset!");
 
 // Function GAT_Creative_ActiveAbility.GAT_Creative_ActiveAbility_C.IsPropertyOverridden
 // 0x000C (0x000C - 0x0000)
@@ -65,11 +51,6 @@ public:
 	bool                                          bResult;                                           // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Array_Contains_ReturnValue;               // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAT_Creative_ActiveAbility_C_IsPropertyOverridden) == 0x000004, "Wrong alignment on GAT_Creative_ActiveAbility_C_IsPropertyOverridden");
-static_assert(sizeof(GAT_Creative_ActiveAbility_C_IsPropertyOverridden) == 0x00000C, "Wrong size on GAT_Creative_ActiveAbility_C_IsPropertyOverridden");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_IsPropertyOverridden, PropertyName) == 0x000000, "Member 'GAT_Creative_ActiveAbility_C_IsPropertyOverridden::PropertyName' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_IsPropertyOverridden, bResult) == 0x000008, "Member 'GAT_Creative_ActiveAbility_C_IsPropertyOverridden::bResult' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_C_IsPropertyOverridden, CallFunc_Array_Contains_ReturnValue) == 0x000009, "Member 'GAT_Creative_ActiveAbility_C_IsPropertyOverridden::CallFunc_Array_Contains_ReturnValue' has a wrong offset!");
 
 }
 

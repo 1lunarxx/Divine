@@ -23,15 +23,17 @@ class UMissionGen_AthenaGg_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_AthenaGg_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_AthenaGg_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_AthenaGg_C")
 	}
 	static class UMissionGen_AthenaGg_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_AthenaGg_C>();
 	}
 };
-static_assert(alignof(UMissionGen_AthenaGg_C) == 0x000008, "Wrong alignment on UMissionGen_AthenaGg_C");
-static_assert(sizeof(UMissionGen_AthenaGg_C) == 0x0006C0, "Wrong size on UMissionGen_AthenaGg_C");
 
 }
 

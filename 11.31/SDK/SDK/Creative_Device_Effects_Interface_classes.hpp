@@ -18,8 +18,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass Creative_Device_Effects_Interface.Creative_Device_Effects_Interface_C
-// 0x0000 (0x0028 - 0x0028)
-class ICreative_Device_Effects_Interface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class ICreative_Device_Effects_Interface_C final
 {
 public:
 	void Get_Effect_Color_Index(ECreativeColorSetType* Color_Type, int32* Color_Index);
@@ -27,15 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Creative_Device_Effects_Interface_C">();
+		BP_STATIC_CLASS_IMPL("Creative_Device_Effects_Interface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Creative_Device_Effects_Interface_C")
 	}
 	static class ICreative_Device_Effects_Interface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ICreative_Device_Effects_Interface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(ICreative_Device_Effects_Interface_C) == 0x000008, "Wrong alignment on ICreative_Device_Effects_Interface_C");
-static_assert(sizeof(ICreative_Device_Effects_Interface_C) == 0x000028, "Wrong size on ICreative_Device_Effects_Interface_C");
 
 }
 

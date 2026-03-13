@@ -24,9 +24,6 @@ struct GA_Ranged_GenericDamage_C_K2_CommitExecute final
 public:
 	struct FGameplayEventData                     CallFunc_GetEventData_GameplayEventData;           // 0x0000(0x00B0)()
 };
-static_assert(alignof(GA_Ranged_GenericDamage_C_K2_CommitExecute) == 0x000008, "Wrong alignment on GA_Ranged_GenericDamage_C_K2_CommitExecute");
-static_assert(sizeof(GA_Ranged_GenericDamage_C_K2_CommitExecute) == 0x0000B0, "Wrong size on GA_Ranged_GenericDamage_C_K2_CommitExecute");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_K2_CommitExecute, CallFunc_GetEventData_GameplayEventData) == 0x000000, "Member 'GA_Ranged_GenericDamage_C_K2_CommitExecute::CallFunc_GetEventData_GameplayEventData' has a wrong offset!");
 
 // Function GA_Ranged_GenericDamage.GA_Ranged_GenericDamage_C.GetEventData
 // 0x0208 (0x0208 - 0x0000)
@@ -52,23 +49,6 @@ public:
 	bool                                          CallFunc_WeaponDataIsValid_ReturnValue;            // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0201(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Ranged_GenericDamage_C_GetEventData) == 0x000008, "Wrong alignment on GA_Ranged_GenericDamage_C_GetEventData");
-static_assert(sizeof(GA_Ranged_GenericDamage_C_GetEventData) == 0x000208, "Wrong size on GA_Ranged_GenericDamage_C_GetEventData");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, EventTag) == 0x000000, "Member 'GA_Ranged_GenericDamage_C_GetEventData::EventTag' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, GameplayEventData) == 0x000008, "Member 'GA_Ranged_GenericDamage_C_GetEventData::GameplayEventData' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, GT_TargetTags) == 0x0000B8, "Member 'GA_Ranged_GenericDamage_C_GetEventData::GT_TargetTags' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, GT_InstigatorTags) == 0x0000D8, "Member 'GA_Ranged_GenericDamage_C_GetEventData::GT_InstigatorTags' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_GetOwningActorFromActorInfo_ReturnValue) == 0x0000F8, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_GetOwningActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, K2Node_DynamicCast_AsFort_Player_State) == 0x000100, "Member 'GA_Ranged_GenericDamage_C_GetEventData::K2Node_DynamicCast_AsFort_Player_State' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, K2Node_DynamicCast_bSuccess) == 0x000108, "Member 'GA_Ranged_GenericDamage_C_GetEventData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_GetCurrentPawn_ReturnValue) == 0x000110, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_GetCurrentPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_ReturnValue) == 0x000118, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_GetCurrentSourceWeapon_ReturnValue) == 0x000120, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_GetCurrentSourceWeapon_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_IsValid_ReturnValue_1) == 0x000128, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, K2Node_MakeStruct_GameplayEventData) == 0x000130, "Member 'GA_Ranged_GenericDamage_C_GetEventData::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_GetWeaponDataGameplayTags_GameplayTags) == 0x0001E0, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_GetWeaponDataGameplayTags_GameplayTags' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_WeaponDataIsValid_ReturnValue) == 0x000200, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_WeaponDataIsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Ranged_GenericDamage_C_GetEventData, CallFunc_BooleanAND_ReturnValue) == 0x000201, "Member 'GA_Ranged_GenericDamage_C_GetEventData::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

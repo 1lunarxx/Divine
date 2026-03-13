@@ -158,86 +158,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_Creative_Device_Teleporter_C">();
+		BP_STATIC_CLASS_IMPL("BP_Creative_Device_Teleporter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_Creative_Device_Teleporter_C")
 	}
 	static class ABP_Creative_Device_Teleporter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_Creative_Device_Teleporter_C>();
 	}
 };
-static_assert(alignof(ABP_Creative_Device_Teleporter_C) == 0x000008, "Wrong alignment on ABP_Creative_Device_Teleporter_C");
-static_assert(sizeof(ABP_Creative_Device_Teleporter_C) == 0x000D58, "Wrong size on ABP_Creative_Device_Teleporter_C");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, UberGraphFrame) == 0x000B20, "Member 'ABP_Creative_Device_Teleporter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Portal_InWorld_Loop_Cue) == 0x000B28, "Member 'ABP_Creative_Device_Teleporter_C::Portal_InWorld_Loop_Cue' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnabledComponent) == 0x000B30, "Member 'ABP_Creative_Device_Teleporter_C::EnabledComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnergyComponent) == 0x000B38, "Member 'ABP_Creative_Device_Teleporter_C::EnergyComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, HoverOverSphere) == 0x000B40, "Member 'ABP_Creative_Device_Teleporter_C::HoverOverSphere' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, FortMinigameLogic) == 0x000B48, "Member 'ABP_Creative_Device_Teleporter_C::FortMinigameLogic' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, ToyOptionsComponent) == 0x000B50, "Member 'ABP_Creative_Device_Teleporter_C::ToyOptionsComponent' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TriggerOnTeleportedTo) == 0x000B58, "Member 'ABP_Creative_Device_Teleporter_C::TriggerOnTeleportedTo' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TriggerOnEntered) == 0x000B60, "Member 'ABP_Creative_Device_Teleporter_C::TriggerOnEntered' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, DisableWhenReceived) == 0x000B68, "Member 'ABP_Creative_Device_Teleporter_C::DisableWhenReceived' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, P_Rift_ClosingUp) == 0x000B70, "Member 'ABP_Creative_Device_Teleporter_C::P_Rift_ClosingUp' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, P_Rift_Idle_Loop) == 0x000B78, "Member 'ABP_Creative_Device_Teleporter_C::P_Rift_Idle_Loop' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, OverlapCapsule) == 0x000B80, "Member 'ABP_Creative_Device_Teleporter_C::OverlapCapsule' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnableWhenReceived) == 0x000B88, "Member 'ABP_Creative_Device_Teleporter_C::EnableWhenReceived' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPDisabledFXTimeline_Linear_33082A284455666A90E47AAB1A6DF1B0) == 0x000B90, "Member 'ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline_Linear_33082A284455666A90E47AAB1A6DF1B0' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPDisabledFXTimeline__Direction_33082A284455666A90E47AAB1A6DF1B0) == 0x000B94, "Member 'ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline__Direction_33082A284455666A90E47AAB1A6DF1B0' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPDisabledFXTimeline) == 0x000B98, "Member 'ABP_Creative_Device_Teleporter_C::TPDisabledFXTimeline' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEnabledFXTimeline_Linear_D89DE44C465390DD74946C89C54154CE) == 0x000BA0, "Member 'ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline_Linear_D89DE44C465390DD74946C89C54154CE' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEnabledFXTimeline__Direction_D89DE44C465390DD74946C89C54154CE) == 0x000BA4, "Member 'ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline__Direction_D89DE44C465390DD74946C89C54154CE' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEnabledFXTimeline) == 0x000BA8, "Member 'ABP_Creative_Device_Teleporter_C::TPEnabledFXTimeline' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEffectsTimeLine_Linear_4D8B0BEF43A49EF50570AF98BE017A79) == 0x000BB0, "Member 'ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine_Linear_4D8B0BEF43A49EF50570AF98BE017A79' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEffectsTimeLine__Direction_4D8B0BEF43A49EF50570AF98BE017A79) == 0x000BB4, "Member 'ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine__Direction_4D8B0BEF43A49EF50570AF98BE017A79' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TPEffectsTimeLine) == 0x000BB8, "Member 'ABP_Creative_Device_Teleporter_C::TPEffectsTimeLine' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_TeleporterName) == 0x000BC0, "Member 'ABP_Creative_Device_Teleporter_C::Knob_TeleporterName' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_TeleporterEnergyCapacity) == 0x000BD0, "Member 'ABP_Creative_Device_Teleporter_C::Knob_TeleporterEnergyCapacity' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bShowNameOnEntrance) == 0x000BD4, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bShowNameOnEntrance' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_EnergyCostPerUse) == 0x000BD8, "Member 'ABP_Creative_Device_Teleporter_C::Knob_EnergyCostPerUse' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_RechargeRatePerSecond) == 0x000BDC, "Member 'ABP_Creative_Device_Teleporter_C::Knob_RechargeRatePerSecond' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_DelayBeforeRecharge) == 0x000BE0, "Member 'ABP_Creative_Device_Teleporter_C::Knob_DelayBeforeRecharge' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_ChargeToEnable) == 0x000BE4, "Member 'ABP_Creative_Device_Teleporter_C::Knob_ChargeToEnable' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_ChangeTarget) == 0x000BE8, "Member 'ABP_Creative_Device_Teleporter_C::Knob_ChangeTarget' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnterRiftPS) == 0x000BF0, "Member 'ABP_Creative_Device_Teleporter_C::EnterRiftPS' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnteredRiftSound) == 0x000BF8, "Member 'ABP_Creative_Device_Teleporter_C::EnteredRiftSound' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, LastChannel) == 0x000C00, "Member 'ABP_Creative_Device_Teleporter_C::LastChannel' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterUseCounter) == 0x000C04, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterUseCounter' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bSFXEnabled) == 0x000C08, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bSFXEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bVFXEnabled) == 0x000C09, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bVFXEnabled' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bTeleporterVisible) == 0x000C0A, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bTeleporterVisible' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, bAllowVehciles) == 0x000C0B, "Member 'ABP_Creative_Device_Teleporter_C::bAllowVehciles' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bConserveMomentum) == 0x000C0C, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bConserveMomentum' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_AllowedTeamIdx) == 0x000C10, "Member 'ABP_Creative_Device_Teleporter_C::Knob_AllowedTeamIdx' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, DestinationTeleporter) == 0x000C18, "Member 'ABP_Creative_Device_Teleporter_C::DestinationTeleporter' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, PawnToTeleport) == 0x000C20, "Member 'ABP_Creative_Device_Teleporter_C::PawnToTeleport' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterBlockingTags) == 0x000C28, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterBlockingTags' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, RiftMID) == 0x000C48, "Member 'ABP_Creative_Device_Teleporter_C::RiftMID' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, DesiredEnergyLevel) == 0x000C50, "Member 'ABP_Creative_Device_Teleporter_C::DesiredEnergyLevel' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, PreviousEnergyLevel) == 0x000C54, "Member 'ABP_Creative_Device_Teleporter_C::PreviousEnergyLevel' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterLowEnergyColor) == 0x000C58, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterLowEnergyColor' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterMaxEnergyColor) == 0x000C68, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterMaxEnergyColor' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, SharpFlareMID) == 0x000C78, "Member 'ABP_Creative_Device_Teleporter_C::SharpFlareMID' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, RoundFlareMID) == 0x000C80, "Member 'ABP_Creative_Device_Teleporter_C::RoundFlareMID' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CoronaMID) == 0x000C88, "Member 'ABP_Creative_Device_Teleporter_C::CoronaMID' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CurrentEnergyAttribute) == 0x000C90, "Member 'ABP_Creative_Device_Teleporter_C::CurrentEnergyAttribute' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnergyCapacityAttribute) == 0x000CB0, "Member 'ABP_Creative_Device_Teleporter_C::EnergyCapacityAttribute' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, EnergyCostAttribute) == 0x000CD0, "Member 'ABP_Creative_Device_Teleporter_C::EnergyCostAttribute' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, FragmentMaskVector) == 0x000CF0, "Member 'ABP_Creative_Device_Teleporter_C::FragmentMaskVector' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, bChargeGainShown) == 0x000CFC, "Member 'ABP_Creative_Device_Teleporter_C::bChargeGainShown' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, NewEnergyLevel) == 0x000D00, "Member 'ABP_Creative_Device_Teleporter_C::NewEnergyLevel' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CurrentEnergyCapacity) == 0x000D04, "Member 'ABP_Creative_Device_Teleporter_C::CurrentEnergyCapacity' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CurrentEnergyCost) == 0x000D08, "Member 'ABP_Creative_Device_Teleporter_C::CurrentEnergyCost' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, NewTeleporterEnergyColor) == 0x000D0C, "Member 'ABP_Creative_Device_Teleporter_C::NewTeleporterEnergyColor' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_EnabledIndex) == 0x000D1C, "Member 'ABP_Creative_Device_Teleporter_C::Knob_EnabledIndex' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterEventFlash) == 0x000D20, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterEventFlash' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleporterEventType) == 0x000D21, "Member 'ABP_Creative_Device_Teleporter_C::TeleporterEventType' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, TeleportEventResetTimer) == 0x000D28, "Member 'ABP_Creative_Device_Teleporter_C::TeleportEventResetTimer' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CurrentTimeSelectedTargetIndex) == 0x000D30, "Member 'ABP_Creative_Device_Teleporter_C::CurrentTimeSelectedTargetIndex' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, CurrentTimeSelectedTarget) == 0x000D38, "Member 'ABP_Creative_Device_Teleporter_C::CurrentTimeSelectedTarget' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, RiftCenterBrightnessScalar) == 0x000D40, "Member 'ABP_Creative_Device_Teleporter_C::RiftCenterBrightnessScalar' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, RiftEdgeBrightnessScalar) == 0x000D44, "Member 'ABP_Creative_Device_Teleporter_C::RiftEdgeBrightnessScalar' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, Knob_bFacePlayerInDirectionOfTeleporter) == 0x000D48, "Member 'ABP_Creative_Device_Teleporter_C::Knob_bFacePlayerInDirectionOfTeleporter' has a wrong offset!");
-static_assert(offsetof(ABP_Creative_Device_Teleporter_C, ExitRiftPS) == 0x000D50, "Member 'ABP_Creative_Device_Teleporter_C::ExitRiftPS' has a wrong offset!");
 
 }
 

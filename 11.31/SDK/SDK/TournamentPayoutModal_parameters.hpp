@@ -25,9 +25,6 @@ struct TournamentPayoutModal_C_EmptyFunction final
 public:
 	bool                                          Handled;                                           // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TournamentPayoutModal_C_EmptyFunction) == 0x000001, "Wrong alignment on TournamentPayoutModal_C_EmptyFunction");
-static_assert(sizeof(TournamentPayoutModal_C_EmptyFunction) == 0x000001, "Wrong size on TournamentPayoutModal_C_EmptyFunction");
-static_assert(offsetof(TournamentPayoutModal_C_EmptyFunction, Handled) == 0x000000, "Member 'TournamentPayoutModal_C_EmptyFunction::Handled' has a wrong offset!");
 
 // Function TournamentPayoutModal.TournamentPayoutModal_C.BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -36,9 +33,6 @@ struct TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_C
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentPayoutModal_C_BndEvt__BackButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentPayoutModal.TournamentPayoutModal_C.Init
 // 0x0020 (0x0020 - 0x0000)
@@ -48,10 +42,6 @@ public:
 	class FString                                 EventWindowId;                                     // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 	class FString                                 TournamentId;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentPayoutModal_C_Init) == 0x000008, "Wrong alignment on TournamentPayoutModal_C_Init");
-static_assert(sizeof(TournamentPayoutModal_C_Init) == 0x000020, "Wrong size on TournamentPayoutModal_C_Init");
-static_assert(offsetof(TournamentPayoutModal_C_Init, EventWindowId) == 0x000000, "Member 'TournamentPayoutModal_C_Init::EventWindowId' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_Init, TournamentId) == 0x000010, "Member 'TournamentPayoutModal_C_Init::TournamentId' has a wrong offset!");
 
 // Function TournamentPayoutModal.TournamentPayoutModal_C.EventColorize
 // 0x0170 (0x0170 - 0x0000)
@@ -60,9 +50,6 @@ struct TournamentPayoutModal_C_EventColorize final
 public:
 	struct FFortTournamentDisplayInfo             TournamentDisplayInfo;                             // 0x0000(0x0170)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(TournamentPayoutModal_C_EventColorize) == 0x000008, "Wrong alignment on TournamentPayoutModal_C_EventColorize");
-static_assert(sizeof(TournamentPayoutModal_C_EventColorize) == 0x000170, "Wrong size on TournamentPayoutModal_C_EventColorize");
-static_assert(offsetof(TournamentPayoutModal_C_EventColorize, TournamentDisplayInfo) == 0x000000, "Member 'TournamentPayoutModal_C_EventColorize::TournamentDisplayInfo' has a wrong offset!");
 
 // Function TournamentPayoutModal.TournamentPayoutModal_C.BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -71,9 +58,6 @@ struct TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TournamentPayoutModal_C_BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TournamentPayoutModal.TournamentPayoutModal_C.ExecuteUbergraph_TournamentPayoutModal
 // 0x01D0 (0x01D0 - 0x0000)
@@ -98,22 +82,6 @@ public:
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x01CA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal) == 0x000008, "Wrong alignment on TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal");
-static_assert(sizeof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal) == 0x0001D0, "Wrong size on TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, EntryPoint) == 0x000000, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, CallFunc_IsUsingTouch_ReturnValue) == 0x000004, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::CallFunc_IsUsingTouch_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_ComponentBoundEvent_Button_1) == 0x000008, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_CustomEvent_EventWindowId) == 0x000010, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_CustomEvent_EventWindowId' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_CustomEvent_TournamentId) == 0x000020, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_CustomEvent_TournamentId' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, Temp_byte_Variable) == 0x000030, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, Temp_byte_Variable_1) == 0x000031, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_CustomEvent_TournamentDisplayInfo) == 0x000038, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_CustomEvent_TournamentDisplayInfo' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_MakeStruct_LinearColor) == 0x0001A8, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, Temp_bool_Variable) == 0x0001B8, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_ComponentBoundEvent_Button) == 0x0001C0, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, CallFunc_IsMobileGame_ReturnValue) == 0x0001C8, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, CallFunc_BooleanAND_ReturnValue) == 0x0001C9, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal, K2Node_Select_Default) == 0x0001CA, "Member 'TournamentPayoutModal_C_ExecuteUbergraph_TournamentPayoutModal::K2Node_Select_Default' has a wrong offset!");
 
 }
 

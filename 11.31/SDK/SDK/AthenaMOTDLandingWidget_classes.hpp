@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDLandingWidget_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDLandingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDLandingWidget_C")
 	}
 	static class UAthenaMOTDLandingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDLandingWidget_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDLandingWidget_C) == 0x000008, "Wrong alignment on UAthenaMOTDLandingWidget_C");
-static_assert(sizeof(UAthenaMOTDLandingWidget_C) == 0x0003C8, "Wrong size on UAthenaMOTDLandingWidget_C");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, UberGraphFrame) == 0x000350, "Member 'UAthenaMOTDLandingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, Image_CornerTriangle) == 0x000358, "Member 'UAthenaMOTDLandingWidget_C::Image_CornerTriangle' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, Image_TextFloater) == 0x000360, "Member 'UAthenaMOTDLandingWidget_C::Image_TextFloater' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, ButtonDefaultText_ViewItem) == 0x000368, "Member 'UAthenaMOTDLandingWidget_C::ButtonDefaultText_ViewItem' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, ButtonDefaultText_ViewRMTItem) == 0x000380, "Member 'UAthenaMOTDLandingWidget_C::ButtonDefaultText_ViewRMTItem' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, ButtonDefaultText_OpenWebsite) == 0x000398, "Member 'UAthenaMOTDLandingWidget_C::ButtonDefaultText_OpenWebsite' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDLandingWidget_C, ButtonDefaultText_NavigateToTab) == 0x0003B0, "Member 'UAthenaMOTDLandingWidget_C::ButtonDefaultText_NavigateToTab' has a wrong offset!");
 
 }
 

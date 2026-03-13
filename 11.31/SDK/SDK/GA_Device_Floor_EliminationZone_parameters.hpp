@@ -49,12 +49,12 @@ public:
 	struct FGameplayTag                           CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_1; // 0x00CC(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x00D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_D5[0x3];                                       // 0x00D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_1; // 0x00D8(0x0010)(ZeroConstructor, NoDestructor)
 	class AActor*                                 CallFunc_GetOwningActorFromActorInfo_ReturnValue_2; // 0x00E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABuildingTrap*                          K2Node_DynamicCast_AsBuilding_Trap_2;              // 0x00F0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_F9[0x3];                                       // 0x00F9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x00FC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2; // 0x00FC(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_10C[0x4];                                      // 0x010C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAbilitySystemComponent*                CallFunc_GetAbilitySystemComponent_ReturnValue;    // 0x0110(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetFireDelay_ReturnValue;                 // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -79,50 +79,6 @@ public:
 	class ADevice_Floor_EliminationZone_C*        K2Node_DynamicCast_AsDevice_Floor_Elimination_Zone; // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_4;                     // 0x01B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone) == 0x0001B8, "Wrong size on GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, EntryPoint) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_WaitTargetSelection_ReturnValue) == 0x000008, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_WaitTargetSelection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000028, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetOwningActorFromActorInfo_ReturnValue) == 0x000030, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetOwningActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000038, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_AsBuilding_Trap) == 0x000040, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_AsBuilding_Trap' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetReloadBeginGameplayCueTag_ReturnValue) == 0x00004C, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetReloadBeginGameplayCueTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, Temp_struct_Variable) == 0x000058, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, Temp_struct_Variable_1) == 0x000080, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetOwningActorFromActorInfo_ReturnValue_1) == 0x000088, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetOwningActorFromActorInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CustomEvent_TargetData) == 0x000090, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CustomEvent_ApplicationTag) == 0x0000B8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_AsBuilding_Trap_1) == 0x0000C0, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_AsBuilding_Trap_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_bSuccess_1) == 0x0000C8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_1) == 0x0000CC, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_K2_CommitAbility_ReturnValue) == 0x0000D4, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetOwningActorFromActorInfo_ReturnValue_2) == 0x0000E8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetOwningActorFromActorInfo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_AsBuilding_Trap_2) == 0x0000F0, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_AsBuilding_Trap_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_bSuccess_2) == 0x0000F8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000FC, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000110, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetFireDelay_ReturnValue) == 0x000118, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetFireDelay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetDelayBeginGameplayCueTag_ReturnValue) == 0x00011C, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetDelayBeginGameplayCueTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetAbilityLevel_ReturnValue) == 0x000124, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetAbilityLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CustomEvent_TargetData_1) == 0x000128, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CustomEvent_TargetData_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_CustomEvent_ApplicationTag_1) == 0x000150, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_CustomEvent_ApplicationTag_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000158, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000160, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000170, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, Temp_bool_IsClosed_Variable) == 0x000178, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, Temp_bool_Has_Been_Initd_Variable) == 0x000179, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetOwningActorFromActorInfo_ReturnValue_3) == 0x000180, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetOwningActorFromActorInfo_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_AsBuilding_Trap_3) == 0x000188, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_AsBuilding_Trap_3' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_bSuccess_3) == 0x000190, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_2) == 0x000194, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetReloadBeginGameplayCueTag_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x0001A0, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_AsDevice_Floor_Elimination_Zone) == 0x0001A8, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_AsDevice_Floor_Elimination_Zone' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone, K2Node_DynamicCast_bSuccess_4) == 0x0001B0, "Member 'GA_Device_Floor_EliminationZone_C_ExecuteUbergraph_GA_Device_Floor_EliminationZone::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.Targeted_FDB0569E41B2D20233CC5FAB885737C4
 // 0x0030 (0x0030 - 0x0000)
@@ -132,10 +88,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4) == 0x000030, "Wrong size on GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4, TargetData) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4, ApplicationTag) == 0x000028, "Member 'GA_Device_Floor_EliminationZone_C_Targeted_FDB0569E41B2D20233CC5FAB885737C4::ApplicationTag' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.Cancelled_FDB0569E41B2D20233CC5FAB885737C4
 // 0x0030 (0x0030 - 0x0000)
@@ -145,10 +97,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4) == 0x000030, "Wrong size on GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4, TargetData) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4, ApplicationTag) == 0x000028, "Member 'GA_Device_Floor_EliminationZone_C_Cancelled_FDB0569E41B2D20233CC5FAB885737C4::ApplicationTag' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.ParseTargetData
 // 0x0100 (0x0100 - 0x0000)
@@ -196,39 +144,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue_2;               // 0x00F8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_1;                // 0x00FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_ParseTargetData) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_ParseTargetData");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_ParseTargetData) == 0x000100, "Wrong size on GA_Device_Floor_EliminationZone_C_ParseTargetData");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, TargetData) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, ActorsFromTargetData) == 0x000028, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::ActorsFromTargetData' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, ValidActorsFound) == 0x000038, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::ValidActorsFound' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, Passengers) == 0x000040, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::Passengers' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, Temp_int_Loop_Counter_Variable) == 0x000050, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_GetAllActorsFromTargetData_ReturnValue) == 0x000058, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_GetAllActorsFromTargetData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Add_IntInt_ReturnValue) == 0x000068, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, Temp_int_Array_Index_Variable) == 0x00006C, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, Temp_int_Array_Index_Variable_1) == 0x000070, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, Temp_int_Loop_Counter_Variable_1) == 0x000074, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Array_Get_Item) == 0x000078, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000088, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Less_IntInt_ReturnValue) == 0x000091, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_ApplyToPawn_PawnAffected) == 0x000092, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_ApplyToPawn_PawnAffected' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Add_IntInt_ReturnValue_1) == 0x000094, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Array_Length_ReturnValue_1) == 0x000098, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Array_Get_Item_1) == 0x0000A0, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A8, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_AsBuilding_Rift) == 0x0000B0, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_AsBuilding_Rift' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_bSuccess_1) == 0x0000B8, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_BooleanOR_ReturnValue) == 0x0000B9, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_AsFort_Pawn) == 0x0000C0, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_AsFort_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_bSuccess_2) == 0x0000C8, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_AsFort_Vehicle_Interface) == 0x0000D0, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_AsFort_Vehicle_Interface' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, K2Node_DynamicCast_bSuccess_3) == 0x0000E0, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_ApplyToPawn_PawnAffected_1) == 0x0000E1, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_ApplyToPawn_PawnAffected_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_GetAllPassengers_ReturnValue) == 0x0000E8, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_GetAllPassengers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Array_Length_ReturnValue_2) == 0x0000F8, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ParseTargetData, CallFunc_Less_IntInt_ReturnValue_1) == 0x0000FC, "Member 'GA_Device_Floor_EliminationZone_C_ParseTargetData::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.UpdateSpecHandle
 // 0x0038 (0x0038 - 0x0000)
@@ -244,14 +159,6 @@ public:
 	struct FGameplayEffectSpecHandle              CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue; // 0x0018(0x0010)()
 	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue; // 0x0028(0x0010)()
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_UpdateSpecHandle");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle) == 0x000038, "Wrong size on GA_Device_Floor_EliminationZone_C_UpdateSpecHandle");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, Temp_bool_Variable) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, K2Node_Select_Default) == 0x000008, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x000010, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue) == 0x000018, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::CallFunc_MakeOutgoingGameplayEffectSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_UpdateSpecHandle, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue) == 0x000028, "Member 'GA_Device_Floor_EliminationZone_C_UpdateSpecHandle::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.ApplyToPawn
 // 0x0078 (0x0078 - 0x0000)
@@ -273,18 +180,6 @@ public:
 	uint8                                         Pad_62[0x6];                                       // 0x0062(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue; // 0x0068(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_ApplyToPawn) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_ApplyToPawn");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_ApplyToPawn) == 0x000078, "Wrong size on GA_Device_Floor_EliminationZone_C_ApplyToPawn");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, Pawn) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, PawnAffected) == 0x000008, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::PawnAffected' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000010, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_IsPawnsTeamAffected_bIsAffected) == 0x000038, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_IsPawnsTeamAffected_bIsAffected' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000040, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput) == 0x000050, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_HasAllMatchingGameplayTags_ReturnValue) == 0x000060, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_HasAllMatchingGameplayTags_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_Not_PreBool_ReturnValue) == 0x000061, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToPawn, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000068, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToPawn::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.ApplyToVehicle
 // 0x0060 (0x0060 - 0x0000)
@@ -300,15 +195,6 @@ public:
 	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue; // 0x0050(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_ApplyToVehicle");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle) == 0x000060, "Wrong size on GA_Device_Floor_EliminationZone_C_ApplyToVehicle");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, VehicleInterface) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::VehicleInterface' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, VehicleActor) == 0x000010, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::VehicleActor' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000018, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, CallFunc_GetDriver_ReturnValue) == 0x000040, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::CallFunc_GetDriver_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, CallFunc_IsPawnsTeamAffected_bIsAffected) == 0x000048, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::CallFunc_IsPawnsTeamAffected_bIsAffected' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, CallFunc_BooleanOR_ReturnValue) == 0x000049, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToVehicle, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000050, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToVehicle::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.IsPawnsTeamAffected
 // 0x0018 (0x0018 - 0x0000)
@@ -324,15 +210,6 @@ public:
 	bool                                          CallFunc_NotEqual_IntInt_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected) == 0x000018, "Wrong size on GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, PlayerPawn) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, bIsAffected) == 0x000008, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::bIsAffected' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, CallFunc_GetActorTeam_ReturnValue) == 0x00000A, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, CallFunc_Conv_ByteToInt_ReturnValue) == 0x00000C, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::CallFunc_Conv_ByteToInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000010, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected, CallFunc_BooleanAND_ReturnValue) == 0x000011, "Member 'GA_Device_Floor_EliminationZone_C_IsPawnsTeamAffected::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function GA_Device_Floor_EliminationZone.GA_Device_Floor_EliminationZone_C.ApplyToRift
 // 0x0040 (0x0040 - 0x0000)
@@ -343,11 +220,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       CallFunc_AbilityTargetDataFromActor_ReturnValue;   // 0x0008(0x0028)()
 	TArray<struct FActiveGameplayEffectHandle>    CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue; // 0x0030(0x0010)(ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(GA_Device_Floor_EliminationZone_C_ApplyToRift) == 0x000008, "Wrong alignment on GA_Device_Floor_EliminationZone_C_ApplyToRift");
-static_assert(sizeof(GA_Device_Floor_EliminationZone_C_ApplyToRift) == 0x000040, "Wrong size on GA_Device_Floor_EliminationZone_C_ApplyToRift");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToRift, Rift) == 0x000000, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToRift::Rift' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToRift, CallFunc_AbilityTargetDataFromActor_ReturnValue) == 0x000008, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToRift::CallFunc_AbilityTargetDataFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Device_Floor_EliminationZone_C_ApplyToRift, CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue) == 0x000030, "Member 'GA_Device_Floor_EliminationZone_C_ApplyToRift::CallFunc_K2_ApplyGameplayEffectSpecToTarget_ReturnValue' has a wrong offset!");
 
 }
 

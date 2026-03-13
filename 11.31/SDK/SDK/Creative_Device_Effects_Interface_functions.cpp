@@ -28,11 +28,11 @@ void ICreative_Device_Effects_Interface_C::Get_Effect_Color_Index(ECreativeColor
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Device_Effects_Interface_C", "Get Effect Color Index");
+		Func = AsUObject()->Class->GetFunction("Creative_Device_Effects_Interface_C", "Get Effect Color Index");
 
 	Params::Creative_Device_Effects_Interface_C_Get_Effect_Color_Index Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (Color_Type != nullptr)
 		*Color_Type = Parms.Color_Type;

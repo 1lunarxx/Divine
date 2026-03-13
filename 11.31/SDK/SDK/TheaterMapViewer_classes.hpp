@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TheaterMapViewer_C">();
+		BP_STATIC_CLASS_IMPL("TheaterMapViewer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TheaterMapViewer_C")
 	}
 	static class ATheaterMapViewer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATheaterMapViewer_C>();
 	}
 };
-static_assert(alignof(ATheaterMapViewer_C) == 0x000008, "Wrong alignment on ATheaterMapViewer_C");
-static_assert(sizeof(ATheaterMapViewer_C) == 0x000380, "Wrong size on ATheaterMapViewer_C");
-static_assert(offsetof(ATheaterMapViewer_C, DefaultSceneRoot) == 0x000378, "Member 'ATheaterMapViewer_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

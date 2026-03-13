@@ -17,138 +17,6 @@
 namespace SDK
 {
 
-// Function AthenaStoreReward.AthenaStoreReward_C.GetItem
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UFortItem**                       Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaStoreReward_C::GetItem(class UFortItem** Result)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "GetItem");
-
-	Params::AthenaStoreReward_C_GetItem Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Result != nullptr)
-		*Result = Parms.Result;
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.SetupQuantity
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                                   Quantity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaStoreReward_C::SetupQuantity(int32 Quantity)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "SetupQuantity");
-
-	Params::AthenaStoreReward_C_SetupQuantity Parms{};
-
-	Parms.Quantity = Quantity;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.ResetVariantToDefault
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaStoreReward_C::ResetVariantToDefault()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "ResetVariantToDefault");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.CancelVariantTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaStoreReward_C::CancelVariantTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "CancelVariantTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.StartVariantTimer
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   OverrideTimer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaStoreReward_C::StartVariantTimer(float OverrideTimer)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "StartVariantTimer");
-
-	Params::AthenaStoreReward_C_StartVariantTimer Parms{};
-
-	Parms.OverrideTimer = OverrideTimer;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.GetAthenaCosmeticItemDefinition
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UAthenaCosmeticItemDefinition**   AsAthena_Cosmetic_Item_Definition                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaStoreReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "GetAthenaCosmeticItemDefinition");
-
-	Params::AthenaStoreReward_C_GetAthenaCosmeticItemDefinition Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (AsAthena_Cosmetic_Item_Definition != nullptr)
-		*AsAthena_Cosmetic_Item_Definition = Parms.AsAthena_Cosmetic_Item_Definition;
-}
-
-
-// Function AthenaStoreReward.AthenaStoreReward_C.OnVaultItemsChanged
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// TArray<class UFortItem*>&               Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
-
-void UAthenaStoreReward_C::OnVaultItemsChanged(TArray<class UFortItem*>& Items)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaStoreReward_C", "OnVaultItemsChanged");
-
-	Params::AthenaStoreReward_C_OnVaultItemsChanged Parms{};
-
-	Parms.Items = std::move(Items);
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Items = std::move(Parms.Items);
-}
-
-
 // Function AthenaStoreReward.AthenaStoreReward_C.ShowNextVariant
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -410,6 +278,138 @@ void UAthenaStoreReward_C::ExecuteUbergraph_AthenaStoreReward(int32 EntryPoint)
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.GetItem
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UFortItem**                       Result                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaStoreReward_C::GetItem(class UFortItem** Result)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "GetItem");
+
+	Params::AthenaStoreReward_C_GetItem Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Result != nullptr)
+		*Result = Parms.Result;
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.SetupQuantity
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                                   Quantity                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaStoreReward_C::SetupQuantity(int32 Quantity)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "SetupQuantity");
+
+	Params::AthenaStoreReward_C_SetupQuantity Parms{};
+
+	Parms.Quantity = Quantity;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.ResetVariantToDefault
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaStoreReward_C::ResetVariantToDefault()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "ResetVariantToDefault");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.CancelVariantTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaStoreReward_C::CancelVariantTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "CancelVariantTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.StartVariantTimer
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   OverrideTimer                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaStoreReward_C::StartVariantTimer(float OverrideTimer)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "StartVariantTimer");
+
+	Params::AthenaStoreReward_C_StartVariantTimer Parms{};
+
+	Parms.OverrideTimer = OverrideTimer;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.GetAthenaCosmeticItemDefinition
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UAthenaCosmeticItemDefinition**   AsAthena_Cosmetic_Item_Definition                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaStoreReward_C::GetAthenaCosmeticItemDefinition(class UAthenaCosmeticItemDefinition** AsAthena_Cosmetic_Item_Definition)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "GetAthenaCosmeticItemDefinition");
+
+	Params::AthenaStoreReward_C_GetAthenaCosmeticItemDefinition Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (AsAthena_Cosmetic_Item_Definition != nullptr)
+		*AsAthena_Cosmetic_Item_Definition = Parms.AsAthena_Cosmetic_Item_Definition;
+}
+
+
+// Function AthenaStoreReward.AthenaStoreReward_C.OnVaultItemsChanged
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// TArray<class UFortItem*>&               Items                                                  (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
+
+void UAthenaStoreReward_C::OnVaultItemsChanged(TArray<class UFortItem*>& Items)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaStoreReward_C", "OnVaultItemsChanged");
+
+	Params::AthenaStoreReward_C_OnVaultItemsChanged Parms{};
+
+	Parms.Items = std::move(Items);
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Items = std::move(Parms.Items);
 }
 
 

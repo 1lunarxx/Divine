@@ -37,20 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RefundTicket_C">();
+		BP_STATIC_CLASS_IMPL("RefundTicket_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RefundTicket_C")
 	}
 	static class URefundTicket_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URefundTicket_C>();
 	}
 };
-static_assert(alignof(URefundTicket_C) == 0x000008, "Wrong alignment on URefundTicket_C");
-static_assert(sizeof(URefundTicket_C) == 0x000258, "Wrong size on URefundTicket_C");
-static_assert(offsetof(URefundTicket_C, UberGraphFrame) == 0x000230, "Member 'URefundTicket_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URefundTicket_C, Pending) == 0x000238, "Member 'URefundTicket_C::Pending' has a wrong offset!");
-static_assert(offsetof(URefundTicket_C, Consumed) == 0x000240, "Member 'URefundTicket_C::Consumed' has a wrong offset!");
-static_assert(offsetof(URefundTicket_C, Consume) == 0x000248, "Member 'URefundTicket_C::Consume' has a wrong offset!");
-static_assert(offsetof(URefundTicket_C, ImageTicket) == 0x000250, "Member 'URefundTicket_C::ImageTicket' has a wrong offset!");
 
 }
 

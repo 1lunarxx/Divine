@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionOfferUndoOverlay_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionOfferUndoOverlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionOfferUndoOverlay_C")
 	}
 	static class UAthenaDirectAcquisitionOfferUndoOverlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionOfferUndoOverlay_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionOfferUndoOverlay_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOfferUndoOverlay_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOfferUndoOverlay_C) == 0x000478, "Wrong size on UAthenaDirectAcquisitionOfferUndoOverlay_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, UberGraphFrame) == 0x000440, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, Refunded) == 0x000448, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::Refunded' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, BorderItemNAme) == 0x000450, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::BorderItemNAme' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, Glow) == 0x000458, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::Glow' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, HBoxSuccessfullyRefund) == 0x000460, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::HBoxSuccessfullyRefund' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferUndoOverlay_C, Purchased_Bundle_Items) == 0x000468, "Member 'UAthenaDirectAcquisitionOfferUndoOverlay_C::Purchased_Bundle_Items' has a wrong offset!");
 
 }
 

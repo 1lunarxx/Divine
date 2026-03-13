@@ -36,17 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Constructor_HammerHitsHeal_C">();
+		BP_STATIC_CLASS_IMPL("GA_Constructor_HammerHitsHeal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Constructor_HammerHitsHeal_C")
 	}
 	static class UGA_Constructor_HammerHitsHeal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Constructor_HammerHitsHeal_C>();
 	}
 };
-static_assert(alignof(UGA_Constructor_HammerHitsHeal_C) == 0x000008, "Wrong alignment on UGA_Constructor_HammerHitsHeal_C");
-static_assert(sizeof(UGA_Constructor_HammerHitsHeal_C) == 0x000B90, "Wrong size on UGA_Constructor_HammerHitsHeal_C");
-static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, UberGraphFrame_GA_Constructor_HammerHitsHeal_C) == 0x000B68, "Member 'UGA_Constructor_HammerHitsHeal_C::UberGraphFrame_GA_Constructor_HammerHitsHeal_C' has a wrong offset!");
-static_assert(offsetof(UGA_Constructor_HammerHitsHeal_C, TC_RequiredTags) == 0x000B70, "Member 'UGA_Constructor_HammerHitsHeal_C::TC_RequiredTags' has a wrong offset!");
 
 }
 

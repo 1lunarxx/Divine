@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestDetailsScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestDetailsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestDetailsScreen_C")
 	}
 	static class UWinterQuestDetailsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestDetailsScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestDetailsScreen_C) == 0x000008, "Wrong alignment on UWinterQuestDetailsScreen_C");
-static_assert(sizeof(UWinterQuestDetailsScreen_C) == 0x000580, "Wrong size on UWinterQuestDetailsScreen_C");
-static_assert(offsetof(UWinterQuestDetailsScreen_C, UberGraphFrame) == 0x000558, "Member 'UWinterQuestDetailsScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestDetailsScreen_C, AdditionalStyles) == 0x000560, "Member 'UWinterQuestDetailsScreen_C::AdditionalStyles' has a wrong offset!");
-static_assert(offsetof(UWinterQuestDetailsScreen_C, ItemDetails_SZ) == 0x000568, "Member 'UWinterQuestDetailsScreen_C::ItemDetails_SZ' has a wrong offset!");
-static_assert(offsetof(UWinterQuestDetailsScreen_C, ItemDetailsContainer) == 0x000570, "Member 'UWinterQuestDetailsScreen_C::ItemDetailsContainer' has a wrong offset!");
-static_assert(offsetof(UWinterQuestDetailsScreen_C, SetItems_SZ) == 0x000578, "Member 'UWinterQuestDetailsScreen_C::SetItems_SZ' has a wrong offset!");
 
 }
 

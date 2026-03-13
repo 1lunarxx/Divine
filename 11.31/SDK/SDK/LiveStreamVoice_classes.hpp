@@ -24,15 +24,17 @@ class ULiveStreamVoiceChannel final : public UVoiceChannel
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveStreamVoiceChannel">();
+		STATIC_CLASS_IMPL("LiveStreamVoiceChannel")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveStreamVoiceChannel")
 	}
 	static class ULiveStreamVoiceChannel* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveStreamVoiceChannel>();
 	}
 };
-static_assert(alignof(ULiveStreamVoiceChannel) == 0x000008, "Wrong alignment on ULiveStreamVoiceChannel");
-static_assert(sizeof(ULiveStreamVoiceChannel) == 0x000080, "Wrong size on ULiveStreamVoiceChannel");
 
 // Class LiveStreamVoice.LiveStreamVoiceSubsystem
 // 0x0028 (0x0058 - 0x0030)
@@ -50,16 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"LiveStreamVoiceSubsystem">();
+		STATIC_CLASS_IMPL("LiveStreamVoiceSubsystem")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveStreamVoiceSubsystem")
 	}
 	static class ULiveStreamVoiceSubsystem* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveStreamVoiceSubsystem>();
 	}
 };
-static_assert(alignof(ULiveStreamVoiceSubsystem) == 0x000008, "Wrong alignment on ULiveStreamVoiceSubsystem");
-static_assert(sizeof(ULiveStreamVoiceSubsystem) == 0x000058, "Wrong size on ULiveStreamVoiceSubsystem");
-static_assert(offsetof(ULiveStreamVoiceSubsystem, PlaybackSettings) == 0x000030, "Member 'ULiveStreamVoiceSubsystem::PlaybackSettings' has a wrong offset!");
 
 }
 

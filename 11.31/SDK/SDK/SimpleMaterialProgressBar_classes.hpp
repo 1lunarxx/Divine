@@ -49,25 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SimpleMaterialProgressBar_C">();
+		BP_STATIC_CLASS_IMPL("SimpleMaterialProgressBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SimpleMaterialProgressBar_C")
 	}
 	static class USimpleMaterialProgressBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USimpleMaterialProgressBar_C>();
 	}
 };
-static_assert(alignof(USimpleMaterialProgressBar_C) == 0x000008, "Wrong alignment on USimpleMaterialProgressBar_C");
-static_assert(sizeof(USimpleMaterialProgressBar_C) == 0x000298, "Wrong size on USimpleMaterialProgressBar_C");
-static_assert(offsetof(USimpleMaterialProgressBar_C, UberGraphFrame) == 0x000230, "Member 'USimpleMaterialProgressBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, Fill) == 0x000238, "Member 'USimpleMaterialProgressBar_C::Fill' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, Bar) == 0x000240, "Member 'USimpleMaterialProgressBar_C::Bar' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorA) == 0x000248, "Member 'USimpleMaterialProgressBar_C::ColorA' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorB) == 0x000258, "Member 'USimpleMaterialProgressBar_C::ColorB' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, ColorBackground) == 0x000268, "Member 'USimpleMaterialProgressBar_C::ColorBackground' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, Segments) == 0x000278, "Member 'USimpleMaterialProgressBar_C::Segments' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, SegmentsEdge) == 0x00027C, "Member 'USimpleMaterialProgressBar_C::SegmentsEdge' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, PreviewPercent) == 0x000280, "Member 'USimpleMaterialProgressBar_C::PreviewPercent' has a wrong offset!");
-static_assert(offsetof(USimpleMaterialProgressBar_C, FinishedFillDispatcher) == 0x000288, "Member 'USimpleMaterialProgressBar_C::FinishedFillDispatcher' has a wrong offset!");
 
 }
 

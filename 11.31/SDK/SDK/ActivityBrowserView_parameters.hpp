@@ -21,9 +21,6 @@ struct ActivityBrowserView_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ActivityBrowserView_C_PreConstruct) == 0x000001, "Wrong alignment on ActivityBrowserView_C_PreConstruct");
-static_assert(sizeof(ActivityBrowserView_C_PreConstruct) == 0x000001, "Wrong size on ActivityBrowserView_C_PreConstruct");
-static_assert(offsetof(ActivityBrowserView_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'ActivityBrowserView_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function ActivityBrowserView.ActivityBrowserView_C.ExecuteUbergraph_ActivityBrowserView
 // 0x0008 (0x0008 - 0x0000)
@@ -33,10 +30,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView) == 0x000004, "Wrong alignment on ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView");
-static_assert(sizeof(ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView) == 0x000008, "Wrong size on ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView");
-static_assert(offsetof(ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView, EntryPoint) == 0x000000, "Member 'ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView, K2Node_Event_IsDesignTime) == 0x000004, "Member 'ActivityBrowserView_C_ExecuteUbergraph_ActivityBrowserView::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 }
 

@@ -52,30 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_ThrownConsumable_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_ThrownConsumable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_ThrownConsumable_C")
 	}
 	static class AB_Prj_ThrownConsumable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_ThrownConsumable_C>();
 	}
 };
-static_assert(alignof(AB_Prj_ThrownConsumable_C) == 0x000008, "Wrong alignment on AB_Prj_ThrownConsumable_C");
-static_assert(sizeof(AB_Prj_ThrownConsumable_C) == 0x0008C8, "Wrong size on AB_Prj_ThrownConsumable_C");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, UberGraphFrame_B_Prj_ThrownConsumable_C) == 0x000850, "Member 'AB_Prj_ThrownConsumable_C::UberGraphFrame_B_Prj_ThrownConsumable_C' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, RotatingMovement) == 0x000858, "Member 'AB_Prj_ThrownConsumable_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, FortCollisionAudio) == 0x000860, "Member 'AB_Prj_ThrownConsumable_C::FortCollisionAudio' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Fuse_Particle) == 0x000868, "Member 'AB_Prj_ThrownConsumable_C::Fuse_Particle' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Mesh) == 0x000870, "Member 'AB_Prj_ThrownConsumable_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, GrenadeFuse_AudioComponent) == 0x000878, "Member 'AB_Prj_ThrownConsumable_C::GrenadeFuse_AudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, P_Explosion) == 0x000880, "Member 'AB_Prj_ThrownConsumable_C::P_Explosion' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, ExplosionRadius) == 0x000888, "Member 'AB_Prj_ThrownConsumable_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, ExplosionForceFeedbackNear) == 0x000890, "Member 'AB_Prj_ThrownConsumable_C::ExplosionForceFeedbackNear' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, ExplosionForceFeedbackFar) == 0x000898, "Member 'AB_Prj_ThrownConsumable_C::ExplosionForceFeedbackFar' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, ExplosionCameraShake) == 0x0008A0, "Member 'AB_Prj_ThrownConsumable_C::ExplosionCameraShake' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Cue_GrenadeFuseSound) == 0x0008A8, "Member 'AB_Prj_ThrownConsumable_C::Cue_GrenadeFuseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Cue_CloseSound) == 0x0008B0, "Member 'AB_Prj_ThrownConsumable_C::Cue_CloseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Cue_DistantSound) == 0x0008B8, "Member 'AB_Prj_ThrownConsumable_C::Cue_DistantSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_ThrownConsumable_C, Cue_Bounce) == 0x0008C0, "Member 'AB_Prj_ThrownConsumable_C::Cue_Bounce' has a wrong offset!");
 
 }
 

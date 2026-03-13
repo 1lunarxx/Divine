@@ -29,16 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeaderboardListView_C">();
+		BP_STATIC_CLASS_IMPL("LeaderboardListView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeaderboardListView_C")
 	}
 	static class ULeaderboardListView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeaderboardListView_C>();
 	}
 };
-static_assert(alignof(ULeaderboardListView_C) == 0x000008, "Wrong alignment on ULeaderboardListView_C");
-static_assert(sizeof(ULeaderboardListView_C) == 0x000260, "Wrong size on ULeaderboardListView_C");
-static_assert(offsetof(ULeaderboardListView_C, List) == 0x000258, "Member 'ULeaderboardListView_C::List' has a wrong offset!");
 
 }
 

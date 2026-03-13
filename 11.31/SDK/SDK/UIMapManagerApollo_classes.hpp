@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIMapManagerApollo_C">();
+		BP_STATIC_CLASS_IMPL("UIMapManagerApollo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIMapManagerApollo_C")
 	}
 	static class AUIMapManagerApollo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUIMapManagerApollo_C>();
 	}
 };
-static_assert(alignof(AUIMapManagerApollo_C) == 0x000010, "Wrong alignment on AUIMapManagerApollo_C");
-static_assert(sizeof(AUIMapManagerApollo_C) == 0x000680, "Wrong size on AUIMapManagerApollo_C");
-static_assert(offsetof(AUIMapManagerApollo_C, DefaultSceneRoot) == 0x000670, "Member 'AUIMapManagerApollo_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

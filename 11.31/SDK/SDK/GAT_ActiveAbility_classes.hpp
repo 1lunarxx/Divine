@@ -46,21 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAT_ActiveAbility_C">();
+		BP_STATIC_CLASS_IMPL("GAT_ActiveAbility_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAT_ActiveAbility_C")
 	}
 	static class UGAT_ActiveAbility_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAT_ActiveAbility_C>();
 	}
 };
-static_assert(alignof(UGAT_ActiveAbility_C) == 0x000008, "Wrong alignment on UGAT_ActiveAbility_C");
-static_assert(sizeof(UGAT_ActiveAbility_C) == 0x000A60, "Wrong size on UGAT_ActiveAbility_C");
-static_assert(offsetof(UGAT_ActiveAbility_C, UberGraphFrame) == 0x000A30, "Member 'UGAT_ActiveAbility_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_C, TC_AbilitiesGenericActiveAbilityActivate) == 0x000A38, "Member 'UGAT_ActiveAbility_C::TC_AbilitiesGenericActiveAbilityActivate' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_C, N_SavedCollisionChannel) == 0x000A40, "Member 'UGAT_ActiveAbility_C::N_SavedCollisionChannel' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_C, GE_KnockBackImmunity) == 0x000A48, "Member 'UGAT_ActiveAbility_C::GE_KnockBackImmunity' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_C, GEH_KnockBackImmunity) == 0x000A50, "Member 'UGAT_ActiveAbility_C::GEH_KnockBackImmunity' has a wrong offset!");
-static_assert(offsetof(UGAT_ActiveAbility_C, bPlayerHolsterState) == 0x000A58, "Member 'UGAT_ActiveAbility_C::bPlayerHolsterState' has a wrong offset!");
 
 }
 

@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_BoltActionSniperRifleNoScope_C">();
+		BP_STATIC_CLASS_IMPL("BP_BoltActionSniperRifleNoScope_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_BoltActionSniperRifleNoScope_C")
 	}
 	static class UBP_BoltActionSniperRifleNoScope_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_BoltActionSniperRifleNoScope_C>();
 	}
 };
-static_assert(alignof(UBP_BoltActionSniperRifleNoScope_C) == 0x000010, "Wrong alignment on UBP_BoltActionSniperRifleNoScope_C");
-static_assert(sizeof(UBP_BoltActionSniperRifleNoScope_C) == 0x000370, "Wrong size on UBP_BoltActionSniperRifleNoScope_C");
-static_assert(offsetof(UBP_BoltActionSniperRifleNoScope_C, UberGraphFrame) == 0x000270, "Member 'UBP_BoltActionSniperRifleNoScope_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_BoltActionSniperRifleNoScope_C, AnimGraphNode_Root_80F88762449D5790C18126A73190A30A) == 0x000278, "Member 'UBP_BoltActionSniperRifleNoScope_C::AnimGraphNode_Root_80F88762449D5790C18126A73190A30A' has a wrong offset!");
-static_assert(offsetof(UBP_BoltActionSniperRifleNoScope_C, AnimGraphNode_Slot_3F9AE2D64A1081980E00CE94E79DD708) == 0x0002A8, "Member 'UBP_BoltActionSniperRifleNoScope_C::AnimGraphNode_Slot_3F9AE2D64A1081980E00CE94E79DD708' has a wrong offset!");
-static_assert(offsetof(UBP_BoltActionSniperRifleNoScope_C, AnimGraphNode_SequencePlayer_F813E2B842B7262277782F9EC5A3917A) == 0x0002F0, "Member 'UBP_BoltActionSniperRifleNoScope_C::AnimGraphNode_SequencePlayer_F813E2B842B7262277782F9EC5A3917A' has a wrong offset!");
 
 }
 

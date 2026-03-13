@@ -23,15 +23,17 @@ class UGCN_RiftSpawnerChargeUp_C final : public UFortGameplayCueNotify_Burst
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_RiftSpawnerChargeUp_C">();
+		BP_STATIC_CLASS_IMPL("GCN_RiftSpawnerChargeUp_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_RiftSpawnerChargeUp_C")
 	}
 	static class UGCN_RiftSpawnerChargeUp_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_RiftSpawnerChargeUp_C>();
 	}
 };
-static_assert(alignof(UGCN_RiftSpawnerChargeUp_C) == 0x000008, "Wrong alignment on UGCN_RiftSpawnerChargeUp_C");
-static_assert(sizeof(UGCN_RiftSpawnerChargeUp_C) == 0x0001B0, "Wrong size on UGCN_RiftSpawnerChargeUp_C");
 
 }
 

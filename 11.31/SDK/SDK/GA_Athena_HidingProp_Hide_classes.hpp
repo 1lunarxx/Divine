@@ -62,33 +62,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_HidingProp_Hide_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_HidingProp_Hide_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_HidingProp_Hide_C")
 	}
 	static class UGA_Athena_HidingProp_Hide_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_HidingProp_Hide_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_HidingProp_Hide_C) == 0x000008, "Wrong alignment on UGA_Athena_HidingProp_Hide_C");
-static_assert(sizeof(UGA_Athena_HidingProp_Hide_C) == 0x000B60, "Wrong size on UGA_Athena_HidingProp_Hide_C");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_HidingProp_Hide_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_HidingProp_Hide_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, HidingProp) == 0x000A40, "Member 'UGA_Athena_HidingProp_Hide_C::HidingProp' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, Enter_Anim_Montage) == 0x000A48, "Member 'UGA_Athena_HidingProp_Hide_C::Enter_Anim_Montage' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, RustleCue) == 0x000A50, "Member 'UGA_Athena_HidingProp_Hide_C::RustleCue' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, GC_Wobble) == 0x000A58, "Member 'UGA_Athena_HidingProp_Hide_C::GC_Wobble' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, Exit_Anim_Montage) == 0x000A60, "Member 'UGA_Athena_HidingProp_Hide_C::Exit_Anim_Montage' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, ExitBlockShootDelay) == 0x000A68, "Member 'UGA_Athena_HidingProp_Hide_C::ExitBlockShootDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, ControlRotation) == 0x000A88, "Member 'UGA_Athena_HidingProp_Hide_C::ControlRotation' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, CameraModifier) == 0x000A98, "Member 'UGA_Athena_HidingProp_Hide_C::CameraModifier' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, TC_Quest) == 0x000AA0, "Member 'UGA_Athena_HidingProp_Hide_C::TC_Quest' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, TC_PlayerOwned) == 0x000AC0, "Member 'UGA_Athena_HidingProp_Hide_C::TC_PlayerOwned' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, RustleMinDelay) == 0x000AE0, "Member 'UGA_Athena_HidingProp_Hide_C::RustleMinDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, RustleMaxDelay) == 0x000B00, "Member 'UGA_Athena_HidingProp_Hide_C::RustleMaxDelay' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, RustlePerWobble) == 0x000B20, "Member 'UGA_Athena_HidingProp_Hide_C::RustlePerWobble' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, NewVar_0) == 0x000B40, "Member 'UGA_Athena_HidingProp_Hide_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, PlayerController) == 0x000B48, "Member 'UGA_Athena_HidingProp_Hide_C::PlayerController' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_HidingProp_Hide_C, NewEventDispatcher_0) == 0x000B50, "Member 'UGA_Athena_HidingProp_Hide_C::NewEventDispatcher_0' has a wrong offset!");
 
 }
 

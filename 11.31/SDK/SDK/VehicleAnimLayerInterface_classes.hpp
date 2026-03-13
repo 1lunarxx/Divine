@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // AnimBlueprintGeneratedClass VehicleAnimLayerInterface.VehicleAnimLayerInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IVehicleAnimLayerInterface_C final : public IAnimLayerInterface
+// 0x0000 (0x0000 - 0x0000)
+class IVehicleAnimLayerInterface_C final
 {
 public:
 	void VehicleFullBodyOverride(const struct FPoseLink& InPoseFullBody, const struct FPoseLink& InPoseUpperAndLowerCachePose, struct FPoseLink* VehicleFullBodyOverride_0);
@@ -28,15 +28,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VehicleAnimLayerInterface_C">();
+		BP_STATIC_CLASS_IMPL("VehicleAnimLayerInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VehicleAnimLayerInterface_C")
 	}
 	static class IVehicleAnimLayerInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IVehicleAnimLayerInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IVehicleAnimLayerInterface_C) == 0x000008, "Wrong alignment on IVehicleAnimLayerInterface_C");
-static_assert(sizeof(IVehicleAnimLayerInterface_C) == 0x000028, "Wrong size on IVehicleAnimLayerInterface_C");
 
 }
 

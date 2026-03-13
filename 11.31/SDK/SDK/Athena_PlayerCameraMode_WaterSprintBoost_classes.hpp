@@ -23,15 +23,17 @@ class UAthena_PlayerCameraMode_WaterSprintBoost_C final : public UAthena_PlayerC
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Athena_PlayerCameraMode_WaterSprintBoost_C">();
+		BP_STATIC_CLASS_IMPL("Athena_PlayerCameraMode_WaterSprintBoost_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Athena_PlayerCameraMode_WaterSprintBoost_C")
 	}
 	static class UAthena_PlayerCameraMode_WaterSprintBoost_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthena_PlayerCameraMode_WaterSprintBoost_C>();
 	}
 };
-static_assert(alignof(UAthena_PlayerCameraMode_WaterSprintBoost_C) == 0x000010, "Wrong alignment on UAthena_PlayerCameraMode_WaterSprintBoost_C");
-static_assert(sizeof(UAthena_PlayerCameraMode_WaterSprintBoost_C) == 0x000D80, "Wrong size on UAthena_PlayerCameraMode_WaterSprintBoost_C");
 
 }
 

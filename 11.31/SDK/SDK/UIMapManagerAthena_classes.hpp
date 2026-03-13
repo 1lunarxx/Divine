@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIMapManagerAthena_C">();
+		BP_STATIC_CLASS_IMPL("UIMapManagerAthena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIMapManagerAthena_C")
 	}
 	static class AUIMapManagerAthena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AUIMapManagerAthena_C>();
 	}
 };
-static_assert(alignof(AUIMapManagerAthena_C) == 0x000010, "Wrong alignment on AUIMapManagerAthena_C");
-static_assert(sizeof(AUIMapManagerAthena_C) == 0x000680, "Wrong size on AUIMapManagerAthena_C");
-static_assert(offsetof(AUIMapManagerAthena_C, DefaultSceneRoot) == 0x000670, "Member 'AUIMapManagerAthena_C::DefaultSceneRoot' has a wrong offset!");
 
 }
 

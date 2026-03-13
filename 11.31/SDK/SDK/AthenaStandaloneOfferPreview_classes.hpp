@@ -55,6 +55,7 @@ public:
 	class UFortItemDefinition*                    BattleStarTemplate;                                // 0x0D30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
+	void UpdateSeriesBlock();
 	void Bundle_Short_Text(class FText* Text);
 	void GetOfferIndexAndCountText(int32* OfferIndex, class FText* OfferDisplayCount, int32* NextOfferIndex, class FText* NextOfferDisplayCount);
 	void UpdateStyle_Border();
@@ -79,47 +80,21 @@ public:
 	void BP_OnEntryReleased();
 	void SetupThumbnailRenderer(class UFortItemThumbnailRenderer* InThumbnailRenderer);
 	void ExecuteUbergraph_AthenaStandaloneOfferPreview(int32 EntryPoint);
-	void UpdateSeriesBlock();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStandaloneOfferPreview_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStandaloneOfferPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStandaloneOfferPreview_C")
 	}
 	static class UAthenaStandaloneOfferPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStandaloneOfferPreview_C>();
 	}
 };
-static_assert(alignof(UAthenaStandaloneOfferPreview_C) == 0x000008, "Wrong alignment on UAthenaStandaloneOfferPreview_C");
-static_assert(sizeof(UAthenaStandaloneOfferPreview_C) == 0x000D38, "Wrong size on UAthenaStandaloneOfferPreview_C");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, UberGraphFrame) == 0x000BE8, "Member 'UAthenaStandaloneOfferPreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, BorderRarityColored) == 0x000BF0, "Member 'UAthenaStandaloneOfferPreview_C::BorderRarityColored' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, BottomBorder) == 0x000BF8, "Member 'UAthenaStandaloneOfferPreview_C::BottomBorder' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, Check) == 0x000C00, "Member 'UAthenaStandaloneOfferPreview_C::Check' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, Currency1ItemImage) == 0x000C08, "Member 'UAthenaStandaloneOfferPreview_C::Currency1ItemImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, HighlightGlow) == 0x000C10, "Member 'UAthenaStandaloneOfferPreview_C::HighlightGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, I_StrikeThrough) == 0x000C18, "Member 'UAthenaStandaloneOfferPreview_C::I_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, ItemSeriesOrRarity) == 0x000C20, "Member 'UAthenaStandaloneOfferPreview_C::ItemSeriesOrRarity' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, LockImage) == 0x000C28, "Member 'UAthenaStandaloneOfferPreview_C::LockImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, MainImage) == 0x000C30, "Member 'UAthenaStandaloneOfferPreview_C::MainImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, NameText) == 0x000C38, "Member 'UAthenaStandaloneOfferPreview_C::NameText' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, O_Sale_PreviousPrice) == 0x000C40, "Member 'UAthenaStandaloneOfferPreview_C::O_Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, OwnedSwitcher) == 0x000C48, "Member 'UAthenaStandaloneOfferPreview_C::OwnedSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, OwnedText) == 0x000C50, "Member 'UAthenaStandaloneOfferPreview_C::OwnedText' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, Sale_PreviousPrice) == 0x000C58, "Member 'UAthenaStandaloneOfferPreview_C::Sale_PreviousPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, SBPriceBox) == 0x000C60, "Member 'UAthenaStandaloneOfferPreview_C::SBPriceBox' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, SBTileSize) == 0x000C68, "Member 'UAthenaStandaloneOfferPreview_C::SBTileSize' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, SeriesOverrideTexture) == 0x000C70, "Member 'UAthenaStandaloneOfferPreview_C::SeriesOverrideTexture' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, ShortDescriptionText) == 0x000C78, "Member 'UAthenaStandaloneOfferPreview_C::ShortDescriptionText' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, TextOfferDisplayPrice) == 0x000C80, "Member 'UAthenaStandaloneOfferPreview_C::TextOfferDisplayPrice' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, VBHeaderAndDescription) == 0x000C88, "Member 'UAthenaStandaloneOfferPreview_C::VBHeaderAndDescription' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, MID_StrikeThrough) == 0x000C90, "Member 'UAthenaStandaloneOfferPreview_C::MID_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, MID_CarouselTimerProgressBar) == 0x000C98, "Member 'UAthenaStandaloneOfferPreview_C::MID_CarouselTimerProgressBar' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, Carousel_NextItemImage) == 0x000CA0, "Member 'UAthenaStandaloneOfferPreview_C::Carousel_NextItemImage' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, CarouselLoopTimeRemaining) == 0x000D28, "Member 'UAthenaStandaloneOfferPreview_C::CarouselLoopTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, CarouselLoopTimer) == 0x000D2C, "Member 'UAthenaStandaloneOfferPreview_C::CarouselLoopTimer' has a wrong offset!");
-static_assert(offsetof(UAthenaStandaloneOfferPreview_C, BattleStarTemplate) == 0x000D30, "Member 'UAthenaStandaloneOfferPreview_C::BattleStarTemplate' has a wrong offset!");
 
 }
 

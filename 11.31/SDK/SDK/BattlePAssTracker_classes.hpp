@@ -30,16 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassTracker_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassTracker_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassTracker_C")
 	}
 	static class UBattlePassTracker_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassTracker_C>();
 	}
 };
-static_assert(alignof(UBattlePassTracker_C) == 0x000008, "Wrong alignment on UBattlePassTracker_C");
-static_assert(sizeof(UBattlePassTracker_C) == 0x0002E8, "Wrong size on UBattlePassTracker_C");
-static_assert(offsetof(UBattlePassTracker_C, BattlePassButtonIn) == 0x0002E0, "Member 'UBattlePassTracker_C::BattlePassButtonIn' has a wrong offset!");
 
 }
 

@@ -49,28 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeListEntry_Challenge_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeListEntry_Challenge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeListEntry_Challenge_C")
 	}
 	static class UChallengeListEntry_Challenge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeListEntry_Challenge_C>();
 	}
 };
-static_assert(alignof(UChallengeListEntry_Challenge_C) == 0x000008, "Wrong alignment on UChallengeListEntry_Challenge_C");
-static_assert(sizeof(UChallengeListEntry_Challenge_C) == 0x000358, "Wrong size on UChallengeListEntry_Challenge_C");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, UberGraphFrame) == 0x0002F0, "Member 'UChallengeListEntry_Challenge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, OnActivate) == 0x0002F8, "Member 'UChallengeListEntry_Challenge_C::OnActivate' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, OnHover) == 0x000300, "Member 'UChallengeListEntry_Challenge_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, AnimBound_Activation_FX_Backing) == 0x000308, "Member 'UChallengeListEntry_Challenge_C::AnimBound_Activation_FX_Backing' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, AnimBoundActionsOvr) == 0x000310, "Member 'UChallengeListEntry_Challenge_C::AnimBoundActionsOvr' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, AnimBoundContentHB) == 0x000318, "Member 'UChallengeListEntry_Challenge_C::AnimBoundContentHB' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, BoxActionWidgetWrapper) == 0x000320, "Member 'UChallengeListEntry_Challenge_C::BoxActionWidgetWrapper' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, ChallengeBulletSwitcher) == 0x000328, "Member 'UChallengeListEntry_Challenge_C::ChallengeBulletSwitcher' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, HBoxPartyAssist) == 0x000330, "Member 'UChallengeListEntry_Challenge_C::HBoxPartyAssist' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, ImageLockIcon) == 0x000338, "Member 'UChallengeListEntry_Challenge_C::ImageLockIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, Overlay_Reward) == 0x000340, "Member 'UChallengeListEntry_Challenge_C::Overlay_Reward' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, TextDoneIndicator) == 0x000348, "Member 'UChallengeListEntry_Challenge_C::TextDoneIndicator' has a wrong offset!");
-static_assert(offsetof(UChallengeListEntry_Challenge_C, TextWrapSB) == 0x000350, "Member 'UChallengeListEntry_Challenge_C::TextWrapSB' has a wrong offset!");
 
 }
 

@@ -58,36 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComOptionReveal_C">();
+		BP_STATIC_CLASS_IMPL("ComOptionReveal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComOptionReveal_C")
 	}
 	static class UComOptionReveal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComOptionReveal_C>();
 	}
 };
-static_assert(alignof(UComOptionReveal_C) == 0x000008, "Wrong alignment on UComOptionReveal_C");
-static_assert(sizeof(UComOptionReveal_C) == 0x000340, "Wrong size on UComOptionReveal_C");
-static_assert(offsetof(UComOptionReveal_C, UberGraphFrame) == 0x000298, "Member 'UComOptionReveal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Reveal_Win) == 0x0002A0, "Member 'UComOptionReveal_C::Reveal_Win' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Reveal_Fail) == 0x0002A8, "Member 'UComOptionReveal_C::Reveal_Fail' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Activities1) == 0x0002B0, "Member 'UComOptionReveal_C::Activities1' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Activities2) == 0x0002B8, "Member 'UComOptionReveal_C::Activities2' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Border) == 0x0002C0, "Member 'UComOptionReveal_C::Border' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, ComDivider2_1) == 0x0002C8, "Member 'UComOptionReveal_C::ComDivider2_1' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit0) == 0x0002D0, "Member 'UComOptionReveal_C::digit0' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit1) == 0x0002D8, "Member 'UComOptionReveal_C::digit1' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit2) == 0x0002E0, "Member 'UComOptionReveal_C::digit2' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit3) == 0x0002E8, "Member 'UComOptionReveal_C::digit3' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit4) == 0x0002F0, "Member 'UComOptionReveal_C::digit4' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit5) == 0x0002F8, "Member 'UComOptionReveal_C::digit5' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit6) == 0x000300, "Member 'UComOptionReveal_C::digit6' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit7) == 0x000308, "Member 'UComOptionReveal_C::digit7' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit8) == 0x000310, "Member 'UComOptionReveal_C::digit8' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, digit9) == 0x000318, "Member 'UComOptionReveal_C::digit9' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, SpeedLines_1) == 0x000320, "Member 'UComOptionReveal_C::SpeedLines_1' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, SqrActivities1) == 0x000328, "Member 'UComOptionReveal_C::SqrActivities1' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, SqrActivities2) == 0x000330, "Member 'UComOptionReveal_C::SqrActivities2' has a wrong offset!");
-static_assert(offsetof(UComOptionReveal_C, Winner_Animation_Sound) == 0x000338, "Member 'UComOptionReveal_C::Winner_Animation_Sound' has a wrong offset!");
 
 }
 

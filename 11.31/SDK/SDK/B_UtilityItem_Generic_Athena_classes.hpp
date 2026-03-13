@@ -23,15 +23,17 @@ class AB_UtilityItem_Generic_Athena_C : public AB_UtilityItem_Generic_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_UtilityItem_Generic_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_UtilityItem_Generic_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_UtilityItem_Generic_Athena_C")
 	}
 	static class AB_UtilityItem_Generic_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_UtilityItem_Generic_Athena_C>();
 	}
 };
-static_assert(alignof(AB_UtilityItem_Generic_Athena_C) == 0x000008, "Wrong alignment on AB_UtilityItem_Generic_Athena_C");
-static_assert(sizeof(AB_UtilityItem_Generic_Athena_C) == 0x000A38, "Wrong size on AB_UtilityItem_Generic_Athena_C");
 
 }
 

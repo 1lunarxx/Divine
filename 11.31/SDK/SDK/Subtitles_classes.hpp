@@ -34,18 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Subtitles_C">();
+		BP_STATIC_CLASS_IMPL("Subtitles_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Subtitles_C")
 	}
 	static class USubtitles_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubtitles_C>();
 	}
 };
-static_assert(alignof(USubtitles_C) == 0x000008, "Wrong alignment on USubtitles_C");
-static_assert(sizeof(USubtitles_C) == 0x0002B0, "Wrong size on USubtitles_C");
-static_assert(offsetof(USubtitles_C, UberGraphFrame) == 0x000298, "Member 'USubtitles_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USubtitles_C, SubtitleBorder) == 0x0002A0, "Member 'USubtitles_C::SubtitleBorder' has a wrong offset!");
-static_assert(offsetof(USubtitles_C, SubtitleDisplay) == 0x0002A8, "Member 'USubtitles_C::SubtitleDisplay' has a wrong offset!");
 
 }
 

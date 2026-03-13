@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LiveStreamMenuButtonToggle_C">();
+		BP_STATIC_CLASS_IMPL("LiveStreamMenuButtonToggle_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LiveStreamMenuButtonToggle_C")
 	}
 	static class ULiveStreamMenuButtonToggle_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULiveStreamMenuButtonToggle_C>();
 	}
 };
-static_assert(alignof(ULiveStreamMenuButtonToggle_C) == 0x000008, "Wrong alignment on ULiveStreamMenuButtonToggle_C");
-static_assert(sizeof(ULiveStreamMenuButtonToggle_C) == 0x000BA8, "Wrong size on ULiveStreamMenuButtonToggle_C");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, UberGraphFrame) == 0x000B70, "Member 'ULiveStreamMenuButtonToggle_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, Hover) == 0x000B78, "Member 'ULiveStreamMenuButtonToggle_C::Hover' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, Art) == 0x000B80, "Member 'ULiveStreamMenuButtonToggle_C::Art' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, BackgroundImage) == 0x000B88, "Member 'ULiveStreamMenuButtonToggle_C::BackgroundImage' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, ButtonText) == 0x000B90, "Member 'ULiveStreamMenuButtonToggle_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, LiveViolator) == 0x000B98, "Member 'ULiveStreamMenuButtonToggle_C::LiveViolator' has a wrong offset!");
-static_assert(offsetof(ULiveStreamMenuButtonToggle_C, Spikes) == 0x000BA0, "Member 'ULiveStreamMenuButtonToggle_C::Spikes' has a wrong offset!");
 
 }
 

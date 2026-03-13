@@ -30,17 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaGenericLobbyViolator_C">();
+		BP_STATIC_CLASS_IMPL("AthenaGenericLobbyViolator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaGenericLobbyViolator_C")
 	}
 	static class UAthenaGenericLobbyViolator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaGenericLobbyViolator_C>();
 	}
 };
-static_assert(alignof(UAthenaGenericLobbyViolator_C) == 0x000008, "Wrong alignment on UAthenaGenericLobbyViolator_C");
-static_assert(sizeof(UAthenaGenericLobbyViolator_C) == 0x000240, "Wrong size on UAthenaGenericLobbyViolator_C");
-static_assert(offsetof(UAthenaGenericLobbyViolator_C, ModeName) == 0x000230, "Member 'UAthenaGenericLobbyViolator_C::ModeName' has a wrong offset!");
-static_assert(offsetof(UAthenaGenericLobbyViolator_C, SubText) == 0x000238, "Member 'UAthenaGenericLobbyViolator_C::SubText' has a wrong offset!");
 
 }
 

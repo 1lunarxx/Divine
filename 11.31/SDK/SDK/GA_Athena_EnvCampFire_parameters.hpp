@@ -65,7 +65,7 @@ public:
 	uint8                                         Pad_1BC[0x4];                                      // 0x01BC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue_1;        // 0x01C0(0x0008)(NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetValueAtLevel_ReturnValue_1;            // 0x01C8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x01CC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_2; // 0x01CC(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_1DC[0x4];                                      // 0x01DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class AActor*                                 CallFunc_GetAvatarActorFromActorInfo_ReturnValue_2; // 0x01E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AB_BGA_Athena_EnvCampFire_C*            K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_2; // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -73,52 +73,11 @@ public:
 	uint8                                         Pad_1F1[0x7];                                      // 0x01F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData_1;                   // 0x01F8(0x0028)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag_1;               // 0x0220(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_3;            // 0x0228(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_3; // 0x0228(0x0010)(ZeroConstructor, NoDestructor)
 	class AActor*                                 CallFunc_GetAvatarActorFromActorInfo_ReturnValue_3; // 0x0238(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AB_BGA_Athena_EnvCampFire_C*            K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_3; // 0x0240(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_3;                     // 0x0248(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire) == 0x000008, "Wrong alignment on GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire) == 0x000250, "Wrong size on GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, EntryPoint) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_Event_bWasCancelled) == 0x000004, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_Event_EventData) == 0x000010, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate) == 0x0000C0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_EqualEqual_FloatFloat_ReturnValue) == 0x0000D0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_EqualEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, Temp_int_Variable) == 0x0000D4, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000D8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_WaitTargetSelection_ReturnValue) == 0x0000E0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_WaitTargetSelection_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue) == 0x0000E8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x0000F0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire) == 0x0000F8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess) == 0x000100, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_1) == 0x000101, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, Temp_struct_Variable) == 0x000108, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CustomEvent_IsStoked) == 0x000130, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CustomEvent_IsStoked' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, Temp_struct_Variable_1) == 0x000134, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_ApplyGameplayEffectContainer_ReturnValue) == 0x000140, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_ApplyGameplayEffectContainer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1) == 0x000150, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_1) == 0x000158, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess_1) == 0x000160, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_1) == 0x000164, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000178, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_IsValid_ReturnValue_2) == 0x000180, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CustomEvent_TargetData) == 0x000188, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CustomEvent_ApplicationTag) == 0x0001B0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetValueAtLevel_ReturnValue) == 0x0001B8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x0001C0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x0001C8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001CC, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_2) == 0x0001E0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_2) == 0x0001E8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess_2) == 0x0001F0, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CustomEvent_TargetData_1) == 0x0001F8, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CustomEvent_TargetData_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CustomEvent_ApplicationTag_1) == 0x000220, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CustomEvent_ApplicationTag_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_CreateDelegate_OutputDelegate_3) == 0x000228, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_3) == 0x000238, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_3) == 0x000240, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire, K2Node_DynamicCast_bSuccess_3) == 0x000248, "Member 'GA_Athena_EnvCampFire_C_ExecuteUbergraph_GA_Athena_EnvCampFire::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.SetIsStoked
 // 0x0001 (0x0001 - 0x0000)
@@ -127,9 +86,6 @@ struct GA_Athena_EnvCampFire_C_SetIsStoked final
 public:
 	bool                                          IsStoked_0;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_SetIsStoked) == 0x000001, "Wrong alignment on GA_Athena_EnvCampFire_C_SetIsStoked");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_SetIsStoked) == 0x000001, "Wrong size on GA_Athena_EnvCampFire_C_SetIsStoked");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetIsStoked, IsStoked_0) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_SetIsStoked::IsStoked_0' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -138,9 +94,6 @@ struct GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -149,9 +102,6 @@ struct GA_Athena_EnvCampFire_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Athena_EnvCampFire_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Athena_EnvCampFire_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.Targeted_EDAB937443020D47385625B06E892DF0
 // 0x0030 (0x0030 - 0x0000)
@@ -161,10 +111,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0) == 0x000008, "Wrong alignment on GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0) == 0x000030, "Wrong size on GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0, TargetData) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0, ApplicationTag) == 0x000028, "Member 'GA_Athena_EnvCampFire_C_Targeted_EDAB937443020D47385625B06E892DF0::ApplicationTag' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.Cancelled_EDAB937443020D47385625B06E892DF0
 // 0x0030 (0x0030 - 0x0000)
@@ -174,10 +120,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0) == 0x000008, "Wrong alignment on GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0) == 0x000030, "Wrong size on GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0, TargetData) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0, ApplicationTag) == 0x000028, "Member 'GA_Athena_EnvCampFire_C_Cancelled_EDAB937443020D47385625B06E892DF0::ApplicationTag' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.SetCustomTargetingTrans
 // 0x0070 (0x0070 - 0x0000)
@@ -195,17 +137,6 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             CallFunc_MakeTransform_ReturnValue;                // 0x0040(0x0030)(IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans) == 0x000010, "Wrong alignment on GA_Athena_EnvCampFire_C_SetCustomTargetingTrans");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans) == 0x000070, "Wrong size on GA_Athena_EnvCampFire_C_SetCustomTargetingTrans");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000008, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000014, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_BreakVector_X) == 0x000020, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_BreakVector_Y) == 0x000024, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_BreakVector_Z) == 0x000028, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_Add_FloatFloat_ReturnValue) == 0x00002C, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_MakeVector_ReturnValue) == 0x000030, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetCustomTargetingTrans, CallFunc_MakeTransform_ReturnValue) == 0x000040, "Member 'GA_Athena_EnvCampFire_C_SetCustomTargetingTrans::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.SetBalanceValues
 // 0x0058 (0x0058 - 0x0000)
@@ -232,25 +163,6 @@ public:
 	int32                                         CallFunc_FTrunc_ReturnValue_1;                     // 0x004C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_SelectInt_ReturnValue;                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_SetBalanceValues) == 0x000008, "Wrong alignment on GA_Athena_EnvCampFire_C_SetBalanceValues");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_SetBalanceValues) == 0x000058, "Wrong size on GA_Athena_EnvCampFire_C_SetBalanceValues");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, Stoke) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::Stoke' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue) == 0x000004, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000008, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00000C, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_2) == 0x000010, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_3) == 0x000014, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_4) == 0x000018, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_Divide_FloatFloat_ReturnValue_1) == 0x00001C, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_Divide_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000020, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_Conv_IntToString_ReturnValue) == 0x000028, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_FTrunc_ReturnValue) == 0x000038, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_FTrunc_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_Add_IntInt_ReturnValue) == 0x00003C, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_5) == 0x000040, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_GetValueAtLevel_ReturnValue_6) == 0x000044, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_GetValueAtLevel_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_SelectFloat_ReturnValue) == 0x000048, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_SelectFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_FTrunc_ReturnValue_1) == 0x00004C, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_FTrunc_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_SetBalanceValues, CallFunc_SelectInt_ReturnValue) == 0x000050, "Member 'GA_Athena_EnvCampFire_C_SetBalanceValues::CallFunc_SelectInt_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_EnvCampFire.GA_Athena_EnvCampFire_C.GetCustomAbilitySourceTransform
 // 0x0030 (0x0030 - 0x0000)
@@ -259,9 +171,6 @@ struct GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform final
 public:
 	struct FTransform                             ReturnValue;                                       // 0x0000(0x0030)(Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform) == 0x000010, "Wrong alignment on GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform");
-static_assert(sizeof(GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform) == 0x000030, "Wrong size on GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform");
-static_assert(offsetof(GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform, ReturnValue) == 0x000000, "Member 'GA_Athena_EnvCampFire_C_GetCustomAbilitySourceTransform::ReturnValue' has a wrong offset!");
 
 }
 

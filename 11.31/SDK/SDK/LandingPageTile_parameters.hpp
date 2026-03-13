@@ -26,11 +26,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(LandingPageTile_C_PlayIntroOrOutro) == 0x000008, "Wrong alignment on LandingPageTile_C_PlayIntroOrOutro");
-static_assert(sizeof(LandingPageTile_C_PlayIntroOrOutro) == 0x000018, "Wrong size on LandingPageTile_C_PlayIntroOrOutro");
-static_assert(offsetof(LandingPageTile_C_PlayIntroOrOutro, PlayIntro) == 0x000000, "Member 'LandingPageTile_C_PlayIntroOrOutro::PlayIntro' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_PlayIntroOrOutro, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'LandingPageTile_C_PlayIntroOrOutro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_PlayIntroOrOutro, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'LandingPageTile_C_PlayIntroOrOutro::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
 
 // Function LandingPageTile.LandingPageTile_C.UpdateTileAvailability
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +34,6 @@ struct LandingPageTile_C_UpdateTileAvailability final
 public:
 	bool                                          Available;                                         // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LandingPageTile_C_UpdateTileAvailability) == 0x000001, "Wrong alignment on LandingPageTile_C_UpdateTileAvailability");
-static_assert(sizeof(LandingPageTile_C_UpdateTileAvailability) == 0x000001, "Wrong size on LandingPageTile_C_UpdateTileAvailability");
-static_assert(offsetof(LandingPageTile_C_UpdateTileAvailability, Available) == 0x000000, "Member 'LandingPageTile_C_UpdateTileAvailability::Available' has a wrong offset!");
 
 // Function LandingPageTile.LandingPageTile_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -50,9 +42,6 @@ struct LandingPageTile_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LandingPageTile_C_PreConstruct) == 0x000001, "Wrong alignment on LandingPageTile_C_PreConstruct");
-static_assert(sizeof(LandingPageTile_C_PreConstruct) == 0x000001, "Wrong size on LandingPageTile_C_PreConstruct");
-static_assert(offsetof(LandingPageTile_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'LandingPageTile_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function LandingPageTile.LandingPageTile_C.ExecuteUbergraph_LandingPageTile
 // 0x0040 (0x0040 - 0x0000)
@@ -72,18 +61,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile) == 0x000008, "Wrong alignment on LandingPageTile_C_ExecuteUbergraph_LandingPageTile");
-static_assert(sizeof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile) == 0x000040, "Wrong size on LandingPageTile_C_ExecuteUbergraph_LandingPageTile");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, EntryPoint) == 0x000000, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, Temp_bool_Variable) == 0x000004, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, Temp_byte_Variable) == 0x000005, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, K2Node_Event_Available) == 0x000018, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::K2Node_Event_Available' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, CallFunc_TextToUpper_ReturnValue) == 0x000020, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, Temp_byte_Variable_1) == 0x000038, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, K2Node_Select_Default) == 0x000039, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(LandingPageTile_C_ExecuteUbergraph_LandingPageTile, K2Node_Event_IsDesignTime) == 0x00003A, "Member 'LandingPageTile_C_ExecuteUbergraph_LandingPageTile::K2Node_Event_IsDesignTime' has a wrong offset!");
 
 }
 

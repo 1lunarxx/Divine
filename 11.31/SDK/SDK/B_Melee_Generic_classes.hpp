@@ -22,7 +22,7 @@ namespace SDK
 
 // BlueprintGeneratedClass B_Melee_Generic.B_Melee_Generic_C
 // 0x0140 (0x0B78 - 0x0A38)
-class AB_Melee_Generic_C : public AFortWeapon
+class AB_Melee_Generic_C final : public AFortWeapon
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0A38(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
@@ -103,58 +103,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Melee_Generic_C">();
+		BP_STATIC_CLASS_IMPL("B_Melee_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Melee_Generic_C")
 	}
 	static class AB_Melee_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Melee_Generic_C>();
 	}
 };
-static_assert(alignof(AB_Melee_Generic_C) == 0x000008, "Wrong alignment on AB_Melee_Generic_C");
-static_assert(sizeof(AB_Melee_Generic_C) == 0x000B78, "Wrong size on AB_Melee_Generic_C");
-static_assert(offsetof(AB_Melee_Generic_C, UberGraphFrame) == 0x000A38, "Member 'AB_Melee_Generic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, idleFX) == 0x000A40, "Member 'AB_Melee_Generic_C::idleFX' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, SwingFX) == 0x000A48, "Member 'AB_Melee_Generic_C::SwingFX' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, AnimTrial) == 0x000A50, "Member 'AB_Melee_Generic_C::AnimTrial' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_PSC) == 0x000A58, "Member 'AB_Melee_Generic_C::MeleeHeavy_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, IdleFX_Template) == 0x000A60, "Member 'AB_Melee_Generic_C::IdleFX_Template' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Has_Idle_Effect) == 0x000A68, "Member 'AB_Melee_Generic_C::Has_Idle_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Idle_Effect) == 0x000A70, "Member 'AB_Melee_Generic_C::Idle_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Idle_Effect_Component) == 0x000A78, "Member 'AB_Melee_Generic_C::Idle_Effect_Component' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, IdleFXAttachSocket) == 0x000A80, "Member 'AB_Melee_Generic_C::IdleFXAttachSocket' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, IdleFX_Location_Rule) == 0x000A88, "Member 'AB_Melee_Generic_C::IdleFX_Location_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Idle_FX_Rotation_Rule) == 0x000A89, "Member 'AB_Melee_Generic_C::Idle_FX_Rotation_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Idle_FX_Scale_Rule) == 0x000A8A, "Member 'AB_Melee_Generic_C::Idle_FX_Scale_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_FX_Template) == 0x000A90, "Member 'AB_Melee_Generic_C::Swing_FX_Template' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Has_Swing_Effect) == 0x000A98, "Member 'AB_Melee_Generic_C::Has_Swing_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_Effect) == 0x000AA0, "Member 'AB_Melee_Generic_C::Swing_Effect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_Effect_Component) == 0x000AA8, "Member 'AB_Melee_Generic_C::Swing_Effect_Component' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, SwingFXSocket) == 0x000AB0, "Member 'AB_Melee_Generic_C::SwingFXSocket' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, SwingFX_Location_Rule) == 0x000AB8, "Member 'AB_Melee_Generic_C::SwingFX_Location_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_FX_Rotation_Rule) == 0x000AB9, "Member 'AB_Melee_Generic_C::Swing_FX_Rotation_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Swing_FX_Scale_Rule) == 0x000ABA, "Member 'AB_Melee_Generic_C::Swing_FX_Scale_Rule' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, UseAnimTrails) == 0x000ABB, "Member 'AB_Melee_Generic_C::UseAnimTrails' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Anim_Trail_Template) == 0x000AC0, "Member 'AB_Melee_Generic_C::Anim_Trail_Template' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, OverrideFirstSocketName) == 0x000AC8, "Member 'AB_Melee_Generic_C::OverrideFirstSocketName' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, OverrideSecond_Socket_Name) == 0x000AD0, "Member 'AB_Melee_Generic_C::OverrideSecond_Socket_Name' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, AnimTrailsParticles) == 0x000AD8, "Member 'AB_Melee_Generic_C::AnimTrailsParticles' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, AnimTrail_PSC) == 0x000AE0, "Member 'AB_Melee_Generic_C::AnimTrail_PSC' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, FirstSocketName) == 0x000AE8, "Member 'AB_Melee_Generic_C::FirstSocketName' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Second_Socket_Name) == 0x000AF0, "Member 'AB_Melee_Generic_C::Second_Socket_Name' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Width) == 0x000AF8, "Member 'AB_Melee_Generic_C::Width' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_ParticleSystem) == 0x000B00, "Member 'AB_Melee_Generic_C::MeleeHeavy_ParticleSystem' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffect) == 0x000B08, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponDurabilityDestroyEffectIcon) == 0x000B10, "Member 'AB_Melee_Generic_C::WeaponDurabilityDestroyEffectIcon' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, UseDestroyEffect) == 0x000B18, "Member 'AB_Melee_Generic_C::UseDestroyEffect' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, PokeAnimations) == 0x000B20, "Member 'AB_Melee_Generic_C::PokeAnimations' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, WeaponMID) == 0x000B30, "Member 'AB_Melee_Generic_C::WeaponMID' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Alteration_Ambient_PS) == 0x000B38, "Member 'AB_Melee_Generic_C::Alteration_Ambient_PS' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavy_Sound) == 0x000B40, "Member 'AB_Melee_Generic_C::MeleeHeavy_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Melee_Heavy_Launch_Gameplay_Cue_Tag_Override) == 0x000B48, "Member 'AB_Melee_Generic_C::Melee_Heavy_Launch_Gameplay_Cue_Tag_Override' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Melee_Heavy_Impact_Gameplay_Cue_Tag_Override) == 0x000B50, "Member 'AB_Melee_Generic_C::Melee_Heavy_Impact_Gameplay_Cue_Tag_Override' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, Effects_Color_Level) == 0x000B58, "Member 'AB_Melee_Generic_C::Effects_Color_Level' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavySoundAttenuationSettings) == 0x000B68, "Member 'AB_Melee_Generic_C::MeleeHeavySoundAttenuationSettings' has a wrong offset!");
-static_assert(offsetof(AB_Melee_Generic_C, MeleeHeavySoundConcurrencySettings) == 0x000B70, "Member 'AB_Melee_Generic_C::MeleeHeavySoundConcurrencySettings' has a wrong offset!");
 
 }
 

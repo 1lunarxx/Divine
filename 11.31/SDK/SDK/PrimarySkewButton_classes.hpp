@@ -47,24 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PrimarySkewButton_C">();
+		BP_STATIC_CLASS_IMPL("PrimarySkewButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PrimarySkewButton_C")
 	}
 	static class UPrimarySkewButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPrimarySkewButton_C>();
 	}
 };
-static_assert(alignof(UPrimarySkewButton_C) == 0x000008, "Wrong alignment on UPrimarySkewButton_C");
-static_assert(sizeof(UPrimarySkewButton_C) == 0x000BC0, "Wrong size on UPrimarySkewButton_C");
-static_assert(offsetof(UPrimarySkewButton_C, UberGraphFrame) == 0x000B70, "Member 'UPrimarySkewButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, Pressed) == 0x000B78, "Member 'UPrimarySkewButton_C::Pressed' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, Hover) == 0x000B80, "Member 'UPrimarySkewButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, CenterButtonTextWidget) == 0x000B88, "Member 'UPrimarySkewButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, Image_ButtonTop) == 0x000B90, "Member 'UPrimarySkewButton_C::Image_ButtonTop' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, Image_Shadow) == 0x000B98, "Member 'UPrimarySkewButton_C::Image_Shadow' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, ToUpper) == 0x000BA0, "Member 'UPrimarySkewButton_C::ToUpper' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, XL) == 0x000BA1, "Member 'UPrimarySkewButton_C::XL' has a wrong offset!");
-static_assert(offsetof(UPrimarySkewButton_C, ButtonNameText) == 0x000BA8, "Member 'UPrimarySkewButton_C::ButtonNameText' has a wrong offset!");
 
 }
 

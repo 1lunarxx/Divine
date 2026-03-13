@@ -37,20 +37,6 @@ public:
 	TArray<struct FVector>                        K2Node_Event_SplineTangents;                       // 0x0070(0x0010)(ConstParm, ZeroConstructor, ReferenceParm)
 	float                                         K2Node_Event_DeltaSeconds;                         // 0x0080(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory) == 0x000010, "Wrong alignment on BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory");
-static_assert(sizeof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory) == 0x000090, "Wrong size on BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, EntryPoint) == 0x000000, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_int_Variable) == 0x000004, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000008, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_Subtract_IntInt_ReturnValue) == 0x000010, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_LessEqual_IntInt_ReturnValue) == 0x000014, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_LessEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, Temp_struct_Variable) == 0x000020, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_AddComponent_ReturnValue) == 0x000050, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_AddComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000058, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, K2Node_Event_SplinePoints) == 0x000060, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::K2Node_Event_SplinePoints' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, K2Node_Event_SplineTangents) == 0x000070, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::K2Node_Event_SplineTangents' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory, K2Node_Event_DeltaSeconds) == 0x000080, "Member 'BP_ProjectileTrajectory_C_ExecuteUbergraph_BP_ProjectileTrajectory::K2Node_Event_DeltaSeconds' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -59,9 +45,6 @@ struct BP_ProjectileTrajectory_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_ReceiveTick) == 0x000004, "Wrong alignment on BP_ProjectileTrajectory_C_ReceiveTick");
-static_assert(sizeof(BP_ProjectileTrajectory_C_ReceiveTick) == 0x000004, "Wrong size on BP_ProjectileTrajectory_C_ReceiveTick");
-static_assert(offsetof(BP_ProjectileTrajectory_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'BP_ProjectileTrajectory_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectoryFromNative
 // 0x0020 (0x0020 - 0x0000)
@@ -71,10 +54,6 @@ public:
 	TArray<struct FVector>                        SplinePoints;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 	TArray<struct FVector>                        SplineTangents;                                    // 0x0010(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_SetTrajectoryFromNative");
-static_assert(sizeof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative) == 0x000020, "Wrong size on BP_ProjectileTrajectory_C_SetTrajectoryFromNative");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative, SplinePoints) == 0x000000, "Member 'BP_ProjectileTrajectory_C_SetTrajectoryFromNative::SplinePoints' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectoryFromNative, SplineTangents) == 0x000010, "Member 'BP_ProjectileTrajectory_C_SetTrajectoryFromNative::SplineTangents' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetTrajectorySpline
 // 0x0210 (0x0210 - 0x0000)
@@ -138,58 +117,6 @@ public:
 	class USplineMeshComponent*                   CallFunc_Array_Get_Item_7;                         // 0x0200(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue_2;                // 0x0208(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_SetTrajectorySpline) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_SetTrajectorySpline");
-static_assert(sizeof(BP_ProjectileTrajectory_C_SetTrajectorySpline) == 0x000210, "Wrong size on BP_ProjectileTrajectory_C_SetTrajectorySpline");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, SplinePoints) == 0x000000, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::SplinePoints' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, SplineTangents) == 0x000010, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::SplineTangents' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Length_ReturnValue) == 0x000020, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_Array_Index_Variable) == 0x000024, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Greater_IntInt_ReturnValue) == 0x000028, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue_1) == 0x000034, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_Array_Index_Variable_1) == 0x000038, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Length_ReturnValue_1) == 0x00003C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item) == 0x000040, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_IntInt_ReturnValue) == 0x00004C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Subtract_IntInt_ReturnValue) == 0x000050, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_1) == 0x000054, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_IsValidIndex_ReturnValue) == 0x000060, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_IsValidIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Normal_ReturnValue) == 0x000064, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Normal_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_IntInt_ReturnValue_1) == 0x000070, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue_2) == 0x000074, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue_3) == 0x000078, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_IntInt_ReturnValue_2) == 0x00007C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_2) == 0x000080, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_3) == 0x00008C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_3' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Normal_ReturnValue_1) == 0x000098, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Normal_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue_4) == 0x0000A4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_4) == 0x0000A8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_4' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_LastIndex_ReturnValue) == 0x0000B4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_LastIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_LastIndex_ReturnValue_1) == 0x0000B8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_LastIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue) == 0x0000BC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Conv_VectorToLinearColor_ReturnValue) == 0x0000C0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Conv_VectorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Conv_VectorToLinearColor_ReturnValue_1) == 0x0000D0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Conv_VectorToLinearColor_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_5) == 0x0000E0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_5' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_IsValidIndex_ReturnValue_1) == 0x0000EC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_IsValidIndex_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0000F0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Dot_VectorVector_ReturnValue) == 0x0000FC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Dot_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000100, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_6) == 0x00010C, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_6' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Subtract_VectorVector_ReturnValue_1) == 0x000118, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Subtract_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Dot_VectorVector_ReturnValue_1) == 0x000124, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Dot_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000128, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x000134, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, Temp_int_Loop_Counter_Variable_1) == 0x0001BC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue_1) == 0x0001C0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Add_IntInt_ReturnValue_5) == 0x0001C4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Add_IntInt_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLocationAtSplinePoint_ReturnValue) == 0x0001C8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLocationAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLocationAtSplinePoint_ReturnValue_1) == 0x0001D4, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLocationAtSplinePoint_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetArriveTangentAtSplinePoint_ReturnValue) == 0x0001E0, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetArriveTangentAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue) == 0x0001EC, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_GetLeaveTangentAtSplinePoint_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Length_ReturnValue_2) == 0x0001F8, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Array_Get_Item_7) == 0x000200, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Array_Get_Item_7' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetTrajectorySpline, CallFunc_Less_IntInt_ReturnValue_2) == 0x000208, "Member 'BP_ProjectileTrajectory_C_SetTrajectorySpline::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.UpdateFromTrajectoryOwner
 // 0x0018 (0x0018 - 0x0000)
@@ -199,10 +126,6 @@ public:
 	TScriptInterface<class IFortTrajectoryAbilityInterface> K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface; // 0x0000(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner");
-static_assert(sizeof(BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner) == 0x000018, "Wrong size on BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner");
-static_assert(offsetof(BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner, K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface) == 0x000000, "Member 'BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner::K2Node_DynamicCast_AsFort_Trajectory_Ability_Interface' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'BP_ProjectileTrajectory_C_UpdateFromTrajectoryOwner::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function BP_ProjectileTrajectory.BP_ProjectileTrajectory_C.SetShouldUpdateFromOwner
 // 0x0010 (0x0010 - 0x0000)
@@ -213,10 +136,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UObject*                                Owner_0;                                           // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner) == 0x000008, "Wrong alignment on BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner");
-static_assert(sizeof(BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner) == 0x000010, "Wrong size on BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner, ShouldUpdate_0) == 0x000000, "Member 'BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner::ShouldUpdate_0' has a wrong offset!");
-static_assert(offsetof(BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner, Owner_0) == 0x000008, "Member 'BP_ProjectileTrajectory_C_SetShouldUpdateFromOwner::Owner_0' has a wrong offset!");
 
 }
 

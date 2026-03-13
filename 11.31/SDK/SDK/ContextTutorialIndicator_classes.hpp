@@ -40,25 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ContextTutorialIndicator_C">();
+		BP_STATIC_CLASS_IMPL("ContextTutorialIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ContextTutorialIndicator_C")
 	}
 	static class UContextTutorialIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UContextTutorialIndicator_C>();
 	}
 };
-static_assert(alignof(UContextTutorialIndicator_C) == 0x000008, "Wrong alignment on UContextTutorialIndicator_C");
-static_assert(sizeof(UContextTutorialIndicator_C) == 0x0004D0, "Wrong size on UContextTutorialIndicator_C");
-static_assert(offsetof(UContextTutorialIndicator_C, UberGraphFrame) == 0x000480, "Member 'UContextTutorialIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Border) == 0x000488, "Member 'UContextTutorialIndicator_C::Border' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, In) == 0x000490, "Member 'UContextTutorialIndicator_C::In' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Circle) == 0x000498, "Member 'UContextTutorialIndicator_C::Circle' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Circle_1) == 0x0004A0, "Member 'UContextTutorialIndicator_C::Circle_1' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Icon) == 0x0004A8, "Member 'UContextTutorialIndicator_C::Icon' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Icon_1) == 0x0004B0, "Member 'UContextTutorialIndicator_C::Icon_1' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Image_SmallIndicator) == 0x0004B8, "Member 'UContextTutorialIndicator_C::Image_SmallIndicator' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Sign) == 0x0004C0, "Member 'UContextTutorialIndicator_C::Sign' has a wrong offset!");
-static_assert(offsetof(UContextTutorialIndicator_C, Sign_1) == 0x0004C8, "Member 'UContextTutorialIndicator_C::Sign_1' has a wrong offset!");
 
 }
 

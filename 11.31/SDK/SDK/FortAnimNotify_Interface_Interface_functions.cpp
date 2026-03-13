@@ -24,9 +24,9 @@ void IFortAnimNotify_Interface_Interface_C::TrailOff()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAnimNotify_Interface_Interface_C", "TrailOff");
+		Func = AsUObject()->Class->GetFunction("FortAnimNotify_Interface_Interface_C", "TrailOff");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -38,9 +38,9 @@ void IFortAnimNotify_Interface_Interface_C::TrailOn()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAnimNotify_Interface_Interface_C", "TrailOn");
+		Func = AsUObject()->Class->GetFunction("FortAnimNotify_Interface_Interface_C", "TrailOn");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 }

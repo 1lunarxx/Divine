@@ -26,16 +26,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSpawnPlacementActor_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSpawnPlacementActor_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSpawnPlacementActor_C")
 	}
 	static class APlayerSpawnPlacementActor_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APlayerSpawnPlacementActor_C>();
 	}
 };
-static_assert(alignof(APlayerSpawnPlacementActor_C) == 0x000008, "Wrong alignment on APlayerSpawnPlacementActor_C");
-static_assert(sizeof(APlayerSpawnPlacementActor_C) == 0x0005A0, "Wrong size on APlayerSpawnPlacementActor_C");
-static_assert(offsetof(APlayerSpawnPlacementActor_C, Arrow) == 0x000598, "Member 'APlayerSpawnPlacementActor_C::Arrow' has a wrong offset!");
 
 }
 

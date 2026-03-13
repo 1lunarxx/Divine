@@ -28,12 +28,6 @@ public:
 	TArray<class UParticleSystemComponent*>       ParticleComponents;                                // 0x00C0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 	TArray<class UAudioComponent*>                AudioComponents;                                   // 0x00D0(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart) == 0x000008, "Wrong alignment on GCNL_EnvCampFire_Stoke_C_OnLoopingStart");
-static_assert(sizeof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart) == 0x0000E0, "Wrong size on GCNL_EnvCampFire_Stoke_C_OnLoopingStart");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart, MyTarget) == 0x000000, "Member 'GCNL_EnvCampFire_Stoke_C_OnLoopingStart::MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart, Parameters) == 0x000008, "Member 'GCNL_EnvCampFire_Stoke_C_OnLoopingStart::Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart, ParticleComponents) == 0x0000C0, "Member 'GCNL_EnvCampFire_Stoke_C_OnLoopingStart::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_OnLoopingStart, AudioComponents) == 0x0000D0, "Member 'GCNL_EnvCampFire_Stoke_C_OnLoopingStart::AudioComponents' has a wrong offset!");
 
 // Function GCNL_EnvCampFire_Stoke.GCNL_EnvCampFire_Stoke_C.ExecuteUbergraph_GCNL_EnvCampFire_Stoke
 // 0x01A8 (0x01A8 - 0x0000)
@@ -58,23 +52,6 @@ public:
 	uint8                                         Pad_119[0x3];                                      // 0x0119(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHitResult                             CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x011C(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke) == 0x000008, "Wrong alignment on GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
-static_assert(sizeof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke) == 0x0001A8, "Wrong size on GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, EntryPoint) == 0x000000, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, Temp_int_Loop_Counter_Variable) == 0x000004, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_Add_IntInt_ReturnValue) == 0x000008, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, Temp_int_Array_Index_Variable) == 0x00000C, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_Event_MyTarget) == 0x000010, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_Event_MyTarget' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_Event_Parameters) == 0x000018, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_Event_Parameters' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_Event_ParticleComponents) == 0x0000D0, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_Event_ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_Event_AudioComponents) == 0x0000E0, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_Event_AudioComponents' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire) == 0x0000F0, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_DynamicCast_AsB_BGA_Athena_Env_Camp_Fire' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, K2Node_DynamicCast_bSuccess) == 0x0000F8, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_Array_Get_Item) == 0x000100, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_Array_Length_ReturnValue) == 0x000108, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00010C, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_Less_IntInt_ReturnValue) == 0x000118, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke, CallFunc_K2_SetWorldLocation_SweepHitResult) == 0x00011C, "Member 'GCNL_EnvCampFire_Stoke_C_ExecuteUbergraph_GCNL_EnvCampFire_Stoke::CallFunc_K2_SetWorldLocation_SweepHitResult' has a wrong offset!");
 
 }
 

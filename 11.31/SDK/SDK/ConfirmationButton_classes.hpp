@@ -23,15 +23,17 @@ class UConfirmationButton_C final : public UIconTextButton_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ConfirmationButton_C">();
+		BP_STATIC_CLASS_IMPL("ConfirmationButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ConfirmationButton_C")
 	}
 	static class UConfirmationButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UConfirmationButton_C>();
 	}
 };
-static_assert(alignof(UConfirmationButton_C) == 0x000008, "Wrong alignment on UConfirmationButton_C");
-static_assert(sizeof(UConfirmationButton_C) == 0x000C70, "Wrong size on UConfirmationButton_C");
 
 }
 

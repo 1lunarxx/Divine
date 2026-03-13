@@ -17,6 +17,26 @@
 namespace SDK
 {
 
+// Function AthenaLobbyMatchmakingPlay.AthenaLobbyMatchmakingPlay_C.ExecuteUbergraph_AthenaLobbyMatchmakingPlay
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
+
+	Params::AthenaLobbyMatchmakingPlay_C_ExecuteUbergraph_AthenaLobbyMatchmakingPlay Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaLobbyMatchmakingPlay.AthenaLobbyMatchmakingPlay_C.SetBasePanelColor
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -352,26 +372,6 @@ void UAthenaLobbyMatchmakingPlay_C::ShouldShowMatchmakingDetails(bool bShow)
 	Params::AthenaLobbyMatchmakingPlay_C_ShouldShowMatchmakingDetails Parms{};
 
 	Parms.bShow = bShow;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaLobbyMatchmakingPlay.AthenaLobbyMatchmakingPlay_C.ExecuteUbergraph_AthenaLobbyMatchmakingPlay
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaLobbyMatchmakingPlay_C::ExecuteUbergraph_AthenaLobbyMatchmakingPlay(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaLobbyMatchmakingPlay_C", "ExecuteUbergraph_AthenaLobbyMatchmakingPlay");
-
-	Params::AthenaLobbyMatchmakingPlay_C_ExecuteUbergraph_AthenaLobbyMatchmakingPlay Parms{};
-
-	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

@@ -40,23 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Com_ThanksForVotingMessage_C">();
+		BP_STATIC_CLASS_IMPL("Com_ThanksForVotingMessage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Com_ThanksForVotingMessage_C")
 	}
 	static class UCom_ThanksForVotingMessage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCom_ThanksForVotingMessage_C>();
 	}
 };
-static_assert(alignof(UCom_ThanksForVotingMessage_C) == 0x000008, "Wrong alignment on UCom_ThanksForVotingMessage_C");
-static_assert(sizeof(UCom_ThanksForVotingMessage_C) == 0x0002E8, "Wrong size on UCom_ThanksForVotingMessage_C");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, UberGraphFrame) == 0x0002A8, "Member 'UCom_ThanksForVotingMessage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, thanksMessage) == 0x0002B0, "Member 'UCom_ThanksForVotingMessage_C::thanksMessage' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, Border_TapToCloseZone) == 0x0002B8, "Member 'UCom_ThanksForVotingMessage_C::Border_TapToCloseZone' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, box_middle) == 0x0002C0, "Member 'UCom_ThanksForVotingMessage_C::box_middle' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, RichTextBlock_CountDowntxt) == 0x0002C8, "Member 'UCom_ThanksForVotingMessage_C::RichTextBlock_CountDowntxt' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, thanksMessageBlocker) == 0x0002D0, "Member 'UCom_ThanksForVotingMessage_C::thanksMessageBlocker' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, Triangle1) == 0x0002D8, "Member 'UCom_ThanksForVotingMessage_C::Triangle1' has a wrong offset!");
-static_assert(offsetof(UCom_ThanksForVotingMessage_C, Triangle2) == 0x0002E0, "Member 'UCom_ThanksForVotingMessage_C::Triangle2' has a wrong offset!");
 
 }
 

@@ -56,33 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComOptionPreview_C">();
+		BP_STATIC_CLASS_IMPL("ComOptionPreview_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComOptionPreview_C")
 	}
 	static class UComOptionPreview_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComOptionPreview_C>();
 	}
 };
-static_assert(alignof(UComOptionPreview_C) == 0x000008, "Wrong alignment on UComOptionPreview_C");
-static_assert(sizeof(UComOptionPreview_C) == 0x0003B8, "Wrong size on UComOptionPreview_C");
-static_assert(offsetof(UComOptionPreview_C, UberGraphFrame) == 0x000290, "Member 'UComOptionPreview_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Vote_Action) == 0x000298, "Member 'UComOptionPreview_C::Vote_Action' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Focus_Out) == 0x0002A0, "Member 'UComOptionPreview_C::Focus_Out' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Focus_Loop) == 0x0002A8, "Member 'UComOptionPreview_C::Focus_Loop' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Focus_In) == 0x0002B0, "Member 'UComOptionPreview_C::Focus_In' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Idle_Color) == 0x0002B8, "Member 'UComOptionPreview_C::Idle_Color' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Idle_Tint) == 0x0002C0, "Member 'UComOptionPreview_C::Idle_Tint' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, CarouselTransition) == 0x0002C8, "Member 'UComOptionPreview_C::CarouselTransition' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Hover) == 0x0002D0, "Member 'UComOptionPreview_C::Hover' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, ItemSeriesOrRarity) == 0x0002D8, "Member 'UComOptionPreview_C::ItemSeriesOrRarity' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, MID_StrikeThrough) == 0x0002E0, "Member 'UComOptionPreview_C::MID_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, MID_CarouselTimerProgressBar) == 0x0002E8, "Member 'UComOptionPreview_C::MID_CarouselTimerProgressBar' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Carousel_NextItemImage) == 0x0002F0, "Member 'UComOptionPreview_C::Carousel_NextItemImage' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, CarouselLoopTimeRemaining) == 0x000378, "Member 'UComOptionPreview_C::CarouselLoopTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, CarouselLoopTimer) == 0x00037C, "Member 'UComOptionPreview_C::CarouselLoopTimer' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, LargeSoftImage) == 0x000380, "Member 'UComOptionPreview_C::LargeSoftImage' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, Carousel_NextLargeTexture) == 0x0003A8, "Member 'UComOptionPreview_C::Carousel_NextLargeTexture' has a wrong offset!");
-static_assert(offsetof(UComOptionPreview_C, BattleStarTemplate) == 0x0003B0, "Member 'UComOptionPreview_C::BattleStarTemplate' has a wrong offset!");
 
 }
 

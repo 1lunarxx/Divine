@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LeavePlatformPartyButton_C">();
+		BP_STATIC_CLASS_IMPL("LeavePlatformPartyButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LeavePlatformPartyButton_C")
 	}
 	static class ULeavePlatformPartyButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULeavePlatformPartyButton_C>();
 	}
 };
-static_assert(alignof(ULeavePlatformPartyButton_C) == 0x000008, "Wrong alignment on ULeavePlatformPartyButton_C");
-static_assert(sizeof(ULeavePlatformPartyButton_C) == 0x000B88, "Wrong size on ULeavePlatformPartyButton_C");
-static_assert(offsetof(ULeavePlatformPartyButton_C, UberGraphFrame) == 0x000B70, "Member 'ULeavePlatformPartyButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULeavePlatformPartyButton_C, OnHover) == 0x000B78, "Member 'ULeavePlatformPartyButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(ULeavePlatformPartyButton_C, CommonTextBlock_41) == 0x000B80, "Member 'ULeavePlatformPartyButton_C::CommonTextBlock_41' has a wrong offset!");
 
 }
 

@@ -17,6 +17,48 @@
 namespace SDK
 {
 
+// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.PopulateAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSeasonLevelPaidRewardsWidget_C::PopulateAnim()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "PopulateAnim");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.UpdateStyling
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaSeasonLevelPaidRewardsWidget_C::UpdateStyling()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "UpdateStyling");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.OnSetup
+// (Event, Public, BlueprintEvent)
+
+void UAthenaSeasonLevelPaidRewardsWidget_C::OnSetup()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "OnSetup");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.OnLockedStatusChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -84,48 +126,6 @@ void UAthenaSeasonLevelPaidRewardsWidget_C::ExecuteUbergraph_AthenaSeasonLevelPa
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.PopulateAnim
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaSeasonLevelPaidRewardsWidget_C::PopulateAnim()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "PopulateAnim");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.UpdateStyling
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaSeasonLevelPaidRewardsWidget_C::UpdateStyling()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "UpdateStyling");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaSeasonLevelPaidRewardsWidget.AthenaSeasonLevelPaidRewardsWidget_C.OnSetup
-// (Event, Public, BlueprintEvent)
-
-void UAthenaSeasonLevelPaidRewardsWidget_C::OnSetup()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaSeasonLevelPaidRewardsWidget_C", "OnSetup");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

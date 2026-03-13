@@ -73,34 +73,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_SprayDecal_C">();
+		BP_STATIC_CLASS_IMPL("BP_SprayDecal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_SprayDecal_C")
 	}
 	static class ABP_SprayDecal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_SprayDecal_C>();
 	}
 };
-static_assert(alignof(ABP_SprayDecal_C) == 0x000008, "Wrong alignment on ABP_SprayDecal_C");
-static_assert(sizeof(ABP_SprayDecal_C) == 0x000BA8, "Wrong size on ABP_SprayDecal_C");
-static_assert(offsetof(ABP_SprayDecal_C, UberGraphFrame) == 0x000AE8, "Member 'ABP_SprayDecal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, DecalFadeoutTime) == 0x000AF0, "Member 'ABP_SprayDecal_C::DecalFadeoutTime' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, EmissiveDecal) == 0x000AF8, "Member 'ABP_SprayDecal_C::EmissiveDecal' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, StainDecal) == 0x000B00, "Member 'ABP_SprayDecal_C::StainDecal' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, EmissiveDecalMID) == 0x000B08, "Member 'ABP_SprayDecal_C::EmissiveDecalMID' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, DecalSize) == 0x000B10, "Member 'ABP_SprayDecal_C::DecalSize' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, EmissiveMatSource) == 0x000B18, "Member 'ABP_SprayDecal_C::EmissiveMatSource' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, DecalDepth) == 0x000B20, "Member 'ABP_SprayDecal_C::DecalDepth' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, SprayAsset) == 0x000B28, "Member 'ABP_SprayDecal_C::SprayAsset' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, LoadsOutstanding) == 0x000B30, "Member 'ABP_SprayDecal_C::LoadsOutstanding' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, DecalTextureOverrideSoft) == 0x000B38, "Member 'ABP_SprayDecal_C::DecalTextureOverrideSoft' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, DecalTextureOverride) == 0x000B60, "Member 'ABP_SprayDecal_C::DecalTextureOverride' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, BannerPrimaryColor) == 0x000B68, "Member 'ABP_SprayDecal_C::BannerPrimaryColor' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, BannerSecondaryColor) == 0x000B78, "Member 'ABP_SprayDecal_C::BannerSecondaryColor' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, SpawningPlayerController) == 0x000B88, "Member 'ABP_SprayDecal_C::SpawningPlayerController' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, NearbyBuildingActors) == 0x000B90, "Member 'ABP_SprayDecal_C::NearbyBuildingActors' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, SpawnStartTimeDelay) == 0x000BA0, "Member 'ABP_SprayDecal_C::SpawnStartTimeDelay' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, bIsFrontEndPreview) == 0x000BA4, "Member 'ABP_SprayDecal_C::bIsFrontEndPreview' has a wrong offset!");
-static_assert(offsetof(ABP_SprayDecal_C, bDestroyOnTrapPlaced) == 0x000BA5, "Member 'ABP_SprayDecal_C::bDestroyOnTrapPlaced' has a wrong offset!");
 
 }
 

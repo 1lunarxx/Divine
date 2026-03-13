@@ -23,15 +23,17 @@ class UMissionGen_Soaring_50s_C final : public UFortMissionGenerator
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionGen_Soaring_50s_C">();
+		BP_STATIC_CLASS_IMPL("MissionGen_Soaring_50s_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionGen_Soaring_50s_C")
 	}
 	static class UMissionGen_Soaring_50s_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionGen_Soaring_50s_C>();
 	}
 };
-static_assert(alignof(UMissionGen_Soaring_50s_C) == 0x000008, "Wrong alignment on UMissionGen_Soaring_50s_C");
-static_assert(sizeof(UMissionGen_Soaring_50s_C) == 0x0006C0, "Wrong size on UMissionGen_Soaring_50s_C");
 
 }
 

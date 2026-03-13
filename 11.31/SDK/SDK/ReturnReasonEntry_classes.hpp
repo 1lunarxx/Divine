@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ReturnReasonEntry_C">();
+		BP_STATIC_CLASS_IMPL("ReturnReasonEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ReturnReasonEntry_C")
 	}
 	static class UReturnReasonEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UReturnReasonEntry_C>();
 	}
 };
-static_assert(alignof(UReturnReasonEntry_C) == 0x000008, "Wrong alignment on UReturnReasonEntry_C");
-static_assert(sizeof(UReturnReasonEntry_C) == 0x000B98, "Wrong size on UReturnReasonEntry_C");
-static_assert(offsetof(UReturnReasonEntry_C, CommonBorder_ItemBackground) == 0x000B88, "Member 'UReturnReasonEntry_C::CommonBorder_ItemBackground' has a wrong offset!");
-static_assert(offsetof(UReturnReasonEntry_C, Image_0) == 0x000B90, "Member 'UReturnReasonEntry_C::Image_0' has a wrong offset!");
 
 }
 

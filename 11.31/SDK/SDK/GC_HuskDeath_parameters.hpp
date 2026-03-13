@@ -28,14 +28,6 @@ public:
 	class UCameraShake*                           BurstCameraShakeInstance;                          // 0x00E0(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ADecalActor*                            BurstDecalInstance;                                // 0x00E8(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GC_HuskDeath_C_OnBurst) == 0x000008, "Wrong alignment on GC_HuskDeath_C_OnBurst");
-static_assert(sizeof(GC_HuskDeath_C_OnBurst) == 0x0000F0, "Wrong size on GC_HuskDeath_C_OnBurst");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, MyTarget) == 0x000000, "Member 'GC_HuskDeath_C_OnBurst::MyTarget' has a wrong offset!");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, Parameters) == 0x000008, "Member 'GC_HuskDeath_C_OnBurst::Parameters' has a wrong offset!");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, ParticleComponents) == 0x0000C0, "Member 'GC_HuskDeath_C_OnBurst::ParticleComponents' has a wrong offset!");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, AudioComponents) == 0x0000D0, "Member 'GC_HuskDeath_C_OnBurst::AudioComponents' has a wrong offset!");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, BurstCameraShakeInstance) == 0x0000E0, "Member 'GC_HuskDeath_C_OnBurst::BurstCameraShakeInstance' has a wrong offset!");
-static_assert(offsetof(GC_HuskDeath_C_OnBurst, BurstDecalInstance) == 0x0000E8, "Member 'GC_HuskDeath_C_OnBurst::BurstDecalInstance' has a wrong offset!");
 
 }
 

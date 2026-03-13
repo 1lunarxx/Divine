@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccountPinLinkingWindow_C">();
+		BP_STATIC_CLASS_IMPL("AccountPinLinkingWindow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccountPinLinkingWindow_C")
 	}
 	static class UAccountPinLinkingWindow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccountPinLinkingWindow_C>();
 	}
 };
-static_assert(alignof(UAccountPinLinkingWindow_C) == 0x000008, "Wrong alignment on UAccountPinLinkingWindow_C");
-static_assert(sizeof(UAccountPinLinkingWindow_C) == 0x000590, "Wrong size on UAccountPinLinkingWindow_C");
-static_assert(offsetof(UAccountPinLinkingWindow_C, UberGraphFrame) == 0x000578, "Member 'UAccountPinLinkingWindow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAccountPinLinkingWindow_C, Image_83) == 0x000580, "Member 'UAccountPinLinkingWindow_C::Image_83' has a wrong offset!");
-static_assert(offsetof(UAccountPinLinkingWindow_C, Image_255) == 0x000588, "Member 'UAccountPinLinkingWindow_C::Image_255' has a wrong offset!");
 
 }
 

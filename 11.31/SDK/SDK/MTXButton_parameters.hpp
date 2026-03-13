@@ -30,16 +30,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Select_Default;                             // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x000008, "Wrong alignment on MTXButton_C_ExecuteUbergraph_MTXButton");
-static_assert(sizeof(MTXButton_C_ExecuteUbergraph_MTXButton) == 0x000030, "Wrong size on MTXButton_C_ExecuteUbergraph_MTXButton");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, EntryPoint) == 0x000000, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, Temp_bool_Variable) == 0x000004, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, Temp_float_Variable) == 0x000008, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, Temp_float_Variable_1) == 0x00000C, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::Temp_float_Variable_1' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, CallFunc_IsMobileGame_ReturnValue) == 0x000010, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000018, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, CallFunc_PlayAnimationForward_ReturnValue) == 0x000020, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MTXButton_C_ExecuteUbergraph_MTXButton, K2Node_Select_Default) == 0x000028, "Member 'MTXButton_C_ExecuteUbergraph_MTXButton::K2Node_Select_Default' has a wrong offset!");
 
 }
 

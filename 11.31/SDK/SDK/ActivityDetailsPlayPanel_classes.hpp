@@ -29,19 +29,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityDetailsPlayPanel_C">();
+		BP_STATIC_CLASS_IMPL("ActivityDetailsPlayPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityDetailsPlayPanel_C")
 	}
 	static class UActivityDetailsPlayPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityDetailsPlayPanel_C>();
 	}
 };
-static_assert(alignof(UActivityDetailsPlayPanel_C) == 0x000008, "Wrong alignment on UActivityDetailsPlayPanel_C");
-static_assert(sizeof(UActivityDetailsPlayPanel_C) == 0x000478, "Wrong size on UActivityDetailsPlayPanel_C");
-static_assert(offsetof(UActivityDetailsPlayPanel_C, Image) == 0x000458, "Member 'UActivityDetailsPlayPanel_C::Image' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsPlayPanel_C, Image_61) == 0x000460, "Member 'UActivityDetailsPlayPanel_C::Image_61' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsPlayPanel_C, SoloButton) == 0x000468, "Member 'UActivityDetailsPlayPanel_C::SoloButton' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsPlayPanel_C, SoloButton_1) == 0x000470, "Member 'UActivityDetailsPlayPanel_C::SoloButton_1' has a wrong offset!");
 
 }
 

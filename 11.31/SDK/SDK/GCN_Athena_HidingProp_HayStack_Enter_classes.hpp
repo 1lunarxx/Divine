@@ -23,15 +23,17 @@ class UGCN_Athena_HidingProp_HayStack_Enter_C final : public UFortGameplayCueNot
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_HidingProp_HayStack_Enter_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_HidingProp_HayStack_Enter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_HidingProp_HayStack_Enter_C")
 	}
 	static class UGCN_Athena_HidingProp_HayStack_Enter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_Athena_HidingProp_HayStack_Enter_C>();
 	}
 };
-static_assert(alignof(UGCN_Athena_HidingProp_HayStack_Enter_C) == 0x000008, "Wrong alignment on UGCN_Athena_HidingProp_HayStack_Enter_C");
-static_assert(sizeof(UGCN_Athena_HidingProp_HayStack_Enter_C) == 0x0001B0, "Wrong size on UGCN_Athena_HidingProp_HayStack_Enter_C");
 
 }
 

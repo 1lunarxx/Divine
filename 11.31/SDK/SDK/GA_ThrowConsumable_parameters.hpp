@@ -49,7 +49,7 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_4;            // 0x00D0(0x0010)(ZeroConstructor, NoDestructor)
 	bool                                          Temp_bool_Variable;                                // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_E1[0x3];                                       // 0x00E1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_5; // 0x00E4(0x0010)(ZeroConstructor, NoDestructor)
 	uint8                                         Pad_F4[0x4];                                       // 0x00F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAbilityTask_PlayMontageWaitTarget* CallFunc_PlayMontageWaitTarget_ReturnValue;        // 0x00F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0100(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -73,12 +73,12 @@ public:
 	class AFortProjectileBase*                    CallFunc_FinishSpawningActor_ReturnValue;          // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData_1;                   // 0x0190(0x0028)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag_1;               // 0x01B8(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x01C0(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6; // 0x01C0(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortProjectileTrajectory*              CallFunc_SpawnTrajectoryIndicator_ReturnValue;     // 0x01D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortGameplayEffectContainerSpec       CallFunc_MakeGameplayEffectContainerSpec_ReturnValue; // 0x01D8(0x00B8)()
 	struct FFortGameplayEffectContainerSpec       CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1; // 0x0290(0x00B8)()
 	struct FFortGameplayEffectContainerSpec       CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2; // 0x0348(0x00B8)()
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_7;            // 0x0400(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_7; // 0x0400(0x0010)(ZeroConstructor, NoDestructor)
 	class AFortPlayerController*                  CallFunc_GetFortPlayerControllerFromActor_ReturnValue; // 0x0410(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortQuestManager*                      CallFunc_GetQuestManager_ReturnValue;              // 0x0418(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData_2;                   // 0x0420(0x0028)(ConstParm)
@@ -92,64 +92,6 @@ public:
 	class AFortProjectileBase*                    CallFunc_SpawnThrownProjectile_SpawnedProjectile;  // 0x0460(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_3;                    // 0x0468(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable) == 0x000010, "Wrong alignment on GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable");
-static_assert(sizeof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable) == 0x000470, "Wrong size on GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, EntryPoint) == 0x000000, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse) == 0x000004, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_TargetData) == 0x000008, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_ApplicationTag) == 0x000030, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, Temp_struct_Variable) == 0x000038, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, Temp_struct_Variable_1) == 0x000040, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate) == 0x000068, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_WaitDelay_ReturnValue) == 0x000078, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_WaitDelay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetScaledCapsuleSize_OutRadius) == 0x000080, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetScaledCapsuleSize_OutRadius' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetScaledCapsuleSize_OutHalfHeight) == 0x000084, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetScaledCapsuleSize_OutHalfHeight' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetGravityZ_ReturnValue) == 0x000088, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetGravityZ_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_FMax_ReturnValue) == 0x00008C, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_FMax_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsCurveTableRowValid_ReturnValue) == 0x000090, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsCurveTableRowValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetGravityZ_ReturnValue_1) == 0x000094, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetGravityZ_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsValid_ReturnValue) == 0x000098, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_Divide_FloatFloat_ReturnValue) == 0x00009C, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000A0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_2) == 0x0000B0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000C0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_4) == 0x0000D0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, Temp_bool_Variable) == 0x0000E0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_5) == 0x0000E4, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_PlayMontageWaitTarget_ReturnValue) == 0x0000F8, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_PlayMontageWaitTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsValid_ReturnValue_1) == 0x000100, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_K2_CommitAbility_ReturnValue) == 0x000101, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsServer_ReturnValue) == 0x000102, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_Event_bWasCancelled) == 0x000103, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetSpawnLocationAndRotation_Location) == 0x000104, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetSpawnLocationAndRotation_Location' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetSpawnLocationAndRotation_Rotation) == 0x000110, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetSpawnLocationAndRotation_Rotation' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue) == 0x000120, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsValid_ReturnValue_2) == 0x000128, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetOwningPlayer_Player_Pawn) == 0x000130, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetTransform_ReturnValue) == 0x000140, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000170, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetValueAtLevel_ReturnValue) == 0x000178, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x00017C, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_Select_Default) == 0x000180, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_FinishSpawningActor_ReturnValue) == 0x000188, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_TargetData_1) == 0x000190, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_TargetData_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_ApplicationTag_1) == 0x0001B8, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_ApplicationTag_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_6) == 0x0001C0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_SpawnTrajectoryIndicator_ReturnValue) == 0x0001D0, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_SpawnTrajectoryIndicator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_MakeGameplayEffectContainerSpec_ReturnValue) == 0x0001D8, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_MakeGameplayEffectContainerSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1) == 0x000290, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2) == 0x000348, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_MakeGameplayEffectContainerSpec_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CreateDelegate_OutputDelegate_7) == 0x000400, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CreateDelegate_OutputDelegate_7' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetFortPlayerControllerFromActor_ReturnValue) == 0x000410, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetFortPlayerControllerFromActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetQuestManager_ReturnValue) == 0x000418, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetQuestManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_TargetData_2) == 0x000420, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_TargetData_2' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, K2Node_CustomEvent_ApplicationTag_2) == 0x000448, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::K2Node_CustomEvent_ApplicationTag_2' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_SendComplexCustomStatEvent_QuestActive) == 0x000450, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_SendComplexCustomStatEvent_QuestActive' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_SendComplexCustomStatEvent_QuestCompleted) == 0x000451, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_SendComplexCustomStatEvent_QuestCompleted' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse_1) == 0x000454, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetProjectileInitialSpeedToUse_ProjectileSpeedToUse_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_GetProjectileInitialGravityScaleToUse_GravityScaleToUse) == 0x000458, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_GetProjectileInitialGravityScaleToUse_GravityScaleToUse' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_SpawnThrownProjectile_SpawnedProjectile) == 0x000460, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_SpawnThrownProjectile_SpawnedProjectile' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable, CallFunc_IsValid_ReturnValue_3) == 0x000468, "Member 'GA_ThrowConsumable_C_ExecuteUbergraph_GA_ThrowConsumable::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -158,9 +100,6 @@ struct GA_ThrowConsumable_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_ThrowConsumable_C_K2_OnEndAbility");
-static_assert(sizeof(GA_ThrowConsumable_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_ThrowConsumable_C_K2_OnEndAbility");
-static_assert(offsetof(GA_ThrowConsumable_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_ThrowConsumable_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.Triggered_01C5B37D48E3DC6F82DDC58640CE2A27
 // 0x0030 (0x0030 - 0x0000)
@@ -170,10 +109,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(sizeof(GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000030, "Wrong size on GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(offsetof(GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27, TargetData) == 0x000000, "Member 'GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27, ApplicationTag) == 0x000028, "Member 'GA_ThrowConsumable_C_Triggered_01C5B37D48E3DC6F82DDC58640CE2A27::ApplicationTag' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27
 // 0x0030 (0x0030 - 0x0000)
@@ -183,10 +118,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(sizeof(GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000030, "Wrong size on GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(offsetof(GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27, TargetData) == 0x000000, "Member 'GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27, ApplicationTag) == 0x000028, "Member 'GA_ThrowConsumable_C_Cancelled_01C5B37D48E3DC6F82DDC58640CE2A27::ApplicationTag' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.Completed_01C5B37D48E3DC6F82DDC58640CE2A27
 // 0x0030 (0x0030 - 0x0000)
@@ -196,10 +127,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(sizeof(GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27) == 0x000030, "Wrong size on GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27");
-static_assert(offsetof(GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27, TargetData) == 0x000000, "Member 'GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27, ApplicationTag) == 0x000028, "Member 'GA_ThrowConsumable_C_Completed_01C5B37D48E3DC6F82DDC58640CE2A27::ApplicationTag' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.PrethrowSetup
 // 0x0058 (0x0058 - 0x0000)
@@ -211,12 +138,6 @@ public:
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_PrethrowSetup) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_PrethrowSetup");
-static_assert(sizeof(GA_ThrowConsumable_C_PrethrowSetup) == 0x000058, "Wrong size on GA_ThrowConsumable_C_PrethrowSetup");
-static_assert(offsetof(GA_ThrowConsumable_C_PrethrowSetup, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000000, "Member 'GA_ThrowConsumable_C_PrethrowSetup::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_PrethrowSetup, CallFunc_GetActorInfo_ReturnValue) == 0x000008, "Member 'GA_ThrowConsumable_C_PrethrowSetup::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_PrethrowSetup, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000048, "Member 'GA_ThrowConsumable_C_PrethrowSetup::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_PrethrowSetup, K2Node_DynamicCast_bSuccess) == 0x000050, "Member 'GA_ThrowConsumable_C_PrethrowSetup::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.SpawnThrownProjectile
 // 0x01B0 (0x01B0 - 0x0000)
@@ -234,18 +155,6 @@ public:
 	class AFortPlayerPawn*                        CallFunc_GetOwningPlayer_Player_Pawn;              // 0x01A0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortProjectileBase*                    CallFunc_SpawnProjectile_ReturnValue;              // 0x01A8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_SpawnThrownProjectile) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_SpawnThrownProjectile");
-static_assert(sizeof(GA_ThrowConsumable_C_SpawnThrownProjectile) == 0x0001B0, "Wrong size on GA_ThrowConsumable_C_SpawnThrownProjectile");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ProjectileClass_0) == 0x000000, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ProjectileClass_0' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ProjectileSpawnLocation) == 0x000008, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ProjectileSpawnLocation' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ProjectileSpawnDirection) == 0x000014, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ProjectileSpawnDirection' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, HitEffectContainerSpec_0) == 0x000020, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::HitEffectContainerSpec_0' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ExplosionEffectContainerSpec_0) == 0x0000D8, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ExplosionEffectContainerSpec_0' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ProjectileInitialSpeed) == 0x000190, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ProjectileInitialSpeed' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, ProjectileGravityScale_0) == 0x000194, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::ProjectileGravityScale_0' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, SpawnedProjectile_0) == 0x000198, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::SpawnedProjectile_0' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, CallFunc_GetOwningPlayer_Player_Pawn) == 0x0001A0, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnThrownProjectile, CallFunc_SpawnProjectile_ReturnValue) == 0x0001A8, "Member 'GA_ThrowConsumable_C_SpawnThrownProjectile::CallFunc_SpawnProjectile_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.OnProjectileSpawned
 // 0x0008 (0x0008 - 0x0000)
@@ -254,9 +163,6 @@ struct GA_ThrowConsumable_C_OnProjectileSpawned final
 public:
 	class AFortProjectileBase*                    SpawnedProjectile_0;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_OnProjectileSpawned) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_OnProjectileSpawned");
-static_assert(sizeof(GA_ThrowConsumable_C_OnProjectileSpawned) == 0x000008, "Wrong size on GA_ThrowConsumable_C_OnProjectileSpawned");
-static_assert(offsetof(GA_ThrowConsumable_C_OnProjectileSpawned, SpawnedProjectile_0) == 0x000000, "Member 'GA_ThrowConsumable_C_OnProjectileSpawned::SpawnedProjectile_0' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.SetupDummyProjectile
 // 0x0070 (0x0070 - 0x0000)
@@ -273,15 +179,6 @@ public:
 	class ABP_ProjectileTrajectory_C*             K2Node_DynamicCast_AsBP_Projectile_Trajectory;     // 0x0058(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_SetupDummyProjectile) == 0x000010, "Wrong alignment on GA_ThrowConsumable_C_SetupDummyProjectile");
-static_assert(sizeof(GA_ThrowConsumable_C_SetupDummyProjectile) == 0x000070, "Wrong size on GA_ThrowConsumable_C_SetupDummyProjectile");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, CallFunc_GetOwningPlayer_Player_Pawn) == 0x000000, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, CallFunc_GetTransform_ReturnValue) == 0x000010, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::CallFunc_GetTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, CallFunc_IsValidClass_ReturnValue) == 0x000040, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000048, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, CallFunc_FinishSpawningActor_ReturnValue) == 0x000050, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, K2Node_DynamicCast_AsBP_Projectile_Trajectory) == 0x000058, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::K2Node_DynamicCast_AsBP_Projectile_Trajectory' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SetupDummyProjectile, K2Node_DynamicCast_bSuccess) == 0x000060, "Member 'GA_ThrowConsumable_C_SetupDummyProjectile::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.UpdateTrajectorySpline
 // 0x00B0 (0x00B0 - 0x0000)
@@ -293,12 +190,6 @@ public:
 	struct FHitResult                             CallFunc_GetProjectileTrajectoryPoints_OutHitResult; // 0x0020(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_UpdateTrajectorySpline) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_UpdateTrajectorySpline");
-static_assert(sizeof(GA_ThrowConsumable_C_UpdateTrajectorySpline) == 0x0000B0, "Wrong size on GA_ThrowConsumable_C_UpdateTrajectorySpline");
-static_assert(offsetof(GA_ThrowConsumable_C_UpdateTrajectorySpline, CallFunc_GetProjectileTrajectoryPoints_OutSplinePoints) == 0x000000, "Member 'GA_ThrowConsumable_C_UpdateTrajectorySpline::CallFunc_GetProjectileTrajectoryPoints_OutSplinePoints' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_UpdateTrajectorySpline, CallFunc_GetProjectileTrajectoryPoints_OutSplineTangents) == 0x000010, "Member 'GA_ThrowConsumable_C_UpdateTrajectorySpline::CallFunc_GetProjectileTrajectoryPoints_OutSplineTangents' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_UpdateTrajectorySpline, CallFunc_GetProjectileTrajectoryPoints_OutHitResult) == 0x000020, "Member 'GA_ThrowConsumable_C_UpdateTrajectorySpline::CallFunc_GetProjectileTrajectoryPoints_OutHitResult' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_UpdateTrajectorySpline, CallFunc_IsValid_ReturnValue) == 0x0000A8, "Member 'GA_ThrowConsumable_C_UpdateTrajectorySpline::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.PostThrowCleanup
 // 0x0001 (0x0001 - 0x0000)
@@ -307,9 +198,6 @@ struct GA_ThrowConsumable_C_PostThrowCleanup final
 public:
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_PostThrowCleanup) == 0x000001, "Wrong alignment on GA_ThrowConsumable_C_PostThrowCleanup");
-static_assert(sizeof(GA_ThrowConsumable_C_PostThrowCleanup) == 0x000001, "Wrong size on GA_ThrowConsumable_C_PostThrowCleanup");
-static_assert(offsetof(GA_ThrowConsumable_C_PostThrowCleanup, CallFunc_Not_PreBool_ReturnValue) == 0x000000, "Member 'GA_ThrowConsumable_C_PostThrowCleanup::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetProjectileInitialSpeedToUse
 // 0x0028 (0x0028 - 0x0000)
@@ -326,15 +214,6 @@ public:
 	bool                                          CallFunc_EvaluateCurveTableRow_ReturnValue;        // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsCurveTableRowValid_ReturnValue;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse");
-static_assert(sizeof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse) == 0x000028, "Wrong size on GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, ProjectileSpeedToUse) == 0x000000, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::ProjectileSpeedToUse' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, GetProjectileInitialSpeedToUseContext) == 0x000008, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::GetProjectileInitialSpeedToUseContext' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, CallFunc_GetValueAtLevel_ReturnValue) == 0x000018, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, CallFunc_IsValidClass_ReturnValue) == 0x00001C, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, CallFunc_EvaluateCurveTableRow_OutXY) == 0x000020, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, CallFunc_EvaluateCurveTableRow_ReturnValue) == 0x000024, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::CallFunc_EvaluateCurveTableRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse, CallFunc_IsCurveTableRowValid_ReturnValue) == 0x000025, "Member 'GA_ThrowConsumable_C_GetProjectileInitialSpeedToUse::CallFunc_IsCurveTableRowValid_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetProjectileInitialGravityScaleToUse
 // 0x0028 (0x0028 - 0x0000)
@@ -351,15 +230,6 @@ public:
 	bool                                          CallFunc_EvaluateCurveTableRow_ReturnValue;        // 0x0024(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsCurveTableRowValid_ReturnValue;         // 0x0025(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse");
-static_assert(sizeof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse) == 0x000028, "Wrong size on GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, GravityScaleToUse) == 0x000000, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::GravityScaleToUse' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, GetProjectileInitialGravityScaleContext) == 0x000008, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::GetProjectileInitialGravityScaleContext' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, CallFunc_GetValueAtLevel_ReturnValue) == 0x000018, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, CallFunc_IsValidClass_ReturnValue) == 0x00001C, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::CallFunc_IsValidClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, CallFunc_EvaluateCurveTableRow_OutXY) == 0x000020, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::CallFunc_EvaluateCurveTableRow_OutXY' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, CallFunc_EvaluateCurveTableRow_ReturnValue) == 0x000024, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::CallFunc_EvaluateCurveTableRow_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse, CallFunc_IsCurveTableRowValid_ReturnValue) == 0x000025, "Member 'GA_ThrowConsumable_C_GetProjectileInitialGravityScaleToUse::CallFunc_IsCurveTableRowValid_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.SpawnTrajectoryIndicator
 // 0x0028 (0x0028 - 0x0000)
@@ -376,15 +246,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_SpawnTrajectoryIndicator");
-static_assert(sizeof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator) == 0x000028, "Wrong size on GA_ThrowConsumable_C_SpawnTrajectoryIndicator");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, bSpawnOnEquip) == 0x000000, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::bSpawnOnEquip' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, ReturnValue) == 0x000008, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, CallFunc_GetOwningPlayer_Player_Pawn) == 0x000018, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, CallFunc_IsLocallyControlled_ReturnValue) == 0x000020, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, CallFunc_BooleanOR_ReturnValue) == 0x000021, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_SpawnTrajectoryIndicator, CallFunc_BooleanAND_ReturnValue) == 0x000022, "Member 'GA_ThrowConsumable_C_SpawnTrajectoryIndicator::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetSpawnLocationAndRotation
 // 0x00A8 (0x00A8 - 0x0000)
@@ -415,29 +276,6 @@ public:
 	struct FVector                                CallFunc_RotateAngleAxis_ReturnValue;              // 0x0090(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x009C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetSpawnLocationAndRotation");
-static_assert(sizeof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation) == 0x0000A8, "Wrong size on GA_ThrowConsumable_C_GetSpawnLocationAndRotation");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, Location) == 0x000000, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::Location' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, Rotation) == 0x00000C, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::Rotation' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_GetOwningPlayer_Player_Pawn) == 0x000018, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_GetDefaultTargetingRotation_ReturnValue) == 0x000020, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_GetDefaultTargetingRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Roll) == 0x00002C, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Pitch) == 0x000030, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Yaw) == 0x000034, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, Temp_bool_Variable) == 0x000038, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_Add_FloatFloat_ReturnValue) == 0x00003C, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_NormalizeAxis_ReturnValue) == 0x000040, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_NormalizeAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_GetOwningPlayer_Player_Pawn_1) == 0x000048, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_GetOwningPlayer_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_FMin_ReturnValue) == 0x000050, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_FMin_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_K2_GetActorRotation_ReturnValue) == 0x000054, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_MakeRotator_ReturnValue) == 0x000060, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Roll_1) == 0x00006C, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Roll_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Pitch_1) == 0x000070, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Pitch_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_BreakRotator_Yaw_1) == 0x000074, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_BreakRotator_Yaw_1' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000078, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, K2Node_Select_Default) == 0x000084, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_RotateAngleAxis_ReturnValue) == 0x000090, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetSpawnLocationAndRotation, CallFunc_Add_VectorVector_ReturnValue) == 0x00009C, "Member 'GA_ThrowConsumable_C_GetSpawnLocationAndRotation::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetOwningPlayer
 // 0x0060 (0x0060 - 0x0000)
@@ -451,13 +289,6 @@ public:
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetOwningPlayer) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetOwningPlayer");
-static_assert(sizeof(GA_ThrowConsumable_C_GetOwningPlayer) == 0x000060, "Wrong size on GA_ThrowConsumable_C_GetOwningPlayer");
-static_assert(offsetof(GA_ThrowConsumable_C_GetOwningPlayer, Player_Pawn) == 0x000000, "Member 'GA_ThrowConsumable_C_GetOwningPlayer::Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetOwningPlayer, CallFunc_IsValid_ReturnValue) == 0x000008, "Member 'GA_ThrowConsumable_C_GetOwningPlayer::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetOwningPlayer, CallFunc_GetActorInfo_ReturnValue) == 0x000010, "Member 'GA_ThrowConsumable_C_GetOwningPlayer::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetOwningPlayer, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000050, "Member 'GA_ThrowConsumable_C_GetOwningPlayer::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetOwningPlayer, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'GA_ThrowConsumable_C_GetOwningPlayer::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetProjectileTrajectoryPoints
 // 0x0258 (0x0258 - 0x0000)
@@ -485,26 +316,6 @@ public:
 	struct FVector                                CallFunc_Conv_RotatorToVector_ReturnValue;         // 0x0240(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x024C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetProjectileTrajectoryPoints");
-static_assert(sizeof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints) == 0x000258, "Wrong size on GA_ThrowConsumable_C_GetProjectileTrajectoryPoints");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, OutSplinePoints) == 0x000000, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::OutSplinePoints' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, OutSplineTangents) == 0x000010, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::OutSplineTangents' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, OutHitResult) == 0x000020, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::OutHitResult' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, LocalVelocity) == 0x0000A8, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::LocalVelocity' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, LocalLocation) == 0x0000B4, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::LocalLocation' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, LocalPawn) == 0x0000C0, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::LocalPawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_NotEqual_NameName_ReturnValue) == 0x0000C8, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_NotEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHit_OutHitResult) == 0x0000CC, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHit_OutHitResult' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplinePoints) == 0x000158, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplinePoints' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplineTangents) == 0x000168, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHit_OutSplineTangents' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_GetOwningPlayer_Player_Pawn) == 0x000178, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_GetOwningPlayer_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutHitResult) == 0x000180, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutHitResult' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplinePoints) == 0x000208, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplinePoints' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplineTangents) == 0x000218, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_CalculateProjectileTrajectorySplineWithHitProfile_OutSplineTangents' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_GetSpawnLocationAndRotation_Location) == 0x000228, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_GetSpawnLocationAndRotation_Location' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_GetSpawnLocationAndRotation_Rotation) == 0x000234, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_GetSpawnLocationAndRotation_Rotation' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_Conv_RotatorToVector_ReturnValue) == 0x000240, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_Conv_RotatorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryPoints, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00024C, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryPoints::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.GetProjectileTrajectoryActor
 // 0x0008 (0x0008 - 0x0000)
@@ -513,9 +324,6 @@ struct GA_ThrowConsumable_C_GetProjectileTrajectoryActor final
 public:
 	TSubclassOf<class AFortProjectileTrajectory>  ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_ThrowConsumable_C_GetProjectileTrajectoryActor) == 0x000008, "Wrong alignment on GA_ThrowConsumable_C_GetProjectileTrajectoryActor");
-static_assert(sizeof(GA_ThrowConsumable_C_GetProjectileTrajectoryActor) == 0x000008, "Wrong size on GA_ThrowConsumable_C_GetProjectileTrajectoryActor");
-static_assert(offsetof(GA_ThrowConsumable_C_GetProjectileTrajectoryActor, ReturnValue) == 0x000000, "Member 'GA_ThrowConsumable_C_GetProjectileTrajectoryActor::ReturnValue' has a wrong offset!");
 
 // Function GA_ThrowConsumable.GA_ThrowConsumable_C.ShouldOnlyShowTrajectoryOnUse
 // 0x0001 (0x0001 - 0x0000)
@@ -524,9 +332,6 @@ struct GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse final
 public:
 	bool                                          ReturnValue;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse) == 0x000001, "Wrong alignment on GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse");
-static_assert(sizeof(GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse) == 0x000001, "Wrong size on GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse");
-static_assert(offsetof(GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse, ReturnValue) == 0x000000, "Member 'GA_ThrowConsumable_C_ShouldOnlyShowTrajectoryOnUse::ReturnValue' has a wrong offset!");
 
 }
 

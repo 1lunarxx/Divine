@@ -101,59 +101,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_VendingMachine_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_VendingMachine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_VendingMachine_C")
 	}
 	static class AB_Athena_VendingMachine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_VendingMachine_C>();
 	}
 };
-static_assert(alignof(AB_Athena_VendingMachine_C) == 0x000008, "Wrong alignment on AB_Athena_VendingMachine_C");
-static_assert(sizeof(AB_Athena_VendingMachine_C) == 0x000AA0, "Wrong size on AB_Athena_VendingMachine_C");
-static_assert(offsetof(AB_Athena_VendingMachine_C, UberGraphFrame) == 0x0008E8, "Member 'AB_Athena_VendingMachine_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, P_Destroyed_Effect_Vending) == 0x0008F0, "Member 'AB_Athena_VendingMachine_C::P_Destroyed_Effect_Vending' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SpotLight) == 0x0008F8, "Member 'AB_Athena_VendingMachine_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, ForceFeedbackFail) == 0x000900, "Member 'AB_Athena_VendingMachine_C::ForceFeedbackFail' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, ForceFeedbackSuccess) == 0x000908, "Member 'AB_Athena_VendingMachine_C::ForceFeedbackSuccess' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendingMachine_Ambient) == 0x000910, "Member 'AB_Athena_VendingMachine_C::VendingMachine_Ambient' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, P_Loot_Effect_Vending) == 0x000918, "Member 'AB_Athena_VendingMachine_C::P_Loot_Effect_Vending' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SM_VendingMachineQuest) == 0x000920, "Member 'AB_Athena_VendingMachine_C::SM_VendingMachineQuest' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, DefaultSceneRoot) == 0x000928, "Member 'AB_Athena_VendingMachine_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendWobble_Flash_70FB301E43A001CE1340FE8051EE86B5) == 0x000930, "Member 'AB_Athena_VendingMachine_C::VendWobble_Flash_70FB301E43A001CE1340FE8051EE86B5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendWobble_WobbleTime_70FB301E43A001CE1340FE8051EE86B5) == 0x000934, "Member 'AB_Athena_VendingMachine_C::VendWobble_WobbleTime_70FB301E43A001CE1340FE8051EE86B5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendWobble__Direction_70FB301E43A001CE1340FE8051EE86B5) == 0x000938, "Member 'AB_Athena_VendingMachine_C::VendWobble__Direction_70FB301E43A001CE1340FE8051EE86B5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendWobble) == 0x000940, "Member 'AB_Athena_VendingMachine_C::VendWobble' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SwitchHitch_Slide_A93D31CA462BFD95FDDD9E8A0BE99DA5) == 0x000948, "Member 'AB_Athena_VendingMachine_C::SwitchHitch_Slide_A93D31CA462BFD95FDDD9E8A0BE99DA5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SwitchHitch_Flash_A93D31CA462BFD95FDDD9E8A0BE99DA5) == 0x00094C, "Member 'AB_Athena_VendingMachine_C::SwitchHitch_Flash_A93D31CA462BFD95FDDD9E8A0BE99DA5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SwitchHitch_Wobble_A93D31CA462BFD95FDDD9E8A0BE99DA5) == 0x000950, "Member 'AB_Athena_VendingMachine_C::SwitchHitch_Wobble_A93D31CA462BFD95FDDD9E8A0BE99DA5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SwitchHitch__Direction_A93D31CA462BFD95FDDD9E8A0BE99DA5) == 0x000954, "Member 'AB_Athena_VendingMachine_C::SwitchHitch__Direction_A93D31CA462BFD95FDDD9E8A0BE99DA5' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SwitchHitch) == 0x000958, "Member 'AB_Athena_VendingMachine_C::SwitchHitch' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, MonitorMat) == 0x000960, "Member 'AB_Athena_VendingMachine_C::MonitorMat' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, MetalMat) == 0x000968, "Member 'AB_Athena_VendingMachine_C::MetalMat' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, CurrentCaptureCount) == 0x000970, "Member 'AB_Athena_VendingMachine_C::CurrentCaptureCount' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Vend_String) == 0x000978, "Member 'AB_Athena_VendingMachine_C::Vend_String' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SearchSound) == 0x000990, "Member 'AB_Athena_VendingMachine_C::SearchSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendFailedSound) == 0x000998, "Member 'AB_Athena_VendingMachine_C::VendFailedSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, CycleSound) == 0x0009A0, "Member 'AB_Athena_VendingMachine_C::CycleSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, CostAmount) == 0x0009A8, "Member 'AB_Athena_VendingMachine_C::CostAmount' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, MaterialType) == 0x0009B0, "Member 'AB_Athena_VendingMachine_C::MaterialType' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Vend_Succeeded_Sound) == 0x0009B8, "Member 'AB_Athena_VendingMachine_C::Vend_Succeeded_Sound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, VendSuccess) == 0x0009C0, "Member 'AB_Athena_VendingMachine_C::VendSuccess' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, WasHit) == 0x0009C1, "Member 'AB_Athena_VendingMachine_C::WasHit' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, CycleSoundVolume) == 0x0009C4, "Member 'AB_Athena_VendingMachine_C::CycleSoundVolume' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, TossOnGroundSetting) == 0x0009C8, "Member 'AB_Athena_VendingMachine_C::TossOnGroundSetting' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Wood_String) == 0x0009D8, "Member 'AB_Athena_VendingMachine_C::Wood_String' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Stone_String) == 0x0009F0, "Member 'AB_Athena_VendingMachine_C::Stone_String' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Metal_String) == 0x000A08, "Member 'AB_Athena_VendingMachine_C::Metal_String' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, OverrideVendingMachineRarity) == 0x000A20, "Member 'AB_Athena_VendingMachine_C::OverrideVendingMachineRarity' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Ambient_SoundCue) == 0x000A28, "Member 'AB_Athena_VendingMachine_C::Ambient_SoundCue' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, Free_String) == 0x000A30, "Member 'AB_Athena_VendingMachine_C::Free_String' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, DestroyedSound) == 0x000A48, "Member 'AB_Athena_VendingMachine_C::DestroyedSound' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, MaxItemsToSpawn) == 0x000A50, "Member 'AB_Athena_VendingMachine_C::MaxItemsToSpawn' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, ItemsAreFree) == 0x000A70, "Member 'AB_Athena_VendingMachine_C::ItemsAreFree' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, ItemsAreFreeCached) == 0x000A90, "Member 'AB_Athena_VendingMachine_C::ItemsAreFreeCached' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, SpawnedItemCount) == 0x000A94, "Member 'AB_Athena_VendingMachine_C::SpawnedItemCount' has a wrong offset!");
-static_assert(offsetof(AB_Athena_VendingMachine_C, MaxItemsToSpawnCached) == 0x000A98, "Member 'AB_Athena_VendingMachine_C::MaxItemsToSpawnCached' has a wrong offset!");
 
 }
 

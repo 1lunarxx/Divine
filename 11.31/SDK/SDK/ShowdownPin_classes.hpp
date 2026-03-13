@@ -62,38 +62,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownPin_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownPin_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownPin_C")
 	}
 	static class UShowdownPin_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownPin_C>();
 	}
 };
-static_assert(alignof(UShowdownPin_C) == 0x000008, "Wrong alignment on UShowdownPin_C");
-static_assert(sizeof(UShowdownPin_C) == 0x0006A8, "Wrong size on UShowdownPin_C");
-static_assert(offsetof(UShowdownPin_C, UberGraphFrame) == 0x000610, "Member 'UShowdownPin_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, Hover) == 0x000618, "Member 'UShowdownPin_C::Hover' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, Focus) == 0x000620, "Member 'UShowdownPin_C::Focus' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, Reveal) == 0x000628, "Member 'UShowdownPin_C::Reveal' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, CommonTextBlock_NoPinPts) == 0x000630, "Member 'UShowdownPin_C::CommonTextBlock_NoPinPts' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, CommonTextBlock_PinPts) == 0x000638, "Member 'UShowdownPin_C::CommonTextBlock_PinPts' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, Image_PinShadow) == 0x000640, "Member 'UShowdownPin_C::Image_PinShadow' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, NoPinContent) == 0x000648, "Member 'UShowdownPin_C::NoPinContent' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, NoPinIcon) == 0x000650, "Member 'UShowdownPin_C::NoPinIcon' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, NoPinScoreText) == 0x000658, "Member 'UShowdownPin_C::NoPinScoreText' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, NoPinShadow) == 0x000660, "Member 'UShowdownPin_C::NoPinShadow' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, PinContent) == 0x000668, "Member 'UShowdownPin_C::PinContent' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, PinIcon) == 0x000670, "Member 'UShowdownPin_C::PinIcon' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, PinInfoSwitcher) == 0x000678, "Member 'UShowdownPin_C::PinInfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, PinScoreText) == 0x000680, "Member 'UShowdownPin_C::PinScoreText' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, VerticalBox_PointValuesProgress) == 0x000688, "Member 'UShowdownPin_C::VerticalBox_PointValuesProgress' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, VerticalBoxPointValues) == 0x000690, "Member 'UShowdownPin_C::VerticalBoxPointValues' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, bRepresentsTournamentBestPin) == 0x000698, "Member 'UShowdownPin_C::bRepresentsTournamentBestPin' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, DEVShowPin) == 0x000699, "Member 'UShowdownPin_C::DEVShowPin' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, HidePoints) == 0x00069A, "Member 'UShowdownPin_C::HidePoints' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, DEVPinScore) == 0x00069C, "Member 'UShowdownPin_C::DEVPinScore' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, colorSilhouette) == 0x0006A0, "Member 'UShowdownPin_C::colorSilhouette' has a wrong offset!");
-static_assert(offsetof(UShowdownPin_C, hideBackplate) == 0x0006A1, "Member 'UShowdownPin_C::hideBackplate' has a wrong offset!");
 
 }
 

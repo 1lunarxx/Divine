@@ -17,6 +17,55 @@
 namespace SDK
 {
 
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateSeriesBlock
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidgetSmall_C::UpdateSeriesBlock()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "UpdateSeriesBlock");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.Bundle Short Text
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class FText*                            Text                                                   (Parm, OutParm)
+
+void UAthenaDirectAcquisitionOfferWidgetSmall_C::Bundle_Short_Text(class FText* Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "Bundle Short Text");
+
+	Params::AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (Text != nullptr)
+		*Text = std::move(Parms.Text);
+}
+
+
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.TryToResetCarouselTimer
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaDirectAcquisitionOfferWidgetSmall_C::TryToResetCarouselTimer()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "TryToResetCarouselTimer");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.HasGroupedOffers
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -561,55 +610,6 @@ void UAthenaDirectAcquisitionOfferWidgetSmall_C::ExecuteUbergraph_AthenaDirectAc
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateSeriesBlock
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidgetSmall_C::UpdateSeriesBlock()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "UpdateSeriesBlock");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.Bundle Short Text
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class FText*                            Text                                                   (Parm, OutParm)
-
-void UAthenaDirectAcquisitionOfferWidgetSmall_C::Bundle_Short_Text(class FText* Text)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "Bundle Short Text");
-
-	Params::AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Text != nullptr)
-		*Text = std::move(Parms.Text);
-}
-
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.TryToResetCarouselTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaDirectAcquisitionOfferWidgetSmall_C::TryToResetCarouselTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaDirectAcquisitionOfferWidgetSmall_C", "TryToResetCarouselTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

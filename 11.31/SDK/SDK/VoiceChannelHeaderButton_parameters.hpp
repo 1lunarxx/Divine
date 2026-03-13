@@ -36,22 +36,6 @@ public:
 	bool                                          CallFunc_IsActiveChannel_ReturnValue_1;            // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton) == 0x000008, "Wrong alignment on VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton");
-static_assert(sizeof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton) == 0x000038, "Wrong size on VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, EntryPoint) == 0x000000, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::EntryPoint' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, K2Node_Event_bIsActive) == 0x000004, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::K2Node_Event_bIsActive' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, K2Node_Event_bRepresentingPlatformChat) == 0x000005, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::K2Node_Event_bRepresentingPlatformChat' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, K2Node_Event_bChannelAvailable) == 0x000006, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::K2Node_Event_bChannelAvailable' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_PlayAnimationForward_ReturnValue) == 0x000008, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000010, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_CanJoinChannel_ReturnValue) == 0x000018, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_CanJoinChannel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_CanJoinChannel_ReturnValue_1) == 0x000019, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_CanJoinChannel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_PlayAnimationForward_ReturnValue_1) == 0x000020, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_PlayAnimationForward_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_PlayAnimationReverse_ReturnValue_1) == 0x000028, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_PlayAnimationReverse_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_IsActiveChannel_ReturnValue) == 0x000030, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_IsActiveChannel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_Not_PreBool_ReturnValue) == 0x000031, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_IsActiveChannel_ReturnValue_1) == 0x000032, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_IsActiveChannel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton, CallFunc_Not_PreBool_ReturnValue_1) == 0x000033, "Member 'VoiceChannelHeaderButton_C_ExecuteUbergraph_VoiceChannelHeaderButton::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
 
 // Function VoiceChannelHeaderButton.VoiceChannelHeaderButton_C.OnUpdateVisuals
 // 0x0003 (0x0003 - 0x0000)
@@ -62,11 +46,6 @@ public:
 	bool                                          bRepresentingPlatformChat;                         // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bChannelAvailable;                                 // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(VoiceChannelHeaderButton_C_OnUpdateVisuals) == 0x000001, "Wrong alignment on VoiceChannelHeaderButton_C_OnUpdateVisuals");
-static_assert(sizeof(VoiceChannelHeaderButton_C_OnUpdateVisuals) == 0x000003, "Wrong size on VoiceChannelHeaderButton_C_OnUpdateVisuals");
-static_assert(offsetof(VoiceChannelHeaderButton_C_OnUpdateVisuals, bIsActive) == 0x000000, "Member 'VoiceChannelHeaderButton_C_OnUpdateVisuals::bIsActive' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_OnUpdateVisuals, bRepresentingPlatformChat) == 0x000001, "Member 'VoiceChannelHeaderButton_C_OnUpdateVisuals::bRepresentingPlatformChat' has a wrong offset!");
-static_assert(offsetof(VoiceChannelHeaderButton_C_OnUpdateVisuals, bChannelAvailable) == 0x000002, "Member 'VoiceChannelHeaderButton_C_OnUpdateVisuals::bChannelAvailable' has a wrong offset!");
 
 }
 

@@ -25,10 +25,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABuildingActor*                         CallFunc_SetupBuildingActorAbility_BuildingActor;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor) == 0x000008, "Wrong alignment on GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor");
-static_assert(sizeof(GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor) == 0x000010, "Wrong size on GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor, EntryPoint) == 0x000000, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor, CallFunc_SetupBuildingActorAbility_BuildingActor) == 0x000008, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_ExecuteUbergraph_GAT_Creative_ActiveAbility_BuildingActor::CallFunc_SetupBuildingActorAbility_BuildingActor' has a wrong offset!");
 
 // Function GAT_Creative_ActiveAbility_BuildingActor.GAT_Creative_ActiveAbility_BuildingActor_C.SetupBuildingActorAbility
 // 0x0060 (0x0060 - 0x0000)
@@ -41,13 +37,6 @@ public:
 	class ABuildingActor*                         K2Node_DynamicCast_AsBuilding_Actor;               // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility) == 0x000008, "Wrong alignment on GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility");
-static_assert(sizeof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility) == 0x000060, "Wrong size on GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility, BuildingActor) == 0x000000, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility::BuildingActor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility, LocalBuildingActor) == 0x000008, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility::LocalBuildingActor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility, CallFunc_GetActorInfo_ReturnValue) == 0x000010, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility::CallFunc_GetActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility, K2Node_DynamicCast_AsBuilding_Actor) == 0x000050, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility, K2Node_DynamicCast_bSuccess) == 0x000058, "Member 'GAT_Creative_ActiveAbility_BuildingActor_C_SetupBuildingActorAbility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

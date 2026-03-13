@@ -57,31 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Lightbox_C">();
+		BP_STATIC_CLASS_IMPL("Lightbox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Lightbox_C")
 	}
 	static class ULightbox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULightbox_C>();
 	}
 };
-static_assert(alignof(ULightbox_C) == 0x000008, "Wrong alignment on ULightbox_C");
-static_assert(sizeof(ULightbox_C) == 0x0002E8, "Wrong size on ULightbox_C");
-static_assert(offsetof(ULightbox_C, UberGraphFrame) == 0x000258, "Member 'ULightbox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeOut) == 0x000260, "Member 'ULightbox_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, FadeIn) == 0x000268, "Member 'ULightbox_C::FadeIn' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Border_Darken) == 0x000270, "Member 'ULightbox_C::Border_Darken' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, ClickCatcher) == 0x000278, "Member 'ULightbox_C::ClickCatcher' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Content) == 0x000280, "Member 'ULightbox_C::Content' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, Dimmer) == 0x000288, "Member 'ULightbox_C::Dimmer' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, SafeZone_0) == 0x000290, "Member 'ULightbox_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, WindowButtons) == 0x000298, "Member 'ULightbox_C::WindowButtons' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, WindowsOverlay) == 0x0002A0, "Member 'ULightbox_C::WindowsOverlay' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, WindowTitleBar) == 0x0002A8, "Member 'ULightbox_C::WindowTitleBar' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, IntroEnded) == 0x0002B0, "Member 'ULightbox_C::IntroEnded' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, OutroEnded) == 0x0002C0, "Member 'ULightbox_C::OutroEnded' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, ShowWindowControlButtons) == 0x0002D0, "Member 'ULightbox_C::ShowWindowControlButtons' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, DimAmount) == 0x0002D4, "Member 'ULightbox_C::DimAmount' has a wrong offset!");
-static_assert(offsetof(ULightbox_C, BackgroundColor) == 0x0002D8, "Member 'ULightbox_C::BackgroundColor' has a wrong offset!");
 
 }
 

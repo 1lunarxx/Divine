@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_StormTrackerSniper_C">();
+		BP_STATIC_CLASS_IMPL("BP_StormTrackerSniper_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_StormTrackerSniper_C")
 	}
 	static class UBP_StormTrackerSniper_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_StormTrackerSniper_C>();
 	}
 };
-static_assert(alignof(UBP_StormTrackerSniper_C) == 0x000010, "Wrong alignment on UBP_StormTrackerSniper_C");
-static_assert(sizeof(UBP_StormTrackerSniper_C) == 0x000370, "Wrong size on UBP_StormTrackerSniper_C");
-static_assert(offsetof(UBP_StormTrackerSniper_C, UberGraphFrame) == 0x000270, "Member 'UBP_StormTrackerSniper_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_StormTrackerSniper_C, AnimGraphNode_Root_CA710771444DF8885B4F9FB936275484) == 0x000278, "Member 'UBP_StormTrackerSniper_C::AnimGraphNode_Root_CA710771444DF8885B4F9FB936275484' has a wrong offset!");
-static_assert(offsetof(UBP_StormTrackerSniper_C, AnimGraphNode_Slot_68BAA34A4C6C07F75B85C1B356032405) == 0x0002A8, "Member 'UBP_StormTrackerSniper_C::AnimGraphNode_Slot_68BAA34A4C6C07F75B85C1B356032405' has a wrong offset!");
-static_assert(offsetof(UBP_StormTrackerSniper_C, AnimGraphNode_SequencePlayer_4A2DB29A40112E01E2D75898F47237F9) == 0x0002F0, "Member 'UBP_StormTrackerSniper_C::AnimGraphNode_SequencePlayer_4A2DB29A40112E01E2D75898F47237F9' has a wrong offset!");
 
 }
 

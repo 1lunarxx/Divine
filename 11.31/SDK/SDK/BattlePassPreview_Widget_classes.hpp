@@ -80,52 +80,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassPreview_Widget_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassPreview_Widget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassPreview_Widget_C")
 	}
 	static class UBattlePassPreview_Widget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassPreview_Widget_C>();
 	}
 };
-static_assert(alignof(UBattlePassPreview_Widget_C) == 0x000008, "Wrong alignment on UBattlePassPreview_Widget_C");
-static_assert(sizeof(UBattlePassPreview_Widget_C) == 0x000CE8, "Wrong size on UBattlePassPreview_Widget_C");
-static_assert(offsetof(UBattlePassPreview_Widget_C, UberGraphFrame) == 0x000B98, "Member 'UBattlePassPreview_Widget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, PlayRenderSwap) == 0x000BA0, "Member 'UBattlePassPreview_Widget_C::PlayRenderSwap' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, UnlockSequence) == 0x000BA8, "Member 'UBattlePassPreview_Widget_C::UnlockSequence' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, ReadyToUnlockText) == 0x000BB0, "Member 'UBattlePassPreview_Widget_C::ReadyToUnlockText' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, FadeDisabledState) == 0x000BB8, "Member 'UBattlePassPreview_Widget_C::FadeDisabledState' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, TextOut) == 0x000BC0, "Member 'UBattlePassPreview_Widget_C::TextOut' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, TextIn) == 0x000BC8, "Member 'UBattlePassPreview_Widget_C::TextIn' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, OnHover) == 0x000BD0, "Member 'UBattlePassPreview_Widget_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, HitTest_Area) == 0x000BD8, "Member 'UBattlePassPreview_Widget_C::HitTest_Area' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Level) == 0x000BE0, "Member 'UBattlePassPreview_Widget_C::Level' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Lock) == 0x000BE8, "Member 'UBattlePassPreview_Widget_C::Lock' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Locked) == 0x000BF0, "Member 'UBattlePassPreview_Widget_C::Locked' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, LockedText) == 0x000BF8, "Member 'UBattlePassPreview_Widget_C::LockedText' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, ProgressIndicationVbuckAmount) == 0x000C00, "Member 'UBattlePassPreview_Widget_C::ProgressIndicationVbuckAmount' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, ReadyToUnlock) == 0x000C08, "Member 'UBattlePassPreview_Widget_C::ReadyToUnlock' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, RewardLevel_Indicator) == 0x000C10, "Member 'UBattlePassPreview_Widget_C::RewardLevel_Indicator' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Shadow) == 0x000C18, "Member 'UBattlePassPreview_Widget_C::Shadow' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, SubText) == 0x000C20, "Member 'UBattlePassPreview_Widget_C::SubText' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, TintClaimText) == 0x000C28, "Member 'UBattlePassPreview_Widget_C::TintClaimText' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Unlocked) == 0x000C30, "Member 'UBattlePassPreview_Widget_C::Unlocked' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, VBucks_Indicator) == 0x000C38, "Member 'UBattlePassPreview_Widget_C::VBucks_Indicator' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, LoadedSecondaryTexture) == 0x000C40, "Member 'UBattlePassPreview_Widget_C::LoadedSecondaryTexture' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, LoadedPrimaryTexture) == 0x000C48, "Member 'UBattlePassPreview_Widget_C::LoadedPrimaryTexture' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, IsBPIcon) == 0x000C50, "Member 'UBattlePassPreview_Widget_C::IsBPIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, IsLeft) == 0x000C54, "Member 'UBattlePassPreview_Widget_C::IsLeft' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, IsRight) == 0x000C58, "Member 'UBattlePassPreview_Widget_C::IsRight' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, FillSize) == 0x000C5C, "Member 'UBattlePassPreview_Widget_C::FillSize' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, ItemName_RGBA) == 0x000C60, "Member 'UBattlePassPreview_Widget_C::ItemName_RGBA' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Subtext_RGBA) == 0x000C88, "Member 'UBattlePassPreview_Widget_C::Subtext_RGBA' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, bPlayTextAnim) == 0x000CB0, "Member 'UBattlePassPreview_Widget_C::bPlayTextAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, TextureAlpha) == 0x000CB4, "Member 'UBattlePassPreview_Widget_C::TextureAlpha' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, TimeOffset) == 0x000CB8, "Member 'UBattlePassPreview_Widget_C::TimeOffset' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, UseRenderSwap) == 0x000CBC, "Member 'UBattlePassPreview_Widget_C::UseRenderSwap' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, bIsHovered) == 0x000CC0, "Member 'UBattlePassPreview_Widget_C::bIsHovered' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, IsReadyToUnlock) == 0x000CC1, "Member 'UBattlePassPreview_Widget_C::IsReadyToUnlock' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, Level_RGBA) == 0x000CC4, "Member 'UBattlePassPreview_Widget_C::Level_RGBA' has a wrong offset!");
-static_assert(offsetof(UBattlePassPreview_Widget_C, ClaimText_RGBA) == 0x000CD4, "Member 'UBattlePassPreview_Widget_C::ClaimText_RGBA' has a wrong offset!");
 
 }
 

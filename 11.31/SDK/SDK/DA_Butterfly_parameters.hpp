@@ -29,14 +29,6 @@ public:
 	class AFortDecoHelper*                        K2Node_Event_FortDecoHelper_1;                     // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortDecoHelper*                        K2Node_Event_FortDecoHelper;                       // 0x00D0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly) == 0x000008, "Wrong alignment on DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly");
-static_assert(sizeof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly) == 0x0000D8, "Wrong size on DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, EntryPoint) == 0x000000, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::EntryPoint' has a wrong offset!");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, K2Node_Event_FortDecoHelper_2) == 0x000008, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::K2Node_Event_FortDecoHelper_2' has a wrong offset!");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, CallFunc_GetInstigator_ReturnValue) == 0x000010, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, K2Node_MakeStruct_GameplayEventData) == 0x000018, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::K2Node_MakeStruct_GameplayEventData' has a wrong offset!");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, K2Node_Event_FortDecoHelper_1) == 0x0000C8, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::K2Node_Event_FortDecoHelper_1' has a wrong offset!");
-static_assert(offsetof(DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly, K2Node_Event_FortDecoHelper) == 0x0000D0, "Member 'DA_Butterfly_C_ExecuteUbergraph_DA_Butterfly::K2Node_Event_FortDecoHelper' has a wrong offset!");
 
 // Function DA_Butterfly.DA_Butterfly_C.BPPressSecondaryFire
 // 0x0008 (0x0008 - 0x0000)
@@ -45,9 +37,6 @@ struct DA_Butterfly_C_BPPressSecondaryFire final
 public:
 	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_Butterfly_C_BPPressSecondaryFire) == 0x000008, "Wrong alignment on DA_Butterfly_C_BPPressSecondaryFire");
-static_assert(sizeof(DA_Butterfly_C_BPPressSecondaryFire) == 0x000008, "Wrong size on DA_Butterfly_C_BPPressSecondaryFire");
-static_assert(offsetof(DA_Butterfly_C_BPPressSecondaryFire, FortDecoHelper) == 0x000000, "Member 'DA_Butterfly_C_BPPressSecondaryFire::FortDecoHelper' has a wrong offset!");
 
 // Function DA_Butterfly.DA_Butterfly_C.BPPressTrigger
 // 0x0008 (0x0008 - 0x0000)
@@ -56,9 +45,6 @@ struct DA_Butterfly_C_BPPressTrigger final
 public:
 	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_Butterfly_C_BPPressTrigger) == 0x000008, "Wrong alignment on DA_Butterfly_C_BPPressTrigger");
-static_assert(sizeof(DA_Butterfly_C_BPPressTrigger) == 0x000008, "Wrong size on DA_Butterfly_C_BPPressTrigger");
-static_assert(offsetof(DA_Butterfly_C_BPPressTrigger, FortDecoHelper) == 0x000000, "Member 'DA_Butterfly_C_BPPressTrigger::FortDecoHelper' has a wrong offset!");
 
 // Function DA_Butterfly.DA_Butterfly_C.BPReleaseSecondaryFire
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +53,6 @@ struct DA_Butterfly_C_BPReleaseSecondaryFire final
 public:
 	class AFortDecoHelper*                        FortDecoHelper;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(DA_Butterfly_C_BPReleaseSecondaryFire) == 0x000008, "Wrong alignment on DA_Butterfly_C_BPReleaseSecondaryFire");
-static_assert(sizeof(DA_Butterfly_C_BPReleaseSecondaryFire) == 0x000008, "Wrong size on DA_Butterfly_C_BPReleaseSecondaryFire");
-static_assert(offsetof(DA_Butterfly_C_BPReleaseSecondaryFire, FortDecoHelper) == 0x000000, "Member 'DA_Butterfly_C_BPReleaseSecondaryFire::FortDecoHelper' has a wrong offset!");
 
 }
 

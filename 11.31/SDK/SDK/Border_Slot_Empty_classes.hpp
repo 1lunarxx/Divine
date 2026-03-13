@@ -23,15 +23,17 @@ class UBorder_Slot_Empty_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border-Slot-Empty_C">();
+		BP_STATIC_CLASS_IMPL("Border-Slot-Empty_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border-Slot-Empty_C")
 	}
 	static class UBorder_Slot_Empty_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_Slot_Empty_C>();
 	}
 };
-static_assert(alignof(UBorder_Slot_Empty_C) == 0x000008, "Wrong alignment on UBorder_Slot_Empty_C");
-static_assert(sizeof(UBorder_Slot_Empty_C) == 0x0000B0, "Wrong size on UBorder_Slot_Empty_C");
 
 }
 

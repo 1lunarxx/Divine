@@ -30,12 +30,6 @@ public:
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_SetDynamicColors) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_SetDynamicColors");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_SetDynamicColors) == 0x000030, "Wrong size on AthenaMOTDTeaserWidget_C_SetDynamicColors");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_SetDynamicColors, DarkColor) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_SetDynamicColors::DarkColor' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_SetDynamicColors, LightColor) == 0x000010, "Member 'AthenaMOTDTeaserWidget_C_SetDynamicColors::LightColor' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_SetDynamicColors, CallFunc_IsValid_ReturnValue) == 0x000020, "Member 'AthenaMOTDTeaserWidget_C_SetDynamicColors::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_SetDynamicColors, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000028, "Member 'AthenaMOTDTeaserWidget_C_SetDynamicColors::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.UpdateCurDisplayedNewsVisual
 // 0x01E0 (0x01E0 - 0x0000)
@@ -57,20 +51,6 @@ public:
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_1;            // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Conv_IntToFloat_ReturnValue_2;            // 0x01DC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual) == 0x0001E0, "Wrong size on AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, Temp_bool_Variable) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000004, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_GetNewsByIndex_ReturnValue) == 0x000008, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_GetNewsByIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_GetNewsCount_ReturnValue) == 0x000188, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_GetNewsCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_Conv_ColorToLinearColor_ReturnValue) == 0x00018C, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_Conv_ColorToLinearColor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x00019C, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, K2Node_Select_Default) == 0x0001A0, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_Conv_StringToText_ReturnValue) == 0x0001B0, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0001C8, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x0001D0, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_Conv_IntToFloat_ReturnValue_1) == 0x0001D8, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_Conv_IntToFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual, CallFunc_Conv_IntToFloat_ReturnValue_2) == 0x0001DC, "Member 'AthenaMOTDTeaserWidget_C_UpdateCurDisplayedNewsVisual::CallFunc_Conv_IntToFloat_ReturnValue_2' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -79,9 +59,6 @@ struct AthenaMOTDTeaserWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaMOTDTeaserWidget_C_PreConstruct");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_PreConstruct) == 0x000001, "Wrong size on AthenaMOTDTeaserWidget_C_PreConstruct");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -90,9 +67,6 @@ struct AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_Compon
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature) == 0x000008, "Wrong size on AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature, Widget) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_0_OnListEntryGeneratedDynamic__DelegateSignature::Widget' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -101,9 +75,6 @@ struct AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_Compon
 public:
 	class UUserWidget*                            Widget;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature) == 0x000008, "Wrong size on AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature, Widget) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_BndEvt__FortAthenaMOTDTileListView_K2Node_ComponentBoundEvent_1_OnListEntryReleasedDynamic__DelegateSignature::Widget' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.HandleEntryWidgetHoveredChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -112,9 +83,6 @@ struct AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged final
 public:
 	bool                                          NewIsHovered;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged) == 0x000001, "Wrong alignment on AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged) == 0x000001, "Wrong size on AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged, NewIsHovered) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_HandleEntryWidgetHoveredChanged::NewIsHovered' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -123,9 +91,6 @@ struct AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBound
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_BndEvt__SimpleCommonButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaMOTDTeaserWidget.AthenaMOTDTeaserWidget_C.ExecuteUbergraph_AthenaMOTDTeaserWidget
 // 0x0390 (0x0390 - 0x0000)
@@ -164,32 +129,6 @@ public:
 	struct FSlateFontInfo                         K2Node_MakeStruct_SlateFontInfo;                   // 0x00D8(0x0050)(HasGetValueTypeHash)
 	struct FTextBlockStyle                        K2Node_MakeStruct_TextBlockStyle;                  // 0x0128(0x0268)()
 };
-static_assert(alignof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget) == 0x000008, "Wrong alignment on AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget");
-static_assert(sizeof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget) == 0x000390, "Wrong size on AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, EntryPoint) == 0x000000, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, Temp_int_Variable) == 0x000004, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_Event_IsDesignTime) == 0x000008, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_ComponentBoundEvent_Widget_1) == 0x000010, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_ComponentBoundEvent_Widget_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_DynamicCast_AsAthena_MOTDTile) == 0x000018, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_DynamicCast_AsAthena_MOTDTile' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_ComponentBoundEvent_Widget) == 0x000028, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_ComponentBoundEvent_Widget' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_CustomEvent_NewIsHovered) == 0x000030, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_CustomEvent_NewIsHovered' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_DynamicCast_AsAthena_MOTDTile_1) == 0x000038, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_DynamicCast_AsAthena_MOTDTile_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_CreateDelegate_OutputDelegate) == 0x000044, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_CreateDelegate_OutputDelegate_1) == 0x000054, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000068, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_PlayAnimationForward_ReturnValue) == 0x000070, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_ComponentBoundEvent_Button) == 0x000078, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_Max_ReturnValue) == 0x000080, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_Max_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_CreateDelegate_OutputDelegate_2) == 0x000084, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000098, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x0000A0, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_Add_IntInt_ReturnValue) == 0x0000A4, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x0000A8, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_MakeStruct_SlateColor) == 0x0000B0, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_MakeStruct_SlateFontInfo) == 0x0000D8, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_MakeStruct_SlateFontInfo' has a wrong offset!");
-static_assert(offsetof(AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget, K2Node_MakeStruct_TextBlockStyle) == 0x000128, "Member 'AthenaMOTDTeaserWidget_C_ExecuteUbergraph_AthenaMOTDTeaserWidget::K2Node_MakeStruct_TextBlockStyle' has a wrong offset!");
 
 }
 

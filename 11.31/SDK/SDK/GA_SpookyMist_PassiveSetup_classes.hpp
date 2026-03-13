@@ -53,29 +53,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_SpookyMist_PassiveSetup_C">();
+		BP_STATIC_CLASS_IMPL("GA_SpookyMist_PassiveSetup_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_SpookyMist_PassiveSetup_C")
 	}
 	static class UGA_SpookyMist_PassiveSetup_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_SpookyMist_PassiveSetup_C>();
 	}
 };
-static_assert(alignof(UGA_SpookyMist_PassiveSetup_C) == 0x000008, "Wrong alignment on UGA_SpookyMist_PassiveSetup_C");
-static_assert(sizeof(UGA_SpookyMist_PassiveSetup_C) == 0x000B18, "Wrong size on UGA_SpookyMist_PassiveSetup_C");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, UberGraphFrame) == 0x000A30, "Member 'UGA_SpookyMist_PassiveSetup_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, PlayerPawn) == 0x000A38, "Member 'UGA_SpookyMist_PassiveSetup_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, LoopingGC) == 0x000A40, "Member 'UGA_SpookyMist_PassiveSetup_C::LoopingGC' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, GC_TrailFX) == 0x000A48, "Member 'UGA_SpookyMist_PassiveSetup_C::GC_TrailFX' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, GC_Looping) == 0x000A50, "Member 'UGA_SpookyMist_PassiveSetup_C::GC_Looping' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, MoveSpeedBuff) == 0x000A58, "Member 'UGA_SpookyMist_PassiveSetup_C::MoveSpeedBuff' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, AbilityDuration) == 0x000A60, "Member 'UGA_SpookyMist_PassiveSetup_C::AbilityDuration' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, DamageShouldEndAbility) == 0x000A80, "Member 'UGA_SpookyMist_PassiveSetup_C::DamageShouldEndAbility' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, GE_MoveSpeed) == 0x000AA0, "Member 'UGA_SpookyMist_PassiveSetup_C::GE_MoveSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, ExitRecovery) == 0x000AA8, "Member 'UGA_SpookyMist_PassiveSetup_C::ExitRecovery' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, AllowInteractTags) == 0x000AB0, "Member 'UGA_SpookyMist_PassiveSetup_C::AllowInteractTags' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, NoInteractTags) == 0x000AD0, "Member 'UGA_SpookyMist_PassiveSetup_C::NoInteractTags' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, ShouldAllowInteract) == 0x000AF0, "Member 'UGA_SpookyMist_PassiveSetup_C::ShouldAllowInteract' has a wrong offset!");
-static_assert(offsetof(UGA_SpookyMist_PassiveSetup_C, ForcedExit) == 0x000B10, "Member 'UGA_SpookyMist_PassiveSetup_C::ForcedExit' has a wrong offset!");
 
 }
 

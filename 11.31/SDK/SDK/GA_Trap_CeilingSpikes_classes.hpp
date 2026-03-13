@@ -23,15 +23,17 @@ class UGA_Trap_CeilingSpikes_C final : public UGA_TrapGeneric_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Trap_CeilingSpikes_C">();
+		BP_STATIC_CLASS_IMPL("GA_Trap_CeilingSpikes_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Trap_CeilingSpikes_C")
 	}
 	static class UGA_Trap_CeilingSpikes_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Trap_CeilingSpikes_C>();
 	}
 };
-static_assert(alignof(UGA_Trap_CeilingSpikes_C) == 0x000008, "Wrong alignment on UGA_Trap_CeilingSpikes_C");
-static_assert(sizeof(UGA_Trap_CeilingSpikes_C) == 0x000A60, "Wrong size on UGA_Trap_CeilingSpikes_C");
 
 }
 

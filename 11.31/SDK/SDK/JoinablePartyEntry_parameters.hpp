@@ -30,16 +30,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_3;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsInvited;                           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry) == 0x000008, "Wrong alignment on JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry");
-static_assert(sizeof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry) == 0x000038, "Wrong size on JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, EntryPoint) == 0x000000, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, K2Node_ComponentBoundEvent_bIsOpen) == 0x000004, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::K2Node_ComponentBoundEvent_bIsOpen' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, CallFunc_PlayAnimation_ReturnValue_2) == 0x000018, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000020, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, CallFunc_PlayAnimation_ReturnValue_3) == 0x000028, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::CallFunc_PlayAnimation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry, K2Node_Event_bIsInvited) == 0x000030, "Member 'JoinablePartyEntry_C_ExecuteUbergraph_JoinablePartyEntry::K2Node_Event_bIsInvited' has a wrong offset!");
 
 // Function JoinablePartyEntry.JoinablePartyEntry_C.OnInviteStatusUpdated
 // 0x0001 (0x0001 - 0x0000)
@@ -48,9 +38,6 @@ struct JoinablePartyEntry_C_OnInviteStatusUpdated final
 public:
 	bool                                          bIsInvited;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinablePartyEntry_C_OnInviteStatusUpdated) == 0x000001, "Wrong alignment on JoinablePartyEntry_C_OnInviteStatusUpdated");
-static_assert(sizeof(JoinablePartyEntry_C_OnInviteStatusUpdated) == 0x000001, "Wrong size on JoinablePartyEntry_C_OnInviteStatusUpdated");
-static_assert(offsetof(JoinablePartyEntry_C_OnInviteStatusUpdated, bIsInvited) == 0x000000, "Member 'JoinablePartyEntry_C_OnInviteStatusUpdated::bIsInvited' has a wrong offset!");
 
 // Function JoinablePartyEntry.JoinablePartyEntry_C.BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature
 // 0x0001 (0x0001 - 0x0000)
@@ -59,9 +46,6 @@ struct JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEven
 public:
 	bool                                          bIsOpen;                                           // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong alignment on JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(sizeof(JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature) == 0x000001, "Wrong size on JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature");
-static_assert(offsetof(JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature, bIsOpen) == 0x000000, "Member 'JoinablePartyEntry_C_BndEvt__MenuAnchor_Actions_K2Node_ComponentBoundEvent_0_OnMenuOpenChangedEvent__DelegateSignature::bIsOpen' has a wrong offset!");
 
 }
 

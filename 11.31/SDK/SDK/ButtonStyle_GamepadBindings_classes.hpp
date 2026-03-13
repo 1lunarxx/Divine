@@ -23,15 +23,17 @@ class UButtonStyle_GamepadBindings_C final : public UButtonStyle_MediumTranspare
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-GamepadBindings_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-GamepadBindings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-GamepadBindings_C")
 	}
 	static class UButtonStyle_GamepadBindings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_GamepadBindings_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_GamepadBindings_C) == 0x000008, "Wrong alignment on UButtonStyle_GamepadBindings_C");
-static_assert(sizeof(UButtonStyle_GamepadBindings_C) == 0x000570, "Wrong size on UButtonStyle_GamepadBindings_C");
 
 }
 

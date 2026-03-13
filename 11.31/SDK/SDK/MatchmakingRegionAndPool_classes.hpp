@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MatchmakingRegionAndPool_C">();
+		BP_STATIC_CLASS_IMPL("MatchmakingRegionAndPool_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingRegionAndPool_C")
 	}
 	static class UMatchmakingRegionAndPool_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingRegionAndPool_C>();
 	}
 };
-static_assert(alignof(UMatchmakingRegionAndPool_C) == 0x000008, "Wrong alignment on UMatchmakingRegionAndPool_C");
-static_assert(sizeof(UMatchmakingRegionAndPool_C) == 0x000260, "Wrong size on UMatchmakingRegionAndPool_C");
-static_assert(offsetof(UMatchmakingRegionAndPool_C, UberGraphFrame) == 0x000238, "Member 'UMatchmakingRegionAndPool_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMatchmakingRegionAndPool_C, ClassicModeText) == 0x000240, "Member 'UMatchmakingRegionAndPool_C::ClassicModeText' has a wrong offset!");
-static_assert(offsetof(UMatchmakingRegionAndPool_C, IBMSwitcher) == 0x000248, "Member 'UMatchmakingRegionAndPool_C::IBMSwitcher' has a wrong offset!");
-static_assert(offsetof(UMatchmakingRegionAndPool_C, InputRegion) == 0x000250, "Member 'UMatchmakingRegionAndPool_C::InputRegion' has a wrong offset!");
-static_assert(offsetof(UMatchmakingRegionAndPool_C, RegionText) == 0x000258, "Member 'UMatchmakingRegionAndPool_C::RegionText' has a wrong offset!");
 
 }
 

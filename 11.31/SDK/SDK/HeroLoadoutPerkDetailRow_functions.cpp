@@ -17,6 +17,168 @@
 namespace SDK
 {
 
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.GetPerkAbilityKit
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// class UFortAbilityKit*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
+
+	Params::HeroLoadoutPerkDetailRow_C_GetPerkAbilityKit Parms{};
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHero
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortHero*                        Hero                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
+
+	Params::HeroLoadoutPerkDetailRow_C_SetHero Parms{};
+
+	Parms.Hero = Hero;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateTextStyles
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateFromState
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UHeroLoadoutPerkDetailRow_C::UpdateFromState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateFromStyle
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
+
+	Params::HeroLoadoutPerkDetailRow_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHoverAlphaValue
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
+
+	Params::HeroLoadoutPerkDetailRow_C_SetHoverAlphaValue Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHoverHorizontalOffset
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
+
+	Params::HeroLoadoutPerkDetailRow_C_SetHoverHorizontalOffset Parms{};
+
+	Parms.NewValue = NewValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.ExecuteUbergraph_HeroLoadoutPerkDetailRow
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UHeroLoadoutPerkDetailRow_C::ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
+
+	Params::HeroLoadoutPerkDetailRow_C_ExecuteUbergraph_HeroLoadoutPerkDetailRow Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetTeamPerk
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -204,168 +366,6 @@ bool UHeroLoadoutPerkDetailRow_C::IsPerkUnlocked()
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.GetPerkAbilityKit
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// class UFortAbilityKit*                  ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UFortAbilityKit* UHeroLoadoutPerkDetailRow_C::GetPerkAbilityKit()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "GetPerkAbilityKit");
-
-	Params::HeroLoadoutPerkDetailRow_C_GetPerkAbilityKit Parms{};
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHero
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UFortHero*                        Hero                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHeroLoadoutPerkDetailRow_C::SetHero(class UFortHero* Hero)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHero");
-
-	Params::HeroLoadoutPerkDetailRow_C_SetHero Parms{};
-
-	Parms.Hero = Hero;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateTextStyles
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UHeroLoadoutPerkDetailRow_C::UpdateTextStyles()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateTextStyles");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateFromState
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UHeroLoadoutPerkDetailRow_C::UpdateFromState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.UpdateFromStyle
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UHeroLoadoutPerkDetailRow_C::UpdateFromStyle()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "UpdateFromStyle");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UHeroLoadoutPerkDetailRow_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "PreConstruct");
-
-	Params::HeroLoadoutPerkDetailRow_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHoverAlphaValue
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHeroLoadoutPerkDetailRow_C::SetHoverAlphaValue(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverAlphaValue");
-
-	Params::HeroLoadoutPerkDetailRow_C_SetHoverAlphaValue Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.SetHoverHorizontalOffset
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// float                                   NewValue                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHeroLoadoutPerkDetailRow_C::SetHoverHorizontalOffset(float NewValue)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "SetHoverHorizontalOffset");
-
-	Params::HeroLoadoutPerkDetailRow_C_SetHoverHorizontalOffset Parms{};
-
-	Parms.NewValue = NewValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function HeroLoadoutPerkDetailRow.HeroLoadoutPerkDetailRow_C.ExecuteUbergraph_HeroLoadoutPerkDetailRow
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UHeroLoadoutPerkDetailRow_C::ExecuteUbergraph_HeroLoadoutPerkDetailRow(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("HeroLoadoutPerkDetailRow_C", "ExecuteUbergraph_HeroLoadoutPerkDetailRow");
-
-	Params::HeroLoadoutPerkDetailRow_C_ExecuteUbergraph_HeroLoadoutPerkDetailRow Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

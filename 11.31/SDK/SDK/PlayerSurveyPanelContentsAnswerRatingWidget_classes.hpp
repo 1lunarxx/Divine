@@ -57,29 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelContentsAnswerRatingWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelContentsAnswerRatingWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelContentsAnswerRatingWidget_C")
 	}
 	static class UPlayerSurveyPanelContentsAnswerRatingWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelContentsAnswerRatingWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelContentsAnswerRatingWidget_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelContentsAnswerRatingWidget_C");
-static_assert(sizeof(UPlayerSurveyPanelContentsAnswerRatingWidget_C) == 0x000330, "Wrong size on UPlayerSurveyPanelContentsAnswerRatingWidget_C");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, UberGraphFrame) == 0x0002A8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, CommonActionWidget_0) == 0x0002B0, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::CommonActionWidget_0' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, DummyButton) == 0x0002B8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::DummyButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, Image_0) == 0x0002C0, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, Image_1) == 0x0002C8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, MaxRatingTextBlock) == 0x0002D0, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::MaxRatingTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, MinRatingTextBlock) == 0x0002D8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::MinRatingTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButton_1) == 0x0002E0, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButton_1' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButton_2) == 0x0002E8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButton_2' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButton_3) == 0x0002F0, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButton_3' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButton_4) == 0x0002F8, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButton_4' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButton_5) == 0x000300, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButton_5' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, RatingButtons) == 0x000308, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::RatingButtons' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerRatingWidget_C, Text_Subtitle) == 0x000318, "Member 'UPlayerSurveyPanelContentsAnswerRatingWidget_C::Text_Subtitle' has a wrong offset!");
 
 }
 

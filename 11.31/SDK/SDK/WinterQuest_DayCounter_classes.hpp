@@ -32,19 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuest_DayCounter_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuest_DayCounter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuest_DayCounter_C")
 	}
 	static class UWinterQuest_DayCounter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuest_DayCounter_C>();
 	}
 };
-static_assert(alignof(UWinterQuest_DayCounter_C) == 0x000008, "Wrong alignment on UWinterQuest_DayCounter_C");
-static_assert(sizeof(UWinterQuest_DayCounter_C) == 0x000280, "Wrong size on UWinterQuest_DayCounter_C");
-static_assert(offsetof(UWinterQuest_DayCounter_C, DayCounterIntro) == 0x000260, "Member 'UWinterQuest_DayCounter_C::DayCounterIntro' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_DayCounter_C, LeftSnowflake) == 0x000268, "Member 'UWinterQuest_DayCounter_C::LeftSnowflake' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_DayCounter_C, RightSnowflake) == 0x000270, "Member 'UWinterQuest_DayCounter_C::RightSnowflake' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_DayCounter_C, Spike) == 0x000278, "Member 'UWinterQuest_DayCounter_C::Spike' has a wrong offset!");
 
 }
 

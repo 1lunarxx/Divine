@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_SnowFlakes_CameraAttached_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_SnowFlakes_CameraAttached_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_SnowFlakes_CameraAttached_C")
 	}
 	static class AGCN_Loop_SnowFlakes_CameraAttached_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_SnowFlakes_CameraAttached_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_SnowFlakes_CameraAttached_C) == 0x000008, "Wrong alignment on AGCN_Loop_SnowFlakes_CameraAttached_C");
-static_assert(sizeof(AGCN_Loop_SnowFlakes_CameraAttached_C) == 0x000790, "Wrong size on AGCN_Loop_SnowFlakes_CameraAttached_C");
-static_assert(offsetof(AGCN_Loop_SnowFlakes_CameraAttached_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_SnowFlakes_CameraAttached_C::UberGraphFrame' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UFloorJumpPad_Immunity_Applied_C final : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FloorJumpPad_Immunity_Applied_C">();
+		BP_STATIC_CLASS_IMPL("FloorJumpPad_Immunity_Applied_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FloorJumpPad_Immunity_Applied_C")
 	}
 	static class UFloorJumpPad_Immunity_Applied_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFloorJumpPad_Immunity_Applied_C>();
 	}
 };
-static_assert(alignof(UFloorJumpPad_Immunity_Applied_C) == 0x000008, "Wrong alignment on UFloorJumpPad_Immunity_Applied_C");
-static_assert(sizeof(UFloorJumpPad_Immunity_Applied_C) == 0x000770, "Wrong size on UFloorJumpPad_Immunity_Applied_C");
 
 }
 

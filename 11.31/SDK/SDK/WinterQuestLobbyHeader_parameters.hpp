@@ -21,9 +21,6 @@ struct WinterQuestLobbyHeader_C_HandleLogoIntro final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WinterQuestLobbyHeader_C_HandleLogoIntro) == 0x000008, "Wrong alignment on WinterQuestLobbyHeader_C_HandleLogoIntro");
-static_assert(sizeof(WinterQuestLobbyHeader_C_HandleLogoIntro) == 0x000008, "Wrong size on WinterQuestLobbyHeader_C_HandleLogoIntro");
-static_assert(offsetof(WinterQuestLobbyHeader_C_HandleLogoIntro, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'WinterQuestLobbyHeader_C_HandleLogoIntro::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

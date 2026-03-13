@@ -34,7 +34,6 @@ public:
 	class USoundBase*                             SC_OnLand;                                         // 0x07E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void On_Player_Step();
 	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void On_Target_Pawn_Hit_Event(class AActor* SelfActor, class AActor* OtherActor, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void ReceiveTick(float DeltaSeconds);
@@ -43,29 +42,22 @@ public:
 	void On_Target_Pawn_Movement_Mode_Changed(class ACharacter* Character, EMovementMode PrevMovementMode, uint8 PreviousCustomMode);
 	void ReceiveHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, const struct FVector& HitLocation, const struct FVector& HitNormal, const struct FVector& NormalImpulse, const struct FHitResult& Hit);
 	void ExecuteUbergraph_GCN_Loop_Hot_Feet_Environmental(int32 EntryPoint);
+	void On_Player_Step();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Loop_Hot_Feet_Environmental_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Loop_Hot_Feet_Environmental_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Loop_Hot_Feet_Environmental_C")
 	}
 	static class AGCN_Loop_Hot_Feet_Environmental_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Loop_Hot_Feet_Environmental_C>();
 	}
 };
-static_assert(alignof(AGCN_Loop_Hot_Feet_Environmental_C) == 0x000008, "Wrong alignment on AGCN_Loop_Hot_Feet_Environmental_C");
-static_assert(sizeof(AGCN_Loop_Hot_Feet_Environmental_C) == 0x0007E8, "Wrong size on AGCN_Loop_Hot_Feet_Environmental_C");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, TargetPlayer) == 0x000790, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::TargetPlayer' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SpawnedEmitters) == 0x000798, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SpawnedEmitters' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SC_Footstep_Local) == 0x0007A8, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SC_Footstep_Local' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SC_Footstep_Remote) == 0x0007B0, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SC_Footstep_Remote' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SC_Collision) == 0x0007B8, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SC_Collision' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, CollisionAudioComp) == 0x0007C0, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::CollisionAudioComp' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SpawnedAudioComps) == 0x0007C8, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SpawnedAudioComps' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SC_OnJumpOrBeginFalling) == 0x0007D8, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SC_OnJumpOrBeginFalling' has a wrong offset!");
-static_assert(offsetof(AGCN_Loop_Hot_Feet_Environmental_C, SC_OnLand) == 0x0007E0, "Member 'AGCN_Loop_Hot_Feet_Environmental_C::SC_OnLand' has a wrong offset!");
 
 }
 

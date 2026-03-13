@@ -23,15 +23,17 @@ class UAmbientAudioDataAsset : public UDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AmbientAudioDataAsset">();
+		STATIC_CLASS_IMPL("AmbientAudioDataAsset")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmbientAudioDataAsset")
 	}
 	static class UAmbientAudioDataAsset* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAmbientAudioDataAsset>();
 	}
 };
-static_assert(alignof(UAmbientAudioDataAsset) == 0x000008, "Wrong alignment on UAmbientAudioDataAsset");
-static_assert(sizeof(UAmbientAudioDataAsset) == 0x000030, "Wrong size on UAmbientAudioDataAsset");
 
 // Class AmbientAudio.AmbientVolume
 // 0x0010 (0x0260 - 0x0250)
@@ -45,17 +47,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"AmbientVolume">();
+		STATIC_CLASS_IMPL("AmbientVolume")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AmbientVolume")
 	}
 	static class AAmbientVolume* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAmbientVolume>();
 	}
 };
-static_assert(alignof(AAmbientVolume) == 0x000008, "Wrong alignment on AAmbientVolume");
-static_assert(sizeof(AAmbientVolume) == 0x000260, "Wrong size on AAmbientVolume");
-static_assert(offsetof(AAmbientVolume, Priority) == 0x000250, "Member 'AAmbientVolume::Priority' has a wrong offset!");
-static_assert(offsetof(AAmbientVolume, AmbientAsset) == 0x000258, "Member 'AAmbientVolume::AmbientAsset' has a wrong offset!");
 
 }
 

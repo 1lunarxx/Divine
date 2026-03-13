@@ -23,15 +23,17 @@ class UAthenaVariantTileButton_C final : public UFortVariantTileButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaVariantTileButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaVariantTileButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaVariantTileButton_C")
 	}
 	static class UAthenaVariantTileButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaVariantTileButton_C>();
 	}
 };
-static_assert(alignof(UAthenaVariantTileButton_C) == 0x000008, "Wrong alignment on UAthenaVariantTileButton_C");
-static_assert(sizeof(UAthenaVariantTileButton_C) == 0x000BB8, "Wrong size on UAthenaVariantTileButton_C");
 
 }
 

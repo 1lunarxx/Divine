@@ -23,15 +23,17 @@ class UButtonStyle_Outline_M_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Outline-M_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Outline-M_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Outline-M_C")
 	}
 	static class UButtonStyle_Outline_M_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Outline_M_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Outline_M_C) == 0x000008, "Wrong alignment on UButtonStyle_Outline_M_C");
-static_assert(sizeof(UButtonStyle_Outline_M_C) == 0x000570, "Wrong size on UButtonStyle_Outline_M_C");
 
 }
 

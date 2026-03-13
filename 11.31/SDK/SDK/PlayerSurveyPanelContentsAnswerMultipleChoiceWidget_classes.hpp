@@ -51,21 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C")
 	}
 	static class UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C");
-static_assert(sizeof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C) == 0x0002F0, "Wrong size on UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, UberGraphFrame) == 0x0002A8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, ChoicesEntryBox) == 0x0002B0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ChoicesEntryBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, ChoicesScrollBox) == 0x0002B8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ChoicesScrollBox' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, DummyButton) == 0x0002C0, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::DummyButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, ChoiceButtons) == 0x0002C8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::ChoiceButtons' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C, Text_Subtitle) == 0x0002D8, "Member 'UPlayerSurveyPanelContentsAnswerMultipleChoiceWidget_C::Text_Subtitle' has a wrong offset!");
 
 }
 

@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OnlineHotfixManager">();
+		STATIC_CLASS_IMPL("OnlineHotfixManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OnlineHotfixManager")
 	}
 	static class UOnlineHotfixManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOnlineHotfixManager>();
 	}
 };
-static_assert(alignof(UOnlineHotfixManager) == 0x000008, "Wrong alignment on UOnlineHotfixManager");
-static_assert(sizeof(UOnlineHotfixManager) == 0x000220, "Wrong size on UOnlineHotfixManager");
-static_assert(offsetof(UOnlineHotfixManager, OssName) == 0x0001E0, "Member 'UOnlineHotfixManager::OssName' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, HotfixManagerClassName) == 0x0001F0, "Member 'UOnlineHotfixManager::HotfixManagerClassName' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, DebugPrefix) == 0x000200, "Member 'UOnlineHotfixManager::DebugPrefix' has a wrong offset!");
-static_assert(offsetof(UOnlineHotfixManager, AssetsHotfixedFromIniFiles) == 0x000210, "Member 'UOnlineHotfixManager::AssetsHotfixedFromIniFiles' has a wrong offset!");
 
 // Class Hotfix.UpdateManager
 // 0x00F0 (0x0118 - 0x0028)
@@ -81,33 +79,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"UpdateManager">();
+		STATIC_CLASS_IMPL("UpdateManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UpdateManager")
 	}
 	static class UUpdateManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUpdateManager>();
 	}
 };
-static_assert(alignof(UUpdateManager) == 0x000008, "Wrong alignment on UUpdateManager");
-static_assert(sizeof(UUpdateManager) == 0x000118, "Wrong size on UUpdateManager");
-static_assert(offsetof(UUpdateManager, HotfixCheckCompleteDelay) == 0x000088, "Member 'UUpdateManager::HotfixCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCheckCompleteDelay) == 0x00008C, "Member 'UUpdateManager::UpdateCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, HotfixAvailabilityCheckCompleteDelay) == 0x000090, "Member 'UUpdateManager::HotfixAvailabilityCheckCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCheckAvailabilityCompleteDelay) == 0x000094, "Member 'UUpdateManager::UpdateCheckAvailabilityCompleteDelay' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bCheckPlatformOSSForUpdate) == 0x000098, "Member 'UUpdateManager::bCheckPlatformOSSForUpdate' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bCheckOSSForUpdate) == 0x000099, "Member 'UUpdateManager::bCheckOSSForUpdate' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, AppSuspendedUpdateCheckTimeSeconds) == 0x00009C, "Member 'UUpdateManager::AppSuspendedUpdateCheckTimeSeconds' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bPlatformEnvironmentDetected) == 0x0000A8, "Member 'UUpdateManager::bPlatformEnvironmentDetected' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bInitialUpdateFinished) == 0x0000A9, "Member 'UUpdateManager::bInitialUpdateFinished' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, bCheckHotfixAvailabilityOnly) == 0x0000AA, "Member 'UUpdateManager::bCheckHotfixAvailabilityOnly' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, CurrentUpdateState) == 0x0000AB, "Member 'UUpdateManager::CurrentUpdateState' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, WorstNumFilesPendingLoadViewed) == 0x0000AC, "Member 'UUpdateManager::WorstNumFilesPendingLoadViewed' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastPatchCheckResult) == 0x0000B0, "Member 'UUpdateManager::LastPatchCheckResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastHotfixResult) == 0x0000B1, "Member 'UUpdateManager::LastHotfixResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastUpdateCheck) == 0x0000E0, "Member 'UUpdateManager::LastUpdateCheck' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, LastCompletionResult) == 0x0000F0, "Member 'UUpdateManager::LastCompletionResult' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateStateEnum) == 0x000108, "Member 'UUpdateManager::UpdateStateEnum' has a wrong offset!");
-static_assert(offsetof(UUpdateManager, UpdateCompletionEnum) == 0x000110, "Member 'UUpdateManager::UpdateCompletionEnum' has a wrong offset!");
 
 }
 

@@ -56,34 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassPurchaseButton_Track_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassPurchaseButton_Track_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassPurchaseButton_Track_C")
 	}
 	static class UBattlePassPurchaseButton_Track_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassPurchaseButton_Track_C>();
 	}
 };
-static_assert(alignof(UBattlePassPurchaseButton_Track_C) == 0x000008, "Wrong alignment on UBattlePassPurchaseButton_Track_C");
-static_assert(sizeof(UBattlePassPurchaseButton_Track_C) == 0x000C30, "Wrong size on UBattlePassPurchaseButton_Track_C");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, UberGraphFrame) == 0x000BA8, "Member 'UBattlePassPurchaseButton_Track_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, ResetTrianglesAnim) == 0x000BB0, "Member 'UBattlePassPurchaseButton_Track_C::ResetTrianglesAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, HoverTrianglesAnim) == 0x000BB8, "Member 'UBattlePassPurchaseButton_Track_C::HoverTrianglesAnim' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, TextBounce) == 0x000BC0, "Member 'UBattlePassPurchaseButton_Track_C::TextBounce' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, GlowBurst) == 0x000BC8, "Member 'UBattlePassPurchaseButton_Track_C::GlowBurst' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, LoopingButtonGlow) == 0x000BD0, "Member 'UBattlePassPurchaseButton_Track_C::LoopingButtonGlow' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, Selected) == 0x000BD8, "Member 'UBattlePassPurchaseButton_Track_C::Selected' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, Backing) == 0x000BE0, "Member 'UBattlePassPurchaseButton_Track_C::Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, ButtonBacking) == 0x000BE8, "Member 'UBattlePassPurchaseButton_Track_C::ButtonBacking' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, DiscountContainer) == 0x000BF0, "Member 'UBattlePassPurchaseButton_Track_C::DiscountContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, HoverTriangles) == 0x000BF8, "Member 'UBattlePassPurchaseButton_Track_C::HoverTriangles' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, OriginalCostContainer) == 0x000C00, "Member 'UBattlePassPurchaseButton_Track_C::OriginalCostContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, StrikeThrough) == 0x000C08, "Member 'UBattlePassPurchaseButton_Track_C::StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, SubtitleContainer) == 0x000C10, "Member 'UBattlePassPurchaseButton_Track_C::SubtitleContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, VBuck) == 0x000C18, "Member 'UBattlePassPurchaseButton_Track_C::VBuck' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, IsBundle) == 0x000C20, "Member 'UBattlePassPurchaseButton_Track_C::IsBundle' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, FontSize) == 0x000C24, "Member 'UBattlePassPurchaseButton_Track_C::FontSize' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, FontSizeOveride) == 0x000C28, "Member 'UBattlePassPurchaseButton_Track_C::FontSizeOveride' has a wrong offset!");
-static_assert(offsetof(UBattlePassPurchaseButton_Track_C, DelayCycle) == 0x000C2C, "Member 'UBattlePassPurchaseButton_Track_C::DelayCycle' has a wrong offset!");
 
 }
 

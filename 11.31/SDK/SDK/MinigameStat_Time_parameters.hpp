@@ -70,48 +70,6 @@ public:
 	class FText                                   K2Node_Select_Default_1;                           // 0x03B8(0x0018)()
 	class FText                                   K2Node_Select_Default_2;                           // 0x03D0(0x0018)()
 };
-static_assert(alignof(MinigameStat_Time_C_FormatStat) == 0x000008, "Wrong alignment on MinigameStat_Time_C_FormatStat");
-static_assert(sizeof(MinigameStat_Time_C_FormatStat) == 0x0003E8, "Wrong size on MinigameStat_Time_C_FormatStat");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, InCount) == 0x000000, "Member 'MinigameStat_Time_C_FormatStat::InCount' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, ReturnValue) == 0x000008, "Member 'MinigameStat_Time_C_FormatStat::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, Temp_bool_Variable) == 0x000020, "Member 'MinigameStat_Time_C_FormatStat::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Greater_IntInt_ReturnValue) == 0x000021, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000024, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, Temp_bool_Variable_1) == 0x000028, "Member 'MinigameStat_Time_C_FormatStat::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_FromMilliseconds_ReturnValue) == 0x000030, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_FromMilliseconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetHours_ReturnValue) == 0x000038, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetHours_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetTotalHours_ReturnValue) == 0x00003C, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetTotalHours_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Conv_IntToText_ReturnValue) == 0x000040, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000058, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData) == 0x000060, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetTotalMinutes_ReturnValue) == 0x0000A0, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetTotalMinutes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetMilliseconds_ReturnValue) == 0x0000A4, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetMilliseconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000A8, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Conv_IntToText_ReturnValue_1) == 0x0000B0, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_BooleanOR_ReturnValue) == 0x0000C8, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000D0, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_2) == 0x000110, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_3) == 0x000150, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetSeconds_ReturnValue) == 0x000190, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_GetMinutes_ReturnValue) == 0x000194, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_GetMinutes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Conv_IntToText_ReturnValue_2) == 0x000198, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Conv_IntToText_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Conv_IntToText_ReturnValue_3) == 0x0001B0, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Conv_IntToText_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_4) == 0x0001C8, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_4' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_5) == 0x000208, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_5' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_6) == 0x000248, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_6' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeArray_Array) == 0x000288, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_7) == 0x000298, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_7' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Format_ReturnValue) == 0x0002D8, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeArray_Array_1) == 0x0002F0, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeStruct_FormatArgumentData_8) == 0x000300, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeStruct_FormatArgumentData_8' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Format_ReturnValue_1) == 0x000340, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_MakeArray_Array_2) == 0x000358, "Member 'MinigameStat_Time_C_FormatStat::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_Select_Default) == 0x000368, "Member 'MinigameStat_Time_C_FormatStat::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, CallFunc_Format_ReturnValue_2) == 0x000380, "Member 'MinigameStat_Time_C_FormatStat::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, Temp_text_Variable) == 0x000398, "Member 'MinigameStat_Time_C_FormatStat::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, Temp_bool_Variable_2) == 0x0003B0, "Member 'MinigameStat_Time_C_FormatStat::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_Select_Default_1) == 0x0003B8, "Member 'MinigameStat_Time_C_FormatStat::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_FormatStat, K2Node_Select_Default_2) == 0x0003D0, "Member 'MinigameStat_Time_C_FormatStat::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function MinigameStat_Time.MinigameStat_Time_C.Compare
 // 0x001C (0x001C - 0x0000)
@@ -133,21 +91,6 @@ public:
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue_1;             // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MinigameStat_Time_C_Compare) == 0x000004, "Wrong alignment on MinigameStat_Time_C_Compare");
-static_assert(sizeof(MinigameStat_Time_C_Compare) == 0x00001C, "Wrong size on MinigameStat_Time_C_Compare");
-static_assert(offsetof(MinigameStat_Time_C_Compare, FirstScore) == 0x000000, "Member 'MinigameStat_Time_C_Compare::FirstScore' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, SecondScore) == 0x000004, "Member 'MinigameStat_Time_C_Compare::SecondScore' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, ReturnValue) == 0x000008, "Member 'MinigameStat_Time_C_Compare::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, SecondIsValid) == 0x00000C, "Member 'MinigameStat_Time_C_Compare::SecondIsValid' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, FirstIsValid) == 0x00000D, "Member 'MinigameStat_Time_C_Compare::FirstIsValid' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_Not_PreBool_ReturnValue) == 0x00000E, "Member 'MinigameStat_Time_C_Compare::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_BooleanAND_ReturnValue) == 0x00000F, "Member 'MinigameStat_Time_C_Compare::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_Not_PreBool_ReturnValue_1) == 0x000010, "Member 'MinigameStat_Time_C_Compare::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_BooleanAND_ReturnValue_1) == 0x000011, "Member 'MinigameStat_Time_C_Compare::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_EqualEqual_BoolBool_ReturnValue) == 0x000012, "Member 'MinigameStat_Time_C_Compare::CallFunc_EqualEqual_BoolBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_Subtract_IntInt_ReturnValue) == 0x000014, "Member 'MinigameStat_Time_C_Compare::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_Greater_IntInt_ReturnValue) == 0x000018, "Member 'MinigameStat_Time_C_Compare::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Compare, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000019, "Member 'MinigameStat_Time_C_Compare::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
 
 // Function MinigameStat_Time.MinigameStat_Time_C.Accumulate
 // 0x0020 (0x0020 - 0x0000)
@@ -168,19 +111,6 @@ public:
 	int32                                         K2Node_Select_Default;                             // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         K2Node_Select_Default_1;                           // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(MinigameStat_Time_C_Accumulate) == 0x000004, "Wrong alignment on MinigameStat_Time_C_Accumulate");
-static_assert(sizeof(MinigameStat_Time_C_Accumulate) == 0x000020, "Wrong size on MinigameStat_Time_C_Accumulate");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, A) == 0x000000, "Member 'MinigameStat_Time_C_Accumulate::A' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, B) == 0x000004, "Member 'MinigameStat_Time_C_Accumulate::B' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, ReturnValue) == 0x000008, "Member 'MinigameStat_Time_C_Accumulate::ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, Temp_bool_Variable) == 0x00000C, "Member 'MinigameStat_Time_C_Accumulate::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, CallFunc_Greater_IntInt_ReturnValue) == 0x00000D, "Member 'MinigameStat_Time_C_Accumulate::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, CallFunc_Min_ReturnValue) == 0x000010, "Member 'MinigameStat_Time_C_Accumulate::CallFunc_Min_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000014, "Member 'MinigameStat_Time_C_Accumulate::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, Temp_bool_Variable_1) == 0x000015, "Member 'MinigameStat_Time_C_Accumulate::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, CallFunc_BooleanAND_ReturnValue) == 0x000016, "Member 'MinigameStat_Time_C_Accumulate::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, K2Node_Select_Default) == 0x000018, "Member 'MinigameStat_Time_C_Accumulate::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MinigameStat_Time_C_Accumulate, K2Node_Select_Default_1) == 0x00001C, "Member 'MinigameStat_Time_C_Accumulate::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

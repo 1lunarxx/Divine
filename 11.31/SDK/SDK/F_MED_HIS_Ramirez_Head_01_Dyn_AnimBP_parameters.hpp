@@ -26,11 +26,6 @@ public:
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class USkeletalMeshComponent*                 CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP) == 0x000008, "Wrong alignment on F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP");
-static_assert(sizeof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP) == 0x000010, "Wrong size on F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP");
-static_assert(offsetof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP, EntryPoint) == 0x000000, "Member 'F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP::EntryPoint' has a wrong offset!");
-static_assert(offsetof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP, CallFunc_GetPlaylistUsesCustomCharacterParts_ReturnValue) == 0x000004, "Member 'F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP::CallFunc_GetPlaylistUsesCustomCharacterParts_ReturnValue' has a wrong offset!");
-static_assert(offsetof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP, CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue) == 0x000008, "Member 'F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_ExecuteUbergraph_F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP::CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue' has a wrong offset!");
 
 // Function F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP.F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C.AnimGraph
 // 0x0020 (0x0020 - 0x0000)
@@ -40,10 +35,6 @@ public:
 	struct FPoseLink                              InPose;                                            // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0010(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph");
-static_assert(sizeof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph) == 0x000020, "Wrong size on F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph");
-static_assert(offsetof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph, InPose) == 0x000000, "Member 'F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph::InPose' has a wrong offset!");
-static_assert(offsetof(F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000010, "Member 'F_MED_HIS_Ramirez_Head_01_Dyn_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 }
 

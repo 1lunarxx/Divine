@@ -33,18 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DivisionDetailsProgress_C">();
+		BP_STATIC_CLASS_IMPL("DivisionDetailsProgress_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DivisionDetailsProgress_C")
 	}
 	static class UDivisionDetailsProgress_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDivisionDetailsProgress_C>();
 	}
 };
-static_assert(alignof(UDivisionDetailsProgress_C) == 0x000008, "Wrong alignment on UDivisionDetailsProgress_C");
-static_assert(sizeof(UDivisionDetailsProgress_C) == 0x000280, "Wrong size on UDivisionDetailsProgress_C");
-static_assert(offsetof(UDivisionDetailsProgress_C, UberGraphFrame) == 0x000268, "Member 'UDivisionDetailsProgress_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsProgress_C, CommonBorder_CalloutOffset) == 0x000270, "Member 'UDivisionDetailsProgress_C::CommonBorder_CalloutOffset' has a wrong offset!");
-static_assert(offsetof(UDivisionDetailsProgress_C, ProgressBarContainer) == 0x000278, "Member 'UDivisionDetailsProgress_C::ProgressBarContainer' has a wrong offset!");
 
 }
 

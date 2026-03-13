@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_DudeBro_Vent_C">();
+		BP_STATIC_CLASS_IMPL("GA_DudeBro_Vent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_DudeBro_Vent_C")
 	}
 	static class UGA_DudeBro_Vent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_DudeBro_Vent_C>();
 	}
 };
-static_assert(alignof(UGA_DudeBro_Vent_C) == 0x000008, "Wrong alignment on UGA_DudeBro_Vent_C");
-static_assert(sizeof(UGA_DudeBro_Vent_C) == 0x000A68, "Wrong size on UGA_DudeBro_Vent_C");
-static_assert(offsetof(UGA_DudeBro_Vent_C, UberGraphFrame) == 0x000A30, "Member 'UGA_DudeBro_Vent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, VehicleSkelMesh) == 0x000A38, "Member 'UGA_DudeBro_Vent_C::VehicleSkelMesh' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, PlayerPawn) == 0x000A40, "Member 'UGA_DudeBro_Vent_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, GravFloorAltitude) == 0x000A48, "Member 'UGA_DudeBro_Vent_C::GravFloorAltitude' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, UpwardLaunchVelocity) == 0x000A4C, "Member 'UGA_DudeBro_Vent_C::UpwardLaunchVelocity' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, VentsHitBeforeLanding) == 0x000A50, "Member 'UGA_DudeBro_Vent_C::VentsHitBeforeLanding' has a wrong offset!");
-static_assert(offsetof(UGA_DudeBro_Vent_C, NumVentsToHitForQuest) == 0x000A60, "Member 'UGA_DudeBro_Vent_C::NumVentsToHitForQuest' has a wrong offset!");
 
 }
 

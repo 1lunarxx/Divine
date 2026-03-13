@@ -34,35 +34,28 @@ public:
 	TArray<class UObject*>                        ListItems;                                         // 0x05B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 public:
+	void BP_OnActivated();
 	void OnInputModeChanged(bool bUsingGamepad);
 	void BndEvt__AcceptButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_1();
 	void WidgetAnimationEvt_OutIn_K2Node_WidgetAnimationEvent_0();
 	void ExecuteUbergraph_AthenaMatchmakingKnobsModal(int32 EntryPoint);
-	void BP_OnActivated();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingKnobsModal_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingKnobsModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingKnobsModal_C")
 	}
 	static class UAthenaMatchmakingKnobsModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingKnobsModal_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingKnobsModal_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingKnobsModal_C");
-static_assert(sizeof(UAthenaMatchmakingKnobsModal_C) == 0x0005C8, "Wrong size on UAthenaMatchmakingKnobsModal_C");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, UberGraphFrame) == 0x000570, "Member 'UAthenaMatchmakingKnobsModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, OutIn) == 0x000578, "Member 'UAthenaMatchmakingKnobsModal_C::OutIn' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, CloseButton) == 0x000580, "Member 'UAthenaMatchmakingKnobsModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, ConfirmSelectionShine) == 0x000588, "Member 'UAthenaMatchmakingKnobsModal_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, Lightbox) == 0x000590, "Member 'UAthenaMatchmakingKnobsModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, ModalContent) == 0x000598, "Member 'UAthenaMatchmakingKnobsModal_C::ModalContent' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, OverlayCloseButton) == 0x0005A0, "Member 'UAthenaMatchmakingKnobsModal_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, DebugOptions) == 0x0005A8, "Member 'UAthenaMatchmakingKnobsModal_C::DebugOptions' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingKnobsModal_C, ListItems) == 0x0005B8, "Member 'UAthenaMatchmakingKnobsModal_C::ListItems' has a wrong offset!");
 
 }
 

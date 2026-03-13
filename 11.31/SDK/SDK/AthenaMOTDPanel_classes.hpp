@@ -41,25 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDPanel_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDPanel_C")
 	}
 	static class UAthenaMOTDPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDPanel_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDPanel_C) == 0x000008, "Wrong alignment on UAthenaMOTDPanel_C");
-static_assert(sizeof(UAthenaMOTDPanel_C) == 0x000360, "Wrong size on UAthenaMOTDPanel_C");
-static_assert(offsetof(UAthenaMOTDPanel_C, UberGraphFrame) == 0x000310, "Member 'UAthenaMOTDPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, NewPopUpIntro) == 0x000318, "Member 'UAthenaMOTDPanel_C::NewPopUpIntro' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, BottomBorderBox) == 0x000320, "Member 'UAthenaMOTDPanel_C::BottomBorderBox' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, Lightbox) == 0x000328, "Member 'UAthenaMOTDPanel_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, MainOverlay) == 0x000330, "Member 'UAthenaMOTDPanel_C::MainOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, SafeZone_0) == 0x000338, "Member 'UAthenaMOTDPanel_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, SpeedLines) == 0x000340, "Member 'UAthenaMOTDPanel_C::SpeedLines' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, BS_Default) == 0x000348, "Member 'UAthenaMOTDPanel_C::BS_Default' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, BS_SpecialEvent) == 0x000350, "Member 'UAthenaMOTDPanel_C::BS_SpecialEvent' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDPanel_C, BS_SpecialEvent_Secondary) == 0x000358, "Member 'UAthenaMOTDPanel_C::BS_SpecialEvent_Secondary' has a wrong offset!");
 
 }
 

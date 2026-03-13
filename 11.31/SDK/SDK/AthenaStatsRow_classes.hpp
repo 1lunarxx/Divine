@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaStatsRow_C">();
+		BP_STATIC_CLASS_IMPL("AthenaStatsRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaStatsRow_C")
 	}
 	static class UAthenaStatsRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaStatsRow_C>();
 	}
 };
-static_assert(alignof(UAthenaStatsRow_C) == 0x000008, "Wrong alignment on UAthenaStatsRow_C");
-static_assert(sizeof(UAthenaStatsRow_C) == 0x000298, "Wrong size on UAthenaStatsRow_C");
-static_assert(offsetof(UAthenaStatsRow_C, UberGraphFrame) == 0x000290, "Member 'UAthenaStatsRow_C::UberGraphFrame' has a wrong offset!");
 
 }
 

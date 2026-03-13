@@ -70,38 +70,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TopBarTabButton_C">();
+		BP_STATIC_CLASS_IMPL("TopBarTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TopBarTabButton_C")
 	}
 	static class UTopBarTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTopBarTabButton_C>();
 	}
 };
-static_assert(alignof(UTopBarTabButton_C) == 0x000008, "Wrong alignment on UTopBarTabButton_C");
-static_assert(sizeof(UTopBarTabButton_C) == 0x000C50, "Wrong size on UTopBarTabButton_C");
-static_assert(offsetof(UTopBarTabButton_C, UberGraphFrame) == 0x000BB8, "Member 'UTopBarTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, Hovered) == 0x000BC0, "Member 'UTopBarTabButton_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, Selected) == 0x000BC8, "Member 'UTopBarTabButton_C::Selected' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, TabTypeSwitcher) == 0x000BD0, "Member 'UTopBarTabButton_C::TabTypeSwitcher' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, Winterfest_CustomTab) == 0x000BD8, "Member 'UTopBarTabButton_C::Winterfest_CustomTab' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, MID_ButtonBorder) == 0x000BE0, "Member 'UTopBarTabButton_C::MID_ButtonBorder' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, PreviewMobileStyle) == 0x000BE8, "Member 'UTopBarTabButton_C::PreviewMobileStyle' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, SpringState_ShapeChange) == 0x000BEC, "Member 'UTopBarTabButton_C::SpringState_ShapeChange' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, SpringState_Scale) == 0x000BF4, "Member 'UTopBarTabButton_C::SpringState_Scale' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, Spring_Scale_Target) == 0x000BFC, "Member 'UTopBarTabButton_C::Spring_Scale_Target' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, MassMultiply) == 0x000C00, "Member 'UTopBarTabButton_C::MassMultiply' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, DampenMultiply) == 0x000C04, "Member 'UTopBarTabButton_C::DampenMultiply' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, StiffnessMultiply) == 0x000C08, "Member 'UTopBarTabButton_C::StiffnessMultiply' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, VisualSelectionState) == 0x000C0C, "Member 'UTopBarTabButton_C::VisualSelectionState' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, RandomFloat_Top) == 0x000C10, "Member 'UTopBarTabButton_C::RandomFloat_Top' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, RandomFloat_Left) == 0x000C14, "Member 'UTopBarTabButton_C::RandomFloat_Left' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, RandomFloat_Right) == 0x000C18, "Member 'UTopBarTabButton_C::RandomFloat_Right' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, RandomFloat_Bottom) == 0x000C1C, "Member 'UTopBarTabButton_C::RandomFloat_Bottom' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, ShapeChange_New) == 0x000C20, "Member 'UTopBarTabButton_C::ShapeChange_New' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, ShapeChange_Target) == 0x000C24, "Member 'UTopBarTabButton_C::ShapeChange_Target' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, UpdateSpring) == 0x000C28, "Member 'UTopBarTabButton_C::UpdateSpring' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, ButtonText) == 0x000C30, "Member 'UTopBarTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UTopBarTabButton_C, bIsAlternateTab) == 0x000C48, "Member 'UTopBarTabButton_C::bIsAlternateTab' has a wrong offset!");
 
 }
 

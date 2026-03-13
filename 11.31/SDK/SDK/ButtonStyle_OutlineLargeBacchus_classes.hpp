@@ -23,15 +23,17 @@ class UButtonStyle_OutlineLargeBacchus_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-OutlineLargeBacchus_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-OutlineLargeBacchus_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-OutlineLargeBacchus_C")
 	}
 	static class UButtonStyle_OutlineLargeBacchus_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_OutlineLargeBacchus_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_OutlineLargeBacchus_C) == 0x000008, "Wrong alignment on UButtonStyle_OutlineLargeBacchus_C");
-static_assert(sizeof(UButtonStyle_OutlineLargeBacchus_C) == 0x000570, "Wrong size on UButtonStyle_OutlineLargeBacchus_C");
 
 }
 

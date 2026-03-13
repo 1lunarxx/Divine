@@ -23,15 +23,17 @@ class UMinigameStat_PlayerAssists_C final : public UFortMinigameStatFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameStat_PlayerAssists_C">();
+		BP_STATIC_CLASS_IMPL("MinigameStat_PlayerAssists_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameStat_PlayerAssists_C")
 	}
 	static class UMinigameStat_PlayerAssists_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameStat_PlayerAssists_C>();
 	}
 };
-static_assert(alignof(UMinigameStat_PlayerAssists_C) == 0x000008, "Wrong alignment on UMinigameStat_PlayerAssists_C");
-static_assert(sizeof(UMinigameStat_PlayerAssists_C) == 0x000190, "Wrong size on UMinigameStat_PlayerAssists_C");
 
 }
 

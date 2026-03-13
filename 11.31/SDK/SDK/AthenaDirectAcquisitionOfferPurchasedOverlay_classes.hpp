@@ -77,41 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionOfferPurchasedOverlay_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionOfferPurchasedOverlay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionOfferPurchasedOverlay_C")
 	}
 	static class UAthenaDirectAcquisitionOfferPurchasedOverlay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionOfferPurchasedOverlay_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOfferPurchasedOverlay_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C) == 0x0007C0, "Wrong size on UAthenaDirectAcquisitionOfferPurchasedOverlay_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, UberGraphFrame) == 0x000630, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Purchased___Bundle_Item____FAST) == 0x000638, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Purchased___Bundle_Item____FAST' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Successfully_Purchased___Bundle_Item_) == 0x000640, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Successfully_Purchased___Bundle_Item_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Bundle_Blur__out_) == 0x000648, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Blur__out_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Bundle_Blur__loop_) == 0x000650, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Blur__loop_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Purchased___Bundle_Item_) == 0x000658, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Purchased___Bundle_Item_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Purchased_) == 0x000660, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Purchased_' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, BorderItemNAme) == 0x000668, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::BorderItemNAme' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, HBoxMiniCards1) == 0x000670, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HBoxMiniCards1' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, HBoxMiniCards2) == 0x000678, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HBoxMiniCards2' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, HBoxMiniCards3) == 0x000680, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HBoxMiniCards3' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, HBoxMiniCards4) == 0x000688, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HBoxMiniCards4' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, HBoxSuccessfullyPurchased) == 0x000690, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::HBoxSuccessfullyPurchased' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, ImageRarityFlare) == 0x000698, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::ImageRarityFlare' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, ItemCard) == 0x0006A0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::ItemCard' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, OverlayMainItem) == 0x0006A8, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::OverlayMainItem' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, RarityGlow) == 0x0006B0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::RarityGlow' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, SizeBoxMiniBundleItems) == 0x0006B8, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::SizeBoxMiniBundleItems' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, TextName) == 0x0006C0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::TextName' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, QuantityPurchased) == 0x0006C8, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::QuantityPurchased' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Bundle_Item_Index) == 0x0006CC, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Item_Index' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Purchased_Bundle_Items) == 0x0006D0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Purchased_Bundle_Items' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, BundleMiniGrid___Column) == 0x0006E0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::BundleMiniGrid___Column' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, BundleMiniGrid___Row) == 0x0006E4, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::BundleMiniGrid___Row' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Fort_Received_Loot_Info_Struct) == 0x0006E8, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Fort_Received_Loot_Info_Struct' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOfferPurchasedOverlay_C, Bundle_Mini_Item_Cards) == 0x0007B0, "Member 'UAthenaDirectAcquisitionOfferPurchasedOverlay_C::Bundle_Mini_Item_Cards' has a wrong offset!");
 
 }
 

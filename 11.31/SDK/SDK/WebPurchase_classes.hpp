@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WebPurchase_C">();
+		BP_STATIC_CLASS_IMPL("WebPurchase_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WebPurchase_C")
 	}
 	static class UWebPurchase_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWebPurchase_C>();
 	}
 };
-static_assert(alignof(UWebPurchase_C) == 0x000008, "Wrong alignment on UWebPurchase_C");
-static_assert(sizeof(UWebPurchase_C) == 0x000440, "Wrong size on UWebPurchase_C");
-static_assert(offsetof(UWebPurchase_C, UberGraphFrame) == 0x000420, "Member 'UWebPurchase_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, Throbber) == 0x000428, "Member 'UWebPurchase_C::Throbber' has a wrong offset!");
-static_assert(offsetof(UWebPurchase_C, BackAction) == 0x000430, "Member 'UWebPurchase_C::BackAction' has a wrong offset!");
 
 }
 

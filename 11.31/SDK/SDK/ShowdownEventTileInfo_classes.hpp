@@ -47,11 +47,11 @@ public:
 	class UCommonWidgetSwitcher*                  Switcher_EventWindowUnlockState;                   // 0x06B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TimeDescriptionText;                               // 0x06B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TimeDescriptionTextRelative;                       // 0x06C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(EFortShowdownEventState EventState)> SetEventState;                                     // 0x06C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EFortShowdownEventState EventState)> SetEventState;                // 0x06C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          isEnded;                                           // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          isPin;                                             // 0x06D9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_6DA[0x6];                                      // 0x06DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(const struct FFortTournamentDisplayInfo& DisplayInfo)> SetDisplayInfo;                                    // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(const struct FFortTournamentDisplayInfo& DisplayInfo)> SetDisplayInfo; // 0x06E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UMaterialInstanceDynamic*               TextFontMaterial;                                  // 0x06F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               PointFontMaterial;                                 // 0x06F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              MultiRoundSession;                                 // 0x0700(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
@@ -68,45 +68,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownEventTileInfo_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownEventTileInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownEventTileInfo_C")
 	}
 	static class UShowdownEventTileInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownEventTileInfo_C>();
 	}
 };
-static_assert(alignof(UShowdownEventTileInfo_C) == 0x000008, "Wrong alignment on UShowdownEventTileInfo_C");
-static_assert(sizeof(UShowdownEventTileInfo_C) == 0x000710, "Wrong size on UShowdownEventTileInfo_C");
-static_assert(offsetof(UShowdownEventTileInfo_C, UberGraphFrame) == 0x000610, "Member 'UShowdownEventTileInfo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, FocusPin) == 0x000618, "Member 'UShowdownEventTileInfo_C::FocusPin' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, HideSocketShadow_Past) == 0x000620, "Member 'UShowdownEventTileInfo_C::HideSocketShadow_Past' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, HideSocketShadow) == 0x000628, "Member 'UShowdownEventTileInfo_C::HideSocketShadow' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Focus) == 0x000630, "Member 'UShowdownEventTileInfo_C::Focus' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Focus_Ended) == 0x000638, "Member 'UShowdownEventTileInfo_C::Focus_Ended' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, TransitionSize) == 0x000640, "Member 'UShowdownEventTileInfo_C::TransitionSize' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonBorder_Date) == 0x000648, "Member 'UShowdownEventTileInfo_C::CommonBorder_Date' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonBorder_Score) == 0x000650, "Member 'UShowdownEventTileInfo_C::CommonBorder_Score' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonTextBlock_pts) == 0x000658, "Member 'UShowdownEventTileInfo_C::CommonTextBlock_pts' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonWidgetSwitcher_EventPinState) == 0x000660, "Member 'UShowdownEventTileInfo_C::CommonWidgetSwitcher_EventPinState' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonWidgetSwitcher_TimeFormat) == 0x000668, "Member 'UShowdownEventTileInfo_C::CommonWidgetSwitcher_TimeFormat' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, CommonWidgetSwitcher_TimeFormatTitle) == 0x000670, "Member 'UShowdownEventTileInfo_C::CommonWidgetSwitcher_TimeFormatTitle' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Content_Score) == 0x000678, "Member 'UShowdownEventTileInfo_C::Content_Score' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, DateText) == 0x000680, "Member 'UShowdownEventTileInfo_C::DateText' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Image_Lock) == 0x000688, "Member 'UShowdownEventTileInfo_C::Image_Lock' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Image_Socket) == 0x000690, "Member 'UShowdownEventTileInfo_C::Image_Socket' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, ScaleBoxPin) == 0x000698, "Member 'UShowdownEventTileInfo_C::ScaleBoxPin' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, ScoreValue) == 0x0006A0, "Member 'UShowdownEventTileInfo_C::ScoreValue' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, ShowdownPin) == 0x0006A8, "Member 'UShowdownEventTileInfo_C::ShowdownPin' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, Switcher_EventWindowUnlockState) == 0x0006B0, "Member 'UShowdownEventTileInfo_C::Switcher_EventWindowUnlockState' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, TimeDescriptionText) == 0x0006B8, "Member 'UShowdownEventTileInfo_C::TimeDescriptionText' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, TimeDescriptionTextRelative) == 0x0006C0, "Member 'UShowdownEventTileInfo_C::TimeDescriptionTextRelative' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, SetEventState) == 0x0006C8, "Member 'UShowdownEventTileInfo_C::SetEventState' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, isEnded) == 0x0006D8, "Member 'UShowdownEventTileInfo_C::isEnded' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, isPin) == 0x0006D9, "Member 'UShowdownEventTileInfo_C::isPin' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, SetDisplayInfo) == 0x0006E0, "Member 'UShowdownEventTileInfo_C::SetDisplayInfo' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, TextFontMaterial) == 0x0006F0, "Member 'UShowdownEventTileInfo_C::TextFontMaterial' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, PointFontMaterial) == 0x0006F8, "Member 'UShowdownEventTileInfo_C::PointFontMaterial' has a wrong offset!");
-static_assert(offsetof(UShowdownEventTileInfo_C, MultiRoundSession) == 0x000700, "Member 'UShowdownEventTileInfo_C::MultiRoundSession' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UShowdownEventEmptySpacer_C final : public UUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownEventEmptySpacer_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownEventEmptySpacer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownEventEmptySpacer_C")
 	}
 	static class UShowdownEventEmptySpacer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownEventEmptySpacer_C>();
 	}
 };
-static_assert(alignof(UShowdownEventEmptySpacer_C) == 0x000008, "Wrong alignment on UShowdownEventEmptySpacer_C");
-static_assert(sizeof(UShowdownEventEmptySpacer_C) == 0x000230, "Wrong size on UShowdownEventEmptySpacer_C");
 
 }
 

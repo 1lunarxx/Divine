@@ -41,19 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BuildWatermark_C">();
+		BP_STATIC_CLASS_IMPL("BuildWatermark_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BuildWatermark_C")
 	}
 	static class UBuildWatermark_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBuildWatermark_C>();
 	}
 };
-static_assert(alignof(UBuildWatermark_C) == 0x000008, "Wrong alignment on UBuildWatermark_C");
-static_assert(sizeof(UBuildWatermark_C) == 0x0002B8, "Wrong size on UBuildWatermark_C");
-static_assert(offsetof(UBuildWatermark_C, UberGraphFrame) == 0x000298, "Member 'UBuildWatermark_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, BuildText) == 0x0002A0, "Member 'UBuildWatermark_C::BuildText' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, Text_CalendarOffset) == 0x0002A8, "Member 'UBuildWatermark_C::Text_CalendarOffset' has a wrong offset!");
-static_assert(offsetof(UBuildWatermark_C, TextMcpVersion) == 0x0002B0, "Member 'UBuildWatermark_C::TextMcpVersion' has a wrong offset!");
 
 }
 

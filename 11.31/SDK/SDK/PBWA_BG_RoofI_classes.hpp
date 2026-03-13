@@ -23,15 +23,17 @@ class APBWA_BG_RoofI_C final : public ABuildingRoof
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PBWA_BG_RoofI_C">();
+		BP_STATIC_CLASS_IMPL("PBWA_BG_RoofI_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PBWA_BG_RoofI_C")
 	}
 	static class APBWA_BG_RoofI_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<APBWA_BG_RoofI_C>();
 	}
 };
-static_assert(alignof(APBWA_BG_RoofI_C) == 0x000008, "Wrong alignment on APBWA_BG_RoofI_C");
-static_assert(sizeof(APBWA_BG_RoofI_C) == 0x000AB8, "Wrong size on APBWA_BG_RoofI_C");
 
 }
 

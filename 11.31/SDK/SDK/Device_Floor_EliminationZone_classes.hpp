@@ -46,26 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Device_Floor_EliminationZone_C">();
+		BP_STATIC_CLASS_IMPL("Device_Floor_EliminationZone_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Device_Floor_EliminationZone_C")
 	}
 	static class ADevice_Floor_EliminationZone_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADevice_Floor_EliminationZone_C>();
 	}
 };
-static_assert(alignof(ADevice_Floor_EliminationZone_C) == 0x000008, "Wrong alignment on ADevice_Floor_EliminationZone_C");
-static_assert(sizeof(ADevice_Floor_EliminationZone_C) == 0x000D90, "Wrong size on ADevice_Floor_EliminationZone_C");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, UberGraphFrame_Device_Floor_EliminationZone_C) == 0x000D48, "Member 'ADevice_Floor_EliminationZone_C::UberGraphFrame_Device_Floor_EliminationZone_C' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, TransmitOnLeaving) == 0x000D50, "Member 'ADevice_Floor_EliminationZone_C::TransmitOnLeaving' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, TransmitOnEntering) == 0x000D58, "Member 'ADevice_Floor_EliminationZone_C::TransmitOnEntering' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, P_EliminationZone_Edges) == 0x000D60, "Member 'ADevice_Floor_EliminationZone_C::P_EliminationZone_Edges' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, ParticlesMaxDrawDistance) == 0x000D68, "Member 'ADevice_Floor_EliminationZone_C::ParticlesMaxDrawDistance' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, ZoneDamageType) == 0x000D6C, "Member 'ADevice_Floor_EliminationZone_C::ZoneDamageType' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, ZoneDamage) == 0x000D70, "Member 'ADevice_Floor_EliminationZone_C::ZoneDamage' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, ZoneDamagePeriodLevel) == 0x000D74, "Member 'ADevice_Floor_EliminationZone_C::ZoneDamagePeriodLevel' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, bShieldDamage) == 0x000D78, "Member 'ADevice_Floor_EliminationZone_C::bShieldDamage' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, P_EliminationZone_DirectDamage) == 0x000D80, "Member 'ADevice_Floor_EliminationZone_C::P_EliminationZone_DirectDamage' has a wrong offset!");
-static_assert(offsetof(ADevice_Floor_EliminationZone_C, P_EliminationZone_DOTDamage) == 0x000D88, "Member 'ADevice_Floor_EliminationZone_C::P_EliminationZone_DOTDamage' has a wrong offset!");
 
 }
 

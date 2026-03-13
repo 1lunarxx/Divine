@@ -33,17 +33,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MatchmakingInputIndicator_C">();
+		BP_STATIC_CLASS_IMPL("MatchmakingInputIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MatchmakingInputIndicator_C")
 	}
 	static class UMatchmakingInputIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMatchmakingInputIndicator_C>();
 	}
 };
-static_assert(alignof(UMatchmakingInputIndicator_C) == 0x000008, "Wrong alignment on UMatchmakingInputIndicator_C");
-static_assert(sizeof(UMatchmakingInputIndicator_C) == 0x0002A8, "Wrong size on UMatchmakingInputIndicator_C");
-static_assert(offsetof(UMatchmakingInputIndicator_C, UberGraphFrame) == 0x000298, "Member 'UMatchmakingInputIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMatchmakingInputIndicator_C, InputIcon) == 0x0002A0, "Member 'UMatchmakingInputIndicator_C::InputIcon' has a wrong offset!");
 
 }
 

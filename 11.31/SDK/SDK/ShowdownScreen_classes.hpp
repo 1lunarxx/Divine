@@ -64,34 +64,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownScreen_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownScreen_C")
 	}
 	static class UShowdownScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownScreen_C>();
 	}
 };
-static_assert(alignof(UShowdownScreen_C) == 0x000008, "Wrong alignment on UShowdownScreen_C");
-static_assert(sizeof(UShowdownScreen_C) == 0x000558, "Wrong size on UShowdownScreen_C");
-static_assert(offsetof(UShowdownScreen_C, UberGraphFrame) == 0x000490, "Member 'UShowdownScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Outro) == 0x000498, "Member 'UShowdownScreen_C::Outro' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Intro) == 0x0004A0, "Member 'UShowdownScreen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, CircleArrowButton_Left) == 0x0004A8, "Member 'UShowdownScreen_C::CircleArrowButton_Left' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, CircleArrowButton_Right) == 0x0004B0, "Member 'UShowdownScreen_C::CircleArrowButton_Right' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, CommonWidgetSwitcher_ErrorSwitcher) == 0x0004B8, "Member 'UShowdownScreen_C::CommonWidgetSwitcher_ErrorSwitcher' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Image_BG) == 0x0004C0, "Member 'UShowdownScreen_C::Image_BG' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, NoTournamentsContent) == 0x0004C8, "Member 'UShowdownScreen_C::NoTournamentsContent' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Overlay_NoTournamentContent) == 0x0004D0, "Member 'UShowdownScreen_C::Overlay_NoTournamentContent' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, ShowdownTournamentTile) == 0x0004D8, "Member 'UShowdownScreen_C::ShowdownTournamentTile' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, ShowdownTournamentTile_0) == 0x0004E0, "Member 'UShowdownScreen_C::ShowdownTournamentTile_0' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, ShowdownTournamentTile_1) == 0x0004E8, "Member 'UShowdownScreen_C::ShowdownTournamentTile_1' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, SizeBox_Posters) == 0x0004F0, "Member 'UShowdownScreen_C::SizeBox_Posters' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, SwipePanel) == 0x0004F8, "Member 'UShowdownScreen_C::SwipePanel' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, TournamentsContent) == 0x000500, "Member 'UShowdownScreen_C::TournamentsContent' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Input_ShowAbout) == 0x000508, "Member 'UShowdownScreen_C::Input_ShowAbout' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, PrimaryColor) == 0x000518, "Member 'UShowdownScreen_C::PrimaryColor' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, Input_ShowDetails) == 0x000540, "Member 'UShowdownScreen_C::Input_ShowDetails' has a wrong offset!");
-static_assert(offsetof(UShowdownScreen_C, SelectedTile) == 0x000550, "Member 'UShowdownScreen_C::SelectedTile' has a wrong offset!");
 
 }
 

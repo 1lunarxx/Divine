@@ -23,15 +23,17 @@ class UAthenaReplayBrowserHeaderRow_C final : public UCommonUserWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaReplayBrowserHeaderRow_C">();
+		BP_STATIC_CLASS_IMPL("AthenaReplayBrowserHeaderRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaReplayBrowserHeaderRow_C")
 	}
 	static class UAthenaReplayBrowserHeaderRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaReplayBrowserHeaderRow_C>();
 	}
 };
-static_assert(alignof(UAthenaReplayBrowserHeaderRow_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserHeaderRow_C");
-static_assert(sizeof(UAthenaReplayBrowserHeaderRow_C) == 0x000258, "Wrong size on UAthenaReplayBrowserHeaderRow_C");
 
 }
 

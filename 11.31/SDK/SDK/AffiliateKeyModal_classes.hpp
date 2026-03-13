@@ -51,6 +51,7 @@ public:
 	TMulticastInlineDelegate<void()>              OnSuccess;                                         // 0x0510(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
+	void SetupAffiliateField(const class FString& AffilateName);
 	void SetMobileButtons();
 	void BP_OnActivated();
 	void BndEvt__CloseButton_K2Node_ComponentBoundEvent_21_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
@@ -63,43 +64,21 @@ public:
 	void OnInputModeChanged(bool bUsingGamepad);
 	void Construct();
 	void ExecuteUbergraph_AffiliateKeyModal(int32 EntryPoint);
-	void SetupAffiliateField(const class FString& AffilateName);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AffiliateKeyModal_C">();
+		BP_STATIC_CLASS_IMPL("AffiliateKeyModal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AffiliateKeyModal_C")
 	}
 	static class UAffiliateKeyModal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAffiliateKeyModal_C>();
 	}
 };
-static_assert(alignof(UAffiliateKeyModal_C) == 0x000008, "Wrong alignment on UAffiliateKeyModal_C");
-static_assert(sizeof(UAffiliateKeyModal_C) == 0x000520, "Wrong size on UAffiliateKeyModal_C");
-static_assert(offsetof(UAffiliateKeyModal_C, UberGraphFrame) == 0x000450, "Member 'UAffiliateKeyModal_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, SuccessAnim) == 0x000458, "Member 'UAffiliateKeyModal_C::SuccessAnim' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, Shake) == 0x000460, "Member 'UAffiliateKeyModal_C::Shake' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, CloseButton) == 0x000468, "Member 'UAffiliateKeyModal_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, CloseIcon) == 0x000470, "Member 'UAffiliateKeyModal_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, CommonTextBlock_0) == 0x000478, "Member 'UAffiliateKeyModal_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, CommonTextBlock_2) == 0x000480, "Member 'UAffiliateKeyModal_C::CommonTextBlock_2' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, ConnectionError) == 0x000488, "Member 'UAffiliateKeyModal_C::ConnectionError' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, Description) == 0x000490, "Member 'UAffiliateKeyModal_C::Description' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, EditTextActionWidget) == 0x000498, "Member 'UAffiliateKeyModal_C::EditTextActionWidget' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, EntryError) == 0x0004A0, "Member 'UAffiliateKeyModal_C::EntryError' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, ErrorPart2) == 0x0004A8, "Member 'UAffiliateKeyModal_C::ErrorPart2' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, LaunchWebsite) == 0x0004B0, "Member 'UAffiliateKeyModal_C::LaunchWebsite' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, Lightbox) == 0x0004B8, "Member 'UAffiliateKeyModal_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, McpWaitingSpinner) == 0x0004C0, "Member 'UAffiliateKeyModal_C::McpWaitingSpinner' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, MobileCloseButton) == 0x0004C8, "Member 'UAffiliateKeyModal_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, MobileCloseOverlay) == 0x0004D0, "Member 'UAffiliateKeyModal_C::MobileCloseOverlay' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, Found) == 0x0004D8, "Member 'UAffiliateKeyModal_C::Found' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, FoundItem) == 0x0004E0, "Member 'UAffiliateKeyModal_C::FoundItem' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, ConnectionTimeout) == 0x0004F0, "Member 'UAffiliateKeyModal_C::ConnectionTimeout' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, OnPopupClosed) == 0x0004F8, "Member 'UAffiliateKeyModal_C::OnPopupClosed' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, bSkipAutoPopulate) == 0x000508, "Member 'UAffiliateKeyModal_C::bSkipAutoPopulate' has a wrong offset!");
-static_assert(offsetof(UAffiliateKeyModal_C, OnSuccess) == 0x000510, "Member 'UAffiliateKeyModal_C::OnSuccess' has a wrong offset!");
 
 }
 

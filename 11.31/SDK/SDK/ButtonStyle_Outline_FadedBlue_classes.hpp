@@ -23,15 +23,17 @@ class UButtonStyle_Outline_FadedBlue_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Outline-FadedBlue_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Outline-FadedBlue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Outline-FadedBlue_C")
 	}
 	static class UButtonStyle_Outline_FadedBlue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Outline_FadedBlue_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Outline_FadedBlue_C) == 0x000008, "Wrong alignment on UButtonStyle_Outline_FadedBlue_C");
-static_assert(sizeof(UButtonStyle_Outline_FadedBlue_C) == 0x000570, "Wrong size on UButtonStyle_Outline_FadedBlue_C");
 
 }
 

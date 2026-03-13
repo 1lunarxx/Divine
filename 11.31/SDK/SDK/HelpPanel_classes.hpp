@@ -57,26 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HelpPanel_C">();
+		BP_STATIC_CLASS_IMPL("HelpPanel_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HelpPanel_C")
 	}
 	static class UHelpPanel_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHelpPanel_C>();
 	}
 };
-static_assert(alignof(UHelpPanel_C) == 0x000008, "Wrong alignment on UHelpPanel_C");
-static_assert(sizeof(UHelpPanel_C) == 0x0004B8, "Wrong size on UHelpPanel_C");
-static_assert(offsetof(UHelpPanel_C, UberGraphFrame) == 0x000448, "Member 'UHelpPanel_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, CloseButton) == 0x000450, "Member 'UHelpPanel_C::CloseButton' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, CloseIcon) == 0x000458, "Member 'UHelpPanel_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpEntryBodyWidget) == 0x000460, "Member 'UHelpPanel_C::HelpEntryBodyWidget' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, HelpIcon) == 0x000468, "Member 'UHelpPanel_C::HelpIcon' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, Lightbox) == 0x000470, "Member 'UHelpPanel_C::Lightbox' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, MobileCloseButton) == 0x000478, "Member 'UHelpPanel_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, MobileCloseOverlay) == 0x000480, "Member 'UHelpPanel_C::MobileCloseOverlay' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, TextHeader) == 0x000488, "Member 'UHelpPanel_C::TextHeader' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, TopLevelHelpItems) == 0x000490, "Member 'UHelpPanel_C::TopLevelHelpItems' has a wrong offset!");
-static_assert(offsetof(UHelpPanel_C, Header_Display_Text) == 0x0004A0, "Member 'UHelpPanel_C::Header_Display_Text' has a wrong offset!");
 
 }
 

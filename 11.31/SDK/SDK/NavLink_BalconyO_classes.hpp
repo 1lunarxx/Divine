@@ -23,15 +23,17 @@ class UNavLink_BalconyO_C final : public UFortNavLinkDefinition
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NavLink_BalconyO_C">();
+		BP_STATIC_CLASS_IMPL("NavLink_BalconyO_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavLink_BalconyO_C")
 	}
 	static class UNavLink_BalconyO_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavLink_BalconyO_C>();
 	}
 };
-static_assert(alignof(UNavLink_BalconyO_C) == 0x000008, "Wrong alignment on UNavLink_BalconyO_C");
-static_assert(sizeof(UNavLink_BalconyO_C) == 0x000080, "Wrong size on UNavLink_BalconyO_C");
 
 }
 

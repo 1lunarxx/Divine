@@ -23,15 +23,17 @@ class UTextStyle_BurbankSmall_M_CyanTint_C final : public UTextStyle_BaseParent_
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle_BurbankSmall_M_CyanTint_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle_BurbankSmall_M_CyanTint_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle_BurbankSmall_M_CyanTint_C")
 	}
 	static class UTextStyle_BurbankSmall_M_CyanTint_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_BurbankSmall_M_CyanTint_C>();
 	}
 };
-static_assert(alignof(UTextStyle_BurbankSmall_M_CyanTint_C) == 0x000008, "Wrong alignment on UTextStyle_BurbankSmall_M_CyanTint_C");
-static_assert(sizeof(UTextStyle_BurbankSmall_M_CyanTint_C) == 0x000148, "Wrong size on UTextStyle_BurbankSmall_M_CyanTint_C");
 
 }
 

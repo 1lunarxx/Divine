@@ -45,27 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaDirectAcquisitionOffer_SpecialBanner_C">();
+		BP_STATIC_CLASS_IMPL("AthenaDirectAcquisitionOffer_SpecialBanner_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaDirectAcquisitionOffer_SpecialBanner_C")
 	}
 	static class UAthenaDirectAcquisitionOffer_SpecialBanner_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaDirectAcquisitionOffer_SpecialBanner_C>();
 	}
 };
-static_assert(alignof(UAthenaDirectAcquisitionOffer_SpecialBanner_C) == 0x000008, "Wrong alignment on UAthenaDirectAcquisitionOffer_SpecialBanner_C");
-static_assert(sizeof(UAthenaDirectAcquisitionOffer_SpecialBanner_C) == 0x000298, "Wrong size on UAthenaDirectAcquisitionOffer_SpecialBanner_C");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, UberGraphFrame) == 0x000230, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, Border_SaleInfo) == 0x000238, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::Border_SaleInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, HB_BattlePassStarsSupplemental) == 0x000240, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::HB_BattlePassStarsSupplemental' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, Image_BattleStarSupplemental) == 0x000248, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::Image_BattleStarSupplemental' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, T_BattleStarInfoSupplemental) == 0x000250, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::T_BattleStarInfoSupplemental' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, T_SaleInfo) == 0x000258, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::T_SaleInfo' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, WidgetSwitcher_Main) == 0x000260, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::WidgetSwitcher_Main' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, bShowBanner) == 0x000268, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::bShowBanner' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, bHasBattlePassStars) == 0x000269, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::bHasBattlePassStars' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, SalesInfoText) == 0x000270, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::SalesInfoText' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, NumOfBattlePassStars) == 0x000288, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::NumOfBattlePassStars' has a wrong offset!");
-static_assert(offsetof(UAthenaDirectAcquisitionOffer_SpecialBanner_C, CatalogMessaging) == 0x000290, "Member 'UAthenaDirectAcquisitionOffer_SpecialBanner_C::CatalogMessaging' has a wrong offset!");
 
 }
 

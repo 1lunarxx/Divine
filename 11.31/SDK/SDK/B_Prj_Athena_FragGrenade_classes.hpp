@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "B_Prj_Athena_Grenade_Base_classes.hpp"
 #include "GameplayTags_structs.hpp"
+#include "B_Prj_Athena_Grenade_Base_classes.hpp"
 
 
 namespace SDK
@@ -44,21 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Athena_FragGrenade_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Athena_FragGrenade_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Athena_FragGrenade_C")
 	}
 	static class AB_Prj_Athena_FragGrenade_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Athena_FragGrenade_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Athena_FragGrenade_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_FragGrenade_C");
-static_assert(sizeof(AB_Prj_Athena_FragGrenade_C) == 0x000910, "Wrong size on AB_Prj_Athena_FragGrenade_C");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, UberGraphFrame_B_Prj_Athena_FragGrenade_C) == 0x0008E8, "Member 'AB_Prj_Athena_FragGrenade_C::UberGraphFrame_B_Prj_Athena_FragGrenade_C' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, BP_SurfaceTypeSoundComponent) == 0x0008F0, "Member 'AB_Prj_Athena_FragGrenade_C::BP_SurfaceTypeSoundComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, PreExploWarning_PreExplo_E5859FFE443F57359EC2C0AB73DFA4CD) == 0x0008F8, "Member 'AB_Prj_Athena_FragGrenade_C::PreExploWarning_PreExplo_E5859FFE443F57359EC2C0AB73DFA4CD' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, PreExploWarning__Direction_E5859FFE443F57359EC2C0AB73DFA4CD) == 0x0008FC, "Member 'AB_Prj_Athena_FragGrenade_C::PreExploWarning__Direction_E5859FFE443F57359EC2C0AB73DFA4CD' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, PreExploWarning) == 0x000900, "Member 'AB_Prj_Athena_FragGrenade_C::PreExploWarning' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_FragGrenade_C, FeedbackCue) == 0x000908, "Member 'AB_Prj_Athena_FragGrenade_C::FeedbackCue' has a wrong offset!");
 
 }
 

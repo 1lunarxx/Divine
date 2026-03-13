@@ -90,10 +90,6 @@ public:
 	class FName                                   SystemName;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DeviceID;                                          // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FXRDeviceId) == 0x000004, "Wrong alignment on FXRDeviceId");
-static_assert(sizeof(FXRDeviceId) == 0x00000C, "Wrong size on FXRDeviceId");
-static_assert(offsetof(FXRDeviceId, SystemName) == 0x000000, "Member 'FXRDeviceId::SystemName' has a wrong offset!");
-static_assert(offsetof(FXRDeviceId, DeviceID) == 0x000008, "Member 'FXRDeviceId::DeviceID' has a wrong offset!");
 
 }
 

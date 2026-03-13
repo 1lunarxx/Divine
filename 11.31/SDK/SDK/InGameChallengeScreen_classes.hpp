@@ -41,22 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InGameChallengeScreen_C">();
+		BP_STATIC_CLASS_IMPL("InGameChallengeScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InGameChallengeScreen_C")
 	}
 	static class UInGameChallengeScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInGameChallengeScreen_C>();
 	}
 };
-static_assert(alignof(UInGameChallengeScreen_C) == 0x000008, "Wrong alignment on UInGameChallengeScreen_C");
-static_assert(sizeof(UInGameChallengeScreen_C) == 0x000440, "Wrong size on UInGameChallengeScreen_C");
-static_assert(offsetof(UInGameChallengeScreen_C, UberGraphFrame) == 0x000408, "Member 'UInGameChallengeScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, AthenaChallengeTreeView_0) == 0x000410, "Member 'UInGameChallengeScreen_C::AthenaChallengeTreeView_0' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, ButtonMobileCloseArea) == 0x000418, "Member 'UInGameChallengeScreen_C::ButtonMobileCloseArea' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, CloseIcon) == 0x000420, "Member 'UInGameChallengeScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, MobileCloseButton) == 0x000428, "Member 'UInGameChallengeScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, OverlayCloseButton) == 0x000430, "Member 'UInGameChallengeScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UInGameChallengeScreen_C, SafeZone_0) == 0x000438, "Member 'UInGameChallengeScreen_C::SafeZone_0' has a wrong offset!");
 
 }
 

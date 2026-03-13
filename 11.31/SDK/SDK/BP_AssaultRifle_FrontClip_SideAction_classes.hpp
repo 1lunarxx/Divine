@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_AssaultRifle_FrontClip_SideAction_C">();
+		BP_STATIC_CLASS_IMPL("BP_AssaultRifle_FrontClip_SideAction_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_AssaultRifle_FrontClip_SideAction_C")
 	}
 	static class UBP_AssaultRifle_FrontClip_SideAction_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_AssaultRifle_FrontClip_SideAction_C>();
 	}
 };
-static_assert(alignof(UBP_AssaultRifle_FrontClip_SideAction_C) == 0x000010, "Wrong alignment on UBP_AssaultRifle_FrontClip_SideAction_C");
-static_assert(sizeof(UBP_AssaultRifle_FrontClip_SideAction_C) == 0x000310, "Wrong size on UBP_AssaultRifle_FrontClip_SideAction_C");
-static_assert(offsetof(UBP_AssaultRifle_FrontClip_SideAction_C, UberGraphFrame) == 0x000270, "Member 'UBP_AssaultRifle_FrontClip_SideAction_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_AssaultRifle_FrontClip_SideAction_C, AnimGraphNode_Root_BA9A03134DBA089D49100DBE71EF86F5) == 0x000278, "Member 'UBP_AssaultRifle_FrontClip_SideAction_C::AnimGraphNode_Root_BA9A03134DBA089D49100DBE71EF86F5' has a wrong offset!");
-static_assert(offsetof(UBP_AssaultRifle_FrontClip_SideAction_C, AnimGraphNode_Slot_4E27AC5C48BE291AEB818BA0DAEA04EB) == 0x0002A8, "Member 'UBP_AssaultRifle_FrontClip_SideAction_C::AnimGraphNode_Slot_4E27AC5C48BE291AEB818BA0DAEA04EB' has a wrong offset!");
-static_assert(offsetof(UBP_AssaultRifle_FrontClip_SideAction_C, AnimGraphNode_LocalRefPose_B63DE5144515FA5CE71B26B8581D7149) == 0x0002F0, "Member 'UBP_AssaultRifle_FrontClip_SideAction_C::AnimGraphNode_LocalRefPose_B63DE5144515FA5CE71B26B8581D7149' has a wrong offset!");
 
 }
 

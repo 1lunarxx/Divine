@@ -34,19 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotify_PlayFX_WeapType_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotify_PlayFX_WeapType_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotify_PlayFX_WeapType_C")
 	}
 	static class UAnimNotify_PlayFX_WeapType_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotify_PlayFX_WeapType_C>();
 	}
 };
-static_assert(alignof(UAnimNotify_PlayFX_WeapType_C) == 0x000008, "Wrong alignment on UAnimNotify_PlayFX_WeapType_C");
-static_assert(sizeof(UAnimNotify_PlayFX_WeapType_C) == 0x000068, "Wrong size on UAnimNotify_PlayFX_WeapType_C");
-static_assert(offsetof(UAnimNotify_PlayFX_WeapType_C, Socket) == 0x000038, "Member 'UAnimNotify_PlayFX_WeapType_C::Socket' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayFX_WeapType_C, attach) == 0x000048, "Member 'UAnimNotify_PlayFX_WeapType_C::attach' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayFX_WeapType_C, Rotation) == 0x00004C, "Member 'UAnimNotify_PlayFX_WeapType_C::Rotation' has a wrong offset!");
-static_assert(offsetof(UAnimNotify_PlayFX_WeapType_C, Location) == 0x000058, "Member 'UAnimNotify_PlayFX_WeapType_C::Location' has a wrong offset!");
 
 }
 

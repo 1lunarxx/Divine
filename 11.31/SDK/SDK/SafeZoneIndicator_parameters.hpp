@@ -84,57 +84,6 @@ public:
 	class ABP_SafeZoneStorm_C*                    CallFunc_GetActorOfClass_ReturnValue;              // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator) == 0x000008, "Wrong alignment on SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator");
-static_assert(sizeof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator) == 0x000160, "Wrong size on SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, EntryPoint) == 0x000000, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_CreateDelegate_OutputDelegate_1) == 0x000014, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000028, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_SetTimerDelegate_ReturnValue_1) == 0x000030, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_SetTimerDelegate_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_Event_NewState) == 0x000038, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_Event_NewState' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_Event_bInitial) == 0x000039, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_Event_bInitial' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_SwitchEnum_CmpSuccess) == 0x00003A, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetTimelineLength_ReturnValue) == 0x00003C, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetTimelineLength_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_CustomEvent_NewParam) == 0x000040, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_CustomEvent_NewParam' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetAthenaGameState_AthenaGS) == 0x000048, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetAthenaGameState_AthenaGS' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetTimeSinceSafeZonesStart_ReturnValue) == 0x000050, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetTimeSinceSafeZonesStart_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetServerWorldTimeSeconds_ReturnValue) == 0x000054, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetServerWorldTimeSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000058, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_MakeStruct_LinearColor) == 0x00005C, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_IsTimerActiveHandle_ReturnValue) == 0x00006C, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_IsTimerActiveHandle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Not_PreBool_ReturnValue) == 0x00006D, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Greater_IntInt_ReturnValue) == 0x00006E, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x000070, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x000074, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Divide_FloatFloat_ReturnValue) == 0x000078, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_SetTimerDelegate_ReturnValue_2) == 0x000080, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_SetTimerDelegate_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000088, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_Event_DeltaSeconds) == 0x000090, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_CreateDelegate_OutputDelegate_2) == 0x000094, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0000A4, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Add_VectorVector_ReturnValue) == 0x0000B0, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000BC, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetRandomPointInPlayerDir_Position) == 0x0000C0, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetRandomPointInPlayerDir_Position' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Map_Find_Value) == 0x0000CC, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Map_Find_Value' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Map_Find_ReturnValue) == 0x0000D4, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Map_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_CreateDelegate_OutputDelegate_3) == 0x0000D8, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_BreakVector2D_X) == 0x0000E8, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_BreakVector2D_Y) == 0x0000EC, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_RandomFloatInRange_ReturnValue) == 0x0000F0, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Map_Find_Value_1) == 0x0000F4, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Map_Find_Value_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Map_Find_ReturnValue_1) == 0x0000F8, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Map_Find_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_SetTimerDelegate_ReturnValue_3) == 0x000100, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_SetTimerDelegate_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_K2_SetTimerDelegate_ReturnValue_4) == 0x000108, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_K2_SetTimerDelegate_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetRandomPointOnBoundary_Position) == 0x000110, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetRandomPointOnBoundary_Position' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_Add_VectorVector_ReturnValue_1) == 0x00011C, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_IsMobilePlatform_ReturnValue) == 0x000128, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_IsMobilePlatform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_DynamicCast_AsBP_Storm_Mesh_Rotator) == 0x000130, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_DynamicCast_AsBP_Storm_Mesh_Rotator' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, K2Node_DynamicCast_bSuccess) == 0x000138, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_IsValid_ReturnValue) == 0x000139, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000140, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000148, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_GetActorOfClass_ReturnValue) == 0x000150, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator, CallFunc_IsValid_ReturnValue_1) == 0x000158, "Member 'SafeZoneIndicator_C_ExecuteUbergraph_SafeZoneIndicator::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveTick
 // 0x0004 (0x0004 - 0x0000)
@@ -143,9 +92,6 @@ struct SafeZoneIndicator_C_ReceiveTick final
 public:
 	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_ReceiveTick) == 0x000004, "Wrong alignment on SafeZoneIndicator_C_ReceiveTick");
-static_assert(sizeof(SafeZoneIndicator_C_ReceiveTick) == 0x000004, "Wrong size on SafeZoneIndicator_C_ReceiveTick");
-static_assert(offsetof(SafeZoneIndicator_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'SafeZoneIndicator_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.stormy
 // 0x0004 (0x0004 - 0x0000)
@@ -154,9 +100,6 @@ struct SafeZoneIndicator_C_stormy final
 public:
 	float                                         NewParam;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_stormy) == 0x000004, "Wrong alignment on SafeZoneIndicator_C_stormy");
-static_assert(sizeof(SafeZoneIndicator_C_stormy) == 0x000004, "Wrong size on SafeZoneIndicator_C_stormy");
-static_assert(offsetof(SafeZoneIndicator_C_stormy, NewParam) == 0x000000, "Member 'SafeZoneIndicator_C_stormy::NewParam' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.OnSafeZoneStateChange
 // 0x0002 (0x0002 - 0x0000)
@@ -166,10 +109,6 @@ public:
 	EFortSafeZoneState                            NewState;                                          // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bInitial;                                          // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SafeZoneIndicator_C_OnSafeZoneStateChange) == 0x000001, "Wrong alignment on SafeZoneIndicator_C_OnSafeZoneStateChange");
-static_assert(sizeof(SafeZoneIndicator_C_OnSafeZoneStateChange) == 0x000002, "Wrong size on SafeZoneIndicator_C_OnSafeZoneStateChange");
-static_assert(offsetof(SafeZoneIndicator_C_OnSafeZoneStateChange, NewState) == 0x000000, "Member 'SafeZoneIndicator_C_OnSafeZoneStateChange::NewState' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_OnSafeZoneStateChange, bInitial) == 0x000001, "Member 'SafeZoneIndicator_C_OnSafeZoneStateChange::bInitial' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.UserConstructionScript
 // 0x0010 (0x0010 - 0x0000)
@@ -180,10 +119,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_UserConstructionScript) == 0x000008, "Wrong alignment on SafeZoneIndicator_C_UserConstructionScript");
-static_assert(sizeof(SafeZoneIndicator_C_UserConstructionScript) == 0x000010, "Wrong size on SafeZoneIndicator_C_UserConstructionScript");
-static_assert(offsetof(SafeZoneIndicator_C_UserConstructionScript, CallFunc_IsDedicatedServer_ReturnValue) == 0x000000, "Member 'SafeZoneIndicator_C_UserConstructionScript::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000008, "Member 'SafeZoneIndicator_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.InitClosestPointAudio
 // 0x0018 (0x0018 - 0x0000)
@@ -194,11 +129,6 @@ public:
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue_1;         // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue_2;         // 0x0010(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_InitClosestPointAudio) == 0x000008, "Wrong alignment on SafeZoneIndicator_C_InitClosestPointAudio");
-static_assert(sizeof(SafeZoneIndicator_C_InitClosestPointAudio) == 0x000018, "Wrong size on SafeZoneIndicator_C_InitClosestPointAudio");
-static_assert(offsetof(SafeZoneIndicator_C_InitClosestPointAudio, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000000, "Member 'SafeZoneIndicator_C_InitClosestPointAudio::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_InitClosestPointAudio, CallFunc_SpawnSoundAttached_ReturnValue_1) == 0x000008, "Member 'SafeZoneIndicator_C_InitClosestPointAudio::CallFunc_SpawnSoundAttached_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_InitClosestPointAudio, CallFunc_SpawnSoundAttached_ReturnValue_2) == 0x000010, "Member 'SafeZoneIndicator_C_InitClosestPointAudio::CallFunc_SpawnSoundAttached_ReturnValue_2' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.GetAthenaGameState
 // 0x0020 (0x0020 - 0x0000)
@@ -210,12 +140,6 @@ public:
 	class AAthena_GameState_C*                    K2Node_DynamicCast_AsAthena_Game_State;            // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SafeZoneIndicator_C_GetAthenaGameState) == 0x000008, "Wrong alignment on SafeZoneIndicator_C_GetAthenaGameState");
-static_assert(sizeof(SafeZoneIndicator_C_GetAthenaGameState) == 0x000020, "Wrong size on SafeZoneIndicator_C_GetAthenaGameState");
-static_assert(offsetof(SafeZoneIndicator_C_GetAthenaGameState, AthenaGS) == 0x000000, "Member 'SafeZoneIndicator_C_GetAthenaGameState::AthenaGS' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetAthenaGameState, CallFunc_GetGameState_ReturnValue) == 0x000008, "Member 'SafeZoneIndicator_C_GetAthenaGameState::CallFunc_GetGameState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetAthenaGameState, K2Node_DynamicCast_AsAthena_Game_State) == 0x000010, "Member 'SafeZoneIndicator_C_GetAthenaGameState::K2Node_DynamicCast_AsAthena_Game_State' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetAthenaGameState, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'SafeZoneIndicator_C_GetAthenaGameState::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.GetRandomPointOnBoundary
 // 0x0044 (0x0044 - 0x0000)
@@ -230,15 +154,6 @@ public:
 	struct FVector                                CallFunc_Multiply_VectorFloat_ReturnValue;         // 0x002C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue;             // 0x0038(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_GetRandomPointOnBoundary) == 0x000004, "Wrong alignment on SafeZoneIndicator_C_GetRandomPointOnBoundary");
-static_assert(sizeof(SafeZoneIndicator_C_GetRandomPointOnBoundary) == 0x000044, "Wrong size on SafeZoneIndicator_C_GetRandomPointOnBoundary");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, Position) == 0x000000, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::Position' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00000C, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_GetSafeZoneRadius_ReturnValue) == 0x000018, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_GetSafeZoneRadius_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_RandomFloatInRange_ReturnValue) == 0x00001C, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_RotateAngleAxis_ReturnValue) == 0x000020, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x00002C, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointOnBoundary, CallFunc_Add_VectorVector_ReturnValue) == 0x000038, "Member 'SafeZoneIndicator_C_GetRandomPointOnBoundary::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
 
 // Function SafeZoneIndicator.SafeZoneIndicator_C.GetRandomPointInPlayerDir
 // 0x0080 (0x0080 - 0x0000)
@@ -263,24 +178,6 @@ public:
 	float                                         CallFunc_BreakVector_Z_1;                          // 0x0070(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SafeZoneIndicator_C_GetRandomPointInPlayerDir) == 0x000004, "Wrong alignment on SafeZoneIndicator_C_GetRandomPointInPlayerDir");
-static_assert(sizeof(SafeZoneIndicator_C_GetRandomPointInPlayerDir) == 0x000080, "Wrong size on SafeZoneIndicator_C_GetRandomPointInPlayerDir");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, Position) == 0x000000, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::Position' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_K2_GetActorLocation_ReturnValue) == 0x00000C, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x00001C, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_X) == 0x000028, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_Y) == 0x00002C, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_Z) == 0x000030, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_Subtract_VectorVector_ReturnValue) == 0x000034, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_RandomFloatInRange_ReturnValue) == 0x000040, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_RandomFloatInRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_GetRandomPointOnBoundary_Position) == 0x000044, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_GetRandomPointOnBoundary_Position' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_RotateAngleAxis_ReturnValue) == 0x000050, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_RotateAngleAxis_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_Add_VectorVector_ReturnValue) == 0x00005C, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_X_1) == 0x000068, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_X_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_Y_1) == 0x00006C, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_Y_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_BreakVector_Z_1) == 0x000070, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_BreakVector_Z_1' has a wrong offset!");
-static_assert(offsetof(SafeZoneIndicator_C_GetRandomPointInPlayerDir, CallFunc_MakeVector_ReturnValue) == 0x000074, "Member 'SafeZoneIndicator_C_GetRandomPointInPlayerDir::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 }
 

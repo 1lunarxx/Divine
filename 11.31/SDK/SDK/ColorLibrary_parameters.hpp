@@ -27,11 +27,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           StyleSheetOut;                                     // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_HarvestWeakPoint_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_HarvestWeakPoint_Color");
-static_assert(sizeof(ColorLibrary_C_Get_HarvestWeakPoint_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_HarvestWeakPoint_Color");
-static_assert(offsetof(ColorLibrary_C_Get_HarvestWeakPoint_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_HarvestWeakPoint_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_HarvestWeakPoint_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_HarvestWeakPoint_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_HarvestWeakPoint_Color, StyleSheetOut) == 0x000198, "Member 'ColorLibrary_C_Get_HarvestWeakPoint_Color::StyleSheetOut' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Base & Buff Colors
 // 0x0218 (0x0218 - 0x0000)
@@ -56,21 +51,6 @@ public:
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x01F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0208(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Base___Buff_Colors) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Base___Buff_Colors");
-static_assert(sizeof(ColorLibrary_C_Get_Base___Buff_Colors) == 0x000218, "Wrong size on ColorLibrary_C_Get_Base___Buff_Colors");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Display_Type) == 0x000000, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Display_Type' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Buff_State) == 0x000001, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Buff_State' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, StyleSheet) == 0x000004, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, __WorldContext) == 0x000198, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Base) == 0x0001A0, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Base' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Buff) == 0x0001B0, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Buff' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable) == 0x0001C0, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Temp_byte_Variable) == 0x0001D0, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable_1) == 0x0001D4, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Temp_struct_Variable_2) == 0x0001E4, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, Temp_byte_Variable_1) == 0x0001F4, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, K2Node_Select_Default) == 0x0001F8, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Base___Buff_Colors, K2Node_Select_Default_1) == 0x000208, "Member 'ColorLibrary_C_Get_Base___Buff_Colors::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Bolt Elemental Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -81,11 +61,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Bolt_Elemental_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Bolt_Elemental_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Bolt_Elemental_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Bolt_Elemental_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Bolt_Elemental_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Bolt_Elemental_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Bolt_Elemental_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Bolt_Elemental_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Bolt_Elemental_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Bolt_Elemental_Color::Color' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Ice Elemental Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -96,11 +71,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Ice_Elemental_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Ice_Elemental_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Ice_Elemental_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Ice_Elemental_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Ice_Elemental_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Ice_Elemental_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Ice_Elemental_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Ice_Elemental_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Ice_Elemental_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Ice_Elemental_Color::Color' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Fire Elemental Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -111,11 +81,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Fire_Elemental_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Fire_Elemental_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Fire_Elemental_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Fire_Elemental_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Fire_Elemental_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Fire_Elemental_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Fire_Elemental_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Fire_Elemental_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Fire_Elemental_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Fire_Elemental_Color::Color' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Unique Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -126,11 +91,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Unique_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Unique_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Unique_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Unique_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Unique_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Unique_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Unique_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Unique_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Unique_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Unique_Color::Color' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Debuff Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -141,11 +101,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Debuff_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Debuff_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Debuff_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Debuff_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Debuff_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Debuff_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Debuff_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Debuff_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Debuff_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Debuff_Color::Color' has a wrong offset!");
 
 // Function ColorLibrary.ColorLibrary_C.Get Buff Color
 // 0x01A8 (0x01A8 - 0x0000)
@@ -156,11 +111,6 @@ public:
 	class UObject*                                __WorldContext;                                    // 0x0190(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           Color;                                             // 0x0198(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ColorLibrary_C_Get_Buff_Color) == 0x000008, "Wrong alignment on ColorLibrary_C_Get_Buff_Color");
-static_assert(sizeof(ColorLibrary_C_Get_Buff_Color) == 0x0001A8, "Wrong size on ColorLibrary_C_Get_Buff_Color");
-static_assert(offsetof(ColorLibrary_C_Get_Buff_Color, StyleSheet) == 0x000000, "Member 'ColorLibrary_C_Get_Buff_Color::StyleSheet' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Buff_Color, __WorldContext) == 0x000190, "Member 'ColorLibrary_C_Get_Buff_Color::__WorldContext' has a wrong offset!");
-static_assert(offsetof(ColorLibrary_C_Get_Buff_Color, Color) == 0x000198, "Member 'ColorLibrary_C_Get_Buff_Color::Color' has a wrong offset!");
 
 }
 

@@ -43,7 +43,7 @@ public:
 	struct FTimerHandle                           MegaStormDamageTimer;                              // 0x04B8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         MegastormAudioDuration;                            // 0x04C0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4C4[0x4];                                      // 0x04C4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMulticastInlineDelegate<void(EFortSafeZoneState SafeZoneState)> OnSafeZoneStateChangeDispatcher;                   // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(EFortSafeZoneState SafeZoneState)> OnSafeZoneStateChangeDispatcher; // 0x04C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FVector                                CloudOffsetStart;                                  // 0x04D8(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CloudScale;                                        // 0x04E4(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ReverseRotation;                                   // 0x04F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
@@ -83,39 +83,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SafeZoneIndicator_C">();
+		BP_STATIC_CLASS_IMPL("SafeZoneIndicator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SafeZoneIndicator_C")
 	}
 	static class ASafeZoneIndicator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ASafeZoneIndicator_C>();
 	}
 };
-static_assert(alignof(ASafeZoneIndicator_C) == 0x000008, "Wrong alignment on ASafeZoneIndicator_C");
-static_assert(sizeof(ASafeZoneIndicator_C) == 0x0005A8, "Wrong size on ASafeZoneIndicator_C");
-static_assert(offsetof(ASafeZoneIndicator_C, UberGraphFrame) == 0x000460, "Member 'ASafeZoneIndicator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, BP_StormMeshRotator) == 0x000468, "Member 'ASafeZoneIndicator_C::BP_StormMeshRotator' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp_Intensity_05A077AD4FED08F2426E5CA16BD41D7C) == 0x000470, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp_Intensity_05A077AD4FED08F2426E5CA16BD41D7C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp__Direction_05A077AD4FED08F2426E5CA16BD41D7C) == 0x000474, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__Direction_05A077AD4FED08F2426E5CA16BD41D7C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, Pre_Damage_Audio_Ramp) == 0x000478, "Member 'ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C) == 0x000480, "Member 'ASafeZoneIndicator_C::StormFadeTimeline_StormFadeIn_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C) == 0x000484, "Member 'ASafeZoneIndicator_C::StormFadeTimeline__Direction_6FB75EFB416FB419D85F8797DEDD058C' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormFadeTimeline) == 0x000488, "Member 'ASafeZoneIndicator_C::StormFadeTimeline' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, ShieldBoundaryLoopSound) == 0x000490, "Member 'ASafeZoneIndicator_C::ShieldBoundaryLoopSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopSound) == 0x000498, "Member 'ASafeZoneIndicator_C::HoldingLoopSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingStartTime_0) == 0x0004A0, "Member 'ASafeZoneIndicator_C::HoldingStartTime_0' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, HoldingLoopTickSound) == 0x0004A8, "Member 'ASafeZoneIndicator_C::HoldingLoopTickSound' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneMID) == 0x0004B0, "Member 'ASafeZoneIndicator_C::SafeZoneMID' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, MegaStormDamageTimer) == 0x0004B8, "Member 'ASafeZoneIndicator_C::MegaStormDamageTimer' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, MegastormAudioDuration) == 0x0004C0, "Member 'ASafeZoneIndicator_C::MegastormAudioDuration' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, OnSafeZoneStateChangeDispatcher) == 0x0004C8, "Member 'ASafeZoneIndicator_C::OnSafeZoneStateChangeDispatcher' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, CloudOffsetStart) == 0x0004D8, "Member 'ASafeZoneIndicator_C::CloudOffsetStart' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, CloudScale) == 0x0004E4, "Member 'ASafeZoneIndicator_C::CloudScale' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, ReverseRotation) == 0x0004F0, "Member 'ASafeZoneIndicator_C::ReverseRotation' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, CloudOffsetEnd) == 0x0004F4, "Member 'ASafeZoneIndicator_C::CloudOffsetEnd' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, StormRotation) == 0x000500, "Member 'ASafeZoneIndicator_C::StormRotation' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneState) == 0x000504, "Member 'ASafeZoneIndicator_C::SafeZoneState' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneStateThunderFreqs) == 0x000508, "Member 'ASafeZoneIndicator_C::SafeZoneStateThunderFreqs' has a wrong offset!");
-static_assert(offsetof(ASafeZoneIndicator_C, SafeZoneStateThunderDuration) == 0x000558, "Member 'ASafeZoneIndicator_C::SafeZoneStateThunderDuration' has a wrong offset!");
 
 }
 

@@ -45,21 +45,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PendingAccountMergeNotification_C">();
+		BP_STATIC_CLASS_IMPL("PendingAccountMergeNotification_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PendingAccountMergeNotification_C")
 	}
 	static class UPendingAccountMergeNotification_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPendingAccountMergeNotification_C>();
 	}
 };
-static_assert(alignof(UPendingAccountMergeNotification_C) == 0x000008, "Wrong alignment on UPendingAccountMergeNotification_C");
-static_assert(sizeof(UPendingAccountMergeNotification_C) == 0x000BA0, "Wrong size on UPendingAccountMergeNotification_C");
-static_assert(offsetof(UPendingAccountMergeNotification_C, UberGraphFrame) == 0x000B70, "Member 'UPendingAccountMergeNotification_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPendingAccountMergeNotification_C, Hover) == 0x000B78, "Member 'UPendingAccountMergeNotification_C::Hover' has a wrong offset!");
-static_assert(offsetof(UPendingAccountMergeNotification_C, Border_1) == 0x000B80, "Member 'UPendingAccountMergeNotification_C::Border_1' has a wrong offset!");
-static_assert(offsetof(UPendingAccountMergeNotification_C, CommonActionWidget_48) == 0x000B88, "Member 'UPendingAccountMergeNotification_C::CommonActionWidget_48' has a wrong offset!");
-static_assert(offsetof(UPendingAccountMergeNotification_C, TextBlock_42) == 0x000B90, "Member 'UPendingAccountMergeNotification_C::TextBlock_42' has a wrong offset!");
-static_assert(offsetof(UPendingAccountMergeNotification_C, TextBlock_45) == 0x000B98, "Member 'UPendingAccountMergeNotification_C::TextBlock_45' has a wrong offset!");
 
 }
 

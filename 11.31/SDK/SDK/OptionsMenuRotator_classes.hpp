@@ -72,34 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuRotator_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuRotator_C")
 	}
 	static class UOptionsMenuRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuRotator_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuRotator_C) == 0x000008, "Wrong alignment on UOptionsMenuRotator_C");
-static_assert(sizeof(UOptionsMenuRotator_C) == 0x000330, "Wrong size on UOptionsMenuRotator_C");
-static_assert(offsetof(UOptionsMenuRotator_C, UberGraphFrame) == 0x000288, "Member 'UOptionsMenuRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, ButtonLeft) == 0x000290, "Member 'UOptionsMenuRotator_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, ButtonRight) == 0x000298, "Member 'UOptionsMenuRotator_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, ButtonTouchTooltip) == 0x0002A0, "Member 'UOptionsMenuRotator_C::ButtonTouchTooltip' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, HorizontalBox_Right) == 0x0002A8, "Member 'UOptionsMenuRotator_C::HorizontalBox_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, MenuAnchorSettingDescription) == 0x0002B0, "Member 'UOptionsMenuRotator_C::MenuAnchorSettingDescription' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, RotatorText) == 0x0002B8, "Member 'UOptionsMenuRotator_C::RotatorText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, SizeBoxContainer) == 0x0002C0, "Member 'UOptionsMenuRotator_C::SizeBoxContainer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, SizeBoxLabel) == 0x0002C8, "Member 'UOptionsMenuRotator_C::SizeBoxLabel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, Spacer_Right) == 0x0002D0, "Member 'UOptionsMenuRotator_C::Spacer_Right' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, SpacerBottom) == 0x0002D8, "Member 'UOptionsMenuRotator_C::SpacerBottom' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, Text_DisabledReason) == 0x0002E0, "Member 'UOptionsMenuRotator_C::Text_DisabledReason' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, TextRotator) == 0x0002E8, "Member 'UOptionsMenuRotator_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, Tab_Tooltip_Text) == 0x0002F0, "Member 'UOptionsMenuRotator_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, Hover_Text) == 0x0002F8, "Member 'UOptionsMenuRotator_C::Hover_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, Tooltip_Timer) == 0x000310, "Member 'UOptionsMenuRotator_C::Tooltip_Timer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, PreviousValue) == 0x000318, "Member 'UOptionsMenuRotator_C::PreviousValue' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, FontSizeMobile) == 0x00031C, "Member 'UOptionsMenuRotator_C::FontSizeMobile' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuRotator_C, AdvancedOptionsChangedHack) == 0x000320, "Member 'UOptionsMenuRotator_C::AdvancedOptionsChangedHack' has a wrong offset!");
 
 }
 

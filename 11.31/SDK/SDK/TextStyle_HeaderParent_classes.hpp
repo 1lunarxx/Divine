@@ -23,15 +23,17 @@ class UTextStyle_HeaderParent_C : public UTextStyle_Base_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-HeaderParent_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-HeaderParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-HeaderParent_C")
 	}
 	static class UTextStyle_HeaderParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_HeaderParent_C>();
 	}
 };
-static_assert(alignof(UTextStyle_HeaderParent_C) == 0x000008, "Wrong alignment on UTextStyle_HeaderParent_C");
-static_assert(sizeof(UTextStyle_HeaderParent_C) == 0x000148, "Wrong size on UTextStyle_HeaderParent_C");
 
 }
 

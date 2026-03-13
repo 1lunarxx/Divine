@@ -42,23 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChannelHeaderButton_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChannelHeaderButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChannelHeaderButton_C")
 	}
 	static class UVoiceChannelHeaderButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChannelHeaderButton_C>();
 	}
 };
-static_assert(alignof(UVoiceChannelHeaderButton_C) == 0x000008, "Wrong alignment on UVoiceChannelHeaderButton_C");
-static_assert(sizeof(UVoiceChannelHeaderButton_C) == 0x000BD0, "Wrong size on UVoiceChannelHeaderButton_C");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, UberGraphFrame) == 0x000B90, "Member 'UVoiceChannelHeaderButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, JoinSlideOut) == 0x000B98, "Member 'UVoiceChannelHeaderButton_C::JoinSlideOut' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, ScaleUp) == 0x000BA0, "Member 'UVoiceChannelHeaderButton_C::ScaleUp' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, ActiveMic) == 0x000BA8, "Member 'UVoiceChannelHeaderButton_C::ActiveMic' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, JoinText) == 0x000BB0, "Member 'UVoiceChannelHeaderButton_C::JoinText' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, Overlay_1) == 0x000BB8, "Member 'UVoiceChannelHeaderButton_C::Overlay_1' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, SelectionBackplate) == 0x000BC0, "Member 'UVoiceChannelHeaderButton_C::SelectionBackplate' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelHeaderButton_C, Switcher_ChannelButtonState) == 0x000BC8, "Member 'UVoiceChannelHeaderButton_C::Switcher_ChannelButtonState' has a wrong offset!");
 
 }
 

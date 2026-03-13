@@ -37,19 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_CameraRainDrops_02_C">();
+		BP_STATIC_CLASS_IMPL("B_CameraRainDrops_02_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_CameraRainDrops_02_C")
 	}
 	static class AB_CameraRainDrops_02_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_CameraRainDrops_02_C>();
 	}
 };
-static_assert(alignof(AB_CameraRainDrops_02_C) == 0x000010, "Wrong alignment on AB_CameraRainDrops_02_C");
-static_assert(sizeof(AB_CameraRainDrops_02_C) == 0x0002F0, "Wrong size on AB_CameraRainDrops_02_C");
-static_assert(offsetof(AB_CameraRainDrops_02_C, UberGraphFrame) == 0x0002D0, "Member 'AB_CameraRainDrops_02_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_CameraRainDrops_02_C, Alpha_Alpha_DCEE07724A8E0C236CD3F49821233A51) == 0x0002D8, "Member 'AB_CameraRainDrops_02_C::Alpha_Alpha_DCEE07724A8E0C236CD3F49821233A51' has a wrong offset!");
-static_assert(offsetof(AB_CameraRainDrops_02_C, Alpha__Direction_DCEE07724A8E0C236CD3F49821233A51) == 0x0002DC, "Member 'AB_CameraRainDrops_02_C::Alpha__Direction_DCEE07724A8E0C236CD3F49821233A51' has a wrong offset!");
-static_assert(offsetof(AB_CameraRainDrops_02_C, Alpha) == 0x0002E0, "Member 'AB_CameraRainDrops_02_C::Alpha' has a wrong offset!");
 
 }
 

@@ -63,36 +63,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_CaptureItem_C">();
+		BP_STATIC_CLASS_IMPL("BP_CaptureItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_CaptureItem_C")
 	}
 	static class ABP_CaptureItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_CaptureItem_C>();
 	}
 };
-static_assert(alignof(ABP_CaptureItem_C) == 0x000010, "Wrong alignment on ABP_CaptureItem_C");
-static_assert(sizeof(ABP_CaptureItem_C) == 0x000340, "Wrong size on ABP_CaptureItem_C");
-static_assert(offsetof(ABP_CaptureItem_C, UberGraphFrame) == 0x000228, "Member 'ABP_CaptureItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_Fill_SkylightComp1) == 0x000230, "Member 'ABP_CaptureItem_C::PointLight_Fill_SkylightComp1' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_Fill_SkylightComp) == 0x000238, "Member 'ABP_CaptureItem_C::PointLight_Fill_SkylightComp' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_Fill_Right) == 0x000240, "Member 'ABP_CaptureItem_C::PointLight_Fill_Right' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_RimTopLeft) == 0x000248, "Member 'ABP_CaptureItem_C::PointLight_RimTopLeft' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_Rim_Topright) == 0x000250, "Member 'ABP_CaptureItem_C::PointLight_Rim_Topright' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, SpotLight_Key) == 0x000258, "Member 'ABP_CaptureItem_C::SpotLight_Key' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, PointLight_Rim_Bottom) == 0x000260, "Member 'ABP_CaptureItem_C::PointLight_Rim_Bottom' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Camera) == 0x000268, "Member 'ABP_CaptureItem_C::Camera' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Wrapping_Papper_Aligned_Temp) == 0x000270, "Member 'ABP_CaptureItem_C::Wrapping_Papper_Aligned_Temp' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, SK_SCAR_Temp) == 0x000278, "Member 'ABP_CaptureItem_C::SK_SCAR_Temp' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, ArrowScar_Rotate) == 0x000280, "Member 'ABP_CaptureItem_C::ArrowScar_Rotate' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, DefaultSceneRoot) == 0x000288, "Member 'ABP_CaptureItem_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Timeline_PanCamera_Lerp_BC75346B47960E00A7D11BAE8EDAE242) == 0x000290, "Member 'ABP_CaptureItem_C::Timeline_PanCamera_Lerp_BC75346B47960E00A7D11BAE8EDAE242' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Timeline_PanCamera__Direction_BC75346B47960E00A7D11BAE8EDAE242) == 0x000294, "Member 'ABP_CaptureItem_C::Timeline_PanCamera__Direction_BC75346B47960E00A7D11BAE8EDAE242' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Timeline_PanCamera) == 0x000298, "Member 'ABP_CaptureItem_C::Timeline_PanCamera' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, Current_Item) == 0x0002A0, "Member 'ABP_CaptureItem_C::Current_Item' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, AxeMesh) == 0x0002A8, "Member 'ABP_CaptureItem_C::AxeMesh' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, LargeTile_Wrap_Transform) == 0x0002B0, "Member 'ABP_CaptureItem_C::LargeTile_Wrap_Transform' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, LargeTile_Wrap_Transform_B) == 0x0002E0, "Member 'ABP_CaptureItem_C::LargeTile_Wrap_Transform_B' has a wrong offset!");
-static_assert(offsetof(ABP_CaptureItem_C, SmallTile_Wrap_Transform) == 0x000310, "Member 'ABP_CaptureItem_C::SmallTile_Wrap_Transform' has a wrong offset!");
 
 }
 

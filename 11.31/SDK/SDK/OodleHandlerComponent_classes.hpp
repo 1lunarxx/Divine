@@ -34,22 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"OodleTrainerCommandlet">();
+		STATIC_CLASS_IMPL("OodleTrainerCommandlet")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OodleTrainerCommandlet")
 	}
 	static class UOodleTrainerCommandlet* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOodleTrainerCommandlet>();
 	}
 };
-static_assert(alignof(UOodleTrainerCommandlet) == 0x000008, "Wrong alignment on UOodleTrainerCommandlet");
-static_assert(sizeof(UOodleTrainerCommandlet) == 0x0000A0, "Wrong size on UOodleTrainerCommandlet");
-static_assert(offsetof(UOodleTrainerCommandlet, bCompressionTest) == 0x000080, "Member 'UOodleTrainerCommandlet::bCompressionTest' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, HashTableSize) == 0x000084, "Member 'UOodleTrainerCommandlet::HashTableSize' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, DictionarySize) == 0x000088, "Member 'UOodleTrainerCommandlet::DictionarySize' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, DictionaryTrials) == 0x00008C, "Member 'UOodleTrainerCommandlet::DictionaryTrials' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, TrialRandomness) == 0x000090, "Member 'UOodleTrainerCommandlet::TrialRandomness' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, TrialGenerations) == 0x000094, "Member 'UOodleTrainerCommandlet::TrialGenerations' has a wrong offset!");
-static_assert(offsetof(UOodleTrainerCommandlet, bNoTrials) == 0x000098, "Member 'UOodleTrainerCommandlet::bNoTrials' has a wrong offset!");
 
 }
 

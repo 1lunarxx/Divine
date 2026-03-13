@@ -38,21 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TicketCounter_C">();
+		BP_STATIC_CLASS_IMPL("TicketCounter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TicketCounter_C")
 	}
 	static class UTicketCounter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTicketCounter_C>();
 	}
 };
-static_assert(alignof(UTicketCounter_C) == 0x000008, "Wrong alignment on UTicketCounter_C");
-static_assert(sizeof(UTicketCounter_C) == 0x000268, "Wrong size on UTicketCounter_C");
-static_assert(offsetof(UTicketCounter_C, UberGraphFrame) == 0x000230, "Member 'UTicketCounter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTicketCounter_C, RefundTicket) == 0x000238, "Member 'UTicketCounter_C::RefundTicket' has a wrong offset!");
-static_assert(offsetof(UTicketCounter_C, RefundTicket_C_2) == 0x000240, "Member 'UTicketCounter_C::RefundTicket_C_2' has a wrong offset!");
-static_assert(offsetof(UTicketCounter_C, RefundTicket_C_3) == 0x000248, "Member 'UTicketCounter_C::RefundTicket_C_3' has a wrong offset!");
-static_assert(offsetof(UTicketCounter_C, TicketArray) == 0x000250, "Member 'UTicketCounter_C::TicketArray' has a wrong offset!");
-static_assert(offsetof(UTicketCounter_C, HighlightPendingTicket) == 0x000260, "Member 'UTicketCounter_C::HighlightPendingTicket' has a wrong offset!");
 
 }
 

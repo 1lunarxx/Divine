@@ -23,15 +23,17 @@ class UButtonStyle_Secondary_M_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Secondary-M_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Secondary-M_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Secondary-M_C")
 	}
 	static class UButtonStyle_Secondary_M_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Secondary_M_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Secondary_M_C) == 0x000008, "Wrong alignment on UButtonStyle_Secondary_M_C");
-static_assert(sizeof(UButtonStyle_Secondary_M_C) == 0x000570, "Wrong size on UButtonStyle_Secondary_M_C");
 
 }
 

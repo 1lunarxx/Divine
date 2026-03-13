@@ -67,38 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Athena_Grenade_Base_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Athena_Grenade_Base_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Athena_Grenade_Base_C")
 	}
 	static class AB_Prj_Athena_Grenade_Base_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Athena_Grenade_Base_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Athena_Grenade_Base_C) == 0x000008, "Wrong alignment on AB_Prj_Athena_Grenade_Base_C");
-static_assert(sizeof(AB_Prj_Athena_Grenade_Base_C) == 0x0008E8, "Wrong size on AB_Prj_Athena_Grenade_Base_C");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Athena_Grenade_Base_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, FortCollisionAudio) == 0x000840, "Member 'AB_Prj_Athena_Grenade_Base_C::FortCollisionAudio' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, RotatingMovement) == 0x000848, "Member 'AB_Prj_Athena_Grenade_Base_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Fuse_Particle) == 0x000850, "Member 'AB_Prj_Athena_Grenade_Base_C::Fuse_Particle' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Mesh) == 0x000858, "Member 'AB_Prj_Athena_Grenade_Base_C::Mesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, GrenadeFuse_AudioComponent) == 0x000860, "Member 'AB_Prj_Athena_Grenade_Base_C::GrenadeFuse_AudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Effect_Distance) == 0x000868, "Member 'AB_Prj_Athena_Grenade_Base_C::Effect_Distance' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, P_Explosion) == 0x000870, "Member 'AB_Prj_Athena_Grenade_Base_C::P_Explosion' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Cue_ExplosionSound) == 0x000878, "Member 'AB_Prj_Athena_Grenade_Base_C::Cue_ExplosionSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, P_Explosion_Water) == 0x000880, "Member 'AB_Prj_Athena_Grenade_Base_C::P_Explosion_Water' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, NumberOfBouncesTillExplode) == 0x000888, "Member 'AB_Prj_Athena_Grenade_Base_C::NumberOfBouncesTillExplode' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, CurrentNumberOfBounces) == 0x00088C, "Member 'AB_Prj_Athena_Grenade_Base_C::CurrentNumberOfBounces' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Cue_GrenadeFuseSound) == 0x000890, "Member 'AB_Prj_Athena_Grenade_Base_C::Cue_GrenadeFuseSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, BouncePawnAgainstPawnGravityScale) == 0x000898, "Member 'AB_Prj_Athena_Grenade_Base_C::BouncePawnAgainstPawnGravityScale' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, ExplosionForceFeedbackNear) == 0x0008A0, "Member 'AB_Prj_Athena_Grenade_Base_C::ExplosionForceFeedbackNear' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, ExplosionForceFeedbackFar) == 0x0008A8, "Member 'AB_Prj_Athena_Grenade_Base_C::ExplosionForceFeedbackFar' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Cue_Bounce) == 0x0008B0, "Member 'AB_Prj_Athena_Grenade_Base_C::Cue_Bounce' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, ExplosionCameraShake) == 0x0008B8, "Member 'AB_Prj_Athena_Grenade_Base_C::ExplosionCameraShake' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, FuseTime) == 0x0008C0, "Member 'AB_Prj_Athena_Grenade_Base_C::FuseTime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, ExplosionRadius) == 0x0008C4, "Member 'AB_Prj_Athena_Grenade_Base_C::ExplosionRadius' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Explosion_Rotation) == 0x0008C8, "Member 'AB_Prj_Athena_Grenade_Base_C::Explosion_Rotation' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, WaterFuseAudioComponent) == 0x0008D8, "Member 'AB_Prj_Athena_Grenade_Base_C::WaterFuseAudioComponent' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Athena_Grenade_Base_C, Water_Debris_Explosion) == 0x0008E0, "Member 'AB_Prj_Athena_Grenade_Base_C::Water_Debris_Explosion' has a wrong offset!");
 
 }
 

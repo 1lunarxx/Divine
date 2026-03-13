@@ -23,15 +23,17 @@ class AAnnounce_Storm2018Cine_C final : public AAnnounce_EventCine_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Announce_Storm2018Cine_C">();
+		BP_STATIC_CLASS_IMPL("Announce_Storm2018Cine_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Announce_Storm2018Cine_C")
 	}
 	static class AAnnounce_Storm2018Cine_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AAnnounce_Storm2018Cine_C>();
 	}
 };
-static_assert(alignof(AAnnounce_Storm2018Cine_C) == 0x000008, "Wrong alignment on AAnnounce_Storm2018Cine_C");
-static_assert(sizeof(AAnnounce_Storm2018Cine_C) == 0x0002B8, "Wrong size on AAnnounce_Storm2018Cine_C");
 
 }
 

@@ -46,27 +46,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeTile_Weekly_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeTile_Weekly_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeTile_Weekly_C")
 	}
 	static class UChallengeTile_Weekly_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeTile_Weekly_C>();
 	}
 };
-static_assert(alignof(UChallengeTile_Weekly_C) == 0x000008, "Wrong alignment on UChallengeTile_Weekly_C");
-static_assert(sizeof(UChallengeTile_Weekly_C) == 0x000C18, "Wrong size on UChallengeTile_Weekly_C");
-static_assert(offsetof(UChallengeTile_Weekly_C, UberGraphFrame) == 0x000BB8, "Member 'UChallengeTile_Weekly_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, AmbientPartyAssistAttention) == 0x000BC0, "Member 'UChallengeTile_Weekly_C::AmbientPartyAssistAttention' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, Outro) == 0x000BC8, "Member 'UChallengeTile_Weekly_C::Outro' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, OnHover) == 0x000BD0, "Member 'UChallengeTile_Weekly_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, ImageBackground) == 0x000BD8, "Member 'UChallengeTile_Weekly_C::ImageBackground' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, ImageCompletionBackground) == 0x000BE0, "Member 'UChallengeTile_Weekly_C::ImageCompletionBackground' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, ImageLockIcon) == 0x000BE8, "Member 'UChallengeTile_Weekly_C::ImageLockIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, LockedMessageSpacer) == 0x000BF0, "Member 'UChallengeTile_Weekly_C::LockedMessageSpacer' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, OverlayPartyAssist) == 0x000BF8, "Member 'UChallengeTile_Weekly_C::OverlayPartyAssist' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, SwitcherBackground) == 0x000C00, "Member 'UChallengeTile_Weekly_C::SwitcherBackground' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, SwitcherProgressInfo) == 0x000C08, "Member 'UChallengeTile_Weekly_C::SwitcherProgressInfo' has a wrong offset!");
-static_assert(offsetof(UChallengeTile_Weekly_C, TextSpacer) == 0x000C10, "Member 'UChallengeTile_Weekly_C::TextSpacer' has a wrong offset!");
 
 }
 

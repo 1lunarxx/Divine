@@ -28,7 +28,7 @@ public:
 	class UIconTextButton_C*                      FinishButton;                                      // 0x0250(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWidgetSwitcher*                        NextButtonSwitcher;                                // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UIconTextButton_C*                      NextQuestionButton;                                // 0x0260(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UPlayerSurveyPanelAnswerSelectorWidget_C* PlayerSurveyPanelAnswerSelectorWidget;             // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UPlayerSurveyPanelAnswerSelectorWidget_C* PlayerSurveyPanelAnswerSelectorWidget;           // 0x0268(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       QuestionNumberTextBlock;                           // 0x0270(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class URichTextBlock*                         QuestionTextBlock;                                 // 0x0278(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UTextBlock*                             SubtitleTextBlock;                                 // 0x0280(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
@@ -67,28 +67,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyPanelContents_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyPanelContents_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyPanelContents_C")
 	}
 	static class UPlayerSurveyPanelContents_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPlayerSurveyPanelContents_C>();
 	}
 };
-static_assert(alignof(UPlayerSurveyPanelContents_C) == 0x000008, "Wrong alignment on UPlayerSurveyPanelContents_C");
-static_assert(sizeof(UPlayerSurveyPanelContents_C) == 0x0002C0, "Wrong size on UPlayerSurveyPanelContents_C");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, UberGraphFrame) == 0x000240, "Member 'UPlayerSurveyPanelContents_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, CancelButton) == 0x000248, "Member 'UPlayerSurveyPanelContents_C::CancelButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, FinishButton) == 0x000250, "Member 'UPlayerSurveyPanelContents_C::FinishButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, NextButtonSwitcher) == 0x000258, "Member 'UPlayerSurveyPanelContents_C::NextButtonSwitcher' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, NextQuestionButton) == 0x000260, "Member 'UPlayerSurveyPanelContents_C::NextQuestionButton' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, PlayerSurveyPanelAnswerSelectorWidget) == 0x000268, "Member 'UPlayerSurveyPanelContents_C::PlayerSurveyPanelAnswerSelectorWidget' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, QuestionNumberTextBlock) == 0x000270, "Member 'UPlayerSurveyPanelContents_C::QuestionNumberTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, QuestionTextBlock) == 0x000278, "Member 'UPlayerSurveyPanelContents_C::QuestionTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, SubtitleTextBlock) == 0x000280, "Member 'UPlayerSurveyPanelContents_C::SubtitleTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, SurveyTitleTextBlock) == 0x000288, "Member 'UPlayerSurveyPanelContents_C::SurveyTitleTextBlock' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, QuestionSelectorObj) == 0x000290, "Member 'UPlayerSurveyPanelContents_C::QuestionSelectorObj' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, Text_QuestionLabel) == 0x000298, "Member 'UPlayerSurveyPanelContents_C::Text_QuestionLabel' has a wrong offset!");
-static_assert(offsetof(UPlayerSurveyPanelContents_C, OnSurveyEnded) == 0x0002B0, "Member 'UPlayerSurveyPanelContents_C::OnSurveyEnded' has a wrong offset!");
 
 }
 

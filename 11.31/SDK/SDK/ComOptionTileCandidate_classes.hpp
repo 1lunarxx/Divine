@@ -49,28 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComOptionTileCandidate_C">();
+		BP_STATIC_CLASS_IMPL("ComOptionTileCandidate_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComOptionTileCandidate_C")
 	}
 	static class UComOptionTileCandidate_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComOptionTileCandidate_C>();
 	}
 };
-static_assert(alignof(UComOptionTileCandidate_C) == 0x000008, "Wrong alignment on UComOptionTileCandidate_C");
-static_assert(sizeof(UComOptionTileCandidate_C) == 0x000350, "Wrong size on UComOptionTileCandidate_C");
-static_assert(offsetof(UComOptionTileCandidate_C, UberGraphFrame) == 0x000250, "Member 'UComOptionTileCandidate_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, CallToAction) == 0x000258, "Member 'UComOptionTileCandidate_C::CallToAction' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, ComDivider_option) == 0x000260, "Member 'UComOptionTileCandidate_C::ComDivider_option' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, ComRightImageBackground) == 0x000268, "Member 'UComOptionTileCandidate_C::ComRightImageBackground' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, VFXVOTING) == 0x000270, "Member 'UComOptionTileCandidate_C::VFXVOTING' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, MID_StrikeThrough) == 0x000278, "Member 'UComOptionTileCandidate_C::MID_StrikeThrough' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, MID_CarouselTimerProgressBar) == 0x000280, "Member 'UComOptionTileCandidate_C::MID_CarouselTimerProgressBar' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, Carousel_NextItemImage) == 0x000288, "Member 'UComOptionTileCandidate_C::Carousel_NextItemImage' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, CarouselLoopTimeRemaining) == 0x000310, "Member 'UComOptionTileCandidate_C::CarouselLoopTimeRemaining' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, CarouselLoopTimer) == 0x000314, "Member 'UComOptionTileCandidate_C::CarouselLoopTimer' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, LargeSoftImage) == 0x000318, "Member 'UComOptionTileCandidate_C::LargeSoftImage' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, Carousel_NextLargeTexture) == 0x000340, "Member 'UComOptionTileCandidate_C::Carousel_NextLargeTexture' has a wrong offset!");
-static_assert(offsetof(UComOptionTileCandidate_C, BattleStarTemplate) == 0x000348, "Member 'UComOptionTileCandidate_C::BattleStarTemplate' has a wrong offset!");
 
 }
 

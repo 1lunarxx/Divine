@@ -35,6 +35,7 @@ public:
 	class UCommonTextBlock*                       TextDoneIndicator;                                 // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void OnPartyAssistEnabledChanged(bool bIsPartyAssistEnabled);
 	void OnMouseEnter(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
 	void OnMouseLeave(const struct FPointerEvent& MouseEvent);
@@ -43,30 +44,21 @@ public:
 	void StartHighlight();
 	void EndHighlight();
 	void ExecuteUbergraph_ChallengeImageGridTreeEntry_Challenge(int32 EntryPoint);
-	void BndEvt__Button_PartyAssist_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeImageGridTreeEntry_Challenge_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeImageGridTreeEntry_Challenge_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeImageGridTreeEntry_Challenge_C")
 	}
 	static class UChallengeImageGridTreeEntry_Challenge_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeImageGridTreeEntry_Challenge_C>();
 	}
 };
-static_assert(alignof(UChallengeImageGridTreeEntry_Challenge_C) == 0x000008, "Wrong alignment on UChallengeImageGridTreeEntry_Challenge_C");
-static_assert(sizeof(UChallengeImageGridTreeEntry_Challenge_C) == 0x0002D8, "Wrong size on UChallengeImageGridTreeEntry_Challenge_C");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, UberGraphFrame) == 0x000288, "Member 'UChallengeImageGridTreeEntry_Challenge_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, HoverPulse) == 0x000290, "Member 'UChallengeImageGridTreeEntry_Challenge_C::HoverPulse' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, OnHover) == 0x000298, "Member 'UChallengeImageGridTreeEntry_Challenge_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, ChallengeDescriptionHB) == 0x0002A0, "Member 'UChallengeImageGridTreeEntry_Challenge_C::ChallengeDescriptionHB' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, DotSwitcher) == 0x0002A8, "Member 'UChallengeImageGridTreeEntry_Challenge_C::DotSwitcher' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, GridNumberEntry) == 0x0002B0, "Member 'UChallengeImageGridTreeEntry_Challenge_C::GridNumberEntry' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, ImageLockIcon) == 0x0002B8, "Member 'UChallengeImageGridTreeEntry_Challenge_C::ImageLockIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, PuzzlePiece) == 0x0002C0, "Member 'UChallengeImageGridTreeEntry_Challenge_C::PuzzlePiece' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, SB_MainSize) == 0x0002C8, "Member 'UChallengeImageGridTreeEntry_Challenge_C::SB_MainSize' has a wrong offset!");
-static_assert(offsetof(UChallengeImageGridTreeEntry_Challenge_C, TextDoneIndicator) == 0x0002D0, "Member 'UChallengeImageGridTreeEntry_Challenge_C::TextDoneIndicator' has a wrong offset!");
 
 }
 

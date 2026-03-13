@@ -107,8 +107,6 @@ struct alignas(0x08) FBlueprintSessionResult final
 public:
 	uint8                                         Pad_0[0xB8];                                       // 0x0000(0x00B8)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FBlueprintSessionResult) == 0x000008, "Wrong alignment on FBlueprintSessionResult");
-static_assert(sizeof(FBlueprintSessionResult) == 0x0000B8, "Wrong size on FBlueprintSessionResult");
 
 // ScriptStruct OnlineSubsystemUtils.PlayerReservation
 // 0x0050 (0x0050 - 0x0000)
@@ -122,13 +120,6 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ElapsedTime;                                       // 0x004C(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPlayerReservation) == 0x000008, "Wrong alignment on FPlayerReservation");
-static_assert(sizeof(FPlayerReservation) == 0x000050, "Wrong size on FPlayerReservation");
-static_assert(offsetof(FPlayerReservation, UniqueId) == 0x000000, "Member 'FPlayerReservation::UniqueId' has a wrong offset!");
-static_assert(offsetof(FPlayerReservation, ValidationStr) == 0x000028, "Member 'FPlayerReservation::ValidationStr' has a wrong offset!");
-static_assert(offsetof(FPlayerReservation, Platform) == 0x000038, "Member 'FPlayerReservation::Platform' has a wrong offset!");
-static_assert(offsetof(FPlayerReservation, bAllowCrossplay) == 0x000048, "Member 'FPlayerReservation::bAllowCrossplay' has a wrong offset!");
-static_assert(offsetof(FPlayerReservation, ElapsedTime) == 0x00004C, "Member 'FPlayerReservation::ElapsedTime' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.PIELoginSettingsInternal
 // 0x0040 (0x0040 - 0x0000)
@@ -140,12 +131,6 @@ public:
 	class FString                                 Type;                                              // 0x0020(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 TokenBytes;                                        // 0x0030(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPIELoginSettingsInternal) == 0x000008, "Wrong alignment on FPIELoginSettingsInternal");
-static_assert(sizeof(FPIELoginSettingsInternal) == 0x000040, "Wrong size on FPIELoginSettingsInternal");
-static_assert(offsetof(FPIELoginSettingsInternal, ID) == 0x000000, "Member 'FPIELoginSettingsInternal::ID' has a wrong offset!");
-static_assert(offsetof(FPIELoginSettingsInternal, Token) == 0x000010, "Member 'FPIELoginSettingsInternal::Token' has a wrong offset!");
-static_assert(offsetof(FPIELoginSettingsInternal, Type) == 0x000020, "Member 'FPIELoginSettingsInternal::Type' has a wrong offset!");
-static_assert(offsetof(FPIELoginSettingsInternal, TokenBytes) == 0x000030, "Member 'FPIELoginSettingsInternal::TokenBytes' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.PartyReservation
 // 0x0050 (0x0050 - 0x0000)
@@ -158,12 +143,6 @@ public:
 	TArray<struct FPlayerReservation>             PartyMembers;                                      // 0x0030(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<struct FPlayerReservation>             RemovedPartyMembers;                               // 0x0040(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPartyReservation) == 0x000008, "Wrong alignment on FPartyReservation");
-static_assert(sizeof(FPartyReservation) == 0x000050, "Wrong size on FPartyReservation");
-static_assert(offsetof(FPartyReservation, TeamNum) == 0x000000, "Member 'FPartyReservation::TeamNum' has a wrong offset!");
-static_assert(offsetof(FPartyReservation, PartyLeader) == 0x000008, "Member 'FPartyReservation::PartyLeader' has a wrong offset!");
-static_assert(offsetof(FPartyReservation, PartyMembers) == 0x000030, "Member 'FPartyReservation::PartyMembers' has a wrong offset!");
-static_assert(offsetof(FPartyReservation, RemovedPartyMembers) == 0x000040, "Member 'FPartyReservation::RemovedPartyMembers' has a wrong offset!");
 
 // ScriptStruct OnlineSubsystemUtils.SpectatorReservation
 // 0x0078 (0x0078 - 0x0000)
@@ -173,10 +152,6 @@ public:
 	struct FUniqueNetIdRepl                       SpectatorId;                                       // 0x0000(0x0028)(Transient, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPlayerReservation                     Spectator;                                         // 0x0028(0x0050)(Transient, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSpectatorReservation) == 0x000008, "Wrong alignment on FSpectatorReservation");
-static_assert(sizeof(FSpectatorReservation) == 0x000078, "Wrong size on FSpectatorReservation");
-static_assert(offsetof(FSpectatorReservation, SpectatorId) == 0x000000, "Member 'FSpectatorReservation::SpectatorId' has a wrong offset!");
-static_assert(offsetof(FSpectatorReservation, Spectator) == 0x000028, "Member 'FSpectatorReservation::Spectator' has a wrong offset!");
 
 }
 

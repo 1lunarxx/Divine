@@ -25,10 +25,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_IsValidTimerHandle_ReturnValue;        // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TabRevealMeassage_C_AutoClose) == 0x000008, "Wrong alignment on TabRevealMeassage_C_AutoClose");
-static_assert(sizeof(TabRevealMeassage_C_AutoClose) == 0x000010, "Wrong size on TabRevealMeassage_C_AutoClose");
-static_assert(offsetof(TabRevealMeassage_C_AutoClose, CallFunc_PlayAnimation_ReturnValue) == 0x000000, "Member 'TabRevealMeassage_C_AutoClose::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_AutoClose, CallFunc_K2_IsValidTimerHandle_ReturnValue) == 0x000008, "Member 'TabRevealMeassage_C_AutoClose::CallFunc_K2_IsValidTimerHandle_ReturnValue' has a wrong offset!");
 
 // Function TabRevealMeassage.TabRevealMeassage_C.ToggleTimer
 // 0x0020 (0x0020 - 0x0000)
@@ -41,11 +37,6 @@ public:
 	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x0018(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabRevealMeassage_C_ToggleTimer) == 0x000008, "Wrong alignment on TabRevealMeassage_C_ToggleTimer");
-static_assert(sizeof(TabRevealMeassage_C_ToggleTimer) == 0x000020, "Wrong size on TabRevealMeassage_C_ToggleTimer");
-static_assert(offsetof(TabRevealMeassage_C_ToggleTimer, Enabled) == 0x000000, "Member 'TabRevealMeassage_C_ToggleTimer::Enabled' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ToggleTimer, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'TabRevealMeassage_C_ToggleTimer::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ToggleTimer, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000018, "Member 'TabRevealMeassage_C_ToggleTimer::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
 
 // Function TabRevealMeassage.TabRevealMeassage_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -54,9 +45,6 @@ struct TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_Comm
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'TabRevealMeassage_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function TabRevealMeassage.TabRevealMeassage_C.ExecuteUbergraph_TabRevealMeassage
 // 0x0048 (0x0048 - 0x0000)
@@ -77,18 +65,6 @@ public:
 	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage) == 0x000008, "Wrong alignment on TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage");
-static_assert(sizeof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage) == 0x000048, "Wrong size on TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, EntryPoint) == 0x000000, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, Temp_bool_Variable) == 0x000004, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, Temp_byte_Variable) == 0x000005, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, Temp_byte_Variable_1) == 0x000006, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, K2Node_ComponentBoundEvent_Button) == 0x000008, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, CallFunc_GetEmptyText_ReturnValue) == 0x000010, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::CallFunc_GetEmptyText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, CallFunc_EqualEqual_TextText_ReturnValue) == 0x000028, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, K2Node_Select_Default) == 0x000029, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, K2Node_CreateDelegate_OutputDelegate) == 0x00002C, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'TabRevealMeassage_C_ExecuteUbergraph_TabRevealMeassage::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

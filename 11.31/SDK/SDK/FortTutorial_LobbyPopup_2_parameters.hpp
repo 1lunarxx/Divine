@@ -21,9 +21,6 @@ struct FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTutorial_LobbyPopup_2_C_BndEvt__Skip_Button_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTutorial_LobbyPopup_2.FortTutorial_LobbyPopup_2_C.BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEve
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTutorial_LobbyPopup_2_C_BndEvt__Close_Button_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTutorial_LobbyPopup_2.FortTutorial_LobbyPopup_2_C.BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -43,9 +37,6 @@ struct FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'FortTutorial_LobbyPopup_2_C_BndEvt__Cancel_Button_K2Node_ComponentBoundEvent_5_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function FortTutorial_LobbyPopup_2.FortTutorial_LobbyPopup_2_C.ExecuteUbergraph_FortTutorial_LobbyPopup_2
 // 0x0038 (0x0038 - 0x0000)
@@ -61,15 +52,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                          K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2) == 0x000008, "Wrong alignment on FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2");
-static_assert(sizeof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2) == 0x000038, "Wrong size on FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, EntryPoint) == 0x000000, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::EntryPoint' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, K2Node_ComponentBoundEvent_Button_2) == 0x000008, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, CallFunc_PlayAnimation_ReturnValue) == 0x000010, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, K2Node_ComponentBoundEvent_Button_1) == 0x000018, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'FortTutorial_LobbyPopup_2_C_ExecuteUbergraph_FortTutorial_LobbyPopup_2::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
 
 }
 

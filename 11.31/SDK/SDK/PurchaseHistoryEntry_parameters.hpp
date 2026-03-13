@@ -26,10 +26,6 @@ public:
 	class FText                                   PurchaseText;                                      // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bHasBeenRefunded;                                  // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_SetPurchaseText) == 0x000008, "Wrong alignment on PurchaseHistoryEntry_C_SetPurchaseText");
-static_assert(sizeof(PurchaseHistoryEntry_C_SetPurchaseText) == 0x000020, "Wrong size on PurchaseHistoryEntry_C_SetPurchaseText");
-static_assert(offsetof(PurchaseHistoryEntry_C_SetPurchaseText, PurchaseText) == 0x000000, "Member 'PurchaseHistoryEntry_C_SetPurchaseText::PurchaseText' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_SetPurchaseText, bHasBeenRefunded) == 0x000018, "Member 'PurchaseHistoryEntry_C_SetPurchaseText::bHasBeenRefunded' has a wrong offset!");
 
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.DisableAppearance
 // 0x0001 (0x0001 - 0x0000)
@@ -38,9 +34,6 @@ struct PurchaseHistoryEntry_C_DisableAppearance final
 public:
 	bool                                          IsDisabled;                                        // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_DisableAppearance) == 0x000001, "Wrong alignment on PurchaseHistoryEntry_C_DisableAppearance");
-static_assert(sizeof(PurchaseHistoryEntry_C_DisableAppearance) == 0x000001, "Wrong size on PurchaseHistoryEntry_C_DisableAppearance");
-static_assert(offsetof(PurchaseHistoryEntry_C_DisableAppearance, IsDisabled) == 0x000000, "Member 'PurchaseHistoryEntry_C_DisableAppearance::IsDisabled' has a wrong offset!");
 
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -49,9 +42,6 @@ struct PurchaseHistoryEntry_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_PreConstruct) == 0x000001, "Wrong alignment on PurchaseHistoryEntry_C_PreConstruct");
-static_assert(sizeof(PurchaseHistoryEntry_C_PreConstruct) == 0x000001, "Wrong size on PurchaseHistoryEntry_C_PreConstruct");
-static_assert(offsetof(PurchaseHistoryEntry_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'PurchaseHistoryEntry_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.OnSetHistory
 // 0x0003 (0x0003 - 0x0000)
@@ -62,11 +52,6 @@ public:
 	bool                                          bIsTokenlessRefund;                                // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          bPlayerHasTokens;                                  // 0x0002(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_OnSetHistory) == 0x000001, "Wrong alignment on PurchaseHistoryEntry_C_OnSetHistory");
-static_assert(sizeof(PurchaseHistoryEntry_C_OnSetHistory) == 0x000003, "Wrong size on PurchaseHistoryEntry_C_OnSetHistory");
-static_assert(offsetof(PurchaseHistoryEntry_C_OnSetHistory, bHasBeenRefunded) == 0x000000, "Member 'PurchaseHistoryEntry_C_OnSetHistory::bHasBeenRefunded' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_OnSetHistory, bIsTokenlessRefund) == 0x000001, "Member 'PurchaseHistoryEntry_C_OnSetHistory::bIsTokenlessRefund' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_OnSetHistory, bPlayerHasTokens) == 0x000002, "Member 'PurchaseHistoryEntry_C_OnSetHistory::bPlayerHasTokens' has a wrong offset!");
 
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.UpdateItemList
 // 0x0010 (0x0010 - 0x0000)
@@ -75,9 +60,6 @@ struct PurchaseHistoryEntry_C_UpdateItemList final
 public:
 	TArray<class UFortCosmeticItemCard*>          ItemCards;                                         // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_UpdateItemList) == 0x000008, "Wrong alignment on PurchaseHistoryEntry_C_UpdateItemList");
-static_assert(sizeof(PurchaseHistoryEntry_C_UpdateItemList) == 0x000010, "Wrong size on PurchaseHistoryEntry_C_UpdateItemList");
-static_assert(offsetof(PurchaseHistoryEntry_C_UpdateItemList, ItemCards) == 0x000000, "Member 'PurchaseHistoryEntry_C_UpdateItemList::ItemCards' has a wrong offset!");
 
 // Function PurchaseHistoryEntry.PurchaseHistoryEntry_C.ExecuteUbergraph_PurchaseHistoryEntry
 // 0x0160 (0x0160 - 0x0000)
@@ -144,57 +126,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0158(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue_2;                 // 0x0159(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry) == 0x000008, "Wrong alignment on PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry");
-static_assert(sizeof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry) == 0x000160, "Wrong size on PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, EntryPoint) == 0x000000, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_bool_Variable) == 0x000004, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_bool_True_if_break_was_hit_Variable) == 0x000005, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_bool_True_if_break_was_hit_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_int_Array_Index_Variable) == 0x000008, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Not_PreBool_ReturnValue) == 0x000010, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_byte_Variable) == 0x000011, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_PurchaseText) == 0x000018, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_PurchaseText' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_bHasBeenRefunded_1) == 0x000030, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_bHasBeenRefunded_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_CustomEvent_isDisabled) == 0x000031, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_CustomEvent_isDisabled' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_IsDesignTime) == 0x000032, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_int_Loop_Counter_Variable) == 0x000034, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_byte_Variable_1) == 0x000038, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Add_IntInt_ReturnValue_1) == 0x00003C, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_bool_Variable_1) == 0x000040, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_MakeLiteralInt_ReturnValue) == 0x000044, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_MakeLiteralInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Subtract_IntInt_ReturnValue) == 0x000048, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Select_Default) == 0x00004C, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Greater_IntInt_ReturnValue) == 0x00004D, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_struct_Variable) == 0x000050, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_struct_Variable_1) == 0x000060, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_bHasBeenRefunded) == 0x000070, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_bHasBeenRefunded' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_bIsTokenlessRefund) == 0x000071, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_bIsTokenlessRefund' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_bPlayerHasTokens) == 0x000072, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_bPlayerHasTokens' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Not_PreBool_ReturnValue_1) == 0x000073, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Not_PreBool_ReturnValue_2) == 0x000074, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Not_PreBool_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_BooleanAND_ReturnValue) == 0x000075, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_bool_Variable_2) == 0x000076, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_BooleanOR_ReturnValue) == 0x000077, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Select_Default_1) == 0x000078, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_object_Variable) == 0x000088, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, Temp_object_Variable_1) == 0x000090, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Select_Default_2) == 0x000098, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_Event_ItemCards) == 0x0000A0, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_Event_ItemCards' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Array_Get_Item) == 0x0000B8, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Subtract_IntInt_ReturnValue_1) == 0x0000C0, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Subtract_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_MakeStruct_FormatArgumentData) == 0x0000C8, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_MakeArray_Array) == 0x000108, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Format_ReturnValue) == 0x000118, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_AddChild_ReturnValue) == 0x000130, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_AddChild_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_AddChild_ReturnValue_1) == 0x000138, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_AddChild_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000140, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_DynamicCast_AsHorizontal_Box_Slot) == 0x000148, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_DynamicCast_AsHorizontal_Box_Slot' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, K2Node_DynamicCast_bSuccess) == 0x000150, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_BooleanAND_ReturnValue_1) == 0x000151, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Array_Length_ReturnValue_1) == 0x000154, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_Less_IntInt_ReturnValue) == 0x000158, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry, CallFunc_BooleanAND_ReturnValue_2) == 0x000159, "Member 'PurchaseHistoryEntry_C_ExecuteUbergraph_PurchaseHistoryEntry::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
 
 }
 

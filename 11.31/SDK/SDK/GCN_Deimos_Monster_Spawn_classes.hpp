@@ -24,22 +24,23 @@ public:
 	class USoundConcurrency*                      ConcurrencySettings;                               // 0x01B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
 	void OnBurst(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance) const;
+	bool OnExecute(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters) const;
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Deimos_Monster_Spawn_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Deimos_Monster_Spawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Deimos_Monster_Spawn_C")
 	}
 	static class UGCN_Deimos_Monster_Spawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGCN_Deimos_Monster_Spawn_C>();
 	}
 };
-static_assert(alignof(UGCN_Deimos_Monster_Spawn_C) == 0x000008, "Wrong alignment on UGCN_Deimos_Monster_Spawn_C");
-static_assert(sizeof(UGCN_Deimos_Monster_Spawn_C) == 0x0001B8, "Wrong size on UGCN_Deimos_Monster_Spawn_C");
-static_assert(offsetof(UGCN_Deimos_Monster_Spawn_C, ConcurrencySettings) == 0x0001B0, "Member 'UGCN_Deimos_Monster_Spawn_C::ConcurrencySettings' has a wrong offset!");
 
 }
 

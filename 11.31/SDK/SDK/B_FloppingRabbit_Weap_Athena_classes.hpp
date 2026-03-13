@@ -40,20 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_FloppingRabbit_Weap_Athena_C">();
+		BP_STATIC_CLASS_IMPL("B_FloppingRabbit_Weap_Athena_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_FloppingRabbit_Weap_Athena_C")
 	}
 	static class AB_FloppingRabbit_Weap_Athena_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_FloppingRabbit_Weap_Athena_C>();
 	}
 };
-static_assert(alignof(AB_FloppingRabbit_Weap_Athena_C) == 0x000008, "Wrong alignment on AB_FloppingRabbit_Weap_Athena_C");
-static_assert(sizeof(AB_FloppingRabbit_Weap_Athena_C) == 0x000A58, "Wrong size on AB_FloppingRabbit_Weap_Athena_C");
-static_assert(offsetof(AB_FloppingRabbit_Weap_Athena_C, UberGraphFrame) == 0x000A38, "Member 'AB_FloppingRabbit_Weap_Athena_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_FloppingRabbit_Weap_Athena_C, Projectile) == 0x000A40, "Member 'AB_FloppingRabbit_Weap_Athena_C::Projectile' has a wrong offset!");
-static_assert(offsetof(AB_FloppingRabbit_Weap_Athena_C, Wire) == 0x000A48, "Member 'AB_FloppingRabbit_Weap_Athena_C::Wire' has a wrong offset!");
-static_assert(offsetof(AB_FloppingRabbit_Weap_Athena_C, HideBobber) == 0x000A50, "Member 'AB_FloppingRabbit_Weap_Athena_C::HideBobber' has a wrong offset!");
-static_assert(offsetof(AB_FloppingRabbit_Weap_Athena_C, OneHandGrip) == 0x000A51, "Member 'AB_FloppingRabbit_Weap_Athena_C::OneHandGrip' has a wrong offset!");
 
 }
 

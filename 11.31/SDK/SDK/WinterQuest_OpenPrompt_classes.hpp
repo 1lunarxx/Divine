@@ -36,21 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuest_OpenPrompt_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuest_OpenPrompt_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuest_OpenPrompt_C")
 	}
 	static class UWinterQuest_OpenPrompt_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuest_OpenPrompt_C>();
 	}
 };
-static_assert(alignof(UWinterQuest_OpenPrompt_C) == 0x000008, "Wrong alignment on UWinterQuest_OpenPrompt_C");
-static_assert(sizeof(UWinterQuest_OpenPrompt_C) == 0x000BF0, "Wrong size on UWinterQuest_OpenPrompt_C");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, Holding_ExampleFIll) == 0x000BC0, "Member 'UWinterQuest_OpenPrompt_C::Holding_ExampleFIll' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, Holding) == 0x000BC8, "Member 'UWinterQuest_OpenPrompt_C::Holding' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, IntroAnim) == 0x000BD0, "Member 'UWinterQuest_OpenPrompt_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, PointerArrow_Right) == 0x000BD8, "Member 'UWinterQuest_OpenPrompt_C::PointerArrow_Right' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, RadialHoldButtonBacking_Right) == 0x000BE0, "Member 'UWinterQuest_OpenPrompt_C::RadialHoldButtonBacking_Right' has a wrong offset!");
-static_assert(offsetof(UWinterQuest_OpenPrompt_C, HoldProgress_Offset) == 0x000BE8, "Member 'UWinterQuest_OpenPrompt_C::HoldProgress_Offset' has a wrong offset!");
 
 }
 

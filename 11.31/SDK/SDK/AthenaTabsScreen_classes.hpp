@@ -32,22 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaTabsScreen_C">();
+		BP_STATIC_CLASS_IMPL("AthenaTabsScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaTabsScreen_C")
 	}
 	static class UAthenaTabsScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaTabsScreen_C>();
 	}
 };
-static_assert(alignof(UAthenaTabsScreen_C) == 0x000008, "Wrong alignment on UAthenaTabsScreen_C");
-static_assert(sizeof(UAthenaTabsScreen_C) == 0x000338, "Wrong size on UAthenaTabsScreen_C");
-static_assert(offsetof(UAthenaTabsScreen_C, AthenaBattlePass) == 0x0002F0, "Member 'UAthenaTabsScreen_C::AthenaBattlePass' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, AthenaLockerTab2) == 0x0002F8, "Member 'UAthenaTabsScreen_C::AthenaLockerTab2' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, ItemShopScreen) == 0x000300, "Member 'UAthenaTabsScreen_C::ItemShopScreen' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, SafeZoneContent) == 0x000308, "Member 'UAthenaTabsScreen_C::SafeZoneContent' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, WinterQuestTitleScreen) == 0x000310, "Member 'UAthenaTabsScreen_C::WinterQuestTitleScreen' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, HotfixDisableArray) == 0x000318, "Member 'UAthenaTabsScreen_C::HotfixDisableArray' has a wrong offset!");
-static_assert(offsetof(UAthenaTabsScreen_C, HotfixButtonArray) == 0x000328, "Member 'UAthenaTabsScreen_C::HotfixButtonArray' has a wrong offset!");
 
 }
 

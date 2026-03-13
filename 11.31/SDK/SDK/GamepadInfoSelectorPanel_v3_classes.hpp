@@ -54,33 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GamepadInfoSelectorPanel_v3_C">();
+		BP_STATIC_CLASS_IMPL("GamepadInfoSelectorPanel_v3_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GamepadInfoSelectorPanel_v3_C")
 	}
 	static class UGamepadInfoSelectorPanel_v3_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGamepadInfoSelectorPanel_v3_C>();
 	}
 };
-static_assert(alignof(UGamepadInfoSelectorPanel_v3_C) == 0x000008, "Wrong alignment on UGamepadInfoSelectorPanel_v3_C");
-static_assert(sizeof(UGamepadInfoSelectorPanel_v3_C) == 0x000500, "Wrong size on UGamepadInfoSelectorPanel_v3_C");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, UberGraphFrame) == 0x000438, "Member 'UGamepadInfoSelectorPanel_v3_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, CommonBorder_Reset) == 0x000440, "Member 'UGamepadInfoSelectorPanel_v3_C::CommonBorder_Reset' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, FortRadioButtonGroup_Configs) == 0x000448, "Member 'UGamepadInfoSelectorPanel_v3_C::FortRadioButtonGroup_Configs' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, FortRadioButtonGroup_Platforms) == 0x000450, "Member 'UGamepadInfoSelectorPanel_v3_C::FortRadioButtonGroup_Platforms' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, FortRichTextBlock_Reset1) == 0x000458, "Member 'UGamepadInfoSelectorPanel_v3_C::FortRichTextBlock_Reset1' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, FortRichTextBlock_Reset2) == 0x000460, "Member 'UGamepadInfoSelectorPanel_v3_C::FortRichTextBlock_Reset2' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, KeybindWidget_Reset) == 0x000468, "Member 'UGamepadInfoSelectorPanel_v3_C::KeybindWidget_Reset' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, OptionsMenuHeader_Configs) == 0x000470, "Member 'UGamepadInfoSelectorPanel_v3_C::OptionsMenuHeader_Configs' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, OptionsMenuHeader_Platforms) == 0x000478, "Member 'UGamepadInfoSelectorPanel_v3_C::OptionsMenuHeader_Platforms' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, ResetButton) == 0x000480, "Member 'UGamepadInfoSelectorPanel_v3_C::ResetButton' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, VerticalBox_Platforms) == 0x000488, "Member 'UGamepadInfoSelectorPanel_v3_C::VerticalBox_Platforms' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, Back) == 0x000490, "Member 'UGamepadInfoSelectorPanel_v3_C::Back' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, GamepadInfoSelectorBack) == 0x0004A0, "Member 'UGamepadInfoSelectorPanel_v3_C::GamepadInfoSelectorBack' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, Apply) == 0x0004B0, "Member 'UGamepadInfoSelectorPanel_v3_C::Apply' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, GamepadInfoSelectorApply) == 0x0004C0, "Member 'UGamepadInfoSelectorPanel_v3_C::GamepadInfoSelectorApply' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, Reset) == 0x0004D0, "Member 'UGamepadInfoSelectorPanel_v3_C::Reset' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, GamepadInfoSelectorReset) == 0x0004E0, "Member 'UGamepadInfoSelectorPanel_v3_C::GamepadInfoSelectorReset' has a wrong offset!");
-static_assert(offsetof(UGamepadInfoSelectorPanel_v3_C, GamepadInfoSelectorFocus) == 0x0004F0, "Member 'UGamepadInfoSelectorPanel_v3_C::GamepadInfoSelectorFocus' has a wrong offset!");
 
 }
 

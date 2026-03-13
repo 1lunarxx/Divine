@@ -27,17 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Athena_Bucket_Nice_Weap_C">();
+		BP_STATIC_CLASS_IMPL("B_Athena_Bucket_Nice_Weap_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Athena_Bucket_Nice_Weap_C")
 	}
 	static class AB_Athena_Bucket_Nice_Weap_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Athena_Bucket_Nice_Weap_C>();
 	}
 };
-static_assert(alignof(AB_Athena_Bucket_Nice_Weap_C) == 0x000008, "Wrong alignment on AB_Athena_Bucket_Nice_Weap_C");
-static_assert(sizeof(AB_Athena_Bucket_Nice_Weap_C) == 0x000A48, "Wrong size on AB_Athena_Bucket_Nice_Weap_C");
-static_assert(offsetof(AB_Athena_Bucket_Nice_Weap_C, P_Flopper_BucketNice_InHand) == 0x000A38, "Member 'AB_Athena_Bucket_Nice_Weap_C::P_Flopper_BucketNice_InHand' has a wrong offset!");
-static_assert(offsetof(AB_Athena_Bucket_Nice_Weap_C, Can) == 0x000A40, "Member 'AB_Athena_Bucket_Nice_Weap_C::Can' has a wrong offset!");
 
 }
 

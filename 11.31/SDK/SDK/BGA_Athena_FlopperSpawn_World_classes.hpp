@@ -64,34 +64,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BGA_Athena_FlopperSpawn_World_C">();
+		BP_STATIC_CLASS_IMPL("BGA_Athena_FlopperSpawn_World_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BGA_Athena_FlopperSpawn_World_C")
 	}
 	static class ABGA_Athena_FlopperSpawn_World_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABGA_Athena_FlopperSpawn_World_C>();
 	}
 };
-static_assert(alignof(ABGA_Athena_FlopperSpawn_World_C) == 0x000008, "Wrong alignment on ABGA_Athena_FlopperSpawn_World_C");
-static_assert(sizeof(ABGA_Athena_FlopperSpawn_World_C) == 0x000B10, "Wrong size on ABGA_Athena_FlopperSpawn_World_C");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, UberGraphFrame_BGA_Athena_FlopperSpawn_World_C) == 0x000A08, "Member 'ABGA_Athena_FlopperSpawn_World_C::UberGraphFrame_BGA_Athena_FlopperSpawn_World_C' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, Audio_FlopperLoop) == 0x000A10, "Member 'ABGA_Athena_FlopperSpawn_World_C::Audio_FlopperLoop' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, P_Flopper_Spot) == 0x000A18, "Member 'ABGA_Athena_FlopperSpawn_World_C::P_Flopper_Spot' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, Time_Interval) == 0x000A20, "Member 'ABGA_Athena_FlopperSpawn_World_C::Time_Interval' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, OffsetDistance) == 0x000A24, "Member 'ABGA_Athena_FlopperSpawn_World_C::OffsetDistance' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, TimeIntervalOffset) == 0x000A28, "Member 'ABGA_Athena_FlopperSpawn_World_C::TimeIntervalOffset' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, FX_Jump) == 0x000A30, "Member 'ABGA_Athena_FlopperSpawn_World_C::FX_Jump' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, TraceOffsetAmount) == 0x000A38, "Member 'ABGA_Athena_FlopperSpawn_World_C::TraceOffsetAmount' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, FortWaterBody) == 0x000A48, "Member 'ABGA_Athena_FlopperSpawn_World_C::FortWaterBody' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, WaterPlaneOffset) == 0x000A50, "Member 'ABGA_Athena_FlopperSpawn_World_C::WaterPlaneOffset' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, Sound_AmbientFishFlop) == 0x000A60, "Member 'ABGA_Athena_FlopperSpawn_World_C::Sound_AmbientFishFlop' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, ExplosionItemSpawnOffset) == 0x000A68, "Member 'ABGA_Athena_FlopperSpawn_World_C::ExplosionItemSpawnOffset' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, T_FlopperSpawn) == 0x000A78, "Member 'ABGA_Athena_FlopperSpawn_World_C::T_FlopperSpawn' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, MinDistanceToExplosion) == 0x000A98, "Member 'ABGA_Athena_FlopperSpawn_World_C::MinDistanceToExplosion' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, MAP_TagToLootExplode) == 0x000AA0, "Member 'ABGA_Athena_FlopperSpawn_World_C::MAP_TagToLootExplode' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, ExplodeItemsToDrop) == 0x000AF0, "Member 'ABGA_Athena_FlopperSpawn_World_C::ExplodeItemsToDrop' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, ExplodeRolls) == 0x000AF8, "Member 'ABGA_Athena_FlopperSpawn_World_C::ExplodeRolls' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, WaterNormalHit) == 0x000AFC, "Member 'ABGA_Athena_FlopperSpawn_World_C::WaterNormalHit' has a wrong offset!");
-static_assert(offsetof(ABGA_Athena_FlopperSpawn_World_C, bHasWrittenAnalytic) == 0x000B08, "Member 'ABGA_Athena_FlopperSpawn_World_C::bHasWrittenAnalytic' has a wrong offset!");
 
 }
 

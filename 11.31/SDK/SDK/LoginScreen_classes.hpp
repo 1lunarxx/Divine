@@ -40,22 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LoginScreen_C">();
+		BP_STATIC_CLASS_IMPL("LoginScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LoginScreen_C")
 	}
 	static class ULoginScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULoginScreen_C>();
 	}
 };
-static_assert(alignof(ULoginScreen_C) == 0x000008, "Wrong alignment on ULoginScreen_C");
-static_assert(sizeof(ULoginScreen_C) == 0x0003E8, "Wrong size on ULoginScreen_C");
-static_assert(offsetof(ULoginScreen_C, UberGraphFrame) == 0x0003B0, "Member 'ULoginScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, ConsoleProfileWidget) == 0x0003B8, "Member 'ULoginScreen_C::ConsoleProfileWidget' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, SafeZone) == 0x0003C0, "Member 'ULoginScreen_C::SafeZone' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Text_Version) == 0x0003C8, "Member 'ULoginScreen_C::Text_Version' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, Widget_BuildWatermark) == 0x0003D0, "Member 'ULoginScreen_C::Widget_BuildWatermark' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, FrontEnd_Music_Controller) == 0x0003D8, "Member 'ULoginScreen_C::FrontEnd_Music_Controller' has a wrong offset!");
-static_assert(offsetof(ULoginScreen_C, PlatformSpecificBackBorder) == 0x0003E0, "Member 'ULoginScreen_C::PlatformSpecificBackBorder' has a wrong offset!");
 
 }
 

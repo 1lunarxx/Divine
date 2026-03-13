@@ -42,7 +42,7 @@ public:
 	bool                                          IsInWater;                                         // 0x2A60(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_2A61[0x3];                                     // 0x2A61(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Time_when_you_ll_be_able_to_splash_again;          // 0x2A64(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(bool bIsInWater, class AFortPlayerPawn* Pawn, class AActor* Water)> OnOverlapWaterVolume;                              // 0x2A68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool bIsInWater, class AFortPlayerPawn* Pawn, class AActor* Water)> OnOverlapWaterVolume; // 0x2A68(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:
 	void ExecuteUbergraph_PlayerPawn_Generic_Parent(int32 EntryPoint);
@@ -54,7 +54,11 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerPawn_Generic_Parent_C">();
+		BP_STATIC_CLASS_IMPL("PlayerPawn_Generic_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerPawn_Generic_Parent_C")
 	}
 	static class APlayerPawn_Generic_Parent_C* GetDefaultObj()
 	{
@@ -62,26 +66,6 @@ public:
 	}
 };
 #pragma pack(pop)
-static_assert(alignof(APlayerPawn_Generic_Parent_C) == 0x000010, "Wrong alignment on APlayerPawn_Generic_Parent_C");
-static_assert(sizeof(APlayerPawn_Generic_Parent_C) == 0x002A80, "Wrong size on APlayerPawn_Generic_Parent_C");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, UberGraphFrame) == 0x002990, "Member 'APlayerPawn_Generic_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, Default_Weapon_Materials) == 0x002998, "Member 'APlayerPawn_Generic_Parent_C::Default_Weapon_Materials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnBackpackMaterials) == 0x0029A8, "Member 'APlayerPawn_Generic_Parent_C::PawnBackpackMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnHatMaterials) == 0x0029B8, "Member 'APlayerPawn_Generic_Parent_C::PawnHatMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnHeadMaterials) == 0x0029C8, "Member 'APlayerPawn_Generic_Parent_C::PawnHeadMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnBodyMaterials) == 0x0029D8, "Member 'APlayerPawn_Generic_Parent_C::PawnBodyMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnCharmMaterials) == 0x0029E8, "Member 'APlayerPawn_Generic_Parent_C::PawnCharmMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnFaceMaterials) == 0x0029F8, "Member 'APlayerPawn_Generic_Parent_C::PawnFaceMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnLegsMaterials) == 0x002A08, "Member 'APlayerPawn_Generic_Parent_C::PawnLegsMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnTorsoMaterials) == 0x002A18, "Member 'APlayerPawn_Generic_Parent_C::PawnTorsoMaterials' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PlayerPostProcessFX) == 0x002A28, "Member 'APlayerPawn_Generic_Parent_C::PlayerPostProcessFX' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, SkeletalMeshes) == 0x002A30, "Member 'APlayerPawn_Generic_Parent_C::SkeletalMeshes' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, PawnMaterials_ALL) == 0x002A40, "Member 'APlayerPawn_Generic_Parent_C::PawnMaterials_ALL' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, WaterCounter) == 0x002A50, "Member 'APlayerPawn_Generic_Parent_C::WaterCounter' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, CurrentWaterMeshActor) == 0x002A58, "Member 'APlayerPawn_Generic_Parent_C::CurrentWaterMeshActor' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, IsInWater) == 0x002A60, "Member 'APlayerPawn_Generic_Parent_C::IsInWater' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, Time_when_you_ll_be_able_to_splash_again) == 0x002A64, "Member 'APlayerPawn_Generic_Parent_C::Time_when_you_ll_be_able_to_splash_again' has a wrong offset!");
-static_assert(offsetof(APlayerPawn_Generic_Parent_C, OnOverlapWaterVolume) == 0x002A68, "Member 'APlayerPawn_Generic_Parent_C::OnOverlapWaterVolume' has a wrong offset!");
 
 }
 

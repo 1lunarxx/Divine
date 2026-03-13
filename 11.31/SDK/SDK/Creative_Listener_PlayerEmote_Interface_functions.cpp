@@ -27,13 +27,13 @@ void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteStarted(class AFor
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteStarted");
+		Func = AsUObject()->Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteStarted");
 
 	Params::Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteStarted Parms{};
 
 	Parms.PlayerEmoting = PlayerEmoting;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -47,13 +47,13 @@ void ICreative_Listener_PlayerEmote_Interface_C::OnPlayerEmoteEnded(class AFortP
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteEnded");
+		Func = AsUObject()->Class->GetFunction("Creative_Listener_PlayerEmote_Interface_C", "OnPlayerEmoteEnded");
 
 	Params::Creative_Listener_PlayerEmote_Interface_C_OnPlayerEmoteEnded Parms{};
 
 	Parms.PlayerEmoting = PlayerEmoting;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 }

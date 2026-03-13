@@ -23,15 +23,17 @@ class UGC_Athena_Feedback_ExplosionMed_C final : public UFortGameplayCueNotify_B
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Athena_Feedback_ExplosionMed_C">();
+		BP_STATIC_CLASS_IMPL("GC_Athena_Feedback_ExplosionMed_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Athena_Feedback_ExplosionMed_C")
 	}
 	static class UGC_Athena_Feedback_ExplosionMed_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGC_Athena_Feedback_ExplosionMed_C>();
 	}
 };
-static_assert(alignof(UGC_Athena_Feedback_ExplosionMed_C) == 0x000008, "Wrong alignment on UGC_Athena_Feedback_ExplosionMed_C");
-static_assert(sizeof(UGC_Athena_Feedback_ExplosionMed_C) == 0x0001B0, "Wrong size on UGC_Athena_Feedback_ExplosionMed_C");
 
 }
 

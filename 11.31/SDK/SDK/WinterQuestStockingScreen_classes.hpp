@@ -32,8 +32,6 @@ public:
 	bool                                          bOpened;                                           // 0x04E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void OnInputMethodChanged(ECommonInputType NewMethod);
-	void ExecuteUbergraph_WinterQuestStockingScreen(int32 EntryPoint);
 	void Stop_Opening_Audio();
 	void Play_Opening_Audio();
 	void OnSuccess_ADF528A54FC41993276B459A2433A2A3();
@@ -45,25 +43,23 @@ public:
 	void Construct();
 	void BP_OnDeactivated();
 	void BP_OnActivated();
+	void OnInputMethodChanged(ECommonInputType NewMethod);
+	void ExecuteUbergraph_WinterQuestStockingScreen(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WinterQuestStockingScreen_C">();
+		BP_STATIC_CLASS_IMPL("WinterQuestStockingScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WinterQuestStockingScreen_C")
 	}
 	static class UWinterQuestStockingScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWinterQuestStockingScreen_C>();
 	}
 };
-static_assert(alignof(UWinterQuestStockingScreen_C) == 0x000008, "Wrong alignment on UWinterQuestStockingScreen_C");
-static_assert(sizeof(UWinterQuestStockingScreen_C) == 0x0004E8, "Wrong size on UWinterQuestStockingScreen_C");
-static_assert(offsetof(UWinterQuestStockingScreen_C, UberGraphFrame) == 0x0004B8, "Member 'UWinterQuestStockingScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWinterQuestStockingScreen_C, RootOverlay) == 0x0004C0, "Member 'UWinterQuestStockingScreen_C::RootOverlay' has a wrong offset!");
-static_assert(offsetof(UWinterQuestStockingScreen_C, Opening_Sound_Component) == 0x0004C8, "Member 'UWinterQuestStockingScreen_C::Opening_Sound_Component' has a wrong offset!");
-static_assert(offsetof(UWinterQuestStockingScreen_C, Play_Opening_Sound) == 0x0004D0, "Member 'UWinterQuestStockingScreen_C::Play_Opening_Sound' has a wrong offset!");
-static_assert(offsetof(UWinterQuestStockingScreen_C, StockingObject) == 0x0004D8, "Member 'UWinterQuestStockingScreen_C::StockingObject' has a wrong offset!");
-static_assert(offsetof(UWinterQuestStockingScreen_C, bOpened) == 0x0004E0, "Member 'UWinterQuestStockingScreen_C::bOpened' has a wrong offset!");
 
 }
 

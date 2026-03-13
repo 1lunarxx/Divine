@@ -95,57 +95,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassScreen_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassScreen_C")
 	}
 	static class UBattlePassScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassScreen_C>();
 	}
 };
-static_assert(alignof(UBattlePassScreen_C) == 0x000008, "Wrong alignment on UBattlePassScreen_C");
-static_assert(sizeof(UBattlePassScreen_C) == 0x0009C8, "Wrong size on UBattlePassScreen_C");
-static_assert(offsetof(UBattlePassScreen_C, UberGraphFrame) == 0x000888, "Member 'UBattlePassScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, ShowVariantLabel) == 0x000890, "Member 'UBattlePassScreen_C::ShowVariantLabel' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, HideRightSideActionButtons_2) == 0x000898, "Member 'UBattlePassScreen_C::HideRightSideActionButtons_2' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RevealRightSideActionButtons) == 0x0008A0, "Member 'UBattlePassScreen_C::RevealRightSideActionButtons' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, SeasonInformation) == 0x0008A8, "Member 'UBattlePassScreen_C::SeasonInformation' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightFriendCountCollapse) == 0x0008B0, "Member 'UBattlePassScreen_C::RightFriendCountCollapse' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, LeftFriendCountCollapse) == 0x0008B8, "Member 'UBattlePassScreen_C::LeftFriendCountCollapse' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, OnViewReward) == 0x0008C0, "Member 'UBattlePassScreen_C::OnViewReward' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, AdditionalStyles) == 0x0008C8, "Member 'UBattlePassScreen_C::AdditionalStyles' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, AnnualPassAccountFlair) == 0x0008D0, "Member 'UBattlePassScreen_C::AnnualPassAccountFlair' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, BackButton_SZ) == 0x0008D8, "Member 'UBattlePassScreen_C::BackButton_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, DetailsContainer) == 0x0008E0, "Member 'UBattlePassScreen_C::DetailsContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, EndingDate) == 0x0008E8, "Member 'UBattlePassScreen_C::EndingDate' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, FakeHackGradient) == 0x0008F0, "Member 'UBattlePassScreen_C::FakeHackGradient' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, ItemDetails_SZ) == 0x0008F8, "Member 'UBattlePassScreen_C::ItemDetails_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, ItemDetailsContainer) == 0x000900, "Member 'UBattlePassScreen_C::ItemDetailsContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, LeftCounter_SZ) == 0x000908, "Member 'UBattlePassScreen_C::LeftCounter_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, LeftCounterPointer) == 0x000910, "Member 'UBattlePassScreen_C::LeftCounterPointer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, LeftCounterPortrait) == 0x000918, "Member 'UBattlePassScreen_C::LeftCounterPortrait' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, LeftFriendCounter) == 0x000920, "Member 'UBattlePassScreen_C::LeftFriendCounter' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, Overlay_DoesNotOwnBattlePassContainer) == 0x000928, "Member 'UBattlePassScreen_C::Overlay_DoesNotOwnBattlePassContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, OwnsBattlePassContainer) == 0x000930, "Member 'UBattlePassScreen_C::OwnsBattlePassContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RewardListContainer) == 0x000938, "Member 'UBattlePassScreen_C::RewardListContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightCounter_SZ) == 0x000940, "Member 'UBattlePassScreen_C::RightCounter_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightCounterPointer) == 0x000948, "Member 'UBattlePassScreen_C::RightCounterPointer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightCounterPortrait) == 0x000950, "Member 'UBattlePassScreen_C::RightCounterPortrait' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightFriendCounter) == 0x000958, "Member 'UBattlePassScreen_C::RightFriendCounter' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, SeasonDetails_SZ) == 0x000960, "Member 'UBattlePassScreen_C::SeasonDetails_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, SeasonDetailsContainer) == 0x000968, "Member 'UBattlePassScreen_C::SeasonDetailsContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, SetItems_SZ) == 0x000970, "Member 'UBattlePassScreen_C::SetItems_SZ' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, TrackViewContainer) == 0x000978, "Member 'UBattlePassScreen_C::TrackViewContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, VariantLabel) == 0x000980, "Member 'UBattlePassScreen_C::VariantLabel' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, VariantUnlockPreviewSet) == 0x000988, "Member 'UBattlePassScreen_C::VariantUnlockPreviewSet' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, bOwnsBattlePass) == 0x000990, "Member 'UBattlePassScreen_C::bOwnsBattlePass' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, ActivatableMovieWidget) == 0x000998, "Member 'UBattlePassScreen_C::ActivatableMovieWidget' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, ElectraMediaSource) == 0x0009A0, "Member 'UBattlePassScreen_C::ElectraMediaSource' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, StreamedVideoOpeningTimer) == 0x0009A8, "Member 'UBattlePassScreen_C::StreamedVideoOpeningTimer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, StreamedMediaPlayer) == 0x0009B0, "Member 'UBattlePassScreen_C::StreamedMediaPlayer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, StreamedVideoPlayingTimer) == 0x0009B8, "Member 'UBattlePassScreen_C::StreamedVideoPlayingTimer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, bAnimateRewardTimeline) == 0x0009C0, "Member 'UBattlePassScreen_C::bAnimateRewardTimeline' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, RightSideActionsHidden) == 0x0009C1, "Member 'UBattlePassScreen_C::RightSideActionsHidden' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreen_C, AutoPlayVideo) == 0x0009C2, "Member 'UBattlePassScreen_C::AutoPlayVideo' has a wrong offset!");
 
 }
 

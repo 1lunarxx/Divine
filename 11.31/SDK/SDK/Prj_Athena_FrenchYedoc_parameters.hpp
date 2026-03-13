@@ -55,34 +55,6 @@ public:
 	uint8                                         Pad_172[0x2];                                      // 0x0172(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                CallFunc_K2_GetActorLocation_ReturnValue_1;        // 0x0174(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc) == 0x000010, "Wrong alignment on Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc");
-static_assert(sizeof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc) == 0x000180, "Wrong size on Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, EntryPoint) == 0x000000, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_MyComp) == 0x000008, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_Other) == 0x000010, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_OtherComp) == 0x000018, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_bSelfMoved) == 0x000020, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_HitLocation) == 0x000024, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_HitNormal) == 0x000030, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_NormalImpulse) == 0x00003C, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_Event_Hit) == 0x000048, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_Event_Hit' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_IsServer_ReturnValue) == 0x0000D0, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_K2_GetActorLocation_ReturnValue) == 0x0000D4, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_K2_GetActorRotation_ReturnValue) == 0x0000E0, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_K2_GetActorRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_GetInstigator_ReturnValue) == 0x0000F0, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_GetInstigator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_BreakRotator_Roll) == 0x0000F8, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_BreakRotator_Pitch) == 0x0000FC, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_BreakRotator_Yaw) == 0x000100, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_Add_FloatFloat_ReturnValue) == 0x000104, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_MakeRotator_ReturnValue) == 0x000108, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_MakeTransform_ReturnValue) == 0x000120, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000150, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_FinishSpawningActor_ReturnValue) == 0x000158, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_ComponentBoundEvent_WaterBody) == 0x000160, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_ComponentBoundEvent_WaterBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_ComponentBoundEvent_WaterInteractionComponent) == 0x000168, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_ComponentBoundEvent_WaterInteractionComponent' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, K2Node_ComponentBoundEvent_bIsFirstBody) == 0x000170, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::K2Node_ComponentBoundEvent_bIsFirstBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_IsDedicatedServer_ReturnValue) == 0x000171, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000174, "Member 'Prj_Athena_FrenchYedoc_C_ExecuteUbergraph_Prj_Athena_FrenchYedoc::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
 
 // Function Prj_Athena_FrenchYedoc.Prj_Athena_FrenchYedoc_C.BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature
 // 0x0018 (0x0018 - 0x0000)
@@ -93,11 +65,6 @@ public:
 	class UFortWaterInteractionComponent*         WaterInteractionComponent_0;                       // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsFirstBody;                                      // 0x0010(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature) == 0x000008, "Wrong alignment on Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
-static_assert(sizeof(Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature) == 0x000018, "Wrong size on Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature, WaterBody) == 0x000000, "Member 'Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature::WaterBody' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature, WaterInteractionComponent_0) == 0x000008, "Member 'Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature::WaterInteractionComponent_0' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature, bIsFirstBody) == 0x000010, "Member 'Prj_Athena_FrenchYedoc_C_BndEvt__WaterInteractionComponent_K2Node_ComponentBoundEvent_0_WaterInteractionOnEnterWater__DelegateSignature::bIsFirstBody' has a wrong offset!");
 
 // Function Prj_Athena_FrenchYedoc.Prj_Athena_FrenchYedoc_C.ReceiveHit
 // 0x00C8 (0x00C8 - 0x0000)
@@ -114,16 +81,6 @@ public:
 	struct FVector                                NormalImpulse;                                     // 0x0034(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                             Hit;                                               // 0x0040(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(Prj_Athena_FrenchYedoc_C_ReceiveHit) == 0x000008, "Wrong alignment on Prj_Athena_FrenchYedoc_C_ReceiveHit");
-static_assert(sizeof(Prj_Athena_FrenchYedoc_C_ReceiveHit) == 0x0000C8, "Wrong size on Prj_Athena_FrenchYedoc_C_ReceiveHit");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, MyComp) == 0x000000, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::MyComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, Other) == 0x000008, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::Other' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, OtherComp) == 0x000010, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::OtherComp' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, bSelfMoved) == 0x000018, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::bSelfMoved' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, HitLocation) == 0x00001C, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::HitLocation' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, HitNormal) == 0x000028, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::HitNormal' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, NormalImpulse) == 0x000034, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::NormalImpulse' has a wrong offset!");
-static_assert(offsetof(Prj_Athena_FrenchYedoc_C_ReceiveHit, Hit) == 0x000040, "Member 'Prj_Athena_FrenchYedoc_C_ReceiveHit::Hit' has a wrong offset!");
 
 }
 

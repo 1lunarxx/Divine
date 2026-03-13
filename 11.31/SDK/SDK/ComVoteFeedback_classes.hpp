@@ -37,22 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ComVoteFeedback_C">();
+		BP_STATIC_CLASS_IMPL("ComVoteFeedback_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ComVoteFeedback_C")
 	}
 	static class UComVoteFeedback_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UComVoteFeedback_C>();
 	}
 };
-static_assert(alignof(UComVoteFeedback_C) == 0x000008, "Wrong alignment on UComVoteFeedback_C");
-static_assert(sizeof(UComVoteFeedback_C) == 0x000290, "Wrong size on UComVoteFeedback_C");
-static_assert(offsetof(UComVoteFeedback_C, UberGraphFrame) == 0x000258, "Member 'UComVoteFeedback_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, voting_activities) == 0x000260, "Member 'UComVoteFeedback_C::voting_activities' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, Once) == 0x000268, "Member 'UComVoteFeedback_C::Once' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, RoundedSquare1) == 0x000270, "Member 'UComVoteFeedback_C::RoundedSquare1' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, RoundedSquare2) == 0x000278, "Member 'UComVoteFeedback_C::RoundedSquare2' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, RoundedSquare3) == 0x000280, "Member 'UComVoteFeedback_C::RoundedSquare3' has a wrong offset!");
-static_assert(offsetof(UComVoteFeedback_C, Vote01) == 0x000288, "Member 'UComVoteFeedback_C::Vote01' has a wrong offset!");
 
 }
 

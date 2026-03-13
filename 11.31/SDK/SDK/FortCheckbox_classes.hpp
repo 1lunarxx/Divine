@@ -42,22 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortCheckbox_C">();
+		BP_STATIC_CLASS_IMPL("FortCheckbox_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortCheckbox_C")
 	}
 	static class UFortCheckbox_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortCheckbox_C>();
 	}
 };
-static_assert(alignof(UFortCheckbox_C) == 0x000008, "Wrong alignment on UFortCheckbox_C");
-static_assert(sizeof(UFortCheckbox_C) == 0x000298, "Wrong size on UFortCheckbox_C");
-static_assert(offsetof(UFortCheckbox_C, UberGraphFrame) == 0x000258, "Member 'UFortCheckbox_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, CheckButton) == 0x000260, "Member 'UFortCheckbox_C::CheckButton' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, Image_Checked) == 0x000268, "Member 'UFortCheckbox_C::Image_Checked' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, Image_Unchecked) == 0x000270, "Member 'UFortCheckbox_C::Image_Unchecked' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, Switcher_CheckBox) == 0x000278, "Member 'UFortCheckbox_C::Switcher_CheckBox' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, Selected) == 0x000280, "Member 'UFortCheckbox_C::Selected' has a wrong offset!");
-static_assert(offsetof(UFortCheckbox_C, OnClicked) == 0x000288, "Member 'UFortCheckbox_C::OnClicked' has a wrong offset!");
 
 }
 

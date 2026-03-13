@@ -32,15 +32,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(SocialPanel_C_ExecuteUbergraph_SocialPanel) == 0x000008, "Wrong alignment on SocialPanel_C_ExecuteUbergraph_SocialPanel");
-static_assert(sizeof(SocialPanel_C_ExecuteUbergraph_SocialPanel) == 0x000048, "Wrong size on SocialPanel_C_ExecuteUbergraph_SocialPanel");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, EntryPoint) == 0x000000, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, K2Node_ComponentBoundEvent_Button) == 0x000018, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, CallFunc_IsAnySlideOutMenuOpen_ReturnValue) == 0x000020, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::CallFunc_IsAnySlideOutMenuOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, CallFunc_PlayAnimation_ReturnValue) == 0x000028, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, CallFunc_PlayAnimation_ReturnValue_1) == 0x000030, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_ExecuteUbergraph_SocialPanel, K2Node_CreateDelegate_OutputDelegate_1) == 0x000038, "Member 'SocialPanel_C_ExecuteUbergraph_SocialPanel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
 
 // Function SocialPanel.SocialPanel_C.BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -49,9 +40,6 @@ struct SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'SocialPanel_C_BndEvt__SocialPanel_TopBarExtension_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function SocialPanel.SocialPanel_C.OnMouseButtonDown_0
 // 0x02E8 (0x02E8 - 0x0000)
@@ -70,17 +58,6 @@ public:
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0228(0x00B8)()
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x02E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SocialPanel_C_OnMouseButtonDown_0) == 0x000008, "Wrong alignment on SocialPanel_C_OnMouseButtonDown_0");
-static_assert(sizeof(SocialPanel_C_OnMouseButtonDown_0) == 0x0002E8, "Wrong size on SocialPanel_C_OnMouseButtonDown_0");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, MyGeometry) == 0x000000, "Member 'SocialPanel_C_OnMouseButtonDown_0::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, MouseEvent) == 0x000038, "Member 'SocialPanel_C_OnMouseButtonDown_0::MouseEvent' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, ReturnValue) == 0x0000A8, "Member 'SocialPanel_C_OnMouseButtonDown_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_IsActivated_ReturnValue) == 0x000160, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_IsActivated_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_Unhandled_ReturnValue) == 0x000168, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_Not_PreBool_ReturnValue) == 0x000220, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_IsAnySlideOutMenuOpen_ReturnValue) == 0x000221, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_IsAnySlideOutMenuOpen_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000228, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanel_C_OnMouseButtonDown_0, CallFunc_BooleanOR_ReturnValue) == 0x0002E0, "Member 'SocialPanel_C_OnMouseButtonDown_0::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function SocialPanel.SocialPanel_C.Play Panel Animation Sound
 // 0x0001 (0x0001 - 0x0000)
@@ -89,9 +66,6 @@ struct SocialPanel_C_Play_Panel_Animation_Sound final
 public:
 	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SocialPanel_C_Play_Panel_Animation_Sound) == 0x000001, "Wrong alignment on SocialPanel_C_Play_Panel_Animation_Sound");
-static_assert(sizeof(SocialPanel_C_Play_Panel_Animation_Sound) == 0x000001, "Wrong size on SocialPanel_C_Play_Panel_Animation_Sound");
-static_assert(offsetof(SocialPanel_C_Play_Panel_Animation_Sound, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000000, "Member 'SocialPanel_C_Play_Panel_Animation_Sound::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 
 }
 

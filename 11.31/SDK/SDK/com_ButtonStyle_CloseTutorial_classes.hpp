@@ -23,15 +23,17 @@ class Ucom_ButtonStyle_CloseTutorial_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"com_ButtonStyle_CloseTutorial_C">();
+		BP_STATIC_CLASS_IMPL("com_ButtonStyle_CloseTutorial_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"com_ButtonStyle_CloseTutorial_C")
 	}
 	static class Ucom_ButtonStyle_CloseTutorial_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<Ucom_ButtonStyle_CloseTutorial_C>();
 	}
 };
-static_assert(alignof(Ucom_ButtonStyle_CloseTutorial_C) == 0x000008, "Wrong alignment on Ucom_ButtonStyle_CloseTutorial_C");
-static_assert(sizeof(Ucom_ButtonStyle_CloseTutorial_C) == 0x000570, "Wrong size on Ucom_ButtonStyle_CloseTutorial_C");
 
 }
 

@@ -28,11 +28,11 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData;                     // 0x0008(0x0028)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag;                 // 0x0030(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate; // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayTag                           Temp_struct_Variable;                              // 0x0048(0x0008)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayAbilityTargetDataHandle       Temp_struct_Variable_1;                            // 0x0050(0x0028)()
 	struct FGameplayEventData                     K2Node_CustomEvent_Payload;                        // 0x0078(0x00B0)()
-	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayEventData& Payload)> K2Node_CreateDelegate_OutputDelegate_1; // 0x0128(0x0010)(ZeroConstructor, NoDestructor)
 	struct FGameplayEventData                     Temp_struct_Variable_2;                            // 0x0138(0x00B0)()
 	class UAbilityTask_WaitGameplayEvent*         CallFunc_WaitGameplayEvent_ReturnValue;            // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -118,7 +118,7 @@ public:
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0550(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_LessEqual_FloatFloat_ReturnValue;         // 0x0554(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_555[0x3];                                      // 0x0555(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_5;            // 0x0558(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_5; // 0x0558(0x0010)(ZeroConstructor, NoDestructor)
 	struct FVector                                CallFunc_SetDashStartEndAndDirection_StartPoint;   // 0x0568(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_SetDashStartEndAndDirection_EndPoint;     // 0x0574(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_SetDashStartEndAndDirection_Direction;    // 0x0580(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -130,7 +130,7 @@ public:
 	uint8                                         Pad_5A1[0x7];                                      // 0x05A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayAbilityTargetDataHandle       K2Node_CustomEvent_TargetData_2;                   // 0x05A8(0x0028)(ConstParm)
 	struct FGameplayTag                           K2Node_CustomEvent_ApplicationTag_2;               // 0x05D0(0x0008)(NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6;            // 0x05D8(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(const struct FGameplayAbilityTargetDataHandle& TargetData, const struct FGameplayTag& ApplicationTag)> K2Node_CreateDelegate_OutputDelegate_6; // 0x05D8(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         Temp_int_Loop_Counter_Variable_2;                  // 0x05E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         CallFunc_Add_IntInt_ReturnValue_2;                 // 0x05EC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x05F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -210,160 +210,6 @@ public:
 	class AB_Athena_VendingMachine_C*             K2Node_DynamicCast_AsB_Athena_Vending_Machine_1;   // 0x08E0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_10;                    // 0x08E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel");
-static_assert(sizeof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel) == 0x0008F0, "Wrong size on GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, EntryPoint) == 0x000000, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_TargetData) == 0x000008, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_TargetData' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_ApplicationTag) == 0x000030, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_ApplicationTag' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_struct_Variable) == 0x000048, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_struct_Variable_1) == 0x000050, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_Payload) == 0x000078, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_Payload' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_1) == 0x000128, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_struct_Variable_2) == 0x000138, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_WaitGameplayEvent_ReturnValue) == 0x0001E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_WaitGameplayEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_IsValid_ReturnValue) == 0x0001F0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001F4, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_object_Variable) == 0x000208, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_object_Variable_1) == 0x000218, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Array_Index_Variable) == 0x000228, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Loop_Counter_Variable) == 0x00022C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Add_IntInt_ReturnValue) == 0x000230, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Array_Index_Variable_1) == 0x000234, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Array_Index_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_Event_EventData) == 0x000238, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x0002E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x0002F0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess) == 0x0002F8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_Event_bWasCancelled) == 0x0002F9, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Loop_Counter_Variable_1) == 0x0002FC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Loop_Counter_Variable_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_3) == 0x000300, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_3' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Add_IntInt_ReturnValue_1) == 0x000310, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_TargetData_1) == 0x000318, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_TargetData_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_ApplicationTag_1) == 0x000340, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_ApplicationTag_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Array_Index_Variable_2) == 0x000348, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Array_Index_Variable_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_PlayMontageWaitTarget_ReturnValue) == 0x000350, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_PlayMontageWaitTarget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_IsValid_ReturnValue_1) == 0x000358, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x00035C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetValueAtLevel_ReturnValue) == 0x000364, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetValueAtLevel_ReturnValue_1) == 0x000368, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetValueAtLevel_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetActorForwardVector_ReturnValue) == 0x00036C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetActorForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000378, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000384, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Add_VectorVector_ReturnValue) == 0x000390, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_4) == 0x00039C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_4' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_OutHits) == 0x0003B0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_OutHits' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_ReturnValue) == 0x0003C0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x0003C8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Get_Item) == 0x0003D0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Length_ReturnValue) == 0x000458, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bBlockingHit) == 0x00045C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bInitialOverlap) == 0x00045D, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Time) == 0x000460, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Distance) == 0x000464, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Location) == 0x000468, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactPoint) == 0x000474, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Normal) == 0x000480, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactNormal) == 0x00048C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_PhysMat) == 0x000498, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitActor) == 0x0004A0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitComponent) == 0x0004A8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitBoneName) == 0x0004B0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitItem) == 0x0004B8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_FaceIndex) == 0x0004BC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceStart) == 0x0004C0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceEnd) == 0x0004CC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Less_IntInt_ReturnValue) == 0x0004D8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBuilding_Actor) == 0x0004E0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_1) == 0x0004E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBP_Deimos_Rift) == 0x0004F0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBP_Deimos_Rift' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_2) == 0x0004F8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsB_Athena_Vending_Machine) == 0x000500, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsB_Athena_Vending_Machine' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_3) == 0x000508, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsCorn_Field_Rectangle) == 0x000510, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsCorn_Field_Rectangle' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_4) == 0x000518, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_4' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetActorEyesViewPoint_OutLocation) == 0x00051C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetActorEyesViewPoint_OutLocation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetActorEyesViewPoint_OutRotation) == 0x000528, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetActorEyesViewPoint_OutRotation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetValueAtLevel_ReturnValue_2) == 0x000534, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetValueAtLevel_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Conv_RotatorToVector_ReturnValue) == 0x000538, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Conv_RotatorToVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakVector_X) == 0x000544, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakVector_Y) == 0x000548, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakVector_Z) == 0x00054C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000550, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000554, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_5) == 0x000558, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_5' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_SetDashStartEndAndDirection_StartPoint) == 0x000568, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_SetDashStartEndAndDirection_StartPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_SetDashStartEndAndDirection_EndPoint) == 0x000574, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_SetDashStartEndAndDirection_EndPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_SetDashStartEndAndDirection_Direction) == 0x000580, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_SetDashStartEndAndDirection_Direction' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_ApplyRootMotionConstantForce_ReturnValue) == 0x000590, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_ApplyRootMotionConstantForce_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_PlayerCapsuleSizes_Radius) == 0x000598, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_PlayerCapsuleSizes_Radius' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_PlayerCapsuleSizes_HalfHeight) == 0x00059C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_PlayerCapsuleSizes_HalfHeight' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_IsValid_ReturnValue_2) == 0x0005A0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_TargetData_2) == 0x0005A8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_TargetData_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CustomEvent_ApplicationTag_2) == 0x0005D0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CustomEvent_ApplicationTag_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_CreateDelegate_OutputDelegate_6) == 0x0005D8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_CreateDelegate_OutputDelegate_6' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_int_Loop_Counter_Variable_2) == 0x0005E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_int_Loop_Counter_Variable_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Add_IntInt_ReturnValue_2) == 0x0005EC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Greater_IntInt_ReturnValue) == 0x0005F0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1) == 0x0005F4, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_GetActorForwardVector_ReturnValue_1) == 0x0005FC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_GetActorForwardVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Multiply_VectorFloat_ReturnValue_1) == 0x000608, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Multiply_VectorFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x000614, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000620, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_OutHits_1) == 0x000630, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_OutHits_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_ReturnValue_1) == 0x000640, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Get_Item_1) == 0x000644, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Get_Item_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Length_ReturnValue_1) == 0x0006CC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bBlockingHit_1) == 0x0006D0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bBlockingHit_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bInitialOverlap_1) == 0x0006D1, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bInitialOverlap_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Time_1) == 0x0006D4, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Time_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Distance_1) == 0x0006D8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Distance_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Location_1) == 0x0006DC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Location_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactPoint_1) == 0x0006E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactPoint_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Normal_1) == 0x0006F4, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Normal_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactNormal_1) == 0x000700, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactNormal_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_PhysMat_1) == 0x000710, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_PhysMat_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitActor_1) == 0x000718, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitActor_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitComponent_1) == 0x000720, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitComponent_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitBoneName_1) == 0x000728, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitBoneName_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitItem_1) == 0x000730, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitItem_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_FaceIndex_1) == 0x000734, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_FaceIndex_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceStart_1) == 0x000738, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceStart_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceEnd_1) == 0x000744, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceEnd_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Less_IntInt_ReturnValue_1) == 0x000750, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Less_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBuilding_Actor_1) == 0x000758, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBuilding_Actor_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_5) == 0x000760, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_5' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBP_Deimos_Rift_1) == 0x000768, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBP_Deimos_Rift_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_6) == 0x000770, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_6' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsCorn_Field_Rectangle_1) == 0x000778, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsCorn_Field_Rectangle_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_7) == 0x000780, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_7' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, Temp_object_Variable_2) == 0x000788, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_OutHits_2) == 0x000798, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_OutHits_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_CapsuleTraceMultiForObjects_ReturnValue_2) == 0x0007A8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_CapsuleTraceMultiForObjects_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Get_Item_2) == 0x0007AC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Get_Item_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Array_Length_ReturnValue_2) == 0x000834, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Array_Length_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bBlockingHit_2) == 0x000838, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bBlockingHit_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_bInitialOverlap_2) == 0x000839, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_bInitialOverlap_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Time_2) == 0x00083C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Time_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Distance_2) == 0x000840, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Distance_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Location_2) == 0x000844, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Location_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactPoint_2) == 0x000850, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactPoint_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_Normal_2) == 0x00085C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_Normal_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_ImpactNormal_2) == 0x000868, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_ImpactNormal_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_PhysMat_2) == 0x000878, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_PhysMat_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitActor_2) == 0x000880, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitActor_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitComponent_2) == 0x000888, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitComponent_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitBoneName_2) == 0x000890, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitBoneName_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_HitItem_2) == 0x000898, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_HitItem_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_FaceIndex_2) == 0x00089C, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_FaceIndex_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceStart_2) == 0x0008A0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceStart_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_BreakHitResult_TraceEnd_2) == 0x0008AC, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_BreakHitResult_TraceEnd_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, CallFunc_Less_IntInt_ReturnValue_2) == 0x0008B8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::CallFunc_Less_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBuilding_Actor_2) == 0x0008C0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBuilding_Actor_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_8) == 0x0008C8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_8' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsBP_Deimos_Rift_2) == 0x0008D0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsBP_Deimos_Rift_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_9) == 0x0008D8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_9' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_AsB_Athena_Vending_Machine_1) == 0x0008E0, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_AsB_Athena_Vending_Machine_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel, K2Node_DynamicCast_bSuccess_10) == 0x0008E8, "Member 'GA_SpookyMist_Travel_C_ExecuteUbergraph_GA_SpookyMist_Travel::K2Node_DynamicCast_bSuccess_10' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -372,9 +218,6 @@ struct GA_SpookyMist_Travel_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_SpookyMist_Travel_C_K2_OnEndAbility");
-static_assert(sizeof(GA_SpookyMist_Travel_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_SpookyMist_Travel_C_K2_OnEndAbility");
-static_assert(offsetof(GA_SpookyMist_Travel_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_SpookyMist_Travel_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -383,9 +226,6 @@ struct GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_SpookyMist_Travel_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8
 // 0x00B0 (0x00B0 - 0x0000)
@@ -394,9 +234,6 @@ struct GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8 fin
 public:
 	struct FGameplayEventData                     Payload;                                           // 0x0000(0x00B0)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8");
-static_assert(sizeof(GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8) == 0x0000B0, "Wrong size on GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8");
-static_assert(offsetof(GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8, Payload) == 0x000000, "Member 'GA_SpookyMist_Travel_C_EventReceived_76DD035A4216DFB29C5E0DB3261B6CD8::Payload' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.Triggered_BA1318F5441CE862ADFAB5BA78450BAF
 // 0x0030 (0x0030 - 0x0000)
@@ -406,10 +243,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(sizeof(GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000030, "Wrong size on GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF, TargetData) == 0x000000, "Member 'GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF, ApplicationTag) == 0x000028, "Member 'GA_SpookyMist_Travel_C_Triggered_BA1318F5441CE862ADFAB5BA78450BAF::ApplicationTag' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.Cancelled_BA1318F5441CE862ADFAB5BA78450BAF
 // 0x0030 (0x0030 - 0x0000)
@@ -419,10 +252,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(sizeof(GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000030, "Wrong size on GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF, TargetData) == 0x000000, "Member 'GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF, ApplicationTag) == 0x000028, "Member 'GA_SpookyMist_Travel_C_Cancelled_BA1318F5441CE862ADFAB5BA78450BAF::ApplicationTag' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.Completed_BA1318F5441CE862ADFAB5BA78450BAF
 // 0x0030 (0x0030 - 0x0000)
@@ -432,10 +261,6 @@ public:
 	struct FGameplayAbilityTargetDataHandle       TargetData;                                        // 0x0000(0x0028)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	struct FGameplayTag                           ApplicationTag;                                    // 0x0028(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(sizeof(GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF) == 0x000030, "Wrong size on GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF, TargetData) == 0x000000, "Member 'GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF::TargetData' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF, ApplicationTag) == 0x000028, "Member 'GA_SpookyMist_Travel_C_Completed_BA1318F5441CE862ADFAB5BA78450BAF::ApplicationTag' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.HandlePawnDetachRC
 // 0x0010 (0x0010 - 0x0000)
@@ -445,10 +270,6 @@ public:
 	class AFortPlayerPawn*                        K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_HandlePawnDetachRC) == 0x000008, "Wrong alignment on GA_SpookyMist_Travel_C_HandlePawnDetachRC");
-static_assert(sizeof(GA_SpookyMist_Travel_C_HandlePawnDetachRC) == 0x000010, "Wrong size on GA_SpookyMist_Travel_C_HandlePawnDetachRC");
-static_assert(offsetof(GA_SpookyMist_Travel_C_HandlePawnDetachRC, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000000, "Member 'GA_SpookyMist_Travel_C_HandlePawnDetachRC::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_HandlePawnDetachRC, K2Node_DynamicCast_bSuccess) == 0x000008, "Member 'GA_SpookyMist_Travel_C_HandlePawnDetachRC::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.SetDashStartEndAndDirection
 // 0x00C8 (0x00C8 - 0x0000)
@@ -474,26 +295,6 @@ public:
 	struct FVector                                CallFunc_Add_VectorVector_ReturnValue_5;           // 0x00B0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_GetDirectionUnitVector_ReturnValue;       // 0x00BC(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection) == 0x000004, "Wrong alignment on GA_SpookyMist_Travel_C_SetDashStartEndAndDirection");
-static_assert(sizeof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection) == 0x0000C8, "Wrong size on GA_SpookyMist_Travel_C_SetDashStartEndAndDirection");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, StartPoint) == 0x000000, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::StartPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, EndPoint) == 0x00000C, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::EndPoint' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, Direction) == 0x000018, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::Direction' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetActorEyesViewPoint_OutLocation) == 0x000024, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetActorEyesViewPoint_OutLocation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetActorEyesViewPoint_OutRotation) == 0x000030, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetActorEyesViewPoint_OutRotation' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetForwardVector_ReturnValue) == 0x00003C, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetValueAtLevel_ReturnValue) == 0x000048, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetValueAtLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetUpVector_ReturnValue) == 0x00004C, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetUpVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000058, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetRightVector_ReturnValue) == 0x00005C, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000068, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue) == 0x000074, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue_1) == 0x000080, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue_2) == 0x00008C, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue_3) == 0x000098, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue_4) == 0x0000A4, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_Add_VectorVector_ReturnValue_5) == 0x0000B0, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_Add_VectorVector_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_SetDashStartEndAndDirection, CallFunc_GetDirectionUnitVector_ReturnValue) == 0x0000BC, "Member 'GA_SpookyMist_Travel_C_SetDashStartEndAndDirection::CallFunc_GetDirectionUnitVector_ReturnValue' has a wrong offset!");
 
 // Function GA_SpookyMist_Travel.GA_SpookyMist_Travel_C.PlayerCapsuleSizes
 // 0x0010 (0x0010 - 0x0000)
@@ -505,12 +306,6 @@ public:
 	float                                         CallFunc_GetScaledCapsuleRadius_ReturnValue;       // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetScaledCapsuleHalfHeight_ReturnValue;   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes) == 0x000004, "Wrong alignment on GA_SpookyMist_Travel_C_PlayerCapsuleSizes");
-static_assert(sizeof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes) == 0x000010, "Wrong size on GA_SpookyMist_Travel_C_PlayerCapsuleSizes");
-static_assert(offsetof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes, Radius) == 0x000000, "Member 'GA_SpookyMist_Travel_C_PlayerCapsuleSizes::Radius' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes, HalfHeight) == 0x000004, "Member 'GA_SpookyMist_Travel_C_PlayerCapsuleSizes::HalfHeight' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes, CallFunc_GetScaledCapsuleRadius_ReturnValue) == 0x000008, "Member 'GA_SpookyMist_Travel_C_PlayerCapsuleSizes::CallFunc_GetScaledCapsuleRadius_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_SpookyMist_Travel_C_PlayerCapsuleSizes, CallFunc_GetScaledCapsuleHalfHeight_ReturnValue) == 0x00000C, "Member 'GA_SpookyMist_Travel_C_PlayerCapsuleSizes::CallFunc_GetScaledCapsuleHalfHeight_ReturnValue' has a wrong offset!");
 
 }
 

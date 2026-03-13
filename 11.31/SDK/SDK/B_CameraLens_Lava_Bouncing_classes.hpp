@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_CameraLens_Lava_Bouncing_C">();
+		BP_STATIC_CLASS_IMPL("B_CameraLens_Lava_Bouncing_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_CameraLens_Lava_Bouncing_C")
 	}
 	static class AB_CameraLens_Lava_Bouncing_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_CameraLens_Lava_Bouncing_C>();
 	}
 };
-static_assert(alignof(AB_CameraLens_Lava_Bouncing_C) == 0x000010, "Wrong alignment on AB_CameraLens_Lava_Bouncing_C");
-static_assert(sizeof(AB_CameraLens_Lava_Bouncing_C) == 0x000300, "Wrong size on AB_CameraLens_Lava_Bouncing_C");
-static_assert(offsetof(AB_CameraLens_Lava_Bouncing_C, UberGraphFrame) == 0x0002D0, "Member 'AB_CameraLens_Lava_Bouncing_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_CameraLens_Lava_Bouncing_C, P_Camera_Lava_Bouncing) == 0x0002D8, "Member 'AB_CameraLens_Lava_Bouncing_C::P_Camera_Lava_Bouncing' has a wrong offset!");
-static_assert(offsetof(AB_CameraLens_Lava_Bouncing_C, VelocityActor) == 0x0002E0, "Member 'AB_CameraLens_Lava_Bouncing_C::VelocityActor' has a wrong offset!");
-static_assert(offsetof(AB_CameraLens_Lava_Bouncing_C, TargetRot) == 0x0002E8, "Member 'AB_CameraLens_Lava_Bouncing_C::TargetRot' has a wrong offset!");
 
 }
 

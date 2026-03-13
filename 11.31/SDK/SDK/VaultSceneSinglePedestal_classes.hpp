@@ -23,15 +23,17 @@ class AVaultSceneSinglePedestal_C final : public AItemPreviewVaultScene
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VaultSceneSinglePedestal_C">();
+		BP_STATIC_CLASS_IMPL("VaultSceneSinglePedestal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VaultSceneSinglePedestal_C")
 	}
 	static class AVaultSceneSinglePedestal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AVaultSceneSinglePedestal_C>();
 	}
 };
-static_assert(alignof(AVaultSceneSinglePedestal_C) == 0x000008, "Wrong alignment on AVaultSceneSinglePedestal_C");
-static_assert(sizeof(AVaultSceneSinglePedestal_C) == 0x0002B0, "Wrong size on AVaultSceneSinglePedestal_C");
 
 }
 

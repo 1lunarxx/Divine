@@ -68,43 +68,6 @@ public:
 	struct FGameplayEffectSpecHandle              CallFunc_AssignTagSetByCallerMagnitude_ReturnValue; // 0x0178(0x0010)()
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue; // 0x0188(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport) == 0x000008, "Wrong alignment on GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport");
-static_assert(sizeof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport) == 0x000190, "Wrong size on GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, EntryPoint) == 0x000000, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_Event_EventData) == 0x000008, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_Event_EventData' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_AsBP_Creative_Device_Teleporter) == 0x0000B8, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_AsBP_Creative_Device_Teleporter' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_bSuccess) == 0x0000C0, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x0000C8, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_bSuccess_1) == 0x0000D0, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsValid_ReturnValue) == 0x0000D1, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsValid_ReturnValue_1) == 0x0000D2, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetController_ReturnValue) == 0x0000D8, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_AsFort_Player_Controller_Athena) == 0x0000E0, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_AsFort_Player_Controller_Athena' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_bSuccess_2) == 0x0000E8, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsFlying_ReturnValue) == 0x0000E9, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsFlying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsMovingOnGround_ReturnValue) == 0x0000EA, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsMovingOnGround_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetDesiredRotation_ReturnValue) == 0x0000EC, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetDesiredRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_BooleanOR_ReturnValue) == 0x0000F8, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_BreakRotator_Roll) == 0x0000FC, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_BreakRotator_Roll' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_BreakRotator_Pitch) == 0x000100, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_BreakRotator_Pitch' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_BreakRotator_Yaw) == 0x000104, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_BreakRotator_Yaw' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetAbilitySystemComponent_ReturnValue) == 0x000108, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetAbilitySystemComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_K2_CommitAbility_ReturnValue) == 0x000110, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsValid_ReturnValue_2) == 0x000111, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_AsBP_Creative_Device_Teleporter_1) == 0x000118, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_AsBP_Creative_Device_Teleporter_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, K2Node_DynamicCast_bSuccess_3) == 0x000120, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::K2Node_DynamicCast_bSuccess_3' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetTeleportedPawnYaw_OutYaw) == 0x000124, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetTeleportedPawnYaw_OutYaw' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_MakeRotator_ReturnValue) == 0x000128, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_MakeRotator_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000134, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_TeleportPlayerPawn_ReturnValue) == 0x000140, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_TeleportPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsValid_ReturnValue_3) == 0x000141, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetAbilitySystemComponent_ReturnValue_1) == 0x000148, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetAbilitySystemComponent_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_IsValid_ReturnValue_4) == 0x000150, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_GetTeleportedPawnPitch_OutPitch) == 0x000154, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_GetTeleportedPawnPitch_OutPitch' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_MakeRotator_ReturnValue_1) == 0x000158, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_MakeRotator_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_MakeOutgoingSpec_ReturnValue) == 0x000168, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_MakeOutgoingSpec_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_AssignTagSetByCallerMagnitude_ReturnValue) == 0x000178, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_AssignTagSetByCallerMagnitude_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport, CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue) == 0x000188, "Member 'GA_Creative_Teleport_C_ExecuteUbergraph_GA_Creative_Teleport::CallFunc_BP_ApplyGameplayEffectSpecToSelf_ReturnValue' has a wrong offset!");
 
 // Function GA_Creative_Teleport.GA_Creative_Teleport_C.K2_ActivateAbilityFromEvent
 // 0x00B0 (0x00B0 - 0x0000)
@@ -113,9 +76,6 @@ struct GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent final
 public:
 	struct FGameplayEventData                     EventData;                                         // 0x0000(0x00B0)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent) == 0x000008, "Wrong alignment on GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent");
-static_assert(sizeof(GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent) == 0x0000B0, "Wrong size on GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent, EventData) == 0x000000, "Member 'GA_Creative_Teleport_C_K2_ActivateAbilityFromEvent::EventData' has a wrong offset!");
 
 // Function GA_Creative_Teleport.GA_Creative_Teleport_C.K2_ShouldAbilityRespondToEvent
 // 0x00F8 (0x00F8 - 0x0000)
@@ -128,13 +88,6 @@ public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00F1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00F2(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent) == 0x000008, "Wrong alignment on GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent");
-static_assert(sizeof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent) == 0x0000F8, "Wrong size on GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent, ActorInfo) == 0x000000, "Member 'GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent::ActorInfo' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent, Payload) == 0x000040, "Member 'GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent::Payload' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent, ReturnValue) == 0x0000F0, "Member 'GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent, CallFunc_IsValid_ReturnValue) == 0x0000F1, "Member 'GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent, CallFunc_IsValid_ReturnValue_1) == 0x0000F2, "Member 'GA_Creative_Teleport_C_K2_ShouldAbilityRespondToEvent::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
 
 }
 

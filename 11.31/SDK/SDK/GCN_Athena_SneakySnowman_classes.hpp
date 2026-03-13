@@ -31,32 +31,27 @@ public:
 	class USoundBase*                             FootstepSound;                                     // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void On_Player_Step();
-	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 	void OnLoopingStart(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents);
 	void ReceiveBeginPlay();
 	void BeginPlay_Multicast();
 	void ExecuteUbergraph_GCN_Athena_SneakySnowman(int32 EntryPoint);
+	void On_Player_Step();
+	void OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_SneakySnowman_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_SneakySnowman_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_SneakySnowman_C")
 	}
 	static class AGCN_Athena_SneakySnowman_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Athena_SneakySnowman_C>();
 	}
 };
-static_assert(alignof(AGCN_Athena_SneakySnowman_C) == 0x000008, "Wrong alignment on AGCN_Athena_SneakySnowman_C");
-static_assert(sizeof(AGCN_Athena_SneakySnowman_C) == 0x0007C0, "Wrong size on AGCN_Athena_SneakySnowman_C");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Athena_SneakySnowman_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, Arrow) == 0x000790, "Member 'AGCN_Athena_SneakySnowman_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, Arrow2) == 0x000798, "Member 'AGCN_Athena_SneakySnowman_C::Arrow2' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, Arrow1) == 0x0007A0, "Member 'AGCN_Athena_SneakySnowman_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, SnowmanMesh) == 0x0007A8, "Member 'AGCN_Athena_SneakySnowman_C::SnowmanMesh' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, PlayerPawn) == 0x0007B0, "Member 'AGCN_Athena_SneakySnowman_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_SneakySnowman_C, FootstepSound) == 0x0007B8, "Member 'AGCN_Athena_SneakySnowman_C::FootstepSound' has a wrong offset!");
 
 }
 

@@ -30,15 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCL_Rift_Teleport_C">();
+		BP_STATIC_CLASS_IMPL("GCL_Rift_Teleport_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCL_Rift_Teleport_C")
 	}
 	static class AGCL_Rift_Teleport_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCL_Rift_Teleport_C>();
 	}
 };
-static_assert(alignof(AGCL_Rift_Teleport_C) == 0x000008, "Wrong alignment on AGCL_Rift_Teleport_C");
-static_assert(sizeof(AGCL_Rift_Teleport_C) == 0x000310, "Wrong size on AGCL_Rift_Teleport_C");
 
 }
 

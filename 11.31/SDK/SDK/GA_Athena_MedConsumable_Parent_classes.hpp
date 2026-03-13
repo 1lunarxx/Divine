@@ -72,39 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_MedConsumable_Parent_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_MedConsumable_Parent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_MedConsumable_Parent_C")
 	}
 	static class UGA_Athena_MedConsumable_Parent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_MedConsumable_Parent_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_MedConsumable_Parent_C) == 0x000008, "Wrong alignment on UGA_Athena_MedConsumable_Parent_C");
-static_assert(sizeof(UGA_Athena_MedConsumable_Parent_C) == 0x000B30, "Wrong size on UGA_Athena_MedConsumable_Parent_C");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_MedConsumable_Parent_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_MedConsumable_Parent_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HealsHealth) == 0x000A40, "Member 'UGA_Athena_MedConsumable_Parent_C::HealsHealth' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HasHealthCap) == 0x000A41, "Member 'UGA_Athena_MedConsumable_Parent_C::HasHealthCap' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HealthHealAmount) == 0x000A44, "Member 'UGA_Athena_MedConsumable_Parent_C::HealthHealAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, TriggerDuration) == 0x000A48, "Member 'UGA_Athena_MedConsumable_Parent_C::TriggerDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, ShouldHolster) == 0x000A4C, "Member 'UGA_Athena_MedConsumable_Parent_C::ShouldHolster' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, ItemIDToHolster) == 0x000A50, "Member 'UGA_Athena_MedConsumable_Parent_C::ItemIDToHolster' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, GC_PotionConsumed) == 0x000A58, "Member 'UGA_Athena_MedConsumable_Parent_C::GC_PotionConsumed' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, GE_EffectToApply) == 0x000A60, "Member 'UGA_Athena_MedConsumable_Parent_C::GE_EffectToApply' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HealsShields) == 0x000A68, "Member 'UGA_Athena_MedConsumable_Parent_C::HealsShields' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HasShieldCap) == 0x000A69, "Member 'UGA_Athena_MedConsumable_Parent_C::HasShieldCap' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, ShieldHealAmount) == 0x000A6C, "Member 'UGA_Athena_MedConsumable_Parent_C::ShieldHealAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, Row_ShieldCap) == 0x000A70, "Member 'UGA_Athena_MedConsumable_Parent_C::Row_ShieldCap' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, Row_ShieldAmount) == 0x000A90, "Member 'UGA_Athena_MedConsumable_Parent_C::Row_ShieldAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, Row_HealthCap) == 0x000AB0, "Member 'UGA_Athena_MedConsumable_Parent_C::Row_HealthCap' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, Row_HealthAmount) == 0x000AD0, "Member 'UGA_Athena_MedConsumable_Parent_C::Row_HealthAmount' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, Tags_FailedResponse) == 0x000AF0, "Member 'UGA_Athena_MedConsumable_Parent_C::Tags_FailedResponse' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, IgnoreCalcs) == 0x000B10, "Member 'UGA_Athena_MedConsumable_Parent_C::IgnoreCalcs' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, AlwaysActivate) == 0x000B11, "Member 'UGA_Athena_MedConsumable_Parent_C::AlwaysActivate' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, EquippingCue) == 0x000B14, "Member 'UGA_Athena_MedConsumable_Parent_C::EquippingCue' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, OverHealing) == 0x000B1C, "Member 'UGA_Athena_MedConsumable_Parent_C::OverHealing' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, HealthIsEffective) == 0x000B20, "Member 'UGA_Athena_MedConsumable_Parent_C::HealthIsEffective' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_MedConsumable_Parent_C, ForceFeedback) == 0x000B28, "Member 'UGA_Athena_MedConsumable_Parent_C::ForceFeedback' has a wrong offset!");
 
 }
 

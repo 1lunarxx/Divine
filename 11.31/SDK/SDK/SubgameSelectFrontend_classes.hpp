@@ -23,15 +23,17 @@ class USubgameSelectFrontend_C final : public UStartUpUIStateWidget_SubgameSelec
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelectFrontend_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelectFrontend_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelectFrontend_C")
 	}
 	static class USubgameSelectFrontend_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelectFrontend_C>();
 	}
 };
-static_assert(alignof(USubgameSelectFrontend_C) == 0x000008, "Wrong alignment on USubgameSelectFrontend_C");
-static_assert(sizeof(USubgameSelectFrontend_C) == 0x0002E0, "Wrong size on USubgameSelectFrontend_C");
 
 }
 

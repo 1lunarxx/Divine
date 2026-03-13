@@ -23,15 +23,17 @@ class UAccountNotFound_C final : public UFortAccountNotFound
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AccountNotFound_C">();
+		BP_STATIC_CLASS_IMPL("AccountNotFound_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AccountNotFound_C")
 	}
 	static class UAccountNotFound_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAccountNotFound_C>();
 	}
 };
-static_assert(alignof(UAccountNotFound_C) == 0x000008, "Wrong alignment on UAccountNotFound_C");
-static_assert(sizeof(UAccountNotFound_C) == 0x000430, "Wrong size on UAccountNotFound_C");
 
 }
 

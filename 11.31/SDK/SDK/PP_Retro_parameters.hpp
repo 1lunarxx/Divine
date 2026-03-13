@@ -21,9 +21,6 @@ struct PP_Retro_C_ExecuteUbergraph_PP_Retro final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(PP_Retro_C_ExecuteUbergraph_PP_Retro) == 0x000004, "Wrong alignment on PP_Retro_C_ExecuteUbergraph_PP_Retro");
-static_assert(sizeof(PP_Retro_C_ExecuteUbergraph_PP_Retro) == 0x000004, "Wrong size on PP_Retro_C_ExecuteUbergraph_PP_Retro");
-static_assert(offsetof(PP_Retro_C_ExecuteUbergraph_PP_Retro, EntryPoint) == 0x000000, "Member 'PP_Retro_C_ExecuteUbergraph_PP_Retro::EntryPoint' has a wrong offset!");
 
 }
 

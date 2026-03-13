@@ -23,9 +23,6 @@ struct HalfShieldPotion_Prop_AnimBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(HalfShieldPotion_Prop_AnimBP_C_AnimGraph) == 0x000008, "Wrong alignment on HalfShieldPotion_Prop_AnimBP_C_AnimGraph");
-static_assert(sizeof(HalfShieldPotion_Prop_AnimBP_C_AnimGraph) == 0x000010, "Wrong size on HalfShieldPotion_Prop_AnimBP_C_AnimGraph");
-static_assert(offsetof(HalfShieldPotion_Prop_AnimBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'HalfShieldPotion_Prop_AnimBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 // Function HalfShieldPotion_Prop_AnimBP.HalfShieldPotion_Prop_AnimBP_C.ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,6 @@ struct HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_Ani
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP) == 0x000004, "Wrong alignment on HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP");
-static_assert(sizeof(HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP) == 0x000004, "Wrong size on HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP");
-static_assert(offsetof(HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP, EntryPoint) == 0x000000, "Member 'HalfShieldPotion_Prop_AnimBP_C_ExecuteUbergraph_HalfShieldPotion_Prop_AnimBP::EntryPoint' has a wrong offset!");
 
 }
 

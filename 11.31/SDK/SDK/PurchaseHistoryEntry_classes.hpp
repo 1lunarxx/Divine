@@ -54,33 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PurchaseHistoryEntry_C">();
+		BP_STATIC_CLASS_IMPL("PurchaseHistoryEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PurchaseHistoryEntry_C")
 	}
 	static class UPurchaseHistoryEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPurchaseHistoryEntry_C>();
 	}
 };
-static_assert(alignof(UPurchaseHistoryEntry_C) == 0x000008, "Wrong alignment on UPurchaseHistoryEntry_C");
-static_assert(sizeof(UPurchaseHistoryEntry_C) == 0x000C18, "Wrong size on UPurchaseHistoryEntry_C");
-static_assert(offsetof(UPurchaseHistoryEntry_C, UberGraphFrame) == 0x000B90, "Member 'UPurchaseHistoryEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, CommonBorder_ItemBackground) == 0x000B98, "Member 'UPurchaseHistoryEntry_C::CommonBorder_ItemBackground' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, CommonTextBlock_0) == 0x000BA0, "Member 'UPurchaseHistoryEntry_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, CommonTextBlock_XITEMS) == 0x000BA8, "Member 'UPurchaseHistoryEntry_C::CommonTextBlock_XITEMS' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, DummyPreviewItemCard) == 0x000BB0, "Member 'UPurchaseHistoryEntry_C::DummyPreviewItemCard' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, DummyPreviewItemCard_1) == 0x000BB8, "Member 'UPurchaseHistoryEntry_C::DummyPreviewItemCard_1' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, HiddenAthenaItemCardSpacer) == 0x000BC0, "Member 'UPurchaseHistoryEntry_C::HiddenAthenaItemCardSpacer' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Image_Arrow) == 0x000BC8, "Member 'UPurchaseHistoryEntry_C::Image_Arrow' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, ItemCardHB) == 0x000BD0, "Member 'UPurchaseHistoryEntry_C::ItemCardHB' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Overlay_XItems) == 0x000BD8, "Member 'UPurchaseHistoryEntry_C::Overlay_XItems' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, SpecialTextSwitcher) == 0x000BE0, "Member 'UPurchaseHistoryEntry_C::SpecialTextSwitcher' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Switcher_RefundStatus) == 0x000BE8, "Member 'UPurchaseHistoryEntry_C::Switcher_RefundStatus' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_FreeRefund) == 0x000BF0, "Member 'UPurchaseHistoryEntry_C::Text_FreeRefund' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_NotEnoughTokens) == 0x000BF8, "Member 'UPurchaseHistoryEntry_C::Text_NotEnoughTokens' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Purchased) == 0x000C00, "Member 'UPurchaseHistoryEntry_C::Text_Purchased' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, Text_Refunded) == 0x000C08, "Member 'UPurchaseHistoryEntry_C::Text_Refunded' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, DEVisDisabled) == 0x000C10, "Member 'UPurchaseHistoryEntry_C::DEVisDisabled' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryEntry_C, ScrollOffset) == 0x000C14, "Member 'UPurchaseHistoryEntry_C::ScrollOffset' has a wrong offset!");
 
 }
 

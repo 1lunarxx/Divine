@@ -23,15 +23,17 @@ class UUserActionMenuInputButton_C final : public UCommonButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UserActionMenuInputButton_C">();
+		BP_STATIC_CLASS_IMPL("UserActionMenuInputButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UserActionMenuInputButton_C")
 	}
 	static class UUserActionMenuInputButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUserActionMenuInputButton_C>();
 	}
 };
-static_assert(alignof(UUserActionMenuInputButton_C) == 0x000008, "Wrong alignment on UUserActionMenuInputButton_C");
-static_assert(sizeof(UUserActionMenuInputButton_C) == 0x000B70, "Wrong size on UUserActionMenuInputButton_C");
 
 }
 

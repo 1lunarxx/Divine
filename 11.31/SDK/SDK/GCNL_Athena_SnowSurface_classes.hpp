@@ -32,16 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_Athena_SnowSurface_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_Athena_SnowSurface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_Athena_SnowSurface_C")
 	}
 	static class AGCNL_Athena_SnowSurface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_Athena_SnowSurface_C>();
 	}
 };
-static_assert(alignof(AGCNL_Athena_SnowSurface_C) == 0x000008, "Wrong alignment on AGCNL_Athena_SnowSurface_C");
-static_assert(sizeof(AGCNL_Athena_SnowSurface_C) == 0x000790, "Wrong size on AGCNL_Athena_SnowSurface_C");
-static_assert(offsetof(AGCNL_Athena_SnowSurface_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_Athena_SnowSurface_C::UberGraphFrame' has a wrong offset!");
 
 }
 

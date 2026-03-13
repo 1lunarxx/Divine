@@ -75,46 +75,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ImportFriends_C">();
+		BP_STATIC_CLASS_IMPL("ImportFriends_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ImportFriends_C")
 	}
 	static class UImportFriends_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UImportFriends_C>();
 	}
 };
-static_assert(alignof(UImportFriends_C) == 0x000008, "Wrong alignment on UImportFriends_C");
-static_assert(sizeof(UImportFriends_C) == 0x000608, "Wrong size on UImportFriends_C");
-static_assert(offsetof(UImportFriends_C, UberGraphFrame) == 0x0004A8, "Member 'UImportFriends_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, Intro_V2) == 0x0004B0, "Member 'UImportFriends_C::Intro_V2' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, ArrowPulse) == 0x0004B8, "Member 'UImportFriends_C::ArrowPulse' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, Intro) == 0x0004C0, "Member 'UImportFriends_C::Intro' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, AddFriendsDescription) == 0x0004C8, "Member 'UImportFriends_C::AddFriendsDescription' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, CommonTextBlock_0) == 0x0004D0, "Member 'UImportFriends_C::CommonTextBlock_0' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, CT_AddFriendsDescription) == 0x0004D8, "Member 'UImportFriends_C::CT_AddFriendsDescription' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, CT_ChangeInSettingsText) == 0x0004E0, "Member 'UImportFriends_C::CT_ChangeInSettingsText' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, CT_LimitedTimeHeader) == 0x0004E8, "Member 'UImportFriends_C::CT_LimitedTimeHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, CT_TakenToLauncher) == 0x0004F0, "Member 'UImportFriends_C::CT_TakenToLauncher' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, Image_1) == 0x0004F8, "Member 'UImportFriends_C::Image_1' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, ItemInfoWidget) == 0x000500, "Member 'UImportFriends_C::ItemInfoWidget' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, SafeZone_0) == 0x000508, "Member 'UImportFriends_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, SBox_AddFriendButtonScaleBox) == 0x000510, "Member 'UImportFriends_C::SBox_AddFriendButtonScaleBox' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, ScaleBoxDescription) == 0x000518, "Member 'UImportFriends_C::ScaleBoxDescription' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, ScaleBoxHeader) == 0x000520, "Member 'UImportFriends_C::ScaleBoxHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, DesiredFrontEndCamera) == 0x000528, "Member 'UImportFriends_C::DesiredFrontEndCamera' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, PreviewItemDef) == 0x000530, "Member 'UImportFriends_C::PreviewItemDef' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, HeartbeatDelayIntroAnimation) == 0x000538, "Member 'UImportFriends_C::HeartbeatDelayIntroAnimation' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, debugSocialImportType) == 0x00053C, "Member 'UImportFriends_C::debugSocialImportType' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, bHasReward) == 0x00053D, "Member 'UImportFriends_C::bHasReward' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, FacebookHeader) == 0x000540, "Member 'UImportFriends_C::FacebookHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, VKHeader) == 0x000558, "Member 'UImportFriends_C::VKHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, SteamHeader) == 0x000570, "Member 'UImportFriends_C::SteamHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, PlaystationHeader) == 0x000588, "Member 'UImportFriends_C::PlaystationHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, XboxHeader) == 0x0005A0, "Member 'UImportFriends_C::XboxHeader' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, SocialPlatform) == 0x0005B8, "Member 'UImportFriends_C::SocialPlatform' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, WrapHeaderAt) == 0x0005BC, "Member 'UImportFriends_C::WrapHeaderAt' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, XboxDescriptionText) == 0x0005C0, "Member 'UImportFriends_C::XboxDescriptionText' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, PSNDescriptionText) == 0x0005D8, "Member 'UImportFriends_C::PSNDescriptionText' has a wrong offset!");
-static_assert(offsetof(UImportFriends_C, SwitchDescriptionText) == 0x0005F0, "Member 'UImportFriends_C::SwitchDescriptionText' has a wrong offset!");
 
 }
 

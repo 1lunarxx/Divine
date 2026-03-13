@@ -44,25 +44,6 @@ public:
 	struct FVector2D                              CallFunc_MakeVector2D_ReturnValue;                 // 0x006C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FWidgetTransform                       K2Node_MakeStruct_WidgetTransform;                 // 0x0074(0x001C)(NoDestructor)
 };
-static_assert(alignof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered) == 0x000008, "Wrong alignment on PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered");
-static_assert(sizeof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered) == 0x000090, "Wrong size on PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, EntryPoint) == 0x000000, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, Temp_bool_Variable) == 0x000004, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_Event_LocalizedLocationName) == 0x000008, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_Event_LocalizedLocationName' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_Event_bIsNamedLocation) == 0x000020, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_Event_bIsNamedLocation' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_CreateDelegate_OutputDelegate) == 0x000024, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, Temp_int_Variable) == 0x000034, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000038, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, Temp_int_Variable_1) == 0x000058, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_Select_Default) == 0x00005C, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_IsMobileGame_ReturnValue) == 0x000060, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_IsMobileGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000061, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_BreakVector2D_X) == 0x000064, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_BreakVector2D_X' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_BreakVector2D_Y) == 0x000068, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_BreakVector2D_Y' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, CallFunc_MakeVector2D_ReturnValue) == 0x00006C, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::CallFunc_MakeVector2D_ReturnValue' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered, K2Node_MakeStruct_WidgetTransform) == 0x000074, "Member 'PlayerDiscovered_C_ExecuteUbergraph_PlayerDiscovered::K2Node_MakeStruct_WidgetTransform' has a wrong offset!");
 
 // Function PlayerDiscovered.PlayerDiscovered_C.OnNewDiscovery
 // 0x0020 (0x0020 - 0x0000)
@@ -72,10 +53,6 @@ public:
 	class FText                                   LocalizedLocationName;                             // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	bool                                          bIsNamedLocation;                                  // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(PlayerDiscovered_C_OnNewDiscovery) == 0x000008, "Wrong alignment on PlayerDiscovered_C_OnNewDiscovery");
-static_assert(sizeof(PlayerDiscovered_C_OnNewDiscovery) == 0x000020, "Wrong size on PlayerDiscovered_C_OnNewDiscovery");
-static_assert(offsetof(PlayerDiscovered_C_OnNewDiscovery, LocalizedLocationName) == 0x000000, "Member 'PlayerDiscovered_C_OnNewDiscovery::LocalizedLocationName' has a wrong offset!");
-static_assert(offsetof(PlayerDiscovered_C_OnNewDiscovery, bIsNamedLocation) == 0x000018, "Member 'PlayerDiscovered_C_OnNewDiscovery::bIsNamedLocation' has a wrong offset!");
 
 }
 

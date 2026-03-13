@@ -23,15 +23,17 @@ class UNavFilter_Phoebe_NoSmashable_C final : public UNavigationQueryFilter
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"NavFilter_Phoebe_NoSmashable_C">();
+		BP_STATIC_CLASS_IMPL("NavFilter_Phoebe_NoSmashable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"NavFilter_Phoebe_NoSmashable_C")
 	}
 	static class UNavFilter_Phoebe_NoSmashable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UNavFilter_Phoebe_NoSmashable_C>();
 	}
 };
-static_assert(alignof(UNavFilter_Phoebe_NoSmashable_C) == 0x000008, "Wrong alignment on UNavFilter_Phoebe_NoSmashable_C");
-static_assert(sizeof(UNavFilter_Phoebe_NoSmashable_C) == 0x000048, "Wrong size on UNavFilter_Phoebe_NoSmashable_C");
 
 }
 

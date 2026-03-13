@@ -403,10 +403,6 @@ public:
 	float                                         Spread;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Pan;                                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectPannerSettings) == 0x000004, "Wrong alignment on FSourceEffectPannerSettings");
-static_assert(sizeof(FSourceEffectPannerSettings) == 0x000008, "Wrong size on FSourceEffectPannerSettings");
-static_assert(offsetof(FSourceEffectPannerSettings, Spread) == 0x000000, "Member 'FSourceEffectPannerSettings::Spread' has a wrong offset!");
-static_assert(offsetof(FSourceEffectPannerSettings, Pan) == 0x000004, "Member 'FSourceEffectPannerSettings::Pan' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectBitCrusherSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -416,10 +412,6 @@ public:
 	float                                         CrushedSampleRate;                                 // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CrushedBits;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectBitCrusherSettings) == 0x000004, "Wrong alignment on FSourceEffectBitCrusherSettings");
-static_assert(sizeof(FSourceEffectBitCrusherSettings) == 0x000008, "Wrong size on FSourceEffectBitCrusherSettings");
-static_assert(offsetof(FSourceEffectBitCrusherSettings, CrushedSampleRate) == 0x000000, "Member 'FSourceEffectBitCrusherSettings::CrushedSampleRate' has a wrong offset!");
-static_assert(offsetof(FSourceEffectBitCrusherSettings, CrushedBits) == 0x000004, "Member 'FSourceEffectBitCrusherSettings::CrushedBits' has a wrong offset!");
 
 // ScriptStruct Synthesis.Synth1PatchCable
 // 0x0008 (0x0008 - 0x0000)
@@ -430,10 +422,6 @@ public:
 	ESynth1PatchDestination                       Destination;                                       // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSynth1PatchCable) == 0x000004, "Wrong alignment on FSynth1PatchCable");
-static_assert(sizeof(FSynth1PatchCable) == 0x000008, "Wrong size on FSynth1PatchCable");
-static_assert(offsetof(FSynth1PatchCable, Depth) == 0x000000, "Member 'FSynth1PatchCable::Depth' has a wrong offset!");
-static_assert(offsetof(FSynth1PatchCable, Destination) == 0x000004, "Member 'FSynth1PatchCable::Destination' has a wrong offset!");
 
 // ScriptStruct Synthesis.EpicSynth1Patch
 // 0x0018 (0x0018 - 0x0000)
@@ -444,10 +432,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSynth1PatchCable>              PatchCables;                                       // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FEpicSynth1Patch) == 0x000008, "Wrong alignment on FEpicSynth1Patch");
-static_assert(sizeof(FEpicSynth1Patch) == 0x000018, "Wrong size on FEpicSynth1Patch");
-static_assert(offsetof(FEpicSynth1Patch, PatchSource) == 0x000000, "Member 'FEpicSynth1Patch::PatchSource' has a wrong offset!");
-static_assert(offsetof(FEpicSynth1Patch, PatchCables) == 0x000008, "Member 'FEpicSynth1Patch::PatchCables' has a wrong offset!");
 
 // ScriptStruct Synthesis.ModularSynthPreset
 // 0x00D8 (0x00E0 - 0x0008)
@@ -528,58 +512,6 @@ public:
 	uint8                                         Pad_CC[0x4];                                       // 0x00CC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FEpicSynth1Patch>               Patches;                                           // 0x00D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FModularSynthPreset) == 0x000008, "Wrong alignment on FModularSynthPreset");
-static_assert(sizeof(FModularSynthPreset) == 0x0000E0, "Wrong size on FModularSynthPreset");
-static_assert(offsetof(FModularSynthPreset, Osc1Type) == 0x00000C, "Member 'FModularSynthPreset::Osc1Type' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc1Gain) == 0x000010, "Member 'FModularSynthPreset::Osc1Gain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc1Octave) == 0x000014, "Member 'FModularSynthPreset::Osc1Octave' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc1Semitones) == 0x000018, "Member 'FModularSynthPreset::Osc1Semitones' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc1Cents) == 0x00001C, "Member 'FModularSynthPreset::Osc1Cents' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc1PulseWidth) == 0x000020, "Member 'FModularSynthPreset::Osc1PulseWidth' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2Type) == 0x000024, "Member 'FModularSynthPreset::Osc2Type' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2Gain) == 0x000028, "Member 'FModularSynthPreset::Osc2Gain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2Octave) == 0x00002C, "Member 'FModularSynthPreset::Osc2Octave' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2Semitones) == 0x000030, "Member 'FModularSynthPreset::Osc2Semitones' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2Cents) == 0x000034, "Member 'FModularSynthPreset::Osc2Cents' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Osc2PulseWidth) == 0x000038, "Member 'FModularSynthPreset::Osc2PulseWidth' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Portamento) == 0x00003C, "Member 'FModularSynthPreset::Portamento' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Spread) == 0x000044, "Member 'FModularSynthPreset::Spread' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Pan) == 0x000048, "Member 'FModularSynthPreset::Pan' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO1Frequency) == 0x00004C, "Member 'FModularSynthPreset::LFO1Frequency' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO1Gain) == 0x000050, "Member 'FModularSynthPreset::LFO1Gain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO1Type) == 0x000054, "Member 'FModularSynthPreset::LFO1Type' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO1Mode) == 0x000055, "Member 'FModularSynthPreset::LFO1Mode' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO1PatchType) == 0x000056, "Member 'FModularSynthPreset::LFO1PatchType' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO2Frequency) == 0x000058, "Member 'FModularSynthPreset::LFO2Frequency' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO2Gain) == 0x00005C, "Member 'FModularSynthPreset::LFO2Gain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO2Type) == 0x000060, "Member 'FModularSynthPreset::LFO2Type' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO2Mode) == 0x000061, "Member 'FModularSynthPreset::LFO2Mode' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, LFO2PatchType) == 0x000062, "Member 'FModularSynthPreset::LFO2PatchType' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, GainDb) == 0x000064, "Member 'FModularSynthPreset::GainDb' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, AttackTime) == 0x000068, "Member 'FModularSynthPreset::AttackTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, DecayTime) == 0x00006C, "Member 'FModularSynthPreset::DecayTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, SustainGain) == 0x000070, "Member 'FModularSynthPreset::SustainGain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ReleaseTime) == 0x000074, "Member 'FModularSynthPreset::ReleaseTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModEnvPatchType) == 0x000078, "Member 'FModularSynthPreset::ModEnvPatchType' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModEnvBiasPatchType) == 0x000079, "Member 'FModularSynthPreset::ModEnvBiasPatchType' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModulationEnvelopeDepth) == 0x000080, "Member 'FModularSynthPreset::ModulationEnvelopeDepth' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModulationEnvelopeAttackTime) == 0x000084, "Member 'FModularSynthPreset::ModulationEnvelopeAttackTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModulationEnvelopeDecayTime) == 0x000088, "Member 'FModularSynthPreset::ModulationEnvelopeDecayTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModulationEnvelopeSustainGain) == 0x00008C, "Member 'FModularSynthPreset::ModulationEnvelopeSustainGain' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ModulationEnvelopeReleaseTime) == 0x000090, "Member 'FModularSynthPreset::ModulationEnvelopeReleaseTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, FilterFrequency) == 0x000098, "Member 'FModularSynthPreset::FilterFrequency' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, FilterQ) == 0x00009C, "Member 'FModularSynthPreset::FilterQ' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, FilterType) == 0x0000A0, "Member 'FModularSynthPreset::FilterType' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, FilterAlgorithm) == 0x0000A1, "Member 'FModularSynthPreset::FilterAlgorithm' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, StereoDelayMode) == 0x0000A8, "Member 'FModularSynthPreset::StereoDelayMode' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, StereoDelayTime) == 0x0000AC, "Member 'FModularSynthPreset::StereoDelayTime' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, StereoDelayFeedback) == 0x0000B0, "Member 'FModularSynthPreset::StereoDelayFeedback' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, StereoDelayWetlevel) == 0x0000B4, "Member 'FModularSynthPreset::StereoDelayWetlevel' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, StereoDelayRatio) == 0x0000B8, "Member 'FModularSynthPreset::StereoDelayRatio' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ChorusDepth) == 0x0000C0, "Member 'FModularSynthPreset::ChorusDepth' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ChorusFeedback) == 0x0000C4, "Member 'FModularSynthPreset::ChorusFeedback' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, ChorusFrequency) == 0x0000C8, "Member 'FModularSynthPreset::ChorusFrequency' has a wrong offset!");
-static_assert(offsetof(FModularSynthPreset, Patches) == 0x0000D0, "Member 'FModularSynthPreset::Patches' has a wrong offset!");
 
 // ScriptStruct Synthesis.ModularSynthPresetBankEntry
 // 0x00F0 (0x00F0 - 0x0000)
@@ -589,10 +521,6 @@ public:
 	class FString                                 PresetName;                                        // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FModularSynthPreset                    Preset;                                            // 0x0010(0x00E0)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FModularSynthPresetBankEntry) == 0x000008, "Wrong alignment on FModularSynthPresetBankEntry");
-static_assert(sizeof(FModularSynthPresetBankEntry) == 0x0000F0, "Wrong size on FModularSynthPresetBankEntry");
-static_assert(offsetof(FModularSynthPresetBankEntry, PresetName) == 0x000000, "Member 'FModularSynthPresetBankEntry::PresetName' has a wrong offset!");
-static_assert(offsetof(FModularSynthPresetBankEntry, Preset) == 0x000010, "Member 'FModularSynthPresetBankEntry::Preset' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectDynamicsProcessorSettings
 // 0x0028 (0x0028 - 0x0000)
@@ -614,18 +542,6 @@ public:
 	uint8                                         bAnalogMode : 1;                                   // 0x0024(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_25[0x3];                                       // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectDynamicsProcessorSettings) == 0x000004, "Wrong alignment on FSourceEffectDynamicsProcessorSettings");
-static_assert(sizeof(FSourceEffectDynamicsProcessorSettings) == 0x000028, "Wrong size on FSourceEffectDynamicsProcessorSettings");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, DynamicsProcessorType) == 0x000000, "Member 'FSourceEffectDynamicsProcessorSettings::DynamicsProcessorType' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, PeakMode) == 0x000001, "Member 'FSourceEffectDynamicsProcessorSettings::PeakMode' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, LookAheadMsec) == 0x000004, "Member 'FSourceEffectDynamicsProcessorSettings::LookAheadMsec' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, AttackTimeMsec) == 0x000008, "Member 'FSourceEffectDynamicsProcessorSettings::AttackTimeMsec' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, ReleaseTimeMsec) == 0x00000C, "Member 'FSourceEffectDynamicsProcessorSettings::ReleaseTimeMsec' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, ThresholdDb) == 0x000010, "Member 'FSourceEffectDynamicsProcessorSettings::ThresholdDb' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, Ratio) == 0x000014, "Member 'FSourceEffectDynamicsProcessorSettings::Ratio' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, KneeBandwidthDb) == 0x000018, "Member 'FSourceEffectDynamicsProcessorSettings::KneeBandwidthDb' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, InputGainDb) == 0x00001C, "Member 'FSourceEffectDynamicsProcessorSettings::InputGainDb' has a wrong offset!");
-static_assert(offsetof(FSourceEffectDynamicsProcessorSettings, OutputGainDb) == 0x000020, "Member 'FSourceEffectDynamicsProcessorSettings::OutputGainDb' has a wrong offset!");
 
 // ScriptStruct Synthesis.TapDelayInfo
 // 0x0018 (0x0018 - 0x0000)
@@ -640,14 +556,6 @@ public:
 	float                                         PanInDegrees;                                      // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TapId;                                             // 0x0014(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FTapDelayInfo) == 0x000004, "Wrong alignment on FTapDelayInfo");
-static_assert(sizeof(FTapDelayInfo) == 0x000018, "Wrong size on FTapDelayInfo");
-static_assert(offsetof(FTapDelayInfo, TapLineMode) == 0x000000, "Member 'FTapDelayInfo::TapLineMode' has a wrong offset!");
-static_assert(offsetof(FTapDelayInfo, DelayLength) == 0x000004, "Member 'FTapDelayInfo::DelayLength' has a wrong offset!");
-static_assert(offsetof(FTapDelayInfo, Gain) == 0x000008, "Member 'FTapDelayInfo::Gain' has a wrong offset!");
-static_assert(offsetof(FTapDelayInfo, OutputChannel) == 0x00000C, "Member 'FTapDelayInfo::OutputChannel' has a wrong offset!");
-static_assert(offsetof(FTapDelayInfo, PanInDegrees) == 0x000010, "Member 'FTapDelayInfo::PanInDegrees' has a wrong offset!");
-static_assert(offsetof(FTapDelayInfo, TapId) == 0x000014, "Member 'FTapDelayInfo::TapId' has a wrong offset!");
 
 // ScriptStruct Synthesis.SubmixEffectTapDelaySettings
 // 0x0018 (0x0018 - 0x0000)
@@ -658,11 +566,6 @@ public:
 	float                                         InterpolationTime;                                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FTapDelayInfo>                  Taps;                                              // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectTapDelaySettings) == 0x000008, "Wrong alignment on FSubmixEffectTapDelaySettings");
-static_assert(sizeof(FSubmixEffectTapDelaySettings) == 0x000018, "Wrong size on FSubmixEffectTapDelaySettings");
-static_assert(offsetof(FSubmixEffectTapDelaySettings, MaximumDelayLength) == 0x000000, "Member 'FSubmixEffectTapDelaySettings::MaximumDelayLength' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectTapDelaySettings, InterpolationTime) == 0x000004, "Member 'FSubmixEffectTapDelaySettings::InterpolationTime' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectTapDelaySettings, Taps) == 0x000008, "Member 'FSubmixEffectTapDelaySettings::Taps' has a wrong offset!");
 
 // ScriptStruct Synthesis.PatchId
 // 0x0004 (0x0004 - 0x0000)
@@ -671,9 +574,6 @@ struct FPatchId final
 public:
 	int32                                         ID;                                                // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FPatchId) == 0x000004, "Wrong alignment on FPatchId");
-static_assert(sizeof(FPatchId) == 0x000004, "Wrong size on FPatchId");
-static_assert(offsetof(FPatchId, ID) == 0x000000, "Member 'FPatchId::ID' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectChorusSettings
 // 0x0018 (0x0018 - 0x0000)
@@ -687,14 +587,6 @@ public:
 	float                                         DryLevel;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Spread;                                            // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectChorusSettings) == 0x000004, "Wrong alignment on FSourceEffectChorusSettings");
-static_assert(sizeof(FSourceEffectChorusSettings) == 0x000018, "Wrong size on FSourceEffectChorusSettings");
-static_assert(offsetof(FSourceEffectChorusSettings, Depth) == 0x000000, "Member 'FSourceEffectChorusSettings::Depth' has a wrong offset!");
-static_assert(offsetof(FSourceEffectChorusSettings, Frequency) == 0x000004, "Member 'FSourceEffectChorusSettings::Frequency' has a wrong offset!");
-static_assert(offsetof(FSourceEffectChorusSettings, Feedback) == 0x000008, "Member 'FSourceEffectChorusSettings::Feedback' has a wrong offset!");
-static_assert(offsetof(FSourceEffectChorusSettings, WetLevel) == 0x00000C, "Member 'FSourceEffectChorusSettings::WetLevel' has a wrong offset!");
-static_assert(offsetof(FSourceEffectChorusSettings, DryLevel) == 0x000010, "Member 'FSourceEffectChorusSettings::DryLevel' has a wrong offset!");
-static_assert(offsetof(FSourceEffectChorusSettings, Spread) == 0x000014, "Member 'FSourceEffectChorusSettings::Spread' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectEnvelopeFollowerSettings
 // 0x000C (0x000C - 0x0000)
@@ -707,12 +599,6 @@ public:
 	bool                                          bIsAnalogMode;                                     // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectEnvelopeFollowerSettings) == 0x000004, "Wrong alignment on FSourceEffectEnvelopeFollowerSettings");
-static_assert(sizeof(FSourceEffectEnvelopeFollowerSettings) == 0x00000C, "Wrong size on FSourceEffectEnvelopeFollowerSettings");
-static_assert(offsetof(FSourceEffectEnvelopeFollowerSettings, AttackTime) == 0x000000, "Member 'FSourceEffectEnvelopeFollowerSettings::AttackTime' has a wrong offset!");
-static_assert(offsetof(FSourceEffectEnvelopeFollowerSettings, ReleaseTime) == 0x000004, "Member 'FSourceEffectEnvelopeFollowerSettings::ReleaseTime' has a wrong offset!");
-static_assert(offsetof(FSourceEffectEnvelopeFollowerSettings, PeakMode) == 0x000008, "Member 'FSourceEffectEnvelopeFollowerSettings::PeakMode' has a wrong offset!");
-static_assert(offsetof(FSourceEffectEnvelopeFollowerSettings, bIsAnalogMode) == 0x000009, "Member 'FSourceEffectEnvelopeFollowerSettings::bIsAnalogMode' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectEQBand
 // 0x0010 (0x0010 - 0x0000)
@@ -725,11 +611,6 @@ public:
 	uint8                                         bEnabled : 1;                                      // 0x000C(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_D[0x3];                                        // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectEQBand) == 0x000004, "Wrong alignment on FSourceEffectEQBand");
-static_assert(sizeof(FSourceEffectEQBand) == 0x000010, "Wrong size on FSourceEffectEQBand");
-static_assert(offsetof(FSourceEffectEQBand, Frequency) == 0x000000, "Member 'FSourceEffectEQBand::Frequency' has a wrong offset!");
-static_assert(offsetof(FSourceEffectEQBand, Bandwidth) == 0x000004, "Member 'FSourceEffectEQBand::Bandwidth' has a wrong offset!");
-static_assert(offsetof(FSourceEffectEQBand, GainDb) == 0x000008, "Member 'FSourceEffectEQBand::GainDb' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectEQSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -738,9 +619,6 @@ struct FSourceEffectEQSettings final
 public:
 	TArray<struct FSourceEffectEQBand>            EQBands;                                           // 0x0000(0x0010)(Edit, BlueprintVisible, ZeroConstructor, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectEQSettings) == 0x000008, "Wrong alignment on FSourceEffectEQSettings");
-static_assert(sizeof(FSourceEffectEQSettings) == 0x000010, "Wrong size on FSourceEffectEQSettings");
-static_assert(offsetof(FSourceEffectEQSettings, EQBands) == 0x000000, "Member 'FSourceEffectEQSettings::EQBands' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectFilterSettings
 // 0x000C (0x000C - 0x0000)
@@ -753,12 +631,6 @@ public:
 	float                                         CutoffFrequency;                                   // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FilterQ;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectFilterSettings) == 0x000004, "Wrong alignment on FSourceEffectFilterSettings");
-static_assert(sizeof(FSourceEffectFilterSettings) == 0x00000C, "Wrong size on FSourceEffectFilterSettings");
-static_assert(offsetof(FSourceEffectFilterSettings, FilterCircuit) == 0x000000, "Member 'FSourceEffectFilterSettings::FilterCircuit' has a wrong offset!");
-static_assert(offsetof(FSourceEffectFilterSettings, FilterType) == 0x000001, "Member 'FSourceEffectFilterSettings::FilterType' has a wrong offset!");
-static_assert(offsetof(FSourceEffectFilterSettings, CutoffFrequency) == 0x000004, "Member 'FSourceEffectFilterSettings::CutoffFrequency' has a wrong offset!");
-static_assert(offsetof(FSourceEffectFilterSettings, FilterQ) == 0x000008, "Member 'FSourceEffectFilterSettings::FilterQ' has a wrong offset!");
 
 // ScriptStruct Synthesis.SubmixEffectFilterSettings
 // 0x000C (0x000C - 0x0000)
@@ -771,12 +643,6 @@ public:
 	float                                         FilterFrequency;                                   // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FilterQ;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectFilterSettings) == 0x000004, "Wrong alignment on FSubmixEffectFilterSettings");
-static_assert(sizeof(FSubmixEffectFilterSettings) == 0x00000C, "Wrong size on FSubmixEffectFilterSettings");
-static_assert(offsetof(FSubmixEffectFilterSettings, FilterType) == 0x000000, "Member 'FSubmixEffectFilterSettings::FilterType' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFilterSettings, FilterAlgorithm) == 0x000001, "Member 'FSubmixEffectFilterSettings::FilterAlgorithm' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFilterSettings, FilterFrequency) == 0x000004, "Member 'FSubmixEffectFilterSettings::FilterFrequency' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFilterSettings, FilterQ) == 0x000008, "Member 'FSubmixEffectFilterSettings::FilterQ' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectFoldbackDistortionSettings
 // 0x000C (0x000C - 0x0000)
@@ -787,11 +653,6 @@ public:
 	float                                         ThresholdDb;                                       // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutputGainDb;                                      // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectFoldbackDistortionSettings) == 0x000004, "Wrong alignment on FSourceEffectFoldbackDistortionSettings");
-static_assert(sizeof(FSourceEffectFoldbackDistortionSettings) == 0x00000C, "Wrong size on FSourceEffectFoldbackDistortionSettings");
-static_assert(offsetof(FSourceEffectFoldbackDistortionSettings, InputGainDb) == 0x000000, "Member 'FSourceEffectFoldbackDistortionSettings::InputGainDb' has a wrong offset!");
-static_assert(offsetof(FSourceEffectFoldbackDistortionSettings, ThresholdDb) == 0x000004, "Member 'FSourceEffectFoldbackDistortionSettings::ThresholdDb' has a wrong offset!");
-static_assert(offsetof(FSourceEffectFoldbackDistortionSettings, OutputGainDb) == 0x000008, "Member 'FSourceEffectFoldbackDistortionSettings::OutputGainDb' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectMidSideSpreaderSettings
 // 0x000C (0x000C - 0x0000)
@@ -805,12 +666,6 @@ public:
 	bool                                          bEqualPower;                                       // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x2];                                        // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectMidSideSpreaderSettings) == 0x000004, "Wrong alignment on FSourceEffectMidSideSpreaderSettings");
-static_assert(sizeof(FSourceEffectMidSideSpreaderSettings) == 0x00000C, "Wrong size on FSourceEffectMidSideSpreaderSettings");
-static_assert(offsetof(FSourceEffectMidSideSpreaderSettings, InputMode) == 0x000000, "Member 'FSourceEffectMidSideSpreaderSettings::InputMode' has a wrong offset!");
-static_assert(offsetof(FSourceEffectMidSideSpreaderSettings, SpreadAmount) == 0x000004, "Member 'FSourceEffectMidSideSpreaderSettings::SpreadAmount' has a wrong offset!");
-static_assert(offsetof(FSourceEffectMidSideSpreaderSettings, OutputMode) == 0x000008, "Member 'FSourceEffectMidSideSpreaderSettings::OutputMode' has a wrong offset!");
-static_assert(offsetof(FSourceEffectMidSideSpreaderSettings, bEqualPower) == 0x000009, "Member 'FSourceEffectMidSideSpreaderSettings::bEqualPower' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectPhaserSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -824,13 +679,6 @@ public:
 	bool                                          UseQuadraturePhase;                                // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectPhaserSettings) == 0x000004, "Wrong alignment on FSourceEffectPhaserSettings");
-static_assert(sizeof(FSourceEffectPhaserSettings) == 0x000010, "Wrong size on FSourceEffectPhaserSettings");
-static_assert(offsetof(FSourceEffectPhaserSettings, WetLevel) == 0x000000, "Member 'FSourceEffectPhaserSettings::WetLevel' has a wrong offset!");
-static_assert(offsetof(FSourceEffectPhaserSettings, Frequency) == 0x000004, "Member 'FSourceEffectPhaserSettings::Frequency' has a wrong offset!");
-static_assert(offsetof(FSourceEffectPhaserSettings, Feedback) == 0x000008, "Member 'FSourceEffectPhaserSettings::Feedback' has a wrong offset!");
-static_assert(offsetof(FSourceEffectPhaserSettings, LFOType) == 0x00000C, "Member 'FSourceEffectPhaserSettings::LFOType' has a wrong offset!");
-static_assert(offsetof(FSourceEffectPhaserSettings, UseQuadraturePhase) == 0x00000D, "Member 'FSourceEffectPhaserSettings::UseQuadraturePhase' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectRingModulationSettings
 // 0x0014 (0x0014 - 0x0000)
@@ -844,13 +692,6 @@ public:
 	float                                         DryLevel;                                          // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WetLevel;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectRingModulationSettings) == 0x000004, "Wrong alignment on FSourceEffectRingModulationSettings");
-static_assert(sizeof(FSourceEffectRingModulationSettings) == 0x000014, "Wrong size on FSourceEffectRingModulationSettings");
-static_assert(offsetof(FSourceEffectRingModulationSettings, ModulatorType) == 0x000000, "Member 'FSourceEffectRingModulationSettings::ModulatorType' has a wrong offset!");
-static_assert(offsetof(FSourceEffectRingModulationSettings, Frequency) == 0x000004, "Member 'FSourceEffectRingModulationSettings::Frequency' has a wrong offset!");
-static_assert(offsetof(FSourceEffectRingModulationSettings, Depth) == 0x000008, "Member 'FSourceEffectRingModulationSettings::Depth' has a wrong offset!");
-static_assert(offsetof(FSourceEffectRingModulationSettings, DryLevel) == 0x00000C, "Member 'FSourceEffectRingModulationSettings::DryLevel' has a wrong offset!");
-static_assert(offsetof(FSourceEffectRingModulationSettings, WetLevel) == 0x000010, "Member 'FSourceEffectRingModulationSettings::WetLevel' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectSimpleDelaySettings
 // 0x0018 (0x0018 - 0x0000)
@@ -865,13 +706,6 @@ public:
 	uint8                                         bDelayBasedOnDistance : 1;                         // 0x0014(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSourceEffectSimpleDelaySettings) == 0x000004, "Wrong alignment on FSourceEffectSimpleDelaySettings");
-static_assert(sizeof(FSourceEffectSimpleDelaySettings) == 0x000018, "Wrong size on FSourceEffectSimpleDelaySettings");
-static_assert(offsetof(FSourceEffectSimpleDelaySettings, SpeedOfSound) == 0x000000, "Member 'FSourceEffectSimpleDelaySettings::SpeedOfSound' has a wrong offset!");
-static_assert(offsetof(FSourceEffectSimpleDelaySettings, DelayAmount) == 0x000004, "Member 'FSourceEffectSimpleDelaySettings::DelayAmount' has a wrong offset!");
-static_assert(offsetof(FSourceEffectSimpleDelaySettings, DryAmount) == 0x000008, "Member 'FSourceEffectSimpleDelaySettings::DryAmount' has a wrong offset!");
-static_assert(offsetof(FSourceEffectSimpleDelaySettings, WetAmount) == 0x00000C, "Member 'FSourceEffectSimpleDelaySettings::WetAmount' has a wrong offset!");
-static_assert(offsetof(FSourceEffectSimpleDelaySettings, Feedback) == 0x000010, "Member 'FSourceEffectSimpleDelaySettings::Feedback' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectStereoDelaySettings
 // 0x0014 (0x0014 - 0x0000)
@@ -885,13 +719,6 @@ public:
 	float                                         DelayRatio;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WetLevel;                                          // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectStereoDelaySettings) == 0x000004, "Wrong alignment on FSourceEffectStereoDelaySettings");
-static_assert(sizeof(FSourceEffectStereoDelaySettings) == 0x000014, "Wrong size on FSourceEffectStereoDelaySettings");
-static_assert(offsetof(FSourceEffectStereoDelaySettings, DelayMode) == 0x000000, "Member 'FSourceEffectStereoDelaySettings::DelayMode' has a wrong offset!");
-static_assert(offsetof(FSourceEffectStereoDelaySettings, DelayTimeMsec) == 0x000004, "Member 'FSourceEffectStereoDelaySettings::DelayTimeMsec' has a wrong offset!");
-static_assert(offsetof(FSourceEffectStereoDelaySettings, Feedback) == 0x000008, "Member 'FSourceEffectStereoDelaySettings::Feedback' has a wrong offset!");
-static_assert(offsetof(FSourceEffectStereoDelaySettings, DelayRatio) == 0x00000C, "Member 'FSourceEffectStereoDelaySettings::DelayRatio' has a wrong offset!");
-static_assert(offsetof(FSourceEffectStereoDelaySettings, WetLevel) == 0x000010, "Member 'FSourceEffectStereoDelaySettings::WetLevel' has a wrong offset!");
 
 // ScriptStruct Synthesis.SourceEffectWaveShaperSettings
 // 0x0008 (0x0008 - 0x0000)
@@ -901,10 +728,6 @@ public:
 	float                                         Amount;                                            // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         OutputGainDb;                                      // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSourceEffectWaveShaperSettings) == 0x000004, "Wrong alignment on FSourceEffectWaveShaperSettings");
-static_assert(sizeof(FSourceEffectWaveShaperSettings) == 0x000008, "Wrong size on FSourceEffectWaveShaperSettings");
-static_assert(offsetof(FSourceEffectWaveShaperSettings, Amount) == 0x000000, "Member 'FSourceEffectWaveShaperSettings::Amount' has a wrong offset!");
-static_assert(offsetof(FSourceEffectWaveShaperSettings, OutputGainDb) == 0x000004, "Member 'FSourceEffectWaveShaperSettings::OutputGainDb' has a wrong offset!");
 
 // ScriptStruct Synthesis.SubmixEffectDelaySettings
 // 0x000C (0x000C - 0x0000)
@@ -915,11 +738,6 @@ public:
 	float                                         InterpolationTime;                                 // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DelayLength;                                       // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectDelaySettings) == 0x000004, "Wrong alignment on FSubmixEffectDelaySettings");
-static_assert(sizeof(FSubmixEffectDelaySettings) == 0x00000C, "Wrong size on FSubmixEffectDelaySettings");
-static_assert(offsetof(FSubmixEffectDelaySettings, MaximumDelayLength) == 0x000000, "Member 'FSubmixEffectDelaySettings::MaximumDelayLength' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDelaySettings, InterpolationTime) == 0x000004, "Member 'FSubmixEffectDelaySettings::InterpolationTime' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectDelaySettings, DelayLength) == 0x000008, "Member 'FSubmixEffectDelaySettings::DelayLength' has a wrong offset!");
 
 // ScriptStruct Synthesis.SubmixEffectFlexiverbSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -931,12 +749,6 @@ public:
 	float                                         RoomDampening;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Complexity;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSubmixEffectFlexiverbSettings) == 0x000004, "Wrong alignment on FSubmixEffectFlexiverbSettings");
-static_assert(sizeof(FSubmixEffectFlexiverbSettings) == 0x000010, "Wrong size on FSubmixEffectFlexiverbSettings");
-static_assert(offsetof(FSubmixEffectFlexiverbSettings, PreDelay) == 0x000000, "Member 'FSubmixEffectFlexiverbSettings::PreDelay' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFlexiverbSettings, DecayTime) == 0x000004, "Member 'FSubmixEffectFlexiverbSettings::DecayTime' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFlexiverbSettings, RoomDampening) == 0x000008, "Member 'FSubmixEffectFlexiverbSettings::RoomDampening' has a wrong offset!");
-static_assert(offsetof(FSubmixEffectFlexiverbSettings, Complexity) == 0x00000C, "Member 'FSubmixEffectFlexiverbSettings::Complexity' has a wrong offset!");
 
 // ScriptStruct Synthesis.Synth2DSliderStyle
 // 0x02B0 (0x02B8 - 0x0008)
@@ -951,14 +763,6 @@ public:
 	float                                         BarThickness;                                      // 0x02B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_2B4[0x4];                                      // 0x02B4(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSynth2DSliderStyle) == 0x000008, "Wrong alignment on FSynth2DSliderStyle");
-static_assert(sizeof(FSynth2DSliderStyle) == 0x0002B8, "Wrong size on FSynth2DSliderStyle");
-static_assert(offsetof(FSynth2DSliderStyle, NormalThumbImage) == 0x000008, "Member 'FSynth2DSliderStyle::NormalThumbImage' has a wrong offset!");
-static_assert(offsetof(FSynth2DSliderStyle, DisabledThumbImage) == 0x000090, "Member 'FSynth2DSliderStyle::DisabledThumbImage' has a wrong offset!");
-static_assert(offsetof(FSynth2DSliderStyle, NormalBarImage) == 0x000118, "Member 'FSynth2DSliderStyle::NormalBarImage' has a wrong offset!");
-static_assert(offsetof(FSynth2DSliderStyle, DisabledBarImage) == 0x0001A0, "Member 'FSynth2DSliderStyle::DisabledBarImage' has a wrong offset!");
-static_assert(offsetof(FSynth2DSliderStyle, BackgroundImage) == 0x000228, "Member 'FSynth2DSliderStyle::BackgroundImage' has a wrong offset!");
-static_assert(offsetof(FSynth2DSliderStyle, BarThickness) == 0x0002B0, "Member 'FSynth2DSliderStyle::BarThickness' has a wrong offset!");
 
 // ScriptStruct Synthesis.SynthKnobStyle
 // 0x0230 (0x0238 - 0x0008)
@@ -974,15 +778,6 @@ public:
 	ESynthKnobSize                                KnobSize;                                          // 0x0230(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_231[0x7];                                      // 0x0231(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSynthKnobStyle) == 0x000008, "Wrong alignment on FSynthKnobStyle");
-static_assert(sizeof(FSynthKnobStyle) == 0x000238, "Wrong size on FSynthKnobStyle");
-static_assert(offsetof(FSynthKnobStyle, LargeKnob) == 0x000008, "Member 'FSynthKnobStyle::LargeKnob' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, LargeKnobOverlay) == 0x000090, "Member 'FSynthKnobStyle::LargeKnobOverlay' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, MediumKnob) == 0x000118, "Member 'FSynthKnobStyle::MediumKnob' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, MediumKnobOverlay) == 0x0001A0, "Member 'FSynthKnobStyle::MediumKnobOverlay' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, MinValueAngle) == 0x000228, "Member 'FSynthKnobStyle::MinValueAngle' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, MaxValueAngle) == 0x00022C, "Member 'FSynthKnobStyle::MaxValueAngle' has a wrong offset!");
-static_assert(offsetof(FSynthKnobStyle, KnobSize) == 0x000230, "Member 'FSynthKnobStyle::KnobSize' has a wrong offset!");
 
 // ScriptStruct Synthesis.SynthSlateStyle
 // 0x0008 (0x0010 - 0x0008)
@@ -993,10 +788,6 @@ public:
 	ESynthSlateColorStyle                         ColorStyle;                                        // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_A[0x6];                                        // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FSynthSlateStyle) == 0x000008, "Wrong alignment on FSynthSlateStyle");
-static_assert(sizeof(FSynthSlateStyle) == 0x000010, "Wrong size on FSynthSlateStyle");
-static_assert(offsetof(FSynthSlateStyle, SizeType) == 0x000008, "Member 'FSynthSlateStyle::SizeType' has a wrong offset!");
-static_assert(offsetof(FSynthSlateStyle, ColorStyle) == 0x000009, "Member 'FSynthSlateStyle::ColorStyle' has a wrong offset!");
 
 }
 

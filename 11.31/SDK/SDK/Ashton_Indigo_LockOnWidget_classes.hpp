@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Ashton_Indigo_LockOnWidget_C">();
+		BP_STATIC_CLASS_IMPL("Ashton_Indigo_LockOnWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Ashton_Indigo_LockOnWidget_C")
 	}
 	static class UAshton_Indigo_LockOnWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAshton_Indigo_LockOnWidget_C>();
 	}
 };
-static_assert(alignof(UAshton_Indigo_LockOnWidget_C) == 0x000008, "Wrong alignment on UAshton_Indigo_LockOnWidget_C");
-static_assert(sizeof(UAshton_Indigo_LockOnWidget_C) == 0x000248, "Wrong size on UAshton_Indigo_LockOnWidget_C");
-static_assert(offsetof(UAshton_Indigo_LockOnWidget_C, UberGraphFrame) == 0x000230, "Member 'UAshton_Indigo_LockOnWidget_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAshton_Indigo_LockOnWidget_C, Image_83) == 0x000238, "Member 'UAshton_Indigo_LockOnWidget_C::Image_83' has a wrong offset!");
-static_assert(offsetof(UAshton_Indigo_LockOnWidget_C, Target) == 0x000240, "Member 'UAshton_Indigo_LockOnWidget_C::Target' has a wrong offset!");
 
 }
 

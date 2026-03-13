@@ -72,46 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PerksList_C">();
+		BP_STATIC_CLASS_IMPL("PerksList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PerksList_C")
 	}
 	static class UPerksList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPerksList_C>();
 	}
 };
-static_assert(alignof(UPerksList_C) == 0x000008, "Wrong alignment on UPerksList_C");
-static_assert(sizeof(UPerksList_C) == 0x000398, "Wrong size on UPerksList_C");
-static_assert(offsetof(UPerksList_C, UberGraphFrame) == 0x0002F0, "Member 'UPerksList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, BorderLockedL) == 0x0002F8, "Member 'UPerksList_C::BorderLockedL' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, BorderLockedR) == 0x000300, "Member 'UPerksList_C::BorderLockedR' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, BorderUnlockedL) == 0x000308, "Member 'UPerksList_C::BorderUnlockedL' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, BorderUnlockedR) == 0x000310, "Member 'UPerksList_C::BorderUnlockedR' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksLockedL) == 0x000318, "Member 'UPerksList_C::PerksLockedL' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksLockedR) == 0x000320, "Member 'UPerksList_C::PerksLockedR' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksNoTiers) == 0x000328, "Member 'UPerksList_C::PerksNoTiers' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksRightColumn) == 0x000330, "Member 'UPerksList_C::PerksRightColumn' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksUnlockedL) == 0x000338, "Member 'UPerksList_C::PerksUnlockedL' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerksUnlockedR) == 0x000340, "Member 'UPerksList_C::PerksUnlockedR' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerkTiers) == 0x000348, "Member 'UPerksList_C::PerkTiers' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerkTierSwitcher) == 0x000350, "Member 'UPerksList_C::PerkTierSwitcher' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bIncludeName) == 0x000358, "Member 'UPerksList_C::bIncludeName' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bFirstTier) == 0x000359, "Member 'UPerksList_C::bFirstTier' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bIncludeDescription) == 0x00035A, "Member 'UPerksList_C::bIncludeDescription' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bUseLegacyFixedSizeIcons) == 0x00035B, "Member 'UPerksList_C::bUseLegacyFixedSizeIcons' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, IconSize) == 0x00035C, "Member 'UPerksList_C::IconSize' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bGenerateTiers) == 0x00035D, "Member 'UPerksList_C::bGenerateTiers' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bFirstPerkCompleteL) == 0x00035E, "Member 'UPerksList_C::bFirstPerkCompleteL' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, PerkCount) == 0x000360, "Member 'UPerksList_C::PerkCount' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bTwoColumns) == 0x000364, "Member 'UPerksList_C::bTwoColumns' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bSecondColumnStarted) == 0x000365, "Member 'UPerksList_C::bSecondColumnStarted' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bFirstPerkCompleteR) == 0x000366, "Member 'UPerksList_C::bFirstPerkCompleteR' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, SecondColumnSplitCount) == 0x000368, "Member 'UPerksList_C::SecondColumnSplitCount' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, RowPadding) == 0x00036C, "Member 'UPerksList_C::RowPadding' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, Description_Padding) == 0x00037C, "Member 'UPerksList_C::Description_Padding' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bUseLargeFormatNameOnly) == 0x00038C, "Member 'UPerksList_C::bUseLargeFormatNameOnly' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bShowActiveAbilitiesOnly) == 0x00038D, "Member 'UPerksList_C::bShowActiveAbilitiesOnly' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, bEnableMouseTooltips) == 0x00038E, "Member 'UPerksList_C::bEnableMouseTooltips' has a wrong offset!");
-static_assert(offsetof(UPerksList_C, WrapPerkTextAt) == 0x000390, "Member 'UPerksList_C::WrapPerkTextAt' has a wrong offset!");
 
 }
 

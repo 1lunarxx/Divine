@@ -42855,7 +42855,7 @@ void IAthenaCoupledWidgetInterface::BindTo(class UObject* AssociatedObject)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaCoupledWidgetInterface", "BindTo");
+		Func = AsUObject()->Class->GetFunction("AthenaCoupledWidgetInterface", "BindTo");
 
 	Params::AthenaCoupledWidgetInterface_BindTo Parms{};
 
@@ -42864,7 +42864,7 @@ void IAthenaCoupledWidgetInterface::BindTo(class UObject* AssociatedObject)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -44228,14 +44228,14 @@ class AActor* IFortAttachToActorInterface::GetActorAttachedTo() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAttachToActorInterface", "GetActorAttachedTo");
+		Func = AsUObject()->Class->GetFunction("FortAttachToActorInterface", "GetActorAttachedTo");
 
 	Params::FortAttachToActorInterface_GetActorAttachedTo Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -45395,14 +45395,14 @@ struct FFortUICameraFrameTargetSettings IFortUICameraFrameTargetInterface::GetZo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortUICameraFrameTargetInterface", "GetZoomedInCameraFramingSettings");
+		Func = AsUObject()->Class->GetFunction("FortUICameraFrameTargetInterface", "GetZoomedInCameraFramingSettings");
 
 	Params::FortUICameraFrameTargetInterface_GetZoomedInCameraFramingSettings Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -45420,14 +45420,14 @@ struct FFortUICameraFrameTargetSettings IFortUICameraFrameTargetInterface::GetZo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortUICameraFrameTargetInterface", "GetZoomedOutCameraFramingSettings");
+		Func = AsUObject()->Class->GetFunction("FortUICameraFrameTargetInterface", "GetZoomedOutCameraFramingSettings");
 
 	Params::FortUICameraFrameTargetInterface_GetZoomedOutCameraFramingSettings Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -45445,7 +45445,7 @@ void IFortUICameraFrameTargetInterface::SetFrameTargetSettingsChangedDelegate(co
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortUICameraFrameTargetInterface", "SetFrameTargetSettingsChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortUICameraFrameTargetInterface", "SetFrameTargetSettingsChangedDelegate");
 
 	Params::FortUICameraFrameTargetInterface_SetFrameTargetSettingsChangedDelegate Parms{};
 
@@ -45454,7 +45454,7 @@ void IFortUICameraFrameTargetInterface::SetFrameTargetSettingsChangedDelegate(co
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -46485,11 +46485,11 @@ struct FVector IFortAITetheringBoxBoundsInterface::GetTetheredBoxBoundsCenter()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsCenter");
+		Func = AsUObject()->Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsCenter");
 
 	Params::FortAITetheringBoxBoundsInterface_GetTetheredBoxBoundsCenter Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -46505,11 +46505,11 @@ float IFortAITetheringBoxBoundsInterface::GetTetheredBoxBoundsEQSGridSize()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsEQSGridSize");
+		Func = AsUObject()->Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsEQSGridSize");
 
 	Params::FortAITetheringBoxBoundsInterface_GetTetheredBoxBoundsEQSGridSize Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -46525,11 +46525,11 @@ float IFortAITetheringBoxBoundsInterface::GetTetheredBoxBoundsEQSSpaceBetween()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsEQSSpaceBetween");
+		Func = AsUObject()->Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsEQSSpaceBetween");
 
 	Params::FortAITetheringBoxBoundsInterface_GetTetheredBoxBoundsEQSSpaceBetween Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -46545,11 +46545,11 @@ float IFortAITetheringBoxBoundsInterface::GetTetheredBoxBoundsHeight()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsHeight");
+		Func = AsUObject()->Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsHeight");
 
 	Params::FortAITetheringBoxBoundsInterface_GetTetheredBoxBoundsHeight Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -46565,11 +46565,11 @@ float IFortAITetheringBoxBoundsInterface::GetTetheredBoxBoundsWidth()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsWidth");
+		Func = AsUObject()->Class->GetFunction("FortAITetheringBoxBoundsInterface", "GetTetheredBoxBoundsWidth");
 
 	Params::FortAITetheringBoxBoundsInterface_GetTetheredBoxBoundsWidth Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -61007,11 +61007,11 @@ bool ICreativeMoveToolTarget::IsValidPlacement()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeMoveToolTarget", "IsValidPlacement");
+		Func = AsUObject()->Class->GetFunction("CreativeMoveToolTarget", "IsValidPlacement");
 
 	Params::CreativeMoveToolTarget_IsValidPlacement Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -61027,11 +61027,11 @@ bool ICreativeMoveToolTarget::OnPreviewEnd()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeMoveToolTarget", "OnPreviewEnd");
+		Func = AsUObject()->Class->GetFunction("CreativeMoveToolTarget", "OnPreviewEnd");
 
 	Params::CreativeMoveToolTarget_OnPreviewEnd Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -61047,11 +61047,11 @@ bool ICreativeMoveToolTarget::OnPreviewStart()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeMoveToolTarget", "OnPreviewStart");
+		Func = AsUObject()->Class->GetFunction("CreativeMoveToolTarget", "OnPreviewStart");
 
 	Params::CreativeMoveToolTarget_OnPreviewStart Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -64303,14 +64303,14 @@ const struct FFortAIAssignmentIdentifier IFortAIRootAssignmentProviderInterface:
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAIRootAssignmentProviderInterface", "GetRootAssignmentIdentifier");
+		Func = AsUObject()->Class->GetFunction("FortAIRootAssignmentProviderInterface", "GetRootAssignmentIdentifier");
 
 	Params::FortAIRootAssignmentProviderInterface_GetRootAssignmentIdentifier Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -77950,14 +77950,14 @@ void IFortHomeTeleporterInterface::OnHomeTeleporterBound(class AFortPlayerPawn* 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterBound");
+		Func = AsUObject()->Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterBound");
 
 	Params::FortHomeTeleporterInterface_OnHomeTeleporterBound Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.OldHomeActor = OldHomeActor;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -77972,14 +77972,14 @@ void IFortHomeTeleporterInterface::OnHomeTeleporterBoundServer(class AFortPlayer
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterBoundServer");
+		Func = AsUObject()->Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterBoundServer");
 
 	Params::FortHomeTeleporterInterface_OnHomeTeleporterBoundServer Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.OldHomeActor = OldHomeActor;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -77994,14 +77994,14 @@ void IFortHomeTeleporterInterface::OnHomeTeleporterUnbound(class AFortPlayerPawn
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterUnbound");
+		Func = AsUObject()->Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterUnbound");
 
 	Params::FortHomeTeleporterInterface_OnHomeTeleporterUnbound Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.NewHomeActor = NewHomeActor;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -78016,14 +78016,14 @@ void IFortHomeTeleporterInterface::OnHomeTeleporterUnboundServer(class AFortPlay
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterUnboundServer");
+		Func = AsUObject()->Class->GetFunction("FortHomeTeleporterInterface", "OnHomeTeleporterUnboundServer");
 
 	Params::FortHomeTeleporterInterface_OnHomeTeleporterUnboundServer Parms{};
 
 	Parms.PlayerPawn = PlayerPawn;
 	Parms.NewHomeActor = NewHomeActor;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -78961,12 +78961,12 @@ void IFortMusicSequencerInterface::OnHitByMusicSequencer()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMusicSequencerInterface", "OnHitByMusicSequencer");
+		Func = AsUObject()->Class->GetFunction("FortMusicSequencerInterface", "OnHitByMusicSequencer");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -83847,14 +83847,14 @@ float IFortHUDTargetUnderReticleInterface::GetHUDTargetDifficultyRating()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDifficultyRating");
+		Func = AsUObject()->Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDifficultyRating");
 
 	Params::FortHUDTargetUnderReticleInterface_GetHUDTargetDifficultyRating Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -83872,14 +83872,14 @@ TArray<class FText> IFortHUDTargetUnderReticleInterface::GetHUDTargetDisplayModi
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDisplayModifiers");
+		Func = AsUObject()->Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDisplayModifiers");
 
 	Params::FortHUDTargetUnderReticleInterface_GetHUDTargetDisplayModifiers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -83897,14 +83897,14 @@ class FText IFortHUDTargetUnderReticleInterface::GetHUDTargetDisplayName()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDisplayName");
+		Func = AsUObject()->Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetDisplayName");
 
 	Params::FortHUDTargetUnderReticleInterface_GetHUDTargetDisplayName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -83922,14 +83922,14 @@ float IFortHUDTargetUnderReticleInterface::GetHUDTargetHealthPercentage()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetHealthPercentage");
+		Func = AsUObject()->Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetHealthPercentage");
 
 	Params::FortHUDTargetUnderReticleInterface_GetHUDTargetHealthPercentage Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -83947,14 +83947,14 @@ class FText IFortHUDTargetUnderReticleInterface::GetHUDTargetUpgradeDisplayName(
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetUpgradeDisplayName");
+		Func = AsUObject()->Class->GetFunction("FortHUDTargetUnderReticleInterface", "GetHUDTargetUpgradeDisplayName");
 
 	Params::FortHUDTargetUnderReticleInterface_GetHUDTargetUpgradeDisplayName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -83973,7 +83973,7 @@ bool IFortAutoFireTargetInterface::IsValidAutoFireTarget(const class AActor* Att
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAutoFireTargetInterface", "IsValidAutoFireTarget");
+		Func = AsUObject()->Class->GetFunction("FortAutoFireTargetInterface", "IsValidAutoFireTarget");
 
 	Params::FortAutoFireTargetInterface_IsValidAutoFireTarget Parms{};
 
@@ -83982,7 +83982,7 @@ bool IFortAutoFireTargetInterface::IsValidAutoFireTarget(const class AActor* Att
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -84000,11 +84000,11 @@ TArray<TSubclassOf<class UGameplayEffect>> IFortArmoredInterface::GetArmoredAppl
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortArmoredInterface", "GetArmoredAppliedEffects");
+		Func = AsUObject()->Class->GetFunction("FortArmoredInterface", "GetArmoredAppliedEffects");
 
 	Params::FortArmoredInterface_GetArmoredAppliedEffects Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -84020,11 +84020,11 @@ struct FBox IFortArmoredInterface::GetArmoredArea()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortArmoredInterface", "GetArmoredArea");
+		Func = AsUObject()->Class->GetFunction("FortArmoredInterface", "GetArmoredArea");
 
 	Params::FortArmoredInterface_GetArmoredArea Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -84040,11 +84040,11 @@ class UFortAbilitySystemComponent* IFortArmoredInterface::GetOwningAbilityCompon
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortArmoredInterface", "GetOwningAbilityComponent");
+		Func = AsUObject()->Class->GetFunction("FortArmoredInterface", "GetOwningAbilityComponent");
 
 	Params::FortArmoredInterface_GetOwningAbilityComponent Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -84503,14 +84503,14 @@ float IFFTSoundDataProvider::GetAverageMagnitude() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FFTSoundDataProvider", "GetAverageMagnitude");
+		Func = AsUObject()->Class->GetFunction("FFTSoundDataProvider", "GetAverageMagnitude");
 
 	Params::FFTSoundDataProvider_GetAverageMagnitude Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -84529,7 +84529,7 @@ float IFFTSoundDataProvider::GetMagnitudeForChannel(int32 ChannelIndex) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FFTSoundDataProvider", "GetMagnitudeForChannel");
+		Func = AsUObject()->Class->GetFunction("FFTSoundDataProvider", "GetMagnitudeForChannel");
 
 	Params::FFTSoundDataProvider_GetMagnitudeForChannel Parms{};
 
@@ -84538,7 +84538,7 @@ float IFFTSoundDataProvider::GetMagnitudeForChannel(int32 ChannelIndex) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -88004,7 +88004,7 @@ void ICustomCharacterPartOwnerInterface::PlayAnimationsMatchingQuery(const struc
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CustomCharacterPartOwnerInterface", "PlayAnimationsMatchingQuery");
+		Func = AsUObject()->Class->GetFunction("CustomCharacterPartOwnerInterface", "PlayAnimationsMatchingQuery");
 
 	Params::CustomCharacterPartOwnerInterface_PlayAnimationsMatchingQuery Parms{};
 
@@ -88013,7 +88013,7 @@ void ICustomCharacterPartOwnerInterface::PlayAnimationsMatchingQuery(const struc
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -88029,14 +88029,14 @@ class USkeletalMeshComponent* ICustomCharacterPartOwnerInterface::GetCustomizati
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CustomCharacterPartOwnerInterface", "GetCustomizationRootSkeletalMeshComponent");
+		Func = AsUObject()->Class->GetFunction("CustomCharacterPartOwnerInterface", "GetCustomizationRootSkeletalMeshComponent");
 
 	Params::CustomCharacterPartOwnerInterface_GetCustomizationRootSkeletalMeshComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -89622,11 +89622,11 @@ float IDadBroHealthInterface::GetCurrentHealthPercent() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DadBroHealthInterface", "GetCurrentHealthPercent");
+		Func = AsUObject()->Class->GetFunction("DadBroHealthInterface", "GetCurrentHealthPercent");
 
 	Params::DadBroHealthInterface_GetCurrentHealthPercent Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -89642,11 +89642,11 @@ EDadBroHealthType IDadBroHealthInterface::GetCurrentHealthType() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("DadBroHealthInterface", "GetCurrentHealthType");
+		Func = AsUObject()->Class->GetFunction("DadBroHealthInterface", "GetCurrentHealthType");
 
 	Params::DadBroHealthInterface_GetCurrentHealthType Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -92539,7 +92539,7 @@ void ICosmeticPreviewInterface::CustomizePreviewInstance(const class UFortItemDe
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticPreviewInterface", "CustomizePreviewInstance");
+		Func = AsUObject()->Class->GetFunction("CosmeticPreviewInterface", "CustomizePreviewInstance");
 
 	Params::CosmeticPreviewInterface_CustomizePreviewInstance Parms{};
 
@@ -92548,7 +92548,7 @@ void ICosmeticPreviewInterface::CustomizePreviewInstance(const class UFortItemDe
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -92564,14 +92564,14 @@ void ICosmeticPreviewInterface::GetSpecialPreviewActions(TArray<class FName>* Ou
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticPreviewInterface", "GetSpecialPreviewActions");
+		Func = AsUObject()->Class->GetFunction("CosmeticPreviewInterface", "GetSpecialPreviewActions");
 
 	Params::CosmeticPreviewInterface_GetSpecialPreviewActions Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -92590,7 +92590,7 @@ void ICosmeticPreviewInterface::PerformSpecialAction(class FName ActionName)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CosmeticPreviewInterface", "PerformSpecialAction");
+		Func = AsUObject()->Class->GetFunction("CosmeticPreviewInterface", "PerformSpecialAction");
 
 	Params::CosmeticPreviewInterface_PerformSpecialAction Parms{};
 
@@ -92599,7 +92599,7 @@ void ICosmeticPreviewInterface::PerformSpecialAction(class FName ActionName)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -92839,11 +92839,11 @@ class UStaticMesh* ICreativeMoveToolOverrides::GetCollisionStaticMesh() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeMoveToolOverrides", "GetCollisionStaticMesh");
+		Func = AsUObject()->Class->GetFunction("CreativeMoveToolOverrides", "GetCollisionStaticMesh");
 
 	Params::CreativeMoveToolOverrides_GetCollisionStaticMesh Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -92859,11 +92859,11 @@ TArray<class UMeshComponent*> ICreativeMoveToolOverrides::GetMeshComponents() co
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("CreativeMoveToolOverrides", "GetMeshComponents");
+		Func = AsUObject()->Class->GetFunction("CreativeMoveToolOverrides", "GetMeshComponents");
 
 	Params::CreativeMoveToolOverrides_GetMeshComponents Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -102521,14 +102521,14 @@ bool IFortClientAnnouncement_ConversationCodeInterface::PlayConversation()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversation");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversation");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_PlayConversation Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -102547,7 +102547,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::PlayConversationFromSent
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversationFromSentence");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversationFromSentence");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_PlayConversationFromSentence Parms{};
 
@@ -102556,7 +102556,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::PlayConversationFromSent
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -102575,7 +102575,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::PlayConversationFromSent
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversationFromSentenceIndex");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "PlayConversationFromSentenceIndex");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_PlayConversationFromSentenceIndex Parms{};
 
@@ -102584,7 +102584,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::PlayConversationFromSent
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -102600,12 +102600,12 @@ void IFortClientAnnouncement_ConversationCodeInterface::StopConversation()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "StopConversation");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "StopConversation");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -102622,7 +102622,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingConversation(bo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingConversation");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingConversation");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_IsPlayingConversation Parms{};
 
@@ -102631,7 +102631,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingConversation(bo
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -102650,7 +102650,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingSentence(const 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingSentence");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingSentence");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_IsPlayingSentence Parms{};
 
@@ -102659,7 +102659,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingSentence(const 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -102678,7 +102678,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingSentenceIndex(i
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingSentenceIndex");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationCodeInterface", "IsPlayingSentenceIndex");
 
 	Params::FortClientAnnouncement_ConversationCodeInterface_IsPlayingSentenceIndex Parms{};
 
@@ -102687,7 +102687,7 @@ bool IFortClientAnnouncement_ConversationCodeInterface::IsPlayingSentenceIndex(i
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -103972,14 +103972,14 @@ class UFortAIEncounterInfo* IFortAIEncounterInfoOwnerInterface::GetEncounterInfo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAIEncounterInfoOwnerInterface", "GetEncounterInfo");
+		Func = AsUObject()->Class->GetFunction("FortAIEncounterInfoOwnerInterface", "GetEncounterInfo");
 
 	Params::FortAIEncounterInfoOwnerInterface_GetEncounterInfo Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -104355,11 +104355,11 @@ float IFortAIEncounterTargetInterface::GetObjectiveCompletionPercentage()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAIEncounterTargetInterface", "GetObjectiveCompletionPercentage");
+		Func = AsUObject()->Class->GetFunction("FortAIEncounterTargetInterface", "GetObjectiveCompletionPercentage");
 
 	Params::FortAIEncounterTargetInterface_GetObjectiveCompletionPercentage Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -104375,11 +104375,11 @@ bool IFortAIEncounterTargetInterface::IsFloatingTarget()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAIEncounterTargetInterface", "IsFloatingTarget");
+		Func = AsUObject()->Class->GetFunction("FortAIEncounterTargetInterface", "IsFloatingTarget");
 
 	Params::FortAIEncounterTargetInterface_IsFloatingTarget Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -105362,11 +105362,11 @@ bool IFortAISpawnerInterface::IsReadyToReceiveNewSpawnGroup()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAISpawnerInterface", "IsReadyToReceiveNewSpawnGroup");
+		Func = AsUObject()->Class->GetFunction("FortAISpawnerInterface", "IsReadyToReceiveNewSpawnGroup");
 
 	Params::FortAISpawnerInterface_IsReadyToReceiveNewSpawnGroup Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -105382,11 +105382,11 @@ bool IFortAISpawnerInterface::OnReceiveSpawnGroup()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortAISpawnerInterface", "OnReceiveSpawnGroup");
+		Func = AsUObject()->Class->GetFunction("FortAISpawnerInterface", "OnReceiveSpawnGroup");
 
 	Params::FortAISpawnerInterface_OnReceiveSpawnGroup Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -107651,14 +107651,14 @@ class AFortMission* IFortSpawnableByPlacementSystemInterface::GetMission() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortSpawnableByPlacementSystemInterface", "GetMission");
+		Func = AsUObject()->Class->GetFunction("FortSpawnableByPlacementSystemInterface", "GetMission");
 
 	Params::FortSpawnableByPlacementSystemInterface_GetMission Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -107676,14 +107676,14 @@ struct FGuid IFortSpawnableByPlacementSystemInterface::GetMissionGuid() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortSpawnableByPlacementSystemInterface", "GetMissionGuid");
+		Func = AsUObject()->Class->GetFunction("FortSpawnableByPlacementSystemInterface", "GetMissionGuid");
 
 	Params::FortSpawnableByPlacementSystemInterface_GetMissionGuid Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -115147,11 +115147,11 @@ float IFortPatrolWardInterface::GetAffectingDistance() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPatrolWardInterface", "GetAffectingDistance");
+		Func = AsUObject()->Class->GetFunction("FortPatrolWardInterface", "GetAffectingDistance");
 
 	Params::FortPatrolWardInterface_GetAffectingDistance Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -115167,11 +115167,11 @@ EWardAffectType IFortPatrolWardInterface::GetAffectingType() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPatrolWardInterface", "GetAffectingType");
+		Func = AsUObject()->Class->GetFunction("FortPatrolWardInterface", "GetAffectingType");
 
 	Params::FortPatrolWardInterface_GetAffectingType Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -121512,7 +121512,7 @@ void IFortMountedWeaponInterface::AddToIgnoreActors(class AActor* Actor)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMountedWeaponInterface", "AddToIgnoreActors");
+		Func = AsUObject()->Class->GetFunction("FortMountedWeaponInterface", "AddToIgnoreActors");
 
 	Params::FortMountedWeaponInterface_AddToIgnoreActors Parms{};
 
@@ -121521,7 +121521,7 @@ void IFortMountedWeaponInterface::AddToIgnoreActors(class AActor* Actor)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -121537,14 +121537,14 @@ class AActor* IFortMountedWeaponInterface::GetHostVehicleCached()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMountedWeaponInterface", "GetHostVehicleCached");
+		Func = AsUObject()->Class->GetFunction("FortMountedWeaponInterface", "GetHostVehicleCached");
 
 	Params::FortMountedWeaponInterface_GetHostVehicleCached Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -121562,14 +121562,14 @@ class UFortVehicleSeatWeaponComponent* IFortMountedWeaponInterface::GetWeaponCom
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMountedWeaponInterface", "GetWeaponComponentCached");
+		Func = AsUObject()->Class->GetFunction("FortMountedWeaponInterface", "GetWeaponComponentCached");
 
 	Params::FortMountedWeaponInterface_GetWeaponComponentCached Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -125874,12 +125874,12 @@ void ILevelSaveSpawnable::PostFinishSpawning()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSaveSpawnable", "PostFinishSpawning");
+		Func = AsUObject()->Class->GetFunction("LevelSaveSpawnable", "PostFinishSpawning");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -125893,12 +125893,12 @@ void ILevelSaveSpawnable::PostLevelSaveSpawnCleanup()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSaveSpawnable", "PostLevelSaveSpawnCleanup");
+		Func = AsUObject()->Class->GetFunction("LevelSaveSpawnable", "PostLevelSaveSpawnCleanup");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -125914,7 +125914,7 @@ void ILevelSaveSpawnable::PreFinishSpawning(class AFortVolume* VolumeSpawnedWith
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSaveSpawnable", "PreFinishSpawning");
+		Func = AsUObject()->Class->GetFunction("LevelSaveSpawnable", "PreFinishSpawning");
 
 	Params::LevelSaveSpawnable_PreFinishSpawning Parms{};
 
@@ -125923,7 +125923,7 @@ void ILevelSaveSpawnable::PreFinishSpawning(class AFortVolume* VolumeSpawnedWith
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -125937,12 +125937,12 @@ void ILevelSaveSpawnable::PreSaveBaseActorRecord()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSaveSpawnable", "PreSaveBaseActorRecord");
+		Func = AsUObject()->Class->GetFunction("LevelSaveSpawnable", "PreSaveBaseActorRecord");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -125958,14 +125958,14 @@ bool ILevelSaveSpawnable::CanBeSavedToCreativeVolume() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelSaveSpawnable", "CanBeSavedToCreativeVolume");
+		Func = AsUObject()->Class->GetFunction("LevelSaveSpawnable", "CanBeSavedToCreativeVolume");
 
 	Params::LevelSaveSpawnable_CanBeSavedToCreativeVolume Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -126151,7 +126151,7 @@ struct FTransform IFortTargetSelectionInterface::GetTargetingTransform(EFortAbil
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTargetSelectionInterface", "GetTargetingTransform");
+		Func = AsUObject()->Class->GetFunction("FortTargetSelectionInterface", "GetTargetingTransform");
 
 	Params::FortTargetSelectionInterface_GetTargetingTransform Parms{};
 
@@ -126161,7 +126161,7 @@ struct FTransform IFortTargetSelectionInterface::GetTargetingTransform(EFortAbil
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -129750,14 +129750,14 @@ void IFortToyInterface::InitializeToyInstance(class AFortPlayerController* Ownin
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyInterface", "InitializeToyInstance");
+		Func = AsUObject()->Class->GetFunction("FortToyInterface", "InitializeToyInstance");
 
 	Params::FortToyInterface_InitializeToyInstance Parms{};
 
 	Parms.OwningPC = OwningPC;
 	Parms.NumTimesSummoned = NumTimesSummoned;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -129769,9 +129769,9 @@ void IFortToyInterface::InitializeToyPreviewInFrontend()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyInterface", "InitializeToyPreviewInFrontend");
+		Func = AsUObject()->Class->GetFunction("FortToyInterface", "InitializeToyPreviewInFrontend");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -129783,9 +129783,9 @@ void IFortToyInterface::NotifyToyInstanceOfReuse()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyInterface", "NotifyToyInstanceOfReuse");
+		Func = AsUObject()->Class->GetFunction("FortToyInterface", "NotifyToyInstanceOfReuse");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -129797,9 +129797,9 @@ void IFortToyInterface::StartToyFadeOutDueToNewPlacement()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyInterface", "StartToyFadeOutDueToNewPlacement");
+		Func = AsUObject()->Class->GetFunction("FortToyInterface", "StartToyFadeOutDueToNewPlacement");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -130026,12 +130026,12 @@ void IFortInitializationInterface::MatchStarted()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInitializationInterface", "MatchStarted");
+		Func = AsUObject()->Class->GetFunction("FortInitializationInterface", "MatchStarted");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -130045,12 +130045,12 @@ void IFortInitializationInterface::WorldReady()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInitializationInterface", "WorldReady");
+		Func = AsUObject()->Class->GetFunction("FortInitializationInterface", "WorldReady");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -130066,14 +130066,14 @@ bool IFortInitializationInterface::NeedsWorldReady() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInitializationInterface", "NeedsWorldReady");
+		Func = AsUObject()->Class->GetFunction("FortInitializationInterface", "NeedsWorldReady");
 
 	Params::FortInitializationInterface_NeedsWorldReady Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -130906,7 +130906,7 @@ void IFortCarriedObjectHolderInterface::OnCarriedObjectAttach(class AActor* Atta
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortCarriedObjectHolderInterface", "OnCarriedObjectAttach");
+		Func = AsUObject()->Class->GetFunction("FortCarriedObjectHolderInterface", "OnCarriedObjectAttach");
 
 	Params::FortCarriedObjectHolderInterface_OnCarriedObjectAttach Parms{};
 
@@ -130915,7 +130915,7 @@ void IFortCarriedObjectHolderInterface::OnCarriedObjectAttach(class AActor* Atta
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -130931,7 +130931,7 @@ void IFortCarriedObjectHolderInterface::OnCarriedObjectDetach(class AActor* Deta
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortCarriedObjectHolderInterface", "OnCarriedObjectDetach");
+		Func = AsUObject()->Class->GetFunction("FortCarriedObjectHolderInterface", "OnCarriedObjectDetach");
 
 	Params::FortCarriedObjectHolderInterface_OnCarriedObjectDetach Parms{};
 
@@ -130940,7 +130940,7 @@ void IFortCarriedObjectHolderInterface::OnCarriedObjectDetach(class AActor* Deta
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -130957,7 +130957,7 @@ bool IFortCarriedObjectHolderInterface::CanHoldObject(class AActor* CarriableObj
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortCarriedObjectHolderInterface", "CanHoldObject");
+		Func = AsUObject()->Class->GetFunction("FortCarriedObjectHolderInterface", "CanHoldObject");
 
 	Params::FortCarriedObjectHolderInterface_CanHoldObject Parms{};
 
@@ -130966,7 +130966,7 @@ bool IFortCarriedObjectHolderInterface::CanHoldObject(class AActor* CarriableObj
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -130985,7 +130985,7 @@ class USceneComponent* IFortCarriedObjectHolderInterface::GetAttachmentComponent
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortCarriedObjectHolderInterface", "GetAttachmentComponent");
+		Func = AsUObject()->Class->GetFunction("FortCarriedObjectHolderInterface", "GetAttachmentComponent");
 
 	Params::FortCarriedObjectHolderInterface_GetAttachmentComponent Parms{};
 
@@ -130994,7 +130994,7 @@ class USceneComponent* IFortCarriedObjectHolderInterface::GetAttachmentComponent
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -131012,14 +131012,14 @@ void IFortCarriedObjectHolderInterface::GetCarriedObjectAttachmentInfo(struct FC
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortCarriedObjectHolderInterface", "GetCarriedObjectAttachmentInfo");
+		Func = AsUObject()->Class->GetFunction("FortCarriedObjectHolderInterface", "GetCarriedObjectAttachmentInfo");
 
 	Params::FortCarriedObjectHolderInterface_GetCarriedObjectAttachmentInfo Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -137812,11 +137812,11 @@ TArray<class UFortWorldItemDefinition*> IFortClassSettingsBuildingPropInterface:
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClassSettingsBuildingPropInterface", "GetCreativeClassInventory");
+		Func = AsUObject()->Class->GetFunction("FortClassSettingsBuildingPropInterface", "GetCreativeClassInventory");
 
 	Params::FortClassSettingsBuildingPropInterface_GetCreativeClassInventory Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -137832,11 +137832,11 @@ class FText IFortClassSettingsBuildingPropInterface::GetCreativeClassName()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClassSettingsBuildingPropInterface", "GetCreativeClassName");
+		Func = AsUObject()->Class->GetFunction("FortClassSettingsBuildingPropInterface", "GetCreativeClassName");
 
 	Params::FortClassSettingsBuildingPropInterface_GetCreativeClassName Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -138743,14 +138743,14 @@ void IFortClientAnnouncement_ConversationInterface::OnConversationFinished(const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnConversationFinished");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnConversationFinished");
 
 	Params::FortClientAnnouncement_ConversationInterface_OnConversationFinished Parms{};
 
 	Parms.FinishingSentence = std::move(FinishingSentence);
 	Parms.FinishingSentenceSentenceIndex = FinishingSentenceSentenceIndex;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -138765,14 +138765,14 @@ void IFortClientAnnouncement_ConversationInterface::OnConversationStarted(const 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnConversationStarted");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnConversationStarted");
 
 	Params::FortClientAnnouncement_ConversationInterface_OnConversationStarted Parms{};
 
 	Parms.StartingSentence = std::move(StartingSentence);
 	Parms.StartingSentenceIndex = StartingSentenceIndex;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -138787,14 +138787,14 @@ void IFortClientAnnouncement_ConversationInterface::OnSentenceFinished(const str
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnSentenceFinished");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnSentenceFinished");
 
 	Params::FortClientAnnouncement_ConversationInterface_OnSentenceFinished Parms{};
 
 	Parms.Sentence = std::move(Sentence);
 	Parms.SentenceIndex = SentenceIndex;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -138809,14 +138809,14 @@ void IFortClientAnnouncement_ConversationInterface::OnSentenceStarted(const stru
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnSentenceStarted");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationInterface", "OnSentenceStarted");
 
 	Params::FortClientAnnouncement_ConversationInterface_OnSentenceStarted Parms{};
 
 	Parms.Sentence = std::move(Sentence);
 	Parms.SentenceIndex = SentenceIndex;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -138831,7 +138831,7 @@ bool IFortClientAnnouncement_ConversationInterface::ShouldPlaySentence(const str
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_ConversationInterface", "ShouldPlaySentence");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_ConversationInterface", "ShouldPlaySentence");
 
 	Params::FortClientAnnouncement_ConversationInterface_ShouldPlaySentence Parms{};
 
@@ -138840,7 +138840,7 @@ bool IFortClientAnnouncement_ConversationInterface::ShouldPlaySentence(const str
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -139419,12 +139419,12 @@ void IFortClientAnnouncement_TutorialInterface::HideTutorialWidget()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "HideTutorialWidget");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "HideTutorialWidget");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139440,7 +139440,7 @@ void IFortClientAnnouncement_TutorialInterface::SetButtonEnabled(bool bButtonEna
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetButtonEnabled");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetButtonEnabled");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetButtonEnabled Parms{};
 
@@ -139449,7 +139449,7 @@ void IFortClientAnnouncement_TutorialInterface::SetButtonEnabled(bool bButtonEna
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139465,7 +139465,7 @@ void IFortClientAnnouncement_TutorialInterface::SetDetailText(const class FText&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetDetailText");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetDetailText");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetDetailText Parms{};
 
@@ -139474,7 +139474,7 @@ void IFortClientAnnouncement_TutorialInterface::SetDetailText(const class FText&
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139490,7 +139490,7 @@ void IFortClientAnnouncement_TutorialInterface::SetHAlign(EHorizontalAlignment H
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetHAlign");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetHAlign");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetHAlign Parms{};
 
@@ -139499,7 +139499,7 @@ void IFortClientAnnouncement_TutorialInterface::SetHAlign(EHorizontalAlignment H
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139515,7 +139515,7 @@ void IFortClientAnnouncement_TutorialInterface::SetLightboxDisableInputOnly(bool
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetLightboxDisableInputOnly");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetLightboxDisableInputOnly");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetLightboxDisableInputOnly Parms{};
 
@@ -139524,7 +139524,7 @@ void IFortClientAnnouncement_TutorialInterface::SetLightboxDisableInputOnly(bool
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139540,7 +139540,7 @@ void IFortClientAnnouncement_TutorialInterface::SetLightboxEnabled(bool bLightbo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetLightboxEnabled");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetLightboxEnabled");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetLightboxEnabled Parms{};
 
@@ -139549,7 +139549,7 @@ void IFortClientAnnouncement_TutorialInterface::SetLightboxEnabled(bool bLightbo
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139565,7 +139565,7 @@ void IFortClientAnnouncement_TutorialInterface::SetNameText(const class FText& N
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetNameText");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetNameText");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetNameText Parms{};
 
@@ -139574,7 +139574,7 @@ void IFortClientAnnouncement_TutorialInterface::SetNameText(const class FText& N
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139590,7 +139590,7 @@ void IFortClientAnnouncement_TutorialInterface::SetPadding(const struct FMargin&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetPadding");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetPadding");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetPadding Parms{};
 
@@ -139599,7 +139599,7 @@ void IFortClientAnnouncement_TutorialInterface::SetPadding(const struct FMargin&
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139615,7 +139615,7 @@ void IFortClientAnnouncement_TutorialInterface::SetSystemText(const class FText&
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetSystemText");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetSystemText");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetSystemText Parms{};
 
@@ -139624,7 +139624,7 @@ void IFortClientAnnouncement_TutorialInterface::SetSystemText(const class FText&
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139640,7 +139640,7 @@ void IFortClientAnnouncement_TutorialInterface::SetTitleText(const class FText& 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetTitleText");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetTitleText");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetTitleText Parms{};
 
@@ -139649,7 +139649,7 @@ void IFortClientAnnouncement_TutorialInterface::SetTitleText(const class FText& 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139665,7 +139665,7 @@ void IFortClientAnnouncement_TutorialInterface::SetVAlign(EVerticalAlignment VAl
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetVAlign");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "SetVAlign");
 
 	Params::FortClientAnnouncement_TutorialInterface_SetVAlign Parms{};
 
@@ -139674,7 +139674,7 @@ void IFortClientAnnouncement_TutorialInterface::SetVAlign(EVerticalAlignment VAl
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -139691,7 +139691,7 @@ void IFortClientAnnouncement_TutorialInterface::WaitForContinue(class UObject* W
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientAnnouncement_TutorialInterface", "WaitForContinue");
+		Func = AsUObject()->Class->GetFunction("FortClientAnnouncement_TutorialInterface", "WaitForContinue");
 
 	Params::FortClientAnnouncement_TutorialInterface_WaitForContinue Parms{};
 
@@ -139701,7 +139701,7 @@ void IFortClientAnnouncement_TutorialInterface::WaitForContinue(class UObject* W
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -140042,7 +140042,7 @@ void IFortClientEventInterface::BlueprintCustomHandleClientEvent(class UObject* 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortClientEventInterface", "BlueprintCustomHandleClientEvent");
+		Func = AsUObject()->Class->GetFunction("FortClientEventInterface", "BlueprintCustomHandleClientEvent");
 
 	Params::FortClientEventInterface_BlueprintCustomHandleClientEvent Parms{};
 
@@ -140050,7 +140050,7 @@ void IFortClientEventInterface::BlueprintCustomHandleClientEvent(class UObject* 
 	Parms.EventFocus = EventFocus;
 	Parms.ClientEvent = std::move(ClientEvent);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -150301,7 +150301,7 @@ float IFortMissionPowerPointsInterface::GetAvailabilityWeight(float DifficultyLe
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMissionPowerPointsInterface", "GetAvailabilityWeight");
+		Func = AsUObject()->Class->GetFunction("FortMissionPowerPointsInterface", "GetAvailabilityWeight");
 
 	Params::FortMissionPowerPointsInterface_GetAvailabilityWeight Parms{};
 
@@ -150310,7 +150310,7 @@ float IFortMissionPowerPointsInterface::GetAvailabilityWeight(float DifficultyLe
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -150329,7 +150329,7 @@ float IFortMissionPowerPointsInterface::GetInitialRangeLerpValue(float PointsAva
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMissionPowerPointsInterface", "GetInitialRangeLerpValue");
+		Func = AsUObject()->Class->GetFunction("FortMissionPowerPointsInterface", "GetInitialRangeLerpValue");
 
 	Params::FortMissionPowerPointsInterface_GetInitialRangeLerpValue Parms{};
 
@@ -150338,7 +150338,7 @@ float IFortMissionPowerPointsInterface::GetInitialRangeLerpValue(float PointsAva
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -150358,7 +150358,7 @@ float IFortMissionPowerPointsInterface::GetMaxRangeLerpValue(float PointsAvailab
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMissionPowerPointsInterface", "GetMaxRangeLerpValue");
+		Func = AsUObject()->Class->GetFunction("FortMissionPowerPointsInterface", "GetMaxRangeLerpValue");
 
 	Params::FortMissionPowerPointsInterface_GetMaxRangeLerpValue Parms{};
 
@@ -150368,7 +150368,7 @@ float IFortMissionPowerPointsInterface::GetMaxRangeLerpValue(float PointsAvailab
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -150387,7 +150387,7 @@ float IFortMissionPowerPointsInterface::GetPowerPointsCost(float LerpValue) cons
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMissionPowerPointsInterface", "GetPowerPointsCost");
+		Func = AsUObject()->Class->GetFunction("FortMissionPowerPointsInterface", "GetPowerPointsCost");
 
 	Params::FortMissionPowerPointsInterface_GetPowerPointsCost Parms{};
 
@@ -150396,7 +150396,7 @@ float IFortMissionPowerPointsInterface::GetPowerPointsCost(float LerpValue) cons
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -157426,7 +157426,7 @@ void IFortMutatorOwner::AddMutatorToList(class AFortGameplayMutator* Mutator)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMutatorOwner", "AddMutatorToList");
+		Func = AsUObject()->Class->GetFunction("FortMutatorOwner", "AddMutatorToList");
 
 	Params::FortMutatorOwner_AddMutatorToList Parms{};
 
@@ -157435,7 +157435,7 @@ void IFortMutatorOwner::AddMutatorToList(class AFortGameplayMutator* Mutator)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -157451,7 +157451,7 @@ void IFortMutatorOwner::RemoveMutatorFromList(class AFortGameplayMutator* Mutato
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMutatorOwner", "RemoveMutatorFromList");
+		Func = AsUObject()->Class->GetFunction("FortMutatorOwner", "RemoveMutatorFromList");
 
 	Params::FortMutatorOwner_RemoveMutatorFromList Parms{};
 
@@ -157460,7 +157460,7 @@ void IFortMutatorOwner::RemoveMutatorFromList(class AFortGameplayMutator* Mutato
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -157476,14 +157476,14 @@ void IFortMutatorOwner::GetMutatorRelevantPlayers(TArray<class APlayerState*>* O
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMutatorOwner", "GetMutatorRelevantPlayers");
+		Func = AsUObject()->Class->GetFunction("FortMutatorOwner", "GetMutatorRelevantPlayers");
 
 	Params::FortMutatorOwner_GetMutatorRelevantPlayers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -157503,7 +157503,7 @@ void IFortMutatorOwner::GetMutatorsForContextActor(TArray<class AFortGameplayMut
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMutatorOwner", "GetMutatorsForContextActor");
+		Func = AsUObject()->Class->GetFunction("FortMutatorOwner", "GetMutatorsForContextActor");
 
 	Params::FortMutatorOwner_GetMutatorsForContextActor Parms{};
 
@@ -157512,7 +157512,7 @@ void IFortMutatorOwner::GetMutatorsForContextActor(TArray<class AFortGameplayMut
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -158916,14 +158916,14 @@ class UGameplayEffect* IFortHealthRegenInterface::GetHealthRegenDelayGameplayEff
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenDelayGameplayEffect");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenDelayGameplayEffect");
 
 	Params::FortHealthRegenInterface_GetHealthRegenDelayGameplayEffect Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -158941,14 +158941,14 @@ class UGameplayEffect* IFortHealthRegenInterface::GetHealthRegenGameplayEffect()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenGameplayEffect");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenGameplayEffect");
 
 	Params::FortHealthRegenInterface_GetHealthRegenGameplayEffect Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -158966,14 +158966,14 @@ TSubclassOf<class UGameplayEffect> IFortHealthRegenInterface::GetHealthRegenGame
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenGameplayEffectClass");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetHealthRegenGameplayEffectClass");
 
 	Params::FortHealthRegenInterface_GetHealthRegenGameplayEffectClass Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -158991,14 +158991,14 @@ class UGameplayEffect* IFortHealthRegenInterface::GetShieldRegenDelayGameplayEff
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenDelayGameplayEffect");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenDelayGameplayEffect");
 
 	Params::FortHealthRegenInterface_GetShieldRegenDelayGameplayEffect Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -159016,14 +159016,14 @@ class UGameplayEffect* IFortHealthRegenInterface::GetShieldRegenGameplayEffect()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenGameplayEffect");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenGameplayEffect");
 
 	Params::FortHealthRegenInterface_GetShieldRegenGameplayEffect Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -159041,14 +159041,14 @@ TSubclassOf<class UGameplayEffect> IFortHealthRegenInterface::GetShieldRegenGame
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenGameplayEffectClass");
+		Func = AsUObject()->Class->GetFunction("FortHealthRegenInterface", "GetShieldRegenGameplayEffectClass");
 
 	Params::FortHealthRegenInterface_GetShieldRegenGameplayEffectClass Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -166232,9 +166232,9 @@ void IFortProjectileMovementInterface::OnHomingPassedTarget()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "OnHomingPassedTarget");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "OnHomingPassedTarget");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -166246,9 +166246,9 @@ void IFortProjectileMovementInterface::OnReachedLockTargetDistanceThreshold()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "OnReachedLockTargetDistanceThreshold");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "OnReachedLockTargetDistanceThreshold");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -166263,7 +166263,7 @@ void IFortProjectileMovementInterface::SetAccelerationMagnitude(class AActor* Se
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetAccelerationMagnitude");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetAccelerationMagnitude");
 
 	Params::FortProjectileMovementInterface_SetAccelerationMagnitude Parms{};
 
@@ -166273,7 +166273,7 @@ void IFortProjectileMovementInterface::SetAccelerationMagnitude(class AActor* Se
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166290,7 +166290,7 @@ void IFortProjectileMovementInterface::SetDesiredDirection(class AActor* SelfAct
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetDesiredDirection");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetDesiredDirection");
 
 	Params::FortProjectileMovementInterface_SetDesiredDirection Parms{};
 
@@ -166300,7 +166300,7 @@ void IFortProjectileMovementInterface::SetDesiredDirection(class AActor* SelfAct
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166317,7 +166317,7 @@ void IFortProjectileMovementInterface::SetHomingData(class AActor* SelfActor, co
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingData");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingData");
 
 	Params::FortProjectileMovementInterface_SetHomingData Parms{};
 
@@ -166327,7 +166327,7 @@ void IFortProjectileMovementInterface::SetHomingData(class AActor* SelfActor, co
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166344,7 +166344,7 @@ void IFortProjectileMovementInterface::SetHomingLaserTargetDistance(class AActor
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingLaserTargetDistance");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingLaserTargetDistance");
 
 	Params::FortProjectileMovementInterface_SetHomingLaserTargetDistance Parms{};
 
@@ -166354,7 +166354,7 @@ void IFortProjectileMovementInterface::SetHomingLaserTargetDistance(class AActor
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166371,7 +166371,7 @@ void IFortProjectileMovementInterface::SetHomingLockTargetDistanceThreshold(clas
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingLockTargetDistanceThreshold");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingLockTargetDistanceThreshold");
 
 	Params::FortProjectileMovementInterface_SetHomingLockTargetDistanceThreshold Parms{};
 
@@ -166381,7 +166381,7 @@ void IFortProjectileMovementInterface::SetHomingLockTargetDistanceThreshold(clas
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166399,7 +166399,7 @@ void IFortProjectileMovementInterface::SetHomingStyle(class AActor* SelfActor, E
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingStyle");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingStyle");
 
 	Params::FortProjectileMovementInterface_SetHomingStyle Parms{};
 
@@ -166410,7 +166410,7 @@ void IFortProjectileMovementInterface::SetHomingStyle(class AActor* SelfActor, E
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166427,7 +166427,7 @@ void IFortProjectileMovementInterface::SetHomingTarget(class AActor* SelfActor, 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTarget");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTarget");
 
 	Params::FortProjectileMovementInterface_SetHomingTarget Parms{};
 
@@ -166437,7 +166437,7 @@ void IFortProjectileMovementInterface::SetHomingTarget(class AActor* SelfActor, 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166454,7 +166454,7 @@ void IFortProjectileMovementInterface::SetHomingTargetOffset(class AActor* SelfA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTargetOffset");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTargetOffset");
 
 	Params::FortProjectileMovementInterface_SetHomingTargetOffset Parms{};
 
@@ -166464,7 +166464,7 @@ void IFortProjectileMovementInterface::SetHomingTargetOffset(class AActor* SelfA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166481,7 +166481,7 @@ void IFortProjectileMovementInterface::SetHomingTargetPosition(class AActor* Sel
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTargetPosition");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTargetPosition");
 
 	Params::FortProjectileMovementInterface_SetHomingTargetPosition Parms{};
 
@@ -166491,7 +166491,7 @@ void IFortProjectileMovementInterface::SetHomingTargetPosition(class AActor* Sel
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166508,7 +166508,7 @@ void IFortProjectileMovementInterface::SetHomingTimeUntilMaxTurnSpeed(class AAct
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTimeUntilMaxTurnSpeed");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTimeUntilMaxTurnSpeed");
 
 	Params::FortProjectileMovementInterface_SetHomingTimeUntilMaxTurnSpeed Parms{};
 
@@ -166518,7 +166518,7 @@ void IFortProjectileMovementInterface::SetHomingTimeUntilMaxTurnSpeed(class AAct
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166535,7 +166535,7 @@ void IFortProjectileMovementInterface::SetHomingTurnSpeedMax(class AActor* SelfA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTurnSpeedMax");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTurnSpeedMax");
 
 	Params::FortProjectileMovementInterface_SetHomingTurnSpeedMax Parms{};
 
@@ -166545,7 +166545,7 @@ void IFortProjectileMovementInterface::SetHomingTurnSpeedMax(class AActor* SelfA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166562,7 +166562,7 @@ void IFortProjectileMovementInterface::SetHomingTurnSpeedMin(class AActor* SelfA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "SetHomingTurnSpeedMin");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "SetHomingTurnSpeedMin");
 
 	Params::FortProjectileMovementInterface_SetHomingTurnSpeedMin Parms{};
 
@@ -166572,7 +166572,7 @@ void IFortProjectileMovementInterface::SetHomingTurnSpeedMin(class AActor* SelfA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -166588,14 +166588,14 @@ struct FVector IFortProjectileMovementInterface::GetCurrentLocation() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "GetCurrentLocation");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "GetCurrentLocation");
 
 	Params::FortProjectileMovementInterface_GetCurrentLocation Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -166613,14 +166613,14 @@ class UFortProjectileMovementComponent* IFortProjectileMovementInterface::GetFor
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "GetFortProjectileMovementComponent");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "GetFortProjectileMovementComponent");
 
 	Params::FortProjectileMovementInterface_GetFortProjectileMovementComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -166638,14 +166638,14 @@ class AFortPlayerController* IFortProjectileMovementInterface::GetInstigatorPlay
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "GetInstigatorPlayerController");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "GetInstigatorPlayerController");
 
 	Params::FortProjectileMovementInterface_GetInstigatorPlayerController Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -166663,14 +166663,14 @@ bool IFortProjectileMovementInterface::IsProjectileBeingKilled() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortProjectileMovementInterface", "IsProjectileBeingKilled");
+		Func = AsUObject()->Class->GetFunction("FortProjectileMovementInterface", "IsProjectileBeingKilled");
 
 	Params::FortProjectileMovementInterface_IsProjectileBeingKilled Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -167854,12 +167854,12 @@ void IFortGameplayTagVolumeInterface::ApplyTags()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortGameplayTagVolumeInterface", "ApplyTags");
+		Func = AsUObject()->Class->GetFunction("FortGameplayTagVolumeInterface", "ApplyTags");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -167900,14 +167900,14 @@ struct FVector IFortSafeZoneInterface::GetSafeZoneNextCenter() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortSafeZoneInterface", "GetSafeZoneNextCenter");
+		Func = AsUObject()->Class->GetFunction("FortSafeZoneInterface", "GetSafeZoneNextCenter");
 
 	Params::FortSafeZoneInterface_GetSafeZoneNextCenter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -167925,14 +167925,14 @@ struct FVector IFortSafeZoneInterface::GetSafeZoneNextNextCenter() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortSafeZoneInterface", "GetSafeZoneNextNextCenter");
+		Func = AsUObject()->Class->GetFunction("FortSafeZoneInterface", "GetSafeZoneNextNextCenter");
 
 	Params::FortSafeZoneInterface_GetSafeZoneNextNextCenter Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174552,7 +174552,7 @@ void IFortPickupInstigator::SetTrackedIndex(int32 TrackedIndex, int32 ItemIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "SetTrackedIndex");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "SetTrackedIndex");
 
 	Params::FortPickupInstigator_SetTrackedIndex Parms{};
 
@@ -174562,7 +174562,7 @@ void IFortPickupInstigator::SetTrackedIndex(int32 TrackedIndex, int32 ItemIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -174580,7 +174580,7 @@ bool IFortPickupInstigator::GetInstigatorData(struct FPickupInstigatorData* Inst
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "GetInstigatorData");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "GetInstigatorData");
 
 	Params::FortPickupInstigator_GetInstigatorData Parms{};
 
@@ -174589,7 +174589,7 @@ bool IFortPickupInstigator::GetInstigatorData(struct FPickupInstigatorData* Inst
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174610,14 +174610,14 @@ TScriptInterface<class IFortPickupEventHandler> IFortPickupInstigator::GetPickup
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "GetPickupEventHandler");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "GetPickupEventHandler");
 
 	Params::FortPickupInstigator_GetPickupEventHandler Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174636,7 +174636,7 @@ int32 IFortPickupInstigator::GetTrackedIndex(int32 ItemIndex) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "GetTrackedIndex");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "GetTrackedIndex");
 
 	Params::FortPickupInstigator_GetTrackedIndex Parms{};
 
@@ -174645,7 +174645,7 @@ int32 IFortPickupInstigator::GetTrackedIndex(int32 ItemIndex) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174663,14 +174663,14 @@ TArray<int32> IFortPickupInstigator::GetTrackedIndices() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "GetTrackedIndices");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "GetTrackedIndices");
 
 	Params::FortPickupInstigator_GetTrackedIndices Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174688,14 +174688,14 @@ int32 IFortPickupInstigator::GetTrackedItemCount() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupInstigator", "GetTrackedItemCount");
+		Func = AsUObject()->Class->GetFunction("FortPickupInstigator", "GetTrackedItemCount");
 
 	Params::FortPickupInstigator_GetTrackedItemCount Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -174901,9 +174901,9 @@ void IFortHideShowInterface::DoHideUI()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHideShowInterface", "DoHideUI");
+		Func = AsUObject()->Class->GetFunction("FortHideShowInterface", "DoHideUI");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -174915,9 +174915,9 @@ void IFortHideShowInterface::DoShowUI()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortHideShowInterface", "DoShowUI");
+		Func = AsUObject()->Class->GetFunction("FortHideShowInterface", "DoShowUI");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -178045,13 +178045,13 @@ void IFortInitializeFromObjectInterface::InitFromObject(class UObject* InitObjec
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInitializeFromObjectInterface", "InitFromObject");
+		Func = AsUObject()->Class->GetFunction("FortInitializeFromObjectInterface", "InitFromObject");
 
 	Params::FortInitializeFromObjectInterface_InitFromObject Parms{};
 
 	Parms.InitObject = InitObject;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 }
 
 
@@ -179722,7 +179722,7 @@ bool IFortInteractInterface::ServerOnAttemptInteract(const struct FInteractionTy
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "ServerOnAttemptInteract");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "ServerOnAttemptInteract");
 
 	Params::FortInteractInterface_ServerOnAttemptInteract Parms{};
 
@@ -179731,7 +179731,7 @@ bool IFortInteractInterface::ServerOnAttemptInteract(const struct FInteractionTy
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179750,7 +179750,7 @@ void IFortInteractInterface::GetBoundsComponents(const class AActor* SelfActor, 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "GetBoundsComponents");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "GetBoundsComponents");
 
 	Params::FortInteractInterface_GetBoundsComponents Parms{};
 
@@ -179759,7 +179759,7 @@ void IFortInteractInterface::GetBoundsComponents(const class AActor* SelfActor, 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179778,14 +179778,14 @@ TSoftObjectPtr<class UTexture2D> IFortInteractInterface::GetCustomIcon() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "GetCustomIcon");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "GetCustomIcon");
 
 	Params::FortInteractInterface_GetCustomIcon Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179803,14 +179803,14 @@ struct FLinearColor IFortInteractInterface::GetCustomTint() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "GetCustomTint");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "GetCustomTint");
 
 	Params::FortInteractInterface_GetCustomTint Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179828,14 +179828,14 @@ struct FVector IFortInteractInterface::GetFocusedSocketLocation() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "GetFocusedSocketLocation");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "GetFocusedSocketLocation");
 
 	Params::FortInteractInterface_GetFocusedSocketLocation Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179856,7 +179856,7 @@ void IFortInteractInterface::GetIconPlacement(const class AActor* SelfActor, con
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "GetIconPlacement");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "GetIconPlacement");
 
 	Params::FortInteractInterface_GetIconPlacement Parms{};
 
@@ -179866,7 +179866,7 @@ void IFortInteractInterface::GetIconPlacement(const class AActor* SelfActor, con
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179888,7 +179888,7 @@ void IFortInteractInterface::LocalOnFailedInteract(const class AFortPlayerPawn* 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInteractInterface", "LocalOnFailedInteract");
+		Func = AsUObject()->Class->GetFunction("FortInteractInterface", "LocalOnFailedInteract");
 
 	Params::FortInteractInterface_LocalOnFailedInteract Parms{};
 
@@ -179897,7 +179897,7 @@ void IFortInteractInterface::LocalOnFailedInteract(const class AFortPlayerPawn* 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -179917,7 +179917,7 @@ bool IFortInterface_OverrideCanInteract::ShouldOverrideCanInteract(bool* bOutCan
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInterface_OverrideCanInteract", "ShouldOverrideCanInteract");
+		Func = AsUObject()->Class->GetFunction("FortInterface_OverrideCanInteract", "ShouldOverrideCanInteract");
 
 	Params::FortInterface_OverrideCanInteract_ShouldOverrideCanInteract Parms{};
 
@@ -179928,7 +179928,7 @@ bool IFortInterface_OverrideCanInteract::ShouldOverrideCanInteract(bool* bOutCan
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -179952,7 +179952,7 @@ bool IFortInterface_OverrideCanInteract::ShouldSuppressInteractionWidget(const c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInterface_OverrideCanInteract", "ShouldSuppressInteractionWidget");
+		Func = AsUObject()->Class->GetFunction("FortInterface_OverrideCanInteract", "ShouldSuppressInteractionWidget");
 
 	Params::FortInterface_OverrideCanInteract_ShouldSuppressInteractionWidget Parms{};
 
@@ -179963,7 +179963,7 @@ bool IFortInterface_OverrideCanInteract::ShouldSuppressInteractionWidget(const c
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -180000,14 +180000,14 @@ void IFortMutatorContext::GetMutatorContext(struct FMutatorContext* MutatorConte
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortMutatorContext", "GetMutatorContext");
+		Func = AsUObject()->Class->GetFunction("FortMutatorContext", "GetMutatorContext");
 
 	Params::FortMutatorContext_GetMutatorContext Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -180027,11 +180027,11 @@ bool IFortInventoryOverrideProvider::GetInventoryOverrides(TArray<struct FItemAn
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortInventoryOverrideProvider", "GetInventoryOverrides");
+		Func = AsUObject()->Class->GetFunction("FortInventoryOverrideProvider", "GetInventoryOverrides");
 
 	Params::FortInventoryOverrideProvider_GetInventoryOverrides Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (InventoryItems != nullptr)
 		*InventoryItems = std::move(Parms.InventoryItems);
@@ -180050,7 +180050,7 @@ void IFortPlayerSurveyAnswerContainer::SetAnswer(const struct FFortPlayerSurveyA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerContainer", "SetAnswer");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerContainer", "SetAnswer");
 
 	Params::FortPlayerSurveyAnswerContainer_SetAnswer Parms{};
 
@@ -180059,7 +180059,7 @@ void IFortPlayerSurveyAnswerContainer::SetAnswer(const struct FFortPlayerSurveyA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -180075,7 +180075,7 @@ void IFortPlayerSurveyAnswerContainer::AddOnAnswerChangedDelegate(const TDelegat
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerContainer", "AddOnAnswerChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerContainer", "AddOnAnswerChangedDelegate");
 
 	Params::FortPlayerSurveyAnswerContainer_AddOnAnswerChangedDelegate Parms{};
 
@@ -180084,7 +180084,7 @@ void IFortPlayerSurveyAnswerContainer::AddOnAnswerChangedDelegate(const TDelegat
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -180100,14 +180100,14 @@ struct FFortPlayerSurveyAnswer IFortPlayerSurveyAnswerContainer::GetAnswer() con
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerContainer", "GetAnswer");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerContainer", "GetAnswer");
 
 	Params::FortPlayerSurveyAnswerContainer_GetAnswer Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -180125,14 +180125,14 @@ bool IFortPlayerSurveyAnswerContainer::IsAnswerValid() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerContainer", "IsAnswerValid");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerContainer", "IsAnswerValid");
 
 	Params::FortPlayerSurveyAnswerContainer_IsAnswerValid Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -180150,7 +180150,7 @@ void IFortPlayerSurveyAnswerContainer::RemoveOnAnswerChangedDelegate(const TDele
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerContainer", "RemoveOnAnswerChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerContainer", "RemoveOnAnswerChangedDelegate");
 
 	Params::FortPlayerSurveyAnswerContainer_RemoveOnAnswerChangedDelegate Parms{};
 
@@ -180159,7 +180159,7 @@ void IFortPlayerSurveyAnswerContainer::RemoveOnAnswerChangedDelegate(const TDele
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -190219,7 +190219,7 @@ void ILevelDuplicatable::PostFinishDuplication(class UObject* SourceObject)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LevelDuplicatable", "PostFinishDuplication");
+		Func = AsUObject()->Class->GetFunction("LevelDuplicatable", "PostFinishDuplication");
 
 	Params::LevelDuplicatable_PostFinishDuplication Parms{};
 
@@ -190228,7 +190228,7 @@ void ILevelDuplicatable::PostFinishDuplication(class UObject* SourceObject)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -195648,9 +195648,9 @@ void IFortToyAbilityInterface::NotifyAbilityToReleaseToy()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyAbilityInterface", "NotifyAbilityToReleaseToy");
+		Func = AsUObject()->Class->GetFunction("FortToyAbilityInterface", "NotifyAbilityToReleaseToy");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -195665,13 +195665,13 @@ class AActor* IFortToyAbilityInterface::NotifyAbilityToSpawnToy(const struct FTr
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortToyAbilityInterface", "NotifyAbilityToSpawnToy");
+		Func = AsUObject()->Class->GetFunction("FortToyAbilityInterface", "NotifyAbilityToSpawnToy");
 
 	Params::FortToyAbilityInterface_NotifyAbilityToSpawnToy Parms{};
 
 	Parms.DesiredLocation = std::move(DesiredLocation);
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -216957,7 +216957,7 @@ void IFortPickupEventHandler::HandleItemAdded(class APlayerController* PlayerCon
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandleItemAdded");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandleItemAdded");
 
 	Params::FortPickupEventHandler_HandleItemAdded Parms{};
 
@@ -216967,7 +216967,7 @@ void IFortPickupEventHandler::HandleItemAdded(class APlayerController* PlayerCon
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -216984,7 +216984,7 @@ void IFortPickupEventHandler::HandleItemCaptured(class APlayerController* Player
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandleItemCaptured");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandleItemCaptured");
 
 	Params::FortPickupEventHandler_HandleItemCaptured Parms{};
 
@@ -216994,7 +216994,7 @@ void IFortPickupEventHandler::HandleItemCaptured(class APlayerController* Player
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217011,7 +217011,7 @@ void IFortPickupEventHandler::HandleItemRemoved(class APlayerController* PlayerC
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandleItemRemoved");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandleItemRemoved");
 
 	Params::FortPickupEventHandler_HandleItemRemoved Parms{};
 
@@ -217021,7 +217021,7 @@ void IFortPickupEventHandler::HandleItemRemoved(class APlayerController* PlayerC
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217037,7 +217037,7 @@ void IFortPickupEventHandler::HandlePickupCaptured(class AFortPickup* Pickup)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupCaptured");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupCaptured");
 
 	Params::FortPickupEventHandler_HandlePickupCaptured Parms{};
 
@@ -217046,7 +217046,7 @@ void IFortPickupEventHandler::HandlePickupCaptured(class AFortPickup* Pickup)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217065,7 +217065,7 @@ void IFortPickupEventHandler::HandlePickupClaimed(class AFortPickup* Pickup, cla
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupClaimed");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupClaimed");
 
 	Params::FortPickupEventHandler_HandlePickupClaimed Parms{};
 
@@ -217077,7 +217077,7 @@ void IFortPickupEventHandler::HandlePickupClaimed(class AFortPickup* Pickup, cla
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217093,7 +217093,7 @@ void IFortPickupEventHandler::HandlePickupDespawned(class AFortPickup* Pickup)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupDespawned");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupDespawned");
 
 	Params::FortPickupEventHandler_HandlePickupDespawned Parms{};
 
@@ -217102,7 +217102,7 @@ void IFortPickupEventHandler::HandlePickupDespawned(class AFortPickup* Pickup)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217118,7 +217118,7 @@ void IFortPickupEventHandler::HandlePickupDestroyed(class AFortPickup* Pickup)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupDestroyed");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupDestroyed");
 
 	Params::FortPickupEventHandler_HandlePickupDestroyed Parms{};
 
@@ -217127,7 +217127,7 @@ void IFortPickupEventHandler::HandlePickupDestroyed(class AFortPickup* Pickup)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217143,7 +217143,7 @@ void IFortPickupEventHandler::HandlePickupDropped(class AFortPickup* Pickup)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupDropped");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupDropped");
 
 	Params::FortPickupEventHandler_HandlePickupDropped Parms{};
 
@@ -217152,7 +217152,7 @@ void IFortPickupEventHandler::HandlePickupDropped(class AFortPickup* Pickup)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217168,7 +217168,7 @@ void IFortPickupEventHandler::HandlePickupSpawned(class AFortPickup* Pickup)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupEventHandler", "HandlePickupSpawned");
+		Func = AsUObject()->Class->GetFunction("FortPickupEventHandler", "HandlePickupSpawned");
 
 	Params::FortPickupEventHandler_HandlePickupSpawned Parms{};
 
@@ -217177,7 +217177,7 @@ void IFortPickupEventHandler::HandlePickupSpawned(class AFortPickup* Pickup)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -217869,7 +217869,7 @@ void IFortPickupManagementInterface::AddManagedActor(class AActor* ActorToManage
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPickupManagementInterface", "AddManagedActor");
+		Func = AsUObject()->Class->GetFunction("FortPickupManagementInterface", "AddManagedActor");
 
 	Params::FortPickupManagementInterface_AddManagedActor Parms{};
 
@@ -217881,7 +217881,7 @@ void IFortPickupManagementInterface::AddManagedActor(class AActor* ActorToManage
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -219688,7 +219688,7 @@ void IFortPlayerSurvey::AddOnAnswerChangedDelegate(const TDelegate<void(class UO
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "AddOnAnswerChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "AddOnAnswerChangedDelegate");
 
 	Params::FortPlayerSurvey_AddOnAnswerChangedDelegate Parms{};
 
@@ -219697,7 +219697,7 @@ void IFortPlayerSurvey::AddOnAnswerChangedDelegate(const TDelegate<void(class UO
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219713,7 +219713,7 @@ void IFortPlayerSurvey::AddOnDescriptionChangedDelegate(const TDelegate<void(cla
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "AddOnDescriptionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "AddOnDescriptionChangedDelegate");
 
 	Params::FortPlayerSurvey_AddOnDescriptionChangedDelegate Parms{};
 
@@ -219722,7 +219722,7 @@ void IFortPlayerSurvey::AddOnDescriptionChangedDelegate(const TDelegate<void(cla
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219738,7 +219738,7 @@ void IFortPlayerSurvey::AddOnQuestionChangedDelegate(const TDelegate<void(class 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "AddOnQuestionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "AddOnQuestionChangedDelegate");
 
 	Params::FortPlayerSurvey_AddOnQuestionChangedDelegate Parms{};
 
@@ -219747,7 +219747,7 @@ void IFortPlayerSurvey::AddOnQuestionChangedDelegate(const TDelegate<void(class 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219763,7 +219763,7 @@ void IFortPlayerSurvey::Finish(EFortPlayerSurveyFinishReason Reason)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "Finish");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "Finish");
 
 	Params::FortPlayerSurvey_Finish Parms{};
 
@@ -219772,7 +219772,7 @@ void IFortPlayerSurvey::Finish(EFortPlayerSurveyFinishReason Reason)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219788,7 +219788,7 @@ void IFortPlayerSurvey::RemoveOnAnswerChangedDelegate(const TDelegate<void(class
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "RemoveOnAnswerChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "RemoveOnAnswerChangedDelegate");
 
 	Params::FortPlayerSurvey_RemoveOnAnswerChangedDelegate Parms{};
 
@@ -219797,7 +219797,7 @@ void IFortPlayerSurvey::RemoveOnAnswerChangedDelegate(const TDelegate<void(class
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219813,7 +219813,7 @@ void IFortPlayerSurvey::RemoveOnDescriptionChangedDelegate(const TDelegate<void(
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "RemoveOnDescriptionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "RemoveOnDescriptionChangedDelegate");
 
 	Params::FortPlayerSurvey_RemoveOnDescriptionChangedDelegate Parms{};
 
@@ -219822,7 +219822,7 @@ void IFortPlayerSurvey::RemoveOnDescriptionChangedDelegate(const TDelegate<void(
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219838,7 +219838,7 @@ void IFortPlayerSurvey::RemoveOnQuestionChangedDelegate(const TDelegate<void(cla
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "RemoveOnQuestionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "RemoveOnQuestionChangedDelegate");
 
 	Params::FortPlayerSurvey_RemoveOnQuestionChangedDelegate Parms{};
 
@@ -219847,7 +219847,7 @@ void IFortPlayerSurvey::RemoveOnQuestionChangedDelegate(const TDelegate<void(cla
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219864,7 +219864,7 @@ void IFortPlayerSurvey::SetAnswer(int32 Index_0, const struct FFortPlayerSurveyA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "SetAnswer");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "SetAnswer");
 
 	Params::FortPlayerSurvey_SetAnswer Parms{};
 
@@ -219874,7 +219874,7 @@ void IFortPlayerSurvey::SetAnswer(int32 Index_0, const struct FFortPlayerSurveyA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -219891,7 +219891,7 @@ struct FFortPlayerSurveyAnswer IFortPlayerSurvey::GetAnswer(int32 Index_0) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "GetAnswer");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "GetAnswer");
 
 	Params::FortPlayerSurvey_GetAnswer Parms{};
 
@@ -219900,7 +219900,7 @@ struct FFortPlayerSurveyAnswer IFortPlayerSurvey::GetAnswer(int32 Index_0) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -219918,14 +219918,14 @@ struct FFortPlayerSurveyDescription IFortPlayerSurvey::GetDescription() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "GetDescription");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "GetDescription");
 
 	Params::FortPlayerSurvey_GetDescription Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -219943,14 +219943,14 @@ int32 IFortPlayerSurvey::GetNumQuestions() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "GetNumQuestions");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "GetNumQuestions");
 
 	Params::FortPlayerSurvey_GetNumQuestions Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -219969,7 +219969,7 @@ class UFortPlayerSurveyQuestion* IFortPlayerSurvey::GetQuestion(int32 Index_0) c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "GetQuestion");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "GetQuestion");
 
 	Params::FortPlayerSurvey_GetQuestion Parms{};
 
@@ -219978,7 +219978,7 @@ class UFortPlayerSurveyQuestion* IFortPlayerSurvey::GetQuestion(int32 Index_0) c
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -219997,7 +219997,7 @@ bool IFortPlayerSurvey::IsAnswerValid(int32 Index_0) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "IsAnswerValid");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "IsAnswerValid");
 
 	Params::FortPlayerSurvey_IsAnswerValid Parms{};
 
@@ -220006,7 +220006,7 @@ bool IFortPlayerSurvey::IsAnswerValid(int32 Index_0) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -220024,14 +220024,14 @@ bool IFortPlayerSurvey::IsSurveyAllowed() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurvey", "IsSurveyAllowed");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurvey", "IsSurveyAllowed");
 
 	Params::FortPlayerSurvey_IsSurveyAllowed Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -220049,7 +220049,7 @@ void IFortPlayerSurveyAnswerableQuestion::AddOnQuestionChangedDelegate(const TDe
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "AddOnQuestionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "AddOnQuestionChangedDelegate");
 
 	Params::FortPlayerSurveyAnswerableQuestion_AddOnQuestionChangedDelegate Parms{};
 
@@ -220058,7 +220058,7 @@ void IFortPlayerSurveyAnswerableQuestion::AddOnQuestionChangedDelegate(const TDe
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -220074,14 +220074,14 @@ class UFortPlayerSurveyQuestion* IFortPlayerSurveyAnswerableQuestion::GetQuestio
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "GetQuestion");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "GetQuestion");
 
 	Params::FortPlayerSurveyAnswerableQuestion_GetQuestion Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -220099,7 +220099,7 @@ void IFortPlayerSurveyAnswerableQuestion::RemoveOnQuestionChangedDelegate(const 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "RemoveOnQuestionChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("FortPlayerSurveyAnswerableQuestion", "RemoveOnQuestionChangedDelegate");
 
 	Params::FortPlayerSurveyAnswerableQuestion_RemoveOnQuestionChangedDelegate Parms{};
 
@@ -220108,7 +220108,7 @@ void IFortPlayerSurveyAnswerableQuestion::RemoveOnQuestionChangedDelegate(const 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224600,7 +224600,7 @@ void IFortVehicleInterface::AddVehicleActionNamesAndLabels(class AFortPlayerPawn
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "AddVehicleActionNamesAndLabels");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "AddVehicleActionNamesAndLabels");
 
 	Params::FortVehicleInterface_AddVehicleActionNamesAndLabels Parms{};
 
@@ -224611,7 +224611,7 @@ void IFortVehicleInterface::AddVehicleActionNamesAndLabels(class AFortPlayerPawn
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -224633,7 +224633,7 @@ class UMaterialInstanceDynamic* IFortVehicleInterface::ApplyMaterialAndUseWrapIf
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ApplyMaterialAndUseWrapIfPossible");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ApplyMaterialAndUseWrapIfPossible");
 
 	Params::FortVehicleInterface_ApplyMaterialAndUseWrapIfPossible Parms{};
 
@@ -224644,7 +224644,7 @@ class UMaterialInstanceDynamic* IFortVehicleInterface::ApplyMaterialAndUseWrapIf
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -224662,7 +224662,7 @@ void IFortVehicleInterface::CallGunOverheat(class UFortVehicleSeatWeaponComponen
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "CallGunOverheat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "CallGunOverheat");
 
 	Params::FortVehicleInterface_CallGunOverheat Parms{};
 
@@ -224671,7 +224671,7 @@ void IFortVehicleInterface::CallGunOverheat(class UFortVehicleSeatWeaponComponen
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224688,7 +224688,7 @@ void IFortVehicleInterface::CallWeaponFired(class UFortVehicleSeatWeaponComponen
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "CallWeaponFired");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "CallWeaponFired");
 
 	Params::FortVehicleInterface_CallWeaponFired Parms{};
 
@@ -224698,7 +224698,7 @@ void IFortVehicleInterface::CallWeaponFired(class UFortVehicleSeatWeaponComponen
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224712,12 +224712,12 @@ void IFortVehicleInterface::ChangeSeat()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ChangeSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ChangeSeat");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224733,7 +224733,7 @@ void IFortVehicleInterface::ChangeSeatFromIndex(const int32 FromSeatIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ChangeSeatFromIndex");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ChangeSeatFromIndex");
 
 	Params::FortVehicleInterface_ChangeSeatFromIndex Parms{};
 
@@ -224742,7 +224742,7 @@ void IFortVehicleInterface::ChangeSeatFromIndex(const int32 FromSeatIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224756,12 +224756,12 @@ void IFortVehicleInterface::DestroyVehicle()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "DestroyVehicle");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "DestroyVehicle");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224777,7 +224777,7 @@ void IFortVehicleInterface::DisableTrickCredit(float Duration)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "DisableTrickCredit");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "DisableTrickCredit");
 
 	Params::FortVehicleInterface_DisableTrickCredit Parms{};
 
@@ -224786,7 +224786,7 @@ void IFortVehicleInterface::DisableTrickCredit(float Duration)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224800,12 +224800,12 @@ void IFortVehicleInterface::EjectAllPlayers()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "EjectAllPlayers");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "EjectAllPlayers");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224822,7 +224822,7 @@ bool IFortVehicleInterface::EjectPlayerPawn(const class AFortPlayerPawn* InPlaye
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "EjectPlayerPawn");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "EjectPlayerPawn");
 
 	Params::FortVehicleInterface_EjectPlayerPawn Parms{};
 
@@ -224831,7 +224831,7 @@ bool IFortVehicleInterface::EjectPlayerPawn(const class AFortPlayerPawn* InPlaye
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -224850,7 +224850,7 @@ bool IFortVehicleInterface::EjectSeat(const int32 SeatIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "EjectSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "EjectSeat");
 
 	Params::FortVehicleInterface_EjectSeat Parms{};
 
@@ -224859,7 +224859,7 @@ bool IFortVehicleInterface::EjectSeat(const int32 SeatIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -224877,7 +224877,7 @@ void IFortVehicleInterface::ExitActivatedFromSeat(const int32 FromSeatIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ExitActivatedFromSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ExitActivatedFromSeat");
 
 	Params::FortVehicleInterface_ExitActivatedFromSeat Parms{};
 
@@ -224886,7 +224886,7 @@ void IFortVehicleInterface::ExitActivatedFromSeat(const int32 FromSeatIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224902,7 +224902,7 @@ void IFortVehicleInterface::ExitPressedFromSeat(const int32 FromSeatIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ExitPressedFromSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ExitPressedFromSeat");
 
 	Params::FortVehicleInterface_ExitPressedFromSeat Parms{};
 
@@ -224911,7 +224911,7 @@ void IFortVehicleInterface::ExitPressedFromSeat(const int32 FromSeatIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224927,7 +224927,7 @@ void IFortVehicleInterface::ExitReleasedFromSeat(const int32 FromSeatIndex)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ExitReleasedFromSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ExitReleasedFromSeat");
 
 	Params::FortVehicleInterface_ExitReleasedFromSeat Parms{};
 
@@ -224936,7 +224936,7 @@ void IFortVehicleInterface::ExitReleasedFromSeat(const int32 FromSeatIndex)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -224952,14 +224952,14 @@ class AActor* IFortVehicleInterface::GetVehicleActorPtr()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleActorPtr");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleActorPtr");
 
 	Params::FortVehicleInterface_GetVehicleActorPtr Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -224977,14 +224977,14 @@ class UFortVehicleSeatComponent* IFortVehicleInterface::GetVehicleSeatComponentP
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleSeatComponentPtr");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleSeatComponentPtr");
 
 	Params::FortVehicleInterface_GetVehicleSeatComponentPtr Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225003,7 +225003,7 @@ void IFortVehicleInterface::NotifyAudioComponentVehicleTriggered(class UAudioCom
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "NotifyAudioComponentVehicleTriggered");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "NotifyAudioComponentVehicleTriggered");
 
 	Params::FortVehicleInterface_NotifyAudioComponentVehicleTriggered Parms{};
 
@@ -225013,7 +225013,7 @@ void IFortVehicleInterface::NotifyAudioComponentVehicleTriggered(class UAudioCom
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225029,7 +225029,7 @@ void IFortVehicleInterface::OverrideCurrentWrap(const class UAthenaItemWrapDefin
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "OverrideCurrentWrap");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "OverrideCurrentWrap");
 
 	Params::FortVehicleInterface_OverrideCurrentWrap Parms{};
 
@@ -225038,7 +225038,7 @@ void IFortVehicleInterface::OverrideCurrentWrap(const class UAthenaItemWrapDefin
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225052,12 +225052,12 @@ void IFortVehicleInterface::ResetTrick()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ResetTrick");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ResetTrick");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225074,7 +225074,7 @@ void IFortVehicleInterface::SetActorBase(class AActor* InActorBase, const int32 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetActorBase");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetActorBase");
 
 	Params::FortVehicleInterface_SetActorBase Parms{};
 
@@ -225084,7 +225084,7 @@ void IFortVehicleInterface::SetActorBase(class AActor* InActorBase, const int32 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225100,7 +225100,7 @@ void IFortVehicleInterface::SetCurrentFocusedSocketLocation(const int32 SeatInde
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetCurrentFocusedSocketLocation");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetCurrentFocusedSocketLocation");
 
 	Params::FortVehicleInterface_SetCurrentFocusedSocketLocation Parms{};
 
@@ -225109,7 +225109,7 @@ void IFortVehicleInterface::SetCurrentFocusedSocketLocation(const int32 SeatInde
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225125,7 +225125,7 @@ void IFortVehicleInterface::SetDestroyOnLastExit(bool bSetTo)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetDestroyOnLastExit");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetDestroyOnLastExit");
 
 	Params::FortVehicleInterface_SetDestroyOnLastExit Parms{};
 
@@ -225134,7 +225134,7 @@ void IFortVehicleInterface::SetDestroyOnLastExit(bool bSetTo)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225150,7 +225150,7 @@ void IFortVehicleInterface::SetHealthPercent(float Percent)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetHealthPercent");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetHealthPercent");
 
 	Params::FortVehicleInterface_SetHealthPercent Parms{};
 
@@ -225159,7 +225159,7 @@ void IFortVehicleInterface::SetHealthPercent(float Percent)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225175,7 +225175,7 @@ void IFortVehicleInterface::SetIgnoreAllFallingDamage(bool InIgnoreAllFallingDam
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetIgnoreAllFallingDamage");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetIgnoreAllFallingDamage");
 
 	Params::FortVehicleInterface_SetIgnoreAllFallingDamage Parms{};
 
@@ -225184,7 +225184,7 @@ void IFortVehicleInterface::SetIgnoreAllFallingDamage(bool InIgnoreAllFallingDam
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225200,7 +225200,7 @@ void IFortVehicleInterface::SetIgnoreNextFallingDamage(bool bInIgnoreNextFalling
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetIgnoreNextFallingDamage");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetIgnoreNextFallingDamage");
 
 	Params::FortVehicleInterface_SetIgnoreNextFallingDamage Parms{};
 
@@ -225209,7 +225209,7 @@ void IFortVehicleInterface::SetIgnoreNextFallingDamage(bool bInIgnoreNextFalling
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225226,7 +225226,7 @@ void IFortVehicleInterface::SetShootingCone(const int32 SeatIdx, const struct FA
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SetShootingCone");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SetShootingCone");
 
 	Params::FortVehicleInterface_SetShootingCone Parms{};
 
@@ -225236,7 +225236,7 @@ void IFortVehicleInterface::SetShootingCone(const int32 SeatIdx, const struct FA
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225253,7 +225253,7 @@ void IFortVehicleInterface::VehicleGameplayCue_Damage(EGameplayCueEvent EventTyp
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "VehicleGameplayCue_Damage");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "VehicleGameplayCue_Damage");
 
 	Params::FortVehicleInterface_VehicleGameplayCue_Damage Parms{};
 
@@ -225263,7 +225263,7 @@ void IFortVehicleInterface::VehicleGameplayCue_Damage(EGameplayCueEvent EventTyp
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225277,12 +225277,12 @@ void IFortVehicleInterface::WakeUp()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "WakeUp");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "WakeUp");
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -225298,14 +225298,14 @@ bool IFortVehicleInterface::BlocksBuilding() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "BlocksBuilding");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "BlocksBuilding");
 
 	Params::FortVehicleInterface_BlocksBuilding Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225323,14 +225323,14 @@ bool IFortVehicleInterface::CanContainPlayers() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "CanContainPlayers");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "CanContainPlayers");
 
 	Params::FortVehicleInterface_CanContainPlayers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225349,7 +225349,7 @@ bool IFortVehicleInterface::CanShootFromSeat(const int32 SeatIndex) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "CanShootFromSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "CanShootFromSeat");
 
 	Params::FortVehicleInterface_CanShootFromSeat Parms{};
 
@@ -225358,7 +225358,7 @@ bool IFortVehicleInterface::CanShootFromSeat(const int32 SeatIndex) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225376,14 +225376,14 @@ bool IFortVehicleInterface::CanTeleport() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "CanTeleport");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "CanTeleport");
 
 	Params::FortVehicleInterface_CanTeleport Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225401,14 +225401,14 @@ bool IFortVehicleInterface::ClientIsDriver() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ClientIsDriver");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ClientIsDriver");
 
 	Params::FortVehicleInterface_ClientIsDriver Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225426,14 +225426,14 @@ bool IFortVehicleInterface::ContainsPlayers() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ContainsPlayers");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ContainsPlayers");
 
 	Params::FortVehicleInterface_ContainsPlayers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225452,7 +225452,7 @@ int32 IFortVehicleInterface::FindSeatIndex(const class AFortPlayerPawn* PlayerPa
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "FindSeatIndex");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "FindSeatIndex");
 
 	Params::FortVehicleInterface_FindSeatIndex Parms{};
 
@@ -225461,7 +225461,7 @@ int32 IFortVehicleInterface::FindSeatIndex(const class AFortPlayerPawn* PlayerPa
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225479,14 +225479,14 @@ TArray<class AFortPlayerPawn*> IFortVehicleInterface::GetAllPassengers() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetAllPassengers");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetAllPassengers");
 
 	Params::FortVehicleInterface_GetAllPassengers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225505,7 +225505,7 @@ struct FVector IFortVehicleInterface::GetCrouchingFiringOffsetForSeat(const int3
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetCrouchingFiringOffsetForSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetCrouchingFiringOffsetForSeat");
 
 	Params::FortVehicleInterface_GetCrouchingFiringOffsetForSeat Parms{};
 
@@ -225514,7 +225514,7 @@ struct FVector IFortVehicleInterface::GetCrouchingFiringOffsetForSeat(const int3
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225532,14 +225532,14 @@ class FString IFortVehicleInterface::GetDisplayName() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetDisplayName");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetDisplayName");
 
 	Params::FortVehicleInterface_GetDisplayName Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225557,14 +225557,14 @@ class AFortPlayerPawn* IFortVehicleInterface::GetDriver() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetDriver");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetDriver");
 
 	Params::FortVehicleInterface_GetDriver Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225584,7 +225584,7 @@ struct FTransform IFortVehicleInterface::GetExitSocketTransform(const int32 Seat
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetExitSocketTransform");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetExitSocketTransform");
 
 	Params::FortVehicleInterface_GetExitSocketTransform Parms{};
 
@@ -225594,7 +225594,7 @@ struct FTransform IFortVehicleInterface::GetExitSocketTransform(const int32 Seat
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225612,14 +225612,14 @@ struct FGameplayTagContainer IFortVehicleInterface::GetGameplayTags() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetGameplayTags");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetGameplayTags");
 
 	Params::FortVehicleInterface_GetGameplayTags Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225637,14 +225637,14 @@ float IFortVehicleInterface::GetHealth() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetHealth");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetHealth");
 
 	Params::FortVehicleInterface_GetHealth Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225662,14 +225662,14 @@ struct FVector IFortVehicleInterface::GetIndicatorRelativeOffset() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetIndicatorRelativeOffset");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetIndicatorRelativeOffset");
 
 	Params::FortVehicleInterface_GetIndicatorRelativeOffset Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225687,14 +225687,14 @@ float IFortVehicleInterface::GetMaxHealth() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetMaxHealth");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetMaxHealth");
 
 	Params::FortVehicleInterface_GetMaxHealth Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225712,14 +225712,14 @@ struct FVector IFortVehicleInterface::GetOwnerLocation() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetOwnerLocation");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetOwnerLocation");
 
 	Params::FortVehicleInterface_GetOwnerLocation Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225738,7 +225738,7 @@ class AFortPlayerPawn* IFortVehicleInterface::GetPawnAtSeat(const int32 SeatIdx)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetPawnAtSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetPawnAtSeat");
 
 	Params::FortVehicleInterface_GetPawnAtSeat Parms{};
 
@@ -225747,7 +225747,7 @@ class AFortPlayerPawn* IFortVehicleInterface::GetPawnAtSeat(const int32 SeatIdx)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225766,7 +225766,7 @@ float IFortVehicleInterface::GetSeatSwitchCooldown(const int32 SeatIndex) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetSeatSwitchCooldown");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetSeatSwitchCooldown");
 
 	Params::FortVehicleInterface_GetSeatSwitchCooldown Parms{};
 
@@ -225775,7 +225775,7 @@ float IFortVehicleInterface::GetSeatSwitchCooldown(const int32 SeatIndex) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225794,7 +225794,7 @@ class UFortVehicleSeatWeaponComponent* IFortVehicleInterface::GetSeatWeaponCompo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetSeatWeaponComponent");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetSeatWeaponComponent");
 
 	Params::FortVehicleInterface_GetSeatWeaponComponent Parms{};
 
@@ -225803,7 +225803,7 @@ class UFortVehicleSeatWeaponComponent* IFortVehicleInterface::GetSeatWeaponCompo
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225824,7 +225824,7 @@ bool IFortVehicleInterface::GetShootingCone(const int32 SeatIdx, struct FTransfo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetShootingCone");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetShootingCone");
 
 	Params::FortVehicleInterface_GetShootingCone Parms{};
 
@@ -225833,7 +225833,7 @@ bool IFortVehicleInterface::GetShootingCone(const int32 SeatIdx, struct FTransfo
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225857,14 +225857,14 @@ class USkeletalMeshComponent* IFortVehicleInterface::GetSkeletalMeshComponent() 
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetSkeletalMeshComponent");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetSkeletalMeshComponent");
 
 	Params::FortVehicleInterface_GetSkeletalMeshComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225883,7 +225883,7 @@ struct FVector IFortVehicleInterface::GetStandingFiringOffsetForSeat(const int32
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetStandingFiringOffsetForSeat");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetStandingFiringOffsetForSeat");
 
 	Params::FortVehicleInterface_GetStandingFiringOffsetForSeat Parms{};
 
@@ -225892,7 +225892,7 @@ struct FVector IFortVehicleInterface::GetStandingFiringOffsetForSeat(const int32
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225910,14 +225910,14 @@ class UAbilitySystemComponent* IFortVehicleInterface::GetVehicleAbilitySystemCom
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleAbilitySystemComponent");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleAbilitySystemComponent");
 
 	Params::FortVehicleInterface_GetVehicleAbilitySystemComponent Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225935,14 +225935,14 @@ class AActor* IFortVehicleInterface::GetVehicleActorPtrConst() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleActorPtrConst");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleActorPtrConst");
 
 	Params::FortVehicleInterface_GetVehicleActorPtrConst Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225961,7 +225961,7 @@ class FName IFortVehicleInterface::GetVehicleChangeSeatActionName(class AFortPla
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleChangeSeatActionName");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleChangeSeatActionName");
 
 	Params::FortVehicleInterface_GetVehicleChangeSeatActionName Parms{};
 
@@ -225970,7 +225970,7 @@ class FName IFortVehicleInterface::GetVehicleChangeSeatActionName(class AFortPla
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -225989,7 +225989,7 @@ class FName IFortVehicleInterface::GetVehicleExitActionName(class AFortPlayerPaw
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleExitActionName");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleExitActionName");
 
 	Params::FortVehicleInterface_GetVehicleExitActionName Parms{};
 
@@ -225998,7 +225998,7 @@ class FName IFortVehicleInterface::GetVehicleExitActionName(class AFortPlayerPaw
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226016,14 +226016,14 @@ struct FVector IFortVehicleInterface::GetVehicleForwardVector() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleForwardVector");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleForwardVector");
 
 	Params::FortVehicleInterface_GetVehicleForwardVector Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226041,14 +226041,14 @@ struct FVector IFortVehicleInterface::GetVehicleRightVector() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleRightVector");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleRightVector");
 
 	Params::FortVehicleInterface_GetVehicleRightVector Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226066,14 +226066,14 @@ struct FRotator IFortVehicleInterface::GetVehicleRotation() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleRotation");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleRotation");
 
 	Params::FortVehicleInterface_GetVehicleRotation Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226092,7 +226092,7 @@ class FText IFortVehicleInterface::GetVehicleSeatChoiceDisplayText(const int32 S
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleSeatChoiceDisplayText");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleSeatChoiceDisplayText");
 
 	Params::FortVehicleInterface_GetVehicleSeatChoiceDisplayText Parms{};
 
@@ -226101,7 +226101,7 @@ class FText IFortVehicleInterface::GetVehicleSeatChoiceDisplayText(const int32 S
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226119,14 +226119,14 @@ const struct FGameplayTagContainer IFortVehicleInterface::GetVehicleTags() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleTags");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleTags");
 
 	Params::FortVehicleInterface_GetVehicleTags Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226144,14 +226144,14 @@ struct FVector IFortVehicleInterface::GetVehicleVelocity() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "GetVehicleVelocity");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "GetVehicleVelocity");
 
 	Params::FortVehicleInterface_GetVehicleVelocity Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226169,14 +226169,14 @@ bool IFortVehicleInterface::HasDriver() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "HasDriver");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "HasDriver");
 
 	Params::FortVehicleInterface_HasDriver Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226194,14 +226194,14 @@ bool IFortVehicleInterface::HasEverContainedPlayers() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "HasEverContainedPlayers");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "HasEverContainedPlayers");
 
 	Params::FortVehicleInterface_HasEverContainedPlayers Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226219,14 +226219,14 @@ bool IFortVehicleInterface::IsAsleep() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "IsAsleep");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "IsAsleep");
 
 	Params::FortVehicleInterface_IsAsleep Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226244,14 +226244,14 @@ bool IFortVehicleInterface::IsBoosting() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "IsBoosting");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "IsBoosting");
 
 	Params::FortVehicleInterface_IsBoosting Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226269,14 +226269,14 @@ bool IFortVehicleInterface::IsInWater() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "IsInWater");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "IsInWater");
 
 	Params::FortVehicleInterface_IsInWater Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226294,14 +226294,14 @@ bool IFortVehicleInterface::IsTouchingGround() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "IsTouchingGround");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "IsTouchingGround");
 
 	Params::FortVehicleInterface_IsTouchingGround Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226320,7 +226320,7 @@ bool IFortVehicleInterface::SeatIsTurret(const int32 SeatIndex) const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "SeatIsTurret");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "SeatIsTurret");
 
 	Params::FortVehicleInterface_SeatIsTurret Parms{};
 
@@ -226329,7 +226329,7 @@ bool IFortVehicleInterface::SeatIsTurret(const int32 SeatIndex) const
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226347,14 +226347,14 @@ bool IFortVehicleInterface::ShowVehicleHealthBarOnPlayerHUD() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "ShowVehicleHealthBarOnPlayerHUD");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "ShowVehicleHealthBarOnPlayerHUD");
 
 	Params::FortVehicleInterface_ShowVehicleHealthBarOnPlayerHUD Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226372,14 +226372,14 @@ bool IFortVehicleInterface::VehicleIsInAir() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "VehicleIsInAir");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "VehicleIsInAir");
 
 	Params::FortVehicleInterface_VehicleIsInAir Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -226397,14 +226397,14 @@ bool IFortVehicleInterface::VehicleIsInSkyTube() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortVehicleInterface", "VehicleIsInSkyTube");
+		Func = AsUObject()->Class->GetFunction("FortVehicleInterface", "VehicleIsInSkyTube");
 
 	Params::FortVehicleInterface_VehicleIsInSkyTube Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -227824,7 +227824,7 @@ void ISingleIndexSelectionModel::SetSelectedIndex(int32 Value)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "SetSelectedIndex");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "SetSelectedIndex");
 
 	Params::SingleIndexSelectionModel_SetSelectedIndex Parms{};
 
@@ -227833,7 +227833,7 @@ void ISingleIndexSelectionModel::SetSelectedIndex(int32 Value)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -227850,7 +227850,7 @@ EIndexNavigationResult ISingleIndexSelectionModel::TryMoveDelta(int32 InDelta)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "TryMoveDelta");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "TryMoveDelta");
 
 	Params::SingleIndexSelectionModel_TryMoveDelta Parms{};
 
@@ -227859,7 +227859,7 @@ EIndexNavigationResult ISingleIndexSelectionModel::TryMoveDelta(int32 InDelta)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -227877,7 +227877,7 @@ void ISingleIndexSelectionModel::AddOnNavigationChangedDelegate(const TDelegate<
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "AddOnNavigationChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "AddOnNavigationChangedDelegate");
 
 	Params::SingleIndexSelectionModel_AddOnNavigationChangedDelegate Parms{};
 
@@ -227886,7 +227886,7 @@ void ISingleIndexSelectionModel::AddOnNavigationChangedDelegate(const TDelegate<
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -227902,7 +227902,7 @@ void ISingleIndexSelectionModel::AddOnNumItemsChangedDelegate(const TDelegate<vo
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "AddOnNumItemsChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "AddOnNumItemsChangedDelegate");
 
 	Params::SingleIndexSelectionModel_AddOnNumItemsChangedDelegate Parms{};
 
@@ -227911,7 +227911,7 @@ void ISingleIndexSelectionModel::AddOnNumItemsChangedDelegate(const TDelegate<vo
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -227927,7 +227927,7 @@ void ISingleIndexSelectionModel::AddOnSelectedIndexChangedDelegate(const TDelega
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "AddOnSelectedIndexChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "AddOnSelectedIndexChangedDelegate");
 
 	Params::SingleIndexSelectionModel_AddOnSelectedIndexChangedDelegate Parms{};
 
@@ -227936,7 +227936,7 @@ void ISingleIndexSelectionModel::AddOnSelectedIndexChangedDelegate(const TDelega
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -227953,7 +227953,7 @@ EIndexNavigationResult ISingleIndexSelectionModel::CanMoveDelta(int32 InDelta) c
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "CanMoveDelta");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "CanMoveDelta");
 
 	Params::SingleIndexSelectionModel_CanMoveDelta Parms{};
 
@@ -227962,7 +227962,7 @@ EIndexNavigationResult ISingleIndexSelectionModel::CanMoveDelta(int32 InDelta) c
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -227980,14 +227980,14 @@ int32 ISingleIndexSelectionModel::GetNumItems() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "GetNumItems");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "GetNumItems");
 
 	Params::SingleIndexSelectionModel_GetNumItems Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -228005,14 +228005,14 @@ int32 ISingleIndexSelectionModel::GetSelectedIndex() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "GetSelectedIndex");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "GetSelectedIndex");
 
 	Params::SingleIndexSelectionModel_GetSelectedIndex Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -228030,7 +228030,7 @@ void ISingleIndexSelectionModel::RemoveOnNavigationChangedDelegate(const TDelega
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "RemoveOnNavigationChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "RemoveOnNavigationChangedDelegate");
 
 	Params::SingleIndexSelectionModel_RemoveOnNavigationChangedDelegate Parms{};
 
@@ -228039,7 +228039,7 @@ void ISingleIndexSelectionModel::RemoveOnNavigationChangedDelegate(const TDelega
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -228055,7 +228055,7 @@ void ISingleIndexSelectionModel::RemoveOnNumItemsChangedDelegate(const TDelegate
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "RemoveOnNumItemsChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "RemoveOnNumItemsChangedDelegate");
 
 	Params::SingleIndexSelectionModel_RemoveOnNumItemsChangedDelegate Parms{};
 
@@ -228064,7 +228064,7 @@ void ISingleIndexSelectionModel::RemoveOnNumItemsChangedDelegate(const TDelegate
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -228080,7 +228080,7 @@ void ISingleIndexSelectionModel::RemoveOnSelectedIndexChangedDelegate(const TDel
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("SingleIndexSelectionModel", "RemoveOnSelectedIndexChangedDelegate");
+		Func = AsUObject()->Class->GetFunction("SingleIndexSelectionModel", "RemoveOnSelectedIndexChangedDelegate");
 
 	Params::SingleIndexSelectionModel_RemoveOnSelectedIndexChangedDelegate Parms{};
 
@@ -228089,7 +228089,7 @@ void ISingleIndexSelectionModel::RemoveOnSelectedIndexChangedDelegate(const TDel
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -229545,14 +229545,14 @@ uint8 IFortTeamActorInterface::GetTeam() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTeamActorInterface", "GetTeam");
+		Func = AsUObject()->Class->GetFunction("FortTeamActorInterface", "GetTeam");
 
 	Params::FortTeamActorInterface_GetTeam Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -230856,14 +230856,14 @@ class UFortTooltipDisplayStatsList* IFortTooltipInterface::GetDisplayStats() con
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTooltipInterface", "GetDisplayStats");
+		Func = AsUObject()->Class->GetFunction("FortTooltipInterface", "GetDisplayStats");
 
 	Params::FortTooltipInterface_GetDisplayStats Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -230882,7 +230882,7 @@ TSubclassOf<class UFortTooltip> IFortTooltipInterface::GetTooltip(bool bSummaryT
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTooltipInterface", "GetTooltip");
+		Func = AsUObject()->Class->GetFunction("FortTooltipInterface", "GetTooltip");
 
 	Params::FortTooltipInterface_GetTooltip Parms{};
 
@@ -230891,7 +230891,7 @@ TSubclassOf<class UFortTooltip> IFortTooltipInterface::GetTooltip(bool bSummaryT
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -230954,9 +230954,9 @@ void IFortTrajectoryAbilityInterface::CleanupTrajectoryIndicatorOnUnequip()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "CleanupTrajectoryIndicatorOnUnequip");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "CleanupTrajectoryIndicatorOnUnequip");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -230968,9 +230968,9 @@ void IFortTrajectoryAbilityInterface::InitTrajectoryVariables()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "InitTrajectoryVariables");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "InitTrajectoryVariables");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -230985,13 +230985,13 @@ class AFortProjectileTrajectory* IFortTrajectoryAbilityInterface::SpawnTrajector
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "SpawnTrajectoryIndicator");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "SpawnTrajectoryIndicator");
 
 	Params::FortTrajectoryAbilityInterface_SpawnTrajectoryIndicator Parms{};
 
 	Parms.bSpawnOnEquip = bSpawnOnEquip;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -231005,9 +231005,9 @@ void IFortTrajectoryAbilityInterface::UpdateTrajectory()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "UpdateTrajectory");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "UpdateTrajectory");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -231021,11 +231021,11 @@ TSubclassOf<class AFortProjectileTrajectory> IFortTrajectoryAbilityInterface::Ge
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "GetProjectileTrajectoryActor");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "GetProjectileTrajectoryActor");
 
 	Params::FortTrajectoryAbilityInterface_GetProjectileTrajectoryActor Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
 }
@@ -231043,11 +231043,11 @@ void IFortTrajectoryAbilityInterface::GetProjectileTrajectoryPoints(TArray<struc
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "GetProjectileTrajectoryPoints");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "GetProjectileTrajectoryPoints");
 
 	Params::FortTrajectoryAbilityInterface_GetProjectileTrajectoryPoints Parms{};
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	if (OutSplinePoints != nullptr)
 		*OutSplinePoints = std::move(Parms.OutSplinePoints);
@@ -231070,14 +231070,14 @@ bool IFortTrajectoryAbilityInterface::ShouldOnlyShowTrajectoryOnUse() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("FortTrajectoryAbilityInterface", "ShouldOnlyShowTrajectoryOnUse");
+		Func = AsUObject()->Class->GetFunction("FortTrajectoryAbilityInterface", "ShouldOnlyShowTrajectoryOnUse");
 
 	Params::FortTrajectoryAbilityInterface_ShouldOnlyShowTrajectoryOnUse Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -231423,7 +231423,7 @@ void IVehicleTeleportPortal::NotifyTeleportedVehicle(class AActor* VehicleActor)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("VehicleTeleportPortal", "NotifyTeleportedVehicle");
+		Func = AsUObject()->Class->GetFunction("VehicleTeleportPortal", "NotifyTeleportedVehicle");
 
 	Params::VehicleTeleportPortal_NotifyTeleportedVehicle Parms{};
 
@@ -231432,7 +231432,7 @@ void IVehicleTeleportPortal::NotifyTeleportedVehicle(class AActor* VehicleActor)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -235039,14 +235039,14 @@ class UPrimitiveComponent* ILockableInterface::GetComponentToLock()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LockableInterface", "GetComponentToLock");
+		Func = AsUObject()->Class->GetFunction("LockableInterface", "GetComponentToLock");
 
 	Params::LockableInterface_GetComponentToLock Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 
@@ -235062,9 +235062,9 @@ void ILockableInterface::OnLocked()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LockableInterface", "OnLocked");
+		Func = AsUObject()->Class->GetFunction("LockableInterface", "OnLocked");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -235076,9 +235076,9 @@ void ILockableInterface::OnUnLocked()
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("LockableInterface", "OnUnLocked");
+		Func = AsUObject()->Class->GetFunction("LockableInterface", "OnUnLocked");
 
-	UObject::ProcessEvent(Func, nullptr);
+	AsUObject()->ProcessEvent(Func, nullptr);
 }
 
 
@@ -236129,7 +236129,7 @@ void IOpenableInterface::Close(class AController* ControllerInstigator)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OpenableInterface", "Close");
+		Func = AsUObject()->Class->GetFunction("OpenableInterface", "Close");
 
 	Params::OpenableInterface_Close Parms{};
 
@@ -236138,7 +236138,7 @@ void IOpenableInterface::Close(class AController* ControllerInstigator)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -236154,7 +236154,7 @@ void IOpenableInterface::Open(class AController* ControllerInstigator)
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OpenableInterface", "Open");
+		Func = AsUObject()->Class->GetFunction("OpenableInterface", "Open");
 
 	Params::OpenableInterface_Open Parms{};
 
@@ -236163,7 +236163,7 @@ void IOpenableInterface::Open(class AController* ControllerInstigator)
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 }
@@ -236179,14 +236179,14 @@ bool IOpenableInterface::IsOpen() const
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("OpenableInterface", "IsOpen");
+		Func = AsUObject()->Class->GetFunction("OpenableInterface", "IsOpen");
 
 	Params::OpenableInterface_IsOpen Parms{};
 
 	auto Flgs = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
 
-	UObject::ProcessEvent(Func, &Parms);
+	AsUObject()->ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
 

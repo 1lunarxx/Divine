@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCNL_Athena_UnderwaterDamage_C">();
+		BP_STATIC_CLASS_IMPL("GCNL_Athena_UnderwaterDamage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCNL_Athena_UnderwaterDamage_C")
 	}
 	static class AGCNL_Athena_UnderwaterDamage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCNL_Athena_UnderwaterDamage_C>();
 	}
 };
-static_assert(alignof(AGCNL_Athena_UnderwaterDamage_C) == 0x000008, "Wrong alignment on AGCNL_Athena_UnderwaterDamage_C");
-static_assert(sizeof(AGCNL_Athena_UnderwaterDamage_C) == 0x0007B0, "Wrong size on AGCNL_Athena_UnderwaterDamage_C");
-static_assert(offsetof(AGCNL_Athena_UnderwaterDamage_C, UberGraphFrame) == 0x000788, "Member 'AGCNL_Athena_UnderwaterDamage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCNL_Athena_UnderwaterDamage_C, Intensity) == 0x000790, "Member 'AGCNL_Athena_UnderwaterDamage_C::Intensity' has a wrong offset!");
-static_assert(offsetof(AGCNL_Athena_UnderwaterDamage_C, DamageTickSound) == 0x000798, "Member 'AGCNL_Athena_UnderwaterDamage_C::DamageTickSound' has a wrong offset!");
-static_assert(offsetof(AGCNL_Athena_UnderwaterDamage_C, DrownSoundMix) == 0x0007A0, "Member 'AGCNL_Athena_UnderwaterDamage_C::DrownSoundMix' has a wrong offset!");
-static_assert(offsetof(AGCNL_Athena_UnderwaterDamage_C, LocalTargetPawn) == 0x0007A8, "Member 'AGCNL_Athena_UnderwaterDamage_C::LocalTargetPawn' has a wrong offset!");
 
 }
 

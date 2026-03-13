@@ -23,15 +23,17 @@ class UTextStyle_Base_XS_I_40pc_WithShadow_C final : public UTextStyle_Base_XS_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-Base-XS-I-40pc_WithShadow_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-Base-XS-I-40pc_WithShadow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-Base-XS-I-40pc_WithShadow_C")
 	}
 	static class UTextStyle_Base_XS_I_40pc_WithShadow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_Base_XS_I_40pc_WithShadow_C>();
 	}
 };
-static_assert(alignof(UTextStyle_Base_XS_I_40pc_WithShadow_C) == 0x000008, "Wrong alignment on UTextStyle_Base_XS_I_40pc_WithShadow_C");
-static_assert(sizeof(UTextStyle_Base_XS_I_40pc_WithShadow_C) == 0x000148, "Wrong size on UTextStyle_Base_XS_I_40pc_WithShadow_C");
 
 }
 

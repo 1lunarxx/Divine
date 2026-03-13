@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CareerScreen_C">();
+		BP_STATIC_CLASS_IMPL("CareerScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CareerScreen_C")
 	}
 	static class UCareerScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCareerScreen_C>();
 	}
 };
-static_assert(alignof(UCareerScreen_C) == 0x000008, "Wrong alignment on UCareerScreen_C");
-static_assert(sizeof(UCareerScreen_C) == 0x0004B8, "Wrong size on UCareerScreen_C");
-static_assert(offsetof(UCareerScreen_C, UberGraphFrame) == 0x000468, "Member 'UCareerScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, FeatDisplaySwitcher) == 0x000470, "Member 'UCareerScreen_C::FeatDisplaySwitcher' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, GradOvr) == 0x000478, "Member 'UCareerScreen_C::GradOvr' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, NoAchievementMessage) == 0x000480, "Member 'UCareerScreen_C::NoAchievementMessage' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, SeasonHeadingTextLabel) == 0x000488, "Member 'UCareerScreen_C::SeasonHeadingTextLabel' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Switcher) == 0x000490, "Member 'UCareerScreen_C::Switcher' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, Input_ReplayCinematic) == 0x000498, "Member 'UCareerScreen_C::Input_ReplayCinematic' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, ActivatableMovieWidget) == 0x0004A8, "Member 'UCareerScreen_C::ActivatableMovieWidget' has a wrong offset!");
-static_assert(offsetof(UCareerScreen_C, AutoPlayVideo) == 0x0004B0, "Member 'UCareerScreen_C::AutoPlayVideo' has a wrong offset!");
 
 }
 

@@ -23,9 +23,6 @@ struct LetoFrontendJoinPrompt_Side_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LetoFrontendJoinPrompt_Side_C_OnMouseLeave) == 0x000008, "Wrong alignment on LetoFrontendJoinPrompt_Side_C_OnMouseLeave");
-static_assert(sizeof(LetoFrontendJoinPrompt_Side_C_OnMouseLeave) == 0x000070, "Wrong size on LetoFrontendJoinPrompt_Side_C_OnMouseLeave");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'LetoFrontendJoinPrompt_Side_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function LetoFrontendJoinPrompt_Side.LetoFrontendJoinPrompt_Side_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -35,10 +32,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(LetoFrontendJoinPrompt_Side_C_OnMouseEnter) == 0x000008, "Wrong alignment on LetoFrontendJoinPrompt_Side_C_OnMouseEnter");
-static_assert(sizeof(LetoFrontendJoinPrompt_Side_C_OnMouseEnter) == 0x0000A8, "Wrong size on LetoFrontendJoinPrompt_Side_C_OnMouseEnter");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'LetoFrontendJoinPrompt_Side_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'LetoFrontendJoinPrompt_Side_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function LetoFrontendJoinPrompt_Side.LetoFrontendJoinPrompt_Side_C.ExecuteUbergraph_LetoFrontendJoinPrompt_Side
 // 0x0120 (0x0120 - 0x0000)
@@ -51,12 +44,6 @@ public:
 	struct FGeometry                              K2Node_Event_MyGeometry;                           // 0x0078(0x0038)(IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          K2Node_Event_MouseEvent_1;                         // 0x00B0(0x0070)(ConstParm)
 };
-static_assert(alignof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side) == 0x000008, "Wrong alignment on LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side");
-static_assert(sizeof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side) == 0x000120, "Wrong size on LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side, EntryPoint) == 0x000000, "Member 'LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side::EntryPoint' has a wrong offset!");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side, K2Node_Event_MouseEvent) == 0x000008, "Member 'LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side, K2Node_Event_MyGeometry) == 0x000078, "Member 'LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side, K2Node_Event_MouseEvent_1) == 0x0000B0, "Member 'LetoFrontendJoinPrompt_Side_C_ExecuteUbergraph_LetoFrontendJoinPrompt_Side::K2Node_Event_MouseEvent_1' has a wrong offset!");
 
 }
 

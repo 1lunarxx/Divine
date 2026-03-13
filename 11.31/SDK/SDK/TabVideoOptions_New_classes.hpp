@@ -34,16 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabVideoOptions_New_C">();
+		BP_STATIC_CLASS_IMPL("TabVideoOptions_New_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabVideoOptions_New_C")
 	}
 	static class UTabVideoOptions_New_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabVideoOptions_New_C>();
 	}
 };
-static_assert(alignof(UTabVideoOptions_New_C) == 0x000008, "Wrong alignment on UTabVideoOptions_New_C");
-static_assert(sizeof(UTabVideoOptions_New_C) == 0x000338, "Wrong size on UTabVideoOptions_New_C");
-static_assert(offsetof(UTabVideoOptions_New_C, UberGraphFrame) == 0x000330, "Member 'UTabVideoOptions_New_C::UberGraphFrame' has a wrong offset!");
 
 }
 

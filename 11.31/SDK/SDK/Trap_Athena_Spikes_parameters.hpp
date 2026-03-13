@@ -53,7 +53,7 @@ public:
 	struct FFortPortableSoftParticles             K2Node_MakeStruct_FortPortableSoftParticles;       // 0x0408(0x0058)()
 	bool                                          CallFunc_IsDedicatedServer_ReturnValue_1;          // 0x0460(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_461[0x7];                                      // 0x0461(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, struct FParameterNameMapping> K2Node_MakeMap_Map;                                // 0x0468(0x0050)(ConstParm, ZeroConstructor)
+	TMap<class FName, struct FParameterNameMapping> K2Node_MakeMap_Map;                              // 0x0468(0x0050)(ConstParm, ZeroConstructor)
 	bool                                          Temp_bool_IsClosed_Variable;                       // 0x04B8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x04B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x04BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -128,94 +128,6 @@ public:
 	class UFXSystemComponent*                     CallFunc_SpawnFXAtLocation_ReturnValue;            // 0x0820(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TSoftObjectPtr<class UFXSystemAsset>          K2Node_Select_Default_3;                           // 0x0828(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes) == 0x000010, "Wrong alignment on Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes");
-static_assert(sizeof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes) == 0x000850, "Wrong size on Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, EntryPoint) == 0x000000, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::EntryPoint' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Option_B___If_false__use_Option_A_Variable) == 0x000004, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Option_B___If_false__use_Option_A_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsDedicatedServer_ReturnValue) == 0x000005, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam) == 0x000010, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_BreakVector_X) == 0x000090, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_BreakVector_Y) == 0x000094, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_BreakVector_Z) == 0x000098, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_VectorVector_ReturnValue) == 0x00009C, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x0000A8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_FloatFloat_ReturnValue_1) == 0x0000AC, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_MakeVector_ReturnValue) == 0x0000B0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_MakeVector_ReturnValue_1) == 0x0000BC, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_MakeVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_VectorVector_ReturnValue_1) == 0x0000C8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_VectorVector_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_VectorVector_ReturnValue_2) == 0x0000D4, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_VectorVector_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_1) == 0x0000E0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_2) == 0x000160, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_3) == 0x0001E0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_3' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Multiply_VectorVector_ReturnValue_3) == 0x000260, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Multiply_VectorVector_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_4) == 0x000270, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_4' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_5) == 0x0002F0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_5' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_ParticleSysParam_6) == 0x000370, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_ParticleSysParam_6' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeArray_Array) == 0x0003F0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Has_Been_Initd_Variable) == 0x000400, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Has_Been_Initd_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_FortPortableSoftParticles) == 0x000408, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_FortPortableSoftParticles' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsDedicatedServer_ReturnValue_1) == 0x000460, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsDedicatedServer_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeMap_Map) == 0x000468, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_IsClosed_Variable) == 0x0004B8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_IsClosed_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValid_ReturnValue) == 0x0004B9, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Not_PreBool_ReturnValue) == 0x0004BA, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_object_Variable) == 0x0004C0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_CustomEvent_Loaded) == 0x0004C8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_CustomEvent_Loaded' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_DynamicCast_AsFXSystem_Asset) == 0x0004D0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_DynamicCast_AsFXSystem_Asset' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_DynamicCast_bSuccess) == 0x0004D8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Variable) == 0x0004D9, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_MakeLiteralByte_ReturnValue) == 0x0004DA, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_MakeLiteralByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_object_Variable_1) == 0x0004E0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeStruct_FortPortableSoftParticles_1) == 0x0004E8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeStruct_FortPortableSoftParticles_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Variable_1) == 0x000540, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000541, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValidSoftObjectReference_ReturnValue_1) == 0x000542, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValidSoftObjectReference_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_BooleanOR_ReturnValue) == 0x000543, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_object_Variable_2) == 0x000548, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_object_Variable_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_CustomEvent_Loaded_1) == 0x000550, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_CustomEvent_Loaded_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_DynamicCast_AsFXSystem_Asset_1) == 0x000558, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_DynamicCast_AsFXSystem_Asset_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_DynamicCast_bSuccess_1) == 0x000560, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_Select_Default) == 0x000568, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Variable_2) == 0x000570, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_float_Variable) == 0x000574, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_LessEqual_FloatFloat_ReturnValue) == 0x000578, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_LessEqual_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, Temp_bool_Variable_3) == 0x000579, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_Select_Default_1) == 0x000580, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_CreateDelegate_OutputDelegate) == 0x0005D8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_SetFieldsInStruct_StructOut) == 0x0005E8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_SetFieldsInStruct_StructOut' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue) == 0x000640, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_Select_Default_2) == 0x000648, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000670, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_1) == 0x00067C, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_GetPlayerCameraManager_ReturnValue) == 0x000688, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_GetPlayerCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValid_ReturnValue_1) == 0x000690, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_GetCameraLocation_ReturnValue) == 0x000694, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_GetCameraLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_2) == 0x0006A0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_3) == 0x0006AC, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_4) == 0x0006B8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_5) == 0x0006C4, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_5' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_GameplayCueEvent_EventType) == 0x0006D0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_GameplayCueEvent_EventType' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_GameplayCueEvent_Parameters) == 0x0006D8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_GameplayCueEvent_Parameters' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_SwitchEnum_CmpSuccess) == 0x000790, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Lerp_ReturnValue) == 0x000794, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Lerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_CreateDelegate_OutputDelegate_1) == 0x000798, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Lerp_ReturnValue_1) == 0x0007A8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Lerp_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Lerp_ReturnValue_2) == 0x0007AC, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Lerp_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValid_ReturnValue_2) == 0x0007B0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_SpawnFXSystemAttached_ReturnValue) == 0x0007B8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_SpawnFXSystemAttached_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValid_ReturnValue_3) == 0x0007C0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValid_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsValid_ReturnValue_4) == 0x0007C1, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsValid_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_MapParticleInstanceParamNames_ReturnValue) == 0x0007C8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_MapParticleInstanceParamNames_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetComponentLocation_ReturnValue) == 0x0007D8, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetComponentLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_Subtract_VectorVector_ReturnValue) == 0x0007E4, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_VSize_ReturnValue) == 0x0007F0, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_VSize_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_6) == 0x0007F4, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_6' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_MakeArray_Array_1) == 0x000800, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_GetActorTeam_ReturnValue) == 0x000810, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue_1) == 0x000811, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_IsNiagaraEffectEnabledSoftPtr_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_K2_GetActorLocation_ReturnValue_7) == 0x000814, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_K2_GetActorLocation_ReturnValue_7' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, CallFunc_SpawnFXAtLocation_ReturnValue) == 0x000820, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::CallFunc_SpawnFXAtLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes, K2Node_Select_Default_3) == 0x000828, "Member 'Trap_Athena_Spikes_C_ExecuteUbergraph_Trap_Athena_Spikes::K2Node_Select_Default_3' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.GameplayCue.Abilities.Activation.Traps.ActivateTrap
 // 0x00C0 (0x00C0 - 0x0000)
@@ -226,10 +138,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGameplayCueParameters                 Parameters;                                        // 0x0008(0x00B8)(BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap) == 0x000008, "Wrong alignment on Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap");
-static_assert(sizeof(Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap) == 0x0000C0, "Wrong size on Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap");
-static_assert(offsetof(Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap, EventType) == 0x000000, "Member 'Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap::EventType' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap, Parameters) == 0x000008, "Member 'Trap_Athena_Spikes_C_GameplayCue_Abilities_Activation_Traps_ActivateTrap::Parameters' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D
 // 0x0008 (0x0008 - 0x0000)
@@ -238,9 +146,6 @@ struct Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D) == 0x000008, "Wrong alignment on Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D");
-static_assert(sizeof(Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D) == 0x000008, "Wrong size on Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D");
-static_assert(offsetof(Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D, Loaded) == 0x000000, "Member 'Trap_Athena_Spikes_C_OnLoaded_8A9D6DF7414FFDD42BE9FCB155F39B4D::Loaded' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1
 // 0x0008 (0x0008 - 0x0000)
@@ -249,9 +154,6 @@ struct Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1 final
 public:
 	class UObject*                                Loaded;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1) == 0x000008, "Wrong alignment on Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1");
-static_assert(sizeof(Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1) == 0x000008, "Wrong size on Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1");
-static_assert(offsetof(Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1, Loaded) == 0x000000, "Member 'Trap_Athena_Spikes_C_OnLoaded_8E622EE64F2AF153BE7162BA1D8EBCC1::Loaded' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.UserConstructionScript
 // 0x0008 (0x0008 - 0x0000)
@@ -260,9 +162,6 @@ struct Trap_Athena_Spikes_C_UserConstructionScript final
 public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_UserConstructionScript) == 0x000008, "Wrong alignment on Trap_Athena_Spikes_C_UserConstructionScript");
-static_assert(sizeof(Trap_Athena_Spikes_C_UserConstructionScript) == 0x000008, "Wrong size on Trap_Athena_Spikes_C_UserConstructionScript");
-static_assert(offsetof(Trap_Athena_Spikes_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'Trap_Athena_Spikes_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.SetSpikePosition
 // 0x0010 (0x0010 - 0x0000)
@@ -272,10 +171,6 @@ public:
 	float                                         NewSpikePosition;                                  // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_MakeVector_ReturnValue;                   // 0x0004(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_SetSpikePosition) == 0x000004, "Wrong alignment on Trap_Athena_Spikes_C_SetSpikePosition");
-static_assert(sizeof(Trap_Athena_Spikes_C_SetSpikePosition) == 0x000010, "Wrong size on Trap_Athena_Spikes_C_SetSpikePosition");
-static_assert(offsetof(Trap_Athena_Spikes_C_SetSpikePosition, NewSpikePosition) == 0x000000, "Member 'Trap_Athena_Spikes_C_SetSpikePosition::NewSpikePosition' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_SetSpikePosition, CallFunc_MakeVector_ReturnValue) == 0x000004, "Member 'Trap_Athena_Spikes_C_SetSpikePosition::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C.MaterialSweepOnSpikes
 // 0x0024 (0x0024 - 0x0000)
@@ -289,14 +184,6 @@ public:
 	float                                         CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x0020(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes) == 0x000004, "Wrong alignment on Trap_Athena_Spikes_C_MaterialSweepOnSpikes");
-static_assert(sizeof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes) == 0x000024, "Wrong size on Trap_Athena_Spikes_C_MaterialSweepOnSpikes");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, SweepSpeed_0) == 0x000000, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::SweepSpeed_0' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, SweepColor_0) == 0x000004, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::SweepColor_0' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, SweepExponent_0) == 0x000014, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::SweepExponent_0' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, Temp_float_Variable) == 0x000018, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::Temp_float_Variable' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, CallFunc_GetGameTimeInSeconds_ReturnValue) == 0x00001C, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::CallFunc_GetGameTimeInSeconds_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C_MaterialSweepOnSpikes, CallFunc_Multiply_FloatFloat_ReturnValue) == 0x000020, "Member 'Trap_Athena_Spikes_C_MaterialSweepOnSpikes::CallFunc_Multiply_FloatFloat_ReturnValue' has a wrong offset!");
 
 // Function Trap_Athena_Spikes.Trap_Athena_Spikes_C. ChangeToFriendlyMaterial
 // 0x0030 (0x0030 - 0x0000)
@@ -315,17 +202,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x002E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x002F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial) == 0x000008, "Wrong alignment on Trap_Athena_Spikes_C__ChangeToFriendlyMaterial");
-static_assert(sizeof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial) == 0x000030, "Wrong size on Trap_Athena_Spikes_C__ChangeToFriendlyMaterial");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_GetSubGame_ReturnValue) == 0x000000, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_GetLocalFortPlayerControllers_ReturnValue) == 0x000008, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_GetLocalFortPlayerControllers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000018, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_Array_Get_Item) == 0x000020, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_GetActorTeam_ReturnValue) == 0x00002C, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_GetActorTeam_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_Greater_IntInt_ReturnValue) == 0x00002D, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00002E, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(Trap_Athena_Spikes_C__ChangeToFriendlyMaterial, CallFunc_BooleanAND_ReturnValue) == 0x00002F, "Member 'Trap_Athena_Spikes_C__ChangeToFriendlyMaterial::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
 
 }
 

@@ -49,29 +49,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"UIEmitter_C">();
+		BP_STATIC_CLASS_IMPL("UIEmitter_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"UIEmitter_C")
 	}
 	static class UUIEmitter_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UUIEmitter_C>();
 	}
 };
-static_assert(alignof(UUIEmitter_C) == 0x000008, "Wrong alignment on UUIEmitter_C");
-static_assert(sizeof(UUIEmitter_C) == 0x000290, "Wrong size on UUIEmitter_C");
-static_assert(offsetof(UUIEmitter_C, UberGraphFrame) == 0x000230, "Member 'UUIEmitter_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, Overlay_Emitter) == 0x000238, "Member 'UUIEmitter_C::Overlay_Emitter' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, UIEmmitterElement) == 0x000240, "Member 'UUIEmitter_C::UIEmmitterElement' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, Materials) == 0x000248, "Member 'UUIEmitter_C::Materials' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, MaxElements) == 0x000258, "Member 'UUIEmitter_C::MaxElements' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, AngleRange) == 0x00025C, "Member 'UUIEmitter_C::AngleRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, DistanceRange) == 0x000264, "Member 'UUIEmitter_C::DistanceRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, ParticleLifeRange) == 0x00026C, "Member 'UUIEmitter_C::ParticleLifeRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, SpinSpeedRange) == 0x000274, "Member 'UUIEmitter_C::SpinSpeedRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, SizeRange) == 0x00027C, "Member 'UUIEmitter_C::SizeRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, EmitterLifeRange) == 0x000284, "Member 'UUIEmitter_C::EmitterLifeRange' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, RunOnce) == 0x00028C, "Member 'UUIEmitter_C::RunOnce' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, StartAutomatically) == 0x00028D, "Member 'UUIEmitter_C::StartAutomatically' has a wrong offset!");
-static_assert(offsetof(UUIEmitter_C, EmitterExpired) == 0x00028E, "Member 'UUIEmitter_C::EmitterExpired' has a wrong offset!");
 
 }
 

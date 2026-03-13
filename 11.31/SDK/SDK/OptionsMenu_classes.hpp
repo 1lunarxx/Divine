@@ -157,65 +157,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenu_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenu_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenu_C")
 	}
 	static class UOptionsMenu_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenu_C>();
 	}
 };
-static_assert(alignof(UOptionsMenu_C) == 0x000008, "Wrong alignment on UOptionsMenu_C");
-static_assert(sizeof(UOptionsMenu_C) == 0x000878, "Wrong size on UOptionsMenu_C");
-static_assert(offsetof(UOptionsMenu_C, UberGraphFrame) == 0x0004F8, "Member 'UOptionsMenu_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, BackgroundBorder) == 0x000500, "Member 'UOptionsMenu_C::BackgroundBorder' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, BorderBackground) == 0x000508, "Member 'UOptionsMenu_C::BorderBackground' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, CloseIcon) == 0x000510, "Member 'UOptionsMenu_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Image_0) == 0x000518, "Member 'UOptionsMenu_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Message) == 0x000520, "Member 'UOptionsMenu_C::Message' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, MobileCloseButton) == 0x000528, "Member 'UOptionsMenu_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, OverlayCloseButton) == 0x000530, "Member 'UOptionsMenu_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, OverlayText) == 0x000538, "Member 'UOptionsMenu_C::OverlayText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SafeZone_0) == 0x000540, "Member 'UOptionsMenu_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SavingLayer) == 0x000548, "Member 'UOptionsMenu_C::SavingLayer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SettingsTabs) == 0x000550, "Member 'UOptionsMenu_C::SettingsTabs' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Title) == 0x000558, "Member 'UOptionsMenu_C::Title' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, VideoSettingsAccept) == 0x000560, "Member 'UOptionsMenu_C::VideoSettingsAccept' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, VideoSettingsCancel) == 0x000568, "Member 'UOptionsMenu_C::VideoSettingsCancel' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SelectedOption) == 0x000570, "Member 'UOptionsMenu_C::SelectedOption' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Current_Tab) == 0x000574, "Member 'UOptionsMenu_C::Current_Tab' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Accept_Input) == 0x00057C, "Member 'UOptionsMenu_C::Accept_Input' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Video_Tab_Selected) == 0x00057D, "Member 'UOptionsMenu_C::Video_Tab_Selected' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Apply_Visible) == 0x00057E, "Member 'UOptionsMenu_C::Apply_Visible' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, AllTabWidgets) == 0x000580, "Member 'UOptionsMenu_C::AllTabWidgets' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, SavingModal) == 0x000590, "Member 'UOptionsMenu_C::SavingModal' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, VideoTabClass) == 0x000598, "Member 'UOptionsMenu_C::VideoTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, AccountTabClass) == 0x0005A0, "Member 'UOptionsMenu_C::AccountTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, GamepadTabClass) == 0x0005A8, "Member 'UOptionsMenu_C::GamepadTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, InputTabClass) == 0x0005B0, "Member 'UOptionsMenu_C::InputTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, LoadCount) == 0x0005B8, "Member 'UOptionsMenu_C::LoadCount' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabGamePad) == 0x0005C0, "Member 'UOptionsMenu_C::TabGamePad' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabAccount) == 0x0005E8, "Member 'UOptionsMenu_C::TabAccount' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabAccountV2) == 0x000610, "Member 'UOptionsMenu_C::TabAccountV2' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabVideoOptions) == 0x000638, "Member 'UOptionsMenu_C::TabVideoOptions' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabVideoOptionsV2) == 0x000660, "Member 'UOptionsMenu_C::TabVideoOptionsV2' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabInputOptions) == 0x000688, "Member 'UOptionsMenu_C::TabInputOptions' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ToggleModeAction) == 0x0006B0, "Member 'UOptionsMenu_C::ToggleModeAction' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ApplyAction) == 0x0006C0, "Member 'UOptionsMenu_C::ApplyAction' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ResetToDefault) == 0x0006D0, "Member 'UOptionsMenu_C::ResetToDefault' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, Back) == 0x0006E0, "Member 'UOptionsMenu_C::Back' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabInputOptionsV2) == 0x0006F0, "Member 'UOptionsMenu_C::TabInputOptionsV2' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ResetVideoOptionsTimer) == 0x000718, "Member 'UOptionsMenu_C::ResetVideoOptionsTimer' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabAccessibilityOptions) == 0x000720, "Member 'UOptionsMenu_C::TabAccessibilityOptions' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, AccessibilityTabClass) == 0x000748, "Member 'UOptionsMenu_C::AccessibilityTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabBrightnessOptions) == 0x000750, "Member 'UOptionsMenu_C::TabBrightnessOptions' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, BrightnessTabClass) == 0x000778, "Member 'UOptionsMenu_C::BrightnessTabClass' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabLabels) == 0x000780, "Member 'UOptionsMenu_C::TabLabels' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, TabIds) == 0x000790, "Member 'UOptionsMenu_C::TabIds' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, OnSettingsApplied) == 0x0007A0, "Member 'UOptionsMenu_C::OnSettingsApplied' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ChoosePreset) == 0x0007B0, "Member 'UOptionsMenu_C::ChoosePreset' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, NewControllerSettingsTab) == 0x0007C0, "Member 'UOptionsMenu_C::NewControllerSettingsTab' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ControllerSensitivity) == 0x0007E8, "Member 'UOptionsMenu_C::ControllerSensitivity' has a wrong offset!");
-static_assert(offsetof(UOptionsMenu_C, ControllerSensitivityTabClass) == 0x000870, "Member 'UOptionsMenu_C::ControllerSensitivityTabClass' has a wrong offset!");
 
 }
 

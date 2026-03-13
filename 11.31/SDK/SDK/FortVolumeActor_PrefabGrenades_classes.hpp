@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortVolumeActor_PrefabGrenades_C">();
+		BP_STATIC_CLASS_IMPL("FortVolumeActor_PrefabGrenades_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortVolumeActor_PrefabGrenades_C")
 	}
 	static class AFortVolumeActor_PrefabGrenades_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AFortVolumeActor_PrefabGrenades_C>();
 	}
 };
-static_assert(alignof(AFortVolumeActor_PrefabGrenades_C) == 0x000008, "Wrong alignment on AFortVolumeActor_PrefabGrenades_C");
-static_assert(sizeof(AFortVolumeActor_PrefabGrenades_C) == 0x000B08, "Wrong size on AFortVolumeActor_PrefabGrenades_C");
-static_assert(offsetof(AFortVolumeActor_PrefabGrenades_C, UberGraphFrame_FortVolumeActor_PrefabGrenades_C) == 0x000B00, "Member 'AFortVolumeActor_PrefabGrenades_C::UberGraphFrame_FortVolumeActor_PrefabGrenades_C' has a wrong offset!");
 
 }
 

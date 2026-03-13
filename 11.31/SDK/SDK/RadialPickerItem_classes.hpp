@@ -34,45 +34,34 @@ public:
 	class UFortMultiSizeItemCard*                 PickerItem;                                        // 0x0290(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UCommonTextBlock*                       TextLabel;                                         // 0x0298(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class FText                                   PickerItemText;                                    // 0x02A0(0x0018)(Edit, BlueprintVisible)
-	TMulticastInlineDelegate<void(class URadialPickerItem_C* Picked_Option)> On_Item_Touched;                                   // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class URadialPickerItem_C* Picked_Option)> On_Item_Touched;        // 0x02B8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FLinearColor                           DefaultSelectedColor;                              // 0x02C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           DefaultUnselectedColor;                            // 0x02D8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void UpdateSelectionColor(bool Selected_0);
-	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
-	void SetShowImageAndLabel(bool ShowImageAndLabel);
 	void SetItemContent(class UFortItem* Item, bool Option_Enabled, int32 Radial_Item_Index);
 	void SetSelected(bool IsSelected);
 	void SetImageAndLabelContent(const class FText& Text, TSoftObjectPtr<class UTexture2D> Icon, const struct FSlateBrush& Brush, bool Option_Enabled, int32 RadialItemIndex);
 	void Construct();
 	void ExecuteUbergraph_RadialPickerItem(int32 EntryPoint);
+	void UpdateSelectionColor(bool Selected_0);
+	struct FEventReply OnMouseButtonDown(const struct FGeometry& MyGeometry, const struct FPointerEvent& MouseEvent);
+	void SetShowImageAndLabel(bool ShowImageAndLabel);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"RadialPickerItem_C">();
+		BP_STATIC_CLASS_IMPL("RadialPickerItem_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"RadialPickerItem_C")
 	}
 	static class URadialPickerItem_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<URadialPickerItem_C>();
 	}
 };
-static_assert(alignof(URadialPickerItem_C) == 0x000008, "Wrong alignment on URadialPickerItem_C");
-static_assert(sizeof(URadialPickerItem_C) == 0x0002E8, "Wrong size on URadialPickerItem_C");
-static_assert(offsetof(URadialPickerItem_C, UberGraphFrame) == 0x000258, "Member 'URadialPickerItem_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, Selected) == 0x000260, "Member 'URadialPickerItem_C::Selected' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, BorderItemBorder) == 0x000268, "Member 'URadialPickerItem_C::BorderItemBorder' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, ImageIcon) == 0x000270, "Member 'URadialPickerItem_C::ImageIcon' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, ImageItemNotSelected) == 0x000278, "Member 'URadialPickerItem_C::ImageItemNotSelected' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, ImageOrItemSwitcher) == 0x000280, "Member 'URadialPickerItem_C::ImageOrItemSwitcher' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, KeybindWidget) == 0x000288, "Member 'URadialPickerItem_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, PickerItem) == 0x000290, "Member 'URadialPickerItem_C::PickerItem' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, TextLabel) == 0x000298, "Member 'URadialPickerItem_C::TextLabel' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, PickerItemText) == 0x0002A0, "Member 'URadialPickerItem_C::PickerItemText' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, On_Item_Touched) == 0x0002B8, "Member 'URadialPickerItem_C::On_Item_Touched' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, DefaultSelectedColor) == 0x0002C8, "Member 'URadialPickerItem_C::DefaultSelectedColor' has a wrong offset!");
-static_assert(offsetof(URadialPickerItem_C, DefaultUnselectedColor) == 0x0002D8, "Member 'URadialPickerItem_C::DefaultUnselectedColor' has a wrong offset!");
 
 }
 

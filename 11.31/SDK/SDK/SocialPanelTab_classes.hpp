@@ -38,20 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanelTab_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanelTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanelTab_C")
 	}
 	static class USocialPanelTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanelTab_C>();
 	}
 };
-static_assert(alignof(USocialPanelTab_C) == 0x000008, "Wrong alignment on USocialPanelTab_C");
-static_assert(sizeof(USocialPanelTab_C) == 0x000BF8, "Wrong size on USocialPanelTab_C");
-static_assert(offsetof(USocialPanelTab_C, UberGraphFrame) == 0x000BD0, "Member 'USocialPanelTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanelTab_C, Unselected) == 0x000BD8, "Member 'USocialPanelTab_C::Unselected' has a wrong offset!");
-static_assert(offsetof(USocialPanelTab_C, OnFriendsOnlineUpdated) == 0x000BE0, "Member 'USocialPanelTab_C::OnFriendsOnlineUpdated' has a wrong offset!");
-static_assert(offsetof(USocialPanelTab_C, Hovered) == 0x000BE8, "Member 'USocialPanelTab_C::Hovered' has a wrong offset!");
-static_assert(offsetof(USocialPanelTab_C, Selected) == 0x000BF0, "Member 'USocialPanelTab_C::Selected' has a wrong offset!");
 
 }
 

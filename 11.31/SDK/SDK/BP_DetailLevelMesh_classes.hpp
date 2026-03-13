@@ -34,20 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_DetailLevelMesh_C">();
+		BP_STATIC_CLASS_IMPL("BP_DetailLevelMesh_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_DetailLevelMesh_C")
 	}
 	static class ABP_DetailLevelMesh_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ABP_DetailLevelMesh_C>();
 	}
 };
-static_assert(alignof(ABP_DetailLevelMesh_C) == 0x000008, "Wrong alignment on ABP_DetailLevelMesh_C");
-static_assert(sizeof(ABP_DetailLevelMesh_C) == 0x000238, "Wrong size on ABP_DetailLevelMesh_C");
-static_assert(offsetof(ABP_DetailLevelMesh_C, UberGraphFrame) == 0x000218, "Member 'ABP_DetailLevelMesh_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ABP_DetailLevelMesh_C, StaticMesh) == 0x000220, "Member 'ABP_DetailLevelMesh_C::StaticMesh' has a wrong offset!");
-static_assert(offsetof(ABP_DetailLevelMesh_C, DefaultSceneRoot) == 0x000228, "Member 'ABP_DetailLevelMesh_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ABP_DetailLevelMesh_C, AlwaysVisible) == 0x000230, "Member 'ABP_DetailLevelMesh_C::AlwaysVisible' has a wrong offset!");
-static_assert(offsetof(ABP_DetailLevelMesh_C, NotVisibleOnSwitch) == 0x000231, "Member 'ABP_DetailLevelMesh_C::NotVisibleOnSwitch' has a wrong offset!");
 
 }
 

@@ -54,44 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SubgameSelect_v2_C">();
+		BP_STATIC_CLASS_IMPL("SubgameSelect_v2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubgameSelect_v2_C")
 	}
 	static class USubgameSelect_v2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubgameSelect_v2_C>();
 	}
 };
-static_assert(alignof(USubgameSelect_v2_C) == 0x000008, "Wrong alignment on USubgameSelect_v2_C");
-static_assert(sizeof(USubgameSelect_v2_C) == 0x0004F0, "Wrong size on USubgameSelect_v2_C");
-static_assert(offsetof(USubgameSelect_v2_C, v2_Outro) == 0x000408, "Member 'USubgameSelect_v2_C::v2_Outro' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SelectModeIdle) == 0x000410, "Member 'USubgameSelect_v2_C::SelectModeIdle' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, v2_Intro) == 0x000418, "Member 'USubgameSelect_v2_C::v2_Intro' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, FadeOutBGImage) == 0x000420, "Member 'USubgameSelect_v2_C::FadeOutBGImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, FadeInBGImage) == 0x000428, "Member 'USubgameSelect_v2_C::FadeInBGImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ShowCreativeImage) == 0x000430, "Member 'USubgameSelect_v2_C::ShowCreativeImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SaleANIM) == 0x000438, "Member 'USubgameSelect_v2_C::SaleANIM' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, Button_Shine) == 0x000440, "Member 'USubgameSelect_v2_C::Button_Shine' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, Pan_P1P2) == 0x000448, "Member 'USubgameSelect_v2_C::Pan_P1P2' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, Pan_P1) == 0x000450, "Member 'USubgameSelect_v2_C::Pan_P1' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, Pan_P2) == 0x000458, "Member 'USubgameSelect_v2_C::Pan_P2' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ContractSeperator) == 0x000460, "Member 'USubgameSelect_v2_C::ContractSeperator' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ToggleCycle) == 0x000468, "Member 'USubgameSelect_v2_C::ToggleCycle' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SwitchTextures) == 0x000470, "Member 'USubgameSelect_v2_C::SwitchTextures' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ExpandSeperator) == 0x000478, "Member 'USubgameSelect_v2_C::ExpandSeperator' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, DescriptionIntro) == 0x000480, "Member 'USubgameSelect_v2_C::DescriptionIntro' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SwitchMaterial) == 0x000488, "Member 'USubgameSelect_v2_C::SwitchMaterial' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, BGImage) == 0x000490, "Member 'USubgameSelect_v2_C::BGImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ButtonBack) == 0x000498, "Member 'USubgameSelect_v2_C::ButtonBack' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ButtonPurchase) == 0x0004A0, "Member 'USubgameSelect_v2_C::ButtonPurchase' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ButtonRedeem) == 0x0004A8, "Member 'USubgameSelect_v2_C::ButtonRedeem' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ConsoleProfileWidget) == 0x0004B0, "Member 'USubgameSelect_v2_C::ConsoleProfileWidget' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, Image_IdlePulse) == 0x0004B8, "Member 'USubgameSelect_v2_C::Image_IdlePulse' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SafeZone_1) == 0x0004C0, "Member 'USubgameSelect_v2_C::SafeZone_1' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SpeedLines) == 0x0004C8, "Member 'USubgameSelect_v2_C::SpeedLines' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SpinnerImage) == 0x0004D0, "Member 'USubgameSelect_v2_C::SpinnerImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, SwitcherMenu) == 0x0004D8, "Member 'USubgameSelect_v2_C::SwitcherMenu' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, TitleImage) == 0x0004E0, "Member 'USubgameSelect_v2_C::TitleImage' has a wrong offset!");
-static_assert(offsetof(USubgameSelect_v2_C, ShouldStartOnSTWUpsell) == 0x0004E8, "Member 'USubgameSelect_v2_C::ShouldStartOnSTWUpsell' has a wrong offset!");
 
 }
 

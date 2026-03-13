@@ -28,18 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ProgressWidget_C">();
+		BP_STATIC_CLASS_IMPL("ProgressWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ProgressWidget_C")
 	}
 	static class UProgressWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UProgressWidget_C>();
 	}
 };
-static_assert(alignof(UProgressWidget_C) == 0x000008, "Wrong alignment on UProgressWidget_C");
-static_assert(sizeof(UProgressWidget_C) == 0x000288, "Wrong size on UProgressWidget_C");
-static_assert(offsetof(UProgressWidget_C, ProgressSizeBox) == 0x000270, "Member 'UProgressWidget_C::ProgressSizeBox' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, ProgressSpinner) == 0x000278, "Member 'UProgressWidget_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UProgressWidget_C, ProgressVBox) == 0x000280, "Member 'UProgressWidget_C::ProgressVBox' has a wrong offset!");
 
 }
 

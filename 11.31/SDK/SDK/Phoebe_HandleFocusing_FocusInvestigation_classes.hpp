@@ -23,15 +23,17 @@ class UPhoebe_HandleFocusing_FocusInvestigation_C final : public UFortAthenaAIBo
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Phoebe_HandleFocusing_FocusInvestigation_C">();
+		BP_STATIC_CLASS_IMPL("Phoebe_HandleFocusing_FocusInvestigation_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Phoebe_HandleFocusing_FocusInvestigation_C")
 	}
 	static class UPhoebe_HandleFocusing_FocusInvestigation_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPhoebe_HandleFocusing_FocusInvestigation_C>();
 	}
 };
-static_assert(alignof(UPhoebe_HandleFocusing_FocusInvestigation_C) == 0x000008, "Wrong alignment on UPhoebe_HandleFocusing_FocusInvestigation_C");
-static_assert(sizeof(UPhoebe_HandleFocusing_FocusInvestigation_C) == 0x0000D8, "Wrong size on UPhoebe_HandleFocusing_FocusInvestigation_C");
 
 }
 

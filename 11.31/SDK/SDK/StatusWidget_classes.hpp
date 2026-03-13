@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"StatusWidget_C">();
+		BP_STATIC_CLASS_IMPL("StatusWidget_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"StatusWidget_C")
 	}
 	static class UStatusWidget_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UStatusWidget_C>();
 	}
 };
-static_assert(alignof(UStatusWidget_C) == 0x000008, "Wrong alignment on UStatusWidget_C");
-static_assert(sizeof(UStatusWidget_C) == 0x0004A8, "Wrong size on UStatusWidget_C");
-static_assert(offsetof(UStatusWidget_C, UberGraphFrame) == 0x0004A0, "Member 'UStatusWidget_C::UberGraphFrame' has a wrong offset!");
 
 }
 

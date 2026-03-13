@@ -35,15 +35,6 @@ public:
 	EOfferPurchaseError                           CallFunc_CanPurchaseOffer_ReturnValue;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer) == 0x000030, "Wrong size on StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, PirceIndex) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::PirceIndex' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, ReturnValue) == 0x000004, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, CallFunc_GetOfferInfo_ReturnValue) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, CallFunc_GetOfferId_ReturnValue) == 0x000018, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::CallFunc_GetOfferId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, CallFunc_CanPurchaseOffer_ReturnValue) == 0x000028, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::CallFunc_CanPurchaseOffer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000029, "Member 'StoreMain_RMT_OfferDetails_C_CanPurchaseMtxPriceOffer::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.SetupCurrencyImage
 // 0x0070 (0x0070 - 0x0000)
@@ -72,24 +63,6 @@ public:
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UFortAccountItemDefinition*             CallFunc_GetPriceItem_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_SetupCurrencyImage");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage) == 0x000070, "Wrong size on StoreMain_RMT_OfferDetails_C_SetupCurrencyImage");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, Temp_bool_Variable) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, Temp_byte_Variable) == 0x000001, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, Temp_byte_Variable_1) == 0x000002, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetOfferInfo_ReturnValue) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetFortStoreOfferType_ReturnValue) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetFortStoreOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000012, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_Not_PreBool_ReturnValue) == 0x000013, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000018, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_IsPriceInRealMoney_ReturnValue) == 0x000020, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_IsPriceInRealMoney_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetSmallPreviewImage_ReturnValue) == 0x000028, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetSmallPreviewImage_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_BooleanAND_ReturnValue) == 0x000050, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, K2Node_Select_Default) == 0x000051, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetOfferInfo_ReturnValue_2) == 0x000058, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetOfferInfo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetPriceItem_RequiredItemCount) == 0x000060, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetPriceItem_RequiredItemCount' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetupCurrencyImage, CallFunc_GetPriceItem_ReturnValue) == 0x000068, "Member 'StoreMain_RMT_OfferDetails_C_SetupCurrencyImage::CallFunc_GetPriceItem_ReturnValue' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.Set colors from data Asset
 // 0x0888 (0x0888 - 0x0000)
@@ -128,35 +101,6 @@ public:
 	uint8                                         Pad_87C[0x4];                                      // 0x087C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0880(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset) == 0x000888, "Wrong size on StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Upsell_Primary) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Upsell_Primary' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Upsell_Secondary) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Upsell_Secondary' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Text_Color) == 0x000020, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Text_Color' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Use_Base_Color) == 0x000030, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Use_Base_Color' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Background) == 0x000034, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Background' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Gradient) == 0x000044, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Gradient' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor) == 0x000058, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor_1) == 0x000080, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor_2) == 0x0000A8, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor_3) == 0x0000D0, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor_3' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor_4) == 0x0000F8, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor_4' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, CallFunc_BreakColor_R) == 0x000120, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::CallFunc_BreakColor_R' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, CallFunc_BreakColor_G) == 0x000124, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::CallFunc_BreakColor_G' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, CallFunc_BreakColor_B) == 0x000128, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::CallFunc_BreakColor_B' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, CallFunc_BreakColor_A) == 0x00012C, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::CallFunc_BreakColor_A' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_LinearColor) == 0x000130, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_LinearColor' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateColor_5) == 0x000140, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateColor_5' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateBrush) == 0x000168, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateBrush_1) == 0x0001F0, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateBrush_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateBrush_2) == 0x000278, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateBrush_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_SlateBrush_3) == 0x000300, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_SlateBrush_3' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_MakeStruct_ScrollBarStyle) == 0x000388, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_MakeStruct_ScrollBarStyle' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Temp_bool_Variable) == 0x000858, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, Temp_bool_Variable_1) == 0x000859, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_Select_Default) == 0x00085C, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, K2Node_Select_Default_1) == 0x00086C, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000880, "Member 'StoreMain_RMT_OfferDetails_C_Set_colors_from_data_Asset::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.UpdatePurchaseButton
 // 0x00B8 (0x00B8 - 0x0000)
@@ -190,28 +134,6 @@ public:
 	class FText                                   K2Node_Select_Default;                             // 0x0088(0x0018)()
 	class FText                                   K2Node_Select_Default_1;                           // 0x00A0(0x0018)()
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton) == 0x0000B8, "Wrong size on StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, MtxPrice) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::MtxPrice' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, bCannotGiftItem) == 0x000001, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::bCannotGiftItem' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, bCannotAffordItem) == 0x000002, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::bCannotAffordItem' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, PriceIndex) == 0x000004, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::PriceIndex' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, Temp_bool_Variable) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, Temp_text_Variable) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, Temp_text_Variable_1) == 0x000028, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, Temp_bool_Variable_1) == 0x000040, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, Temp_text_Variable_2) == 0x000048, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_CanPurchaseMtxPriceOffer_ReturnValue) == 0x000060, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_CanPurchaseMtxPriceOffer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_GetOfferInfo_ReturnValue) == 0x000068, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_IsGiftable_ReturnValue) == 0x000070, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_IsGiftable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_IsPriceInMTX_ReturnValue) == 0x000071, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_IsPriceInMTX_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_Not_PreBool_ReturnValue) == 0x000072, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000078, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_BooleanOR_ReturnValue) == 0x000080, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_AreGrantedItemsOwned_ReturnValue) == 0x000081, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_AreGrantedItemsOwned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, CallFunc_BooleanAND_ReturnValue) == 0x000082, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, K2Node_Select_Default) == 0x000088, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton, K2Node_Select_Default_1) == 0x0000A0, "Member 'StoreMain_RMT_OfferDetails_C_UpdatePurchaseButton::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.InitDetailAttributes
 // 0x0080 (0x0080 - 0x0000)
@@ -232,20 +154,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0078(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x007C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_InitDetailAttributes");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes) == 0x000080, "Wrong size on StoreMain_RMT_OfferDetails_C_InitDetailAttributes");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, TertiaryColor) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::TertiaryColor' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, Temp_int_Array_Index_Variable) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_GetOfferInfo_ReturnValue) == 0x000020, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_GetOfferDisplayAsset_ReturnValue) == 0x000028, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_GetOfferDisplayAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_GetOwningPlayer_ReturnValue) == 0x000030, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_Create_ReturnValue) == 0x000038, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_Array_Get_Item) == 0x000040, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x000070, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_Array_Length_ReturnValue) == 0x000078, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitDetailAttributes, CallFunc_Less_IntInt_ReturnValue) == 0x00007C, "Member 'StoreMain_RMT_OfferDetails_C_InitDetailAttributes::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.SetPurchaseButtonText
 // 0x0028 (0x0028 - 0x0000)
@@ -256,11 +164,6 @@ public:
 	class UIconTextButton_C*                      K2Node_DynamicCast_AsIcon_Text_Button;             // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText) == 0x000028, "Wrong size on StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText, ButtonText) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText::ButtonText' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000018, "Member 'StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'StoreMain_RMT_OfferDetails_C_SetPurchaseButtonText::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.IsGiftingStorefrontOffer
 // 0x0018 (0x0018 - 0x0000)
@@ -272,11 +175,6 @@ public:
 	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue;                 // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsGiftingStorefrontOffer_ReturnValue;     // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer) == 0x000018, "Wrong size on StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer, ReturnValue) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer::ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer, CallFunc_GetOfferInfo_ReturnValue) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer, CallFunc_IsGiftingStorefrontOffer_ReturnValue) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_IsGiftingStorefrontOffer::CallFunc_IsGiftingStorefrontOffer_ReturnValue' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.InitCurrency
 // 0x00A8 (0x00A8 - 0x0000)
@@ -315,36 +213,6 @@ public:
 	class FText                                   CallFunc_Conv_IntToText_ReturnValue_1;             // 0x0088(0x0018)()
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_InitCurrency) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_InitCurrency");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_InitCurrency) == 0x0000A8, "Wrong size on StoreMain_RMT_OfferDetails_C_InitCurrency");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable_1) == 0x000001, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_bool_Variable) == 0x000002, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable_2) == 0x000003, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable_3) == 0x000004, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_bool_Variable_1) == 0x000005, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable_4) == 0x000006, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_byte_Variable_5) == 0x000007, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetOfferInfo_ReturnValue) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, Temp_bool_Variable_2) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetDescription_ReturnValue) == 0x000018, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000030, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetOfferInfo_ReturnValue_2) == 0x000038, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetOfferInfo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetBonusQuantity_ReturnValue) == 0x000040, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetBonusQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetTotalQuantity_ReturnValue) == 0x000044, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetTotalQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_Greater_IntInt_ReturnValue) == 0x000048, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_Greater_IntInt_ReturnValue_1) == 0x000049, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_Greater_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, K2Node_Select_Default) == 0x00004A, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, K2Node_Select_Default_1) == 0x00004B, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetOfferInfo_ReturnValue_3) == 0x000050, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetOfferInfo_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetOfferInfo_ReturnValue_4) == 0x000058, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetOfferInfo_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetBonusQuantity_ReturnValue_1) == 0x000060, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetBonusQuantity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetTotalQuantity_ReturnValue_1) == 0x000064, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetTotalQuantity_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_Conv_IntToText_ReturnValue) == 0x000068, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_Greater_IntInt_ReturnValue_2) == 0x000080, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_Greater_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_GetBaseQuantity_ReturnValue) == 0x000084, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_GetBaseQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, CallFunc_Conv_IntToText_ReturnValue_1) == 0x000088, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::CallFunc_Conv_IntToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_InitCurrency, K2Node_Select_Default_2) == 0x0000A0, "Member 'StoreMain_RMT_OfferDetails_C_InitCurrency::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.RegisterInput
 // 0x0020 (0x0020 - 0x0000)
@@ -354,10 +222,6 @@ public:
 	TDelegate<void(bool* bPassThrough)>           K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0010)(ZeroConstructor, NoDestructor)
 	struct FDataTableRowHandle                    K2Node_MakeStruct_DataTableRowHandle;              // 0x0010(0x0010)(NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_RegisterInput) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_RegisterInput");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_RegisterInput) == 0x000020, "Wrong size on StoreMain_RMT_OfferDetails_C_RegisterInput");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_RegisterInput, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_RegisterInput::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_RegisterInput, K2Node_MakeStruct_DataTableRowHandle) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_RegisterInput::K2Node_MakeStruct_DataTableRowHandle' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.Init
 // 0x00C0 (0x00C0 - 0x0000)
@@ -394,34 +258,6 @@ public:
 	bool                                          Temp_bool_Variable_2;                              // 0x00B9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x00BA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_Init) == 0x000008, "Wrong alignment on StoreMain_RMT_OfferDetails_C_Init");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_Init) == 0x0000C0, "Wrong size on StoreMain_RMT_OfferDetails_C_Init");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, DisplayAsset) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_Init::DisplayAsset' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_bool_Variable) == 0x000008, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable) == 0x000009, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable_1) == 0x00000A, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_bool_Variable_1) == 0x00000B, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable_2) == 0x00000C, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable_3) == 0x00000D, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_IsValid_ReturnValue) == 0x00000E, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_MakeLiteralText_ReturnValue) == 0x000010, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000028, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_EqualEqual_TextText_ReturnValue) == 0x000040, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_EqualEqual_TextText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable_4) == 0x000041, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_EqualEqual_TextText_ReturnValue_1) == 0x000042, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_EqualEqual_TextText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, K2Node_Select_Default) == 0x000043, "Member 'StoreMain_RMT_OfferDetails_C_Init::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetOfferInfo_ReturnValue) == 0x000048, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetSalePrice_SalePrice) == 0x000050, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetSalePrice_ReturnValue) == 0x000068, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, K2Node_Select_Default_1) == 0x000069, "Member 'StoreMain_RMT_OfferDetails_C_Init::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetNormalPrice_ReturnValue) == 0x000070, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetNormalPrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetName_ReturnValue) == 0x000088, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetOfferInfo_ReturnValue_1) == 0x0000A0, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_GetOfferDisplayAsset_ReturnValue) == 0x0000A8, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_GetOfferDisplayAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, CallFunc_PlayAnimationForward_ReturnValue) == 0x0000B0, "Member 'StoreMain_RMT_OfferDetails_C_Init::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_byte_Variable_5) == 0x0000B8, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, Temp_bool_Variable_2) == 0x0000B9, "Member 'StoreMain_RMT_OfferDetails_C_Init::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_Init, K2Node_Select_Default_2) == 0x0000BA, "Member 'StoreMain_RMT_OfferDetails_C_Init::K2Node_Select_Default_2' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.HandleBack
 // 0x0001 (0x0001 - 0x0000)
@@ -430,9 +266,6 @@ struct StoreMain_RMT_OfferDetails_C_HandleBack final
 public:
 	bool                                          PassThrough;                                       // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_HandleBack) == 0x000001, "Wrong alignment on StoreMain_RMT_OfferDetails_C_HandleBack");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_HandleBack) == 0x000001, "Wrong size on StoreMain_RMT_OfferDetails_C_HandleBack");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_HandleBack, PassThrough) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_HandleBack::PassThrough' has a wrong offset!");
 
 // Function StoreMain_RMT_OfferDetails.StoreMain_RMT_OfferDetails_C.ExecuteUbergraph_StoreMain_RMT_OfferDetails
 // 0x0004 (0x0004 - 0x0000)
@@ -441,9 +274,6 @@ struct StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails 
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails) == 0x000004, "Wrong alignment on StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails");
-static_assert(sizeof(StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails) == 0x000004, "Wrong size on StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails");
-static_assert(offsetof(StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails, EntryPoint) == 0x000000, "Member 'StoreMain_RMT_OfferDetails_C_ExecuteUbergraph_StoreMain_RMT_OfferDetails::EntryPoint' has a wrong offset!");
 
 }
 

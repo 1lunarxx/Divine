@@ -61,30 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_Hunting_C">();
+		BP_STATIC_CLASS_IMPL("GAB_Hunting_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_Hunting_C")
 	}
 	static class UGAB_Hunting_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_Hunting_C>();
 	}
 };
-static_assert(alignof(UGAB_Hunting_C) == 0x000008, "Wrong alignment on UGAB_Hunting_C");
-static_assert(sizeof(UGAB_Hunting_C) == 0x000AA0, "Wrong size on UGAB_Hunting_C");
-static_assert(offsetof(UGAB_Hunting_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_Hunting_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Hunting_Query) == 0x000A38, "Member 'UGAB_Hunting_C::EQS_Hunting_Query' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Grid_Half_Size) == 0x000A40, "Member 'UGAB_Hunting_C::EQS_Grid_Half_Size' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, EQS_Density) == 0x000A44, "Member 'UGAB_Hunting_C::EQS_Density' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingMoveTaskName) == 0x000A48, "Member 'UGAB_Hunting_C::HuntingMoveTaskName' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MyFortAIController) == 0x000A50, "Member 'UGAB_Hunting_C::MyFortAIController' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingTarget) == 0x000A58, "Member 'UGAB_Hunting_C::HuntingTarget' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, LastTimeStartedHunting) == 0x000A60, "Member 'UGAB_Hunting_C::LastTimeStartedHunting' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, HuntingRestartDelta) == 0x000A64, "Member 'UGAB_Hunting_C::HuntingRestartDelta' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MovementTask) == 0x000A68, "Member 'UGAB_Hunting_C::MovementTask' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, GoalDistancesOnCompleteMove) == 0x000A70, "Member 'UGAB_Hunting_C::GoalDistancesOnCompleteMove' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, PawnPositionsOnCompletedMove) == 0x000A80, "Member 'UGAB_Hunting_C::PawnPositionsOnCompletedMove' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, ShouldAbortHunting) == 0x000A90, "Member 'UGAB_Hunting_C::ShouldAbortHunting' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MinGoalDistChange) == 0x000A94, "Member 'UGAB_Hunting_C::MinGoalDistChange' has a wrong offset!");
-static_assert(offsetof(UGAB_Hunting_C, MinPawnDistChange) == 0x000A98, "Member 'UGAB_Hunting_C::MinPawnDistChange' has a wrong offset!");
 
 }
 

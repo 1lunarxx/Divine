@@ -26,11 +26,6 @@ public:
 	struct FLinearColor                           HoverColor_0;                                      // 0x0010(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CircleArrowButtonComTutorial_C_UpdateArrowColor) == 0x000008, "Wrong alignment on CircleArrowButtonComTutorial_C_UpdateArrowColor");
-static_assert(sizeof(CircleArrowButtonComTutorial_C_UpdateArrowColor) == 0x000028, "Wrong size on CircleArrowButtonComTutorial_C_UpdateArrowColor");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_UpdateArrowColor, Color) == 0x000000, "Member 'CircleArrowButtonComTutorial_C_UpdateArrowColor::Color' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_UpdateArrowColor, HoverColor_0) == 0x000010, "Member 'CircleArrowButtonComTutorial_C_UpdateArrowColor::HoverColor_0' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_UpdateArrowColor, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'CircleArrowButtonComTutorial_C_UpdateArrowColor::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function CircleArrowButtonComTutorial.CircleArrowButtonComTutorial_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -39,9 +34,6 @@ struct CircleArrowButtonComTutorial_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(CircleArrowButtonComTutorial_C_PreConstruct) == 0x000001, "Wrong alignment on CircleArrowButtonComTutorial_C_PreConstruct");
-static_assert(sizeof(CircleArrowButtonComTutorial_C_PreConstruct) == 0x000001, "Wrong size on CircleArrowButtonComTutorial_C_PreConstruct");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'CircleArrowButtonComTutorial_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function CircleArrowButtonComTutorial.CircleArrowButtonComTutorial_C.ExecuteUbergraph_CircleArrowButtonComTutorial
 // 0x0058 (0x0058 - 0x0000)
@@ -66,23 +58,6 @@ public:
 	uint8                                         Pad_49[0x3];                                       // 0x0049(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              K2Node_Select_Default_1;                           // 0x004C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial) == 0x000008, "Wrong alignment on CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial");
-static_assert(sizeof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial) == 0x000058, "Wrong size on CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, EntryPoint) == 0x000000, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::EntryPoint' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_struct_Variable) == 0x000004, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_struct_Variable_1) == 0x00000C, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_bool_Variable) == 0x000014, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_byte_Variable) == 0x000015, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_byte_Variable_1) == 0x000016, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, K2Node_Event_IsDesignTime) == 0x000017, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, K2Node_Select_Default) == 0x000018, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000028, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, CallFunc_PlayAnimation_ReturnValue) == 0x000030, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, CallFunc_PlayAnimation_ReturnValue_1) == 0x000038, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, CallFunc_PlayAnimation_ReturnValue_2) == 0x000040, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, Temp_bool_Variable_1) == 0x000048, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial, K2Node_Select_Default_1) == 0x00004C, "Member 'CircleArrowButtonComTutorial_C_ExecuteUbergraph_CircleArrowButtonComTutorial::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

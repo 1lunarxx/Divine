@@ -38,7 +38,6 @@ public:
 	float                                         MaxDrawDistance;                                   // 0x0358(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void Activated(class AActor* PlayerPawn_0);
 	bool WhileActive(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 	void ExpireTell();
@@ -48,32 +47,22 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void ReceiveBeginPlay();
 	void ExecuteUbergraph_GCN_Athena_LowGravity(int32 EntryPoint);
+	bool OnRemove(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_LowGravity_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_LowGravity_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_LowGravity_C")
 	}
 	static class AGCN_Athena_LowGravity_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Athena_LowGravity_C>();
 	}
 };
-static_assert(alignof(AGCN_Athena_LowGravity_C) == 0x000008, "Wrong alignment on AGCN_Athena_LowGravity_C");
-static_assert(sizeof(AGCN_Athena_LowGravity_C) == 0x000360, "Wrong size on AGCN_Athena_LowGravity_C");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, UberGraphFrame) == 0x000310, "Member 'AGCN_Athena_LowGravity_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, MyTargetCached) == 0x000318, "Member 'AGCN_Athena_LowGravity_C::MyTargetCached' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, InterpDelta) == 0x000320, "Member 'AGCN_Athena_LowGravity_C::InterpDelta' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, TargetDelta) == 0x000324, "Member 'AGCN_Athena_LowGravity_C::TargetDelta' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, PlayerPawn) == 0x000328, "Member 'AGCN_Athena_LowGravity_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, LowGravityPSComponent) == 0x000330, "Member 'AGCN_Athena_LowGravity_C::LowGravityPSComponent' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, ExpireTellDelayTimer) == 0x000338, "Member 'AGCN_Athena_LowGravity_C::ExpireTellDelayTimer' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, Duration) == 0x000340, "Member 'AGCN_Athena_LowGravity_C::Duration' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, ExpirationTellDuration) == 0x000344, "Member 'AGCN_Athena_LowGravity_C::ExpirationTellDuration' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, StartTime) == 0x000348, "Member 'AGCN_Athena_LowGravity_C::StartTime' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, ExpirationSoundPeriod) == 0x00034C, "Member 'AGCN_Athena_LowGravity_C::ExpirationSoundPeriod' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, ExpirationSoundTimer) == 0x000350, "Member 'AGCN_Athena_LowGravity_C::ExpirationSoundTimer' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_LowGravity_C, MaxDrawDistance) == 0x000358, "Member 'AGCN_Athena_LowGravity_C::MaxDrawDistance' has a wrong offset!");
 
 }
 

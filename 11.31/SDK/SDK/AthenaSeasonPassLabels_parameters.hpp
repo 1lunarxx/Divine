@@ -21,9 +21,6 @@ struct AthenaSeasonPassLabels_C_HideTierLabels final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonPassLabels_C_HideTierLabels) == 0x000008, "Wrong alignment on AthenaSeasonPassLabels_C_HideTierLabels");
-static_assert(sizeof(AthenaSeasonPassLabels_C_HideTierLabels) == 0x000008, "Wrong size on AthenaSeasonPassLabels_C_HideTierLabels");
-static_assert(offsetof(AthenaSeasonPassLabels_C_HideTierLabels, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000000, "Member 'AthenaSeasonPassLabels_C_HideTierLabels::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
 
 // Function AthenaSeasonPassLabels.AthenaSeasonPassLabels_C.ShowTierLabels
 // 0x0008 (0x0008 - 0x0000)
@@ -32,9 +29,6 @@ struct AthenaSeasonPassLabels_C_ShowTierLabels final
 public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonPassLabels_C_ShowTierLabels) == 0x000008, "Wrong alignment on AthenaSeasonPassLabels_C_ShowTierLabels");
-static_assert(sizeof(AthenaSeasonPassLabels_C_ShowTierLabels) == 0x000008, "Wrong size on AthenaSeasonPassLabels_C_ShowTierLabels");
-static_assert(offsetof(AthenaSeasonPassLabels_C_ShowTierLabels, CallFunc_PlayAnimationForward_ReturnValue) == 0x000000, "Member 'AthenaSeasonPassLabels_C_ShowTierLabels::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

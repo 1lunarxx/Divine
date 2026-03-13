@@ -23,15 +23,17 @@ class UBorder_BattleLoot_ColorBG_Dynamic_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_BattleLoot_ColorBG_Dynamic_C">();
+		BP_STATIC_CLASS_IMPL("Border_BattleLoot_ColorBG_Dynamic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_BattleLoot_ColorBG_Dynamic_C")
 	}
 	static class UBorder_BattleLoot_ColorBG_Dynamic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_BattleLoot_ColorBG_Dynamic_C>();
 	}
 };
-static_assert(alignof(UBorder_BattleLoot_ColorBG_Dynamic_C) == 0x000008, "Wrong alignment on UBorder_BattleLoot_ColorBG_Dynamic_C");
-static_assert(sizeof(UBorder_BattleLoot_ColorBG_Dynamic_C) == 0x0000B0, "Wrong size on UBorder_BattleLoot_ColorBG_Dynamic_C");
 
 }
 

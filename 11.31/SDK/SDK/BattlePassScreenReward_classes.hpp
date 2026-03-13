@@ -97,52 +97,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassScreenReward_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassScreenReward_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassScreenReward_C")
 	}
 	static class UBattlePassScreenReward_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassScreenReward_C>();
 	}
 };
-static_assert(alignof(UBattlePassScreenReward_C) == 0x000008, "Wrong alignment on UBattlePassScreenReward_C");
-static_assert(sizeof(UBattlePassScreenReward_C) == 0x000CA8, "Wrong size on UBattlePassScreenReward_C");
-static_assert(offsetof(UBattlePassScreenReward_C, UberGraphFrame) == 0x000B98, "Member 'UBattlePassScreenReward_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, CheckBoxPulse) == 0x000BA0, "Member 'UBattlePassScreenReward_C::CheckBoxPulse' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, RewardFade) == 0x000BA8, "Member 'UBattlePassScreenReward_C::RewardFade' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, FreeTagPulse) == 0x000BB0, "Member 'UBattlePassScreenReward_C::FreeTagPulse' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialPopulate) == 0x000BB8, "Member 'UBattlePassScreenReward_C::SocialPopulate' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Hover) == 0x000BC0, "Member 'UBattlePassScreenReward_C::Hover' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialPlayerFade) == 0x000BC8, "Member 'UBattlePassScreenReward_C::SocialPlayerFade' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Arrow) == 0x000BD0, "Member 'UBattlePassScreenReward_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Card_OverlayedContent) == 0x000BD8, "Member 'UBattlePassScreenReward_C::Card_OverlayedContent' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, EarnedCheckmark) == 0x000BE0, "Member 'UBattlePassScreenReward_C::EarnedCheckmark' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, EarnedTint) == 0x000BE8, "Member 'UBattlePassScreenReward_C::EarnedTint' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, FailedLoadIcon) == 0x000BF0, "Member 'UBattlePassScreenReward_C::FailedLoadIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, FreeGlow) == 0x000BF8, "Member 'UBattlePassScreenReward_C::FreeGlow' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, FreeTag_Backing) == 0x000C00, "Member 'UBattlePassScreenReward_C::FreeTag_Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, FreeTrack_FreeTag) == 0x000C08, "Member 'UBattlePassScreenReward_C::FreeTrack_FreeTag' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, LevelNumber_Backing) == 0x000C10, "Member 'UBattlePassScreenReward_C::LevelNumber_Backing' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, PrimaryAthenaSeasonItemRewardIcon) == 0x000C18, "Member 'UBattlePassScreenReward_C::PrimaryAthenaSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Progress) == 0x000C20, "Member 'UBattlePassScreenReward_C::Progress' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Progress_Level_Bar) == 0x000C28, "Member 'UBattlePassScreenReward_C::Progress_Level_Bar' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, ProgressBarContainer) == 0x000C30, "Member 'UBattlePassScreenReward_C::ProgressBarContainer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SecondaryAthenaSeasonItemRewardIcon) == 0x000C38, "Member 'UBattlePassScreenReward_C::SecondaryAthenaSeasonItemRewardIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Social_Tracking) == 0x000C40, "Member 'UBattlePassScreenReward_C::Social_Tracking' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialPlayerIcon) == 0x000C48, "Member 'UBattlePassScreenReward_C::SocialPlayerIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialPointer) == 0x000C50, "Member 'UBattlePassScreenReward_C::SocialPointer' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialProgress_Tracker) == 0x000C58, "Member 'UBattlePassScreenReward_C::SocialProgress_Tracker' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Text_Free) == 0x000C60, "Member 'UBattlePassScreenReward_C::Text_Free' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, Text_Level) == 0x000C68, "Member 'UBattlePassScreenReward_C::Text_Level' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, bSocialUserVisible) == 0x000C70, "Member 'UBattlePassScreenReward_C::bSocialUserVisible' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, bPlaySocialUserAnimation) == 0x000C71, "Member 'UBattlePassScreenReward_C::bPlaySocialUserAnimation' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, SocialPlayerFade_0) == 0x000C78, "Member 'UBattlePassScreenReward_C::SocialPlayerFade_0' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, bIsSelected) == 0x000C80, "Member 'UBattlePassScreenReward_C::bIsSelected' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, TierLevel) == 0x000C84, "Member 'UBattlePassScreenReward_C::TierLevel' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, bPrimaryRewardSelected) == 0x000C88, "Member 'UBattlePassScreenReward_C::bPrimaryRewardSelected' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, HB_Slot_1) == 0x000C90, "Member 'UBattlePassScreenReward_C::HB_Slot_1' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, HB_Slot_2) == 0x000C98, "Member 'UBattlePassScreenReward_C::HB_Slot_2' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, LevelNumberStyling) == 0x000CA0, "Member 'UBattlePassScreenReward_C::LevelNumberStyling' has a wrong offset!");
-static_assert(offsetof(UBattlePassScreenReward_C, bHideProgressAndSocial) == 0x000CA1, "Member 'UBattlePassScreenReward_C::bHideProgressAndSocial' has a wrong offset!");
 
 }
 

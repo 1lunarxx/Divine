@@ -51,28 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CircleArrowButton_C">();
+		BP_STATIC_CLASS_IMPL("CircleArrowButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CircleArrowButton_C")
 	}
 	static class UCircleArrowButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCircleArrowButton_C>();
 	}
 };
-static_assert(alignof(UCircleArrowButton_C) == 0x000008, "Wrong alignment on UCircleArrowButton_C");
-static_assert(sizeof(UCircleArrowButton_C) == 0x000BE0, "Wrong size on UCircleArrowButton_C");
-static_assert(offsetof(UCircleArrowButton_C, UberGraphFrame) == 0x000B70, "Member 'UCircleArrowButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Click) == 0x000B78, "Member 'UCircleArrowButton_C::Click' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Hover) == 0x000B80, "Member 'UCircleArrowButton_C::Hover' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Image_Arrow) == 0x000B88, "Member 'UCircleArrowButton_C::Image_Arrow' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Image_Shadow) == 0x000B90, "Member 'UCircleArrowButton_C::Image_Shadow' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Overlay_ButtonContainer) == 0x000B98, "Member 'UCircleArrowButton_C::Overlay_ButtonContainer' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, Flip) == 0x000BA0, "Member 'UCircleArrowButton_C::Flip' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, ArrowColor) == 0x000BA4, "Member 'UCircleArrowButton_C::ArrowColor' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, ShadowColor) == 0x000BB4, "Member 'UCircleArrowButton_C::ShadowColor' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, NewVar_0) == 0x000BC4, "Member 'UCircleArrowButton_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, EdgeSoftness) == 0x000BC8, "Member 'UCircleArrowButton_C::EdgeSoftness' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, HoverColor) == 0x000BCC, "Member 'UCircleArrowButton_C::HoverColor' has a wrong offset!");
-static_assert(offsetof(UCircleArrowButton_C, UseShadow) == 0x000BDC, "Member 'UCircleArrowButton_C::UseShadow' has a wrong offset!");
 
 }
 

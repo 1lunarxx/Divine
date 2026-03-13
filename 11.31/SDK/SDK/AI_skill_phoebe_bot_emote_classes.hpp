@@ -23,15 +23,17 @@ class UAI_skill_phoebe_bot_emote_C final : public UFortAthenaAIBotEmoteSkillSet
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AI_skill_phoebe_bot_emote_C">();
+		BP_STATIC_CLASS_IMPL("AI_skill_phoebe_bot_emote_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AI_skill_phoebe_bot_emote_C")
 	}
 	static class UAI_skill_phoebe_bot_emote_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAI_skill_phoebe_bot_emote_C>();
 	}
 };
-static_assert(alignof(UAI_skill_phoebe_bot_emote_C) == 0x000008, "Wrong alignment on UAI_skill_phoebe_bot_emote_C");
-static_assert(sizeof(UAI_skill_phoebe_bot_emote_C) == 0x000108, "Wrong size on UAI_skill_phoebe_bot_emote_C");
 
 }
 

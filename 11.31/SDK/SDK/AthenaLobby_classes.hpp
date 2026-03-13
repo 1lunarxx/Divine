@@ -61,25 +61,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaLobby_C">();
+		BP_STATIC_CLASS_IMPL("AthenaLobby_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaLobby_C")
 	}
 	static class UAthenaLobby_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaLobby_C>();
 	}
 };
-static_assert(alignof(UAthenaLobby_C) == 0x000008, "Wrong alignment on UAthenaLobby_C");
-static_assert(sizeof(UAthenaLobby_C) == 0x000690, "Wrong size on UAthenaLobby_C");
-static_assert(offsetof(UAthenaLobby_C, UberGraphFrame) == 0x000638, "Member 'UAthenaLobby_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, FeaturedCreativeContent) == 0x000640, "Member 'UAthenaLobby_C::FeaturedCreativeContent' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, MatchmakingRegion) == 0x000648, "Member 'UAthenaLobby_C::MatchmakingRegion' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, MinimalTeamDisplay) == 0x000650, "Member 'UAthenaLobby_C::MinimalTeamDisplay' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, Overlay_Main) == 0x000658, "Member 'UAthenaLobby_C::Overlay_Main' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, PunchCard) == 0x000660, "Member 'UAthenaLobby_C::PunchCard' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, StoreToastWidget) == 0x000668, "Member 'UAthenaLobby_C::StoreToastWidget' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, StoreToastRequest) == 0x000670, "Member 'UAthenaLobby_C::StoreToastRequest' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, TryShowToast) == 0x000678, "Member 'UAthenaLobby_C::TryShowToast' has a wrong offset!");
-static_assert(offsetof(UAthenaLobby_C, InputAction_InspectChallenges) == 0x000680, "Member 'UAthenaLobby_C::InputAction_InspectChallenges' has a wrong offset!");
 
 }
 

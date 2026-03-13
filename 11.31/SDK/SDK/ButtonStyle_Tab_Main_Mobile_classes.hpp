@@ -23,15 +23,17 @@ class UButtonStyle_Tab_Main_Mobile_C final : public UButtonStyle_Tab_Main_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Tab-Main_Mobile_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Tab-Main_Mobile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Tab-Main_Mobile_C")
 	}
 	static class UButtonStyle_Tab_Main_Mobile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Tab_Main_Mobile_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Tab_Main_Mobile_C) == 0x000008, "Wrong alignment on UButtonStyle_Tab_Main_Mobile_C");
-static_assert(sizeof(UButtonStyle_Tab_Main_Mobile_C) == 0x000570, "Wrong size on UButtonStyle_Tab_Main_Mobile_C");
 
 }
 

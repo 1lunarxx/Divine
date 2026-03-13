@@ -23,15 +23,17 @@ class UButtonStyle_Clear_Battlepass_C final : public UCommonButtonStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ButtonStyle-Clear_Battlepass_C">();
+		BP_STATIC_CLASS_IMPL("ButtonStyle-Clear_Battlepass_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ButtonStyle-Clear_Battlepass_C")
 	}
 	static class UButtonStyle_Clear_Battlepass_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UButtonStyle_Clear_Battlepass_C>();
 	}
 };
-static_assert(alignof(UButtonStyle_Clear_Battlepass_C) == 0x000008, "Wrong alignment on UButtonStyle_Clear_Battlepass_C");
-static_assert(sizeof(UButtonStyle_Clear_Battlepass_C) == 0x000570, "Wrong size on UButtonStyle_Clear_Battlepass_C");
 
 }
 

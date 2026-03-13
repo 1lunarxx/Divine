@@ -38,20 +38,6 @@ public:
 	struct FEventReply                            CallFunc_Unhandled_ReturnValue;                    // 0x0240(0x00B8)()
 	struct FEventReply                            K2Node_Select_Default;                             // 0x02F8(0x00B8)()
 };
-static_assert(alignof(ComRevealScreen_Popup_C_TapToClose) == 0x000008, "Wrong alignment on ComRevealScreen_Popup_C_TapToClose");
-static_assert(sizeof(ComRevealScreen_Popup_C_TapToClose) == 0x0003B0, "Wrong size on ComRevealScreen_Popup_C_TapToClose");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, MyGeometry) == 0x000000, "Member 'ComRevealScreen_Popup_C_TapToClose::MyGeometry' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, MouseEvent) == 0x000038, "Member 'ComRevealScreen_Popup_C_TapToClose::MouseEvent' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, ReturnValue) == 0x0000A8, "Member 'ComRevealScreen_Popup_C_TapToClose::ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_PointerEvent_GetEffectingButton_ReturnValue) == 0x000160, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_PointerEvent_GetEffectingButton_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_PointerEvent_IsTouchEvent_ReturnValue) == 0x000178, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_PointerEvent_IsTouchEvent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_EqualEqual_KeyKey_ReturnValue) == 0x000179, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_EqualEqual_KeyKey_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, Temp_bool_Variable) == 0x00017A, "Member 'ComRevealScreen_Popup_C_TapToClose::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_BooleanOR_ReturnValue) == 0x00017B, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_Handled_ReturnValue) == 0x000180, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_Handled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_Not_PreBool_ReturnValue) == 0x000238, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, CallFunc_Unhandled_ReturnValue) == 0x000240, "Member 'ComRevealScreen_Popup_C_TapToClose::CallFunc_Unhandled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_TapToClose, K2Node_Select_Default) == 0x0002F8, "Member 'ComRevealScreen_Popup_C_TapToClose::K2Node_Select_Default' has a wrong offset!");
 
 // Function ComRevealScreen_Popup.ComRevealScreen_Popup_C.StartFadeOutScreen
 // 0x0004 (0x0004 - 0x0000)
@@ -60,9 +46,6 @@ struct ComRevealScreen_Popup_C_StartFadeOutScreen final
 public:
 	float                                         Delay;                                             // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComRevealScreen_Popup_C_StartFadeOutScreen) == 0x000004, "Wrong alignment on ComRevealScreen_Popup_C_StartFadeOutScreen");
-static_assert(sizeof(ComRevealScreen_Popup_C_StartFadeOutScreen) == 0x000004, "Wrong size on ComRevealScreen_Popup_C_StartFadeOutScreen");
-static_assert(offsetof(ComRevealScreen_Popup_C_StartFadeOutScreen, Delay) == 0x000000, "Member 'ComRevealScreen_Popup_C_StartFadeOutScreen::Delay' has a wrong offset!");
 
 // Function ComRevealScreen_Popup.ComRevealScreen_Popup_C.ExecuteUbergraph_ComRevealScreen_Popup
 // 0x0040 (0x0040 - 0x0000)
@@ -77,15 +60,6 @@ public:
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_1;            // 0x0028(0x0010)(ZeroConstructor, NoDestructor)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup) == 0x000008, "Wrong alignment on ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup");
-static_assert(sizeof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup) == 0x000040, "Wrong size on ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, EntryPoint) == 0x000000, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::EntryPoint' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, K2Node_Event_Delay) == 0x000014, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::K2Node_Event_Delay' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, K2Node_CreateDelegate_OutputDelegate_1) == 0x000028, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup, CallFunc_PlayAnimationForward_ReturnValue) == 0x000038, "Member 'ComRevealScreen_Popup_C_ExecuteUbergraph_ComRevealScreen_Popup::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

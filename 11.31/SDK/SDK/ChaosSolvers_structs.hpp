@@ -25,12 +25,6 @@ public:
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinVolume;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSolverBreakingFilterSettings) == 0x000004, "Wrong alignment on FSolverBreakingFilterSettings");
-static_assert(sizeof(FSolverBreakingFilterSettings) == 0x000010, "Wrong size on FSolverBreakingFilterSettings");
-static_assert(offsetof(FSolverBreakingFilterSettings, FilterEnabled) == 0x000000, "Member 'FSolverBreakingFilterSettings::FilterEnabled' has a wrong offset!");
-static_assert(offsetof(FSolverBreakingFilterSettings, MinMass) == 0x000004, "Member 'FSolverBreakingFilterSettings::MinMass' has a wrong offset!");
-static_assert(offsetof(FSolverBreakingFilterSettings, MinSpeed) == 0x000008, "Member 'FSolverBreakingFilterSettings::MinSpeed' has a wrong offset!");
-static_assert(offsetof(FSolverBreakingFilterSettings, MinVolume) == 0x00000C, "Member 'FSolverBreakingFilterSettings::MinVolume' has a wrong offset!");
 
 // ScriptStruct ChaosSolvers.SolverCollisionFilterSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -43,12 +37,6 @@ public:
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinImpulse;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSolverCollisionFilterSettings) == 0x000004, "Wrong alignment on FSolverCollisionFilterSettings");
-static_assert(sizeof(FSolverCollisionFilterSettings) == 0x000010, "Wrong size on FSolverCollisionFilterSettings");
-static_assert(offsetof(FSolverCollisionFilterSettings, FilterEnabled) == 0x000000, "Member 'FSolverCollisionFilterSettings::FilterEnabled' has a wrong offset!");
-static_assert(offsetof(FSolverCollisionFilterSettings, MinMass) == 0x000004, "Member 'FSolverCollisionFilterSettings::MinMass' has a wrong offset!");
-static_assert(offsetof(FSolverCollisionFilterSettings, MinSpeed) == 0x000008, "Member 'FSolverCollisionFilterSettings::MinSpeed' has a wrong offset!");
-static_assert(offsetof(FSolverCollisionFilterSettings, MinImpulse) == 0x00000C, "Member 'FSolverCollisionFilterSettings::MinImpulse' has a wrong offset!");
 
 // ScriptStruct ChaosSolvers.SolverTrailingFilterSettings
 // 0x0010 (0x0010 - 0x0000)
@@ -61,12 +49,6 @@ public:
 	float                                         MinSpeed;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinVolume;                                         // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FSolverTrailingFilterSettings) == 0x000004, "Wrong alignment on FSolverTrailingFilterSettings");
-static_assert(sizeof(FSolverTrailingFilterSettings) == 0x000010, "Wrong size on FSolverTrailingFilterSettings");
-static_assert(offsetof(FSolverTrailingFilterSettings, FilterEnabled) == 0x000000, "Member 'FSolverTrailingFilterSettings::FilterEnabled' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingFilterSettings, MinMass) == 0x000004, "Member 'FSolverTrailingFilterSettings::MinMass' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingFilterSettings, MinSpeed) == 0x000008, "Member 'FSolverTrailingFilterSettings::MinSpeed' has a wrong offset!");
-static_assert(offsetof(FSolverTrailingFilterSettings, MinVolume) == 0x00000C, "Member 'FSolverTrailingFilterSettings::MinVolume' has a wrong offset!");
 
 }
 

@@ -51,23 +51,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CampaignPurchaseScreen_C">();
+		BP_STATIC_CLASS_IMPL("CampaignPurchaseScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CampaignPurchaseScreen_C")
 	}
 	static class UCampaignPurchaseScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UCampaignPurchaseScreen_C>();
 	}
 };
-static_assert(alignof(UCampaignPurchaseScreen_C) == 0x000008, "Wrong alignment on UCampaignPurchaseScreen_C");
-static_assert(sizeof(UCampaignPurchaseScreen_C) == 0x0003A0, "Wrong size on UCampaignPurchaseScreen_C");
-static_assert(offsetof(UCampaignPurchaseScreen_C, UberGraphFrame) == 0x000358, "Member 'UCampaignPurchaseScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, SwitchTextures) == 0x000360, "Member 'UCampaignPurchaseScreen_C::SwitchTextures' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, WasLastPlayForward) == 0x000368, "Member 'UCampaignPurchaseScreen_C::WasLastPlayForward' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, LeavingMatchmakingDialog) == 0x000370, "Member 'UCampaignPurchaseScreen_C::LeavingMatchmakingDialog' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, MID_Keyart) == 0x000378, "Member 'UCampaignPurchaseScreen_C::MID_Keyart' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, CycleTimer) == 0x000380, "Member 'UCampaignPurchaseScreen_C::CycleTimer' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, TextureCycle) == 0x000388, "Member 'UCampaignPurchaseScreen_C::TextureCycle' has a wrong offset!");
-static_assert(offsetof(UCampaignPurchaseScreen_C, TextureCycleIndex) == 0x000398, "Member 'UCampaignPurchaseScreen_C::TextureCycleIndex' has a wrong offset!");
 
 }
 

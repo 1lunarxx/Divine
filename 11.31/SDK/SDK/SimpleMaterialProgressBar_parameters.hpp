@@ -24,10 +24,6 @@ public:
 	struct FLinearColor                           Value;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_SetColorBackground) == 0x000008, "Wrong alignment on SimpleMaterialProgressBar_C_SetColorBackground");
-static_assert(sizeof(SimpleMaterialProgressBar_C_SetColorBackground) == 0x000018, "Wrong size on SimpleMaterialProgressBar_C_SetColorBackground");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorBackground, Value) == 0x000000, "Member 'SimpleMaterialProgressBar_C_SetColorBackground::Value' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorBackground, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'SimpleMaterialProgressBar_C_SetColorBackground::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.SetColorB
 // 0x0018 (0x0018 - 0x0000)
@@ -37,10 +33,6 @@ public:
 	struct FLinearColor                           Value;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_SetColorB) == 0x000008, "Wrong alignment on SimpleMaterialProgressBar_C_SetColorB");
-static_assert(sizeof(SimpleMaterialProgressBar_C_SetColorB) == 0x000018, "Wrong size on SimpleMaterialProgressBar_C_SetColorB");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorB, Value) == 0x000000, "Member 'SimpleMaterialProgressBar_C_SetColorB::Value' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorB, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'SimpleMaterialProgressBar_C_SetColorB::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.SetColorA
 // 0x0018 (0x0018 - 0x0000)
@@ -50,10 +42,6 @@ public:
 	struct FLinearColor                           Value;                                             // 0x0000(0x0010)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_SetColorA) == 0x000008, "Wrong alignment on SimpleMaterialProgressBar_C_SetColorA");
-static_assert(sizeof(SimpleMaterialProgressBar_C_SetColorA) == 0x000018, "Wrong size on SimpleMaterialProgressBar_C_SetColorA");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorA, Value) == 0x000000, "Member 'SimpleMaterialProgressBar_C_SetColorA::Value' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetColorA, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'SimpleMaterialProgressBar_C_SetColorA::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.SetProgress
 // 0x0010 (0x0010 - 0x0000)
@@ -64,10 +52,6 @@ public:
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_SetProgress) == 0x000008, "Wrong alignment on SimpleMaterialProgressBar_C_SetProgress");
-static_assert(sizeof(SimpleMaterialProgressBar_C_SetProgress) == 0x000010, "Wrong size on SimpleMaterialProgressBar_C_SetProgress");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetProgress, Value) == 0x000000, "Member 'SimpleMaterialProgressBar_C_SetProgress::Value' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_SetProgress, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'SimpleMaterialProgressBar_C_SetProgress::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -76,9 +60,6 @@ struct SimpleMaterialProgressBar_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_PreConstruct) == 0x000001, "Wrong alignment on SimpleMaterialProgressBar_C_PreConstruct");
-static_assert(sizeof(SimpleMaterialProgressBar_C_PreConstruct) == 0x000001, "Wrong size on SimpleMaterialProgressBar_C_PreConstruct");
-static_assert(offsetof(SimpleMaterialProgressBar_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'SimpleMaterialProgressBar_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.AnimateProgress
 // 0x000C (0x000C - 0x0000)
@@ -89,11 +70,6 @@ public:
 	float                                         EndAmount;                                         // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AnimSpeed;                                         // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_AnimateProgress) == 0x000004, "Wrong alignment on SimpleMaterialProgressBar_C_AnimateProgress");
-static_assert(sizeof(SimpleMaterialProgressBar_C_AnimateProgress) == 0x00000C, "Wrong size on SimpleMaterialProgressBar_C_AnimateProgress");
-static_assert(offsetof(SimpleMaterialProgressBar_C_AnimateProgress, StartAmount) == 0x000000, "Member 'SimpleMaterialProgressBar_C_AnimateProgress::StartAmount' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_AnimateProgress, EndAmount) == 0x000004, "Member 'SimpleMaterialProgressBar_C_AnimateProgress::EndAmount' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_AnimateProgress, AnimSpeed) == 0x000008, "Member 'SimpleMaterialProgressBar_C_AnimateProgress::AnimSpeed' has a wrong offset!");
 
 // Function SimpleMaterialProgressBar.SimpleMaterialProgressBar_C.ExecuteUbergraph_SimpleMaterialProgressBar
 // 0x0048 (0x0048 - 0x0000)
@@ -113,18 +89,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar) == 0x000008, "Wrong alignment on SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar");
-static_assert(sizeof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar) == 0x000048, "Wrong size on SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, EntryPoint) == 0x000000, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, K2Node_CreateDelegate_OutputDelegate) == 0x000004, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, CallFunc_Conv_IntToFloat_ReturnValue) == 0x000014, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::CallFunc_Conv_IntToFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, K2Node_Event_IsDesignTime) == 0x000018, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000020, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, K2Node_CustomEvent_StartAmount) == 0x000028, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::K2Node_CustomEvent_StartAmount' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, K2Node_CustomEvent_EndAmount) == 0x00002C, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::K2Node_CustomEvent_EndAmount' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, K2Node_CustomEvent_AnimSpeed) == 0x000030, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::K2Node_CustomEvent_AnimSpeed' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000038, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar, CallFunc_PlayAnimation_ReturnValue) == 0x000040, "Member 'SimpleMaterialProgressBar_C_ExecuteUbergraph_SimpleMaterialProgressBar::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
 
 }
 

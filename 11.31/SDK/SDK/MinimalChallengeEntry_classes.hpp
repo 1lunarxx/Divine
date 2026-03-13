@@ -32,17 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinimalChallengeEntry_C">();
+		BP_STATIC_CLASS_IMPL("MinimalChallengeEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinimalChallengeEntry_C")
 	}
 	static class UMinimalChallengeEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinimalChallengeEntry_C>();
 	}
 };
-static_assert(alignof(UMinimalChallengeEntry_C) == 0x000008, "Wrong alignment on UMinimalChallengeEntry_C");
-static_assert(sizeof(UMinimalChallengeEntry_C) == 0x000270, "Wrong size on UMinimalChallengeEntry_C");
-static_assert(offsetof(UMinimalChallengeEntry_C, UberGraphFrame) == 0x000260, "Member 'UMinimalChallengeEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMinimalChallengeEntry_C, SwitcherProgressInfo) == 0x000268, "Member 'UMinimalChallengeEntry_C::SwitcherProgressInfo' has a wrong offset!");
 
 }
 

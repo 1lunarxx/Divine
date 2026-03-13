@@ -49,29 +49,6 @@ public:
 	class AActor*                                 CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue; // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ABP_SprayDecal_C*                       CallFunc_FinishSpawningActor_ReturnValue;          // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic) == 0x000010, "Wrong alignment on GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic");
-static_assert(sizeof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic) == 0x0000D0, "Wrong size on GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, EntryPoint) == 0x000000, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_IsServer_ReturnValue) == 0x000004, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_IsServer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_GetCurrentSourceObject_ReturnValue) == 0x000008, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_GetCurrentSourceObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, K2Node_DynamicCast_AsAthena_Spray_Item_Definition) == 0x000010, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::K2Node_DynamicCast_AsAthena_Spray_Item_Definition' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_GetActivatingPawn_ReturnValue) == 0x000020, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_GetActivatingPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_GetController_ReturnValue) == 0x000028, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_GetController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_GetActivatingPawn_ReturnValue_1) == 0x000030, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_GetActivatingPawn_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, K2Node_DynamicCast_AsFort_Player_Controller) == 0x000038, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::K2Node_DynamicCast_AsFort_Player_Controller' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_TargetLineTrace_HitSomething) == 0x000041, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_TargetLineTrace_HitSomething' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_TargetLineTrace_Location) == 0x000044, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_TargetLineTrace_Location' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_TargetLineTrace_Normal) == 0x000050, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_TargetLineTrace_Normal' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_GetRightVector_ReturnValue) == 0x00005C, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_GetRightVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_CanPlaceInstanceOfClass_ReturnValue) == 0x000068, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_CanPlaceInstanceOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_Subtract_VectorVector_ReturnValue) == 0x00006C, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_Subtract_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_Cross_VectorVector_ReturnValue) == 0x000078, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_Cross_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_MakeRotationFromAxes_ReturnValue) == 0x000084, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_MakeRotationFromAxes_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_MakeTransform_ReturnValue) == 0x000090, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_MakeTransform_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x0000C0, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic, CallFunc_FinishSpawningActor_ReturnValue) == 0x0000C8, "Member 'GAB_Spray_Generic_C_ExecuteUbergraph_GAB_Spray_Generic::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
 
 // Function GAB_Spray_Generic.GAB_Spray_Generic_C.TargetLineTrace
 // 0x01D0 (0x01D0 - 0x0000)
@@ -127,49 +104,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess_2;                     // 0x01C8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_AcceptsEmoteSprays_ReturnValue;           // 0x01C9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GAB_Spray_Generic_C_TargetLineTrace) == 0x000008, "Wrong alignment on GAB_Spray_Generic_C_TargetLineTrace");
-static_assert(sizeof(GAB_Spray_Generic_C_TargetLineTrace) == 0x0001D0, "Wrong size on GAB_Spray_Generic_C_TargetLineTrace");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, ActivatingPawn) == 0x000000, "Member 'GAB_Spray_Generic_C_TargetLineTrace::ActivatingPawn' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, HitSomething) == 0x000008, "Member 'GAB_Spray_Generic_C_TargetLineTrace::HitSomething' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, Location) == 0x00000C, "Member 'GAB_Spray_Generic_C_TargetLineTrace::Location' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, Normal) == 0x000018, "Member 'GAB_Spray_Generic_C_TargetLineTrace::Normal' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_GetBaseAimRotation_ReturnValue) == 0x000024, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_GetBaseAimRotation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_MakeArray_Array) == 0x000030, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_GetForwardVector_ReturnValue) == 0x000040, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_GetForwardVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_K2_GetRootComponent_ReturnValue) == 0x000050, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_K2_GetRootComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_Multiply_VectorFloat_ReturnValue) == 0x000058, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_Multiply_VectorFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_AsCapsule_Collision) == 0x000068, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_AsCapsule_Collision' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_K2_GetActorLocation_ReturnValue) == 0x000074, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_K2_GetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakVector_X) == 0x000080, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakVector_X' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakVector_Y) == 0x000084, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakVector_Y' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakVector_Z) == 0x000088, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakVector_Z' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_Add_FloatFloat_ReturnValue) == 0x00008C, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_Add_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_MakeVector_ReturnValue) == 0x000090, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_Add_VectorVector_ReturnValue) == 0x00009C, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_LineTraceSingle_OutHit) == 0x0000A8, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_LineTraceSingle_OutHit' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_LineTraceSingle_ReturnValue) == 0x000130, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_LineTraceSingle_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_bBlockingHit) == 0x000131, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_bBlockingHit' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_bInitialOverlap) == 0x000132, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_bInitialOverlap' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_Time) == 0x000134, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_Time' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_Distance) == 0x000138, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_Distance' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_Location) == 0x00013C, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_Location' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_ImpactPoint) == 0x000148, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_ImpactPoint' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_Normal) == 0x000154, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_Normal' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_ImpactNormal) == 0x000160, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_ImpactNormal' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_PhysMat) == 0x000170, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_PhysMat' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_HitActor) == 0x000178, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_HitActor' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_HitComponent) == 0x000180, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_HitComponent' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_HitBoneName) == 0x000188, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_HitBoneName' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_HitItem) == 0x000190, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_HitItem' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_FaceIndex) == 0x000194, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_FaceIndex' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_TraceStart) == 0x000198, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_TraceStart' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_BreakHitResult_TraceEnd) == 0x0001A4, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_BreakHitResult_TraceEnd' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_AsBuilding_Actor) == 0x0001B0, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_AsBuilding_Actor' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_bSuccess_1) == 0x0001B8, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_AsBuilding_Gameplay_Actor) == 0x0001C0, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_AsBuilding_Gameplay_Actor' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, K2Node_DynamicCast_bSuccess_2) == 0x0001C8, "Member 'GAB_Spray_Generic_C_TargetLineTrace::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_TargetLineTrace, CallFunc_AcceptsEmoteSprays_ReturnValue) == 0x0001C9, "Member 'GAB_Spray_Generic_C_TargetLineTrace::CallFunc_AcceptsEmoteSprays_ReturnValue' has a wrong offset!");
 
 // Function GAB_Spray_Generic.GAB_Spray_Generic_C.GetMontageToPlay
 // 0x0098 (0x0098 - 0x0000)
@@ -188,16 +122,6 @@ public:
 	uint8                                         Pad_69[0x7];                                       // 0x0069(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UAnimMontage>            K2Node_Select_Default;                             // 0x0070(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(GAB_Spray_Generic_C_GetMontageToPlay) == 0x000008, "Wrong alignment on GAB_Spray_Generic_C_GetMontageToPlay");
-static_assert(sizeof(GAB_Spray_Generic_C_GetMontageToPlay) == 0x000098, "Wrong size on GAB_Spray_Generic_C_GetMontageToPlay");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, EmoteAsset) == 0x000000, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::EmoteAsset' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, BodyType) == 0x000008, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::BodyType' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, Gender) == 0x000009, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::Gender' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, ReturnValue) == 0x000010, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, Temp_byte_Variable) == 0x000038, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, CallFunc_GetMontageToPlay_ReturnValue) == 0x000040, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::CallFunc_GetMontageToPlay_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, CallFunc_IsAssetNull_ReturnValue) == 0x000068, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::CallFunc_IsAssetNull_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GAB_Spray_Generic_C_GetMontageToPlay, K2Node_Select_Default) == 0x000070, "Member 'GAB_Spray_Generic_C_GetMontageToPlay::K2Node_Select_Default' has a wrong offset!");
 
 }
 

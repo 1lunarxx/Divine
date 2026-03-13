@@ -75,41 +75,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PurchaseHistoryScreen_C">();
+		BP_STATIC_CLASS_IMPL("PurchaseHistoryScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PurchaseHistoryScreen_C")
 	}
 	static class UPurchaseHistoryScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPurchaseHistoryScreen_C>();
 	}
 };
-static_assert(alignof(UPurchaseHistoryScreen_C) == 0x000008, "Wrong alignment on UPurchaseHistoryScreen_C");
-static_assert(sizeof(UPurchaseHistoryScreen_C) == 0x0005B8, "Wrong size on UPurchaseHistoryScreen_C");
-static_assert(offsetof(UPurchaseHistoryScreen_C, UberGraphFrame) == 0x0004D8, "Member 'UPurchaseHistoryScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Border_Summary) == 0x0004E0, "Member 'UPurchaseHistoryScreen_C::Border_Summary' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Button_ClosePostApproval) == 0x0004E8, "Member 'UPurchaseHistoryScreen_C::Button_ClosePostApproval' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Button_ItemSelect) == 0x0004F0, "Member 'UPurchaseHistoryScreen_C::Button_ItemSelect' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Button_Reason) == 0x0004F8, "Member 'UPurchaseHistoryScreen_C::Button_Reason' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Button_SubmitRequest) == 0x000500, "Member 'UPurchaseHistoryScreen_C::Button_SubmitRequest' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, CircularThrobber_0) == 0x000508, "Member 'UPurchaseHistoryScreen_C::CircularThrobber_0' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, CloseIcon) == 0x000510, "Member 'UPurchaseHistoryScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, FinalSubmitSwitcher) == 0x000518, "Member 'UPurchaseHistoryScreen_C::FinalSubmitSwitcher' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, FortRichTextBlock_1) == 0x000520, "Member 'UPurchaseHistoryScreen_C::FortRichTextBlock_1' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, ItemsToReturn) == 0x000528, "Member 'UPurchaseHistoryScreen_C::ItemsToReturn' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, MainSwitcher) == 0x000530, "Member 'UPurchaseHistoryScreen_C::MainSwitcher' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, MobileCloseButton) == 0x000538, "Member 'UPurchaseHistoryScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, OverlayCloseButton) == 0x000540, "Member 'UPurchaseHistoryScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Switcher_ItemList) == 0x000548, "Member 'UPurchaseHistoryScreen_C::Switcher_ItemList' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Text_ResultDesc) == 0x000550, "Member 'UPurchaseHistoryScreen_C::Text_ResultDesc' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Text_ResultMtxMsg) == 0x000558, "Member 'UPurchaseHistoryScreen_C::Text_ResultMtxMsg' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Text_ResultTitle) == 0x000560, "Member 'UPurchaseHistoryScreen_C::Text_ResultTitle' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Text_ReturnConfirm) == 0x000568, "Member 'UPurchaseHistoryScreen_C::Text_ReturnConfirm' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, TicketCounter) == 0x000570, "Member 'UPurchaseHistoryScreen_C::TicketCounter' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, VBox_ChosenItem) == 0x000578, "Member 'UPurchaseHistoryScreen_C::VBox_ChosenItem' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, VBox_ChosenReason) == 0x000580, "Member 'UPurchaseHistoryScreen_C::VBox_ChosenReason' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, WarningBox) == 0x000588, "Member 'UPurchaseHistoryScreen_C::WarningBox' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, BackAction) == 0x000590, "Member 'UPurchaseHistoryScreen_C::BackAction' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, TicketArray) == 0x0005A0, "Member 'UPurchaseHistoryScreen_C::TicketArray' has a wrong offset!");
-static_assert(offsetof(UPurchaseHistoryScreen_C, Should_Use_Back_Action) == 0x0005B0, "Member 'UPurchaseHistoryScreen_C::Should_Use_Back_Action' has a wrong offset!");
 
 }
 

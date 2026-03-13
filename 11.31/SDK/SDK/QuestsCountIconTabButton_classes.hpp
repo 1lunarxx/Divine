@@ -40,8 +40,6 @@ public:
 	bool                                          bBangEnabled;                                      // 0x0C6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
-	void SetTutorialNameID(class FName InTutorialBangID);
-	void Update_Bang_State(bool bBangEnabled_0, int32 Count);
 	void Update_Text();
 	void SetTutorialBorderStyle(class UClass* BorderStyle);
 	void ShowText();
@@ -59,31 +57,23 @@ public:
 	void BP_OnEnabled();
 	void BP_OnDisabled();
 	void ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint);
+	void SetTutorialNameID(class FName InTutorialBangID);
+	void Update_Bang_State(bool bBangEnabled_0, int32 Count);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"QuestsCountIconTabButton_C">();
+		BP_STATIC_CLASS_IMPL("QuestsCountIconTabButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"QuestsCountIconTabButton_C")
 	}
 	static class UQuestsCountIconTabButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UQuestsCountIconTabButton_C>();
 	}
 };
-static_assert(alignof(UQuestsCountIconTabButton_C) == 0x000008, "Wrong alignment on UQuestsCountIconTabButton_C");
-static_assert(sizeof(UQuestsCountIconTabButton_C) == 0x000C70, "Wrong size on UQuestsCountIconTabButton_C");
-static_assert(offsetof(UQuestsCountIconTabButton_C, UberGraphFrame) == 0x000B70, "Member 'UQuestsCountIconTabButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, BangWrapper) == 0x000B78, "Member 'UQuestsCountIconTabButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, CenterButtonTextWidget) == 0x000B80, "Member 'UQuestsCountIconTabButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, ContentHB) == 0x000B88, "Member 'UQuestsCountIconTabButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, LeftSideImage) == 0x000B90, "Member 'UQuestsCountIconTabButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, ButtonText) == 0x000B98, "Member 'UQuestsCountIconTabButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, IconBrush) == 0x000BB0, "Member 'UQuestsCountIconTabButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, UseText) == 0x000C38, "Member 'UQuestsCountIconTabButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, SelectedIconTint) == 0x000C3C, "Member 'UQuestsCountIconTabButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, DeselectedIconTint) == 0x000C4C, "Member 'UQuestsCountIconTabButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, HoveredIconTint) == 0x000C5C, "Member 'UQuestsCountIconTabButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UQuestsCountIconTabButton_C, bBangEnabled) == 0x000C6C, "Member 'UQuestsCountIconTabButton_C::bBangEnabled' has a wrong offset!");
 
 }
 

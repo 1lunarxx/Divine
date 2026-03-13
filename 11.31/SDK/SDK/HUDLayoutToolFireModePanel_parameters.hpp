@@ -65,44 +65,6 @@ public:
 	class UFireModeSelectTile_C*                  K2Node_CustomEvent_Tile;                           // 0x00B8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x00C0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel) == 0x0000C8, "Wrong size on HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, EntryPoint) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_bool_Variable) == 0x000004, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_byte_Variable) == 0x000005, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_byte_Variable_1) == 0x000006, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_CustomEvent_Tile_2) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_CustomEvent_Tile_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_GetFireModeDescription_ReturnValue) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_GetFireModeDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_CreateDelegate_OutputDelegate) == 0x000028, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_CustomEvent_Tile_1) == 0x000038, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_CustomEvent_Tile_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_Event_bNewOpenState) == 0x000040, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_Event_bNewOpenState' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_MakeArray_Array) == 0x000048, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_IsValid_ReturnValue) == 0x000058, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_PlayAnimation_ReturnValue) == 0x000060, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_ComponentBoundEvent_Button_3) == 0x000068, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_PlayAnimation_ReturnValue_1) == 0x000070, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_ComponentBoundEvent_Button_2) == 0x000078, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_GetContext_ReturnValue) == 0x000080, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_byte_Variable_2) == 0x000088, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_byte_Variable_3) == 0x000089, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_GetContext_ReturnValue_1) == 0x000090, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_ComponentBoundEvent_Button_1) == 0x000098, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_ComponentBoundEvent_Button) == 0x0000A0, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_IsInCustomMode_IsCustom) == 0x0000A8, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_IsInCustomMode_IsCustom' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_IsInCustomMode_IsCustom_1) == 0x0000A9, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_IsInCustomMode_IsCustom_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, Temp_bool_Variable_1) == 0x0000AA, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_CustomEvent_NewFireMode) == 0x0000AB, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_CustomEvent_NewFireMode' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_Select_Default) == 0x0000AC, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_IsInCustomMode_IsCustom_2) == 0x0000AD, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_IsInCustomMode_IsCustom_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_IsValid_ReturnValue_1) == 0x0000AE, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_BooleanOR_ReturnValue) == 0x0000AF, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_HasSelectedCustomMode_Value) == 0x0000B0, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_HasSelectedCustomMode_Value' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_Select_Default_1) == 0x0000B1, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_BooleanOR_ReturnValue_1) == 0x0000B2, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_BooleanOR_ReturnValue_2) == 0x0000B3, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_BooleanOR_ReturnValue_3) == 0x0000B4, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, K2Node_CustomEvent_Tile) == 0x0000B8, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::K2Node_CustomEvent_Tile' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x0000C0, "Member 'HUDLayoutToolFireModePanel_C_ExecuteUbergraph_HUDLayoutToolFireModePanel::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.DeselectTile
 // 0x0008 (0x0008 - 0x0000)
@@ -111,9 +73,6 @@ struct HUDLayoutToolFireModePanel_C_DeselectTile final
 public:
 	class UFireModeSelectTile_C*                  Tile;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_DeselectTile) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_DeselectTile");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_DeselectTile) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_DeselectTile");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_DeselectTile, Tile) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_DeselectTile::Tile' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.OnFire Mode Changed
 // 0x0001 (0x0001 - 0x0000)
@@ -122,9 +81,6 @@ struct HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed final
 public:
 	EFireModeType                                 NewFireMode;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed) == 0x000001, "Wrong alignment on HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed) == 0x000001, "Wrong size on HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed, NewFireMode) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_OnFire_Mode_Changed::NewFireMode' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -133,9 +89,6 @@ struct HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundE
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_BndEvt__PresetsButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -144,9 +97,6 @@ struct HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEv
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_BndEvt__CustomButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -155,9 +105,6 @@ struct HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoun
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_BndEvt__TutorialConfirm_K2Node_ComponentBoundEvent_185_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -166,9 +113,6 @@ struct HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBound
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_BndEvt__IconTextButton_K2Node_ComponentBoundEvent_84_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.SetOpenState
 // 0x0001 (0x0001 - 0x0000)
@@ -177,9 +121,6 @@ struct HUDLayoutToolFireModePanel_C_SetOpenState final
 public:
 	bool                                          bNewOpenState;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_SetOpenState) == 0x000001, "Wrong alignment on HUDLayoutToolFireModePanel_C_SetOpenState");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_SetOpenState) == 0x000001, "Wrong size on HUDLayoutToolFireModePanel_C_SetOpenState");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetOpenState, bNewOpenState) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_SetOpenState::bNewOpenState' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.NewTileSelected
 // 0x0008 (0x0008 - 0x0000)
@@ -188,9 +129,6 @@ struct HUDLayoutToolFireModePanel_C_NewTileSelected final
 public:
 	class UFireModeSelectTile_C*                  Tile;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_NewTileSelected) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_NewTileSelected");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_NewTileSelected) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_NewTileSelected");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_NewTileSelected, Tile) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_NewTileSelected::Tile' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.HandleTileButtonFocused
 // 0x0008 (0x0008 - 0x0000)
@@ -199,9 +137,6 @@ struct HUDLayoutToolFireModePanel_C_HandleTileButtonFocused final
 public:
 	class UFireModeSelectTile_C*                  Tile;                                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_HandleTileButtonFocused) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_HandleTileButtonFocused");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_HandleTileButtonFocused) == 0x000008, "Wrong size on HUDLayoutToolFireModePanel_C_HandleTileButtonFocused");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HandleTileButtonFocused, Tile) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_HandleTileButtonFocused::Tile' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.PlayCurFocusedTileMovie
 // 0x0040 (0x0040 - 0x0000)
@@ -222,19 +157,6 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x003A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie) == 0x000040, "Wrong size on HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CurFocusedTile) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CurFocusedTile' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, NextPanelToPlay) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::NextPanelToPlay' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, Temp_int_Array_Index_Variable) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, Temp_int_Loop_Counter_Variable) == 0x000014, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CallFunc_Add_IntInt_ReturnValue) == 0x000018, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CallFunc_Array_Get_Item) == 0x000020, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CallFunc_Array_Length_ReturnValue) == 0x000028, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, K2Node_DynamicCast_AsFire_Mode_Select_Tile) == 0x000030, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::K2Node_DynamicCast_AsFire_Mode_Select_Tile' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CallFunc_Less_IntInt_ReturnValue) == 0x000039, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x00003A, "Member 'HUDLayoutToolFireModePanel_C_PlayCurFocusedTileMovie::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.HandleCurSelectedTile
 // 0x0010 (0x0010 - 0x0000)
@@ -245,11 +167,6 @@ public:
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_HandleCurSelectedTile) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_HandleCurSelectedTile");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_HandleCurSelectedTile) == 0x000010, "Wrong size on HUDLayoutToolFireModePanel_C_HandleCurSelectedTile");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HandleCurSelectedTile, Tile) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_HandleCurSelectedTile::Tile' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HandleCurSelectedTile, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_HandleCurSelectedTile::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HandleCurSelectedTile, CallFunc_IsValid_ReturnValue) == 0x000009, "Member 'HUDLayoutToolFireModePanel_C_HandleCurSelectedTile::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.InitButtonBindings
 // 0x0068 (0x0068 - 0x0000)
@@ -267,24 +184,10 @@ public:
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate;              // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate_1;            // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
-	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate_2;            // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate;         // 0x0038(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate_1;       // 0x0048(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(class UFireModeSelectTile_C* Tile)> K2Node_CreateDelegate_OutputDelegate_2;       // 0x0058(0x0010)(ZeroConstructor, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_InitButtonBindings) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_InitButtonBindings");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_InitButtonBindings) == 0x000068, "Wrong size on HUDLayoutToolFireModePanel_C_InitButtonBindings");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, ArrayOfFireModeButtons) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::ArrayOfFireModeButtons' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, CallFunc_Array_Length_ReturnValue) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, Temp_int_Array_Index_Variable) == 0x000014, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, Temp_int_Loop_Counter_Variable) == 0x000018, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, CallFunc_Array_Get_Item) == 0x000020, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, K2Node_DynamicCast_AsFire_Mode_Select_Tile) == 0x000028, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::K2Node_DynamicCast_AsFire_Mode_Select_Tile' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, CallFunc_Less_IntInt_ReturnValue) == 0x000031, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, K2Node_CreateDelegate_OutputDelegate) == 0x000038, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, K2Node_CreateDelegate_OutputDelegate_1) == 0x000048, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_InitButtonBindings, K2Node_CreateDelegate_OutputDelegate_2) == 0x000058, "Member 'HUDLayoutToolFireModePanel_C_InitButtonBindings::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.OnMouseButtonDown_0
 // 0x0218 (0x0218 - 0x0000)
@@ -296,12 +199,6 @@ public:
 	struct FEventReply                            ReturnValue;                                       // 0x00A8(0x00B8)(Parm, OutParm, ReturnParm)
 	struct FEventReply                            CallFunc_Handled_ReturnValue;                      // 0x0160(0x00B8)()
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0) == 0x000218, "Wrong size on HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0, MyGeometry) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0::MyGeometry' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0, MouseEvent) == 0x000038, "Member 'HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0::MouseEvent' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0, ReturnValue) == 0x0000A8, "Member 'HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0::ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0, CallFunc_Handled_ReturnValue) == 0x000160, "Member 'HUDLayoutToolFireModePanel_C_OnMouseButtonDown_0::CallFunc_Handled_ReturnValue' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.SetCustomModeVisibilities
 // 0x0058 (0x0058 - 0x0000)
@@ -344,39 +241,6 @@ public:
 	bool                                          CallFunc_GetFireMode_bAlwaysShowDedicatedButton;   // 0x0055(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0056(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities) == 0x000058, "Wrong size on HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_IsFireModeAvailable_ReturnValue) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_IsFireModeAvailable_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_bool_Variable) == 0x000011, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_1) == 0x000012, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_2) == 0x000013, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetContext_ReturnValue_1) == 0x000018, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_IsFireModeAvailable_ReturnValue_1) == 0x000020, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_IsFireModeAvailable_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, K2Node_Select_Default) == 0x000021, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_bool_Variable_1) == 0x000022, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_3) == 0x000023, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_4) == 0x000024, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_4' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetContext_ReturnValue_2) == 0x000028, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_IsFireModeAvailable_ReturnValue_2) == 0x000030, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_IsFireModeAvailable_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, K2Node_Select_Default_1) == 0x000031, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_bool_Variable_2) == 0x000032, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_5) == 0x000033, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_5' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_6) == 0x000034, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_6' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_HasSelectedCustomMode_Value) == 0x000035, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_HasSelectedCustomMode_Value' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, K2Node_Select_Default_2) == 0x000036, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_byte_Variable_7) == 0x000037, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_byte_Variable_7' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, Temp_bool_Variable_3) == 0x000038, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetContext_ReturnValue_3) == 0x000040, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetContext_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetContext_ReturnValue_4) == 0x000048, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetContext_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_IsFireModeAvailable_ReturnValue_3) == 0x000050, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_IsFireModeAvailable_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetFireMode_FireMode) == 0x000051, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetFireMode_FireMode' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetFireMode_bAutofireEnabled) == 0x000052, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetFireMode_bAutofireEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetFireMode_bForceTouchEnabled) == 0x000053, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetFireMode_bForceTouchEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetFireMode_bTapToShootEnabled) == 0x000054, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetFireMode_bTapToShootEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, CallFunc_GetFireMode_bAlwaysShowDedicatedButton) == 0x000055, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::CallFunc_GetFireMode_bAlwaysShowDedicatedButton' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities, K2Node_Select_Default_3) == 0x000056, "Member 'HUDLayoutToolFireModePanel_C_SetCustomModeVisibilities::K2Node_Select_Default_3' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.SetCustomFireMode
 // 0x0010 (0x0010 - 0x0000)
@@ -388,12 +252,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x000A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_SetCustomFireMode) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_SetCustomFireMode");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_SetCustomFireMode) == 0x000010, "Wrong size on HUDLayoutToolFireModePanel_C_SetCustomFireMode");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomFireMode, CallFunc_GetContext_ReturnValue) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_SetCustomFireMode::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomFireMode, CallFunc_BooleanOR_ReturnValue) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_SetCustomFireMode::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomFireMode, CallFunc_BooleanOR_ReturnValue_1) == 0x000009, "Member 'HUDLayoutToolFireModePanel_C_SetCustomFireMode::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_SetCustomFireMode, CallFunc_BooleanOR_ReturnValue_2) == 0x00000A, "Member 'HUDLayoutToolFireModePanel_C_SetCustomFireMode::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.HasSelectedCustomMode
 // 0x0018 (0x0018 - 0x0000)
@@ -412,18 +270,6 @@ public:
 	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0016(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0017(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_HasSelectedCustomMode");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode) == 0x000018, "Wrong size on HUDLayoutToolFireModePanel_C_HasSelectedCustomMode");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, Value) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::Value' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetFireMode_FireMode) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetFireMode_FireMode' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetFireMode_bAutofireEnabled) == 0x000011, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetFireMode_bAutofireEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetFireMode_bForceTouchEnabled) == 0x000012, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetFireMode_bForceTouchEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetFireMode_bTapToShootEnabled) == 0x000013, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetFireMode_bTapToShootEnabled' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_GetFireMode_bAlwaysShowDedicatedButton) == 0x000014, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_GetFireMode_bAlwaysShowDedicatedButton' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_BooleanOR_ReturnValue) == 0x000015, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_BooleanOR_ReturnValue_1) == 0x000016, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_HasSelectedCustomMode, CallFunc_BooleanOR_ReturnValue_2) == 0x000017, "Member 'HUDLayoutToolFireModePanel_C_HasSelectedCustomMode::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
 
 // Function HUDLayoutToolFireModePanel.HUDLayoutToolFireModePanel_C.IsInCustomMode
 // 0x0018 (0x0018 - 0x0000)
@@ -435,11 +281,6 @@ public:
 	class UWidget*                                CallFunc_GetActiveWidget_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HUDLayoutToolFireModePanel_C_IsInCustomMode) == 0x000008, "Wrong alignment on HUDLayoutToolFireModePanel_C_IsInCustomMode");
-static_assert(sizeof(HUDLayoutToolFireModePanel_C_IsInCustomMode) == 0x000018, "Wrong size on HUDLayoutToolFireModePanel_C_IsInCustomMode");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_IsInCustomMode, IsCustom) == 0x000000, "Member 'HUDLayoutToolFireModePanel_C_IsInCustomMode::IsCustom' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_IsInCustomMode, CallFunc_GetActiveWidget_ReturnValue) == 0x000008, "Member 'HUDLayoutToolFireModePanel_C_IsInCustomMode::CallFunc_GetActiveWidget_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HUDLayoutToolFireModePanel_C_IsInCustomMode, CallFunc_EqualEqual_ObjectObject_ReturnValue) == 0x000010, "Member 'HUDLayoutToolFireModePanel_C_IsInCustomMode::CallFunc_EqualEqual_ObjectObject_ReturnValue' has a wrong offset!");
 
 }
 

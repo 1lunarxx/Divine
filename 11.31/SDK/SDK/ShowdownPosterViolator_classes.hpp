@@ -37,21 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ShowdownPosterViolator_C">();
+		BP_STATIC_CLASS_IMPL("ShowdownPosterViolator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ShowdownPosterViolator_C")
 	}
 	static class UShowdownPosterViolator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UShowdownPosterViolator_C>();
 	}
 };
-static_assert(alignof(UShowdownPosterViolator_C) == 0x000008, "Wrong alignment on UShowdownPosterViolator_C");
-static_assert(sizeof(UShowdownPosterViolator_C) == 0x0002A8, "Wrong size on UShowdownPosterViolator_C");
-static_assert(offsetof(UShowdownPosterViolator_C, UberGraphFrame) == 0x000278, "Member 'UShowdownPosterViolator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UShowdownPosterViolator_C, EventStateSwitcher) == 0x000280, "Member 'UShowdownPosterViolator_C::EventStateSwitcher' has a wrong offset!");
-static_assert(offsetof(UShowdownPosterViolator_C, FutureEventViolator) == 0x000288, "Member 'UShowdownPosterViolator_C::FutureEventViolator' has a wrong offset!");
-static_assert(offsetof(UShowdownPosterViolator_C, LiveEventViolator) == 0x000290, "Member 'UShowdownPosterViolator_C::LiveEventViolator' has a wrong offset!");
-static_assert(offsetof(UShowdownPosterViolator_C, LiveViolator) == 0x000298, "Member 'UShowdownPosterViolator_C::LiveViolator' has a wrong offset!");
-static_assert(offsetof(UShowdownPosterViolator_C, NoViolator) == 0x0002A0, "Member 'UShowdownPosterViolator_C::NoViolator' has a wrong offset!");
 
 }
 

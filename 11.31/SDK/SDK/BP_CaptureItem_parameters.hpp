@@ -25,9 +25,6 @@ struct BP_CaptureItem_C_OnWrapAsyncLoaded final
 public:
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CaptureItem_C_OnWrapAsyncLoaded) == 0x000001, "Wrong alignment on BP_CaptureItem_C_OnWrapAsyncLoaded");
-static_assert(sizeof(BP_CaptureItem_C_OnWrapAsyncLoaded) == 0x000001, "Wrong size on BP_CaptureItem_C_OnWrapAsyncLoaded");
-static_assert(offsetof(BP_CaptureItem_C_OnWrapAsyncLoaded, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'BP_CaptureItem_C_OnWrapAsyncLoaded::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function BP_CaptureItem.BP_CaptureItem_C.CreateWrapPreview
 // 0x0090 (0x0090 - 0x0000)
@@ -48,19 +45,6 @@ public:
 	class UAthenaItemWrapDefinition*              K2Node_DynamicCast_AsAthena_Item_Wrap_Definition;  // 0x0078(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CaptureItem_C_CreateWrapPreview) == 0x000010, "Wrong alignment on BP_CaptureItem_C_CreateWrapPreview");
-static_assert(sizeof(BP_CaptureItem_C_CreateWrapPreview) == 0x000090, "Wrong size on BP_CaptureItem_C_CreateWrapPreview");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, WrapActor) == 0x000000, "Member 'BP_CaptureItem_C_CreateWrapPreview::WrapActor' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, WrapPreviewActor) == 0x000008, "Member 'BP_CaptureItem_C_CreateWrapPreview::WrapPreviewActor' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, K2Node_CreateDelegate_OutputDelegate) == 0x000010, "Member 'BP_CaptureItem_C_CreateWrapPreview::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, CallFunc_K2_GetComponentToWorld_ReturnValue) == 0x000020, "Member 'BP_CaptureItem_C_CreateWrapPreview::CallFunc_K2_GetComponentToWorld_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue) == 0x000050, "Member 'BP_CaptureItem_C_CreateWrapPreview::CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, CallFunc_FinishSpawningActor_ReturnValue) == 0x000058, "Member 'BP_CaptureItem_C_CreateWrapPreview::CallFunc_FinishSpawningActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, CallFunc_IsValid_ReturnValue) == 0x000060, "Member 'BP_CaptureItem_C_CreateWrapPreview::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor) == 0x000068, "Member 'BP_CaptureItem_C_CreateWrapPreview::K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, K2Node_DynamicCast_bSuccess) == 0x000070, "Member 'BP_CaptureItem_C_CreateWrapPreview::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, K2Node_DynamicCast_AsAthena_Item_Wrap_Definition) == 0x000078, "Member 'BP_CaptureItem_C_CreateWrapPreview::K2Node_DynamicCast_AsAthena_Item_Wrap_Definition' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_CreateWrapPreview, K2Node_DynamicCast_bSuccess_1) == 0x000080, "Member 'BP_CaptureItem_C_CreateWrapPreview::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 // Function BP_CaptureItem.BP_CaptureItem_C.SetIsLarge
 // 0x00D0 (0x00D0 - 0x0000)
@@ -73,12 +57,6 @@ public:
 	struct FTransform                             K2Node_Select_Default;                             // 0x0010(0x0030)(ConstParm, IsPlainOldData, NoDestructor)
 	struct FHitResult                             CallFunc_K2_SetRelativeTransform_SweepHitResult;   // 0x0040(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 };
-static_assert(alignof(BP_CaptureItem_C_SetIsLarge) == 0x000010, "Wrong alignment on BP_CaptureItem_C_SetIsLarge");
-static_assert(sizeof(BP_CaptureItem_C_SetIsLarge) == 0x0000D0, "Wrong size on BP_CaptureItem_C_SetIsLarge");
-static_assert(offsetof(BP_CaptureItem_C_SetIsLarge, Is_Large_Tile) == 0x000000, "Member 'BP_CaptureItem_C_SetIsLarge::Is_Large_Tile' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetIsLarge, Temp_bool_Variable) == 0x000001, "Member 'BP_CaptureItem_C_SetIsLarge::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetIsLarge, K2Node_Select_Default) == 0x000010, "Member 'BP_CaptureItem_C_SetIsLarge::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetIsLarge, CallFunc_K2_SetRelativeTransform_SweepHitResult) == 0x000040, "Member 'BP_CaptureItem_C_SetIsLarge::CallFunc_K2_SetRelativeTransform_SweepHitResult' has a wrong offset!");
 
 // Function BP_CaptureItem.BP_CaptureItem_C.SetWrapIsGun
 // 0x0050 (0x0050 - 0x0000)
@@ -101,19 +79,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class USceneComponent*                        K2Node_Select_Default_1;                           // 0x0048(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CaptureItem_C_SetWrapIsGun) == 0x000008, "Wrong alignment on BP_CaptureItem_C_SetWrapIsGun");
-static_assert(sizeof(BP_CaptureItem_C_SetWrapIsGun) == 0x000050, "Wrong size on BP_CaptureItem_C_SetWrapIsGun");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, WrapIsGun) == 0x000000, "Member 'BP_CaptureItem_C_SetWrapIsGun::WrapIsGun' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, Temp_object_Variable) == 0x000008, "Member 'BP_CaptureItem_C_SetWrapIsGun::Temp_object_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, Temp_object_Variable_1) == 0x000010, "Member 'BP_CaptureItem_C_SetWrapIsGun::Temp_object_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, Temp_bool_Variable) == 0x000018, "Member 'BP_CaptureItem_C_SetWrapIsGun::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, Temp_bool_Variable_1) == 0x000019, "Member 'BP_CaptureItem_C_SetWrapIsGun::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_Select_Default) == 0x000020, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_DynamicCast_AsAthena_Item_Wrap_Definition) == 0x000028, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_DynamicCast_AsAthena_Item_Wrap_Definition' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_DynamicCast_bSuccess) == 0x000030, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor) == 0x000038, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_DynamicCast_AsFort_Wrap_Skeletal_Mesh_Actor' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_DynamicCast_bSuccess_1) == 0x000040, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_SetWrapIsGun, K2Node_Select_Default_1) == 0x000048, "Member 'BP_CaptureItem_C_SetWrapIsGun::K2Node_Select_Default_1' has a wrong offset!");
 
 // Function BP_CaptureItem.BP_CaptureItem_C.OnSetupCapture
 // 0x0010 (0x0010 - 0x0000)
@@ -123,10 +88,6 @@ public:
 	class UFortItemThumbnailRenderer*             InRenderer;                                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortItemDefinition*                    InItemDefinition;                                  // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_CaptureItem_C_OnSetupCapture) == 0x000008, "Wrong alignment on BP_CaptureItem_C_OnSetupCapture");
-static_assert(sizeof(BP_CaptureItem_C_OnSetupCapture) == 0x000010, "Wrong size on BP_CaptureItem_C_OnSetupCapture");
-static_assert(offsetof(BP_CaptureItem_C_OnSetupCapture, InRenderer) == 0x000000, "Member 'BP_CaptureItem_C_OnSetupCapture::InRenderer' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_OnSetupCapture, InItemDefinition) == 0x000008, "Member 'BP_CaptureItem_C_OnSetupCapture::InItemDefinition' has a wrong offset!");
 
 // Function BP_CaptureItem.BP_CaptureItem_C.ExecuteUbergraph_BP_CaptureItem
 // 0x00D8 (0x00D8 - 0x0000)
@@ -146,18 +107,6 @@ public:
 	struct FHitResult                             CallFunc_K2_SetRelativeLocationAndRotation_SweepHitResult; // 0x0048(0x0088)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem) == 0x000008, "Wrong alignment on BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem");
-static_assert(sizeof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem) == 0x0000D8, "Wrong size on BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, EntryPoint) == 0x000000, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, CallFunc_VLerp_ReturnValue) == 0x000004, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::CallFunc_VLerp_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, K2Node_Event_InRenderer) == 0x000010, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::K2Node_Event_InRenderer' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, K2Node_Event_InItemDefinition) == 0x000018, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::K2Node_Event_InItemDefinition' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, CallFunc_GetItemType_ReturnValue) == 0x000020, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::CallFunc_GetItemType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, CallFunc_CreateWrapPreview_WrapActor) == 0x000028, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::CallFunc_CreateWrapPreview_WrapActor' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, K2Node_SwitchEnum_CmpSuccess) == 0x000030, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, K2Node_MakeArray_Array) == 0x000038, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, CallFunc_K2_SetRelativeLocationAndRotation_SweepHitResult) == 0x000048, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::CallFunc_K2_SetRelativeLocationAndRotation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem, CallFunc_IsValid_ReturnValue) == 0x0000D0, "Member 'BP_CaptureItem_C_ExecuteUbergraph_BP_CaptureItem::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

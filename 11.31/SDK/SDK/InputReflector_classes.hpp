@@ -38,19 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"InputReflector_C">();
+		BP_STATIC_CLASS_IMPL("InputReflector_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"InputReflector_C")
 	}
 	static class UInputReflector_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UInputReflector_C>();
 	}
 };
-static_assert(alignof(UInputReflector_C) == 0x000008, "Wrong alignment on UInputReflector_C");
-static_assert(sizeof(UInputReflector_C) == 0x0002B0, "Wrong size on UInputReflector_C");
-static_assert(offsetof(UInputReflector_C, UberGraphFrame) == 0x000288, "Member 'UInputReflector_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, ButtonBox) == 0x000290, "Member 'UInputReflector_C::ButtonBox' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, SizeBoxShell) == 0x000298, "Member 'UInputReflector_C::SizeBoxShell' has a wrong offset!");
-static_assert(offsetof(UInputReflector_C, DefaultButtonMargin) == 0x0002A0, "Member 'UInputReflector_C::DefaultButtonMargin' has a wrong offset!");
 
 }
 

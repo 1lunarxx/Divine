@@ -77,38 +77,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMatchmakingSpinnerButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMatchmakingSpinnerButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMatchmakingSpinnerButton_C")
 	}
 	static class UAthenaMatchmakingSpinnerButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMatchmakingSpinnerButton_C>();
 	}
 };
-static_assert(alignof(UAthenaMatchmakingSpinnerButton_C) == 0x000008, "Wrong alignment on UAthenaMatchmakingSpinnerButton_C");
-static_assert(sizeof(UAthenaMatchmakingSpinnerButton_C) == 0x000D58, "Wrong size on UAthenaMatchmakingSpinnerButton_C");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, UberGraphFrame) == 0x000C58, "Member 'UAthenaMatchmakingSpinnerButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, In) == 0x000C60, "Member 'UAthenaMatchmakingSpinnerButton_C::In' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, Right) == 0x000C68, "Member 'UAthenaMatchmakingSpinnerButton_C::Right' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, Left) == 0x000C70, "Member 'UAthenaMatchmakingSpinnerButton_C::Left' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, Border_Fill) == 0x000C78, "Member 'UAthenaMatchmakingSpinnerButton_C::Border_Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, LeftButton) == 0x000C80, "Member 'UAthenaMatchmakingSpinnerButton_C::LeftButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, LeftButtonSize) == 0x000C88, "Member 'UAthenaMatchmakingSpinnerButton_C::LeftButtonSize' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, OptionSelectionArea) == 0x000C90, "Member 'UAthenaMatchmakingSpinnerButton_C::OptionSelectionArea' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, RightButton) == 0x000C98, "Member 'UAthenaMatchmakingSpinnerButton_C::RightButton' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, RightButtonSize) == 0x000CA0, "Member 'UAthenaMatchmakingSpinnerButton_C::RightButtonSize' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, SaveSpinner) == 0x000CA8, "Member 'UAthenaMatchmakingSpinnerButton_C::SaveSpinner' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, A) == 0x000CB0, "Member 'UAthenaMatchmakingSpinnerButton_C::A' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, A_0) == 0x000CC0, "Member 'UAthenaMatchmakingSpinnerButton_C::A_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, DebugOnMobileOrPC) == 0x000CD0, "Member 'UAthenaMatchmakingSpinnerButton_C::DebugOnMobileOrPC' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, isGamepad) == 0x000CD1, "Member 'UAthenaMatchmakingSpinnerButton_C::isGamepad' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, Mobile_Size_Override) == 0x000CD4, "Member 'UAthenaMatchmakingSpinnerButton_C::Mobile_Size_Override' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, VisibilitySetting) == 0x000CD8, "Member 'UAthenaMatchmakingSpinnerButton_C::VisibilitySetting' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, DefaultStyleMouse) == 0x000CE0, "Member 'UAthenaMatchmakingSpinnerButton_C::DefaultStyleMouse' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, DefaultStyleGamepad) == 0x000CE8, "Member 'UAthenaMatchmakingSpinnerButton_C::DefaultStyleGamepad' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, TextColor_Normal) == 0x000CF0, "Member 'UAthenaMatchmakingSpinnerButton_C::TextColor_Normal' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, TextColor_Focused) == 0x000D18, "Member 'UAthenaMatchmakingSpinnerButton_C::TextColor_Focused' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, OnSpinnerValueChanged) == 0x000D40, "Member 'UAthenaMatchmakingSpinnerButton_C::OnSpinnerValueChanged' has a wrong offset!");
-static_assert(offsetof(UAthenaMatchmakingSpinnerButton_C, DefaultStyleTouch) == 0x000D50, "Member 'UAthenaMatchmakingSpinnerButton_C::DefaultStyleTouch' has a wrong offset!");
 
 }
 

@@ -20,21 +20,32 @@ namespace SDK
 {
 
 // Class McpProfileSys.McpItemAware
-// 0x0000 (0x0028 - 0x0028)
-class IMcpItemAware final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IMcpItemAware final
 {
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"McpItemAware">();
+		STATIC_CLASS_IMPL("McpItemAware")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"McpItemAware")
 	}
 	static class IMcpItemAware* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IMcpItemAware>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IMcpItemAware) == 0x000008, "Wrong alignment on IMcpItemAware");
-static_assert(sizeof(IMcpItemAware) == 0x000028, "Wrong size on IMcpItemAware");
 
 // Class McpProfileSys.McpItemDefinitionBase
 // 0x0000 (0x0030 - 0x0030)
@@ -43,15 +54,17 @@ class UMcpItemDefinitionBase : public UPrimaryDataAsset
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"McpItemDefinitionBase">();
+		STATIC_CLASS_IMPL("McpItemDefinitionBase")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"McpItemDefinitionBase")
 	}
 	static class UMcpItemDefinitionBase* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMcpItemDefinitionBase>();
 	}
 };
-static_assert(alignof(UMcpItemDefinitionBase) == 0x000008, "Wrong alignment on UMcpItemDefinitionBase");
-static_assert(sizeof(UMcpItemDefinitionBase) == 0x000030, "Wrong size on UMcpItemDefinitionBase");
 
 // Class McpProfileSys.McpProfile
 // 0x00F8 (0x0120 - 0x0028)
@@ -86,27 +99,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"McpProfile">();
+		STATIC_CLASS_IMPL("McpProfile")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"McpProfile")
 	}
 	static class UMcpProfile* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMcpProfile>();
 	}
 };
-static_assert(alignof(UMcpProfile) == 0x000008, "Wrong alignment on UMcpProfile");
-static_assert(sizeof(UMcpProfile) == 0x000120, "Wrong size on UMcpProfile");
-static_assert(offsetof(UMcpProfile, AllowSubscriptionToNotificationsService) == 0x000028, "Member 'UMcpProfile::AllowSubscriptionToNotificationsService' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, DebugName) == 0x000080, "Member 'UMcpProfile::DebugName' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, bProfileLockOperationPending) == 0x000090, "Member 'UMcpProfile::bProfileLockOperationPending' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, bProfileUnlockOperationPending) == 0x000091, "Member 'UMcpProfile::bProfileUnlockOperationPending' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, bEnableMocks) == 0x000092, "Member 'UMcpProfile::bEnableMocks' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, ProfileGroup) == 0x0000B0, "Member 'UMcpProfile::ProfileGroup' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, ProfileId) == 0x0000B8, "Member 'UMcpProfile::ProfileId' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, ProfileRevision) == 0x0000C8, "Member 'UMcpProfile::ProfileRevision' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, FullProfileQueryQueued) == 0x0000D0, "Member 'UMcpProfile::FullProfileQueryQueued' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, bProfileWriteLocked) == 0x0000D4, "Member 'UMcpProfile::bProfileWriteLocked' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, ProfileWriteLockExpireTime) == 0x0000D8, "Member 'UMcpProfile::ProfileWriteLockExpireTime' has a wrong offset!");
-static_assert(offsetof(UMcpProfile, CommandRevision) == 0x0000E0, "Member 'UMcpProfile::CommandRevision' has a wrong offset!");
 
 // Class McpProfileSys.McpProfileGroup
 // 0x0268 (0x0290 - 0x0028)
@@ -145,33 +148,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"McpProfileGroup">();
+		STATIC_CLASS_IMPL("McpProfileGroup")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"McpProfileGroup")
 	}
 	static class UMcpProfileGroup* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMcpProfileGroup>();
 	}
 };
-static_assert(alignof(UMcpProfileGroup) == 0x000010, "Wrong alignment on UMcpProfileGroup");
-static_assert(sizeof(UMcpProfileGroup) == 0x000290, "Wrong size on UMcpProfileGroup");
-static_assert(offsetof(UMcpProfileGroup, DelayMcpResults) == 0x00011C, "Member 'UMcpProfileGroup::DelayMcpResults' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, WeeklyIntervalStartDay) == 0x000120, "Member 'UMcpProfileGroup::WeeklyIntervalStartDay' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileList) == 0x000128, "Member 'UMcpProfileGroup::ProfileList' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, PlayerName) == 0x000140, "Member 'UMcpProfileGroup::PlayerName' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bIsServer) == 0x000150, "Member 'UMcpProfileGroup::bIsServer' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileNotificationsStompTopic) == 0x000158, "Member 'UMcpProfileGroup::ProfileNotificationsStompTopic' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LastMcpVersion) == 0x0001A8, "Member 'UMcpProfileGroup::LastMcpVersion' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LastContentVersion) == 0x0001B8, "Member 'UMcpProfileGroup::LastContentVersion' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LocalTimeOffset) == 0x0001C8, "Member 'UMcpProfileGroup::LocalTimeOffset' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockCode) == 0x0001D8, "Member 'UMcpProfileGroup::LockCode' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockedProfiles) == 0x0001E8, "Member 'UMcpProfileGroup::LockedProfiles' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, LockedProfilesString) == 0x0001F8, "Member 'UMcpProfileGroup::LockedProfilesString' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ProfileWriteLockTimeoutSecs) == 0x000208, "Member 'UMcpProfileGroup::ProfileWriteLockTimeoutSecs' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bSubscribedToNotifications) == 0x00020C, "Member 'UMcpProfileGroup::bSubscribedToNotifications' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, ApplyStashEndPoint) == 0x000210, "Member 'UMcpProfileGroup::ApplyStashEndPoint' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bSendProfileCommandRevisions) == 0x000228, "Member 'UMcpProfileGroup::bSendProfileCommandRevisions' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, bAsyncParseProfileUpdates) == 0x000229, "Member 'UMcpProfileGroup::bAsyncParseProfileUpdates' has a wrong offset!");
-static_assert(offsetof(UMcpProfileGroup, MaxChangesToForwardInUpdate) == 0x000280, "Member 'UMcpProfileGroup::MaxChangesToForwardInUpdate' has a wrong offset!");
 
 // Class McpProfileSys.McpProfileManager
 // 0x0030 (0x0058 - 0x0028)
@@ -185,17 +172,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"McpProfileManager">();
+		STATIC_CLASS_IMPL("McpProfileManager")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"McpProfileManager")
 	}
 	static class UMcpProfileManager* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMcpProfileManager>();
 	}
 };
-static_assert(alignof(UMcpProfileManager) == 0x000008, "Wrong alignment on UMcpProfileManager");
-static_assert(sizeof(UMcpProfileManager) == 0x000058, "Wrong size on UMcpProfileManager");
-static_assert(offsetof(UMcpProfileManager, ServerProfileGroups) == 0x000038, "Member 'UMcpProfileManager::ServerProfileGroups' has a wrong offset!");
-static_assert(offsetof(UMcpProfileManager, ClientProfileGroups) == 0x000048, "Member 'UMcpProfileManager::ClientProfileGroups' has a wrong offset!");
 
 }
 

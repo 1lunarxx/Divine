@@ -41,7 +41,7 @@ public:
 	bool                                          bShowImageOnly;                                    // 0x0308(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_309[0x3];                                      // 0x0309(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PreviewPipCount;                                   // 0x030C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMulticastInlineDelegate<void(bool NewIsHovered)> OnHoveredChanged;                                  // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(bool NewIsHovered)> OnHoveredChanged;                              // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FLinearColor                           DefaultColor;                                      // 0x0320(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               MID_Font;                                          // 0x0330(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -59,34 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaMOTDTileMainPage_C">();
+		BP_STATIC_CLASS_IMPL("AthenaMOTDTileMainPage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaMOTDTileMainPage_C")
 	}
 	static class UAthenaMOTDTileMainPage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaMOTDTileMainPage_C>();
 	}
 };
-static_assert(alignof(UAthenaMOTDTileMainPage_C) == 0x000008, "Wrong alignment on UAthenaMOTDTileMainPage_C");
-static_assert(sizeof(UAthenaMOTDTileMainPage_C) == 0x000338, "Wrong size on UAthenaMOTDTileMainPage_C");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, UberGraphFrame) == 0x000298, "Member 'UAthenaMOTDTileMainPage_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, OnHover) == 0x0002A0, "Member 'UAthenaMOTDTileMainPage_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, OnSelected) == 0x0002A8, "Member 'UAthenaMOTDTileMainPage_C::OnSelected' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, Intro) == 0x0002B0, "Member 'UAthenaMOTDTileMainPage_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, Border_Details) == 0x0002B8, "Member 'UAthenaMOTDTileMainPage_C::Border_Details' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, Border_PipDisplay) == 0x0002C0, "Member 'UAthenaMOTDTileMainPage_C::Border_PipDisplay' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, CommonLoadGuard_0) == 0x0002C8, "Member 'UAthenaMOTDTileMainPage_C::CommonLoadGuard_0' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, Fill) == 0x0002D0, "Member 'UAthenaMOTDTileMainPage_C::Fill' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, Image_SelectedPointer) == 0x0002D8, "Member 'UAthenaMOTDTileMainPage_C::Image_SelectedPointer' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, LoadingImage) == 0x0002E0, "Member 'UAthenaMOTDTileMainPage_C::LoadingImage' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, LoadingImageOvr) == 0x0002E8, "Member 'UAthenaMOTDTileMainPage_C::LoadingImageOvr' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, LoadSwitcher) == 0x0002F0, "Member 'UAthenaMOTDTileMainPage_C::LoadSwitcher' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, NewsItemScale) == 0x0002F8, "Member 'UAthenaMOTDTileMainPage_C::NewsItemScale' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, SizeBox_Tile) == 0x000300, "Member 'UAthenaMOTDTileMainPage_C::SizeBox_Tile' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, bShowImageOnly) == 0x000308, "Member 'UAthenaMOTDTileMainPage_C::bShowImageOnly' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, PreviewPipCount) == 0x00030C, "Member 'UAthenaMOTDTileMainPage_C::PreviewPipCount' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, OnHoveredChanged) == 0x000310, "Member 'UAthenaMOTDTileMainPage_C::OnHoveredChanged' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, DefaultColor) == 0x000320, "Member 'UAthenaMOTDTileMainPage_C::DefaultColor' has a wrong offset!");
-static_assert(offsetof(UAthenaMOTDTileMainPage_C, MID_Font) == 0x000330, "Member 'UAthenaMOTDTileMainPage_C::MID_Font' has a wrong offset!");
 
 }
 

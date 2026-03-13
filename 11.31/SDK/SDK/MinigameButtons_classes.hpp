@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "MinigameButtonsState_structs.hpp"
-#include "FortniteGame_structs.hpp"
+#include "Engine_structs.hpp"
 #include "MinigameButtonsStateConfiguration_structs.hpp"
 #include "MinigameButtonsWidgetSwitcherConfiguration_structs.hpp"
 #include "UMG_classes.hpp"
+#include "FortniteGame_structs.hpp"
 
 
 namespace SDK
@@ -34,16 +34,16 @@ public:
 	class UIconTextButton_C*                      StartGameButton2;                                  // 0x0258(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TMulticastInlineDelegate<void()>              StartButtonClicked;                                // 0x0260(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	TMulticastInlineDelegate<void()>              EndButtonClicked;                                  // 0x0270(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UCommonButton* Button)> StartButtonHovered;                                // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UCommonButton* Button)> EndButtonHovered;                                  // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UCommonButton* Button)> StartButtonHovered;                  // 0x0280(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UCommonButton* Button)> EndButtonHovered;                    // 0x0290(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UIconTextButton_C*                      CurrentButton;                                     // 0x02A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMinigameButtonsState                         ButtonState;                                       // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Transient, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_2A9[0x7];                                      // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<EMinigameButtonsState, struct FMinigameButtonsStateConfiguration> ButtonConfigurations;                              // 0x02B0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(class UCommonButton* Button)> StartButtonUnhovered;                              // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	TMulticastInlineDelegate<void(class UCommonButton* Button)> EndButtonUnhovered;                                // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	struct FMinigameButtonsWidgetSwitcherConfiguration CurrentWidgetSwitcherConfiguration;                // 0x0320(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
-	TArray<struct FMinigameButtonsWidgetSwitcherConfiguration> WidgetSwitcherConfigurations;                      // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
+	TMap<EMinigameButtonsState, struct FMinigameButtonsStateConfiguration> ButtonConfigurations;     // 0x02B0(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance)
+	TMulticastInlineDelegate<void(class UCommonButton* Button)> StartButtonUnhovered;                // 0x0300(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(class UCommonButton* Button)> EndButtonUnhovered;                  // 0x0310(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FMinigameButtonsWidgetSwitcherConfiguration CurrentWidgetSwitcherConfiguration;           // 0x0320(0x0040)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference, HasGetValueTypeHash)
+	TArray<struct FMinigameButtonsWidgetSwitcherConfiguration> WidgetSwitcherConfigurations;         // 0x0360(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, ContainsInstancedReference)
 
 public:
 	void UpdateButtonsFromButtonState();
@@ -65,32 +65,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MinigameButtons_C">();
+		BP_STATIC_CLASS_IMPL("MinigameButtons_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MinigameButtons_C")
 	}
 	static class UMinigameButtons_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMinigameButtons_C>();
 	}
 };
-static_assert(alignof(UMinigameButtons_C) == 0x000008, "Wrong alignment on UMinigameButtons_C");
-static_assert(sizeof(UMinigameButtons_C) == 0x000370, "Wrong size on UMinigameButtons_C");
-static_assert(offsetof(UMinigameButtons_C, UberGraphFrame) == 0x000230, "Member 'UMinigameButtons_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, ButtonSwitcher) == 0x000238, "Member 'UMinigameButtons_C::ButtonSwitcher' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, EndGameButton) == 0x000240, "Member 'UMinigameButtons_C::EndGameButton' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, EndGameButton2) == 0x000248, "Member 'UMinigameButtons_C::EndGameButton2' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, StartGameButton) == 0x000250, "Member 'UMinigameButtons_C::StartGameButton' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, StartGameButton2) == 0x000258, "Member 'UMinigameButtons_C::StartGameButton2' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, StartButtonClicked) == 0x000260, "Member 'UMinigameButtons_C::StartButtonClicked' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, EndButtonClicked) == 0x000270, "Member 'UMinigameButtons_C::EndButtonClicked' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, StartButtonHovered) == 0x000280, "Member 'UMinigameButtons_C::StartButtonHovered' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, EndButtonHovered) == 0x000290, "Member 'UMinigameButtons_C::EndButtonHovered' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, CurrentButton) == 0x0002A0, "Member 'UMinigameButtons_C::CurrentButton' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, ButtonState) == 0x0002A8, "Member 'UMinigameButtons_C::ButtonState' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, ButtonConfigurations) == 0x0002B0, "Member 'UMinigameButtons_C::ButtonConfigurations' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, StartButtonUnhovered) == 0x000300, "Member 'UMinigameButtons_C::StartButtonUnhovered' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, EndButtonUnhovered) == 0x000310, "Member 'UMinigameButtons_C::EndButtonUnhovered' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, CurrentWidgetSwitcherConfiguration) == 0x000320, "Member 'UMinigameButtons_C::CurrentWidgetSwitcherConfiguration' has a wrong offset!");
-static_assert(offsetof(UMinigameButtons_C, WidgetSwitcherConfigurations) == 0x000360, "Member 'UMinigameButtons_C::WidgetSwitcherConfigurations' has a wrong offset!");
 
 }
 

@@ -37,23 +37,24 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FortMediaSubtitlesPlayer">();
+		STATIC_CLASS_IMPL("FortMediaSubtitlesPlayer")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortMediaSubtitlesPlayer")
 	}
 	static class UFortMediaSubtitlesPlayer* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortMediaSubtitlesPlayer>();
 	}
 };
-static_assert(alignof(UFortMediaSubtitlesPlayer) == 0x000008, "Wrong alignment on UFortMediaSubtitlesPlayer");
-static_assert(sizeof(UFortMediaSubtitlesPlayer) == 0x000048, "Wrong size on UFortMediaSubtitlesPlayer");
-static_assert(offsetof(UFortMediaSubtitlesPlayer, SourceSubtitles) == 0x000030, "Member 'UFortMediaSubtitlesPlayer::SourceSubtitles' has a wrong offset!");
 
 // Class SubtitlesWidgets.SubtitleDisplay
 // 0x0308 (0x0410 - 0x0108)
 class USubtitleDisplay final : public UWidget
 {
 public:
-	TMulticastInlineDelegate<void(class FText Subtitle)> BP_SubtitleChangedEvent;                           // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	TMulticastInlineDelegate<void(class FText Subtitle)> BP_SubtitleChangedEvent;                    // 0x0108(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	struct FSlateFontInfo                         FontInfo;                                          // 0x0118(0x0050)(Edit, BlueprintVisible, BlueprintReadOnly, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           ColorAndOpacity;                                   // 0x0168(0x0010)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         WrapTextAt;                                        // 0x0178(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -65,19 +66,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SubtitleDisplay">();
+		STATIC_CLASS_IMPL("SubtitleDisplay")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SubtitleDisplay")
 	}
 	static class USubtitleDisplay* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USubtitleDisplay>();
 	}
 };
-static_assert(alignof(USubtitleDisplay) == 0x000008, "Wrong alignment on USubtitleDisplay");
-static_assert(sizeof(USubtitleDisplay) == 0x000410, "Wrong size on USubtitleDisplay");
-static_assert(offsetof(USubtitleDisplay, BP_SubtitleChangedEvent) == 0x000108, "Member 'USubtitleDisplay::BP_SubtitleChangedEvent' has a wrong offset!");
-static_assert(offsetof(USubtitleDisplay, FontInfo) == 0x000118, "Member 'USubtitleDisplay::FontInfo' has a wrong offset!");
-static_assert(offsetof(USubtitleDisplay, ColorAndOpacity) == 0x000168, "Member 'USubtitleDisplay::ColorAndOpacity' has a wrong offset!");
-static_assert(offsetof(USubtitleDisplay, WrapTextAt) == 0x000178, "Member 'USubtitleDisplay::WrapTextAt' has a wrong offset!");
 
 }
 

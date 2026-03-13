@@ -72,39 +72,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Prj_Lotus_Mustache_C">();
+		BP_STATIC_CLASS_IMPL("B_Prj_Lotus_Mustache_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Prj_Lotus_Mustache_C")
 	}
 	static class AB_Prj_Lotus_Mustache_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Prj_Lotus_Mustache_C>();
 	}
 };
-static_assert(alignof(AB_Prj_Lotus_Mustache_C) == 0x000008, "Wrong alignment on AB_Prj_Lotus_Mustache_C");
-static_assert(sizeof(AB_Prj_Lotus_Mustache_C) == 0x000A08, "Wrong size on AB_Prj_Lotus_Mustache_C");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, UberGraphFrame) == 0x000838, "Member 'AB_Prj_Lotus_Mustache_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, FlightSound) == 0x000840, "Member 'AB_Prj_Lotus_Mustache_C::FlightSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, FX_BandageTrail_SplineMesh) == 0x000848, "Member 'AB_Prj_Lotus_Mustache_C::FX_BandageTrail_SplineMesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, RotatingMovement) == 0x000850, "Member 'AB_Prj_Lotus_Mustache_C::RotatingMovement' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, TracerMesh) == 0x000858, "Member 'AB_Prj_Lotus_Mustache_C::TracerMesh' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, FX_BandageTrail_Ribbon) == 0x000860, "Member 'AB_Prj_Lotus_Mustache_C::FX_BandageTrail_Ribbon' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Projectile_Max_Lifetime) == 0x000868, "Member 'AB_Prj_Lotus_Mustache_C::Projectile_Max_Lifetime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, bHasExploded_) == 0x00086C, "Member 'AB_Prj_Lotus_Mustache_C::bHasExploded_' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Impact_Location) == 0x000870, "Member 'AB_Prj_Lotus_Mustache_C::Impact_Location' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, HitResult) == 0x00087C, "Member 'AB_Prj_Lotus_Mustache_C::HitResult' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, FX_Linger_Time) == 0x000904, "Member 'AB_Prj_Lotus_Mustache_C::FX_Linger_Time' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Lifespan_Timer) == 0x000908, "Member 'AB_Prj_Lotus_Mustache_C::Lifespan_Timer' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, InterpSpeed) == 0x000910, "Member 'AB_Prj_Lotus_Mustache_C::InterpSpeed' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Max_Projectile_Size) == 0x000914, "Member 'AB_Prj_Lotus_Mustache_C::Max_Projectile_Size' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Proj_MID) == 0x000920, "Member 'AB_Prj_Lotus_Mustache_C::Proj_MID' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, Tracer_Lifetime) == 0x000928, "Member 'AB_Prj_Lotus_Mustache_C::Tracer_Lifetime' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, SpawnPositionOffset) == 0x00092C, "Member 'AB_Prj_Lotus_Mustache_C::SpawnPositionOffset' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, NoTarget) == 0x000938, "Member 'AB_Prj_Lotus_Mustache_C::NoTarget' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, ShouldSpawnBandages) == 0x000940, "Member 'AB_Prj_Lotus_Mustache_C::ShouldSpawnBandages' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, SpawnBandageSound) == 0x000960, "Member 'AB_Prj_Lotus_Mustache_C::SpawnBandageSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, BounceOffWallSound) == 0x000968, "Member 'AB_Prj_Lotus_Mustache_C::BounceOffWallSound' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, WaterImpactFX) == 0x000970, "Member 'AB_Prj_Lotus_Mustache_C::WaterImpactFX' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, WaterHitMat) == 0x000978, "Member 'AB_Prj_Lotus_Mustache_C::WaterHitMat' has a wrong offset!");
-static_assert(offsetof(AB_Prj_Lotus_Mustache_C, WaterHit) == 0x000980, "Member 'AB_Prj_Lotus_Mustache_C::WaterHit' has a wrong offset!");
 
 }
 

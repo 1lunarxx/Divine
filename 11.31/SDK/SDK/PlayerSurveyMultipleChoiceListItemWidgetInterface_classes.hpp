@@ -17,8 +17,8 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PlayerSurveyMultipleChoiceListItemWidgetInterface.PlayerSurveyMultipleChoiceListItemWidgetInterface_C
-// 0x0000 (0x0028 - 0x0028)
-class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C final : public IInterface
+// 0x0000 (0x0000 - 0x0000)
+class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C final
 {
 public:
 	void SetChoiceData(const struct FFortPlayerSurveyQuestionChoice& Value);
@@ -27,15 +27,26 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PlayerSurveyMultipleChoiceListItemWidgetInterface_C">();
+		BP_STATIC_CLASS_IMPL("PlayerSurveyMultipleChoiceListItemWidgetInterface_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PlayerSurveyMultipleChoiceListItemWidgetInterface_C")
 	}
 	static class IPlayerSurveyMultipleChoiceListItemWidgetInterface_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<IPlayerSurveyMultipleChoiceListItemWidgetInterface_C>();
 	}
+
+	class UObject* AsUObject()
+	{
+		return reinterpret_cast<UObject*>(this);
+	}
+	const class UObject* AsUObject() const
+	{
+		return reinterpret_cast<const UObject*>(this);
+	}
 };
-static_assert(alignof(IPlayerSurveyMultipleChoiceListItemWidgetInterface_C) == 0x000008, "Wrong alignment on IPlayerSurveyMultipleChoiceListItemWidgetInterface_C");
-static_assert(sizeof(IPlayerSurveyMultipleChoiceListItemWidgetInterface_C) == 0x000028, "Wrong size on IPlayerSurveyMultipleChoiceListItemWidgetInterface_C");
 
 }
 

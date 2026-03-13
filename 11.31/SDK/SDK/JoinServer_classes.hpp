@@ -34,17 +34,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"JoinServer_C">();
+		BP_STATIC_CLASS_IMPL("JoinServer_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"JoinServer_C")
 	}
 	static class UJoinServer_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UJoinServer_C>();
 	}
 };
-static_assert(alignof(UJoinServer_C) == 0x000008, "Wrong alignment on UJoinServer_C");
-static_assert(sizeof(UJoinServer_C) == 0x000488, "Wrong size on UJoinServer_C");
-static_assert(offsetof(UJoinServer_C, UberGraphFrame) == 0x000478, "Member 'UJoinServer_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UJoinServer_C, BuildWatermark) == 0x000480, "Member 'UJoinServer_C::BuildWatermark' has a wrong offset!");
 
 }
 

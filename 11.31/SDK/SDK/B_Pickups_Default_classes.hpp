@@ -39,18 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_Pickups_Default_C">();
+		BP_STATIC_CLASS_IMPL("B_Pickups_Default_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_Pickups_Default_C")
 	}
 	static class AB_Pickups_Default_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_Pickups_Default_C>();
 	}
 };
-static_assert(alignof(AB_Pickups_Default_C) == 0x000008, "Wrong alignment on AB_Pickups_Default_C");
-static_assert(sizeof(AB_Pickups_Default_C) == 0x0004A8, "Wrong size on AB_Pickups_Default_C");
-static_assert(offsetof(AB_Pickups_Default_C, UberGraphFrame_B_Pickups_Default_C) == 0x000490, "Member 'AB_Pickups_Default_C::UberGraphFrame_B_Pickups_Default_C' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_Default_C, SpotLight) == 0x000498, "Member 'AB_Pickups_Default_C::SpotLight' has a wrong offset!");
-static_assert(offsetof(AB_Pickups_Default_C, Background) == 0x0004A0, "Member 'AB_Pickups_Default_C::Background' has a wrong offset!");
 
 }
 

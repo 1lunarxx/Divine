@@ -23,15 +23,17 @@ class UGA_Athena_UtilityGrenade_WithTrajectory_C : public UGA_Athena_Grenade_Wit
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_UtilityGrenade_WithTrajectory_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_UtilityGrenade_WithTrajectory_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_UtilityGrenade_WithTrajectory_C")
 	}
 	static class UGA_Athena_UtilityGrenade_WithTrajectory_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_UtilityGrenade_WithTrajectory_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_UtilityGrenade_WithTrajectory_C) == 0x000008, "Wrong alignment on UGA_Athena_UtilityGrenade_WithTrajectory_C");
-static_assert(sizeof(UGA_Athena_UtilityGrenade_WithTrajectory_C) == 0x000DE8, "Wrong size on UGA_Athena_UtilityGrenade_WithTrajectory_C");
 
 }
 

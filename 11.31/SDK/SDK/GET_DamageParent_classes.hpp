@@ -23,15 +23,17 @@ class UGET_DamageParent_C : public UGameplayEffect
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GET_DamageParent_C">();
+		BP_STATIC_CLASS_IMPL("GET_DamageParent_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GET_DamageParent_C")
 	}
 	static class UGET_DamageParent_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGET_DamageParent_C>();
 	}
 };
-static_assert(alignof(UGET_DamageParent_C) == 0x000008, "Wrong alignment on UGET_DamageParent_C");
-static_assert(sizeof(UGET_DamageParent_C) == 0x000770, "Wrong size on UGET_DamageParent_C");
 
 }
 

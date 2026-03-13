@@ -43,19 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_FloppingRabbit_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_FloppingRabbit_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_FloppingRabbit_C")
 	}
 	static class UGA_Athena_FloppingRabbit_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_FloppingRabbit_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_FloppingRabbit_C) == 0x000008, "Wrong alignment on UGA_Athena_FloppingRabbit_C");
-static_assert(sizeof(UGA_Athena_FloppingRabbit_C) == 0x000DC0, "Wrong size on UGA_Athena_FloppingRabbit_C");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_C, UberGraphFrame_GA_Athena_FloppingRabbit_C) == 0x000DA0, "Member 'UGA_Athena_FloppingRabbit_C::UberGraphFrame_GA_Athena_FloppingRabbit_C' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_C, T_Active) == 0x000DA8, "Member 'UGA_Athena_FloppingRabbit_C::T_Active' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_C, T_InWorld) == 0x000DB0, "Member 'UGA_Athena_FloppingRabbit_C::T_InWorld' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FloppingRabbit_C, CastMontageWeapon) == 0x000DB8, "Member 'UGA_Athena_FloppingRabbit_C::CastMontageWeapon' has a wrong offset!");
 
 }
 

@@ -26,10 +26,6 @@ public:
 	bool                                          FreeUnlocked;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          PaidUnlocked;                                      // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged) == 0x000001, "Wrong alignment on AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged");
-static_assert(sizeof(AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged) == 0x000002, "Wrong size on AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged, FreeUnlocked) == 0x000000, "Member 'AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged::FreeUnlocked' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged, PaidUnlocked) == 0x000001, "Member 'AthenaSeasonLevelHeaderWidget_C_OnLockedStatusChanged::PaidUnlocked' has a wrong offset!");
 
 // Function AthenaSeasonLevelHeaderWidget.AthenaSeasonLevelHeaderWidget_C.ExecuteUbergraph_AthenaSeasonLevelHeaderWidget
 // 0x00B8 (0x00B8 - 0x0000)
@@ -62,28 +58,6 @@ public:
 	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue_1;          // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x00B1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget) == 0x000008, "Wrong alignment on AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget");
-static_assert(sizeof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget) == 0x0000B8, "Wrong size on AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, EntryPoint) == 0x000000, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_bool_Variable) == 0x000004, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_byte_Variable) == 0x000005, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_byte_Variable_1) == 0x000006, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_GetLevelInfo_ReturnValue) == 0x000008, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_GetLevelInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_IsFreeUnlocked_ReturnValue) == 0x000010, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_IsFreeUnlocked_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_GetLevel_ReturnValue) == 0x000014, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_GetLevel_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_struct_Variable) == 0x000018, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_Conv_IntToText_ReturnValue) == 0x000028, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_struct_Variable_1) == 0x000040, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, Temp_bool_Variable_1) == 0x000050, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, K2Node_Event_FreeUnlocked) == 0x000051, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::K2Node_Event_FreeUnlocked' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, K2Node_Event_PaidUnlocked) == 0x000052, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::K2Node_Event_PaidUnlocked' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, K2Node_Select_Default) == 0x000054, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_GetLocalAccountInfo_Result) == 0x000070, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_GetLocalAccountInfo_Result' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x0000A8, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_Add_IntInt_ReturnValue) == 0x0000AC, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x0000B0, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget, K2Node_Select_Default_1) == 0x0000B1, "Member 'AthenaSeasonLevelHeaderWidget_C_ExecuteUbergraph_AthenaSeasonLevelHeaderWidget::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

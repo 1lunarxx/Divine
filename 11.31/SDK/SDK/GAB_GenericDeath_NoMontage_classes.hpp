@@ -36,16 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_GenericDeath_NoMontage_C">();
+		BP_STATIC_CLASS_IMPL("GAB_GenericDeath_NoMontage_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_GenericDeath_NoMontage_C")
 	}
 	static class UGAB_GenericDeath_NoMontage_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_GenericDeath_NoMontage_C>();
 	}
 };
-static_assert(alignof(UGAB_GenericDeath_NoMontage_C) == 0x000008, "Wrong alignment on UGAB_GenericDeath_NoMontage_C");
-static_assert(sizeof(UGAB_GenericDeath_NoMontage_C) == 0x000A38, "Wrong size on UGAB_GenericDeath_NoMontage_C");
-static_assert(offsetof(UGAB_GenericDeath_NoMontage_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_GenericDeath_NoMontage_C::UberGraphFrame' has a wrong offset!");
 
 }
 

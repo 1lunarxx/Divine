@@ -36,37 +36,28 @@ public:
 	class USafeZone*                              SafeZone_0;                                        // 0x0648(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 public:
+	void SetDynamicColors(class UImage* DetailsDynamicMaterialTarget, const struct FFortChallengeSetStyle& FortChallengeSetStyle);
+	class UWidget* GetWidgetForFramingViewedItem();
 	void HandleBack(bool* PassThrough);
 	void OnChallengeSetEstablished(const struct FFortChallengeSetStyle& DisplayStyle, bool bIsComplete);
 	void Construct();
 	void BndEvt__MobileCloseButton_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature(class UCommonButton* Button);
 	void ExecuteUbergraph_ChallengeSetDetails(int32 EntryPoint);
-	void SetDynamicColors(class UImage* DetailsDynamicMaterialTarget, const struct FFortChallengeSetStyle& FortChallengeSetStyle);
-	class UWidget* GetWidgetForFramingViewedItem();
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeSetDetails_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeSetDetails_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeSetDetails_C")
 	}
 	static class UChallengeSetDetails_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeSetDetails_C>();
 	}
 };
-static_assert(alignof(UChallengeSetDetails_C) == 0x000008, "Wrong alignment on UChallengeSetDetails_C");
-static_assert(sizeof(UChallengeSetDetails_C) == 0x000650, "Wrong size on UChallengeSetDetails_C");
-static_assert(offsetof(UChallengeSetDetails_C, UberGraphFrame) == 0x0005F8, "Member 'UChallengeSetDetails_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, ItemInfoIntroOutro) == 0x000600, "Member 'UChallengeSetDetails_C::ItemInfoIntroOutro' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, Intro) == 0x000608, "Member 'UChallengeSetDetails_C::Intro' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, CameraFramingWidget) == 0x000610, "Member 'UChallengeSetDetails_C::CameraFramingWidget' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, CloseIcon) == 0x000618, "Member 'UChallengeSetDetails_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, HeaderBase) == 0x000620, "Member 'UChallengeSetDetails_C::HeaderBase' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, HeaderBolt) == 0x000628, "Member 'UChallengeSetDetails_C::HeaderBolt' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, ItemInfo) == 0x000630, "Member 'UChallengeSetDetails_C::ItemInfo' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, MobileCloseButton) == 0x000638, "Member 'UChallengeSetDetails_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, OverlayCloseButton) == 0x000640, "Member 'UChallengeSetDetails_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UChallengeSetDetails_C, SafeZone_0) == 0x000648, "Member 'UChallengeSetDetails_C::SafeZone_0' has a wrong offset!");
 
 }
 

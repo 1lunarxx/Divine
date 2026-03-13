@@ -32,17 +32,6 @@ public:
 	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists) == 0x000008, "Wrong alignment on SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists");
-static_assert(sizeof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists) == 0x000050, "Wrong size on SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, EntryPoint) == 0x000000, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_Event_IsDesignTime) == 0x000004, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_ComponentBoundEvent_ActiveWidget) == 0x000008, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_ComponentBoundEvent_ActiveWidget' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_ComponentBoundEvent_ActiveWidgetIndex) == 0x000010, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_ComponentBoundEvent_ActiveWidgetIndex' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_Event_ButtonText) == 0x000020, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_Event_ButtonText' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_DynamicCast_AsLeave_Platform_Party_Button) == 0x000038, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_DynamicCast_AsLeave_Platform_Party_Button' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, K2Node_DynamicCast_bSuccess) == 0x000040, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'SocialPanelView_UserLists_C_ExecuteUbergraph_SocialPanelView_UserLists::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function SocialPanelView_UserLists.SocialPanelView_UserLists_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -51,9 +40,6 @@ struct SocialPanelView_UserLists_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(SocialPanelView_UserLists_C_PreConstruct) == 0x000001, "Wrong alignment on SocialPanelView_UserLists_C_PreConstruct");
-static_assert(sizeof(SocialPanelView_UserLists_C_PreConstruct) == 0x000001, "Wrong size on SocialPanelView_UserLists_C_PreConstruct");
-static_assert(offsetof(SocialPanelView_UserLists_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'SocialPanelView_UserLists_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function SocialPanelView_UserLists.SocialPanelView_UserLists_C.BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature
 // 0x0010 (0x0010 - 0x0000)
@@ -63,10 +49,6 @@ public:
 	class UWidget*                                ActiveWidget;                                      // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         ActiveWidgetIndex;                                 // 0x0008(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature) == 0x000008, "Wrong alignment on SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
-static_assert(sizeof(SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature) == 0x000010, "Wrong size on SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature");
-static_assert(offsetof(SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature, ActiveWidget) == 0x000000, "Member 'SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature::ActiveWidget' has a wrong offset!");
-static_assert(offsetof(SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature, ActiveWidgetIndex) == 0x000008, "Member 'SocialPanelView_UserLists_C_BndEvt__Switcher_UserLists_K2Node_ComponentBoundEvent_0_OnActiveWidgetChanged__DelegateSignature::ActiveWidgetIndex' has a wrong offset!");
 
 // Function SocialPanelView_UserLists.SocialPanelView_UserLists_C.OnSetVoiceChannelButtonText
 // 0x0018 (0x0018 - 0x0000)
@@ -75,9 +57,6 @@ struct SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText final
 public:
 	class FText                                   ButtonText;                                        // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText) == 0x000008, "Wrong alignment on SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText");
-static_assert(sizeof(SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText) == 0x000018, "Wrong size on SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText");
-static_assert(offsetof(SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText, ButtonText) == 0x000000, "Member 'SocialPanelView_UserLists_C_OnSetVoiceChannelButtonText::ButtonText' has a wrong offset!");
 
 }
 

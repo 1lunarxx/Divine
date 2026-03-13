@@ -60,26 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_Emote_Generic_C">();
+		BP_STATIC_CLASS_IMPL("GAB_Emote_Generic_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_Emote_Generic_C")
 	}
 	static class UGAB_Emote_Generic_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_Emote_Generic_C>();
 	}
 };
-static_assert(alignof(UGAB_Emote_Generic_C) == 0x000008, "Wrong alignment on UGAB_Emote_Generic_C");
-static_assert(sizeof(UGAB_Emote_Generic_C) == 0x000A90, "Wrong size on UGAB_Emote_Generic_C");
-static_assert(offsetof(UGAB_Emote_Generic_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_Emote_Generic_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, PlayerPawn) == 0x000A38, "Member 'UGAB_Emote_Generic_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, PostTriggerCancelDelay) == 0x000A40, "Member 'UGAB_Emote_Generic_C::PostTriggerCancelDelay' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, HideReticle) == 0x000A44, "Member 'UGAB_Emote_Generic_C::HideReticle' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, ReticleHUDElementTags) == 0x000A48, "Member 'UGAB_Emote_Generic_C::ReticleHUDElementTags' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, MontageOverrideSection) == 0x000A68, "Member 'UGAB_Emote_Generic_C::MontageOverrideSection' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, bAbilityStopped) == 0x000A70, "Member 'UGAB_Emote_Generic_C::bAbilityStopped' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, EmoteHolsterId) == 0x000A74, "Member 'UGAB_Emote_Generic_C::EmoteHolsterId' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, bHolstered) == 0x000A7C, "Member 'UGAB_Emote_Generic_C::bHolstered' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, HUDElementVisibilityReasonName) == 0x000A80, "Member 'UGAB_Emote_Generic_C::HUDElementVisibilityReasonName' has a wrong offset!");
-static_assert(offsetof(UGAB_Emote_Generic_C, WaitForLoadedCount) == 0x000A88, "Member 'UGAB_Emote_Generic_C::WaitForLoadedCount' has a wrong offset!");
 
 }
 

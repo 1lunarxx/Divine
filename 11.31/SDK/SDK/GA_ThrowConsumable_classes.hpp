@@ -112,54 +112,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_ThrowConsumable_C">();
+		BP_STATIC_CLASS_IMPL("GA_ThrowConsumable_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_ThrowConsumable_C")
 	}
 	static class UGA_ThrowConsumable_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_ThrowConsumable_C>();
 	}
 };
-static_assert(alignof(UGA_ThrowConsumable_C) == 0x000008, "Wrong alignment on UGA_ThrowConsumable_C");
-static_assert(sizeof(UGA_ThrowConsumable_C) == 0x000DA0, "Wrong size on UGA_ThrowConsumable_C");
-static_assert(offsetof(UGA_ThrowConsumable_C, UberGraphFrame) == 0x000A30, "Member 'UGA_ThrowConsumable_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, PlayerPawn) == 0x000A38, "Member 'UGA_ThrowConsumable_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, AbilityKeyPressed) == 0x000A40, "Member 'UGA_ThrowConsumable_C::AbilityKeyPressed' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, InThrowWindup) == 0x000A41, "Member 'UGA_ThrowConsumable_C::InThrowWindup' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, AdditionalThrowAngle) == 0x000A44, "Member 'UGA_ThrowConsumable_C::AdditionalThrowAngle' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, MaxTossPitch) == 0x000A48, "Member 'UGA_ThrowConsumable_C::MaxTossPitch' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, GrenadeTargetingOriginOffset) == 0x000A4C, "Member 'UGA_ThrowConsumable_C::GrenadeTargetingOriginOffset' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, GrenadeTargetingOriginOffset_Crouched) == 0x000A58, "Member 'UGA_ThrowConsumable_C::GrenadeTargetingOriginOffset_Crouched' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, SpawnedProjectile) == 0x000A68, "Member 'UGA_ThrowConsumable_C::SpawnedProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, Proj_ThrownProjectile) == 0x000A70, "Member 'UGA_ThrowConsumable_C::Proj_ThrownProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, ProjectileSpeed) == 0x000A78, "Member 'UGA_ThrowConsumable_C::ProjectileSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, ProjectileGravityScale) == 0x000A98, "Member 'UGA_ThrowConsumable_C::ProjectileGravityScale' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, TrajectoryUpdateInterval) == 0x000AB8, "Member 'UGA_ThrowConsumable_C::TrajectoryUpdateInterval' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, CookMonage) == 0x000AC0, "Member 'UGA_ThrowConsumable_C::CookMonage' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, ThrowMontage) == 0x000AC8, "Member 'UGA_ThrowConsumable_C::ThrowMontage' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, GC_OnThrow) == 0x000AD0, "Member 'UGA_ThrowConsumable_C::GC_OnThrow' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, TrajectoryIndicator) == 0x000AD8, "Member 'UGA_ThrowConsumable_C::TrajectoryIndicator' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, TrajectoryIndicatorClass) == 0x000AE0, "Member 'UGA_ThrowConsumable_C::TrajectoryIndicatorClass' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, DummyProjectile) == 0x000AE8, "Member 'UGA_ThrowConsumable_C::DummyProjectile' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, DummyMaxSpeed) == 0x000AF0, "Member 'UGA_ThrowConsumable_C::DummyMaxSpeed' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, DummyGravity) == 0x000AF4, "Member 'UGA_ThrowConsumable_C::DummyGravity' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, DummyExtent) == 0x000AF8, "Member 'UGA_ThrowConsumable_C::DummyExtent' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, DummyTimeStep) == 0x000AFC, "Member 'UGA_ThrowConsumable_C::DummyTimeStep' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, TrajectoryCollisionProfileName) == 0x000B00, "Member 'UGA_ThrowConsumable_C::TrajectoryCollisionProfileName' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, GE_InWindup) == 0x000B08, "Member 'UGA_ThrowConsumable_C::GE_InWindup' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, Handle_GE_InWindup) == 0x000B10, "Member 'UGA_ThrowConsumable_C::Handle_GE_InWindup' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, EC_DefaultExplosion) == 0x000B18, "Member 'UGA_ThrowConsumable_C::EC_DefaultExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, ExplosionEffectLevel) == 0x000B20, "Member 'UGA_ThrowConsumable_C::ExplosionEffectLevel' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, ExplosionEffectContainerSpec) == 0x000B28, "Member 'UGA_ThrowConsumable_C::ExplosionEffectContainerSpec' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, SpawnedOnEquip) == 0x000BE0, "Member 'UGA_ThrowConsumable_C::SpawnedOnEquip' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, EC_DefaultHit) == 0x000BE4, "Member 'UGA_ThrowConsumable_C::EC_DefaultHit' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, HitEffectLevel) == 0x000BEC, "Member 'UGA_ThrowConsumable_C::HitEffectLevel' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, HitEffectContainerSpec) == 0x000BF0, "Member 'UGA_ThrowConsumable_C::HitEffectContainerSpec' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, OnProjectileSpawn) == 0x000CA8, "Member 'UGA_ThrowConsumable_C::OnProjectileSpawn' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, HasAdditionalExplosion) == 0x000CB8, "Member 'UGA_ThrowConsumable_C::HasAdditionalExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, EC_AdditionalExplosion) == 0x000CBC, "Member 'UGA_ThrowConsumable_C::EC_AdditionalExplosion' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, AdditionalExplodeLevel) == 0x000CC4, "Member 'UGA_ThrowConsumable_C::AdditionalExplodeLevel' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, AdditionalContainerSpec) == 0x000CC8, "Member 'UGA_ThrowConsumable_C::AdditionalContainerSpec' has a wrong offset!");
-static_assert(offsetof(UGA_ThrowConsumable_C, QuestCreditTargetTag) == 0x000D80, "Member 'UGA_ThrowConsumable_C::QuestCreditTargetTag' has a wrong offset!");
 
 }
 

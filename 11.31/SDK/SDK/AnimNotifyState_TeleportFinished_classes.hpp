@@ -27,15 +27,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AnimNotifyState_TeleportFinished_C">();
+		BP_STATIC_CLASS_IMPL("AnimNotifyState_TeleportFinished_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AnimNotifyState_TeleportFinished_C")
 	}
 	static class UAnimNotifyState_TeleportFinished_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAnimNotifyState_TeleportFinished_C>();
 	}
 };
-static_assert(alignof(UAnimNotifyState_TeleportFinished_C) == 0x000008, "Wrong alignment on UAnimNotifyState_TeleportFinished_C");
-static_assert(sizeof(UAnimNotifyState_TeleportFinished_C) == 0x000030, "Wrong size on UAnimNotifyState_TeleportFinished_C");
 
 }
 

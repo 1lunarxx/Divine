@@ -30,17 +30,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeSynchronizationSource">();
+		STATIC_CLASS_IMPL("TimeSynchronizationSource")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeSynchronizationSource")
 	}
 	static class UTimeSynchronizationSource* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeSynchronizationSource>();
 	}
 };
-static_assert(alignof(UTimeSynchronizationSource) == 0x000008, "Wrong alignment on UTimeSynchronizationSource");
-static_assert(sizeof(UTimeSynchronizationSource) == 0x000030, "Wrong size on UTimeSynchronizationSource");
-static_assert(offsetof(UTimeSynchronizationSource, bUseForSynchronization) == 0x000028, "Member 'UTimeSynchronizationSource::bUseForSynchronization' has a wrong offset!");
-static_assert(offsetof(UTimeSynchronizationSource, FrameOffset) == 0x00002C, "Member 'UTimeSynchronizationSource::FrameOffset' has a wrong offset!");
 
 // Class TimeManagement.FixedFrameRateCustomTimeStep
 // 0x0008 (0x0030 - 0x0028)
@@ -52,16 +52,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"FixedFrameRateCustomTimeStep">();
+		STATIC_CLASS_IMPL("FixedFrameRateCustomTimeStep")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FixedFrameRateCustomTimeStep")
 	}
 	static class UFixedFrameRateCustomTimeStep* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFixedFrameRateCustomTimeStep>();
 	}
 };
-static_assert(alignof(UFixedFrameRateCustomTimeStep) == 0x000008, "Wrong alignment on UFixedFrameRateCustomTimeStep");
-static_assert(sizeof(UFixedFrameRateCustomTimeStep) == 0x000030, "Wrong size on UFixedFrameRateCustomTimeStep");
-static_assert(offsetof(UFixedFrameRateCustomTimeStep, FixedFrameRate) == 0x000028, "Member 'UFixedFrameRateCustomTimeStep::FixedFrameRate' has a wrong offset!");
 
 // Class TimeManagement.TimeManagementBlueprintLibrary
 // 0x0000 (0x0028 - 0x0028)
@@ -88,15 +89,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"TimeManagementBlueprintLibrary">();
+		STATIC_CLASS_IMPL("TimeManagementBlueprintLibrary")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TimeManagementBlueprintLibrary")
 	}
 	static class UTimeManagementBlueprintLibrary* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTimeManagementBlueprintLibrary>();
 	}
 };
-static_assert(alignof(UTimeManagementBlueprintLibrary) == 0x000008, "Wrong alignment on UTimeManagementBlueprintLibrary");
-static_assert(sizeof(UTimeManagementBlueprintLibrary) == 0x000028, "Wrong size on UTimeManagementBlueprintLibrary");
 
 }
 

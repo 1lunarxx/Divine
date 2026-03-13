@@ -31,16 +31,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Trap_Athena_WallSpikes_C">();
+		BP_STATIC_CLASS_IMPL("Trap_Athena_WallSpikes_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Trap_Athena_WallSpikes_C")
 	}
 	static class ATrap_Athena_WallSpikes_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ATrap_Athena_WallSpikes_C>();
 	}
 };
-static_assert(alignof(ATrap_Athena_WallSpikes_C) == 0x000008, "Wrong alignment on ATrap_Athena_WallSpikes_C");
-static_assert(sizeof(ATrap_Athena_WallSpikes_C) == 0x000DA8, "Wrong size on ATrap_Athena_WallSpikes_C");
-static_assert(offsetof(ATrap_Athena_WallSpikes_C, UberGraphFrame_Trap_Athena_WallSpikes_C) == 0x000DA0, "Member 'ATrap_Athena_WallSpikes_C::UberGraphFrame_Trap_Athena_WallSpikes_C' has a wrong offset!");
 
 }
 

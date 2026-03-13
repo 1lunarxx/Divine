@@ -18,42 +18,6 @@
 namespace SDK::Params
 {
 
-// Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.IsValidHeroSlot
-// 0x0006 (0x0006 - 0x0000)
-struct HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot final
-{
-public:
-	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot) == 0x000001, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot) == 0x000006, "Wrong size on HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, Result) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::Result' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000001, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000002, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, CallFunc_Not_PreBool_ReturnValue) == 0x000003, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, CallFunc_Not_PreBool_ReturnValue_1) == 0x000004, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::CallFunc_Not_PreBool_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot, CallFunc_BooleanAND_ReturnValue) == 0x000005, "Member 'HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-
-// Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.UpdateCommanderSlotPerkVisibility
-// 0x0010 (0x0010 - 0x0000)
-struct HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility final
-{
-public:
-	class UFortHero*                              CallFunc_GetCommanderHero_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue; // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility) == 0x000010, "Wrong size on HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility, CallFunc_GetCommanderHero_ReturnValue) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility::CallFunc_GetCommanderHero_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000008, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility, CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue) == 0x000009, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility::CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue' has a wrong offset!");
-
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.UpdateHeroLoadoutSlotWarning
 // 0x0040 (0x0040 - 0x0000)
 struct HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning final
@@ -76,22 +40,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0039(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning) == 0x000040, "Wrong size on HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, Hero) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::Hero' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, Temp_bool_Variable) == 0x000008, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, Temp_byte_Variable) == 0x000009, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, Temp_byte_Variable_1) == 0x00000A, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_IsValidHeroSlot_Result) == 0x00000B, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_IsValidHeroSlot_Result' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_IsHeroPerkValidForCommander_OutReason) == 0x000010, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_IsHeroPerkValidForCommander_OutReason' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_IsHeroPerkValidForCommander_ReturnValue) == 0x000028, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_IsHeroPerkValidForCommander_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_IsValidHeroSlot_Result_1) == 0x000029, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_IsValidHeroSlot_Result_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_Not_PreBool_ReturnValue) == 0x00002A, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_BooleanAND_ReturnValue) == 0x00002B, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, CallFunc_BooleanAND_ReturnValue_1) == 0x00002C, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, K2Node_DynamicCast_AsFort_Hero) == 0x000030, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning, K2Node_Select_Default) == 0x000039, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateHeroLoadoutSlotWarning::K2Node_Select_Default' has a wrong offset!");
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.UpdateRootVisibility
 // 0x0018 (0x0018 - 0x0000)
@@ -106,14 +54,6 @@ public:
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility) == 0x000018, "Wrong size on HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, Temp_bool_Variable) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, Temp_byte_Variable) == 0x000001, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, Temp_byte_Variable_1) == 0x000002, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, K2Node_DynamicCast_AsFort_Hero) == 0x000008, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, K2Node_DynamicCast_bSuccess) == 0x000010, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility, K2Node_Select_Default) == 0x000011, "Member 'HeroLoadoutPerksDetailWidget_C_UpdateRootVisibility::K2Node_Select_Default' has a wrong offset!");
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.HandleDifferentLoadoutSlotContextSet
 // 0x0088 (0x0088 - 0x0000)
@@ -137,22 +77,6 @@ public:
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0086(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0087(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet) == 0x000088, "Wrong size on HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, PerkWidgetsToShow) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::PerkWidgetsToShow' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, Temp_int_Array_Index_Variable) == 0x000050, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, Temp_byte_Variable) == 0x000054, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, Temp_int_Loop_Counter_Variable) == 0x000058, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_Add_IntInt_ReturnValue) == 0x00005C, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, Temp_byte_Variable_1) == 0x000060, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, Temp_bool_Variable) == 0x000061, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, K2Node_MakeArray_Array) == 0x000068, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_Array_Get_Item) == 0x000078, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_Array_Length_ReturnValue) == 0x000080, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_Set_Contains_ReturnValue) == 0x000084, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_Set_Contains_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_Less_IntInt_ReturnValue) == 0x000085, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, K2Node_Select_Default) == 0x000086, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000087, "Member 'HeroLoadoutPerksDetailWidget_C_HandleDifferentLoadoutSlotContextSet::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.SetLoadoutSlotContext
 // 0x0010 (0x0010 - 0x0000)
@@ -162,10 +86,6 @@ public:
 	class UFortCampaignHeroLoadoutItem*           HeroLoadout;                                       // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FName                                   SlotName;                                          // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext) == 0x000010, "Wrong size on HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext, HeroLoadout) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext::HeroLoadout' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext, SlotName) == 0x000008, "Member 'HeroLoadoutPerksDetailWidget_C_SetLoadoutSlotContext::SlotName' has a wrong offset!");
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -174,9 +94,6 @@ struct HeroLoadoutPerksDetailWidget_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_PreConstruct) == 0x000001, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_PreConstruct");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_PreConstruct) == 0x000001, "Wrong size on HeroLoadoutPerksDetailWidget_C_PreConstruct");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.ExecuteUbergraph_HeroLoadoutPerksDetailWidget
 // 0x0110 (0x0110 - 0x0000)
@@ -227,43 +144,29 @@ public:
 	struct FMargin                                K2Node_MakeStruct_Margin_2;                        // 0x00FC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget) == 0x000008, "Wrong alignment on HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget");
-static_assert(sizeof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget) == 0x000110, "Wrong size on HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, EntryPoint) == 0x000000, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::EntryPoint' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_bool_Variable) == 0x000004, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_struct_Variable) == 0x000008, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_struct_Variable_1) == 0x000018, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_bool_Variable_1) == 0x000028, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_bool_Variable_2) == 0x000029, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_byte_Variable) == 0x00002A, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_byte_Variable_1) == 0x00002B, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_int_Array_Index_Variable) == 0x00002C, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_int_Loop_Counter_Variable) == 0x000030, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_Add_IntInt_ReturnValue) == 0x000034, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_bool_Variable_3) == 0x000038, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_DynamicCast_AsFort_Hero) == 0x000040, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_DynamicCast_AsFort_Hero' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_SlotAsVerticalBoxSlot_ReturnValue) == 0x000050, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_SlotAsVerticalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_Select_Default) == 0x000058, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_MakeStruct_Margin) == 0x000068, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_MakeStruct_Margin_1) == 0x000078, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_Select_Default_1) == 0x000088, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_Event_IsDesignTime) == 0x000098, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_Select_Default_2) == 0x000099, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_DynamicCast_AsFort_Hero_1) == 0x0000A0, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_DynamicCast_AsFort_Hero_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_DynamicCast_bSuccess_1) == 0x0000A8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_byte_Variable_2) == 0x0000A9, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_GetHeroTypeBP_ReturnValue) == 0x0000B0, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_GetHeroTypeBP_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_GetAbilityKitsForClassPerks_ReturnValue) == 0x0000B8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_GetAbilityKitsForClassPerks_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_Array_Get_Item) == 0x0000C8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_Array_Length_ReturnValue) == 0x0000D0, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_GetOwningPlayer_ReturnValue) == 0x0000D8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_GetOwningPlayer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_Less_IntInt_ReturnValue) == 0x0000E0, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_Create_ReturnValue) == 0x0000E8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_Create_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, CallFunc_AddChildToVerticalBox_ReturnValue) == 0x0000F0, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::CallFunc_AddChildToVerticalBox_ReturnValue' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, Temp_byte_Variable_3) == 0x0000F8, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_MakeStruct_Margin_2) == 0x0000FC, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_MakeStruct_Margin_2' has a wrong offset!");
-static_assert(offsetof(HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget, K2Node_Select_Default_3) == 0x00010C, "Member 'HeroLoadoutPerksDetailWidget_C_ExecuteUbergraph_HeroLoadoutPerksDetailWidget::K2Node_Select_Default_3' has a wrong offset!");
+
+// Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.IsValidHeroSlot
+// 0x0006 (0x0006 - 0x0000)
+struct HeroLoadoutPerksDetailWidget_C_IsValidHeroSlot final
+{
+public:
+	bool                                          Result;                                            // 0x0000(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue;                  // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_Not_PreBool_ReturnValue_1;                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// Function HeroLoadoutPerksDetailWidget.HeroLoadoutPerksDetailWidget_C.UpdateCommanderSlotPerkVisibility
+// 0x0010 (0x0010 - 0x0000)
+struct HeroLoadoutPerksDetailWidget_C_UpdateCommanderSlotPerkVisibility final
+{
+public:
+	class UFortHero*                              CallFunc_GetCommanderHero_ReturnValue;             // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsCommanderPerkUnlockedForHero_ReturnValue; // 0x0009(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
 
 }
 

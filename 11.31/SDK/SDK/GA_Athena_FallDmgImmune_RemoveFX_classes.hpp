@@ -39,20 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_FallDmgImmune_RemoveFX_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_FallDmgImmune_RemoveFX_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_FallDmgImmune_RemoveFX_C")
 	}
 	static class UGA_Athena_FallDmgImmune_RemoveFX_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_FallDmgImmune_RemoveFX_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_FallDmgImmune_RemoveFX_C) == 0x000008, "Wrong alignment on UGA_Athena_FallDmgImmune_RemoveFX_C");
-static_assert(sizeof(UGA_Athena_FallDmgImmune_RemoveFX_C) == 0x000A58, "Wrong size on UGA_Athena_FallDmgImmune_RemoveFX_C");
-static_assert(offsetof(UGA_Athena_FallDmgImmune_RemoveFX_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_FallDmgImmune_RemoveFX_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FallDmgImmune_RemoveFX_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_FallDmgImmune_RemoveFX_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FallDmgImmune_RemoveFX_C, Looping_GC) == 0x000A40, "Member 'UGA_Athena_FallDmgImmune_RemoveFX_C::Looping_GC' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FallDmgImmune_RemoveFX_C, Player_Landing_GC) == 0x000A48, "Member 'UGA_Athena_FallDmgImmune_RemoveFX_C::Player_Landing_GC' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_FallDmgImmune_RemoveFX_C, VehicleOnGroundTimer) == 0x000A50, "Member 'UGA_Athena_FallDmgImmune_RemoveFX_C::VehicleOnGroundTimer' has a wrong offset!");
 
 }
 

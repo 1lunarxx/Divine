@@ -35,19 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GAB_BaseDespawn_C">();
+		BP_STATIC_CLASS_IMPL("GAB_BaseDespawn_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GAB_BaseDespawn_C")
 	}
 	static class UGAB_BaseDespawn_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGAB_BaseDespawn_C>();
 	}
 };
-static_assert(alignof(UGAB_BaseDespawn_C) == 0x000008, "Wrong alignment on UGAB_BaseDespawn_C");
-static_assert(sizeof(UGAB_BaseDespawn_C) == 0x000A48, "Wrong size on UGAB_BaseDespawn_C");
-static_assert(offsetof(UGAB_BaseDespawn_C, UberGraphFrame) == 0x000A30, "Member 'UGAB_BaseDespawn_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, TC_GameplayEffectInstantDeathDespawn) == 0x000A38, "Member 'UGAB_BaseDespawn_C::TC_GameplayEffectInstantDeathDespawn' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, DelayBeforeKill) == 0x000A40, "Member 'UGAB_BaseDespawn_C::DelayBeforeKill' has a wrong offset!");
-static_assert(offsetof(UGAB_BaseDespawn_C, RiftRandom) == 0x000A44, "Member 'UGAB_BaseDespawn_C::RiftRandom' has a wrong offset!");
 
 }
 

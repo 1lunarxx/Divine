@@ -43,24 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"PartyMemberListEntry_C">();
+		BP_STATIC_CLASS_IMPL("PartyMemberListEntry_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"PartyMemberListEntry_C")
 	}
 	static class UPartyMemberListEntry_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UPartyMemberListEntry_C>();
 	}
 };
-static_assert(alignof(UPartyMemberListEntry_C) == 0x000008, "Wrong alignment on UPartyMemberListEntry_C");
-static_assert(sizeof(UPartyMemberListEntry_C) == 0x000C48, "Wrong size on UPartyMemberListEntry_C");
-static_assert(offsetof(UPartyMemberListEntry_C, UberGraphFrame) == 0x000BF0, "Member 'UPartyMemberListEntry_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, Selected) == 0x000BF8, "Member 'UPartyMemberListEntry_C::Selected' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, Hovered) == 0x000C00, "Member 'UPartyMemberListEntry_C::Hovered' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, Arrow) == 0x000C08, "Member 'UPartyMemberListEntry_C::Arrow' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, EmptyButtonToEatOneMouseUpEvent) == 0x000C10, "Member 'UPartyMemberListEntry_C::EmptyButtonToEatOneMouseUpEvent' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, UserActionMenuInputButton) == 0x000C18, "Member 'UPartyMemberListEntry_C::UserActionMenuInputButton' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, Encourage) == 0x000C20, "Member 'UPartyMemberListEntry_C::Encourage' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, EncourageEpicFriend_IdleColor) == 0x000C24, "Member 'UPartyMemberListEntry_C::EncourageEpicFriend_IdleColor' has a wrong offset!");
-static_assert(offsetof(UPartyMemberListEntry_C, EncourageEpicFriend_HoveredColor) == 0x000C34, "Member 'UPartyMemberListEntry_C::EncourageEpicFriend_HoveredColor' has a wrong offset!");
 
 }
 

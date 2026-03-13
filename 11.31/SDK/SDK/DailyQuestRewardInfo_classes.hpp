@@ -23,15 +23,17 @@ class UDailyQuestRewardInfo_C final : public UFortRewardInfoWidget
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DailyQuestRewardInfo_C">();
+		BP_STATIC_CLASS_IMPL("DailyQuestRewardInfo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DailyQuestRewardInfo_C")
 	}
 	static class UDailyQuestRewardInfo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UDailyQuestRewardInfo_C>();
 	}
 };
-static_assert(alignof(UDailyQuestRewardInfo_C) == 0x000008, "Wrong alignment on UDailyQuestRewardInfo_C");
-static_assert(sizeof(UDailyQuestRewardInfo_C) == 0x0002E0, "Wrong size on UDailyQuestRewardInfo_C");
 
 }
 

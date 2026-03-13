@@ -27,12 +27,6 @@ public:
 	struct FActiveGameplayEffectHandle            CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue; // 0x0008(0x0008)(NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_K2_CommitAbility_ReturnValue;             // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge) == 0x000004, "Wrong alignment on GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge");
-static_assert(sizeof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge) == 0x000014, "Wrong size on GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge");
-static_assert(offsetof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge, EntryPoint) == 0x000000, "Member 'GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge, K2Node_Event_bWasCancelled) == 0x000004, "Member 'GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge, CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue) == 0x000008, "Member 'GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge::CallFunc_BP_ApplyGameplayEffectToOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge, CallFunc_K2_CommitAbility_ReturnValue) == 0x000010, "Member 'GA_Creative_EnergyComponent_PassiveRecharge_C_ExecuteUbergraph_GA_Creative_EnergyComponent_PassiveRecharge::CallFunc_K2_CommitAbility_ReturnValue' has a wrong offset!");
 
 // Function GA_Creative_EnergyComponent_PassiveRecharge.GA_Creative_EnergyComponent_PassiveRecharge_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -41,9 +35,6 @@ struct GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Creative_EnergyComponent_PassiveRecharge_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

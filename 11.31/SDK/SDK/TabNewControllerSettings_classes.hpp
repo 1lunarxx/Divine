@@ -39,17 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TabNewControllerSettings_C">();
+		BP_STATIC_CLASS_IMPL("TabNewControllerSettings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TabNewControllerSettings_C")
 	}
 	static class UTabNewControllerSettings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTabNewControllerSettings_C>();
 	}
 };
-static_assert(alignof(UTabNewControllerSettings_C) == 0x000008, "Wrong alignment on UTabNewControllerSettings_C");
-static_assert(sizeof(UTabNewControllerSettings_C) == 0x000358, "Wrong size on UTabNewControllerSettings_C");
-static_assert(offsetof(UTabNewControllerSettings_C, UberGraphFrame) == 0x000348, "Member 'UTabNewControllerSettings_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTabNewControllerSettings_C, SizeBox_0) == 0x000350, "Member 'UTabNewControllerSettings_C::SizeBox_0' has a wrong offset!");
 
 }
 

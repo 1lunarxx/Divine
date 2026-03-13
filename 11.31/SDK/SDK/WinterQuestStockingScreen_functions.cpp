@@ -17,46 +17,6 @@
 namespace SDK
 {
 
-// Function WinterQuestStockingScreen.WinterQuestStockingScreen_C.OnInputMethodChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// ECommonInputType                        NewMethod                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWinterQuestStockingScreen_C::OnInputMethodChanged(ECommonInputType NewMethod)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestStockingScreen_C", "OnInputMethodChanged");
-
-	Params::WinterQuestStockingScreen_C_OnInputMethodChanged Parms{};
-
-	Parms.NewMethod = NewMethod;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WinterQuestStockingScreen.WinterQuestStockingScreen_C.ExecuteUbergraph_WinterQuestStockingScreen
-// (Final, UbergraphFunction, HasDefaults)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWinterQuestStockingScreen_C::ExecuteUbergraph_WinterQuestStockingScreen(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WinterQuestStockingScreen_C", "ExecuteUbergraph_WinterQuestStockingScreen");
-
-	Params::WinterQuestStockingScreen_C_ExecuteUbergraph_WinterQuestStockingScreen Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WinterQuestStockingScreen.WinterQuestStockingScreen_C.Stop Opening Audio
 // (BlueprintCallable, BlueprintEvent)
 
@@ -208,6 +168,46 @@ void UWinterQuestStockingScreen_C::BP_OnActivated()
 		Func = Class->GetFunction("WinterQuestStockingScreen_C", "BP_OnActivated");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WinterQuestStockingScreen.WinterQuestStockingScreen_C.OnInputMethodChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// ECommonInputType                        NewMethod                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWinterQuestStockingScreen_C::OnInputMethodChanged(ECommonInputType NewMethod)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestStockingScreen_C", "OnInputMethodChanged");
+
+	Params::WinterQuestStockingScreen_C_OnInputMethodChanged Parms{};
+
+	Parms.NewMethod = NewMethod;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WinterQuestStockingScreen.WinterQuestStockingScreen_C.ExecuteUbergraph_WinterQuestStockingScreen
+// (Final, UbergraphFunction, HasDefaults)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWinterQuestStockingScreen_C::ExecuteUbergraph_WinterQuestStockingScreen(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WinterQuestStockingScreen_C", "ExecuteUbergraph_WinterQuestStockingScreen");
+
+	Params::WinterQuestStockingScreen_C_ExecuteUbergraph_WinterQuestStockingScreen Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

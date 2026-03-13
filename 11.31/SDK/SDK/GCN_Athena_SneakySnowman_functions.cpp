@@ -17,50 +17,6 @@
 namespace SDK
 {
 
-// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.On Player Step
-// (BlueprintCallable, BlueprintEvent)
-
-void AGCN_Athena_SneakySnowman_C::On_Player_Step()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnRemoval
-// (Event, Public, HasOutParams, BlueprintEvent)
-// Parameters:
-// class AActor*                           MyTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
-// const TArray<class UParticleSystemComponent*>&ParticleComponents                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-// const TArray<class UAudioComponent*>&   AudioComponents                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
-// class UCameraShake*                     BurstCameraShakeInstance                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ADecalActor*                      BurstDecalInstance                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
-
-	Params::GCN_Athena_SneakySnowman_C_OnRemoval Parms{};
-
-	Parms.MyTarget = MyTarget;
-	Parms.Parameters = std::move(Parameters);
-	Parms.ParticleComponents = std::move(ParticleComponents);
-	Parms.AudioComponents = std::move(AudioComponents);
-	Parms.BurstCameraShakeInstance = BurstCameraShakeInstance;
-	Parms.BurstDecalInstance = BurstDecalInstance;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnLoopingStart
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -130,6 +86,50 @@ void AGCN_Athena_SneakySnowman_C::ExecuteUbergraph_GCN_Athena_SneakySnowman(int3
 	Params::GCN_Athena_SneakySnowman_C_ExecuteUbergraph_GCN_Athena_SneakySnowman Parms{};
 
 	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.On Player Step
+// (BlueprintCallable, BlueprintEvent)
+
+void AGCN_Athena_SneakySnowman_C::On_Player_Step()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "On Player Step");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function GCN_Athena_SneakySnowman.GCN_Athena_SneakySnowman_C.OnRemoval
+// (Event, Public, HasOutParams, BlueprintEvent)
+// Parameters:
+// class AActor*                           MyTarget                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const struct FGameplayCueParameters&    Parameters                                             (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
+// const TArray<class UParticleSystemComponent*>&ParticleComponents                                     (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+// const TArray<class UAudioComponent*>&   AudioComponents                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, ContainsInstancedReference)
+// class UCameraShake*                     BurstCameraShakeInstance                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ADecalActor*                      BurstDecalInstance                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AGCN_Athena_SneakySnowman_C::OnRemoval(class AActor* MyTarget, const struct FGameplayCueParameters& Parameters, const TArray<class UParticleSystemComponent*>& ParticleComponents, const TArray<class UAudioComponent*>& AudioComponents, class UCameraShake* BurstCameraShakeInstance, class ADecalActor* BurstDecalInstance)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("GCN_Athena_SneakySnowman_C", "OnRemoval");
+
+	Params::GCN_Athena_SneakySnowman_C_OnRemoval Parms{};
+
+	Parms.MyTarget = MyTarget;
+	Parms.Parameters = std::move(Parameters);
+	Parms.ParticleComponents = std::move(ParticleComponents);
+	Parms.AudioComponents = std::move(AudioComponents);
+	Parms.BurstCameraShakeInstance = BurstCameraShakeInstance;
+	Parms.BurstDecalInstance = BurstDecalInstance;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

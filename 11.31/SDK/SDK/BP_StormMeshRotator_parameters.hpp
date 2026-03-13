@@ -21,9 +21,6 @@ struct BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator) == 0x000004, "Wrong alignment on BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator");
-static_assert(sizeof(BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator) == 0x000004, "Wrong size on BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator");
-static_assert(offsetof(BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator, EntryPoint) == 0x000000, "Member 'BP_StormMeshRotator_C_ExecuteUbergraph_BP_StormMeshRotator::EntryPoint' has a wrong offset!");
 
 // Function BP_StormMeshRotator.BP_StormMeshRotator_C.UserConstructionScript
 // 0x0030 (0x0030 - 0x0000)
@@ -38,14 +35,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_2; // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_CreateDynamicMaterialInstance_ReturnValue_3; // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BP_StormMeshRotator_C_UserConstructionScript) == 0x000008, "Wrong alignment on BP_StormMeshRotator_C_UserConstructionScript");
-static_assert(sizeof(BP_StormMeshRotator_C_UserConstructionScript) == 0x000030, "Wrong size on BP_StormMeshRotator_C_UserConstructionScript");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000000, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000008, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_GetActorOfClass_ReturnValue) == 0x000010, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_GetActorOfClass_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_IsValid_ReturnValue) == 0x000018, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue_2) == 0x000020, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(BP_StormMeshRotator_C_UserConstructionScript, CallFunc_CreateDynamicMaterialInstance_ReturnValue_3) == 0x000028, "Member 'BP_StormMeshRotator_C_UserConstructionScript::CallFunc_CreateDynamicMaterialInstance_ReturnValue_3' has a wrong offset!");
 
 }
 

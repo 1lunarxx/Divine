@@ -36,19 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VoiceChannelToggleButton_C">();
+		BP_STATIC_CLASS_IMPL("VoiceChannelToggleButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VoiceChannelToggleButton_C")
 	}
 	static class UVoiceChannelToggleButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVoiceChannelToggleButton_C>();
 	}
 };
-static_assert(alignof(UVoiceChannelToggleButton_C) == 0x000008, "Wrong alignment on UVoiceChannelToggleButton_C");
-static_assert(sizeof(UVoiceChannelToggleButton_C) == 0x000B98, "Wrong size on UVoiceChannelToggleButton_C");
-static_assert(offsetof(UVoiceChannelToggleButton_C, UberGraphFrame) == 0x000B78, "Member 'UVoiceChannelToggleButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelToggleButton_C, OnHover) == 0x000B80, "Member 'UVoiceChannelToggleButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelToggleButton_C, OnToggle) == 0x000B88, "Member 'UVoiceChannelToggleButton_C::OnToggle' has a wrong offset!");
-static_assert(offsetof(UVoiceChannelToggleButton_C, Image_MicIcon) == 0x000B90, "Member 'UVoiceChannelToggleButton_C::Image_MicIcon' has a wrong offset!");
 
 }
 

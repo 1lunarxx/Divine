@@ -57,34 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"B_SoundIndicator_01_C">();
+		BP_STATIC_CLASS_IMPL("B_SoundIndicator_01_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"B_SoundIndicator_01_C")
 	}
 	static class AB_SoundIndicator_01_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AB_SoundIndicator_01_C>();
 	}
 };
-static_assert(alignof(AB_SoundIndicator_01_C) == 0x000010, "Wrong alignment on AB_SoundIndicator_01_C");
-static_assert(sizeof(AB_SoundIndicator_01_C) == 0x000720, "Wrong size on AB_SoundIndicator_01_C");
-static_assert(offsetof(AB_SoundIndicator_01_C, UberGraphFrame) == 0x000330, "Member 'AB_SoundIndicator_01_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Chest) == 0x000338, "Member 'AB_SoundIndicator_01_C::Chest' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FootstepsOrGlider) == 0x000339, "Member 'AB_SoundIndicator_01_C::FootstepsOrGlider' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot) == 0x00033A, "Member 'AB_SoundIndicator_01_C::Gunshot' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Vehicle) == 0x00033B, "Member 'AB_SoundIndicator_01_C::Vehicle' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Generic) == 0x00033C, "Member 'AB_SoundIndicator_01_C::Generic' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Long_Range) == 0x000340, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Long_Range' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Chest_Falloff) == 0x0003C8, "Member 'AB_SoundIndicator_01_C::Chest_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Footsteps_Falloff) == 0x000450, "Member 'AB_SoundIndicator_01_C::Footsteps_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Mid_Range) == 0x0004D8, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Mid_Range' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Gunshot_Falloff_Melee) == 0x000560, "Member 'AB_SoundIndicator_01_C::Gunshot_Falloff_Melee' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, OppositeFacingGunshotStrength) == 0x0005E8, "Member 'AB_SoundIndicator_01_C::OppositeFacingGunshotStrength' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentNear) == 0x0005EC, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentNear' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, ForwardFacingGunshotStrength) == 0x0005F0, "Member 'AB_SoundIndicator_01_C::ForwardFacingGunshotStrength' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, FacingGunshotExponentFar) == 0x0005F4, "Member 'AB_SoundIndicator_01_C::FacingGunshotExponentFar' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, DistanceDivisor) == 0x0005F8, "Member 'AB_SoundIndicator_01_C::DistanceDivisor' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Glider_Falloff) == 0x000600, "Member 'AB_SoundIndicator_01_C::Glider_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, Plane_Falloff) == 0x000688, "Member 'AB_SoundIndicator_01_C::Plane_Falloff' has a wrong offset!");
-static_assert(offsetof(AB_SoundIndicator_01_C, DefaultIconLocation) == 0x000710, "Member 'AB_SoundIndicator_01_C::DefaultIconLocation' has a wrong offset!");
 
 }
 

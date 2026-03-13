@@ -50,28 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ChallengeSetImageGrid_C">();
+		BP_STATIC_CLASS_IMPL("ChallengeSetImageGrid_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ChallengeSetImageGrid_C")
 	}
 	static class UChallengeSetImageGrid_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UChallengeSetImageGrid_C>();
 	}
 };
-static_assert(alignof(UChallengeSetImageGrid_C) == 0x000008, "Wrong alignment on UChallengeSetImageGrid_C");
-static_assert(sizeof(UChallengeSetImageGrid_C) == 0x000668, "Wrong size on UChallengeSetImageGrid_C");
-static_assert(offsetof(UChallengeSetImageGrid_C, UberGraphFrame) == 0x000600, "Member 'UChallengeSetImageGrid_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, Intro) == 0x000608, "Member 'UChallengeSetImageGrid_C::Intro' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, CloseIcon) == 0x000610, "Member 'UChallengeSetImageGrid_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, CommonRichTextBlock_110) == 0x000618, "Member 'UChallengeSetImageGrid_C::CommonRichTextBlock_110' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, GridBackFill) == 0x000620, "Member 'UChallengeSetImageGrid_C::GridBackFill' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, HeaderBase) == 0x000628, "Member 'UChallengeSetImageGrid_C::HeaderBase' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, HeaderBolt) == 0x000630, "Member 'UChallengeSetImageGrid_C::HeaderBolt' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, MobileCloseButton) == 0x000638, "Member 'UChallengeSetImageGrid_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, NoBattlePassContainer) == 0x000640, "Member 'UChallengeSetImageGrid_C::NoBattlePassContainer' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, NoBattlePassImage) == 0x000648, "Member 'UChallengeSetImageGrid_C::NoBattlePassImage' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, NoBattlePassText) == 0x000650, "Member 'UChallengeSetImageGrid_C::NoBattlePassText' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, OverlayCloseButton) == 0x000658, "Member 'UChallengeSetImageGrid_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UChallengeSetImageGrid_C, SafeZone_0) == 0x000660, "Member 'UChallengeSetImageGrid_C::SafeZone_0' has a wrong offset!");
 
 }
 

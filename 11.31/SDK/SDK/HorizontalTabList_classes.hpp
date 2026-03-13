@@ -46,6 +46,9 @@ public:
 	bool                                          ForceTabIconsCollapsed;                            // 0x041D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 public:
+	void HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton);
+	void HandleOnInputMethodChanged(ECommonInputType bNewInputType);
+	void ExecuteUbergraph_HorizontalTabList(int32 EntryPoint);
 	void SetVerticalAlignment(EVerticalAlignment FillVertically);
 	void UpdateGamepadKeyVisibility();
 	class UCommonButton* Get_Tab_From_Id(class FName TabNameID);
@@ -54,40 +57,21 @@ public:
 	void Previous_Visibility();
 	void CustomEvent_0(class FName TabId);
 	void HandleTabCreated(class FName TabNameID, class UCommonButton* TabButton);
-	void HandleTabRemoved(class FName TabNameID, class UCommonButton* TabButton);
-	void HandleOnInputMethodChanged(ECommonInputType bNewInputType);
-	void ExecuteUbergraph_HorizontalTabList(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HorizontalTabList_C">();
+		BP_STATIC_CLASS_IMPL("HorizontalTabList_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HorizontalTabList_C")
 	}
 	static class UHorizontalTabList_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHorizontalTabList_C>();
 	}
 };
-static_assert(alignof(UHorizontalTabList_C) == 0x000008, "Wrong alignment on UHorizontalTabList_C");
-static_assert(sizeof(UHorizontalTabList_C) == 0x000420, "Wrong size on UHorizontalTabList_C");
-static_assert(offsetof(UHorizontalTabList_C, UberGraphFrame) == 0x0003B0, "Member 'UHorizontalTabList_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageGamepadKeyPrompt) == 0x0003B8, "Member 'UHorizontalTabList_C::ImageGamepadKeyPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ImageHorizRule) == 0x0003C0, "Member 'UHorizontalTabList_C::ImageHorizRule' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabAction) == 0x0003C8, "Member 'UHorizontalTabList_C::NextTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NextTabActionWrapper) == 0x0003D0, "Member 'UHorizontalTabList_C::NextTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, Overlay_Container) == 0x0003D8, "Member 'UHorizontalTabList_C::Overlay_Container' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabAction) == 0x0003E0, "Member 'UHorizontalTabList_C::PreviousTabAction' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, PreviousTabActionWrapper) == 0x0003E8, "Member 'UHorizontalTabList_C::PreviousTabActionWrapper' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonBox) == 0x0003F0, "Member 'UHorizontalTabList_C::TabButtonBox' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, TabButtonPadding) == 0x0003F8, "Member 'UHorizontalTabList_C::TabButtonPadding' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ButtonStyle) == 0x000408, "Member 'UHorizontalTabList_C::ButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, UseButtonStyle) == 0x000410, "Member 'UHorizontalTabList_C::UseButtonStyle' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowGamePadInputPrompt) == 0x000411, "Member 'UHorizontalTabList_C::ShowGamePadInputPrompt' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ShowRail) == 0x000412, "Member 'UHorizontalTabList_C::ShowRail' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, MinTabWidth) == 0x000414, "Member 'UHorizontalTabList_C::MinTabWidth' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, NewVar_0) == 0x000418, "Member 'UHorizontalTabList_C::NewVar_0' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ForceTabLabelsCollapsed) == 0x00041C, "Member 'UHorizontalTabList_C::ForceTabLabelsCollapsed' has a wrong offset!");
-static_assert(offsetof(UHorizontalTabList_C, ForceTabIconsCollapsed) == 0x00041D, "Member 'UHorizontalTabList_C::ForceTabIconsCollapsed' has a wrong offset!");
 
 }
 

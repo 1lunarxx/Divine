@@ -35,18 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaReplayBrowserTab_C">();
+		BP_STATIC_CLASS_IMPL("AthenaReplayBrowserTab_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaReplayBrowserTab_C")
 	}
 	static class UAthenaReplayBrowserTab_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaReplayBrowserTab_C>();
 	}
 };
-static_assert(alignof(UAthenaReplayBrowserTab_C) == 0x000008, "Wrong alignment on UAthenaReplayBrowserTab_C");
-static_assert(sizeof(UAthenaReplayBrowserTab_C) == 0x0004E0, "Wrong size on UAthenaReplayBrowserTab_C");
-static_assert(offsetof(UAthenaReplayBrowserTab_C, UberGraphFrame) == 0x0004C8, "Member 'UAthenaReplayBrowserTab_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserTab_C, LoadingThrobber) == 0x0004D0, "Member 'UAthenaReplayBrowserTab_C::LoadingThrobber' has a wrong offset!");
-static_assert(offsetof(UAthenaReplayBrowserTab_C, LoadingTimerHandle) == 0x0004D8, "Member 'UAthenaReplayBrowserTab_C::LoadingTimerHandle' has a wrong offset!");
 
 }
 

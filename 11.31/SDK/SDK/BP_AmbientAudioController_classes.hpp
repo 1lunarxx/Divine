@@ -57,31 +57,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BP_AmbientAudioController_C">();
+		BP_STATIC_CLASS_IMPL("BP_AmbientAudioController_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BP_AmbientAudioController_C")
 	}
 	static class UBP_AmbientAudioController_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBP_AmbientAudioController_C>();
 	}
 };
-static_assert(alignof(UBP_AmbientAudioController_C) == 0x000008, "Wrong alignment on UBP_AmbientAudioController_C");
-static_assert(sizeof(UBP_AmbientAudioController_C) == 0x000258, "Wrong size on UBP_AmbientAudioController_C");
-static_assert(offsetof(UBP_AmbientAudioController_C, UberGraphFrame) == 0x000200, "Member 'UBP_AmbientAudioController_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, AmbientMixA) == 0x000208, "Member 'UBP_AmbientAudioController_C::AmbientMixA' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, AmbientMixB) == 0x000210, "Member 'UBP_AmbientAudioController_C::AmbientMixB' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, Loop_Indoors) == 0x000218, "Member 'UBP_AmbientAudioController_C::Loop_Indoors' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, CheckFrequency) == 0x000220, "Member 'UBP_AmbientAudioController_C::CheckFrequency' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, bIsInsidePrevious) == 0x000224, "Member 'UBP_AmbientAudioController_C::bIsInsidePrevious' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, bIsInsideCurrent) == 0x000225, "Member 'UBP_AmbientAudioController_C::bIsInsideCurrent' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, AmbientMixIndoor) == 0x000228, "Member 'UBP_AmbientAudioController_C::AmbientMixIndoor' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, TargetLPFFreq) == 0x000230, "Member 'UBP_AmbientAudioController_C::TargetLPFFreq' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, CurrentLPFFreq) == 0x000234, "Member 'UBP_AmbientAudioController_C::CurrentLPFFreq' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, InsideLPFFreq) == 0x000238, "Member 'UBP_AmbientAudioController_C::InsideLPFFreq' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, OutsideLPFFreq) == 0x00023C, "Member 'UBP_AmbientAudioController_C::OutsideLPFFreq' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, bCurrentlyInterpolatingMPC) == 0x000240, "Member 'UBP_AmbientAudioController_C::bCurrentlyInterpolatingMPC' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, CurrentMPCValueInterp) == 0x000244, "Member 'UBP_AmbientAudioController_C::CurrentMPCValueInterp' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, bAboveSnowAltitude) == 0x000248, "Member 'UBP_AmbientAudioController_C::bAboveSnowAltitude' has a wrong offset!");
-static_assert(offsetof(UBP_AmbientAudioController_C, GlobalWinterAmbBank) == 0x000250, "Member 'UBP_AmbientAudioController_C::GlobalWinterAmbBank' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UFlagTile_C final : public UFortFlagTileButton
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FlagTile_C">();
+		BP_STATIC_CLASS_IMPL("FlagTile_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FlagTile_C")
 	}
 	static class UFlagTile_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFlagTile_C>();
 	}
 };
-static_assert(alignof(UFlagTile_C) == 0x000008, "Wrong alignment on UFlagTile_C");
-static_assert(sizeof(UFlagTile_C) == 0x000B98, "Wrong size on UFlagTile_C");
 
 }
 

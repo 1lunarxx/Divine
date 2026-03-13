@@ -23,15 +23,17 @@ class USocialSettings_C final : public UFortSocialSettings
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialSettings_C">();
+		BP_STATIC_CLASS_IMPL("SocialSettings_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialSettings_C")
 	}
 	static class USocialSettings_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialSettings_C>();
 	}
 };
-static_assert(alignof(USocialSettings_C) == 0x000008, "Wrong alignment on USocialSettings_C");
-static_assert(sizeof(USocialSettings_C) == 0x000248, "Wrong size on USocialSettings_C");
 
 }
 

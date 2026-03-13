@@ -24,9 +24,6 @@ struct BattlePassScreen_SideMessaging_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(BattlePassScreen_SideMessaging_C_PreConstruct) == 0x000001, "Wrong alignment on BattlePassScreen_SideMessaging_C_PreConstruct");
-static_assert(sizeof(BattlePassScreen_SideMessaging_C_PreConstruct) == 0x000001, "Wrong size on BattlePassScreen_SideMessaging_C_PreConstruct");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'BattlePassScreen_SideMessaging_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function BattlePassScreen_SideMessaging.BattlePassScreen_SideMessaging_C.ExecuteUbergraph_BattlePassScreen_SideMessaging
 // 0x0098 (0x0098 - 0x0000)
@@ -57,27 +54,6 @@ public:
 	struct FMargin                                K2Node_Select_Default_2;                           // 0x007C(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	struct FVector2D                              K2Node_Select_Default_3;                           // 0x008C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging) == 0x000008, "Wrong alignment on BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging");
-static_assert(sizeof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging) == 0x000098, "Wrong size on BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, EntryPoint) == 0x000000, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::EntryPoint' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_MakeStruct_Margin) == 0x000004, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_MakeStruct_Margin' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable) == 0x000014, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_bool_Variable) == 0x00001C, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable_1) == 0x000020, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable_2) == 0x000028, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_bool_Variable_1) == 0x000030, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable_3) == 0x000034, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable_4) == 0x00003C, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable_4' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_bool_Variable_2) == 0x000044, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_Event_IsDesignTime) == 0x000045, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_Select_Default) == 0x000048, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_Select_Default_1) == 0x000050, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_struct_Variable_5) == 0x000058, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_struct_Variable_5' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, CallFunc_SlotAsHorizontalBoxSlot_ReturnValue) == 0x000060, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::CallFunc_SlotAsHorizontalBoxSlot_ReturnValue' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_MakeStruct_Margin_1) == 0x000068, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_MakeStruct_Margin_1' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, Temp_bool_Variable_3) == 0x000078, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_Select_Default_2) == 0x00007C, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging, K2Node_Select_Default_3) == 0x00008C, "Member 'BattlePassScreen_SideMessaging_C_ExecuteUbergraph_BattlePassScreen_SideMessaging::K2Node_Select_Default_3' has a wrong offset!");
 
 }
 

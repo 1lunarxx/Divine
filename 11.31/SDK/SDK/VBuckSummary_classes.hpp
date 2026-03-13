@@ -36,20 +36,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"VBuckSummary_C">();
+		BP_STATIC_CLASS_IMPL("VBuckSummary_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"VBuckSummary_C")
 	}
 	static class UVBuckSummary_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UVBuckSummary_C>();
 	}
 };
-static_assert(alignof(UVBuckSummary_C) == 0x000008, "Wrong alignment on UVBuckSummary_C");
-static_assert(sizeof(UVBuckSummary_C) == 0x000290, "Wrong size on UVBuckSummary_C");
-static_assert(offsetof(UVBuckSummary_C, UberGraphFrame) == 0x000268, "Member 'UVBuckSummary_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UVBuckSummary_C, IntroAnim) == 0x000270, "Member 'UVBuckSummary_C::IntroAnim' has a wrong offset!");
-static_assert(offsetof(UVBuckSummary_C, CommonRichTextBlock_101) == 0x000278, "Member 'UVBuckSummary_C::CommonRichTextBlock_101' has a wrong offset!");
-static_assert(offsetof(UVBuckSummary_C, Header) == 0x000280, "Member 'UVBuckSummary_C::Header' has a wrong offset!");
-static_assert(offsetof(UVBuckSummary_C, Image_166) == 0x000288, "Member 'UVBuckSummary_C::Image_166' has a wrong offset!");
 
 }
 

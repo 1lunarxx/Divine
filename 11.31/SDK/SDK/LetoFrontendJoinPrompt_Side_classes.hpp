@@ -38,22 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LetoFrontendJoinPrompt_Side_C">();
+		BP_STATIC_CLASS_IMPL("LetoFrontendJoinPrompt_Side_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LetoFrontendJoinPrompt_Side_C")
 	}
 	static class ULetoFrontendJoinPrompt_Side_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULetoFrontendJoinPrompt_Side_C>();
 	}
 };
-static_assert(alignof(ULetoFrontendJoinPrompt_Side_C) == 0x000008, "Wrong alignment on ULetoFrontendJoinPrompt_Side_C");
-static_assert(sizeof(ULetoFrontendJoinPrompt_Side_C) == 0x000268, "Wrong size on ULetoFrontendJoinPrompt_Side_C");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, UberGraphFrame) == 0x000230, "Member 'ULetoFrontendJoinPrompt_Side_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, Outro_NotActivated) == 0x000238, "Member 'ULetoFrontendJoinPrompt_Side_C::Outro_NotActivated' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, Outro_Activated) == 0x000240, "Member 'ULetoFrontendJoinPrompt_Side_C::Outro_Activated' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, Intro) == 0x000248, "Member 'ULetoFrontendJoinPrompt_Side_C::Intro' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, InputActionIconScale) == 0x000250, "Member 'ULetoFrontendJoinPrompt_Side_C::InputActionIconScale' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, InputActionWidget) == 0x000258, "Member 'ULetoFrontendJoinPrompt_Side_C::InputActionWidget' has a wrong offset!");
-static_assert(offsetof(ULetoFrontendJoinPrompt_Side_C, PromptBackground) == 0x000260, "Member 'ULetoFrontendJoinPrompt_Side_C::PromptBackground' has a wrong offset!");
 
 }
 

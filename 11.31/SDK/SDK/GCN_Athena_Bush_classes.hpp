@@ -56,33 +56,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCN_Athena_Bush_C">();
+		BP_STATIC_CLASS_IMPL("GCN_Athena_Bush_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCN_Athena_Bush_C")
 	}
 	static class AGCN_Athena_Bush_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCN_Athena_Bush_C>();
 	}
 };
-static_assert(alignof(AGCN_Athena_Bush_C) == 0x000008, "Wrong alignment on AGCN_Athena_Bush_C");
-static_assert(sizeof(AGCN_Athena_Bush_C) == 0x000818, "Wrong size on AGCN_Athena_Bush_C");
-static_assert(offsetof(AGCN_Athena_Bush_C, UberGraphFrame) == 0x000788, "Member 'AGCN_Athena_Bush_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, OwningPlayer_BushMesh) == 0x000790, "Member 'AGCN_Athena_Bush_C::OwningPlayer_BushMesh' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, Arrow2) == 0x000798, "Member 'AGCN_Athena_Bush_C::Arrow2' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, Arrow1) == 0x0007A0, "Member 'AGCN_Athena_Bush_C::Arrow1' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, BushMesh) == 0x0007A8, "Member 'AGCN_Athena_Bush_C::BushMesh' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, Arrow) == 0x0007B0, "Member 'AGCN_Athena_Bush_C::Arrow' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, Trail_Leaves) == 0x0007B8, "Member 'AGCN_Athena_Bush_C::Trail_Leaves' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, OpacityFade_OpacityFadeOut_B989988545DAA0B2E69D77AE069A4437) == 0x0007C0, "Member 'AGCN_Athena_Bush_C::OpacityFade_OpacityFadeOut_B989988545DAA0B2E69D77AE069A4437' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, OpacityFade__Direction_B989988545DAA0B2E69D77AE069A4437) == 0x0007C4, "Member 'AGCN_Athena_Bush_C::OpacityFade__Direction_B989988545DAA0B2E69D77AE069A4437' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, OpacityFade) == 0x0007C8, "Member 'AGCN_Athena_Bush_C::OpacityFade' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, PlayerPawn) == 0x0007D0, "Member 'AGCN_Athena_Bush_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, MID_Bush) == 0x0007D8, "Member 'AGCN_Athena_Bush_C::MID_Bush' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, IsActive) == 0x0007E0, "Member 'AGCN_Athena_Bush_C::IsActive' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, MID_OwningClientBush) == 0x0007E8, "Member 'AGCN_Athena_Bush_C::MID_OwningClientBush' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, ClientBushOpacity) == 0x0007F0, "Member 'AGCN_Athena_Bush_C::ClientBushOpacity' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, TargetOpacity) == 0x000800, "Member 'AGCN_Athena_Bush_C::TargetOpacity' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, BushDestructionVFX) == 0x000808, "Member 'AGCN_Athena_Bush_C::BushDestructionVFX' has a wrong offset!");
-static_assert(offsetof(AGCN_Athena_Bush_C, BushDestructionSFX) == 0x000810, "Member 'AGCN_Athena_Bush_C::BushDestructionSFX' has a wrong offset!");
 
 }
 

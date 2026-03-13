@@ -43,25 +43,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MissionProgressDisplay_C">();
+		BP_STATIC_CLASS_IMPL("MissionProgressDisplay_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MissionProgressDisplay_C")
 	}
 	static class UMissionProgressDisplay_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMissionProgressDisplay_C>();
 	}
 };
-static_assert(alignof(UMissionProgressDisplay_C) == 0x000008, "Wrong alignment on UMissionProgressDisplay_C");
-static_assert(sizeof(UMissionProgressDisplay_C) == 0x000290, "Wrong size on UMissionProgressDisplay_C");
-static_assert(offsetof(UMissionProgressDisplay_C, UberGraphFrame) == 0x000240, "Member 'UMissionProgressDisplay_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, CommonText_Progress_Prestige) == 0x000248, "Member 'UMissionProgressDisplay_C::CommonText_Progress_Prestige' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, PrestigeBorder) == 0x000250, "Member 'UMissionProgressDisplay_C::PrestigeBorder' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, ProgressBarSize) == 0x000258, "Member 'UMissionProgressDisplay_C::ProgressBarSize' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, ScaleBoxTextScale) == 0x000260, "Member 'UMissionProgressDisplay_C::ScaleBoxTextScale' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, SpacerLeft) == 0x000268, "Member 'UMissionProgressDisplay_C::SpacerLeft' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, SpacerRight) == 0x000270, "Member 'UMissionProgressDisplay_C::SpacerRight' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, TextStylingSwitcher) == 0x000278, "Member 'UMissionProgressDisplay_C::TextStylingSwitcher' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, VerticalHeightSB) == 0x000280, "Member 'UMissionProgressDisplay_C::VerticalHeightSB' has a wrong offset!");
-static_assert(offsetof(UMissionProgressDisplay_C, IsLargeDisplay) == 0x000288, "Member 'UMissionProgressDisplay_C::IsLargeDisplay' has a wrong offset!");
 
 }
 

@@ -71,43 +71,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"EventLeaderboardScreen_C">();
+		BP_STATIC_CLASS_IMPL("EventLeaderboardScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"EventLeaderboardScreen_C")
 	}
 	static class UEventLeaderboardScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UEventLeaderboardScreen_C>();
 	}
 };
-static_assert(alignof(UEventLeaderboardScreen_C) == 0x000008, "Wrong alignment on UEventLeaderboardScreen_C");
-static_assert(sizeof(UEventLeaderboardScreen_C) == 0x0005A8, "Wrong size on UEventLeaderboardScreen_C");
-static_assert(offsetof(UEventLeaderboardScreen_C, UberGraphFrame) == 0x0004B0, "Member 'UEventLeaderboardScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Button_Back) == 0x0004B8, "Member 'UEventLeaderboardScreen_C::Button_Back' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Button_Filter) == 0x0004C0, "Member 'UEventLeaderboardScreen_C::Button_Filter' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Button_Position) == 0x0004C8, "Member 'UEventLeaderboardScreen_C::Button_Position' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, CloseIcon) == 0x0004D0, "Member 'UEventLeaderboardScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, CommonBorder_ContainerBG) == 0x0004D8, "Member 'UEventLeaderboardScreen_C::CommonBorder_ContainerBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, CommonBorder_OptionsBarBG) == 0x0004E0, "Member 'UEventLeaderboardScreen_C::CommonBorder_OptionsBarBG' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, CommonWidgetSwitcher_FliterOptions) == 0x0004E8, "Member 'UEventLeaderboardScreen_C::CommonWidgetSwitcher_FliterOptions' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Content_LeaderboardEntries) == 0x0004F0, "Member 'UEventLeaderboardScreen_C::Content_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Content_LoadingEntries) == 0x0004F8, "Member 'UEventLeaderboardScreen_C::Content_LoadingEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Content_NoLeaderboardEntries) == 0x000500, "Member 'UEventLeaderboardScreen_C::Content_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EntryDetails) == 0x000508, "Member 'UEventLeaderboardScreen_C::EntryDetails' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EventLeaderboardEventDetails) == 0x000510, "Member 'UEventLeaderboardScreen_C::EventLeaderboardEventDetails' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EventLeaderboardHeaderDetails) == 0x000518, "Member 'UEventLeaderboardScreen_C::EventLeaderboardHeaderDetails' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EventLeaderboardPlayerPerformance) == 0x000520, "Member 'UEventLeaderboardScreen_C::EventLeaderboardPlayerPerformance' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Image_0) == 0x000528, "Member 'UEventLeaderboardScreen_C::Image_0' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, MobileCloseButton) == 0x000530, "Member 'UEventLeaderboardScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, OverlayCloseButton) == 0x000538, "Member 'UEventLeaderboardScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, SafeZone_0) == 0x000540, "Member 'UEventLeaderboardScreen_C::SafeZone_0' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Switcher_LeaderboardEntries) == 0x000548, "Member 'UEventLeaderboardScreen_C::Switcher_LeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, Text_NoLeaderboardEntries) == 0x000550, "Member 'UEventLeaderboardScreen_C::Text_NoLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, DebugLeaderboardEntry1) == 0x000558, "Member 'UEventLeaderboardScreen_C::DebugLeaderboardEntry1' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, DebugLeaderboardEntry2) == 0x000560, "Member 'UEventLeaderboardScreen_C::DebugLeaderboardEntry2' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, DebugLeaderboardEntry3) == 0x000568, "Member 'UEventLeaderboardScreen_C::DebugLeaderboardEntry3' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, DebugLeaderboardEntry4) == 0x000570, "Member 'UEventLeaderboardScreen_C::DebugLeaderboardEntry4' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, DebugLeaderboardEntries) == 0x000578, "Member 'UEventLeaderboardScreen_C::DebugLeaderboardEntries' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EventCloseButton) == 0x000588, "Member 'UEventLeaderboardScreen_C::EventCloseButton' has a wrong offset!");
-static_assert(offsetof(UEventLeaderboardScreen_C, EventviewLiveGames) == 0x000598, "Member 'UEventLeaderboardScreen_C::EventviewLiveGames' has a wrong offset!");
 
 }
 

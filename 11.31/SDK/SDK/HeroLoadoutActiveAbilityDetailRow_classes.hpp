@@ -58,8 +58,6 @@ public:
 	class FName                                   BoundAction;                                       // 0x039C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
-	void SetBorderVisibility();
-	void GetTierImage(TSoftObjectPtr<class UTexture2D>* NewParam);
 	void SetDisplayState(bool ShowName, bool ShowDescription, bool UseVerboseDescription_0);
 	void SetAbilityKit(class UFortAbilityKit* AbilityKit_0);
 	bool IsAbilityUnlocked();
@@ -71,47 +69,23 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void Construct();
 	void ExecuteUbergraph_HeroLoadoutActiveAbilityDetailRow(int32 EntryPoint);
+	void SetBorderVisibility();
+	void GetTierImage(TSoftObjectPtr<class UTexture2D>* NewParam);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"HeroLoadoutActiveAbilityDetailRow_C">();
+		BP_STATIC_CLASS_IMPL("HeroLoadoutActiveAbilityDetailRow_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"HeroLoadoutActiveAbilityDetailRow_C")
 	}
 	static class UHeroLoadoutActiveAbilityDetailRow_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UHeroLoadoutActiveAbilityDetailRow_C>();
 	}
 };
-static_assert(alignof(UHeroLoadoutActiveAbilityDetailRow_C) == 0x000008, "Wrong alignment on UHeroLoadoutActiveAbilityDetailRow_C");
-static_assert(sizeof(UHeroLoadoutActiveAbilityDetailRow_C) == 0x0003A8, "Wrong size on UHeroLoadoutActiveAbilityDetailRow_C");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, UberGraphFrame) == 0x000258, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, Border_Body) == 0x000260, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::Border_Body' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, Image_Tier) == 0x000268, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::Image_Tier' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, ImageLockPerk) == 0x000270, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::ImageLockPerk' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, ImagePerkIcon) == 0x000278, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::ImagePerkIcon' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, InfoSwitcher) == 0x000280, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::InfoSwitcher' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, KeybindWidget) == 0x000288, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::KeybindWidget' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, LargeInfo) == 0x000290, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::LargeInfo' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, LargeName) == 0x000298, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::LargeName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, Overlay_Keybind) == 0x0002A0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::Overlay_Keybind' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, PerkIconSizeBox) == 0x0002A8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::PerkIconSizeBox' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, SmallDescription) == 0x0002B0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::SmallDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, SmallInfo) == 0x0002B8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::SmallInfo' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, SmallName) == 0x0002C0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::SmallName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, VerticalBox_TierContent) == 0x0002C8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::VerticalBox_TierContent' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, IncludeName) == 0x0002D0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::IncludeName' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, IncludeDescription) == 0x0002D1, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::IncludeDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, UseVerboseDescription) == 0x0002D2, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::UseVerboseDescription' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, UnlockedDisplayNameTextStyle) == 0x0002D8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::UnlockedDisplayNameTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, LockedDisplayNameTextStyle) == 0x0002E0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::LockedDisplayNameTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, UnlockedDescriptionTextStyle) == 0x0002E8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::UnlockedDescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, LockedDescriptionTextStyle) == 0x0002F0, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::LockedDescriptionTextStyle' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, Icon_Size) == 0x0002F8, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::Icon_Size' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, Host_Hero) == 0x000300, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::Host_Hero' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, AbilityKit) == 0x000308, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::AbilityKit' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, EmptyBorderBrush) == 0x000310, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::EmptyBorderBrush' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, ShowKeybind) == 0x000398, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::ShowKeybind' has a wrong offset!");
-static_assert(offsetof(UHeroLoadoutActiveAbilityDetailRow_C, BoundAction) == 0x00039C, "Member 'UHeroLoadoutActiveAbilityDetailRow_C::BoundAction' has a wrong offset!");
 
 }
 

@@ -38,22 +38,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"ActivityDetailsView_C">();
+		BP_STATIC_CLASS_IMPL("ActivityDetailsView_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"ActivityDetailsView_C")
 	}
 	static class UActivityDetailsView_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UActivityDetailsView_C>();
 	}
 };
-static_assert(alignof(UActivityDetailsView_C) == 0x000008, "Wrong alignment on UActivityDetailsView_C");
-static_assert(sizeof(UActivityDetailsView_C) == 0x000530, "Wrong size on UActivityDetailsView_C");
-static_assert(offsetof(UActivityDetailsView_C, UberGraphFrame) == 0x0004F8, "Member 'UActivityDetailsView_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, FadeOut) == 0x000500, "Member 'UActivityDetailsView_C::FadeOut' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, Intro) == 0x000508, "Member 'UActivityDetailsView_C::Intro' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, Image_Background) == 0x000510, "Member 'UActivityDetailsView_C::Image_Background' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, LazyImage_HeaderBackplate_1) == 0x000518, "Member 'UActivityDetailsView_C::LazyImage_HeaderBackplate_1' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, Overlay_ActivityDetails) == 0x000520, "Member 'UActivityDetailsView_C::Overlay_ActivityDetails' has a wrong offset!");
-static_assert(offsetof(UActivityDetailsView_C, IsActivityBrowser) == 0x000528, "Member 'UActivityDetailsView_C::IsActivityBrowser' has a wrong offset!");
 
 }
 

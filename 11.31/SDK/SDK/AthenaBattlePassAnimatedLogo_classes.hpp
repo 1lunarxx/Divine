@@ -40,23 +40,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaBattlePassAnimatedLogo_C">();
+		BP_STATIC_CLASS_IMPL("AthenaBattlePassAnimatedLogo_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaBattlePassAnimatedLogo_C")
 	}
 	static class UAthenaBattlePassAnimatedLogo_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaBattlePassAnimatedLogo_C>();
 	}
 };
-static_assert(alignof(UAthenaBattlePassAnimatedLogo_C) == 0x000008, "Wrong alignment on UAthenaBattlePassAnimatedLogo_C");
-static_assert(sizeof(UAthenaBattlePassAnimatedLogo_C) == 0x0002B0, "Wrong size on UAthenaBattlePassAnimatedLogo_C");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, UberGraphFrame) == 0x000258, "Member 'UAthenaBattlePassAnimatedLogo_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, Outro) == 0x000260, "Member 'UAthenaBattlePassAnimatedLogo_C::Outro' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, Idle) == 0x000268, "Member 'UAthenaBattlePassAnimatedLogo_C::Idle' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, Intro) == 0x000270, "Member 'UAthenaBattlePassAnimatedLogo_C::Intro' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, BPImage) == 0x000278, "Member 'UAthenaBattlePassAnimatedLogo_C::BPImage' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, SeasonNumber) == 0x000280, "Member 'UAthenaBattlePassAnimatedLogo_C::SeasonNumber' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, TopLevelHelpItems) == 0x000288, "Member 'UAthenaBattlePassAnimatedLogo_C::TopLevelHelpItems' has a wrong offset!");
-static_assert(offsetof(UAthenaBattlePassAnimatedLogo_C, Header_Display_Text) == 0x000298, "Member 'UAthenaBattlePassAnimatedLogo_C::Header_Display_Text' has a wrong offset!");
 
 }
 

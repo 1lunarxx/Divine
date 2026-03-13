@@ -39,13 +39,6 @@ public:
 	float                                         DefaultVelocity;                                   // 0x000C(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DefaultAudioIntensity;                             // 0x0010(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaterSplineCurveDefaults) == 0x000004, "Wrong alignment on FWaterSplineCurveDefaults");
-static_assert(sizeof(FWaterSplineCurveDefaults) == 0x000014, "Wrong size on FWaterSplineCurveDefaults");
-static_assert(offsetof(FWaterSplineCurveDefaults, DefaultDepth) == 0x000000, "Member 'FWaterSplineCurveDefaults::DefaultDepth' has a wrong offset!");
-static_assert(offsetof(FWaterSplineCurveDefaults, DefaultWidth) == 0x000004, "Member 'FWaterSplineCurveDefaults::DefaultWidth' has a wrong offset!");
-static_assert(offsetof(FWaterSplineCurveDefaults, DefaultShorelineWidth) == 0x000008, "Member 'FWaterSplineCurveDefaults::DefaultShorelineWidth' has a wrong offset!");
-static_assert(offsetof(FWaterSplineCurveDefaults, DefaultVelocity) == 0x00000C, "Member 'FWaterSplineCurveDefaults::DefaultVelocity' has a wrong offset!");
-static_assert(offsetof(FWaterSplineCurveDefaults, DefaultAudioIntensity) == 0x000010, "Member 'FWaterSplineCurveDefaults::DefaultAudioIntensity' has a wrong offset!");
 
 // ScriptStruct Water.WaterWaveParams
 // 0x002C (0x002C - 0x0000)
@@ -58,12 +51,6 @@ public:
 	struct FVector                                Direction;                                         // 0x000C(0x000C)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_18[0x14];                                      // 0x0018(0x0014)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWaterWaveParams) == 0x000004, "Wrong alignment on FWaterWaveParams");
-static_assert(sizeof(FWaterWaveParams) == 0x00002C, "Wrong size on FWaterWaveParams");
-static_assert(offsetof(FWaterWaveParams, Wavelength) == 0x000000, "Member 'FWaterWaveParams::Wavelength' has a wrong offset!");
-static_assert(offsetof(FWaterWaveParams, Amplitude) == 0x000004, "Member 'FWaterWaveParams::Amplitude' has a wrong offset!");
-static_assert(offsetof(FWaterWaveParams, Steepness) == 0x000008, "Member 'FWaterWaveParams::Steepness' has a wrong offset!");
-static_assert(offsetof(FWaterWaveParams, Direction) == 0x00000C, "Member 'FWaterWaveParams::Direction' has a wrong offset!");
 
 // ScriptStruct Water.WaterStreamingCell
 // 0x0068 (0x0068 - 0x0000)
@@ -76,12 +63,6 @@ public:
 	struct FGuid                                  GenerationId;                                      // 0x0054(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWaterStreamingCell) == 0x000008, "Wrong alignment on FWaterStreamingCell");
-static_assert(sizeof(FWaterStreamingCell) == 0x000068, "Wrong size on FWaterStreamingCell");
-static_assert(offsetof(FWaterStreamingCell, StreamingActors) == 0x000000, "Member 'FWaterStreamingCell::StreamingActors' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingCell, WaterProxyActor) == 0x000010, "Member 'FWaterStreamingCell::WaterProxyActor' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingCell, CellBox) == 0x000038, "Member 'FWaterStreamingCell::CellBox' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingCell, GenerationId) == 0x000054, "Member 'FWaterStreamingCell::GenerationId' has a wrong offset!");
 
 // ScriptStruct Water.WaterStreamingGrid
 // 0x0040 (0x0040 - 0x0000)
@@ -95,14 +76,6 @@ public:
 	struct FVector2D                              InvWorldCellDimensions;                            // 0x0030(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FIntPoint                              CellTextureSize;                                   // 0x0038(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaterStreamingGrid) == 0x000008, "Wrong alignment on FWaterStreamingGrid");
-static_assert(sizeof(FWaterStreamingGrid) == 0x000040, "Wrong size on FWaterStreamingGrid");
-static_assert(offsetof(FWaterStreamingGrid, Cells) == 0x000000, "Member 'FWaterStreamingGrid::Cells' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingGrid, LandscapeLocation) == 0x000010, "Member 'FWaterStreamingGrid::LandscapeLocation' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingGrid, LandscapeScale) == 0x00001C, "Member 'FWaterStreamingGrid::LandscapeScale' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingGrid, NumCells) == 0x000028, "Member 'FWaterStreamingGrid::NumCells' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingGrid, InvWorldCellDimensions) == 0x000030, "Member 'FWaterStreamingGrid::InvWorldCellDimensions' has a wrong offset!");
-static_assert(offsetof(FWaterStreamingGrid, CellTextureSize) == 0x000038, "Member 'FWaterStreamingGrid::CellTextureSize' has a wrong offset!");
 
 // ScriptStruct Water.WaterBodyWeightmapSettings
 // 0x0020 (0x0020 - 0x0000)
@@ -117,15 +90,6 @@ public:
 	float                                         Midpoint;                                          // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         FinalOpacity;                                      // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FWaterBodyWeightmapSettings) == 0x000008, "Wrong alignment on FWaterBodyWeightmapSettings");
-static_assert(sizeof(FWaterBodyWeightmapSettings) == 0x000020, "Wrong size on FWaterBodyWeightmapSettings");
-static_assert(offsetof(FWaterBodyWeightmapSettings, FalloffWidth) == 0x000000, "Member 'FWaterBodyWeightmapSettings::FalloffWidth' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, EdgeOffset) == 0x000004, "Member 'FWaterBodyWeightmapSettings::EdgeOffset' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, ModulationTexture) == 0x000008, "Member 'FWaterBodyWeightmapSettings::ModulationTexture' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, TextureTiling) == 0x000010, "Member 'FWaterBodyWeightmapSettings::TextureTiling' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, TextureInfluence) == 0x000014, "Member 'FWaterBodyWeightmapSettings::TextureInfluence' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, Midpoint) == 0x000018, "Member 'FWaterBodyWeightmapSettings::Midpoint' has a wrong offset!");
-static_assert(offsetof(FWaterBodyWeightmapSettings, FinalOpacity) == 0x00001C, "Member 'FWaterBodyWeightmapSettings::FinalOpacity' has a wrong offset!");
 
 // ScriptStruct Water.UnderwaterPostProcessSettings
 // 0x0540 (0x0540 - 0x0000)
@@ -139,13 +103,6 @@ public:
 	float                                         BlendWeight;                                       // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPostProcessSettings                   PostProcessSettings;                               // 0x0010(0x0530)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
 };
-static_assert(alignof(FUnderwaterPostProcessSettings) == 0x000010, "Wrong alignment on FUnderwaterPostProcessSettings");
-static_assert(sizeof(FUnderwaterPostProcessSettings) == 0x000540, "Wrong size on FUnderwaterPostProcessSettings");
-static_assert(offsetof(FUnderwaterPostProcessSettings, bEnabled) == 0x000000, "Member 'FUnderwaterPostProcessSettings::bEnabled' has a wrong offset!");
-static_assert(offsetof(FUnderwaterPostProcessSettings, Priority) == 0x000004, "Member 'FUnderwaterPostProcessSettings::Priority' has a wrong offset!");
-static_assert(offsetof(FUnderwaterPostProcessSettings, BlendRadius) == 0x000008, "Member 'FUnderwaterPostProcessSettings::BlendRadius' has a wrong offset!");
-static_assert(offsetof(FUnderwaterPostProcessSettings, BlendWeight) == 0x00000C, "Member 'FUnderwaterPostProcessSettings::BlendWeight' has a wrong offset!");
-static_assert(offsetof(FUnderwaterPostProcessSettings, PostProcessSettings) == 0x000010, "Member 'FUnderwaterPostProcessSettings::PostProcessSettings' has a wrong offset!");
 
 // ScriptStruct Water.WaterCurveSettings
 // 0x0020 (0x0020 - 0x0000)
@@ -160,13 +117,6 @@ public:
 	float                                         CurveRampWidth;                                    // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-static_assert(alignof(FWaterCurveSettings) == 0x000008, "Wrong alignment on FWaterCurveSettings");
-static_assert(sizeof(FWaterCurveSettings) == 0x000020, "Wrong size on FWaterCurveSettings");
-static_assert(offsetof(FWaterCurveSettings, bUseCurveChannel) == 0x000000, "Member 'FWaterCurveSettings::bUseCurveChannel' has a wrong offset!");
-static_assert(offsetof(FWaterCurveSettings, ElevationCurveAsset) == 0x000008, "Member 'FWaterCurveSettings::ElevationCurveAsset' has a wrong offset!");
-static_assert(offsetof(FWaterCurveSettings, ChannelEdgeOffset) == 0x000010, "Member 'FWaterCurveSettings::ChannelEdgeOffset' has a wrong offset!");
-static_assert(offsetof(FWaterCurveSettings, ChannelDepth) == 0x000014, "Member 'FWaterCurveSettings::ChannelDepth' has a wrong offset!");
-static_assert(offsetof(FWaterCurveSettings, CurveRampWidth) == 0x000018, "Member 'FWaterCurveSettings::CurveRampWidth' has a wrong offset!");
 
 }
 

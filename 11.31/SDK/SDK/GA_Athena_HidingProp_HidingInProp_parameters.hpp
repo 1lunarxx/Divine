@@ -33,17 +33,6 @@ public:
 	uint8                                         Pad_39[0x3];                                       // 0x0039(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_PlayAnimMontage_ReturnValue;              // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp) == 0x000008, "Wrong alignment on GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp");
-static_assert(sizeof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp) == 0x000040, "Wrong size on GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, EntryPoint) == 0x000000, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, CallFunc_GetAvatarActorFromActorInfo_ReturnValue) == 0x000008, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::CallFunc_GetAvatarActorFromActorInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000010, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1) == 0x000020, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::CallFunc_GetAvatarActorFromActorInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, K2Node_Event_bWasCancelled) == 0x000028, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, K2Node_DynamicCast_AsFort_Player_Pawn_1) == 0x000030, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::K2Node_DynamicCast_AsFort_Player_Pawn_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp, CallFunc_PlayAnimMontage_ReturnValue) == 0x00003C, "Member 'GA_Athena_HidingProp_HidingInProp_C_ExecuteUbergraph_GA_Athena_HidingProp_HidingInProp::CallFunc_PlayAnimMontage_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_HidingProp_HidingInProp.GA_Athena_HidingProp_HidingInProp_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -52,9 +41,6 @@ struct GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Athena_HidingProp_HidingInProp_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 }
 

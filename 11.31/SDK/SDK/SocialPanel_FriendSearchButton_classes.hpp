@@ -39,22 +39,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SocialPanel_FriendSearchButton_C">();
+		BP_STATIC_CLASS_IMPL("SocialPanel_FriendSearchButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SocialPanel_FriendSearchButton_C")
 	}
 	static class USocialPanel_FriendSearchButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USocialPanel_FriendSearchButton_C>();
 	}
 };
-static_assert(alignof(USocialPanel_FriendSearchButton_C) == 0x000008, "Wrong alignment on USocialPanel_FriendSearchButton_C");
-static_assert(sizeof(USocialPanel_FriendSearchButton_C) == 0x000BC0, "Wrong size on USocialPanel_FriendSearchButton_C");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, UberGraphFrame) == 0x000B88, "Member 'USocialPanel_FriendSearchButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, OnHovered) == 0x000B90, "Member 'USocialPanel_FriendSearchButton_C::OnHovered' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, AddFriendBanIcon) == 0x000B98, "Member 'USocialPanel_FriendSearchButton_C::AddFriendBanIcon' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, ClickCapture) == 0x000BA0, "Member 'USocialPanel_FriendSearchButton_C::ClickCapture' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, RichText_CannotAddFriends) == 0x000BA8, "Member 'USocialPanel_FriendSearchButton_C::RichText_CannotAddFriends' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, RichText_SocialBan) == 0x000BB0, "Member 'USocialPanel_FriendSearchButton_C::RichText_SocialBan' has a wrong offset!");
-static_assert(offsetof(USocialPanel_FriendSearchButton_C, SharingIcon) == 0x000BB8, "Member 'USocialPanel_FriendSearchButton_C::SharingIcon' has a wrong offset!");
 
 }
 

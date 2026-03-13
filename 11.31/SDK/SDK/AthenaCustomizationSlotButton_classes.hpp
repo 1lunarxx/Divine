@@ -60,35 +60,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"AthenaCustomizationSlotButton_C">();
+		BP_STATIC_CLASS_IMPL("AthenaCustomizationSlotButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"AthenaCustomizationSlotButton_C")
 	}
 	static class UAthenaCustomizationSlotButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UAthenaCustomizationSlotButton_C>();
 	}
 };
-static_assert(alignof(UAthenaCustomizationSlotButton_C) == 0x000008, "Wrong alignment on UAthenaCustomizationSlotButton_C");
-static_assert(sizeof(UAthenaCustomizationSlotButton_C) == 0x000DE8, "Wrong size on UAthenaCustomizationSlotButton_C");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, UberGraphFrame) == 0x000BB0, "Member 'UAthenaCustomizationSlotButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, OnBackedOutFromSelection) == 0x000BB8, "Member 'UAthenaCustomizationSlotButton_C::OnBackedOutFromSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, OnConfirmedSelection) == 0x000BC0, "Member 'UAthenaCustomizationSlotButton_C::OnConfirmedSelection' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, OnSelected) == 0x000BC8, "Member 'UAthenaCustomizationSlotButton_C::OnSelected' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, OnHover) == 0x000BD0, "Member 'UAthenaCustomizationSlotButton_C::OnHover' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, ConfirmSelectionFlash) == 0x000BD8, "Member 'UAthenaCustomizationSlotButton_C::ConfirmSelectionFlash' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, ConfirmSelectionShine) == 0x000BE0, "Member 'UAthenaCustomizationSlotButton_C::ConfirmSelectionShine' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, EmptyImage) == 0x000BE8, "Member 'UAthenaCustomizationSlotButton_C::EmptyImage' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, ImageSlotType) == 0x000BF0, "Member 'UAthenaCustomizationSlotButton_C::ImageSlotType' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, InactiveFilledSlot) == 0x000BF8, "Member 'UAthenaCustomizationSlotButton_C::InactiveFilledSlot' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, NormalBangWrapper) == 0x000C00, "Member 'UAthenaCustomizationSlotButton_C::NormalBangWrapper' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, SlotImageOverlay) == 0x000C08, "Member 'UAthenaCustomizationSlotButton_C::SlotImageOverlay' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, TooltipBody) == 0x000C10, "Member 'UAthenaCustomizationSlotButton_C::TooltipBody' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, TooltipHeader) == 0x000C28, "Member 'UAthenaCustomizationSlotButton_C::TooltipHeader' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, ShowSubTypeIcon) == 0x000C40, "Member 'UAthenaCustomizationSlotButton_C::ShowSubTypeIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, SubTypeIcon) == 0x000C48, "Member 'UAthenaCustomizationSlotButton_C::SubTypeIcon' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, bSuppressTooltip) == 0x000CD0, "Member 'UAthenaCustomizationSlotButton_C::bSuppressTooltip' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, TypeIconVerticalOffset) == 0x000CD4, "Member 'UAthenaCustomizationSlotButton_C::TypeIconVerticalOffset' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, EmptyImage_M) == 0x000CD8, "Member 'UAthenaCustomizationSlotButton_C::EmptyImage_M' has a wrong offset!");
-static_assert(offsetof(UAthenaCustomizationSlotButton_C, EmptyImage_S) == 0x000D60, "Member 'UAthenaCustomizationSlotButton_C::EmptyImage_S' has a wrong offset!");
 
 }
 

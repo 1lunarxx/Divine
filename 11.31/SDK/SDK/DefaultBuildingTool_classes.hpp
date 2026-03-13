@@ -23,15 +23,17 @@ class ADefaultBuildingTool_C final : public AFortWeap_BuildingTool
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"DefaultBuildingTool_C">();
+		BP_STATIC_CLASS_IMPL("DefaultBuildingTool_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"DefaultBuildingTool_C")
 	}
 	static class ADefaultBuildingTool_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ADefaultBuildingTool_C>();
 	}
 };
-static_assert(alignof(ADefaultBuildingTool_C) == 0x000008, "Wrong alignment on ADefaultBuildingTool_C");
-static_assert(sizeof(ADefaultBuildingTool_C) == 0x000B70, "Wrong size on ADefaultBuildingTool_C");
 
 }
 

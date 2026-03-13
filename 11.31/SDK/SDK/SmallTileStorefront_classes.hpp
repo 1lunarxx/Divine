@@ -35,20 +35,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"SmallTileStorefront_C">();
+		BP_STATIC_CLASS_IMPL("SmallTileStorefront_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SmallTileStorefront_C")
 	}
 	static class USmallTileStorefront_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USmallTileStorefront_C>();
 	}
 };
-static_assert(alignof(USmallTileStorefront_C) == 0x000008, "Wrong alignment on USmallTileStorefront_C");
-static_assert(sizeof(USmallTileStorefront_C) == 0x0003B0, "Wrong size on USmallTileStorefront_C");
-static_assert(offsetof(USmallTileStorefront_C, UberGraphFrame) == 0x000388, "Member 'USmallTileStorefront_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(USmallTileStorefront_C, Border_NoCV_1) == 0x000390, "Member 'USmallTileStorefront_C::Border_NoCV_1' has a wrong offset!");
-static_assert(offsetof(USmallTileStorefront_C, NoOffersBox) == 0x000398, "Member 'USmallTileStorefront_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(USmallTileStorefront_C, SizeBox_EntryBox_Offers) == 0x0003A0, "Member 'USmallTileStorefront_C::SizeBox_EntryBox_Offers' has a wrong offset!");
-static_assert(offsetof(USmallTileStorefront_C, Switcher_Offers) == 0x0003A8, "Member 'USmallTileStorefront_C::Switcher_Offers' has a wrong offset!");
 
 }
 

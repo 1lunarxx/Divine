@@ -44,23 +44,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GCL_Cornfield_Movement_C">();
+		BP_STATIC_CLASS_IMPL("GCL_Cornfield_Movement_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GCL_Cornfield_Movement_C")
 	}
 	static class AGCL_Cornfield_Movement_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGCL_Cornfield_Movement_C>();
 	}
 };
-static_assert(alignof(AGCL_Cornfield_Movement_C) == 0x000008, "Wrong alignment on AGCL_Cornfield_Movement_C");
-static_assert(sizeof(AGCL_Cornfield_Movement_C) == 0x0007C0, "Wrong size on AGCL_Cornfield_Movement_C");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, UberGraphFrame) == 0x000788, "Member 'AGCL_Cornfield_Movement_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, TargetPawn) == 0x000790, "Member 'AGCL_Cornfield_Movement_C::TargetPawn' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, PlayerHeightOffset) == 0x000798, "Member 'AGCL_Cornfield_Movement_C::PlayerHeightOffset' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, TargetVelocity) == 0x0007A4, "Member 'AGCL_Cornfield_Movement_C::TargetVelocity' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, PlayerVelocityMultiplier) == 0x0007A8, "Member 'AGCL_Cornfield_Movement_C::PlayerVelocityMultiplier' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, RadiusOfCornToWiggle) == 0x0007AC, "Member 'AGCL_Cornfield_Movement_C::RadiusOfCornToWiggle' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, WiggleCooldown) == 0x0007B0, "Member 'AGCL_Cornfield_Movement_C::WiggleCooldown' has a wrong offset!");
-static_assert(offsetof(AGCL_Cornfield_Movement_C, LoopingEmitter) == 0x0007B8, "Member 'AGCL_Cornfield_Movement_C::LoopingEmitter' has a wrong offset!");
 
 }
 

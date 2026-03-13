@@ -23,15 +23,17 @@ class UFortNavArea_JumpDownSmashable2_C final : public UFortNavArea_SmashableJum
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FortNavArea_JumpDownSmashable2_C">();
+		BP_STATIC_CLASS_IMPL("FortNavArea_JumpDownSmashable2_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FortNavArea_JumpDownSmashable2_C")
 	}
 	static class UFortNavArea_JumpDownSmashable2_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFortNavArea_JumpDownSmashable2_C>();
 	}
 };
-static_assert(alignof(UFortNavArea_JumpDownSmashable2_C) == 0x000008, "Wrong alignment on UFortNavArea_JumpDownSmashable2_C");
-static_assert(sizeof(UFortNavArea_JumpDownSmashable2_C) == 0x000058, "Wrong size on UFortNavArea_JumpDownSmashable2_C");
 
 }
 

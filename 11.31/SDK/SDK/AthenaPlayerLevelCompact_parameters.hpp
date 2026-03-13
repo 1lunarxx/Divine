@@ -28,13 +28,6 @@ public:
 	int32                                         RewardLevel;                                       // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bRequiresBattlePass;                               // 0x0038(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon) == 0x000008, "Wrong alignment on AthenaPlayerLevelCompact_C_OnUpdateRewardIcon");
-static_assert(sizeof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon) == 0x000040, "Wrong size on AthenaPlayerLevelCompact_C_OnUpdateRewardIcon");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon, RewardItem) == 0x000000, "Member 'AthenaPlayerLevelCompact_C_OnUpdateRewardIcon::RewardItem' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon, RewardTexture) == 0x000008, "Member 'AthenaPlayerLevelCompact_C_OnUpdateRewardIcon::RewardTexture' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon, bHasAdditionalStylesToDisplay) == 0x000030, "Member 'AthenaPlayerLevelCompact_C_OnUpdateRewardIcon::bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon, RewardLevel) == 0x000034, "Member 'AthenaPlayerLevelCompact_C_OnUpdateRewardIcon::RewardLevel' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateRewardIcon, bRequiresBattlePass) == 0x000038, "Member 'AthenaPlayerLevelCompact_C_OnUpdateRewardIcon::bRequiresBattlePass' has a wrong offset!");
 
 // Function AthenaPlayerLevelCompact.AthenaPlayerLevelCompact_C.OnUpdateXpBar
 // 0x0008 (0x0008 - 0x0000)
@@ -44,10 +37,6 @@ public:
 	float                                         Progress;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsMaxLevel;                                       // 0x0004(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaPlayerLevelCompact_C_OnUpdateXpBar) == 0x000004, "Wrong alignment on AthenaPlayerLevelCompact_C_OnUpdateXpBar");
-static_assert(sizeof(AthenaPlayerLevelCompact_C_OnUpdateXpBar) == 0x000008, "Wrong size on AthenaPlayerLevelCompact_C_OnUpdateXpBar");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateXpBar, Progress) == 0x000000, "Member 'AthenaPlayerLevelCompact_C_OnUpdateXpBar::Progress' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_OnUpdateXpBar, bIsMaxLevel) == 0x000004, "Member 'AthenaPlayerLevelCompact_C_OnUpdateXpBar::bIsMaxLevel' has a wrong offset!");
 
 // Function AthenaPlayerLevelCompact.AthenaPlayerLevelCompact_C.ExecuteUbergraph_AthenaPlayerLevelCompact
 // 0x00D0 (0x00D0 - 0x0000)
@@ -83,29 +72,6 @@ public:
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x00B8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x00C0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact) == 0x000008, "Wrong alignment on AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact");
-static_assert(sizeof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact) == 0x0000D0, "Wrong size on AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, EntryPoint) == 0x000000, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_bool_Variable) == 0x000004, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_struct_Variable) == 0x000008, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_struct_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_struct_Variable_1) == 0x000018, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_struct_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_RewardItem) == 0x000028, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_RewardItem' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_RewardTexture) == 0x000030, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_RewardTexture' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_bHasAdditionalStylesToDisplay) == 0x000058, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_bHasAdditionalStylesToDisplay' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_RewardLevel) == 0x00005C, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_RewardLevel' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_bRequiresBattlePass) == 0x000060, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_bRequiresBattlePass' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, CallFunc_GetContext_ReturnValue) == 0x000068, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, CallFunc_IsValid_ReturnValue) == 0x000070, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, CallFunc_GetRestXpBalance_ReturnValue) == 0x000074, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::CallFunc_GetRestXpBalance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, CallFunc_Greater_IntInt_ReturnValue) == 0x000078, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_Progress) == 0x00007C, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_Progress' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Event_bIsMaxLevel) == 0x000080, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Event_bIsMaxLevel' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_bool_Variable_1) == 0x000081, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_struct_Variable_2) == 0x000084, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_struct_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Select_Default) == 0x000094, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, Temp_struct_Variable_3) == 0x0000A4, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::Temp_struct_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, CallFunc_GetDynamicMaterial_ReturnValue) == 0x0000B8, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact, K2Node_Select_Default_1) == 0x0000C0, "Member 'AthenaPlayerLevelCompact_C_ExecuteUbergraph_AthenaPlayerLevelCompact::K2Node_Select_Default_1' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UTextStyle_BurbankSmall_XS_Teal_C final : public UTextStyle_BaseParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle-BurbankSmall-XS-Teal_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle-BurbankSmall-XS-Teal_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle-BurbankSmall-XS-Teal_C")
 	}
 	static class UTextStyle_BurbankSmall_XS_Teal_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_BurbankSmall_XS_Teal_C>();
 	}
 };
-static_assert(alignof(UTextStyle_BurbankSmall_XS_Teal_C) == 0x000008, "Wrong alignment on UTextStyle_BurbankSmall_XS_Teal_C");
-static_assert(sizeof(UTextStyle_BurbankSmall_XS_Teal_C) == 0x000148, "Wrong size on UTextStyle_BurbankSmall_XS_Teal_C");
 
 }
 

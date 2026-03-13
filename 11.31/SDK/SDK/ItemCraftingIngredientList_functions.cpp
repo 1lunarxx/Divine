@@ -17,20 +17,6 @@
 namespace SDK
 {
 
-// Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.RefreshItemToRepresent
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UItemCraftingIngredientList_C::RefreshItemToRepresent()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.SetItemQuantity
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -331,6 +317,20 @@ void UItemCraftingIngredientList_C::ExecuteUbergraph_ItemCraftingIngredientList(
 	Parms.EntryPoint = EntryPoint;
 
 	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function ItemCraftingIngredientList.ItemCraftingIngredientList_C.RefreshItemToRepresent
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UItemCraftingIngredientList_C::RefreshItemToRepresent()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("ItemCraftingIngredientList_C", "RefreshItemToRepresent");
+
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

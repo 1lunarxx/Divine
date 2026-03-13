@@ -37,22 +37,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"LetoBorder_C">();
+		BP_STATIC_CLASS_IMPL("LetoBorder_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"LetoBorder_C")
 	}
 	static class ULetoBorder_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ULetoBorder_C>();
 	}
 };
-static_assert(alignof(ULetoBorder_C) == 0x000008, "Wrong alignment on ULetoBorder_C");
-static_assert(sizeof(ULetoBorder_C) == 0x000298, "Wrong size on ULetoBorder_C");
-static_assert(offsetof(ULetoBorder_C, UberGraphFrame) == 0x000260, "Member 'ULetoBorder_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, BorderBottom) == 0x000268, "Member 'ULetoBorder_C::BorderBottom' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, BorderLeft) == 0x000270, "Member 'ULetoBorder_C::BorderLeft' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, BorderNameplate) == 0x000278, "Member 'ULetoBorder_C::BorderNameplate' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, BorderRight) == 0x000280, "Member 'ULetoBorder_C::BorderRight' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, BorderTop) == 0x000288, "Member 'ULetoBorder_C::BorderTop' has a wrong offset!");
-static_assert(offsetof(ULetoBorder_C, SafeZone_0) == 0x000290, "Member 'ULetoBorder_C::SafeZone_0' has a wrong offset!");
 
 }
 

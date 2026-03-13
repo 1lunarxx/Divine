@@ -24,9 +24,6 @@ struct AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_Component
 public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature) == 0x000018, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature, Text) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_5_OnEditableTextChangedEvent__DelegateSignature::Text' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -35,9 +32,6 @@ struct AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__CloseButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature
 // 0x0020 (0x0020 - 0x0000)
@@ -47,10 +41,6 @@ public:
 	class FText                                   Text;                                              // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 	ETextCommit                                   CommitMethod;                                      // 0x0018(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature) == 0x000020, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, Text) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::Text' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature, CommitMethod) == 0x000018, "Member 'AthenaSpectateMatchModal_C_BndEvt__GameSessionSearchText_K2Node_ComponentBoundEvent_7_OnEditableTextCommittedEvent__DelegateSignature::CommitMethod' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -59,9 +49,6 @@ struct AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEven
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__SearchButton_K2Node_ComponentBoundEvent_8_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.CreateFriendList
 // 0x0010 (0x0010 - 0x0000)
@@ -70,9 +57,6 @@ struct AthenaSpectateMatchModal_C_CreateFriendList final
 public:
 	TArray<class FString>                         FriendsNames;                                      // 0x0000(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_CreateFriendList) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_CreateFriendList");
-static_assert(sizeof(AthenaSpectateMatchModal_C_CreateFriendList) == 0x000010, "Wrong size on AthenaSpectateMatchModal_C_CreateFriendList");
-static_assert(offsetof(AthenaSpectateMatchModal_C_CreateFriendList, FriendsNames) == 0x000000, "Member 'AthenaSpectateMatchModal_C_CreateFriendList::FriendsNames' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.OnFriendNameClicked
 // 0x0008 (0x0008 - 0x0000)
@@ -81,9 +65,6 @@ struct AthenaSpectateMatchModal_C_OnFriendNameClicked final
 public:
 	class UCommonButton*                          ButtonClicked;                                     // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_OnFriendNameClicked) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_OnFriendNameClicked");
-static_assert(sizeof(AthenaSpectateMatchModal_C_OnFriendNameClicked) == 0x000008, "Wrong size on AthenaSpectateMatchModal_C_OnFriendNameClicked");
-static_assert(offsetof(AthenaSpectateMatchModal_C_OnFriendNameClicked, ButtonClicked) == 0x000000, "Member 'AthenaSpectateMatchModal_C_OnFriendNameClicked::ButtonClicked' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -92,9 +73,6 @@ struct AthenaSpectateMatchModal_C_PreConstruct final
 public:
 	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_PreConstruct) == 0x000001, "Wrong alignment on AthenaSpectateMatchModal_C_PreConstruct");
-static_assert(sizeof(AthenaSpectateMatchModal_C_PreConstruct) == 0x000001, "Wrong size on AthenaSpectateMatchModal_C_PreConstruct");
-static_assert(offsetof(AthenaSpectateMatchModal_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'AthenaSpectateMatchModal_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -103,9 +81,6 @@ struct AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__JoinFriend_K2Node_ComponentBoundEvent_1_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
 // 0x0008 (0x0008 - 0x0000)
@@ -114,9 +89,6 @@ struct AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_
 public:
 	class UCommonButton*                          Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(sizeof(AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature) == 0x000008, "Wrong size on AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature");
-static_assert(offsetof(AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature, Button) == 0x000000, "Member 'AthenaSpectateMatchModal_C_BndEvt__JoinGame_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature::Button' has a wrong offset!");
 
 // Function AthenaSpectateMatchModal.AthenaSpectateMatchModal_C.ExecuteUbergraph_AthenaSpectateMatchModal
 // 0x01A8 (0x01A8 - 0x0000)
@@ -177,50 +149,6 @@ public:
 	uint8                                         Pad_19A[0x6];                                      // 0x019A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidget*                                K2Node_Select_Default;                             // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal) == 0x000008, "Wrong alignment on AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal");
-static_assert(sizeof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal) == 0x0001A8, "Wrong size on AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, EntryPoint) == 0x000000, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Button_3) == 0x000008, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Button_3' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Text_1) == 0x000010, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Text_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Text) == 0x000028, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Text' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_CommitMethod) == 0x000040, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_CommitMethod' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Conv_TextToString_ReturnValue) == 0x000048, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Conv_TextToString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000058, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_IsGameSessionString_ReturnValue) == 0x000059, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_IsGameSessionString_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Conv_TextToString_ReturnValue_1) == 0x000060, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Conv_TextToString_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Button_2) == 0x000070, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Button_2' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_GetText_ReturnValue) == 0x000078, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_GetText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_CustomEvent_FriendsNames) == 0x000090, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_CustomEvent_FriendsNames' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Conv_TextToString_ReturnValue_2) == 0x0000A0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Conv_TextToString_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Array_Length_ReturnValue) == 0x0000B0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Array_Length_ReturnValue_1) == 0x0000B4, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Array_Length_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, Temp_int_Loop_Counter_Variable) == 0x0000B8, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Greater_IntInt_ReturnValue) == 0x0000BC, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Less_IntInt_ReturnValue) == 0x0000BD, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Add_IntInt_ReturnValue) == 0x0000C0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_CustomEvent_ButtonClicked) == 0x0000C8, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_CustomEvent_ButtonClicked' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_CreateDelegate_OutputDelegate) == 0x0000D0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_DynamicCast_AsIcon_Text_Button) == 0x0000E0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_DynamicCast_bSuccess) == 0x0000E8, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_Event_IsDesignTime) == 0x0000E9, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Conv_TextToString_ReturnValue_3) == 0x0000F0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Conv_TextToString_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_MakeArray_Array) == 0x000100, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, Temp_int_Array_Index_Variable) == 0x000110, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Array_Get_Item) == 0x000118, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_Conv_StringToText_ReturnValue) == 0x000128, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Button_1) == 0x000140, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_ComponentBoundEvent_Button) == 0x000148, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_IsVisible_ReturnValue) == 0x000150, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_IsVisible_ReturnValue_1) == 0x000151, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_IsVisible_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_GetFriendNames_FriendNames) == 0x000158, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_GetFriendNames_FriendNames' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_IsVisible_ReturnValue_2) == 0x000168, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_IsVisible_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_CreateDelegate_OutputDelegate_1) == 0x00016C, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_K2_SetTimerDelegate_ReturnValue) == 0x000180, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_K2_SetTimerDelegate_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, CallFunc_BP_CreateEntry_ReturnValue) == 0x000188, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::CallFunc_BP_CreateEntry_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_DynamicCast_AsIcon_Text_Button_1) == 0x000190, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_DynamicCast_AsIcon_Text_Button_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_DynamicCast_bSuccess_1) == 0x000198, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, Temp_bool_Variable) == 0x000199, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal, K2Node_Select_Default) == 0x0001A0, "Member 'AthenaSpectateMatchModal_C_ExecuteUbergraph_AthenaSpectateMatchModal::K2Node_Select_Default' has a wrong offset!");
 
 }
 

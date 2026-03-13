@@ -41,24 +41,6 @@ public:
 	class UFortPlaysetItemDefinition*             CallFunc_GetActivePlaysetData_OutData_1;           // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        CallFunc_SpawnSoundAttached_ReturnValue;           // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory) == 0x000008, "Wrong alignment on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory");
-static_assert(sizeof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory) == 0x000070, "Wrong size on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, EntryPoint) == 0x000000, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::EntryPoint' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_GetActivePlaysetData_OutData) == 0x000008, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_GetActivePlaysetData_OutData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_IsValid_ReturnValue) == 0x000010, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_Event_bWasCancelled) == 0x000011, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_Event_bWasCancelled' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_Event_Projectile_Reference) == 0x000018, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_Event_Projectile_Reference' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_AsB_Prj_Athena_Playset_Grenade) == 0x000020, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_AsB_Prj_Athena_Playset_Grenade' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_GetPlayerController_ReturnValue) == 0x000030, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_GetPlayerPawn_ReturnValue) == 0x000038, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_GetPlayerPawn_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_AsAthena_Player_Controller) == 0x000040, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_AsAthena_Player_Controller' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_bSuccess_1) == 0x000048, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_IsLocallyControlled_ReturnValue) == 0x000049, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_IsLocallyControlled_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_AsFort_Player_Pawn) == 0x000050, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_AsFort_Player_Pawn' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, K2Node_DynamicCast_bSuccess_2) == 0x000058, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::K2Node_DynamicCast_bSuccess_2' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_GetActivePlaysetData_OutData_1) == 0x000060, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_GetActivePlaysetData_OutData_1' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory, CallFunc_SpawnSoundAttached_ReturnValue) == 0x000068, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_ExecuteUbergraph_GA_Athena_Instance_PlaysetGrenadeWithTrajectory::CallFunc_SpawnSoundAttached_ReturnValue' has a wrong offset!");
 
 // Function GA_Athena_Instance_PlaysetGrenadeWithTrajectory.GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C.SetPlaysetData
 // 0x0008 (0x0008 - 0x0000)
@@ -67,9 +49,6 @@ struct GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData final
 public:
 	class AFortProjectileBase*                    Projectile_Reference;                              // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData) == 0x000008, "Wrong alignment on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData");
-static_assert(sizeof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData) == 0x000008, "Wrong size on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData, Projectile_Reference) == 0x000000, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_SetPlaysetData::Projectile_Reference' has a wrong offset!");
 
 // Function GA_Athena_Instance_PlaysetGrenadeWithTrajectory.GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C.K2_OnEndAbility
 // 0x0001 (0x0001 - 0x0000)
@@ -78,9 +57,6 @@ struct GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility final
 public:
 	bool                                          bWasCancelled;                                     // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility) == 0x000001, "Wrong alignment on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility");
-static_assert(sizeof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility) == 0x000001, "Wrong size on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility, bWasCancelled) == 0x000000, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_K2_OnEndAbility::bWasCancelled' has a wrong offset!");
 
 // Function GA_Athena_Instance_PlaysetGrenadeWithTrajectory.GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C.GetActivePlaysetData
 // 0x0020 (0x0020 - 0x0000)
@@ -92,12 +68,6 @@ public:
 	class UFortPlaysetGrenadeItemDefinition*      K2Node_DynamicCast_AsFort_Playset_Grenade_Item_Definition; // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData) == 0x000008, "Wrong alignment on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData");
-static_assert(sizeof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData) == 0x000020, "Wrong size on GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData, OutData) == 0x000000, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData::OutData' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData, CallFunc_GetCurrentSourceItemDefinition_ReturnValue) == 0x000008, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData::CallFunc_GetCurrentSourceItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData, K2Node_DynamicCast_AsFort_Playset_Grenade_Item_Definition) == 0x000010, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData::K2Node_DynamicCast_AsFort_Playset_Grenade_Item_Definition' has a wrong offset!");
-static_assert(offsetof(GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData, K2Node_DynamicCast_bSuccess) == 0x000018, "Member 'GA_Athena_Instance_PlaysetGrenadeWithTrajectory_C_GetActivePlaysetData::K2Node_DynamicCast_bSuccess' has a wrong offset!");
 
 }
 

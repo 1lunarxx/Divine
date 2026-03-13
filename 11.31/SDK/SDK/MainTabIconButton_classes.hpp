@@ -47,6 +47,19 @@ public:
 	bool                                          AllowStyleChange;                                  // 0x0C95(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
+	void BP_OnDeselected();
+	void Construct();
+	void BP_OnHovered();
+	void BP_OnUnhovered();
+	void HandleTabAdded();
+	void HandleTabAnimateInFinished();
+	void HandleTabDialogCLosed();
+	void OnCurrentTextStyleChanged();
+	void Handle_StopTabCallout();
+	void BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature();
+	void BP_OnDisabled();
+	void BP_OnEnabled();
+	void ExecuteUbergraph_MainTabIconButton(int32 EntryPoint);
 	void SetBangType(EFortBangType NewBangType);
 	void StopTabCallout();
 	void TabAdded();
@@ -61,50 +74,21 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void SetTabLabelInfo(const struct FFortTabButtonLabelInfo& TabLabelInfo);
 	void BP_OnSelected();
-	void BP_OnDeselected();
-	void Construct();
-	void BP_OnHovered();
-	void BP_OnUnhovered();
-	void HandleTabAdded();
-	void HandleTabAnimateInFinished();
-	void HandleTabDialogCLosed();
-	void OnCurrentTextStyleChanged();
-	void Handle_StopTabCallout();
-	void BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature();
-	void BP_OnDisabled();
-	void BP_OnEnabled();
-	void ExecuteUbergraph_MainTabIconButton(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"MainTabIconButton_C">();
+		BP_STATIC_CLASS_IMPL("MainTabIconButton_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"MainTabIconButton_C")
 	}
 	static class UMainTabIconButton_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UMainTabIconButton_C>();
 	}
 };
-static_assert(alignof(UMainTabIconButton_C) == 0x000008, "Wrong alignment on UMainTabIconButton_C");
-static_assert(sizeof(UMainTabIconButton_C) == 0x000C98, "Wrong size on UMainTabIconButton_C");
-static_assert(offsetof(UMainTabIconButton_C, UberGraphFrame) == 0x000B70, "Member 'UMainTabIconButton_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, AnimatedPulse) == 0x000B78, "Member 'UMainTabIconButton_C::AnimatedPulse' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, AnimateIn) == 0x000B80, "Member 'UMainTabIconButton_C::AnimateIn' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, BangWrapper) == 0x000B88, "Member 'UMainTabIconButton_C::BangWrapper' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, CenterButtonTextWidget) == 0x000B90, "Member 'UMainTabIconButton_C::CenterButtonTextWidget' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, ContentHB) == 0x000B98, "Member 'UMainTabIconButton_C::ContentHB' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, ImageGlow) == 0x000BA0, "Member 'UMainTabIconButton_C::ImageGlow' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, ImageTab) == 0x000BA8, "Member 'UMainTabIconButton_C::ImageTab' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, LeftSideImage) == 0x000BB0, "Member 'UMainTabIconButton_C::LeftSideImage' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, TutorialWrapper) == 0x000BB8, "Member 'UMainTabIconButton_C::TutorialWrapper' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, ButtonText) == 0x000BC0, "Member 'UMainTabIconButton_C::ButtonText' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, IconBrush) == 0x000BD8, "Member 'UMainTabIconButton_C::IconBrush' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, UseText) == 0x000C60, "Member 'UMainTabIconButton_C::UseText' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, SelectedIconTint) == 0x000C64, "Member 'UMainTabIconButton_C::SelectedIconTint' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, DeselectedIconTint) == 0x000C74, "Member 'UMainTabIconButton_C::DeselectedIconTint' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, HoveredIconTint) == 0x000C84, "Member 'UMainTabIconButton_C::HoveredIconTint' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, bBangEnabled) == 0x000C94, "Member 'UMainTabIconButton_C::bBangEnabled' has a wrong offset!");
-static_assert(offsetof(UMainTabIconButton_C, AllowStyleChange) == 0x000C95, "Member 'UMainTabIconButton_C::AllowStyleChange' has a wrong offset!");
 
 }
 

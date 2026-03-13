@@ -33,19 +33,6 @@ public:
 	class UNiagaraComponent*                      K2Node_DynamicCast_AsNiagara_Particle_System;      // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AnimNotify_Player_HandSplash_R_C_Received_Notify) == 0x000008, "Wrong alignment on AnimNotify_Player_HandSplash_R_C_Received_Notify");
-static_assert(sizeof(AnimNotify_Player_HandSplash_R_C_Received_Notify) == 0x000068, "Wrong size on AnimNotify_Player_HandSplash_R_C_Received_Notify");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, MeshComp) == 0x000000, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::MeshComp' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, Animation) == 0x000008, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::Animation' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, ReturnValue) == 0x000010, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, CallFunc_GetOwner_ReturnValue) == 0x000018, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::CallFunc_GetOwner_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, CallFunc_GetDisplayName_ReturnValue) == 0x000020, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::CallFunc_GetDisplayName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, K2Node_DynamicCast_AsFort_Player_Pawn_Athena) == 0x000030, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::K2Node_DynamicCast_AsFort_Player_Pawn_Athena' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, CallFunc_Concat_StrStr_ReturnValue) == 0x000040, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, CallFunc_GetActivePlayerHandSplashInWaterComponent_ReturnValue) == 0x000050, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::CallFunc_GetActivePlayerHandSplashInWaterComponent_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, K2Node_DynamicCast_AsNiagara_Particle_System) == 0x000058, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::K2Node_DynamicCast_AsNiagara_Particle_System' has a wrong offset!");
-static_assert(offsetof(AnimNotify_Player_HandSplash_R_C_Received_Notify, K2Node_DynamicCast_bSuccess_1) == 0x000060, "Member 'AnimNotify_Player_HandSplash_R_C_Received_Notify::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
 
 }
 

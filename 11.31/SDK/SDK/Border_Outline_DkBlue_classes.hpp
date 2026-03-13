@@ -23,15 +23,17 @@ class UBorder_Outline_DkBlue_C final : public UCommonBorderStyle
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"Border_Outline_DkBlue_C">();
+		BP_STATIC_CLASS_IMPL("Border_Outline_DkBlue_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"Border_Outline_DkBlue_C")
 	}
 	static class UBorder_Outline_DkBlue_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBorder_Outline_DkBlue_C>();
 	}
 };
-static_assert(alignof(UBorder_Outline_DkBlue_C) == 0x000008, "Wrong alignment on UBorder_Outline_DkBlue_C");
-static_assert(sizeof(UBorder_Outline_DkBlue_C) == 0x0000B0, "Wrong size on UBorder_Outline_DkBlue_C");
 
 }
 

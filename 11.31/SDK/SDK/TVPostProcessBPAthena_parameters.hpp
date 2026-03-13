@@ -25,11 +25,6 @@ public:
 	ESubGame                                      CallFunc_GetSubGame_ReturnValue;                   // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame) == 0x000001, "Wrong alignment on TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame");
-static_assert(sizeof(TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame) == 0x000003, "Wrong size on TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame");
-static_assert(offsetof(TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame, bEnabled) == 0x000000, "Member 'TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame::bEnabled' has a wrong offset!");
-static_assert(offsetof(TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame, CallFunc_GetSubGame_ReturnValue) == 0x000001, "Member 'TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000002, "Member 'TVPostProcessBPAthena_C_IsEnabledForCurrentSubgame::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 // Function TVPostProcessBPAthena.TVPostProcessBPAthena_C.ExecuteUbergraph_TVPostProcessBPAthena
 // 0x0008 (0x0008 - 0x0000)
@@ -39,10 +34,6 @@ public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_GetUnpausedTimeSeconds_ReturnValue;       // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena) == 0x000004, "Wrong alignment on TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena");
-static_assert(sizeof(TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena) == 0x000008, "Wrong size on TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena");
-static_assert(offsetof(TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena, EntryPoint) == 0x000000, "Member 'TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena::EntryPoint' has a wrong offset!");
-static_assert(offsetof(TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena, CallFunc_GetUnpausedTimeSeconds_ReturnValue) == 0x000004, "Member 'TVPostProcessBPAthena_C_ExecuteUbergraph_TVPostProcessBPAthena::CallFunc_GetUnpausedTimeSeconds_ReturnValue' has a wrong offset!");
 
 }
 

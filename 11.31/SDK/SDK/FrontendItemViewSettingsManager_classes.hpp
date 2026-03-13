@@ -28,15 +28,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"FrontendItemViewSettingsManager_C">();
+		BP_STATIC_CLASS_IMPL("FrontendItemViewSettingsManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"FrontendItemViewSettingsManager_C")
 	}
 	static class UFrontendItemViewSettingsManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UFrontendItemViewSettingsManager_C>();
 	}
 };
-static_assert(alignof(UFrontendItemViewSettingsManager_C) == 0x000008, "Wrong alignment on UFrontendItemViewSettingsManager_C");
-static_assert(sizeof(UFrontendItemViewSettingsManager_C) == 0x000028, "Wrong size on UFrontendItemViewSettingsManager_C");
 
 }
 

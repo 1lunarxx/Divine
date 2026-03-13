@@ -54,27 +54,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Athena_Enemy_Apply_SneakySnowman_C">();
+		BP_STATIC_CLASS_IMPL("GA_Athena_Enemy_Apply_SneakySnowman_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Athena_Enemy_Apply_SneakySnowman_C")
 	}
 	static class UGA_Athena_Enemy_Apply_SneakySnowman_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Athena_Enemy_Apply_SneakySnowman_C>();
 	}
 };
-static_assert(alignof(UGA_Athena_Enemy_Apply_SneakySnowman_C) == 0x000008, "Wrong alignment on UGA_Athena_Enemy_Apply_SneakySnowman_C");
-static_assert(sizeof(UGA_Athena_Enemy_Apply_SneakySnowman_C) == 0x000AA8, "Wrong size on UGA_Athena_Enemy_Apply_SneakySnowman_C");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, UberGraphFrame) == 0x000A30, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, PlayerPawn) == 0x000A38, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::PlayerPawn' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, HolsterSnowman) == 0x000A40, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::HolsterSnowman' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, EnemySnowman) == 0x000A48, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::EnemySnowman' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, SnowmanDuration) == 0x000A50, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::SnowmanDuration' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, ExitAnimation) == 0x000A70, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::ExitAnimation' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, EndAbilityTimer) == 0x000A78, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbilityTimer' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, EndAbilitySequenceTimer) == 0x000A80, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::EndAbilitySequenceTimer' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, WeaponCheckTimer) == 0x000A88, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::WeaponCheckTimer' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, EquippingCue) == 0x000A90, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::EquippingCue' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, T_TraitVehicle) == 0x000A98, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::T_TraitVehicle' has a wrong offset!");
-static_assert(offsetof(UGA_Athena_Enemy_Apply_SneakySnowman_C, T_MountedTurret) == 0x000AA0, "Member 'UGA_Athena_Enemy_Apply_SneakySnowman_C::T_MountedTurret' has a wrong offset!");
 
 }
 

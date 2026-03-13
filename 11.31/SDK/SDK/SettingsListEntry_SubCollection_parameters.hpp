@@ -23,9 +23,6 @@ struct SettingsListEntry_SubCollection_C_OnSettingAssigned final
 public:
 	class FText                                   ActionText;                                        // 0x0000(0x0018)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_SubCollection_C_OnSettingAssigned) == 0x000008, "Wrong alignment on SettingsListEntry_SubCollection_C_OnSettingAssigned");
-static_assert(sizeof(SettingsListEntry_SubCollection_C_OnSettingAssigned) == 0x000018, "Wrong size on SettingsListEntry_SubCollection_C_OnSettingAssigned");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_OnSettingAssigned, ActionText) == 0x000000, "Member 'SettingsListEntry_SubCollection_C_OnSettingAssigned::ActionText' has a wrong offset!");
 
 // Function SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C.OnMouseLeave
 // 0x0070 (0x0070 - 0x0000)
@@ -34,9 +31,6 @@ struct SettingsListEntry_SubCollection_C_OnMouseLeave final
 public:
 	struct FPointerEvent                          MouseEvent;                                        // 0x0000(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_SubCollection_C_OnMouseLeave) == 0x000008, "Wrong alignment on SettingsListEntry_SubCollection_C_OnMouseLeave");
-static_assert(sizeof(SettingsListEntry_SubCollection_C_OnMouseLeave) == 0x000070, "Wrong size on SettingsListEntry_SubCollection_C_OnMouseLeave");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_OnMouseLeave, MouseEvent) == 0x000000, "Member 'SettingsListEntry_SubCollection_C_OnMouseLeave::MouseEvent' has a wrong offset!");
 
 // Function SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C.OnMouseEnter
 // 0x00A8 (0x00A8 - 0x0000)
@@ -46,10 +40,6 @@ public:
 	struct FGeometry                              MyGeometry;                                        // 0x0000(0x0038)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
 	struct FPointerEvent                          MouseEvent;                                        // 0x0038(0x0070)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(SettingsListEntry_SubCollection_C_OnMouseEnter) == 0x000008, "Wrong alignment on SettingsListEntry_SubCollection_C_OnMouseEnter");
-static_assert(sizeof(SettingsListEntry_SubCollection_C_OnMouseEnter) == 0x0000A8, "Wrong size on SettingsListEntry_SubCollection_C_OnMouseEnter");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_OnMouseEnter, MyGeometry) == 0x000000, "Member 'SettingsListEntry_SubCollection_C_OnMouseEnter::MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_OnMouseEnter, MouseEvent) == 0x000038, "Member 'SettingsListEntry_SubCollection_C_OnMouseEnter::MouseEvent' has a wrong offset!");
 
 // Function SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C.GetPrimaryGamepadFocusWidget
 // 0x0008 (0x0008 - 0x0000)
@@ -58,9 +48,6 @@ struct SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget final
 public:
 	class UWidget*                                ReturnValue;                                       // 0x0000(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget) == 0x000008, "Wrong alignment on SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget");
-static_assert(sizeof(SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget) == 0x000008, "Wrong size on SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget, ReturnValue) == 0x000000, "Member 'SettingsListEntry_SubCollection_C_GetPrimaryGamepadFocusWidget::ReturnValue' has a wrong offset!");
 
 // Function SettingsListEntry_SubCollection.SettingsListEntry_SubCollection_C.ExecuteUbergraph_SettingsListEntry_SubCollection
 // 0x0158 (0x0158 - 0x0000)
@@ -80,17 +67,6 @@ public:
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0148(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0150(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection) == 0x000008, "Wrong alignment on SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection");
-static_assert(sizeof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection) == 0x000158, "Wrong size on SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, EntryPoint) == 0x000000, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::EntryPoint' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_Event_MouseEvent) == 0x000008, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_Event_MouseEvent' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_Event_ActionText) == 0x000078, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_Event_ActionText' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_DynamicCast_AsIcon_Text_Button) == 0x000090, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_DynamicCast_AsIcon_Text_Button' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_DynamicCast_bSuccess) == 0x000098, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_Event_MyGeometry) == 0x00009C, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_Event_MyGeometry' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, K2Node_Event_MouseEvent_1) == 0x0000D8, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::K2Node_Event_MouseEvent_1' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000148, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection, CallFunc_PlayAnimationForward_ReturnValue) == 0x000150, "Member 'SettingsListEntry_SubCollection_C_ExecuteUbergraph_SettingsListEntry_SubCollection::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
 
 }
 

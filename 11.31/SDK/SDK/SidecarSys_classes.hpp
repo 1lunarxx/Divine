@@ -32,21 +32,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SidecarDss">();
+		STATIC_CLASS_IMPL("SidecarDss")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SidecarDss")
 	}
 	static class USidecarDss* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USidecarDss>();
 	}
 };
-static_assert(alignof(USidecarDss) == 0x000008, "Wrong alignment on USidecarDss");
-static_assert(sizeof(USidecarDss) == 0x0000C8, "Wrong size on USidecarDss");
-static_assert(offsetof(USidecarDss, FileInfoMap) == 0x000028, "Member 'USidecarDss::FileInfoMap' has a wrong offset!");
-static_assert(offsetof(USidecarDss, DssDownloadUrl) == 0x000078, "Member 'USidecarDss::DssDownloadUrl' has a wrong offset!");
-static_assert(offsetof(USidecarDss, DssCheckoutUrl) == 0x000088, "Member 'USidecarDss::DssCheckoutUrl' has a wrong offset!");
-static_assert(offsetof(USidecarDss, DssUploadUrl) == 0x000098, "Member 'USidecarDss::DssUploadUrl' has a wrong offset!");
-static_assert(offsetof(USidecarDss, DssRestoreUrl) == 0x0000A8, "Member 'USidecarDss::DssRestoreUrl' has a wrong offset!");
-static_assert(offsetof(USidecarDss, DssCheckinUrl) == 0x0000B8, "Member 'USidecarDss::DssCheckinUrl' has a wrong offset!");
 
 // Class SidecarSys.SidecarInventorySys
 // 0x00B8 (0x00E0 - 0x0028)
@@ -62,19 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SidecarInventorySys">();
+		STATIC_CLASS_IMPL("SidecarInventorySys")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SidecarInventorySys")
 	}
 	static class USidecarInventorySys* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USidecarInventorySys>();
 	}
 };
-static_assert(alignof(USidecarInventorySys) == 0x000010, "Wrong alignment on USidecarInventorySys");
-static_assert(sizeof(USidecarInventorySys) == 0x0000E0, "Wrong size on USidecarInventorySys");
-static_assert(offsetof(USidecarInventorySys, InventoryDownloadUrl) == 0x000028, "Member 'USidecarInventorySys::InventoryDownloadUrl' has a wrong offset!");
-static_assert(offsetof(USidecarInventorySys, InventoryLockUrl) == 0x000038, "Member 'USidecarInventorySys::InventoryLockUrl' has a wrong offset!");
-static_assert(offsetof(USidecarInventorySys, ItemUpdateUrl) == 0x000048, "Member 'USidecarInventorySys::ItemUpdateUrl' has a wrong offset!");
-static_assert(offsetof(USidecarInventorySys, ReleaseAllUrl) == 0x000058, "Member 'USidecarInventorySys::ReleaseAllUrl' has a wrong offset!");
 
 // Class SidecarSys.SidecarSys
 // 0x0020 (0x0048 - 0x0028)
@@ -88,17 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticClassImpl<"SidecarSys">();
+		STATIC_CLASS_IMPL("SidecarSys")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"SidecarSys")
 	}
 	static class USidecarSys* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<USidecarSys>();
 	}
 };
-static_assert(alignof(USidecarSys) == 0x000008, "Wrong alignment on USidecarSys");
-static_assert(sizeof(USidecarSys) == 0x000048, "Wrong size on USidecarSys");
-static_assert(offsetof(USidecarSys, SidecarDss) == 0x000038, "Member 'USidecarSys::SidecarDss' has a wrong offset!");
-static_assert(offsetof(USidecarSys, SidecarInventory) == 0x000040, "Member 'USidecarSys::SidecarInventory' has a wrong offset!");
 
 }
 

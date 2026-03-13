@@ -41,23 +41,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TopBar_C">();
+		BP_STATIC_CLASS_IMPL("TopBar_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TopBar_C")
 	}
 	static class UTopBar_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTopBar_C>();
 	}
 };
-static_assert(alignof(UTopBar_C) == 0x000008, "Wrong alignment on UTopBar_C");
-static_assert(sizeof(UTopBar_C) == 0x000418, "Wrong size on UTopBar_C");
-static_assert(offsetof(UTopBar_C, UberGraphFrame) == 0x0003D8, "Member 'UTopBar_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, IntroTabLabel) == 0x0003E0, "Member 'UTopBar_C::IntroTabLabel' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, GameFeatureStatus_HighResTextureDownload) == 0x0003E8, "Member 'UTopBar_C::GameFeatureStatus_HighResTextureDownload' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, HorizontalBox_TopContent) == 0x0003F0, "Member 'UTopBar_C::HorizontalBox_TopContent' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, LetoFrontendJoinPrompt_Side) == 0x0003F8, "Member 'UTopBar_C::LetoFrontendJoinPrompt_Side' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, MobileTabTitle) == 0x000400, "Member 'UTopBar_C::MobileTabTitle' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, SafeZone_7) == 0x000408, "Member 'UTopBar_C::SafeZone_7' has a wrong offset!");
-static_assert(offsetof(UTopBar_C, windowchromebuttons) == 0x000410, "Member 'UTopBar_C::windowchromebuttons' has a wrong offset!");
 
 }
 

@@ -23,15 +23,17 @@ class UWarmupEventCameraShake_C final : public UCameraShake
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WarmupEventCameraShake_C">();
+		BP_STATIC_CLASS_IMPL("WarmupEventCameraShake_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WarmupEventCameraShake_C")
 	}
 	static class UWarmupEventCameraShake_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UWarmupEventCameraShake_C>();
 	}
 };
-static_assert(alignof(UWarmupEventCameraShake_C) == 0x000010, "Wrong alignment on UWarmupEventCameraShake_C");
-static_assert(sizeof(UWarmupEventCameraShake_C) == 0x000160, "Wrong size on UWarmupEventCameraShake_C");
 
 }
 

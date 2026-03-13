@@ -23,15 +23,17 @@ class UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C final : public UFortnite_Base_He
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"F_MED_HIS_Ramirez_Head_01_AnimBP_Child_C">();
+		BP_STATIC_CLASS_IMPL("F_MED_HIS_Ramirez_Head_01_AnimBP_Child_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"F_MED_HIS_Ramirez_Head_01_AnimBP_Child_C")
 	}
 	static class UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C>();
 	}
 };
-static_assert(alignof(UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C) == 0x000010, "Wrong alignment on UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C");
-static_assert(sizeof(UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C) == 0x001430, "Wrong size on UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C");
 
 }
 

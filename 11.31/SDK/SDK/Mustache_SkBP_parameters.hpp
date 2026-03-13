@@ -23,9 +23,6 @@ struct Mustache_SkBP_C_AnimGraph final
 public:
 	struct FPoseLink                              AnimGraph_0;                                       // 0x0000(0x0010)(Parm, OutParm, NoDestructor)
 };
-static_assert(alignof(Mustache_SkBP_C_AnimGraph) == 0x000008, "Wrong alignment on Mustache_SkBP_C_AnimGraph");
-static_assert(sizeof(Mustache_SkBP_C_AnimGraph) == 0x000010, "Wrong size on Mustache_SkBP_C_AnimGraph");
-static_assert(offsetof(Mustache_SkBP_C_AnimGraph, AnimGraph_0) == 0x000000, "Member 'Mustache_SkBP_C_AnimGraph::AnimGraph_0' has a wrong offset!");
 
 // Function Mustache_SkBP.Mustache_SkBP_C.ExecuteUbergraph_Mustache_SkBP
 // 0x0004 (0x0004 - 0x0000)
@@ -34,9 +31,6 @@ struct Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP) == 0x000004, "Wrong alignment on Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP");
-static_assert(sizeof(Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP) == 0x000004, "Wrong size on Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP");
-static_assert(offsetof(Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP, EntryPoint) == 0x000000, "Member 'Mustache_SkBP_C_ExecuteUbergraph_Mustache_SkBP::EntryPoint' has a wrong offset!");
 
 }
 

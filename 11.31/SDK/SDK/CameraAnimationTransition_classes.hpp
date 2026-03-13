@@ -50,28 +50,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"CameraAnimationTransition_C">();
+		BP_STATIC_CLASS_IMPL("CameraAnimationTransition_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"CameraAnimationTransition_C")
 	}
 	static class ACameraAnimationTransition_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<ACameraAnimationTransition_C>();
 	}
 };
-static_assert(alignof(ACameraAnimationTransition_C) == 0x000010, "Wrong alignment on ACameraAnimationTransition_C");
-static_assert(sizeof(ACameraAnimationTransition_C) == 0x0002D0, "Wrong size on ACameraAnimationTransition_C");
-static_assert(offsetof(ACameraAnimationTransition_C, UberGraphFrame) == 0x000218, "Member 'ACameraAnimationTransition_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, DefaultSceneRoot) == 0x000220, "Member 'ACameraAnimationTransition_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, Timeline_0_NewTrack_0_2750533A46B9AEF2BE294F8153FE4FD4) == 0x000228, "Member 'ACameraAnimationTransition_C::Timeline_0_NewTrack_0_2750533A46B9AEF2BE294F8153FE4FD4' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, Timeline_0__Direction_2750533A46B9AEF2BE294F8153FE4FD4) == 0x00022C, "Member 'ACameraAnimationTransition_C::Timeline_0__Direction_2750533A46B9AEF2BE294F8153FE4FD4' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, Timeline_0) == 0x000230, "Member 'ACameraAnimationTransition_C::Timeline_0' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraBR) == 0x000238, "Member 'ACameraAnimationTransition_C::CameraBR' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraLocationBR) == 0x000240, "Member 'ACameraAnimationTransition_C::CameraLocationBR' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraBR16Player) == 0x000270, "Member 'ACameraAnimationTransition_C::CameraBR16Player' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraCreative) == 0x000278, "Member 'ACameraAnimationTransition_C::CameraCreative' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraCreative16Player) == 0x000280, "Member 'ACameraAnimationTransition_C::CameraCreative16Player' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, CameraLocationCreative) == 0x000290, "Member 'ACameraAnimationTransition_C::CameraLocationCreative' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, FOVPostion1) == 0x0002C0, "Member 'ACameraAnimationTransition_C::FOVPostion1' has a wrong offset!");
-static_assert(offsetof(ACameraAnimationTransition_C, FOVPostion2) == 0x0002C4, "Member 'ACameraAnimationTransition_C::FOVPostion2' has a wrong offset!");
 
 }
 

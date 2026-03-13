@@ -12,11 +12,11 @@
 
 #include "StaticMeshMaterialArrayCombo_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FlowMapMaterials_structs.hpp"
 #include "Engine_structs.hpp"
+#include "ArrayOfWaterMeshWaterBlueprintPairs_structs.hpp"
 #include "FortniteGame_structs.hpp"
 #include "FortniteGame_classes.hpp"
-#include "ArrayOfWaterMeshWaterBlueprintPairs_structs.hpp"
-#include "FlowMapMaterials_structs.hpp"
 
 
 namespace SDK
@@ -82,38 +82,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"WindManager_C">();
+		BP_STATIC_CLASS_IMPL("WindManager_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"WindManager_C")
 	}
 	static class AWindManager_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AWindManager_C>();
 	}
 };
-static_assert(alignof(AWindManager_C) == 0x000008, "Wrong alignment on AWindManager_C");
-static_assert(sizeof(AWindManager_C) == 0x000558, "Wrong size on AWindManager_C");
-static_assert(offsetof(AWindManager_C, UberGraphFrame) == 0x000458, "Member 'AWindManager_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, EmptyStaticMesh) == 0x000460, "Member 'AWindManager_C::EmptyStaticMesh' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, DefaultSceneRoot) == 0x000468, "Member 'AWindManager_C::DefaultSceneRoot' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, SmallerRenderTargetOrthoWidth) == 0x000470, "Member 'AWindManager_C::SmallerRenderTargetOrthoWidth' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, External_Test_Actor) == 0x000478, "Member 'AWindManager_C::External_Test_Actor' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, World_Terrain_Meshes) == 0x000488, "Member 'AWindManager_C::World_Terrain_Meshes' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Camera_Height_Offset) == 0x000498, "Member 'AWindManager_C::Camera_Height_Offset' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Particle_Z_Offset) == 0x0004A4, "Member 'AWindManager_C::Particle_Z_Offset' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Is_Water_Interaction_Enabled) == 0x0004A8, "Member 'AWindManager_C::Is_Water_Interaction_Enabled' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, WorldStaticMeshArray) == 0x0004B0, "Member 'AWindManager_C::WorldStaticMeshArray' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Array_Of_Water_Assets) == 0x0004C0, "Member 'AWindManager_C::Array_Of_Water_Assets' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, PrototypicalStaticMeshes) == 0x0004D0, "Member 'AWindManager_C::PrototypicalStaticMeshes' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Current_Water_Mesh_Index) == 0x0004E0, "Member 'AWindManager_C::Current_Water_Mesh_Index' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, WaterVectorMatToDefaultMaterialPairing) == 0x0004E8, "Member 'AWindManager_C::WaterVectorMatToDefaultMaterialPairing' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, MaterialPairingFound) == 0x0004F8, "Member 'AWindManager_C::MaterialPairingFound' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, WorldBoundsMinMax) == 0x0004FC, "Member 'AWindManager_C::WorldBoundsMinMax' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Black_Scene_Capture_Material) == 0x000510, "Member 'AWindManager_C::Black_Scene_Capture_Material' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Max_level_bounds___used_to_isolate_the_level_from_the_vista) == 0x000518, "Member 'AWindManager_C::Max_level_bounds___used_to_isolate_the_level_from_the_vista' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, StormCylinderMeshes) == 0x000538, "Member 'AWindManager_C::StormCylinderMeshes' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Storm_Cyl_Mesh_Match) == 0x000548, "Member 'AWindManager_C::Storm_Cyl_Mesh_Match' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Wind_Cyl_Mesh_Array_Match_Index) == 0x00054C, "Member 'AWindManager_C::Wind_Cyl_Mesh_Array_Match_Index' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, Delta_Wind_Falloff_in_World_Units) == 0x000550, "Member 'AWindManager_C::Delta_Wind_Falloff_in_World_Units' has a wrong offset!");
-static_assert(offsetof(AWindManager_C, NewVar_1) == 0x000554, "Member 'AWindManager_C::NewVar_1' has a wrong offset!");
 
 }
 

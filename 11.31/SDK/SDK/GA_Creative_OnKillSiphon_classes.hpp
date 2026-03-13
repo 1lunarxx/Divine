@@ -58,28 +58,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GA_Creative_OnKillSiphon_C">();
+		BP_STATIC_CLASS_IMPL("GA_Creative_OnKillSiphon_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GA_Creative_OnKillSiphon_C")
 	}
 	static class UGA_Creative_OnKillSiphon_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UGA_Creative_OnKillSiphon_C>();
 	}
 };
-static_assert(alignof(UGA_Creative_OnKillSiphon_C) == 0x000008, "Wrong alignment on UGA_Creative_OnKillSiphon_C");
-static_assert(sizeof(UGA_Creative_OnKillSiphon_C) == 0x000AC8, "Wrong size on UGA_Creative_OnKillSiphon_C");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, UberGraphFrame_GA_Creative_OnKillSiphon_C) == 0x000A70, "Member 'UGA_Creative_OnKillSiphon_C::UberGraphFrame_GA_Creative_OnKillSiphon_C' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, GameState) == 0x000A78, "Member 'UGA_Creative_OnKillSiphon_C::GameState' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, IsCreativeOrPlayground) == 0x000A80, "Member 'UGA_Creative_OnKillSiphon_C::IsCreativeOrPlayground' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, GE_HealPlayer) == 0x000A88, "Member 'UGA_Creative_OnKillSiphon_C::GE_HealPlayer' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, bShouldConvertExcessHealthToShields) == 0x000A90, "Member 'UGA_Creative_OnKillSiphon_C::bShouldConvertExcessHealthToShields' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, ShieldGE) == 0x000A98, "Member 'UGA_Creative_OnKillSiphon_C::ShieldGE' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, ConsumedCue) == 0x000AA0, "Member 'UGA_Creative_OnKillSiphon_C::ConsumedCue' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, bDebugBypasLocalMapEnable) == 0x000AA8, "Member 'UGA_Creative_OnKillSiphon_C::bDebugBypasLocalMapEnable' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, bAttemptHealthRestore) == 0x000AA9, "Member 'UGA_Creative_OnKillSiphon_C::bAttemptHealthRestore' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, bAttemptMatsRestore) == 0x000AAA, "Member 'UGA_Creative_OnKillSiphon_C::bAttemptMatsRestore' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, NameGrantWood) == 0x000AAC, "Member 'UGA_Creative_OnKillSiphon_C::NameGrantWood' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, NameGrantStone) == 0x000AB4, "Member 'UGA_Creative_OnKillSiphon_C::NameGrantStone' has a wrong offset!");
-static_assert(offsetof(UGA_Creative_OnKillSiphon_C, NameGrantMetal) == 0x000ABC, "Member 'UGA_Creative_OnKillSiphon_C::NameGrantMetal' has a wrong offset!");
 
 }
 

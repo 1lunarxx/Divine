@@ -23,15 +23,17 @@ class UTextStyle_BurbSmBk_20_White50pc_C final : public UTextStyle_BaseParent_C
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"TextStyle_BurbSmBk_20_White50pc_C">();
+		BP_STATIC_CLASS_IMPL("TextStyle_BurbSmBk_20_White50pc_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"TextStyle_BurbSmBk_20_White50pc_C")
 	}
 	static class UTextStyle_BurbSmBk_20_White50pc_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UTextStyle_BurbSmBk_20_White50pc_C>();
 	}
 };
-static_assert(alignof(UTextStyle_BurbSmBk_20_White50pc_C) == 0x000008, "Wrong alignment on UTextStyle_BurbSmBk_20_White50pc_C");
-static_assert(sizeof(UTextStyle_BurbSmBk_20_White50pc_C) == 0x000148, "Wrong size on UTextStyle_BurbSmBk_20_White50pc_C");
 
 }
 

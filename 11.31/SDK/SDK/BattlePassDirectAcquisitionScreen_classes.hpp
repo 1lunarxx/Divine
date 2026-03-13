@@ -70,38 +70,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BattlePassDirectAcquisitionScreen_C">();
+		BP_STATIC_CLASS_IMPL("BattlePassDirectAcquisitionScreen_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"BattlePassDirectAcquisitionScreen_C")
 	}
 	static class UBattlePassDirectAcquisitionScreen_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UBattlePassDirectAcquisitionScreen_C>();
 	}
 };
-static_assert(alignof(UBattlePassDirectAcquisitionScreen_C) == 0x000008, "Wrong alignment on UBattlePassDirectAcquisitionScreen_C");
-static_assert(sizeof(UBattlePassDirectAcquisitionScreen_C) == 0x0005E0, "Wrong size on UBattlePassDirectAcquisitionScreen_C");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, UberGraphFrame) == 0x000520, "Member 'UBattlePassDirectAcquisitionScreen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, Entrance_Tiles_0) == 0x000528, "Member 'UBattlePassDirectAcquisitionScreen_C::Entrance_Tiles_0' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, Entrance_OR) == 0x000530, "Member 'UBattlePassDirectAcquisitionScreen_C::Entrance_OR' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, Entrance_Tiles) == 0x000538, "Member 'UBattlePassDirectAcquisitionScreen_C::Entrance_Tiles' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, Entrance_Header) == 0x000540, "Member 'UBattlePassDirectAcquisitionScreen_C::Entrance_Header' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, CloseIcon) == 0x000548, "Member 'UBattlePassDirectAcquisitionScreen_C::CloseIcon' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, CommonBorderTouchToClose) == 0x000550, "Member 'UBattlePassDirectAcquisitionScreen_C::CommonBorderTouchToClose' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, Glow) == 0x000558, "Member 'UBattlePassDirectAcquisitionScreen_C::Glow' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, LeftTileHB) == 0x000560, "Member 'UBattlePassDirectAcquisitionScreen_C::LeftTileHB' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, MobileCloseButton) == 0x000568, "Member 'UBattlePassDirectAcquisitionScreen_C::MobileCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, MTXButton) == 0x000570, "Member 'UBattlePassDirectAcquisitionScreen_C::MTXButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, MTXButtonBox) == 0x000578, "Member 'UBattlePassDirectAcquisitionScreen_C::MTXButtonBox' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, NoOffersBox) == 0x000580, "Member 'UBattlePassDirectAcquisitionScreen_C::NoOffersBox' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, OverlayCloseButton) == 0x000588, "Member 'UBattlePassDirectAcquisitionScreen_C::OverlayCloseButton' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, OverlayProgressSpinner) == 0x000590, "Member 'UBattlePassDirectAcquisitionScreen_C::OverlayProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, ProgressSpinner) == 0x000598, "Member 'UBattlePassDirectAcquisitionScreen_C::ProgressSpinner' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, RightTileHB) == 0x0005A0, "Member 'UBattlePassDirectAcquisitionScreen_C::RightTileHB' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, SeasonCountdown) == 0x0005A8, "Member 'UBattlePassDirectAcquisitionScreen_C::SeasonCountdown' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, SeasonEndsLabel) == 0x0005B0, "Member 'UBattlePassDirectAcquisitionScreen_C::SeasonEndsLabel' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, SwitcherItemsProgress) == 0x0005B8, "Member 'UBattlePassDirectAcquisitionScreen_C::SwitcherItemsProgress' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, VBOffers) == 0x0005C0, "Member 'UBattlePassDirectAcquisitionScreen_C::VBOffers' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, TilePadding) == 0x0005C8, "Member 'UBattlePassDirectAcquisitionScreen_C::TilePadding' has a wrong offset!");
-static_assert(offsetof(UBattlePassDirectAcquisitionScreen_C, ItemCount) == 0x0005D8, "Member 'UBattlePassDirectAcquisitionScreen_C::ItemCount' has a wrong offset!");
 
 }
 

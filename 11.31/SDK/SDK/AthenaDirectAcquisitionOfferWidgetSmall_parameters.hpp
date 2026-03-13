@@ -22,6 +22,40 @@
 namespace SDK::Params
 {
 
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateSeriesBlock
+// 0x0010 (0x0010 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock final
+{
+public:
+	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortAccountItemDefinition*             CallFunc_GetFirstGrantItemDefinition_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.Bundle Short Text
+// 0x00A8 (0x00A8 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text final
+{
+public:
+	class FText                                   Text;                                              // 0x0000(0x0018)(Parm, OutParm)
+	int32                                         not_owned_bundle_items__local_;                    // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FBundledItemInfo>               CallFunc_GetDynamicBundleItems_Items;              // 0x0028(0x0010)(ZeroConstructor, ReferenceParm)
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
+};
+
+// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.TryToResetCarouselTimer
+// 0x0001 (0x0001 - 0x0000)
+struct AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer final
+{
+public:
+	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.HasGroupedOffers
 // 0x000C (0x000C - 0x0000)
 struct AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers final
@@ -32,11 +66,6 @@ public:
 	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_GreaterEqual_IntInt_ReturnValue;          // 0x0008(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers) == 0x00000C, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers, ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers::ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers, CallFunc_Array_Length_ReturnValue) == 0x000004, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers, CallFunc_GreaterEqual_IntInt_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_HasGroupedOffers::CallFunc_GreaterEqual_IntInt_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.GetOfferIndexAndCountText
 // 0x01C0 (0x01C0 - 0x0000)
@@ -69,28 +98,6 @@ public:
 	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array_1;                          // 0x0198(0x0010)(ZeroConstructor, ReferenceParm)
 	class FText                                   CallFunc_Format_ReturnValue_1;                     // 0x01A8(0x0018)()
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText) == 0x0001C0, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, OfferIndex) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::OfferIndex' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, OfferDisplayCount) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::OfferDisplayCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, NextOfferIndex) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::NextOfferIndex' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, NextOfferDisplayCount) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::NextOfferDisplayCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_GetOfferInfo_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Array_Find_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Array_Find_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Array_Length_ReturnValue) == 0x00004C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Percent_IntInt_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Percent_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue_1) == 0x0000E0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Percent_IntInt_ReturnValue_1) == 0x0000E4, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Percent_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData_2) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Add_IntInt_ReturnValue_2) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Add_IntInt_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeArray_Array) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeStruct_FormatArgumentData_3) == 0x000140, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeStruct_FormatArgumentData_3' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Format_ReturnValue) == 0x000180, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, K2Node_MakeArray_Array_1) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText, CallFunc_Format_ReturnValue_1) == 0x0001A8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_GetOfferIndexAndCountText::CallFunc_Format_ReturnValue_1' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateBadge
 // 0x0018 (0x0018 - 0x0000)
@@ -102,12 +109,6 @@ public:
 	bool                                          CallFunc_HasDisplayAsset_ReturnValue;              // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge) == 0x000018, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge, CallFunc_GetOfferDisplayAsset_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge::CallFunc_GetOfferDisplayAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge, CallFunc_HasDisplayAsset_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge::CallFunc_HasDisplayAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge, CallFunc_IsValid_ReturnValue) == 0x000011, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateBadge::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateStyle_Sizing
 // 0x00A0 (0x00A0 - 0x0000)
@@ -120,12 +121,6 @@ public:
 	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0098(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing) == 0x0000A0, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing, K2Node_MakeStruct_SlateBrush) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing::K2Node_MakeStruct_SlateBrush' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing, K2Node_DynamicCast_AsBorder_Slot) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing::K2Node_DynamicCast_AsBorder_Slot' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing, K2Node_DynamicCast_bSuccess) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Sizing::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateStyle_Border
 // 0x0088 (0x0088 - 0x0000)
@@ -141,16 +136,6 @@ public:
 	struct FFortColorPalette                      CallFunc_GetRarityOrSeriesColors_ReturnValue;      // 0x0030(0x0050)(NoDestructor)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_2;         // 0x0080(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border) == 0x000088, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetOfferDisplayAsset_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetOfferDisplayAsset_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetRarityOrSeriesColors_ReturnValue) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetRarityOrSeriesColors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border, CallFunc_GetDynamicMaterial_ReturnValue_2) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_Border::CallFunc_GetDynamicMaterial_ReturnValue_2' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateStyle_MainText
 // 0x0078 (0x0078 - 0x0000)
@@ -164,14 +149,6 @@ public:
 	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue_1;               // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsUnique_ReturnValue;                     // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText) == 0x000078, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_GetRarityOrSeriesColors_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_GetRarityOrSeriesColors_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_GetDynamicFontMaterial_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_GetDynamicFontMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText, CallFunc_IsUnique_ReturnValue) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle_MainText::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.SetupSaleInfo
 // 0x0050 (0x0050 - 0x0000)
@@ -190,18 +167,6 @@ public:
 	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x004A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x004B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo) == 0x000050, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, SaleText) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::SaleText' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, NormalPrice) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::NormalPrice' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, BannerOverrideTag) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::BannerOverrideTag' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, bHasSale) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::bHasSale' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, bHasBattlePassStars) == 0x000041, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::bHasBattlePassStars' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, iNumOfBattlePassStars) == 0x000044, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::iNumOfBattlePassStars' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, Temp_bool_Variable) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, Temp_byte_Variable) == 0x000049, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, Temp_byte_Variable_1) == 0x00004A, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo, K2Node_Select_Default) == 0x00004B, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupSaleInfo::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateSaleStatus
 // 0x0250 (0x0250 - 0x0000)
@@ -256,48 +221,6 @@ public:
 	class FText                                   CallFunc_Format_ReturnValue_2;                     // 0x0220(0x0018)()
 	class FText                                   K2Node_Select_Default;                             // 0x0238(0x0018)()
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus) == 0x000250, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetPersistentName_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetPersistentName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, Temp_text_Variable) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, Temp_text_Variable_1) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, Temp_byte_Variable) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetOfferInfo_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetOfferType_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetQuantityRemaining_ReturnValue) == 0x00005C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetQuantityRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_NotEqual_IntInt_ReturnValue) == 0x000061, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_NotEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetBannerOverrideTag_ReturnValue) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetBannerOverrideTag_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetMetaAsBool_ReturnValue) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetMetaAsBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Conv_StringToText_ReturnValue) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Not_PreBool_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Not_PreBool_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_TextIsEmpty_ReturnValue) == 0x000099, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetItemQuantity_ReturnValue) == 0x00009C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetItemQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetItemOfferCount_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetItemOfferCount_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetSalePrice_SalePrice) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetSalePrice_ReturnValue) == 0x0000C0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Greater_IntInt_ReturnValue) == 0x0000C1, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetSaleType_ReturnValue) == 0x0000C2, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetSaleType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue) == 0x0000C3, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x0000C4, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_NotEqual_ByteByte_ReturnValue_1) == 0x0000C5, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_NotEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0000C6, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue_1) == 0x0000C7, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue_2) == 0x0000C8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_BooleanAND_ReturnValue_3) == 0x0000C9, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_BooleanAND_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetNormalPrice_ReturnValue) == 0x0000D0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetNormalPrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_GetSaleText_ReturnValue) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_GetSaleText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData) == 0x000100, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData_1) == 0x000140, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeArray_Array) == 0x000180, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeArray_Array_1) == 0x000190, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Format_ReturnValue) == 0x0001A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Format_ReturnValue_1) == 0x0001B8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeStruct_FormatArgumentData_2) == 0x0001D0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_MakeArray_Array_2) == 0x000210, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, CallFunc_Format_ReturnValue_2) == 0x000220, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::CallFunc_Format_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus, K2Node_Select_Default) == 0x000238, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSaleStatus::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.Setup Price
 // 0x0230 (0x0230 - 0x0000)
@@ -337,35 +260,6 @@ public:
 	uint8                                         Pad_213[0x5];                                      // 0x0213(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_Select_Default;                             // 0x0218(0x0018)()
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price) == 0x000230, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, Temp_bool_Variable) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetContext_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetContext_ReturnValue_1) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetContext_ReturnValue_2) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetContext_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetSubGame_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetSubGame_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000021, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetOfferInfo_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetSalePrice_SalePrice) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetSalePrice_SalePrice' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetSalePrice_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetSalePrice_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetPriceItem_RequiredItemCount) == 0x00004C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetPriceItem_RequiredItemCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetPriceItem_ReturnValue) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetPriceItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetAccountItemWithDefinition_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetAccountItemWithDefinition_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetSmallPreviewImageBrush_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetSmallPreviewImageBrush_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_IsValid_ReturnValue) == 0x000128, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetNumInStack_ReturnValue) == 0x00012C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetNumInStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData_1) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_MakeStruct_FormatArgumentData_2) == 0x000170, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_MakeStruct_FormatArgumentData_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_MakeArray_Array) == 0x0001B0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_MakeArray_Array_1) == 0x0001C0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_Format_ReturnValue) == 0x0001D0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_Format_ReturnValue_1) == 0x0001E8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_Format_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_GetOfferId_ReturnValue) == 0x000200, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_GetOfferId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_CanPurchaseOffer_ReturnValue) == 0x000210, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_CanPurchaseOffer_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000211, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, CallFunc_BooleanOR_ReturnValue) == 0x000212, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price, K2Node_Select_Default) == 0x000218, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Setup_Price::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateShortDescription
 // 0x0158 (0x0158 - 0x0000)
@@ -403,31 +297,6 @@ public:
 	bool                                          CallFunc_IsLockedByRequirement_ReturnValue;        // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default;                             // 0x0152(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription) == 0x000158, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_Bundle_Short_Text_Text) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_Bundle_Short_Text_Text' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, Temp_byte_Variable) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, Temp_byte_Variable_1) == 0x000019, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, Temp_bool_Variable) == 0x00001A, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetOfferInfo_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetFirstGrantQuantity_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetFirstGrantQuantity_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, K2Node_MakeStruct_FormatArgumentData) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetOfferType_ReturnValue) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetName_ReturnValue) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, K2Node_MakeStruct_FormatArgumentData_1) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::K2Node_MakeStruct_FormatArgumentData_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, K2Node_MakeArray_Array) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_Format_ReturnValue) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_TextIsEmpty_ReturnValue) == 0x000110, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_IsUnique_ReturnValue) == 0x000111, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_GetShortDescription_ReturnValue) == 0x000118, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_GetShortDescription_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_BooleanOR_ReturnValue) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_HasRequirement_RequirementText) == 0x000138, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_HasRequirement_RequirementText' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_HasRequirement_ReturnValue) == 0x000150, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_HasRequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, CallFunc_IsLockedByRequirement_ReturnValue) == 0x000151, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::CallFunc_IsLockedByRequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription, K2Node_Select_Default) == 0x000152, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateShortDescription::K2Node_Select_Default' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateName
 // 0x0098 (0x0098 - 0x0000)
@@ -449,20 +318,6 @@ public:
 	bool                                          CallFunc_IsLockedByRequirement_ReturnValue;        // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName) == 0x000098, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_HasCatalogOfferName_CatalogOfferName) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_HasCatalogOfferName_CatalogOfferName' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_HasCatalogOfferName_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_HasCatalogOfferName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_TextToUpper_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_TextToUpper_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_GetOfferType_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_GetOfferType_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_GetShortName_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_GetShortName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_TextToUpper_ReturnValue_1) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_TextToUpper_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_GetItemTypeText_ReturnValue) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_GetItemTypeText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_IsUnique_ReturnValue) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_IsLockedByRequirement_ReturnValue) == 0x000091, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_IsLockedByRequirement_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName, CallFunc_BooleanOR_ReturnValue) == 0x000092, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateName::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.SetupPrice
 // 0x0030 (0x0030 - 0x0000)
@@ -478,14 +333,6 @@ public:
 	class UFortAccountItemDefinition*             CallFunc_GetPriceItem_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice) == 0x000030, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, PriceIndex) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::PriceIndex' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, PriceWidget) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::PriceWidget' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, CallFunc_GetOfferInfo_ReturnValue) == 0x000010, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, CallFunc_GetPriceItem_RequiredItemCount) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::CallFunc_GetPriceItem_RequiredItemCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, CallFunc_GetPriceItem_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::CallFunc_GetPriceItem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice, CallFunc_IsValid_ReturnValue) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupPrice::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateStyle
 // 0x0060 (0x0060 - 0x0000)
@@ -503,16 +350,6 @@ public:
 	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue; // 0x0038(0x0028)(HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle) == 0x000060, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, ValidSoftObject) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::ValidSoftObject' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, FirstOfferSeriesBackgroundTexture) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::FirstOfferSeriesBackgroundTexture' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, Temp_byte_Variable) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, Temp_byte_Variable_1) == 0x000031, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, CallFunc_IsValidSoftObjectReference_ReturnValue) == 0x000032, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::CallFunc_IsValidSoftObjectReference_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, Temp_bool_Variable) == 0x000033, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, K2Node_Select_Default) == 0x000034, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle, CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateStyle::CallFunc_GetFirstOfferSeriesBackgroundTexture_ReturnValue' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateAvailability
 // 0x0180 (0x0180 - 0x0000)
@@ -564,43 +401,6 @@ public:
 	bool                                          Temp_bool_Variable_3;                              // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability) == 0x000180, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_bool_Variable) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_text_Variable) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_bool_Variable_1) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_int_Variable) == 0x000024, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_int_Variable_1) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_bool_Variable_2) == 0x00002C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_int_Variable_2) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_int_Variable_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_int_Variable_3) == 0x000034, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_int_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetContext_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetContext_ReturnValue_1) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetContext_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetOfferInfo_ReturnValue) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_byte_Variable) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetOfferId_ReturnValue) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetOfferId_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_IsOwned_ReturnValue) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_IsOwned_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_byte_Variable_1) == 0x000069, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetOfferInfo_ReturnValue_1) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetOfferInfo_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetOfferInfo_ReturnValue_2) == 0x000078, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetOfferInfo_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetOfferId_ReturnValue_1) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetOfferId_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_IsUnique_ReturnValue) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_IsUnique_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_IsOwned_ReturnValue_1) == 0x000091, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_IsOwned_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_BooleanOR_ReturnValue) == 0x000092, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_Select_Default) == 0x000094, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_GetQuantityRemaining_ReturnValue) == 0x000098, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_GetQuantityRemaining_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x00009C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_Conv_IntToText_ReturnValue) == 0x0000A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_Conv_IntToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_Select_Default_1) == 0x0000B8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_MakeStruct_FormatArgumentData) == 0x0000C0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_EqualEqual_IntInt_ReturnValue_1) == 0x000100, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_EqualEqual_IntInt_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_MakeArray_Array) == 0x000108, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_Format_ReturnValue) == 0x000118, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_Format_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_MakeLiteralText_ReturnValue) == 0x000130, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_MakeLiteralText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_Select_Default_2) == 0x000148, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, CallFunc_MakeLiteralText_ReturnValue_1) == 0x000160, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::CallFunc_MakeLiteralText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, Temp_bool_Variable_3) == 0x000178, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::Temp_bool_Variable_3' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability, K2Node_Select_Default_3) == 0x000179, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateAvailability::K2Node_Select_Default_3' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.BP_OnItemSelectionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -609,9 +409,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged final
 public:
 	bool                                          bIsSelected;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged, bIsSelected) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemSelectionChanged::bIsSelected' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.HandleOfferPurchaseComplete
 // 0x0018 (0x0018 - 0x0000)
@@ -622,10 +419,6 @@ public:
 	uint8                                         Pad_1[0x7];                                        // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPurchasedItemInfo>             PurchasedItems;                                    // 0x0008(0x0010)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete) == 0x000018, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete, bSuccess) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete::bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete, PurchasedItems) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_HandleOfferPurchaseComplete::PurchasedItems' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.OnListItemObjectSet
 // 0x0008 (0x0008 - 0x0000)
@@ -634,9 +427,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet final
 public:
 	class UObject*                                ListItemObject;                                    // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet) == 0x000008, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet, ListItemObject) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_OnListItemObjectSet::ListItemObject' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.BP_OnItemExpansionChanged
 // 0x0001 (0x0001 - 0x0000)
@@ -645,9 +435,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged final
 public:
 	bool                                          bIsExpanded;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged, bIsExpanded) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_BP_OnItemExpansionChanged::bIsExpanded' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.OnOfferTileBrushLoaded
 // 0x0088 (0x0088 - 0x0000)
@@ -656,9 +443,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded final
 public:
 	struct FSlateBrush                            OfferBrush;                                        // 0x0000(0x0088)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded) == 0x000088, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded, OfferBrush) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_OnOfferTileBrushLoaded::OfferBrush' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.SetupThumbnailRenderer
 // 0x0008 (0x0008 - 0x0000)
@@ -667,9 +451,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer final
 public:
 	class UFortItemThumbnailRenderer*             InThumbnailRenderer;                               // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer) == 0x000008, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer, InThumbnailRenderer) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_SetupThumbnailRenderer::InThumbnailRenderer' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateCarousel
 // 0x0004 (0x0004 - 0x0000)
@@ -678,9 +459,6 @@ struct AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel final
 public:
 	float                                         InDeltaTime;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel) == 0x000004, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel) == 0x000004, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel, InDeltaTime) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateCarousel::InDeltaTime' has a wrong offset!");
 
 // Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall
 // 0x02B0 (0x02B0 - 0x0000)
@@ -735,7 +513,7 @@ public:
 	uint8                                         Pad_194[0x4];                                      // 0x0194(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_CaptureItem_C*                      CallFunc_GetOrCreateCaptureActor_ReturnValue;      // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                CallFunc_Multiply_VectorInt_ReturnValue;           // 0x01A0(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TDelegate<void(bool bSuccess, const TArray<struct FPurchasedItemInfo>& PurchasedItems)> K2Node_CreateDelegate_OutputDelegate;              // 0x01AC(0x0010)(ZeroConstructor, NoDestructor)
+	TDelegate<void(bool bSuccess, const TArray<struct FPurchasedItemInfo>& PurchasedItems)> K2Node_CreateDelegate_OutputDelegate; // 0x01AC(0x0010)(ZeroConstructor, NoDestructor)
 	int32                                         CallFunc_GetOfferIndexAndCountText_OfferIndex_2;   // 0x01BC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                   CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2; // 0x01C0(0x0018)()
 	int32                                         CallFunc_GetOfferIndexAndCountText_NextOfferIndex_2; // 0x01D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -751,110 +529,6 @@ public:
 	float                                         CallFunc_Subtract_FloatFloat_ReturnValue_1;        // 0x02A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_FMax_ReturnValue;                         // 0x02AC(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall) == 0x0002B0, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, EntryPoint) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::EntryPoint' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_CustomEvent_bSuccess) == 0x000004, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_CustomEvent_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_CustomEvent_PurchasedItems) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_CustomEvent_PurchasedItems' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_PlayAnimation_ReturnValue) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_PlayAnimation_ReturnValue_1) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_ListItemObject) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_ListItemObject' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_DynamicCast_AsFort_Store_Front_Offer_Info) == 0x000030, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_DynamicCast_AsFort_Store_Front_Offer_Info' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_DynamicCast_bSuccess) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_CreateDynamicMaterialInstance_ReturnValue) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_CreateDynamicMaterialInstance_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_CreateDynamicMaterialInstance_ReturnValue_1) == 0x000048, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_CreateDynamicMaterialInstance_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_bIsExpanded) == 0x000050, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_bIsExpanded' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_PlayAnimation_ReturnValue_2) == 0x000058, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetContext_ReturnValue) == 0x000060, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetContext_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000069, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferIndex) == 0x00006C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferIndex' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferDisplayCount) == 0x000070, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferDisplayCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferIndex) == 0x000088, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferIndex' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferIndex_1) == 0x0000A8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferIndex_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_1) == 0x0000B0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferIndex_1) == 0x0000C8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferIndex_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_1) == 0x0000D0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_HasGroupedOffers_ReturnValue) == 0x0000E8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_HasGroupedOffers_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_HasGroupedOffers_ReturnValue_1) == 0x0000E9, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_HasGroupedOffers_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Greater_FloatFloat_ReturnValue_1) == 0x0000EA, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Greater_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Divide_FloatFloat_ReturnValue) == 0x0000EC, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Divide_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Subtract_FloatFloat_ReturnValue) == 0x0000F0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Subtract_FloatFloat_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Array_Length_ReturnValue) == 0x0000F4, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_OfferBrush) == 0x0000F8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_OfferBrush' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Subtract_IntInt_ReturnValue) == 0x000180, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Subtract_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000184, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_bIsSelected) == 0x000185, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_bIsSelected' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Greater_FloatFloat_ReturnValue_2) == 0x000186, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Greater_FloatFloat_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_InThumbnailRenderer) == 0x000188, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_InThumbnailRenderer' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetRendererIndex_ReturnValue) == 0x000190, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetRendererIndex_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOrCreateCaptureActor_ReturnValue) == 0x000198, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOrCreateCaptureActor_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Multiply_VectorInt_ReturnValue) == 0x0001A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Multiply_VectorInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_CreateDelegate_OutputDelegate) == 0x0001AC, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferIndex_2) == 0x0001BC, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferIndex_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2) == 0x0001C0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_OfferDisplayCount_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferIndex_2) == 0x0001D8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferIndex_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_2) == 0x0001E0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_GetOfferIndexAndCountText_NextOfferDisplayCount_2' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Array_Get_Item) == 0x0001F8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_MakeVector_ReturnValue) == 0x000200, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_MakeVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Add_VectorVector_ReturnValue) == 0x00020C, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Add_VectorVector_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_K2_SetActorLocation_SweepHitResult) == 0x000218, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_K2_SetActorLocation_SweepHitResult' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_K2_SetActorLocation_ReturnValue) == 0x0002A0, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_K2_SetActorLocation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, K2Node_Event_InDeltaTime) == 0x0002A4, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::K2Node_Event_InDeltaTime' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_Subtract_FloatFloat_ReturnValue_1) == 0x0002A8, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_Subtract_FloatFloat_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall, CallFunc_FMax_ReturnValue) == 0x0002AC, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_ExecuteUbergraph_AthenaDirectAcquisitionOfferWidgetSmall::CallFunc_FMax_ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.UpdateSeriesBlock
-// 0x0010 (0x0010 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock final
-{
-public:
-	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue;                 // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortAccountItemDefinition*             CallFunc_GetFirstGrantItemDefinition_ReturnValue;  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock) == 0x000010, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock, CallFunc_GetOfferInfo_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock, CallFunc_GetFirstGrantItemDefinition_ReturnValue) == 0x000008, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_UpdateSeriesBlock::CallFunc_GetFirstGrantItemDefinition_ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.Bundle Short Text
-// 0x00A8 (0x00A8 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text final
-{
-public:
-	class FText                                   Text;                                              // 0x0000(0x0018)(Parm, OutParm)
-	int32                                         not_owned_bundle_items__local_;                    // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UFortStoreFrontOfferInfo*               CallFunc_GetOfferInfo_ReturnValue;                 // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<struct FBundledItemInfo>               CallFunc_GetDynamicBundleItems_Items;              // 0x0028(0x0010)(ZeroConstructor, ReferenceParm)
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3C[0x4];                                       // 0x003C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0040(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0080(0x0010)(ZeroConstructor, ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x0090(0x0018)()
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text) == 0x000008, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text) == 0x0000A8, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, Text) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::Text' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, not_owned_bundle_items__local_) == 0x000018, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::not_owned_bundle_items__local_' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, CallFunc_GetOfferInfo_ReturnValue) == 0x000020, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::CallFunc_GetOfferInfo_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, CallFunc_GetDynamicBundleItems_Items) == 0x000028, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::CallFunc_GetDynamicBundleItems_Items' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, CallFunc_Array_Length_ReturnValue) == 0x000038, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, K2Node_MakeStruct_FormatArgumentData) == 0x000040, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, K2Node_MakeArray_Array) == 0x000080, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text, CallFunc_Format_ReturnValue) == 0x000090, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_Bundle_Short_Text::CallFunc_Format_ReturnValue' has a wrong offset!");
-
-// Function AthenaDirectAcquisitionOfferWidgetSmall.AthenaDirectAcquisitionOfferWidgetSmall_C.TryToResetCarouselTimer
-// 0x0001 (0x0001 - 0x0000)
-struct AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer final
-{
-public:
-	bool                                          CallFunc_Greater_FloatFloat_ReturnValue;           // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer) == 0x000001, "Wrong alignment on AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer");
-static_assert(sizeof(AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer) == 0x000001, "Wrong size on AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer");
-static_assert(offsetof(AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer, CallFunc_Greater_FloatFloat_ReturnValue) == 0x000000, "Member 'AthenaDirectAcquisitionOfferWidgetSmall_C_TryToResetCarouselTimer::CallFunc_Greater_FloatFloat_ReturnValue' has a wrong offset!");
 
 }
 

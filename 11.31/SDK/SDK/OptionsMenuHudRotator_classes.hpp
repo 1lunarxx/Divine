@@ -32,7 +32,7 @@ public:
 	int32                                         SelectedIndex;                                     // 0x0288(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_28C[0x4];                                      // 0x028C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   HoverText;                                         // 0x0290(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TMulticastInlineDelegate<void(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)> Selection_Changed;                                 // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	TMulticastInlineDelegate<void(int32 Selected_Index, const struct FGameplayTag& Gameplay_Tag)> Selection_Changed; // 0x02A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UCommonTextBlock*                       Tab_Tooltip_Text;                                  // 0x02B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                           Gameplay_Tag;                                      // 0x02C0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FTimerHandle                           TooltipTimer;                                      // 0x02C8(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -59,27 +59,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"OptionsMenuHudRotator_C">();
+		BP_STATIC_CLASS_IMPL("OptionsMenuHudRotator_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"OptionsMenuHudRotator_C")
 	}
 	static class UOptionsMenuHudRotator_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<UOptionsMenuHudRotator_C>();
 	}
 };
-static_assert(alignof(UOptionsMenuHudRotator_C) == 0x000008, "Wrong alignment on UOptionsMenuHudRotator_C");
-static_assert(sizeof(UOptionsMenuHudRotator_C) == 0x0002D0, "Wrong size on UOptionsMenuHudRotator_C");
-static_assert(offsetof(UOptionsMenuHudRotator_C, UberGraphFrame) == 0x000258, "Member 'UOptionsMenuHudRotator_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, ButtonLeft) == 0x000260, "Member 'UOptionsMenuHudRotator_C::ButtonLeft' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, ButtonRight) == 0x000268, "Member 'UOptionsMenuHudRotator_C::ButtonRight' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, DisplayText) == 0x000270, "Member 'UOptionsMenuHudRotator_C::DisplayText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, MenuAnchorSettingDescription) == 0x000278, "Member 'UOptionsMenuHudRotator_C::MenuAnchorSettingDescription' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, TextRotator) == 0x000280, "Member 'UOptionsMenuHudRotator_C::TextRotator' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, SelectedIndex) == 0x000288, "Member 'UOptionsMenuHudRotator_C::SelectedIndex' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, HoverText) == 0x000290, "Member 'UOptionsMenuHudRotator_C::HoverText' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Selection_Changed) == 0x0002A8, "Member 'UOptionsMenuHudRotator_C::Selection_Changed' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Tab_Tooltip_Text) == 0x0002B8, "Member 'UOptionsMenuHudRotator_C::Tab_Tooltip_Text' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, Gameplay_Tag) == 0x0002C0, "Member 'UOptionsMenuHudRotator_C::Gameplay_Tag' has a wrong offset!");
-static_assert(offsetof(UOptionsMenuHudRotator_C, TooltipTimer) == 0x0002C8, "Member 'UOptionsMenuHudRotator_C::TooltipTimer' has a wrong offset!");
 
 }
 

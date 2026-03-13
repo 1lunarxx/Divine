@@ -17,6 +17,69 @@
 namespace SDK
 {
 
+// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.UpdateSeasonButtonEnabledState
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UAthenaItemCustomizationSelector_C::UpdateSeasonButtonEnabledState()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.GetCategoryImage
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// EAthenaCustomizationCategory            Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*                OverrideImage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(EAthenaCustomizationCategory Index_0, class UMaterialInstance* OverrideImage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
+
+	Params::AthenaItemCustomizationSelector_C_GetCategoryImage Parms{};
+
+	Parms.Index_0 = Index_0;
+	Parms.OverrideImage = OverrideImage;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+}
+
+
+// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.HandleItemSetupFinished
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
+// EAthenaCustomizationCategory            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstance*                OverrideImage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(const class FText& InText, EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
+
+	Params::AthenaItemCustomizationSelector_C_HandleItemSetupFinished Parms{};
+
+	Parms.InText = std::move(InText);
+	Parms.Category = Category;
+	Parms.OverrideImage = OverrideImage;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.ApplyToAllSlots
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -436,69 +499,6 @@ void UAthenaItemCustomizationSelector_C::ExecuteUbergraph_AthenaItemCustomizatio
 	Params::AthenaItemCustomizationSelector_C_ExecuteUbergraph_AthenaItemCustomizationSelector Parms{};
 
 	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.UpdateSeasonButtonEnabledState
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UAthenaItemCustomizationSelector_C::UpdateSeasonButtonEnabledState()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "UpdateSeasonButtonEnabledState");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.GetCategoryImage
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// EAthenaCustomizationCategory            Index_0                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstance*                OverrideImage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstance*                ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-class UMaterialInstance* UAthenaItemCustomizationSelector_C::GetCategoryImage(EAthenaCustomizationCategory Index_0, class UMaterialInstance* OverrideImage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "GetCategoryImage");
-
-	Params::AthenaItemCustomizationSelector_C_GetCategoryImage Parms{};
-
-	Parms.Index_0 = Index_0;
-	Parms.OverrideImage = OverrideImage;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-}
-
-
-// Function AthenaItemCustomizationSelector.AthenaItemCustomizationSelector_C.HandleItemSetupFinished
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      InText                                                 (BlueprintVisible, BlueprintReadOnly, Parm)
-// EAthenaCustomizationCategory            Category                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstance*                OverrideImage                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UAthenaItemCustomizationSelector_C::HandleItemSetupFinished(const class FText& InText, EAthenaCustomizationCategory Category, class UMaterialInstance* OverrideImage)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("AthenaItemCustomizationSelector_C", "HandleItemSetupFinished");
-
-	Params::AthenaItemCustomizationSelector_C_HandleItemSetupFinished Parms{};
-
-	Parms.InText = std::move(InText);
-	Parms.Category = Category;
-	Parms.OverrideImage = OverrideImage;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

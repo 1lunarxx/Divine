@@ -42,21 +42,17 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"GC_Abilities_Death_FadeCapsule_StW_C">();
+		BP_STATIC_CLASS_IMPL("GC_Abilities_Death_FadeCapsule_StW_C")
+	}
+	static const class FName& StaticName()
+	{
+		STATIC_NAME_IMPL(L"GC_Abilities_Death_FadeCapsule_StW_C")
 	}
 	static class AGC_Abilities_Death_FadeCapsule_StW_C* GetDefaultObj()
 	{
 		return GetDefaultObjImpl<AGC_Abilities_Death_FadeCapsule_StW_C>();
 	}
 };
-static_assert(alignof(AGC_Abilities_Death_FadeCapsule_StW_C) == 0x000008, "Wrong alignment on AGC_Abilities_Death_FadeCapsule_StW_C");
-static_assert(sizeof(AGC_Abilities_Death_FadeCapsule_StW_C) == 0x000480, "Wrong size on AGC_Abilities_Death_FadeCapsule_StW_C");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, UberGraphFrame) == 0x000450, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, CapsuleFadeTL_RemoveShadow_D18D776D462C2233B7D3E1B7577403C1) == 0x000458, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::CapsuleFadeTL_RemoveShadow_D18D776D462C2233B7D3E1B7577403C1' has a wrong offset!");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, CapsuleFadeTL__Direction_D18D776D462C2233B7D3E1B7577403C1) == 0x00045C, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::CapsuleFadeTL__Direction_D18D776D462C2233B7D3E1B7577403C1' has a wrong offset!");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, CapsuleFadeTL) == 0x000460, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::CapsuleFadeTL' has a wrong offset!");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, Starting_Min_Capsule_Shadow_Vis) == 0x000468, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::Starting_Min_Capsule_Shadow_Vis' has a wrong offset!");
-static_assert(offsetof(AGC_Abilities_Death_FadeCapsule_StW_C, SkeletalMesh) == 0x000470, "Member 'AGC_Abilities_Death_FadeCapsule_StW_C::SkeletalMesh' has a wrong offset!");
 
 }
 
