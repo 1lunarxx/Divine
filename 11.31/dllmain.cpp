@@ -1,10 +1,14 @@
-// dllmain.cpp : Defines the entry point for the DLL application.
 #include "pch.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
     Sleep(5000);
     AllocConsole();
+    SetConsoleTitleA("Winter | Loading");
+    MH_Initialize();
+
+    UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
+    UGameplayStatics::OpenLevel(UWorld::GetWorld(), UKismetStringLibrary::Conv_StringToName(L"Apollo_Terrain"), false, FString());
 
     return 0;
 }

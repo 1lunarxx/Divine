@@ -60,6 +60,18 @@ namespace UC
 		using TMapIterator = TContainerIterator<TMap<KeyElementType, ValueElementType>>;
 	}
 
+	class FMemory
+	{
+	public:
+		static inline void* Realloc(void* _a1, __int64 _a2, unsigned int _a3) {
+			static auto ret = reinterpret_cast<void* (*)(void*, __int64, unsigned int)>(__int64(GetModuleHandleA(0)) + 0x25C64B0);
+			return ret(_a1, _a2, _a3);
+		}
+
+		static inline void Free(void* ptr) {
+			Realloc(ptr, 0, 0);
+		}
+	};
 
 	namespace ContainerImpl
 	{
@@ -268,16 +280,32 @@ namespace UC
 		inline const ArrayElementType& GetUnsafe(int32 Index) const { return Data[Index]; }
 
 	public:
-		/* Adds to the array if there is still space for one more element */
-		inline bool Add(const ArrayElementType& Element)
+		inline void Reserve(const int Num, size_t Size = sizeof(ArrayElementType))
 		{
-			if (GetSlack() <= 0)
-				return false;
+			Data = (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = Num + NumElements) * Size, 0);
+		}
 
-			Data[NumElements] = Element;
-			NumElements++;
+		inline void Free()
+		{
+			if (Data)
+				FMemory::Free(Data);
 
-			return true;
+			MaxElements = 0;
+			NumElements = 0;
+			Data = nullptr;
+		}
+
+		/* Adds to the array if there is still space for one more element */
+		inline ArrayElementType& Add(const ArrayElementType& Element, size_t Size = sizeof(ArrayElementType))
+		{
+			if (MaxElements < (1 + NumElements)) {
+				Reserve(1, Size);
+			}
+
+			memcpy_s((void*)(__int64(Data) + (NumElements * Size)), Size, (void*)&Element, Size);
+			++NumElements;
+
+			return Data[NumElements - 1];
 		}
 
 		inline bool Remove(int32 Index)

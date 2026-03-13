@@ -7,7 +7,7 @@
 */
 
 // Package: FortniteGame
-
+#include "pch.h"
 #include "Basic.hpp"
 
 #include "FortniteGame_classes.hpp"
