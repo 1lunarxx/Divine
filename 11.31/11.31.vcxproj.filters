@@ -83,5 +83,8 @@
     <ClCompile Include="SDK\SDK\AIModule_functions.cpp">
       <Filter>SDK</Filter>
     </ClCompile>
+    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
