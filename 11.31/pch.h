@@ -8,6 +8,23 @@
 #define PCH_H
 
 // add headers that you want to pre-compile here
-#include "framework.h"
+#include <Windows.h>
+#include <thread>
+#include <map>
+#include <numeric>
+#include <algorithm>
+
+#include "MinHook.h"
+
+#include "SDK/UnrealContainers.hpp"
+#include "SDK/SDK/Basic.hpp"
+#include "SDK/SDK/CoreUObject_classes.hpp"
+#include "SDK/SDK/CoreUObject_structs.hpp"
+#include "SDK/SDK/Engine_classes.hpp"
+#include "SDK/SDK/Engine_structs.hpp"
+#include "SDK/SDK/FortniteGame_classes.hpp"
+#include "SDK/SDK/FortniteGame_structs.hpp"
+
+using namespace SDK;
 
 #endif //PCH_H
