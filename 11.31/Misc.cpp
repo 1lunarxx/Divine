@@ -6,10 +6,17 @@
 
 void Misc::TickFlush(UNetDriver* NetDriver)
 {
+	Bots::Tick();
+
 	if (NetDriver->ReplicationDriver)
 	{
 		static void(*ServerReplicateActors)(UReplicationDriver*) = decltype(ServerReplicateActors)(InSDKUtils::GetImageBase() + 0xC7CC50);
 		ServerReplicateActors(NetDriver->ReplicationDriver);
+	}
+
+	if (GetKeyState(VK_F2))
+	{
+		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
 	}
 
 	return Originals::TickFlush(NetDriver);
@@ -153,6 +160,7 @@ void Misc::Patch()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589100, OverrideLootLevel);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
 	if (UConfiguration::bUsePhoebe)
 	{

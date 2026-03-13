@@ -49,8 +49,29 @@ void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController,
 	}
 }
 
+void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Component_Aircraft, FRotator& ClientRotation)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(Component_Aircraft->GetOwner());
+	if (!PlayerController)
+		return;
+
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+	if (!GameMode)
+		return;
+
+	GameMode->RestartPlayer(PlayerController);
+	PlayerController->ClientSetRotation(ClientRotation, false);
+
+	if (PlayerController->MyFortPawn)
+	{
+		PlayerController->MyFortPawn->SetHealth(100);
+		PlayerController->MyFortPawn->BeginSkydiving(true);
+	}
+}
+
 void Player::Patch()
 {
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
+	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 }
