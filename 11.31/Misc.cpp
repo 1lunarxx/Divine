@@ -6,8 +6,6 @@
 
 void Misc::TickFlush(UNetDriver* NetDriver)
 {
-	Bots::Tick();
-
 	if (NetDriver->ReplicationDriver)
 	{
 		static void(*ServerReplicateActors)(UReplicationDriver*) = decltype(ServerReplicateActors)(InSDKUtils::GetImageBase() + 0xC7CC50);
@@ -18,6 +16,8 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
 	}
+
+	Bots::Tick();
 
 	return Originals::TickFlush(NetDriver);
 }
@@ -121,6 +121,67 @@ void Misc::OverrideLootLevel(AFortGameStateAthena* GameState, int* OutLootLevel)
 
 			AFortAIGoalManager* GoalManager = Utils::SpawnActor<AFortAIGoalManager>(FVector(), FRotator(), AFortAIGoalManager::StaticClass(), GameMode);
 			GameMode->AIGoalManager = GoalManager;
+
+			TArray<AActor*> Volumes;
+			UGameplayStatics::GetAllActorsOfClass(UWorld::GetWorld(), AFortPoiVolume::StaticClass(), &Volumes);
+
+			for (auto& Volume : Volumes)
+			{
+				AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+
+				FCachedPOIVolumeLocations VolumeLocations{};
+				VolumeLocations.POIVolume = POIVolume;
+				VolumeLocations.Flags &= ~0x1;
+
+				FVector Origin;
+				FVector BoxExtent;
+				Volume->GetActorBounds(false, &Origin, &BoxExtent);
+
+				for (int i = 0; i < 250; i++)
+				{
+					FVector RandomPoint = UKismetMathLibrary::RandomPointInBoundingBox(Origin, BoxExtent);
+					VolumeLocations.NavMeshLocations.Add(RandomPoint);
+				}
+
+				GameMode->ServerBotManager->CachedValidPOIVolumeLocations.Add(VolumeLocations);
+			}
+
+			for (FNavigationPOI& Tag : GameMode->ServerBotManager->OnGroundTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}
+
+			for (FBattleBusPOI& Tag : GameMode->ServerBotManager->SecondaryBattleBusTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}
+
+			for (FBattleBusPOI& Tag : GameMode->ServerBotManager->BattleBusTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}
 		}
 	}
 
@@ -148,7 +209,7 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 				if (BotController == NULL)
 					continue;
 
-				Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
+				Bots::EnterAircraft(BotController);
 			}
 		}
 	}
@@ -164,6 +225,8 @@ void Misc::Patch()
 
 	if (UConfiguration::bUsePhoebe)
 	{
+		*(int*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1;
+
 		// NumReservations
 
 		Utils::Patch(InSDKUtils::GetImageBase() + 0x1641878, 0x90);

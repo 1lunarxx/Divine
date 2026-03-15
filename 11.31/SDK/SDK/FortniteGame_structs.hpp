@@ -30880,10 +30880,10 @@ public:
 struct FCachedPOIVolumeLocations final
 {
 public:
-	class AFortPoiVolume*                         POIVolume;                                         // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_8[0x18];                                       // 0x0008(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	AFortPoiVolume* POIVolume;       // offset 0x0
+	TArray<FVector> NavMeshLocations; // offset 0x8
+	uint32 Flags;                    // offset 0x1C
 };
-
 // ScriptStruct FortniteGame.BattleBusPOI
 // 0x00B8 (0x00B8 - 0x0000)
 struct FBattleBusPOI final

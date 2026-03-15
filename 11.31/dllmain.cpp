@@ -6,20 +6,6 @@
 #include "Bots.h"
 #include "Utils.h"
 
-static inline void NYevent()
-{
-    auto NYT = Utils::StaticFindObject<UObject>("/NewYears/Content/Levels/Apollo_NYE_Celebration.Apollo_NYE_Celebration.PersistentLevel.BP_NewYearTimer_2");;
-
-    auto NYE = Utils::StaticFindObject<UFunction>("/NewYears/Blueprints/BP_NewYearTimer.BP_NewYearTimer_C.startNYE");
-
-    if (NYT && NYE)
-    {
-        NYT->ProcessEvent(NYE, nullptr);
-
-        printf("NYE: \n");
-    }
-}
-
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
 #ifdef CLIENT
@@ -44,7 +30,6 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     Abilities::Patch();
     Player::Patch();
     Bots::Patch();
-    NYevent();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false;
 
