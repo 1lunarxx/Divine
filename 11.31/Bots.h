@@ -19,6 +19,7 @@ private:
 	static void InitializeForWorld(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
 	static void CreateAndConfigureNavigationSystem(UNavigationSystemConfig*, UWorld*);
 	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
+	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

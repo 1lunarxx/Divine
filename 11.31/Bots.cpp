@@ -4,13 +4,6 @@
 #include "Configuration.h"
 #include "Inventory.h"
 
-void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
-{
-	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
-
-	return Originals::InitializeMMRInfos(BotMutator);
-}
-
 void Balls_Improper(AFortAthenaAIBotController* BotController)
 {
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
@@ -118,6 +111,13 @@ void Balls_Improper(AFortAthenaAIBotController* BotController)
 	PlayerPawn->OnRep_CosmeticLoadout();
 }
 
+void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
+{
+	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
+
+	return Originals::InitializeMMRInfos(BotMutator);
+}
+
 void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
@@ -153,6 +153,8 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 	Balls_Improper(BotController);
 
+	AddStartingItemsToInventory(BotController);
+
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
@@ -186,6 +188,68 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
+}
+
+UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count)
+{
+	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
+
+	if (WorldItem == NULL)
+		return NULL;
+
+	WorldItem->OwnerInventory = BotController->Inventory;
+	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
+	WorldItem->ItemEntry.Count = Count;
+
+	if (ItemDefinition->bInventorySizeLimited)
+	{
+		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
+		{
+			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
+
+			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
+			{
+				SlotItem.FortItem = WorldItem;
+				SlotItem.ItemDefinition = ItemDefinition;
+				SlotItem.ItemType = ItemDefinition->ItemType;
+
+				static EFortWeaponType(*FindWeaponType)(UFortItemDefinition*) = decltype(FindWeaponType)(InSDKUtils::GetImageBase() + 0x20E54E0);
+				SlotItem.WeaponType = FindWeaponType(ItemDefinition);
+
+				break;
+			}
+		}
+	}
+
+	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
+	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
+	BotController->Inventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
+
+	BotController->Inventory->HandleInventoryLocalUpdate();
+
+	return WorldItem;
+}
+
+// Not sure what the hook is, so i will call manually for now.
+
+void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController)
+{
+	if (BotController->StartupInventory)
+	{
+		for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+		{
+			CreateItem(BotController, Item, 1);
+		}
+	}
+	else
+	{
+		if (BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe)
+		{
+			UFortWorldItem* Item = CreateItem(BotController, BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition, 1);
+
+			BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)Item->ItemEntry.ItemDefinition, Item->ItemEntry.ItemGuid);
+		}
+	}
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)

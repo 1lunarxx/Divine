@@ -23725,11 +23725,16 @@ public:
 struct FFortBotInventoryInfo final
 {
 public:
-	class UFortItemDefinition*                    ItemDefinition;                                    // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UFortWorldItem*                         FortItem;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_10[0x8];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	class UFortItemDefinition* ItemDefinition;                                    // 0x0000(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UFortWorldItem* FortItem;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	enum EFortItemType								  ItemType;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	enum EFortWeaponType								  WeaponType;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                         Pad_12[0x6];                                       // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
-
+static_assert(alignof(FFortBotInventoryInfo) == 0x000008, "Wrong alignment on FFortBotInventoryInfo");
+static_assert(sizeof(FFortBotInventoryInfo) == 0x000018, "Wrong size on FFortBotInventoryInfo");
+static_assert(offsetof(FFortBotInventoryInfo, ItemDefinition) == 0x000000, "Member 'FFortBotInventoryInfo::ItemDefinition' has a wrong offset!");
+static_assert(offsetof(FFortBotInventoryInfo, FortItem) == 0x000008, "Member 'FFortBotInventoryInfo::FortItem' has a wrong offset!");
 // ScriptStruct FortniteGame.FortBotTargetHandler
 // 0x0020 (0x0020 - 0x0000)
 struct FFortBotTargetHandler final

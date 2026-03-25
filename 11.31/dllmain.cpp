@@ -8,12 +8,6 @@
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
-#ifdef CLIENT
-    UEngine::GetEngine()->GameViewport->ViewportConsole = (UConsole*)UGameplayStatics::SpawnObject(UEngine::GetEngine()->ConsoleClass, UEngine::GetEngine()->GameViewport);
-    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1;
-    return 0;
-#endif
-
     Sleep(5000);
     AllocConsole();
     SetConsoleTitleA("Winter | Loading");
@@ -35,7 +29,9 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = false; // GIsServer
 
-    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // GIsServer
+    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
+
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     UGameplayStatics::OpenLevel(UWorld::GetWorld(), UKismetStringLibrary::Conv_StringToName(L"Apollo_Terrain"), false, FString());
