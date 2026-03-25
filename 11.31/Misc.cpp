@@ -80,10 +80,8 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 			{
 				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
 
-				if (BotController == NULL)
-					continue;
-
-				Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
+				if (BotController != NULL)
+					Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
 			}
 		}
 	}

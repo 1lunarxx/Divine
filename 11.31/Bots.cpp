@@ -181,6 +181,13 @@ void Bots::CreateAndConfigureNavigationSystem(UNavigationSystemConfig* Navigatio
 	return Originals::CreateAndConfigureNavigationSystem(NavigationSystemConfig, World);
 }
 
+void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
+{
+	BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
+
+	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
+}
+
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
@@ -188,8 +195,6 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
-		printf("yes\n");
-
 		AircraftComponent->EnterAircraft(InAircraft);
 	}
 
@@ -232,11 +237,20 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	}
 }
 
+UFortServerBotManagerAthena* GetCachedServerManager()
+{
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+	return GameMode->ServerBotManager;
+}
+
 void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
+
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
 
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }

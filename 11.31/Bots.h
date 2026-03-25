@@ -10,6 +10,7 @@ class Bots
 		static inline void (*OnBotSpawned)(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 		static inline void (*InitializeForWorld)(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
 		static inline void (*CreateAndConfigureNavigationSystem)(UNavigationSystemConfig*, UWorld*);
+		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	};
 
 private:
@@ -17,6 +18,7 @@ private:
 	static void OnBotSpawned(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 	static void InitializeForWorld(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
 	static void CreateAndConfigureNavigationSystem(UNavigationSystemConfig*, UWorld*);
+	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();
