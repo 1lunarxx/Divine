@@ -79,10 +79,11 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 			for (FFortServerBotInfo& PlayerBot : BotManager->PlayerBots)
 			{
 				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
+
 				if (BotController == NULL)
 					continue;
 
-				//Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
+				Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
 			}
 		}
 	}
@@ -91,6 +92,11 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 static int RetOne()
 {
 	return 1;
+}
+
+static int RetZero()
+{
+	return 0;
 }
 
 void Misc::Setup()
@@ -106,6 +112,9 @@ void Misc::Setup()
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);
 
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, RetZero);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, RetOne);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, RetOne);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, RetOne);
 }

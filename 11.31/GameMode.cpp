@@ -63,7 +63,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			AAthenaAIDirector* AIDirector = Utils::SpawnActor<AAthenaAIDirector>(FVector(), FRotator(), AAthenaAIDirector::StaticClass(), GameMode);
 
 			GameMode->AIDirector = AIDirector;
-			//GameMode->AIDirector->Activate();
+			GameMode->AIDirector->Activate();
 
 			AFortAIGoalManager* AIGoalManager = Utils::SpawnActor<AFortAIGoalManager>(FVector(), FRotator(), AFortAIGoalManager::StaticClass(), GameMode);
 
@@ -77,30 +77,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			if (UFortAssetManager* AssetManager = Cast<UFortAssetManager>(UFortEngine::GetEngine()->AssetManager))
 			{
 				AssetManager->GameDataCosmetics->DefaultBattleBusSkin = BBID_WinterBus;
-			}
-		}
-
-		UObject* SnowSetup = Utils::StaticFindObject<UObject>("/Game/Athena/Apollo/Maps/Apollo_POI_Foundations.Apollo_POI_Foundations:PersistentLevel.BP_ApolloSnowSetup_2");
-
-		if (SnowSetup)
-		{
-			UFloatProperty* Prop = Utils::StaticFindObject<UFloatProperty>("/Game/Athena/Apollo/Environments/Blueprints/CalendarEvents/BP_ApolloSnowSetup.BP_ApolloSnowSetup_C:SnowAmount");
-			UFloatProperty* Prop2 = Utils::StaticFindObject<UFloatProperty>("/Game/Athena/Apollo/Environments/Blueprints/CalendarEvents/BP_ApolloSnowSetup.BP_ApolloSnowSetup_C:SnowFalling");
-
-			if (Prop && Prop2)
-			{
-				*(float*)(__int64(SnowSetup) + Prop->Offset) = 100.f;
-				*(float*)(__int64(SnowSetup) + Prop2->Offset) = 69.f;
-
-				UFunction* Func = SnowSetup->Class->GetFunction("BP_ApolloSnowSetup_C", "OnRep_Snow_Amount");
-				UFunction* Func2 = SnowSetup->Class->GetFunction("BP_ApolloSnowSetup_C", "OnRep_SnowFalling");
-
-				if (Func)
-				{
-					bool HasAuthority = true;
-					SnowSetup->ProcessEvent(Func, &HasAuthority);
-					SnowSetup->ProcessEvent(Func2, &HasAuthority);
-				}
 			}
 		}
 

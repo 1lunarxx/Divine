@@ -144,31 +144,17 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
+
+		if (UFortAthenaAIBotLootingDigestedSkillSet* LootSkill = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
+			BotController->CacheLootingSkillSet = LootSkill;
 	}
 
-	if (BotController->Inventory == NULL)
-	{
-		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
-	}
-
-	if (BotController->StartupInventory)
-	{
-		for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
-		{
-			Inventory::CreateItem(BotController->Inventory, Item, 1);
-		}
-
-		FFortItemEntry* ItemEntry = &BotController->Inventory->Inventory.ReplicatedEntries[0];
-
-		BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry->ItemDefinition, ItemEntry->ItemGuid);
-	}
+	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
 	Balls_Improper(BotController);
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
-
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
-	BotController->RunBehaviorTree(Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe"));
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
@@ -197,8 +183,13 @@ void Bots::CreateAndConfigureNavigationSystem(UNavigationSystemConfig* Navigatio
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
+	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
+	BotController->RunBehaviorTree(BotController->BehaviorTree);
+
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
+		printf("yes\n");
+
 		AircraftComponent->EnterAircraft(InAircraft);
 	}
 
