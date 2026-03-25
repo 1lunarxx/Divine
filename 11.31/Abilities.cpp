@@ -2,46 +2,66 @@
 #include "Abilities.h"
 #include "Utils.h"
 
-void Abilities::InternalServerTryActivateAbility(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle Handle, bool InputPressed, FPredictionKey& PredictionKey, FGameplayEventData* TriggerEventData)
+void Abilities::ConsumeAllReplicatedData(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey)
 {
-	FGameplayAbilitySpec* Spec = nullptr;
+	FGameplayAbilityReplicatedDataContainer& AbilityTargetDataMap = *(FGameplayAbilityReplicatedDataContainer*)(__int64(AbilitySystemComponent) + offsetof(UAbilitySystemComponent, ActivatableAbilities) + sizeof(FGameplayAbilitySpecContainer));
 
-	for (auto& Item : AbilitySystemComponent->ActivatableAbilities.Items)
+	for (FGameplayAbilityReplicatedDataContainer::FKeyDataPair& Pair : AbilityTargetDataMap.InUseData)
 	{
-		if (Item.Handle.Handle == Handle.Handle)
+		if (Pair.Key().AbilityHandle.Handle == AbilityHandle.Handle && Pair.Key().PredictionKeyAtCreation == AbilityOriginalPredictionKey.Current)
 		{
-			Spec = &Item;
-			break;
+			Pair.Value().Object = nullptr;
+			Pair.Value().SharedReferenceCount->SharedReferenceCount = 1;
 		}
 	}
+}
 
+void Abilities::InternalServerTryActivateAbility(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle Handle, bool InputPressed, const FPredictionKey& PredictionKey, const FGameplayEventData* TriggerEventData)
+{
+	FGameplayAbilitySpec* Spec = AbilitySystemComponent->FindAbilitySpecFromHandle(Handle);
 	if (Spec == NULL)
 	{
-		return AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
+		// Can potentially happen in race conditions where client tries to activate ability that is removed server side before it is received.
+
+		AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
+		return;
 	}
 
-	UGameplayAbility* AbilityToActivate = Spec->Ability;
+	const UGameplayAbility* AbilityToActivate = Spec->Ability;
+
 	if (AbilityToActivate == NULL)
 	{
-		return AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
+		AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
+		return;
 	}
 
-	UGameplayAbility* InstancedAbility = nullptr;
+	// Ignore a client trying to activate an ability requiring server execution
+	if (AbilityToActivate->NetSecurityPolicy == EGameplayAbilityNetSecurityPolicy::ServerOnlyExecution || AbilityToActivate->NetSecurityPolicy == EGameplayAbilityNetSecurityPolicy::ServerOnly)
+	{
+		AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
+		return;
+	}
+
+	ConsumeAllReplicatedData(AbilitySystemComponent, Handle, PredictionKey);
+
+	UGameplayAbility* InstancedAbility = NULL;
 	Spec->InputPressed = true;
 
-	auto InternalTryActivateAbility = (bool (*)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle, FPredictionKey, UGameplayAbility**, void*, const FGameplayEventData*)) (InSDKUtils::GetImageBase() + 0xB78580);
-	if (!InternalTryActivateAbility(AbilitySystemComponent, Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData))
+	// Attempt to activate the ability (server side) and tell the client if it succeeded or failed.
+	if (AbilitySystemComponent->InternalTryActivateAbility(Handle, PredictionKey, &InstancedAbility, nullptr, TriggerEventData))
+	{
+		// TryActivateAbility handles notifying the client of success
+	}
+	else
 	{
 		AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
 		Spec->InputPressed = false;
-	}
 
-	AbilitySystemComponent->ActivatableAbilities.MarkItemDirty(*Spec);
+		AbilitySystemComponent->ActivatableAbilities.MarkItemDirty(*Spec);
+	}
 }
 
-void Abilities::Patch()
+void Abilities::Setup()
 {
-	Utils::Virtual<UAbilitySystemComponent>(0xF7, InternalServerTryActivateAbility);
-	Utils::Virtual<UFortAbilitySystemComponent>(0xF7, InternalServerTryActivateAbility);
 	Utils::Virtual<UFortAbilitySystemComponentAthena>(0xF7, InternalServerTryActivateAbility);
 }

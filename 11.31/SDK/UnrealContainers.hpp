@@ -292,6 +292,16 @@ namespace UC
 			Data = (ArrayElementType*)FMemory::Realloc(Data, (MaxElements = Num + NumElements) * Size, 0);
 		}
 
+		inline void Free()
+		{
+			if (Data)
+				FMemory::Free(Data);
+
+			MaxElements = 0;
+			NumElements = 0;
+			Data = nullptr;
+		}
+
 		/* Adds to the array if there is still space for one more element */
 		inline bool Add(const ArrayElementType& Element)
 		{

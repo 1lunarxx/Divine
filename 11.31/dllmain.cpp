@@ -25,13 +25,17 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     MH_Initialize();
 
-    Misc::Patch();
-    GameMode::Patch();
-    Abilities::Patch();
-    Player::Patch();
-    Bots::Patch();
+    Abilities::Setup();
+    Misc::Setup();
+    GameMode::Setup();
+    Abilities::Setup();
+    Player::Setup();
+    Bots::Setup();
 
-    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false;
+    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
+    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = false; // GIsServer
+
+    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // GIsServer
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     UGameplayStatics::OpenLevel(UWorld::GetWorld(), UKismetStringLibrary::Conv_StringToName(L"Apollo_Terrain"), false, FString());

@@ -3,10 +3,11 @@
 
 class Player
 {
-public:
-	static void ServerAcknowledgePossession(AFortPlayerControllerAthena*, APawn*);
+private:
+	static void ServerAcknowledgePossession(APlayerController*, APawn*);
+	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
-
-	static void Patch();
+public:
+	static void Setup();
 };

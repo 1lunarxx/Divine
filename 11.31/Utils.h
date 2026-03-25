@@ -11,10 +11,9 @@ class Utils
 {
 public:
     template <class T>
-    static inline T* SpawnActor(FVector Location, FRotator Rotation = {}, UClass* Class = T::StaticClass(), AActor* Owner = nullptr)
+    static inline T* SpawnActor(FVector Location = {}, FRotator Rotation = {}, UClass* Class = T::StaticClass(), AActor* Owner = nullptr)
     {
         FTransform Transform{};
-        Transform.Rotation = {};
         Transform.Translation = Location;
         Transform.Scale3D = { 1, 1, 1 };
 
@@ -25,6 +24,18 @@ public:
         return (T*)Actor;
     }
 
+    template<typename T>
+    static T* GetInterfaceAddress(UObject* Object)
+    {
+        return (T*)(((void* (*)(SDK::UObject*, SDK::UClass*))(InSDKUtils::GetImageBase() + 0x2839440)) (Object, T::StaticClass()));
+    }
+
+    template<typename T>
+    static T* NewObject(UObject* Object, UClass* Class = NULL)
+    {
+        return (T*)UGameplayStatics::SpawnObject(Class ? Class : T::StaticClass(), Object);
+    }
+
     template <typename T>
     static T* StaticFindObject(const std::string& ObjectPath, SDK::UClass* Class = nullptr)
     {
@@ -32,6 +43,7 @@ public:
     }
 
     static inline void* (*StaticLoadObject_)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*) = (void* (*)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*))(InSDKUtils::GetImageBase() + 0x2849140);
+
     template<typename T>
     static T* StaticLoadObject(std::string name)
     {
@@ -40,65 +52,124 @@ public:
         if (!Object)
         {
             auto Name = std::wstring(name.begin(), name.end()).c_str();
+
             Object = (T*)StaticLoadObject_(T::StaticClass(), nullptr, Name, nullptr, 0, nullptr, false, nullptr);
         }
 
         return Object;
     }
 
-	static void Hook(uintptr_t Address, void* Detour, void** OG = nullptr)
+	static void Hook(uintptr_t Target, void* Detour, void** Original = nullptr)
 	{
-		MH_CreateHook((LPVOID)Address, Detour, OG);
-		MH_EnableHook((LPVOID)Address);
+		MH_CreateHook((LPVOID)Target, Detour, Original);
+		MH_EnableHook((LPVOID)Target);
 	}
 
-    static float EvaluateScalableFloat(FScalableFloat& Float, float Level = 0.0f)
-    {
-        if (Float.Curve.CurveTable == NULL || Float.Curve.RowName.ComparisonIndex < 0)
-            return Float.Value;
+    template<typename Class>
+	static void Virtual(uintptr_t Target, void* Detour, void** Original = nullptr)
+	{
+        UObject* Object = Class::GetDefaultObj();
 
-        float Out = 0.f;
-        UDataTableFunctionLibrary::EvaluateCurveTableRow(Float.Curve.CurveTable, Float.Curve.RowName, Level, nullptr, &Out, FString());
-        return Float.Value * Out;
+        if (Object == NULL)
+            return;
+
+        if (Original)
+            *Original = Object->VTable[(int)Target];
+
+        DWORD dwProt;
+        VirtualProtect(&Object->VTable[(int)Target], sizeof(void*), PAGE_EXECUTE_READWRITE, &dwProt);
+
+        Object->VTable[(int)Target] = Detour;
+
+        DWORD dwTemp;
+        VirtualProtect(&Object->VTable[(int)Target], sizeof(void*), dwProt, &dwTemp);
+
+	}
+
+    static void Patch(uintptr_t Target, uintptr_t Byte)
+    {
+        DWORD OldProtect;
+
+        unsigned char v = Byte;
+        VirtualProtect(reinterpret_cast<LPVOID>(Target), 1, PAGE_EXECUTE_READWRITE, &OldProtect);
+
+        *reinterpret_cast<unsigned char*>(Target) = v;
+        VirtualProtect(reinterpret_cast<LPVOID>(Target), 1, OldProtect, &OldProtect);
     }
 
-	template<typename C = void>
-	static void Virtual(uintptr_t Address, void* Detour, void** OG = nullptr)
-	{
-        if constexpr (!std::is_same_v<C, void>)
+    static uint8_t* AllocateNearbyPage(void* targetAddr)
+    {
+        SYSTEM_INFO SysInfo;
+        GetSystemInfo(&SysInfo);
+
+        const uint64_t PageSize = SysInfo.dwPageSize;
+        const uint64_t StartAddr = (uint64_t(targetAddr) & ~(PageSize - 1));
+        const uint64_t MinAddr = min(StartAddr - 0x7FFFFF00, (uint64_t)SysInfo.lpMinimumApplicationAddress);
+        const uint64_t MaxAddr = max(StartAddr + 0x7FFFFF00, (uint64_t)SysInfo.lpMaximumApplicationAddress);
+        const uint64_t StartPage = (StartAddr - (StartAddr % PageSize));
+
+        for (uint64_t PageOffset = 1; PageOffset; PageOffset++)
         {
-            auto defaultObj = C::GetDefaultObj();
-            if (!defaultObj)
-                return;
+            uint64_t ByteOffset = PageOffset * PageSize;
+            uint64_t HighAddr = StartPage + ByteOffset;
+            uint64_t LowAddr = (StartPage > ByteOffset) ? StartPage - ByteOffset : 0;
 
-            auto vft = *reinterpret_cast<void***>(defaultObj);
-            if (!vft)
-                return;
+            bool NeedsExit = HighAddr > MaxAddr && LowAddr < MinAddr;
 
-            uint32_t idx = static_cast<uint32_t>(Address);
-            DWORD old;
+            if (HighAddr < MaxAddr)
+            {
+                if (void* OutAddr = VirtualAlloc((void*)HighAddr, PageSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE))
+                {
+                    return (uint8_t*)OutAddr;
+                }
+            }
 
-            VirtualProtect(&vft[idx], sizeof(void*), PAGE_EXECUTE_READWRITE, &old);
-            if (OG)
-                *OG = vft[idx];
+            if (LowAddr > MinAddr)
+            {
+                if (void* OutAddr = VirtualAlloc((void*)LowAddr, PageSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE))
+                {
+                    return (uint8_t*)OutAddr;
+                }
+            }
 
-            vft[idx] = Detour;
-            VirtualProtect(&vft[idx], sizeof(void*), old, &old);
+            if (NeedsExit)
+            {
+                break;
+            }
         }
-	}
 
-    template<typename T>
-    static T* GetInterface(UObject* Object)
-    {
-        return (T*)(((void* (*)(SDK::UObject*, SDK::UClass*))(InSDKUtils::GetImageBase() + 0x2839440)) (Object, T::StaticClass()));
+        return nullptr;
     }
 
-    static void Patch(uintptr_t offset, uintptr_t byte)
+    static void Rel32(uintptr_t Target, void* Detour, void** Original = nullptr)
     {
-        DWORD old;
-        unsigned char v = byte;
-        VirtualProtect(reinterpret_cast<LPVOID>(offset), 1, PAGE_EXECUTE_READWRITE, &old);
-        *reinterpret_cast<unsigned char*>(offset) = v;
-        VirtualProtect(reinterpret_cast<LPVOID>(offset), 1, old, &old);
+        auto Impl = (uint8*)(Target);
+
+        auto NearPage = AllocateNearbyPage(Impl);
+
+        if (!NearPage)
+        {
+            return;
+        }
+
+        uint8_t Shellcode[] =
+        {
+            0xFF, 0x25, 0x00, 0x00, 0x00, 0x00,
+            0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
+        };
+
+        if (Detour != NULL)
+        {
+            memcpy(Shellcode + 6, &Detour, 8);
+            memcpy(NearPage, Shellcode, sizeof(Shellcode));
+
+            auto Offset = NearPage - (Impl + (int)5);
+
+            memcpy(Impl + 1, &Offset, sizeof(int));
+        }
+        else
+        {
+            memset(Impl, 0x90, sizeof(int) + 1);
+        }
     }
 };

@@ -387,7 +387,18 @@ public:
 	bool IsGameplayCueActive(const struct FGameplayTag& GameplayCueTag) const;
 	struct FGameplayEffectContextHandle MakeEffectContext() const;
 	struct FGameplayEffectSpecHandle MakeOutgoingSpec(TSubclassOf<class UGameplayEffect> GameplayEffectClass, float Level, const struct FGameplayEffectContextHandle& Context) const;
+public:
+	bool InternalTryActivateAbility(FGameplayAbilitySpecHandle Handle, FPredictionKey PredictionKey, UGameplayAbility** InstancedAbility, void* a4, const FGameplayEventData* TriggerEventData)
+	{
+		bool(*InternalTryActivateAbility)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle, FPredictionKey, UGameplayAbility**, void*, const FGameplayEventData*) = decltype(InternalTryActivateAbility)(InSDKUtils::GetImageBase() + 0xB78580);
+		return InternalTryActivateAbility(this, Handle, PredictionKey, InstancedAbility, a4, TriggerEventData);
+	}
 
+	FGameplayAbilitySpec* FindAbilitySpecFromHandle(FGameplayAbilitySpecHandle Handle)
+	{
+		FGameplayAbilitySpec* (*STAT_FindAbilitySpecFromHandle)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle) = decltype(STAT_FindAbilitySpecFromHandle)(InSDKUtils::GetImageBase() + 0xB6F6B0);
+		return STAT_FindAbilitySpecFromHandle(this, Handle);
+	}
 public:
 	static class UClass* StaticClass()
 	{

@@ -2963,6 +2963,12 @@ public:
 class UReplicationDriver : public UObject
 {
 public:
+	int32 ServerReplicateActors()
+	{
+		static int32(*Replication)(UReplicationDriver*) = decltype(Replication)(InSDKUtils::GetImageBase() + 0xC7CC50);
+		return Replication(this);
+	}
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("ReplicationDriver")
@@ -3771,8 +3777,19 @@ public:
 	float                                         Time;                                              // 0x0210(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_214[0x4CC];                                    // 0x0214(0x04CC)(Fixing Size After Last Property [ Dumper-7 ])
 	class UReplicationDriver*                     ReplicationDriver;                                 // 0x06E0(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_6E8[0x28];                                     // 0x06E8(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_6E8[0x58];                                     // 0x06F0(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+public:
+	bool InitListen(void* InNotify, FURL& ListenURL, bool bReuseAddressAndPort, FString& Error)
+	{
+		static bool (*InitListen_)(UNetDriver*, void*, FURL&, bool, FString&) = decltype(InitListen_)(InSDKUtils::GetImageBase() + 0x8EFBA0);
+		return InitListen_(this, InNotify, ListenURL, bReuseAddressAndPort, Error);
+	}
 
+	void SetWorld(UWorld* InWorld)
+	{
+		static void (*SetWorld_)(UNetDriver*, UWorld*) = decltype(SetWorld_)(InSDKUtils::GetImageBase() + 0x3882F50);
+		SetWorld_(this, InWorld);
+	}
 public:
 	static class UClass* StaticClass()
 	{
@@ -4126,7 +4143,12 @@ public:
 
 public:
 	static class UEngine* GetEngine();
-
+public:
+	UNetDriver* CreateNetDriver(class UWorld* InWorld, FName NetDriverDefinition)
+	{
+		static UNetDriver* (*CreateNetDriver_)(UEngine*, class UWorld*, FName) = decltype(CreateNetDriver_)(InSDKUtils::GetImageBase() + 0x3B21C20);
+		return CreateNetDriver_(this, InWorld, NetDriverDefinition);
+	}
 public:
 	static class UClass* StaticClass()
 	{

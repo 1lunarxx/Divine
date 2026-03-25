@@ -55300,7 +55300,12 @@ public:
 	void ServerAttemptAircraftJump(const struct FRotator& ClientRotation);
 
 	bool IsInAircraft() const;
-
+public:
+	void EnterAircraft(AFortAircraft* InAircraft)
+	{
+		static void(*_EnterAircraft)(UFortControllerComponent_Aircraft*, AFortAircraft*) = decltype(_EnterAircraft)(InSDKUtils::GetImageBase() + 0x1835780);
+		_EnterAircraft(this, InAircraft);
+	}
 public:
 	static class UClass* StaticClass()
 	{
@@ -65491,7 +65496,12 @@ public:
 	uint8                                         Pad_2B8[0x18];                                     // 0x02B8(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSubGameAccess>                 SubGameAccess;                                     // 0x02D0(0x0010)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_2E0[0x10];                                     // 0x02E0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
+public:
+	static void InitializePlayerGameplayAbilities(IAbilitySystemInterface* PlayerStateOrProxy)
+	{
+		static void(*_InitializePlayerGameplayAbilities)(IAbilitySystemInterface*) = decltype(_InitializePlayerGameplayAbilities)(InSDKUtils::GetImageBase() + 0x19D7550);
+		_InitializePlayerGameplayAbilities(PlayerStateOrProxy);
+	}
 public:
 	static bool AllowContainersInCreativeItemLists();
 	static bool AreFriendCodesEnabled();

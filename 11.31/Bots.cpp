@@ -1,112 +1,81 @@
 #include "pch.h"
 #include "Bots.h"
 #include "Utils.h"
+#include "Configuration.h"
+#include "Inventory.h"
 
-void TickService(AFortAthenaAIBotController* BotController)
+void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	if (BotController == NULL)
-		return;
+	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
 
-	if (BotController->PlayerBotPawn == NULL)
-		return;
-
-	if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
-	{
-		if (!GameState->bAircraftIsLocked && !BotController->PlayerBotPawn->bIsSkydiving && UKismetMathLibrary::RandomBoolWithWeight(0.003f))
-		{
-			BotController->PlayerBotPawn->K2_TeleportTo(GameState->GetAircraft(0)->K2_GetActorLocation(), {});
-			BotController->PlayerBotPawn->BeginSkydiving(true);
-
-			if (UBlackboardComponent* Blackboard = BotController->Blackboard)
-			{
-				Blackboard->SetValueAsBool(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus"), 0);
-				Blackboard->SetValueAsBool(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey"), 1);
-			}
-		}
-	}
+	return Originals::InitializeMMRInfos(BotMutator);
 }
 
-void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavSystemConfig, UWorld* World)
-{
-	NavSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	NavSystemConfig->bAutoSpawnMissingNavData = true;
-	NavSystemConfig->bSupportRuntimeNavmeshDisabling = false;
-	NavSystemConfig->bAllowAutoRebuild = true;
-	NavSystemConfig->bUsesStreamedInNavLevel = true;
-
-	return Originals::CreateAndConfigureNavigationSystem(NavSystemConfig, World);
-}
-
-void Bots::OnSafeZoneUpdated(__int64 a1)
-{
-	*(int*)(a1 + 0x428) = 1;
-	return Originals::OnSafeZoneUpdated(a1);
-}
-
-void Bots::BallsInTheFan(AFortAthenaAIBotController* BotController)
+void Balls_Improper(AFortAthenaAIBotController* BotController)
 {
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
 
 	if (PlayerState == NULL)
 		return;
 
-	static UDataTable* PhoebeCharacterDataTable = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic");
-	static UDataTable* PhoebeGlidersDataTable = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Gliders_Basic.Phoebe_Cosmetic_Gliders_Basic");
-	static UDataTable* PhoebePickaxesDataTable = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Pickaxe_Basic.Phoebe_Cosmetic_Pickaxe_Basic");
-	static UDataTable* PheobeEmotesDataTable = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes");
+	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(BotController->PlayerBotPawn);
 
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeCharacterDataTableRow;
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeGlidersDataTableRow;
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebePickaxesDataTableRow;
-	TArray<FFortBotCosmeticItemDataTableRow*> PheobeEmotesDataTableRow;
+	if (PlayerState == NULL)
+		return;
 
-	for (const auto& [RowName, RowValue] : PhoebeCharacterDataTable->RowMap)
+	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes");
+
+	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
 	{
-		if (RowValue == NULL)
-			continue;
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
 
-		FFortBotCosmeticItemDataTableRow* Cosmetic = (FFortBotCosmeticItemDataTableRow*)RowValue;
-		if (Cosmetic)
-			PhoebeCharacterDataTableRow.Add(Cosmetic);
+		if (TableRow != NULL)
+		{
+			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+
+			if (Dance)
+			{
+				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
+			}
+		}
 	}
 
-	for (const auto& [RowName, RowValue] : PhoebeGlidersDataTable->RowMap)
-	{
-		if (RowValue == NULL)
-			continue;
+	static UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic");
+	static UDataTable* PhoebeGliders = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Gliders_Basic.Phoebe_Cosmetic_Gliders_Basic");
+	static UDataTable* PhoebePickaxe = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Pickaxe_Basic.Phoebe_Cosmetic_Pickaxe_Basic");
 
-		FFortBotCosmeticItemDataTableRow* Cosmetic = (FFortBotCosmeticItemDataTableRow*)RowValue;
-		if (Cosmetic)
-			PhoebeGlidersDataTableRow.Add(Cosmetic);
+	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeCharactersRows;
+	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeGlidersRows;
+	TArray<FFortBotCosmeticItemDataTableRow*> PhoebePickaxeRows;
+
+	for (auto& Row : PhoebeCharacters->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
+		if (TableRow)
+			PhoebeCharactersRows.Add(TableRow);
 	}
 
-	for (const auto& [RowName, RowValue] : PhoebePickaxesDataTable->RowMap)
+	for (auto& Row : PhoebeGliders->RowMap)
 	{
-		if (RowValue == NULL)
-			continue;
-
-		FFortBotCosmeticItemDataTableRow* Cosmetic = (FFortBotCosmeticItemDataTableRow*)RowValue;
-		if (Cosmetic)
-			PhoebePickaxesDataTableRow.Add(Cosmetic);
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
+		if (TableRow)
+			PhoebeGlidersRows.Add(TableRow);
 	}
 
-	for (const auto& [RowName, RowValue] : PheobeEmotesDataTable->RowMap)
+	for (auto& Row : PhoebePickaxe->RowMap)
 	{
-		if (RowValue == NULL)
-			continue;
-
-		FFortBotCosmeticItemDataTableRow* Cosmetic = (FFortBotCosmeticItemDataTableRow*)RowValue;
-		if (Cosmetic)
-			PheobeEmotesDataTableRow.Add(Cosmetic);
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
+		if (TableRow)
+			PhoebePickaxeRows.Add(TableRow);
 	}
 
-	int32 CharacterIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharacterDataTableRow.Num() - 1);
-	int32 GliderIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeGlidersDataTableRow.Num() - 1);
-	int32 PickaxeIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebePickaxesDataTableRow.Num() - 1);
+	int32 CharacterIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharactersRows.Num() - 1);
+	int32 GliderIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeGlidersRows.Num() - 1);
+	int32 PickaxeIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebePickaxeRows.Num() - 1);
 
-	FFortBotCosmeticItemDataTableRow* CharacterRow = PhoebeCharacterDataTableRow[CharacterIndex];
-	FFortBotCosmeticItemDataTableRow* GliderRow = PhoebeGlidersDataTableRow[GliderIndex];
-	FFortBotCosmeticItemDataTableRow* PickaxeRow = PhoebePickaxesDataTableRow[PickaxeIndex];
+	FFortBotCosmeticItemDataTableRow* CharacterRow = PhoebeCharactersRows[CharacterIndex];
+	FFortBotCosmeticItemDataTableRow* GliderRow = PhoebeGlidersRows[GliderIndex];
+	FFortBotCosmeticItemDataTableRow* PickaxeRow = PhoebePickaxeRows[PickaxeIndex];
 
 	if (UKismetMathLibrary::RandomBoolWithWeight(CharacterRow->Weight))
 	{
@@ -131,49 +100,30 @@ void Bots::BallsInTheFan(AFortAthenaAIBotController* BotController)
 			}
 		}
 
-		BotController->PlayerBotPawn->CosmeticLoadout.Character = CharacterItemDefinition;
-	}
-
-	if (UKismetMathLibrary::RandomBoolWithWeight(PickaxeRow->Weight))
-	{
-		UAthenaPickaxeItemDefinition* PickaxeItemDefinition = (UAthenaPickaxeItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(PickaxeRow->PrimaryAssetId);
-		BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe = PickaxeItemDefinition;
+		PlayerPawn->CosmeticLoadout.Character = CharacterItemDefinition;
 	}
 
 	if (UKismetMathLibrary::RandomBoolWithWeight(GliderRow->Weight))
 	{
 		UAthenaGliderItemDefinition* GliderItemDefinition = (UAthenaGliderItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(GliderRow->PrimaryAssetId);
-		BotController->PlayerBotPawn->CosmeticLoadout.Glider = GliderItemDefinition;
+		PlayerPawn->CosmeticLoadout.Glider = GliderItemDefinition;
 	}
 
-	for (auto& Emote : PheobeEmotesDataTableRow)
+	if (UKismetMathLibrary::RandomBoolWithWeight(PickaxeRow->Weight))
 	{
-		UAthenaDanceItemDefinition* ItemDef = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(Emote->PrimaryAssetId));
-		if (ItemDef)
-			BotController->PlayerBotPawn->CosmeticLoadout.Dances.Add(ItemDef);
+		UAthenaPickaxeItemDefinition* PickaxeItemDefinition = (UAthenaPickaxeItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(PickaxeRow->PrimaryAssetId);
+		PlayerPawn->CosmeticLoadout.Pickaxe = PickaxeItemDefinition;
 	}
 
-	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
-
+	PlayerPawn->OnRep_CosmeticLoadout();
 }
 
-void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* Mutator_Bots, AFortPlayerPawn* PlayerPawn)
+void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
+
 	if (BotController == NULL)
-		return Originals::OnPawnSpawned(Mutator_Bots, PlayerPawn);
-
-	AFortPlayerStateAthena* BotState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
-	if (BotState == NULL)
-		return Originals::OnPawnSpawned(Mutator_Bots, PlayerPawn);
-
-	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-	if (GameMode == NULL)
-		return Originals::OnPawnSpawned(Mutator_Bots, PlayerPawn);
-
-	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
-	if (GameState == NULL)
-		return Originals::OnPawnSpawned(Mutator_Bots, PlayerPawn);
+		return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 
 	for (UFortAthenaAIBotDigestedSkillSet* SkillSet : BotController->DigestedBotSkillSets)
 	{
@@ -194,61 +144,72 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* Mutator_Bots, AFortPlayerPawn*
 
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
-
-		if (UFortAthenaAIBotLootingDigestedSkillSet* LootingSkillSet = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
-			BotController->CacheLootingSkillSet = LootingSkillSet;
 	}
 
-	BallsInTheFan(BotController);
+	if (BotController->Inventory == NULL)
+	{
+		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
+	}
 
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
+	if (BotController->StartupInventory)
+	{
+		for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+		{
+			Inventory::CreateItem(BotController->Inventory, Item, 1);
+		}
+
+		FFortItemEntry* ItemEntry = &BotController->Inventory->Inventory.ReplicatedEntries[0];
+
+		BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry->ItemDefinition, ItemEntry->ItemGuid);
+	}
+
+	Balls_Improper(BotController);
+
+	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
+
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
+	BotController->RunBehaviorTree(Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe"));
 
-	BotController->BlueprintOnBehaviorTreeStarted();
-	BotController->BrainComponent->RestartLogic();
-
-	BotController->UseBlackboard(BotController->Blackboard->BlackboardAsset, &BotController->Blackboard);
-	BotController->OnUsingBlackBoard(BotController->Blackboard, BotController->Blackboard->BlackboardAsset);
-
-	if (UKismetMathLibrary::RandomBool())
-	{
-		BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_WarmupPlayEmote_ExecutionStatus"), (uint8)EExecutionStatus::ExecutionAllowed);
-	}
-	else
-	{
-		BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_WarmupLootAndShoot_ExecutionStatus"), (uint8)EExecutionStatus::ExecutionAllowed);
-	}
-
-	uint8 TeamIndex = BotState->TeamIndex;
-
-	BotState->TeamIndex = GameState->PlayerBotsLeft;
-	BotState->OnRep_TeamIndex(TeamIndex);
-
-	BotState->SquadId = BotState->TeamIndex - 3;
-	BotState->OnRep_SquadId();
-
-	return Originals::OnPawnSpawned(Mutator_Bots, PlayerPawn);
+	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
 
-void Bots::InitializeForWorld(UAthenaNavSystem* NavigationSystem, UWorld* World, uint8 Mode)
+void Bots::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* World, EFNavigationSystemRunMode Mode)
 {
-	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
 	NavigationSystem->bAutoCreateNavigationData = true;
 	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
+	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
 
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
 
-void Bots::EnterAircraft(AFortAthenaAIBotController* BotController)
+void Bots::CreateAndConfigureNavigationSystem(UNavigationSystemConfig* NavigationSystemConfig, UWorld* World)
 {
+	UAthenaNavSystemConfig* NavSystemConfig = Cast<UAthenaNavSystemConfig>(NavigationSystemConfig);
+
+	NavSystemConfig->bPrioritizeNavigationAroundSpawners = true;
+	NavSystemConfig->bSupportRuntimeNavmeshDisabling = false;
+	NavSystemConfig->bAutoSpawnMissingNavData = true;
+	NavSystemConfig->bAllowAutoRebuild = true;
+	NavSystemConfig->bUsesStreamedInNavLevel = true;
+
+	return Originals::CreateAndConfigureNavigationSystem(NavigationSystemConfig, World);
+}
+
+void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
+{
+	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
+	{
+		AircraftComponent->EnterAircraft(InAircraft);
+	}
+
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
 	{
-		const float ThankBusDriverProbability = Utils::EvaluateScalableFloat(BotManager->ThankBusDriverProbability);
+		const float ThankBusDriverProbability = BotManager->ThankBusDriverProbability.Evaluate();
 
 		if (UKismetMathLibrary::RandomFloat() <= ThankBusDriverProbability)
 		{
-			const float ThankBusDriverMaxTime = Utils::EvaluateScalableFloat(BotManager->ThankBusDriverMaxTime);
-			const float ThankBusDriverMinTime = Utils::EvaluateScalableFloat(BotManager->ThankBusDriverMinTime);
+			const float ThankBusDriverMaxTime = BotManager->ThankBusDriverMaxTime.Evaluate();
+			const float ThankBusDriverMinTime = BotManager->ThankBusDriverMinTime.Evaluate();
 
 			const float ThankBusDriverTime = UKismetMathLibrary::FMax(UKismetMathLibrary::RandomFloatInRange(ThankBusDriverMinTime, ThankBusDriverMaxTime), 0.f);
 
@@ -264,45 +225,27 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController)
 
 	if (UBlackboardComponent* Blackboard = BotController->Blackboard)
 	{
-		Blackboard->SetValueAsBool(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus"), 1);
-		Blackboard->SetValueAsBool(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey"), 0);
-	}
-}
+		const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
+		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
+		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
 
-void Bots::Tick()
-{
-	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-	{
-		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
+		Blackboard->SetValueAsBool(IsInBusKey, 1);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, 0);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, 0);
 
-		if (UFortServerBotManagerAthena* BotManager = GameMode->ServerBotManager)
+		if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
 		{
-			for (FFortServerBotInfo& PlayerBot : BotManager->PlayerBots)
-			{
-				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
-				if (BotController == NULL)
-					continue;
-
-				BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhase"), (uint8)GameState->GamePhase);
-				BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhaseStep"), (uint8)GameState->GamePhaseStep);
-
-				switch (GameState->GamePhase)
-				{
-				case EAthenaGamePhase::Aircraft:
-					TickService(BotController);
-					break;
-				}
-			}
+			PlayerState->bHasEverSkydivedFromBus = 0;
+			PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
 		}
 	}
 }
 
-void Bots::Patch()
+void Bots::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x16414A0, OnSafeZoneUpdated, (void**)&Originals::OnSafeZoneUpdated);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
-
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnPawnSpawned, (void**)&Originals::OnPawnSpawned);
 
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }
