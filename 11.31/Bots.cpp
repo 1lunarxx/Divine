@@ -115,16 +115,6 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
 	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
 
-	/*
-		UBotELOSpawningInfo* ELOSpawningInfo = UBotELOSpawningInfo::GetDefaultObj();
-
-		ELOSpawningInfo->CachedGameMode = BotMutator->CachedGameMode;
-		ELOSpawningInfo->NumItemsToSpawn = FScalableFloat(95.0f);
-		ELOSpawningInfo->BotSpawningDataInfo = Utils::StaticLoadObject<UFortAthenaMutator_PlayerBotSpawningPolicyData>("/Game/Athena/AI/Phoebe/BP_PhoebeSpawningItemData.BP_PhoebeSpawningItemData_C");
-
-		BotMutator->CachedMMRSpawningInfo.ELOSpawningInfos.Add(ELOSpawningInfo);
-	*/
-
 	return Originals::InitializeMMRInfos(BotMutator);
 }
 
@@ -261,11 +251,19 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
-	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Gameplay.BT_Phoebe_Gameplay");
+	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
+		if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
+		{
+			PlayerState->ServerSetInAircraft(true);
+
+			PlayerState->bHasEverSkydivedFromBus = 0;
+			PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
+		}
+
 		AircraftComponent->EnterAircraft(InAircraft);
 	}
 
@@ -299,12 +297,6 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 		Blackboard->SetValueAsBool(IsInBusKey, true);
 		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
 		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
-	}
-
-	if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
-	{
-		PlayerState->bHasEverSkydivedFromBus = 0;
-		PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
 	}
 }
 
