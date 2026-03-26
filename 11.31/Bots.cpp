@@ -315,21 +315,12 @@ UFortServerBotManagerAthena* GetCachedServerManager()
 	return GameMode->ServerBotManager;
 }
 
-UFortAthenaMutator_PlayerBotSpawningPolicyData* GetPlayerBotSpawningPolicyData()
-{
-	static UFortAthenaMutator_PlayerBotSpawningPolicyData* PlayerBotSpawningPolicyData = Utils::StaticLoadObject<UFortAthenaMutator_PlayerBotSpawningPolicyData>("/Game/Athena/AI/Phoebe/BP_PhoebeSpawningItemData.BP_PhoebeSpawningItemData_C");
-	return PlayerBotSpawningPolicyData;
-}
-
 void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
-	//Utils::Hook(InSDKUtils::GetImageBase() + 0x16414A0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos); // Safezone [same params]
-
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1648100, GetPlayerBotSpawningPolicyData);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
 
