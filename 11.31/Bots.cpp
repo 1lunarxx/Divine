@@ -324,7 +324,7 @@ UFortAthenaMutator_PlayerBotSpawningPolicyData* GetPlayerBotSpawningPolicyData()
 void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x16414A0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos); // Safezone [same params]
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x16414A0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos); // Safezone [same params]
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
