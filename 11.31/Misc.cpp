@@ -13,7 +13,7 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 
 	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
 	{
-		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState);
+		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
 
 		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
 		{
@@ -22,6 +22,21 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 				PlayerBot.BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhaseStep"), (uint8)GameState->GamePhaseStep);
 				PlayerBot.BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhase"), (uint8)GameState->GamePhase);
 			}
+		}
+	}
+
+	static bool bStartedAircraft = false;
+
+	if (!bStartedAircraft)
+	{
+		AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
+
+		if (GameMode->AlivePlayers.Num() > 0 && GameState->WarmupCountdownEndTime <= UGameplayStatics::GetTimeSeconds(UWorld::GetWorld()))
+		{
+			((void (*)(AGameModeBase*, int))(ImageBase + 0x154E080))(UWorld::GetWorld()->AuthorityGameMode, 0);
+
+			bStartedAircraft = true;
 		}
 	}
 

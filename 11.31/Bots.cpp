@@ -115,13 +115,15 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
 	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
 
-	UBotELOSpawningInfo* ELOSpawningInfo = UBotELOSpawningInfo::GetDefaultObj();
+	/*
+		UBotELOSpawningInfo* ELOSpawningInfo = UBotELOSpawningInfo::GetDefaultObj();
 
-	ELOSpawningInfo->CachedGameMode = BotMutator->CachedGameMode;
-	ELOSpawningInfo->NumItemsToSpawn = FScalableFloat(95.0f);
-	ELOSpawningInfo->BotSpawningDataInfo = Utils::StaticLoadObject<UFortAthenaMutator_PlayerBotSpawningPolicyData>("/Game/Athena/AI/Phoebe/BP_PhoebeSpawningItemData.BP_PhoebeSpawningItemData_C");
+		ELOSpawningInfo->CachedGameMode = BotMutator->CachedGameMode;
+		ELOSpawningInfo->NumItemsToSpawn = FScalableFloat(95.0f);
+		ELOSpawningInfo->BotSpawningDataInfo = Utils::StaticLoadObject<UFortAthenaMutator_PlayerBotSpawningPolicyData>("/Game/Athena/AI/Phoebe/BP_PhoebeSpawningItemData.BP_PhoebeSpawningItemData_C");
 
-	BotMutator->CachedMMRSpawningInfo.ELOSpawningInfos.Add(ELOSpawningInfo);
+		BotMutator->CachedMMRSpawningInfo.ELOSpawningInfos.Add(ELOSpawningInfo);
+	*/
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -162,7 +164,7 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	Balls_Improper(BotController);
 	AddStartingItemsToInventory(BotController);
 
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
+	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
@@ -177,15 +179,13 @@ void Bots::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* Wor
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
 
-void Bots::CreateAndConfigureNavigationSystem(UNavigationSystemConfig* NavigationSystemConfig, UWorld* World)
+void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavigationSystemConfig, UWorld* World)
 {
-	UAthenaNavSystemConfig* NavSystemConfig = Cast<UAthenaNavSystemConfig>(NavigationSystemConfig);
-
-	NavSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	NavSystemConfig->bSupportRuntimeNavmeshDisabling = false;
-	NavSystemConfig->bAutoSpawnMissingNavData = true;
-	NavSystemConfig->bAllowAutoRebuild = true;
-	NavSystemConfig->bUsesStreamedInNavLevel = true;
+	NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
+	NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
+	NavigationSystemConfig->bAutoSpawnMissingNavData = true;
+	NavigationSystemConfig->bAllowAutoRebuild = true;
+	NavigationSystemConfig->bUsesStreamedInNavLevel = true;
 
 	return Originals::CreateAndConfigureNavigationSystem(NavigationSystemConfig, World);
 }
@@ -261,7 +261,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
+	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Gameplay.BT_Phoebe_Gameplay");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
@@ -294,7 +294,7 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	{
 		const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
 		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
-		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
+		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
 
 		Blackboard->SetValueAsBool(IsInBusKey, true);
 		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);

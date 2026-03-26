@@ -9,7 +9,7 @@ class Bots
 		static inline void (*InitializeMMRInfos)(AFortAthenaMutator_Bots*);
 		static inline void (*OnBotSpawned)(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 		static inline void (*InitializeForWorld)(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
-		static inline void (*CreateAndConfigureNavigationSystem)(UNavigationSystemConfig*, UWorld*);
+		static inline void (*CreateAndConfigureNavigationSystem)(UAthenaNavSystemConfig*, UWorld*);
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	};
 
@@ -17,7 +17,7 @@ private:
 	static void InitializeMMRInfos(AFortAthenaMutator_Bots*);
 	static void OnBotSpawned(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 	static void InitializeForWorld(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
-	static void CreateAndConfigureNavigationSystem(UNavigationSystemConfig*, UWorld*);
+	static void CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig*, UWorld*);
 	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
 public:

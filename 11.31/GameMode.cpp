@@ -31,8 +31,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
 		GameMode->AISettings = Playlist->AISettings;
 
-		GameMode->AISettings->NavigationSystemConfig = UNavigationSystemConfig::GetDefaultObj();
-
 		GameState->Client_RefreshEventCalendar();
 
 		for (TSoftObjectPtr<UWorld>& AdditionalLevel : Playlist->AdditionalLevels)
@@ -48,7 +46,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 		if (GameMode->ServerBotManager == NULL)
 		{
-			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C"));
+			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticFindObject<UBlueprintGeneratedClass>("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C"));
 
 			GameMode->ServerBotManager = ServerBotManager;
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
@@ -99,6 +97,14 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			static void (*StartSpawning)(AFortAthenaMutator_Bots*, __int64, char) = decltype(StartSpawning)(InSDKUtils::GetImageBase() + 0x1665B00);
 			StartSpawning(ServerBotManager->CachedBotMutator, 0, 0);
 		}
+
+		const float Time = UGameplayStatics::GetTimeSeconds(UWorld::GetWorld());
+
+		GameState->WarmupCountdownStartTime = Time;
+		GameState->WarmupCountdownEndTime = Time + 45.f;
+
+		GameMode->WarmupCountdownDuration = 35.f;
+		GameMode->WarmupEarlyCountdownDuration = 35.f;
 	}
 
 	return bReadyToStartMatch;
