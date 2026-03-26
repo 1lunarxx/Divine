@@ -96,7 +96,7 @@ void Misc::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
-	//Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, GetNetMode);
@@ -110,6 +110,4 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
-
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue); // rm
 }
