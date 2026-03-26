@@ -25,21 +25,6 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 		}
 	}
 
-	static bool bStartedAircraft = false;
-
-	if (!bStartedAircraft)
-	{
-		AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
-
-		if (GameMode->AlivePlayers.Num() > 0 && GameState->WarmupCountdownEndTime <= UGameplayStatics::GetTimeSeconds(UWorld::GetWorld()))
-		{
-			((void (*)(AGameModeBase*, int))(ImageBase + 0x154E080))(UWorld::GetWorld()->AuthorityGameMode, 0);
-
-			bStartedAircraft = true;
-		}
-	}
-
 	if (GetKeyState(VK_F2))
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
@@ -113,11 +98,6 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, GetNetMode);
-
-	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
-
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x32EAAD0, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);
@@ -125,4 +105,7 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
+
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 }

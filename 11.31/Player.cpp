@@ -77,15 +77,11 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 	PlayerController->ClientSetRotation(ClientRotation, false);
 }
 
-void Player::EndSkydiving(AFortPlayerPawn* PlayerPawn)
-{
-	Originals::EndSkydiving(PlayerPawn);
-}
-
 void Player::Setup()
 {
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
+
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);

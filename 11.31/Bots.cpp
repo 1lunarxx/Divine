@@ -4,113 +4,6 @@
 #include "Configuration.h"
 #include "Inventory.h"
 
-void Balls_Improper(AFortAthenaAIBotController* BotController)
-{
-	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
-
-	if (PlayerState == NULL)
-		return;
-
-	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(BotController->PlayerBotPawn);
-
-	if (PlayerState == NULL)
-		return;
-
-	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes");
-
-	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
-	{
-		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
-
-		if (TableRow != NULL)
-		{
-			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
-
-			if (Dance)
-			{
-				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
-			}
-		}
-	}
-
-	static UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic");
-	static UDataTable* PhoebeGliders = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Gliders_Basic.Phoebe_Cosmetic_Gliders_Basic");
-	static UDataTable* PhoebePickaxe = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Pickaxe_Basic.Phoebe_Cosmetic_Pickaxe_Basic");
-
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeCharactersRows;
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeGlidersRows;
-	TArray<FFortBotCosmeticItemDataTableRow*> PhoebePickaxeRows;
-
-	for (auto& Row : PhoebeCharacters->RowMap)
-	{
-		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
-		if (TableRow)
-			PhoebeCharactersRows.Add(TableRow);
-	}
-
-	for (auto& Row : PhoebeGliders->RowMap)
-	{
-		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
-		if (TableRow)
-			PhoebeGlidersRows.Add(TableRow);
-	}
-
-	for (auto& Row : PhoebePickaxe->RowMap)
-	{
-		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)Row.Value();
-		if (TableRow)
-			PhoebePickaxeRows.Add(TableRow);
-	}
-
-	int32 CharacterIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharactersRows.Num() - 1);
-	int32 GliderIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeGlidersRows.Num() - 1);
-	int32 PickaxeIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebePickaxeRows.Num() - 1);
-
-	FFortBotCosmeticItemDataTableRow* CharacterRow = PhoebeCharactersRows[CharacterIndex];
-	FFortBotCosmeticItemDataTableRow* GliderRow = PhoebeGlidersRows[GliderIndex];
-	FFortBotCosmeticItemDataTableRow* PickaxeRow = PhoebePickaxeRows[PickaxeIndex];
-
-	if (UKismetMathLibrary::RandomBoolWithWeight(CharacterRow->Weight))
-	{
-		UAthenaCharacterItemDefinition* CharacterItemDefinition = (UAthenaCharacterItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(CharacterRow->PrimaryAssetId);
-
-		if (CharacterItemDefinition && CharacterItemDefinition->HeroDefinition && CharacterItemDefinition->HeroDefinition->Specializations.IsValid())
-		{
-			for (int i = 0; i < CharacterItemDefinition->HeroDefinition->Specializations.Num(); i++)
-			{
-				UFortHeroSpecialization* Specialization = Utils::StaticLoadObject<UFortHeroSpecialization>(UKismetStringLibrary::Conv_NameToString(CharacterItemDefinition->HeroDefinition->Specializations[i].ObjectID.AssetPathName).ToString());
-
-				if (Specialization)
-				{
-					for (int j = 0; j < Specialization->CharacterParts.Num(); j++)
-					{
-						UCustomCharacterPart* CustomCharacterPart = Utils::StaticLoadObject<UCustomCharacterPart>(UKismetStringLibrary::GetDefaultObj()->Conv_NameToString(Specialization->CharacterParts[j].ObjectID.AssetPathName).ToString());
-
-						if (CustomCharacterPart)
-							PlayerState->CharacterData.Parts[(uintptr_t)CustomCharacterPart->CharacterPartType] = CustomCharacterPart;
-					}
-				}
-			}
-		}
-
-		PlayerPawn->CosmeticLoadout.Character = CharacterItemDefinition;
-	}
-
-	if (UKismetMathLibrary::RandomBoolWithWeight(GliderRow->Weight))
-	{
-		UAthenaGliderItemDefinition* GliderItemDefinition = (UAthenaGliderItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(GliderRow->PrimaryAssetId);
-		PlayerPawn->CosmeticLoadout.Glider = GliderItemDefinition;
-	}
-
-	if (UKismetMathLibrary::RandomBoolWithWeight(PickaxeRow->Weight))
-	{
-		UAthenaPickaxeItemDefinition* PickaxeItemDefinition = (UAthenaPickaxeItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(PickaxeRow->PrimaryAssetId);
-		PlayerPawn->CosmeticLoadout.Pickaxe = PickaxeItemDefinition;
-	}
-
-	PlayerPawn->OnRep_CosmeticLoadout();
-}
-
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
 	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
@@ -151,10 +44,7 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
-	Balls_Improper(BotController);
-	AddStartingItemsToInventory(BotController);
-
-	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
+	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
@@ -163,16 +53,16 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 void Bots::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* World, EFNavigationSystemRunMode Mode)
 {
 	NavigationSystem->bAutoCreateNavigationData = true;
-	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
-	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
+	//NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
+	//NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
 
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
 
 void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavigationSystemConfig, UWorld* World)
 {
-	NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
+	//NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
+	//NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
 	NavigationSystemConfig->bAutoSpawnMissingNavData = true;
 	NavigationSystemConfig->bAllowAutoRebuild = true;
 	NavigationSystemConfig->bUsesStreamedInNavLevel = true;
@@ -182,7 +72,10 @@ void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* Navigation
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
-	BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
+	if (BotController->Inventory == NULL)
+		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
+
+	AddStartingItemsToInventory(BotController);
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
@@ -197,26 +90,6 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 	WorldItem->OwnerInventory = BotController->Inventory;
 	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
 	WorldItem->ItemEntry.Count = Count;
-
-	if (ItemDefinition->bInventorySizeLimited)
-	{
-		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
-		{
-			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
-
-			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
-			{
-				SlotItem.FortItem = WorldItem;
-				SlotItem.ItemDefinition = ItemDefinition;
-				SlotItem.ItemType = ItemDefinition->ItemType;
-
-				static EFortWeaponType(*FindWeaponType)(UFortItemDefinition*) = decltype(FindWeaponType)(InSDKUtils::GetImageBase() + 0x20E54E0);
-				SlotItem.WeaponType = FindWeaponType(ItemDefinition);
-
-				break;
-			}
-		}
-	}
 
 	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
 	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
@@ -249,61 +122,62 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	}
 }
 
+AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
+{
+	return BotController;
+}
+
+void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController)
+{
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(BotController->PlayerBotPawn);
+
+	if (PlayerState == NULL)
+		return;
+
+	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes");
+
+	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+		if (TableRow != NULL)
+		{
+			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+
+			if (Dance)
+			{
+				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
+			}
+		}
+	}
+}
+
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
-	BotController->BehaviorTree = Utils::StaticFindObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
+	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
-		if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
-		{
-			PlayerState->ServerSetInAircraft(true);
-
-			PlayerState->bHasEverSkydivedFromBus = 0;
-			PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
-		}
-
 		AircraftComponent->EnterAircraft(InAircraft);
-	}
-
-	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
-	{
-		const float ThankBusDriverProbability = BotManager->ThankBusDriverProbability.Evaluate();
-
-		if (UKismetMathLibrary::RandomFloat() <= ThankBusDriverProbability)
-		{
-			const float ThankBusDriverMaxTime = BotManager->ThankBusDriverMaxTime.Evaluate();
-			const float ThankBusDriverMinTime = BotManager->ThankBusDriverMinTime.Evaluate();
-
-			const float ThankBusDriverTime = UKismetMathLibrary::FMax(UKismetMathLibrary::RandomFloatInRange(ThankBusDriverMinTime, ThankBusDriverMaxTime), 0.f);
-
-			FLatentActionInfo LatentInfo{};
-			LatentInfo.Linkage = 0;
-			LatentInfo.UUID = UKismetMathLibrary::RandomFloat();
-			LatentInfo.ExecutionFunction = UKismetStringLibrary::Conv_StringToName(L"ThankBusDriver");
-			LatentInfo.CallbackTarget = BotController;
-
-			UKismetSystemLibrary::Delay(UWorld::GetWorld(), ThankBusDriverTime, LatentInfo);
-		}
 	}
 
 	if (UBlackboardComponent* Blackboard = BotController->Blackboard)
 	{
 		const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
-		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
-		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
 
 		Blackboard->SetValueAsBool(IsInBusKey, true);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
 	}
 }
 
 UFortServerBotManagerAthena* GetCachedServerManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
 	return GameMode->ServerBotManager;
 }
 
@@ -311,10 +185,13 @@ void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 
-	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
+
+	//Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
 
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }

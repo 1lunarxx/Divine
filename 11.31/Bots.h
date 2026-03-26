@@ -16,10 +16,16 @@ class Bots
 private:
 	static void InitializeMMRInfos(AFortAthenaMutator_Bots*);
 	static void OnBotSpawned(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
+
 	static void InitializeForWorld(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
 	static void CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig*, UWorld*);
+
 	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
+
+	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
+
+	static void GetCosmeticLoadout(AFortAthenaAIBotController*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

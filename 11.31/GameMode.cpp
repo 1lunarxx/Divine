@@ -10,8 +10,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
     if (GameState->MapInfo == NULL)
         return false;
 
-    static FName WaitingToStart = UKismetStringLibrary::Conv_StringToName(L"WaitingToStart");
-
     if (!GameMode->bWorldIsReady)
     {
 		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultSolo.Playlist_DefaultSolo");
@@ -97,14 +95,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			static void (*StartSpawning)(AFortAthenaMutator_Bots*, __int64, char) = decltype(StartSpawning)(InSDKUtils::GetImageBase() + 0x1665B00);
 			StartSpawning(ServerBotManager->CachedBotMutator, 0, 0);
 		}
-
-		const float Time = UGameplayStatics::GetTimeSeconds(UWorld::GetWorld());
-
-		GameState->WarmupCountdownStartTime = Time;
-		GameState->WarmupCountdownEndTime = Time + 45.f;
-
-		GameMode->WarmupCountdownDuration = 35.f;
-		GameMode->WarmupEarlyCountdownDuration = 35.f;
 	}
 
 	return bReadyToStartMatch;
@@ -112,6 +102,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 void GameMode::PlaceBotOnTeam(AFortGameModeAthena* GameMode, AFortPlayerStateAthena* FPSA, AFortTeamInfoAthena* TeamToBePutOn, uint8 BotSquadId)
 {
+	Originals::PlaceBotOnTeam(GameMode, FPSA, TeamToBePutOn, BotSquadId);
+
 	static __int64(*TPlayerList_Find)(__int64, uint8) = decltype(TPlayerList_Find)(InSDKUtils::GetImageBase() + 0x15729D0);
 	static void(*TPlayerList_Add)(__int64, AFortPlayerStateAthena*) = decltype(TPlayerList_Add)(InSDKUtils::GetImageBase() + 0x156ABD0);
 
@@ -120,8 +112,6 @@ void GameMode::PlaceBotOnTeam(AFortGameModeAthena* GameMode, AFortPlayerStateAth
 
 	__int64 SquadIdPlayerList = TPlayerList_Find((int64(GameMode->GameState) + 0x1528), FPSA->SquadId);
 	TPlayerList_Add(SquadIdPlayerList, FPSA);
-
-	return Originals::PlaceBotOnTeam(GameMode, FPSA, TeamToBePutOn, BotSquadId);
 }
 
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
@@ -161,9 +151,9 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
 
 void GameMode::Setup()
 {
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
-	Utils::Virtual<AFortGameModeAthena>(0x658 / 8, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
-
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
 }
