@@ -152,7 +152,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
 	Balls_Improper(BotController);
-
 	AddStartingItemsToInventory(BotController);
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
@@ -289,15 +288,15 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
 		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
 
-		Blackboard->SetValueAsBool(IsInBusKey, 1);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, 0);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, 0);
+		Blackboard->SetValueAsBool(IsInBusKey, true);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
+	}
 
-		if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
-		{
-			PlayerState->bHasEverSkydivedFromBus = 0;
-			PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
-		}
+	if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
+	{
+		PlayerState->bHasEverSkydivedFromBus = 0;
+		PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
 	}
 }
 

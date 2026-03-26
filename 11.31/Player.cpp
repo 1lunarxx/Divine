@@ -3,14 +3,9 @@
 #include "Utils.h"
 #include "Inventory.h"
 
-void Player::ServerAcknowledgePossession(APlayerController* _PlayerController, APawn* P)
+void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerController, APawn* P)
 {
-	_PlayerController->AcknowledgedPawn = P;
-
-	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(_PlayerController);
-
-	if (PlayerController == NULL)
-		return;
+	PlayerController->AcknowledgedPawn = P;
 
     AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
 
@@ -33,7 +28,6 @@ void Player::ServerAcknowledgePossession(APlayerController* _PlayerController, A
 			}
 		}
 
-		Inventory::CreateItem(PlayerController->WorldInventory, Utils::StaticFindObject<UFortItemDefinition>("/Game/Items/ResourcePickups/WoodItemData.WoodItemData"), 50);
 		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
@@ -81,6 +75,11 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 	GameMode->RestartPlayer(PlayerController);
 
 	PlayerController->ClientSetRotation(ClientRotation, false);
+}
+
+void Player::EndSkydiving(AFortPlayerPawn* PlayerPawn)
+{
+	Originals::EndSkydiving(PlayerPawn);
 }
 
 void Player::Setup()

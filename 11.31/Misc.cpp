@@ -99,6 +99,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, GetNetMode);
+
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x32EAAD0, 0xC3);
