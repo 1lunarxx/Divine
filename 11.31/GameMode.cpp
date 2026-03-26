@@ -31,6 +31,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
 		GameMode->AISettings = Playlist->AISettings;
 
+		GameMode->AISettings->NavigationSystemConfig = UNavigationSystemConfig::GetDefaultObj();
+
 		GameState->Client_RefreshEventCalendar();
 
 		for (TSoftObjectPtr<UWorld>& AdditionalLevel : Playlist->AdditionalLevels)
