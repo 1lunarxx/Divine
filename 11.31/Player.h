@@ -11,6 +11,7 @@ class Player
 
 private:
 	static void ServerAcknowledgePossession(AFortPlayerControllerAthena*, APawn*);
+	static void ServerSendZiplineState(AFortPlayerPawn*, FZiplinePawnState&);
 	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
