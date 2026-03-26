@@ -253,7 +253,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
+	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Gameplay.BT_Phoebe_Gameplay");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
@@ -303,6 +303,7 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 UFortServerBotManagerAthena* GetCachedServerManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
 	return GameMode->ServerBotManager;
 }
 

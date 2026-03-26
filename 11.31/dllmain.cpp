@@ -30,8 +30,10 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = false; // GIsServer
 
     *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
+    *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
 
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.MaxSpawnAmount 75", nullptr);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     UGameplayStatics::OpenLevel(UWorld::GetWorld(), UKismetStringLibrary::Conv_StringToName(L"Apollo_Terrain"), false, FString());
