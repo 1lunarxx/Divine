@@ -203,11 +203,10 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, __int64
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
-<<<<<<< HEAD
 	BotController->CosmeticLoadoutBC = PlayerPawn->CosmeticLoadout;
-=======
+
 	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(55,55);
->>>>>>> babc795ab26be45a03f054d316a4094d1f1b8f4d
+
 	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
