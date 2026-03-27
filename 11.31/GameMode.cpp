@@ -27,7 +27,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->GameSession->MaxPlayers = Playlist->MaxPlayers;
 
 		GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
-		GameMode->AISettings = Playlist->AISettings;
+	//	GameMode->AISettings = Playlist->AISettings;
 
 		GameState->Client_RefreshEventCalendar();
 
@@ -51,7 +51,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
-			*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
+			//*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
 			*(bool*)(__int64(GameMode->ServerBotManager) + 0x4CE) = true;
 
 			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
@@ -215,7 +215,7 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
 
 void GameMode::Setup()
 {
-	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);

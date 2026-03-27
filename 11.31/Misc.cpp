@@ -97,7 +97,7 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
-	Utils::Patch(InSDKUtils::GetImageBase() + 0x32EAAD0, 0xC3);
+	//Utils::Patch(InSDKUtils::GetImageBase() + 0x32EAAD0, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);
 

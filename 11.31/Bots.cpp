@@ -203,10 +203,7 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, __int64
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
-	BotController->CosmeticLoadoutBC = PlayerPawn->CosmeticLoadout;
-
 	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(55,55);
-
 	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
@@ -215,11 +212,12 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
-	/*if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
-	{
-		if (AircraftComponent->CurrentAircraft == NULL)
-			AircraftComponent->EnterAircraft(InAircraft);
-	}
+	/*
+		if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
+		{
+			if (AircraftComponent->CurrentAircraft == NULL)
+				AircraftComponent->EnterAircraft(InAircraft);
+		}
 	*/
 
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
