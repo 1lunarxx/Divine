@@ -49,26 +49,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
 
-void Bots::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* World, EFNavigationSystemRunMode Mode)
-{
-	NavigationSystem->bAutoCreateNavigationData = true;
-	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
-	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
-
-	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
-}
-
-void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavigationSystemConfig, UWorld* World)
-{
-	NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
-	NavigationSystemConfig->bAutoSpawnMissingNavData = true;
-	NavigationSystemConfig->bAllowAutoRebuild = true;
-	NavigationSystemConfig->bUsesStreamedInNavLevel = true;
-
-	return Originals::CreateAndConfigureNavigationSystem(NavigationSystemConfig, World);
-}
-
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
 	if (BotController->Inventory == NULL)
@@ -123,6 +103,12 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 
 void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController)
 {
+	if (BotController->StartupInventory == NULL)
+	{
+		BotController->StartupInventory = Utils::NewObject<UFortAthenaAIBotInventoryItems>(BotController);
+		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition); // bit scuffed
+	}
+
 	if (BotController->StartupInventory)
 	{
 		for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
@@ -132,7 +118,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 		FFortItemEntry& ItemEntry = BotController->Inventory->Inventory.ReplicatedEntries[0];
 
-		ItemEntry.ItemDefinition = BotController->CosmeticLoadoutBC.Pickaxe->WeaponDefinition;
+		ItemEntry.ItemDefinition = BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition;
 
 		BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry.ItemDefinition, ItemEntry.ItemGuid);
 	}
@@ -140,8 +126,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
-	printf("dsasdasda\n");
-
+	printf("GetSquadLeader\n");
 	return BotController;
 }
 
@@ -218,19 +203,25 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, __int64
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
+<<<<<<< HEAD
+	BotController->CosmeticLoadoutBC = PlayerPawn->CosmeticLoadout;
+=======
+	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(55,55);
+>>>>>>> babc795ab26be45a03f054d316a4094d1f1b8f4d
 	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
-
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
-	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
+	/*if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
-		AircraftComponent->EnterAircraft(InAircraft);
+		if (AircraftComponent->CurrentAircraft == NULL)
+			AircraftComponent->EnterAircraft(InAircraft);
 	}
+	*/
 
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
 	{
@@ -266,8 +257,6 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 
 	if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
 	{
-		PlayerState->bInAircraft = 1;
-
 		PlayerState->bHasEverSkydivedFromBus = 0;
 		PlayerState->bHasEverSkydivedFromBusAndLanded = 0;
 	}
@@ -276,7 +265,6 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 UFortServerBotManagerAthena* GetCachedServerManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
 	return GameMode->ServerBotManager;
 }
 
@@ -285,12 +273,9 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout, (void**)&Originals::GetCosmeticLoadout);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
-
-	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }

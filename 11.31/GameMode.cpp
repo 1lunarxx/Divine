@@ -51,6 +51,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
+			*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
 			*(bool*)(__int64(GameMode->ServerBotManager) + 0x4CE) = true;
 
 			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
@@ -67,6 +68,68 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			AFortAIGoalManager* AIGoalManager = Utils::SpawnActor<AFortAIGoalManager>(FVector(), FRotator(), AFortAIGoalManager::StaticClass(), GameMode);
 
 			GameMode->AIGoalManager = AIGoalManager;
+
+			/*TArray<AActor*> Volumes;
+			UGameplayStatics::GetAllActorsOfClass(UWorld::GetWorld(), AFortPoiVolume::StaticClass(), &Volumes);
+
+			for (auto& Volume : Volumes)
+			{
+				AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+
+				FCachedPOIVolumeLocations VolumeLocations{};
+				VolumeLocations.POIVolume = POIVolume;
+
+				FVector Origin;
+				FVector BoxExtent;
+
+				Volume->GetActorBounds(false, &Origin, &BoxExtent);
+
+				for (int i = 0; i < 250; i++)
+				{
+					FVector RandomPoint = UKismetMathLibrary::RandomPointInBoundingBox(Origin, BoxExtent);
+					VolumeLocations.NavMeshLocations.Add(RandomPoint);
+				}
+
+				VolumeLocations.Flags &= ~0x1;
+				ServerBotManager->CachedValidPOIVolumeLocations.Add(VolumeLocations);
+			}
+
+			for (FNavigationPOI& Tag : ServerBotManager->OnGroundTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}
+
+			for (FBattleBusPOI& Tag : ServerBotManager->SecondaryBattleBusTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}
+
+			for (FBattleBusPOI& Tag : ServerBotManager->BattleBusTagQueryPOIList)
+			{
+				for (AActor* Volume : Volumes)
+				{
+					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					{
+						Tag.ValidPOIVolumeList.Add(POIVolume);
+					}
+				}
+			}*/
 		}
 
 		static UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus");
@@ -152,7 +215,7 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
 
 void GameMode::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);

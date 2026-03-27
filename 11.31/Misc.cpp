@@ -29,14 +29,6 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
 	}
 
-	if (GetKeyState(VK_F3))
-	{
-		if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-		{
-			GameMode->AlivePlayers[0]->Pawn->K2_TeleportTo(GameMode->ServerBotManager->PlayerBots[4].BotController->PlayerBotPawn->K2_GetActorLocation(), {});
-		}
-	}
-
 	return Originals::TickFlush(NetDriver);
 }
 

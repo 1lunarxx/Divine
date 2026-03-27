@@ -55297,7 +55297,6 @@ class UFortControllerComponent_Aircraft final : public UFortControllerComponent
 public:
 	TMulticastInlineDelegate<void()>              OnAircraftStateChange;                             // 0x00B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	uint8                                         Pad_C0[0x38];                                      // 0x00C0(0x0038)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
 public:
 	void ClientEnterAircraft(class AFortAircraft* InAircraft);
 	void ClientExitAircraft();
