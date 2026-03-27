@@ -39,9 +39,6 @@
     <ClInclude Include="Abilities.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Configuration.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Bots.h">
       <Filter>Header Files</Filter>
     </ClInclude>

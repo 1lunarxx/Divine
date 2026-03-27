@@ -11,6 +11,7 @@ class Bots
 		static inline void (*InitializeForWorld)(UNavigationSystemV1*, UWorld*, EFNavigationSystemRunMode);
 		static inline void (*CreateAndConfigureNavigationSystem)(UAthenaNavSystemConfig*, UWorld*);
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
+		static inline void (*GetCosmeticLoadout)(AFortAthenaAIBotController*, __int64, __int64);
 	};
 
 private:
@@ -25,7 +26,7 @@ private:
 
 	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
 
-	static void GetCosmeticLoadout(AFortAthenaAIBotController*);
+	static void GetCosmeticLoadout(AFortAthenaAIBotController*, __int64, __int64);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

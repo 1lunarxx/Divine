@@ -36,7 +36,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			bool bSuccess = false;
 			ULevelStreamingDynamic::LoadLevelInstanceBySoftObjectPtr(UWorld::GetWorld(), AdditionalLevel, FVector(), FRotator(), &bSuccess);
 
-			GameState->AdditionalPlaylistLevelsStreamed.Add(AdditionalLevel.ObjectID.AssetPathName);
+			if (bSuccess)
+				GameState->AdditionalPlaylistLevelsStreamed.Add(AdditionalLevel.ObjectID.AssetPathName);
 		}
 
 		GameState->OnRep_AdditionalPlaylistLevelsStreamed();
@@ -44,7 +45,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 		if (GameMode->ServerBotManager == NULL)
 		{
-			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticFindObject<UBlueprintGeneratedClass>("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C"));
+			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C"));
 
 			GameMode->ServerBotManager = ServerBotManager;
 			GameMode->ServerBotManager->CachedGameMode = GameMode;

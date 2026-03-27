@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Misc.h"
 #include "Utils.h"
-#include "Configuration.h"
 #include "Bots.h"
 
 void Misc::TickFlush(UNetDriver* NetDriver)
@@ -28,6 +27,14 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 	if (GetKeyState(VK_F2))
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
+	}
+
+	if (GetKeyState(VK_F3))
+	{
+		if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
+		{
+			GameMode->AlivePlayers[0]->Pawn->K2_TeleportTo(GameMode->ServerBotManager->PlayerBots[4].BotController->PlayerBotPawn->K2_GetActorLocation(), {});
+		}
 	}
 
 	return Originals::TickFlush(NetDriver);
@@ -105,6 +112,7 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
