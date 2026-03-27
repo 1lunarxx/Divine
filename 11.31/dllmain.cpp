@@ -27,7 +27,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     Bots::Setup();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
-    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = false; // GIsServer
+    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = true; // GIsServer
 
     *(uint8*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
 

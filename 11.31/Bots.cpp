@@ -53,16 +53,16 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 void Bots::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* World, EFNavigationSystemRunMode Mode)
 {
 	NavigationSystem->bAutoCreateNavigationData = true;
-	//NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
-	//NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
+	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
+	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
 
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
 
 void Bots::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavigationSystemConfig, UWorld* World)
 {
-	//NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	//NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
+	NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
+	NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
 	NavigationSystemConfig->bAutoSpawnMissingNavData = true;
 	NavigationSystemConfig->bAllowAutoRebuild = true;
 	NavigationSystemConfig->bUsesStreamedInNavLevel = true;
@@ -142,6 +142,7 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController)
 		return;
 
 	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes");
+	static UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic");
 
 	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
 	{
@@ -157,6 +158,51 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController)
 			}
 		}
 	}
+
+	TArray<FFortBotCosmeticItemDataTableRow*> PhoebeCharactersRows;
+
+	for (const auto& [RowName, RowValue] : PhoebeCharacters->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+		if (TableRow != NULL)
+		{
+			PhoebeCharactersRows.Add(TableRow);
+		}
+	}
+
+	int32 CharacterIndex = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharactersRows.Num() - 1);
+	FFortBotCosmeticItemDataTableRow* CharacterRow = PhoebeCharactersRows[CharacterIndex];
+
+	if (UKismetMathLibrary::RandomBoolWithWeight(CharacterRow->Weight))
+	{
+		UAthenaCharacterItemDefinition* CharacterItemDefinition = (UAthenaCharacterItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(CharacterRow->PrimaryAssetId);
+
+		if (CharacterItemDefinition && CharacterItemDefinition->HeroDefinition && CharacterItemDefinition->HeroDefinition->Specializations.IsValid())
+		{
+			for (int i = 0; i < CharacterItemDefinition->HeroDefinition->Specializations.Num(); i++)
+			{
+				UFortHeroSpecialization* Specialization = Utils::StaticLoadObject<UFortHeroSpecialization>(UKismetStringLibrary::Conv_NameToString(CharacterItemDefinition->HeroDefinition->Specializations[i].ObjectID.AssetPathName).ToString());
+
+				if (Specialization)
+				{
+					for (int j = 0; j < Specialization->CharacterParts.Num(); j++)
+					{
+						UCustomCharacterPart* CustomCharacterPart = Utils::StaticLoadObject<UCustomCharacterPart>(UKismetStringLibrary::GetDefaultObj()->Conv_NameToString(Specialization->CharacterParts[j].ObjectID.AssetPathName).ToString());
+
+						if (CustomCharacterPart)
+							PlayerState->CharacterData.Parts[(uintptr_t)CustomCharacterPart->CharacterPartType] = CustomCharacterPart;
+					}
+				}
+			}
+		}
+
+		PlayerPawn->CosmeticLoadout.Character = CharacterItemDefinition;
+	}
+
+	PlayerPawn->OnRep_CosmeticLoadout();
+
+	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
@@ -193,7 +239,7 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
-	//Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
 
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }
