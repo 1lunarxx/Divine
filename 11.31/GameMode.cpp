@@ -151,7 +151,7 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
 
 void GameMode::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);

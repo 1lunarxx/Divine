@@ -39,7 +39,7 @@ public:
     template <typename T>
     static T* StaticFindObject(const std::string& ObjectPath, SDK::UClass* Class = nullptr)
     {
-        return reinterpret_cast<T*>(((SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool))(InSDKUtils::GetImageBase() + 0x2847d60))(Class, nullptr, std::wstring(ObjectPath.begin(), ObjectPath.end()).c_str(), false));
+        return reinterpret_cast<T*>(((SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool))(InSDKUtils::GetImageBase() + 0x2E1C4B0))(Class, nullptr, std::wstring(ObjectPath.begin(), ObjectPath.end()).c_str(), false));
     }
 
     static inline void* (*StaticLoadObject_)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*) = (void* (*)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*))(InSDKUtils::GetImageBase() + 0x2849140);

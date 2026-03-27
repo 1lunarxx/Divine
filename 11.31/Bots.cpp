@@ -124,6 +124,8 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 
 AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
+	printf("GetSquadLeader\n");
+
 	return BotController;
 }
 
