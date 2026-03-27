@@ -32,14 +32,15 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 	}
 }
 
-void Player::ServerSendZiplineState(AFortPlayerPawn* FortPlayerPawn, FZiplinePawnState& ZiplinePawnState)
+void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnState& InZiplineState)
 {
-	FortPlayerPawn->ZiplineState = ZiplinePawnState;
-	auto Velocity = 0.f;
-	((void (*)(AFortPlayerPawn*))(InSDKUtils::GetImageBase() + 0x1DC5980))(FortPlayerPawn);
+	PlayerPawn->ZiplineState = InZiplineState;
+	PlayerPawn->OnRep_ZiplineState();
 
-	if (ZiplinePawnState.bJumped)
-		FortPlayerPawn->LaunchCharacterJump({ Velocity >= -750 ? fminf(Velocity, 750) : -750, Velocity >= -750 ? fminf(Velocity, 750) : -750, 1500 }, false, false, true, true);
+	auto Velocity = 0.f;
+
+	if (InZiplineState.bJumped)
+		PlayerPawn->LaunchCharacterJump({ Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, 1500 }, false, false, true, true);
 }
 
 void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerController)
@@ -90,8 +91,8 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 void Player::Setup()
 {
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
-	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
+	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 

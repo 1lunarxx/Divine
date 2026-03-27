@@ -15663,7 +15663,11 @@ public:
 	void SetEquippedArmoredInterface(TScriptInterface<class IFortArmoredInterface> InInterface) const;
 	bool ShouldDriverHaveReticle() const;
 	float TimeFromJumpApex() const;
-
+public:
+	void OnRep_ZiplineState()
+	{
+		((void (*)(AFortPlayerPawn*))(InSDKUtils::GetImageBase() + 0x1DC5980))(this);
+	}
 public:
 	static class UClass* StaticClass()
 	{
