@@ -6,7 +6,6 @@ void Navigation::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorl
 {
 	NavigationSystem->bAutoCreateNavigationData = true;
 	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
-	NavigationSystem->SupportedAgentsMask.bSupportsAgent3 = 1;
 
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
@@ -24,6 +23,6 @@ void Navigation::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* Navi
 
 void Navigation::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }

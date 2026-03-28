@@ -5,7 +5,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator) + 0x428) = 1; // Match Assignment
+	*(uint8*)((__int64)(BotMutator) + 0x428) = 30; // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -45,6 +45,8 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
+
+	std::cout << "GAS: " << (int)BotController->Blackboard->GetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhaseStep")) << std::endl;
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
@@ -124,9 +126,8 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	}
 }
 
-AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
+AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
-	printf("GetSquadLeader\n");
 	return BotController;
 }
 
@@ -212,33 +213,19 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
-	/*
-		if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
-		{
-			if (AircraftComponent->CurrentAircraft == NULL)
-				AircraftComponent->EnterAircraft(InAircraft);
-		}
-	*/
+	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
+	{
+		//AircraftComponent->ServerAttemptAircraftJump(FRotator());
+	}
 
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
 	{
-		const float ThankBusDriverProbability = BotManager->ThankBusDriverProbability.Evaluate();
+		const float MinDelay = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMinTime, 0);
+		const float MaxDelay = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMaxTime, 0);
 
-		if (UKismetMathLibrary::RandomFloat() <= ThankBusDriverProbability)
-		{
-			const float ThankBusDriverMaxTime = BotManager->ThankBusDriverMaxTime.Evaluate();
-			const float ThankBusDriverMinTime = BotManager->ThankBusDriverMinTime.Evaluate();
+		const float Delay = UKismetMathLibrary::RandomIntegerInRange(MinDelay, MaxDelay);
 
-			const float ThankBusDriverTime = UKismetMathLibrary::FMax(UKismetMathLibrary::RandomFloatInRange(ThankBusDriverMinTime, ThankBusDriverMaxTime), 0.f);
-
-			FLatentActionInfo LatentInfo{};
-			LatentInfo.Linkage = 0;
-			LatentInfo.UUID = UKismetMathLibrary::RandomFloat();
-			LatentInfo.ExecutionFunction = UKismetStringLibrary::Conv_StringToName(L"ThankBusDriver");
-			LatentInfo.CallbackTarget = BotController;
-
-			UKismetSystemLibrary::Delay(UWorld::GetWorld(), ThankBusDriverTime, LatentInfo);
-		}
+		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), Delay, false, 0.0, 0.0f);
 	}
 
 	if (UBlackboardComponent* Blackboard = BotController->Blackboard)

@@ -10,20 +10,6 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 		ReplicationDriver->ServerReplicateActors();
 	}
 
-	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-	{
-		AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
-
-		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
-		{
-			for (FFortServerBotInfo& PlayerBot : ServerBotManager->PlayerBots)
-			{
-				PlayerBot.BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhaseStep"), (uint8)GameState->GamePhaseStep);
-				PlayerBot.BotController->Blackboard->SetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhase"), (uint8)GameState->GamePhase);
-			}
-		}
-	}
-
 	if (GetKeyState(VK_F2))
 	{
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
@@ -97,13 +83,15 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
-	//Utils::Patch(InSDKUtils::GetImageBase() + 0x32EAAD0, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);
+
+	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x16206C0, ForceRetTrue);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
 

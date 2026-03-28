@@ -21,7 +21,7 @@ private:
 
 	static void GetCosmeticLoadout(AFortAthenaAIBotController*, __int64, __int64);
 
-	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
+	//static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

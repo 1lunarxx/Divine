@@ -19,6 +19,7 @@ void Abilities::ConsumeAllReplicatedData(UAbilitySystemComponent* AbilitySystemC
 void Abilities::InternalServerTryActivateAbility(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle Handle, bool InputPressed, const FPredictionKey& PredictionKey, const FGameplayEventData* TriggerEventData)
 {
 	FGameplayAbilitySpec* Spec = AbilitySystemComponent->FindAbilitySpecFromHandle(Handle);
+
 	if (Spec == NULL)
 	{
 		// Can potentially happen in race conditions where client tries to activate ability that is removed server side before it is received.

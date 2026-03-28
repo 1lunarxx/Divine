@@ -27,7 +27,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->GameSession->MaxPlayers = Playlist->MaxPlayers;
 
 		GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
-	//	GameMode->AISettings = Playlist->AISettings;
+		GameMode->AISettings = Playlist->AISettings;
 
 		GameState->Client_RefreshEventCalendar();
 
