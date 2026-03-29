@@ -88,7 +88,6 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 	PlayerController->ClientSetRotation(ClientRotation, false);
 }
 
-
 void Player::Setup()
 {
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
