@@ -107,7 +107,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	{
 		BotController->StartupInventory = Utils::NewObject<UFortAthenaAIBotInventoryItems>(BotController);
 
-		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition); // bit scuffed
+		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition);
 	}
 
 	if (BotController->StartupInventory)
@@ -218,12 +218,12 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
 	{
-		const float MinDelay = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMinTime, 0);
-		const float MaxDelay = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMaxTime, 0);
+		const float ThankBusDriverMinTime = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMinTime, 0);
+		const float ThankBusDriverMaxTime = UFortScalableFloatUtils::GetValueAtLevel(BotManager->ThankBusDriverMaxTime, 0);
 
-		const float Delay = UKismetMathLibrary::RandomIntegerInRange(MinDelay, MaxDelay);
+		const float ThankBusDriverTime = UKismetMathLibrary::RandomIntegerInRange(ThankBusDriverMinTime, ThankBusDriverMaxTime);
 
-		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), Delay, false, 0.0, 0.0f);
+		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), ThankBusDriverTime, false, 0.0, 0.0f);
 	}
 
 	if (UBlackboardComponent* Blackboard = BotController->Blackboard)
@@ -259,6 +259,5 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout, (void**)&Originals::GetCosmeticLoadout);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
-
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);
 }
