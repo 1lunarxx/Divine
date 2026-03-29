@@ -67,7 +67,7 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	static void(*ConstructSpec)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructSpec)(InSDKUtils::GetImageBase() + 0xB9AF40);
 	static void(*GiveAbilityAndActivateOnce)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec*) = decltype(GiveAbilityAndActivateOnce)(InSDKUtils::GetImageBase() + 0xB76F90);
 
-	ConstructSpec(&AbilitySpec, reinterpret_cast<UGameplayAbility*>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
+	ConstructSpec(&AbilitySpec, Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
 	GiveAbilityAndActivateOnce(PlayerState->AbilitySystemComponent, &AbilitySpec.Handle, &AbilitySpec);
 }
 
