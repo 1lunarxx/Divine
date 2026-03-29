@@ -16,6 +16,7 @@ private:
 	static void HandleStartingNewPlayer(AGameModeBase*, APlayerController*);
 
 	static APawn* SpawnDefaultPawnFor(AFortGameModeAthena*, AFortPlayerControllerAthena*, AActor*);
+	static EFortTeam PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller);
 public:
 	static void Setup();
 };

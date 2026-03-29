@@ -12,7 +12,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultSolo.Playlist_DefaultSolo");
+		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultDuo.Playlist_DefaultDuo");
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -211,15 +211,32 @@ void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerControlle
 	return Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
 }
 
-APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer, AActor* StartSpot) {
+APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer, AActor* StartSpot)
+{
     return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
+}
+
+EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) {
+	static uint8_t Team = 3;
+	static uint8_t NumPlayersOnTeam = 0;
+
+	uint8_t Ret = Team;
+
+	if (++NumPlayersOnTeam >= ((AFortGameStateAthena*)GameMode->GameState)->CurrentPlaylistInfo.BasePlaylist->MaxSquadSize)
+	{
+		Team++;
+		NumPlayersOnTeam = 0;
+	}
+
+	return EFortTeam(Ret);
 }
 
 void GameMode::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
-
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
+
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 }
