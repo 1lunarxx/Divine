@@ -19,9 +19,9 @@ private:
 	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
 
-	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController);
-
 	static void GetCosmeticLoadout(AFortAthenaAIBotController*, void*, void*);
+
+	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();
