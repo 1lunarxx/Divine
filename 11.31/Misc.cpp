@@ -88,9 +88,10 @@ void Misc::Setup()
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
+
+	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
 

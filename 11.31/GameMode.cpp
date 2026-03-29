@@ -51,7 +51,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
-			//*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
 			*(bool*)(__int64(GameMode->ServerBotManager) + 0x4CE) = true;
 
 			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
@@ -74,9 +73,10 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			for (auto& Volume : Volumes)
 			{
-				AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+				AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
 
 				FCachedPOIVolumeLocations VolumeLocations{};
+
 				VolumeLocations.POIVolume = POIVolume;
 
 				FVector Origin;
@@ -98,7 +98,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			{
 				for (AActor* Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
 
 					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
@@ -111,7 +111,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			{
 				for (AActor* Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
+
 					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
 						Tag.ValidPOIVolumeList.Add(POIVolume);
@@ -123,7 +124,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			{
 				for (AActor* Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = static_cast<AFortPoiVolume*>(Volume);
+					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
+
 					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
 						Tag.ValidPOIVolumeList.Add(POIVolume);
@@ -168,14 +170,14 @@ void GameMode::PlaceBotOnTeam(AFortGameModeAthena* GameMode, AFortPlayerStateAth
 {
 	Originals::PlaceBotOnTeam(GameMode, FPSA, TeamToBePutOn, BotSquadId);
 
-	static __int64(*TPlayerList_Find)(__int64, uint8) = decltype(TPlayerList_Find)(InSDKUtils::GetImageBase() + 0x15729D0);
-	static void(*TPlayerList_Add)(__int64, AFortPlayerStateAthena*) = decltype(TPlayerList_Add)(InSDKUtils::GetImageBase() + 0x156ABD0);
+	static TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* (*Find)(__int64, uint8) = decltype(Find)(InSDKUtils::GetImageBase() + 0x15729D0);
+	static void (*Add)(TArray<TWeakObjectPtr<AFortPlayerStateAthena>>*, AFortPlayerStateAthena*) = decltype(Add)(InSDKUtils::GetImageBase() + 0x156ABD0);
 
-	__int64 TeamIdxPlayerList = TPlayerList_Find((int64(GameMode->GameState) + 0x14F0), FPSA->TeamIndex);
-	TPlayerList_Add(TeamIdxPlayerList, FPSA);
+	TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* TeamIdxPlayerList = Find((int64(GameMode->GameState) + 0x14F0), FPSA->TeamIndex);
+	Add(TeamIdxPlayerList, FPSA);
 
-	__int64 SquadIdPlayerList = TPlayerList_Find((int64(GameMode->GameState) + 0x1528), FPSA->SquadId);
-	TPlayerList_Add(SquadIdPlayerList, FPSA);
+	TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* SquadIdPlayerList = Find((int64(GameMode->GameState) + 0x1528), FPSA->SquadId);
+	Add(SquadIdPlayerList, FPSA);
 }
 
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
