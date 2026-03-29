@@ -9,7 +9,7 @@ class Bots
 		static inline void (*InitializeMMRInfos)(AFortAthenaMutator_Bots*);
 		static inline void (*OnBotSpawned)(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
-		static inline void (*GetCosmeticLoadout)(AFortAthenaAIBotController*, __int64, __int64);
+		static inline void (*GetCosmeticLoadout)(AFortAthenaAIBotController*, void*, void*);
 	};
 
 private:
@@ -19,9 +19,9 @@ private:
 	static void InitializeInventory(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
 
-	static void GetCosmeticLoadout(AFortAthenaAIBotController*, __int64, __int64);
+	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController);
 
-	//static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
+	static void GetCosmeticLoadout(AFortAthenaAIBotController*, void*, void*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

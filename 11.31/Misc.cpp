@@ -59,9 +59,9 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 
 	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
 	{
-		if (UFortServerBotManagerAthena* BotManager = GameMode->ServerBotManager)
+		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
 		{
-			for (FFortServerBotInfo& PlayerBot : BotManager->PlayerBots)
+			for (const FFortServerBotInfo& PlayerBot : ServerBotManager->PlayerBots)
 			{
 				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
 
@@ -85,13 +85,12 @@ void Misc::Setup()
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);
-
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x16206C0, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
 

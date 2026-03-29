@@ -69,7 +69,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			GameMode->AIGoalManager = AIGoalManager;
 
-			/*TArray<AActor*> Volumes;
+			TArray<AActor*> Volumes;
 			UGameplayStatics::GetAllActorsOfClass(UWorld::GetWorld(), AFortPoiVolume::StaticClass(), &Volumes);
 
 			for (auto& Volume : Volumes)
@@ -129,7 +129,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 						Tag.ValidPOIVolumeList.Add(POIVolume);
 					}
 				}
-			}*/
+			}
 		}
 
 		static UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus");

@@ -5,7 +5,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator) + 0x428) = 30; // CachedHumanPlayerCount
+	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 30); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -45,8 +45,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
-
-	std::cout << "GAS: " << (int)BotController->Blackboard->GetValueAsEnum(UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_GamePhaseStep")) << std::endl;
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
@@ -108,6 +106,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	if (BotController->StartupInventory == NULL)
 	{
 		BotController->StartupInventory = Utils::NewObject<UFortAthenaAIBotInventoryItems>(BotController);
+
 		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition); // bit scuffed
 	}
 
@@ -126,12 +125,12 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	}
 }
 
-AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController)
+AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
 	return BotController;
 }
 
-void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, __int64 a2, __int64 a3)
+void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a2, void* a3)
 {
 	Originals::GetCosmeticLoadout(BotController, a2, a3);
 
@@ -204,8 +203,7 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, __int64
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
-	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(55,55);
-	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
+	//BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
@@ -215,7 +213,7 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
-		//AircraftComponent->ServerAttemptAircraftJump(FRotator());
+		AircraftComponent->EnterAircraft(InAircraft);
 	}
 
 	if (UFortServerBotManagerAthena* BotManager = BotController->CachedBotManager)
@@ -249,6 +247,7 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 UFortServerBotManagerAthena* GetCachedServerManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
 	return GameMode->ServerBotManager;
 }
 
@@ -257,8 +256,8 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
-
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout, (void**)&Originals::GetCosmeticLoadout);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);

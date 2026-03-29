@@ -10,19 +10,7 @@ void Navigation::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorl
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }
 
-void Navigation::CreateAndConfigureNavigationSystem(UAthenaNavSystemConfig* NavigationSystemConfig, UWorld* World)
-{
-	NavigationSystemConfig->bPrioritizeNavigationAroundSpawners = true;
-	NavigationSystemConfig->bSupportRuntimeNavmeshDisabling = false;
-	NavigationSystemConfig->bAutoSpawnMissingNavData = true;
-	NavigationSystemConfig->bAllowAutoRebuild = true;
-	NavigationSystemConfig->bUsesStreamedInNavLevel = true;
-
-	return Originals::CreateAndConfigureNavigationSystem(NavigationSystemConfig, World);
-}
-
 void Navigation::Setup()
 {
-	//Utils::Hook(InSDKUtils::GetImageBase() + 0x3D875A0, CreateAndConfigureNavigationSystem, (void**)&Originals::CreateAndConfigureNavigationSystem);
 	Utils::Virtual<UAthenaNavSystem>(0x50, InitializeForWorld, (void**)&Originals::InitializeForWorld);
 }
