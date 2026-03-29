@@ -260,9 +260,9 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 			if (KillerPlayerState && KillerPlayerState != PlayerState)
 			{
 				KillerPlayerState->KillScore++;
+				KillerPlayerState->OnRep_Kills();
 
 				KillerPlayerState->ClientReportKill(PlayerState);
-				KillerPlayerState->OnRep_Kills();
 
 				if (KillerPlayerState->PlayerTeam)
 				{
@@ -274,9 +274,9 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 							continue;
 
 						TeamMemberState->TeamKillScore++;
-
 						TeamMemberState->OnRep_TeamKillScore();
-						TeamMemberState->ClientReportTeamKill(1);
+
+						TeamMemberState->ClientReportTeamKill(TeamMemberState->TeamKillScore);
 					}
 				}
 			}
