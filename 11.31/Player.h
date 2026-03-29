@@ -5,6 +5,7 @@ class Player
 {
 private:
 	static void ServerAcknowledgePossession(AFortPlayerControllerAthena*, APawn*);
+	static void ServerPlayEmoteItem(AFortPlayerControllerAthena* PC, UFortItemDefinition* EmoteAsset, float);
 	static void ServerSendZiplineState(AFortPlayerPawn*, FZiplinePawnState&);
 	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
