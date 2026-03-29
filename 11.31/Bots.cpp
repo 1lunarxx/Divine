@@ -82,9 +82,7 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 				SlotItem.FortItem = WorldItem;
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
-
-				static EFortWeaponType(*FindWeaponType)(UFortItemDefinition*) = decltype(FindWeaponType)(InSDKUtils::GetImageBase() + 0x20E54E0);
-				SlotItem.WeaponType = FindWeaponType(ItemDefinition);
+				SlotItem.WeaponType = EFortWeaponType::SMG;
 
 				break;
 			}
@@ -214,6 +212,78 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a
 	PlayerPawn->OnRep_CosmeticLoadout();
 }
 
+void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
+{
+	Originals::OnPossessedPawnDied(BotController, DamagedActor, Damage, InstigatedBy, DamageCauser, HitLocation, PrimitiveComponent, BoneName, Momentum);
+
+	if (InstigatedBy == NULL)
+		return;
+
+	AFortPlayerPawnAthena* PlayerBotPawn = BotController->PlayerBotPawn;
+
+	if (PlayerBotPawn == NULL)
+		return;
+
+	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
+
+	if (GameState == NULL)
+		return;
+
+	if (BotController->Inventory)
+	{
+		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
+		{
+			if (Entry.ItemDefinition && !Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+			{
+				Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination, true, true);
+			}
+		}
+	}
+
+	if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState))
+	{
+		AFortPlayerStateAthena* KillerPlayerState = Cast<AFortPlayerStateAthena>(InstigatedBy->PlayerState);
+
+		PlayerState->PawnDeathLocation = PlayerBotPawn->K2_GetActorLocation();
+
+		if (BotController->bIsAnAthenaGameParticipant)
+		{
+			PlayerState->DeathInfo.bDBNO = BotController->PlayerBotPawn->bWasDBNOOnDeath;
+			PlayerState->DeathInfo.DeathLocation = BotController->PlayerBotPawn->K2_GetActorLocation();
+			PlayerState->DeathInfo.DeathTags = BotController->PlayerBotPawn->DeathTags;
+			PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(FGameplayTagContainer(), PlayerState->DeathInfo.bDBNO);
+			PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : PlayerState;
+			PlayerState->DeathInfo.bInitialized = true;
+
+			PlayerState->OnRep_DeathInfo();
+
+			if (KillerPlayerState && KillerPlayerState != PlayerState)
+			{
+				KillerPlayerState->KillScore++;
+
+				KillerPlayerState->ClientReportKill(PlayerState);
+				KillerPlayerState->OnRep_Kills();
+
+				if (KillerPlayerState->PlayerTeam)
+				{
+					for (AController* TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
+					{
+						AFortPlayerStateAthena* TeamMemberState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
+
+						if (TeamMemberState == NULL)
+							continue;
+
+						TeamMemberState->TeamKillScore++;
+
+						TeamMemberState->OnRep_TeamKillScore();
+						TeamMemberState->ClientReportTeamKill(1);
+					}
+				}
+			}
+		}
+	}
+}
+
 AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
 	return BotController;
@@ -268,6 +338,7 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, GetCosmeticLoadout, (void**)&Originals::GetCosmeticLoadout);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetCachedServerManager);

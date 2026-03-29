@@ -10,6 +10,7 @@ class Bots
 		static inline void (*OnBotSpawned)(AFortAthenaMutator_Bots*, AFortPlayerPawn*);
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 		static inline void (*GetCosmeticLoadout)(AFortAthenaAIBotController*, void*, void*);
+		static inline void (*OnPossessedPawnDied)(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 	};
 
 private:
@@ -20,6 +21,7 @@ private:
 	static void AddStartingItemsToInventory(AFortAthenaAIBotController*);
 
 	static void GetCosmeticLoadout(AFortAthenaAIBotController*, void*, void*);
+	static void OnPossessedPawnDied(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 
 	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController);
 public:

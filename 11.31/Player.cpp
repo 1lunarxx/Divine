@@ -131,7 +131,7 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
 	Pawn->bMovingEmote = false;
 
-	Originals::MovingEmoteStopped(Pawn);
+	return Originals::MovingEmoteStopped(Pawn);
 }
 
 void Player::Setup()
@@ -141,9 +141,9 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
+
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
-
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);
 }
