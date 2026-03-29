@@ -32,41 +32,43 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 	}
 }
 
-void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* Controller, UFortItemDefinition* EmoteAsset, float)
+void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, UFortItemDefinition* EmoteAsset, float EmoteRandomNumber)
 {
-	auto Pawn = Controller->MyFortPawn;
-	static UClass* AbilityClass = Utils::StaticLoadObject<UClass>("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C");
-	FGameplayAbilitySpec AbilitySpec{};
-	using AbilitySpecCtor_t = void(*)(SDK::FGameplayAbilitySpec*, SDK::UGameplayAbility*, int, int, SDK::UObject*);
-	using GiveAbilityOnce_t = FGameplayAbilitySpecHandle(*)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec);
-	static AbilitySpecCtor_t AbilitySpecCtor = reinterpret_cast<AbilitySpecCtor_t>((uintptr_t)GetModuleHandleW(nullptr) + 0xB9AF40);
-	static GiveAbilityOnce_t GiveAbilityAndActivateOnce = reinterpret_cast<GiveAbilityOnce_t>((uintptr_t)GetModuleHandleW(nullptr) + 0xB76F90);
+	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
-	auto PlayerState = reinterpret_cast<AFortPlayerStateAthena*>(Controller->PlayerState);
-	AbilitySpecCtor(&AbilitySpec, DefaultAbility, 1, -1, EmoteAsset);
-	auto ASC = PlayerState->AbilitySystemComponent;
-	UClass* DanceAbility = NULL;
-
-	if (!Controller || !EmoteAsset)
+	if (PlayerPawn == NULL)
 		return;
 
-	if (!PlayerState)
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
 		return;
+
+	if (EmoteAsset == NULL)
+		return;
+
+	static UClass* AbilityClass = NULL;
 
 	if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast< UAthenaDanceItemDefinition>(EmoteAsset))
 	{
-		Pawn->bMovingEmote = DanceItemDefinition->bMovingEmote;
-		Pawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
-		Pawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
+		AbilityClass = DanceItemDefinition->CustomDanceAbility.Get() ? DanceItemDefinition->CustomDanceAbility.Get() : Utils::StaticFindObject<UClass>("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C");
 
-		DanceAbility = DanceItemDefinition->CustomDanceAbility.Get() ? DanceItemDefinition->CustomDanceAbility.Get() : StaticFindObject<UClass>("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C");
+		PlayerPawn->bMovingEmote = DanceItemDefinition->bMovingEmote;
+		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
+		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
 	}
-	else 	if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
+	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
 	{
-		static UClass* SprayAbilityClass = Utils::StaticFindObject<UClass>("/Game/Abilities/Sprays/GAB_Spray_Generic.GAB_Spray_Generic_C");
-		DanceAbility = SprayAbilityClass;
+		AbilityClass = Utils::StaticFindObject<UClass>("/Game/Abilities/Sprays/GAB_Spray_Generic.GAB_Spray_Generic_C");
 	}
-	GiveAbilityAndActivateOnce(ASC, &AbilitySpec.Handle, AbilitySpec);
+
+	FGameplayAbilitySpec AbilitySpec{};
+
+	static void(*ConstructSpec)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructSpec)(InSDKUtils::GetImageBase() + 0xB9AF40);
+	static void(*GiveAbilityAndActivateOnce)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec*) = decltype(GiveAbilityAndActivateOnce)(InSDKUtils::GetImageBase() + 0xB76F90);
+
+	ConstructSpec(&AbilitySpec, reinterpret_cast<UGameplayAbility*>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
+	GiveAbilityAndActivateOnce(PlayerState->AbilitySystemComponent, &AbilitySpec.Handle, &AbilitySpec);
 }
 
 void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnState& InZiplineState)

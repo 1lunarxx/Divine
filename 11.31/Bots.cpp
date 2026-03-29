@@ -41,11 +41,12 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 			BotController->CacheLootingSkillSet = LootSkill;
 	}
 
-	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotAttackingSkillSet::StaticClass());
 	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup");
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
+
+	BotController->Skill = 100.0f;
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }
