@@ -104,27 +104,12 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	if (BotController->StartupInventory == NULL)
 	{
 		BotController->StartupInventory = Utils::NewObject<UFortAthenaAIBotInventoryItems>(BotController);
-
 		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition);
-		BotController->StartupInventory->Items.Add(Utils::StaticLoadObject<UFortWeaponRangedItemDefinition>("/Game/Athena/Items/Weapons/WID_Pistol_Scavenger_Athena_UC_Ore_T03.WID_Pistol_Scavenger_Athena_UC_Ore_T03"));
 	}
 
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		UFortWorldItem* WorldItem = CreateItem(BotController, Item, 1, 99999);
-
-		if (WorldItem->IsA(UFortWeaponRangedItemDefinition::StaticClass()))
-		{
-			UFortWeaponRangedItemDefinition* Weapon = Cast<UFortWeaponRangedItemDefinition>(WorldItem);
-
-			if (UFortWorldItemDefinition* Ammo = Weapon->GetAmmoWorldItemDefinition_BP())
-			{
-				if (Ammo != Weapon)
-				{
-					CreateItem(BotController, Ammo, 2000);
-				}
-			}
-		}
+		CreateItem(BotController, Item, 1, 99999);
 	}
 
 	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)
@@ -229,6 +214,11 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 	if (GameState == NULL)
 		return;
 
+	AFortPlayerStateAthena* KillerPlayerState = Cast<AFortPlayerStateAthena>(InstigatedBy->PlayerState);
+
+	if (KillerPlayerState == NULL)
+		return;
+
 	if (BotController->Inventory)
 	{
 		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
@@ -242,8 +232,6 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 
 	if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState))
 	{
-		AFortPlayerStateAthena* KillerPlayerState = Cast<AFortPlayerStateAthena>(InstigatedBy->PlayerState);
-
 		PlayerState->PawnDeathLocation = PlayerBotPawn->K2_GetActorLocation();
 
 		if (BotController->bIsAnAthenaGameParticipant)
@@ -257,7 +245,7 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 
 			PlayerState->OnRep_DeathInfo();
 
-			if (KillerPlayerState && KillerPlayerState != PlayerState)
+			if (KillerPlayerState != PlayerState)
 			{
 				KillerPlayerState->KillScore++;
 				KillerPlayerState->OnRep_Kills();
@@ -266,7 +254,7 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 
 				if (KillerPlayerState->PlayerTeam)
 				{
-					for (AController* TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
+					for (auto& TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
 					{
 						AFortPlayerStateAthena* TeamMemberState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
 

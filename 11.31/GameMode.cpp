@@ -182,20 +182,24 @@ void GameMode::PlaceBotOnTeam(AFortGameModeAthena* GameMode, AFortPlayerStateAth
 
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
 {
+	Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
+
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(NewPlayer->PlayerState);
 
 	if (PlayerState == NULL)
-		return Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
+		return;
 
 	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState);
 
 	if (GameState == NULL)
-		return Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
+		return;
 
 	PlayerState->SquadId = PlayerState->TeamIndex - 3;
 	PlayerState->OnRep_SquadId();
 
-	FGameMemberInfo MemberInfo{};
+	PlayerState->WorldPlayerId = PlayerState->PlayerID;
+
+	FGameMemberInfo MemberInfo = FGameMemberInfo{};
 
 	MemberInfo.ReplicationID = -1;
 	MemberInfo.ReplicationKey = -1;
@@ -208,7 +212,7 @@ void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerControlle
 	GameState->GameMemberInfoArray.Members.Add(MemberInfo);
 	GameState->GameMemberInfoArray.MarkArrayDirty();
 
-	return Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
+	GameState->NotifyGameMemberAdded(PlayerState->SquadId, PlayerState->TeamIndex, PlayerState->UniqueId);
 }
 
 APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer, AActor* StartSpot)
@@ -216,19 +220,28 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
     return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
 
-EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) {
+EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) 
+{
 	static uint8_t Team = 3;
-	static uint8_t NumPlayersOnTeam = 0;
+	static uint8_t PlayersOnTeam = 0;
 
-	uint8_t Ret = Team;
+	uint8_t ChosenTeam = Team;
 
-	if (++NumPlayersOnTeam >= ((AFortGameStateAthena*)GameMode->GameState)->CurrentPlaylistInfo.BasePlaylist->MaxSquadSize)
+	if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState))
 	{
-		Team++;
-		NumPlayersOnTeam = 0;
+		UFortPlaylistAthena* Playlist = GameState->CurrentPlaylistInfo.BasePlaylist;
+
+		if (Playlist == NULL)
+			return EFortTeam::MAX;
+
+		if (++PlayersOnTeam >= Playlist->MaxSquadSize)
+		{
+			Team++;
+			PlayersOnTeam = 0;
+		}
 	}
 
-	return EFortTeam(Ret);
+	return EFortTeam(ChosenTeam);
 }
 
 void GameMode::Setup()

@@ -85,6 +85,7 @@ void Misc::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClie
 		return;
 
 	FFortWorldMarkerData WorldMarkerData{};
+
 	((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(&WorldMarkerData);
 
 	WorldMarkerData.Owner = PlayerState;
@@ -95,6 +96,7 @@ void Misc::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClie
 	WorldMarkerData.bHasCustomDisplayInfo = false;
 
 	FMarkerID MarkerID{};
+
 	MarkerID.PlayerID = PlayerState->PlayerID;
 	MarkerID.InstanceID = MarkerRequest.InstanceID;
 
@@ -166,8 +168,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 
-	Utils::Virtual<UAthenaMarkerComponent>(0x3F8 / 8, ServerAddMapMarker);
-	Utils::Virtual<UAthenaMarkerComponent>(0x3E8 / 8, ServerRemoveMapMarker);
+	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
+	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);

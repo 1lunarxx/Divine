@@ -51748,7 +51748,12 @@ public:
 	bool IsTeleportToCreativeHubAllowed(const class AFortPlayerState* PlayerState) const;
 	bool ShouldDBNOTeamInfoFlash() const;
 	bool ShouldEnterSpawningStartup() const;
-
+public:
+	void NotifyGameMemberAdded(uint8 SquadId, uint8 TeamIndex, FUniqueNetIdRepl UniqueId)
+	{
+		static void(*_NotifyGameMemberAdded)(AFortGameStateAthena*, uint8, uint8, FUniqueNetIdRepl) = decltype(_NotifyGameMemberAdded)(InSDKUtils::GetImageBase() + 0x1584F40);
+		_NotifyGameMemberAdded(this, SquadId, TeamIndex, UniqueId);
+	}
 public:
 	static class UClass* StaticClass()
 	{

@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "Utils.h"
 #include "Inventory.h"
+#include "SDK/SDK/GAB_AthenaDBNO_classes.hpp"
 
 void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerController, APawn* P)
 {
@@ -130,8 +131,54 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
 	Pawn->bMovingEmote = false;
-
 	return Originals::MovingEmoteStopped(Pawn);
+}
+
+void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController* EventInstigator)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(PlayerPawn->Controller);
+
+	if (PlayerController == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	FGameplayEventData EventData = FGameplayEventData{};
+
+	EventData.EventTag = PlayerPawn->EventReviveTag;
+	EventData.ContextHandle = PlayerState->AbilitySystemComponent->MakeEffectContext();
+	EventData.Instigator = EventInstigator;
+	EventData.Target = PlayerPawn;
+	EventData.TargetData = UAbilitySystemBlueprintLibrary::AbilityTargetDataFromActor(PlayerPawn);
+	EventData.TargetTags = PlayerPawn->GameplayTags;
+
+	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(PlayerPawn, PlayerPawn->EventReviveTag, EventData);
+
+	for (FGameplayAbilitySpec& AbilitySpec : PlayerState->AbilitySystemComponent->ActivatableAbilities.Items)
+	{
+		if (AbilitySpec.Ability->Class == UGAB_AthenaDBNO_C::StaticClass())
+		{
+			PlayerState->AbilitySystemComponent->ServerCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
+			PlayerState->AbilitySystemComponent->ServerEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo, AbilitySpec.ActivationInfo.PredictionKeyWhenActivated);
+			PlayerState->AbilitySystemComponent->ClientCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
+			PlayerState->AbilitySystemComponent->ClientEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
+
+			break;
+		}
+	}
+
+	PlayerPawn->bIsDBNO = false;
+	PlayerPawn->OnRep_IsDBNO();
+
+	PlayerPawn->DBNORevivalStacking = 0;
+
+	PlayerPawn->SetHealth(30);
+
+	PlayerController->RespawnPlayerAfterDeath(false);
+	PlayerController->ClientOnPawnRevived(EventInstigator);
 }
 
 void Player::Setup()
@@ -141,6 +188,7 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
+	Utils::Virtual<AFortPlayerPawnAthena>(0x1BF, ServerReviveFromDBNO);
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
