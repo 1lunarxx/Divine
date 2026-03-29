@@ -12,7 +12,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_Bots_DefaultDuo.Playlist_Bots_DefaultDuo");
+		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultDuo_vs_Phoebe.Playlist_DefaultDuo_vs_Phoebe");
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 

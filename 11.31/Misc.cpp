@@ -72,6 +72,89 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 	}
 }
 
+void Misc::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClientMarkerRequest& MarkerRequest)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(MarkerComponent->GetOwner());
+
+	if (PlayerController == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	FFortWorldMarkerData WorldMarkerData{};
+	((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(&WorldMarkerData);
+
+	WorldMarkerData.Owner = PlayerState;
+	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
+	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
+	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
+	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
+	WorldMarkerData.bHasCustomDisplayInfo = false;
+
+	FMarkerID MarkerID{};
+	MarkerID.PlayerID = PlayerState->PlayerID;
+	MarkerID.InstanceID = MarkerRequest.InstanceID;
+
+	WorldMarkerData.MarkerID = MarkerID;
+
+	if (MarkerRequest.MarkedActor)
+	{
+		((char (*)(UAthenaMarkerComponent*, AActor*, FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x1642450))(MarkerComponent, MarkerRequest.MarkedActor, &WorldMarkerData);
+
+		if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
+		{
+			WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
+			WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
+		}
+	}
+
+	for (auto& TeamMember_ : PlayerState->PlayerTeam->TeamMembers)
+	{
+		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(TeamMember_);
+
+		if (TeamMember_ == NULL || TeamMember == PlayerController)
+			continue;
+
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+
+		if (TeamMemberMarkerComponent == NULL)
+			continue;
+
+		TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
+	}
+}
+
+void Misc::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMarkerID MarkerID, ECancelMarkerReason CancelReason)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(MarkerComponent->GetOwner());
+
+	if (PlayerController == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	for (auto& TeamMember_ : PlayerState->PlayerTeam->TeamMembers)
+	{
+		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(TeamMember_);
+
+		if (TeamMember_ == NULL || TeamMember == PlayerController)
+			continue;
+
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+
+		if (TeamMemberMarkerComponent == NULL)
+			continue;
+
+		TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
+	}
+}
+
 static int ForceRetTrue()
 {
 	return 1;
@@ -82,6 +165,9 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
+
+	Utils::Virtual<UAthenaMarkerComponent>(0x3F8 / 8, ServerAddMapMarker);
+	Utils::Virtual<UAthenaMarkerComponent>(0x3E8 / 8, ServerRemoveMapMarker);
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x27C47A0, 0xC3);

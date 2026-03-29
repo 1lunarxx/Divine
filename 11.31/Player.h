@@ -16,6 +16,7 @@ private:
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
 	static void MovingEmoteStopped(AFortPawn*);
+
 public:
 	static void Setup();
 };
