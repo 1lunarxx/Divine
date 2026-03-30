@@ -12,7 +12,10 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultDuo"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
+
+		Playlist->bAllowJoinInProgress = true;
+		Playlist->JoinInProgressMatchType = UKismetTextLibrary::Conv_StringToText(L"Creative");
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -186,7 +189,7 @@ void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerControlle
 	if (GameState == NULL)
 		return;
 
-	PlayerState->SquadId = PlayerState->TeamIndex - 3;
+	PlayerState->SquadId = 19999999 - 3;
 	PlayerState->OnRep_SquadId();
 
 	PlayerState->WorldPlayerId = PlayerState->PlayerID;
@@ -198,13 +201,13 @@ void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerControlle
 	MemberInfo.MostRecentArrayReplicationKey = -1;
 
 	MemberInfo.SquadId = PlayerState->SquadId;
-	MemberInfo.TeamIndex = PlayerState->TeamIndex;
+	MemberInfo.TeamIndex = 19999999;
 	MemberInfo.MemberUniqueId = PlayerState->UniqueId;
 
 	GameState->GameMemberInfoArray.Members.Add(MemberInfo);
 	GameState->GameMemberInfoArray.MarkArrayDirty();
 
-	GameState->NotifyGameMemberAdded(PlayerState->SquadId, PlayerState->TeamIndex, PlayerState->UniqueId);
+	GameState->NotifyGameMemberAdded(PlayerState->SquadId, 19999999, PlayerState->UniqueId);
 }
 
 APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer, AActor* StartSpot)
@@ -242,6 +245,6 @@ void GameMode::Setup()
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 }

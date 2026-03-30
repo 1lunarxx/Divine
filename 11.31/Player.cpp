@@ -164,8 +164,7 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	if (EditingTool == NULL)
 		return;
 
-	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
-	Building->EditingPlayer = PlayerState;
+	Building->SetEditingPlayer(PlayerState);
 
 	EditingTool->EditActor = Building;
 	EditingTool->ForceNetUpdate();
@@ -175,12 +174,10 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 
 void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building, TSubclassOf<ABuildingSMActor> NewClass, uint8 RotationIterations, bool bMirrored)
 {
-	if (Building == NULL || NewClass == NULL || !Building->IsA(ABuildingSMActor::StaticClass()) || Building->CanBePlayerEdited(PlayerController) || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
+	if (Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
 		return;
 
-	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
-	Building->EditingPlayer = nullptr;
-
+	Building->SetEditingPlayer(nullptr);
 	Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
 }
 
@@ -209,8 +206,7 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 	if (EditingTool == NULL)
 		return;
 
-	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
-	Building->EditingPlayer = nullptr;
+	Building->SetEditingPlayer(NULL);
 
 	EditingTool->EditActor = NULL;
 	EditingTool->ForceNetUpdate();
@@ -383,6 +379,11 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 	std::string Message = Msg.ToString();
 
+	if (Message == "god")
+	{
+		PlayerController->Pawn->bCanBeDamaged ^= 1;
+	}
+
 	if (Message == "randombot")
 	{
 		if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
@@ -458,18 +459,81 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 			UFortWorldItem* Item = Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 1, 3);
 
-			if (UFortWeaponRangedItemDefinition* WeaponItemDefinition = Cast<UFortWeaponRangedItemDefinition>(Item))
+			if (UFortWorldItemDefinition* WeaponItemDefinition = Cast<UFortWorldItemDefinition>(Item))
 			{
-				if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+				if (UFortAmmoItemDefinition* AmmoDefinition = Cast<UFortAmmoItemDefinition>(WeaponItemDefinition->GetAmmoWorldItemDefinition_BP()))
 				{
-					Inventory::CreateItem(PlayerController->WorldInventory, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 99999);
+					Inventory::CreateItem(PlayerController->WorldInventory, AmmoDefinition, 99999);
 				}
 			}
 
 			PlayerController->ClientMessage(L"Gave item!", FName(), 1);
 		}
 	}
+
+	if (Message.contains("giveammo"))
+	{
+		if (Message.rfind("giveammo", 0) == 0)
+		{
+			std::string giveammo = "giveammo";
+			std::string args;
+
+			if (Message.size() > giveammo.size() + 1)
+				args = Message.substr(giveammo.size() + 1);
+
+			std::wstring wargs(args.begin(), args.end());
+
+			auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wargs.c_str(), ANY_PACKAGE));
+
+			if (ItemDefinition == NULL)
+			{
+				PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
+
+				return;
+			}
+
+			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 9999);
+
+			PlayerController->ClientMessage(L"Gave item!", FName(), 1);
+		}
+	}
 }
+
+void Player::ServerAttemptInventoryDrop(AFortPlayerControllerAthena* PlayerController, FGuid Guid, int32 Count, bool)
+{
+	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+	if (PlayerPawn == NULL)
+		return;
+
+	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, Guid);
+
+	if (ItemEntry == NULL)
+		return;
+
+	if (ItemEntry->Count - Count < 0)
+		return;
+
+	UFortWorldItem* WorldItem = Inventory::GetWorldItem(PlayerController->WorldInventory, Guid);
+
+	if (WorldItem == NULL)
+		return;
+
+	ItemEntry->Count -= Count;
+
+	Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation() + PlayerPawn->GetActorForwardVector() * 70.f + FVector(0, 0, 50), ItemEntry, Count, PlayerController->MyFortPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::Unset, true, true);
+
+	if (ItemEntry->Count <= 0 || Count < 0)
+	{
+		Inventory::RemoveItem(PlayerController->WorldInventory, Guid);
+	}
+	else
+	{
+		WorldItem->ItemEntry.Count = ItemEntry->Count;
+		Inventory::UpdateEntry(PlayerController->WorldInventory, ItemEntry);
+	}
+}
+
 
 void Player::Setup()
 {
@@ -477,6 +541,7 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
+	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
 
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11B8 / 8, ServerBeginEditingBuildingActor);

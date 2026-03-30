@@ -35,7 +35,7 @@ UFortWorldItem* Inventory::CreateItem(AFortInventory* WorldInventory, UFortItemD
 	return WorldItem;
 }
 
-AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int Count, AFortPlayerPawnAthena* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource, bool bToss, bool bRandomRotation)
+AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int Count, AFortPlayerPawn* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource, bool bToss, bool bRandomRotation)
 {
 	AFortPickupAthena* NewPickup = Utils::SpawnActor<AFortPickupAthena>(Location);
 
@@ -65,6 +65,22 @@ AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* Item
 	}
 
 	return NewPickup;
+}
+
+UFortWorldItem* Inventory::GetWorldItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
+{
+	UFortWorldItem* WorldItem = NULL;
+
+	for (UFortWorldItem* ItemInstance : WorldInventory->Inventory.ItemInstances)
+	{
+		if (ItemInstance->ItemEntry.ItemGuid == ItemGuid)
+		{
+			WorldItem = ItemInstance;
+			break;
+		}
+	}
+
+	return WorldItem;
 }
 
 FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, FGuid& ItemGuid)
@@ -97,4 +113,58 @@ FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UClass* 
 	}
 
 	return ItemEntry;
+}
+
+void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
+{
+	FFortItemEntry* ItemEntry = GetItemEntry(WorldInventory, ItemGuid);
+	UFortWorldItem* WorldItem = GetWorldItem(WorldInventory, ItemGuid);
+
+	if (ItemEntry == NULL || WorldItem == NULL)
+		return;
+
+	WorldInventory->bRequiresLocalUpdate = true;
+	WorldInventory->bRequiresSaving = true;
+
+	WorldInventory->HandleInventoryLocalUpdate();
+	WorldInventory->Inventory.MarkArrayDirty();
+
+	WorldInventory->ForceNetUpdate();
+}
+
+void Inventory::UpdateEntry(AFortInventory* WorldInventory, FFortItemEntry* ItemEntry)
+{
+	if (ItemEntry->bIsReplicatedCopy)
+	{
+		ItemEntry->bIsDirty = false;
+
+		WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+		WorldInventory->bRequiresLocalUpdate = true;
+
+		return;
+	}
+
+	if (ItemEntry->ItemGuid.A == 0 && ItemEntry->ItemGuid.B == 0 && ItemEntry->ItemGuid.C == 0 && ItemEntry->ItemGuid.D == 0)
+		return;
+
+	for (FFortItemEntry& Entry : WorldInventory->Inventory.ReplicatedEntries)
+	{
+		if (Entry.ItemGuid == ItemEntry->ItemGuid)
+		{
+			Entry = *ItemEntry;
+			Entry.bIsDirty = false;
+
+			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+			WorldInventory->bRequiresLocalUpdate = true;
+
+			WorldInventory->HandleInventoryLocalUpdate();
+
+			if (&ItemEntry)
+				WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+			else 
+				WorldInventory->Inventory.MarkArrayDirty();
+
+			break;
+		}
+	}
 }
