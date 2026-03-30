@@ -25,8 +25,6 @@ private:
 	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);
 	static void ServerCheat(AFortPlayerController*, FString&);
 
-	static void ServerAttemptInventoryDrop(AFortPlayerControllerAthena*, FGuid, int32, bool);
-
 	static void ServerBeginEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerEditBuildingActor(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
 	static void ServerEndEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);

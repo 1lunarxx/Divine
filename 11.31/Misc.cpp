@@ -15,23 +15,6 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 		UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"startaircraft", nullptr);
 	}
 
-	if (GetKeyState(VK_F4))
-	{
-		if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-		{
-			if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
-			{
-				for (const FFortServerBotInfo& PlayerBot : ServerBotManager->PlayerBots)
-				{
-					AFortAthenaAIBotController* BotController = PlayerBot.BotController;
-
-					BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Gameplay.BT_Phoebe_Gameplay"));
-					BotController->RunBehaviorTree(BotController->BehaviorTree);
-				}
-			}
-		}
-	}
-
 	return Originals::TickFlush(NetDriver);
 }
 
@@ -104,7 +87,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, GetNetMode);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, ForceRetTrue);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 
@@ -114,6 +98,5 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetZero);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0xB625A0, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
 }

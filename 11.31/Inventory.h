@@ -8,11 +8,6 @@ public:
 
 	static AFortPickupAthena* SpawnPickup(FVector, FFortItemEntry*, int, AFortPlayerPawn*, EFortPickupSourceTypeFlag, EFortPickupSpawnSource, bool, bool);
 
-	static UFortWorldItem* GetWorldItem(AFortInventory*, FGuid&);
-
 	static FFortItemEntry* GetItemEntry(AFortInventory*, FGuid&);
 	static FFortItemEntry* GetItemEntry(AFortInventory*, UClass*);
-
-	static void RemoveItem(AFortInventory*, FGuid&);
-	static void UpdateEntry(AFortInventory*, FFortItemEntry*);
 };

@@ -168,7 +168,6 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 
 	EditingTool->EditActor = Building;
 	EditingTool->ForceNetUpdate();
-
 	EditingTool->OnRep_EditActor();
 }
 
@@ -499,48 +498,12 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 				return;
 			}
 
-			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 9999);
+			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 150);
 
 			PlayerController->ClientMessage(L"Gave ammo!", FName(), 1);
 		}
 	}
 }
-
-void Player::ServerAttemptInventoryDrop(AFortPlayerControllerAthena* PlayerController, FGuid Guid, int32 Count, bool)
-{
-	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
-
-	if (PlayerPawn == NULL)
-		return;
-
-	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, Guid);
-
-	if (ItemEntry == NULL)
-		return;
-
-	if (ItemEntry->Count - Count < 0)
-		return;
-
-	UFortWorldItem* WorldItem = Inventory::GetWorldItem(PlayerController->WorldInventory, Guid);
-
-	if (WorldItem == NULL)
-		return;
-
-	ItemEntry->Count -= Count;
-
-	Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation() + PlayerPawn->GetActorForwardVector() * 70.f + FVector(0, 0, 50), ItemEntry, Count, PlayerController->MyFortPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::Unset, true, true);
-
-	if (ItemEntry->Count <= 0 || Count < 0)
-	{
-		Inventory::RemoveItem(PlayerController->WorldInventory, Guid);
-	}
-	else
-	{
-		WorldItem->ItemEntry.Count = ItemEntry->Count;
-		Inventory::UpdateEntry(PlayerController->WorldInventory, ItemEntry);
-	}
-}
-
 
 void Player::Setup()
 {
@@ -548,7 +511,6 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
-	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
 
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11B8 / 8, ServerBeginEditingBuildingActor);

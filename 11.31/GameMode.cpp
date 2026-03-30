@@ -63,7 +63,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			AAthenaAIDirector* AIDirector = Utils::SpawnActor<AAthenaAIDirector>(FVector(), FRotator(), AAthenaAIDirector::StaticClass(), GameMode);
 
 			GameMode->AIDirector = AIDirector;
-			GameMode->AIDirector->Activate();
+			//GameMode->AIDirector->Activate();
 
 			AFortAIGoalManager* AIGoalManager = Utils::SpawnActor<AFortAIGoalManager>(FVector(), FRotator(), AFortAIGoalManager::StaticClass(), GameMode);
 

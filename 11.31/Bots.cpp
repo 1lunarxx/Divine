@@ -206,6 +206,9 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 {
 	Originals::OnPossessedPawnDied(BotController, DamagedActor, Damage, InstigatedBy, DamageCauser, HitLocation, PrimitiveComponent, BoneName, Momentum);
 
+	if (InstigatedBy == NULL)
+		return;
+
 	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
 
 	if (GameState == NULL)
