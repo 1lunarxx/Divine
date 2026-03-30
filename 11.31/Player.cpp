@@ -20,17 +20,17 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 
 	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
 	{
-		for (const FItemAndCount& Item : GameMode->StartingItems)
+		for (const FItemAndCount& StartingItem : GameMode->StartingItems)
 		{
-			if (Item.Count > 0)
+			if (StartingItem.Count > 0)
 			{
-				Inventory::CreateItem(PlayerController->WorldInventory, Item.Item, Item.Count);
+				Inventory::CreateItem(PlayerController->WorldInventory, StartingItem.Item, StartingItem.Count);
 			}
 		}
 
-		UFortItemDefinition* Wood = Utils::StaticFindObject<UFortItemDefinition>(TEXT("WoodItemData"), ANY_PACKAGE);
+		UFortItemDefinition* WoodItemData = Utils::StaticFindObject<UFortItemDefinition>(TEXT("WoodItemData"), ANY_PACKAGE);
 
-		Inventory::CreateItem(PlayerController->WorldInventory, Wood, 50);
+		Inventory::CreateItem(PlayerController->WorldInventory, WoodItemData, 50);
 		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
@@ -146,10 +146,12 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 
 void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	if (Building == NULL || !Building->CanBePlayerEdited(PlayerController))
+	if (PlayerController == NULL || PlayerController->MyFortPawn == NULL || Building == NULL)
 		return;
 
-	if (PlayerController == NULL || PlayerController->MyFortPawn == NULL || Building == NULL)
+	AFortPlayerPawnAthena* Pawn = Cast<AFortPlayerPawnAthena>(PlayerController->Pawn);
+
+	if (Pawn == NULL)
 		return;
 
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
@@ -157,17 +159,17 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	if (PlayerState == NULL)
 		return;
 
-	FFortItemEntry* EditToolEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
+	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
-	if (EditToolEntry == NULL)
+	if (ItemEntry == NULL)
 		return;
 
-	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(EditToolEntry->ItemDefinition);
+	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemEntry->ItemDefinition);
 
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, EditToolEntry->ItemGuid));
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
 	if (EditingTool == NULL)
 		return;
@@ -183,8 +185,11 @@ void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, AB
 	if (Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
 		return;
 
-	Building->SetEditingPlayer(nullptr);
-	Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
+	Building->SetEditingPlayer(NULL);
+
+	int32 CurrentBuildingLevel = Building->CurrentBuildingLevel;
+
+	Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
 }
 
 void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
@@ -197,17 +202,17 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 	if (Pawn == NULL)
 		return;
 
-	FFortItemEntry* EditToolEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
+	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
-	if (EditToolEntry == NULL)
+	if (ItemEntry == NULL)
 		return;
 
-	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(EditToolEntry->ItemDefinition);
+	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemEntry->ItemDefinition);
 
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, EditToolEntry->ItemGuid));
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
 	if (EditingTool == NULL)
 		return;

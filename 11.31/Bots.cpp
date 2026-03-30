@@ -318,6 +318,7 @@ AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* Bot
 UFortServerBotManagerAthena* Bots::GetServerBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
 	return GameMode->ServerBotManager;
 }
 
