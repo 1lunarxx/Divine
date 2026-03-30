@@ -2,6 +2,7 @@
 #include "Misc.h"
 #include "Utils.h"
 #include "Bots.h"
+#include "Configuration.h"
 
 void Misc::TickFlush(UNetDriver* NetDriver)
 {
@@ -72,6 +73,19 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 	}
 }
 
+FServicePermissionsMcp* Misc::MatchMakingServicePerms(int64, int64)
+{
+	FServicePermissionsMcp* Perms = new FServicePermissionsMcp();
+	Perms->Id = L"ec684b8c687f479fadea3cb2ad83f5c6";
+	return Perms;
+}
+
+const wchar_t* Misc::GetCommandLet()
+{
+	static auto Ret = std::wstring(Originals::GetCommandLet()) + L" -AllowAllPlaylistsInShipping";
+	return Ret.c_str();
+}
+
 static int ForceRetTrue()
 {
 	return 1;
@@ -92,6 +106,16 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
+
+	if (Configuration::bUseGameSessions)
+	{
+		Utils::Hook(InSDKUtils::GetImageBase() + 0x8A7580, MatchMakingServicePerms);
+		Utils::Hook(InSDKUtils::GetImageBase() + 0x2622780, GetCommandLet, (void**)&Originals::GetCommandLet);
+
+		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
+
+		Utils::Patch(InSDKUtils::GetImageBase() + 0x1C1A525, 0x85);
+	}
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, ForceRetTrue);

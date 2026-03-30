@@ -2,6 +2,7 @@
 #include "GameMode.h"
 #include "Utils.h"
 #include "Misc.h"
+#include "Configuration.h"
 
 bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 {
@@ -235,11 +236,21 @@ EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTea
 	return EFortTeam(ChosenTeam);
 }
 
+UClass** GetGameSessionClass(AFortGameMode*, UClass** OutClass) {
+	*OutClass = AFortGameSessionDedicatedAthena::StaticClass();
+	return OutClass;
+}
+
 void GameMode::Setup()
 {
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
+
+	if (Configuration::bUseGameSessions)
+	{
+		Utils::Hook(InSDKUtils::GetImageBase() + 0x199DAA0, GetGameSessionClass);
+	}
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);

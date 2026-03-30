@@ -208,6 +208,7 @@
   <ItemGroup>
     <ClInclude Include="Abilities.h" />
     <ClInclude Include="Bots.h" />
+    <ClInclude Include="Configuration.h" />
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Misc.h" />

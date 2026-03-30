@@ -64,6 +64,11 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	{
 		AbilityClass = Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/Sprays/GAB_Spray_Generic.Default__GAB_Spray_Generic_C"));
 	}
+	else if (UAthenaToyItemDefinition* ToyItemDefinition = Cast<UAthenaToyItemDefinition>(EmoteAsset))
+	{
+		if (ToyItemDefinition->ToySpawnAbility.Get())
+			AbilityClass = ToyItemDefinition->ToySpawnAbility.Get()->Class;
+	}
 
 	FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
 

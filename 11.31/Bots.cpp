@@ -83,7 +83,7 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 				SlotItem.FortItem = WorldItem;
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = EFortWeaponType::Pistol;
+				SlotItem.WeaponType = EFortWeaponType::Shotgun;
 
 				break;
 			}

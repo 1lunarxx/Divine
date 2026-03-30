@@ -1,13 +1,10 @@
 #pragma once
 #include "pch.h"
 
-enum ENetMode
-{
-	NM_Standalone,
-	NM_DedicatedServer,
-	NM_ListenServer,
-	NM_Client,
-	NM_MAX,
+struct FServicePermissionsMcp {
+public:
+	char Unk_0[0x10];
+	class FString Id;
 };
 
 class Misc
@@ -20,6 +17,8 @@ public:
 		static inline void (*SendRequestNow)(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
 		static inline void (*PlacePlayersInAircraft)(AFortGameStateAthena*, bool);
 		static inline void (*PostInitializeComponents)(AFortPoiVolume*);
+		static inline wchar_t* (*GetCommandLet)();
+
 	};
 
 private:
@@ -27,12 +26,10 @@ private:
 	static void SendRequestNow(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
 	static void PlacePlayersInAircraft(AFortGameStateAthena*, bool);
 
+	static FServicePermissionsMcp* MatchMakingServicePerms(int64, int64);
+	static const wchar_t* GetCommandLet();
+
 	static bool Listen();
-private:
-	static ENetMode GetNetMode()
-	{
-		return NM_DedicatedServer;
-	}
 public:
 	static void Setup();
 };
