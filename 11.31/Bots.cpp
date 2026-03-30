@@ -5,7 +5,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator)+0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 30); // CachedHumanPlayerCount
+	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 30); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -83,9 +83,7 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 				SlotItem.FortItem = WorldItem;
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
-
-				static EFortWeaponType(*FindWeaponType)(UFortItemDefinition*) = decltype(FindWeaponType)(InSDKUtils::GetImageBase() + 0x20E54E0);
-				SlotItem.WeaponType = FindWeaponType(ItemDefinition);
+				SlotItem.WeaponType = EFortWeaponType::Pistol;
 
 				break;
 			}
