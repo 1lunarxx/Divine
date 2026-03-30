@@ -394,6 +394,12 @@ public:
 		return InternalTryActivateAbility(this, Handle, PredictionKey, InstancedAbility, a4, TriggerEventData);
 	}
 
+	void GiveAbilityAndActivateOnce(FGameplayAbilitySpecHandle* result, FGameplayAbilitySpec* Spec)
+	{
+		static void(*_GiveAbilityAndActivateOnce)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec*) = decltype(_GiveAbilityAndActivateOnce)(InSDKUtils::GetImageBase() + 0xB76F90);
+		_GiveAbilityAndActivateOnce(this, result, Spec);
+	}
+
 	FGameplayAbilitySpec* FindAbilitySpecFromHandle(FGameplayAbilitySpecHandle Handle)
 	{
 		FGameplayAbilitySpec* (*STAT_FindAbilitySpecFromHandle)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle) = decltype(STAT_FindAbilitySpecFromHandle)(InSDKUtils::GetImageBase() + 0xB6F6B0);

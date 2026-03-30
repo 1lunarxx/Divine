@@ -13,6 +13,7 @@
 #include <map>
 #include <numeric>
 #include <algorithm>
+#include <sstream>
 
 #include "MinHook.h"
 

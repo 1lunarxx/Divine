@@ -1,27 +1,45 @@
 #pragma once
 #include "pch.h"
 
+#define ANY_PACKAGE (UObject*)-1
+
 template<class T>
 static T* Cast(UObject* Object)
 {
-    return Object && (Object->IsA(T::StaticClass())) ? (T*)Object : nullptr;
+    return Object && (Object->IsA(T::StaticClass())) ? (T*)Object : NULL;
 }
 
 class Utils
 {
 public:
     template <class T>
-    static inline T* SpawnActor(FVector Location = {}, FRotator Rotation = {}, UClass* Class = T::StaticClass(), AActor* Owner = nullptr)
+    static inline T* SpawnActor(FVector Location = FVector(), FRotator Rotation = FRotator(0,0,0), UClass* InClass = T::StaticClass(), AActor* Owner = NULL)
     {
-        FTransform Transform{};
+        FTransform Transform = FTransform{};
+
+        Transform.Rotation = UKismetMathLibrary::Conv_RotatorToTransform(Rotation).Rotation;
         Transform.Translation = Location;
         Transform.Scale3D = { 1, 1, 1 };
 
-        auto Actor = UGameplayStatics::BeginDeferredActorSpawnFromClass(UWorld::GetWorld(), Class, Transform, ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn, Owner);
+        AActor* Actor = UGameplayStatics::BeginDeferredActorSpawnFromClass(UWorld::GetWorld(), InClass, Transform, ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn, Owner);
         if (Actor)
             UGameplayStatics::FinishSpawningActor(Actor, Transform);
 
         return (T*)Actor;
+    }
+
+    template<typename T = UObject>
+    static T* StaticFindObject(const TCHAR* OrigInName, UObject* InObjectPackage = nullptr, UClass* ObjectClass = nullptr)
+    {
+        static UObject* (*_StaticFindObject)(UClass*, UObject*, const TCHAR*, bool) = decltype(_StaticFindObject)(InSDKUtils::GetImageBase() + 0x2847D60);
+        return (T*)_StaticFindObject(ObjectClass, InObjectPackage, OrigInName, false);
+    }
+
+    template<typename T = UObject>
+    static T* StaticLoadObject(const TCHAR* Path, UClass* InClass = T::StaticClass(), UObject* InOuter = nullptr)
+    {
+        static UObject* (*_StaticLoadObject)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32, UPackageMap*, bool) = decltype(_StaticLoadObject)(InSDKUtils::GetImageBase() + 0x2849140);
+        return (T*)_StaticLoadObject(InClass, InOuter, Path, NULL, 0, NULL, false);
     }
 
     template<typename T>
@@ -36,27 +54,24 @@ public:
         return (T*)UGameplayStatics::SpawnObject(Class ? Class : T::StaticClass(), Object);
     }
 
-    template <typename T>
-    static T* StaticFindObject(const std::string& ObjectPath, SDK::UClass* Class = nullptr)
-    {
-        return reinterpret_cast<T*>(((SDK::UObject * (*)(SDK::UClass*, SDK::UObject*, const wchar_t*, bool))(InSDKUtils::GetImageBase() + 0x2847d60))(Class, nullptr, std::wstring(ObjectPath.begin(), ObjectPath.end()).c_str(), false));
-    }
-
-    static inline void* (*StaticLoadObject_)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*) = (void* (*)(UClass*, UObject*, const TCHAR*, const TCHAR*, uint32_t, UObject*, bool, void*))(InSDKUtils::GetImageBase() + 0x2849140);
-
     template<typename T>
-    static T* StaticLoadObject(std::string name)
+    static TArray<T*> GetAllActors()
     {
-        T* Object = StaticFindObject<T>(name);
+        TArray<AActor*> OutActors;
 
-        if (!Object)
+        UGameplayStatics::GetAllActorsOfClass(UWorld::GetWorld(), T::StaticClass(), &OutActors);
+
+        TArray<T*> Actors;
+
+        for (AActor* Actor : OutActors)
         {
-            auto Name = std::wstring(name.begin(), name.end()).c_str();
-
-            Object = (T*)StaticLoadObject_(T::StaticClass(), nullptr, Name, nullptr, 0, nullptr, false, nullptr);
+            if (T* CastedActor = Cast<T>(Actor))
+            {
+                Actors.Add(CastedActor);
+            }
         }
 
-        return Object;
+        return Actors;
     }
 
 	static void Hook(uintptr_t Target, void* Detour, void** Original = nullptr)
@@ -83,7 +98,6 @@ public:
 
         DWORD dwTemp;
         VirtualProtect(&Object->VTable[(int)Target], sizeof(void*), dwProt, &dwTemp);
-
 	}
 
     static void Patch(uintptr_t Target, uintptr_t Byte)
@@ -100,6 +114,7 @@ public:
     static uint8_t* AllocateNearbyPage(void* targetAddr)
     {
         SYSTEM_INFO SysInfo;
+
         GetSystemInfo(&SysInfo);
 
         const uint64_t PageSize = SysInfo.dwPageSize;

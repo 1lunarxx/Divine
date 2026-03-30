@@ -2,7 +2,6 @@
 #include "Player.h"
 #include "Utils.h"
 #include "Inventory.h"
-#include "SDK/SDK/GAB_AthenaDBNO_classes.hpp"
 
 void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerController, APawn* P)
 {
@@ -29,12 +28,19 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 			}
 		}
 
+		UFortItemDefinition* Wood = Utils::StaticFindObject<UFortItemDefinition>(TEXT("WoodItemData"), ANY_PACKAGE);
+
+		Inventory::CreateItem(PlayerController->WorldInventory, Wood, 50);
+
 		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
 
 void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, UFortItemDefinition* EmoteAsset, float EmoteRandomNumber)
 {
+	if (EmoteAsset == NULL)
+		return;
+
 	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 	if (PlayerPawn == NULL)
@@ -45,14 +51,11 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	if (PlayerState == NULL)
 		return;
 
-	if (EmoteAsset == NULL)
-		return;
-
 	static UClass* AbilityClass = NULL;
 
 	if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast< UAthenaDanceItemDefinition>(EmoteAsset))
 	{
-		AbilityClass = DanceItemDefinition->CustomDanceAbility.Get() ? DanceItemDefinition->CustomDanceAbility.Get() : Utils::StaticFindObject<UClass>("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C");
+		AbilityClass = DanceItemDefinition->CustomDanceAbility.Get() ? DanceItemDefinition->CustomDanceAbility.Get() : Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C"));
 
 		PlayerPawn->bMovingEmote = DanceItemDefinition->bMovingEmote;
 		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
@@ -60,16 +63,14 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	}
 	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
 	{
-		AbilityClass = Utils::StaticFindObject<UClass>("/Game/Abilities/Sprays/GAB_Spray_Generic.GAB_Spray_Generic_C");
+		AbilityClass = Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/Sprays/GAB_Spray_Generic.Default__GAB_Spray_Generic_C"));
 	}
 
-	FGameplayAbilitySpec AbilitySpec{};
+	FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
 
-	static void(*ConstructSpec)(FGameplayAbilitySpec*, UGameplayAbility*, int, int, UObject*) = decltype(ConstructSpec)(InSDKUtils::GetImageBase() + 0xB9AF40);
-	static void(*GiveAbilityAndActivateOnce)(UAbilitySystemComponent*, FGameplayAbilitySpecHandle*, FGameplayAbilitySpec*) = decltype(GiveAbilityAndActivateOnce)(InSDKUtils::GetImageBase() + 0xB76F90);
+	Spec.ConstructAbilitySpec(Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
 
-	ConstructSpec(&AbilitySpec, Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
-	GiveAbilityAndActivateOnce(PlayerState->AbilitySystemComponent, &AbilitySpec.Handle, &AbilitySpec);
+	PlayerState->AbilitySystemComponent->GiveAbilityAndActivateOnce(&Spec.Handle, &Spec);
 }
 
 void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnState& InZiplineState)
@@ -77,7 +78,7 @@ void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnSta
 	PlayerPawn->ZiplineState = InZiplineState;
 	PlayerPawn->OnRep_ZiplineState();
 
-	auto Velocity = 0.f;
+	float Velocity = 0.f;
 
 	if (InZiplineState.bJumped)
 		PlayerPawn->LaunchCharacterJump({ Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, 1500 }, false, false, true, true);
@@ -131,7 +132,130 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
 	Pawn->bMovingEmote = false;
+
 	return Originals::MovingEmoteStopped(Pawn);
+}
+
+void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
+{
+	if (Building == NULL || !Building->CanBePlayerEdited(PlayerController))
+		return;
+
+	if (PlayerController == NULL || PlayerController->MyFortPawn == NULL || Building == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	FFortItemEntry* EditToolEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
+
+	if (EditToolEntry == NULL)
+		return;
+
+	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(EditToolEntry->ItemDefinition);
+
+	if (WeaponItemDefinition == NULL)
+		return;
+
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, EditToolEntry->ItemGuid));
+
+	if (EditingTool == NULL)
+		return;
+
+	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
+	Building->EditingPlayer = PlayerState;
+
+	EditingTool->EditActor = Building;
+	EditingTool->ForceNetUpdate();
+
+	EditingTool->OnRep_EditActor();
+}
+
+void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building, TSubclassOf<ABuildingSMActor> NewClass, uint8 RotationIterations, bool bMirrored)
+{
+	if (Building == NULL || NewClass == NULL || !Building->IsA(ABuildingSMActor::StaticClass()) || Building->CanBePlayerEdited(PlayerController) || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
+		return;
+
+	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
+	Building->EditingPlayer = nullptr;
+
+	Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
+}
+
+void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
+{
+	if (Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
+		return;
+
+	AFortPlayerPawnAthena* Pawn = Cast<AFortPlayerPawnAthena>(PlayerController->Pawn);
+
+	if (Pawn == NULL)
+		return;
+
+	FFortItemEntry* EditToolEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
+
+	if (EditToolEntry == NULL)
+		return;
+
+	UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(EditToolEntry->ItemDefinition);
+
+	if (WeaponItemDefinition == NULL)
+		return;
+
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, EditToolEntry->ItemGuid));
+
+	if (EditingTool == NULL)
+		return;
+
+	Building->SetNetDormancy(ENetDormancy::DORM_DormantAll);
+	Building->EditingPlayer = nullptr;
+
+	EditingTool->EditActor = NULL;
+	EditingTool->ForceNetUpdate();
+
+	EditingTool->OnRep_EditActor();
+}
+
+void Player::ServerCreateBuildingActor(AFortPlayerController* PlayerController, FCreateBuildingActorData BuildingActorData)
+{
+	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
+
+	if (GameState == NULL)
+		return;
+
+	UClass* BuildingClass = ((AFortPlayerControllerAthena*)PlayerController)->BroadcastRemoteClientInfo->RemoteBuildableClass.Get();
+
+	if (BuildingClass == NULL)
+		return;
+
+	TArray<ABuildingActor*> ExistingBuildings;
+	EFortBuildPreviewMarkerOptionalAdjustment MarkerOptionalAdjustment;
+
+	EFortStructuralGridQueryResults QueryResults = GameState->StructuralSupportSystem->CanAddBuildingActorClassToGrid(UWorld::GetWorld(), BuildingClass, BuildingActorData.BuildLoc, BuildingActorData.BuildRot, BuildingActorData.bMirrored, &ExistingBuildings, &MarkerOptionalAdjustment, false);
+
+	if (QueryResults == EFortStructuralGridQueryResults::CanAdd)
+	{
+		for (ABuildingActor* ExistingBuilding : ExistingBuildings)
+			ExistingBuilding->K2_DestroyActor();
+
+		ABuildingSMActor* Building = Utils::SpawnActor<ABuildingSMActor>(BuildingActorData.BuildLoc, BuildingActorData.BuildRot, BuildingClass, PlayerController);
+
+		if (Building == NULL)
+			return;
+
+		Building->InitializeKismetSpawnedBuildingActor(Building, PlayerController, true);
+		Building->bPlayerPlaced = true;
+
+		if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState))
+		{
+			Building->PlacedByPlayer(PlayerState);
+
+			Building->SetTeam(PlayerState->TeamIndex);
+			Building->OnRep_Team();
+		}
+	}
 }
 
 void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController* EventInstigator)
@@ -146,20 +270,9 @@ void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController
 	if (PlayerState == NULL)
 		return;
 
-	FGameplayEventData EventData = FGameplayEventData{};
-
-	EventData.EventTag = PlayerPawn->EventReviveTag;
-	EventData.ContextHandle = PlayerState->AbilitySystemComponent->MakeEffectContext();
-	EventData.Instigator = EventInstigator;
-	EventData.Target = PlayerPawn;
-	EventData.TargetData = UAbilitySystemBlueprintLibrary::AbilityTargetDataFromActor(PlayerPawn);
-	EventData.TargetTags = PlayerPawn->GameplayTags;
-
-	UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(PlayerPawn, PlayerPawn->EventReviveTag, EventData);
-
 	for (FGameplayAbilitySpec& AbilitySpec : PlayerState->AbilitySystemComponent->ActivatableAbilities.Items)
 	{
-		if (AbilitySpec.Ability->Class == UGAB_AthenaDBNO_C::StaticClass())
+		if (AbilitySpec.Ability->IsA(Utils::StaticLoadObject<UClass>(TEXT("/Game/Abilities/NPC/Generic/GAB_AthenaDBNO.GAB_AthenaDBNO_C"))))
 		{
 			PlayerState->AbilitySystemComponent->ServerCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
 			PlayerState->AbilitySystemComponent->ServerEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo, AbilitySpec.ActivationInfo.PredictionKeyWhenActivated);
@@ -173,12 +286,189 @@ void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController
 	PlayerPawn->bIsDBNO = false;
 	PlayerPawn->OnRep_IsDBNO();
 
-	PlayerPawn->DBNORevivalStacking = 0;
-
 	PlayerPawn->SetHealth(30);
 
 	PlayerController->RespawnPlayerAfterDeath(false);
 	PlayerController->ClientOnPawnRevived(EventInstigator);
+}
+
+void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClientMarkerRequest& MarkerRequest)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(MarkerComponent->GetOwner());
+
+	if (PlayerController == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	FFortWorldMarkerData WorldMarkerData{};
+
+	((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(&WorldMarkerData);
+
+	WorldMarkerData.Owner = PlayerState;
+	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
+	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
+	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
+	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
+	WorldMarkerData.bHasCustomDisplayInfo = false;
+
+	FMarkerID MarkerID{};
+
+	MarkerID.PlayerID = PlayerState->PlayerID;
+	MarkerID.InstanceID = MarkerRequest.InstanceID;
+
+	WorldMarkerData.MarkerID = MarkerID;
+
+	if (MarkerRequest.MarkedActor)
+	{
+		((char (*)(UAthenaMarkerComponent*, AActor*, FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x1642450))(MarkerComponent, MarkerRequest.MarkedActor, &WorldMarkerData);
+
+		if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
+		{
+			WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
+			WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
+		}
+	}
+
+	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	{
+		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
+
+		if (_TeamMember == NULL || TeamMember == PlayerController)
+			continue;
+
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+
+		if (TeamMemberMarkerComponent == NULL)
+			continue;
+
+		TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
+	}
+}
+
+void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMarkerID MarkerID, ECancelMarkerReason CancelReason)
+{
+	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(MarkerComponent->GetOwner());
+
+	if (PlayerController == NULL)
+		return;
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	{
+		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
+
+		if (_TeamMember == NULL || TeamMember == PlayerController)
+			continue;
+
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+
+		if (TeamMemberMarkerComponent == NULL)
+			continue;
+
+		TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
+	}
+}
+
+void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
+{
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
+	std::string Message = Msg.ToString();
+
+	if (Message == "randombot")
+	{
+		if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
+		{
+			if (GameState->GamePhase > EAthenaGamePhase::Aircraft)
+			{
+				int32 Index = UKismetMathLibrary::RandomIntegerInRange(0, GameMode->ServerBotManager->PlayerBots.Num() - 1);
+
+				if (AFortPlayerPawnAthena* PlayerBotPawn = GameMode->ServerBotManager->PlayerBots[Index].BotController->PlayerBotPawn)
+				{
+					PlayerController->Pawn->K2_TeleportTo(PlayerBotPawn->K2_GetActorLocation(), {});
+				}
+			}
+			else
+			{
+				PlayerController->ClientMessage(L"Invalid Gamephase! Please wait til we enter aircraft.", FName(), 1);
+			}
+		}
+	}
+
+	if (Message.contains("launch"))
+	{
+		if (Message.rfind("launch", 0) == 0)
+		{
+			std::string launch = "launch";
+			std::string args;
+
+			if (Message.size() > launch.size() + 1)
+				args = Message.substr(launch.size() + 1);
+
+			std::stringstream ss(args);
+
+			float X{}, Y{}, Z{};
+			ss >> X >> Y >> Z;
+
+			FVector Yesh{};
+
+			Yesh.X = X;
+			Yesh.Y = Y;
+			Yesh.Z = Z;
+
+			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+			if (PlayerPawn == NULL)
+				return;
+
+			PlayerPawn->LaunchCharacter(Yesh, false, false);
+
+			PlayerController->ClientMessage(L"Launched Character!", FName(), 1);
+		}
+	}
+
+	if (Message.contains("giveitem"))
+	{
+		if (Message.rfind("giveitem", 0) == 0)
+		{
+			std::string giveitem = "giveitem";
+			std::string args;
+
+			if (Message.size() > giveitem.size() + 1)
+				args = Message.substr(giveitem.size() + 1);
+
+			std::wstring wargs(args.begin(), args.end());
+
+			auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wargs.c_str(), ANY_PACKAGE));
+
+			if (ItemDefinition == NULL)
+			{
+				PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
+
+				return;
+			}
+
+			UFortWorldItem* Item = Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 1, 3);
+
+			if (UFortWeaponRangedItemDefinition* WeaponItemDefinition = Cast<UFortWeaponRangedItemDefinition>(Item))
+			{
+				if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+				{
+					Inventory::CreateItem(PlayerController->WorldInventory, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 99999);
+				}
+			}
+
+			PlayerController->ClientMessage(L"Gave item!", FName(), 1);
+		}
+	}
 }
 
 void Player::Setup()
@@ -187,11 +477,22 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
+	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
+
+	Utils::Virtual<AFortPlayerControllerAthena>(0x11B8 / 8, ServerBeginEditingBuildingActor);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x1190 / 8, ServerEditBuildingActor);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x11A8 / 8, ServerEndEditingBuildingActor);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x1180 / 8, ServerCreateBuildingActor);
+
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1BF, ServerReviveFromDBNO);
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
+	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
+	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
+
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);
 }

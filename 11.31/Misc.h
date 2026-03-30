@@ -27,9 +27,6 @@ private:
 	static void SendRequestNow(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
 	static void PlacePlayersInAircraft(AFortGameStateAthena*, bool);
 
-	static void ServerAddMapMarker(UAthenaMarkerComponent*, FFortClientMarkerRequest&);
-	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);
-
 	static bool Listen();
 private:
 	static ENetMode GetNetMode()

@@ -1945,7 +1945,24 @@ public:
 	class AFortConstructorBASE*                   LastRelevantBASE;                                  // 0x0A70(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_A78[0x18];                                     // 0x0A78(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FProxyGameplayCueDamagePhysical        ProxyGameplayCueDamagePhysical;                    // 0x0A90(0x0020)(Net, RepNotify, NativeAccessSpecifierPublic)
+public:
+	ABuildingSMActor* ReplaceBuildingActor(EBuildingReplacementType ReplacementType, TSubclassOf<ABuildingSMActor> ReplacementClass, int32 ReplacementUpgradeLevel, int32 RotationInterations, bool InbMirrored, AFortPlayerController* EditingController)
+	{
+		static ABuildingSMActor* (*_ReplaceBuildingActor)(ABuildingSMActor*, EBuildingReplacementType, TSubclassOf<ABuildingSMActor>, int32, int32, bool, AFortPlayerController*) = decltype(_ReplaceBuildingActor)(InSDKUtils::GetImageBase() + 0x1782040);
+		return _ReplaceBuildingActor(this, ReplacementType, ReplacementClass, ReplacementUpgradeLevel, RotationInterations, InbMirrored, EditingController);
+	}
 
+	bool CanBePlayerEdited(AFortPlayerController* PlayerController)
+	{
+		static bool (*_CanBePlayerEdited)(ABuildingSMActor*, AFortPlayerController*) = decltype(_CanBePlayerEdited)(InSDKUtils::GetImageBase() + 0x1733960);
+		return _CanBePlayerEdited(this, PlayerController);
+	}
+
+	void SetEditingPlayer(AFortPlayerStateZone* EditingPlayer)
+	{
+		static void (*_SetEditingPlayer)(ABuildingSMActor*, AFortPlayerStateZone*) = decltype(_SetEditingPlayer)(InSDKUtils::GetImageBase() + 0x1785950);
+		_SetEditingPlayer(this, EditingPlayer);
+	}
 public:
 	void AddToGrid();
 	void AttachBuildingActorToMe(class ABuildingSMActor* ActorToAttach, bool bForceAttachment);

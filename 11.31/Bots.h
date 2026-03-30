@@ -23,7 +23,8 @@ private:
 	static void GetCosmeticLoadout(AFortAthenaAIBotController*, void*, void*);
 	static void OnPossessedPawnDied(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 
-	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController* BotController);
+	static AFortAthenaAIBotController* GetSquadLeader(AFortAthenaAIBotController*);
+	static UFortServerBotManagerAthena* GetServerBotManager();
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();

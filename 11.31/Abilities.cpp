@@ -10,7 +10,7 @@ void Abilities::ConsumeAllReplicatedData(UAbilitySystemComponent* AbilitySystemC
 	{
 		if (Pair.Key().AbilityHandle.Handle == AbilityHandle.Handle && Pair.Key().PredictionKeyAtCreation == AbilityOriginalPredictionKey.Current)
 		{
-			Pair.Value().Object = nullptr;
+			Pair.Value().Object = NULL;
 			Pair.Value().SharedReferenceCount->SharedReferenceCount = 1;
 		}
 	}

@@ -12,12 +12,13 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_DefaultDuo_vs_Phoebe.Playlist_DefaultDuo_vs_Phoebe");
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultDuo"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
 		GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
 		GameState->CurrentPlaylistInfo.PlaylistReplicationKey++;
+
 		GameState->CurrentPlaylistInfo.MarkArrayDirty();
 
 		GameState->OnRep_CurrentPlaylistId();
@@ -45,7 +46,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 		if (GameMode->ServerBotManager == NULL)
 		{
-			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C"));
+			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>(TEXT("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C")));
 
 			GameMode->ServerBotManager = ServerBotManager;
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
@@ -68,16 +69,13 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			GameMode->AIGoalManager = AIGoalManager;
 
-			TArray<AActor*> Volumes;
-			UGameplayStatics::GetAllActorsOfClass(UWorld::GetWorld(), AFortPoiVolume::StaticClass(), &Volumes);
+			TArray<AFortPoiVolume*> Volumes = Utils::GetAllActors<AFortPoiVolume>();
 
 			for (auto& Volume : Volumes)
 			{
-				AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
-
 				FCachedPOIVolumeLocations VolumeLocations{};
 
-				VolumeLocations.POIVolume = POIVolume;
+				VolumeLocations.POIVolume = Volume;
 
 				FVector Origin;
 				FVector BoxExtent;
@@ -96,45 +94,39 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			for (FNavigationPOI& Tag : ServerBotManager->OnGroundTagQueryPOIList)
 			{
-				for (AActor* Volume : Volumes)
+				for (auto& Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
-
-					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
-						Tag.ValidPOIVolumeList.Add(POIVolume);
+						Tag.ValidPOIVolumeList.Add(Volume);
 					}
 				}
 			}
 
 			for (FBattleBusPOI& Tag : ServerBotManager->SecondaryBattleBusTagQueryPOIList)
 			{
-				for (AActor* Volume : Volumes)
+				for (auto& Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
-
-					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
-						Tag.ValidPOIVolumeList.Add(POIVolume);
+						Tag.ValidPOIVolumeList.Add(Volume);
 					}
 				}
 			}
 
 			for (FBattleBusPOI& Tag : ServerBotManager->BattleBusTagQueryPOIList)
 			{
-				for (AActor* Volume : Volumes)
+				for (auto& Volume : Volumes)
 				{
-					AFortPoiVolume* POIVolume = Cast<AFortPoiVolume>(Volume);
-
-					if (POIVolume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
+					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
-						Tag.ValidPOIVolumeList.Add(POIVolume);
+						Tag.ValidPOIVolumeList.Add(Volume);
 					}
 				}
 			}
 		}
 
-		static UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus");
+		static UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>(TEXT("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus"));
 
 		if (BBID_WinterBus)
 		{
