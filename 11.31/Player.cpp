@@ -379,9 +379,21 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 	std::string Message = Msg.ToString();
 
+	if (Message == "resethealth")
+	{
+		PlayerController->MyFortPawn->SetHealth(100.f);
+
+		PlayerController->ClientMessage(L"Resetted Health!", FName(), 1);
+	}
+
 	if (Message == "god")
 	{
-		PlayerController->Pawn->bCanBeDamaged ^= 1;
+		PlayerController->MyFortPawn->bCanBeDamaged = false;
+
+		PlayerController->MyFortPawn->HealthSet->Health.Minimum = 100;
+		PlayerController->MyFortPawn->HealthSet->OnRep_Health();
+
+		PlayerController->ClientMessage(L"God mode enabled!", FName(), 1);
 	}
 
 	if (Message == "randombot")
@@ -494,7 +506,7 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 9999);
 
-			PlayerController->ClientMessage(L"Gave item!", FName(), 1);
+			PlayerController->ClientMessage(L"Gave ammo!", FName(), 1);
 		}
 	}
 }
