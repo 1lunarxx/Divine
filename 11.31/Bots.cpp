@@ -195,6 +195,8 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a
 	}
 
 	PlayerPawn->OnRep_CosmeticLoadout();
+	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50,50);
+	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 }
 
 void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
