@@ -318,17 +318,6 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 
 	WorldMarkerData.MarkerID = MarkerID;
 
-	if (MarkerRequest.MarkedActor)
-	{
-		((char (*)(UAthenaMarkerComponent*, AActor*, FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x1642450))(MarkerComponent, MarkerRequest.MarkedActor, &WorldMarkerData);
-
-		if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
-		{
-			WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
-			WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
-		}
-	}
-
 	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
 		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
@@ -381,6 +370,9 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 	if (Message == "resethealth")
 	{
+		if (PlayerController->MyFortPawn == NULL)
+			return;
+
 		PlayerController->MyFortPawn->SetHealth(100.f);
 
 		PlayerController->ClientMessage(L"Resetted Health!", FName(), 1);
@@ -388,6 +380,9 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 	if (Message == "god")
 	{
+		if (PlayerController->MyFortPawn == NULL)
+			return;
+
 		PlayerController->MyFortPawn->bCanBeDamaged = false;
 
 		PlayerController->MyFortPawn->HealthSet->Health.Minimum = 100;
@@ -566,8 +561,8 @@ void Player::Setup()
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
-	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
-	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
+	//Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
+	//Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
 
