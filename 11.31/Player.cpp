@@ -392,6 +392,24 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		PlayerController->ClientMessage(L"Resetted Health!", FName(), 1);
 	}
 
+	if (Message == "big")
+	{
+		if (PlayerController->MyFortPawn == NULL)
+			return;
+
+		PlayerController->Pawn->SetActorScale3D(FVector(20,20,20));
+		PlayerController->MyFortPawn->SetActorScale3D(FVector(20, 20, 20));
+	}
+
+	if (Message == "resetbig")
+	{
+		if (PlayerController->MyFortPawn == NULL)
+			return;
+
+		PlayerController->Pawn->SetActorScale3D(FVector(1, 1, 1));
+		PlayerController->MyFortPawn->SetActorScale3D(FVector(1,1,1));
+	}
+
 	if (Message == "god")
 	{
 		if (PlayerController->MyFortPawn == NULL)

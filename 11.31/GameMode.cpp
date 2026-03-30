@@ -13,7 +13,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSquad"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -28,7 +28,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->WarmupRequiredPlayerCount = 1;
 		GameMode->GameSession->MaxPlayers = Playlist->MaxPlayers;
 
-		GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
+		//GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
 		GameMode->AISettings = Playlist->AISettings;
 
 		GameState->Client_RefreshEventCalendar();
