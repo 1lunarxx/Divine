@@ -253,5 +253,5 @@ void GameMode::Setup()
 	}
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 }

@@ -336,7 +336,7 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	{
 		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
 
-		if (_TeamMember == NULL || TeamMember == PlayerController)
+		if (TeamMember == NULL || TeamMember == PlayerController)
 			continue;
 
 		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
@@ -364,7 +364,7 @@ void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMar
 	{
 		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
 
-		if (_TeamMember == NULL || TeamMember == PlayerController)
+		if (TeamMember == NULL || TeamMember == PlayerController)
 			continue;
 
 		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
@@ -553,6 +553,9 @@ void Player::Setup()
 
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1BF, ServerReviveFromDBNO);
+
+	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
+	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 

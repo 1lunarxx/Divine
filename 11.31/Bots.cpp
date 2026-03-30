@@ -152,7 +152,7 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a
 			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
 
 			if (Dance)
-				PlayerPawn->CosmeticLoadout.Dances.Add(Dance);
+				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
 		}
 	}
 
