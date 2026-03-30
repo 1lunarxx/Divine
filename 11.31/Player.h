@@ -7,7 +7,9 @@ class Player
 	{
 	public:
 		static inline void (*MovingEmoteStopped)(AFortPawn*);
+		static inline void (*GetPlayerViewPoint)(AFortPlayerControllerAthena*, FVector&, FRotator&);
 	};
+
 private:
 	static void ServerAcknowledgePossession(AFortPlayerControllerAthena*, APawn*);
 	static void ServerPlayEmoteItem(AFortPlayerControllerAthena*, UFortItemDefinition*, float);
@@ -24,7 +26,10 @@ private:
 
 	static void ServerAddMapMarker(UAthenaMarkerComponent*, FFortClientMarkerRequest&);
 	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);
+
 	static void ServerCheat(AFortPlayerController*, FString&);
+
+	static void ServerAttemptInventoryDrop(AFortPlayerController*, FGuid&, int32, bool);
 
 	static void ServerBeginEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerEditBuildingActor(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);

@@ -35,6 +35,17 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 	}
 }
 
+void Player::ServerHandlePickupInfo(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup, FFortPickupRequestInfo& Params_0)
+{
+	if (Pickup == NULL)
+		return;
+
+	if (Pickup->bPickedUp)
+		return;
+
+	Pickup->SetPickupTarget(PlayerPawn, Params_0.FlyTime / PlayerPawn->PickupSpeedMultiplier, Params_0.Direction);
+}
+
 void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, UFortItemDefinition* EmoteAsset, float EmoteRandomNumber)
 {
 	if (EmoteAsset == NULL)
@@ -83,6 +94,10 @@ void Player::GetPlayerViewPoint(AFortPlayerControllerAthena* PlayerController, F
 	{
 		Location = PlayerController->GetViewTarget()->K2_GetActorLocation();
 		Rotation = PlayerController->GetControlRotation();
+	}
+	else
+	{
+		return Originals::GetPlayerViewPoint(PlayerController, Location, Rotation);
 	}
 }
 
@@ -380,34 +395,19 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
 
+	if (GameMode == NULL)
+		return;
+
 	std::string Message = Msg.ToString();
 
-	if (Message == "resethealth")
+	if (Message == "list")
 	{
-		if (PlayerController->MyFortPawn == NULL)
-			return;
-
-		PlayerController->MyFortPawn->SetHealth(100.f);
-
-		PlayerController->ClientMessage(L"Resetted Health!", FName(), 1);
-	}
-
-	if (Message == "big")
-	{
-		if (PlayerController->MyFortPawn == NULL)
-			return;
-
-		PlayerController->Pawn->SetActorScale3D(FVector(20,20,20));
-		PlayerController->MyFortPawn->SetActorScale3D(FVector(20, 20, 20));
-	}
-
-	if (Message == "resetbig")
-	{
-		if (PlayerController->MyFortPawn == NULL)
-			return;
-
-		PlayerController->Pawn->SetActorScale3D(FVector(1, 1, 1));
-		PlayerController->MyFortPawn->SetActorScale3D(FVector(1,1,1));
+		PlayerController->ClientMessage(FString(LR"(Command List:
+    cheat god - Makes you invincible
+    cheat randombot - Teleports you to a playerbot
+    cheat launch <X> <Y> <Z> - Launches the player
+    cheat giveitem <WID> <Count = 1> <LoadedAmmo = 1> - Gives you an item)"),
+			FName(), 1);
 	}
 
 	if (Message == "god")
@@ -429,16 +429,19 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		{
 			if (GameState->GamePhase > EAthenaGamePhase::Aircraft)
 			{
-				int32 Index = UKismetMathLibrary::RandomIntegerInRange(0, GameMode->ServerBotManager->PlayerBots.Num() - 1);
-
-				if (AFortPlayerPawnAthena* PlayerBotPawn = GameMode->ServerBotManager->PlayerBots[Index].BotController->PlayerBotPawn)
+				if (GameMode->ServerBotManager->PlayerBots.Num() > 0)
 				{
-					PlayerController->Pawn->K2_TeleportTo(PlayerBotPawn->K2_GetActorLocation(), {});
+					int32 Index = UKismetMathLibrary::RandomIntegerInRange(0, GameMode->ServerBotManager->PlayerBots.Num() - 1);
+
+					if (AFortPlayerPawnAthena* PlayerBotPawn = GameMode->ServerBotManager->PlayerBots[Index].BotController->PlayerBotPawn)
+					{
+						PlayerController->Pawn->K2_TeleportTo(PlayerBotPawn->K2_GetActorLocation(), {});
+					}
 				}
 			}
 			else
 			{
-				PlayerController->ClientMessage(L"Invalid Gamephase! Please wait til we enter aircraft.", FName(), 1);
+				PlayerController->ClientMessage(L"Invalid Gamephase! Please wait til the aircraft has exited.", FName(), 1);
 			}
 		}
 	}
@@ -458,83 +461,86 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			float X{}, Y{}, Z{};
 			ss >> X >> Y >> Z;
 
-			FVector Yesh{};
-
-			Yesh.X = X;
-			Yesh.Y = Y;
-			Yesh.Z = Z;
-
 			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 			if (PlayerPawn == NULL)
 				return;
 
-			PlayerPawn->LaunchCharacter(Yesh, false, false);
+			PlayerPawn->LaunchCharacter(FVector(X, Y, Z), false, false);
 
 			PlayerController->ClientMessage(L"Launched Character!", FName(), 1);
 		}
 	}
 
-	if (Message.contains("giveitem"))
+	if (Message.rfind("giveitem", 0) == 0)
 	{
-		if (Message.rfind("giveitem", 0) == 0)
+		std::string giveitem = "giveitem";
+		std::string args;
+
+		if (Message.size() > giveitem.size() + 1)
+			args = Message.substr(giveitem.size() + 1);
+
+		std::stringstream ss(args);
+
+		std::string WeaponId;
+
+		int Count { 1 };
+		int LoadedAmmo { 2 };
+
+		ss >> WeaponId;
+
+		if (!(ss >> Count))
+			Count = 1;
+
+		if (!(ss >> LoadedAmmo))
+			LoadedAmmo = 2;
+
+		std::wstring wid(WeaponId.begin(), WeaponId.end());
+
+		auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wid.c_str(), ANY_PACKAGE));
+
+		if (ItemDefinition == NULL)
 		{
-			std::string giveitem = "giveitem";
-			std::string args;
-
-			if (Message.size() > giveitem.size() + 1)
-				args = Message.substr(giveitem.size() + 1);
-
-			std::wstring wargs(args.begin(), args.end());
-
-			auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wargs.c_str(), ANY_PACKAGE));
-
-			if (ItemDefinition == NULL)
-			{
-				PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
-
-				return;
-			}
-
-			UFortWorldItem* Item = Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 1, 3);
-
-			if (UFortWorldItemDefinition* WeaponItemDefinition = Cast<UFortWorldItemDefinition>(Item))
-			{
-				if (UFortAmmoItemDefinition* AmmoDefinition = Cast<UFortAmmoItemDefinition>(WeaponItemDefinition->GetAmmoWorldItemDefinition_BP()))
-				{
-					Inventory::CreateItem(PlayerController->WorldInventory, AmmoDefinition, 99999);
-				}
-			}
-
-			PlayerController->ClientMessage(L"Gave item!", FName(), 1);
+			PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
+			return;
 		}
+
+		Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
+
+		PlayerController->ClientMessage(L"Gave item!", FName(), 1);
 	}
+}
 
-	if (Message.contains("giveammo"))
+void Player::ServerAttemptInventoryDrop(AFortPlayerController* PlayerController, FGuid& ItemGuid, int32 Count, bool bTrash)
+{
+	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+	if (PlayerPawn == NULL)
+		return;
+
+	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, ItemGuid);
+
+	if (ItemEntry == NULL || ItemEntry->Count - Count < 0)
+		return;
+
+	UFortWorldItem* WorldItem = Inventory::GetWorldItem(PlayerController->WorldInventory, ItemGuid);
+
+	if (WorldItem == NULL)
+		return;
+
+	ItemEntry->Count -= Count;
+
+	Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation() + PlayerPawn->GetActorForwardVector() * 70.f + FVector(0, 0, 50), ItemEntry, Count, PlayerPawn, EFortPickupSourceTypeFlag::Tossed, EFortPickupSpawnSource::Unset);
+
+	if (ItemEntry->Count <= 0 || Count < 0)
 	{
-		if (Message.rfind("giveammo", 0) == 0)
-		{
-			std::string giveammo = "giveammo";
-			std::string args;
+		Inventory::RemoveItem(PlayerController->WorldInventory, ItemGuid);
+	}
+	else
+	{
+		WorldItem->ItemEntry.Count = ItemEntry->Count;
 
-			if (Message.size() > giveammo.size() + 1)
-				args = Message.substr(giveammo.size() + 1);
-
-			std::wstring wargs(args.begin(), args.end());
-
-			auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wargs.c_str(), ANY_PACKAGE));
-
-			if (ItemDefinition == NULL)
-			{
-				PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
-
-				return;
-			}
-
-			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, 150);
-
-			PlayerController->ClientMessage(L"Gave ammo!", FName(), 1);
-		}
+		Inventory::UpdateItemEntry(PlayerController->WorldInventory, ItemEntry);
 	}
 }
 
@@ -545,6 +551,7 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
 
 	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11B8 / 8, ServerBeginEditingBuildingActor);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1190 / 8, ServerEditBuildingActor);
@@ -560,7 +567,7 @@ void Player::Setup()
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint, (void**)&Originals::GetPlayerViewPoint);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);
 }

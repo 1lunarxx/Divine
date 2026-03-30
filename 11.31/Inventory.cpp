@@ -32,36 +32,50 @@ UFortWorldItem* Inventory::CreateItem(AFortInventory* WorldInventory, UFortItemD
 	return WorldItem;
 }
 
-AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int Count, AFortPlayerPawn* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource, bool bToss, bool bRandomRotation)
+AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int Count, AFortPlayerPawn* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource)
 {
-	AFortPickupAthena* NewPickup = Utils::SpawnActor<AFortPickupAthena>(Location);
+	AFortPickupAthena* Pickup = Utils::SpawnActor<AFortPickupAthena>(Location);
 
-	if (NewPickup == NULL)
+	if (Pickup == NULL)
 		return NULL;
-
-	if (ItemEntry == NULL)
-		return NULL;
-
-	NewPickup->bRandomRotation = bRandomRotation;
 
 	if (ItemEntry->Level != -1)
-		NewPickup->PrimaryPickupItemEntry.Level = ItemEntry->Level;
+		Pickup->PrimaryPickupItemEntry.Level = ItemEntry->Level;
 
-	NewPickup->PrimaryPickupItemEntry.ItemDefinition = ItemEntry->ItemDefinition;
-	NewPickup->PrimaryPickupItemEntry.LoadedAmmo = ItemEntry->LoadedAmmo;
-	NewPickup->PrimaryPickupItemEntry.Count = Count != -1 ? Count : ItemEntry->Count;
-	NewPickup->OnRep_PrimaryPickupItemEntry();
+	Pickup->PrimaryPickupItemEntry.ItemDefinition = ItemEntry->ItemDefinition;
+	Pickup->PrimaryPickupItemEntry.LoadedAmmo = ItemEntry->LoadedAmmo;
+	Pickup->PrimaryPickupItemEntry.Count = Count != -1 ? Count : ItemEntry->Count;
 
-	NewPickup->PawnWhoDroppedPickup = Pawn ? Pawn : nullptr;
-	NewPickup->TossPickup(Location, Pawn ? Pawn : nullptr, -1, bToss, true, SourceTypeFlag, SpawnSource);
+	Pickup->OnRep_PrimaryPickupItemEntry();
+
+	Pickup->bRandomRotation = true;
+
+	Pickup->PawnWhoDroppedPickup = Pawn ? Pawn : NULL;
+	Pickup->TossPickup(Location, Pickup->PawnWhoDroppedPickup, -1, true, true, SourceTypeFlag, SpawnSource);
 
 	if (SpawnSource != EFortPickupSpawnSource::Unset)
 	{
-		NewPickup->bTossedFromContainer = SpawnSource == EFortPickupSpawnSource::Chest || SpawnSource == EFortPickupSpawnSource::AmmoBox;
-		NewPickup->OnRep_TossedFromContainer();
+		Pickup->bTossedFromContainer = SpawnSource == EFortPickupSpawnSource::Chest || SpawnSource == EFortPickupSpawnSource::AmmoBox;
+		Pickup->OnRep_TossedFromContainer();
 	}
 
-	return NewPickup;
+	return Pickup;
+}
+
+UFortWorldItem* Inventory::GetWorldItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
+{
+	UFortWorldItem* WorldItem = NULL;
+
+	for (UFortWorldItem* ItemInstance : WorldInventory->Inventory.ItemInstances)
+	{
+		if (ItemInstance->ItemEntry.ItemGuid == ItemGuid)
+		{
+			WorldItem = ItemInstance;
+			break;
+		}
+	}
+
+	return WorldItem;
 }
 
 FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, FGuid& ItemGuid)
@@ -94,4 +108,69 @@ FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UClass* 
 	}
 
 	return ItemEntry;
+}
+
+void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* ItemEntry)
+{
+	if (ItemEntry->bIsReplicatedCopy)
+	{
+		ItemEntry->bIsDirty = false;
+
+		WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+		WorldInventory->bRequiresLocalUpdate = true;
+
+		return;
+	}
+
+	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
+	{
+		// Safer way to check imo
+
+		if (ReplicatedEntry.ItemGuid == ItemEntry->ItemGuid)
+		{
+			ReplicatedEntry = *ItemEntry;
+
+			ReplicatedEntry.bIsDirty = false;
+
+			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+
+			WorldInventory->bRequiresLocalUpdate = true;
+			WorldInventory->HandleInventoryLocalUpdate();
+
+			if (ItemEntry)
+			{
+				WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+			}
+			else
+			{
+				WorldInventory->Inventory.MarkArrayDirty();
+			}
+		}
+	}
+}
+
+void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
+{
+	for (int i = 0; i < WorldInventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == ItemGuid)
+		{
+			WorldInventory->Inventory.ItemInstances.Remove(i);
+			break;
+		}
+	}
+
+	for (int i = 0; i < WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
+	{
+		if (WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == ItemGuid)
+		{
+			WorldInventory->Inventory.ReplicatedEntries.Remove(i);
+			break;
+		}
+	}
+
+	WorldInventory->bRequiresLocalUpdate = true;
+
+	WorldInventory->HandleInventoryLocalUpdate();
+	WorldInventory->Inventory.MarkArrayDirty();
 }

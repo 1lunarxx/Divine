@@ -14,7 +14,8 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     AllocConsole();
     SetConsoleTitleA("Winter | Loading");
 
-    FILE* F = nullptr;
+    FILE* F = NULL;
+
     freopen_s(&F, "CONIN$", "r", stdin);
     freopen_s(&F, "CONOUT$", "w", stdout);
     freopen_s(&F, "CONOUT$", "w", stderr);
