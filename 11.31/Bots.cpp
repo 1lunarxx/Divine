@@ -84,6 +84,9 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
 
+				static EFortWeaponType(*FindWeaponType)(UFortItemDefinition*) = decltype(FindWeaponType)(InSDKUtils::GetImageBase() + 0x20E54E0);
+				SlotItem.WeaponType = FindWeaponType(ItemDefinition);
+
 				break;
 			}
 		}

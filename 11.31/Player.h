@@ -11,6 +11,7 @@ class Player
 private:
 	static void ServerAcknowledgePossession(AFortPlayerControllerAthena*, APawn*);
 	static void ServerPlayEmoteItem(AFortPlayerControllerAthena*, UFortItemDefinition*, float);
+	static void GetPlayerViewPoint(AFortPlayerControllerAthena*, FVector&, FRotator&);
 
 	static void ServerSendZiplineState(AFortPlayerPawn*, FZiplinePawnState&);
 	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);

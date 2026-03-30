@@ -29,6 +29,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     Navigation::Setup();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
+    *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = true; // GIsServer
 
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR

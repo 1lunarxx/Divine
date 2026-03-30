@@ -31,7 +31,6 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 		UFortItemDefinition* Wood = Utils::StaticFindObject<UFortItemDefinition>(TEXT("WoodItemData"), ANY_PACKAGE);
 
 		Inventory::CreateItem(PlayerController->WorldInventory, Wood, 50);
-
 		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
@@ -71,6 +70,15 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	Spec.ConstructAbilitySpec(Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
 
 	PlayerState->AbilitySystemComponent->GiveAbilityAndActivateOnce(&Spec.Handle, &Spec);
+}
+
+void Player::GetPlayerViewPoint(AFortPlayerControllerAthena* PlayerController, FVector& Location, FRotator& Rotation)
+{
+	if (PlayerController->GetViewTarget())
+	{
+		Location = PlayerController->GetViewTarget()->K2_GetActorLocation();
+		Rotation = PlayerController->GetControlRotation();
+	}
 }
 
 void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnState& InZiplineState)
@@ -167,7 +175,6 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	Building->SetEditingPlayer(PlayerState);
 
 	EditingTool->EditActor = Building;
-	EditingTool->ForceNetUpdate();
 	EditingTool->OnRep_EditActor();
 }
 
@@ -208,8 +215,6 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 	Building->SetEditingPlayer(NULL);
 
 	EditingTool->EditActor = NULL;
-	EditingTool->ForceNetUpdate();
-
 	EditingTool->OnRep_EditActor();
 }
 
@@ -523,10 +528,8 @@ void Player::Setup()
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
-	//Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
-	//Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
-
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);
 }
