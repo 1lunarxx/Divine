@@ -8,6 +8,7 @@ class Player
 	public:
 		static inline void (*MovingEmoteStopped)(AFortPawn*);
 		static inline void (*GetPlayerViewPoint)(AFortPlayerControllerAthena*, FVector&, FRotator&);
+		static inline void (*GivePickupTo)(AFortPickup*, IFortInventoryOwnerInterface*, bool);
 	};
 
 private:
@@ -30,6 +31,8 @@ private:
 	static void ServerCheat(AFortPlayerController*, FString&);
 
 	static void ServerAttemptInventoryDrop(AFortPlayerController*, FGuid&, int32, bool);
+	static void ServerHandlePickup(AFortPlayerPawn*, AFortPickup*, float, FVector&, bool);
+	static void GivePickupTo(AFortPickup*, IFortInventoryOwnerInterface*, bool);
 
 	static void ServerBeginEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerEditBuildingActor(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);

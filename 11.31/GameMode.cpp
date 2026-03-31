@@ -28,7 +28,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->WarmupRequiredPlayerCount = 1;
 		GameMode->GameSession->MaxPlayers = Playlist->MaxPlayers;
 
-		//GameMode->bDBNOEnabled = Playlist->MaxSquadSize > 1;
 		GameMode->AISettings = Playlist->AISettings;
 
 		GameState->Client_RefreshEventCalendar();
@@ -123,6 +122,14 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 						Tag.ValidPOIVolumeList.Add(Volume);
 					}
 				}
+			}
+		}
+
+		for (AFortAthenaVehicleSpawner* VehicleSpawner : Utils::GetAllActors<AFortAthenaVehicleSpawner>())
+		{
+			if (VehicleSpawner->GetVehicleClass() != NULL)
+			{
+				Utils::SpawnActor<AFortAthenaVehicle>(VehicleSpawner->K2_GetActorLocation(), VehicleSpawner->K2_GetActorRotation(), VehicleSpawner->GetVehicleClass());
 			}
 		}
 

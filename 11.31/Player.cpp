@@ -35,17 +35,6 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 	}
 }
 
-void Player::ServerHandlePickupInfo(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup, FFortPickupRequestInfo& Params_0)
-{
-	if (Pickup == NULL)
-		return;
-
-	if (Pickup->bPickedUp)
-		return;
-
-	Pickup->SetPickupTarget(PlayerPawn, Params_0.FlyTime / PlayerPawn->PickupSpeedMultiplier, Params_0.Direction);
-}
-
 void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, UFortItemDefinition* EmoteAsset, float EmoteRandomNumber)
 {
 	if (EmoteAsset == NULL)
@@ -329,16 +318,9 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	if (PlayerState == NULL)
 		return;
 
-	FFortWorldMarkerData WorldMarkerData{};
+	FFortWorldMarkerData WorldMarkerData = FFortWorldMarkerData();
 
-	((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(&WorldMarkerData);
-
-	WorldMarkerData.Owner = PlayerState;
-	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
-	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
-	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
-	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
-	WorldMarkerData.bHasCustomDisplayInfo = false;
+	WorldMarkerData.ConstructWorldMarkerData();
 
 	FMarkerID MarkerID{};
 
@@ -346,6 +328,14 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	MarkerID.InstanceID = MarkerRequest.InstanceID;
 
 	WorldMarkerData.MarkerID = MarkerID;
+	WorldMarkerData.Owner = PlayerState;
+
+	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
+	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
+	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
+	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
+
+	WorldMarkerData.bHasCustomDisplayInfo = false;
 
 	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
@@ -399,16 +389,6 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		return;
 
 	std::string Message = Msg.ToString();
-
-	if (Message == "list")
-	{
-		PlayerController->ClientMessage(FString(LR"(Command List:
-    cheat god - Makes you invincible
-    cheat randombot - Teleports you to a playerbot
-    cheat launch <X> <Y> <Z> - Launches the player
-    cheat giveitem <WID> <Count = 1> <LoadedAmmo = 1> - Gives you an item)"),
-			FName(), 1);
-	}
 
 	if (Message == "god")
 	{
@@ -544,6 +524,29 @@ void Player::ServerAttemptInventoryDrop(AFortPlayerController* PlayerController,
 	}
 }
 
+void Player::ServerHandlePickup(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup, float InFlyTime, FVector& InStartDirection, bool bPlayPickupSound)
+{
+	if (Pickup == NULL)
+		return;
+
+	Pickup->SetPickupTarget(PlayerPawn, InFlyTime / PlayerPawn->PickupSpeedMultiplier, InStartDirection);
+}
+
+void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* InventoryOwner, bool DestroyAfterPickup)
+{
+	Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
+
+	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(Pickup->PickupLocationData.PickupTarget);
+
+	if (PlayerPawn == NULL)
+		return;
+
+	if (AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller))
+	{
+		Inventory::CreateItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
+	}
+}
+
 void Player::Setup()
 {
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
@@ -558,8 +561,11 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11A8 / 8, ServerEndEditingBuildingActor);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1180 / 8, ServerCreateBuildingActor);
 
+	Utils::Virtual<AFortPickupAthena>(0xC7, GivePickupTo, (void**)&Originals::GivePickupTo);
+
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1BF, ServerReviveFromDBNO);
+	Utils::Virtual<AFortPlayerPawnAthena>(0xEB0 / 8, ServerHandlePickup);
 
 	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
 	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);

@@ -39886,7 +39886,13 @@ public:
 	float GetMovementCapsuleRadius() const;
 	class AFortPawn* GetPawnWhoDroppedPickup() const;
 	bool PickedUp() const;
-
+public:
+	void SetPickupTarget(AFortPawn* PickupTarget, float InFlyTime, FVector& InStartDirection)
+	{
+		static void (*_SetPickupTarget)(AFortPickup*, AFortPawn*, float, FVector&) = decltype(_SetPickupTarget)(InSDKUtils::GetImageBase() + 0x1B1DC50);
+		_SetPickupTarget(this, PickupTarget, InFlyTime, InStartDirection);
+	};
+public:
 public:
 	static class UClass* StaticClass()
 	{

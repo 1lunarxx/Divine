@@ -41,7 +41,7 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 			BotController->CacheLootingSkillSet = LootSkill;
 	}
 
-	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
+	//BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
@@ -83,7 +83,7 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 				SlotItem.FortItem = WorldItem;
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = EFortWeaponType::Shotgun;
+				SlotItem.WeaponType = EFortWeaponType::Rifle;
 
 				break;
 			}
@@ -226,7 +226,7 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 		{
 			if (UFortWeaponRangedItemDefinition* WeaponItemDefinition = Cast<UFortWeaponRangedItemDefinition>(Entry.ItemDefinition))
 			{
-				Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination, true, true);
+				Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
 			}
 		}
 	}

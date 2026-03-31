@@ -13309,6 +13309,12 @@ public:
 	bool                                          bUseHoveredMarkerDetail;                           // 0x0099(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_9A[0x6];                                       // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FMarkedActorDisplayInfo                CustomDisplayInfo;                                 // 0x00A0(0x0068)(NativeAccessSpecifierPrivate)
+
+public:
+	void ConstructWorldMarkerData()
+	{
+		((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(this);
+	}
 };
 
 // ScriptStruct FortniteGame.FortAIDirectorFactorContribution
