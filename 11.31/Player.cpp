@@ -426,6 +426,58 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		}
 	}
 
+	if (Message.contains("sethealth"))
+	{
+		if (Message.rfind("sethealth", 0) == 0)
+		{
+			std::string sethealth = "sethealth";
+			std::string args;
+
+			if (Message.size() > sethealth.size() + 1)
+				args = Message.substr(sethealth.size() + 1);
+
+			std::stringstream ss(args);
+
+			float Health;
+			ss >> Health;
+
+			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+			if (PlayerPawn == NULL)
+				return;
+
+			PlayerPawn->SetHealth(Health);
+
+			PlayerController->ClientMessage(L"Health Changed!", FName(), 1);
+		}
+	}
+
+	if (Message.contains("setshield"))
+	{
+		if (Message.rfind("setshield", 0) == 0)
+		{
+			std::string setshield = "setshield";
+			std::string args;
+
+			if (Message.size() > setshield.size() + 1)
+				args = Message.substr(setshield.size() + 1);
+
+			std::stringstream ss(args);
+
+			float Shield;
+			ss >> Shield;
+
+			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+			if (PlayerPawn == NULL)
+				return;
+
+			PlayerPawn->SetShield(Shield);
+
+			PlayerController->ClientMessage(L"Health Changed!", FName(), 1);
+		}
+	}
+
 	if (Message.contains("launch"))
 	{
 		if (Message.rfind("launch", 0) == 0)
