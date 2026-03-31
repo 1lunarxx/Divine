@@ -147,12 +147,21 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 
 void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
-
-	if (PlayerState == NULL || PlayerController->MyFortPawn == NULL || Building == NULL || Building->TeamIndex != PlayerState->TeamIndex)
+	if (Building == NULL || !Building->bPlayerPlaced)
 		return;
 
-	Building->SetEditingPlayer(PlayerState);
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	if (Building->EditingPlayer == NULL)
+	{
+		Building->SetNetDormancy((ENetDormancy)(2 - (PlayerState != 0)));
+
+		Building->EditingPlayer = PlayerState;
+		Building->OnRep_EditingPlayer();
+	}
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
@@ -165,27 +174,34 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 		return;
 
 	PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid);
+
+	if (AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->CurrentWeapon))
+	{
+		EditingTool->EditActor = Building;
+		EditingTool->OnRep_EditActor();
+	}
 }
 
 void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building, TSubclassOf<ABuildingSMActor> NewClass, uint8 RotationIterations, bool bMirrored)
 {
-	if (Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
+	if (Building == NULL || NewClass == NULL || Building->bDestroyed || Building->EditingPlayer	!= PlayerController->PlayerState)
 		return;
 
-	Building->SetEditingPlayer(NULL);
+	Building->EditingPlayer = NULL;
+	Building->OnRep_EditingPlayer();
 
 	ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
 
 	if (NewBuilding != NULL)
 		NewBuilding->bPlayerPlaced = true;
+
+	return Originals::ServerEditBuildingActor(PlayerController, Building, NewClass, RotationIterations, bMirrored);
 }
 
 void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	if (PlayerController->MyFortPawn == NULL || Building == NULL || Building->EditingPlayer != PlayerController->PlayerState)
+	if (PlayerController->MyFortPawn == NULL || Building == NULL || Building->bDestroyed || Building->EditingPlayer != PlayerController->PlayerState)
 		return;
-
-	Building->SetEditingPlayer(NULL);
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
@@ -196,6 +212,9 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 
 	if (WeaponItemDefinition == NULL)
 		return;
+
+	Building->EditingPlayer == NULL;
+	Building->OnRep_EditingPlayer();
 
 	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
@@ -622,7 +641,7 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11B8 / 8, ServerBeginEditingBuildingActor);
-	Utils::Virtual<AFortPlayerControllerAthena>(0x1190 / 8, ServerEditBuildingActor);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x1190 / 8, ServerEditBuildingActor, (void**)&Originals::ServerEditBuildingActor);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x11A8 / 8, ServerEndEditingBuildingActor);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1180 / 8, ServerCreateBuildingActor);
 

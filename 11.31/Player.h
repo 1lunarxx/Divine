@@ -9,6 +9,7 @@ class Player
 		static inline void (*MovingEmoteStopped)(AFortPawn*);
 		static inline void (*GetPlayerViewPoint)(AFortPlayerControllerAthena*, FVector&, FRotator&);
 		static inline void (*GivePickupTo)(AFortPickup*, IFortInventoryOwnerInterface*, bool);
+		static inline void (*ServerEditBuildingActor)(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
 	};
 
 private:
