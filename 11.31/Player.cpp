@@ -446,6 +446,9 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			if (PlayerPawn == NULL)
 				return;
 
+			if (Health < 1)
+				PlayerController->ClientMessage(L"Couldn't Set Health Lower Then 1", FName(), 1);
+
 			PlayerPawn->SetHealth(Health);
 
 			PlayerController->ClientMessage(L"Health Changed!", FName(), 1);
@@ -474,7 +477,7 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 			PlayerPawn->SetShield(Shield);
 
-			PlayerController->ClientMessage(L"Health Changed!", FName(), 1);
+			PlayerController->ClientMessage(L"Shield Changed!", FName(), 1);
 		}
 	}
 
