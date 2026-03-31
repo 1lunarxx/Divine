@@ -165,20 +165,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 	return bReadyToStartMatch;
 }
 
-void GameMode::PlaceBotOnTeam(AFortGameModeAthena* GameMode, AFortPlayerStateAthena* FPSA, AFortTeamInfoAthena* TeamToBePutOn, uint8 BotSquadId)
-{
-	Originals::PlaceBotOnTeam(GameMode, FPSA, TeamToBePutOn, BotSquadId);
-
-	static TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* (*Find)(__int64, uint8) = decltype(Find)(InSDKUtils::GetImageBase() + 0x15729D0);
-	static void (*Add)(TArray<TWeakObjectPtr<AFortPlayerStateAthena>>*, AFortPlayerStateAthena*) = decltype(Add)(InSDKUtils::GetImageBase() + 0x156ABD0);
-
-	TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* TeamIdxPlayerList = Find((int64(GameMode->GameState) + 0x14F0), FPSA->TeamIndex);
-	Add(TeamIdxPlayerList, FPSA);
-
-	TArray<TWeakObjectPtr<AFortPlayerStateAthena>>* SquadIdPlayerList = Find((int64(GameMode->GameState) + 0x1528), FPSA->SquadId);
-	Add(SquadIdPlayerList, FPSA);
-}
-
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
 {
 	Originals::HandleStartingNewPlayer(GameMode, NewPlayer);
@@ -219,6 +205,11 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
     return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
 
+UClass** GameMode::GetGameSessionClass(AFortGameMode*, UClass** OutClass) {
+	*OutClass = AFortGameSessionDedicatedAthena::StaticClass();
+	return OutClass;
+}
+
 EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) 
 {
 	static uint8_t Team = 3;
@@ -243,22 +234,16 @@ EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTea
 	return EFortTeam(ChosenTeam);
 }
 
-UClass** GetGameSessionClass(AFortGameMode*, UClass** OutClass) {
-	*OutClass = AFortGameSessionDedicatedAthena::StaticClass();
-	return OutClass;
-}
-
 void GameMode::Setup()
 {
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
 
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
+
 	if (Configuration::bUseGameSessions)
 	{
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x199DAA0, GetGameSessionClass);
 	}
-
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
-	//Utils::Hook(InSDKUtils::GetImageBase() + 0x153B740, PlaceBotOnTeam, (void**)&Originals::PlaceBotOnTeam);
 }

@@ -315,7 +315,7 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 
 	WorldMarkerData.ConstructWorldMarkerData();
 
-	FMarkerID MarkerID{};
+	FMarkerID MarkerID = FMarkerID{};
 
 	MarkerID.PlayerID = PlayerState->PlayerID;
 	MarkerID.InstanceID = MarkerRequest.InstanceID;

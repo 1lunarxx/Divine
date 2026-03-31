@@ -37,8 +37,10 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
 
-		if (UFortAthenaAIBotLootingDigestedSkillSet* LootSkill = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
-			BotController->CacheLootingSkillSet = LootSkill;
+		if (UFortAthenaAIBotAttackingDigestedSkillSet* AttackingSkill = Cast<UFortAthenaAIBotAttackingDigestedSkillSet>(SkillSet))
+		{
+
+		}
 	}
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
@@ -55,47 +57,6 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	AddStartingItemsToInventory(BotController);
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
-}
-
-UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo = 0)
-{
-	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
-
-	if (WorldItem == NULL)
-		return NULL;
-
-	WorldItem->OwnerInventory = BotController->Inventory;
-
-	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
-	WorldItem->ItemEntry.Count = Count;
-	WorldItem->ItemEntry.LoadedAmmo = LoadedAmmo;
-
-	if (ItemDefinition->bInventorySizeLimited)
-	{
-		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
-		{
-			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
-
-			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
-			{
-				SlotItem.FortItem = WorldItem;
-				SlotItem.ItemDefinition = ItemDefinition;
-				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = EFortWeaponType::Rifle;
-
-				break;
-			}
-		}
-	}
-
-	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
-	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
-
-	BotController->Inventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
-
-	BotController->Inventory->HandleInventoryLocalUpdate();
-
-	return WorldItem;
 }
 
 void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController)
@@ -315,6 +276,47 @@ UFortServerBotManagerAthena* Bots::GetServerBotManager()
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
 
 	return GameMode->ServerBotManager;
+}
+
+UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo = 0)
+{
+	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
+
+	if (WorldItem == NULL)
+		return NULL;
+
+	WorldItem->OwnerInventory = BotController->Inventory;
+
+	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
+	WorldItem->ItemEntry.Count = Count;
+	WorldItem->ItemEntry.LoadedAmmo = LoadedAmmo;
+
+	if (ItemDefinition->bInventorySizeLimited)
+	{
+		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
+		{
+			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
+
+			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
+			{
+				SlotItem.FortItem = WorldItem;
+				SlotItem.ItemDefinition = ItemDefinition;
+				SlotItem.ItemType = ItemDefinition->ItemType;
+				SlotItem.WeaponType = EFortWeaponType::Rifle;
+
+				break;
+			}
+		}
+	}
+
+	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
+	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
+
+	BotController->Inventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
+
+	BotController->Inventory->HandleInventoryLocalUpdate();
+
+	return WorldItem;
 }
 
 void Bots::Setup()
