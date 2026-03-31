@@ -101,14 +101,6 @@ void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnSta
 		PlayerPawn->LaunchCharacterJump({ Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, 1500 }, false, false, true, true);
 }
 
-void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerController)
-{
-	PlayerController->WorldInventory->Inventory.ReplicatedEntries.Free();
-	PlayerController->WorldInventory->Inventory.ItemInstances.Free();
-
-	PlayerController->WorldInventory->Inventory.MarkArrayDirty();
-}
-
 void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController, FGuid& ItemGuid)
 {
 	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(PlayerController->MyFortPawn);
@@ -148,24 +140,16 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 
 void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
-	Pawn->bMovingEmote = false;
+	Originals::MovingEmoteStopped(Pawn);
 
-	return Originals::MovingEmoteStopped(Pawn);
+	Pawn->bMovingEmote = false;
 }
 
 void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	if (PlayerController == NULL || PlayerController->MyFortPawn == NULL || Building == NULL)
-		return;
-
-	AFortPlayerPawnAthena* Pawn = Cast<AFortPlayerPawnAthena>(PlayerController->Pawn);
-
-	if (Pawn == NULL)
-		return;
-
 	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
 
-	if (PlayerState == NULL)
+	if (PlayerState == NULL || PlayerController->MyFortPawn == NULL || Building == NULL || Building->TeamIndex != PlayerState->TeamIndex)
 		return;
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
@@ -178,15 +162,15 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
-	if (EditingTool == NULL)
-		return;
+	if (EditingTool != NULL)
+	{
+		Building->SetEditingPlayer(PlayerState);
 
-	Building->SetEditingPlayer(PlayerState);
-
-	EditingTool->EditActor = Building;
-	EditingTool->OnRep_EditActor();
+		EditingTool->EditActor = Building;
+		EditingTool->OnRep_EditActor();
+	}
 }
 
 void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building, TSubclassOf<ABuildingSMActor> NewClass, uint8 RotationIterations, bool bMirrored)
@@ -196,19 +180,15 @@ void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, AB
 
 	Building->SetEditingPlayer(NULL);
 
-	int32 CurrentBuildingLevel = Building->CurrentBuildingLevel;
+	ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
 
-	Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
+	if (NewBuilding != NULL)
+		NewBuilding->bPlayerPlaced = true;
 }
 
 void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	if (Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
-		return;
-
-	AFortPlayerPawnAthena* Pawn = Cast<AFortPlayerPawnAthena>(PlayerController->Pawn);
-
-	if (Pawn == NULL)
+	if (PlayerController->MyFortPawn == NULL || Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
 		return;
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
@@ -221,38 +201,41 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(Pawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
+	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
-	if (EditingTool == NULL)
-		return;
+	if (EditingTool != NULL)
+	{
+		Building->SetEditingPlayer(NULL);
 
-	Building->SetEditingPlayer(NULL);
-
-	EditingTool->EditActor = NULL;
-	EditingTool->OnRep_EditActor();
+		EditingTool->EditActor = NULL;
+		EditingTool->OnRep_EditActor();
+	}
 }
 
-void Player::ServerCreateBuildingActor(AFortPlayerController* PlayerController, FCreateBuildingActorData BuildingActorData)
+void Player::ServerCreateBuildingActor(AFortPlayerControllerAthena* PlayerController, FCreateBuildingActorData BuildingActorData)
 {
 	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState);
 
 	if (GameState == NULL)
 		return;
 
-	UClass* BuildingClass = ((AFortPlayerControllerAthena*)PlayerController)->BroadcastRemoteClientInfo->RemoteBuildableClass.Get();
+	UClass* BuildingClass = PlayerController->BroadcastRemoteClientInfo->RemoteBuildableClass.Get();
 
 	if (BuildingClass == NULL)
 		return;
 
-	TArray<ABuildingActor*> ExistingBuildings;
 	EFortBuildPreviewMarkerOptionalAdjustment MarkerOptionalAdjustment;
+
+	TArray<ABuildingActor*> ExistingBuildings;
 
 	EFortStructuralGridQueryResults QueryResults = GameState->StructuralSupportSystem->CanAddBuildingActorClassToGrid(UWorld::GetWorld(), BuildingClass, BuildingActorData.BuildLoc, BuildingActorData.BuildRot, BuildingActorData.bMirrored, &ExistingBuildings, &MarkerOptionalAdjustment, false);
 
 	if (QueryResults == EFortStructuralGridQueryResults::CanAdd)
 	{
 		for (ABuildingActor* ExistingBuilding : ExistingBuildings)
+		{
 			ExistingBuilding->K2_DestroyActor();
+		}
 
 		ABuildingSMActor* Building = Utils::SpawnActor<ABuildingSMActor>(BuildingActorData.BuildLoc, BuildingActorData.BuildRot, BuildingClass, PlayerController);
 
@@ -583,10 +566,8 @@ void Player::ServerAttemptInventoryDrop(AFortPlayerController* PlayerController,
 
 void Player::ServerHandlePickup(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup, float InFlyTime, FVector& InStartDirection, bool bPlayPickupSound)
 {
-	if (Pickup == NULL)
-		return;
-
-	Pickup->SetPickupTarget(PlayerPawn, InFlyTime / PlayerPawn->PickupSpeedMultiplier, InStartDirection);
+	if (Pickup != NULL)
+		Pickup->SetPickupTarget(PlayerPawn, InFlyTime / PlayerPawn->PickupSpeedMultiplier, InStartDirection);
 }
 
 void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* InventoryOwner, bool DestroyAfterPickup)
@@ -602,6 +583,14 @@ void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* Inv
 	{
 		Inventory::CreateItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
 	}
+}
+
+void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerController)
+{
+	PlayerController->WorldInventory->Inventory.ReplicatedEntries.Free();
+	PlayerController->WorldInventory->Inventory.ItemInstances.Free();
+
+	PlayerController->WorldInventory->Inventory.MarkArrayDirty();
 }
 
 void Player::Setup()

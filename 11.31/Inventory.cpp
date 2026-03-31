@@ -172,5 +172,6 @@ void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
 	WorldInventory->bRequiresLocalUpdate = true;
 
 	WorldInventory->HandleInventoryLocalUpdate();
+
 	WorldInventory->Inventory.MarkArrayDirty();
 }

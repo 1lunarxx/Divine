@@ -5,7 +5,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 30); // CachedHumanPlayerCount
+	*(uint8*)((__int64)(BotMutator)+ 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -40,8 +40,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 		if (UFortAthenaAIBotLootingDigestedSkillSet* LootSkill = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
 			BotController->CacheLootingSkillSet = LootSkill;
 	}
-
-	//BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
@@ -169,9 +167,9 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a
 		}
 	}
 
-	int32 ChosenPhoebeCharacter = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharacterItemDefinitions.Num() - 1);
+	int32 SelectedPhoebeCharacter = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharacterItemDefinitions.Num() - 1);
 
-	UAthenaCharacterItemDefinition* PhoebeCharacter = PhoebeCharacterItemDefinitions[ChosenPhoebeCharacter];
+	UAthenaCharacterItemDefinition* PhoebeCharacter = PhoebeCharacterItemDefinitions[SelectedPhoebeCharacter];
 
 	if (PhoebeCharacter != NULL)
 	{
