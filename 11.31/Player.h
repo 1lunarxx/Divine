@@ -17,7 +17,6 @@ private:
 	static void GetPlayerViewPoint(AFortPlayerControllerAthena*, FVector&, FRotator&);
 
 	static void ServerSendZiplineState(AFortPlayerPawn*, FZiplinePawnState&);
-	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
@@ -37,7 +36,9 @@ private:
 	static void ServerBeginEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerEditBuildingActor(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
 	static void ServerEndEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
-	static void ServerCreateBuildingActor(AFortPlayerController*, FCreateBuildingActorData);
+	static void ServerCreateBuildingActor(AFortPlayerControllerAthena*, FCreateBuildingActorData);
+
+	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 public:
 	static void Setup();
 };

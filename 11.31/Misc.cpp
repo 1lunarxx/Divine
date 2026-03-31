@@ -88,12 +88,7 @@ const wchar_t* Misc::GetCommandLet()
 
 static int ForceRetTrue()
 {
-	return 1;
-}
-
-static int ForceRetZero()
-{
-	return 0;
+	return true;
 }
 
 static float GetMaxTickRate()
@@ -106,12 +101,13 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 
 	if (Configuration::bUseGameSessions)
 	{
-		Utils::Hook(InSDKUtils::GetImageBase() + 0x8A7580, MatchMakingServicePerms);
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x2622780, GetCommandLet, (void**)&Originals::GetCommandLet);
 
+		Utils::Hook(InSDKUtils::GetImageBase() + 0x8A7580, MatchMakingServicePerms);
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
 
 		Utils::Patch(InSDKUtils::GetImageBase() + 0x1C1A525, 0x85);
@@ -119,14 +115,12 @@ void Misc::Setup()
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
-
-	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 }
