@@ -403,6 +403,28 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		PlayerController->ClientMessage(L"God mode enabled!", FName(), 1);
 	}
 
+	if (Message.contains("demospeed"))
+	{
+		if (Message.rfind("demospeed", 0) == 0)
+		{
+			std::string demospeed = "demospeed";
+			std::string args;
+
+			if (Message.size() > demospeed.size() + 1)
+				args = Message.substr(demospeed.size() + 1);
+
+			std::stringstream ss(args);
+
+			float Speed;
+			ss >> Speed;
+
+			std::wstring Command = L"demospeed " + std::to_wstring(Speed);
+			FString Run(Command.c_str());
+			UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), Run, nullptr);
+			PlayerController->ClientMessage(L"Server Speed Changed!", FName(), 1);
+		}
+	}
+
 	if (Message == "randombot")
 	{
 		if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
@@ -449,6 +471,7 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			if (Health < 1) {
 				Health = 1;
 				PlayerController->ClientMessage(L"Couldn't Set Health Lower Then 1", FName(), 1);
+				return;
 			}
 
 			PlayerPawn->SetHealth(Health);
