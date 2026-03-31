@@ -5,7 +5,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator)+ 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
+	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -42,7 +42,9 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	}
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
+
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
+	BotController->RunBehaviorTree(Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe")));
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }

@@ -162,15 +162,7 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
-
-	if (EditingTool != NULL)
-	{
-		Building->SetEditingPlayer(PlayerState);
-
-		EditingTool->EditActor = Building;
-		EditingTool->OnRep_EditActor();
-	}
+	PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid);
 }
 
 void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building, TSubclassOf<ABuildingSMActor> NewClass, uint8 RotationIterations, bool bMirrored)
@@ -188,8 +180,10 @@ void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, AB
 
 void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
 {
-	if (PlayerController->MyFortPawn == NULL || Building == NULL || Building->EditingPlayer != PlayerController->PlayerState || Building->bDestroyed)
+	if (PlayerController->MyFortPawn == NULL || Building == NULL || Building->EditingPlayer != PlayerController->PlayerState)
 		return;
+
+	Building->SetEditingPlayer(NULL);
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
@@ -205,8 +199,6 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 
 	if (EditingTool != NULL)
 	{
-		Building->SetEditingPlayer(NULL);
-
 		EditingTool->EditActor = NULL;
 		EditingTool->OnRep_EditActor();
 	}
@@ -402,8 +394,10 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			ss >> Speed;
 
 			std::wstring Command = L"demospeed " + std::to_wstring(Speed);
+
 			FString Run(Command.c_str());
 			UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), Run, nullptr);
+
 			PlayerController->ClientMessage(L"Server Speed Changed!", FName(), 1);
 		}
 	}
