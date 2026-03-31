@@ -75,15 +75,10 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 
 FServicePermissionsMcp* Misc::MatchMakingServicePerms(int64, int64)
 {
-	FServicePermissionsMcp* Perms = new FServicePermissionsMcp();
-	Perms->Id = L"ec684b8c687f479fadea3cb2ad83f5c6";
-	return Perms;
-}
+	FServicePermissionsMcp* Permissions = new FServicePermissionsMcp();
+	Permissions->Id = L"ec684b8c687f479fadea3cb2ad83f5c6";
 
-const wchar_t* Misc::GetCommandLet()
-{
-	static auto Ret = std::wstring(Originals::GetCommandLet()) + L" -AllowAllPlaylistsInShipping";
-	return Ret.c_str();
+	return Permissions;
 }
 
 static int ForceRetTrue()
@@ -105,9 +100,8 @@ void Misc::Setup()
 
 	if (Configuration::bUseGameSessions)
 	{
-		Utils::Hook(InSDKUtils::GetImageBase() + 0x2622780, GetCommandLet, (void**)&Originals::GetCommandLet);
-
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x8A7580, MatchMakingServicePerms);
+
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
 
 		Utils::Patch(InSDKUtils::GetImageBase() + 0x1C1A525, 0x85);

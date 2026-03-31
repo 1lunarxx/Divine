@@ -37,9 +37,6 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 
 void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, UFortItemDefinition* EmoteAsset, float EmoteRandomNumber)
 {
-	if (EmoteAsset == NULL)
-		return;
-
 	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 	if (PlayerPawn == NULL)
@@ -52,7 +49,7 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 
 	static UClass* AbilityClass = NULL;
 
-	if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast< UAthenaDanceItemDefinition>(EmoteAsset))
+	if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(EmoteAsset))
 	{
 		AbilityClass = DanceItemDefinition->CustomDanceAbility.Get() ? DanceItemDefinition->CustomDanceAbility.Get() : Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/Emotes/GAB_Emote_Generic.GAB_Emote_Generic_C"));
 
@@ -140,9 +137,9 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 
 void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
-	Originals::MovingEmoteStopped(Pawn);
-
 	Pawn->bMovingEmote = false;
+
+	return Originals::MovingEmoteStopped(Pawn);
 }
 
 void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerController, ABuildingSMActor* Building)
@@ -282,7 +279,7 @@ void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController
 
 	for (FGameplayAbilitySpec& AbilitySpec : PlayerState->AbilitySystemComponent->ActivatableAbilities.Items)
 	{
-		if (AbilitySpec.Ability->IsA(Utils::StaticLoadObject<UClass>(TEXT("/Game/Abilities/NPC/Generic/GAB_AthenaDBNO.GAB_AthenaDBNO_C"))))
+		if (AbilitySpec.Ability->IsA(Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/NPC/Generic/GAB_AthenaDBNO.GAB_AthenaDBNO_C"))))
 		{
 			PlayerState->AbilitySystemComponent->ServerCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
 			PlayerState->AbilitySystemComponent->ServerEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo, AbilitySpec.ActivationInfo.PredictionKeyWhenActivated);
@@ -333,19 +330,28 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 
 	WorldMarkerData.bHasCustomDisplayInfo = false;
 
-	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	if (MarkerRequest.MarkerType == EFortWorldMarkerType::Item)
 	{
-		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
+		AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor);
 
-		if (TeamMember == NULL || TeamMember == PlayerController)
+		if (Pickup != NULL)
+		{
+			WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
+			WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
+		}
+	}
+
+	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	{
+		AFortPlayerControllerAthena* TeamMemberAthena = Cast<AFortPlayerControllerAthena>(TeamMember);
+
+		if (TeamMemberAthena == NULL || TeamMemberAthena == PlayerController)
 			continue;
 
-		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMemberAthena->MarkerComponent;
 
-		if (TeamMemberMarkerComponent == NULL)
-			continue;
-
-		TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
+		if (TeamMemberMarkerComponent != NULL)
+			TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
 	}
 }
 
@@ -361,19 +367,17 @@ void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMar
 	if (PlayerState == NULL)
 		return;
 
-	for (auto& _TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
-		AFortPlayerControllerAthena* TeamMember = Cast<AFortPlayerControllerAthena>(_TeamMember);
+		AFortPlayerControllerAthena* TeamMemberAthena = Cast<AFortPlayerControllerAthena>(TeamMember);
 
-		if (TeamMember == NULL || TeamMember == PlayerController)
+		if (TeamMemberAthena == NULL || TeamMemberAthena == PlayerController)
 			continue;
 
-		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember->MarkerComponent;
+		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMemberAthena->MarkerComponent;
 
-		if (TeamMemberMarkerComponent == NULL)
-			continue;
-
-		TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
+		if (TeamMemberMarkerComponent != NULL)
+			TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
 	}
 }
 
@@ -399,17 +403,30 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		PlayerController->ClientMessage(L"God mode enabled!", FName(), 1);
 	}
 
+	if (Message == "disablegod")
+	{
+		if (PlayerController->MyFortPawn == NULL)
+			return;
+
+		PlayerController->MyFortPawn->bCanBeDamaged = true;
+
+		PlayerController->MyFortPawn->HealthSet->Health.Minimum = 0;
+		PlayerController->MyFortPawn->HealthSet->OnRep_Health();
+
+		PlayerController->ClientMessage(L"God mode disabled!", FName(), 1);
+	}
+
 	if (Message.contains("demospeed"))
 	{
 		if (Message.rfind("demospeed", 0) == 0)
 		{
-			std::string demospeed = "demospeed";
-			std::string args;
+			std::string Demospeed_ = "demospeed";
+			std::string Args;
 
-			if (Message.size() > demospeed.size() + 1)
-				args = Message.substr(demospeed.size() + 1);
+			if (Message.size() > Demospeed_.size() + 1)
+				Args = Message.substr(Demospeed_.size() + 1);
 
-			std::stringstream ss(args);
+			std::stringstream ss(Args);
 
 			float Speed;
 			ss >> Speed;
@@ -450,27 +467,21 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 	{
 		if (Message.rfind("sethealth", 0) == 0)
 		{
-			std::string sethealth = "sethealth";
-			std::string args;
-
-			if (Message.size() > sethealth.size() + 1)
-				args = Message.substr(sethealth.size() + 1);
-
-			std::stringstream ss(args);
-
-			float Health;
-			ss >> Health;
-
 			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 			if (PlayerPawn == NULL)
 				return;
 
-			if (Health < 1) {
-				Health = 1;
-				PlayerController->ClientMessage(L"Couldn't Set Health Lower Then 1", FName(), 1);
-				return;
-			}
+			std::string SetHealth_ = "sethealth";
+			std::string Args;
+
+			if (Message.size() > SetHealth_.size() + 1)
+				Args = Message.substr(SetHealth_.size() + 1);
+
+			std::stringstream ss(Args);
+
+			float Health;
+			ss >> Health;
 
 			PlayerPawn->SetHealth(Health);
 
@@ -482,21 +493,21 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 	{
 		if (Message.rfind("setshield", 0) == 0)
 		{
-			std::string setshield = "setshield";
-			std::string args;
-
-			if (Message.size() > setshield.size() + 1)
-				args = Message.substr(setshield.size() + 1);
-
-			std::stringstream ss(args);
-
-			float Shield;
-			ss >> Shield;
-
 			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 			if (PlayerPawn == NULL)
 				return;
+
+			std::string SetShield_ = "setshield";
+			std::string Args;
+
+			if (Message.size() > SetShield_.size() + 1)
+				Args = Message.substr(SetShield_.size() + 1);
+
+			std::stringstream ss(Args);
+
+			float Shield;
+			ss >> Shield;
 
 			PlayerPawn->SetShield(Shield);
 
@@ -508,21 +519,22 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 	{
 		if (Message.rfind("launch", 0) == 0)
 		{
-			std::string launch = "launch";
-			std::string args;
-
-			if (Message.size() > launch.size() + 1)
-				args = Message.substr(launch.size() + 1);
-
-			std::stringstream ss(args);
-
-			float X{}, Y{}, Z{};
-			ss >> X >> Y >> Z;
-
 			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
 
 			if (PlayerPawn == NULL)
 				return;
+
+			std::string Launch_ = "launch";
+			std::string Args;
+
+			if (Message.size() > Launch_.size() + 1)
+				Args = Message.substr(Launch_.size() + 1);
+
+			std::stringstream ss(Args);
+
+			float X{}, Y{}, Z{};
+
+			ss >> X >> Y >> Z;
 
 			PlayerPawn->LaunchCharacter(FVector(X, Y, Z), false, false);
 
@@ -532,30 +544,26 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 	if (Message.rfind("giveitem", 0) == 0)
 	{
-		std::string giveitem = "giveitem";
-		std::string args;
+		std::string GiveItem_ = "giveitem";
+		std::string Args;
 
-		if (Message.size() > giveitem.size() + 1)
-			args = Message.substr(giveitem.size() + 1);
+		if (Message.size() > GiveItem_.size() + 1)
+			Args = Message.substr(GiveItem_.size() + 1);
 
-		std::stringstream ss(args);
+		std::stringstream ss(Args);
 
 		std::string WeaponId;
 
 		int Count { 1 };
-		int LoadedAmmo { 2 };
 
 		ss >> WeaponId;
 
 		if (!(ss >> Count))
 			Count = 1;
 
-		if (!(ss >> LoadedAmmo))
-			LoadedAmmo = 2;
+		std::wstring WID(WeaponId.begin(), WeaponId.end());
 
-		std::wstring wid(WeaponId.begin(), WeaponId.end());
-
-		auto ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(wid.c_str(), ANY_PACKAGE));
+		UFortWorldItemDefinition* ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(WID.c_str(), ANY_PACKAGE));
 
 		if (ItemDefinition == NULL)
 		{
@@ -563,7 +571,16 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			return;
 		}
 
-		Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
+		{
+			int32 LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
+
+			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
+		}
+		else
+		{
+			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, 0);
+		}
 
 		PlayerController->ClientMessage(L"Gave item!", FName(), 1);
 	}

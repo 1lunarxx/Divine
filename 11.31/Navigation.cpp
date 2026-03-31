@@ -5,7 +5,7 @@
 void Navigation::InitializeForWorld(UNavigationSystemV1* NavigationSystem, UWorld* World, EFNavigationSystemRunMode Mode)
 {
 	NavigationSystem->bAutoCreateNavigationData = true;
-	NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
+	//NavigationSystem->bSpawnNavDataInNavBoundsLevel = true;
 
 	return Originals::InitializeForWorld(NavigationSystem, World, Mode);
 }

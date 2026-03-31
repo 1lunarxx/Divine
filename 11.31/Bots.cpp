@@ -100,15 +100,11 @@ UFortWorldItem* CreateItem(AFortAthenaAIBotController* BotController, UFortItemD
 
 void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController)
 {
-	if (BotController->StartupInventory == NULL)
-	{
-		BotController->StartupInventory = Utils::NewObject<UFortAthenaAIBotInventoryItems>(BotController);
-		BotController->StartupInventory->Items.Add(BotController->PlayerBotPawn->CosmeticLoadout.Pickaxe->WeaponDefinition);
-	}
-
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		CreateItem(BotController, Item, 1, 99999);
+		int32 LoadedAmmo = Inventory::GetStats(Cast<UFortWeaponItemDefinition>(Item))->ClipSize;
+
+		CreateItem(BotController, Item, 1, LoadedAmmo);
 	}
 
 	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)

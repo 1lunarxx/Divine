@@ -62,6 +62,27 @@ AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* Item
 	return Pickup;
 }
 
+FFortRangedWeaponStats* Inventory::GetStats(UFortWeaponItemDefinition* ItemDefinition)
+{
+	if (ItemDefinition->WeaponStatHandle.DataTable == NULL)
+		return NULL;
+
+	for (const auto& [RowName, RowValue] : ItemDefinition->WeaponStatHandle.DataTable->RowMap)
+	{
+		FFortRangedWeaponStats* WeaponStats = (FFortRangedWeaponStats*)RowValue;
+
+		if (WeaponStats == NULL)
+			continue;
+
+		if (ItemDefinition->WeaponStatHandle.RowName == RowName)
+		{
+			return WeaponStats;
+		}
+	}
+
+	return NULL;
+}
+
 UFortWorldItem* Inventory::GetWorldItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
 {
 	UFortWorldItem* WorldItem = NULL;
