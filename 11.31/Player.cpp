@@ -446,8 +446,10 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 			if (PlayerPawn == NULL)
 				return;
 
-			if (Health < 1)
+			if (Health < 1) {
+				Health = 1;
 				PlayerController->ClientMessage(L"Couldn't Set Health Lower Then 1", FName(), 1);
+			}
 
 			PlayerPawn->SetHealth(Health);
 
