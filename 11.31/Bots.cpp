@@ -42,9 +42,7 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	}
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
-
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
-	BotController->RunBehaviorTree(Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe")));
 
 	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
 }

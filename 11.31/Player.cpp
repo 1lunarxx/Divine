@@ -152,6 +152,8 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 	if (PlayerState == NULL || PlayerController->MyFortPawn == NULL || Building == NULL || Building->TeamIndex != PlayerState->TeamIndex)
 		return;
 
+	Building->SetEditingPlayer(PlayerState);
+
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
 
 	if (ItemEntry == NULL)
