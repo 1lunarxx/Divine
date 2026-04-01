@@ -37,10 +37,8 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
 
-		if (UFortAthenaAIBotAttackingDigestedSkillSet* AttackingSkill = Cast<UFortAthenaAIBotAttackingDigestedSkillSet>(SkillSet))
-		{
-
-		}
+		if (UFortAthenaAIBotLootingDigestedSkillSet* LootingSkill = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
+			BotController->CacheLootingSkillSet = LootingSkill;
 	}
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
@@ -63,9 +61,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 {
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		int32 LoadedAmmo = Inventory::GetStats(Cast<UFortWeaponItemDefinition>(Item))->ClipSize;
-
-		CreateItem(BotController, Item, 1, LoadedAmmo);
+		CreateItem(BotController, Item, 1, -1);
 	}
 
 	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)
@@ -266,24 +262,20 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	}
 }
 
-AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
-{
-	return BotController;
-}
-
-UFortServerBotManagerAthena* Bots::GetServerBotManager()
-{
-	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
-	return GameMode->ServerBotManager;
-}
-
 UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo = 0)
 {
 	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
 
 	if (WorldItem == NULL)
 		return NULL;
+
+	if (LoadedAmmo == -1)
+	{
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
+		{
+			LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
+		}
+	}
 
 	WorldItem->OwnerInventory = BotController->Inventory;
 
@@ -317,6 +309,18 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	BotController->Inventory->HandleInventoryLocalUpdate();
 
 	return WorldItem;
+}
+
+AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
+{
+	return BotController;
+}
+
+UFortServerBotManagerAthena* Bots::GetServerBotManager()
+{
+	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
+	return GameMode->ServerBotManager;
 }
 
 void Bots::Setup()

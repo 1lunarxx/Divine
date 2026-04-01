@@ -57,10 +57,6 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
 		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
 	}
-	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
-	{
-		AbilityClass = Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/Sprays/GAB_Spray_Generic.Default__GAB_Spray_Generic_C"));
-	}
 	else if (UAthenaToyItemDefinition* ToyItemDefinition = Cast<UAthenaToyItemDefinition>(EmoteAsset))
 	{
 		if (ToyItemDefinition->ToySpawnAbility.Get())
@@ -154,10 +150,7 @@ void Player::ServerBeginEditingBuildingActor(AFortPlayerController* PlayerContro
 
 	if (Building->EditingPlayer == NULL)
 	{
-		Building->SetNetDormancy((ENetDormancy)(2 - (PlayerState != 0)));
-
-		Building->EditingPlayer = PlayerState;
-		Building->OnRep_EditingPlayer();
+		Building->SetEditingPlayer(PlayerState);
 	}
 
 	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, UFortEditToolItemDefinition::StaticClass());
@@ -184,8 +177,7 @@ void Player::ServerEditBuildingActor(AFortPlayerController* PlayerController, AB
 	if (Building == NULL || NewClass == NULL || Building->bDestroyed || Building->EditingPlayer	!= PlayerController->PlayerState)
 		return;
 
-	Building->EditingPlayer = NULL;
-	Building->OnRep_EditingPlayer();
+	Building->SetEditingPlayer(NULL);
 
 	ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
 
@@ -210,8 +202,7 @@ void Player::ServerEndEditingBuildingActor(AFortPlayerController* PlayerControll
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	Building->EditingPlayer == NULL;
-	Building->OnRep_EditingPlayer();
+	Building->SetEditingPlayer(NULL);
 
 	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
 
@@ -640,6 +631,101 @@ void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* Inv
 	}
 }
 
+void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFortPlayerDeathReport& DeathReport)
+{
+	Originals::ClientOnPawnDied(PlayerController, DeathReport);
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
+
+	if (PlayerPawn == NULL)
+		return;
+
+	AFortPlayerStateAthena* KillerPlayerState = Cast<AFortPlayerStateAthena>(DeathReport.KillerPlayerState);
+
+	if (KillerPlayerState == NULL)
+		return;
+
+	AFortPlayerPawnAthena* KillerPawn = Cast<AFortPlayerPawnAthena>(DeathReport.KillerPawn);
+
+	if (KillerPawn == NULL)
+		return;
+
+	FDeathInfo DeathInfo{};
+
+	DeathInfo.bDBNO = PlayerPawn ? PlayerPawn->IsDBNO() : false;
+	DeathInfo.bInitialized = true;
+	DeathInfo.DeathCause = PlayerState->ToDeathCause(DeathReport.Tags, PlayerPawn ? PlayerPawn->IsDBNO() : false);
+	DeathInfo.DeathLocation = PlayerPawn->K2_GetActorLocation();
+	DeathInfo.DeathTags = DeathReport.Tags;
+	DeathInfo.Distance = 0.f;
+	DeathInfo.Downer = KillerPlayerState;
+	DeathInfo.FinisherOrDowner = KillerPlayerState;
+
+	PlayerState->DeathInfo = DeathInfo;
+	PlayerState->OnRep_DeathInfo();
+
+	for (FFortItemEntry& ItemEntry : PlayerController->WorldInventory->Inventory.ReplicatedEntries)
+	{
+		if (ItemEntry.ItemDefinition && ItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
+			Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, (AFortPlayerPawnAthena*)PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+	}
+
+	if (KillerPlayerState && KillerPlayerState != PlayerState)
+	{
+		KillerPlayerState->KillScore++;
+		KillerPlayerState->OnRep_Kills();
+
+		KillerPlayerState->ClientReportKill(PlayerState);
+
+		if (AFortTeamInfo* PlayerTeam = KillerPlayerState->PlayerTeam)
+		{
+			for (AController* TeamMember : PlayerTeam->TeamMembers)
+			{
+				AFortPlayerStateAthena* TeamMemberState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
+				if (TeamMemberState == NULL)
+					continue;
+
+				TeamMemberState->TeamKillScore++;
+
+				TeamMemberState->OnRep_TeamKillScore();
+				TeamMemberState->ClientReportTeamKill(1);
+			}
+		}
+	}
+
+	if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
+	{
+		AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
+		if (!GameState->IsRespawningAllowed(PlayerState))
+		{
+			PlayerController->ClientSendEndBattleRoyaleMatchForPlayer(true, FAthenaRewardResult());
+
+			FAthenaMatchStats Stats{};
+			FAthenaMatchTeamStats TeamStats{};
+
+			if (PlayerState)
+			{
+				PlayerState->Place = GameState->PlayersLeft;
+				PlayerState->OnRep_Place();
+			}
+
+			TeamStats.Place = PlayerState->Place;
+			TeamStats.TotalPlayers = GameState->TotalPlayers;
+
+			PlayerController->ClientSendMatchStatsForPlayer(Stats);
+			PlayerController->ClientSendTeamStatsForPlayer(TeamStats);
+
+			GameMode->RemoveFromAlivePlayers(PlayerController, KillerPlayerState == PlayerState ? nullptr : KillerPlayerState, (AFortPlayerPawn*)DeathReport.KillerPawn, DeathReport.KillerWeapon, PlayerState ? PlayerState->DeathInfo.DeathCause : EDeathCause::Rifle, 0);
+		}
+	}
+}
+
 void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerController)
 {
 	PlayerController->WorldInventory->Inventory.ReplicatedEntries.Free();
@@ -675,6 +761,7 @@ void Player::Setup()
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint, (void**)&Originals::GetPlayerViewPoint);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x2446300, ClientOnPawnDied, (void**)&Originals::ClientOnPawnDied);
 
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x154E9E8, RemoveAllInventoryItems);
 }

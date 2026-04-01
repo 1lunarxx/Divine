@@ -10,6 +10,7 @@ class Player
 		static inline void (*GetPlayerViewPoint)(AFortPlayerControllerAthena*, FVector&, FRotator&);
 		static inline void (*GivePickupTo)(AFortPickup*, IFortInventoryOwnerInterface*, bool);
 		static inline void (*ServerEditBuildingActor)(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
+		static inline void (*ClientOnPawnDied)(AFortPlayerController*, FFortPlayerDeathReport&);
 	};
 
 private:
@@ -39,6 +40,7 @@ private:
 	static void ServerEndEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerCreateBuildingActor(AFortPlayerControllerAthena*, FCreateBuildingActorData);
 
+	static void ClientOnPawnDied(AFortPlayerControllerAthena*, FFortPlayerDeathReport&);
 	static void RemoveAllInventoryItems(AFortPlayerControllerAthena*);
 public:
 	static void Setup();

@@ -62669,6 +62669,11 @@ public:
 		SetCurrentPlaylistName_(this, PlaylistName);
 	}
 
+	void RemoveFromAlivePlayers(AFortPlayerControllerAthena* PlayerController, APlayerState* PlayerState, AFortPlayerPawn* PlayerPawn, UFortWeaponItemDefinition* ItemDefinition, EDeathCause DeathCause, char a6)
+	{
+		static void(*RemoveFromAlivePlayers)(AFortGameModeAthena*, AFortPlayerControllerAthena*, APlayerState*, AFortPlayerPawn*, UFortWeaponItemDefinition*, EDeathCause, char) = decltype(RemoveFromAlivePlayers)(InSDKUtils::GetImageBase() + 0x15413f0);
+		RemoveFromAlivePlayers(this, PlayerController, PlayerState, PlayerPawn, ItemDefinition, DeathCause, a6);
+	}
 public:
 	static class UClass* StaticClass()
 	{
