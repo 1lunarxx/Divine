@@ -212,7 +212,6 @@
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="Misc.h" />
-    <ClInclude Include="Navigation.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="SDK\UnrealContainers.hpp" />
@@ -225,7 +224,6 @@
     <ClCompile Include="GameMode.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Misc.cpp" />
-    <ClCompile Include="Navigation.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

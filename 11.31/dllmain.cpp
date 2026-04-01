@@ -5,7 +5,6 @@
 #include "Player.h"
 #include "Bots.h"
 #include "Utils.h"
-#include "Navigation.h"
 #include "Configuration.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
@@ -28,7 +27,6 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     Abilities::Setup();
     Player::Setup();
     Bots::Setup();
-    Navigation::Setup();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = true; // GIsServer
