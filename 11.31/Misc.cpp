@@ -73,6 +73,29 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
 	}
 }
 
+void Misc::ServerMove(AFortPhysicsPawn* PhysicsPawn, FReplicatedPhysicsPawnState& InState)
+{
+	printf("sadsaw\n");
+
+	UFortVehicleSkelMeshComponent* RootComponent = Cast<UFortVehicleSkelMeshComponent>(PhysicsPawn->RootComponent);
+
+	if (RootComponent != NULL)
+	{
+		PhysicsPawn->ReplicatedMovement.AngularVelocity = InState.AngularVelocity;
+		PhysicsPawn->ReplicatedMovement.LinearVelocity = InState.LinearVelocity;
+		PhysicsPawn->ReplicatedMovement.Location = InState.Translation;
+		PhysicsPawn->ReplicatedMovement.Rotation = Utils::FQuatToRot(InState.Rotation);
+
+		PhysicsPawn->OnRep_ReplicatedMovement();
+
+		RootComponent->SetAllPhysicsLinearVelocity(InState.LinearVelocity, false);
+		RootComponent->SetAllPhysicsAngularVelocityInRadians(InState.AngularVelocity, false);
+
+		RootComponent->K2_SetWorldRotation(PhysicsPawn->ReplicatedMovement.Rotation, false, nullptr, true);
+		RootComponent->K2_SetWorldLocation(InState.Translation, false, nullptr, true);
+	}
+}
+
 FServicePermissionsMcp* Misc::MatchMakingServicePerms(int64, int64)
 {
 	FServicePermissionsMcp* Permissions = new FServicePermissionsMcp();
@@ -97,6 +120,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
+
+	Utils::Virtual<AFortPhysicsPawn>(0x768 / 8, ServerMove);
 
 	if (Configuration::bUseGameSessions)
 	{

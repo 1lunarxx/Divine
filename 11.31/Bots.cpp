@@ -52,7 +52,7 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	if (BotController->Inventory == NULL)
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
 
-	AddStartingItemsToInventory(BotController);
+	Bots::AddStartingItemsToInventory(BotController);
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }

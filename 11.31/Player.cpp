@@ -655,7 +655,7 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 	if (KillerPawn == NULL)
 		return;
 
-	FDeathInfo DeathInfo{};
+	FDeathInfo DeathInfo = FDeathInfo{};
 
 	DeathInfo.bDBNO = PlayerPawn ? PlayerPawn->IsDBNO() : false;
 	DeathInfo.bInitialized = true;
@@ -672,7 +672,9 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 	for (FFortItemEntry& ItemEntry : PlayerController->WorldInventory->Inventory.ReplicatedEntries)
 	{
 		if (ItemEntry.ItemDefinition && ItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
-			Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, (AFortPlayerPawnAthena*)PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+		{
+			Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+		}
 	}
 
 	if (KillerPlayerState && KillerPlayerState != PlayerState)

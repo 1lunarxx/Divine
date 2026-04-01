@@ -23,6 +23,7 @@ private:
 	static void TickFlush(UNetDriver*);
 	static void SendRequestNow(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
 	static void PlacePlayersInAircraft(AFortGameStateAthena*, bool);
+	static void ServerMove(AFortPhysicsPawn*, FReplicatedPhysicsPawnState&);
 
 	static FServicePermissionsMcp* MatchMakingServicePerms(int64, int64);
 

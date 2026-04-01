@@ -30,6 +30,8 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 		GameMode->AISettings = Playlist->AISettings;
 
+		GameState->AirCraftBehavior = Playlist->AirCraftBehavior;
+
 		GameState->Client_RefreshEventCalendar();
 
 		for (TSoftObjectPtr<UWorld>& AdditionalLevel : Playlist->AdditionalLevels)
