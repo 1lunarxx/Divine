@@ -22,6 +22,7 @@ public:
         Transform.Scale3D = { 1, 1, 1 };
 
         AActor* Actor = UGameplayStatics::BeginDeferredActorSpawnFromClass(UWorld::GetWorld(), InClass, Transform, ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButAlwaysSpawn, Owner);
+
         if (Actor)
             UGameplayStatics::FinishSpawningActor(Actor, Transform);
 

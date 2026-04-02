@@ -120,11 +120,11 @@ void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController,
 		{
 			ContextTrap->ContextTrapItemDefinition = ContextTrapItemDefinition;
 		}
-
-		return;
 	}
-
-	PlayerPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemGuid);
+	else
+	{
+		PlayerPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemGuid);
+	}
 }
 
 void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Component_Aircraft, FRotator& ClientRotation)
@@ -148,7 +148,7 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
 	Pawn->bMovingEmote = false;
 
-	return Originals::MovingEmoteStopped(Pawn);
+	Originals::MovingEmoteStopped(Pawn);
 }
 
 void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController* EventInstigator)
@@ -513,17 +513,17 @@ void Player::ServerHandlePickup(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup
 
 void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* InventoryOwner, bool DestroyAfterPickup)
 {
-	Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
-
 	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(Pickup->PickupLocationData.PickupTarget);
 
 	if (PlayerPawn == NULL)
-		return;
+		return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
 
 	if (AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller))
 	{
 		Inventory::CreateItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
 	}
+
+	return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
 }
 
 void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFortPlayerDeathReport& DeathReport)

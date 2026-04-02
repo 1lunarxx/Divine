@@ -135,9 +135,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			}
 		}
 
-		static UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>(TEXT("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus"));
-
-		if (BBID_WinterBus)
+		if (UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>(TEXT("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus")))
 		{
 			if (UFortAssetManager* AssetManager = Cast<UFortAssetManager>(UFortEngine::GetEngine()->AssetManager))
 			{

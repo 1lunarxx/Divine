@@ -16,11 +16,11 @@
     <Filter Include="SDK">
       <UniqueIdentifier>{840d656d-cf26-4bc6-a4e7-46606159b8b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="SDK\SDK">
+      <UniqueIdentifier>{22db1c42-bcbe-4f6a-a1c7-1627867a292f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="pch.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\UnrealContainers.hpp">
       <Filter>SDK</Filter>
     </ClInclude>
@@ -51,25 +51,13 @@
     <ClInclude Include="Configuration.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\Basic.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\Engine_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp">
-      <Filter>SDK</Filter>
     </ClCompile>
     <ClCompile Include="Misc.cpp">
       <Filter>Source Files</Filter>
@@ -86,17 +74,32 @@
     <ClCompile Include="Bots.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\AIModule_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp">
-      <Filter>SDK</Filter>
-    </ClCompile>
     <ClCompile Include="Inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Building.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\GameplayAbilities_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\FortniteGame_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Engine_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\CoreUObject_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\Basic.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\AIModule_functions.cpp">
+      <Filter>SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
