@@ -28,58 +28,6 @@ public:
         return (T*)Actor;
     }
 
-    static inline float FastAsin(float Value)
-    {
-        bool nonnegative = (Value >= 0.0f);
-        float x = UKismetMathLibrary::abs(Value);
-        float omx = 1.0f - x;
-
-        if (omx < 0.0f)
-        {
-            omx = 0.0f;
-        }
-
-        float root = UKismetMathLibrary::Sqrt(omx);
-        float result = ((((((-0.0012624911f * x + 0.0066700901f) * x - 0.0170881256f) * x + 0.0308918810f) * x - 0.0501743046f) * x + 0.0889789874f) * x - 0.2145988016f) * x + 1.5707963050f;
-
-        result *= root;
-        return (nonnegative ? 1.5707963050f - result : result - 1.5707963050f);
-    }
-
-    static inline FRotator FQuatToRot(FQuat Quat)
-    {
-        const float SingularityTest = Quat.Z * Quat.X - Quat.W * Quat.Y;
-        const float YawY = 2.f * (Quat.W * Quat.Z + Quat.X * Quat.Y);
-        const float YawX = (1.f - 2.f * (UKismetMathLibrary::Square(Quat.Y) + UKismetMathLibrary::Square(Quat.Z)));
-        const float PI = 3.1415926535897932f;
-
-        const float SINGULARITY_THRESHOLD = 0.4999995f;
-        const float RAD_TO_DEG = (180.f) / PI;
-
-        FRotator RotatorFromQuat;
-
-        if (SingularityTest < -SINGULARITY_THRESHOLD)
-        {
-            RotatorFromQuat.Pitch = -90.f;
-            RotatorFromQuat.Yaw = UKismetMathLibrary::Atan2(YawY, YawX) * RAD_TO_DEG;
-            RotatorFromQuat.Roll = UKismetMathLibrary::NormalizeAxis(-RotatorFromQuat.Yaw - (2.f * UKismetMathLibrary::Atan2(Quat.X, Quat.W) * RAD_TO_DEG));
-        }
-        else if (SingularityTest > SINGULARITY_THRESHOLD)
-        {
-            RotatorFromQuat.Pitch = 90.f;
-            RotatorFromQuat.Yaw = UKismetMathLibrary::Atan2(YawY, YawX) * RAD_TO_DEG;
-            RotatorFromQuat.Roll = UKismetMathLibrary::NormalizeAxis(RotatorFromQuat.Yaw - (2.f * UKismetMathLibrary::Atan2(Quat.X, Quat.W) * RAD_TO_DEG));
-        }
-        else
-        {
-            RotatorFromQuat.Pitch = FastAsin(2.f * (SingularityTest)) * RAD_TO_DEG;
-            RotatorFromQuat.Yaw = UKismetMathLibrary::Atan2(YawY, YawX) * RAD_TO_DEG;
-            RotatorFromQuat.Roll = UKismetMathLibrary::Atan2(-2.f * (Quat.W * Quat.X + Quat.Y * Quat.Z), (1.f - 2.f * (UKismetMathLibrary::Square(Quat.X) + UKismetMathLibrary::Square(Quat.Y)))) * RAD_TO_DEG;
-        }
-
-        return RotatorFromQuat;
-    }
-
     template<typename T = UObject>
     static T* StaticFindObject(const TCHAR* OrigInName, UObject* InObjectPackage = nullptr, UClass* ObjectClass = nullptr)
     {

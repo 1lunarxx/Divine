@@ -1,12 +1,6 @@
 #pragma once
 #include "pch.h"
 
-struct FServicePermissionsMcp
-{
-public:
-	class FString Id;
-};
-
 class Misc
 {
 public:
@@ -15,18 +9,16 @@ public:
 	public:
 		static inline void (*TickFlush)(UNetDriver*);
 		static inline void (*SendRequestNow)(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
-		static inline void (*PlacePlayersInAircraft)(AFortGameStateAthena*, bool);
+		static inline void (*PlacePlayersInAircraft)(AFortGameStateAthena*);
 		static inline void (*PostInitializeComponents)(AFortPoiVolume*);
 	};
 
 private:
 	static void TickFlush(UNetDriver*);
 	static void SendRequestNow(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
-	static void PlacePlayersInAircraft(AFortGameStateAthena*, bool);
-	static void ServerMove(AFortPhysicsPawn*, FReplicatedPhysicsPawnState&);
+	static void PlacePlayersInAircraft(AFortGameStateAthena*);
 
-	static FServicePermissionsMcp* MatchMakingServicePerms(int64, int64);
-
+	static float GetMaxTickRate(UEngine*, float, bool);
 	static bool Listen();
 public:
 	static void Setup();

@@ -12,10 +12,12 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 
 void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
+	Originals::OnBotSpawned(BotMutator, PlayerPawn);
+
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
 	if (BotController == NULL)
-		return Originals::OnBotSpawned(BotMutator, PlayerPawn);
+		return;
 
 	for (UFortAthenaAIBotDigestedSkillSet* SkillSet : BotController->DigestedBotSkillSets)
 	{
@@ -44,7 +46,7 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
 
-	return Originals::OnBotSpawned(BotMutator, PlayerPawn);
+	BotController->Skill = 100.0f;
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)

@@ -208,6 +208,7 @@
   <ItemGroup>
     <ClInclude Include="Abilities.h" />
     <ClInclude Include="Bots.h" />
+    <ClInclude Include="Building.h" />
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="GameMode.h" />
     <ClInclude Include="Inventory.h" />
@@ -220,6 +221,7 @@
   <ItemGroup>
     <ClCompile Include="Abilities.cpp" />
     <ClCompile Include="Bots.cpp" />
+    <ClCompile Include="Building.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="GameMode.cpp" />
     <ClCompile Include="Inventory.cpp" />

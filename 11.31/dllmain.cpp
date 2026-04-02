@@ -4,8 +4,8 @@
 #include "Abilities.h"
 #include "Player.h"
 #include "Bots.h"
+#include "Building.h"
 #include "Utils.h"
-#include "Configuration.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
@@ -24,6 +24,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     Abilities::Setup();
     Misc::Setup();
     GameMode::Setup();
+    Building::Setup();
     Abilities::Setup();
     Player::Setup();
     Bots::Setup();
@@ -36,9 +37,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
 
-    if (!Configuration::bUseGameSessions)
-        UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
-
+    UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     UGameplayStatics::OpenLevel(UWorld::GetWorld(), UKismetStringLibrary::Conv_StringToName(L"Apollo_Terrain"), false, FString());
 
     return 0;

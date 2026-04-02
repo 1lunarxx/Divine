@@ -24,6 +24,30 @@ void Misc::SendRequestNow(UMcpProfileGroup* McpProfileGroup, const void* HttpReq
 	return Originals::SendRequestNow(McpProfileGroup, HttpRequest, FBaseUrlContext::EContextCredentials::CXC_Public);
 }
 
+void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState)
+{
+	Originals::PlacePlayersInAircraft(GameState);
+
+	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
+	{
+		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
+		{
+			for (const FFortServerBotInfo& PlayerBot : ServerBotManager->PlayerBots)
+			{
+				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
+
+				if (BotController != NULL)
+					Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
+			}
+		}
+	}
+}
+
+float Misc::GetMaxTickRate(UEngine* Engine, float DeltaTime, bool bAllowFrameRateSmoothing)
+{
+	return 120.0f;
+}
+
 bool Misc::Listen()
 {
 	FName NetDriverDefinition = UKismetStringLibrary::Conv_StringToName(L"GameNetDriver");
@@ -54,64 +78,9 @@ bool Misc::Listen()
 	return true;
 }
 
-void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState, bool a2)
-{
-	Originals::PlacePlayersInAircraft(GameState, a2);
-
-	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-	{
-		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
-		{
-			for (const FFortServerBotInfo& PlayerBot : ServerBotManager->PlayerBots)
-			{
-				AFortAthenaAIBotController* BotController = PlayerBot.BotController;
-
-				if (BotController != NULL)
-					Bots::EnterAircraft(BotController, GameState->GetAircraft(0));
-			}
-		}
-	}
-}
-
-void Misc::ServerMove(AFortPhysicsPawn* PhysicsPawn, FReplicatedPhysicsPawnState& InState)
-{
-	printf("sadsaw\n");
-
-	UFortVehicleSkelMeshComponent* RootComponent = Cast<UFortVehicleSkelMeshComponent>(PhysicsPawn->RootComponent);
-
-	if (RootComponent != NULL)
-	{
-		PhysicsPawn->ReplicatedMovement.AngularVelocity = InState.AngularVelocity;
-		PhysicsPawn->ReplicatedMovement.LinearVelocity = InState.LinearVelocity;
-		PhysicsPawn->ReplicatedMovement.Location = InState.Translation;
-		PhysicsPawn->ReplicatedMovement.Rotation = Utils::FQuatToRot(InState.Rotation);
-
-		PhysicsPawn->OnRep_ReplicatedMovement();
-
-		RootComponent->SetAllPhysicsLinearVelocity(InState.LinearVelocity, false);
-		RootComponent->SetAllPhysicsAngularVelocityInRadians(InState.AngularVelocity, false);
-
-		RootComponent->K2_SetWorldRotation(PhysicsPawn->ReplicatedMovement.Rotation, false, nullptr, true);
-		RootComponent->K2_SetWorldLocation(InState.Translation, false, nullptr, true);
-	}
-}
-
-FServicePermissionsMcp* Misc::MatchMakingServicePerms(int64, int64)
-{
-	FServicePermissionsMcp* Permissions = new FServicePermissionsMcp();
-	Permissions->Id = L"ec684b8c687f479fadea3cb2ad83f5c6";
-
-	return Permissions;
-}
-
 static int ForceRetTrue()
 {
 	return true;
-}
-
-static float GetMaxTickRate()
-{
-	return 120.f;
 }
 
 void Misc::Setup()
@@ -121,12 +90,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 
-	Utils::Virtual<AFortPhysicsPawn>(0x768 / 8, ServerMove);
-
 	if (Configuration::bUseGameSessions)
 	{
-		Utils::Hook(InSDKUtils::GetImageBase() + 0x8A7580, MatchMakingServicePerms);
-
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
 
 		Utils::Patch(InSDKUtils::GetImageBase() + 0x1C1A525, 0x85);

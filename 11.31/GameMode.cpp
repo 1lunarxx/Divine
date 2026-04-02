@@ -207,11 +207,6 @@ APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerC
     return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
 
-UClass** GameMode::GetGameSessionClass(AFortGameMode*, UClass** OutClass) {
-	*OutClass = AFortGameSessionDedicatedAthena::StaticClass();
-	return OutClass;
-}
-
 EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) 
 {
 	static uint8_t Team = 3;
@@ -246,6 +241,6 @@ void GameMode::Setup()
 
 	if (Configuration::bUseGameSessions)
 	{
-		Utils::Hook(InSDKUtils::GetImageBase() + 0x199DAA0, GetGameSessionClass);
+		//Utils::Hook(InSDKUtils::GetImageBase() + 0x199DAA0, GetGameSessionClass);
 	}
 }
