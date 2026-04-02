@@ -14185,6 +14185,12 @@ public:
 	TMulticastInlineDelegate<void(class AFortWeapon* Weapon)> OnWeaponHudKeyActionUpdated;           // 0x0A00(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	TArray<struct FWeaponHudData>                 HudKeyActionData;                                  // 0x0A10(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	uint8                                         Pad_A20[0x18];                                     // 0x0A20(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+public:
+	static EFortWeaponType FindWeaponTypeForStats(UFortItemDefinition* ItemDefinition)
+	{
+		static EFortWeaponType(*_FindWeaponTypeForStats)(UFortItemDefinition*) = decltype(_FindWeaponTypeForStats)(InSDKUtils::GetImageBase() + 0x20E54E0);
+		return _FindWeaponTypeForStats(ItemDefinition);
+	};
 
 public:
 	void CancelActiveAbility();

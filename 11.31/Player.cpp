@@ -564,11 +564,17 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 	PlayerState->DeathInfo = DeathInfo;
 	PlayerState->OnRep_DeathInfo();
 
-	for (FFortItemEntry& ItemEntry : PlayerController->WorldInventory->Inventory.ReplicatedEntries)
+	if (PlayerController->WorldInventory != NULL)
 	{
-		if (ItemEntry.ItemDefinition && ItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
+		if (PlayerController->WorldInventory->Inventory.ReplicatedEntries.IsValid())
 		{
-			Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+			for (FFortItemEntry& ItemEntry : PlayerController->WorldInventory->Inventory.ReplicatedEntries)
+			{
+				if (ItemEntry.ItemDefinition && ItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
+				{
+					Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
+				}
+			}
 		}
 	}
 

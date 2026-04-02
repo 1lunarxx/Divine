@@ -2,6 +2,7 @@
 #include "Bots.h"
 #include "Utils.h"
 #include "Inventory.h"
+#include "Configuration.h"
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
@@ -38,15 +39,10 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
-
-		if (UFortAthenaAIBotLootingDigestedSkillSet* LootingSkill = Cast<UFortAthenaAIBotLootingDigestedSkillSet>(SkillSet))
-			BotController->CacheLootingSkillSet = LootingSkill;
 	}
 
 	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
 	BotController->RunBehaviorTree(BotController->BehaviorTree);
-
-	BotController->Skill = 100.0f;
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -63,16 +59,13 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 {
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		CreateItem(BotController, Item, 1, -1);
-	}
+		UFortWorldItem* WorldItem = CreateItem(BotController, Item, 1);
 
-	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)
-	{
-		if (ItemEntry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+		if (WorldItem->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
 		{
-			BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry.ItemDefinition, ItemEntry.ItemGuid);
-
-			break;
+			BotController->CachedWorldItem = WorldItem;
+			
+			BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)WorldItem->ItemEntry.ItemDefinition, WorldItem->GetItemGuid());
 		}
 	}
 }
@@ -152,8 +145,11 @@ void Bots::GetCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
-	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50, 50);
-	BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
+	if (Configuration::bUseCustomMinimap)
+	{
+		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50, 50);
+		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
+	}
 }
 
 void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
@@ -241,6 +237,7 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	{
 		const float ThankBusDriverMinTime = UFortScalableFloatUtils::GetValueAtLevel(ServerBotManager->ThankBusDriverMinTime, 0);
 		const float ThankBusDriverMaxTime = UFortScalableFloatUtils::GetValueAtLevel(ServerBotManager->ThankBusDriverMaxTime, 0);
+
 		const float ThankBusDriverTime = UKismetMathLibrary::RandomIntegerInRange(ThankBusDriverMinTime, ThankBusDriverMaxTime);
 
 		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), ThankBusDriverTime, false, 0.0, 0.0f);
@@ -264,30 +261,26 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 	}
 }
 
-UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo = 0)
+UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count)
 {
 	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
 
 	if (WorldItem == NULL)
 		return NULL;
 
-	if (LoadedAmmo == -1)
-	{
-		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
-		{
-			LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
-		}
-	}
-
 	WorldItem->OwnerInventory = BotController->Inventory;
 
 	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
 	WorldItem->ItemEntry.Count = Count;
-	WorldItem->ItemEntry.LoadedAmmo = LoadedAmmo;
+
+	if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
+	{
+		WorldItem->ItemEntry.LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
+	}
 
 	if (ItemDefinition->bInventorySizeLimited)
 	{
-		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
+		for (int32 SlotIndex = 0; SlotIndex < 6; SlotIndex++)
 		{
 			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
 
@@ -296,12 +289,14 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 				SlotItem.FortItem = WorldItem;
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = EFortWeaponType::Rifle;
+				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
 
 				break;
 			}
 		}
 	}
+
+	BotController->CachedWorldItem = WorldItem;
 
 	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
 	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
