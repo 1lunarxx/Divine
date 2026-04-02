@@ -73,7 +73,7 @@ bool Misc::Listen()
 		LevelCollection.NetDriver = UWorld::GetWorld()->NetDriver;
 	}
 
-	SetConsoleTitleA("Winter | Listening");
+	SetConsoleTitleA("Divine | Listening");
 
 	return true;
 }

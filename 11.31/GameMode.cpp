@@ -143,7 +143,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			}
 		}
 
-		SetConsoleTitleA("Winter | Joinable");
+		SetConsoleTitleA("Divine | Joinable");
 
         GameMode->bWorldIsReady = true;
     }

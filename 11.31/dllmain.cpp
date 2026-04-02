@@ -11,7 +11,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
     Sleep(5000);
     AllocConsole();
-    SetConsoleTitleA("Winter | Loading");
+    SetConsoleTitleA("Divine | Loading");
 
     FILE* F = NULL;
 
