@@ -236,9 +236,4 @@ void GameMode::Setup()
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
-
-	if (Configuration::bUseGameSessions)
-	{
-		//Utils::Hook(InSDKUtils::GetImageBase() + 0x199DAA0, GetGameSessionClass);
-	}
 }
