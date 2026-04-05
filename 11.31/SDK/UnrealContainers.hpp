@@ -350,6 +350,14 @@ namespace UC
             return {};
         }
 
+		template <class PT>
+		__forceinline ArrayElementType* Search(PT Predicate) {
+			for (auto& v : *this) {
+				if (Predicate(v)) return &v;
+			}
+			return nullptr;
+		}
+
         inline std::optional<ArrayElementType> Find(const ArrayElementType& ElementToSearch) const
             requires std::equality_comparable<ArrayElementType>
         {
