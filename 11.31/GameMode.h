@@ -6,11 +6,13 @@ class GameMode
 	class Originals
 	{
 	public:
+		static inline void (*StartNewSafeZonePhase)(AFortGameModeAthena*, int);
 		static inline void (*HandleStartingNewPlayer)(AGameModeBase*, APlayerController*);
 	};
 
 private:
 	static bool ReadyToStartMatch(AFortGameModeAthena*);
+	static void StartNewSafeZonePhase(AFortGameModeAthena*, int);
 	static void HandleStartingNewPlayer(AGameModeBase*, APlayerController*);
 
 	static APawn* SpawnDefaultPawnFor(AFortGameModeAthena*, AFortPlayerControllerAthena*, AActor*);

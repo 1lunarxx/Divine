@@ -162,7 +162,53 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		}
 	}
 
-	return bReadyToStartMatch;
+	return bReadyToStartMatch;	
+}
+
+void GameMode::StartNewSafeZonePhase(AFortGameModeAthena* GameMode, int Phase)
+{
+	printf("jugsandbris");
+
+	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState);
+	FFortSafeZoneDefinition* SafeZoneDefinition = &GameState->MapInfo->SafeZoneDefinition;
+
+	TArray<float> Durations = *(TArray<float>*)(__int64(SafeZoneDefinition) + 0x1F8);
+	TArray<float> HoldDurations = *(TArray<float>*)(__int64(SafeZoneDefinition) + 0x1E8);
+
+	float DurationSum = 0.f;
+	for (auto& Duration : Durations)
+		DurationSum += Duration;
+
+	if (DurationSum == 0)
+	{
+		UCurveTable* GameData = GameState->CurrentPlaylistInfo.BasePlaylist->GameData.Get();
+		if (GameData == NULL)
+			GameData = Utils::StaticFindObject<UCurveTable>(TEXT("/Game/Balance/AthenaGameData.AthenaGameData"));
+
+		FName ShrinkTime = UKismetStringLibrary::Conv_StringToName(L"Default.SafeZone.ShrinkTime");
+		FName HoldTime = UKismetStringLibrary::Conv_StringToName(L"Default.SafeZone.WaitTime");
+
+		for (int i = 0; i < Durations.Num(); i++)
+		{
+			UDataTableFunctionLibrary::EvaluateCurveTableRow(GameData, ShrinkTime, (float)i, nullptr, &Durations[i], FString());
+		}
+		for (int i = 0; i < HoldDurations.Num(); i++)
+		{
+			UDataTableFunctionLibrary::EvaluateCurveTableRow(GameData, HoldTime, (float)i, nullptr, &HoldDurations[i], FString());
+		}
+	}
+
+	float& Duration = Durations[GameMode->SafeZonePhase + 1];
+	float& HoldDuration = HoldDurations[GameMode->SafeZonePhase + 1];
+
+	GameMode->SafeZoneIndicator->SafeZoneStartShrinkTime = UGameplayStatics::GetTimeSeconds(UWorld::GetWorld()) + HoldDuration;
+	GameMode->SafeZoneIndicator->SafeZoneFinishShrinkTime = GameMode->SafeZoneIndicator->SafeZoneStartShrinkTime + Duration;
+
+	if (DurationSum == 0) {
+		GameMode->SafeZoneIndicator->LastCenter = GameState->Aircrafts[0]->FlightInfo.FlightStartLocation;
+	}
+
+	Originals::StartNewSafeZonePhase(GameMode, Phase);
 }
 
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
@@ -234,6 +280,6 @@ void GameMode::Setup()
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
-
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1551340, StartNewSafeZonePhase, (void**)&Originals::StartNewSafeZonePhase);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
 }
