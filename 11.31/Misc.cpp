@@ -88,6 +88,7 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 
 	if (Configuration::bUseGameSessions)

@@ -6,6 +6,9 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
+	if (!Configuration::bUsePhoebe)
+		return Originals::InitializeMMRInfos(BotMutator);
+
 	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);

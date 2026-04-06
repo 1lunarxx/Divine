@@ -13,7 +13,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_BattleLab"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -31,8 +31,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameMode->AISettings = Playlist->AISettings;
 
 		GameState->AirCraftBehavior = Playlist->AirCraftBehavior;
-
-		GameState->Client_RefreshEventCalendar();
+		GameState->CachedSafeZoneStartUp = Playlist->SafeZoneStartUp;
 
 		for (TSoftObjectPtr<UWorld>& AdditionalLevel : Playlist->AdditionalLevels)
 		{
@@ -46,7 +45,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameState->OnRep_AdditionalPlaylistLevelsStreamed();
 		GameState->OnFinishedStreamingAdditionalPlaylistLevel();
 
-		if (GameMode->ServerBotManager == NULL)
+		if (GameMode->ServerBotManager == NULL && Configuration::bUsePhoebe)
 		{
 			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>(TEXT("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C")));
 

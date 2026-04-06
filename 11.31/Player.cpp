@@ -610,7 +610,6 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 		{
 			PlayerController->ClientSendEndBattleRoyaleMatchForPlayer(true, FAthenaRewardResult());
 
-			FAthenaMatchStats Stats{};
 			FAthenaMatchTeamStats TeamStats{};
 
 			if (PlayerState)
@@ -622,7 +621,7 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 			TeamStats.Place = PlayerState->Place;
 			TeamStats.TotalPlayers = GameState->TotalPlayers;
 
-			PlayerController->ClientSendMatchStatsForPlayer(Stats);
+			PlayerController->ClientSendMatchStatsForPlayer(FAthenaMatchStats());
 			PlayerController->ClientSendTeamStatsForPlayer(TeamStats);
 
 			GameMode->RemoveFromAlivePlayers(PlayerController, KillerPlayerState == PlayerState ? nullptr : KillerPlayerState, (AFortPlayerPawn*)DeathReport.KillerPawn, DeathReport.KillerWeapon, PlayerState ? PlayerState->DeathInfo.DeathCause : EDeathCause::Rifle, 0);

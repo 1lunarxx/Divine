@@ -34,7 +34,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
-
+    
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
