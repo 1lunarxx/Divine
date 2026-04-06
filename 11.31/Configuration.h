@@ -1,9 +1,10 @@
 #pragma once
 
-class UConfiguration
+class Configuration
 {
 public:
 	static inline bool bUseGameSessions = false;
 	static inline bool bUseCustomMinimap = false;
-	static inline auto Port = 7777;
+
+	static inline bool bUsePhoebe = false;
 };

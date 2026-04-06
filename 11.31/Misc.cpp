@@ -59,7 +59,7 @@ bool Misc::Listen()
 	FString Error;
 
 	FURL InURL;
-	InURL.Port = UConfiguration::Port;
+	InURL.Port = 7777;
 
 	if (!NetDriver->InitListen(UWorld::GetWorld(), InURL, false, Error))
 		return false;
@@ -91,7 +91,7 @@ void Misc::Setup()
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 
-	if (UConfiguration::bUseGameSessions)
+	if (Configuration::bUseGameSessions)
 	{
 		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
 
