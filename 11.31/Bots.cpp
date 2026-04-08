@@ -20,17 +20,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 	if (BotController == NULL)
 		return;
 
-	if (AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode))
-	{
-		if (GameMode->ServerBotManager->CachedBotMutator->CacheBotData == NULL)
-		{
-			GameMode->ServerBotManager->CachedBotMutator->CacheBotData = Utils::NewObject<UFortAthenaAIBotCustomizationData>(GameMode->ServerBotManager->CachedBotMutator);
-
-			GameMode->ServerBotManager->CachedBotMutator->CacheBotData->CosmeticCustomizationLibrary.ObjectID.AssetPathName = UKismetStringLibrary::Conv_StringToName(L"/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Default/Phoebe_CosmeticLibraryDefault.Phoebe_CosmeticLibraryDefault");
-			GameMode->ServerBotManager->CachedBotMutator->CacheBotData->OverrideCosmeticMode = EBotDataOverrideCosmeticMode::CosmeticLibrary;
-		}
-	}
-
 	for (UFortAthenaAIBotDigestedSkillSet* SkillSet : BotController->DigestedBotSkillSets)
 	{
 		if (UFortAthenaAIBotAimingDigestedSkillSet* AimingSkill = Cast<UFortAthenaAIBotAimingDigestedSkillSet>(SkillSet))
@@ -71,6 +60,100 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
 		CreateItem(BotController, Item, 1);
+	}
+
+	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)
+	{
+		if (ItemEntry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+		{
+			BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry.ItemDefinition, ItemEntry.ItemGuid);
+
+			break;
+		}
+	}
+}
+
+// Will figure it out later
+
+void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a2, void* a3)
+{
+	Originals::InitializeCosmeticLoadout(BotController, a2, a3);
+
+	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState);
+
+	if (PlayerState == NULL)
+		return;
+
+	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(BotController->PlayerBotPawn);
+
+	if (PlayerState == NULL)
+		return;
+
+	static UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic"));
+	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
+
+	TArray<UAthenaCharacterItemDefinition*> PhoebeCharacterItemDefinitions;
+
+	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+		if (TableRow != NULL)
+		{
+			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+
+			if (Dance)
+				PlayerPawn->CosmeticLoadout.Dances.Add(Dance);
+		}
+	}
+
+	for (const auto& [RowName, RowValue] : PhoebeCharacters->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+		if (TableRow != NULL)
+		{
+			UAthenaCharacterItemDefinition* Character = (UAthenaCharacterItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+
+			if (Character)
+				PhoebeCharacterItemDefinitions.Add(Character);
+		}
+	}
+
+	int32 SelectedPhoebeCharacter = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharacterItemDefinitions.Num() - 1);
+
+	UAthenaCharacterItemDefinition* PhoebeCharacter = PhoebeCharacterItemDefinitions[SelectedPhoebeCharacter];
+
+	if (PhoebeCharacter != NULL)
+	{
+		if (PhoebeCharacter->HeroDefinition && PhoebeCharacter->HeroDefinition->Specializations.IsValid())
+		{
+			for (TSoftObjectPtr<UFortHeroSpecialization>& HeroSpecialization : PhoebeCharacter->HeroDefinition->Specializations)
+			{
+				UFortHeroSpecialization* Specialization = Utils::StaticLoadObject<UFortHeroSpecialization>(UKismetStringLibrary::Conv_NameToString(HeroSpecialization.ObjectID.AssetPathName).CStr());
+
+				if (Specialization)
+				{
+					for (TSoftObjectPtr<UCustomCharacterPart>& CharacterPart : Specialization->CharacterParts)
+					{
+						UCustomCharacterPart* CustomCharacterPart = Utils::StaticLoadObject<UCustomCharacterPart>(UKismetStringLibrary::Conv_NameToString(CharacterPart.ObjectID.AssetPathName).CStr());
+
+						if (CustomCharacterPart)
+							PlayerState->CharacterData.Parts[(uintptr_t)CustomCharacterPart->CharacterPartType] = CustomCharacterPart;
+					}
+				}
+			}
+		}
+
+		PlayerPawn->CosmeticLoadout.Character = PhoebeCharacter;
+	}
+
+	PlayerPawn->OnRep_CosmeticLoadout();
+
+	if (Configuration::bUseCustomMinimap)
+	{
+		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50, 50);
+		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 	}
 }
 
@@ -241,13 +324,13 @@ UFortServerBotManagerAthena* Bots::GetServerBotManager()
 	return GameMode->ServerBotManager;
 }
 
-
 void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, InitializeCosmeticLoadout, (void**)&Originals::InitializeCosmeticLoadout);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
