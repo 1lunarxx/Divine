@@ -7,7 +7,6 @@ class Building
 	{
 	public:
 		static inline void (*ServerEditBuildingActor)(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
-		static inline void (*OnDamageServer)(ABuildingSMActor*, float, FGameplayTagContainer, FVector, FHitResult, AFortPlayerControllerAthena*, AActor*, FGameplayEffectContextHandle);
 	};
 
 private:
@@ -15,7 +14,7 @@ private:
 	static void ServerEditBuildingActor(AFortPlayerController*, ABuildingSMActor*, TSubclassOf<ABuildingSMActor>, uint8, bool);
 	static void ServerEndEditingBuildingActor(AFortPlayerController*, ABuildingSMActor*);
 	static void ServerCreateBuildingActor(AFortPlayerControllerAthena*, FCreateBuildingActorData);
-	static void OnDamageServer(ABuildingSMActor*, float, FGameplayTagContainer, FVector, FHitResult, AFortPlayerControllerAthena*, AActor*, FGameplayEffectContextHandle);
+	static void AttemptSpawnResources(ABuildingSMActor*, AFortPlayerPawn*, float, bool);
 public:
 	static void Setup();
 };

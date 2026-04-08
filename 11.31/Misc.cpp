@@ -45,7 +45,7 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState)
 
 float Misc::GetMaxTickRate(UEngine* Engine, float DeltaTime, bool bAllowFrameRateSmoothing)
 {
-	return 120.0f;
+	return 30.0f;
 }
 
 bool Misc::Listen()
@@ -91,16 +91,11 @@ void Misc::Setup()
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
 
-	if (Configuration::bUseGameSessions)
-	{
-		Utils::Hook(InSDKUtils::GetImageBase() + 0x3813C70, ForceRetTrue); // SpawnPlayActor
-
-		Utils::Patch(InSDKUtils::GetImageBase() + 0x1C1A525, 0x85);
-	}
-
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, ForceRetTrue);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
 

@@ -4,10 +4,7 @@
 
 UFortWorldItem* Inventory::CreateItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
 {
-	if (ItemDefinition == NULL)
-		return NULL;
-
-	UFortWorldItem* WorldItem = (UFortWorldItem*)(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
+	UFortWorldItem* WorldItem = (UFortWorldItem*)ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0);
 
 	if (WorldItem == NULL)
 		return NULL;
@@ -25,8 +22,8 @@ UFortWorldItem* Inventory::CreateItem(AFortInventory* WorldInventory, UFortItemD
 
 	WorldInventory->Inventory.ItemInstances.Add(WorldItem);
 	WorldInventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
-	WorldInventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
 
+	WorldInventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
 	WorldInventory->HandleInventoryLocalUpdate();
 
 	return WorldItem;
@@ -39,9 +36,7 @@ AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* Item
 	if (Pickup == NULL)
 		return NULL;
 
-	if (ItemEntry->Level != -1)
-		Pickup->PrimaryPickupItemEntry.Level = ItemEntry->Level;
-
+	Pickup->PrimaryPickupItemEntry.Level = ItemEntry->Level;
 	Pickup->PrimaryPickupItemEntry.ItemDefinition = ItemEntry->ItemDefinition;
 	Pickup->PrimaryPickupItemEntry.LoadedAmmo = ItemEntry->LoadedAmmo;
 	Pickup->PrimaryPickupItemEntry.Count = Count != -1 ? Count : ItemEntry->Count;
@@ -131,6 +126,22 @@ FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UClass* 
 	return ItemEntry;
 }
 
+FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition)
+{
+	FFortItemEntry* ItemEntry = NULL;
+
+	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
+	{
+		if (ReplicatedEntry.ItemDefinition == ItemDefinition)
+		{
+			ItemEntry = &ReplicatedEntry;
+			break;
+		}
+	}
+
+	return ItemEntry;
+}
+
 void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* ItemEntry)
 {
 	if (ItemEntry->bIsReplicatedCopy)
@@ -195,4 +206,52 @@ void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
 	WorldInventory->HandleInventoryLocalUpdate();
 
 	WorldInventory->Inventory.MarkArrayDirty();
+}
+
+// to be honest, i stole from kye cuz i cbaa
+
+void Inventory::StackItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
+{
+	FFortItemEntry* ItemEntry = GetItemEntry(WorldInventory, ItemDefinition); 
+
+	if (ItemEntry != NULL)
+	{
+		int32 MaxStackSize = ItemDefinition->MaxStackSize;
+
+		int32 TotalCount = ItemEntry->Count + Count;
+		int32 OverStack = TotalCount - MaxStackSize;
+
+		if (TotalCount <= MaxStackSize)
+		{
+			ItemEntry->Count += Count;
+
+			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+			WorldInventory->HandleInventoryLocalUpdate();
+		}
+		else
+		{
+			ItemEntry->Count += MaxStackSize - ItemEntry->Count;
+
+			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
+			WorldInventory->HandleInventoryLocalUpdate();
+
+			StackItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
+		}
+	}
+	else
+	{
+		CreateItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
+	}
+}
+
+void Inventory::GiveItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
+{
+	if (ItemDefinition->IsStackable())
+	{
+		StackItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
+	}
+	else
+	{
+		CreateItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
+	}
 }

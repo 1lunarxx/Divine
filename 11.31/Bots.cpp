@@ -114,6 +114,7 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 			PlayerState->DeathInfo.Distance = (InstigatedBy->Pawn && BotController->PlayerBotPawn) ? InstigatedBy->Pawn->GetDistanceTo(BotController->PlayerBotPawn) : 0.f;
 			PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(FGameplayTagContainer(), PlayerState->DeathInfo.bDBNO);
 			PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : PlayerState;
+
 			PlayerState->DeathInfo.bInitialized = true;
 
 			PlayerState->OnRep_DeathInfo();
@@ -240,6 +241,7 @@ UFortServerBotManagerAthena* Bots::GetServerBotManager()
 	return GameMode->ServerBotManager;
 }
 
+
 void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
@@ -248,5 +250,6 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
+
 	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetServerBotManager);
 }

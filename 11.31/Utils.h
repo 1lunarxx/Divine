@@ -101,6 +101,37 @@ public:
         VirtualProtect(&Object->VTable[(int)Target], sizeof(void*), dwProt, &dwTemp);
 	}
 
+    template<typename Class>
+    static void VirtualEvery(uintptr_t Target, void* Detour, void** Original = nullptr)
+    {
+        UObject* Object = Class::GetDefaultObj();
+
+        if (Object == NULL)
+            return;
+
+        for (int i = 0; i < UObject::GObjects->Num(); i++)
+        {
+            UObject* Obj = UObject::GObjects->GetByIndex(i);
+
+            if (Obj)
+            {
+                if (Obj->IsA(Object->Class))
+                {
+                    if (Original)
+                        *Original = Obj->VTable[(int)Target];
+
+                    DWORD dwProt;
+                    VirtualProtect(&Obj->VTable[(int)Target], sizeof(void*), PAGE_EXECUTE_READWRITE, &dwProt);
+
+                    Obj->VTable[(int)Target] = Detour;
+
+                    DWORD dwTemp;
+                    VirtualProtect(&Obj->VTable[(int)Target], sizeof(void*), dwProt, &dwTemp);
+                }
+            }
+        }
+    }
+
     static void Patch(uintptr_t Target, uintptr_t Byte)
     {
         DWORD OldProtect;

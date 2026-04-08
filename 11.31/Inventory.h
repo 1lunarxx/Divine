@@ -11,9 +11,14 @@ public:
 	static FFortRangedWeaponStats* GetStats(UFortWeaponItemDefinition*);
 
 	static UFortWorldItem* GetWorldItem(AFortInventory*, FGuid&);
+
 	static FFortItemEntry* GetItemEntry(AFortInventory*, FGuid&);
 	static FFortItemEntry* GetItemEntry(AFortInventory*, UClass*);
+	static FFortItemEntry* GetItemEntry(AFortInventory*, UFortItemDefinition*);
 
 	static void UpdateItemEntry(AFortInventory*, FFortItemEntry*);
 	static void RemoveItem(AFortInventory*, FGuid&);
+
+	static void StackItem(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
+	static void GiveItem(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
 };

@@ -8237,10 +8237,10 @@ public:
 	void HandleTimelineScrubbed();
 	class AWorldSettings* K2_GetWorldSettings();
 public:
-	static void ServerTravel(FString FURL, bool bAbsolute, bool bShouldSkipGameNotify)
+	void ServerTravel(FString FURL, bool bAbsolute, bool bShouldSkipGameNotify)
 	{
 		static void(*_ServerTravel)(UWorld*, FString, bool, bool) = decltype(_ServerTravel)(InSDKUtils::GetImageBase() + 0x3B81DA0);
-		_ServerTravel(UWorld::GetWorld(), FURL, bAbsolute, bShouldSkipGameNotify);
+		_ServerTravel(this, FURL, bAbsolute, bShouldSkipGameNotify);
 	}
 public:
 	static class UClass* StaticClass()

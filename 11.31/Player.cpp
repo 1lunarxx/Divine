@@ -24,14 +24,11 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 		{
 			if (StartingItem.Count > 0)
 			{
-				Inventory::CreateItem(PlayerController->WorldInventory, StartingItem.Item, StartingItem.Count);
+				Inventory::GiveItem(PlayerController->WorldInventory, StartingItem.Item, StartingItem.Count);
 			}
 		}
 
-		UFortItemDefinition* WoodItemData = Utils::StaticFindObject<UFortItemDefinition>(TEXT("WoodItemData"), ANY_PACKAGE);
-
-		Inventory::CreateItem(PlayerController->WorldInventory, WoodItemData, 50);
-		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
+		Inventory::GiveItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
 
@@ -56,11 +53,6 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 		PlayerPawn->bMovingEmote = DanceItemDefinition->bMovingEmote;
 		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
 		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
-	}
-	else if (UAthenaToyItemDefinition* ToyItemDefinition = Cast<UAthenaToyItemDefinition>(EmoteAsset))
-	{
-		if (ToyItemDefinition->ToySpawnAbility.Get())
-			AbilityClass = ToyItemDefinition->ToySpawnAbility.Get()->Class;
 	}
 
 	FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
@@ -461,11 +453,11 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 		{
 			int32 LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
 
-			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
+			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
 		}
 		else
 		{
-			Inventory::CreateItem(PlayerController->WorldInventory, ItemDefinition, Count, 0);
+			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, 0);
 		}
 
 		PlayerController->ClientMessage(L"Gave item!", FName(), 1);
@@ -520,7 +512,7 @@ void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* Inv
 
 	if (AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller))
 	{
-		Inventory::CreateItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
+		Inventory::GiveItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
 	}
 
 	return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);

@@ -7,6 +7,7 @@
 #include "Building.h"
 #include "Utils.h"
 #include "Configuration.h"
+#include "Looting.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
@@ -27,22 +28,20 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     GameMode::Setup();
     Building::Setup();
     Abilities::Setup();
+    Looting::Setup();
     Player::Setup();
     Bots::Setup();
 
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = true; // GIsServer
 
-    if (Configuration::bUsePhoebe)
-    {
-        *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
-        *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
-    }
+    *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
+    *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
     
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
-    UWorld::ServerTravel(L"Apollo_Terrain", false, false);
+    UWorld::GetWorld()->ServerTravel(L"Apollo_Terrain", false, false);
 
     return 0;
 }
