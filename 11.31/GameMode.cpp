@@ -13,7 +13,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_PlaygroundV2"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultDuo"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -71,30 +71,31 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			TArray<AFortPoiVolume*> Volumes = Utils::GetAllActors<AFortPoiVolume>();
 
-			for (auto& Volume : Volumes)
+			for (AFortPoiVolume* Volume : Volumes)
 			{
-				FCachedPOIVolumeLocations VolumeLocations{};
+				FCachedPOIVolumeLocations CachedPOIVolumeLocation = FCachedPOIVolumeLocations{};
 
-				VolumeLocations.POIVolume = Volume;
+				CachedPOIVolumeLocation.POIVolume = Volume;
 
 				FVector Origin;
 				FVector BoxExtent;
 
 				Volume->GetActorBounds(false, &Origin, &BoxExtent);
 
-				for (int i = 0; i < 250; i++)
+				for (int32 i = 0; i < 250; i++)
 				{
 					FVector RandomPoint = UKismetMathLibrary::RandomPointInBoundingBox(Origin, BoxExtent);
-					VolumeLocations.NavMeshLocations.Add(RandomPoint);
+					CachedPOIVolumeLocation.NavMeshLocations.Add(RandomPoint);
 				}
 
-				VolumeLocations.Flags &= ~0x1;
-				ServerBotManager->CachedValidPOIVolumeLocations.Add(VolumeLocations);
+				CachedPOIVolumeLocation.Flags &= ~0x1;
+
+				ServerBotManager->CachedValidPOIVolumeLocations.Add(CachedPOIVolumeLocation);
 			}
 
 			for (FNavigationPOI& Tag : ServerBotManager->OnGroundTagQueryPOIList)
 			{
-				for (auto& Volume : Volumes)
+				for (AFortPoiVolume* Volume : Volumes)
 				{
 					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
@@ -105,7 +106,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			for (FBattleBusPOI& Tag : ServerBotManager->SecondaryBattleBusTagQueryPOIList)
 			{
-				for (auto& Volume : Volumes)
+				for (AFortPoiVolume* Volume : Volumes)
 				{
 					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
@@ -116,7 +117,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 			for (FBattleBusPOI& Tag : ServerBotManager->BattleBusTagQueryPOIList)
 			{
-				for (auto& Volume : Volumes)
+				for (AFortPoiVolume* Volume : Volumes)
 				{
 					if (Volume->ContainsLocationTag(Tag.POIFilterQuery.TagDictionary[0]))
 					{
@@ -153,59 +154,12 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 	{
 		if (UFortServerBotManagerAthena* ServerBotManager = GameMode->ServerBotManager)
 		{
-			static void (*InitializeMMRInfos)(AFortAthenaMutator_Bots*) = decltype(InitializeMMRInfos)(InSDKUtils::GetImageBase() + 0x1654BB0);
-			InitializeMMRInfos(ServerBotManager->CachedBotMutator);
-
-			static void (*StartSpawning)(AFortAthenaMutator_Bots*, __int64, char) = decltype(StartSpawning)(InSDKUtils::GetImageBase() + 0x1665B00);
-			StartSpawning(ServerBotManager->CachedBotMutator, 0, 0);
+			ServerBotManager->CachedBotMutator->InitializeMMRInfos();
+			ServerBotManager->CachedBotMutator->StartSpawning();
 		}
 	}
 
 	return bReadyToStartMatch;	
-}
-
-void GameMode::StartNewSafeZonePhase(AFortGameModeAthena* GameMode, int Phase)
-{
-	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState);
-	FFortSafeZoneDefinition* SafeZoneDefinition = &GameState->MapInfo->SafeZoneDefinition;
-
-	TArray<float> Durations = *(TArray<float>*)(__int64(SafeZoneDefinition) + 0x1F8);
-	TArray<float> HoldDurations = *(TArray<float>*)(__int64(SafeZoneDefinition) + 0x1E8);
-
-	float DurationSum = 0.f;
-	for (auto& Duration : Durations)
-		DurationSum += Duration;
-
-	if (DurationSum == 0)
-	{
-		UCurveTable* GameData = GameState->CurrentPlaylistInfo.BasePlaylist->GameData.Get();
-		if (GameData == NULL)
-			GameData = Utils::StaticFindObject<UCurveTable>(TEXT("/Game/Balance/AthenaGameData.AthenaGameData"));
-
-		FName ShrinkTime = UKismetStringLibrary::Conv_StringToName(L"Default.SafeZone.ShrinkTime");
-		FName HoldTime = UKismetStringLibrary::Conv_StringToName(L"Default.SafeZone.WaitTime");
-
-		for (int i = 0; i < Durations.Num(); i++)
-		{
-			UDataTableFunctionLibrary::EvaluateCurveTableRow(GameData, ShrinkTime, (float)i, nullptr, &Durations[i], FString());
-		}
-		for (int i = 0; i < HoldDurations.Num(); i++)
-		{
-			UDataTableFunctionLibrary::EvaluateCurveTableRow(GameData, HoldTime, (float)i, nullptr, &HoldDurations[i], FString());
-		}
-	}
-
-	float& Duration = Durations[GameMode->SafeZonePhase + 1];
-	float& HoldDuration = HoldDurations[GameMode->SafeZonePhase + 1];
-
-	GameMode->SafeZoneIndicator->SafeZoneStartShrinkTime = UGameplayStatics::GetTimeSeconds(UWorld::GetWorld()) + HoldDuration;
-	GameMode->SafeZoneIndicator->SafeZoneFinishShrinkTime = GameMode->SafeZoneIndicator->SafeZoneStartShrinkTime + Duration;
-
-	if (DurationSum == 0) {
-		GameMode->SafeZoneIndicator->LastCenter = GameState->Aircrafts[0]->FlightInfo.FlightStartLocation;
-	}
-
-	Originals::StartNewSafeZonePhase(GameMode, Phase);
 }
 
 void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerController* NewPlayer)
@@ -227,28 +181,28 @@ void GameMode::HandleStartingNewPlayer(AGameModeBase* GameMode, APlayerControlle
 
 	PlayerState->WorldPlayerId = PlayerState->PlayerID;
 
-	FGameMemberInfo MemberInfo = FGameMemberInfo{};
+	FGameMemberInfo GameMemberInfo = FGameMemberInfo{};
 
-	MemberInfo.ReplicationID = -1;
-	MemberInfo.ReplicationKey = -1;
-	MemberInfo.MostRecentArrayReplicationKey = -1;
+	GameMemberInfo.ReplicationID = -1;
+	GameMemberInfo.ReplicationKey = -1;
+	GameMemberInfo.MostRecentArrayReplicationKey = -1;
 
-	MemberInfo.SquadId = PlayerState->SquadId;
-	MemberInfo.TeamIndex = PlayerState->TeamIndex;
-	MemberInfo.MemberUniqueId = PlayerState->UniqueId;
+	GameMemberInfo.SquadId = PlayerState->SquadId;
+	GameMemberInfo.TeamIndex = PlayerState->TeamIndex;
+	GameMemberInfo.MemberUniqueId = PlayerState->UniqueId;
 
-	GameState->GameMemberInfoArray.Members.Add(MemberInfo);
+	GameState->GameMemberInfoArray.Members.Add(GameMemberInfo);
 	GameState->GameMemberInfoArray.MarkArrayDirty();
 
-	GameState->NotifyGameMemberAdded(PlayerState->SquadId, PlayerState->TeamIndex, PlayerState->UniqueId);
+	GameMemberInfo.PostReplicatedAdd(&GameState->GameMemberInfoArray);
 }
 
-APawn* GameMode::SpawnDefaultPawnFor(AFortGameModeAthena* GameMode, AFortPlayerControllerAthena* NewPlayer, AActor* StartSpot)
+APawn* GameMode::SpawnDefaultPawnFor(AGameModeBase* GameMode, AController* NewPlayer, AActor* StartSpot)
 {
-    return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
+	return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
 
-EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8_t PreferredTeam, AFortPlayerControllerAthena* Controller) 
+EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8 PreferredTeam, AFortPlayerControllerAthena* ControllerToPickFor)
 {
 	static uint8_t Team = 3;
 	static uint8_t PlayersOnTeam = 0;
@@ -277,6 +231,6 @@ void GameMode::Setup()
     Utils::Virtual<AFortGameModeAthena>(0xC5, SpawnDefaultPawnFor);
     Utils::Virtual<AFortGameModeAthena>(0xFE, ReadyToStartMatch);
 	Utils::Virtual<AFortGameModeAthena>(0xCB, HandleStartingNewPlayer, (void**)&Originals::HandleStartingNewPlayer);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1551340, StartNewSafeZonePhase, (void**)&Originals::StartNewSafeZonePhase);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x153B210, PickTeam);
 }

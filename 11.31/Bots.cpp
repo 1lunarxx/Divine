@@ -6,9 +6,6 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	if (!Configuration::bUsePhoebe)
-		return Originals::InitializeMMRInfos(BotMutator);
-
 	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
 
 	return Originals::InitializeMMRInfos(BotMutator);
@@ -30,7 +27,6 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 			GameMode->ServerBotManager->CachedBotMutator->CacheBotData = Utils::NewObject<UFortAthenaAIBotCustomizationData>(GameMode->ServerBotManager->CachedBotMutator);
 
 			GameMode->ServerBotManager->CachedBotMutator->CacheBotData->CosmeticCustomizationLibrary.ObjectID.AssetPathName = UKismetStringLibrary::Conv_StringToName(L"/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Default/Phoebe_CosmeticLibraryDefault.Phoebe_CosmeticLibraryDefault");
-
 			GameMode->ServerBotManager->CachedBotMutator->CacheBotData->OverrideCosmeticMode = EBotDataOverrideCosmeticMode::CosmeticLibrary;
 		}
 	}

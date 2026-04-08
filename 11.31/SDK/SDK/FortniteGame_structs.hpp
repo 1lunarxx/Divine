@@ -13009,6 +13009,12 @@ public:
 	uint8                                         TeamIndex;                                         // 0x000D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_E[0x2];                                        // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       MemberUniqueId;                                    // 0x0010(0x0028)(HasGetValueTypeHash, NativeAccessSpecifierPublic)
+public:
+	void PostReplicatedAdd(const struct FGameMemberInfoArray* InArraySerializer)
+	{
+		static void(*_PostReplicatedAdd)(FGameMemberInfo*, const struct FGameMemberInfoArray*) = decltype(_PostReplicatedAdd)(InSDKUtils::GetImageBase() + 0x1589670);
+		_PostReplicatedAdd(this, InArraySerializer);
+	}
 };
 
 // ScriptStruct FortniteGame.GameMemberInfoArray

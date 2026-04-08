@@ -11872,7 +11872,18 @@ public:
 public:
 	void OnSafeZoneUpdated();
 	class AFortPlayerPawnAthena* SpawnBot(TSubclassOf<class AFortPlayerPawnAthena> BotPawnClass, const class AActor* InSpawnLocator, const struct FVector& InSpawnLocation, const struct FRotator& InSpawnRotation, const bool bSnapToGround);
+public:
+	void InitializeMMRInfos()
+	{
+		static void(*_InitializeMMRInfos)(AFortAthenaMutator_Bots*) = decltype(_InitializeMMRInfos)(InSDKUtils::GetImageBase() + 0x1654BB0);
+		_InitializeMMRInfos(this);
+	}
 
+	void StartSpawning()
+	{
+		static void (*_StartSpawning)(AFortAthenaMutator_Bots*, __int64, char) = decltype(_StartSpawning)(InSDKUtils::GetImageBase() + 0x1665B00);
+		_StartSpawning(this, 0, 0);
+	}
 public:
 	static class UClass* StaticClass()
 	{
@@ -51777,12 +51788,6 @@ public:
 	bool IsTeleportToCreativeHubAllowed(const class AFortPlayerState* PlayerState) const;
 	bool ShouldDBNOTeamInfoFlash() const;
 	bool ShouldEnterSpawningStartup() const;
-public:
-	void NotifyGameMemberAdded(uint8 SquadId, uint8 TeamIndex, FUniqueNetIdRepl UniqueId)
-	{
-		static void(*_NotifyGameMemberAdded)(AFortGameStateAthena*, uint8, uint8, FUniqueNetIdRepl) = decltype(_NotifyGameMemberAdded)(InSDKUtils::GetImageBase() + 0x1584F40);
-		_NotifyGameMemberAdded(this, SquadId, TeamIndex, UniqueId);
-	}
 public:
 	static class UClass* StaticClass()
 	{
