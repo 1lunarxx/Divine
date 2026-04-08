@@ -13,7 +13,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_BattleLab"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_PlaygroundV2"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -166,8 +166,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 void GameMode::StartNewSafeZonePhase(AFortGameModeAthena* GameMode, int Phase)
 {
-	printf("jugsandbris");
-
 	AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(GameMode->GameState);
 	FFortSafeZoneDefinition* SafeZoneDefinition = &GameState->MapInfo->SafeZoneDefinition;
 
