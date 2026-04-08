@@ -150,6 +150,8 @@ void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, 
 
 	PlayerPawn->OnRep_CosmeticLoadout();
 
+	BotController->CosmeticLoadoutBC = PlayerPawn->CosmeticLoadout;
+
 	if (Configuration::bUseCustomMinimap)
 	{
 		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50, 50);
