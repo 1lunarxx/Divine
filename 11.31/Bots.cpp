@@ -47,16 +47,16 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		if (j > 6)
 			break;
 
-		UFortItemDefinition* ItemDef = BotController->Inventory->Inventory.ItemInstances[i]->GetItemDefinitionBP();
+		UFortItemDefinition* ItemDefinition = BotController->Inventory->Inventory.ItemInstances[i]->GetItemDefinitionBP();
 
-		if (ItemDef->bInventorySizeLimited)
+		if (ItemDefinition->bInventorySizeLimited)
 		{
 			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[j];
 
 			SlotItem.FortItem = BotController->Inventory->Inventory.ItemInstances[i];
-			SlotItem.ItemDefinition = ItemDef;
-			SlotItem.ItemType = ItemDef->ItemType;
-			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDef);
+			SlotItem.ItemDefinition = ItemDefinition;
+			SlotItem.ItemType = ItemDefinition->ItemType;
+			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
 
 			j++;
 		}
@@ -224,15 +224,8 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 
 	NewItem->OwnerInventory = BotController->Inventory;
 
-	TWeakObjectPtr<AFortInventory> WeakInventory{};
-	WeakInventory.ObjectIndex = BotController->Inventory->Index;
-	WeakInventory.ObjectSerialNumber = UObject::GObjects->GetSerialByIndex(BotController->Inventory->Index);
-
-	NewItem->ItemEntry.ParentInventory = WeakInventory;
-
 	NewItem->ItemEntry.ItemDefinition = ItemDefinition;
 	NewItem->ItemEntry.Count = Count;
-	NewItem->ItemEntry.LoadedAmmo = 30;
 
 	for (int32 Index = 0; Index < 6; Index++)
 	{
