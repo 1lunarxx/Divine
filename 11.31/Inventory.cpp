@@ -156,12 +156,9 @@ void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* 
 
 	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
 	{
-		// Safer way to check imo
-
 		if (ReplicatedEntry.ItemGuid == ItemEntry->ItemGuid)
 		{
 			ReplicatedEntry = *ItemEntry;
-
 			ReplicatedEntry.bIsDirty = false;
 
 			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
@@ -170,13 +167,9 @@ void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* 
 			WorldInventory->HandleInventoryLocalUpdate();
 
 			if (ItemEntry)
-			{
 				WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
-			}
 			else
-			{
 				WorldInventory->Inventory.MarkArrayDirty();
-			}
 		}
 	}
 }
@@ -202,15 +195,12 @@ void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
 	}
 
 	WorldInventory->bRequiresLocalUpdate = true;
-
 	WorldInventory->HandleInventoryLocalUpdate();
 
 	WorldInventory->Inventory.MarkArrayDirty();
 }
 
-// to be honest, i stole from kye cuz i cbaa
-
-void Inventory::StackItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
+void Inventory::AttemptToStack(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
 {
 	FFortItemEntry* ItemEntry = GetItemEntry(WorldInventory, ItemDefinition); 
 
@@ -235,7 +225,7 @@ void Inventory::StackItem(AFortInventory* WorldInventory, UFortItemDefinition* I
 			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
 			WorldInventory->HandleInventoryLocalUpdate();
 
-			StackItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
+			AttemptToStack(WorldInventory, ItemDefinition, Count, LoadedAmmo);
 		}
 	}
 	else
@@ -247,11 +237,7 @@ void Inventory::StackItem(AFortInventory* WorldInventory, UFortItemDefinition* I
 void Inventory::GiveItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
 {
 	if (ItemDefinition->IsStackable())
-	{
-		StackItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
-	}
+		AttemptToStack(WorldInventory, ItemDefinition, Count, LoadedAmmo);
 	else
-	{
 		CreateItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
-	}
 }

@@ -2,18 +2,17 @@
 #include "Bots.h"
 #include "Utils.h"
 #include "Inventory.h"
-#include "Configuration.h"
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator) + 0x428) = 1;
+	*(uint8*)(__int64(BotMutator) + 0x428) = 1;
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
 
-void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
+void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
-	Originals::OnBotSpawned(BotMutator, PlayerPawn);
+	Originals::OnPawnSpawned(BotMutator, PlayerPawn);
 
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
@@ -40,17 +39,16 @@ void Bots::OnBotSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* Pl
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
 	}
-
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe_Warmup.BT_Phoebe_Warmup"));
-	BotController->RunBehaviorTree(BotController->BehaviorTree);
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
 	if (BotController->Inventory == NULL)
+	{
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
 
-	Bots::AddStartingItemsToInventory(BotController);
+		AddStartingItemsToInventory(BotController);
+	}
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
@@ -60,16 +58,6 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
 		CreateItem(BotController, Item, 1);
-	}
-
-	for (const FFortItemEntry& ItemEntry : BotController->Inventory->Inventory.ReplicatedEntries)
-	{
-		if (ItemEntry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
-		{
-			BotController->PlayerBotPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)ItemEntry.ItemDefinition, ItemEntry.ItemGuid);
-
-			break;
-		}
 	}
 }
 
@@ -82,14 +70,9 @@ void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, 
 	if (PlayerState == NULL)
 		return;
 
-	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(BotController->PlayerBotPawn);
+	static UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
 
-	if (PlayerState == NULL)
-		return;
-
-	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
-
-	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
+	for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
 	{
 		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
 
@@ -177,9 +160,6 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
 {
-	BotController->BehaviorTree = Utils::StaticLoadObject<UBehaviorTree>(TEXT("/Game/Athena/AI/Phoebe/BehaviorTrees/BT_Phoebe.BT_Phoebe"));
-	BotController->RunBehaviorTree(BotController->BehaviorTree);
-
 	if (UFortControllerComponent_Aircraft* AircraftComponent = Cast<UFortControllerComponent_Aircraft>(BotController->GetComponentByClass(UFortControllerComponent_Aircraft::StaticClass())))
 	{
 		AircraftComponent->EnterAircraft(InAircraft);
@@ -225,30 +205,12 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	NewItem->ItemEntry.ItemDefinition = ItemDefinition;
 	NewItem->ItemEntry.Count = Count;
 
-	BotController->CachedWorldItem = NewItem;
-
-	for (int32 Index = 0; Index < 6; Index++)
-	{
-		FFortBotInventoryInfo& SlotItem = BotController->SlotItems[Index];
-
-		if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
-		{
-			SlotItem.FortItem = NewItem;
-
-			SlotItem.ItemDefinition = ItemDefinition;
-			SlotItem.ItemType = ItemDefinition->ItemType;
-
-			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
-
-			break;
-		}
-	}
-
 	BotController->Inventory->Inventory.ItemInstances.Add(NewItem);
 	BotController->Inventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
 
 	BotController->Inventory->Inventory.MarkItemDirty(NewItem->ItemEntry);
-
+	
+	BotController->Inventory->bRequiresLocalUpdate = true;
 	BotController->Inventory->HandleInventoryLocalUpdate();
 
 	return NewItem;
@@ -262,17 +224,17 @@ AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* Bot
 UFortServerBotManagerAthena* Bots::GetServerBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
 	return GameMode->ServerBotManager;
 }
 
 void Bots::Setup()
 {
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnBotSpawned, (void**)&Originals::OnBotSpawned);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnPawnSpawned, (void**)&Originals::OnPawnSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
+
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, InitializeCosmeticLoadout, (void**)&Originals::InitializeCosmeticLoadout);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 

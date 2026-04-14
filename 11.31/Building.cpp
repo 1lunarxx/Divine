@@ -41,11 +41,11 @@ void Building::ServerEditBuildingActor(AFortPlayerController* PlayerController, 
 
 	Building->SetEditingPlayer(NULL);
 
-	ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController);
-
-	if (NewBuilding != NULL)
+	if (ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController))
+	{
 		NewBuilding->bPlayerPlaced = true;
-
+	}
+	
 	return Originals::ServerEditBuildingActor(PlayerController, Building, NewClass, RotationIterations, bMirrored);
 }
 
@@ -66,9 +66,7 @@ void Building::ServerEndEditingBuildingActor(AFortPlayerController* PlayerContro
 
 	Building->SetEditingPlayer(NULL);
 
-	AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid));
-
-	if (EditingTool != NULL)
+	if (AFortWeap_EditingTool* EditingTool = Cast<AFortWeap_EditingTool>(PlayerController->MyFortPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemEntry->ItemGuid)))
 	{
 		EditingTool->EditActor = NULL;
 		EditingTool->OnRep_EditActor();
@@ -111,14 +109,14 @@ void Building::ServerCreateBuildingActor(AFortPlayerControllerAthena* PlayerCont
 		if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState))
 		{
 			Building->PlacedByPlayer(PlayerState);
-
 			Building->SetTeam(PlayerState->TeamIndex);
+
 			Building->OnRep_Team();
 		}
 	}
 }
 
-void Building::AttemptSpawnResources(ABuildingSMActor* BuildingActor, AFortPlayerPawn* InstigatorPawn, float ActualDamageDealt, bool bJustHitWeakspot)
+void Building::AttemptSpawnResources(ABuildingSMActor* BuildingActor, AFortPlayerPawn* InstigatorPawn, float DamageDealt, bool bJustHitWeakspot)
 {
 	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(InstigatorPawn->Controller);
 
@@ -130,18 +128,18 @@ void Building::AttemptSpawnResources(ABuildingSMActor* BuildingActor, AFortPlaye
 	if (ResourceItemDefinition == NULL)
 		return;
 
-	float Out;
+	float Result;
 
-	UFortKismetLibrary::EvaluateCurveTableRow(BuildingActor->BuildingResourceAmountOverride, 0.f, &Out, FString());
+	UFortKismetLibrary::EvaluateCurveTableRow(BuildingActor->BuildingResourceAmountOverride, 0.f, &Result, FString());
 
-	int32 ResourceAmount = UKismetMathLibrary::Round(Out / (BuildingActor->GetMaxHealth() / ActualDamageDealt));
+	int32 ResourceCount = UKismetMathLibrary::Round(Result / (BuildingActor->GetMaxHealth() / DamageDealt));
 
-	if (ResourceAmount <= 0)
+	if (ResourceCount == 0)
 		return;
 
-	PlayerController->ClientReportDamagedResourceBuilding(BuildingActor, BuildingActor->ResourceType, ResourceAmount, BuildingActor->bDestroyed, bJustHitWeakspot);
+	PlayerController->ClientReportDamagedResourceBuilding(BuildingActor, BuildingActor->ResourceType, ResourceCount, BuildingActor->bDestroyed, bJustHitWeakspot);
 
-	Inventory::GiveItem(PlayerController->WorldInventory, ResourceItemDefinition, ResourceAmount);
+	Inventory::GiveItem(PlayerController->WorldInventory, ResourceItemDefinition, ResourceCount);
 }
 
 void Building::Setup()

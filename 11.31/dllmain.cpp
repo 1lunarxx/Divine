@@ -6,7 +6,6 @@
 #include "Bots.h"
 #include "Building.h"
 #include "Utils.h"
-#include "Configuration.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
@@ -33,15 +32,10 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270) = false; // GIsClient
     *(bool*)(InSDKUtils::GetImageBase() + 0x6F41270 + 1) = true; // GIsServer
 
-    if (!Configuration::bUsePhoebe)
-    {
-        UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.Enable 0", nullptr);
-    }
-    else
-    {
-        *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
-        *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
-    }
+    *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
+    *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
+
+    // UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.Enable 0", nullptr);
     
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
 

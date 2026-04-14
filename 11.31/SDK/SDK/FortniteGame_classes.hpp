@@ -82103,7 +82103,6 @@ public:
 	uint8                                         Pad_F50[0x58];                                     // 0x0F50(0x0058)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FScalableFloat                         BotsUniqueIDUseValidAccountID;                     // 0x0FA8(0x0020)(Edit, BlueprintVisible, BlueprintReadOnly, DisableEditOnInstance, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_FC8[0x8];                                      // 0x0FC8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
 public:
 	void JoinTeam(const class AController* SourceTeamController, class AController* DestinationTeamController);
 	void KillBots(bool bKillPlayers, bool bKillNoneParticipants, uint8 TeamIndex, class AActor* BotOwner);

@@ -2,7 +2,6 @@
 #include "GameMode.h"
 #include "Utils.h"
 #include "Misc.h"
-#include "Configuration.h"
 
 bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 {
@@ -45,7 +44,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 		GameState->OnRep_AdditionalPlaylistLevelsStreamed();
 		GameState->OnFinishedStreamingAdditionalPlaylistLevel();
 
-		if (GameMode->ServerBotManager == NULL && Configuration::bUsePhoebe)
+		if (GameMode->ServerBotManager == NULL)
 		{
 			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>(TEXT("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C")));
 
@@ -53,7 +52,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
-			*(bool*)(__int64(GameMode->ServerBotManager) + 0x4CE) = true;
+			*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
 
 			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
 
@@ -201,6 +200,8 @@ APawn* GameMode::SpawnDefaultPawnFor(AGameModeBase* GameMode, AController* NewPl
 {
 	return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
+
+// TODO: Rewrite/Make proper
 
 EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8 PreferredTeam, AFortPlayerControllerAthena* ControllerToPickFor)
 {

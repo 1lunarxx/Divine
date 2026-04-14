@@ -19,6 +19,6 @@ public:
 	static void UpdateItemEntry(AFortInventory*, FFortItemEntry*);
 	static void RemoveItem(AFortInventory*, FGuid&);
 
-	static void StackItem(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
+	static void AttemptToStack(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
 	static void GiveItem(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
 };

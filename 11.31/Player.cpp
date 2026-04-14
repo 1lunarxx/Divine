@@ -44,7 +44,7 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 	if (PlayerState == NULL)
 		return;
 
-	static UClass* AbilityClass = NULL;
+	UClass* AbilityClass = NULL;
 
 	if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(EmoteAsset))
 	{
@@ -55,11 +55,13 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
 	}
 
-	FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
+	if (AbilityClass != NULL)
+	{
+		FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
+		Spec.ConstructAbilitySpec(Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
 
-	Spec.ConstructAbilitySpec(Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
-
-	PlayerState->AbilitySystemComponent->GiveAbilityAndActivateOnce(&Spec.Handle, &Spec);
+		PlayerState->AbilitySystemComponent->GiveAbilityAndActivateOnce(&Spec.Handle, &Spec);
+	}
 }
 
 void Player::GetPlayerViewPoint(AFortPlayerControllerAthena* PlayerController, FVector& Location, FRotator& Rotation)
@@ -149,24 +151,6 @@ void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController
 
 	if (PlayerController == NULL)
 		return;
-
-	AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(PlayerController->PlayerState);
-
-	if (PlayerState == NULL)
-		return;
-
-	for (FGameplayAbilitySpec& AbilitySpec : PlayerState->AbilitySystemComponent->ActivatableAbilities.Items)
-	{
-		if (AbilitySpec.Ability->IsA(Utils::StaticFindObject<UClass>(TEXT("/Game/Abilities/NPC/Generic/GAB_AthenaDBNO.GAB_AthenaDBNO_C"))))
-		{
-			PlayerState->AbilitySystemComponent->ServerCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
-			PlayerState->AbilitySystemComponent->ServerEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo, AbilitySpec.ActivationInfo.PredictionKeyWhenActivated);
-			PlayerState->AbilitySystemComponent->ClientCancelAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
-			PlayerState->AbilitySystemComponent->ClientEndAbility(AbilitySpec.Handle, AbilitySpec.ActivationInfo);
-
-			break;
-		}
-	}
 
 	PlayerPawn->bIsDBNO = false;
 	PlayerPawn->OnRep_IsDBNO();
@@ -451,9 +435,7 @@ void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
 
 		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
 		{
-			int32 LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
-
-			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, LoadedAmmo);
+			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, Inventory::GetStats(WeaponItemDefinition)->ClipSize);
 		}
 		else
 		{
@@ -510,10 +492,12 @@ void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* Inv
 	if (PlayerPawn == NULL)
 		return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
 
-	if (AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller))
-	{
-		Inventory::GiveItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
-	}
+	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller);
+
+	if (PlayerController == NULL)
+		return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
+
+	Inventory::GiveItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
 
 	return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
 }
