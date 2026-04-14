@@ -6,7 +6,7 @@
 
 void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
-	*(uint8*)((__int64)(BotMutator) + 0x428) = UKismetMathLibrary::RandomIntegerInRange(0, 29); // CachedHumanPlayerCount
+	*(uint8*)((__int64)(BotMutator) + 0x428) = 1;
 
 	return Originals::InitializeMMRInfos(BotMutator);
 }
@@ -73,8 +73,6 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 	}
 }
 
-// Will figure it out later
-
 void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, void* a2, void* a3)
 {
 	Originals::InitializeCosmeticLoadout(BotController, a2, a3);
@@ -89,10 +87,7 @@ void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, 
 	if (PlayerState == NULL)
 		return;
 
-	static UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic"));
 	static UDataTable* PheobeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
-
-	TArray<UAthenaCharacterItemDefinition*> PhoebeCharacterItemDefinitions;
 
 	for (const auto& [RowName, RowValue] : PheobeEmotes->RowMap)
 	{
@@ -103,59 +98,8 @@ void Bots::InitializeCosmeticLoadout(AFortAthenaAIBotController* BotController, 
 			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
 
 			if (Dance)
-				PlayerPawn->CosmeticLoadout.Dances.Add(Dance);
+				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
 		}
-	}
-
-	for (const auto& [RowName, RowValue] : PhoebeCharacters->RowMap)
-	{
-		FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
-
-		if (TableRow != NULL)
-		{
-			UAthenaCharacterItemDefinition* Character = (UAthenaCharacterItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
-
-			if (Character)
-				PhoebeCharacterItemDefinitions.Add(Character);
-		}
-	}
-
-	int32 SelectedPhoebeCharacter = UKismetMathLibrary::RandomIntegerInRange(0, PhoebeCharacterItemDefinitions.Num() - 1);
-
-	UAthenaCharacterItemDefinition* PhoebeCharacter = PhoebeCharacterItemDefinitions[SelectedPhoebeCharacter];
-
-	if (PhoebeCharacter != NULL)
-	{
-		if (PhoebeCharacter->HeroDefinition && PhoebeCharacter->HeroDefinition->Specializations.IsValid())
-		{
-			for (TSoftObjectPtr<UFortHeroSpecialization>& HeroSpecialization : PhoebeCharacter->HeroDefinition->Specializations)
-			{
-				UFortHeroSpecialization* Specialization = Utils::StaticLoadObject<UFortHeroSpecialization>(UKismetStringLibrary::Conv_NameToString(HeroSpecialization.ObjectID.AssetPathName).CStr());
-
-				if (Specialization)
-				{
-					for (TSoftObjectPtr<UCustomCharacterPart>& CharacterPart : Specialization->CharacterParts)
-					{
-						UCustomCharacterPart* CustomCharacterPart = Utils::StaticLoadObject<UCustomCharacterPart>(UKismetStringLibrary::Conv_NameToString(CharacterPart.ObjectID.AssetPathName).CStr());
-
-						if (CustomCharacterPart)
-							PlayerState->CharacterData.Parts[(uintptr_t)CustomCharacterPart->CharacterPartType] = CustomCharacterPart;
-					}
-				}
-			}
-		}
-
-		PlayerPawn->CosmeticLoadout.Character = PhoebeCharacter;
-	}
-
-	PlayerPawn->OnRep_CosmeticLoadout();
-
-	BotController->CosmeticLoadoutBC = PlayerPawn->CosmeticLoadout;
-
-	if (Configuration::bUseCustomMinimap)
-	{
-		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ImageSize = FVector2D(50, 50);
-		BotController->CachedBotManager->SpecialActorMinimapIconBrush.ResourceObject = PlayerPawn->CosmeticLoadout.Character->GetSmallPreviewImageBrush().ResourceObject;
 	}
 }
 
@@ -271,47 +215,43 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 
 UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFortItemDefinition* ItemDefinition, int32 Count)
 {
-	UFortWorldItem* WorldItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
+	UFortWorldItem* NewItem = Cast<UFortWorldItem>(ItemDefinition->CreateTemporaryItemInstanceBP(Count, 0));
 
-	if (WorldItem == NULL)
+	if (NewItem == NULL)
 		return NULL;
 
-	WorldItem->OwnerInventory = BotController->Inventory;
+	NewItem->OwnerInventory = BotController->Inventory;
 
-	WorldItem->ItemEntry.ItemDefinition = ItemDefinition;
-	WorldItem->ItemEntry.Count = Count;
+	NewItem->ItemEntry.ItemDefinition = ItemDefinition;
+	NewItem->ItemEntry.Count = Count;
 
-	if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
+	BotController->CachedWorldItem = NewItem;
+
+	for (int32 Index = 0; Index < 6; Index++)
 	{
-		WorldItem->ItemEntry.LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
-	}
+		FFortBotInventoryInfo& SlotItem = BotController->SlotItems[Index];
 
-	if (ItemDefinition->bInventorySizeLimited)
-	{
-		for (int32 SlotIndex = 0; SlotIndex < 6; SlotIndex++)
+		if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
 		{
-			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
+			SlotItem.FortItem = NewItem;
 
-			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
-			{
-				SlotItem.FortItem = WorldItem;
-				SlotItem.ItemDefinition = ItemDefinition;
-				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+			SlotItem.ItemDefinition = ItemDefinition;
+			SlotItem.ItemType = ItemDefinition->ItemType;
 
-				break;
-			}
+			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+
+			break;
 		}
 	}
 
-	BotController->Inventory->Inventory.ItemInstances.Add(WorldItem);
-	BotController->Inventory->Inventory.ReplicatedEntries.Add(WorldItem->ItemEntry);
+	BotController->Inventory->Inventory.ItemInstances.Add(NewItem);
+	BotController->Inventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
 
-	BotController->Inventory->Inventory.MarkItemDirty(WorldItem->ItemEntry);
+	BotController->Inventory->Inventory.MarkItemDirty(NewItem->ItemEntry);
 
 	BotController->Inventory->HandleInventoryLocalUpdate();
 
-	return WorldItem;
+	return NewItem;
 }
 
 AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
