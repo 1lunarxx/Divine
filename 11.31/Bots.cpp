@@ -39,6 +39,28 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		if (UFortAthenaAIBotPlayStyleDigestedSkillSet* PlayStyleSkill = Cast<UFortAthenaAIBotPlayStyleDigestedSkillSet>(SkillSet))
 			BotController->CachePlayStyleSkillSet = PlayStyleSkill;
 	}
+
+	int j = 0;
+
+	for (int i = 0; i < BotController->Inventory->Inventory.ItemInstances.Num(); i++)
+	{
+		if (j > 6)
+			break;
+
+		UFortItemDefinition* ItemDef = BotController->Inventory->Inventory.ItemInstances[i]->GetItemDefinitionBP();
+
+		if (ItemDef->bInventorySizeLimited)
+		{
+			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[j];
+
+			SlotItem.FortItem = BotController->Inventory->Inventory.ItemInstances[i];
+			SlotItem.ItemDefinition = ItemDef;
+			SlotItem.ItemType = ItemDef->ItemType;
+			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDef);
+
+			j++;
+		}
+	}
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -57,7 +79,7 @@ void Bots::AddStartingItemsToInventory(AFortAthenaAIBotController* BotController
 {
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		CreateItem(BotController, Item, 1);
+		UFortWorldItem* WorldItem = CreateItem(BotController, Item, 1);
 	}
 }
 
@@ -202,15 +224,35 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 
 	NewItem->OwnerInventory = BotController->Inventory;
 
+	TWeakObjectPtr<AFortInventory> WeakInventory{};
+	WeakInventory.ObjectIndex = BotController->Inventory->Index;
+	WeakInventory.ObjectSerialNumber = UObject::GObjects->GetSerialByIndex(BotController->Inventory->Index);
+
+	NewItem->ItemEntry.ParentInventory = WeakInventory;
+
 	NewItem->ItemEntry.ItemDefinition = ItemDefinition;
 	NewItem->ItemEntry.Count = Count;
+	NewItem->ItemEntry.LoadedAmmo = 30;
 
-	BotController->Inventory->Inventory.ItemInstances.Add(NewItem);
-	BotController->Inventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
+	for (int32 Index = 0; Index < 6; Index++)
+	{
+		FFortBotInventoryInfo& SlotItem = BotController->SlotItems[Index];
+
+		if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
+		{
+			SlotItem.FortItem = NewItem;
+			SlotItem.ItemDefinition = ItemDefinition;
+			SlotItem.ItemType = ItemDefinition->ItemType;
+			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+
+			break;
+		}
+	}
+
+	BotController->Inventory->Inventory.ItemInstances.Add(NewItem);	BotController->Inventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
 
 	BotController->Inventory->Inventory.MarkItemDirty(NewItem->ItemEntry);
-	
-	BotController->Inventory->bRequiresLocalUpdate = true;
+
 	BotController->Inventory->HandleInventoryLocalUpdate();
 
 	return NewItem;
