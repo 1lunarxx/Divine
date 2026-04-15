@@ -13317,7 +13317,7 @@ public:
 	struct FMarkedActorDisplayInfo                CustomDisplayInfo;                                 // 0x00A0(0x0068)(NativeAccessSpecifierPrivate)
 
 public:
-	void ConstructWorldMarkerData()
+	void CreateWorldMarkerData()
 	{
 		((void (*)(FFortWorldMarkerData*))(InSDKUtils::GetImageBase() + 0x128F150))(this);
 	}

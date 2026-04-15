@@ -32,7 +32,7 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		{
 			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
 			
-			// SlotItem->SetItem(ItemInstance);
+			//SlotItem->SetItem(ItemInstance);
 
 			SlotItem.FortItem = ItemInstance;
 			SlotItem.ItemDefinition = ItemDefinition;
@@ -60,6 +60,8 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
 		}
 	}
+
+	BotController->Skill = 6767.f;
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -106,8 +108,8 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 	{
 		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
 		{
-			if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
-				continue;
+			//if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+			//	continue;
 
 			Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
 		}

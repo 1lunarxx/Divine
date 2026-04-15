@@ -66210,7 +66210,6 @@ public:
 	EMatchAbandonState                            MatchAbandonState;                                 // 0x13BC(0x0001)(BlueprintVisible, BlueprintReadOnly, Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Pad_13BD[0x3];                                     // 0x13BD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FUniqueNetIdRepl                       BotUniqueId;                                       // 0x13C0(0x0028)(Net, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-
 public:
 	static EDeathCause ToDeathCause(const struct FGameplayTagContainer& InTags, bool bWasDBNO);
 

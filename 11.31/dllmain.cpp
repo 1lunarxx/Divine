@@ -6,6 +6,7 @@
 #include "Bots.h"
 #include "Building.h"
 #include "Utils.h"
+#include "Quests.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
@@ -23,6 +24,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     Abilities::Setup();
     Misc::Setup();
+    Quests::Setup();
     GameMode::Setup();
     Building::Setup();
     Abilities::Setup();

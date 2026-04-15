@@ -12,9 +12,9 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 	if (PlayerState == NULL)
 		return;
 
-    UFortKismetLibrary::UpdatePlayerCustomCharacterPartsVisualization(PlayerState);
+	UFortKismetLibrary::UpdatePlayerCustomCharacterPartsVisualization(PlayerState);
 
-    PlayerState->OnRep_CharacterData();
+	PlayerState->OnRep_CharacterData();
 
 	UFortGlobals::InitializePlayerGameplayAbilities(Utils::GetInterfaceAddress<IAbilitySystemInterface>(PlayerState));
 
@@ -57,7 +57,7 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 
 	if (AbilityClass != NULL)
 	{
-		FGameplayAbilitySpec Spec = FGameplayAbilitySpec();
+		FGameplayAbilitySpec Spec;
 		Spec.ConstructAbilitySpec(Cast<UGameplayAbility>(AbilityClass->ClassDefaultObject), 1, -1, EmoteAsset);
 
 		PlayerState->AbilitySystemComponent->GiveAbilityAndActivateOnce(&Spec.Handle, &Spec);
@@ -82,10 +82,15 @@ void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnSta
 	PlayerPawn->ZiplineState = InZiplineState;
 	PlayerPawn->OnRep_ZiplineState();
 
-	float Velocity = 0.f;
-
 	if (InZiplineState.bJumped)
-		PlayerPawn->LaunchCharacterJump({ Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, Velocity >= -750 ? UKismetMathLibrary::FMin(Velocity, 750) : -750, 1500 }, false, false, true, true);
+	{
+		FVector Velocity = FVector{};
+
+		Velocity.X = 0;
+		Velocity.Z = 1500;
+
+		PlayerPawn->LaunchCharacterJump(Velocity, false, false, true, true);
+	}
 }
 
 void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController, FGuid& ItemGuid)
@@ -153,11 +158,12 @@ void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController
 		return;
 
 	PlayerPawn->bIsDBNO = false;
-	PlayerPawn->OnRep_IsDBNO();
+	PlayerPawn->bIsDying = false;
+	PlayerPawn->bPlayedDying = false;
 
+	PlayerPawn->OnRep_IsDBNO();
 	PlayerPawn->SetHealth(30);
 
-	PlayerController->RespawnPlayerAfterDeath(false);
 	PlayerController->ClientOnPawnRevived(EventInstigator);
 }
 
@@ -173,47 +179,41 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	if (PlayerState == NULL)
 		return;
 
-	FFortWorldMarkerData WorldMarkerData = FFortWorldMarkerData();
+	FFortWorldMarkerData WorldMarkerData;
+	WorldMarkerData.CreateWorldMarkerData();
 
-	WorldMarkerData.ConstructWorldMarkerData();
-
-	FMarkerID MarkerID = FMarkerID{};
-
-	MarkerID.PlayerID = PlayerState->PlayerID;
-	MarkerID.InstanceID = MarkerRequest.InstanceID;
-
-	WorldMarkerData.MarkerID = MarkerID;
 	WorldMarkerData.Owner = PlayerState;
 
+	WorldMarkerData.MarkerID = FMarkerID{};
+	WorldMarkerData.MarkerID.InstanceID = MarkerRequest.InstanceID;
+	WorldMarkerData.MarkerID.PlayerID = WorldMarkerData.Owner->PlayerID;
+
 	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
+
 	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
 	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
 	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
 
-	WorldMarkerData.bHasCustomDisplayInfo = false;
-
-	if (MarkerRequest.MarkerType == EFortWorldMarkerType::Item)
+	if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
 	{
-		AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor);
-
-		if (Pickup != NULL)
-		{
-			WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
-			WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
-		}
+		WorldMarkerData.ItemDefinition = Pickup->PrimaryPickupItemEntry.ItemDefinition;
+		WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
 	}
+
+	WorldMarkerData.bHasCustomDisplayInfo = false;
 
 	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
-		AFortPlayerControllerAthena* TeamMemberAthena = Cast<AFortPlayerControllerAthena>(TeamMember);
-
-		if (TeamMemberAthena == NULL || TeamMemberAthena == PlayerController)
+		if (TeamMember == PlayerController)
 			continue;
 
-		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMemberAthena->MarkerComponent;
+		if (AFortPlayerControllerAthena* TeamMember_Athena = Cast<AFortPlayerControllerAthena>(TeamMember))
+		{
+			UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember_Athena->MarkerComponent;
 
-		if (TeamMemberMarkerComponent != NULL)
-			TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
+			if (TeamMemberMarkerComponent != NULL)
+				TeamMemberMarkerComponent->ClientAddMarker(WorldMarkerData);
+		}
 	}
 }
 
@@ -231,15 +231,16 @@ void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMar
 
 	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
-		AFortPlayerControllerAthena* TeamMemberAthena = Cast<AFortPlayerControllerAthena>(TeamMember);
-
-		if (TeamMemberAthena == NULL || TeamMemberAthena == PlayerController)
+		if (TeamMember == PlayerController)
 			continue;
 
-		UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMemberAthena->MarkerComponent;
+		if (AFortPlayerControllerAthena* TeamMember_Athena = Cast<AFortPlayerControllerAthena>(TeamMember))
+		{
+			UAthenaMarkerComponent* TeamMemberMarkerComponent = TeamMember_Athena->MarkerComponent;
 
-		if (TeamMemberMarkerComponent != NULL)
-			TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
+			if (TeamMemberMarkerComponent != NULL)
+				TeamMemberMarkerComponent->ClientCancelMarker(MarkerID);
+		}
 	}
 }
 
