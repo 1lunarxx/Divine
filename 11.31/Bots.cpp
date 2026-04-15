@@ -31,6 +31,8 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		if (ItemDefinition != NULL && ItemDefinition->bInventorySizeLimited)
 		{
 			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
+			
+			// SlotItem->SetItem(ItemInstance);
 
 			SlotItem.FortItem = ItemInstance;
 			SlotItem.ItemDefinition = ItemDefinition;
@@ -70,9 +72,15 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
 		CreateItem(BotController, Item, 1);
-	}
 
-	CreateItem(BotController, Utils::StaticFindObject<UFortWeaponMeleeItemDefinition>(TEXT("/Game/Athena/Items/Weapons/WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01")), 1);
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
+		{
+			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+			{
+				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
+			}
+		}
+	}
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
@@ -98,17 +106,15 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 	{
 		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
 		{
-			if (UFortWeaponRangedItemDefinition* WeaponItemDefinition = Cast<UFortWeaponRangedItemDefinition>(Entry.ItemDefinition))
-			{
-				Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
-			}
+			if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+				continue;
+
+			Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
 		}
 	}
 
 	if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState))
 	{
-		PlayerState->PawnDeathLocation = BotController->PlayerBotPawn->K2_GetActorLocation();
-
 		if (BotController->bIsAnAthenaGameParticipant)
 		{
 			PlayerState->DeathInfo.bDBNO = BotController->PlayerBotPawn->bWasDBNOOnDeath;
