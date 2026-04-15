@@ -59,7 +59,7 @@ AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* Item
 
 FFortRangedWeaponStats* Inventory::GetStats(UFortWeaponItemDefinition* ItemDefinition)
 {
-	if (ItemDefinition->WeaponStatHandle.DataTable == NULL)
+	if (ItemDefinition == NULL || ItemDefinition->WeaponStatHandle.DataTable == NULL)
 		return NULL;
 
 	for (const auto& [RowName, RowValue] : ItemDefinition->WeaponStatHandle.DataTable->RowMap)

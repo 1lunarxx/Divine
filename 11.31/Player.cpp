@@ -142,7 +142,7 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 {
 	Pawn->bMovingEmote = false;
 
-	Originals::MovingEmoteStopped(Pawn);
+	return Originals::MovingEmoteStopped(Pawn);
 }
 
 void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController* EventInstigator)

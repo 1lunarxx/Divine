@@ -12,7 +12,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultDuo"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -90,10 +90,10 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 				CachedPOIVolumeLocation.Flags &= ~0x1;
 
-				ServerBotManager->CachedValidPOIVolumeLocations.Add(CachedPOIVolumeLocation);
+				GameMode->ServerBotManager->CachedValidPOIVolumeLocations.Add(CachedPOIVolumeLocation);
 			}
 
-			for (FNavigationPOI& Tag : ServerBotManager->OnGroundTagQueryPOIList)
+			for (FNavigationPOI& Tag : GameMode->ServerBotManager->OnGroundTagQueryPOIList)
 			{
 				for (AFortPoiVolume* Volume : Volumes)
 				{
@@ -104,7 +104,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 				}
 			}
 
-			for (FBattleBusPOI& Tag : ServerBotManager->SecondaryBattleBusTagQueryPOIList)
+			for (FBattleBusPOI& Tag : GameMode->ServerBotManager->SecondaryBattleBusTagQueryPOIList)
 			{
 				for (AFortPoiVolume* Volume : Volumes)
 				{
@@ -115,7 +115,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 				}
 			}
 
-			for (FBattleBusPOI& Tag : ServerBotManager->BattleBusTagQueryPOIList)
+			for (FBattleBusPOI& Tag : GameMode->ServerBotManager->BattleBusTagQueryPOIList)
 			{
 				for (AFortPoiVolume* Volume : Volumes)
 				{

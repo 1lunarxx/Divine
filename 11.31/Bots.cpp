@@ -16,7 +16,7 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
-	if (BotController == NULL || BotController->Inventory == NULL)
+	if (BotController == NULL)
 		return;
 
 	int32 SlotIndex = 0;
@@ -28,7 +28,7 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 		UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
 
-		if (ItemDefinition && ItemDefinition->bInventorySizeLimited)
+		if (ItemDefinition != NULL && ItemDefinition->bInventorySizeLimited)
 		{
 			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
 
@@ -43,74 +43,21 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 	static UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
 
-	if (PhoebeEmotes)
+	if (PhoebeEmotes != NULL)
 	{
 		for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
 		{
 			if (RowValue == NULL)
 				continue;
 
-			auto* Row = (FFortBotCosmeticItemDataTableRow*)RowValue;
+			FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
 
-			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(Row->PrimaryAssetId);
+			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
 
 			if (Dance)
 				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
 		}
 	}
-
-	static UDataTable* PhoebePickaxes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Pickaxe_Basic.Phoebe_Cosmetic_Pickaxe_Basic"));
-
-	if (PhoebePickaxes == NULL)
-		return;
-
-	TArray<FFortBotCosmeticItemDataTableRow*> PickaxeRows;
-
-	for (const auto& [RowName, RowValue] : PhoebePickaxes->RowMap)
-	{
-		if (RowValue)
-			PickaxeRows.Add((FFortBotCosmeticItemDataTableRow*)RowValue);
-	}
-
-	if (PickaxeRows.Num() <= 0)
-		return;
-
-	FFortBotCosmeticItemDataTableRow* SelectedPickaxe = PickaxeRows[UKismetMathLibrary::RandomIntegerInRange(0, PickaxeRows.Num() - 1)];
-
-	if (SelectedPickaxe == NULL || !UKismetMathLibrary::RandomBoolWithWeight(SelectedPickaxe->Weight))
-		return;
-
-	UAthenaPickaxeItemDefinition* Pickaxe = (UAthenaPickaxeItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(SelectedPickaxe->PrimaryAssetId);
-
-	if (Pickaxe)
-		BotController->CosmeticLoadoutBC.Pickaxe = Pickaxe;
-
-	static UDataTable* PhoebeNames_NA = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Names/PhoebeNames_NA.PhoebeNames_NA"));
-
-	if (PhoebeNames_NA == NULL)
-		return;
-
-	TArray<FFortAthenaAIBotNameDataTableRow*> NameRows;
-
-	for (const auto& [RowName, RowValue] : PhoebeNames_NA->RowMap)
-	{
-		if (RowValue)
-			NameRows.Add((FFortAthenaAIBotNameDataTableRow*)RowValue);
-	}
-
-	FFortAthenaAIBotNameDataTableRow* SelectedName = NameRows[UKismetMathLibrary::RandomIntegerInRange(0, NameRows.Num() - 1)];
-
-	if (SelectedName == NULL)
-		return;
-
-	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
-	if (GameMode == NULL)
-		return;
-
-	GameMode->ChangeName(BotController, SelectedName->Name, true);
-
-	BotController->PlayerState->OnRep_PlayerName();
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -118,12 +65,14 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	if (BotController->Inventory == NULL)
 	{
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
-
-		for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
-		{
-			UFortWorldItem* WorldItem = CreateItem(BotController, Item, 1);
-		}
 	}
+
+	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+	{
+		CreateItem(BotController, Item, 1);
+	}
+
+	CreateItem(BotController, Utils::StaticFindObject<UFortWeaponMeleeItemDefinition>(TEXT("/Game/Athena/Items/Weapons/WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01")), 1);
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
@@ -247,6 +196,11 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	NewItem->ItemEntry.ItemDefinition = ItemDefinition;
 	NewItem->ItemEntry.Count = Count;
 
+	if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
+	{
+		NewItem->ItemEntry.LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
+	}
+
 	if (ItemDefinition->bInventorySizeLimited)
 	{
 		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
@@ -256,6 +210,7 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
 			{
 				SlotItem.FortItem = NewItem;
+
 				SlotItem.ItemDefinition = ItemDefinition;
 				SlotItem.ItemType = ItemDefinition->ItemType;
 				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
