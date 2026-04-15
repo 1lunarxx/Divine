@@ -44,7 +44,7 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState)
 
 float Misc::GetMaxTickRate(UEngine* Engine, float DeltaTime, bool bAllowFrameRateSmoothing)
 {
-	return 120.0f;
+	return 30.0f;
 }
 
 bool Misc::Listen()

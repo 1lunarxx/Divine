@@ -84,6 +84,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 				for (int32 i = 0; i < 250; i++)
 				{
 					FVector RandomPoint = UKismetMathLibrary::RandomPointInBoundingBox(Origin, BoxExtent);
+
 					CachedPOIVolumeLocation.NavMeshLocations.Add(RandomPoint);
 				}
 
