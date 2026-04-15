@@ -18,7 +18,6 @@ private:
 	static void SendRequestNow(UMcpProfileGroup*, const void*, FBaseUrlContext::EContextCredentials);
 	static void PlacePlayersInAircraft(AFortGameStateAthena*);
 
-	static float GetMaxTickRate(UEngine*, float, bool);
 	static bool Listen();
 public:
 	static void Setup();

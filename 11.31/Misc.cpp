@@ -42,11 +42,6 @@ void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState)
 	}
 }
 
-float Misc::GetMaxTickRate(UEngine* Engine, float DeltaTime, bool bAllowFrameRateSmoothing)
-{
-	return 30.0f;
-}
-
 bool Misc::Listen()
 {
 	FName NetDriverDefinition = UKismetStringLibrary::Conv_StringToName(L"GameNetDriver");
@@ -86,22 +81,16 @@ void Misc::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3883CD0, TickFlush, (void**)&Originals::TickFlush);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1589170, PlacePlayersInAircraft, (void**)&Originals::PlacePlayersInAircraft);
-
 	Utils::Hook(InSDKUtils::GetImageBase() + 0xE2BF70, SendRequestNow, (void**)&Originals::SendRequestNow);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B24510, GetMaxTickRate);
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x3B76FE0, ForceRetTrue);
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x34AF6C0, ForceRetTrue);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x372FB80, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12030A0, ForceRetTrue);
-
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x163DCA0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
 
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
-
-	Utils::Rel32(InSDKUtils::GetImageBase() + 0x3B2BF8A, Listen);
 }

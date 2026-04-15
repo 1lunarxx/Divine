@@ -19,27 +19,24 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 	if (BotController == NULL)
 		return;
 
-	int32 SlotIndex = 0;
-
-	for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
+	for (int i = 0; i < 6; i++)
 	{
-		if (ItemInstance == NULL || SlotIndex > 6)
-			break;
-
-		UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
-
-		if (ItemDefinition != NULL && ItemDefinition->bInventorySizeLimited)
+		for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
 		{
-			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
-			
-			//SlotItem->SetItem(ItemInstance);
+			if (ItemInstance == NULL)
+				break;
 
-			SlotItem.FortItem = ItemInstance;
-			SlotItem.ItemDefinition = ItemDefinition;
-			SlotItem.ItemType = ItemDefinition->ItemType;
-			SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+			UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
 
-			SlotIndex++;
+			if (ItemDefinition != NULL && ItemDefinition->bInventorySizeLimited)
+			{
+				FFortBotInventoryInfo& SlotItem = BotController->SlotItems[i];
+
+				SlotItem.FortItem = ItemInstance;
+				SlotItem.ItemDefinition = ItemDefinition;
+				SlotItem.ItemType = ItemDefinition->ItemType;
+				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+			}
 		}
 	}
 
@@ -60,8 +57,6 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
 		}
 	}
-
-	BotController->Skill = 6767.f;
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -237,12 +232,37 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	return NewItem;
 }
 
-AFortAthenaAIBotController* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
+UFortHero* Bots::GetOrInitializeHero(AFortAthenaAIBotController* BotController)
+{
+	Originals::GetOrInitializeHero(BotController);
+
+	static UDataTable* PhoebeCosmeticCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic"));
+
+	for (const auto& [RowName, RowValue] : PhoebeCosmeticCharacters->RowMap)
+	{
+		FFortBotCosmeticItemDataTableRow* CosmeticItemTableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+		if (CosmeticItemTableRow == NULL)
+			continue;
+
+		if (UKismetMathLibrary::RandomBoolWithWeight(CosmeticItemTableRow->Weight))
+		{
+			UAthenaCharacterItemDefinition* CharacterItemDefinition = (UAthenaCharacterItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(CosmeticItemTableRow->PrimaryAssetId);
+
+			BotController->CosmeticLoadoutBC.Character = CharacterItemDefinition;
+		}
+	}
+
+	BotController->PlayerBotPawn->CosmeticLoadout = BotController->CosmeticLoadoutBC;
+	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
+}
+
+UObject* Bots::GetSquadLeader(AFortAthenaAIBotController* BotController)
 {
 	return BotController;
 }
 
-UFortServerBotManagerAthena* Bots::GetServerBotManager()
+UFortServerBotManagerAthena* Bots::GetBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
 
@@ -257,7 +277,9 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
 
+	//Utils::Hook(InSDKUtils::GetImageBase() + 0x12A24C0, GetOrInitializeHero, (void**)&Originals::GetOrInitializeHero);
+
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A46A0, GetSquadLeader);
 
-	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetServerBotManager);
+	Utils::Rel32(InSDKUtils::GetImageBase() + 0x146E480, GetBotManager);
 }

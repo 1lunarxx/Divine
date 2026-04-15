@@ -39,7 +39,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     // UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.Enable 0", nullptr);
     
-    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", nullptr);
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", NULL);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);
     UWorld::GetWorld()->ServerTravel(L"Apollo_Terrain", false, false);
