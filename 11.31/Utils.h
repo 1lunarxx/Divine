@@ -30,6 +30,27 @@ public:
     }
 
     template<typename T = UObject>
+    static T* GetRandomRow(UDataTable* DataTable)
+    {
+        if (DataTable == NULL)
+            return NULL;
+
+        TArray<T*> Array;
+
+        for (const auto& [RowName, RowValue] : DataTable->RowMap)
+        {
+            T* TableRow = (T*)RowValue;
+
+            if (TableRow == NULL)
+                continue;
+
+            Array.Add(TableRow);
+        }
+
+        return Array[UKismetMathLibrary::RandomIntegerInRange(0, Array.Num() - 1)];
+    }
+
+    template<typename T = UObject>
     static T* StaticFindObject(const TCHAR* OrigInName, UObject* InObjectPackage = nullptr, UClass* ObjectClass = nullptr)
     {
         static UObject* (*_StaticFindObject)(UClass*, UObject*, const TCHAR*, bool) = decltype(_StaticFindObject)(InSDKUtils::GetImageBase() + 0x2847D60);

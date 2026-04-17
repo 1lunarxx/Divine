@@ -10,7 +10,6 @@ class Bots
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 		static inline void (*OnPossessedPawnDied)(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 		static inline void (*InitializeMMRInfos)(AFortAthenaMutator_Bots*);
-		static inline UFortHero* (*GetOrInitializeHero)(AFortAthenaAIBotController*);
 	};
 
 private:
@@ -22,9 +21,8 @@ private:
 
 	static UFortWorldItem* CreateItem(AFortAthenaAIBotController*, UFortItemDefinition*, int32);
 
-	static UFortHero* GetOrInitializeHero(AFortAthenaAIBotController*);
-	static UObject* GetSquadLeader(AFortAthenaAIBotController*);
 	static UFortServerBotManagerAthena* GetBotManager();
+	static UObject* GetSquadLeader(AFortAthenaAIBotController*);
 public:
 	static void EnterAircraft(AFortAthenaAIBotController*, AFortAthenaAircraft*);
 	static void Setup();
