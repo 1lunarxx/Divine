@@ -91,6 +91,8 @@ void Misc::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12030A0, ForceRetTrue);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x27C47A0, ForceRetTrue);
 
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x27E8B00, ForceRetTrue);
+
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x19B1660, 0xC3);
 	Utils::Patch(InSDKUtils::GetImageBase() + 0x1591C25, 0x85);
 }

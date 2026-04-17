@@ -19,8 +19,6 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 	if (BotController == NULL)
 		return;
 
-	BotController->BotSkillSetClasses.Add(UFortAthenaAIBotWarmupSkillSet::StaticClass());
-
 	for (int i = 0; i < 6; i++)
 	{
 		for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
@@ -41,6 +39,26 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 			}
 		}
 	}
+
+	static UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
+
+	if (PhoebeEmotes != NULL)
+	{
+		for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
+		{
+			if (RowValue == NULL)
+				continue;
+
+			FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+
+			if (Dance)
+				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
+		}
+	}
+
+	BotController->Skill = 1000.0f;
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -50,9 +68,18 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
 	}
 
-	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+	if (UFortItemDefinition* Item = BotController->StartupInventory->Items[UKismetMathLibrary::RandomIntegerInRange(1, BotController->StartupInventory->Items.Num() - 1)])
 	{
 		CreateItem(BotController, Item, 1);
+		CreateItem(BotController, BotController->StartupInventory->Items[0], 1);
+
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
+		{
+			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+			{
+				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
+			}
+		}
 	}
 
 	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
@@ -79,8 +106,8 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 	{
 		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
 		{
-			//if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
-			//	continue;
+			if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
+				continue;
 
 			Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
 		}

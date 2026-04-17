@@ -4,7 +4,7 @@
 
 void Quests::SendStatEventWithTags()
 {
-	printf(__FUNCTION__);
+	//printf(__FUNCTION__);
 }
 
 void Quests::Setup()
