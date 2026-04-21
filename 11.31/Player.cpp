@@ -562,6 +562,16 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 
 		KillerPlayerState->ClientReportKill(PlayerState);
 
+		FGameplayEventData EventData = FGameplayEventData{};
+
+		EventData.EventTag = FGameplayTag(UKismetStringLibrary::Conv_StringToName(TEXT("Event.EarnedElimination")));
+		EventData.ContextHandle = KillerPlayerState->AbilitySystemComponent->MakeEffectContext();
+		EventData.Instigator = KillerPlayerState->Owner;
+		EventData.Target = PlayerState;
+		EventData.TargetData = UAbilitySystemBlueprintLibrary::AbilityTargetDataFromActor(PlayerState);
+
+		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(KillerPawn, EventData.EventTag, EventData);
+
 		if (AFortTeamInfo* PlayerTeam = KillerPlayerState->PlayerTeam)
 		{
 			for (AController* TeamMember : PlayerTeam->TeamMembers)
@@ -601,7 +611,16 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 			PlayerController->ClientSendMatchStatsForPlayer(FAthenaMatchStats());
 			PlayerController->ClientSendTeamStatsForPlayer(TeamStats);
 
-			GameMode->RemoveFromAlivePlayers(PlayerController, KillerPlayerState == PlayerState ? nullptr : KillerPlayerState, (AFortPlayerPawn*)DeathReport.KillerPawn, DeathReport.KillerWeapon, PlayerState ? PlayerState->DeathInfo.DeathCause : EDeathCause::Rifle, 0);
+			GameMode->RemoveFromAlivePlayers(PlayerController, KillerPlayerState == PlayerState ? NULL : KillerPlayerState, (AFortPlayerPawn*)DeathReport.KillerPawn, DeathReport.KillerWeapon, PlayerState ? PlayerState->DeathInfo.DeathCause : EDeathCause::Rifle, 0);
+
+			if (KillerPlayerState && KillerPlayerState != PlayerState && KillerPlayerState->Place == 1)
+			{
+				GameState->WinningTeam = KillerPlayerState->TeamIndex;
+				GameState->OnRep_WinningTeam();
+
+				GameState->WinningPlayerState = KillerPlayerState;
+				GameState->OnRep_WinningPlayerState();
+			}
 		}
 	}
 }

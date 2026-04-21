@@ -12,14 +12,12 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 
 void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
-	Originals::OnPawnSpawned(BotMutator, PlayerPawn);
-
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
 	if (BotController == NULL)
-		return;
+		return Originals::OnPawnSpawned(BotMutator, PlayerPawn);
 
-	for (int i = 0; i < 6; i++)
+	for (int32 i = 0; i < 6; i++)
 	{
 		for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
 		{
@@ -28,7 +26,10 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 			UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
 
-			if (ItemDefinition != NULL && ItemDefinition->bInventorySizeLimited)
+			if (ItemDefinition == NULL)
+				continue;
+
+			if (ItemDefinition->bInventorySizeLimited)
 			{
 				FFortBotInventoryInfo& SlotItem = BotController->SlotItems[i];
 
@@ -40,25 +41,42 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		}
 	}
 
-	static UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes"));
-
-	if (PhoebeEmotes != NULL)
+	if (UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes")))
 	{
 		for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
 		{
-			if (RowValue == NULL)
-				continue;
-
 			FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
 
-			UAthenaDanceItemDefinition* Dance = (UAthenaDanceItemDefinition*)UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId);
+			if (TableRow == NULL)
+				continue;
 
-			if (Dance)
-				BotController->CosmeticLoadoutBC.Dances.Add(Dance);
+			UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId));
+
+			if (DanceItemDefinition)
+				BotController->CosmeticLoadoutBC.Dances.Add(DanceItemDefinition);
 		}
 	}
 
-	BotController->Skill = 1000.0f;
+	if (UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic")))
+	{
+		if (FFortBotCosmeticItemDataTableRow* Character = Utils::GetRandomRow<FFortBotCosmeticItemDataTableRow>(PhoebeCharacters))
+		{
+			if (UAthenaCharacterItemDefinition* CharacterItemDefinition = Cast<UAthenaCharacterItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(Character->PrimaryAssetId)))
+			{
+				BotController->CosmeticLoadoutBC.Character = CharacterItemDefinition;
+			}
+		}
+	}
+
+	BotController->PlayerBotPawn->CosmeticLoadout = BotController->CosmeticLoadoutBC;
+	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
+
+	if (AFortPlayerState* PlayerState = Cast<AFortPlayerState>(BotController->PlayerState))
+	{
+		PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
+	}
+
+	return Originals::OnPawnSpawned(BotMutator, PlayerPawn);
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
@@ -68,10 +86,9 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
 	}
 
-	if (UFortItemDefinition* Item = BotController->StartupInventory->Items[UKismetMathLibrary::RandomIntegerInRange(1, BotController->StartupInventory->Items.Num() - 1)])
+	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
 		CreateItem(BotController, Item, 1);
-		CreateItem(BotController, BotController->StartupInventory->Items[0], 1);
 
 		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
 		{
@@ -205,25 +222,6 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
 		NewItem->ItemEntry.LoadedAmmo = Inventory::GetStats(WeaponItemDefinition)->ClipSize;
 	 
-	if (ItemDefinition->bInventorySizeLimited)
-	{
-		for (int32 SlotIndex = 0; SlotIndex < 6; ++SlotIndex)
-		{
-			FFortBotInventoryInfo& SlotItem = BotController->SlotItems[SlotIndex];
-
-			if (SlotItem.FortItem == NULL || SlotItem.ItemDefinition == NULL)
-			{
-				SlotItem.FortItem = NewItem;
-
-				SlotItem.ItemDefinition = ItemDefinition;
-				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
-
-				break;
-			}
-		}
-	}
-
 	BotController->Inventory->Inventory.ItemInstances.Add(NewItem);
 	BotController->Inventory->Inventory.ReplicatedEntries.Add(NewItem->ItemEntry);
 

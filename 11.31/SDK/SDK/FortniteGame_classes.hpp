@@ -4138,7 +4138,12 @@ public:
 	uint8                                         Pad_980[0x8];                                      // 0x0980(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bInGhostMode;                                      // 0x0988(0x0001)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	uint8                                         Pad_989[0x1F];                                     // 0x0989(0x001F)(Fixing Struct Size After Last Property [ Dumper-7 ])
-
+public:
+	void ApplyCharacterCustomization(class AFortPlayerPawn* PlayerPawn)
+	{
+		static void(*_ApplyCharacterCustomization)(AFortPlayerState*, class AFortPlayerPawn*) = decltype(_ApplyCharacterCustomization)(InSDKUtils::GetImageBase() + 0x1E98940);
+		_ApplyCharacterCustomization(this, PlayerPawn);
+	}
 public:
 	static bool AreUniqueIDsIdentical(const struct FUniqueNetIdRepl& A, const struct FUniqueNetIdRepl& B);
 
@@ -66264,7 +66269,6 @@ public:
 	bool IsResurrectingNow() const;
 	bool IsResurrectionChipAvailable() const;
 	bool IsSquadDead() const;
-
 public:
 	static class UClass* StaticClass()
 	{
