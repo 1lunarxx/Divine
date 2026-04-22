@@ -54,6 +54,9 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
 		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
 	}
+	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
+	{
+	}
 
 	if (AbilityClass != NULL)
 	{
@@ -148,23 +151,6 @@ void Player::MovingEmoteStopped(AFortPawn* Pawn)
 	Pawn->bMovingEmote = false;
 
 	return Originals::MovingEmoteStopped(Pawn);
-}
-
-void Player::ServerReviveFromDBNO(AFortPlayerPawnAthena* PlayerPawn, AController* EventInstigator)
-{
-	AFortPlayerControllerAthena* PlayerController = Cast<AFortPlayerControllerAthena>(PlayerPawn->Controller);
-
-	if (PlayerController == NULL)
-		return;
-
-	PlayerPawn->bIsDBNO = false;
-	PlayerPawn->bIsDying = false;
-	PlayerPawn->bPlayedDying = false;
-
-	PlayerPawn->OnRep_IsDBNO();
-	PlayerPawn->SetHealth(30);
-
-	PlayerController->ClientOnPawnRevived(EventInstigator);
 }
 
 void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClientMarkerRequest& MarkerRequest)
@@ -635,6 +621,8 @@ void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerControll
 
 void Player::Setup()
 {
+	Utils::Virtual<AFortPickupAthena>(0xC7, GivePickupTo, (void**)&Originals::GivePickupTo);
+
     Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
@@ -642,10 +630,7 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 
-	Utils::Virtual<AFortPickupAthena>(0xC7, GivePickupTo, (void**)&Originals::GivePickupTo);
-
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
-	Utils::Virtual<AFortPlayerPawnAthena>(0x1BF, ServerReviveFromDBNO);
 	Utils::Virtual<AFortPlayerPawnAthena>(0xEB0 / 8, ServerHandlePickup);
 
 	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);

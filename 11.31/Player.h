@@ -23,7 +23,6 @@ private:
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
 
 	static void MovingEmoteStopped(AFortPawn*);
-	static void ServerReviveFromDBNO(AFortPlayerPawnAthena*, AController*);
 
 	static void ServerAddMapMarker(UAthenaMarkerComponent*, FFortClientMarkerRequest&);
 	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);

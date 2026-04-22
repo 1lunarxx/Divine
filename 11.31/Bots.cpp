@@ -10,6 +10,29 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 	return Originals::InitializeMMRInfos(BotMutator);
 }
 
+void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
+{
+	if (BotController->Inventory == NULL)
+	{
+		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
+	}
+
+	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+	{
+		CreateItem(BotController, Item, 1);
+
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
+		{
+			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+			{
+				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
+			}
+		}
+	}
+
+	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
+}
+
 void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
@@ -41,65 +64,7 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 		}
 	}
 
-	if (UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes")))
-	{
-		for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
-		{
-			FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
-
-			if (TableRow == NULL)
-				continue;
-
-			UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId));
-
-			if (DanceItemDefinition)
-				BotController->CosmeticLoadoutBC.Dances.Add(DanceItemDefinition);
-		}
-	}
-
-	if (UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic")))
-	{
-		if (FFortBotCosmeticItemDataTableRow* Character = Utils::GetRandomRow<FFortBotCosmeticItemDataTableRow>(PhoebeCharacters))
-		{
-			if (UAthenaCharacterItemDefinition* CharacterItemDefinition = Cast<UAthenaCharacterItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(Character->PrimaryAssetId)))
-			{
-				BotController->CosmeticLoadoutBC.Character = CharacterItemDefinition;
-			}
-		}
-	}
-
-	BotController->PlayerBotPawn->CosmeticLoadout = BotController->CosmeticLoadoutBC;
-	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
-
-	if (AFortPlayerState* PlayerState = Cast<AFortPlayerState>(BotController->PlayerState))
-	{
-		PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
-	}
-
 	return Originals::OnPawnSpawned(BotMutator, PlayerPawn);
-}
-
-void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
-{
-	if (BotController->Inventory == NULL)
-	{
-		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
-	}
-
-	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
-	{
-		CreateItem(BotController, Item, 1);
-
-		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
-		{
-			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
-			{
-				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
-			}
-		}
-	}
-
-	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
 
 void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
@@ -170,6 +135,46 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 			}
 		}
 	}
+}
+
+void Bots::ApplyCharacterCustomization(AFortAthenaAIBotController* BotController, FFortAthenaLoadout* OverrideCosmeticLoadout, UFortBotNameSettings* OverrideBotName)
+{
+	if (UDataTable* PhoebeEmotes = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/Pheobe_Cosmetic_Emotes.Pheobe_Cosmetic_Emotes")))
+	{
+		for (const auto& [RowName, RowValue] : PhoebeEmotes->RowMap)
+		{
+			FFortBotCosmeticItemDataTableRow* TableRow = (FFortBotCosmeticItemDataTableRow*)RowValue;
+
+			if (TableRow == NULL)
+				continue;
+
+			UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId));
+
+			if (DanceItemDefinition)
+				BotController->CosmeticLoadoutBC.Dances.Add(DanceItemDefinition);
+		}
+	}
+
+	if (UDataTable* PhoebeCharacters = Utils::StaticLoadObject<UDataTable>(TEXT("/Game/Athena/AI/Phoebe/Cosmetic/CosmeticLibraries/Basic/Phoebe_Cosmetic_Characters_Basic.Phoebe_Cosmetic_Characters_Basic")))
+	{
+		if (FFortBotCosmeticItemDataTableRow* Character = Utils::GetRandomRow<FFortBotCosmeticItemDataTableRow>(PhoebeCharacters))
+		{
+			if (UAthenaCharacterItemDefinition* CharacterItemDefinition = Cast<UAthenaCharacterItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(Character->PrimaryAssetId)))
+			{
+				BotController->CosmeticLoadoutBC.Character = CharacterItemDefinition;
+			}
+		}
+	}
+
+	BotController->PlayerBotPawn->CosmeticLoadout = BotController->CosmeticLoadoutBC;
+	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
+
+	//if (AFortPlayerState* PlayerState = Cast<AFortPlayerState>(BotController->PlayerState))
+	//{
+	//	PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
+	//}
+
+	return Originals::ApplyCharacterCustomization(BotController, OverrideCosmeticLoadout, OverrideBotName);
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
@@ -247,6 +252,8 @@ void Bots::Setup()
 {
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnPawnSpawned, (void**)&Originals::OnPawnSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
+
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, ApplyCharacterCustomization, (void**)&Originals::ApplyCharacterCustomization);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);

@@ -2,20 +2,6 @@
 #include "Abilities.h"
 #include "Utils.h"
 
-void Abilities::ConsumeAllReplicatedData(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle AbilityHandle, FPredictionKey AbilityOriginalPredictionKey)
-{
-	FGameplayAbilityReplicatedDataContainer& AbilityTargetDataMap = *(FGameplayAbilityReplicatedDataContainer*)(__int64(AbilitySystemComponent) + offsetof(UAbilitySystemComponent, ActivatableAbilities) + sizeof(FGameplayAbilitySpecContainer));
-
-	for (FGameplayAbilityReplicatedDataContainer::FKeyDataPair& Pair : AbilityTargetDataMap.InUseData)
-	{
-		if (Pair.Key().AbilityHandle.Handle == AbilityHandle.Handle && Pair.Key().PredictionKeyAtCreation == AbilityOriginalPredictionKey.Current)
-		{
-			Pair.Value().Object = NULL;
-			Pair.Value().SharedReferenceCount->SharedReferenceCount = 1;
-		}
-	}
-}
-
 void Abilities::InternalServerTryActivateAbility(UAbilitySystemComponent* AbilitySystemComponent, FGameplayAbilitySpecHandle Handle, bool InputPressed, const FPredictionKey& PredictionKey, const FGameplayEventData* TriggerEventData)
 {
 	FGameplayAbilitySpec* Spec = AbilitySystemComponent->FindAbilitySpecFromHandle(Handle);
@@ -42,8 +28,6 @@ void Abilities::InternalServerTryActivateAbility(UAbilitySystemComponent* Abilit
 		AbilitySystemComponent->ClientActivateAbilityFailed(Handle, PredictionKey.Current);
 		return;
 	}
-
-	ConsumeAllReplicatedData(AbilitySystemComponent, Handle, PredictionKey);
 
 	UGameplayAbility* InstancedAbility = NULL;
 	Spec->InputPressed = true;

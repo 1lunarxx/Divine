@@ -12,7 +12,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSquad"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -201,8 +201,6 @@ APawn* GameMode::SpawnDefaultPawnFor(AGameModeBase* GameMode, AController* NewPl
 {
 	return GameMode->SpawnDefaultPawnAtTransform(NewPlayer, StartSpot->GetTransform());
 }
-
-// TODO: Rewrite/Make proper
 
 EFortTeam GameMode::PickTeam(AFortGameModeAthena* GameMode, uint8 PreferredTeam, AFortPlayerControllerAthena* ControllerToPickFor)
 {
