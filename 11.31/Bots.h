@@ -10,8 +10,6 @@ class Bots
 		static inline void (*InitializeInventory)(AFortAthenaAIBotController*, UFortAthenaAIBotInventoryItems*);
 		static inline void (*OnPossessedPawnDied)(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 		static inline void (*InitializeMMRInfos)(AFortAthenaMutator_Bots*);
-		static inline void (*ApplyCharacterCustomization)(AFortAthenaAIBotController*, FFortAthenaLoadout*, UFortBotNameSettings*);
-
 	};
 
 private:
@@ -22,6 +20,7 @@ private:
 	static void OnPossessedPawnDied(AFortAthenaAIBotController*, AActor*, float, AFortPlayerControllerAthena*, AActor*, FVector, UPrimitiveComponent*, FName, FVector);
 
 	static void ApplyCharacterCustomization(AFortAthenaAIBotController*, FFortAthenaLoadout*, UFortBotNameSettings*);
+	static void SetItem(FFortBotInventoryInfo*, UFortWorldItem*);
 
 	static UFortWorldItem* CreateItem(AFortAthenaAIBotController*, UFortItemDefinition*, int32);
 

@@ -56,10 +56,7 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 			{
 				FFortBotInventoryInfo& SlotItem = BotController->SlotItems[i];
 
-				SlotItem.FortItem = ItemInstance;
-				SlotItem.ItemDefinition = ItemDefinition;
-				SlotItem.ItemType = ItemDefinition->ItemType;
-				SlotItem.WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+				SetItem(&SlotItem, ItemInstance);
 			}
 		}
 	}
@@ -169,12 +166,27 @@ void Bots::ApplyCharacterCustomization(AFortAthenaAIBotController* BotController
 	BotController->PlayerBotPawn->CosmeticLoadout = BotController->CosmeticLoadoutBC;
 	BotController->PlayerBotPawn->OnRep_CosmeticLoadout();
 
-	//if (AFortPlayerState* PlayerState = Cast<AFortPlayerState>(BotController->PlayerState))
-	//{
-	//	PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
-	//}
+	if (AFortPlayerState* PlayerState = Cast<AFortPlayerState>(BotController->PlayerState))
+	{
+		PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
+	}
+}
 
-	return Originals::ApplyCharacterCustomization(BotController, OverrideCosmeticLoadout, OverrideBotName);
+void Bots::SetItem(FFortBotInventoryInfo* _this, UFortWorldItem* NewItem)
+{
+	_this->FortItem = NewItem;
+
+	if (NewItem)
+	{
+		UFortItemDefinition* ItemDef = NewItem->GetItemDefinitionBP();
+		_this->ItemDefinition = ItemDef;
+
+		if (ItemDef)
+		{
+			_this->ItemType = ItemDef->ItemType;
+			_this->WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDef);
+		}
+	}
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
@@ -253,7 +265,7 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnPawnSpawned, (void**)&Originals::OnPawnSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, ApplyCharacterCustomization, (void**)&Originals::ApplyCharacterCustomization);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, ApplyCharacterCustomization);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);
