@@ -1,3 +1,3 @@
 # DIVINE 11.31
 
-this needs quests, looting, vehciels, and stuff
+1:1 Player AI's
