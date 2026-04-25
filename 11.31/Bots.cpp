@@ -172,19 +172,18 @@ void Bots::ApplyCharacterCustomization(AFortAthenaAIBotController* BotController
 	}
 }
 
-void Bots::SetItem(FFortBotInventoryInfo* _this, UFortWorldItem* NewItem)
+void Bots::SetItem(FFortBotInventoryInfo* BotInventoryInfo, UFortWorldItem* NewItem)
 {
-	_this->FortItem = NewItem;
+	BotInventoryInfo->FortItem = NewItem;
 
-	if (NewItem)
+	if (NewItem != NULL)
 	{
-		UFortItemDefinition* ItemDef = NewItem->GetItemDefinitionBP();
-		_this->ItemDefinition = ItemDef;
+		BotInventoryInfo->ItemDefinition = NewItem->GetItemDefinitionBP();
 
-		if (ItemDef)
+		if (BotInventoryInfo->ItemDefinition != NULL)
 		{
-			_this->ItemType = ItemDef->ItemType;
-			_this->WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDef);
+			BotInventoryInfo->ItemType = BotInventoryInfo->ItemDefinition->ItemType;
+			BotInventoryInfo->WeaponType = AFortWeapon::FindWeaponTypeForStats(BotInventoryInfo->ItemDefinition);
 		}
 	}
 }
