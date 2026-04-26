@@ -599,8 +599,8 @@ void Player::Setup()
 	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerPawnAthena>(0xEB0 / 8, ServerHandlePickup);
 
-	Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
-	Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
+	//Utils::Virtual<UAthenaMarkerComponent>(0x7F, ServerAddMapMarker);
+	//Utils::Virtual<UAthenaMarkerComponent>(0x7D, ServerRemoveMapMarker);
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 

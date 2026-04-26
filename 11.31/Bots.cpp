@@ -7,13 +7,26 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 {
 	*(uint8*)(__int64(BotMutator) + 0x428) = 1;
 
-	return Originals::InitializeMMRInfos(BotMutator);
+	Originals::InitializeMMRInfos(BotMutator);
 }
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
 	if (BotController->Inventory == NULL)
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>({});
+
+	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+	{
+		CreateItem(BotController, Item, 1);
+
+		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
+		{
+			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
+			{
+				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
+			}
+		}
+	}
 
 	Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
@@ -41,12 +54,10 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 			if (ItemDefinition->bInventorySizeLimited)
 			{
-				SetItem(&BotController->SlotItems[i], ItemInstance);
+				BotController->SlotItems[i].SetItem(ItemInstance);
 			}
 		}
 	}
-
-	Originals::OnPawnSpawned(BotMutator, PlayerPawn);
 }
 
 void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
@@ -101,7 +112,7 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 
 				if (KillerPlayerState->PlayerTeam)
 				{
-					for (auto& TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
+					for (AController* TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
 					{
 						AFortPlayerStateAthena* TeamMember_PlayerState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
 
@@ -155,22 +166,8 @@ void Bots::ApplyCharacterCustomization(AFortAthenaAIBotController* BotController
 	{
 		PlayerState->ApplyCharacterCustomization(BotController->PlayerBotPawn);
 	}
-}
 
-void Bots::SetItem(FFortBotInventoryInfo* BotInventoryInfo, UFortWorldItem* NewItem)
-{
-	BotInventoryInfo->FortItem = NewItem;
-
-	if (NewItem != NULL)
-	{
-		BotInventoryInfo->ItemDefinition = NewItem->GetItemDefinitionBP();
-
-		if (BotInventoryInfo->ItemDefinition != NULL)
-		{
-			BotInventoryInfo->ItemType = BotInventoryInfo->ItemDefinition->ItemType;
-			BotInventoryInfo->WeaponType = AFortWeapon::FindWeaponTypeForStats(BotInventoryInfo->ItemDefinition);
-		}
-	}
+	Originals::ApplyCharacterCustomization(BotController, OverrideCosmeticLoadout, OverrideBotName);
 }
 
 void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaAircraft* InAircraft)
@@ -190,16 +187,16 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), ThankBusDriverTime, false, 0.0, 0.0f);
 	}
 
-	//if (UBlackboardComponent* Blackboard = BotController->Blackboard)
-	//{
-	//	const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
-	//	const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
-	//	const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
+	if (UBlackboardComponent* Blackboard = BotController->Blackboard)
+	{
+		const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
+		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
+		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
 
-	//	Blackboard->SetValueAsBool(IsInBusKey, true);
-	//	Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
-	//	Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
-	//}
+		Blackboard->SetValueAsBool(IsInBusKey, true);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
+		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
+	}
 
 	if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
 	{
@@ -232,6 +229,33 @@ UFortWorldItem* Bots::CreateItem(AFortAthenaAIBotController* BotController, UFor
 	return NewItem;
 }
 
+void FFortBotInventoryInfo::SetItem(UFortWorldItem* NewItem)
+{
+	FortItem = NewItem;
+
+	if (NewItem != NULL)
+	{
+		printf("SetItem\n");
+
+		ItemDefinition = NewItem->GetItemDefinitionBP();
+
+		if (ItemDefinition != NULL)
+		{
+			ItemType = ItemDefinition->ItemType;
+			WeaponType = AFortWeapon::FindWeaponTypeForStats(ItemDefinition);
+
+			return;
+		}
+	}
+	else
+	{
+		ItemDefinition = NULL;
+	}
+
+	ItemType = EFortItemType::EFortItemType_MAX;
+	WeaponType = EFortWeaponType::None;
+}
+
 UFortServerBotManagerAthena* Bots::GetBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
@@ -249,7 +273,7 @@ void Bots::Setup()
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x165CB70, OnPawnSpawned, (void**)&Originals::OnPawnSpawned);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12AB760, OnPossessedPawnDied, (void**)&Originals::OnPossessedPawnDied);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, ApplyCharacterCustomization);
+	Utils::Hook(InSDKUtils::GetImageBase() + 0x1296DF0, ApplyCharacterCustomization, (void**)&Originals::ApplyCharacterCustomization);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x12A7810, InitializeInventory, (void**)&Originals::InitializeInventory);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1654BB0, InitializeMMRInfos, (void**)&Originals::InitializeMMRInfos);

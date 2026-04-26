@@ -23742,6 +23742,8 @@ public:
 
 	enum EFortItemType								  ItemType;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum EFortWeaponType								  WeaponType;                                          // 0x0008(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+public:
+	void SetItem(UFortWorldItem* NewItem);
 };
 static_assert(alignof(FFortBotInventoryInfo) == 0x000008, "Wrong alignment on FFortBotInventoryInfo");
 static_assert(sizeof(FFortBotInventoryInfo) == 0x000018, "Wrong size on FFortBotInventoryInfo");

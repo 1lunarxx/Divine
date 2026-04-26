@@ -38766,6 +38766,12 @@ public:
 	class UAthenaMarkerComponent* GetMarkerComponent() const;
 
 public:
+	bool WouldItemFitInBotInventory(UFortWorldItem* NewItem, int* OutInventorySlot)
+	{
+		static bool(*_WouldItemFitInBotInventory)(AFortAthenaAIBotController*, UFortWorldItem*, int*) = decltype(_WouldItemFitInBotInventory)(InSDKUtils::GetImageBase() + 0x12BB3C0);
+		return _WouldItemFitInBotInventory(this, NewItem, OutInventorySlot);
+	}
+public:
 	static class UClass* StaticClass()
 	{
 		STATIC_CLASS_IMPL("FortAthenaAIBotController")
