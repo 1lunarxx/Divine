@@ -6,7 +6,6 @@ class Player
 	class Originals
 	{
 	public:
-		static inline void (*MovingEmoteStopped)(AFortPawn*);
 		static inline void (*GetPlayerViewPoint)(AFortPlayerControllerAthena*, FVector&, FRotator&);
 		static inline void (*GivePickupTo)(AFortPickup*, IFortInventoryOwnerInterface*, bool);
 		static inline void (*ClientOnPawnDied)(AFortPlayerController*, FFortPlayerDeathReport&);
@@ -21,8 +20,6 @@ private:
 
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
 	static void ServerAttemptAircraftJump(UFortControllerComponent_Aircraft*, FRotator&);
-
-	static void MovingEmoteStopped(AFortPawn*);
 
 	static void ServerAddMapMarker(UAthenaMarkerComponent*, FFortClientMarkerRequest&);
 	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);

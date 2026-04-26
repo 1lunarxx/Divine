@@ -54,9 +54,6 @@ void Player::ServerPlayEmoteItem(AFortPlayerControllerAthena* PlayerController, 
 		PlayerPawn->EmoteWalkSpeed = DanceItemDefinition->WalkForwardSpeed;
 		PlayerPawn->bMovingEmoteForwardOnly = DanceItemDefinition->bMoveForwardOnly;
 	}
-	else if (UAthenaSprayItemDefinition* SprayItemDefinition = Cast<UAthenaSprayItemDefinition>(EmoteAsset))
-	{
-	}
 
 	if (AbilityClass != NULL)
 	{
@@ -76,7 +73,7 @@ void Player::GetPlayerViewPoint(AFortPlayerControllerAthena* PlayerController, F
 	}
 	else
 	{
-		return Originals::GetPlayerViewPoint(PlayerController, Location, Rotation);
+		Originals::GetPlayerViewPoint(PlayerController, Location, Rotation);
 	}
 }
 
@@ -87,7 +84,7 @@ void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnSta
 
 	if (InZiplineState.bJumped)
 	{
-		FVector Velocity = FVector{};
+		FVector Velocity;
 
 		Velocity.X = 0;
 		Velocity.Z = 1500;
@@ -142,15 +139,7 @@ void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Compon
 		return;
 
 	GameMode->RestartPlayer(PlayerController);
-
 	PlayerController->ClientSetRotation(ClientRotation, false);
-}
-
-void Player::MovingEmoteStopped(AFortPawn* Pawn)
-{
-	Pawn->bMovingEmote = false;
-
-	return Originals::MovingEmoteStopped(Pawn);
 }
 
 void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortClientMarkerRequest& MarkerRequest)
@@ -165,20 +154,24 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	if (PlayerState == NULL)
 		return;
 
-	FFortWorldMarkerData WorldMarkerData;
+	FFortWorldMarkerData WorldMarkerData = FFortWorldMarkerData{};
+
 	WorldMarkerData.CreateWorldMarkerData();
 
-	WorldMarkerData.Owner = PlayerState;
+	FMarkerID MarkerID = FMarkerID{};
 
-	WorldMarkerData.MarkerID = FMarkerID{};
-	WorldMarkerData.MarkerID.InstanceID = MarkerRequest.InstanceID;
-	WorldMarkerData.MarkerID.PlayerID = WorldMarkerData.Owner->PlayerID;
+	MarkerID.InstanceID = MarkerRequest.InstanceID;
+	MarkerID.PlayerID = WorldMarkerData.Owner->PlayerID;
+
+	WorldMarkerData.Owner = PlayerState;
+	WorldMarkerData.MarkerID = MarkerID;
 
 	WorldMarkerData.MarkerType = MarkerRequest.MarkerType;
-
 	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
 	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
 	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
+
+	WorldMarkerData.bHasCustomDisplayInfo = false;
 
 	if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
 	{
@@ -186,9 +179,7 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 		WorldMarkerData.ItemCount = Pickup->PrimaryPickupItemEntry.Count;
 	}
 
-	WorldMarkerData.bHasCustomDisplayInfo = false;
-
-	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	for (AController* TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
 		if (TeamMember == PlayerController)
 			continue;
@@ -215,7 +206,7 @@ void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMar
 	if (PlayerState == NULL)
 		return;
 
-	for (auto& TeamMember : PlayerState->PlayerTeam->TeamMembers)
+	for (AController* TeamMember : PlayerState->PlayerTeam->TeamMembers)
 	{
 		if (TeamMember == PlayerController)
 			continue;
@@ -474,19 +465,19 @@ void Player::ServerHandlePickup(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup
 
 void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* InventoryOwner, bool DestroyAfterPickup)
 {
+	Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
+
 	AFortPlayerPawnAthena* PlayerPawn = Cast<AFortPlayerPawnAthena>(Pickup->PickupLocationData.PickupTarget);
 
 	if (PlayerPawn == NULL)
-		return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
+		return;
 
 	AFortPlayerController* PlayerController = Cast<AFortPlayerController>(PlayerPawn->Controller);
 
 	if (PlayerController == NULL)
-		return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
+		return;
 
 	Inventory::GiveItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
-
-	return Originals::GivePickupTo(Pickup, InventoryOwner, DestroyAfterPickup);
 }
 
 void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFortPlayerDeathReport& DeathReport)
@@ -520,26 +511,11 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 	DeathInfo.DeathCause = PlayerState->ToDeathCause(DeathReport.Tags, PlayerPawn ? PlayerPawn->IsDBNO() : false);
 	DeathInfo.DeathLocation = PlayerPawn->K2_GetActorLocation();
 	DeathInfo.DeathTags = DeathReport.Tags;
-	DeathInfo.Distance = 0.f;
 	DeathInfo.Downer = KillerPlayerState;
 	DeathInfo.FinisherOrDowner = KillerPlayerState;
 
 	PlayerState->DeathInfo = DeathInfo;
 	PlayerState->OnRep_DeathInfo();
-
-	if (PlayerController->WorldInventory != NULL)
-	{
-		if (PlayerController->WorldInventory->Inventory.ReplicatedEntries.IsValid())
-		{
-			for (FFortItemEntry& ItemEntry : PlayerController->WorldInventory->Inventory.ReplicatedEntries)
-			{
-				if (ItemEntry.ItemDefinition && ItemEntry.ItemDefinition->IsA(UFortWeaponItemDefinition::StaticClass()))
-				{
-					Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation(), &ItemEntry, ItemEntry.Count, PlayerPawn, EFortPickupSourceTypeFlag::Player, EFortPickupSpawnSource::PlayerElimination);
-				}
-			}
-		}
-	}
 
 	if (KillerPlayerState && KillerPlayerState != PlayerState)
 	{
@@ -547,16 +523,6 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 		KillerPlayerState->OnRep_Kills();
 
 		KillerPlayerState->ClientReportKill(PlayerState);
-
-		FGameplayEventData EventData = FGameplayEventData{};
-
-		EventData.EventTag = FGameplayTag(UKismetStringLibrary::Conv_StringToName(TEXT("Event.EarnedElimination")));
-		EventData.ContextHandle = KillerPlayerState->AbilitySystemComponent->MakeEffectContext();
-		EventData.Instigator = KillerPlayerState->Owner;
-		EventData.Target = PlayerState;
-		EventData.TargetData = UAbilitySystemBlueprintLibrary::AbilityTargetDataFromActor(PlayerState);
-
-		UAbilitySystemBlueprintLibrary::SendGameplayEventToActor(KillerPawn, EventData.EventTag, EventData);
 
 		if (AFortTeamInfo* PlayerTeam = KillerPlayerState->PlayerTeam)
 		{
@@ -638,7 +604,6 @@ void Player::Setup()
 
 	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
 
-	Utils::Hook(InSDKUtils::GetImageBase() + 0xBE8270, MovingEmoteStopped, (void**)&Originals::MovingEmoteStopped);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint, (void**)&Originals::GetPlayerViewPoint);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x2446300, ClientOnPawnDied, (void**)&Originals::ClientOnPawnDied);
 

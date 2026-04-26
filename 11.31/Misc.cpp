@@ -20,7 +20,7 @@ void Misc::TickFlush(UNetDriver* NetDriver)
 
 void Misc::SendRequestNow(UMcpProfileGroup* McpProfileGroup, const void* HttpRequest, FBaseUrlContext::EContextCredentials ContextCredentials)
 {
-	return Originals::SendRequestNow(McpProfileGroup, HttpRequest, FBaseUrlContext::EContextCredentials::CXC_Public);
+	Originals::SendRequestNow(McpProfileGroup, HttpRequest, FBaseUrlContext::EContextCredentials::CXC_Public);
 }
 
 void Misc::PlacePlayersInAircraft(AFortGameStateAthena* GameState)

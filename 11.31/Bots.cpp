@@ -13,32 +13,19 @@ void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
 	if (BotController->Inventory == NULL)
-	{
-		BotController->Inventory = Utils::SpawnActor<AFortInventory>(FVector(), FRotator(), AFortInventory::StaticClass(), BotController);
-	}
+		BotController->Inventory = Utils::SpawnActor<AFortInventory>({});
 
-	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
-	{
-		CreateItem(BotController, Item, 1);
-
-		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(Item))
-		{
-			if (WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() && WeaponItemDefinition->GetAmmoWorldItemDefinition_BP() != WeaponItemDefinition)
-			{
-				CreateItem(BotController, WeaponItemDefinition->GetAmmoWorldItemDefinition_BP(), 30);
-			}
-		}
-	}
-
-	return Originals::InitializeInventory(BotController, OverrideStartupInventory);
+	Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
 
 void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
+	Originals::OnPawnSpawned(BotMutator, PlayerPawn);
+
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
 	if (BotController == NULL)
-		return Originals::OnPawnSpawned(BotMutator, PlayerPawn);
+		return;
 
 	for (int32 i = 0; i < 6; i++)
 	{
@@ -54,14 +41,12 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 			if (ItemDefinition->bInventorySizeLimited)
 			{
-				FFortBotInventoryInfo& SlotItem = BotController->SlotItems[i];
-
-				SetItem(&SlotItem, ItemInstance);
+				SetItem(&BotController->SlotItems[i], ItemInstance);
 			}
 		}
 	}
 
-	return Originals::OnPawnSpawned(BotMutator, PlayerPawn);
+	Originals::OnPawnSpawned(BotMutator, PlayerPawn);
 }
 
 void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor* DamagedActor, float Damage, AFortPlayerControllerAthena* InstigatedBy, AActor* DamageCauser, FVector HitLocation, UPrimitiveComponent* PrimitiveComponent, FName BoneName, FVector Momentum)
@@ -205,16 +190,16 @@ void Bots::EnterAircraft(AFortAthenaAIBotController* BotController, AFortAthenaA
 		UKismetSystemLibrary::K2_SetTimer(BotController, TEXT("ThankBusDriver"), ThankBusDriverTime, false, 0.0, 0.0f);
 	}
 
-	if (UBlackboardComponent* Blackboard = BotController->Blackboard)
-	{
-		const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
-		const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
-		const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
+	//if (UBlackboardComponent* Blackboard = BotController->Blackboard)
+	//{
+	//	const FName IsInBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_IsInBus");
+	//	const FName HasEverJumpedFromBusKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusKey");
+	//	const FName HasEverJumpedFromBusAndLandedKey = UKismetStringLibrary::Conv_StringToName(L"AIEvaluator_Global_HasEverJumpedFromBusAndLandedKey");
 
-		Blackboard->SetValueAsBool(IsInBusKey, true);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
-		Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
-	}
+	//	Blackboard->SetValueAsBool(IsInBusKey, true);
+	//	Blackboard->SetValueAsBool(HasEverJumpedFromBusKey, false);
+	//	Blackboard->SetValueAsBool(HasEverJumpedFromBusAndLandedKey, false);
+	//}
 
 	if (AFortPlayerStateZone* PlayerState = Cast<AFortPlayerStateZone>(BotController->PlayerState))
 	{

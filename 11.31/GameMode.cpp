@@ -12,7 +12,7 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
     if (!GameMode->bWorldIsReady)
     {
-		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultSolo"), ANY_PACKAGE);
+		UFortPlaylistAthena* Playlist = Utils::StaticFindObject<UFortPlaylistAthena>(TEXT("Playlist_DefaultDuo"), ANY_PACKAGE);
 
 		GameState->CurrentPlaylistId = GameMode->CurrentPlaylistId;
 
@@ -46,17 +46,15 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 
 		if (GameMode->ServerBotManager == NULL)
 		{
-			UFortServerBotManagerAthena* ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>(TEXT("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C")));
+			GameMode->ServerBotManager = Utils::NewObject<UFortServerBotManagerAthena>(GameMode, Utils::StaticLoadObject<UBlueprintGeneratedClass>(TEXT("/Game/Athena/AI/Phoebe/BP_PhoebeManager.BP_PhoebeManager_C")));
 
-			GameMode->ServerBotManager = ServerBotManager;
 			GameMode->ServerBotManager->CachedGameMode = GameMode;
 			GameMode->ServerBotManager->CachedGameState = GameState;
 
 			*(bool*)(__int64(GameMode->ServerBotManager) + 0x458) = true;
 
-			AFortAthenaSpawningPolicyManager* SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
+			GameMode->SpawningPolicyManager = Utils::SpawnActor<AFortAthenaSpawningPolicyManager>(FVector(), FRotator(), AFortAthenaSpawningPolicyManager::StaticClass(), GameMode);
 
-			GameMode->SpawningPolicyManager = SpawningPolicyManager;
 			GameMode->SpawningPolicyManager->GameStateAthena = GameState;
 			GameMode->SpawningPolicyManager->GameModeAthena = GameMode;
 
@@ -132,14 +130,6 @@ bool GameMode::ReadyToStartMatch(AFortGameModeAthena* GameMode)
 			if (VehicleSpawner->GetVehicleClass() != NULL)
 			{
 				Utils::SpawnActor<AFortAthenaVehicle>(VehicleSpawner->K2_GetActorLocation(), VehicleSpawner->K2_GetActorRotation(), VehicleSpawner->GetVehicleClass());
-			}
-		}
-
-		if (UAthenaBattleBusItemDefinition* BBID_WinterBus = Utils::StaticLoadObject<UAthenaBattleBusItemDefinition>(TEXT("/Game/Athena/Items/Cosmetics/BattleBuses/BBID_WinterBus.BBID_WinterBus")))
-		{
-			if (UFortAssetManager* AssetManager = Cast<UFortAssetManager>(UFortEngine::GetEngine()->AssetManager))
-			{
-				AssetManager->GameDataCosmetics->DefaultBattleBusSkin = BBID_WinterBus;
 			}
 		}
 
