@@ -6,7 +6,7 @@ class Inventory
 public:
 	static UFortWorldItem* CreateItem(AFortInventory*, UFortItemDefinition*, int32 = 1, int32 = 0);
 
-	static AFortPickupAthena* SpawnPickup(FVector, FFortItemEntry*, int, AFortPlayerPawn*, EFortPickupSourceTypeFlag, EFortPickupSpawnSource);
+	static AFortPickupAthena* SpawnPickup(FVector, FFortItemEntry*, int32, AFortPlayerPawn*, EFortPickupSourceTypeFlag, EFortPickupSpawnSource);
 
 	static FFortRangedWeaponStats* GetStats(UFortWeaponItemDefinition*);
 

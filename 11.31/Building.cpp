@@ -42,9 +42,7 @@ void Building::ServerEditBuildingActor(AFortPlayerController* PlayerController, 
 	Building->SetEditingPlayer(NULL);
 
 	if (ABuildingSMActor* NewBuilding = Building->ReplaceBuildingActor(EBuildingReplacementType::BRT_Edited, NewClass, Building->CurrentBuildingLevel, RotationIterations, bMirrored, PlayerController))
-	{
 		NewBuilding->bPlayerPlaced = true;
-	}
 	
 	return Originals::ServerEditBuildingActor(PlayerController, Building, NewClass, RotationIterations, bMirrored);
 }

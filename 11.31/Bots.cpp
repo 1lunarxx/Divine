@@ -15,7 +15,7 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 	if (BotController->Inventory == NULL)
 		BotController->Inventory = Utils::SpawnActor<AFortInventory>({});
 
-	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
+	if (UFortItemDefinition* Item = BotController->StartupInventory->Items[UKismetMathLibrary::RandomIntegerInRange(1, BotController->StartupInventory->Items.Num() - 1)])
 	{
 		CreateItem(BotController, Item, 1);
 
@@ -77,53 +77,50 @@ void Bots::OnPossessedPawnDied(AFortAthenaAIBotController* BotController, AActor
 	if (KillerPlayerState == NULL)
 		return;
 
-	if (BotController->Inventory)
+	if (BotController->Inventory != NULL)
 	{
 		for (FFortItemEntry& Entry : BotController->Inventory->Inventory.ReplicatedEntries)
 		{
 			if (Entry.ItemDefinition->IsA(UFortWeaponMeleeItemDefinition::StaticClass()))
 				continue;
 
-			Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, Entry.Count, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
+			Inventory::SpawnPickup(BotController->PlayerBotPawn->K2_GetActorLocation(), &Entry, -1, BotController->PlayerBotPawn, EFortPickupSourceTypeFlag::Container, EFortPickupSpawnSource::PlayerElimination);
 		}
 	}
 
 	if (AFortPlayerStateAthena* PlayerState = Cast<AFortPlayerStateAthena>(BotController->PlayerState))
 	{
-		if (BotController->bIsAnAthenaGameParticipant)
+		PlayerState->DeathInfo.bDBNO = BotController->PlayerBotPawn->bWasDBNOOnDeath;
+		PlayerState->DeathInfo.DeathLocation = BotController->PlayerBotPawn->K2_GetActorLocation();
+		PlayerState->DeathInfo.DeathTags = BotController->PlayerBotPawn->DeathTags;
+		PlayerState->DeathInfo.Distance = (InstigatedBy->Pawn && BotController->PlayerBotPawn) ? InstigatedBy->Pawn->GetDistanceTo(BotController->PlayerBotPawn) : 0.f;
+		PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(FGameplayTagContainer(), PlayerState->DeathInfo.bDBNO);
+		PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : PlayerState;
+
+		PlayerState->DeathInfo.bInitialized = true;
+
+		PlayerState->OnRep_DeathInfo();
+
+		if (KillerPlayerState != PlayerState)
 		{
-			PlayerState->DeathInfo.bDBNO = BotController->PlayerBotPawn->bWasDBNOOnDeath;
-			PlayerState->DeathInfo.DeathLocation = BotController->PlayerBotPawn->K2_GetActorLocation();
-			PlayerState->DeathInfo.DeathTags = BotController->PlayerBotPawn->DeathTags;
-			PlayerState->DeathInfo.Distance = (InstigatedBy->Pawn && BotController->PlayerBotPawn) ? InstigatedBy->Pawn->GetDistanceTo(BotController->PlayerBotPawn) : 0.f;
-			PlayerState->DeathInfo.DeathCause = AFortPlayerStateAthena::ToDeathCause(FGameplayTagContainer(), PlayerState->DeathInfo.bDBNO);
-			PlayerState->DeathInfo.FinisherOrDowner = KillerPlayerState ? KillerPlayerState : PlayerState;
+			KillerPlayerState->KillScore++;
+			KillerPlayerState->OnRep_Kills();
 
-			PlayerState->DeathInfo.bInitialized = true;
+			KillerPlayerState->ClientReportKill(PlayerState);
 
-			PlayerState->OnRep_DeathInfo();
-
-			if (KillerPlayerState != PlayerState)
+			if (KillerPlayerState->PlayerTeam)
 			{
-				KillerPlayerState->KillScore++;
-				KillerPlayerState->OnRep_Kills();
-
-				KillerPlayerState->ClientReportKill(PlayerState);
-
-				if (KillerPlayerState->PlayerTeam)
+				for (AController* TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
 				{
-					for (AController* TeamMember : KillerPlayerState->PlayerTeam->TeamMembers)
-					{
-						AFortPlayerStateAthena* TeamMember_PlayerState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
+					AFortPlayerStateAthena* TeamMember_PlayerState = Cast<AFortPlayerStateAthena>(TeamMember->PlayerState);
 
-						if (TeamMember_PlayerState == NULL)
-							continue;
+					if (TeamMember_PlayerState == NULL)
+						continue;
 
-						TeamMember_PlayerState->TeamKillScore++;
-						TeamMember_PlayerState->OnRep_TeamKillScore();
+					TeamMember_PlayerState->TeamKillScore++;
+					TeamMember_PlayerState->OnRep_TeamKillScore();
 
-						TeamMember_PlayerState->ClientReportTeamKill(TeamMember_PlayerState->TeamKillScore);
-					}
+					TeamMember_PlayerState->ClientReportTeamKill(TeamMember_PlayerState->TeamKillScore);
 				}
 			}
 		}
@@ -235,8 +232,6 @@ void FFortBotInventoryInfo::SetItem(UFortWorldItem* NewItem)
 
 	if (NewItem != NULL)
 	{
-		printf("SetItem\n");
-
 		ItemDefinition = NewItem->GetItemDefinitionBP();
 
 		if (ItemDefinition != NULL)
@@ -259,7 +254,6 @@ void FFortBotInventoryInfo::SetItem(UFortWorldItem* NewItem)
 UFortServerBotManagerAthena* Bots::GetBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
 	return GameMode->ServerBotManager;
 }
 

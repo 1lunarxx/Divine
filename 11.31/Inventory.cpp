@@ -29,7 +29,7 @@ UFortWorldItem* Inventory::CreateItem(AFortInventory* WorldInventory, UFortItemD
 	return WorldItem;
 }
 
-AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int Count, AFortPlayerPawn* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource)
+AFortPickupAthena* Inventory::SpawnPickup(FVector Location, FFortItemEntry* ItemEntry, int32 Count, AFortPlayerPawn* Pawn, EFortPickupSourceTypeFlag SourceTypeFlag, EFortPickupSpawnSource SpawnSource)
 {
 	AFortPickupAthena* Pickup = Utils::SpawnActor<AFortPickupAthena>(Location);
 
