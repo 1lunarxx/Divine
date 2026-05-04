@@ -4,9 +4,7 @@
 #include "Abilities.h"
 #include "Player.h"
 #include "Bots.h"
-#include "Building.h"
 #include "Utils.h"
-#include "Quests.h"
 
 DWORD WINAPI LaunchWindowsStartup(LPVOID)
 {
@@ -24,9 +22,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
 
     Abilities::Setup();
     Misc::Setup();
-    Quests::Setup();
     GameMode::Setup();
-    Building::Setup();
     Abilities::Setup();
     Player::Setup();
     Bots::Setup();
@@ -37,8 +33,7 @@ DWORD WINAPI LaunchWindowsStartup(LPVOID)
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A82) = 1; // Phoebe.Minimap
     *(int32*)(InSDKUtils::GetImageBase() + 0x6E82A83) = 1; // Phoebe.OverrideMMR
 
-    // UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.Enable 0", nullptr);
-    
+    UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"Phoebe.Enable 1", nullptr);
     UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), L"log LogAthenaBots VeryVerbose", NULL);
 
     UWorld::GetWorld()->OwningGameInstance->LocalPlayers.Remove(0);

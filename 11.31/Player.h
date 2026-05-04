@@ -16,6 +16,7 @@ private:
 	static void ServerPlayEmoteItem(AFortPlayerControllerAthena*, UFortItemDefinition*, float);
 	static void GetPlayerViewPoint(AFortPlayerControllerAthena*, FVector&, FRotator&);
 
+	static void ForceLaunchPlayerZiplining(AFortPlayerPawn*);
 	static void ServerSendZiplineState(AFortPlayerPawn*, FZiplinePawnState&);
 
 	static void ServerExecuteInventoryItem(AFortPlayerController*, FGuid&);
@@ -23,8 +24,6 @@ private:
 
 	static void ServerAddMapMarker(UAthenaMarkerComponent*, FFortClientMarkerRequest&);
 	static void ServerRemoveMapMarker(UAthenaMarkerComponent*, FMarkerID, ECancelMarkerReason);
-
-	static void ServerCheat(AFortPlayerController*, FString&);
 
 	static void ServerAttemptInventoryDrop(AFortPlayerController*, FGuid&, int32, bool);
 	static void ServerHandlePickup(AFortPlayerPawn*, AFortPickup*, float, FVector&, bool);

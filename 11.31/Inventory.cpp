@@ -96,50 +96,41 @@ UFortWorldItem* Inventory::GetWorldItem(AFortInventory* WorldInventory, FGuid& I
 
 FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, FGuid& ItemGuid)
 {
-	FFortItemEntry* ItemEntry = NULL;
-
 	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
 	{
 		if (ReplicatedEntry.ItemGuid == ItemGuid)
 		{
-			ItemEntry = &ReplicatedEntry;
-			break;
+			return &ReplicatedEntry;
 		}
 	}
 
-	return ItemEntry;
+	return NULL;
 }
 
 FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UClass* Class)
 {
-	FFortItemEntry* ItemEntry = NULL;
-
 	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
 	{
 		if (ReplicatedEntry.ItemDefinition->Class == Class)
 		{
-			ItemEntry = &ReplicatedEntry;
-			break;
+			return &ReplicatedEntry;
 		}
 	}
 
-	return ItemEntry;
+	return NULL;
 }
 
 FFortItemEntry* Inventory::GetItemEntry(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition)
 {
-	FFortItemEntry* ItemEntry = NULL;
-
 	for (FFortItemEntry& ReplicatedEntry : WorldInventory->Inventory.ReplicatedEntries)
 	{
 		if (ReplicatedEntry.ItemDefinition == ItemDefinition)
 		{
-			ItemEntry = &ReplicatedEntry;
-			break;
+			return &ReplicatedEntry;
 		}
 	}
 
-	return ItemEntry;
+	return NULL;
 }
 
 void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* ItemEntry)
@@ -176,68 +167,29 @@ void Inventory::UpdateItemEntry(AFortInventory* WorldInventory, FFortItemEntry* 
 
 void Inventory::RemoveItem(AFortInventory* WorldInventory, FGuid& ItemGuid)
 {
-	for (int32 i = 0; i < WorldInventory->Inventory.ItemInstances.Num(); i++)
+	if (WorldInventory != NULL)
 	{
-		if (WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == ItemGuid)
+		for (int32 i = 0; i < WorldInventory->Inventory.ItemInstances.Num(); i++)
 		{
-			WorldInventory->Inventory.ItemInstances.Remove(i);
-			break;
+			if (WorldInventory->Inventory.ItemInstances[i]->ItemEntry.ItemGuid == ItemGuid)
+			{
+				WorldInventory->Inventory.ItemInstances.Remove(i);
+				break;
+			}
 		}
-	}
 
-	for (int32 i = 0; i < WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
-	{
-		if (WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == ItemGuid)
+		for (int32 i = 0; i < WorldInventory->Inventory.ReplicatedEntries.Num(); i++)
 		{
-			WorldInventory->Inventory.ReplicatedEntries.Remove(i);
-			break;
+			if (WorldInventory->Inventory.ReplicatedEntries[i].ItemGuid == ItemGuid)
+			{
+				WorldInventory->Inventory.ReplicatedEntries.Remove(i);
+				break;
+			}
 		}
+
+		WorldInventory->bRequiresLocalUpdate = true;
+		WorldInventory->HandleInventoryLocalUpdate();
+
+		WorldInventory->Inventory.MarkArrayDirty();
 	}
-
-	WorldInventory->bRequiresLocalUpdate = true;
-	WorldInventory->HandleInventoryLocalUpdate();
-
-	WorldInventory->Inventory.MarkArrayDirty();
-}
-
-void Inventory::AttemptToStack(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
-{
-	FFortItemEntry* ItemEntry = GetItemEntry(WorldInventory, ItemDefinition); 
-
-	if (ItemEntry != NULL)
-	{
-		int32 MaxStackSize = ItemDefinition->MaxStackSize;
-
-		int32 TotalCount = ItemEntry->Count + Count;
-		int32 OverStack = TotalCount - MaxStackSize;
-
-		if (TotalCount <= MaxStackSize)
-		{
-			ItemEntry->Count += Count;
-
-			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
-			WorldInventory->HandleInventoryLocalUpdate();
-		}
-		else
-		{
-			ItemEntry->Count += MaxStackSize - ItemEntry->Count;
-
-			WorldInventory->Inventory.MarkItemDirty(*ItemEntry);
-			WorldInventory->HandleInventoryLocalUpdate();
-
-			AttemptToStack(WorldInventory, ItemDefinition, Count, LoadedAmmo);
-		}
-	}
-	else
-	{
-		CreateItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
-	}
-}
-
-void Inventory::GiveItem(AFortInventory* WorldInventory, UFortItemDefinition* ItemDefinition, int32 Count, int32 LoadedAmmo)
-{
-	if (ItemDefinition->IsStackable())
-		AttemptToStack(WorldInventory, ItemDefinition, Count, LoadedAmmo);
-	else
-		CreateItem(WorldInventory, ItemDefinition, Count, LoadedAmmo);
 }

@@ -3,12 +3,14 @@
 #include "Utils.h"
 #include "Inventory.h"
 
-void Bots::InitializeMMRInfos(AFortAthenaMutator_Bots* BotMutator)
+void Bots::InitializeMMRInfos(__int64 a1)
 {
-	*(uint8*)(__int64(BotMutator) + 0x428) = 1;
+	*(uint8*)(a1 + 0x428) = 1;
 
-	Originals::InitializeMMRInfos(BotMutator);
+	Originals::InitializeMMRInfos(a1);
 }
+
+// TODO: Make proper
 
 void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortAthenaAIBotInventoryItems* OverrideStartupInventory)
 {
@@ -37,24 +39,24 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 
 	AFortAthenaAIBotController* BotController = Cast<AFortAthenaAIBotController>(PlayerPawn->Controller);
 
-	if (BotController == NULL)
-		return;
-
-	for (int32 i = 0; i < 6; i++)
+	if (BotController != NULL)
 	{
-		for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
+		for (int32 i = 0; i < 6; i++)
 		{
-			if (ItemInstance == NULL)
-				break;
-
-			UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
-
-			if (ItemDefinition == NULL)
-				continue;
-
-			if (ItemDefinition->bInventorySizeLimited)
+			for (UFortWorldItem* ItemInstance : BotController->Inventory->Inventory.ItemInstances)
 			{
-				BotController->SlotItems[i].SetItem(ItemInstance);
+				if (ItemInstance == NULL)
+					break;
+
+				UFortItemDefinition* ItemDefinition = ItemInstance->GetItemDefinitionBP();
+
+				if (ItemDefinition == NULL)
+					continue;
+
+				if (ItemDefinition->bInventorySizeLimited)
+				{
+					BotController->SlotItems[i].SetItem(ItemInstance);
+				}
 			}
 		}
 	}
@@ -254,6 +256,7 @@ void FFortBotInventoryInfo::SetItem(UFortWorldItem* NewItem)
 UFortServerBotManagerAthena* Bots::GetBotManager()
 {
 	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
+
 	return GameMode->ServerBotManager;
 }
 

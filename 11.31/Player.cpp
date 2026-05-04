@@ -24,11 +24,11 @@ void Player::ServerAcknowledgePossession(AFortPlayerControllerAthena* PlayerCont
 		{
 			if (StartingItem.Count > 0)
 			{
-				Inventory::GiveItem(PlayerController->WorldInventory, StartingItem.Item, StartingItem.Count);
+				Inventory::CreateItem(PlayerController->WorldInventory, StartingItem.Item, StartingItem.Count);
 			}
 		}
 
-		Inventory::GiveItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
+		Inventory::CreateItem(PlayerController->WorldInventory, PlayerController->CosmeticLoadoutPC.Pickaxe->WeaponDefinition);
 	}
 }
 
@@ -77,20 +77,39 @@ void Player::GetPlayerViewPoint(AFortPlayerControllerAthena* PlayerController, F
 	}
 }
 
+void Player::ForceLaunchPlayerZiplining(AFortPlayerPawn* _this)
+{
+	FVector CurrentVelocity = _this->GetVelocity();
+
+	// how else would i do this?
+
+	float ZiplineJumpDampening_ = 0.f;
+	float ZiplineJumpStrength_ = 0.f;
+
+	UFortKismetLibrary::EvaluateCurveTableRow(_this->ZiplineJumpDampening, 0.f, (float*)&ZiplineJumpDampening_, FString());
+	UFortKismetLibrary::EvaluateCurveTableRow(_this->ZiplineJumpStrength, 0.f, (float*)&ZiplineJumpStrength_, FString());
+
+	CurrentVelocity.X *= ZiplineJumpDampening_;
+	CurrentVelocity.Y *= ZiplineJumpDampening_;
+
+	CurrentVelocity.Z = ZiplineJumpStrength_;
+
+	_this->LaunchCharacterJump(CurrentVelocity, false, false, false, true);
+}
+
 void Player::ServerSendZiplineState(AFortPlayerPawn* PlayerPawn, FZiplinePawnState& InZiplineState)
 {
 	PlayerPawn->ZiplineState = InZiplineState;
-	PlayerPawn->OnRep_ZiplineState();
 
-	if (InZiplineState.bJumped)
+	if (!InZiplineState.bIsZiplining)
 	{
-		FVector Velocity;
-
-		Velocity.X = 0;
-		Velocity.Z = 1500;
-
-		PlayerPawn->LaunchCharacterJump(Velocity, false, false, true, true);
+		if (InZiplineState.bJumped)
+		{
+			ForceLaunchPlayerZiplining(PlayerPawn);
+		}
 	}
+
+	PlayerPawn->OnRep_ZiplineState();
 }
 
 void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController, FGuid& ItemGuid)
@@ -110,20 +129,7 @@ void Player::ServerExecuteInventoryItem(AFortPlayerController* PlayerController,
 	if (WeaponItemDefinition == NULL)
 		return;
 
-	if (UFortContextTrapItemDefinition* ContextTrapItemDefinition = Cast<UFortContextTrapItemDefinition>(WeaponItemDefinition))
-	{
-		PlayerPawn->PickUpActor(NULL, ContextTrapItemDefinition);
-		PlayerPawn->CurrentWeapon->ItemEntryGuid = ItemGuid;
-
-		if (AFortDecoTool_ContextTrap* ContextTrap = Cast<AFortDecoTool_ContextTrap>(PlayerPawn->CurrentWeapon))
-		{
-			ContextTrap->ContextTrapItemDefinition = ContextTrapItemDefinition;
-		}
-	}
-	else
-	{
-		PlayerPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemGuid);
-	}
+	PlayerPawn->EquipWeaponDefinition(WeaponItemDefinition, ItemGuid);
 }
 
 void Player::ServerAttemptAircraftJump(UFortControllerComponent_Aircraft* Component_Aircraft, FRotator& ClientRotation)
@@ -154,8 +160,7 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	if (PlayerState == NULL)
 		return;
 
-	FFortWorldMarkerData WorldMarkerData = FFortWorldMarkerData{};
-
+	FFortWorldMarkerData WorldMarkerData;
 	WorldMarkerData.CreateWorldMarkerData();
 
 	FMarkerID MarkerID = FMarkerID{};
@@ -170,8 +175,6 @@ void Player::ServerAddMapMarker(UAthenaMarkerComponent* MarkerComponent, FFortCl
 	WorldMarkerData.WorldPosition = MarkerRequest.WorldPosition;
 	WorldMarkerData.WorldPositionOffset = MarkerRequest.WorldPositionOffset;
 	WorldMarkerData.WorldNormal = MarkerRequest.WorldNormal;
-
-	WorldMarkerData.bHasCustomDisplayInfo = false;
 
 	if (AFortPickup* Pickup = Cast<AFortPickup>(MarkerRequest.MarkedActor))
 	{
@@ -221,208 +224,7 @@ void Player::ServerRemoveMapMarker(UAthenaMarkerComponent* MarkerComponent, FMar
 	}
 }
 
-void Player::ServerCheat(AFortPlayerController* PlayerController, FString& Msg)
-{
-	AFortGameModeAthena* GameMode = Cast<AFortGameModeAthena>(UWorld::GetWorld()->AuthorityGameMode);
-
-	if (GameMode == NULL)
-		return;
-
-	std::string Message = Msg.ToString();
-
-	if (Message == "god")
-	{
-		if (PlayerController->MyFortPawn == NULL)
-			return;
-
-		PlayerController->MyFortPawn->bCanBeDamaged = false;
-
-		PlayerController->MyFortPawn->HealthSet->Health.Minimum = 100;
-		PlayerController->MyFortPawn->HealthSet->OnRep_Health();
-
-		PlayerController->ClientMessage(L"God mode enabled!", FName(), 1);
-	}
-
-	if (Message == "disablegod")
-	{
-		if (PlayerController->MyFortPawn == NULL)
-			return;
-
-		PlayerController->MyFortPawn->bCanBeDamaged = true;
-
-		PlayerController->MyFortPawn->HealthSet->Health.Minimum = 0;
-		PlayerController->MyFortPawn->HealthSet->OnRep_Health();
-
-		PlayerController->ClientMessage(L"God mode disabled!", FName(), 1);
-	}
-
-	if (Message.contains("demospeed"))
-	{
-		if (Message.rfind("demospeed", 0) == 0)
-		{
-			std::string Demospeed_ = "demospeed";
-			std::string Args;
-
-			if (Message.size() > Demospeed_.size() + 1)
-				Args = Message.substr(Demospeed_.size() + 1);
-
-			std::stringstream ss(Args);
-
-			float Speed;
-			ss >> Speed;
-
-			std::wstring Command = L"demospeed " + std::to_wstring(Speed);
-
-			FString Run(Command.c_str());
-			UKismetSystemLibrary::ExecuteConsoleCommand(UWorld::GetWorld(), Run, nullptr);
-
-			PlayerController->ClientMessage(L"Server Speed Changed!", FName(), 1);
-		}
-	}
-
-	if (Message == "randombot")
-	{
-		if (AFortGameStateAthena* GameState = Cast<AFortGameStateAthena>(UWorld::GetWorld()->GameState))
-		{
-			if (GameState->GamePhase > EAthenaGamePhase::Aircraft)
-			{
-				if (GameMode->ServerBotManager->PlayerBots.Num() > 0)
-				{
-					int32 Index = UKismetMathLibrary::RandomIntegerInRange(0, GameMode->ServerBotManager->PlayerBots.Num() - 1);
-
-					if (AFortPlayerPawnAthena* PlayerBotPawn = GameMode->ServerBotManager->PlayerBots[Index].BotController->PlayerBotPawn)
-					{
-						PlayerController->Pawn->K2_TeleportTo(PlayerBotPawn->K2_GetActorLocation(), {});
-					}
-				}
-			}
-			else
-			{
-				PlayerController->ClientMessage(L"Invalid Gamephase! Please wait til the aircraft has exited.", FName(), 1);
-			}
-		}
-	}
-
-	if (Message.contains("sethealth"))
-	{
-		if (Message.rfind("sethealth", 0) == 0)
-		{
-			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
-
-			if (PlayerPawn == NULL)
-				return;
-
-			std::string SetHealth_ = "sethealth";
-			std::string Args;
-
-			if (Message.size() > SetHealth_.size() + 1)
-				Args = Message.substr(SetHealth_.size() + 1);
-
-			std::stringstream ss(Args);
-
-			float Health;
-			ss >> Health;
-
-			PlayerPawn->SetHealth(Health);
-
-			PlayerController->ClientMessage(L"Health Changed!", FName(), 1);
-		}
-	}
-
-	if (Message.contains("setshield"))
-	{
-		if (Message.rfind("setshield", 0) == 0)
-		{
-			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
-
-			if (PlayerPawn == NULL)
-				return;
-
-			std::string SetShield_ = "setshield";
-			std::string Args;
-
-			if (Message.size() > SetShield_.size() + 1)
-				Args = Message.substr(SetShield_.size() + 1);
-
-			std::stringstream ss(Args);
-
-			float Shield;
-			ss >> Shield;
-
-			PlayerPawn->SetShield(Shield);
-
-			PlayerController->ClientMessage(L"Shield Changed!", FName(), 1);
-		}
-	}
-
-	if (Message.contains("launch"))
-	{
-		if (Message.rfind("launch", 0) == 0)
-		{
-			AFortPlayerPawn* PlayerPawn = PlayerController->MyFortPawn;
-
-			if (PlayerPawn == NULL)
-				return;
-
-			std::string Launch_ = "launch";
-			std::string Args;
-
-			if (Message.size() > Launch_.size() + 1)
-				Args = Message.substr(Launch_.size() + 1);
-
-			std::stringstream ss(Args);
-
-			float X{}, Y{}, Z{};
-
-			ss >> X >> Y >> Z;
-
-			PlayerPawn->LaunchCharacter(FVector(X, Y, Z), false, false);
-
-			PlayerController->ClientMessage(L"Launched Character!", FName(), 1);
-		}
-	}
-
-	if (Message.rfind("giveitem", 0) == 0)
-	{
-		std::string GiveItem_ = "giveitem";
-		std::string Args;
-
-		if (Message.size() > GiveItem_.size() + 1)
-			Args = Message.substr(GiveItem_.size() + 1);
-
-		std::stringstream ss(Args);
-
-		std::string WeaponId;
-
-		int Count { 1 };
-
-		ss >> WeaponId;
-
-		if (!(ss >> Count))
-			Count = 1;
-
-		std::wstring WID(WeaponId.begin(), WeaponId.end());
-
-		UFortWorldItemDefinition* ItemDefinition = Cast<UFortWorldItemDefinition>(Utils::StaticFindObject(WID.c_str(), ANY_PACKAGE));
-
-		if (ItemDefinition == NULL)
-		{
-			PlayerController->ClientMessage(L"Failed to find item definition! Are you entering the correct WID?", FName(), 1);
-			return;
-		}
-
-		if (UFortWeaponItemDefinition* WeaponItemDefinition = Cast<UFortWeaponItemDefinition>(ItemDefinition))
-		{
-			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, Inventory::GetStats(WeaponItemDefinition)->ClipSize);
-		}
-		else
-		{
-			Inventory::GiveItem(PlayerController->WorldInventory, ItemDefinition, Count, 0);
-		}
-
-		PlayerController->ClientMessage(L"Gave item!", FName(), 1);
-	}
-}
+// TODO: Rewrite
 
 void Player::ServerAttemptInventoryDrop(AFortPlayerController* PlayerController, FGuid& ItemGuid, int32 Count, bool bTrash)
 {
@@ -430,31 +232,6 @@ void Player::ServerAttemptInventoryDrop(AFortPlayerController* PlayerController,
 
 	if (PlayerPawn == NULL)
 		return;
-
-	FFortItemEntry* ItemEntry = Inventory::GetItemEntry(PlayerController->WorldInventory, ItemGuid);
-
-	if (ItemEntry == NULL || ItemEntry->Count - Count < 0)
-		return;
-
-	UFortWorldItem* WorldItem = Inventory::GetWorldItem(PlayerController->WorldInventory, ItemGuid);
-
-	if (WorldItem == NULL)
-		return;
-
-	ItemEntry->Count -= Count;
-
-	Inventory::SpawnPickup(PlayerPawn->K2_GetActorLocation() + PlayerPawn->GetActorForwardVector() * 70.f + FVector(0, 0, 50), ItemEntry, Count, PlayerPawn, EFortPickupSourceTypeFlag::Tossed, EFortPickupSpawnSource::Unset);
-
-	if (ItemEntry->Count <= 0 || Count < 0)
-	{
-		Inventory::RemoveItem(PlayerController->WorldInventory, ItemGuid);
-	}
-	else
-	{
-		WorldItem->ItemEntry.Count = ItemEntry->Count;
-
-		Inventory::UpdateItemEntry(PlayerController->WorldInventory, ItemEntry);
-	}
 }
 
 void Player::ServerHandlePickup(AFortPlayerPawn* PlayerPawn, AFortPickup* Pickup, float InFlyTime, FVector& InStartDirection, bool bPlayPickupSound)
@@ -477,7 +254,7 @@ void Player::GivePickupTo(AFortPickup* Pickup, IFortInventoryOwnerInterface* Inv
 	if (PlayerController == NULL)
 		return;
 
-	Inventory::GiveItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
+	Inventory::CreateItem(PlayerController->WorldInventory, Pickup->PrimaryPickupItemEntry.ItemDefinition, Pickup->PrimaryPickupItemEntry.Count, Pickup->PrimaryPickupItemEntry.LoadedAmmo);
 }
 
 void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFortPlayerDeathReport& DeathReport)
@@ -579,27 +356,29 @@ void Player::ClientOnPawnDied(AFortPlayerControllerAthena* PlayerController, FFo
 
 void Player::RemoveAllInventoryItems(AFortPlayerControllerAthena* PlayerController)
 {
-	PlayerController->WorldInventory->Inventory.ReplicatedEntries.Free();
-	PlayerController->WorldInventory->Inventory.ItemInstances.Free();
+	if (PlayerController->WorldInventory != NULL)
+	{
+		PlayerController->WorldInventory->Inventory.ReplicatedEntries.Free();
+		PlayerController->WorldInventory->Inventory.ItemInstances.Free();
 
-	PlayerController->WorldInventory->Inventory.MarkArrayDirty();
+		PlayerController->WorldInventory->Inventory.MarkArrayDirty();
+	}
 }
 
 void Player::Setup()
 {
-	Utils::Virtual<AFortPickupAthena>(0xC7, GivePickupTo, (void**)&Originals::GivePickupTo);
+	Utils::Virtual<AFortPickupAthena>(0x638 / 8, GivePickupTo, (void**)&Originals::GivePickupTo);
 
-    Utils::Virtual<AFortPlayerControllerAthena>(0x10A, ServerAcknowledgePossession);
-	Utils::Virtual<AFortPlayerControllerAthena>(0x209, ServerExecuteInventoryItem);
-	Utils::Virtual<AFortPlayerControllerAthena>(0x1C3, ServerPlayEmoteItem);
+    Utils::Virtual<AFortPlayerControllerAthena>(0x850 / 8, ServerAcknowledgePossession);
+	Utils::Virtual<AFortPlayerControllerAthena>(0x1048 / 8, ServerExecuteInventoryItem);
+	Utils::Virtual<AFortPlayerControllerAthena>(0xE18 / 8, ServerPlayEmoteItem);
 
-	Utils::Virtual<AFortPlayerControllerAthena>(0xE08 / 8, ServerCheat);
 	Utils::Virtual<AFortPlayerControllerAthena>(0x10E8 / 8, ServerAttemptInventoryDrop);
 
-	Utils::Virtual<AFortPlayerPawnAthena>(0x1E1, ServerSendZiplineState);
+	Utils::Virtual<AFortPlayerPawnAthena>(0xF08 / 8, ServerSendZiplineState);
 	Utils::Virtual<AFortPlayerPawnAthena>(0xEB0 / 8, ServerHandlePickup);
 
-	Utils::Virtual<UFortControllerComponent_Aircraft>(0x82, ServerAttemptAircraftJump);
+	Utils::Virtual<UFortControllerComponent_Aircraft>(0x410 / 8, ServerAttemptAircraftJump);
 
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x1E181D0, GetPlayerViewPoint, (void**)&Originals::GetPlayerViewPoint);
 	Utils::Hook(InSDKUtils::GetImageBase() + 0x2446300, ClientOnPawnDied, (void**)&Originals::ClientOnPawnDied);
