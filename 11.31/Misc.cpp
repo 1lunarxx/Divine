@@ -67,8 +67,6 @@ bool Misc::Listen()
 		LevelCollection.NetDriver = UWorld::GetWorld()->NetDriver;
 	}
 
-	SetConsoleTitleA("Divine | Listening");
-
 	return true;
 }
 
