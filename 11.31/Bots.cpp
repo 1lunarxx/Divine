@@ -24,13 +24,16 @@ void Bots::InitializeInventory(AFortAthenaAIBotController* BotController, UFortA
 
 	for (UFortItemDefinition* Item : BotController->StartupInventory->Items)
 	{
-		CreateItem(BotController, Item, 1);
+		UFortWorldItem* WorldItem = CreateItem(BotController, Item, 1);
+
+		if (UFortWeaponMeleeItemDefinition* WeaponMeleeItemDefinition = Cast<UFortWeaponMeleeItemDefinition>(WorldItem->GetItemDefinitionBP()))
+		{
+			BotController->PlayerBotPawn->EquipWeaponDefinition(WeaponMeleeItemDefinition, WorldItem->ItemEntry.ItemGuid);
+		}
 	}
 
 	Originals::InitializeInventory(BotController, OverrideStartupInventory);
 }
-
-// no andrew i did not take this from you, you told me about this when you gave me bcanactivatebrain
 
 void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* PlayerPawn)
 {
@@ -57,39 +60,6 @@ void Bots::OnPawnSpawned(AFortAthenaMutator_Bots* BotMutator, AFortPlayerPawn* P
 					BotController->SlotItems[i].SetItem(ItemInstance);
 				}
 			}
-		}
-
-		UFortAthenaAIBotInventorySkillSet* InventorySkillSet = (UFortAthenaAIBotInventorySkillSet*)UAI_skill_phoebe_bot_inventory_C::StaticClass()->ClassDefaultObject;
-
-		if (UFortAthenaAIBotInventoryDigestedSkillSet* CacheInventoryDigestedSkillSet = BotController->CacheInventoryDigestedSkillSet)
-		{
-			CacheInventoryDigestedSkillSet->DefaultWeaponSelectionDistance = UFortScalableFloatUtils::GetValueAtLevel(InventorySkillSet->DefaultWeaponSelectionDistance, BotController->Skill);
-			CacheInventoryDigestedSkillSet->DefaultWeaponSelectionDistanceDeviation = UFortScalableFloatUtils::GetValueAtLevel(InventorySkillSet->DefaultWeaponSelectionDistanceDeviation, BotController->Skill);
-
-			for (FBotEquipWeaponInfo& Info : InventorySkillSet->EquipWeaponInfo)
-			{
-				FDigestedBotEquipWeaponInfo DigestedBotEquipWeaponInfo{};
-
-				DigestedBotEquipWeaponInfo.DistanceEffectivenessNoThreat = Info.DistanceEffectivenessNoThreat;
-				DigestedBotEquipWeaponInfo.DistanceEffectivenessWithThreat = Info.DistanceEffectivenessWithThreat;
-				DigestedBotEquipWeaponInfo.TagQuery = Info.TagQuery;
-
-				CacheInventoryDigestedSkillSet->EquipWeaponInfo.Add(DigestedBotEquipWeaponInfo);
-			}
-
-			for (int32 i = 0; i < 6; i++)
-				CacheInventoryDigestedSkillSet->InventorySlotPreference[i] = InventorySkillSet->InventorySlotPreference[i];
-		}
-
-		UFortAthenaAIBotHarvestSkillSet* HarvestSkillSet = (UFortAthenaAIBotHarvestSkillSet*)UAI_skill_phoebe_bot_harvest_C::StaticClass()->ClassDefaultObject;
-
-		if (UFortAthenaAIBotHarvestDigestedSkillSet* CacheHarvestDigestedSkillSet = BotController->CacheHarvestDigestedSkillSet)
-		{
-			CacheHarvestDigestedSkillSet->DelayBetweenHarvest = UFortScalableFloatUtils::GetValueAtLevel(HarvestSkillSet->DelayBetweenHarvest, BotController->Skill);
-			CacheHarvestDigestedSkillSet->DeviationTimeBetweenHarvest = UFortScalableFloatUtils::GetValueAtLevel(HarvestSkillSet->DeviationTimeBetweenHarvest, BotController->Skill);
-			CacheHarvestDigestedSkillSet->WeakSpotHitProbability = UFortScalableFloatUtils::GetValueAtLevel(HarvestSkillSet->WeakSpotHitProbability, BotController->Skill);
-
-			CacheHarvestDigestedSkillSet->HarvestingMaxDistanceSquared = UFortScalableFloatUtils::GetValueAtLevel(HarvestSkillSet->HarvestingMaxDistance, BotController->Skill) * UFortScalableFloatUtils::GetValueAtLevel(HarvestSkillSet->HarvestingMaxDistance, BotController->Skill);
 		}
 	}
 }
@@ -172,9 +142,7 @@ void Bots::ApplyCharacterCustomization(AFortAthenaAIBotController* BotController
 			if (TableRow == NULL)
 				continue;
 
-			UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId));
-
-			if (DanceItemDefinition)
+			if (UAthenaDanceItemDefinition* DanceItemDefinition = Cast<UAthenaDanceItemDefinition>(UKismetSystemLibrary::GetObjectFromPrimaryAssetId(TableRow->PrimaryAssetId)))
 				BotController->CosmeticLoadoutBC.Dances.Add(DanceItemDefinition);
 		}
 	}
