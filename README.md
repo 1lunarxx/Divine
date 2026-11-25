@@ -1,6 +1,4 @@
-# DIVINE 11.31
+# Divine 11.31
 
-THIS GAMESERVER IS VERY SHIT, BASICALLY MY FIRST GAMESERVER.
-FEEL FREE TO SKID IMPROPER CODE...
-
-CREDITS TO ANDREW FOR SOME BOT CODE, THIS IS OLD..
+This gameserver is pretty old, techinically my 2nd gameserver.
+Doesn't have the best code, kinda ass.
